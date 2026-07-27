@@ -129,7 +129,7 @@ const services = [
 ];
 
 export default function Services() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section
