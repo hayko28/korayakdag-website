@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-sm">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#EAF3FA]/95 backdrop-blur-xl border-b border-[#D5E4F0] shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
 
         <div>
