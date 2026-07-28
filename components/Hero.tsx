@@ -1,3 +1,5 @@
+import Globe from "./Globe";
+
 export default function Hero() {
   return (
     <section
@@ -40,28 +42,8 @@ export default function Hero() {
 
         {/* Sağ Taraf */}
 
-        <div className="flex justify-center mt-12 lg:mt-0">
-
-          <div className="relative w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] lg:w-[520px] lg:h-[520px]">
-
-            {/* Dış Halka */}
-
-            <div className="absolute inset-0 rounded-full border border-white/10"></div>
-
-            {/* Orta Halka */}
-
-            <div className="absolute inset-8 lg:inset-10 rounded-full border border-white/10"></div>
-
-            {/* İç Halka */}
-
-            <div className="absolute inset-16 lg:inset-20 rounded-full border border-white/10"></div>
-
-            {/* Merkez */}
-
-            <div className="absolute inset-24 lg:inset-32 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-blue-500 opacity-90 blur-sm"></div>
-
-          </div>
-
+        <div className="flex justify-center items-center mt-12 lg:mt-0">
+          <Globe />
         </div>
 
       </div>
