@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="max-w-2xl">
 
-          <h1 className="text-white font-black leading-[1] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-white font-black leading-[1] text-4xl sm:text-5xl lg:text-5xl xl:text-6xl">
             Büyüme
             <br />
             Tesadüf
@@ -51,24 +51,6 @@ export default function Hero() {
             güvene dayalı ilişkilerle mümkün olduğuna
             inanıyorum.
           </p>
-
-          <div className="mt-12 flex flex-wrap gap-5">
-
-            <a
-              href="#contact"
-              className="rounded-full bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
-            >
-              İletişime Geç
-            </a>
-
-            <a
-              href="#services"
-              className="rounded-full border border-white/30 px-8 py-4 font-semibold text-white transition hover:border-orange-400 hover:text-orange-400"
-            >
-              Hizmetler
-            </a>
-
-          </div>
 
         </div>
 
