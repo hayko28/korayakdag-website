@@ -2,9 +2,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen bg-[#071A2F] flex items-center pt-28 overflow-x-hidden"
+      className="min-h-screen bg-[#071A2F] flex items-center pt-24 lg:pt-28 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto w-full px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-7xl mx-auto w-full px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
         {/* Sol Taraf */}
 
@@ -32,24 +32,33 @@ export default function Hero() {
 
           <p className="text-gray-300 text-lg sm:text-xl mt-10 leading-8 max-w-xl mx-auto lg:mx-0">
             İş dünyasında sürdürülebilir başarının; doğru strateji,
-            güçlü iş birlikleri ve güvene dayalı ilişkilerle mümkündür.
+            güçlü iş birlikleri ve güvene dayalı ilişkilerle mümkün
+            olduğuna inanıyorum.
           </p>
 
         </div>
 
         {/* Sağ Taraf */}
 
-        <div className="flex justify-center mt-10 lg:mt-0">
+        <div className="flex justify-center mt-12 lg:mt-0">
 
-          <div className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[520px] lg:h-[520px]">
+          <div className="relative w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] lg:w-[520px] lg:h-[520px]">
+
+            {/* Dış Halka */}
 
             <div className="absolute inset-0 rounded-full border border-white/10"></div>
 
+            {/* Orta Halka */}
+
             <div className="absolute inset-8 lg:inset-10 rounded-full border border-white/10"></div>
+
+            {/* İç Halka */}
 
             <div className="absolute inset-16 lg:inset-20 rounded-full border border-white/10"></div>
 
-            <div className="absolute inset-24 lg:inset-32 rounded-full bg-gradient-to-br from-orange-400 to-blue-500 opacity-90 blur-sm"></div>
+            {/* Merkez */}
+
+            <div className="absolute inset-24 lg:inset-32 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-blue-500 opacity-90 blur-sm"></div>
 
           </div>
 
