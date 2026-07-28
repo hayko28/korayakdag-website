@@ -1,18 +1,30 @@
-import Globe from "./Globe";
-
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen bg-[#071A2F] flex items-center pt-24 lg:pt-28 overflow-hidden"
+      className="relative min-h-screen overflow-hidden flex items-center"
     >
-      <div className="max-w-7xl mx-auto w-full px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      {/* Arka Plan */}
 
-        {/* Sol Taraf */}
+      <div className="absolute inset-0 -z-20">
+        <img
+          src="/hero-bg.png"
+          alt="Hero Background"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
 
-        <div className="text-center lg:text-left">
+      {/* Koyu Katman */}
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-white">
+      <div className="absolute inset-0 bg-[#071A2F]/45 -z-10"></div>
+
+      {/* İçerik */}
+
+      <div className="max-w-7xl mx-auto w-full px-6 lg:px-8">
+
+        <div className="max-w-2xl">
+
+          <h1 className="text-white font-black leading-[1.05] text-5xl sm:text-6xl lg:text-7xl">
             Büyüme
             <br />
             Tesadüf
@@ -20,30 +32,45 @@ export default function Hero() {
             Değildir.
           </h1>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-orange-400 font-bold mt-6">
+          <h2 className="text-orange-400 font-bold mt-8 text-2xl sm:text-3xl lg:text-4xl">
             Doğru Stratejinin Sonucudur.
           </h2>
 
-          <blockquote className="border-l-4 border-orange-400 pl-5 mt-10 italic text-gray-300 text-lg sm:text-xl lg:text-2xl leading-8 lg:leading-10">
+          <blockquote className="border-l-4 border-orange-400 pl-6 mt-10 italic text-gray-200 text-xl lg:text-2xl leading-10">
             "Satmak Bugünü,
             <br />
             Üretmek Yarını,
             <br />
-            Ürettiğini Satmak Bir Ülkenin Kaderini Değiştirir."
+            Ürettiğini Satmak Bir Ülkenin
+            <br />
+            Kaderini Değiştirir."
           </blockquote>
 
-          <p className="text-gray-300 text-lg sm:text-xl mt-10 leading-8 max-w-xl mx-auto lg:mx-0">
-            İş dünyasında sürdürülebilir başarının; doğru strateji,
-            güçlü iş birlikleri ve güvene dayalı ilişkilerle mümkün
-            olduğuna inanıyorum.
+          <p className="mt-10 text-gray-200 text-lg lg:text-xl leading-9 max-w-xl">
+            İş dünyasında sürdürülebilir başarının;
+            doğru strateji, güçlü iş birlikleri ve
+            güvene dayalı ilişkilerle mümkün olduğuna
+            inanıyorum.
           </p>
 
-        </div>
+          <div className="mt-12 flex flex-wrap gap-5">
 
-        {/* Sağ Taraf */}
+            <a
+              href="#contact"
+              className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-full text-white font-semibold"
+            >
+              İletişime Geç
+            </a>
 
-        <div className="flex justify-center items-center mt-12 lg:mt-0">
-          <Globe />
+            <a
+              href="#services"
+              className="border border-white/30 hover:border-orange-400 hover:text-orange-400 transition px-8 py-4 rounded-full text-white font-semibold"
+            >
+              Hizmetler
+            </a>
+
+          </div>
+
         </div>
 
       </div>
