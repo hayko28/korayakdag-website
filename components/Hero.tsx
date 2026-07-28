@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="max-w-2xl">
 
-          <h1 className="text-white font-black leading-[0.95] text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="text-white font-black leading-[1] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
             Büyüme
             <br />
             Tesadüf
