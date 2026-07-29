@@ -29,7 +29,7 @@ export default function Expertise() {
   return (
     <section
       id="expertise"
-      className="bg-white py-16 lg:py-20 scroll-mt-16 relative"
+      className="bg-white py-20 lg:py-28 scroll-mt-24 relative"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
