@@ -12,19 +12,37 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 1. Global Scroll ve Yumuşak Kaydırma Ayarları */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-padding-top: 6rem; /* Navbar yüksekliğinize göre dengeli bir üst boşluk */
+}
+
+/* 2. Mobilde Ekran Taşmasını Engelleme */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* 3. Mobil Ekran İyileştirmeleri */
+@media (max-width: 1024px) {
+  /* Hero alanının sabitlemesini kırıp mobil ekrana esnetir */
+  section:first-of-type {
+    min-height: 100vh !important;
+    height: auto !important;
+    padding-top: 7rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Resimlerin ekrandan taşmasını ve kesilmesini önler */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }
