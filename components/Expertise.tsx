@@ -29,15 +29,15 @@ export default function Expertise() {
   return (
     <section
       id="expertise"
-      className="bg-white pt-16 pb-28 scroll-mt-[5px]"
+      className="bg-white py-16 lg:py-20 scroll-mt-16 relative"
     >
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-5">
+          <p className="text-orange-500 text-lg sm:text-xl font-bold uppercase tracking-[2px] mb-3">
             Uzmanlık Alanları
           </p>
 
-          <h2 className="text-5xl font-black text-[#071A2F] mt-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#071A2F]">
             Deneyimle Güçlenen Uzmanlık
           </h2>
         </div>
@@ -46,13 +46,13 @@ export default function Expertise() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300 border border-gray-100"
             >
               <h3 className="text-2xl font-bold text-[#071A2F] mb-4">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 leading-8">
+              <p className="text-gray-600 leading-relaxed">
                 {item.text}
               </p>
             </div>
