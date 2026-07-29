@@ -2,7 +2,7 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      className="bg-white pt-10 pb-20 scroll-mt-16 relative"
+      className="bg-white pt-5 pb-16 scroll-mt-12 relative"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
