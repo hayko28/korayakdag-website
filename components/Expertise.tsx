@@ -27,7 +27,10 @@ export default function Expertise() {
   ];
 
   return (
-    <section id="expertise" className="bg-white pt-16 pb-28">
+    <section
+      id="expertise"
+      className="bg-white pt-16 pb-28 scroll-mt-[5px]"
+    >
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-16">
           <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-5">

@@ -15,68 +15,58 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="relative z-50 h-[90px] w-full bg-[#e8f2fa] shadow-sm">
+    <header className="fixed top-0 left-0 z-[9999] w-full h-[78px] bg-[#e8f2fa]/95 backdrop-blur-md shadow-md">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 lg:px-8">
 
-        {/* Logo / İsim */}
-        <a href="#hero" className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center font-black text-[30px] tracking-[-4px] text-[#123b63]">
-            KA
+        <a
+          href="#hero"
+          className="flex flex-col justify-center"
+        >
+          <div className="text-[24px] font-black text-[#123b63]">
+            Koray Akdağ
           </div>
 
-          <div className="leading-none">
-            <div className="text-[25px] font-black tracking-tight text-[#123b63]">
-              Koray Akdağ
-            </div>
-
-            <div className="mt-1 text-[12px] font-medium tracking-[2px] text-orange-500">
-              STRATEJİ VE İŞ GELİŞTİRME DANIŞMANI
-            </div>
+          <div className="mt-0.5 text-[10px] font-semibold tracking-[1.6px] text-orange-500">
+            STRATEJİ VE İŞ GELİŞTİRME DANIŞMANI
           </div>
         </a>
 
-        {/* Masaüstü Menü */}
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-[16px] font-medium text-[#123b63] transition hover:text-orange-500"
+              className="text-[15px] font-medium text-[#123b63] transition hover:text-orange-500"
             >
               {link.name}
             </a>
           ))}
         </nav>
 
-        {/* Mobil Menü Butonu */}
         <button
-          type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-lg border border-[#123b63]/20 bg-white/60 lg:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-[#123b63]/20 bg-white/70 lg:hidden"
           aria-label="Menüyü aç"
         >
-          <span className="h-0.5 w-6 bg-[#123b63]" />
-          <span className="h-0.5 w-6 bg-[#123b63]" />
-          <span className="h-0.5 w-6 bg-[#123b63]" />
+          <span className="h-0.5 w-5 bg-[#123b63]" />
+          <span className="h-0.5 w-5 bg-[#123b63]" />
+          <span className="h-0.5 w-5 bg-[#123b63]" />
         </button>
       </div>
 
-      {/* Mobil Menü */}
       {menuOpen && (
-        <div className="absolute left-0 top-[90px] w-full border-t border-[#123b63]/10 bg-[#e8f2fa] shadow-lg lg:hidden">
-          <nav className="flex flex-col px-6 py-4">
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="border-b border-[#123b63]/10 py-4 text-base font-medium text-[#123b63] transition hover:text-orange-500"
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-        </div>
+        <nav className="absolute left-0 top-[78px] w-full bg-[#e8f2fa] shadow-lg lg:hidden">
+          {links.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="block border-b border-[#123b63]/10 px-6 py-4 text-[#123b63]"
+            >
+              {link.name}
+            </a>
+          ))}
+        </nav>
       )}
     </header>
   );

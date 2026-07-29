@@ -2,19 +2,28 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full overflow-hidden bg-[#020B18] h-[calc(100vh-90px)] min-h-[650px]"
+      className="relative h-[calc(100vh-90px)] min-h-[650px] w-full overflow-hidden bg-[#020B18]"
     >
+      {/* HERO GÖRSELİ */}
       <img
-        src="/hero-bg.png"
+        src="/hero-pg.png"
         alt="Koray Akdağ"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="
+          absolute
+          inset-0
+          h-full
+          w-full
+          object-cover
+          object-[center_35%]
+        "
       />
 
-      <div className="absolute inset-0 pointer-events-none" />
-
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
+      {/* Scroll göstergesi */}
+      <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2">
         <div className="flex h-11 w-7 items-center justify-center rounded-full border border-white/50 bg-black/10 backdrop-blur-sm">
-          <span className="animate-bounce text-orange-400 text-lg">↓</span>
+          <span className="animate-bounce text-lg text-orange-400">
+            ↓
+          </span>
         </div>
       </div>
     </section>

@@ -134,7 +134,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#071A2F] pt-16 pb-28 text-white"
+      className="bg-[#071A2F] pt-20 pb-24 text-white scroll-mt-[1px]"
     >
       <div className="max-w-6xl mx-auto px-8">
 
@@ -149,21 +149,17 @@ export default function Services() {
         </div>
 
         <div className="space-y-4">
-
           {services.map((service, index) => (
-
             <div
               key={index}
               className="rounded-2xl bg-white/5 border border-white/10 overflow-hidden transition hover:border-orange-400"
             >
-
               <button
                 onClick={() =>
                   setOpen(open === index ? null : index)
                 }
                 className="w-full flex justify-between items-center px-6 py-5 text-left"
               >
-
                 <h3 className="text-lg lg:text-xl font-semibold">
                   {service.title}
                 </h3>
@@ -171,36 +167,24 @@ export default function Services() {
                 <span className="text-3xl text-orange-400 font-light">
                   {open === index ? "−" : "+"}
                 </span>
-
               </button>
 
               {open === index && (
-
                 <div className="px-6 pb-6">
-
                   <ul className="grid md:grid-cols-2 gap-3">
-
                     {service.items.map((item, i) => (
-
                       <li
                         key={i}
                         className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
                       >
                         ✔ {item}
                       </li>
-
                     ))}
-
                   </ul>
-
                 </div>
-
               )}
-
             </div>
-
           ))}
-
         </div>
 
       </div>

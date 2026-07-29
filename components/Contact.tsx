@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-white py-24"
+      className="bg-white py-24 scroll-mt-[100px]"
     >
       <div className="max-w-6xl mx-auto px-8">
 
@@ -16,10 +16,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-8">
 
-          {/* Kişisel Mail */}
-
           <div className="bg-[#071A2F] text-white rounded-2xl p-8 shadow-lg">
-
             <div className="text-4xl mb-5">📧</div>
 
             <h3 className="text-xl font-bold mb-4">
@@ -32,13 +29,9 @@ export default function Contact() {
             >
               koray_akdag@hotmail.com
             </a>
-
           </div>
 
-          {/* Kurumsal Mail */}
-
           <div className="bg-[#071A2F] text-white rounded-2xl p-8 shadow-lg">
-
             <div className="text-4xl mb-5">📧</div>
 
             <h3 className="text-xl font-bold mb-4">
@@ -51,10 +44,7 @@ export default function Contact() {
             >
               koray.akdag@sistemglobal.com.tr
             </a>
-
           </div>
-
-          {/* LinkedIn */}
 
           <div className="bg-[#071A2F] text-white rounded-2xl p-8 shadow-lg">
 
@@ -83,11 +73,9 @@ export default function Contact() {
             >
               LinkedIn profilimi ziyaret etmek için tıklayınız →
             </a>
-
           </div>
 
         </div>
-
       </div>
     </section>
   );
