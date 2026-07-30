@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-[calc(100vh-90px)] min-h-[650px] w-full overflow-hidden bg-[#020B18]"
+      className="relative h-[100dvh] max-h-[850px] min-h-[550px] w-full overflow-hidden bg-[#020B18]"
     >
       {/* HERO GÖRSELİ */}
       <img
