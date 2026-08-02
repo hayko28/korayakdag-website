@@ -1,9 +1,16 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 export default function BlogComments() {
   const [submissionState, setSubmissionState] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [publishedComments, setPublishedComments] = useState<{ id: number; name: string; comment: string; created_at: string }[]>([]);
+
+  useEffect(() => {
+    void fetch(`/api/comments?page=${encodeURIComponent(window.location.pathname)}`)
+      .then((response) => response.ok ? response.json() : [])
+      .then((comments) => setPublishedComments(comments));
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -42,6 +49,7 @@ export default function BlogComments() {
       <p className="mb-7 text-gray-600">
         Görüşünüzü bizimle paylaşın. Yorumunuz inceleme için iletilecektir.
       </p>
+      {publishedComments.length > 0 && <div className="mb-8 space-y-4">{publishedComments.map((item) => <article key={item.id} className="rounded-xl border border-gray-200 bg-white p-5"><p className="font-bold text-[#071A2F]">{item.name}</p><p className="mt-2 text-gray-700">{item.comment}</p><p className="mt-3 text-sm text-gray-500">{new Date(item.created_at).toLocaleDateString("tr-TR")}</p></article>)}</div>}
 
       <form onSubmit={handleSubmit} className="rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
         <div className="grid gap-5 sm:grid-cols-2">
