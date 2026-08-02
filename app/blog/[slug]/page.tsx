@@ -1,0 +1,5 @@
+import { notFound } from "next/navigation";
+import BlogComments from "@/components/blog/BlogComments";
+import { initializeDatabase, sql } from "@/lib/database";
+export const dynamic = "force-dynamic";
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; await initializeDatabase(); const rows = await sql`SELECT title, excerpt, content, published_at FROM posts WHERE slug = ${slug} AND status = 'published'`; const post = rows[0]; if (!post) notFound(); return <main className="min-h-screen bg-white"><article className="mx-auto max-w-3xl px-6 py-20"><p className="mb-4 font-semibold text-orange-500">Blog</p><h1 className="text-4xl font-black text-[#071A2F] sm:text-5xl">{post.title}</h1><p className="mt-6 text-xl text-gray-600">{post.excerpt}</p><p className="mt-6 text-sm text-gray-500">{new Date(post.published_at).toLocaleDateString("tr-TR")}</p><div className="mt-12 space-y-6 text-lg leading-8 text-gray-700">{post.content.split("\n").filter(Boolean).map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)}</div><BlogComments /></article></main>; }
