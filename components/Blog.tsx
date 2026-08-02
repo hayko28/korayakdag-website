@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { initializeDatabase, sql } from "@/lib/database";
 
 const posts = [
   {
@@ -11,7 +12,10 @@ const posts = [
   },
 ];
 
-export default function Blog() {
+export default async function Blog() {
+  await initializeDatabase();
+  const databasePosts = await sql`SELECT slug, title, excerpt FROM posts WHERE status = 'published' ORDER BY published_at DESC`;
+  const allPosts = [...posts, ...databasePosts];
   return (
     <section
       id="blog"
@@ -30,20 +34,13 @@ export default function Blog() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post) => (
+          {allPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
               className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 hover:-translate-y-2 transition duration-300 block"
             >
-              <div className="relative h-48 rounded-2xl overflow-hidden mb-6">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {"image" in post ? <div className="relative h-48 rounded-2xl overflow-hidden mb-6"><Image src={post.image} alt={post.title} fill className="object-cover" /></div> : <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-orange-50 text-5xl">✍️</div>}
 
               <h3 className="text-2xl font-bold text-[#071A2F]">
                 {post.title}
@@ -59,7 +56,7 @@ export default function Blog() {
             </Link>
           ))}
 
-          {[1, 2].map((item) => (
+          {allPosts.length < 3 && Array.from({ length: 3 - allPosts.length }).map((_, item) => (
             <div
               key={item}
               className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8"
