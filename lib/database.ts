@@ -1,6 +1,8 @@
 import { neon } from "@neondatabase/serverless";
 
-const connectionString = process.env.DATABASE_URL || process.env.DEPOLAMA_URL;
+const connectionString =  process.env.DATABASE_POSTGRES_URL ||
+  process.env.DATABASE_URL ||
+  process.env.DEPOLAMA_URL;
 
 if (!connectionString) throw new Error("DATABASE_URL veya DEPOLAMA_URL tanımlı değil.");
 
