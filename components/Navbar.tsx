@@ -26,7 +26,7 @@ export default function Navbar() {
             Koray Akdağ
           </div>
 
-          <div className="mt-0.5 text-[10px] font-semibold tracking-[1.6px] text-orange-500">
+          <div className="mt-0.5 text-[13px] font-semibold tracking-[1.6px] text-orange-500">
             STRATEJİ VE İŞ GELİŞTİRME DANIŞMANI
           </div>
         </a>

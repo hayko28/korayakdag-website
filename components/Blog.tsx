@@ -10,70 +10,124 @@ const posts = [
       "2026 ikinci dönem çağrısında neler değişti, kimler başvurabilir ve güçlü bir başvuru nasıl kurgulanır?",
     image: "/tubitak-1501-1507-kapak.png",
   },
+  {
+    slug: "teknopark-nedir-avantajlari",
+    title: "Teknopark Nedir? Avantajları Nelerdir?",
+    excerpt:
+      "Teknopark başvurusu, vergi ve KDV avantajları, SGK teşvikleri, uzaktan çalışma, proje türleri ve Ar-Ge Merkezi farkları.",
+    image: "/teknopark-kapak.png",
+  },
 ];
 
 export default async function Blog() {
   await initializeDatabase();
-  const databasePosts = await sql`SELECT slug, title, excerpt FROM posts WHERE status = 'published' ORDER BY published_at DESC`;
+
+  const databasePosts = await sql`
+    SELECT slug, title, excerpt
+    FROM posts
+    WHERE status = 'published'
+    ORDER BY published_at DESC
+  `;
+
   const allPosts = [...posts, ...databasePosts];
+
   return (
     <section
       id="blog"
-      className="bg-white pt-5 pb-16 scroll-mt-12 relative"
+      className="relative bg-white pb-16 pt-5 scroll-mt-12"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        <div className="text-center mb-12">
-          <p className="text-orange-500 text-lg sm:text-xl font-bold uppercase tracking-[2px] mb-3">
+        {/* BAŞLIK */}
+
+        <div className="mb-12 text-center">
+
+          <p className="mb-3 text-lg font-bold uppercase tracking-[2px] text-orange-500 sm:text-xl">
             Blog
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#071A2F]">
+          <h2 className="text-3xl font-black text-[#071A2F] sm:text-4xl lg:text-5xl">
             Yazılarım
           </h2>
+
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* KARTLAR */}
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
           {allPosts.map((post) => (
+
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 hover:-translate-y-2 transition duration-300 block"
+              className="block rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2"
             >
-              {"image" in post ? <div className="relative h-48 rounded-2xl overflow-hidden mb-6"><Image src={post.image} alt={post.title} fill className="object-cover" /></div> : <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-orange-50 text-5xl">✍️</div>}
+
+              {"image" in post ? (
+
+                <div className="relative mb-6 h-48 overflow-hidden rounded-2xl">
+
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+
+                </div>
+
+              ) : (
+
+                <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-orange-50 text-5xl">
+                  ✍️
+                </div>
+
+              )}
 
               <h3 className="text-2xl font-bold text-[#071A2F]">
                 {post.title}
               </h3>
 
-              <p className="text-gray-600 mt-4 leading-relaxed">
+              <p className="mt-4 leading-relaxed text-gray-600">
                 {post.excerpt}
               </p>
 
-              <span className="inline-block mt-4 text-orange-500 font-semibold">
+              <span className="mt-4 inline-block font-semibold text-orange-500">
                 Devamını Oku →
               </span>
+
             </Link>
+
           ))}
 
-          {allPosts.length < 3 && Array.from({ length: 3 - allPosts.length }).map((_, item) => (
-            <div
-              key={item}
-              className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8"
-            >
-              <div className="h-48 rounded-2xl bg-gray-100 mb-6"></div>
 
-              <h3 className="text-2xl font-bold text-[#071A2F]">
-                Blog Yazısı
-              </h3>
+          {/* 3. KART - YAKINDA */}
 
-              <p className="text-gray-600 mt-4 leading-relaxed">
-                Yakında yatırım teşvikleri, iş geliştirme,
-                satış yönetimi ve strateji üzerine içerikler
-                burada yayınlanacak.
-              </p>
-            </div>
-          ))}
+          {allPosts.length < 3 &&
+            Array.from({ length: 3 - allPosts.length }).map((_, item) => (
+
+              <div
+                key={`empty-${item}`}
+                className="rounded-3xl border border-gray-100 bg-white p-8 shadow-xl"
+              >
+
+                <div className="mb-6 h-48 rounded-2xl bg-gray-100" />
+
+                <h3 className="text-2xl font-bold text-[#071A2F]">
+                  Blog Yazısı
+                </h3>
+
+                <p className="mt-4 leading-relaxed text-gray-600">
+                  Yakında yatırım teşvikleri, iş geliştirme, satış yönetimi
+                  ve strateji üzerine içerikler burada yayınlanacak.
+                </p>
+
+              </div>
+
+            ))}
+
         </div>
 
       </div>
