@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import BlogComments from "@/components/blog/BlogComments";
+import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title:
@@ -22,67 +22,20 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <main className="bg-white">
-      {/* HERO */}
-      <section className="relative bg-[#071A2F] py-20">
-        <div className="mx-auto w-full max-w-6xl px-6">
-          {/* BREADCRUMB & ANA SAYFA KUTUSU */}
-          <div className="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <Link
-                href="/#blog"
-                className="text-orange-400 transition hover:text-orange-300 hover:underline"
-              >
-                Blog
-              </Link>
-              <span className="text-white/40">/</span>
-              <span className="truncate text-white/90">
-                TÜBİTAK 1501 ve 1507
-              </span>
-            </div>
-
-            {/* Başlığın sağ tarafında yer alan büyük kutulu Ana Sayfa butonu */}
-            <Link
-              href="/"
-              className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-base font-bold text-white transition hover:bg-white hover:text-[#071A2F]"
-            >
-              🏠 Ana Sayfa
-            </Link>
-          </div>
-
-          <div className="inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white">
-            TÜBİTAK • TEYDEB • 2026
-          </div>
-          <h1 className="mt-8 max-w-4xl text-5xl font-black leading-tight text-white">
-            TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026
-          </h1>
-          <p className="mt-8 max-w-3xl text-xl leading-9 text-gray-200">
-            Başvuru şartları, destek oranları, değerlendirme kriterleri,
-            desteklenen giderler ve 2026 yılında değişen tüm kuralların yer
-            aldığı kapsamlı rehber.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <span className="rounded-full bg-white/10 px-5 py-3 text-white">
-              📅 Güncelleme: 2026
-            </span>
-            <span className="rounded-full bg-white/10 px-5 py-3 text-white">
-              ⏱️ Okuma Süresi: 12 Dakika
-            </span>
-            <span className="rounded-full bg-white/10 px-5 py-3 text-white">
-              🏷️ Ar-Ge Destekleri
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTENT */}
-      <section className="mx-auto max-w-5xl px-6 py-16">
+    <BlogLayout
+      title="TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026"
+      description="Başvuru şartları, destek oranları, değerlendirme kriterleri, desteklenen giderler ve 2026 yılında değişen tüm kuralların yer aldığı kapsamlı rehber."
+      category="TÜBİTAK • TEYDEB • 2026"
+      date="2026"
+      readTime="12 Dakika"
+      slug="tubitak-1501-1507-ar-ge-destekleri-2026"
+    >
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
             📌 Bu Rehberde Neler Bulacaksınız?
           </h2>
           <p className="mb-8 text-lg leading-9 text-gray-700">
-            Ar-Ge yapan ya da yapmayı planlayan bir şirketseniz, TÜBİTAK'ın 1501
+            Ar-Ge yapan ya da yapmayı planlayan bir şirketseniz, TÜBİTAK&apos;ın 1501
             ve 1507 destek programlarından maksimum fayda sağlayabilmek için
             yalnızca başvuru yapmak yeterli değildir. Doğru hazırlanmış bir
             proje, gerçekçi bütçe, güçlü teknik içerik ve ticarileşme stratejisi
@@ -679,48 +632,13 @@ export default function BlogPage() {
           </h2>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             TÜBİTAK 1501 ve 1507 destek programları, teknoloji geliştiren işletmeler
-            için Türkiye'nin en önemli geri ödemesiz Ar-Ge finansman kaynakları
+            için Türkiye&apos;nin en önemli geri ödemesiz Ar-Ge finansman kaynakları
             arasında yer almaktadır. Başarılı bir başvuru yalnızca teknik bir form
             doldurmaktan ibaret değildir. Projenin Ar-Ge derinliği kadar bütçe
             kurgusu, iş paketleri ve ticarileşme stratejisinin de bir bütün halinde
             tasarlanması gerekir.
           </p>
-          <div className="rounded-3xl bg-[#071A2F] p-10 text-white">
-            <h3 className="mb-5 text-3xl font-bold">
-              Ar-Ge Projenizi Birlikte Değerlendirelim
-            </h3>
-            <p className="mb-8 text-lg leading-8 text-gray-300">
-              Şirketiniz için en uygun destek programını belirlemek, başvuru
-              sürecini doğru planlamak ve projenizi güçlü bir teknik kurguyla
-              hazırlamak için bizimle iletişime geçebilirsiniz.
-            </p>
-
-            {/* İLETİŞİM, BLOG VE ANA SAYFA LİNKLERİ */}
-            <div className="flex flex-wrap gap-4">
-              {/* Tıklandığında doğrudan ekran görüntünüzdeki e-postaların yer aldığı iletişim alanına yönlendirir */}
-              <Link
-                href="/#contact"
-                className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
-              >
-                İletişime Geç
-              </Link>
-              <Link
-                href="/#blog"
-                className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
-              >
-                Diğer Yazılar
-              </Link>
-              <Link
-                href="/"
-                className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
-              >
-                Ana Sayfa
-              </Link>
-            </div>
-          </div>
         </section>
-        <BlogComments />
-      </section>
-    </main>
+    </BlogLayout>
   );
 }

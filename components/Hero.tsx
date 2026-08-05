@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -5,14 +7,12 @@ export default function Hero() {
       className="relative h-[100dvh] max-h-[850px] min-h-[550px] w-full overflow-hidden bg-[#020B18]"
     >
       {/* HERO GÖRSELİ */}
-      <img
+      <Image
         src="/hero-pg.png"
         alt="Koray Akdağ"
+        fill
+        priority
         className="
-          absolute
-          inset-0
-          h-full
-          w-full
           object-cover
           object-[center_35%]
         "

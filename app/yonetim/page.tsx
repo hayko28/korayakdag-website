@@ -1,7 +1,376 @@
 "use client";
+
 import { FormEvent, useState } from "react";
-type Item = { id:number; name?:string; email?:string; comment?:string; message?:string; subject?:string; page?:string; status:string; title?:string; slug?:string; created_at?:string };
-type Data = { comments:Item[]; messages:Item[]; posts:Item[] };
+
+type Item = {
+  id: number;
+  name?: string;
+  email?: string;
+  comment?: string;
+  message?: string;
+  subject?: string;
+  page?: string;
+  status: string;
+  title?: string;
+  slug?: string;
+  created_at?: string;
+};
+
+type Data = { comments: Item[]; messages: Item[]; posts: Item[] };
 type Tab = "posts" | "comments" | "messages";
-export default function AdminPage(){const [password,setPassword]=useState("");const [data,setData]=useState<Data|null>(null);const [error,setError]=useState("");const [tab,setTab]=useState<Tab>("posts");const load=async()=>{const r=await fetch("/api/admin");if(!r.ok)throw Error();setData(await r.json())};const login=async(e:FormEvent)=>{e.preventDefault();const r=await fetch("/api/admin/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password})});if(!r.ok){setError("Parola yanlış.");return}await load()};const update=async(type:string,id:number,status:string)=>{await fetch("/api/admin",{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({type,id,status})});await load()};const post=async(e:FormEvent<HTMLFormElement>)=>{e.preventDefault();const f=new FormData(e.currentTarget);const r=await fetch("/api/admin/posts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.fromEntries(f))});if(!r.ok){setError("Yazı kaydedilemedi; bağlantı adı benzersiz olmalı.");return}e.currentTarget.reset();await load();setTab("posts")};if(!data)return <main className="min-h-screen bg-slate-50 p-6 pt-24"><section className="mx-auto max-w-md rounded-3xl bg-white p-8 shadow-xl"><p className="font-semibold text-orange-500">KORAY AKDAĞ</p><h1 className="mb-6 mt-2 text-3xl font-black">Yönetici Girişi</h1><form onSubmit={login} className="space-y-4"><input type="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="Yönetici parolası" className="w-full rounded-xl border p-3" required/><button className="w-full rounded-xl bg-orange-500 p-3 font-bold text-white">Giriş Yap</button>{error&&<p className="text-red-600">{error}</p>}</form></section></main>;const pending=data.comments.filter(x=>x.status==="pending").length;return <main className="min-h-screen bg-slate-50 p-4 pt-24 sm:p-8"><div className="mx-auto max-w-6xl"><header className="mb-8 flex flex-wrap items-end justify-between gap-4"><div><p className="font-semibold tracking-widest text-orange-500">KORAY AKDAĞ</p><h1 className="text-3xl font-black text-[#071A2F]">Yönetim Paneli</h1></div><button onClick={load} className="rounded-xl border bg-white px-4 py-2 font-semibold">Yenile</button></header><nav className="mb-8 flex flex-wrap gap-2">{([['posts','Blog Yazıları'],['comments',`Yorumlar (${pending})`],['messages',`İletişim Mesajları (${data.messages.length})`]] as [Tab,string][]).map(([id,label])=><button key={id} onClick={()=>setTab(id)} className={`rounded-xl px-5 py-3 font-bold ${tab===id?'bg-[#071A2F] text-white':'bg-white text-[#071A2F]'}`}>{label}</button>)}</nav>{tab==='posts'&&<><section className="rounded-3xl bg-white p-6 shadow-sm"><h2 className="mb-5 text-2xl font-bold">Yeni Blog Yazısı</h2><form onSubmit={post} className="space-y-4"><input name="title" required placeholder="Başlık" className="w-full rounded-xl border p-3"/><input name="slug" required placeholder="Bağlantı adı: yeni-yazi" pattern="[a-z0-9-]+" className="w-full rounded-xl border p-3"/><textarea name="excerpt" required placeholder="Kısa özet" className="w-full rounded-xl border p-3"/><textarea name="content" required rows={12} placeholder="Yazı içeriği" className="w-full rounded-xl border p-3"/><select name="status" className="rounded-xl border p-3"><option value="draft">Taslak kaydet</option><option value="published">Yayınla</option></select><button className="ml-3 rounded-xl bg-orange-500 px-5 py-3 font-bold text-white">Kaydet</button></form></section><section className="mt-8 rounded-3xl bg-white p-6 shadow-sm"><h2 className="mb-4 text-2xl font-bold">Yazılarınız</h2>{data.posts.length?data.posts.map(x=><p key={x.id} className="border-b py-3"><b>{x.title}</b> <span className="text-gray-500">— {x.status} — /blog/{x.slug}</span></p>):<Empty text="Henüz eklenmiş blog yazısı yok."/>}</section></>}{tab==='comments'&&<section className="rounded-3xl bg-white p-6 shadow-sm"><h2 className="mb-2 text-2xl font-bold">Yorum Onayı</h2><p className="mb-6 text-gray-600">Onaylanan yorumlar blog yazısında herkese açık görünür.</p>{data.comments.length?data.comments.map(x=><article key={x.id} className="mb-4 rounded-2xl border p-5"><div className="flex flex-wrap justify-between gap-2"><b>{x.name}</b><span className="rounded-full bg-orange-50 px-3 py-1 text-sm text-orange-700">{x.status}</span></div><p className="text-sm text-gray-500">{x.email} · {x.page}</p><p className="my-3">{x.comment}</p><button onClick={()=>update('comment',x.id,'approved')} className="mr-2 rounded-lg bg-green-600 px-4 py-2 text-white">Onayla</button><button onClick={()=>update('comment',x.id,'deleted')} className="rounded-lg bg-red-600 px-4 py-2 text-white">Sil</button></article>):<Empty text="Henüz veritabanına kaydedilmiş yorum yok. Yeni bir yorum gönderildiğinde burada görünür."/>}</section>}{tab==='messages'&&<section className="rounded-3xl bg-white p-6 shadow-sm"><h2 className="mb-6 text-2xl font-bold">İletişim Mesajları</h2>{data.messages.length?data.messages.map(x=><article key={x.id} className="mb-4 rounded-2xl border p-5"><b>{x.name}</b><p className="text-sm text-gray-500">{x.email}</p><p className="mt-3 font-semibold">{x.subject}</p><p>{x.message}</p></article>):<Empty text="Henüz veritabanına kaydedilmiş iletişim mesajı yok."/>}</section>}</div></main>}
-function Empty({text}:{text:string}){return <p className="rounded-xl bg-slate-50 p-5 text-gray-600">{text}</p>}
+
+export default function AdminPage() {
+  const [password, setPassword] = useState("");
+  const [data, setData] = useState<Data | null>(null);
+  const [error, setError] = useState("");
+  const [tab, setTab] = useState<Tab>("posts");
+  const [commentFilter, setCommentFilter] = useState<"all" | "pending" | "approved" | "rejected">("all");
+
+  const load = async () => {
+    try {
+      const r = await fetch("/api/admin");
+      if (!r.ok) throw new Error();
+      setData(await r.json());
+    } catch {
+      setError("Veriler yüklenirken hata oluştu.");
+    }
+  };
+
+  const login = async (e: FormEvent) => {
+    e.preventDefault();
+    setError("");
+    const r = await fetch("/api/admin/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+    if (!r.ok) {
+      setError("Parola yanlış.");
+      return;
+    }
+    await load();
+  };
+
+  const updateStatus = async (type: string, id: number, status: string) => {
+    await fetch("/api/admin", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ type, id, status }),
+    });
+    await load();
+  };
+
+  const postSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError("");
+    const f = new FormData(e.currentTarget);
+    const r = await fetch("/api/admin/posts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.fromEntries(f)),
+    });
+    if (!r.ok) {
+      setError("Yazı kaydedilemedi; bağlantı adı (slug) benzersiz olmalı.");
+      return;
+    }
+    e.currentTarget.reset();
+    await load();
+    setTab("posts");
+  };
+
+  if (!data) {
+    return (
+      <main className="min-h-screen bg-slate-50 p-6 pt-24">
+        <section className="mx-auto max-w-md rounded-3xl bg-white p-8 shadow-xl">
+          <p className="font-semibold text-orange-500">KORAY AKDAĞ</p>
+          <h1 className="mb-6 mt-2 text-3xl font-black">Yönetici Girişi</h1>
+          <form onSubmit={login} className="space-y-4">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Yönetici parolası"
+              className="w-full rounded-xl border p-3"
+              required
+            />
+            <button className="w-full rounded-xl bg-orange-500 p-3 font-bold text-white transition hover:bg-orange-600">
+              Giriş Yap
+            </button>
+            {error && <p className="text-sm font-semibold text-red-600">{error}</p>}
+          </form>
+        </section>
+      </main>
+    );
+  }
+
+  const pendingComments = data.comments.filter((x) => x.status === "pending").length;
+
+  const filteredComments = data.comments.filter((c) => {
+    if (commentFilter === "all") return true;
+    return c.status === commentFilter;
+  });
+
+  return (
+    <main className="min-h-screen bg-slate-50 p-4 pt-24 sm:p-8">
+      <div className="mx-auto max-w-6xl">
+        <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="font-semibold tracking-widest text-orange-500">KORAY AKDAĞ</p>
+            <h1 className="text-3xl font-black text-[#071A2F]">Yönetim Paneli</h1>
+          </div>
+          <button
+            onClick={load}
+            className="rounded-xl border bg-white px-5 py-2.5 font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50"
+          >
+            🔄 Yenile
+          </button>
+        </header>
+
+        {/* NAVIGATION TABS */}
+        <nav className="mb-8 flex flex-wrap gap-2">
+          {[
+            ["posts", "Blog Yazıları"],
+            ["comments", `Yorumlar (${pendingComments} Bekleyen)`],
+            ["messages", `İletişim Mesajları (${data.messages.length})`],
+          ].map(([id, label]) => (
+            <button
+              key={id}
+              onClick={() => setTab(id as Tab)}
+              className={`rounded-xl px-5 py-3 font-bold transition ${
+                tab === id
+                  ? "bg-[#071A2F] text-white shadow-md"
+                  : "bg-white text-[#071A2F] hover:bg-gray-100"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </nav>
+
+        {/* BLOG POSTS TAB */}
+        {tab === "posts" && (
+          <>
+            <section className="rounded-3xl bg-white p-6 shadow-sm">
+              <h2 className="mb-5 text-2xl font-bold text-[#071A2F]">Yeni Blog Yazısı</h2>
+              <form onSubmit={postSubmit} className="space-y-4">
+                <input
+                  name="title"
+                  required
+                  placeholder="Başlık"
+                  className="w-full rounded-xl border p-3 text-gray-800"
+                />
+                <input
+                  name="slug"
+                  required
+                  placeholder="Bağlantı adı (Slug): ornek-yazi-slug"
+                  pattern="[a-z0-9-]+"
+                  className="w-full rounded-xl border p-3 text-gray-800"
+                />
+                <textarea
+                  name="excerpt"
+                  required
+                  placeholder="Kısa özet / açıklama"
+                  className="w-full rounded-xl border p-3 text-gray-800"
+                />
+                <textarea
+                  name="content"
+                  required
+                  rows={10}
+                  placeholder="Yazı içeriği"
+                  className="w-full rounded-xl border p-3 text-gray-800"
+                />
+                <div className="flex items-center gap-3">
+                  <select name="status" className="rounded-xl border p-3 text-gray-800">
+                    <option value="draft">Taslak Kaydet</option>
+                    <option value="published">Yayınla</option>
+                  </select>
+                  <button className="rounded-xl bg-orange-500 px-6 py-3 font-bold text-white transition hover:bg-orange-600">
+                    Kaydet
+                  </button>
+                </div>
+              </form>
+            </section>
+
+            <section className="mt-8 rounded-3xl bg-white p-6 shadow-sm">
+              <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">Mevcut Blog Yazıları</h2>
+              {data.posts.length ? (
+                <div className="divide-y">
+                  {data.posts.map((x) => (
+                    <div key={x.id} className="py-4 flex flex-wrap items-center justify-between gap-2">
+                      <div>
+                        <b className="text-lg text-[#071A2F]">{x.title}</b>
+                        <p className="text-sm text-gray-500">/blog/{x.slug}</p>
+                      </div>
+                      <span
+                        className={`rounded-full px-3 py-1 text-xs font-bold ${
+                          x.status === "published"
+                            ? "bg-green-100 text-green-800"
+                            : "bg-amber-100 text-amber-800"
+                        }`}
+                      >
+                        {x.status === "published" ? "Yayında" : "Taslak"}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <Empty text="Henüz eklenmiş veritabanı blog yazısı yok." />
+              )}
+            </section>
+          </>
+        )}
+
+        {/* COMMENTS TAB */}
+        {tab === "comments" && (
+          <section className="rounded-3xl bg-white p-6 shadow-sm">
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-[#071A2F]">Yorum Yönetimi</h2>
+                <p className="text-sm text-gray-600">
+                  Onaylanan yorumlar ilgili blog yazısının altında yayınlanır.
+                </p>
+              </div>
+
+              {/* Status Filter */}
+              <div className="flex gap-2 rounded-xl bg-slate-100 p-1 text-sm font-semibold">
+                <button
+                  onClick={() => setCommentFilter("all")}
+                  className={`rounded-lg px-3 py-1.5 transition ${
+                    commentFilter === "all" ? "bg-white text-[#071A2F] shadow" : "text-gray-600"
+                  }`}
+                >
+                  Tümü ({data.comments.length})
+                </button>
+                <button
+                  onClick={() => setCommentFilter("pending")}
+                  className={`rounded-lg px-3 py-1.5 transition ${
+                    commentFilter === "pending" ? "bg-white text-orange-600 shadow" : "text-gray-600"
+                  }`}
+                >
+                  Bekleyen ({pendingComments})
+                </button>
+                <button
+                  onClick={() => setCommentFilter("approved")}
+                  className={`rounded-lg px-3 py-1.5 transition ${
+                    commentFilter === "approved" ? "bg-white text-green-600 shadow" : "text-gray-600"
+                  }`}
+                >
+                  Onaylanan
+                </button>
+                <button
+                  onClick={() => setCommentFilter("rejected")}
+                  className={`rounded-lg px-3 py-1.5 transition ${
+                    commentFilter === "rejected" ? "bg-white text-red-600 shadow" : "text-gray-600"
+                  }`}
+                >
+                  Reddedilen
+                </button>
+              </div>
+            </div>
+
+            {filteredComments.length ? (
+              <div className="space-y-4">
+                {filteredComments.map((x) => (
+                  <article key={x.id} className="rounded-2xl border p-5 shadow-xs bg-slate-50/50">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b pb-3">
+                      <div>
+                        <span className="font-bold text-lg text-[#071A2F]">{x.name}</span>
+                        <span className="ml-3 text-sm text-gray-500">({x.email})</span>
+                      </div>
+                      <span
+                        className={`rounded-full px-3 py-1 text-xs font-bold uppercase ${
+                          x.status === "approved"
+                            ? "bg-green-100 text-green-800"
+                            : x.status === "rejected"
+                            ? "bg-red-100 text-red-800"
+                            : "bg-amber-100 text-amber-800"
+                        }`}
+                      >
+                        {x.status === "approved"
+                          ? "Onaylandı"
+                          : x.status === "rejected"
+                          ? "Reddedildi"
+                          : "Bekliyor"}
+                      </span>
+                    </div>
+
+                    <div className="my-3">
+                      <p className="text-xs font-semibold text-orange-600">
+                        Blog Sayfası: <span className="font-mono">{x.page}</span>
+                      </p>
+                      <p className="mt-2 text-gray-800 whitespace-pre-line">{x.comment}</p>
+                      {x.created_at && (
+                        <p className="mt-2 text-xs text-gray-400">
+                          Tarih: {new Date(x.created_at).toLocaleString("tr-TR")}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="mt-4 flex flex-wrap gap-2 pt-2 border-t">
+                      {x.status !== "approved" && (
+                        <button
+                          onClick={() => updateStatus("comment", x.id, "approved")}
+                          className="rounded-lg bg-green-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-green-700"
+                        >
+                          ✅ Onayla
+                        </button>
+                      )}
+                      {x.status !== "rejected" && (
+                        <button
+                          onClick={() => updateStatus("comment", x.id, "rejected")}
+                          className="rounded-lg bg-amber-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-amber-700"
+                        >
+                          🚫 Reddet
+                        </button>
+                      )}
+                      <button
+                        onClick={() => updateStatus("comment", x.id, "deleted")}
+                        className="rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-red-700"
+                      >
+                        🗑️ Sil
+                      </button>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <Empty text="Bu filtreye uygun kayıtlı yorum bulunamadı." />
+            )}
+          </section>
+        )}
+
+        {/* MESSAGES TAB */}
+        {tab === "messages" && (
+          <section className="rounded-3xl bg-white p-6 shadow-sm">
+            <h2 className="mb-6 text-2xl font-bold text-[#071A2F]">İletişim Mesajları</h2>
+            {data.messages.length ? (
+              <div className="space-y-4">
+                {data.messages.map((x) => (
+                  <article key={x.id} className="rounded-2xl border p-5 shadow-xs">
+                    <div className="flex items-center justify-between border-b pb-2">
+                      <b className="text-lg text-[#071A2F]">{x.name}</b>
+                      <span className="text-sm text-gray-500">{x.email}</span>
+                    </div>
+                    <p className="mt-3 font-semibold text-orange-600">{x.subject}</p>
+                    <p className="mt-1 text-gray-800 whitespace-pre-line">{x.message}</p>
+                    {x.created_at && (
+                      <p className="mt-3 text-xs text-gray-400">
+                        {new Date(x.created_at).toLocaleString("tr-TR")}
+                      </p>
+                    )}
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <Empty text="Henüz veritabanına kaydedilmiş iletişim mesajı yok." />
+            )}
+          </section>
+        )}
+      </div>
+    </main>
+  );
+}
+
+function Empty({ text }: { text: string }) {
+  return <p className="rounded-xl bg-slate-50 p-5 text-gray-600">{text}</p>;
+}

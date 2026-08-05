@@ -51,17 +51,25 @@ export async function PATCH(request: Request) {
   await initializeDatabase();
 
   if (type === "comment") {
-    await sql`
-      UPDATE comments
-      SET status = ${status}
-      WHERE id = ${id}
-    `;
+    if (status === "deleted") {
+      await sql`DELETE FROM comments WHERE id = ${id}`;
+    } else {
+      await sql`
+        UPDATE comments
+        SET status = ${status}
+        WHERE id = ${id}
+      `;
+    }
   } else if (type === "message") {
-    await sql`
-      UPDATE contact_messages
-      SET status = ${status}
-      WHERE id = ${id}
-    `;
+    if (status === "deleted") {
+      await sql`DELETE FROM contact_messages WHERE id = ${id}`;
+    } else {
+      await sql`
+        UPDATE contact_messages
+        SET status = ${status}
+        WHERE id = ${id}
+      `;
+    }
   } else {
     return Response.json(
       { error: "Geçersiz kayıt türü" },

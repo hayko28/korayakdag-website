@@ -15,7 +15,7 @@ const BlogPage = () => {
           <p>This is an example of a blog post content. You can replace this with your actual blog post content.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h2>Section Title</h2>
-          <p>Here's another paragraph of content. This section could be about a specific topic within your blog post.</p>
+          <p>Here&apos;s another paragraph of content. This section could be about a specific topic within your blog post.</p>
           <BlogToc />
           <BlogCta />
         </div>

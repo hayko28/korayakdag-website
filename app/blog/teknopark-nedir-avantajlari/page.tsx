@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
+import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title:
@@ -25,67 +24,15 @@ export const metadata: Metadata = {
 
 export default function TeknoparkPage() {
   return (
-    <main className="bg-white text-gray-700">
-
-      {/* HERO */}
-
-      <section className="relative h-[520px] overflow-hidden">
-
-        <Image
-          src="/teknopark-kapak.png"
-          alt="Teknopark ve Ar-Ge"
-          fill
-          priority
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="absolute inset-0 flex items-center">
-
-          <div className="mx-auto w-full max-w-6xl px-6">
-
-            <div className="mb-6">
-
-              <Link
-                href="/blog"
-                className="text-orange-400 hover:text-orange-300"
-              >
-                Blog
-              </Link>
-
-              <span className="mx-2 text-white">/</span>
-
-              <span className="text-white">
-                Teknopark
-              </span>
-
-            </div>
-
-            <div className="inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white">
-              TEKNOPARK • AR-GE • YAZILIM
-            </div>
-
-            <h1 className="mt-8 max-w-5xl text-4xl font-black leading-tight text-white sm:text-5xl">
-              Teknopark Nedir? Avantajları, Vergi İstisnaları ve Başvuru Rehberi
-            </h1>
-
-            <p className="mt-8 max-w-4xl text-xl leading-9 text-gray-200">
-              Teknoparka kimler girebilir, mevcut şirket ve çalışanlar
-              teknoparka nasıl aktarılabilir, hangi vergi ve SGK avantajları
-              sağlanır, uzaktan çalışma mümkün müdür ve KDV istisnası nasıl
-              uygulanır? Tüm önemli detayları tek bir rehberde inceleyelim.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* CONTENT */}
-
-      <section className="mx-auto max-w-5xl px-6 py-16">
+    <BlogLayout
+      title="Teknopark Nedir? Avantajları, Vergi İstisnaları ve Başvuru Rehberi"
+      description="Teknoparka kimler girebilir, mevcut şirket ve çalışanlar teknoparka nasıl aktarılabilir, hangi vergi ve SGK avantajları sağlanır, uzaktan çalışma mümkün müdür ve KDV istisnası nasıl uygulanır? Tüm önemli detayları tek bir rehberde inceleyelim."
+      category="TEKNOPARK • AR-GE • YAZILIM"
+      date="2026"
+      readTime="15 Dakika"
+      coverImage="/teknopark-kapak.png"
+      slug="teknopark-nedir-avantajlari"
+    >
 
         {/* GİRİŞ */}
 
@@ -96,7 +43,7 @@ export default function TeknoparkPage() {
           </h2>
 
           <p className="text-lg leading-9">
-            Türkiye’de teknolojik üretimi teşvik etmek, üniversite-sanayi
+            Türkiye&apos;de teknolojik üretimi teşvik etmek, üniversite-sanayi
             iş birliğini desteklemek ve yüksek katma değerli projelerin önünü
             açmak amacıyla kurulan teknoparklar, özellikle yazılım, Ar-Ge ve
             inovasyon odaklı şirketler açısından önemli fırsatlar sunmaktadır.
@@ -1149,7 +1096,7 @@ export default function TeknoparkPage() {
 
           <p className="mb-6 text-lg leading-9">
             Teknoparklar, yalnızca yeni kurulmuş teknoloji girişimleri için
-            değil; mevcut teknoloji şirketleri, yazılım ekipleri, start-up'lar
+            değil; mevcut teknoloji şirketleri, yazılım ekipleri, start-up&apos;lar
             ve Ar-Ge faaliyetlerini geliştirmek isteyen işletmeler için de
             önemli fırsatlar sunmaktadır.
           </p>
@@ -1171,44 +1118,7 @@ export default function TeknoparkPage() {
             gelir kalemleri, çalışanların görevleri ve ilgili mevzuat
             şartları birlikte değerlendirilmelidir.
           </p>
-
-          <div className="rounded-3xl bg-[#071A2F] p-10 text-white">
-
-            <h3 className="mb-5 text-3xl font-bold">
-              Şirketiniz İçin Teknopark Fırsatlarını Birlikte Değerlendirelim
-            </h3>
-
-            <p className="mb-8 text-lg leading-8 text-gray-300">
-              Mevcut şirketinizle teknoparka girip giremeyeceğinizi,
-              faaliyetlerinizin Ar-Ge ve yazılım projesine nasıl
-              dönüştürülebileceğini, ofis ve personel yapınızı ve
-              yararlanabileceğiniz teşvikleri birlikte değerlendirebiliriz.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-
-              <Link
-                href="/iletisim"
-                className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
-              >
-                İletişime Geç
-              </Link>
-
-              <Link
-                href="/blog"
-                className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
-              >
-                Diğer Yazılar
-              </Link>
-
-            </div>
-
-          </div>
-
         </section>
-
-      </section>
-
-    </main>
+    </BlogLayout>
   );
 }
