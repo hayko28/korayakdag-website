@@ -128,8 +128,21 @@ const services = [
   },
 ];
 
+const COLUMN_COUNT = 3;
+
+function toColumns<T>(items: T[], columnCount: number): T[][] {
+  const perColumn = Math.ceil(items.length / columnCount);
+  return Array.from({ length: columnCount }, (_, col) =>
+    items.slice(col * perColumn, col * perColumn + perColumn)
+  );
+}
+
 export default function Services() {
   const [open, setOpen] = useState<number | null>(null);
+  const columns = toColumns(
+    services.map((service, index) => ({ service, index })),
+    COLUMN_COUNT
+  );
 
   return (
     <section
@@ -148,41 +161,45 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="space-y-4">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="rounded-2xl bg-white/5 border border-white/10 overflow-hidden transition hover:border-orange-400"
-            >
-              <button
-                onClick={() =>
-                  setOpen(open === index ? null : index)
-                }
-                className="w-full flex justify-between items-center px-6 py-5 text-left"
-              >
-                <h3 className="text-lg lg:text-xl font-semibold">
-                  {service.title}
-                </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+          {columns.map((column, colIndex) => (
+            <div key={colIndex} className="flex flex-col gap-4">
+              {column.map(({ service, index }) => (
+                <div
+                  key={index}
+                  className="rounded-2xl bg-white/5 border border-white/10 overflow-hidden transition hover:border-orange-400"
+                >
+                  <button
+                    onClick={() =>
+                      setOpen(open === index ? null : index)
+                    }
+                    className="w-full flex justify-between items-center px-6 py-5 text-left"
+                  >
+                    <h3 className="text-lg lg:text-xl font-semibold">
+                      {service.title}
+                    </h3>
 
-                <span className="text-3xl text-orange-400 font-light">
-                  {open === index ? "−" : "+"}
-                </span>
-              </button>
+                    <span className="text-3xl text-orange-400 font-light">
+                      {open === index ? "−" : "+"}
+                    </span>
+                  </button>
 
-              {open === index && (
-                <div className="px-6 pb-6">
-                  <ul className="grid md:grid-cols-2 gap-3">
-                    {service.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
-                      >
-                        ✔ {item}
-                      </li>
-                    ))}
-                  </ul>
+                  {open === index && (
+                    <div className="px-6 pb-6">
+                      <ul className="grid gap-3">
+                        {service.items.map((item, i) => (
+                          <li
+                            key={i}
+                            className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
+                          >
+                            ✔ {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-              )}
+              ))}
             </div>
           ))}
         </div>
