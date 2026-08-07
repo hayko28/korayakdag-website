@@ -31,8 +31,11 @@ html, body {
 }
 
 /* 3. Sadece Mobil Ekran Düzenlemeleri (Masaüstü Hero yüksekliğini bozmaz) */
+/* next/image "fill" modundaki görseller (data-nimg="fill") hariç tutulur; */
+/* aksi halde bu kural onların height:100% stilini ezip Hero ve kapak */
+/* görsellerinin altında boşluk bırakıyordu. */
 @media (max-width: 768px) {
-  img {
+  img:not([data-nimg="fill"]) {
     max-width: 100% !important;
     height: auto !important;
   }
