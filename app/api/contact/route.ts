@@ -22,13 +22,17 @@ export async function POST(request: Request) {
     `;
 
     // E-posta gönder
+    const siteOrigin = new URL(request.url).origin;
+
     const mailResponse = await fetch(
-      "https://formsubmit.co/ajax/beysultan34@gmail.com",
+      "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
+          Referer: `${siteOrigin}/`,
+          Origin: siteOrigin,
         },
         body: JSON.stringify({
           name,
@@ -41,10 +45,24 @@ export async function POST(request: Request) {
       }
     );
 
-    if (!mailResponse.ok) {
-      const errorText = await mailResponse.text();
+    const mailResponseText = await mailResponse.text();
+    let mailResult: { success?: boolean | string; message?: string } | null = null;
+    try {
+      mailResult = JSON.parse(mailResponseText);
+    } catch {
+      mailResult = null;
+    }
 
-      console.error("FormSubmit hatası:", errorText);
+    console.log("FormSubmit yanıtı:", mailResponse.status, mailResponseText);
+
+    const mailSucceeded =
+      mailResponse.ok &&
+      mailResult !== null &&
+      mailResult.success !== false &&
+      mailResult.success !== "false";
+
+    if (!mailSucceeded) {
+      console.error("FormSubmit hatası:", mailResponse.status, mailResponseText);
 
       return Response.json(
         {

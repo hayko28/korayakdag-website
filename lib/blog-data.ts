@@ -15,7 +15,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Başvuru şartları, destek oranları, değerlendirme kriterleri, desteklenen giderler ve 2026 yılında değişen tüm kuralların yer aldığı kapsamlı rehber.",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
-    readTime: "12 Dakika"
+    readTime: "12 Dakika",
+    image: "/tubitak-1501-1507-kapak.png"
   },
   {
     slug: "teknopark-nedir-avantajlari",
