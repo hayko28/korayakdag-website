@@ -1,23 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { initializeDatabase, sql } from "@/lib/database";
-
-const posts = [
-  {
-    slug: "tubitak-1501-1507-ar-ge-destekleri-2026",
-    title: "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri (2026)",
-    excerpt:
-      "2026 ikinci dönem çağrısında neler değişti, kimler başvurabilir ve güçlü bir başvuru nasıl kurgulanır?",
-    image: "/tubitak-1501-1507-kapak.png",
-  },
-  {
-    slug: "teknopark-nedir-avantajlari",
-    title: "Teknopark Nedir? Avantajları Nelerdir?",
-    excerpt:
-      "Teknopark başvurusu, vergi ve KDV avantajları, SGK teşvikleri, uzaktan çalışma, proje türleri ve Ar-Ge Merkezi farkları.",
-    image: "/teknopark-kapak.png",
-  },
-];
+import { BLOG_POSTS } from "@/lib/blog-data";
 
 export default async function Blog() {
   await initializeDatabase();
@@ -29,7 +13,7 @@ export default async function Blog() {
     ORDER BY published_at DESC
   `;
 
-  const allPosts = [...posts, ...databasePosts];
+  const allPosts = [...BLOG_POSTS, ...databasePosts].slice(0, 3);
 
   return (
     <section
@@ -128,6 +112,15 @@ export default async function Blog() {
 
             ))}
 
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/blog"
+            className="inline-block rounded-xl border-2 border-[#071A2F] px-8 py-3 font-semibold text-[#071A2F] transition hover:bg-[#071A2F] hover:text-white"
+          >
+            Tüm Yazılar →
+          </Link>
         </div>
 
       </div>

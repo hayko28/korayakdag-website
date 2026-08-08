@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import BlogHero from "@/components/blog/BlogHero";
+import BlogList from "@/components/blog/BlogList";
 import { BLOG_POSTS } from "@/lib/blog-data";
 import { initializeDatabase, sql } from "@/lib/database";
 
@@ -16,7 +16,13 @@ const BlogPage = async () => {
     ORDER BY published_at DESC
   `;
 
-  const allPosts = [...BLOG_POSTS, ...databasePosts];
+  const allPosts = [...BLOG_POSTS, ...databasePosts] as {
+    slug: string;
+    title: string;
+    excerpt: string;
+    category?: string;
+    image?: string;
+  }[];
 
   return (
     <div className="bg-white">
@@ -24,42 +30,7 @@ const BlogPage = async () => {
 
       <section className="pb-16 pt-5">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {allPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="block rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2"
-              >
-                {"image" in post && post.image ? (
-                  <div className="relative mb-6 h-48 overflow-hidden rounded-2xl">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ) : (
-                  <div className="mb-6 flex h-48 items-center justify-center rounded-2xl bg-orange-50 text-5xl">
-                    ✍️
-                  </div>
-                )}
-
-                <h2 className="text-2xl font-bold text-[#071A2F]">
-                  {post.title}
-                </h2>
-
-                <p className="mt-4 leading-relaxed text-gray-600">
-                  {post.excerpt}
-                </p>
-
-                <span className="mt-4 inline-block font-semibold text-orange-500">
-                  Devamını Oku →
-                </span>
-              </Link>
-            ))}
-          </div>
+          <BlogList posts={allPosts} />
         </div>
       </section>
 

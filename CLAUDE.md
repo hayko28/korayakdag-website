@@ -99,3 +99,4 @@ Ancak:
 5. Performans
 6. Token/context verimliliği
 7. Görsel iyileştirme@AGENTS.md
+Bir komut verildiğinde öncelikle şu şekilde planladım ve yapacağım de .Benden onay al ve sonra uygulamaya geç
