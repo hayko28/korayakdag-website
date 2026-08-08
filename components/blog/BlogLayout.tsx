@@ -1,8 +1,38 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BlogComments from "@/components/blog/BlogComments";
+import OtherPosts from "@/components/blog/OtherPosts";
+import SearchHighlight from "@/components/blog/SearchHighlight";
+import BackButton from "@/components/BackButton";
 import { BLOG_POSTS } from "@/lib/blog-data";
+
+const STRINGS = {
+  tr: {
+    home: "🏠 Ana Sayfa",
+    updated: "📅 Güncelleme:",
+    readTime: "⏱️ Okuma Süresi:",
+    tagFallback: "Blog",
+    ctaHeading: "Sorularınız veya Danışmanlık İhtiyacınız mı Var?",
+    ctaText:
+      "Şirketiniz için en uygun destek ve teşvik programlarını belirlemek, başvuru sürecinizi doğru yönetmek ve profesyonel destek almak için bizimle iletişime geçebilirsiniz.",
+    contact: "İletişime Geç",
+    otherArticlesLink: "Diğer Yazılar",
+    home2: "Ana Sayfa",
+  },
+  en: {
+    home: "🏠 Home",
+    updated: "📅 Updated:",
+    readTime: "⏱️ Reading Time:",
+    tagFallback: "Blog",
+    ctaHeading: "Have Questions or Need Consulting?",
+    ctaText:
+      "Get in touch with us to determine the most suitable support and incentive programs for your company, manage your application process correctly, and get professional guidance.",
+    contact: "Get in Touch",
+    otherArticlesLink: "Other Articles",
+    home2: "Home",
+  },
+};
 
 interface BlogLayoutProps {
   title: string;
@@ -12,6 +42,7 @@ interface BlogLayoutProps {
   readTime: string;
   coverImage?: string;
   slug?: string;
+  lang?: "tr" | "en";
   children: React.ReactNode;
 }
 
@@ -23,9 +54,18 @@ export default function BlogLayout({
   readTime,
   coverImage,
   slug,
+  lang = "tr",
   children,
 }: BlogLayoutProps) {
-  const otherPosts = BLOG_POSTS.filter((p) => p.slug !== slug);
+  // EN tarafında henüz çevrilmiş yazı listesi olmadığı için (TR statik
+  // yazıların İngilizce karşılığı yok), "Diğer Blog Yazıları" bölümü EN
+  // sayfalarda gösterilmiyor. TR davranışı değişmiyor.
+  const otherPosts = lang === "en" ? [] : BLOG_POSTS.filter((p) => p.slug !== slug);
+  const t = STRINGS[lang];
+  const homeHref = lang === "en" ? "/en" : "/";
+  const blogHref = lang === "en" ? "/en#blog" : "/#blog";
+  const blogListHref = lang === "en" ? "/en/blog" : "/blog";
+  const contactHref = lang === "en" ? "/en#contact" : "/#contact";
 
   return (
     <main className="bg-white text-gray-700">
@@ -51,7 +91,7 @@ export default function BlogLayout({
           <div className="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
             <div className="flex items-center gap-2 text-sm font-medium">
               <Link
-                href="/#blog"
+                href={blogHref}
                 className="text-orange-400 transition hover:text-orange-300 hover:underline"
               >
                 Blog
@@ -62,12 +102,19 @@ export default function BlogLayout({
               </span>
             </div>
 
-            <Link
-              href="/"
-              className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-base font-bold text-white transition hover:bg-white hover:text-[#071A2F]"
-            >
-              🏠 Ana Sayfa
-            </Link>
+            <div className="flex items-center gap-3">
+              <BackButton
+                lang={lang}
+                fallbackHref={blogListHref}
+                className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-base font-bold text-white transition hover:bg-white hover:text-[#071A2F]"
+              />
+              <Link
+                href={homeHref}
+                className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-base font-bold text-white transition hover:bg-white hover:text-[#071A2F]"
+              >
+                {t.home}
+              </Link>
+            </div>
           </div>
 
           <div className="inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md">
@@ -84,80 +131,66 @@ export default function BlogLayout({
 
           <div className="mt-10 flex flex-wrap gap-4">
             <span className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-sm">
-              📅 Güncelleme: {date}
+              {t.updated} {date}
             </span>
             <span className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-sm">
-              ⏱️ Okuma Süresi: {readTime}
+              {t.readTime} {readTime}
             </span>
             <span className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-sm">
-              🏷️ {category.split("•")[0]?.trim() || "Blog"}
+              🏷️ {category.split("•")[0]?.trim() || t.tagFallback}
             </span>
           </div>
         </div>
       </section>
 
       {/* ARTICLE CONTENT */}
-      <section className="mx-auto max-w-5xl px-6 py-16">{children}</section>
+      <section id="article-content" className="mx-auto max-w-5xl px-6 py-16">
+        {children}
+      </section>
+      <Suspense fallback={null}>
+        <SearchHighlight />
+      </Suspense>
 
       {/* FOOTER CTA SECTION */}
       <section className="mx-auto max-w-5xl px-6 pb-12">
         <div className="rounded-3xl bg-[#071A2F] p-10 text-white shadow-xl">
           <h3 className="mb-5 text-3xl font-bold">
-            Sorularınız veya Danışmanlık İhtiyacınız mı Var?
+            {t.ctaHeading}
           </h3>
           <p className="mb-8 text-lg leading-8 text-gray-300">
-            Şirketiniz için en uygun destek ve teşvik programlarını belirlemek,
-            başvuru sürecinizi doğru yönetmek ve profesyonel destek almak için
-            bizimle iletişime geçebilirsiniz.
+            {t.ctaText}
           </p>
 
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/#contact"
+              href={contactHref}
               className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600 shadow-lg"
             >
-              İletişime Geç
+              {t.contact}
             </Link>
             <Link
-              href="/#blog"
+              href={blogHref}
               className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
             >
-              Diğer Yazılar
+              {t.otherArticlesLink}
             </Link>
             <Link
-              href="/"
+              href={homeHref}
               className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
             >
-              Ana Sayfa
+              {t.home2}
             </Link>
           </div>
 
-          {otherPosts.length > 0 && (
-            <div className="mt-10 border-t border-white/10 pt-8">
-              <h4 className="mb-4 text-xl font-bold text-orange-400">
-                Diğer Blog Yazıları
-              </h4>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {otherPosts.map((post) => (
-                  <Link
-                    key={post.slug}
-                    href={`/blog/${post.slug}`}
-                    className="block rounded-2xl border border-white/15 bg-white/5 p-5 transition hover:bg-white/10"
-                  >
-                    <p className="text-xs font-semibold text-orange-400">
-                      {post.category}
-                    </p>
-                    <h5 className="mt-2 text-lg font-bold text-white line-clamp-2">
-                      {post.title}
-                    </h5>
-                    <p className="mt-2 text-sm text-gray-300 line-clamp-2">
-                      {post.excerpt}
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <div className="mt-4">
+            <BackButton
+              lang={lang}
+              fallbackHref={blogListHref}
+              className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
+            />
+          </div>
+
+          <OtherPosts posts={otherPosts} lang={lang} />
         </div>
 
         {/* COMMENTS SECTION */}

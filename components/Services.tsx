@@ -2,131 +2,263 @@
 
 import { useState } from "react";
 
-const services = [
-  {
-    title: "⚖️ Hukuk Danışmanlığı",
-    items: [
-      "Sözleşme Hukuku",
-      "Dava Hukuku",
-      "İş Hukuku",
-      "Vergi Hukuku",
-      "Halka Arz",
-      "Şirket Kurma",
-      "KVKK Danışmanlığı",
-      "Aile Anayasası",
-      "Tasfiye ve Tür Değişikliği",
-    ],
-  },
-  {
-    title: "🌍 Yurt Dışı Şirket Kuruluşları",
-    items: [
-      "🇵🇱 Polonya",
-      "🇮🇹 İtalya",
-      "🇩🇪 Almanya",
-      "🇬🇧 İngiltere",
-      "🇳🇱 Hollanda",
-      "🇦🇪 Birleşik Arap Emirlikleri (Dubai)",
-      "🇸🇦 Suudi Arabistan",
-      "🇺🇸 Amerika Birleşik Devletleri",
-      "🇸🇬 Singapur",
-      "🇦🇿 Azerbaycan",
-      "🇰🇿 Kazakistan",
-      "🇺🇿 Özbekistan",
-      "🇧🇬 Bulgaristan",
-    ],
-  },
-  {
-    title: "🚀 İhracat Teşvikleri",
-    items: [
-      "Uluslararası İş Geliştirme",
-      "Yurt Dışı Pazar Analizleri",
-      "Ticaret Bakanlığı Destekleri",
-    ],
-  },
-  {
-    title: "💻 Teknoloji ve Ar-Ge Destekleri",
-    items: [
-      "Teknopark'a Giriş",
-      "Ar-Ge Tasarım Merkezi",
-      "TEKMER Danışmanlığı",
-      "Proje Yazımı",
-      "Mali ve Teknik Sürdürme Hizmetleri",
-    ],
-  },
-  {
-    title: "💰 Yatırım Destekleri",
-    items: [
-      "TÜBİTAK Destekleri",
-      "TURQUALITY",
-      "KOSGEB",
-      "Yatırım Teşvik Belgesi",
-      "IPARD",
-      "TKDK",
-      "Tarım ve Hayvancılık Destekleri",
-    ],
-  },
-  {
-    title: "📊 Vergi ve Finansal Yönetim",
-    items: [
-      "Ulusal Vergi Danışmanlığı",
-      "Uluslararası Vergi Danışmanlığı",
-      "Mali ve Finansal Danışmanlık",
-    ],
-  },
-  {
-    title: "📈 Şirket Değerleme",
-    items: [
-      "Şirket Değerleme",
-      "Şirket Birleşmesi (M&A)",
-      "Due Diligence",
-      "Finansal Analiz",
-    ],
-  },
-  {
-    title: "🧾 Yeminli Mali Müşavirlik",
-    items: [
-      "Bağımsız Denetim",
-      "Tam Tasdik",
-      "KDV İade",
-    ],
-  },
-  {
-    title: "🌱 Sürdürülebilirlik",
-    items: [
-      "Karbon Ayak İzi",
-      "Su Ayak İzi",
-      "TSRS ve Sürdürülebilirlik Raporları",
-      "Güvence Denetimi",
-    ],
-  },
-  {
-    title: "🛡️ Marka ve Patent",
-    items: [
-      "Patent Başvurusu",
-      "Yurt İçi Marka Başvurusu",
-      "Yurt Dışı Marka Başvurusu",
-      "Marka Tescili",
-      "Telif Hakları",
-    ],
-  },
-  {
-    title: "👥 SGK ve Bordro",
-    items: [
-      "Sosyal Güvenlik Mevzuatı Danışmanlığı",
-      "Fesih, İhbar ve Kıdem Mevzuatı",
-      "SGK Teşvikleri",
-      "Bordro Hizmeti",
-    ],
-  },
-  {
-    title: "🌐 Uluslararası Fon ve Kredi Danışmanlığı",
-    items: [
-      "Uluslararası Fon Danışmanlığı",
-      "Kredi Süreçleri",
-      "Yatırım Finansmanı",
-    ],
-  },
-];
+const servicesByLang = {
+  tr: [
+    {
+      title: "⚖️ Hukuk Danışmanlığı",
+      items: [
+        "Sözleşme Hukuku",
+        "Dava Hukuku",
+        "İş Hukuku",
+        "Vergi Hukuku",
+        "Halka Arz",
+        "Şirket Kurma",
+        "KVKK Danışmanlığı",
+        "Aile Anayasası",
+        "Tasfiye ve Tür Değişikliği",
+      ],
+    },
+    {
+      title: "🌍 Yurt Dışı Şirket Kuruluşları",
+      items: [
+        "🇵🇱 Polonya",
+        "🇮🇹 İtalya",
+        "🇩🇪 Almanya",
+        "🇬🇧 İngiltere",
+        "🇳🇱 Hollanda",
+        "🇦🇪 Birleşik Arap Emirlikleri (Dubai)",
+        "🇸🇦 Suudi Arabistan",
+        "🇺🇸 Amerika Birleşik Devletleri",
+        "🇸🇬 Singapur",
+        "🇦🇿 Azerbaycan",
+        "🇰🇿 Kazakistan",
+        "🇺🇿 Özbekistan",
+        "🇧🇬 Bulgaristan",
+      ],
+    },
+    {
+      title: "🚀 İhracat Teşvikleri",
+      items: [
+        "Uluslararası İş Geliştirme",
+        "Yurt Dışı Pazar Analizleri",
+        "Ticaret Bakanlığı Destekleri",
+      ],
+    },
+    {
+      title: "💻 Teknoloji ve Ar-Ge Destekleri",
+      items: [
+        "Teknopark'a Giriş",
+        "Ar-Ge Tasarım Merkezi",
+        "TEKMER Danışmanlığı",
+        "Proje Yazımı",
+        "Mali ve Teknik Sürdürme Hizmetleri",
+      ],
+    },
+    {
+      title: "💰 Yatırım Destekleri",
+      items: [
+        "TÜBİTAK Destekleri",
+        "TURQUALITY",
+        "KOSGEB",
+        "Yatırım Teşvik Belgesi",
+        "IPARD",
+        "TKDK",
+        "Tarım ve Hayvancılık Destekleri",
+      ],
+    },
+    {
+      title: "📊 Vergi ve Finansal Yönetim",
+      items: [
+        "Ulusal Vergi Danışmanlığı",
+        "Uluslararası Vergi Danışmanlığı",
+        "Mali ve Finansal Danışmanlık",
+      ],
+    },
+    {
+      title: "📈 Şirket Değerleme",
+      items: [
+        "Şirket Değerleme",
+        "Şirket Birleşmesi (M&A)",
+        "Due Diligence",
+        "Finansal Analiz",
+      ],
+    },
+    {
+      title: "🧾 Yeminli Mali Müşavirlik",
+      items: [
+        "Bağımsız Denetim",
+        "Tam Tasdik",
+        "KDV İade",
+      ],
+    },
+    {
+      title: "🌱 Sürdürülebilirlik",
+      items: [
+        "Karbon Ayak İzi",
+        "Su Ayak İzi",
+        "TSRS ve Sürdürülebilirlik Raporları",
+        "Güvence Denetimi",
+      ],
+    },
+    {
+      title: "🛡️ Marka ve Patent",
+      items: [
+        "Patent Başvurusu",
+        "Yurt İçi Marka Başvurusu",
+        "Yurt Dışı Marka Başvurusu",
+        "Marka Tescili",
+        "Telif Hakları",
+      ],
+    },
+    {
+      title: "👥 SGK ve Bordro",
+      items: [
+        "Sosyal Güvenlik Mevzuatı Danışmanlığı",
+        "Fesih, İhbar ve Kıdem Mevzuatı",
+        "SGK Teşvikleri",
+        "Bordro Hizmeti",
+      ],
+    },
+    {
+      title: "🌐 Uluslararası Fon ve Kredi Danışmanlığı",
+      items: [
+        "Uluslararası Fon Danışmanlığı",
+        "Kredi Süreçleri",
+        "Yatırım Finansmanı",
+      ],
+    },
+  ],
+  en: [
+    {
+      title: "⚖️ Legal Consulting",
+      items: [
+        "Contract Law",
+        "Litigation Law",
+        "Labor Law",
+        "Tax Law",
+        "Public Offering (IPO)",
+        "Company Formation",
+        "Data Protection (KVKK) Consulting",
+        "Family Constitution",
+        "Liquidation & Type Conversion",
+      ],
+    },
+    {
+      title: "🌍 Overseas Company Formation",
+      items: [
+        "🇵🇱 Poland",
+        "🇮🇹 Italy",
+        "🇩🇪 Germany",
+        "🇬🇧 United Kingdom",
+        "🇳🇱 Netherlands",
+        "🇦🇪 United Arab Emirates (Dubai)",
+        "🇸🇦 Saudi Arabia",
+        "🇺🇸 United States",
+        "🇸🇬 Singapore",
+        "🇦🇿 Azerbaijan",
+        "🇰🇿 Kazakhstan",
+        "🇺🇿 Uzbekistan",
+        "🇧🇬 Bulgaria",
+      ],
+    },
+    {
+      title: "🚀 Export Incentives",
+      items: [
+        "International Business Development",
+        "Overseas Market Analysis",
+        "Ministry of Trade Support Programs",
+      ],
+    },
+    {
+      title: "💻 Technology & R&D Support",
+      items: [
+        "Technopark Entry",
+        "R&D / Design Center",
+        "TEKMER Consulting",
+        "Project Writing",
+        "Financial & Technical Follow-up Services",
+      ],
+    },
+    {
+      title: "💰 Investment Incentives",
+      items: [
+        "TÜBİTAK Grants",
+        "TURQUALITY",
+        "KOSGEB",
+        "Investment Incentive Certificate",
+        "IPARD",
+        "TKDK",
+        "Agriculture & Livestock Support",
+      ],
+    },
+    {
+      title: "📊 Tax & Financial Management",
+      items: [
+        "Domestic Tax Consulting",
+        "International Tax Consulting",
+        "Financial & Fiscal Consulting",
+      ],
+    },
+    {
+      title: "📈 Company Valuation",
+      items: [
+        "Company Valuation",
+        "Mergers & Acquisitions (M&A)",
+        "Due Diligence",
+        "Financial Analysis",
+      ],
+    },
+    {
+      title: "🧾 Certified Public Accountancy",
+      items: [
+        "Independent Audit",
+        "Full Certification (Tam Tasdik)",
+        "VAT Refund",
+      ],
+    },
+    {
+      title: "🌱 Sustainability",
+      items: [
+        "Carbon Footprint",
+        "Water Footprint",
+        "TSRS & Sustainability Reports",
+        "Assurance Audit",
+      ],
+    },
+    {
+      title: "🛡️ Trademark & Patent",
+      items: [
+        "Patent Application",
+        "Domestic Trademark Application",
+        "International Trademark Application",
+        "Trademark Registration",
+        "Copyrights",
+      ],
+    },
+    {
+      title: "👥 Social Security & Payroll",
+      items: [
+        "Social Security Legislation Consulting",
+        "Termination, Notice & Severance Legislation",
+        "Social Security Incentives",
+        "Payroll Services",
+      ],
+    },
+    {
+      title: "🌐 International Funding & Credit Consulting",
+      items: [
+        "International Fund Consulting",
+        "Credit Processes",
+        "Investment Financing",
+      ],
+    },
+  ],
+};
+
+const STRINGS = {
+  tr: { label: "Hizmetler", heading: "Profesyonel Danışmanlık Hizmetleri" },
+  en: { label: "Services", heading: "Professional Consulting Services" },
+};
 
 const COLUMN_COUNT = 3;
 
@@ -137,8 +269,10 @@ function toColumns<T>(items: T[], columnCount: number): T[][] {
   );
 }
 
-export default function Services() {
+export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
   const [open, setOpen] = useState<number | null>(null);
+  const services = servicesByLang[lang];
+  const t = STRINGS[lang];
   const columns = toColumns(
     services.map((service, index) => ({ service, index })),
     COLUMN_COUNT
@@ -153,11 +287,11 @@ export default function Services() {
 
         <div className="text-center mb-14">
           <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-5">
-            Hizmetler
+            {t.label}
           </p>
 
           <h2 className="text-4xl lg:text-5xl font-bold mt-4">
-            Profesyonel Danışmanlık Hizmetleri
+            {t.heading}
           </h2>
         </div>
 

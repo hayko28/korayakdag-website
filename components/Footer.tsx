@@ -1,4 +1,11 @@
-export default function Footer() {
+const STRINGS = {
+  tr: { title: "Strateji ve İş Geliştirme Danışmanı", rights: "© 2026 Tüm Hakları Saklıdır." },
+  en: { title: "Strategy & Business Development Consultant", rights: "© 2026 All Rights Reserved." },
+};
+
+export default function Footer({ lang = "tr" }: { lang?: "tr" | "en" }) {
+  const t = STRINGS[lang];
+
   return (
     <footer className="bg-[#031120] text-gray-400 py-10">
 
@@ -10,12 +17,12 @@ export default function Footer() {
           </h3>
 
           <p className="mt-2">
-            Strateji ve İş Geliştirme Danışmanı
+            {t.title}
           </p>
         </div>
 
         <p>
-          © 2026 Tüm Hakları Saklıdır.
+          {t.rights}
         </p>
 
       </div>

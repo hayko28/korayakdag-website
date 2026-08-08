@@ -2,18 +2,47 @@ import Link from "next/link";
 import Image from "next/image";
 import { initializeDatabase, sql } from "@/lib/database";
 import { BLOG_POSTS } from "@/lib/blog-data";
+import { EN_STATIC_POSTS } from "@/lib/blog-translations";
 
-export default async function Blog() {
+const STRINGS = {
+  tr: {
+    label: "Blog",
+    heading: "Yazılarım",
+    readMore: "Devamını Oku →",
+    emptyTitle: "Blog Yazısı",
+    emptyText:
+      "Yakında yatırım teşvikleri, iş geliştirme, satış yönetimi ve strateji üzerine içerikler burada yayınlanacak.",
+    allPosts: "Tüm Yazılar →",
+  },
+  en: {
+    label: "Blog",
+    heading: "Articles",
+    readMore: "Read More →",
+    emptyTitle: "Article",
+    emptyText:
+      "More articles on investment incentives, business development, sales management, and strategy are coming soon.",
+    allPosts: "All Articles →",
+  },
+};
+
+export default async function Blog({
+  lang = "tr",
+}: {
+  lang?: "tr" | "en";
+}) {
   await initializeDatabase();
 
   const databasePosts = await sql`
     SELECT slug, title, excerpt
     FROM posts
-    WHERE status = 'published'
+    WHERE status = 'published' AND locale = ${lang}
     ORDER BY published_at DESC
   `;
 
-  const allPosts = [...BLOG_POSTS, ...databasePosts].slice(0, 3);
+  const staticPosts = lang === "en" ? EN_STATIC_POSTS : BLOG_POSTS;
+  const allPosts = [...staticPosts, ...databasePosts].slice(0, 9);
+  const basePath = lang === "en" ? "/en/blog" : "/blog";
+  const t = STRINGS[lang];
 
   return (
     <section
@@ -27,11 +56,11 @@ export default async function Blog() {
         <div className="mb-12 text-center">
 
           <p className="mb-3 text-lg font-bold uppercase tracking-[2px] text-orange-500 sm:text-xl">
-            Blog
+            {t.label}
           </p>
 
           <h2 className="text-3xl font-black text-[#071A2F] sm:text-4xl lg:text-5xl">
-            Yazılarım
+            {t.heading}
           </h2>
 
         </div>
@@ -45,7 +74,7 @@ export default async function Blog() {
 
             <Link
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={`${basePath}/${post.slug}`}
               className="block rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2"
             >
 
@@ -79,7 +108,7 @@ export default async function Blog() {
               </p>
 
               <span className="mt-4 inline-block font-semibold text-orange-500">
-                Devamını Oku →
+                {t.readMore}
               </span>
 
             </Link>
@@ -87,10 +116,10 @@ export default async function Blog() {
           ))}
 
 
-          {/* 3. KART - YAKINDA */}
+          {/* YAKINDA KARTLARI */}
 
-          {allPosts.length < 3 &&
-            Array.from({ length: 3 - allPosts.length }).map((_, item) => (
+          {allPosts.length < 9 &&
+            Array.from({ length: 9 - allPosts.length }).map((_, item) => (
 
               <div
                 key={`empty-${item}`}
@@ -100,12 +129,11 @@ export default async function Blog() {
                 <div className="mb-6 h-48 rounded-2xl bg-gray-100" />
 
                 <h3 className="text-2xl font-bold text-[#071A2F]">
-                  Blog Yazısı
+                  {t.emptyTitle}
                 </h3>
 
                 <p className="mt-4 leading-relaxed text-gray-600">
-                  Yakında yatırım teşvikleri, iş geliştirme, satış yönetimi
-                  ve strateji üzerine içerikler burada yayınlanacak.
+                  {t.emptyText}
                 </p>
 
               </div>
@@ -116,10 +144,10 @@ export default async function Blog() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/blog"
+            href={basePath}
             className="inline-block rounded-xl border-2 border-[#071A2F] px-8 py-3 font-semibold text-[#071A2F] transition hover:bg-[#071A2F] hover:text-white"
           >
-            Tüm Yazılar →
+            {t.allPosts}
           </Link>
         </div>
 

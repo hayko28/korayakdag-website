@@ -12,46 +12,71 @@ interface BlogListPost {
   image?: string;
 }
 
-function primaryCategory(category?: string) {
-  if (!category) return "Diğer";
+const STRINGS = {
+  tr: { all: "Tümü", other: "Diğer", readMore: "Devamını Oku →", viewAll: "Tüm Yazılar →" },
+  en: { all: "All", other: "Other", readMore: "Read More →", viewAll: "View All Articles →" },
+};
+
+const PAGE_SIZE = 9;
+
+function primaryCategory(category: string | undefined, otherLabel: string) {
+  if (!category) return otherLabel;
   return category.split("•")[0].trim();
 }
 
-export default function BlogList({ posts }: { posts: BlogListPost[] }) {
-  const [active, setActive] = useState("Tümü");
+export default function BlogList({
+  posts,
+  basePath = "/blog",
+  lang = "tr",
+}: {
+  posts: BlogListPost[];
+  basePath?: string;
+  lang?: "tr" | "en";
+}) {
+  const t = STRINGS[lang];
+  const [active, setActive] = useState(t.all);
+  const [expanded, setExpanded] = useState(false);
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
     for (const post of posts) {
-      const key = primaryCategory(post.category);
+      const key = primaryCategory(post.category, t.other);
       counts.set(key, (counts.get(key) ?? 0) + 1);
     }
     return Array.from(counts.entries());
-  }, [posts]);
+  }, [posts, t.other]);
 
   const filtered =
-    active === "Tümü"
+    active === t.all
       ? posts
-      : posts.filter((post) => primaryCategory(post.category) === active);
+      : posts.filter((post) => primaryCategory(post.category, t.other) === active);
+
+  const visiblePosts = expanded ? filtered : filtered.slice(0, PAGE_SIZE);
+  const hasMore = !expanded && filtered.length > PAGE_SIZE;
+
+  const selectCategory = (name: string) => {
+    setActive(name);
+    setExpanded(false);
+  };
 
   return (
     <div>
       <div className="mb-10 flex flex-wrap items-center gap-3">
         <button
-          onClick={() => setActive("Tümü")}
+          onClick={() => selectCategory(t.all)}
           className={`rounded-full border px-5 py-2 text-sm font-semibold transition ${
-            active === "Tümü"
+            active === t.all
               ? "border-[#071A2F] bg-[#071A2F] text-white"
               : "border-gray-200 text-[#071A2F] hover:border-[#071A2F]"
           }`}
         >
-          Tümü <span className="opacity-60">{posts.length}</span>
+          {t.all} <span className="opacity-60">{posts.length}</span>
         </button>
 
         {categories.map(([name, count]) => (
           <button
             key={name}
-            onClick={() => setActive(name)}
+            onClick={() => selectCategory(name)}
             className={`rounded-full border px-5 py-2 text-sm font-semibold transition ${
               active === name
                 ? "border-[#071A2F] bg-[#071A2F] text-white"
@@ -64,10 +89,10 @@ export default function BlogList({ posts }: { posts: BlogListPost[] }) {
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((post) => (
+        {visiblePosts.map((post) => (
           <Link
             key={post.slug}
-            href={`/blog/${post.slug}`}
+            href={`${basePath}/${post.slug}`}
             className="block rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2"
           >
             {post.image ? (
@@ -94,11 +119,22 @@ export default function BlogList({ posts }: { posts: BlogListPost[] }) {
             </p>
 
             <span className="mt-4 inline-block font-semibold text-orange-500">
-              Devamını Oku →
+              {t.readMore}
             </span>
           </Link>
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-12 text-center">
+          <button
+            onClick={() => setExpanded(true)}
+            className="inline-block rounded-xl border-2 border-[#071A2F] px-8 py-3 font-semibold text-[#071A2F] transition hover:bg-[#071A2F] hover:text-white"
+          >
+            {t.viewAll}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

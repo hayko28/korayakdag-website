@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "turkiyede-adan-zye-sirket-kurmak-avantajlari",
+    title: "Türkiye'de A'dan Z'ye Şirket Kurmak: Avantajları Nelerdir?",
+    excerpt: "Yabancı yatırımcılar için Limited ve Anonim Şirket farkları, gerekli belgeler, adım adım MERSİS/ticaret sicili süreci, devlet destekleri, vergi teşvikleri, banka hesabı açma ve ikamet izni bağlantısıyla 2026 güncel Türkiye rehberi.",
+    category: "ŞİRKET KURULUŞU • TÜRKİYE • 2026",
+    date: "2026",
+    readTime: "19 Dakika",
+    image: "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "almanyada-sirket-nasil-kurulur",
     title: "Almanya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
     excerpt: "GmbH, UG ve AG şirket türleri, sermaye şartları, Handelsregister tescili, adım adım kuruluş süreci, vergi oranları ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Almanya rehberi.",
@@ -125,6 +134,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "9 Dakika",
     image: "https://images.unsplash.com/photo-1529579134665-75dfc9c5ccef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "sahis-limited-anonim-sirket-karsilastirma",
+    title: "Şahıs Şirketi mi, Limited Şirket mi Yoksa Anonim Şirket mi? Girişimciler İçin Bu Denklem Nasıl Çözülür?",
+    excerpt: "Kuruluş maliyeti, sorumluluk, vergi yükü, asgari sermaye ve büyüme potansiyeli açısından şahıs, limited ve anonim şirket karşılaştırması; girişimci profilinize uygun türü seçmenize yardımcı olan 2026 güncel rehber.",
+    category: "ŞİRKET KURULUŞU • GİRİŞİMCİLİK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "tubitak-1501-1507-ar-ge-destekleri-2026",
