@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Expertise from "@/components/Expertise";
 import Services from "@/components/Services";
 import Blog from "@/components/Blog";
+import WhyChooseMe from "@/components/WhyChooseMe";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -25,6 +26,8 @@ export default function HomeEn() {
       <Services lang="en" />
 
       <Blog lang="en" />
+
+      <WhyChooseMe lang="en" />
 
       <Contact lang="en" />
 
