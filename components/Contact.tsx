@@ -7,6 +7,7 @@ const STRINGS = {
     label: "İletişim",
     heading: "Benimle iletişime geçin.",
     fillForm: "Formu Doldur",
+    phone: "Telefon",
     personalEmail: "Kişisel E-posta",
     corporateEmail: "Kurumsal E-posta",
     linkedinVisit: "LinkedIn profilimi ziyaret edin →",
@@ -27,6 +28,7 @@ const STRINGS = {
     label: "Contact",
     heading: "Get in touch with me.",
     fillForm: "Fill Out the Form",
+    phone: "Phone",
     personalEmail: "Personal Email",
     corporateEmail: "Corporate Email",
     linkedinVisit: "Visit my LinkedIn profile →",
@@ -94,7 +96,10 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
           </button>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <ContactCard title={t.phone} icon="📞">
+            <a href="tel:+905060931828" className="text-orange-400 hover:underline">0506 093 18 28</a>
+          </ContactCard>
           <ContactCard title={t.personalEmail} icon="✉️">
             <a href="mailto:koray_akdag@hotmail.com" className="break-all text-orange-400 hover:underline">koray_akdag@hotmail.com</a>
           </ContactCard>

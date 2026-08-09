@@ -33,6 +33,7 @@ const organizationJsonLd = {
   "@type": "ProfessionalService",
   name: "Koray Akdağ | Stratejik Danışmanlık",
   url: "https://korayakdag.com",
+  telephone: "+905060931828",
   description:
     "Stratejik danışmanlık, iş geliştirme, yatırım teşvikleri, devlet destekleri ve yurt dışında/Türkiye'de şirket kuruluşu hizmetleri.",
   founder: {
