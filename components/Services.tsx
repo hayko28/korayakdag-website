@@ -344,89 +344,77 @@ const servicesByLang = {
 };
 
 const STRINGS = {
-  tr: { label: "Hizmetler", heading: "Profesyonel Danışmanlık Hizmetleri" },
-  en: { label: "Services", heading: "Professional Consulting Services" },
+  tr: { label: "Hizmetler", heading: "Profesyonel Danışmanlık Hizmetleri", close: "Kapat" },
+  en: { label: "Services", heading: "Professional Consulting Services", close: "Close" },
 };
-
-const COLUMN_COUNT = 3;
-
-function toColumns<T>(items: T[], columnCount: number): T[][] {
-  const perColumn = Math.ceil(items.length / columnCount);
-  return Array.from({ length: columnCount }, (_, col) =>
-    items.slice(col * perColumn, col * perColumn + perColumn)
-  );
-}
 
 export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
   const [open, setOpen] = useState<number | null>(null);
   const services = servicesByLang[lang];
   const t = STRINGS[lang];
-  const columns = toColumns(
-    services.map((service, index) => ({ service, index })),
-    COLUMN_COUNT
-  );
+  const activeService = open !== null ? services[open] : null;
 
   return (
     <section
       id="services"
-      className="bg-[#071A2F] pt-20 pb-24 text-white scroll-mt-[1px]"
+      className="bg-[#071A2F] pt-12 pb-16 text-white scroll-mt-[1px]"
     >
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
 
-        <div className="text-center mb-14">
-          <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-5">
+        <div className="text-center mb-8">
+          <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-3">
             {t.label}
           </p>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+          <h2 className="text-4xl lg:text-5xl font-bold mt-2">
             {t.heading}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
-          {columns.map((column, colIndex) => (
-            <div key={colIndex} className="flex flex-col gap-4">
-              {column.map(({ service, index }) => (
-                <div
-                  key={index}
-                  className="rounded-2xl bg-white/5 border border-white/10 overflow-hidden transition hover:border-orange-400"
-                >
-                  <button
-                    onClick={() =>
-                      setOpen(open === index ? null : index)
-                    }
-                    className="w-full flex justify-between items-center px-6 py-5 text-left"
-                  >
-                    <h3 className="text-lg lg:text-xl font-semibold">
-                      {service.title}
-                    </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-stretch">
+          {services.map((service, index) => (
+            <button
+              key={index}
+              onClick={() => setOpen(index)}
+              className="flex w-full items-center justify-between rounded-2xl bg-white/5 border border-white/10 px-5 py-4 text-left transition hover:border-orange-400"
+            >
+              <h3 className="text-lg font-semibold">
+                {service.title}
+              </h3>
 
-                    <span className="text-3xl text-orange-400 font-light">
-                      {open === index ? "−" : "+"}
-                    </span>
-                  </button>
-
-                  {open === index && (
-                    <div className="px-6 pb-6">
-                      <ul className="grid gap-3">
-                        {service.items.map((item, i) => (
-                          <li
-                            key={i}
-                            className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
-                          >
-                            ✔ {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+              <span className="text-3xl text-orange-400 font-light">
+                +
+              </span>
+            </button>
           ))}
         </div>
 
       </div>
+
+      {activeService && (
+        <div className="fixed inset-0 z-[10000]" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
+          <button type="button" aria-label={t.close} onClick={() => setOpen(null)} className="absolute inset-0 bg-[#071A2F]/70" />
+          <div className="relative mx-auto mt-16 max-h-[80vh] max-w-lg overflow-y-auto rounded-2xl bg-[#0B2340] border border-white/10 p-8 shadow-2xl">
+            <div className="mb-6 flex items-start justify-between gap-6">
+              <h3 id="service-modal-title" className="text-2xl font-bold">
+                {activeService.title}
+              </h3>
+              <button type="button" onClick={() => setOpen(null)} aria-label={t.close} className="rounded-lg p-1 text-2xl text-white hover:bg-white/10">×</button>
+            </div>
+
+            <ul className="grid gap-3">
+              {activeService.items.map((item, i) => (
+                <li
+                  key={i}
+                  className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
+                >
+                  ✔ {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
