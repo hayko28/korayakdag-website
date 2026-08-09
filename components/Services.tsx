@@ -163,6 +163,14 @@ const servicesByLang = {
         "Müşteri Kazanımı",
       ],
     },
+    {
+      title: "🖥️ Web Sitesi Oluşturma",
+      items: [
+        "Bireysel Web Sitesi",
+        "Kurumsal Web Sitesi",
+        "Ticari Web Sitesi",
+      ],
+    },
   ],
   en: [
     {
@@ -322,6 +330,14 @@ const servicesByLang = {
         "Channel & Dealer Management",
         "CRM Processes",
         "Customer Acquisition",
+      ],
+    },
+    {
+      title: "🖥️ Website Creation",
+      items: [
+        "Personal Website",
+        "Corporate Website",
+        "Commercial Website",
       ],
     },
   ],
