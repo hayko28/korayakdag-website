@@ -127,6 +127,42 @@ const servicesByLang = {
         "Yatırım Finansmanı",
       ],
     },
+    {
+      title: "🏢 Kurumsal Gelişim ve Yönetim Danışmanlığı",
+      items: [
+        "Organizasyon ve Süreç Tasarımı",
+        "Performans Yönetimi",
+        "Kurumsallaşma",
+        "Stratejik Planlama",
+      ],
+    },
+    {
+      title: "🤖 Yazılım ve Yapay Zekâ Çözümleri",
+      items: [
+        "Yapay Zekâ Danışmanlığı",
+        "AI Agent Çözümleri",
+        "Süreç Otomasyonu",
+        "CRM ve Satış Teknolojileri",
+      ],
+    },
+    {
+      title: "💵 Finans Danışmanlığı",
+      items: [
+        "Finansal Analiz",
+        "Bütçe ve Planlama",
+        "Yatırım ve Teşvik",
+        "Finansal Performans",
+      ],
+    },
+    {
+      title: "📣 Pazarlama ve Satış Geliştirme",
+      items: [
+        "Satış Stratejisi",
+        "Kanal ve Bayi Yönetimi",
+        "CRM Süreçleri",
+        "Müşteri Kazanımı",
+      ],
+    },
   ],
   en: [
     {
@@ -250,6 +286,42 @@ const servicesByLang = {
         "International Fund Consulting",
         "Credit Processes",
         "Investment Financing",
+      ],
+    },
+    {
+      title: "🏢 Corporate Development & Management Consulting",
+      items: [
+        "Organizational & Process Design",
+        "Performance Management",
+        "Institutionalization",
+        "Strategic Planning",
+      ],
+    },
+    {
+      title: "🤖 Software & AI Solutions",
+      items: [
+        "AI Consulting",
+        "AI Agent Solutions",
+        "Process Automation",
+        "CRM & Sales Technologies",
+      ],
+    },
+    {
+      title: "💵 Financial Consulting",
+      items: [
+        "Financial Analysis",
+        "Budgeting & Planning",
+        "Investment & Incentives",
+        "Financial Performance",
+      ],
+    },
+    {
+      title: "📣 Marketing & Sales Development",
+      items: [
+        "Sales Strategy",
+        "Channel & Dealer Management",
+        "CRM Processes",
+        "Customer Acquisition",
       ],
     },
   ],
