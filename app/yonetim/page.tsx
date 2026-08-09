@@ -51,6 +51,12 @@ export default function AdminPage() {
     await load();
   };
 
+  const logout = async () => {
+    await fetch("/api/admin/logout", { method: "POST" });
+    setData(null);
+    setPassword("");
+  };
+
   const updateStatus = async (type: string, id: number, status: string) => {
     await fetch("/api/admin", {
       method: "PATCH",
@@ -118,12 +124,20 @@ export default function AdminPage() {
             <p className="font-semibold tracking-widest text-orange-500">KORAY AKDAĞ</p>
             <h1 className="text-3xl font-black text-[#071A2F]">Yönetim Paneli</h1>
           </div>
-          <button
-            onClick={load}
-            className="rounded-xl border bg-white px-5 py-2.5 font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50"
-          >
-            🔄 Yenile
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={load}
+              className="rounded-xl border bg-white px-5 py-2.5 font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50"
+            >
+              🔄 Yenile
+            </button>
+            <button
+              onClick={logout}
+              className="rounded-xl border bg-white px-5 py-2.5 font-semibold text-red-600 shadow-sm transition hover:bg-red-50"
+            >
+              🚪 Çıkış Yap
+            </button>
+          </div>
         </header>
 
         {/* NAVIGATION TABS */}

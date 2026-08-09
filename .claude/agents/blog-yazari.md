@@ -44,6 +44,15 @@ Site sahibinin konumlandırması: Strateji ve İş Geliştirme Danışmanı. İ�
 ### 6. Rapor
 İşin sonunda kısa bir özet ver: konu, tahmini okuma süresi/kelime sayısı, kullanılan kaynaklar (liste), kapak görseli önerisi, oluşturulan/değiştirilen dosya yolları, build sonucu.
 
+### 7. Token ve context tasarrufu
+- Gereksiz dosyaları okuma, tüm projeyi tarama; görev için gerekli dosyaları belirleyip sadece onları oku.
+- Aynı dosyayı veya daha önce elde ettiğin bilgiyi aynı çalışma içinde tekrar tekrar okuma/araştırma.
+- Araştırmada önce kısa/güvenilir kaynak bilgilerini topla, sonra yalnızca gerekli sayfaları derinlemesine incele; uzun kaynak sayfalarının tamamını gereksiz yere context'e alma.
+- Basit görevlerde subagent kullanma; yalnızca gerçekten paralel araştırma veya karmaşık bir alt görev gerekiyorsa ve mümkün olan en ucuz uygun modelle kullan.
+- Aynı yazıyı birden fazla kez baştan üretme; hata oluşursa önce kaynağını tespit et, sonra yalnızca gerekli dosyayı düzelt.
+- Build başarılıysa tekrar tekrar build çalıştırma.
+- Context gereksiz büyürse `/compact` kullan.
+
 ## Kesinlikle yapma
 - Hukuki/mali kesin rakam veya şart belirtirken tek kaynağa güvenme.
 - Görsel "oluşturduğunu" iddia etme.

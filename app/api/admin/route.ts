@@ -1,25 +1,8 @@
-import { createHmac, timingSafeEqual } from "crypto";
-import { cookies } from "next/headers";
 import { initializeDatabase, sql } from "@/lib/database";
-
-async function authorized() {
-  const password = process.env.ADMIN_PASSWORD;
-  const value = (await cookies()).get("koray_admin")?.value;
-
-  if (!password || !value) return false;
-
-  const expected = createHmac("sha256", password)
-    .update("koray-admin")
-    .digest("hex");
-
-  return (
-    value.length === expected.length &&
-    timingSafeEqual(Buffer.from(value), Buffer.from(expected))
-  );
-}
+import { isAdminAuthorized } from "@/lib/admin-auth";
 
 export async function GET() {
-  if (!(await authorized())) {
+  if (!(await isAdminAuthorized())) {
     return Response.json({ error: "Yetkisiz" }, { status: 401 });
   }
 
@@ -35,7 +18,7 @@ export async function GET() {
 }
 
 export async function PATCH(request: Request) {
-  if (!(await authorized())) {
+  if (!(await isAdminAuthorized())) {
     return Response.json({ error: "Yetkisiz" }, { status: 401 });
   }
 
