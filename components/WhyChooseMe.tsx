@@ -26,9 +26,9 @@ const ITEMS = {
       text: "Şirket bilgileriniz ve süreç detaylarınız gizlilik ilkesiyle korunur.",
     },
     {
-      icon: "📞",
-      title: "Doğrudan İletişim",
-      text: "Aracı kurum ya da ekip yerine doğrudan benimle görüşür, süreci birebir takip edersiniz.",
+      icon: "👥",
+      title: "Kurumsal Güç, Birebir İlgi",
+      text: "Sistem Global Danışmanlık bünyesindeki 700 kişilik uzman ekibin bilgi birikimi ve kaynaklarına dayanarak çalışırım; sürecinizi yine doğrudan benimle, birebir takip edersiniz.",
     },
   ],
   en: [
@@ -58,9 +58,9 @@ const ITEMS = {
       text: "Your company information and process details are protected under strict confidentiality.",
     },
     {
-      icon: "📞",
-      title: "Direct Communication",
-      text: "You work directly with me, not an intermediary team, and follow the process one-on-one.",
+      icon: "👥",
+      title: "Institutional Strength, Personal Attention",
+      text: "I draw on the expertise and resources of Sistem Global Danışmanlık's 700-person team of specialists, while you still work directly with me, one-on-one, throughout the process.",
     },
   ],
 };
