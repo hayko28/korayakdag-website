@@ -6,7 +6,7 @@ import BackButton from "@/components/BackButton";
 import { BLOG_POSTS } from "@/lib/blog-data";
 import { initializeDatabase, sql } from "@/lib/database";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 const BlogPage = async () => {
   await initializeDatabase();
