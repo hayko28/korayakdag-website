@@ -13,11 +13,9 @@ interface BlogListPost {
 }
 
 const STRINGS = {
-  tr: { all: "Tümü", other: "Diğer", readMore: "Devamını Oku →", viewAll: "Tüm Yazılar →" },
-  en: { all: "All", other: "Other", readMore: "Read More →", viewAll: "View All Articles →" },
+  tr: { all: "Tümü", other: "Diğer", readMore: "Devamını Oku →" },
+  en: { all: "All", other: "Other", readMore: "Read More →" },
 };
-
-const PAGE_SIZE = 9;
 
 function primaryCategory(category: string | undefined, otherLabel: string) {
   if (!category) return otherLabel;
@@ -35,7 +33,6 @@ export default function BlogList({
 }) {
   const t = STRINGS[lang];
   const [active, setActive] = useState(t.all);
-  const [expanded, setExpanded] = useState(false);
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
@@ -51,12 +48,8 @@ export default function BlogList({
       ? posts
       : posts.filter((post) => primaryCategory(post.category, t.other) === active);
 
-  const visiblePosts = expanded ? filtered : filtered.slice(0, PAGE_SIZE);
-  const hasMore = !expanded && filtered.length > PAGE_SIZE;
-
   const selectCategory = (name: string) => {
     setActive(name);
-    setExpanded(false);
   };
 
   return (
@@ -89,7 +82,7 @@ export default function BlogList({
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {visiblePosts.map((post) => (
+        {filtered.map((post) => (
           <Link
             key={post.slug}
             href={`${basePath}/${post.slug}`}
@@ -124,17 +117,6 @@ export default function BlogList({
           </Link>
         ))}
       </div>
-
-      {hasMore && (
-        <div className="mt-12 text-center">
-          <button
-            onClick={() => setExpanded(true)}
-            className="inline-block rounded-xl border-2 border-[#071A2F] px-8 py-3 font-semibold text-[#071A2F] transition hover:bg-[#071A2F] hover:text-white"
-          >
-            {t.viewAll}
-          </button>
-        </div>
-      )}
     </div>
   );
 }
