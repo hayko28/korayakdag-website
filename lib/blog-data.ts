@@ -163,6 +163,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "/teknopark-kapak.png"
   },
   {
+    slug: "yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026",
+    title: "Yatırım Teşvik Belgesi Nedir? Faydaları, Şartları ve 2026 Güncel Rehberi",
+    excerpt: "9903 sayılı yeni teşvik sistemi, Türkiye Yüzyılı Kalkınma Hamlesi ve Sektörel Teşvik Sistemi programları, KDV/gümrük/vergi/SGK/faiz destek unsurları, bölgeler, 2026 asgari yatırım tutarları ve E-TUYS başvuru süreciyle kapsamlı Yatırım Teşvik Belgesi rehberi.",
+    category: "YATIRIM TEŞVİKLERİ • DEVLET DESTEKLERİ • 2026",
+    date: "2026",
+    readTime: "20 Dakika",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-kapasite-gelistirme-destek-programi-2026",
     title: "KOSGEB Kapasite Geliştirme Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?",
     excerpt: "20 milyon TL'ye kadar kredi limiti, 20 puana varan geri ödemesiz faiz/kâr payı desteği, başvuru şartları, desteklenen giderler ve 2026 başvuru takvimiyle güncel KOSGEB Kapasite Geliştirme Destek Programı rehberi.",
