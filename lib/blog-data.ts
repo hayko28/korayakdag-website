@@ -161,5 +161,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "15 Dakika",
     image: "/teknopark-kapak.png"
+  },
+  {
+    slug: "kosgeb-kapasite-gelistirme-destek-programi-2026",
+    title: "KOSGEB Kapasite Geliştirme Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?",
+    excerpt: "20 milyon TL'ye kadar kredi limiti, 20 puana varan geri ödemesiz faiz/kâr payı desteği, başvuru şartları, desteklenen giderler ve 2026 başvuru takvimiyle güncel KOSGEB Kapasite Geliştirme Destek Programı rehberi.",
+    category: "KOSGEB • DEVLET DESTEKLERİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
