@@ -179,5 +179,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "ur-ge-projesi-destegi-nedir-basvuru-sartlari-2026",
+    title: "UR-GE Projesi Desteği Nedir? 2026 Destek Oranları, Üst Limitler ve Başvuru Rehberi",
+    excerpt: "İhracat kümelenmesiyle çalışan şirketler için Ticaret Bakanlığı'nın UR-GE Proje Desteği: kimler yararlanabilir, %75 destek oranı, 2026 güncel üst limitler, desteklenen faaliyetler ve başvuru süreci.",
+    category: "İHRACAT DESTEKLERİ • UR-GE • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
