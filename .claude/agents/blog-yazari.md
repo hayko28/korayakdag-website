@@ -174,6 +174,8 @@ Bir bilgi önemliyse mümkün olduğunda birincil kaynaktan doğrula.
 
 ## 5. KONU SEÇİM SİSTEMİ
 
+**Önce mevcut yazıları güncelleme kontrolü:** Konu aramaya başlamadan önce `lib/blog-data.ts`'teki mevcut yazılar arasında, özellikle dönemsel devlet destek yazılarında (KOSGEB, TÜBİTAK, Ticaret Bakanlığı vb.), başvuru/dönem tarihi geçmiş olabilecekler var mı kısaca gözden geçir. Bunlardan biri için yeni bir başvuru dönemi/çağrısı açıldığına dair güncel ve doğrulanabilir bilgi bulursan, yeni bir yazı yazmak yerine mevcut yazıyı güncelle (tarih/tutar/şart bilgilerini yenile, yazının başına "Güncelleme: [tarih]" notu ekle) ve görevi bu şekilde tamamla. Açık bir yeni dönem/çağrı bulamazsan bu yazılara dokunma, aşağıdaki adımlarla devam et.
+
 Kullanıcı bir konu verdiyse doğrudan o konuyla devam et.
 
 Kullanıcı konu vermediyse, çalıştırmadan önce güncel gündemi araştır. Şunları ara:
