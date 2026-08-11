@@ -121,6 +121,48 @@ Hukuki içeriklerde:
 
 Hukuk içerikleri bilgilendirme amaçlı hazırlanmalı ve mutlaka resmî/otoritatif kaynaklara dayanmalıdır.
 
+### F. Vergi ve finansal danışmanlık
+
+- ulusal/uluslararası vergi danışmanlığı
+- mali ve finansal danışmanlık
+- bütçe ve finansal planlama
+- yeminli mali müşavirlik (YMM)
+- bağımsız denetim, tam tasdik, KDV iade
+
+### G. Şirket değerleme ve M&A
+
+- şirket değerleme yöntemleri
+- şirket birleşmesi ve devralma (M&A)
+- due diligence
+- finansal analiz ve performans
+
+### H. Sürdürülebilirlik
+
+- karbon ayak izi, su ayak izi
+- TSRS ve sürdürülebilirlik raporları
+- güvence denetimi
+- yeşil dönüşüm ve ESG
+
+### I. Marka, patent ve fikri mülkiyet
+
+- marka tescili (yurt içi/yurt dışı)
+- patent başvurusu
+- telif hakları
+
+### J. SGK ve bordro
+
+- sosyal güvenlik mevzuatı danışmanlığı
+- fesih, ihbar ve kıdem mevzuatı
+- SGK teşvikleri
+- bordro hizmetleri
+
+### K. Pazarlama, satış ve kurumsal gelişim
+
+- satış stratejisi ve kanal/bayi yönetimi
+- CRM süreçleri ve müşteri kazanımı
+- organizasyon ve süreç tasarımı
+- performans yönetimi, kurumsallaşma, stratejik planlama
+
 ---
 
 ## 3. GÜNCELLİK KURALI
@@ -174,11 +216,9 @@ Bir bilgi önemliyse mümkün olduğunda birincil kaynaktan doğrula.
 
 ## 5. KONU SEÇİM SİSTEMİ
 
-**Önce mevcut yazıları güncelleme kontrolü:** Konu aramaya başlamadan önce `lib/blog-data.ts`'teki mevcut yazılar arasında, özellikle dönemsel devlet destek yazılarında (KOSGEB, TÜBİTAK, Ticaret Bakanlığı vb.), başvuru/dönem tarihi geçmiş olabilecekler var mı kısaca gözden geçir. Bunlardan biri için yeni bir başvuru dönemi/çağrısı açıldığına dair güncel ve doğrulanabilir bilgi bulursan, yeni bir yazı yazmak yerine mevcut yazıyı güncelle (tarih/tutar/şart bilgilerini yenile, yazının başına "Güncelleme: [tarih]" notu ekle) ve görevi bu şekilde tamamla. Açık bir yeni dönem/çağrı bulamazsan bu yazılara dokunma, aşağıdaki adımlarla devam et.
-
 Kullanıcı bir konu verdiyse doğrudan o konuyla devam et.
 
-Kullanıcı konu vermediyse, çalıştırmadan önce güncel gündemi araştır. Şunları ara:
+Kullanıcı konu vermediyse, öncelik her zaman **şu an güncel/açık olan fırsatlardır** — henüz hiç işlenmemiş, başvurusu şu anda aktif bir program veya konu bulmaya çalış. Çalıştırmadan önce güncel gündemi araştır. Şunları ara:
 
 - yeni açıklanan destekler
 - yeni açılan çağrılar
@@ -203,6 +243,8 @@ Konuları şu kriterlere göre değerlendir:
 7. Daha önce yazılmış içeriklerle çakışmaması
 
 En yüksek değere sahip konuyu seç.
+
+**İkincil kontrol — süresi geçmiş yazı güncellemesi:** Güçlü bir yeni/güncel konu bulamazsan (veya araştırma sırasında fark edersen), `lib/blog-data.ts`'teki mevcut yazılardan başvuru/dönem tarihi geçmiş olanların (özellikle KOSGEB, TÜBİTAK, Ticaret Bakanlığı gibi dönemsel destekler) yeniden açılıp açılmadığını kontrol et. Yeniden açıldığına dair güncel ve doğrulanabilir bilgi bulursan, yeni yazı yerine mevcut yazıyı güncelle (tarih/tutar/şart bilgilerini yenile, başına "Güncelleme: [tarih]" notu ekle). Bu, güncel/yeni konu aramasının önüne geçmez — sadece güçlü bir yeni aday yoksa devreye giren ikinci bir seçenektir.
 
 ---
 
@@ -343,8 +385,16 @@ Konu, doğrudan veya dolaylı şekilde:
 - uluslararasılaşma,
 - iş geliştirme,
 - satış,
+- pazarlama,
 - strateji,
 - mevzuat,
+- vergi,
+- finansal danışmanlık,
+- şirket değerleme,
+- sürdürülebilirlik,
+- marka ve patent,
+- SGK ve bordro,
+- kurumsal gelişim ve yönetim danışmanlığı,
 - kurumsal büyüme
 
 ile ilişkili olmalı.
