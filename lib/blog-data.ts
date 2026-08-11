@@ -179,5 +179,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "istihdami-koruma-destek-programi-2026",
+    title: "İstihdamı Koruma Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?",
+    excerpt: "İmalat sanayinde istihdamı koruyan işletmelere çalışan başına 3.500 TL'ye varan geri ödemesiz destek ve 50 milyon TL'ye kadar kredi imkânı sunan yeni programın şartları, destek tutarları, 2026 başvuru takvimi ve güncel durumu.",
+    category: "İSTİHDAM DESTEKLERİ • KOSGEB • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
