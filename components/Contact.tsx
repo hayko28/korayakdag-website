@@ -82,6 +82,9 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
     const formData = new FormData(form);
     setSubmissionState("sending");
 
+    const name = String(formData.get("name") ?? "");
+    const email = String(formData.get("email") ?? "");
+    const subject = String(formData.get("subject") ?? "");
     const baseMessage = String(formData.get("message") ?? "");
     const message =
       selectedServices.length > 0
@@ -89,21 +92,45 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
         : baseMessage;
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          subject: formData.get("subject"),
-          message,
-        }),
-      });
+      // E-posta gonderimi dogrudan tarayicidan yapiliyor: formsubmit.co,
+      // sunucudan (Vercel) gelen istekleri Cloudflare bot korumasiyla
+      // engelliyor, gercek bir tarayicidan gelen istekleri engellemiyor.
+      const mailResponse = await fetch(
+        "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            subject,
+            message,
+            _subject: "Koray Akdağ web sitesi iletişim formu",
+            _template: "table",
+          }),
+        }
+      );
 
-      if (!response.ok) throw new Error(t.submitError);
+      const mailResult = await mailResponse.json().catch(() => null);
+      const mailOk =
+        mailResponse.ok &&
+        mailResult !== null &&
+        mailResult.success !== false &&
+        mailResult.success !== "false";
+
+      if (!mailOk) throw new Error(t.submitError);
+
+      // Veritabanina kayit ikincil bir yedek; basarisiz olsa da kullaniciya
+      // gonderim basarili gorunur cunku e-posta zaten ulasti.
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      }).catch(() => {});
+
       form.reset();
       setSelectedServices([]);
       setSubmissionState("success");

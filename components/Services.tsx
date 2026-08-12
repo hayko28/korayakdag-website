@@ -435,6 +435,14 @@ export const GROUP_DEFS = [
   },
 ] as const;
 
+function PlusIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
+
 const ICONS: Record<string, React.ReactNode> = {
   building: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -602,12 +610,15 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
             <button
               key={group.icon}
               onClick={() => setOpen(index)}
-              className="flex flex-col items-start gap-3 rounded-2xl bg-white/5 border border-white/10 p-6 text-left transition hover:border-orange-400"
+              className="relative flex flex-col items-start gap-3 rounded-2xl bg-white/5 border border-white/10 p-6 text-left transition hover:border-orange-400"
             >
+              <span className="absolute right-5 top-5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-orange-400/40 text-orange-400 [&>svg]:h-3 [&>svg]:w-3">
+                <PlusIcon />
+              </span>
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 [&>svg]:h-6 [&>svg]:w-6">
                 {ICONS[group.icon]}
               </span>
-              <h3 className="text-lg font-semibold leading-snug">
+              <h3 className="pr-6 text-lg font-semibold leading-snug">
                 {group[lang].title}
               </h3>
               <span className="text-xs text-gray-400">
