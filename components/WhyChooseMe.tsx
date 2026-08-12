@@ -1,68 +1,116 @@
 const ITEMS = {
   tr: [
     {
-      icon: "🤝",
+      icon: "handshake",
       title: "Güvene Dayalı İş Birliği",
       text: "Uzun vadeli, şeffaf ve karşılıklı güvene dayanan ilişkiler kurarım; süreç boyunca aynı muhatapla çalışırsınız.",
     },
     {
-      icon: "📚",
+      icon: "book",
       title: "Güncel ve Resmi Kaynaklara Dayalı Danışmanlık",
       text: "Devlet destekleri ve teşviklerde her zaman güncel mevzuatı ve resmi kurum kaynaklarını takip ederim.",
     },
     {
-      icon: "🌍",
+      icon: "globe",
       title: "Geniş Kapsamlı Deneyim",
       text: "Yurt içi ve yurt dışı şirket kuruluşundan yatırım teşviklerine kadar birçok alanda uçtan uca destek sağlarım.",
     },
     {
-      icon: "🎯",
+      icon: "target",
       title: "Sonuç Odaklı Yaklaşım",
       text: "Her sürecin somut, ölçülebilir bir hedefe hizmet etmesini önceliklendiririm.",
     },
     {
-      icon: "🔒",
+      icon: "lock",
       title: "Gizlilik",
       text: "Şirket bilgileriniz ve süreç detaylarınız gizlilik ilkesiyle korunur.",
     },
     {
-      icon: "👥",
+      icon: "users",
       title: "Kurumsal Güç, Birebir İlgi",
       text: "Sistem Global Danışmanlık bünyesindeki 700 kişilik uzman ekibin bilgi birikimi ve kaynaklarına dayanarak çalışırım; sürecinizi yine doğrudan benimle, birebir takip edersiniz.",
     },
   ],
   en: [
     {
-      icon: "🤝",
+      icon: "handshake",
       title: "Trust-Based Partnership",
       text: "I build long-term, transparent relationships based on mutual trust; you work with the same point of contact throughout.",
     },
     {
-      icon: "📚",
+      icon: "book",
       title: "Consulting Grounded in Official Sources",
       text: "For government grants and incentives, I always follow up-to-date legislation and official institutional sources.",
     },
     {
-      icon: "🌍",
+      icon: "globe",
       title: "Broad Experience",
       text: "I provide end-to-end support across domestic and international company formation, investment incentives, and more.",
     },
     {
-      icon: "🎯",
+      icon: "target",
       title: "Results-Oriented Approach",
       text: "I make sure every process serves a concrete, measurable goal.",
     },
     {
-      icon: "🔒",
+      icon: "lock",
       title: "Confidentiality",
       text: "Your company information and process details are protected under strict confidentiality.",
     },
     {
-      icon: "👥",
+      icon: "users",
       title: "Institutional Strength, Personal Attention",
       text: "I draw on the expertise and resources of Sistem Global Danışmanlık's 700-person team of specialists, while you still work directly with me, one-on-one, throughout the process.",
     },
   ],
+};
+
+const ICONS: Record<string, React.ReactNode> = {
+  handshake: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M1.5 12.5 6.5 8.7l5.3 3.7" />
+      <path d="M22.5 12.5 17.5 8.7l-5.3 3.7" />
+      <path d="M9 14.6 10.6 12.6 12 14.6 13.4 12.6 15 14.6" />
+      <path d="M3 11 5 9.6" />
+      <path d="M21 11 19 9.6" />
+    </svg>
+  ),
+  book: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 6.2c-1.5-1.1-3.6-1.7-6.5-1.7-1 0-1.5.3-1.5 1v12.4c0 .7.5 1 1.5 1 2.9 0 5 .6 6.5 1.7" />
+      <path d="M12 6.2c1.5-1.1 3.6-1.7 6.5-1.7 1 0 1.5.3 1.5 1v12.4c0 .7-.5 1-1.5 1-2.9 0-5 .6-6.5 1.7Z" />
+      <path d="M12 6.2v14.4" />
+    </svg>
+  ),
+  globe: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.4 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.4-3.6-8.5s1.2-6.1 3.6-8.5Z" />
+    </svg>
+  ),
+  target: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="8.5" />
+      <circle cx="12" cy="12" r="4.5" />
+      <circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  lock: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="11" width="16" height="10" rx="2.2" />
+      <path d="M7.5 11V7.5a4.5 4.5 0 0 1 9 0V11" />
+      <circle cx="12" cy="15.7" r="1.3" fill="currentColor" stroke="none" />
+      <path d="M12 17v1.8" />
+    </svg>
+  ),
+  users: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="8.5" cy="8" r="3.2" />
+      <path d="M2.2 19.5c0-3.4 2.8-6 6.3-6s6.3 2.6 6.3 6" />
+      <circle cx="17" cy="8.8" r="2.6" />
+      <path d="M15.3 13.1c2.9.3 5 2.6 5 6.4" />
+    </svg>
+  ),
 };
 
 const STRINGS = {
@@ -96,7 +144,9 @@ export default function WhyChooseMe({ lang = "tr" }: { lang?: "tr" | "en" }) {
               key={index}
               className="rounded-2xl bg-white/5 border border-white/10 p-8 transition hover:border-orange-400"
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 mb-4 [&>svg]:h-6 [&>svg]:w-6">
+                {ICONS[item.icon]}
+              </span>
 
               <h3 className="text-xl font-bold mb-3">{item.title}</h3>
 
