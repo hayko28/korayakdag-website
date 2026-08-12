@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
-import { GROUP_DEFS, categoriesByLang } from "@/components/Services";
+import { GROUP_DEFS } from "@/components/Services";
 
 export const OPEN_CONTACT_FORM_EVENT = "open-contact-form";
 
@@ -155,39 +155,27 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
               <div>
                 <p className="text-sm font-semibold text-[#071A2F]">{t.servicesLabel}</p>
                 <p className="mb-3 mt-1 text-xs text-gray-500">{t.servicesHint}</p>
-                <div className="space-y-4">
+                <div className="grid gap-2">
                   {GROUP_DEFS.map((group) => {
-                    const groupTitle = group[lang].title;
+                    const title = group[lang].title;
+                    const checked = selectedServices.includes(title);
                     return (
-                      <div key={groupTitle}>
-                        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-orange-500">
-                          {groupTitle}
-                        </p>
-                        <div className="grid gap-2 sm:grid-cols-2">
-                          {group.categoryIndexes.map((catIndex) => {
-                            const title = categoriesByLang[lang][catIndex].title;
-                            const checked = selectedServices.includes(title);
-                            return (
-                              <label
-                                key={title}
-                                className={`flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2.5 text-sm transition ${
-                                  checked
-                                    ? "border-orange-500 bg-orange-50 text-[#071A2F]"
-                                    : "border-gray-300 text-gray-700 hover:border-orange-300"
-                                }`}
-                              >
-                                <input
-                                  type="checkbox"
-                                  checked={checked}
-                                  onChange={() => toggleService(title)}
-                                  className="h-4 w-4 accent-orange-500"
-                                />
-                                {title}
-                              </label>
-                            );
-                          })}
-                        </div>
-                      </div>
+                      <label
+                        key={title}
+                        className={`flex cursor-pointer items-center gap-2.5 rounded-lg border px-3.5 py-3 text-sm transition ${
+                          checked
+                            ? "border-orange-500 bg-orange-50 text-[#071A2F] font-semibold"
+                            : "border-gray-300 text-gray-700 hover:border-orange-300"
+                        }`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={() => toggleService(title)}
+                          className="h-4 w-4 flex-shrink-0 accent-orange-500"
+                        />
+                        {title}
+                      </label>
                     );
                   })}
                 </div>

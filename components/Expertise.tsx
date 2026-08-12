@@ -139,9 +139,9 @@ export default function Expertise({ lang = "tr" }: { lang?: "tr" | "en" }) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300 border border-gray-100 hover:border-orange-400"
+              className="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300 border-2 border-gray-100 hover:border-orange-400 hover:bg-orange-50/40 hover:shadow-orange-400/20"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500 mb-5 [&>svg]:h-6 [&>svg]:w-6">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500 mb-5 transition duration-300 group-hover:scale-110 group-hover:bg-orange-100 [&>svg]:h-6 [&>svg]:w-6">
                 {ICONS[item.icon]}
               </span>
 

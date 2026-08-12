@@ -75,7 +75,7 @@ export default async function Blog({
             <Link
               key={post.slug}
               href={`${basePath}/${post.slug}`}
-              className="block rounded-3xl border border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:border-orange-400"
+              className="block rounded-3xl border-2 border-gray-100 bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:border-orange-400 hover:bg-orange-50/40 hover:shadow-orange-400/20"
             >
 
               {"image" in post ? (

@@ -148,7 +148,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-[15px] font-medium text-[#C9D6E4] transition hover:text-white"
+              className="relative text-[15px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
@@ -179,7 +179,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block border-b border-white/10 px-6 py-4 text-[#E7ECF2]"
+              className="block border-b border-white/10 px-6 py-4 text-[#E7ECF2] transition hover:border-orange-400 hover:text-white"
             >
               {link.name}
             </a>

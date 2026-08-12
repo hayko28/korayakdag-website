@@ -142,9 +142,9 @@ export default function WhyChooseMe({ lang = "tr" }: { lang?: "tr" | "en" }) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-white/5 border border-white/10 p-8 transition hover:border-orange-400"
+              className="group rounded-2xl bg-white/5 border-2 border-white/10 p-8 transition duration-300 hover:border-orange-400 hover:bg-orange-500/5 hover:shadow-lg hover:shadow-orange-500/10"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 mb-4 [&>svg]:h-6 [&>svg]:w-6">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 mb-4 transition duration-300 group-hover:scale-110 group-hover:bg-orange-500/25 [&>svg]:h-6 [&>svg]:w-6">
                 {ICONS[item.icon]}
               </span>
 
