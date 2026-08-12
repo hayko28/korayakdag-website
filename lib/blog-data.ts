@@ -188,5 +188,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "tsrs-surdurulebilirlik-raporlama-zorunlulugu-2026",
+    title: "TSRS Sürdürülebilirlik Raporlama Zorunluluğu 2026: Yeni Eşikler Hangi Şirketleri Kapsıyor?",
+    excerpt: "KGK'nın Ocak 2026'da yükselttiği TSRS eşik değerleri (aktif toplamı, net satış hasılatı, çalışan sayısı), 2026'da başlayan güvence denetimi dönemi, raporlama takvimi ve şirketler için adım adım hazırlık süreciyle güncel rehber.",
+    category: "SÜRDÜRÜLEBİLİRLİK • TSRS • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
