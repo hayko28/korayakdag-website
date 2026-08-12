@@ -91,50 +91,55 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
         ? `${t.servicesLabel}: ${selectedServices.join(", ")}\n\n${baseMessage}`
         : baseMessage;
 
-    try {
-      // E-posta gonderimi dogrudan tarayicidan yapiliyor: formsubmit.co,
-      // sunucudan (Vercel) gelen istekleri Cloudflare bot korumasiyla
-      // engelliyor, gercek bir tarayicidan gelen istekleri engellemiyor.
-      const mailResponse = await fetch(
-        "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            subject,
-            message,
-            _subject: "Koray Akdağ web sitesi iletişim formu",
-            _template: "table",
-          }),
-        }
-      );
-
-      const mailResult = await mailResponse.json().catch(() => null);
-      const mailOk =
-        mailResponse.ok &&
-        mailResult !== null &&
-        mailResult.success !== false &&
-        mailResult.success !== "false";
-
-      if (!mailOk) throw new Error(t.submitError);
-
-      // Veritabanina kayit ikincil bir yedek; basarisiz olsa da kullaniciya
-      // gonderim basarili gorunur cunku e-posta zaten ulasti.
-      fetch("/api/contact", {
+    // E-posta gonderimi dogrudan tarayicidan yapiliyor: formsubmit.co,
+    // sunucudan (Vercel) gelen istekleri Cloudflare bot korumasiyla
+    // engelliyor, gercek bir tarayicidan gelen istekleri engellemiyor.
+    const mailPromise = fetch(
+      "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr",
+      {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, subject, message }),
-      }).catch(() => {});
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+          _subject: "Koray Akdağ web sitesi iletişim formu",
+          _template: "table",
+        }),
+      }
+    )
+      .then(async (response) => {
+        const result = await response.json().catch(() => null);
+        return (
+          response.ok &&
+          result !== null &&
+          result.success !== false &&
+          result.success !== "false"
+        );
+      })
+      .catch(() => false);
 
+    // Veritabanina kayit, e-posta gonderiminden bagimsiz ayrica denenir;
+    // biri basarisiz olsa da diger yoldan mesaj kaybolmaz.
+    const dbPromise = fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, subject, message }),
+    })
+      .then((response) => response.ok)
+      .catch(() => false);
+
+    const [mailOk, dbOk] = await Promise.all([mailPromise, dbPromise]);
+
+    if (mailOk || dbOk) {
       form.reset();
       setSelectedServices([]);
       setSubmissionState("success");
-    } catch {
+    } else {
       setSubmissionState("error");
     }
   };
