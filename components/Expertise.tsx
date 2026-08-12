@@ -139,7 +139,7 @@ export default function Expertise({ lang = "tr" }: { lang?: "tr" | "en" }) {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300 border border-gray-100"
+              className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition duration-300 border border-gray-100 hover:border-orange-400"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500 mb-5 [&>svg]:h-6 [&>svg]:w-6">
                 {ICONS[item.icon]}
