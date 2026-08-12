@@ -43,31 +43,33 @@ export default function About({ lang = "tr" }: { lang?: "tr" | "en" }) {
   return (
     <section
       id="about"
-      className="bg-white py-20 scroll-mt-[110px]"
+      className="bg-white py-10 scroll-mt-[80px]"
     >
-      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-[0.55fr_1.45fr] gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="grid lg:grid-cols-[0.55fr_1.45fr] gap-8 items-center rounded-3xl border-2 border-orange-400 px-8 py-5 lg:px-12">
 
-        <div>
-          <p className="text-orange-500 text-xl font-bold uppercase tracking-[2px] mb-4">
-            {t.label}
-          </p>
-
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#071A2F] leading-tight">
-            {t.heading}
-          </h2>
-        </div>
-
-        <div>
-          {t.paragraphs.map((p, i) => (
-            <p
-              key={i}
-              className="text-gray-700 text-base sm:text-lg leading-7 mb-4 last:mb-0"
-            >
-              {p}
+          <div>
+            <p className="text-orange-500 text-xl font-bold uppercase tracking-[2px] mb-4">
+              {t.label}
             </p>
-          ))}
-        </div>
 
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#071A2F] leading-tight">
+              {t.heading}
+            </h2>
+          </div>
+
+          <div>
+            {t.paragraphs.map((p, i) => (
+              <p
+                key={i}
+                className="text-gray-700 text-base sm:text-lg leading-6 sm:leading-7 mb-3 last:mb-0"
+              >
+                {p}
+              </p>
+            ))}
+          </div>
+
+        </div>
       </div>
     </section>
   );

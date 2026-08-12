@@ -161,13 +161,13 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
 
         <div className="grid gap-8 md:grid-cols-3">
           <ContactCard title={t.phone} icon={<PhoneIcon />}>
-            <a href="tel:+905060931828" className="text-orange-400 hover:underline">0506 093 18 28</a>
+            <a href="tel:+905060931828" className="font-semibold text-[#071A2F] hover:underline">0506 093 18 28</a>
           </ContactCard>
           <ContactCard title={t.corporateEmail} icon={<EnvelopeIcon />}>
-            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap text-orange-400 hover:underline">koray.akdag@sistemglobal.com.tr</a>
+            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap font-semibold text-[#071A2F] hover:underline">koray.akdag@sistemglobal.com.tr</a>
           </ContactCard>
           <ContactCard title="LinkedIn" icon={<LinkedInIcon />}>
-            <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">{t.linkedinVisit}</a>
+            <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:underline">{t.linkedinVisit}</a>
           </ContactCard>
         </div>
       </div>
@@ -239,11 +239,11 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
 
 function ContactCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl bg-[#071A2F] p-8 text-white shadow-lg">
-      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 [&>svg]:h-6 [&>svg]:w-6">
+    <div className="rounded-2xl border border-gray-200 bg-white p-9 shadow-lg">
+      <div className="mb-6 flex h-[84px] w-[84px] items-center justify-center rounded-full bg-[#071A2F] text-white shadow-md [&>svg]:h-[38px] [&>svg]:w-[38px]">
         {icon}
       </div>
-      <h3 className="mb-4 text-xl font-bold">{title}</h3>
+      <h3 className="mb-4 text-xl font-bold text-[#071A2F]">{title}</h3>
       {children}
     </div>
   );
