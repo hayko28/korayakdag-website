@@ -111,7 +111,7 @@ export default function BlogSearch({
           type="button"
           onClick={() => setOpen(true)}
           aria-label={t.searchLabel}
-          className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#123b63]/20 bg-white/70 text-base text-[#123b63] transition hover:border-orange-500 hover:text-orange-500"
+          className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/20 bg-white/10 text-base text-white transition hover:border-orange-400 hover:text-orange-400"
         >
           🔍
         </button>

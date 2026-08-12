@@ -1,6 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { GROUP_DEFS, categoriesByLang } from "@/components/Services";
+
+export const OPEN_CONTACT_FORM_EVENT = "open-contact-form";
 
 const STRINGS = {
   tr: {
@@ -14,6 +17,8 @@ const STRINGS = {
     closeForm: "Formu kapat",
     formLabel: "İletişim Formu",
     formHeading: "Nasıl yardımcı olabilirim?",
+    servicesLabel: "İlgilendiğiniz Hizmetler",
+    servicesHint: "Bir veya birden fazla seçebilirsiniz (opsiyonel).",
     fullName: "Ad Soyad",
     email: "E-posta",
     subject: "Konu",
@@ -35,6 +40,8 @@ const STRINGS = {
     closeForm: "Close form",
     formLabel: "Contact Form",
     formHeading: "How can I help you?",
+    servicesLabel: "Services You're Interested In",
+    servicesHint: "You can select one or more (optional).",
     fullName: "Full Name",
     email: "Email",
     subject: "Subject",
@@ -50,13 +57,32 @@ const STRINGS = {
 export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
   const [isPanelOpen, setIsPanelOpen] = useState(false);
   const [submissionState, setSubmissionState] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const t = STRINGS[lang];
+
+  useEffect(() => {
+    const openPanel = () => setIsPanelOpen(true);
+    window.addEventListener(OPEN_CONTACT_FORM_EVENT, openPanel);
+    return () => window.removeEventListener(OPEN_CONTACT_FORM_EVENT, openPanel);
+  }, []);
+
+  const toggleService = (title: string) => {
+    setSelectedServices((prev) =>
+      prev.includes(title) ? prev.filter((s) => s !== title) : [...prev, title]
+    );
+  };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
     setSubmissionState("sending");
+
+    const baseMessage = String(formData.get("message") ?? "");
+    const message =
+      selectedServices.length > 0
+        ? `${t.servicesLabel}: ${selectedServices.join(", ")}\n\n${baseMessage}`
+        : baseMessage;
 
     try {
       const response = await fetch("/api/contact", {
@@ -69,12 +95,13 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
           name: formData.get("name"),
           email: formData.get("email"),
           subject: formData.get("subject"),
-          message: formData.get("message"),
+          message,
         }),
       });
 
       if (!response.ok) throw new Error(t.submitError);
       form.reset();
+      setSelectedServices([]);
       setSubmissionState("success");
     } catch {
       setSubmissionState("error");
@@ -97,16 +124,16 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <ContactCard title={t.phone} icon="📞">
+          <ContactCard title={t.phone} icon={<PhoneIcon />}>
             <a href="tel:+905060931828" className="text-orange-400 hover:underline">0506 093 18 28</a>
           </ContactCard>
-          <ContactCard title={t.personalEmail} icon="✉️">
+          <ContactCard title={t.personalEmail} icon={<EnvelopeIcon />}>
             <a href="mailto:koray_akdag@hotmail.com" className="break-all text-orange-400 hover:underline">koray_akdag@hotmail.com</a>
           </ContactCard>
-          <ContactCard title={t.corporateEmail} icon="✉️">
+          <ContactCard title={t.corporateEmail} icon={<EnvelopeIcon />}>
             <a href="mailto:koray.akdag@sistemglobal.com.tr" className="break-all text-orange-400 hover:underline">koray.akdag@sistemglobal.com.tr</a>
           </ContactCard>
-          <ContactCard title="LinkedIn" icon="in">
+          <ContactCard title="LinkedIn" icon={<LinkedInIcon />}>
             <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">{t.linkedinVisit}</a>
           </ContactCard>
         </div>
@@ -124,6 +151,47 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
               <button type="button" onClick={() => setIsPanelOpen(false)} className="rounded-lg p-2 text-2xl text-[#071A2F] hover:bg-gray-100" aria-label={t.closeForm}>×</button>
             </div>
             <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <p className="text-sm font-semibold text-[#071A2F]">{t.servicesLabel}</p>
+                <p className="mb-3 mt-1 text-xs text-gray-500">{t.servicesHint}</p>
+                <div className="space-y-4">
+                  {GROUP_DEFS.map((group) => {
+                    const groupTitle = group[lang].title;
+                    return (
+                      <div key={groupTitle}>
+                        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-orange-500">
+                          {groupTitle}
+                        </p>
+                        <div className="grid gap-2 sm:grid-cols-2">
+                          {group.categoryIndexes.map((catIndex) => {
+                            const title = categoriesByLang[lang][catIndex].title;
+                            const checked = selectedServices.includes(title);
+                            return (
+                              <label
+                                key={title}
+                                className={`flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2.5 text-sm transition ${
+                                  checked
+                                    ? "border-orange-500 bg-orange-50 text-[#071A2F]"
+                                    : "border-gray-300 text-gray-700 hover:border-orange-300"
+                                }`}
+                              >
+                                <input
+                                  type="checkbox"
+                                  checked={checked}
+                                  onChange={() => toggleService(title)}
+                                  className="h-4 w-4 accent-orange-500"
+                                />
+                                {title}
+                              </label>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
               <FormField label={t.fullName} name="name" autoComplete="name" />
               <FormField label={t.email} name="email" type="email" autoComplete="email" />
               <FormField label={t.subject} name="subject" />
@@ -141,8 +209,42 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
   );
 }
 
-function ContactCard({ title, icon, children }: { title: string; icon: string; children: React.ReactNode }) {
-  return <div className="rounded-2xl bg-[#071A2F] p-8 text-white shadow-lg"><div className="mb-5 text-4xl">{icon}</div><h3 className="mb-4 text-xl font-bold">{title}</h3>{children}</div>;
+function ContactCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl bg-[#071A2F] p-8 text-white shadow-lg">
+      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 [&>svg]:h-6 [&>svg]:w-6">
+        {icon}
+      </div>
+      <h3 className="mb-4 text-xl font-bold">{title}</h3>
+      {children}
+    </div>
+  );
+}
+
+function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4.5 5.5c0-.6.4-1 1-1h2.2c.5 0 .9.3 1 .8l.8 3a1 1 0 0 1-.3 1L7.8 10.7a12 12 0 0 0 5.5 5.5l1.4-1.4a1 1 0 0 1 1-.3l3 .8c.5.1.8.5.8 1v2.2c0 .6-.4 1-1 1C10.5 19.5 4.5 13.5 4.5 5.5Z" />
+    </svg>
+  );
+}
+
+function EnvelopeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3.5" y="5.5" width="17" height="13" rx="2" />
+      <path d="m4.5 7 7.5 6 7.5-6" />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="3" />
+      <path d="M8 10.5v6M8 8v.01M12.5 16.5v-3.8c0-1.2.8-2.2 2-2.2s2 1 2 2.2v3.8" />
+    </svg>
+  );
 }
 
 function FormField({ label, name, type = "text", autoComplete }: { label: string; name: string; type?: string; autoComplete?: string }) {

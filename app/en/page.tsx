@@ -17,7 +17,7 @@ export default function HomeEn() {
 
       <div className="h-[78px]" />
 
-      <Hero />
+      <Hero lang="en" />
 
       <About lang="en" />
 

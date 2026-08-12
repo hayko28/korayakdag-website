@@ -69,13 +69,13 @@ export default function Navbar() {
 
   const LanguageSwitch = ({ className = "" }: { className?: string }) => (
     <div
-      className={`flex overflow-hidden rounded-lg border border-[#123b63]/20 ${className}`}
+      className={`flex overflow-hidden rounded-lg border border-white/20 ${className}`}
     >
       {isEn ? (
         alternate.available ? (
           <a
             href={alternate.href}
-            className="px-3 py-1.5 text-[13px] font-semibold text-[#123b63] transition hover:bg-[#123b63]/10"
+            className="px-3 py-1.5 text-[13px] font-semibold text-white/80 transition hover:bg-white/10 hover:text-white"
           >
             TR
           </a>
@@ -83,27 +83,27 @@ export default function Navbar() {
           <span
             title="Turkish version not available"
             aria-disabled="true"
-            className="cursor-not-allowed px-3 py-1.5 text-[13px] font-semibold text-[#123b63]/40"
+            className="cursor-not-allowed px-3 py-1.5 text-[13px] font-semibold text-white/30"
           >
             TR
           </span>
         )
       ) : (
-        <span className="bg-[#123b63] px-3 py-1.5 text-[13px] font-semibold text-white">
+        <span className="bg-orange-500 px-3 py-1.5 text-[13px] font-semibold text-white">
           TR
         </span>
       )}
 
-      <span className="w-px bg-[#123b63]/20" />
+      <span className="w-px bg-white/20" />
 
       {isEn ? (
-        <span className="bg-[#123b63] px-3 py-1.5 text-[13px] font-semibold text-white">
+        <span className="bg-orange-500 px-3 py-1.5 text-[13px] font-semibold text-white">
           EN
         </span>
       ) : alternate.available ? (
         <a
           href={alternate.href}
-          className="px-3 py-1.5 text-[13px] font-semibold text-[#123b63] transition hover:bg-[#123b63]/10"
+          className="px-3 py-1.5 text-[13px] font-semibold text-white/80 transition hover:bg-white/10 hover:text-white"
         >
           EN
         </a>
@@ -111,7 +111,7 @@ export default function Navbar() {
         <span
           title="İngilizce çevirisi henüz yok"
           aria-disabled="true"
-          className="cursor-not-allowed px-3 py-1.5 text-[13px] font-semibold text-[#123b63]/40"
+          className="cursor-not-allowed px-3 py-1.5 text-[13px] font-semibold text-white/30"
         >
           EN
         </span>
@@ -120,21 +120,19 @@ export default function Navbar() {
   );
 
   return (
-    <header className="fixed top-0 left-0 z-[9999] w-full h-[78px] bg-[#e8f2fa]/95 backdrop-blur-md shadow-md">
+    <header className="fixed top-0 left-0 z-[9999] w-full h-[78px] bg-gradient-to-b from-[#0F2A47] to-[#0A1B30]/95 backdrop-blur-md shadow-md">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 lg:px-8">
 
         <a
           href="#hero"
-          className="flex flex-col justify-center"
+          className="flex min-w-0 flex-col justify-center"
         >
-          <div className="text-[24px] font-black text-[#123b63]">
-            Koray Akdağ
+          <div className="truncate text-[13px] font-black tracking-tight text-white sm:text-[19px] lg:text-[21px]">
+            {isEn ? "Business Development Services" : "İş Geliştirme Hizmetleri"}
           </div>
 
-          <div className="mt-0.5 text-[13px] font-semibold tracking-[1.6px] text-orange-500">
-            {isEn
-              ? "STRATEGY & BUSINESS DEVELOPMENT CONSULTANT"
-              : "STRATEJİ VE İŞ GELİŞTİRME DANIŞMANI"}
+          <div className="mt-0.5 hidden whitespace-nowrap text-[11.5px] font-medium tracking-[1px] text-[#9FB2C9] sm:block">
+            Koray Akdağ — {isEn ? "Strategic Consulting" : "Stratejik Danışmanlık"}
           </div>
         </a>
 
@@ -143,38 +141,38 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-[15px] font-medium text-[#123b63] transition hover:text-orange-500"
+              className="text-[15px] font-medium text-[#C9D6E4] transition hover:text-white"
             >
               {link.name}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
           <BlogSearch lang={isEn ? "en" : "tr"} variant="navbar" />
 
           <LanguageSwitch />
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-[#123b63]/20 bg-white/70 lg:hidden"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 lg:hidden"
             aria-label={isEn ? "Open menu" : "Menüyü aç"}
           >
-            <span className="h-0.5 w-5 bg-[#123b63]" />
-            <span className="h-0.5 w-5 bg-[#123b63]" />
-            <span className="h-0.5 w-5 bg-[#123b63]" />
+            <span className="h-0.5 w-5 bg-white" />
+            <span className="h-0.5 w-5 bg-white" />
+            <span className="h-0.5 w-5 bg-white" />
           </button>
         </div>
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] w-full bg-[#e8f2fa] shadow-lg lg:hidden">
+        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg lg:hidden">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block border-b border-[#123b63]/10 px-6 py-4 text-[#123b63]"
+              className="block border-b border-white/10 px-6 py-4 text-[#E7ECF2]"
             >
               {link.name}
             </a>

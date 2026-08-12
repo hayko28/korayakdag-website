@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+
+      #scene {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, #fdf3e4 0%, #d9ecf4 62%, #cfe8f2 100%);
+      }
+
+      #ground {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 260px;
+        background: #e8cda3;
+      }
+
+      .house {
+        position: absolute;
+        bottom: 260px;
+      }
+      .house .wall {
+        position: absolute;
+        bottom: 0;
+        width: 260px;
+        height: 220px;
+        background: #f6e4c8;
+        border-radius: 10px 10px 0 0;
+      }
+      .house .roof {
+        position: absolute;
+        bottom: 220px;
+        left: -18px;
+        width: 296px;
+        height: 70px;
+        background: #d9714e;
+        border-radius: 10px 10px 0 0;
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+      }
+      .house .door {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        width: 60px;
+        height: 110px;
+        background: #b98a52;
+        border-radius: 6px 6px 0 0;
+      }
+
+      #tokko {
+        position: absolute;
+        left: 760px;
+        top: 380px;
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+      }
+
+      #screwdriver {
+        position: absolute;
+        left: 985px;
+        top: 662px;
+        width: 60px;
+        height: 140px;
+        opacity: 0;
+        transform-origin: 50% 85%;
+      }
+
+      .spark {
+        position: absolute;
+        opacity: 0;
+        transform-origin: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="7"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="scene" class="clip" data-start="0" data-duration="7" data-track-index="1">
+        <div id="ground"></div>
+
+        <div class="house" style="left: 120px;">
+          <div class="roof"></div>
+          <div class="wall"></div>
+          <div class="door"></div>
+        </div>
+        <div class="house" style="left: 1540px;">
+          <div class="roof"></div>
+          <div class="wall"></div>
+          <div class="door"></div>
+        </div>
+
+        <!-- Tokko -->
+        <svg id="tokko" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="250" cy="460" rx="140" ry="18" fill="#000000" opacity="0.08" />
+
+          <!-- wheels -->
+          <circle cx="170" cy="430" r="30" fill="#8b9297" stroke="#5f6569" stroke-width="4" />
+          <circle cx="330" cy="430" r="30" fill="#8b9297" stroke="#5f6569" stroke-width="4" />
+
+          <!-- arms -->
+          <ellipse cx="70" cy="270" rx="26" ry="46" fill="#f5a623" stroke="#c97b12" stroke-width="6" />
+          <g id="armR" style="transform-box: fill-box; transform-origin: 50% 10%;">
+            <ellipse cx="430" cy="270" rx="26" ry="46" fill="#f5a623" stroke="#c97b12" stroke-width="6" />
+            <!-- hand -->
+            <circle cx="430" cy="313" r="17" fill="#f5a623" stroke="#c97b12" stroke-width="5" />
+            <!-- screwdriver held in hand -->
+            <g id="heldScrewdriver" opacity="0" transform="translate(430,300) rotate(-18) scale(0.55)">
+              <rect x="-10" y="-58" width="20" height="58" rx="6" fill="#5fa8d3" stroke="#3d7ca3" stroke-width="4" />
+              <rect x="-18" y="0" width="36" height="42" rx="10" fill="#c7cdd1" stroke="#8b9297" stroke-width="4" />
+              <rect x="-7" y="38" width="14" height="14" rx="3" fill="#8b9297" />
+            </g>
+          </g>
+
+          <!-- body -->
+          <rect x="100" y="130" width="300" height="290" rx="90" fill="#f5a623" stroke="#c97b12" stroke-width="8" />
+
+          <!-- chest socket -->
+          <circle cx="250" cy="360" r="24" fill="#c7cdd1" stroke="#8b9297" stroke-width="5" />
+          <circle id="pop-ring" cx="250" cy="360" r="24" fill="none" stroke="#5fa8d3" stroke-width="6" opacity="0" />
+
+          <!-- eyes -->
+          <g id="eyeL" style="transform-box: fill-box; transform-origin: 50% 50%;">
+            <ellipse cx="196" cy="235" rx="40" ry="48" fill="#ffffff" stroke="#c97b12" stroke-width="4" />
+            <g id="pupilL" style="transform-box: fill-box; transform-origin: 50% 50%;">
+              <circle cx="204" cy="242" r="20" fill="#24211c" />
+              <circle cx="212" cy="232" r="7" fill="#ffffff" />
+            </g>
+          </g>
+          <g id="eyeR" style="transform-box: fill-box; transform-origin: 50% 50%;">
+            <ellipse cx="304" cy="235" rx="40" ry="48" fill="#ffffff" stroke="#c97b12" stroke-width="4" />
+            <g id="pupilR" style="transform-box: fill-box; transform-origin: 50% 50%;">
+              <circle cx="296" cy="242" r="20" fill="#24211c" />
+              <circle cx="288" cy="232" r="7" fill="#ffffff" />
+            </g>
+          </g>
+
+          <!-- mouth -->
+          <path d="M 215 300 Q 250 325 285 300" stroke="#24211c" stroke-width="7" fill="none" stroke-linecap="round" />
+        </svg>
+
+        <!-- screwdriver -->
+        <svg id="screwdriver" viewBox="0 0 60 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="0" width="20" height="70" rx="6" fill="#5fa8d3" stroke="#3d7ca3" stroke-width="4" />
+          <rect x="10" y="66" width="40" height="60" rx="12" fill="#c7cdd1" stroke="#8b9297" stroke-width="4" />
+          <rect x="22" y="122" width="16" height="16" rx="4" fill="#8b9297" />
+        </svg>
+
+        <!-- celebration sparkles -->
+        <svg class="spark" id="spark1" style="left: 700px; top: 300px; width: 46px; height: 46px;" viewBox="0 0 24 24">
+          <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#5fa8d3" />
+        </svg>
+        <svg class="spark" id="spark2" style="left: 1180px; top: 340px; width: 34px; height: 34px;" viewBox="0 0 24 24">
+          <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#d9714e" />
+        </svg>
+        <svg class="spark" id="spark3" style="left: 950px; top: 260px; width: 28px; height: 28px;" viewBox="0 0 24 24">
+          <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#f5a623" />
+        </svg>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // entrance pop-in
+      tl.fromTo(
+        "#tokko",
+        { opacity: 0, scale: 0.8, y: 40 },
+        { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" },
+        0
+      );
+
+      // idle bounce (0.6s - 3.4s)
+      tl.to("#tokko", { y: "-=12", duration: 0.35, yoyo: true, repeat: 7, ease: "sine.inOut" }, 0.6);
+
+      // blink
+      tl.to(["#eyeL", "#eyeR"], { scaleY: 0.08, duration: 0.1, yoyo: true, repeat: 1, ease: "power1.inOut" }, 2.1);
+
+      // eyes glance down toward the working hand
+      tl.to(["#pupilL", "#pupilR"], { x: 6, y: 5, duration: 0.3, ease: "power1.out" }, 3.1);
+
+      // hand picks up the screwdriver, arm carries it up, then hands it off to the socket
+      tl.to("#heldScrewdriver", { opacity: 1, duration: 0.15, ease: "power1.out" }, 3.15);
+      tl.to("#armR", { rotation: -26, duration: 0.4, ease: "power2.out" }, 3.3);
+      tl.to("#heldScrewdriver", { opacity: 0, duration: 0.08, ease: "power1.in" }, 4.02);
+      tl.fromTo(
+        "#screwdriver",
+        { opacity: 0, scale: 0.65 },
+        { opacity: 1, scale: 0.85, duration: 0.15, ease: "power1.out" },
+        4.02
+      );
+      tl.to("#armR", { rotation: 0, duration: 0.35, ease: "power1.inOut" }, 4.15);
+
+      // eyes return to center
+      tl.to(["#pupilL", "#pupilR"], { x: 0, y: 0, duration: 0.25, ease: "power1.out" }, 4.15);
+
+      // landing pop — ring burst + tiny squash
+      tl.fromTo(
+        "#pop-ring",
+        { opacity: 1, attr: { r: 24 } },
+        { opacity: 0, attr: { r: 75 }, duration: 0.5, ease: "power1.out" },
+        4.02
+      );
+      tl.to("#tokko", { scaleX: 1.06, scaleY: 0.94, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.inOut" }, 4.02);
+
+      // celebration hops
+      tl.to("#tokko", { y: "-=45", duration: 0.35, yoyo: true, repeat: 1, ease: "power1.inOut" }, 4.55);
+      tl.to("#tokko", { y: "-=45", duration: 0.35, yoyo: true, repeat: 1, ease: "power1.inOut" }, 5.35);
+
+      // sparkles
+      tl.fromTo("#spark1", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power1.out" }, 4.55)
+        .to("#spark1", { opacity: 0, duration: 0.4, ease: "power1.in" }, 5.25);
+      tl.fromTo("#spark2", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power1.out" }, 4.85)
+        .to("#spark2", { opacity: 0, duration: 0.4, ease: "power1.in" }, 5.55);
+      tl.fromTo("#spark3", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power1.out" }, 5.15)
+        .to("#spark3", { opacity: 0, duration: 0.4, ease: "power1.in" }, 5.85);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

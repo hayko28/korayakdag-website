@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const servicesByLang = {
+export const categoriesByLang = {
   tr: [
     {
       title: "⚖️ Hukuk Danışmanlığı",
@@ -343,16 +343,93 @@ const servicesByLang = {
   ],
 };
 
+// Her grup, categoriesByLang dizisindeki kategorilere index ile referans verir.
+export const GROUP_DEFS = [
+  {
+    icon: "building",
+    tr: { title: "Devlet Destekleri ve Teşvikler" },
+    en: { title: "Government Grants & Incentives" },
+    categoryIndexes: [2, 4, 3, 11],
+  },
+  {
+    icon: "globe",
+    tr: { title: "Şirket Kuruluşu ve Uluslararasılaşma" },
+    en: { title: "Company Formation & Internationalization" },
+    categoryIndexes: [1],
+  },
+  {
+    icon: "scale",
+    tr: { title: "Hukuk, Vergi ve Mali Danışmanlık" },
+    en: { title: "Legal, Tax & Financial Consulting" },
+    categoryIndexes: [0, 5, 7, 14, 10],
+  },
+  {
+    icon: "bars",
+    tr: { title: "Kurumsal Gelişim ve Değerleme" },
+    en: { title: "Corporate Development & Valuation" },
+    categoryIndexes: [6, 12, 9, 8],
+  },
+  {
+    icon: "target",
+    tr: { title: "Pazarlama, Satış ve Dijital" },
+    en: { title: "Marketing, Sales & Digital" },
+    categoryIndexes: [15, 13, 16],
+  },
+] as const;
+
+const ICONS: Record<string, React.ReactNode> = {
+  building: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 19h16" />
+      <path d="M6 19V9l6-4 6 4v10" />
+      <path d="M10 19v-6h4v6" />
+    </svg>
+  ),
+  globe: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.4 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.4-3.6-8.5s1.2-6.1 3.6-8.5Z" />
+    </svg>
+  ),
+  scale: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3v3M12 3 7 6M12 3l5 3M7 6l-3.5 7a3.5 3.5 0 0 0 7 0L7 6ZM17 6l-3.5 7a3.5 3.5 0 0 0 7 0L17 6ZM4 21h16" />
+    </svg>
+  ),
+  bars: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 19V10M10 19V5M16 19v-7M4 19h16" />
+    </svg>
+  ),
+  target: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="8.5" />
+      <circle cx="12" cy="12" r="4.5" />
+      <circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+};
+
 const STRINGS = {
-  tr: { label: "Hizmetler", heading: "Profesyonel Danışmanlık Hizmetleri", close: "Kapat" },
-  en: { label: "Services", heading: "Professional Consulting Services", close: "Close" },
+  tr: {
+    label: "Hizmetler",
+    heading: "Profesyonel Danışmanlık Hizmetleri",
+    close: "Kapat",
+    areaCount: (n: number) => `${n} hizmet alanı`,
+  },
+  en: {
+    label: "Services",
+    heading: "Professional Consulting Services",
+    close: "Close",
+    areaCount: (n: number) => `${n} service areas`,
+  },
 };
 
 export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
   const [open, setOpen] = useState<number | null>(null);
-  const services = servicesByLang[lang];
+  const categories = categoriesByLang[lang];
   const t = STRINGS[lang];
-  const activeService = open !== null ? services[open] : null;
+  const activeGroup = open !== null ? GROUP_DEFS[open] : null;
 
   return (
     <section
@@ -361,7 +438,7 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
     >
       <div className="max-w-7xl mx-auto px-8">
 
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <p className="text-orange-500 text-2xl font-bold uppercase tracking-[2px] mb-3">
             {t.label}
           </p>
@@ -371,19 +448,21 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-stretch">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+          {GROUP_DEFS.map((group, index) => (
             <button
-              key={index}
+              key={group.icon}
               onClick={() => setOpen(index)}
-              className="flex w-full items-center justify-between rounded-2xl bg-white/5 border border-white/10 px-5 py-4 text-left transition hover:border-orange-400"
+              className="flex flex-col items-start gap-3 rounded-2xl bg-white/5 border border-white/10 p-6 text-left transition hover:border-orange-400"
             >
-              <h3 className="text-lg font-semibold">
-                {service.title}
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 [&>svg]:h-6 [&>svg]:w-6">
+                {ICONS[group.icon]}
+              </span>
+              <h3 className="text-lg font-semibold leading-snug">
+                {group[lang].title}
               </h3>
-
-              <span className="text-3xl text-orange-400 font-light">
-                +
+              <span className="text-xs text-gray-400">
+                {t.areaCount(group.categoryIndexes.length)}
               </span>
             </button>
           ))}
@@ -391,27 +470,44 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
 
       </div>
 
-      {activeService && (
+      {activeGroup && (
         <div className="fixed inset-0 z-[10000]" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
           <button type="button" aria-label={t.close} onClick={() => setOpen(null)} className="absolute inset-0 bg-[#071A2F]/70" />
-          <div className="relative mx-auto mt-16 max-h-[80vh] max-w-lg overflow-y-auto rounded-2xl bg-[#0B2340] border border-white/10 p-8 shadow-2xl">
+          <div className="relative mx-auto mt-12 max-h-[82vh] max-w-2xl overflow-y-auto rounded-2xl bg-[#0B2340] border border-white/10 p-8 shadow-2xl">
             <div className="mb-6 flex items-start justify-between gap-6">
-              <h3 id="service-modal-title" className="text-2xl font-bold">
-                {activeService.title}
-              </h3>
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-500/15 text-orange-400 [&>svg]:h-5 [&>svg]:w-5">
+                  {ICONS[activeGroup.icon]}
+                </span>
+                <h3 id="service-modal-title" className="text-2xl font-bold">
+                  {activeGroup[lang].title}
+                </h3>
+              </div>
               <button type="button" onClick={() => setOpen(null)} aria-label={t.close} className="rounded-lg p-1 text-2xl text-white hover:bg-white/10">×</button>
             </div>
 
-            <ul className="grid gap-3">
-              {activeService.items.map((item, i) => (
-                <li
-                  key={i}
-                  className="bg-white/5 rounded-lg px-4 py-3 text-sm text-gray-200 border border-white/5"
-                >
-                  ✔ {item}
-                </li>
-              ))}
-            </ul>
+            <div className="grid gap-6 sm:grid-cols-2">
+              {activeGroup.categoryIndexes.map((catIndex) => {
+                const category = categories[catIndex];
+                return (
+                  <div key={catIndex}>
+                    <h4 className="mb-3 text-sm font-bold text-orange-300">
+                      {category.title}
+                    </h4>
+                    <ul className="grid gap-2">
+                      {category.items.map((item, i) => (
+                        <li
+                          key={i}
+                          className="bg-white/5 rounded-lg px-3 py-2 text-sm text-gray-200 border border-white/5"
+                        >
+                          ✔ {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       )}
