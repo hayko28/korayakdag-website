@@ -23,6 +23,9 @@ function getAlternateLocale(pathname: string): {
       : { href: "/blog", label: "TR", available: true };
   }
 
+  if (pathname === "/en/privacy-policy")
+    return { href: "/gizlilik-politikasi", label: "TR", available: true };
+
   if (pathname.startsWith("/en")) {
     return { href: "/", label: "TR", available: true };
   }
@@ -31,6 +34,8 @@ function getAlternateLocale(pathname: string): {
   if (pathname === "/") return { href: "/en", label: "EN", available: true };
   if (pathname === "/blog")
     return { href: "/en/blog", label: "EN", available: true };
+  if (pathname === "/gizlilik-politikasi")
+    return { href: "/en/privacy-policy", label: "EN", available: true };
 
   const trBlogMatch = pathname.match(/^\/blog\/([^/]+)$/);
   if (trBlogMatch) {
@@ -49,22 +54,24 @@ export default function Navbar() {
   const isEn = (pathname ?? "/").startsWith("/en");
   const alternate = getAlternateLocale(pathname ?? "/");
 
+  const homePath = isEn ? "/en" : "/";
+
   const links = isEn
     ? [
-        { name: "Home", href: "#hero" },
-        { name: "About", href: "#about" },
-        { name: "Expertise", href: "#expertise" },
-        { name: "Services", href: "#services" },
-        { name: "Blog", href: "#blog" },
-        { name: "Contact", href: "#contact" },
+        { name: "Home", href: `${homePath}#hero` },
+        { name: "About", href: `${homePath}#about` },
+        { name: "Expertise", href: `${homePath}#expertise` },
+        { name: "Services", href: `${homePath}#services` },
+        { name: "Blog", href: `${homePath}#blog` },
+        { name: "Contact", href: `${homePath}#contact` },
       ]
     : [
-        { name: "Ana Sayfa", href: "#hero" },
-        { name: "Hakkımda", href: "#about" },
-        { name: "Uzmanlık Alanları", href: "#expertise" },
-        { name: "Hizmetler", href: "#services" },
-        { name: "Blog", href: "#blog" },
-        { name: "İletişim", href: "#contact" },
+        { name: "Ana Sayfa", href: `${homePath}#hero` },
+        { name: "Hakkımda", href: `${homePath}#about` },
+        { name: "Uzmanlık Alanları", href: `${homePath}#expertise` },
+        { name: "Hizmetler", href: `${homePath}#services` },
+        { name: "Blog", href: `${homePath}#blog` },
+        { name: "İletişim", href: `${homePath}#contact` },
       ];
 
   const LanguageSwitch = ({ className = "" }: { className?: string }) => (
@@ -124,7 +131,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 lg:px-8">
 
         <a
-          href="#hero"
+          href={`${homePath}#hero`}
           className="flex min-w-0 flex-col justify-center"
         >
           <div className="truncate text-[13px] font-black tracking-tight text-white sm:text-[19px] lg:text-[21px]">

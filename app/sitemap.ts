@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en`, changeFrequency: "weekly", priority: 0.6 },
     { url: `${BASE_URL}/en/blog`, changeFrequency: "weekly", priority: 0.5 },
+    { url: `${BASE_URL}/gizlilik-politikasi`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/en/privacy-policy`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const trBlogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({

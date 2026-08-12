@@ -11,8 +11,7 @@ const STRINGS = {
     heading: "Benimle iletişime geçin.",
     fillForm: "Formu Doldur",
     phone: "Telefon",
-    personalEmail: "Kişisel E-posta",
-    corporateEmail: "Kurumsal E-posta",
+    corporateEmail: "E-posta",
     linkedinVisit: "LinkedIn profilimi ziyaret edin →",
     closeForm: "Formu kapat",
     formLabel: "İletişim Formu",
@@ -28,14 +27,16 @@ const STRINGS = {
     sending: "Gönderiliyor…",
     send: "Gönder",
     submitError: "Form gönderilemedi",
+    consentPrefix: "Gönder'e tıklayarak ",
+    consentLink: "Gizlilik Politikası ve KVKK Aydınlatma Metni'ni",
+    consentSuffix: " kabul etmiş olursunuz.",
   },
   en: {
     label: "Contact",
     heading: "Get in touch with me.",
     fillForm: "Fill Out the Form",
     phone: "Phone",
-    personalEmail: "Personal Email",
-    corporateEmail: "Corporate Email",
+    corporateEmail: "Email",
     linkedinVisit: "Visit my LinkedIn profile →",
     closeForm: "Close form",
     formLabel: "Contact Form",
@@ -51,6 +52,9 @@ const STRINGS = {
     sending: "Sending…",
     send: "Send",
     submitError: "Failed to submit form",
+    consentPrefix: "By clicking Send, you accept the ",
+    consentLink: "Privacy Policy & Data Protection Notice",
+    consentSuffix: ".",
   },
 };
 
@@ -123,15 +127,12 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
           </button>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3">
           <ContactCard title={t.phone} icon={<PhoneIcon />}>
             <a href="tel:+905060931828" className="text-orange-400 hover:underline">0506 093 18 28</a>
           </ContactCard>
-          <ContactCard title={t.personalEmail} icon={<EnvelopeIcon />}>
-            <a href="mailto:koray_akdag@hotmail.com" className="break-all text-orange-400 hover:underline">koray_akdag@hotmail.com</a>
-          </ContactCard>
           <ContactCard title={t.corporateEmail} icon={<EnvelopeIcon />}>
-            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="break-all text-orange-400 hover:underline">koray.akdag@sistemglobal.com.tr</a>
+            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap text-orange-400 hover:underline">koray.akdag@sistemglobal.com.tr</a>
           </ContactCard>
           <ContactCard title="LinkedIn" icon={<LinkedInIcon />}>
             <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">{t.linkedinVisit}</a>
@@ -200,6 +201,13 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
               </label>
               {submissionState === "success" && <p role="status" className="rounded-lg bg-green-50 p-3 text-sm text-green-800">{t.success}</p>}
               {submissionState === "error" && <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{t.error}</p>}
+              <p className="text-xs text-gray-500">
+                {t.consentPrefix}
+                <a href={lang === "en" ? "/en/privacy-policy" : "/gizlilik-politikasi"} target="_blank" rel="noopener noreferrer" className="font-semibold text-orange-500 hover:underline">
+                  {t.consentLink}
+                </a>
+                {t.consentSuffix}
+              </p>
               <button type="submit" disabled={submissionState === "sending"} className="w-full rounded-xl bg-orange-500 px-6 py-4 font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70">{submissionState === "sending" ? t.sending : t.send}</button>
             </form>
           </aside>

@@ -20,7 +20,6 @@ body {
 
 /* 1. Global Sayfa İçi Kaydırma (Scroll) Ayarları */
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 5.5rem; /* Navbar yüksekliğine göre hizalar (~88px) */
 }
 

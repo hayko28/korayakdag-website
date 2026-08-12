@@ -5,7 +5,8 @@ import { useState } from "react";
 export const categoriesByLang = {
   tr: [
     {
-      title: "⚖️ Hukuk Danışmanlığı",
+      icon: "scale",
+      title: "Hukuk Danışmanlığı",
       items: [
         "Sözleşme Hukuku",
         "Dava Hukuku",
@@ -19,7 +20,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌍 Yurt Dışı Şirket Kuruluşları",
+      icon: "globe",
+      title: "Yurt Dışı Şirket Kuruluşları",
       items: [
         "🇵🇱 Polonya",
         "🇮🇹 İtalya",
@@ -37,7 +39,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🚀 İhracat Teşvikleri",
+      icon: "rocket",
+      title: "İhracat Teşvikleri",
       items: [
         "Uluslararası İş Geliştirme",
         "Yurt Dışı Pazar Analizleri",
@@ -45,7 +48,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💻 Teknoloji ve Ar-Ge Destekleri",
+      icon: "chip",
+      title: "Teknoloji ve Ar-Ge Destekleri",
       items: [
         "Teknopark'a Giriş",
         "Ar-Ge Tasarım Merkezi",
@@ -55,7 +59,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💰 Yatırım Destekleri",
+      icon: "coins",
+      title: "Yatırım Destekleri",
       items: [
         "TÜBİTAK Destekleri",
         "TURQUALITY",
@@ -67,7 +72,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📊 Vergi ve Finansal Yönetim",
+      icon: "bars",
+      title: "Vergi ve Finansal Yönetim",
       items: [
         "Ulusal Vergi Danışmanlığı",
         "Uluslararası Vergi Danışmanlığı",
@@ -75,7 +81,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📈 Şirket Değerleme",
+      icon: "trending",
+      title: "Şirket Değerleme",
       items: [
         "Şirket Değerleme",
         "Şirket Birleşmesi (M&A)",
@@ -84,7 +91,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🧾 Yeminli Mali Müşavirlik",
+      icon: "file",
+      title: "Yeminli Mali Müşavirlik",
       items: [
         "Bağımsız Denetim",
         "Tam Tasdik",
@@ -92,7 +100,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌱 Sürdürülebilirlik",
+      icon: "leaf",
+      title: "Sürdürülebilirlik",
       items: [
         "Karbon Ayak İzi",
         "Su Ayak İzi",
@@ -101,7 +110,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🛡️ Marka ve Patent",
+      icon: "shield",
+      title: "Marka ve Patent",
       items: [
         "Patent Başvurusu",
         "Yurt İçi Marka Başvurusu",
@@ -111,7 +121,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "👥 SGK ve Bordro",
+      icon: "users",
+      title: "SGK ve Bordro",
       items: [
         "Sosyal Güvenlik Mevzuatı Danışmanlığı",
         "Fesih, İhbar ve Kıdem Mevzuatı",
@@ -120,7 +131,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌐 Uluslararası Fon ve Kredi Danışmanlığı",
+      icon: "landmark",
+      title: "Uluslararası Fon ve Kredi Danışmanlığı",
       items: [
         "Uluslararası Fon Danışmanlığı",
         "Kredi Süreçleri",
@@ -128,7 +140,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🏢 Kurumsal Gelişim ve Yönetim Danışmanlığı",
+      icon: "building",
+      title: "Kurumsal Gelişim ve Yönetim Danışmanlığı",
       items: [
         "Organizasyon ve Süreç Tasarımı",
         "Performans Yönetimi",
@@ -137,7 +150,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🤖 Yazılım ve Yapay Zekâ Çözümleri",
+      icon: "robot",
+      title: "Yazılım ve Yapay Zekâ Çözümleri",
       items: [
         "Yapay Zekâ Danışmanlığı",
         "AI Agent Çözümleri",
@@ -146,7 +160,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💵 Finans Danışmanlığı",
+      icon: "wallet",
+      title: "Finans Danışmanlığı",
       items: [
         "Finansal Analiz",
         "Bütçe ve Planlama",
@@ -155,7 +170,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📣 Pazarlama ve Satış Geliştirme",
+      icon: "send",
+      title: "Pazarlama ve Satış Geliştirme",
       items: [
         "Satış Stratejisi",
         "Kanal ve Bayi Yönetimi",
@@ -164,17 +180,28 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🖥️ Web Sitesi Oluşturma",
+      icon: "monitor",
+      title: "Web Sitesi Oluşturma",
       items: [
         "Bireysel Web Sitesi",
         "Kurumsal Web Sitesi",
         "Ticari Web Sitesi",
       ],
     },
+    {
+      icon: "globe",
+      title: "Uluslararası İş Geliştirme",
+      items: [
+        "Yurt Dışında Müşteri Bulma",
+        "Yurt Dışı Pazarlarına Açılma",
+        "Yurt Dışı Pazar Analizleri",
+      ],
+    },
   ],
   en: [
     {
-      title: "⚖️ Legal Consulting",
+      icon: "scale",
+      title: "Legal Consulting",
       items: [
         "Contract Law",
         "Litigation Law",
@@ -188,7 +215,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌍 Overseas Company Formation",
+      icon: "globe",
+      title: "Overseas Company Formation",
       items: [
         "🇵🇱 Poland",
         "🇮🇹 Italy",
@@ -206,7 +234,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🚀 Export Incentives",
+      icon: "rocket",
+      title: "Export Incentives",
       items: [
         "International Business Development",
         "Overseas Market Analysis",
@@ -214,7 +243,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💻 Technology & R&D Support",
+      icon: "chip",
+      title: "Technology & R&D Support",
       items: [
         "Technopark Entry",
         "R&D / Design Center",
@@ -224,7 +254,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💰 Investment Incentives",
+      icon: "coins",
+      title: "Investment Incentives",
       items: [
         "TÜBİTAK Grants",
         "TURQUALITY",
@@ -236,7 +267,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📊 Tax & Financial Management",
+      icon: "bars",
+      title: "Tax & Financial Management",
       items: [
         "Domestic Tax Consulting",
         "International Tax Consulting",
@@ -244,7 +276,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📈 Company Valuation",
+      icon: "trending",
+      title: "Company Valuation",
       items: [
         "Company Valuation",
         "Mergers & Acquisitions (M&A)",
@@ -253,7 +286,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🧾 Certified Public Accountancy",
+      icon: "file",
+      title: "Certified Public Accountancy",
       items: [
         "Independent Audit",
         "Full Certification (Tam Tasdik)",
@@ -261,7 +295,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌱 Sustainability",
+      icon: "leaf",
+      title: "Sustainability",
       items: [
         "Carbon Footprint",
         "Water Footprint",
@@ -270,7 +305,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🛡️ Trademark & Patent",
+      icon: "shield",
+      title: "Trademark & Patent",
       items: [
         "Patent Application",
         "Domestic Trademark Application",
@@ -280,7 +316,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "👥 Social Security & Payroll",
+      icon: "users",
+      title: "Social Security & Payroll",
       items: [
         "Social Security Legislation Consulting",
         "Termination, Notice & Severance Legislation",
@@ -289,7 +326,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🌐 International Funding & Credit Consulting",
+      icon: "landmark",
+      title: "International Funding & Credit Consulting",
       items: [
         "International Fund Consulting",
         "Credit Processes",
@@ -297,7 +335,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🏢 Corporate Development & Management Consulting",
+      icon: "building",
+      title: "Corporate Development & Management Consulting",
       items: [
         "Organizational & Process Design",
         "Performance Management",
@@ -306,7 +345,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🤖 Software & AI Solutions",
+      icon: "robot",
+      title: "Software & AI Solutions",
       items: [
         "AI Consulting",
         "AI Agent Solutions",
@@ -315,7 +355,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "💵 Financial Consulting",
+      icon: "wallet",
+      title: "Financial Consulting",
       items: [
         "Financial Analysis",
         "Budgeting & Planning",
@@ -324,7 +365,8 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "📣 Marketing & Sales Development",
+      icon: "send",
+      title: "Marketing & Sales Development",
       items: [
         "Sales Strategy",
         "Channel & Dealer Management",
@@ -333,11 +375,21 @@ export const categoriesByLang = {
       ],
     },
     {
-      title: "🖥️ Website Creation",
+      icon: "monitor",
+      title: "Website Creation",
       items: [
         "Personal Website",
         "Corporate Website",
         "Commercial Website",
+      ],
+    },
+    {
+      icon: "globe",
+      title: "International Business Development",
+      items: [
+        "Finding Customers Abroad",
+        "Expanding into Foreign Markets",
+        "Overseas Market Analysis",
       ],
     },
   ],
@@ -353,9 +405,9 @@ export const GROUP_DEFS = [
   },
   {
     icon: "globe",
-    tr: { title: "Şirket Kuruluşu ve Uluslararasılaşma" },
-    en: { title: "Company Formation & Internationalization" },
-    categoryIndexes: [1],
+    tr: { title: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme" },
+    en: { title: "Overseas Company Formation & International Business Development" },
+    categoryIndexes: [1, 17],
   },
   {
     icon: "scale",
@@ -371,9 +423,15 @@ export const GROUP_DEFS = [
   },
   {
     icon: "target",
-    tr: { title: "Pazarlama, Satış ve Dijital" },
-    en: { title: "Marketing, Sales & Digital" },
-    categoryIndexes: [15, 13, 16],
+    tr: { title: "Pazarlama ve Satış Geliştirme" },
+    en: { title: "Marketing & Sales Development" },
+    categoryIndexes: [15],
+  },
+  {
+    icon: "chip",
+    tr: { title: "Yazılım ve Yapay Zekâ Çözümleri" },
+    en: { title: "Software & AI Solutions" },
+    categoryIndexes: [13, 16],
   },
 ] as const;
 
@@ -406,6 +464,97 @@ const ICONS: Record<string, React.ReactNode> = {
       <circle cx="12" cy="12" r="8.5" />
       <circle cx="12" cy="12" r="4.5" />
       <circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  chip: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="7" y="7" width="10" height="10" rx="1.5" />
+      <path d="M9.5 7V4M14.5 7V4M9.5 20v-3M14.5 20v-3M7 9.5H4M7 14.5H4M20 9.5h-3M20 14.5h-3" />
+    </svg>
+  ),
+  rocket: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.5c2.8 1.6 4.5 4.6 4.5 8.2 0 2-.6 3.8-1.6 5.3l-2.9 3-2.9-3c-1-1.5-1.6-3.3-1.6-5.3 0-3.6 1.7-6.6 4.5-8.2Z" />
+      <circle cx="12" cy="10.5" r="1.6" />
+      <path d="M9 16.5 6.5 19a3 3 0 0 0-.8 2l2-.8Z" />
+      <path d="M15 16.5 17.5 19a3 3 0 0 1 .8 2l-2-.8Z" />
+    </svg>
+  ),
+  coins: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <ellipse cx="12" cy="6.2" rx="7" ry="2.3" />
+      <path d="M5 6.2v5.8c0 1.3 3.1 2.3 7 2.3s7-1 7-2.3V6.2" />
+      <path d="M5 12v5.8C5 19.1 8.1 20 12 20s7-.9 7-2.2V12" />
+    </svg>
+  ),
+  trending: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 17l6-6 4 4 8-9" />
+      <path d="M15 6h6v6" />
+    </svg>
+  ),
+  file: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M7 3h7l4 4v14H7Z" />
+      <path d="M14 3v4h4" />
+      <path d="M9.5 12h6M9.5 15.5h6M9.5 8.5h3" />
+    </svg>
+  ),
+  leaf: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 19c0-8.5 5-14.5 14-15.5 1.2 9.3-5 15-14 15.5Z" />
+      <path d="M5 19c2-4.3 5.3-7.6 9.5-9.7" />
+    </svg>
+  ),
+  shield: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3l7 3v6c0 5-3 8.5-7 9.5-4-1-7-4.5-7-9.5V6Z" />
+      <path d="M9 12.2l2 2 4-4.4" />
+    </svg>
+  ),
+  users: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="8.5" cy="8" r="3.2" />
+      <path d="M2.2 19.5c0-3.4 2.8-6 6.3-6s6.3 2.6 6.3 6" />
+      <circle cx="17" cy="8.8" r="2.6" />
+      <path d="M15.3 13.1c2.9.3 5 2.6 5 6.4" />
+    </svg>
+  ),
+  landmark: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3l9 5H3Z" />
+      <path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8" />
+      <path d="M3 21h18" />
+    </svg>
+  ),
+  robot: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="9" width="14" height="10" rx="3" />
+      <circle cx="9.5" cy="14" r="1.2" fill="currentColor" stroke="none" />
+      <circle cx="14.5" cy="14" r="1.2" fill="currentColor" stroke="none" />
+      <path d="M12 9V6" />
+      <circle cx="12" cy="4.5" r="1.3" />
+      <path d="M3 13h2M19 13h2" />
+    </svg>
+  ),
+  wallet: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 8A2.5 2.5 0 0 1 5.5 5.5h10A2.5 2.5 0 0 1 18 8" />
+      <rect x="3" y="8" width="18" height="11" rx="2.5" />
+      <circle cx="16" cy="13.5" r="1.3" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  send: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 3 3 10.5l7 2.4 2.3 7L21 3Z" />
+      <path d="M10.3 12.9 21 3" />
+    </svg>
+  ),
+  monitor: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="4.5" width="18" height="12" rx="1.8" />
+      <path d="M8 21h8M12 16.5V21" />
+      <path d="M9.5 8.5 7.5 10.5l2 2M14.5 8.5l2 2-2 2" />
     </svg>
   ),
 };
@@ -486,14 +635,19 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
               <button type="button" onClick={() => setOpen(null)} aria-label={t.close} className="rounded-lg p-1 text-2xl text-white hover:bg-white/10">×</button>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="sm:columns-2 sm:gap-6">
               {activeGroup.categoryIndexes.map((catIndex) => {
                 const category = categories[catIndex];
                 return (
-                  <div key={catIndex}>
-                    <h4 className="mb-3 text-sm font-bold text-orange-300">
-                      {category.title}
-                    </h4>
+                  <div key={catIndex} className="mb-6 break-inside-avoid last:mb-0">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-orange-500/15 text-orange-400 [&>svg]:h-4 [&>svg]:w-4">
+                        {ICONS[category.icon]}
+                      </span>
+                      <h4 className="text-sm font-bold text-orange-300">
+                        {category.title}
+                      </h4>
+                    </div>
                     <ul className="grid gap-2">
                       {category.items.map((item, i) => (
                         <li
