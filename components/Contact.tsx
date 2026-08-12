@@ -240,7 +240,7 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
 function ContactCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-9 shadow-lg">
-      <div className="mb-6 flex h-[84px] w-[84px] items-center justify-center rounded-full bg-[#071A2F] text-white shadow-md [&>svg]:h-[38px] [&>svg]:w-[38px]">
+      <div className="mb-6 flex h-[84px] w-[84px] items-center justify-center rounded-full bg-[#071A2F] text-orange-500 shadow-md [&>svg]:h-[38px] [&>svg]:w-[38px]">
         {icon}
       </div>
       <h3 className="mb-4 text-xl font-bold text-[#071A2F]">{title}</h3>
