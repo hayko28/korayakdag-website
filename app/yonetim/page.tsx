@@ -16,8 +16,8 @@ type Item = {
   created_at?: string;
 };
 
-type Data = { comments: Item[]; messages: Item[]; posts: Item[] };
-type Tab = "posts" | "comments" | "messages";
+type Data = { comments: Item[]; messages: Item[]; posts: Item[]; subscribers: Item[] };
+type Tab = "posts" | "comments" | "messages" | "subscribers";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
@@ -146,6 +146,7 @@ export default function AdminPage() {
             ["posts", "Blog Yazıları"],
             ["comments", `Yorumlar (${pendingComments} Bekleyen)`],
             ["messages", `İletişim Mesajları (${data.messages.length})`],
+            ["subscribers", `Aboneler (${data.subscribers.length})`],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -377,6 +378,42 @@ export default function AdminPage() {
               </div>
             ) : (
               <Empty text="Henüz veritabanına kaydedilmiş iletişim mesajı yok." />
+            )}
+          </section>
+        )}
+
+        {/* SUBSCRIBERS TAB */}
+        {tab === "subscribers" && (
+          <section className="rounded-3xl bg-white p-6 shadow-sm">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-[#071A2F]">Güncel Gelişmeler Aboneleri</h2>
+              <p className="text-sm text-gray-600">
+                Güncel Gelişmeler sayfasından e-posta bırakan ziyaretçiler. Şu an sadece kayıt tutuluyor; otomatik bildirim e-postası gönderimi henüz devrede değil.
+              </p>
+            </div>
+            {data.subscribers.length ? (
+              <div className="divide-y">
+                {data.subscribers.map((x) => (
+                  <div key={x.id} className="flex flex-wrap items-center justify-between gap-2 py-3">
+                    <span className="font-semibold text-[#071A2F]">{x.email}</span>
+                    <div className="flex items-center gap-3">
+                      {x.created_at && (
+                        <span className="text-xs text-gray-400">
+                          {new Date(x.created_at).toLocaleString("tr-TR")}
+                        </span>
+                      )}
+                      <button
+                        onClick={() => updateStatus("subscriber", x.id, "deleted")}
+                        className="rounded-lg bg-red-600 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-red-700"
+                      >
+                        🗑️ Sil
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <Empty text="Henüz abone yok." />
             )}
           </section>
         )}

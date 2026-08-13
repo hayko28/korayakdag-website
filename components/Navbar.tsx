@@ -70,6 +70,7 @@ export default function Navbar() {
         { name: "Hakkımda", href: `${homePath}#about` },
         { name: "Uzmanlık Alanları", href: `${homePath}#expertise` },
         { name: "Hizmetler", href: `${homePath}#services` },
+        { name: "Güncel Gelişmeler", href: "/guncel-gelismeler" },
         { name: "Blog", href: `${homePath}#blog` },
         { name: "İletişim", href: `${homePath}#contact` },
       ];
@@ -156,6 +157,18 @@ export default function Navbar() {
         </nav>
 
         <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
+          <a
+            href={`${homePath}#hero`}
+            aria-label={isEn ? "Home" : "Ana Sayfa"}
+            title={isEn ? "Home" : "Ana Sayfa"}
+            className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg border border-white/20 bg-white/10 text-white transition hover:border-orange-400 hover:text-orange-400"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+              <path d="M4 11.5 12 4l8 7.5" />
+              <path d="M6 9.5V20h12V9.5" />
+            </svg>
+          </a>
+
           <BlogSearch lang={isEn ? "en" : "tr"} variant="navbar" />
 
           <LanguageSwitch />

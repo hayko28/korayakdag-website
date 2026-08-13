@@ -8,13 +8,14 @@ export async function GET() {
 
   await initializeDatabase();
 
-  const [comments, messages, posts] = await Promise.all([
+  const [comments, messages, posts, subscribers] = await Promise.all([
     sql`SELECT * FROM comments ORDER BY created_at DESC`,
     sql`SELECT * FROM contact_messages ORDER BY created_at DESC`,
     sql`SELECT * FROM posts ORDER BY created_at DESC`,
+    sql`SELECT * FROM subscribers ORDER BY created_at DESC`,
   ]);
 
-  return Response.json({ comments, messages, posts });
+  return Response.json({ comments, messages, posts, subscribers });
 }
 
 export async function PATCH(request: Request) {
@@ -52,6 +53,10 @@ export async function PATCH(request: Request) {
         SET status = ${status}
         WHERE id = ${id}
       `;
+    }
+  } else if (type === "subscriber") {
+    if (status === "deleted") {
+      await sql`DELETE FROM subscribers WHERE id = ${id}`;
     }
   } else {
     return Response.json(
