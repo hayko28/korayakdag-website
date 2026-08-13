@@ -4,17 +4,19 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title:
-    "Yatırım Teşvik Belgesi Nedir? Faydaları, Şartları ve 2026 Güncel Rehberi | Koray Akdağ",
+    "Yatırım Teşvik Belgesi Nedir? Bölgesine ve Sektörüne Göre Faydaları, Şartları (2026) | Koray Akdağ",
   description:
-    "Yatırım Teşvik Belgesi nedir, hangi kurum veriyor, hangi destek unsurlarını (KDV istisnası, gümrük muafiyeti, vergi indirimi, SGK ve faiz desteği) sağlıyor? 9903 sayılı yeni teşvik sistemi, bölgeler, asgari tutarlar, E-TUYS başvuru süreci ve 2026 güncel şartları.",
+    "Yatırım Teşvik Belgesi nedir, hangi kurum veriyor, hangi destek unsurlarını (KDV istisnası, gümrük muafiyeti, vergi indirimi, SGK ve faiz desteği) sağlıyor? Hedef Yatırımlar Teşvik Sistemi'nde hangi il hangi bölgede, hangi sektör/NACE kodu hangi destekten yararlanıyor - örnek senaryolarla 2026 güncel rehberi.",
   keywords: [
     "Yatırım Teşvik Belgesi nedir",
     "yatırım teşvik belgesi şartları",
     "yatırım teşvik belgesi nasıl alınır",
+    "Hedef Yatırımlar Teşvik Sistemi",
+    "yatırım teşvik bölgeleri iller",
     "E-TUYS başvuru",
     "9903 sayılı karar",
     "yatırım teşvik sistemi 2026",
-    "bölgesel teşvik uygulaması",
+    "bölgesel teşvik uygulaması NACE kodu",
     "Türkiye Yüzyılı Kalkınma Hamlesi",
     "yatırım teşvik belgesi destek unsurları",
     "KDV istisnası gümrük muafiyeti",
@@ -25,10 +27,10 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="Yatırım Teşvik Belgesi Nedir? Faydaları, Şartları ve 2026 Güncel Rehberi"
-      description="Türkiye'de yatırım yapan şirketlerin vergiden sigortaya, gümrükten faiz desteğine kadar birçok maliyet kalemini önemli ölçüde azaltan Yatırım Teşvik Belgesi'nin 2026 itibarıyla geçerli sistemi, destek unsurları, bölgeler, şartlar ve E-TUYS üzerinden başvuru süreci."
+      description="Türkiye'de yatırım yapan şirketlerin vergiden sigortaya, gümrükten faiz desteğine kadar birçok maliyet kalemini önemli ölçüde azaltan Yatırım Teşvik Belgesi'nin 2026 itibarıyla geçerli sistemi; hangi ilin hangi teşvik bölgesinde olduğu, hangi sektör/NACE kodunun hangi destekten yararlandığı ve E-TUYS üzerinden başvuru süreci."
       category="YATIRIM TEŞVİKLERİ • DEVLET DESTEKLERİ • 2026"
       date="2026"
-      readTime="20 Dakika"
+      readTime="26 Dakika"
       coverImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026"
     >
@@ -51,8 +53,8 @@ export default function BlogPage() {
           <ul className="space-y-4 text-lg text-gray-700">
             <li>✔ Yatırım Teşvik Belgesi tam olarak ne sağlıyor?</li>
             <li>✔ 9903 sayılı Karar ile sistem nasıl değişti?</li>
+            <li>✔ KOBİ&apos;lerin en çok başvurduğu Hedef Yatırımlar Teşvik Sistemi&apos;nde hangi il hangi bölgede, hangi sektör/NACE kodu hangi destekten yararlanıyor?</li>
             <li>✔ Hangi destek unsurlarından (KDV, gümrük, vergi, SGK, faiz) yararlanılıyor?</li>
-            <li>✔ Bölgeler ve 2026 asgari yatırım tutarları nedir?</li>
             <li>✔ Kimler başvurabilir, hangi belgeler gerekir?</li>
             <li>✔ E-TUYS üzerinden başvuru adım adım nasıl işler?</li>
             <li>✔ Dikkat edilmesi gereken kritik noktalar ve SSS</li>
@@ -71,14 +73,14 @@ export default function BlogPage() {
             <Link href="#yeni-sistem" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
               2. 9903 Sayılı Karar ile Sistem Nasıl Değişti?
             </Link>
+            <Link href="#hedef-yatirimlar" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
+              3. Hedef Yatırımlar Teşvik Sistemi: Bölgesine ve Sektörüne Göre Kim Ne Alır?
+            </Link>
             <Link href="#programlar" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              3. Teşvik Programları: Hangi Yatırım Hangi Programa Girer?
+              4. Diğer Teşvik Programları: Hangi Yatırım Hangi Programa Girer?
             </Link>
             <Link href="#destekler" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              4. Sağladığı Destek Unsurları
-            </Link>
-            <Link href="#bolgeler" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              5. Bölgeler ve 2026 Asgari Yatırım Tutarları
+              5. Sağladığı Destek Unsurları
             </Link>
             <Link href="#kimler" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
               6. Kimler Başvurabilir, Şartlar Nelerdir?
@@ -224,16 +226,331 @@ export default function BlogPage() {
           </p>
         </section>
 
-        {/* 3. PROGRAMLAR */}
+        {/* 3. HEDEF YATIRIMLAR */}
+        <section id="hedef-yatirimlar" className="mt-24 scroll-mt-24">
+          <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+            3. Hedef Yatırımlar Teşvik Sistemi: Bölgesine ve Sektörüne Göre Kim Ne Alır?
+          </h2>
+          <p className="mb-6 text-lg leading-9 text-gray-700">
+            KOBİ&apos;lerin ve orta ölçekli şirketlerin büyük çoğunluğu için
+            asıl belirleyici program, iki başlıktan biri olan{" "}
+            <strong>Sektörel Teşvik Sistemi</strong>&apos;nin altındaki{" "}
+            <strong>Hedef Yatırımlar Teşvik Sistemi</strong>&apos;dir. Eski
+            &quot;Bölgesel Teşvik Uygulaması&quot;nın yerini alan bu program,
+            klasik bölgesel teşvik mantığına en yakın uygulamadır: yatırımın
+            hangi ilde yapıldığı (dolayısıyla hangi teşvik bölgesine
+            girdiği) ve hangi faaliyet konusuna (NACE koduna) sahip olduğu,
+            hangi destek unsurlarından ne kadar yararlanılacağını doğrudan
+            belirler. Bu yüzden bir yatırım fikrini teşvik açısından
+            değerlendirirken sorulması gereken ilk iki soru şudur:{" "}
+            <strong>&quot;Yatırım hangi ilde/bölgede yapılacak?&quot;</strong>{" "}
+            ve <strong>&quot;Faaliyet konusu hangi NACE kodunda ve bu kod
+            EK-3 sektör listesinde var mı?&quot;</strong>
+          </p>
+
+          <div className="my-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🗺️ Türkiye 6 Teşvik Bölgesine Ayrılıyor
+            </h3>
+            <p className="leading-8 text-gray-700">
+              9903 sayılı Karar da önceki sistemdeki gibi 81 ili
+              sosyoekonomik gelişmişlik seviyesine göre 6 teşvik bölgesine
+              ayırmaya devam ediyor. 1. bölge en gelişmiş illeri (İstanbul,
+              Ankara, İzmir, Bursa, Kocaeli gibi), 6. bölge ise en az
+              gelişmiş illeri (büyük ölçüde Güneydoğu ve Doğu Anadolu)
+              kapsıyor. Genel kural nettir: <strong>bölge numarası
+              yükseldikçe (gelişmişlik azaldıkça) destek yoğunluğu ve
+              süresi artar.</strong>
+            </p>
+          </div>
+
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-[#071A2F] text-white">
+                <tr>
+                  <th className="p-4">Bölge</th>
+                  <th className="p-4">İller</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">1. Bölge</td>
+                  <td className="p-4">Ankara, Antalya, Bursa, Eskişehir, İstanbul, İzmir, Kocaeli, Muğla</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">2. Bölge</td>
+                  <td className="p-4">Aydın, Balıkesir, Bolu, Çanakkale, Denizli, Edirne, Kayseri, Konya, Manisa, Mersin, Sakarya, Tekirdağ, Yalova</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">3. Bölge</td>
+                  <td className="p-4">Adana, Bilecik, Burdur, Düzce, Gaziantep, Isparta, Karabük, Karaman, Kırıkkale, Kırklareli, Kütahya, Nevşehir, Rize, Samsun, Trabzon, Uşak, Zonguldak</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">4. Bölge</td>
+                  <td className="p-4">Afyonkarahisar, Aksaray, Amasya, Artvin, Çorum, Elazığ, Erzincan, Kastamonu, Kırşehir, Malatya, Niğde, Ordu, Sivas, Sinop, Tokat, Tunceli, Yozgat</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">5. Bölge</td>
+                  <td className="p-4">Bartın, Bayburt, Çankırı, Erzurum, Giresun, Hatay, Kahramanmaraş, Kilis, Osmaniye</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold">6. Bölge</td>
+                  <td className="p-4">Adıyaman, Ağrı, Ardahan, Batman, Bingöl, Bitlis, Diyarbakır, Gümüşhane, Hakkâri, Iğdır, Kars, Mardin, Muş, Siirt, Şanlıurfa, Şırnak, Van</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-sm text-gray-500">
+            İl-bölge eşleştirmesi 9903 sayılı Kararın EK-1 tablosuna dayanır;
+            OSB, endüstri bölgesi veya serbest bölgede yapılan yatırımlarda
+            ilave/farklı uygulamalar olabileceğinden, başvuru öncesi ilin ve
+            yatırım yerinin bölge kaydını E-TUYS üzerinden teyit etmeniz
+            önerilir.
+          </p>
+
+          <h3 className="mb-6 mt-14 text-2xl font-bold text-[#071A2F]">
+            📊 Bölgeye Göre Destek Unsurları Karşılaştırması (Hedef Yatırımlar Teşvik Sistemi)
+          </h3>
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-[#071A2F] text-white">
+                <tr>
+                  <th className="p-4">Bölge</th>
+                  <th className="p-4">Asgari Yatırım (2026)</th>
+                  <th className="p-4">SGK İşveren Primi Desteği</th>
+                  <th className="p-4">SGK İşçi Hissesi Desteği</th>
+                  <th className="p-4">Faiz / Kâr Payı Desteği</th>
+                  <th className="p-4">Yatırım Yeri Tahsisi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">1</td>
+                  <td className="p-4">15.100.000 TL</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Genellikle yok</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">2</td>
+                  <td className="p-4">15.100.000 TL</td>
+                  <td className="p-4">1 yıl</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Genellikle yok</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">3</td>
+                  <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">2 yıl</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Sınırlı imkan</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">4</td>
+                  <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">4 yıl</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-4 font-semibold">5</td>
+                  <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">8 yıl</td>
+                  <td className="p-4">Yok</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold">6</td>
+                  <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">12 yıl (OSB dışı) / 14 yıl (OSB içi)</td>
+                  <td className="p-4">10 yıl</td>
+                  <td className="p-4">Var (en yüksek üst sınır)</td>
+                  <td className="p-4">Var</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-sm text-gray-500">
+            Kaynak: 9903 sayılı Karar&apos;ın bölgesel destek yapısını konu
+            alan güncel uzman değerlendirmeleri (Sanayi ve Teknoloji
+            Bakanlığı&apos;na bağlı kaynaklar, vergi/denetim danışmanlık
+            firmalarının teşvik bültenleri) esas alınarak derlenmiştir.
+            Rakamlar yıllık yeniden değerleme oranına göre güncellendiğinden
+            ve OSB/endüstri bölgesi konumuna göre farklılaşabildiğinden,
+            başvuru öncesi güncel karar eki ve E-TUYS üzerinden teyit
+            edilmelidir.
+          </p>
+
+          <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              💰 Vergi İndirimi Oranı Neden Tabloda Yok?
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Eski sistemden farklı olarak Hedef Yatırımlar ve Öncelikli
+              Yatırımlar Teşvik Sistemi&apos;nde vergi indirimi oranı (%60)
+              ve yatırıma katkı oranı (%40) bölgeye göre değil, seçilen
+              programa göre belirleniyor ve bu iki program için sabit
+              uygulanıyor; bölgeye göre asıl farklılaşan unsurlar asgari
+              yatırım tutarı, SGK desteği süresi, faiz/kâr payı desteğinin
+              varlığı ve yatırım yeri tahsisi imkanıdır. Tek istisna:{" "}
+              <strong>İstanbul&apos;da gerçekleştirilecek yatırımlar
+              vergi indirimi desteğinden yararlanamaz.</strong> Bu oranlar
+              da her yıl güncellenebildiğinden başvuru öncesi teyit
+              edilmelidir.
+            </p>
+          </div>
+
+          <h3 className="mb-6 mt-14 text-2xl font-bold text-[#071A2F]">
+            🏷️ Hangi Sektör/NACE Kodu Hedef Yatırımlar Kapsamına Giriyor?
+          </h3>
+          <p className="mb-6 text-lg leading-9 text-gray-700">
+            Hedef Yatırımlar Teşvik Sistemi kapsamında desteklenecek
+            faaliyet konuları, Karar&apos;ın <strong>EK-3</strong>{" "}
+            listesinde yer alıyor ve E-TUYS başvuruları doğrudan bu listeyle{" "}
+            <strong>NACE kodu</strong> eşleşmesi üzerinden değerlendiriliyor.
+            EK-3&apos;te geniş tabanlı bir sektör yelpazesi bulunuyor:
+          </p>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border bg-white p-6 shadow-sm">
+              <h4 className="mb-3 text-lg font-bold text-[#071A2F]">🏭 İmalat Sanayii</h4>
+              <p className="text-sm leading-7 text-gray-700">
+                Gıda, tekstil/hazır giyim, kimyasal madde ve ürün imalatı,
+                metal, makine ve teçhizat imalatı gibi geniş bir yelpazede
+                imalat sanayii yatırımları kapsam içindedir.
+              </p>
+            </div>
+            <div className="rounded-2xl border bg-white p-6 shadow-sm">
+              <h4 className="mb-3 text-lg font-bold text-[#071A2F]">🌾 Tarım ve Hayvancılık</h4>
+              <p className="text-sm leading-7 text-gray-700">
+                Seracılık, entegre hayvancılık ve su ürünleri yetiştiriciliği
+                yatırımları EK-3&apos;te açıkça listelenmiş sektörler
+                arasındadır.
+              </p>
+            </div>
+            <div className="rounded-2xl border bg-white p-6 shadow-sm">
+              <h4 className="mb-3 text-lg font-bold text-[#071A2F]">⛏️ Madencilik ve Enerji</h4>
+              <p className="text-sm leading-7 text-gray-700">
+                Maden çıkarma/işleme yatırımları ile yenilenebilir enerji
+                üretim ve dağıtım yatırımları kapsam dahilindedir.
+              </p>
+            </div>
+            <div className="rounded-2xl border bg-white p-6 shadow-sm">
+              <h4 className="mb-3 text-lg font-bold text-[#071A2F]">🏨 Hizmet Sektörü</h4>
+              <p className="text-sm leading-7 text-gray-700">
+                50 oda ve üzeri oteller, veri merkezleri, bazı eğitim ve
+                sağlık yatırımları gibi belirli hizmet konuları da listede
+                yer alabiliyor.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 rounded-2xl border border-yellow-300 bg-yellow-50 p-8">
+            <p className="leading-8 text-gray-700">
+              <strong>Önemli:</strong> NACE kodunuzun EK-3 listesinde
+              görünmesi tek başına teşvik belgesi alacağınız anlamına
+              gelmez. Ürün detayı, yatırım cinsi (yeni/tevsi/modernizasyon),
+              kapasite, yatırım yeri, çevresel izinler, makine listesi ve
+              finansman yapısı birlikte değerlendirilir; bazı sektörler
+              belirli bölgelerde (özellikle 1. ve 2. bölgede) desteklenmeyen
+              veya kısıtlı listede yer alabilir. Kesin uygunluk, başvuru
+              öncesi E-TUYS&apos;taki sektör/NACE kodu sorgulama ekranı ve
+              güncel karar eki üzerinden teyit edilmelidir.
+            </p>
+          </div>
+
+          <h3 className="mb-6 mt-14 text-2xl font-bold text-[#071A2F]">
+            🔍 Örnek Yatırım Senaryoları: Bölge ve Sektöre Göre Kim Ne Alır?
+          </h3>
+          <p className="mb-8 text-lg leading-9 text-gray-700">
+            Aşağıdaki senaryolar, yukarıdaki bölge ve sektör mantığının
+            somutlaşması için hazırlanmış <strong>örnek/varsayımsal
+            hesaplamalardır</strong>; gerçek başvurunuzda uygulanacak kesin
+            destek unsurları, oranları ve tutarları projenize özel olarak
+            E-TUYS üzerinden değerlendirilir.
+          </p>
+          <div className="space-y-6">
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 1 — Gaziantep&apos;te Hazır Giyim Üretimi (3. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Gaziantep&apos;te (3. bölge) hazır giyim imalatı (NACE 14)
+                yapan bir KOBİ, üretim hattını modernize etmek için 9 milyon
+                TL&apos;lik bir yatırım planlıyor. 3. bölgede asgari tutar
+                (7,5 milyon TL) karşılandığı ve tekstil/hazır giyim EK-3
+                sektör listesinde yer aldığı için Hedef Yatırımlar Teşvik
+                Sistemi kapsamında başvurabilir; KDV istisnası, gümrük
+                muafiyeti, indirimli kurumlar vergisi ve 2 yıllık SGK
+                işveren primi desteğinden yararlanır. 3. bölgede olduğu için
+                faiz/kâr payı desteği bu senaryoda devreye girmez.
+              </p>
+            </div>
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 2 — Konya&apos;da Modern Seracılık Yatırımı (2. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Konya&apos;da (2. bölge) modern sera teknolojisiyle
+                sebze üretimi yapmayı planlayan bir tarım işletmesi, asgari
+                yatırım tutarını (2. bölgede 15,1 milyon TL) karşılayan bir
+                proje geliştiriyor. Seracılık EK-3&apos;te açıkça listelenen
+                bir faaliyet olduğundan Hedef Yatırımlar kapsamına girer; KDV
+                istisnası, gümrük muafiyeti, indirimli kurumlar vergisi ve
+                1 yıllık SGK işveren primi desteğinden yararlanır; 2. bölgede
+                faiz/kâr payı desteği ve yatırım yeri tahsisi genellikle
+                uygulanmaz.
+              </p>
+            </div>
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 3 — Malatya&apos;da Tarım Makineleri İmalatı (4. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Malatya&apos;da (4. bölge) tarım makineleri imalatı (NACE 28)
+                yapan bir üretici, kapasite artırımı için 8 milyon TL&apos;lik
+                yatırım yapıyor. Asgari tutar (7,5 milyon TL) karşılandığı ve
+                makine imalatı EK-3 listesinde yer aldığı için başvurabilir;
+                KDV istisnası, gümrük muafiyeti, indirimli kurumlar vergisi,
+                4 yıllık SGK işveren primi desteğinin yanı sıra 4. bölgeden
+                itibaren devreye giren faiz/kâr payı desteğinden ve yatırım
+                yeri tahsisi imkanından da yararlanabilir.
+              </p>
+            </div>
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 4 — Diyarbakır&apos;da Kimyasal Madde Üretimi (6. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Diyarbakır&apos;da (6. bölge) kimyasal madde imalatı (NACE
+                20) yapmak isteyen bir yatırımcı, asgari tutarı (7,5 milyon
+                TL) karşıladığında; 6. bölgenin en kapsamlı destek paketinden
+                yararlanır: KDV istisnası, gümrük muafiyeti, indirimli
+                kurumlar vergisi, OSB içinde 14 yıla varan SGK işveren primi
+                desteği, 10 yıl SGK işçi hissesi desteği, faiz/kâr payı
+                desteği ve yatırım yeri tahsisi aynı anda devreye girebilir.
+                6. bölgenin &quot;en yoğun destek paketi&quot; olarak
+                anılmasının nedeni budur.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. PROGRAMLAR */}
         <section id="programlar" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            3. Teşvik Programları: Hangi Yatırım Hangi Programa Girer?
+            4. Diğer Teşvik Programları: Hangi Yatırım Hangi Programa Girer?
           </h2>
           <p className="mb-8 text-lg leading-9 text-gray-700">
-            Yeni sistem iki ana başlık altında toplanıyor:{" "}
-            <strong>Türkiye Yüzyılı Kalkınma Hamlesi</strong> ve{" "}
-            <strong>Sektörel Teşvik Sistemi</strong>. Her başlığın altında
-            farklı yatırım profillerine hitap eden alt programlar bulunuyor.
+            Hedef Yatırımlar Teşvik Sistemi çoğu KOBİ ve orta ölçekli
+            yatırım için asıl adres olsa da, yeni sistem içinde farklı
+            yatırım profillerine hitap eden başka programlar da bulunuyor.
+            Bunlar <strong>Türkiye Yüzyılı Kalkınma Hamlesi</strong> ve{" "}
+            <strong>Sektörel Teşvik Sistemi</strong> başlıkları altında
+            toplanıyor.
           </p>
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
@@ -272,11 +589,10 @@ export default function BlogPage() {
                   belirlenmiş öncelikli alanlardaki yatırımları kapsar.
                 </li>
                 <li>
-                  <strong>Hedef Yatırımlar Teşvik Sistemi</strong> — her
-                  bölge ve il için ayrı ayrı belirlenmiş sektör/NACE
-                  listesine göre işleyen, klasik bölgesel teşvik mantığına en
-                  yakın uygulamadır; çoğu KOBİ ve orta ölçekli yatırım bu
-                  sistem üzerinden değerlendirilir.
+                  <strong>Hedef Yatırımlar Teşvik Sistemi</strong> — yukarıda
+                  detaylandırdığımız, il/bölge ve NACE koduna göre işleyen,
+                  çoğu KOBİ ve orta ölçekli yatırımın değerlendirildiği
+                  program.
                 </li>
               </ul>
             </div>
@@ -312,10 +628,10 @@ export default function BlogPage() {
           </p>
         </section>
 
-        {/* 4. DESTEKLER */}
+        {/* 5. DESTEKLER */}
         <section id="destekler" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            4. Sağladığı Destek Unsurları
+            5. Sağladığı Destek Unsurları
           </h2>
           <p className="mb-10 text-lg leading-9 text-gray-700">
             Hangi destek unsurundan ne ölçüde yararlanılacağı; yatırımın
@@ -401,56 +717,6 @@ export default function BlogPage() {
               E-TUYS sistemi ve güncel karar eki tablolar üzerinden teyit
               etmek gerekir. Genel tahminlere dayanarak yatırım planı
               yapmak yanıltıcı olabilir.
-            </p>
-          </div>
-        </section>
-
-        {/* 5. BÖLGELER */}
-        <section id="bolgeler" className="mt-24 scroll-mt-24">
-          <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            5. Bölgeler ve 2026 Asgari Yatırım Tutarları
-          </h2>
-          <p className="mb-8 text-lg leading-9 text-gray-700">
-            Türkiye, sosyoekonomik gelişmişlik seviyesine göre 6 teşvik
-            bölgesine ve bu bölgelerin altında 289 ilçe bazlı alt bölgeye
-            ayrılmıştır. Genel kural olarak 1. bölgeden 6. bölgeye
-            gidildikçe (gelişmişlik azaldıkça) destek yoğunluğu artar;
-            özellikle 6. bölge, SGK işçi hissesi desteğinin 10 yıla kadar
-            uzayabilmesi gibi ilave avantajlarla öne çıkar.
-          </p>
-          <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
-            <table className="w-full text-left">
-              <thead className="bg-[#071A2F] text-white">
-                <tr>
-                  <th className="p-5">Kalem</th>
-                  <th className="p-5">2026 Güncel Tutar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b hover:bg-gray-50">
-                  <td className="p-5 font-semibold">Asgari Sabit Yatırım Tutarı (1. ve 2. Bölge)</td>
-                  <td className="p-5">15.100.000 TL</td>
-                </tr>
-                <tr>
-                  <td className="p-5 font-semibold">Asgari Sabit Yatırım Tutarı (3, 4, 5 ve 6. Bölge)</td>
-                  <td className="p-5">7.500.000 TL</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
-            <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              📅 Tutarlar Neden Her Yıl Değişiyor?
-            </h3>
-            <p className="leading-8 text-gray-700">
-              Asgari yatırım tutarları, her yıl yeniden değerleme oranına
-              göre güncellenir. Bu nedenle 2026 için geçerli olan yukarıdaki
-              tutarlar, önceki yıllara ait yayınlarda görebileceğiniz daha
-              düşük rakamlardan farklıdır. Ayrıca yeni sistemde yatırıma
-              katkı oranı artık sadece bulunulan ile değil, seçilen programa
-              ve OSB/endüstri bölgesi gibi yatırım konumuna göre de
-              şekillenmektedir; bu yüzden &quot;bölge&quot; tek başına
-              destek düzeyini belirleyen tek kriter olmaktan çıkmıştır.
             </p>
           </div>
         </section>
@@ -662,6 +928,40 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border p-8">
               <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+                Yatırım hangi bölgede yapılırsa daha fazla destek alınır?
+              </h3>
+              <p className="leading-8 text-gray-700">
+                Genel kural olarak bölge numarası yükseldikçe (6. bölgeye
+                doğru gidildikçe, yani gelişmişlik azaldıkça) destek
+                yoğunluğu artar: SGK işveren primi desteği süresi uzar,
+                4. bölgeden itibaren faiz/kâr payı desteği ve yatırım yeri
+                tahsisi imkanı devreye girer, 6. bölgede ayrıca 10 yıllık
+                SGK işçi hissesi desteği eklenir. Ancak asgari yatırım tutarı
+                1. ve 2. bölgede daha yüksektir (15,1 milyon TL), 3-6.
+                bölgelerde ise daha düşüktür (7,5 milyon TL). Hangi ilin
+                hangi bölgede olduğu ve size özel destek unsurları için bu
+                yazıdaki bölge tablosunu ve E-TUYS&apos;u kontrol edin.
+              </p>
+            </div>
+            <div className="rounded-2xl border p-8">
+              <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+                NACE kodum EK-3 listesinde varsa teşvik belgesi almam garanti mi?
+              </h3>
+              <p className="leading-8 text-gray-700">
+                Hayır. NACE kodunun Hedef Yatırımlar Teşvik Sistemi&apos;nin
+                EK-3 listesinde yer alması, başvurunun değerlendirmeye
+                alınabilmesi için gerekli ama tek başına yeterli bir şart
+                değildir. Ürün detayı, yatırım cinsi (yeni/tevsi/
+                modernizasyon), kapasite, yatırım yeri, gerekli çevresel
+                izinler, makine listesi ve finansman yapısı birlikte
+                değerlendirilir; bazı sektörler belirli bölgelerde (özellikle
+                1. ve 2. bölgede) desteklenmeyebilir. Kesin uygunluğu, başvuru
+                öncesinde E-TUYS üzerinden veya danışmanınız aracılığıyla
+                teyit etmeniz gerekir.
+              </p>
+            </div>
+            <div className="rounded-2xl border p-8">
+              <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
                 Yatırıma başladıktan sonra teşvik belgesi başvurusu yapılabilir mi?
               </h3>
               <p className="leading-8 text-gray-700">
@@ -733,13 +1033,15 @@ export default function BlogPage() {
             kritik hâle getiriyor.
           </p>
           <p className="mb-8 text-lg leading-9 text-gray-700">
-            Şirketinizin yatırım projesi için hangi teşvik programının en
-            uygun olduğunu belirlemek, E-TUYS başvurusunu ve fizibilite
-            sürecini eksiksiz hazırlamak, belge sonrası izleme ve tamamlama
-            vizesi yükümlülüklerini yönetmek için Koray Akdağ / Sistem
-            Global Danışmanlık olarak yanınızdayız. Ayrı bir danışmanlık
-            firması aramanıza gerek kalmadan, hem teşvik başvuru sürecinizi
-            hem de yatırım sonrası raporlama ve uyum yükümlülüklerinizi tek
+            Şirketinizin yatırım projesi için hangi ilde/bölgede yapılacağı,
+            faaliyet konusunun (NACE kodunun) hangi programa girdiği ve buna
+            göre hangi destek unsurlarından ne ölçüde yararlanabileceğinizi
+            netleştirmek; E-TUYS başvurusunu ve fizibilite sürecini eksiksiz
+            hazırlamak, belge sonrası izleme ve tamamlama vizesi
+            yükümlülüklerini yönetmek için Koray Akdağ / Sistem Global
+            Danışmanlık olarak yanınızdayız. Ayrı bir danışmanlık firması
+            aramanıza gerek kalmadan, hem teşvik başvuru sürecinizi hem de
+            yatırım sonrası raporlama ve uyum yükümlülüklerinizi tek
             noktadan yürütebiliriz.
           </p>
         </section>
