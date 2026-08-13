@@ -463,30 +463,47 @@ export default function BlogPage() {
           </div>
 
           <h3 className="mb-6 mt-14 text-2xl font-bold text-[#071A2F]">
-            🔍 Örnek Yatırım Senaryoları: Bölge ve Sektöre Göre Kim Ne Alır?
+            🔍 Örnek Yatırım Senaryoları: 6 Bölgeden 6 Somut Hesaplama
           </h3>
           <p className="mb-8 text-lg leading-9 text-gray-700">
-            Aşağıdaki senaryolar, yukarıdaki bölge ve sektör mantığının
-            somutlaşması için hazırlanmış <strong>örnek/varsayımsal
-            hesaplamalardır</strong>; gerçek başvurunuzda uygulanacak kesin
-            destek unsurları, oranları ve tutarları projenize özel olarak
-            E-TUYS üzerinden değerlendirilir.
+            Aşağıdaki 6 senaryo, her bölgeden bir örnek olacak şekilde
+            hazırlanmış <strong>örnek/varsayımsal hesaplamalardır</strong>.
+            Hesaplamalarda, Hedef Yatırımlar Teşvik Sistemi&apos;nde tüm
+            bölgeler için sabit uygulanan <strong>%60 vergi indirimi
+            oranı</strong> ve <strong>%40 yatırıma katkı oranı</strong>{" "}
+            kullanılmıştır: şirket, normalde %25 olan kurumlar vergisi
+            oranı yerine %60 indirimle <strong>%10 oranında</strong>{" "}
+            kurumlar vergisi öder; bu indirimli oranla ödemekten kaçındığı
+            toplam vergi tutarı, yatırım tutarının %40&apos;ına (yatırıma
+            katkı tutarına) ulaşana kadar devam eder. Yani{" "}
+            <strong>yatırıma katkı tutarı = yatırım tutarı × %40</strong>,
+            projenin sağlayacağı toplam vergi avantajının üst sınırını
+            gösterir. Gerçek başvurunuzda uygulanacak kesin destek
+            unsurları, oranları ve tutarları projenize özel olarak E-TUYS
+            üzerinden değerlendirilir.
           </p>
           <div className="space-y-6">
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 1 — Gaziantep&apos;te Hazır Giyim Üretimi (3. Bölge)
+                Senaryo 1 — Bursa&apos;da Otomotiv Yan Sanayi Üretimi (1. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
-                Gaziantep&apos;te (3. bölge) hazır giyim imalatı (NACE 14)
-                yapan bir KOBİ, üretim hattını modernize etmek için 9 milyon
-                TL&apos;lik bir yatırım planlıyor. 3. bölgede asgari tutar
-                (7,5 milyon TL) karşılandığı ve tekstil/hazır giyim EK-3
-                sektör listesinde yer aldığı için Hedef Yatırımlar Teşvik
-                Sistemi kapsamında başvurabilir; KDV istisnası, gümrük
-                muafiyeti, indirimli kurumlar vergisi ve 2 yıllık SGK
-                işveren primi desteğinden yararlanır. 3. bölgede olduğu için
-                faiz/kâr payı desteği bu senaryoda devreye girmez.
+                Bursa&apos;da (1. bölge) motorlu taşıt parçaları imalatı
+                (NACE 29) yapan bir firma, kapasite artırımı için 18.000.000
+                TL&apos;lik yatırım planlıyor; 1. bölgede asgari tutar
+                (15.100.000 TL) karşılandığı ve imalat sanayii EK-3
+                listesinde geniş kapsamlı yer aldığı için başvurabilir. 1.
+                bölgede SGK işveren primi desteği, SGK işçi hissesi desteği,
+                faiz/kâr payı desteği ve yatırım yeri tahsisi{" "}
+                <strong>uygulanmaz</strong> — bu bölgede belge esas olarak
+                KDV istisnası, gümrük vergisi muafiyeti ve indirimli
+                kurumlar vergisinden ibarettir (İstanbul&apos;da yapılan
+                yatırımlarda ise vergi indirimi de uygulanmaz).{" "}
+                <strong>Sonuç:</strong> 18.000.000 TL yatırım × %40 yatırıma
+                katkı oranı = <strong>7.200.000 TL&apos;ye kadar</strong>{" "}
+                vergi avantajı; firma bu tutara ulaşana kadar kurumlar
+                vergisini %25 yerine %10 oranında (yani %60 indirimli)
+                öder.
               </p>
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
@@ -496,47 +513,112 @@ export default function BlogPage() {
               <p className="leading-8 text-gray-700">
                 Konya&apos;da (2. bölge) modern sera teknolojisiyle
                 sebze üretimi yapmayı planlayan bir tarım işletmesi, asgari
-                yatırım tutarını (2. bölgede 15,1 milyon TL) karşılayan bir
+                yatırım tutarını (2. bölgede 15.100.000 TL) karşılayan bir
                 proje geliştiriyor. Seracılık EK-3&apos;te açıkça listelenen
                 bir faaliyet olduğundan Hedef Yatırımlar kapsamına girer; KDV
                 istisnası, gümrük muafiyeti, indirimli kurumlar vergisi ve
                 1 yıllık SGK işveren primi desteğinden yararlanır; 2. bölgede
                 faiz/kâr payı desteği ve yatırım yeri tahsisi genellikle
-                uygulanmaz.
+                uygulanmaz. <strong>Sonuç:</strong> 15.100.000 TL yatırım ×
+                %40 yatırıma katkı oranı ={" "}
+                <strong>6.040.000 TL&apos;ye kadar</strong> vergi avantajı;
+                işletme bu tutara ulaşana kadar kurumlar vergisini %10
+                oranında (%60 indirimli) öder.
               </p>
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 3 — Malatya&apos;da Tarım Makineleri İmalatı (4. Bölge)
+                Senaryo 3 — Gaziantep&apos;te Hazır Giyim Üretimi (3. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Gaziantep&apos;te (3. bölge) hazır giyim imalatı (NACE 14)
+                yapan bir KOBİ, üretim hattını modernize etmek için 9.000.000
+                TL&apos;lik bir yatırım planlıyor. 3. bölgede asgari tutar
+                (7.500.000 TL) karşılandığı ve tekstil/hazır giyim EK-3
+                sektör listesinde yer aldığı için Hedef Yatırımlar Teşvik
+                Sistemi kapsamında başvurabilir; KDV istisnası, gümrük
+                muafiyeti, indirimli kurumlar vergisi ve 2 yıllık SGK
+                işveren primi desteğinden yararlanır. 3. bölgede olduğu için
+                faiz/kâr payı desteği bu senaryoda devreye girmez.{" "}
+                <strong>Sonuç:</strong> 9.000.000 TL yatırım × %40 yatırıma
+                katkı oranı = <strong>3.600.000 TL&apos;ye kadar</strong>{" "}
+                vergi avantajı; KOBİ bu tutara ulaşana kadar kurumlar
+                vergisini %25 yerine %10 oranında (%60 indirimli) öder.
+              </p>
+            </div>
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 4 — Malatya&apos;da Tarım Makineleri İmalatı (4. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Malatya&apos;da (4. bölge) tarım makineleri imalatı (NACE 28)
-                yapan bir üretici, kapasite artırımı için 8 milyon TL&apos;lik
-                yatırım yapıyor. Asgari tutar (7,5 milyon TL) karşılandığı ve
-                makine imalatı EK-3 listesinde yer aldığı için başvurabilir;
-                KDV istisnası, gümrük muafiyeti, indirimli kurumlar vergisi,
-                4 yıllık SGK işveren primi desteğinin yanı sıra 4. bölgeden
-                itibaren devreye giren faiz/kâr payı desteğinden ve yatırım
-                yeri tahsisi imkanından da yararlanabilir.
+                yapan bir üretici, kapasite artırımı için 8.000.000
+                TL&apos;lik yatırım yapıyor. Asgari tutar (7.500.000 TL)
+                karşılandığı ve makine imalatı EK-3 listesinde yer aldığı
+                için başvurabilir; KDV istisnası, gümrük muafiyeti,
+                indirimli kurumlar vergisi, 4 yıllık SGK işveren primi
+                desteğinin yanı sıra 4. bölgeden itibaren devreye giren
+                faiz/kâr payı desteğinden ve yatırım yeri tahsisi
+                imkanından da yararlanabilir. <strong>Sonuç:</strong>{" "}
+                8.000.000 TL yatırım × %40 yatırıma katkı oranı ={" "}
+                <strong>3.200.000 TL&apos;ye kadar</strong> vergi avantajı;
+                üretici bu tutara ulaşana kadar kurumlar vergisini %10
+                oranında (%60 indirimli) öder; bu tutara faiz/kâr payı
+                desteğinden sağlanacak ilave finansman avantajı da eklenir.
               </p>
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 4 — Diyarbakır&apos;da Kimyasal Madde Üretimi (6. Bölge)
+                Senaryo 5 — Hatay&apos;da Gıda İşleme Tesisi (5. Bölge)
+              </h4>
+              <p className="leading-8 text-gray-700">
+                Hatay&apos;da (5. bölge) tarımsal ürünlerin işlenmesi/gıda
+                imalatı (NACE 10) yapan bir işletme, yeni bir işleme tesisi
+                kurmak için 10.000.000 TL&apos;lik yatırım yapıyor. Asgari
+                tutar (7.500.000 TL) karşılandığı ve gıda imalatı EK-3
+                listesinde yer aldığı için başvurabilir; KDV istisnası,
+                gümrük muafiyeti, indirimli kurumlar vergisi, 8 yıllık SGK
+                işveren primi desteği, faiz/kâr payı desteği ve yatırım
+                yeri tahsisi imkanından yararlanır. <strong>Sonuç:</strong>{" "}
+                10.000.000 TL yatırım × %40 yatırıma katkı oranı ={" "}
+                <strong>4.000.000 TL&apos;ye kadar</strong> vergi avantajı;
+                işletme bu tutara ulaşana kadar kurumlar vergisini %10
+                oranında (%60 indirimli) öder.
+              </p>
+            </div>
+            <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+              <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+                Senaryo 6 — Diyarbakır&apos;da Kimyasal Madde Üretimi (6. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Diyarbakır&apos;da (6. bölge) kimyasal madde imalatı (NACE
-                20) yapmak isteyen bir yatırımcı, asgari tutarı (7,5 milyon
+                20) yapmak isteyen bir yatırımcı, asgari tutarı (7.500.000
                 TL) karşıladığında; 6. bölgenin en kapsamlı destek paketinden
                 yararlanır: KDV istisnası, gümrük muafiyeti, indirimli
                 kurumlar vergisi, OSB içinde 14 yıla varan SGK işveren primi
                 desteği, 10 yıl SGK işçi hissesi desteği, faiz/kâr payı
                 desteği ve yatırım yeri tahsisi aynı anda devreye girebilir.
                 6. bölgenin &quot;en yoğun destek paketi&quot; olarak
-                anılmasının nedeni budur.
+                anılmasının nedeni budur. <strong>Sonuç:</strong> 7.500.000
+                TL yatırım × %40 yatırıma katkı oranı ={" "}
+                <strong>3.000.000 TL&apos;ye kadar</strong> vergi avantajı;
+                yatırımcı bu tutara ulaşana kadar kurumlar vergisini %10
+                oranında (%60 indirimli) öder — üstelik bu tutara 12-14
+                yıllık SGK primi desteği, faiz/kâr payı desteği ve yatırım
+                yeri tahsisinin sağladığı ilave maliyet avantajı da eklenir.
               </p>
             </div>
           </div>
+          <p className="mt-6 text-sm text-gray-500">
+            Not: Vergi indirimi hesaplamalarında güncel genel kurumlar
+            vergisi oranı olan %25 esas alınmıştır. 7582 sayılı Kanun ile
+            2026&apos;dan itibaren sanayi/tarımsal üretim kazançlarına
+            yönelik ayrı bir %12,5&apos;lik indirimli oran da yürürlüğe
+            girmiştir; bu genel indirim, yatırım teşvik belgesi kapsamındaki
+            indirimli kurumlar vergisi uygulamasından bağımsız bir
+            düzenlemedir ve iki teşvikin bir arada nasıl uygulanacağı
+            projenize özel olarak değerlendirilmelidir.
+          </p>
         </section>
 
         {/* 4. PROGRAMLAR */}
