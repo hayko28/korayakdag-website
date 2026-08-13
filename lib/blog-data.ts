@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-yapay-zeka-kredi-programi-2026",
+    title: "KOSGEB Yapay Zeka Kredi Programı 2026: 5 Milyon TL'ye Kadar Faizsiz Krediye Kimler Başvurabilir?",
+    excerpt: "Teknogirişim Rozeti sahibi girişimlere GPU/bulut ve yapay zeka altyapı hizmetleri için 500 bin - 5 milyon TL arasında faizsiz kredi sunan yeni KOSGEB programının şartları, GO Dijital Cüzdan mekanizması, teminat koşulları ve 2026 başvuru süreci.",
+    category: "KOSGEB • YAPAY ZEKA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "turkiyede-adan-zye-sirket-kurmak-avantajlari",
     title: "Türkiye'de A'dan Z'ye Şirket Kurmak: Avantajları Nelerdir?",
     excerpt: "Yabancı yatırımcılar için Limited ve Anonim Şirket farkları, gerekli belgeler, adım adım MERSİS/ticaret sicili süreci, devlet destekleri, vergi teşvikleri, banka hesabı açma ve ikamet izni bağlantısıyla 2026 güncel Türkiye rehberi.",
