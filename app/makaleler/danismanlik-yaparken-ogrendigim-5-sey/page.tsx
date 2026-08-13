@@ -83,6 +83,21 @@ export default function MakalePage() {
         insanlardan geldi. Danışmanlığı bu yüzden seviyorum — her görüşme,
         aynı zamanda bir şey daha öğrendiğim an oluyor.
       </p>
+
+      <p>
+        Bu konuda benzer bir yolculuktan geçmiş, satışı bir deneyime
+        dönüştürmenin ne demek olduğunu bana da öğreten değerli üstadım
+        Ercan Yeşersin&apos;in{" "}
+        <a
+          href="https://ercanyesersin.com.tr/17-yillik-satis-kariyerim-bana-ne-ogretti/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-orange-600 hover:underline"
+        >
+          17 yıllık satış kariyerinden çıkardığı derslere
+        </a>{" "}
+        de göz atmanızı öneririm.
+      </p>
     </MakaleLayout>
   );
 }
