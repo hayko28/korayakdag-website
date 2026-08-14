@@ -476,6 +476,8 @@ function LinkedInDraftCard({
   };
 }) {
   const [copied, setCopied] = useState(false);
+  const [postState, setPostState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [postError, setPostError] = useState("");
 
   const copy = async () => {
     try {
@@ -487,6 +489,25 @@ function LinkedInDraftCard({
     }
   };
 
+  const publish = async () => {
+    if (!confirm("Bu yazı gerçekten LinkedIn hesabında yayınlanacak. Emin misin?")) return;
+    setPostState("sending");
+    setPostError("");
+    try {
+      const r = await fetch("/api/linkedin/post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ icerik: draft.icerik, gorselUrl: draft.gorselUrl }),
+      });
+      const data = await r.json();
+      if (!r.ok) throw new Error(data.error || "Bilinmeyen hata");
+      setPostState("done");
+    } catch (e) {
+      setPostState("error");
+      setPostError(e instanceof Error ? e.message : "Bilinmeyen hata");
+    }
+  };
+
   return (
     <article className="rounded-2xl border p-5 shadow-xs">
       <div className="flex flex-wrap items-center justify-between gap-2 border-b pb-3">
@@ -494,17 +515,41 @@ function LinkedInDraftCard({
           <p className="text-xs font-semibold text-orange-600">{draft.kaynakBaslik}</p>
           <p className="text-xs text-gray-400">{draft.tarih}</p>
         </div>
-        <button
-          onClick={copy}
-          className={`rounded-lg px-4 py-2 text-xs font-bold transition ${
-            copied
-              ? "bg-green-600 text-white"
-              : "bg-[#071A2F] text-white hover:bg-[#0F2A47]"
-          }`}
-        >
-          {copied ? "✅ Kopyalandı" : "📋 Metni Kopyala"}
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={copy}
+            className={`rounded-lg px-4 py-2 text-xs font-bold transition ${
+              copied
+                ? "bg-green-600 text-white"
+                : "bg-[#071A2F] text-white hover:bg-[#0F2A47]"
+            }`}
+          >
+            {copied ? "✅ Kopyalandı" : "📋 Metni Kopyala"}
+          </button>
+          <button
+            onClick={publish}
+            disabled={postState === "sending" || postState === "done"}
+            className={`rounded-lg px-4 py-2 text-xs font-bold text-white transition disabled:cursor-not-allowed ${
+              postState === "done"
+                ? "bg-green-600"
+                : postState === "error"
+                ? "bg-red-600 hover:bg-red-700"
+                : "bg-orange-500 hover:bg-orange-600 disabled:opacity-60"
+            }`}
+          >
+            {postState === "sending"
+              ? "Paylaşılıyor…"
+              : postState === "done"
+              ? "✅ Yayınlandı"
+              : postState === "error"
+              ? "⚠️ Tekrar Dene"
+              : "🚀 LinkedIn'de Paylaş"}
+          </button>
+        </div>
       </div>
+      {postState === "error" && (
+        <p className="mt-2 text-xs font-semibold text-red-600">{postError}</p>
+      )}
       <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
       {draft.gorselUrl && (
         <div className="mt-4">
