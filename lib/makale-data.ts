@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "enflasyon-beklentisi-kobiler-icin-ne-anlama-geliyor",
+    title:
+      "Merkez Bankası Anketinde Yıl Sonu Beklentisi Yükseldi, 12 Ay Sonrası Düştü: Bu Çelişki KOBİ'lere Ne Anlatıyor?",
+    excerpt:
+      "TCMB'nin Ağustos anketinde yıl sonu enflasyon beklentisi %29,43'e çıkarken 12 ay sonrası beklenti geriledi. Bu ayrışma, fiyatlama ve finansman kararlarında farklı bir bakış gerektiriyor.",
+    tag: "Strateji",
+    date: "14 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "neden-her-kobi-devlet-destegine-basvurmali",
     title: "Neden Her KOBİ Devlet Desteğine Başvurmalı (Ama Çoğu Başvurmuyor)",
     excerpt:

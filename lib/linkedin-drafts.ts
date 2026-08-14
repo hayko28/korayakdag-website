@@ -33,12 +33,12 @@ export const LINKEDIN_DRAFTS: LinkedInDraft[] = [
   {
     tarih: "2026-08-14",
     icerik:
-      "1.160 işletme, 14,8 milyar TL.\n\nKOSGEB'in geçen yıl Kapasite Geliştirme Destek Programı'yla imalat sektörüne aktardığı rakam bu. 2026 hedefi ise neredeyse iki katı: 2.440 işletme, 38,4 milyar TL.\n\nProgram, 1-20 milyon TL arasındaki yatırımlara %20 puanlık faizsiz finansman desteği sağlıyor. Başvurular yıl içinde üç dönemde açılıyor: Şubat, Mayıs, Ağustos.\n\nDanışmanlık yaptığım imalatçı KOBİ'lerin çoğu bu programı bilmiyor ya da \"bize göre değil\" diye geçiyor. Oysa teminat sıkıntısı yaşayan firmalar için tam tersi — %20 puanlık faizsiz kısmı banka kredisiyle birlikte kullandığınızda toplam maliyet belirgin şekilde düşüyor.\n\nAğustos dönemi başvuruları şu an açık. Üretim kapasitenizi büyütmeyi düşünüyorsanız bu üç ay kritik.\n\nGüncel gelişmeleri buradan takip ediyorum: https://korayakdag.com/guncel-gelismeler\n\n#KOSGEB #KOBİ #İmalat #DevletDestekleri #Finansman #Girişimcilik #ÜretimKapasitesi #StratejikDanışmanlık #Teşvik #İşGeliştirme",
+      "Yıl sonu enflasyon beklentisi yükseldi ama 12 ay sonrası için düştü — bu ikisi nasıl aynı anda doğru olabilir?\n\nTCMB'nin bu hafta açıkladığı Ağustos ayı Piyasa Katılımcıları Anketi'nde tam bu tabloyu gördüm. 68 katılımcının (52'si finansal, 16'sı reel sektörden) cari yıl sonu beklentisi %29,21'den %29,43'e çıkarken, 12 ay sonrası beklenti %23,95'ten %23,69'a geriledi.\n\nYani piyasa iki farklı şey söylüyor aynı anda: bu yılı kapatmak biraz daha zor olacak, ama önümüzdeki 12 ay için umut hâlâ canlı.\n\nDanışmanlık yaptığım firmaların çoğu bunu tek bir sayıya indirgeyip ona göre fiyatlama ve finansman kararı alıyor. Oysa bu ayrışmayı görmek — kısa vade için tampon, orta vade için göreli iyileşmeyi hesaba katan bir plan — çok farklı bir karar kalitesi getiriyor.\n\nSiz hangi sayıya göre plan yapıyorsunuz: yıl sonuna mı, 12 ay sonrasına mı?\n\nDetaylı yazım: https://korayakdag.com/makaleler/enflasyon-beklentisi-kobiler-icin-ne-anlama-geliyor\n\n#Enflasyon #TCMB #Ekonomi #KOBİ #Finans #StratejikDanışmanlık #İşDünyası #Makroekonomi #NakitYönetimi #Girişimcilik",
     kaynakBaslik:
-      "KOSGEB Kapasite Geliştirme Destek Programı'nda 2026 rakamları ve başvuru takvimi açıklandı",
+      "TCMB Ağustos 2026 Piyasa Katılımcıları Anketi'nde enflasyon beklentileri ayrıştı",
     kaynakUrl:
-      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek",
+      "https://korayakdag.com/makaleler/enflasyon-beklentisi-kobiler-icin-ne-anlama-geliyor",
     gorselUrl:
-      "https://images.unsplash.com/photo-1647427060118-4911c9821b82?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1757705760133-b39c479dc236?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
