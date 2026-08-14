@@ -41,4 +41,14 @@ export const LINKEDIN_DRAFTS: LinkedInDraft[] = [
     gorselUrl:
       "https://images.unsplash.com/photo-1757705760133-b39c479dc236?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
+  {
+    tarih: "2026-08-14",
+    icerik:
+      "LinkedIn'de üç kişilik bir şirkette kaç tane \"CEO & Co-Founder\" olabilir? Geçen hafta gördüğüm bir toplantı listesinde cevap üçtü.\n\nÜç kişi, üçü de aynı unvanla yazıyordu profiline. Muhtemelen biri şirketi gerçekten kuran, biri erken katılan bir ortak, biri de belki daha yeni gelen biriydi — ama unvanlarda hiçbir fark yoktu.\n\nBunda kötü niyet yok, herkes kendi hikayesini istediği gibi anlatabilir. Ama şunu fark ettim: unvan artık neredeyse hiçbir şey söylemiyor. Kiminle gerçekten görüştüğünüzü, kararı kimin verdiğini anlamak için unvana değil, kişinin paylaştığı içeriğe ve gösterdiği sonuçlara bakmak gerekiyor.\n\nBen de profilime \"Danışman\" yazıyorum, çünkü yaptığım iş tam olarak bu — ama itiraf edeyim, bazen daha havalı bir şey yazmak hiç aklımdan geçmiyor değil.\n\nSiz unvanınızı gerçek rolünüze göre mi seçtiniz, yoksa kulağa nasıl geldiğine göre mi?\n\nBu konudaki yazım: https://korayakdag.com/makaleler/linkedinde-herkes-ceo-unvan-enflasyonu\n\n#LinkedIn #İşDünyası #Kariyer #Girişimcilik #KişiselMarka #İşHayatı #Networking #Danışmanlık #Liderlik #StratejikDanışmanlık",
+    kaynakBaslik: "Hafif gözlem: LinkedIn'de unvan enflasyonu",
+    kaynakUrl:
+      "https://korayakdag.com/makaleler/linkedinde-herkes-ceo-unvan-enflasyonu",
+    gorselUrl:
+      "https://images.unsplash.com/photo-1745847768380-2caeadbb3b71?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];

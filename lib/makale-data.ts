@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "linkedinde-herkes-ceo-unvan-enflasyonu",
+    title: "LinkedIn'de Herkes CEO: Unvan Enflasyonu Üzerine",
+    excerpt:
+      "Üç kişilik bir şirkette üç tane \"Founder & CEO\" görmek artık şaşırtıcı değil. Ama unvan enflasyonu, kiminle gerçekten iş yaptığınızı anlamanızı da zorlaştırıyor.",
+    tag: "Görüş",
+    date: "14 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "enflasyon-beklentisi-kobiler-icin-ne-anlama-geliyor",
     title:
       "Merkez Bankası Anketinde Yıl Sonu Beklentisi Yükseldi, 12 Ay Sonrası Düştü: Bu Çelişki KOBİ'lere Ne Anlatıyor?",
