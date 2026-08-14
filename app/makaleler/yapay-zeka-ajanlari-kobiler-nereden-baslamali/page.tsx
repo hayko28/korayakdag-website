@@ -33,11 +33,12 @@ export default function MakalePage() {
         Rakamlar ne diyor?
       </h2>
       <p>
-        Gartner&apos;ın Ocak 2025&apos;te 3.412 katılımcıyla yaptığı bir
-        ankete göre şirketlerin sadece %19&apos;u bu alana ciddi yatırım
-        yapmış durumda, %42&apos;si temkinli ilerliyor, %31&apos;i ise hâlâ
-        bekle-gör aşamasında. Yani küresel ölçekte bile çoğu şirket ne
-        yapacağına henüz karar verememiş.
+        Yine Gartner&apos;a göre, 2026 sonuna kadar kurumsal uygulamaların
+        %40&apos;ı görev bazlı bir yapay zeka ajanı içerecek — bu oran
+        2025&apos;te %5&apos;in altındaydı. Yani adaptasyon hızı çok yüksek.
+        Ama bu hızlı büyümeyle az önceki iptal tahminini yan yana koyunca
+        ortaya çıkan tablo net: şirketlerin büyük bölümü bu teknolojiyi
+        hızla benimsiyor, fakat aynı hızla doğru yönetemiyor.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
