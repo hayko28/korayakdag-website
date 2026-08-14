@@ -33,12 +33,12 @@ export const LINKEDIN_DRAFTS: LinkedInDraft[] = [
   {
     tarih: "2026-08-14",
     icerik:
-      "TÜBİTAK artık \"iyi bir proje\" sormuyor, \"bir önceki projeniz gerçekten ticarileşti mi\" diye soruyor.\n\n1501 ve 1507 Ar-Ge destek programlarının 2026 yılı ikinci çağrıları açıldı. Değişiklik küçük görünüyor ama etkisi büyük: artık geçmiş TÜBİTAK projelerinizin ticarileşme performansına göre -5 ile +5 puan arasında ek puan alıyor ya da kaybediyorsunuz.\n\nYani üst üste üç proje yapıp hiçbirini pazara çıkarmamış bir firmanın dördüncü başvurusu, bu yüzden daha zor geçebilir. Kademeli destek oranı da buna eklenince, TÜBİTAK artık sadece \"ne yapacaksınız\"a değil \"daha önce ne yaptınız\"a bakıyor.\n\nDanışmanlık yaparken en çok gördüğüm hata: firmaların başvuru dosyasını hazırlarken bu geçmiş performans bağlantısını hiç hesaba katmaması. Proje başına destek üst sınırı 20 milyon TL'de sabit kaldı, ama o sınıra kimin daha kolay ulaştığı değişti.\n\nSon TÜBİTAK projeniz gerçekten ticarileşti mi?\n\nGüncel gelişmeleri buradan takip ediyorum: https://korayakdag.com/guncel-gelismeler\n\n#TÜBİTAK #ArGe #Girişimcilik #İnovasyon #KOBİ #Teknoloji #DevletDestekleri #StratejikDanışmanlık #Ticarileşme #İşGeliştirme",
+      "1.160 işletme, 14,8 milyar TL.\n\nKOSGEB'in geçen yıl Kapasite Geliştirme Destek Programı'yla imalat sektörüne aktardığı rakam bu. 2026 hedefi ise neredeyse iki katı: 2.440 işletme, 38,4 milyar TL.\n\nProgram, 1-20 milyon TL arasındaki yatırımlara %20 puanlık faizsiz finansman desteği sağlıyor. Başvurular yıl içinde üç dönemde açılıyor: Şubat, Mayıs, Ağustos.\n\nDanışmanlık yaptığım imalatçı KOBİ'lerin çoğu bu programı bilmiyor ya da \"bize göre değil\" diye geçiyor. Oysa teminat sıkıntısı yaşayan firmalar için tam tersi — %20 puanlık faizsiz kısmı banka kredisiyle birlikte kullandığınızda toplam maliyet belirgin şekilde düşüyor.\n\nAğustos dönemi başvuruları şu an açık. Üretim kapasitenizi büyütmeyi düşünüyorsanız bu üç ay kritik.\n\nGüncel gelişmeleri buradan takip ediyorum: https://korayakdag.com/guncel-gelismeler\n\n#KOSGEB #KOBİ #İmalat #DevletDestekleri #Finansman #Girişimcilik #ÜretimKapasitesi #StratejikDanışmanlık #Teşvik #İşGeliştirme",
     kaynakBaslik:
-      "TÜBİTAK 1501 ve 1507 Ar-Ge destek programlarında 2026 yılı 2. çağrıları açıldı",
+      "KOSGEB Kapasite Geliştirme Destek Programı'nda 2026 rakamları ve başvuru takvimi açıklandı",
     kaynakUrl:
-      "https://tubitak.gov.tr/tr/duyuru/1501-sanayi-ar-ge-destek-programi-ve-1507-kobi-ar-ge-baslangic-destek-programi-2026-yili-2-cagrilari-acildi",
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek",
     gorselUrl:
-      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1647427060118-4911c9821b82?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
