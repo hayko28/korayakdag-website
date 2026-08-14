@@ -16,5 +16,9 @@ export async function initializeDatabase() {
   await sql`CREATE TABLE IF NOT EXISTS contact_messages (id SERIAL PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL, subject TEXT NOT NULL, message TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'new', created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
   await sql`CREATE TABLE IF NOT EXISTS posts (id SERIAL PRIMARY KEY, title TEXT NOT NULL, slug TEXT UNIQUE NOT NULL, excerpt TEXT NOT NULL, content TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'draft', created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), published_at TIMESTAMPTZ)`;
   await sql`CREATE TABLE IF NOT EXISTS subscribers (id SERIAL PRIMARY KEY, email TEXT UNIQUE NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
+  // Tek satırlık: LinkedIn OAuth erişim tokeni (Koray'ın kişisel profiline
+  // paylaşım yapma yetkisi). person_urn, /rest/posts isteklerinde "author"
+  // alanı için gerekli.
+  await sql`CREATE TABLE IF NOT EXISTS linkedin_auth (id INTEGER PRIMARY KEY DEFAULT 1, access_token TEXT NOT NULL, person_urn TEXT, expires_at TIMESTAMPTZ NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), CONSTRAINT single_row CHECK (id = 1))`;
   initialized = true;
 }
