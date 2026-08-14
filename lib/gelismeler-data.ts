@@ -110,33 +110,6 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Özellikle e-ticaret ve hedefli reklam kullanan müşterilerimize, kampanya ve indirim metinlerini bu 10 günlük referans fiyat kuralına göre gözden geçirmelerini öneriyorum; uyumsuz kampanyalar idari yaptırımla karşılaşabilir.",
   },
-  {
-    kurum: "KVKK",
-    tarih: "12 Mart 2026",
-    eklendiTarihi: "2026-08-14",
-    baslik:
-      "KVKK, 'Etken Yapay Zekâ (Agentic AI)' sistemlerine ilişkin yeni bir rehber yayımladı",
-    ozet:
-      "Kişisel Verileri Koruma Kurumu, kendi başına çok adımlı görevleri yürütebilen ve sürekli insan yönlendirmesine ihtiyaç duymayan 'etken' (agentic) yapay zekâ sistemlerinin kişisel veri işleme süreçlerinde yarattığı riskleri ele alan, bağlayıcı olmayan bir rehber yayımladı. Rehber, bu sistemlerin çok adımlı ve dağıtık yapısı nedeniyle amaç sınırlaması ve veri minimizasyonu ilkelerine uyumun zorlaşabileceğine dikkat çekiyor.",
-    kaynakUrl: "https://www.kvkk.gov.tr/Icerik/8683/etken-yapay-zeka-agentic-ai",
-    konu: "Yazılım ve Yapay Zekâ Çözümleri",
-    expertNote:
-      "Koray'ın notu: Şirket içinde agentic AI araçları (otomatik CRM ajanları, otonom süreç botları vb.) kullanmayı planlayan müşterilerimize bu rehberi uyum sürecinin başında değerlendirmelerini öneririm — bağlayıcı olmasa da denetimlerde referans alınabilir.",
-  },
-  {
-    kurum: "KGK",
-    tarih: "15 Ocak 2026",
-    eklendiTarihi: "2026-08-14",
-    baslik:
-      "KGK, ortak kontrole tabi işletme birleşmelerinin muhasebeleştirilmesine ilişkin ilke kararını yeniledi",
-    ozet:
-      "Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu (KGK), 15 Ocak 2026 tarihli, 33138 sayılı Resmî Gazete'de yayımlanan yeni ilke kararıyla ortak kontrole tabi işletme birleşmelerinde 'hakların birleştirilmesi' yönteminin kullanılmasını, açılış finansal durum tablosu sunulmasının zorunlu olmamasını ve birleşme maliyetlerinin doğrudan kâr/zarara yansıtılmasını öngördü. Yeni ilkeler 1 Ocak 2026'da başlayan hesap dönemlerinden itibaren uygulanacak; 2018 tarihli önceki karar yürürlükten kalktı.",
-    kaynakUrl:
-      "https://www.aa.com.tr/tr/ekonomi/ortak-kontrole-tabi-isletme-birlesmelerinin-muhasebelestirilmesinde-ilkeler-yeniden-duzenlendi/3799815",
-    konu: "Kurumsal Gelişim ve Değerleme",
-    expertNote:
-      "Koray'ın notu: Grup içi birleşme veya yeniden yapılanma planlayan holding yapılarındaki müşterilerimizin bu yeni ilke kararını finansal tablo hazırlık takvimlerine erken dahil etmelerini öneririm — açılış bilançosu hazırlama yükünün kalkması önemli bir sadeleşme.",
-  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
