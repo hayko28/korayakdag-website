@@ -370,11 +370,25 @@ export default function AdminPage() {
                     </div>
                     <p className="mt-3 font-semibold text-orange-600">{x.subject}</p>
                     <p className="mt-1 text-gray-800 whitespace-pre-line">{x.message}</p>
-                    {x.created_at && (
-                      <p className="mt-3 text-xs text-gray-400">
-                        {new Date(x.created_at).toLocaleString("tr-TR")}
-                      </p>
-                    )}
+                    <div className="mt-3 flex items-center justify-between">
+                      {x.created_at ? (
+                        <p className="text-xs text-gray-400">
+                          {new Date(x.created_at).toLocaleString("tr-TR")}
+                        </p>
+                      ) : (
+                        <span />
+                      )}
+                      <button
+                        onClick={() => {
+                          if (confirm("Bu mesajı kalıcı olarak silmek istediğinize emin misiniz?")) {
+                            updateStatus("message", x.id, "deleted");
+                          }
+                        }}
+                        className="rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-red-700"
+                      >
+                        🗑️ Sil
+                      </button>
+                    </div>
                   </article>
                 ))}
               </div>
