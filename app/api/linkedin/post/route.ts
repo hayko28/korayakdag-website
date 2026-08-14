@@ -7,6 +7,15 @@ function linkedinVersion(): string {
   return `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}`;
 }
 
+// LinkedIn'in "commentary" alanı bir zengin metin biçimi (Little Text
+// Format) kullanıyor; \ ( ) [ ] { } < > * _ ~ karakterleri bu biçimde özel
+// anlam taşıyor. Kaçış karakteriyle işaretlenmezse LinkedIn metni yanlış
+// ayrıştırıp o noktadan sonrasını bozuyor/kesiyor (örn. "(agentic AI)"
+// içindeki parantezler bir paylaşımın tamamen boş görünmesine yol açmıştı).
+function escapeLinkedInText(text: string): string {
+  return text.replace(/[\\()[\]{}<>*_~]/g, (ch) => `\\${ch}`);
+}
+
 export async function POST(request: Request) {
   try {
     const { icerik, gorselUrl, videoUrl } = await request.json();
@@ -175,7 +184,7 @@ export async function POST(request: Request) {
     // 3) Gönderiyi oluştur
     const postBody: Record<string, unknown> = {
       author: auth.person_urn,
-      commentary: icerik,
+      commentary: escapeLinkedInText(icerik),
       visibility: "PUBLIC",
       distribution: {
         feedDistribution: "MAIN_FEED",
