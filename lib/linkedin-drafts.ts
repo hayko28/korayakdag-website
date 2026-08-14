@@ -7,9 +7,12 @@ export interface LinkedInDraft {
   kaynakBaslik: string;
   /** İlgili site içeriğine bağlantı (varsa) */
   kaynakUrl?: string;
+  /** Konuyla ilgili, telifsiz stok görsel (images.unsplash.com) — LinkedIn
+   * paylaşımına eklenmesi için. Koray panelde görüp indirebilir. */
+  gorselUrl?: string;
 }
 
-// Editör agent'ı, her gün yeni bir gelişme veya makale yayınladığında
-// buraya bir LinkedIn paylaşım taslağı ekler. Otomatik paylaşılmaz —
-// Koray /yonetim panelinden okuyup kendi LinkedIn'ine kopyalar.
+// LinkedIn Yazarı agent'ı, her gün yeni bir gelişme veya makale
+// yayınlandığında buraya bir LinkedIn paylaşım taslağı ekler. Otomatik
+// paylaşılmaz — Koray /yonetim panelinden okuyup kendi LinkedIn'ine kopyalar.
 export const LINKEDIN_DRAFTS: LinkedInDraft[] = [];

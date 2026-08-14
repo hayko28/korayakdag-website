@@ -453,7 +453,13 @@ function Empty({ text }: { text: string }) {
 function LinkedInDraftCard({
   draft,
 }: {
-  draft: { tarih: string; icerik: string; kaynakBaslik: string; kaynakUrl?: string };
+  draft: {
+    tarih: string;
+    icerik: string;
+    kaynakBaslik: string;
+    kaynakUrl?: string;
+    gorselUrl?: string;
+  };
 }) {
   const [copied, setCopied] = useState(false);
 
@@ -486,6 +492,24 @@ function LinkedInDraftCard({
         </button>
       </div>
       <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
+      {draft.gorselUrl && (
+        <div className="mt-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={draft.gorselUrl}
+            alt={draft.kaynakBaslik}
+            className="max-h-72 w-full rounded-xl object-cover"
+          />
+          <a
+            href={draft.gorselUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs font-semibold text-orange-600 hover:underline"
+          >
+            🖼️ Görseli tam boyutta aç / indir →
+          </a>
+        </div>
+      )}
       {draft.kaynakUrl && (
         <a
           href={draft.kaynakUrl}
