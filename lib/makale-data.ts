@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yapay-zeka-ajanlari-kobiler-nereden-baslamali",
+    title: "Yapay Zeka Ajanları (Agentic AI): KOBİ'ler Nereden Başlamalı?",
+    excerpt:
+      "Gartner, 2027 sonuna kadar yapay zeka ajanı projelerinin %40'ından fazlasının iptal edileceğini öngörüyor. Sebep teknoloji değil, yanlış başlangıç. KOBİ'ler için doğru başlangıç noktası ne olmalı?",
+    tag: "Strateji",
+    date: "14 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "linkedinde-herkes-ceo-unvan-enflasyonu",
     title: "LinkedIn'de Herkes CEO: Unvan Enflasyonu Üzerine",
     excerpt:
