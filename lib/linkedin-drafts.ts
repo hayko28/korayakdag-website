@@ -10,6 +10,9 @@ export interface LinkedInDraft {
   /** Konuyla ilgili, telifsiz stok görsel (images.unsplash.com) — LinkedIn
    * paylaşımına eklenmesi için. Koray panelde görüp indirebilir. */
   gorselUrl?: string;
+  /** Konuyla ilgili, telifsiz stok video (ör. Pexels) — gorselUrl yerine
+   * kullanılabilir. İkisi birlikte doluysa video önceliklidir. */
+  videoUrl?: string;
 }
 
 // LinkedIn Yazarı agent'ı, her gün yeni bir gelişme veya makale

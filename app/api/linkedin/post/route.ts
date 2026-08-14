@@ -9,7 +9,7 @@ function linkedinVersion(): string {
 
 export async function POST(request: Request) {
   try {
-    const { icerik, gorselUrl } = await request.json();
+    const { icerik, gorselUrl, videoUrl } = await request.json();
     if (!icerik) {
       return Response.json({ error: "İçerik eksik." }, { status: 400 });
     }
@@ -50,7 +50,90 @@ export async function POST(request: Request) {
 
     let mediaContent: { media: { id: string } } | undefined;
 
-    if (gorselUrl) {
+    if (videoUrl) {
+      // Video, görsele göre öncelikli. LinkedIn'in çok parçalı (4MB'lık
+      // dilimler) yükleme akışı: initializeUpload -> her dilimi PUT et,
+      // ETag'leri topla -> finalizeUpload.
+      const videoBuffer = Buffer.from(await (await fetch(videoUrl)).arrayBuffer());
+
+      const initRes = await fetch(
+        "https://api.linkedin.com/rest/videos?action=initializeUpload",
+        {
+          method: "POST",
+          headers: liHeaders,
+          body: JSON.stringify({
+            initializeUploadRequest: {
+              owner: auth.person_urn,
+              fileSizeBytes: videoBuffer.byteLength,
+              uploadCaptions: false,
+              uploadThumbnail: false,
+            },
+          }),
+        }
+      );
+      const initData = await initRes.json();
+      if (!initRes.ok) {
+        return Response.json(
+          { error: `Video yükleme başlatılamadı: ${JSON.stringify(initData)}` },
+          { status: 500 }
+        );
+      }
+      const videoUrn = initData.value.video as string;
+      const uploadToken = initData.value.uploadToken as string;
+      const instructions = initData.value.uploadInstructions as {
+        uploadUrl: string;
+        firstByte: number;
+        lastByte: number;
+      }[];
+
+      const uploadedPartIds: string[] = [];
+      for (const part of instructions) {
+        const chunk = videoBuffer.subarray(part.firstByte, part.lastByte + 1);
+        const partRes = await fetch(part.uploadUrl, {
+          method: "PUT",
+          headers: { "Content-Type": "application/octet-stream" },
+          body: chunk,
+        });
+        if (!partRes.ok) {
+          return Response.json(
+            { error: `Video parçası yüklenemedi (status ${partRes.status}).` },
+            { status: 500 }
+          );
+        }
+        const etag = partRes.headers.get("etag") || partRes.headers.get("ETag");
+        if (!etag) {
+          return Response.json(
+            { error: "Video parçası için ETag alınamadı." },
+            { status: 500 }
+          );
+        }
+        uploadedPartIds.push(etag.replace(/^"|"$/g, ""));
+      }
+
+      const finalizeRes = await fetch(
+        "https://api.linkedin.com/rest/videos?action=finalizeUpload",
+        {
+          method: "POST",
+          headers: liHeaders,
+          body: JSON.stringify({
+            finalizeUploadRequest: {
+              video: videoUrn,
+              uploadToken: uploadToken || "",
+              uploadedPartIds,
+            },
+          }),
+        }
+      );
+      if (!finalizeRes.ok) {
+        const errText = await finalizeRes.text();
+        return Response.json(
+          { error: `Video tamamlanamadı: ${errText}` },
+          { status: 500 }
+        );
+      }
+
+      mediaContent = { media: { id: videoUrn } };
+    } else if (gorselUrl) {
       // 1) Görsel yüklemesini başlat
       const initRes = await fetch(
         "https://api.linkedin.com/rest/images?action=initializeUpload",

@@ -473,6 +473,7 @@ function LinkedInDraftCard({
     kaynakBaslik: string;
     kaynakUrl?: string;
     gorselUrl?: string;
+    videoUrl?: string;
   };
 }) {
   const [copied, setCopied] = useState(false);
@@ -497,7 +498,11 @@ function LinkedInDraftCard({
       const r = await fetch("/api/linkedin/post", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ icerik: draft.icerik, gorselUrl: draft.gorselUrl }),
+        body: JSON.stringify({
+          icerik: draft.icerik,
+          gorselUrl: draft.gorselUrl,
+          videoUrl: draft.videoUrl,
+        }),
       });
       const data = await r.json();
       if (!r.ok) throw new Error(data.error || "Bilinmeyen hata");
@@ -551,23 +556,41 @@ function LinkedInDraftCard({
         <p className="mt-2 text-xs font-semibold text-red-600">{postError}</p>
       )}
       <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
-      {draft.gorselUrl && (
+      {draft.videoUrl ? (
         <div className="mt-4">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={draft.gorselUrl}
-            alt={draft.kaynakBaslik}
-            className="max-h-72 w-full rounded-xl object-cover"
+          <video
+            src={draft.videoUrl}
+            controls
+            className="max-h-96 w-full rounded-xl bg-black object-contain"
           />
           <a
-            href={draft.gorselUrl}
+            href={draft.videoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-block text-xs font-semibold text-orange-600 hover:underline"
           >
-            🖼️ Görseli tam boyutta aç / indir →
+            🎬 Videoyu tam boyutta aç / indir →
           </a>
         </div>
+      ) : (
+        draft.gorselUrl && (
+          <div className="mt-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={draft.gorselUrl}
+              alt={draft.kaynakBaslik}
+              className="max-h-72 w-full rounded-xl object-cover"
+            />
+            <a
+              href={draft.gorselUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-xs font-semibold text-orange-600 hover:underline"
+            >
+              🖼️ Görseli tam boyutta aç / indir →
+            </a>
+          </div>
+        )
       )}
       {draft.kaynakUrl && (
         <a
