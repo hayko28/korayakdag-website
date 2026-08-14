@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026 | Başvuru Rehberi | Koray Akdağ",
   description:
-    "TÜBİTAK 1501 ve 1507 Ar-Ge destekleri hakkında kapsamlı rehber. Kimler başvurabilir, destek oranları, 2026 değişiklikleri, desteklenen giderler ve başvuru süreci.",
+    "TÜBİTAK 1501 ve 1507 Ar-Ge destekleri hakkında kapsamlı rehber. 2026 yılı 2. çağrısı takvimi, kimler başvurabilir, destek oranları, desteklenen giderler ve başvuru süreci.",
   keywords: [
     "TÜBİTAK 1501",
     "TÜBİTAK 1507",
@@ -30,7 +30,53 @@ export default function BlogPage() {
       readTime="12 Dakika"
       slug="tubitak-1501-1507-ar-ge-destekleri-2026"
     >
-        <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
+        <div className="rounded-2xl border-l-4 border-green-500 bg-green-50 p-8">
+          <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🟢 Güncelleme (14 Ağustos 2026): 2026 Yılı 2. Çağrısı Açık
+          </h2>
+          <p className="mb-6 leading-8 text-gray-700">
+            TÜBİTAK, 1501 Sanayi Ar-Ge Destek Programı ve 1507 KOBİ Ar-Ge
+            Başlangıç Destek Programı&apos;nın 2026 yılı 2. çağrılarını 20
+            Temmuz 2026 tarihinde başvuruya açtı. Başvurular hâlâ devam
+            ediyor; aşağıdaki tabloda güncel çağrı takvimini bulabilirsiniz.
+          </p>
+          <div className="overflow-x-auto rounded-xl border bg-white">
+            <table className="w-full text-left text-sm md:text-base">
+              <thead className="bg-[#071A2F] text-white">
+                <tr>
+                  <th className="p-4">Program</th>
+                  <th className="p-4">Çağrı Açılışı</th>
+                  <th className="p-4">Ön Kayıt Son Tarihi</th>
+                  <th className="p-4">Çağrı Kapanışı (Son Başvuru)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-4 font-semibold">1501</td>
+                  <td className="p-4">20.07.2026</td>
+                  <td className="p-4">22.10.2026, 23:59</td>
+                  <td className="p-4 font-semibold text-red-600">26.10.2026, 23:59</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold">1507</td>
+                  <td className="p-4">20.07.2026</td>
+                  <td className="p-4">09.11.2026, 23:59</td>
+                  <td className="p-4 font-semibold text-red-600">11.11.2026, 23:59</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 leading-8 text-gray-700">
+            Kuruluş bazlı ön kayıt işlemi PRODİS üzerinden yapılır ve çağrı
+            açılışının beklenmesine gerek yoktur; zaman kaybetmemek için ön
+            kaydın erken tamamlanması önerilir. Ayrıca bu çağrı döneminde
+            1501 Programı&apos;na yalnızca <strong>KOBİ ölçeğindeki</strong>{" "}
+            sermaye şirketleri başvurabilmektedir; büyük ölçekli firmalar bu
+            dönem 1501 çağrısına başvuru yapamaz.
+          </p>
+        </div>
+
+        <div className="mt-16 rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
             📌 Bu Rehberde Neler Bulacaksınız?
           </h2>
@@ -151,10 +197,10 @@ export default function BlogPage() {
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li>✔ Sanayi Ar-Ge Projeleri Destekleme Programı</li>
-                <li>✔ Bütçe Üst Limiti Yok</li>
-                <li>✔ 36 aya kadar proje süresi</li>
-                <li>✔ KOBİ'ler için %75 hibe / Büyük firmalar için %60 hibe</li>
-                <li>✔ Sınırsız sayıda başvuru imkanı</li>
+                <li>✔ TÜBİTAK katkısı proje başına en fazla 20 Milyon TL</li>
+                <li>✔ 24 ay, istisnai hallerde 36 aya kadar proje süresi</li>
+                <li>✔ İlk 5 proje %75 hibe, 6. proje ve sonrası %60 hibe</li>
+                <li>✔ 2026/2 çağrısında yalnızca KOBİ ölçekli firmalar başvurabilir</li>
               </ul>
             </div>
             <div className="rounded-2xl border bg-white p-8 shadow">
@@ -182,22 +228,22 @@ export default function BlogPage() {
               <tbody>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Destek Bütçe Limiti</td>
-                  <td className="p-5">Üst Limit Yok</td>
+                  <td className="p-5">TÜBİTAK katkısı en fazla 20 Milyon TL (proje başına)</td>
                   <td className="p-5">3,5 Milyon TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Proje Süresi</td>
-                  <td className="p-5">Maks. 36 Ay</td>
+                  <td className="p-5">Maks. 24 Ay (istisnai 36 Aya kadar)</td>
                   <td className="p-5">Maks. 18 Ay</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Hedef Kitle</td>
-                  <td className="p-5">Tüm KOBİ ve Büyük Ölçekli Firmalar</td>
+                  <td className="p-5">2026/2 çağrısında yalnızca KOBİ'ler</td>
                   <td className="p-5">Sadece KOBİ'ler (İlk 5 Proje)</td>
                 </tr>
                 <tr>
                   <td className="p-5 font-semibold">Destek Oranı</td>
-                  <td className="p-5">KOBİ %75 - Büyük Ölçek %60</td>
+                  <td className="p-5">İlk 5 proje %75 - 6. proje ve sonrası %60</td>
                   <td className="p-5">%75 Sabit</td>
                 </tr>
               </tbody>
@@ -511,14 +557,19 @@ export default function BlogPage() {
           </div>
           <div className="mt-12 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              📅 Çağrı Dönemleri Hakkında Önemli Not
+              📅 2026 Yılı 2. Çağrısı — Güncel Takvim
             </h3>
-            <p className="leading-8 text-gray-700">
+            <p className="mb-4 leading-8 text-gray-700">
               TÜBİTAK 1501 ve 1507 programları genellikle yılda 2 kez çağrıya
-              çıkmaktadır. Çağrı takvimleri, ön kayıt son tarihleri ve proje sunuş
-              tarihleri TÜBİTAK TEYDEB resmi portalı üzerinden ilan edilir. Proje
-              hazırlık süreci en az 1-2 ay sürdüğünden çağrı duyurularını beklemeden
-              teknik kurgunun hazırlanması önerilir.
+              çıkmaktadır. 2026 yılı 2. çağrısı 20 Temmuz 2026&apos;da açıldı
+              ve son başvuru tarihleri 1501 için <strong>26 Ekim 2026</strong>,
+              1507 için <strong>11 Kasım 2026</strong> olarak belirlendi.
+              Kuruluş bazlı ön kayıt zorunlu olduğundan ve ön kayıt son
+              tarihleri (1501 için 22 Ekim, 1507 için 9 Kasım) çağrı
+              kapanışından önce geldiğinden, PRODİS üzerindeki ön kayıt
+              işleminin erken tamamlanması gerekir. Proje hazırlık süreci en
+              az 1-2 ay sürdüğünden teknik kurgunun vakit kaybetmeden
+              başlatılması önerilir.
             </p>
           </div>
         </section>

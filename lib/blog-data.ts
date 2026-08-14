@@ -156,7 +156,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1501-1507-ar-ge-destekleri-2026",
     title: "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026",
-    excerpt: "Başvuru şartları, destek oranları, değerlendirme kriterleri, desteklenen giderler ve 2026 yılında değişen tüm kuralların yer aldığı kapsamlı rehber.",
+    excerpt: "Güncelleme: 2026 yılı 2. çağrısı 20 Temmuz'da açıldı, son başvuru 1501 için 26 Ekim, 1507 için 11 Kasım 2026. Başvuru şartları, destek oranları (1501'de 20 milyon TL katkı tavanı), desteklenen giderler ve güncel çağrı takvimiyle kapsamlı rehber.",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
     readTime: "12 Dakika",
