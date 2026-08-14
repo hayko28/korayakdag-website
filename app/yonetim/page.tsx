@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { LINKEDIN_DRAFTS } from "@/lib/linkedin-drafts";
 
 type Item = {
   id: number;
@@ -17,7 +18,7 @@ type Item = {
 };
 
 type Data = { comments: Item[]; messages: Item[]; posts: Item[]; subscribers: Item[] };
-type Tab = "posts" | "comments" | "messages" | "subscribers";
+type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
@@ -147,6 +148,7 @@ export default function AdminPage() {
             ["comments", `Yorumlar (${pendingComments} Bekleyen)`],
             ["messages", `İletişim Mesajları (${data.messages.length})`],
             ["subscribers", `Aboneler (${data.subscribers.length})`],
+            ["linkedin", `LinkedIn Taslakları (${LINKEDIN_DRAFTS.length})`],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -382,6 +384,28 @@ export default function AdminPage() {
           </section>
         )}
 
+        {/* LINKEDIN TAB */}
+        {tab === "linkedin" && (
+          <section className="rounded-3xl bg-white p-6 shadow-sm">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-[#071A2F]">LinkedIn Taslakları</h2>
+              <p className="text-sm text-gray-600">
+                Otomatik paylaşılmaz. Metni oku, istersen kendi cümlenle/anekdotunla
+                düzenle, sonra kopyalayıp kendi LinkedIn hesabından paylaş.
+              </p>
+            </div>
+            {LINKEDIN_DRAFTS.length ? (
+              <div className="space-y-4">
+                {[...LINKEDIN_DRAFTS].reverse().map((d, i) => (
+                  <LinkedInDraftCard key={i} draft={d} />
+                ))}
+              </div>
+            ) : (
+              <Empty text="Henüz LinkedIn taslağı yok." />
+            )}
+          </section>
+        )}
+
         {/* SUBSCRIBERS TAB */}
         {tab === "subscribers" && (
           <section className="rounded-3xl bg-white p-6 shadow-sm">
@@ -424,4 +448,54 @@ export default function AdminPage() {
 
 function Empty({ text }: { text: string }) {
   return <p className="rounded-xl bg-slate-50 p-5 text-gray-600">{text}</p>;
+}
+
+function LinkedInDraftCard({
+  draft,
+}: {
+  draft: { tarih: string; icerik: string; kaynakBaslik: string; kaynakUrl?: string };
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(draft.icerik);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // clipboard erişimi engellenmişse sessizce geç
+    }
+  };
+
+  return (
+    <article className="rounded-2xl border p-5 shadow-xs">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b pb-3">
+        <div>
+          <p className="text-xs font-semibold text-orange-600">{draft.kaynakBaslik}</p>
+          <p className="text-xs text-gray-400">{draft.tarih}</p>
+        </div>
+        <button
+          onClick={copy}
+          className={`rounded-lg px-4 py-2 text-xs font-bold transition ${
+            copied
+              ? "bg-green-600 text-white"
+              : "bg-[#071A2F] text-white hover:bg-[#0F2A47]"
+          }`}
+        >
+          {copied ? "✅ Kopyalandı" : "📋 Metni Kopyala"}
+        </button>
+      </div>
+      <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
+      {draft.kaynakUrl && (
+        <a
+          href={draft.kaynakUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block text-xs font-semibold text-orange-600 hover:underline"
+        >
+          Kaynak sayfayı gör →
+        </a>
+      )}
+    </article>
+  );
 }
