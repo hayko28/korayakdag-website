@@ -20,6 +20,17 @@ export interface LinkedInDraft {
 // paylaşılmaz — Koray /yonetim panelinden okuyup kendi LinkedIn'ine kopyalar.
 export const LINKEDIN_DRAFTS: LinkedInDraft[] = [
   {
+    tarih: "2026-08-15",
+    icerik:
+      "Bir şirket binlerce kişiyi işten çıkarıp gerekçe olarak \"yapay zeka\" dediğinde, bence bunun büyük kısmı gerçek nedeni söylemenin daha riskli olmasından kaynaklanıyor.\n\nBu yıl büyük kesintiler yapan Block (%40) ve Cloudflare (%20) gibi şirketlerin ortak açıklaması yapay zekaydı. Ama araştırmalar farklı bir tablo çiziyor: ABD'de 2025'teki işten çıkarmaların yalnızca %4,5'i doğrudan yapay zeka kaynaklıydı, \"piyasa koşulları\" gerekçesi bundan dört kat daha fazla kullanılmış.\n\nNeden fark var? Çünkü \"yapay zekaya geçtik, verimlilik arttı\" demek yatırımcıya güven veriyor. \"Fazla işe aldık\" ya da \"marjlarımız daralıyor\" demek aynı etkiyi yaratmıyor.\n\nDanışmanlık yaptığım şirketlere hep aynı şeyi söylüyorum: hangi anlatıyı seçtiğinizden önemli olan, kendi maliyet ve verimlilik verinize gerçekten bakmış olmanız. Anlatı yönetimle, karar gerçek rakamla verilir.\n\nYazının devamı: https://korayakdag.com/makaleler/isten-cikarmalarda-yapay-zeka-bahanesi\n\n#İşDünyası #YapayZeka #StratejikYönetim #İnsanKaynakları #KurumsalStrateji #Girişimcilik #Liderlik #Verimlilik #DijitalDönüşüm #KOBİ #İşGeliştirme",
+    kaynakBaslik:
+      "İşten çıkarmalarda \"yapay zeka\" bahanesi ile gerçek nedenler arasındaki fark",
+    kaynakUrl:
+      "https://korayakdag.com/makaleler/isten-cikarmalarda-yapay-zeka-bahanesi",
+    gorselUrl:
+      "https://images.unsplash.com/photo-1782406747294-10dd7e3bec06?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
     tarih: "2026-08-14",
     icerik:
       "📢 1 Ağustos'tan itibaren \"sahte indirim\" artık çok daha riskli\n\nGeçen hafta bir e-ticaret girişimcisiyle konuşurken fark ettim ki çoğu marka hâlâ eski indirim alışkanlıklarıyla kampanya kuruyor.\n\nTicaret Bakanlığı'nın yönetmelik değişikliğiyle \"indirim\" iddiası artık tek bir referansa bağlı: kampanya öncesi son 10 günün en düşük fiyatı.\n\nÖrneğin bir ürün son 10 gündür hiç 800 TL'nin altına inmediyse, \"eski fiyat 1000 TL, şimdi 800 TL\" diye pazarlayamazsınız — gerçek referans, o 10 günün en düşüğü olmak zorunda. Bunun altında kalan bir indirim iddiası, Ticaret Bakanlığı denetimlerinde risk oluşturabilir.\n\nSizin ekibiniz kampanya metinlerini bu 10 günlük kurala göre gözden geçirdi mi?\n\n#DijitalPazarlama #Reklam #TicaretBakanlığı #Eticaret #KOBİ #Pazarlama #Girişimcilik #TüketiciHakları #Reklamcılık #EticaretTürkiye",

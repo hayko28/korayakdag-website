@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "isten-cikarmalarda-yapay-zeka-bahanesi",
+    title: "İşten Çıkarmalarda \"Yapay Zeka\" Bahanesi: Gerçek Neden Ne Kadar Farklı?",
+    excerpt:
+      "Block %40, Cloudflare %20 küçüldü, ikisi de gerekçe olarak yapay zekayı gösterdi. Ama veriler ABD'deki işten çıkarmaların yalnızca %4,5'inin doğrudan yapay zeka kaynaklı olduğunu söylüyor. Aradaki fark, iş sahipleri için önemli bir ders barındırıyor.",
+    tag: "Görüş",
+    date: "15 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yapay-zeka-ajanlari-kobiler-nereden-baslamali",
     title: "Yapay Zeka Ajanları (Agentic AI): KOBİ'ler Nereden Başlamalı?",
     excerpt:
