@@ -110,6 +110,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Özellikle e-ticaret ve hedefli reklam kullanan müşterilerimize, kampanya ve indirim metinlerini bu 10 günlük referans fiyat kuralına göre gözden geçirmelerini öneriyorum; uyumsuz kampanyalar idari yaptırımla karşılaşabilir.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "9 Temmuz 2026",
+    eklendiTarihi: "2026-08-15",
+    baslik:
+      "KOSGEB'den teknoloji girişimlerine 5 milyon TL'ye kadar Yapay Zekâ Kredi Programı",
+    ozet:
+      "KOSGEB, geçerli Teknogirişim Rozetine sahip işletmelerin yapay zekâ altyapısına erişimini kolaylaştırmak amacıyla Yapay Zekâ Kredi Programı'nı başlattı. Program; yüksek performanslı işlem kaynakları, güvenli veri depolama ve yapay zekâ veri merkezi/platform hizmetleri gibi giderler için 500 bin TL ile 5 milyon TL arasında kredi sağlıyor. Başvurular 9 Temmuz-31 Aralık 2026 arasında KOBİ Bilgi Sistemi üzerinden alınıyor; geri ödeme 12 aylık ödemesiz dönemin ardından 12 eşit taksitte yapılıyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Teknogirişim Rozetine sahip ve yapay zekâ altyapısına yatırım planlayan girişimler için bu kredi, piyasa koşullarına göre oldukça avantajlı; başvuru öncesi rozet ve uygunluk kriterlerini netleştirmelerini öneriyorum.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Haziran 2026",
+    eklendiTarihi: "2026-08-15",
+    baslik:
+      "Ticaret Bakanlığı'nın yurt dışı yatırım anketi: Türk yatırımcıların yurt dışı sermayesi 69,2 milyar dolara ulaştı",
+    ozet:
+      "Ticaret Bakanlığı'nın Türkiye'de yerleşik gerçek ve tüzel kişilerin yurt dışı yatırımlarına ilişkin anket sonuçlarına göre, 2025 sonu itibarıyla 128 ülkede yapılan yurt dışı yatırımların sermaye pozisyonu 69,2 milyar dolara ulaştı; bu rakam 2024 sonundaki 60,1 milyar dolara göre belirgin bir artışa işaret ediyor. Anket 20 Nisan-15 Mayıs 2026 döneminde yapıldı; sonuçlar UNCTAD, OECD, IMF ve Dünya Bankası gibi kuruluşlara da raporlanıyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/duyurular/ticaret-bakanligi-tarafindan-yapilan-yurt-disi-yatirim-anketi-sonuclari-aciklandi-19-06-2026",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Yurt dışı yatırım sermayesindeki bu artış, Türk şirketlerinin uluslararası genişlemeye ilgisinin sürdüğünü gösteriyor; yurt dışında şirket kurmayı planlayan işletmelere hedef ülke seçiminde güncel yatırım eğilimlerini de dikkate almalarını öneriyorum.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
