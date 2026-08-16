@@ -10,6 +10,24 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-arge-urge-inovasyon-destek-programi-2026",
+    title: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı: Kimler Başvurabilir, Destek Tutarları Nedir?",
+    excerpt: "Girişimcilerin ve KOBİ'lerin herhangi bir tarihte başvurabildiği KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'nda 900.000 TL'ye varan destek üst limiti, gider kalemleri, başvuru şartları ve KBS üzerinden adım adım süreçle 2026 güncel rehber.",
+    category: "KOSGEB • AR-GE DESTEĞİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "arge-merkezi-nedir-nasil-kurulur-sartlari-vergi-avantajlari-2026",
+    title: "Ar-Ge Merkezi Nedir? Nasıl Kurulur? 2026 Şartları, Vergi ve SGK Avantajları",
+    excerpt: "En az 15 tam zaman eşdeğer personelle kurulabilen Ar-Ge Merkezi'nin şartları, AGTM üzerinden adım adım başvuru süreci, %95'e varan gelir vergisi stopajı teşviki, SGK işveren primi desteği ve 2028'e kadar geçerli 5746 sayılı Kanun avantajlarıyla 2026 güncel rehber.",
+    category: "AR-GE MERKEZİ • 5746 SAYILI KANUN • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-yapay-zeka-kredi-programi-2026",
     title: "KOSGEB Yapay Zeka Kredi Programı 2026: 5 Milyon TL'ye Kadar Faizsiz Krediye Kimler Başvurabilir?",
     excerpt: "Teknogirişim Rozeti sahibi girişimlere GPU/bulut ve yapay zeka altyapı hizmetleri için 500 bin - 5 milyon TL arasında faizsiz kredi sunan yeni KOSGEB programının şartları, GO Dijital Cüzdan mekanizması, teminat koşulları ve 2026 başvuru süreci.",
