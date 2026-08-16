@@ -8,6 +8,18 @@ export async function GET() {
   return Response.json({ drafts });
 }
 
+export async function POST(request: Request) {
+  if (!(await isAdminAuthorized())) return Response.json({ error: "Yetkisiz" }, { status: 401 });
+  const { tarih, icerik, kaynakBaslik, kaynakUrl, gorselUrl, videoUrl } = await request.json();
+  if (!tarih || !icerik || !kaynakBaslik) return Response.json({ error: "Eksik bilgi" }, { status: 400 });
+  await initializeDatabase();
+  await sql`
+    INSERT INTO linkedin_drafts (tarih, icerik, kaynak_baslik, kaynak_url, gorsel_url, video_url)
+    VALUES (${tarih}, ${icerik}, ${kaynakBaslik}, ${kaynakUrl ?? null}, ${gorselUrl ?? null}, ${videoUrl ?? null})
+  `;
+  return Response.json({ ok: true });
+}
+
 export async function PATCH(request: Request) {
   if (!(await isAdminAuthorized())) return Response.json({ error: "Yetkisiz" }, { status: 401 });
   const { id, icerik, kaynakBaslik, kaynakUrl, gorselUrl, videoUrl } = await request.json();
