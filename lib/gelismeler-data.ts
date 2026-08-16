@@ -138,6 +138,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yurt dışı yatırım sermayesindeki bu artış, Türk şirketlerinin uluslararası genişlemeye ilgisinin sürdüğünü gösteriyor; yurt dışında şirket kurmayı planlayan işletmelere hedef ülke seçiminde güncel yatırım eğilimlerini de dikkate almalarını öneriyorum.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "8 Ağustos 2026",
+    eklendiTarihi: "2026-08-16",
+    baslik:
+      "KOSGEB'den COP31 Odaklı Hızlandırma Desteği Çağrısı: TEKMER ve teknoparklara 6,5 milyon TL'ye kadar destek",
+    ozet:
+      "KOSGEB, Teknoloji Merkezi (TEKMER) işletici kuruluşları ile GO'lu teknopark yönetici şirketlerine yönelik COP31 Odaklı Hızlandırma Desteği Çağrısı'nı açtı. Temiz enerji dönüşümü, döngüsel ekonomi, sürdürülebilir tarım ve iklim teknolojileri alanında faaliyet gösteren girişimlerin uluslararası büyümesini desteklemek amacıyla kuruluş başına 6,5 milyon TL'ye kadar destek sağlanacak. Başvurular 9-30 Ağustos 2026 tarihleri arasında alınıyor.",
+    kaynakUrl:
+      "https://kosgeb.gov.tr/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: İklim teknolojileri ve sürdürülebilirlik alanında çalışan, teknoloji derinliği ve ticarileşme potansiyeli yüksek girişimlerin bağlı bulunduğu TEKMER veya teknoparkla bu çağrıyı süresi içinde değerlendirmesini öneririm; başvuru penceresi kısa.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "11 Ağustos 2026",
+    eklendiTarihi: "2026-08-16",
+    baslik:
+      "Ticaret Bakanlığı'na bağlı 19 serbest bölgeden 2026'nın ilk 7 ayında rekor ihracat",
+    ozet:
+      "Ticaret Bakanlığı'na bağlı 19 serbest bölgenin ihracatı, 2026 yılı Ocak-Temmuz döneminde bir önceki yılın aynı dönemine göre %6,9 artışla 7,7 milyar dolara ulaşarak bu dönem için tüm zamanların rekorunu kırdı. Temmuz ayı ihracatı yıllık bazda %11,3 artışla 1 milyar 152 milyon dolar oldu; serbest bölgelerden ihracatın ithalatı karşılama oranı Ocak-Temmuz döneminde %160,9'a ulaştı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligina-bagli-19-serbest-bolgeden-2026-yilinin-ilk-7-ayinda-yeni-ihracat-rekoru",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Serbest bölgelerdeki bu güçlü ihracat performansı ve yüksek ithalat karşılama oranı, özellikle üretim ve ihracat odaklı işletmeler için serbest bölge yatırımını yeniden değerlendirmeye değer bir seçenek haline getiriyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
