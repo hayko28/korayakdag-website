@@ -20,6 +20,17 @@ export interface LinkedInDraft {
 // paylaşılmaz — Koray /yonetim panelinden okuyup kendi LinkedIn'ine kopyalar.
 export const LINKEDIN_DRAFTS: LinkedInDraft[] = [
   {
+    tarih: "2026-08-16",
+    icerik:
+      "Bu yıl İK literatüründe yeni bir terim dolaşıyor: quiet cracking. Quiet quitting'den (sessiz istifa) farkı şu — çalışan işi bırakmıyor, şikayet de etmiyor, sadece sessizce ve çoğu zaman kendisi de fark etmeden motivasyonunu kaybediyor.\n\nDanışmanlık yaptığım ekiplerde bunun üç erken belirtisini görüyorum. Birincisi, toplantılarda artık hiç itiraz etmeyen, her şeyi hemen kabul eden biri var — bu bağlılık değil, çoğu zaman vazgeçmiş olmanın işareti. İkincisi, iş kalitesi düşmüyor ama sessizce \"iyi\"den \"yeterli\"ye kayıyor, teslimat tuttuğu için kimse fark etmiyor. Üçüncüsü, tatilden dönen biri eskisi gibi enerjik gelmiyor, birkaç gün içinde yine aynı durgun hâle dönüyor.\n\nBunların hiçbiri performans değerlendirmesinde bir \"sorun\" olarak görünmüyor. Ama üç ay sonra o kişi ya işten ayrılıyor ya da kalıp en az enerjiyle en az işi yapan biri oluyor.\n\nEkibinizde en son ne zaman \"işin nasıl gidiyor\" değil, \"bu iş sana hâlâ anlamlı geliyor mu\" diye sordunuz?\n\nBu konudaki yazım: https://korayakdag.com/makaleler/sessiz-cokus-ekipte-fark-edilmeyen-tukenmislik\n\n#İnsanKaynakları #Liderlik #İşDünyası #EkipYönetimi #Kariyer #ÇalışanBağlılığı #KurumsalKültür #Yönetim #Girişimcilik #StratejikDanışmanlık",
+    kaynakBaslik:
+      "Quiet cracking: sessizce tükenen çalışanları fark etmenin üç yolu",
+    kaynakUrl:
+      "https://korayakdag.com/makaleler/sessiz-cokus-ekipte-fark-edilmeyen-tukenmislik",
+    gorselUrl:
+      "https://images.unsplash.com/photo-1758520144705-b39e11ff32e3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
     tarih: "2026-08-15",
     icerik:
       "Bir şirket binlerce kişiyi işten çıkarıp gerekçe olarak \"yapay zeka\" dediğinde, bence bunun büyük kısmı gerçek nedeni söylemenin daha riskli olmasından kaynaklanıyor.\n\nBu yıl büyük kesintiler yapan Block (%40) ve Cloudflare (%20) gibi şirketlerin ortak açıklaması yapay zekaydı. Ama araştırmalar farklı bir tablo çiziyor: ABD'de 2025'teki işten çıkarmaların yalnızca %4,5'i doğrudan yapay zeka kaynaklıydı, \"piyasa koşulları\" gerekçesi bundan dört kat daha fazla kullanılmış.\n\nNeden fark var? Çünkü \"yapay zekaya geçtik, verimlilik arttı\" demek yatırımcıya güven veriyor. \"Fazla işe aldık\" ya da \"marjlarımız daralıyor\" demek aynı etkiyi yaratmıyor.\n\nDanışmanlık yaptığım şirketlere hep aynı şeyi söylüyorum: hangi anlatıyı seçtiğinizden önemli olan, kendi maliyet ve verimlilik verinize gerçekten bakmış olmanız. Anlatı yönetimle, karar gerçek rakamla verilir.\n\nYazının devamı: https://korayakdag.com/makaleler/isten-cikarmalarda-yapay-zeka-bahanesi\n\n#İşDünyası #YapayZeka #StratejikYönetim #İnsanKaynakları #KurumsalStrateji #Girişimcilik #Liderlik #Verimlilik #DijitalDönüşüm #KOBİ #İşGeliştirme",

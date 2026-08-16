@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sessiz-cokus-ekipte-fark-edilmeyen-tukenmislik",
+    title: "Quiet Cracking: Ekibinizde Sessizce Tükenenleri Nasıl Fark Edersiniz?",
+    excerpt:
+      "2026'nın yeni İK terimi \"quiet cracking\" — çalışan işi bırakmadan, şikayet etmeden sessizce motivasyonunu kaybediyor. Danışmanlık yaptığım ekiplerde gördüğüm üç erken belirti ve ne yapılabileceği.",
+    tag: "Görüş",
+    date: "16 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "isten-cikarmalarda-yapay-zeka-bahanesi",
     title: "İşten Çıkarmalarda \"Yapay Zeka\" Bahanesi: Gerçek Neden Ne Kadar Farklı?",
     excerpt:
