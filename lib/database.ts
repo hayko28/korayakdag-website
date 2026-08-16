@@ -20,5 +20,6 @@ export async function initializeDatabase() {
   // paylaşım yapma yetkisi). person_urn, /rest/posts isteklerinde "author"
   // alanı için gerekli.
   await sql`CREATE TABLE IF NOT EXISTS linkedin_auth (id INTEGER PRIMARY KEY DEFAULT 1, access_token TEXT NOT NULL, person_urn TEXT, expires_at TIMESTAMPTZ NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), CONSTRAINT single_row CHECK (id = 1))`;
+  await sql`CREATE TABLE IF NOT EXISTS linkedin_drafts (id SERIAL PRIMARY KEY, tarih TEXT NOT NULL, icerik TEXT NOT NULL, kaynak_baslik TEXT NOT NULL, kaynak_url TEXT, gorsel_url TEXT, video_url TEXT, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
   initialized = true;
 }

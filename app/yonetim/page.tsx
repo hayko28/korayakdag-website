@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { LINKEDIN_DRAFTS } from "@/lib/linkedin-drafts";
 
 type Item = {
   id: number;
@@ -17,24 +16,76 @@ type Item = {
   created_at?: string;
 };
 
+type LinkedInDraft = {
+  id: number;
+  tarih: string;
+  icerik: string;
+  kaynakBaslik: string;
+  kaynakUrl?: string;
+  gorselUrl?: string;
+  videoUrl?: string;
+};
+
 type Data = { comments: Item[]; messages: Item[]; posts: Item[]; subscribers: Item[] };
 type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [data, setData] = useState<Data | null>(null);
+  const [drafts, setDrafts] = useState<LinkedInDraft[]>([]);
   const [error, setError] = useState("");
   const [tab, setTab] = useState<Tab>("posts");
   const [commentFilter, setCommentFilter] = useState<"all" | "pending" | "approved" | "rejected">("all");
 
   const load = async () => {
     try {
-      const r = await fetch("/api/admin");
-      if (!r.ok) throw new Error();
+      const [r, dr] = await Promise.all([fetch("/api/admin"), fetch("/api/admin/linkedin-drafts")]);
+      if (!r.ok || !dr.ok) throw new Error();
       setData(await r.json());
+      const { drafts: rows } = await dr.json();
+      setDrafts(
+        rows.map(
+          (d: {
+            id: number;
+            tarih: string;
+            icerik: string;
+            kaynak_baslik: string;
+            kaynak_url?: string;
+            gorsel_url?: string;
+            video_url?: string;
+          }) => ({
+            id: d.id,
+            tarih: d.tarih,
+            icerik: d.icerik,
+            kaynakBaslik: d.kaynak_baslik,
+            kaynakUrl: d.kaynak_url ?? undefined,
+            gorselUrl: d.gorsel_url ?? undefined,
+            videoUrl: d.video_url ?? undefined,
+          })
+        )
+      );
     } catch {
       setError("Veriler yüklenirken hata oluştu.");
     }
+  };
+
+  const saveDraft = async (updated: LinkedInDraft) => {
+    await fetch("/api/admin/linkedin-drafts", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updated),
+    });
+    await load();
+  };
+
+  const deleteDraft = async (id: number) => {
+    if (!confirm("Bu taslağı kalıcı olarak silmek istediğine emin misin?")) return;
+    await fetch("/api/admin/linkedin-drafts", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+    await load();
   };
 
   const login = async (e: FormEvent) => {
@@ -148,7 +199,7 @@ export default function AdminPage() {
             ["comments", `Yorumlar (${pendingComments} Bekleyen)`],
             ["messages", `İletişim Mesajları (${data.messages.length})`],
             ["subscribers", `Aboneler (${data.subscribers.length})`],
-            ["linkedin", `LinkedIn Taslakları (${LINKEDIN_DRAFTS.length})`],
+            ["linkedin", `LinkedIn Taslakları (${drafts.length})`],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -408,10 +459,10 @@ export default function AdminPage() {
                 düzenle, sonra kopyalayıp kendi LinkedIn hesabından paylaş.
               </p>
             </div>
-            {LINKEDIN_DRAFTS.length ? (
+            {drafts.length ? (
               <div className="space-y-4">
-                {[...LINKEDIN_DRAFTS].reverse().map((d, i) => (
-                  <LinkedInDraftCard key={i} draft={d} />
+                {drafts.map((d) => (
+                  <LinkedInDraftCard key={d.id} draft={d} onSave={saveDraft} onDelete={deleteDraft} />
                 ))}
               </div>
             ) : (
@@ -466,8 +517,11 @@ function Empty({ text }: { text: string }) {
 
 function LinkedInDraftCard({
   draft,
+  onSave,
+  onDelete,
 }: {
   draft: {
+    id: number;
     tarih: string;
     icerik: string;
     kaynakBaslik: string;
@@ -475,10 +529,22 @@ function LinkedInDraftCard({
     gorselUrl?: string;
     videoUrl?: string;
   };
+  onSave: (updated: typeof draft) => Promise<void>;
+  onDelete: (id: number) => Promise<void>;
 }) {
   const [copied, setCopied] = useState(false);
   const [postState, setPostState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [postError, setPostError] = useState("");
+  const [editing, setEditing] = useState(false);
+  const [draftText, setDraftText] = useState(draft.icerik);
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    setSaving(true);
+    await onSave({ ...draft, icerik: draftText });
+    setSaving(false);
+    setEditing(false);
+  };
 
   const copy = async () => {
     try {
@@ -550,12 +616,45 @@ function LinkedInDraftCard({
               ? "⚠️ Tekrar Dene"
               : "🚀 LinkedIn'de Paylaş"}
           </button>
+          <button
+            onClick={() => {
+              setDraftText(draft.icerik);
+              setEditing((v) => !v);
+            }}
+            className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-xs font-bold text-gray-700 transition hover:bg-gray-50"
+          >
+            {editing ? "✖️ Vazgeç" : "✏️ Düzenle"}
+          </button>
+          <button
+            onClick={() => onDelete(draft.id)}
+            className="rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-red-700"
+          >
+            🗑️ Sil
+          </button>
         </div>
       </div>
       {postState === "error" && (
         <p className="mt-2 text-xs font-semibold text-red-600">{postError}</p>
       )}
-      <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
+      {editing ? (
+        <div className="mt-3 space-y-2">
+          <textarea
+            value={draftText}
+            onChange={(e) => setDraftText(e.target.value)}
+            rows={10}
+            className="w-full rounded-xl border p-3 text-gray-800"
+          />
+          <button
+            onClick={save}
+            disabled={saving}
+            className="rounded-lg bg-green-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-green-700 disabled:opacity-60"
+          >
+            {saving ? "Kaydediliyor…" : "💾 Kaydet"}
+          </button>
+        </div>
+      ) : (
+        <p className="mt-3 whitespace-pre-line text-gray-800">{draft.icerik}</p>
+      )}
       {draft.videoUrl ? (
         <div className="mt-4">
           <video
