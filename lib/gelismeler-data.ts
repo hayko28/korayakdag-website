@@ -166,6 +166,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Serbest bölgelerdeki bu güçlü ihracat performansı ve yüksek ithalat karşılama oranı, özellikle üretim ve ihracat odaklı işletmeler için serbest bölge yatırımını yeniden değerlendirmeye değer bir seçenek haline getiriyor.",
   },
+  {
+    kurum: "KVKK",
+    tarih: "22 Temmuz 2026 (13 Ağustos 2026'da Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-08-17",
+    baslik:
+      "KVKK, sadakat kartı üçüncü kişi kullanımına ilişkin uyum süresini 28 Şubat 2027'ye uzattı",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu, 11 Şubat 2026 tarihli ilke kararıyla getirdiği; bir sadakat kartı üyesinin cep telefonu veya kart numarasının alışveriş sırasında üçüncü bir kişi tarafından kullanılması durumunda işlemin gerçekten üyenin bilgisi ve rızası dahilinde yapıldığını doğrulayacak mekanizma kurma yükümlülüğünün uyum süresini uzattı. 22 Temmuz 2026 tarihli ve 2026/1491 sayılı kararla, sektörün talebi doğrultusunda 28 Ağustos 2026'da dolacak süre 28 Şubat 2027'ye ertelendi.",
+    kaynakUrl:
+      "https://www.kvkk.gov.tr/Icerik/8670/sadakat-kart-uyeligi-bulunan-bir-kisinin-cep-telefonu-numarasinin-veya-sadakat-kart-numarasinin-ucuncu-bir-kisi-tarafindan-alisveris-esnasinda-kullanilmasi-hakkinda-ilke-karari",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Perakende ve sadakat programı işleten müşterilerimize, ek süreye rağmen SMS OTP, QR/barkod veya kart şifresi gibi doğrulama yöntemlerinden birini şimdiden test etmelerini öneriyorum; son haftaya bırakmak operasyonel risk yaratabilir.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Temmuz 2026 (5 Ağustos 2026'da duyuruldu)",
+    eklendiTarihi: "2026-08-17",
+    baslik:
+      "AB'ye e-ticaret ihracatında A.TR Dolaşım Belgesi artık otomatik oluşturuluyor",
+    ozet:
+      "Ticaret Bakanlığı, AB'nin e-ticarette 'de minimis' muafiyetini kaldırmasının ardından, Basitleştirilmiş Gümrük Beyannamesi kapsamında değeri 150 avroyu aşmayan e-ihracat gönderileri için elektronik A.TR Dolaşım Belgesi'nin otomatik oluşturulmasını sağlayan bir sistemi 3 Temmuz 2026'da hızlı kargo firmaları ve posta idaresinin kullanımına açtı. Sistemle ilk ihracat işlemi gerçekleştirildi; amaç, ürün başına doğabilecek ek mali yükleri önleyip Türkiye'den AB'ye e-ihracat yapan işletmelerin rekabet gücünü korumak.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/e-ticarette-kullanilan-a-tr-dolasim-belgesi-sistemiyle-ilk-ihracat-gerceklestirildi",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: AB'ye düşük değerli e-ticaret gönderisi yapan işletmelere, lojistik/kargo firmalarıyla bu otomatik A.TR sürecine geçip geçmediklerini teyit etmelerini öneriyorum; manuel belge süreci artık gereksiz bir maliyet ve gecikme kaynağı olabilir.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
