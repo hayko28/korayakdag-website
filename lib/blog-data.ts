@@ -242,5 +242,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "17 Dakika",
     image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "sirket-degerleme-nedir-yontemleri-nasil-yapilir-2026",
+    title: "Şirket Değerleme Nedir? Yöntemleri, Süreci ve KOBİ'ler İçin Neden Kritik?",
+    excerpt: "DCF (İndirgenmiş Nakit Akışı), çarpan/emsal şirket karşılaştırma ve net aktif değer yöntemlerinin nasıl işlediği, KOBİ'lerde değerlemeyi zorlaştıran özel etkenler, ortaklık girişi/çıkışından yatırımcı görüşmesine somut senaryolarla değerlemenin ne zaman gerekli olduğu ve profesyonel/bağımsız bir ekip tarafından yapılmasının önemiyle kapsamlı 2026 rehberi.",
+    category: "ŞİRKET DEĞERLEME • M&A • 2026",
+    date: "2026",
+    readTime: "14 Dakika",
+    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
