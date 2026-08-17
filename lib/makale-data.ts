@@ -11,11 +11,10 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
-    slug: "yapay-zeka-kokan-linkedin-icerikleri-guven-sorunu",
-    title:
-      "LinkedIn'de \"Yapay Zeka Kokan\" İçerik Sorunu: Algoritma Artık Bunu Cezalandırıyor",
+    slug: "dijital-donusum-kobilerde-neden-gecikir",
+    title: "Dijital Dönüşüm KOBİ'lerde Neden Gecikir?",
     excerpt:
-      "LinkedIn'in kendi verilerine göre uzun paylaşımların %40'ından fazlası artık tamamen yapay zeka tarafından yazılıyor. Temmuz 2026'da gelen \"Bu yapay zeka kokuyor\" bildirme özelliği, kişisel marka kuran herkes için önemli bir uyarı.",
+      "Sipariş takibini WhatsApp grubundan yapan bir firma, yurt dışı siparişini zamanında yetiştiremediği için kaybetti. Sorun üretim kapasitesi değildi — bilginin nerede olduğuydu.",
     tag: "Görüş",
     date: "17 Ağustos 2026",
     readTime: "2 Dakika",
