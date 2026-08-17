@@ -233,5 +233,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "11 Dakika",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turquality-programi-nedir-sartlari-destekleri-2026",
+    title: "Turquality Programı Nedir? Şartları, Destekleri ve 2026 Güncel Rehberi",
+    excerpt: "Marka Destek Programı ile Turquality arasındaki puanlama esaslı fark (50-80 puan Marka, 80-100 puan Turquality), kabul kriterleri, %50'den %75'e varan destek oranları, somut örneklerle sağladığı fayda, süre/üst limitler ve adım adım başvuru süreciyle 2026 güncel Turquality rehberi.",
+    category: "TURQUALITY • İHRACAT DESTEKLERİ • 2026",
+    date: "2026",
+    readTime: "17 Dakika",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
