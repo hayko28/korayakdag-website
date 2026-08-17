@@ -224,5 +224,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026",
+    title: "KOSGEB COP31 Odaklı Hızlandırma Desteği Çağrısı 2026: Kimler Başvurabilir, Destek Tutarı Nedir?",
+    excerpt: "Antalya'da düzenlenecek COP31 İklim Zirvesi öncesinde açılan çağrı kapsamında TEKMER işletici kuruluşları ve Teknokent yönetici şirketlerine 6,5 milyon TL'ye kadar geri ödemeli destek sağlanıyor. Şartlar, hedef alanlar, başvuru tarihleri ve KOBİ'ler için katılım yoluyla güncel rehber.",
+    category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
