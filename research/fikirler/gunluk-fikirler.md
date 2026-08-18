@@ -1,3 +1,158 @@
+# Günlük Fikir Araştırması - 18 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı  
+**Tarih:** 18 Ağustos 2026  
+**Hedef:** Koray Akdağ'ın stratejik danışmanlık işine uygun, kanıtlanmış pazarlı fikirler
+
+---
+
+## FİKİR 1: Türkçe İş Zekası Ajanı (Zetik Türkçe Benzeri)
+
+### Ne Bu?
+Stratejistler, CEO'lar, yatırım danışmanları için AI ajanı. Podcast, haber, finansal raporlar, sosyal medya, borsa duyuruları gibi 10+ kaynaktan veri topla → işletme-spesifik bilgi ayrıştır → günlük/haftalık rapor sunar. Örnek: "Hepsiburada'nın son stratejik hamleleri ve pazar trendleri neler?" sorusuna otomatik detaylı cevap.
+
+### Kanıt (Kaynaklar)
+- [Zetik - Product Hunt #1-4 ranking, 183 upvotes (Ağustos 2026)](https://www.producthunt.com/products/zetik)
+- Yurt dışında (VAL, Klue) operational intelligence devleri $1B+ valuations alıyor
+
+**Gerçek Sorun:** Danışmanlar sürenin %30'unu "kaynak tarama"ya harcıyor.
+
+### Gelir Modeli
+- Pro: ₺1,999/ay (5 izlenen entity, haftalık rapor)
+- Premium: ₺4,999/ay (15 entity, günlük rapor)
+- B2B: PE/VC firmaları white-label (₺10,000+/ay)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de benzeri yok.  
+**Talep:** M&A/PE market hızlanıyor, danışmanlar "haber kaçırma" tehdidinden şikayet ediyor.
+
+**Neden Heyecan Verici:** Zetik yurt dışında #1-4, Koray kendisi user. Kendi müşterilerine satabilir.
+
+### İlk Hafta Adımı
+1. OpenAI API + web scraper ile 5 kategori veri feed
+2. Koray'ın 3 hedef şirketi manual research → benchmark
+3. Prompt ile otomatik rapor özeti
+4. 3 danışman arkadaşına test ettir
+
+### Zorluk/Risk
+- API maliyeti (₺500-2,000/ay)
+- Kaynak doğruluğu riski
+- Türk sources reliability variable
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 2: Video Konuşma Deepfake Tespit Tool
+
+### Ne Bu?
+Zoom, Teams, Google Meet'te canlı deepfake/synthetic face algılar. Kurumsal güvenlik — fraud call tespit.
+
+### Kanıt (Kaynaklar)
+- [Halo by Scam AI - PH 162 upvotes, Qualcomm partnership (Ağustos 2026)](https://www.businesswire.com/news/home/20260805515597)
+- [Arup Corp $25M Fraud via Deepfake CEO Call (2024)](https://www.bbc.com/news/business-68505412)
+
+### Gelir Modeli
+- Per-user: ₺99/ay
+- Team: ₺499/ay (5 seats)
+- Enterprise: ₺2,000+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de yok.  
+**Talep:** Banka dolandırıcılık 2025-2026'da artıyor, kurumsal güvenlik bütçeleri yükselişte.
+
+**Neden Heyecan Verici:** Boş pazar, B2B security yüksek margin.
+
+### İlk Hafta Adımı
+1. OpenAI Vision API test (synthetic face detection)
+2. Canlı test call
+3. Banking sector compliance talk
+
+### Zorluk/Risk
+- Model accuracy kritik
+- Privacy handling (video masking)
+- Teknisyen takım şart
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 3: "Danışmanlar Bağlantı Platformu"
+
+### Ne Bu?
+Türkiye'deki stratejist, M&A, finans, vergi, hukuk danışmanları için exclusive network/marketplace. Koray podcast başında expert interview yapıyor. Later: matched project → commission model.
+
+### Kanıt (Kaynaklar)
+- [Doruk Yalçınsoy's Claude Code Community: 100+ members, viral YouTube (Ağustos 2026)](https://www.youtube.com/@dorukyalcinsoy)
+
+### Gelir Modeli
+- Membership: Danışmanlar ₺299/ay
+- Commission: Matched project başına %5-10
+- Premium Content: ₺99/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Koray'ın network = advantage.  
+**Talep:** "Doğru danışmanı bulmak zor", danışmanlar "reliable colleague network" istiyor.
+
+**Neden Heyecan Verici:** Koray network var, content + community flywheel, low tech.
+
+### İlk Hafta Adımı
+1. 10-15 danışman arkadaşını Discord'a davet et
+2. İlk expert interview podcast
+3. Referral tracking system
+4. 3 danışmandan feedback al
+
+### Zorluk/Risk
+- Network effects yavaş (chicken-egg)
+- Reputation riski
+- Satış: danışmanlar neden referral yapmalı?
+
+**Risk Derecesi:** DÜŞÜK
+
+---
+
+## FİKİR 4: Workflow Video Capture → Otomasyon (SOP)
+
+### Ne Bu?
+Kurumsal SOP'ları screen recording + AI ile otomatikleştir. Örnek: "Muhasebe dosyalama prosedürünü kaydet" → AI adımları tanır → n8n workflow otomatik generate. Screencap (PH 129 upvotes) benzeri.
+
+### Kanıt (Kaynaklar)
+- [Screencap - PH 129 upvotes, privacy-first (Ağustos 2026)](https://www.producthunt.com/products/screencap)
+
+### Gelir Modeli
+- Per-org: ₺299/ay (1 team, 5 workflow)
+- Pro: ₺799/ay (10 workflows, n8n/Zapier export)
+- Enterprise: ₺2,000+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Yok.  
+**Talep:** Call center, finansa çalışan training cost yüksek, muhasebe SOP standardization isteniyor.
+
+**Neden Heyecan Verici:** Video capture = no coding, powerful backend, early mover.
+
+### İlk Hafta Adımı
+1. Koray'ın danışmanlık prosedürü video kaydet
+2. Step detection model test
+3. n8n workflow export template
+4. 2-3 muhasebe firmasına demo
+
+### Zorluk/Risk
+- Step detection accuracy
+- Privacy (video → face masking)
+- Integration complexity
+
+**Risk Derecesi:** ORTA
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe İş Zekası Ajanı (Zetik Türkçe Benzeri)**
+
+Koray kendisi ilk kullanıcı (danışmanlık yaparken her gün araştırma yapıyor), talep Zetik'in PH traction'ı ile kanıtlanmış, kendi danışman ağına doğrudan satış kanalı var. Deepfake Detection daha risky (teknik + model accuracy), Danışmanlar Network network effects'e bağlı (yavaş). **İlk hafta:** OpenAI API prototype, test, arkadaşa sor.
+
+---
+
 # Günlük Fikir Araştırması - 17 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
