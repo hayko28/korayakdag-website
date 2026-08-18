@@ -251,5 +251,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "14 Dakika",
     image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "bagimsiz-denetim-esik-degerleri-2026-degisti",
+    title: "Bağımsız Denetim Eşik Değerleri 2026'da Değişti: Yeni Kriterler Şirketinizi Nasıl Etkiliyor?",
+    excerpt: "KGK'nın 17 Mart 2026'da 11066 sayılı Cumhurbaşkanı Kararı ile yükselttiği bağımsız denetim eşik değerleri (500 milyon TL aktif, 1 milyar TL ciro, 150 çalışan) hangi şirketleri etkiliyor? Kapsama giriş/çıkış kuralları, 7 Mayıs 2026 usul güncellemesi ve hazırlık süreciyle güncel rehber.",
+    category: "BAĞIMSIZ DENETİM • MALİ MÜŞAVİRLİK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
