@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, ReactNode, useState } from "react";
 
 type Item = {
   id: number;
@@ -27,21 +27,27 @@ type LinkedInDraft = {
 };
 
 type Data = { comments: Item[]; messages: Item[]; posts: Item[]; subscribers: Item[] };
-type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin";
+type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin" | "fikirler";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [data, setData] = useState<Data | null>(null);
   const [drafts, setDrafts] = useState<LinkedInDraft[]>([]);
+  const [fikirler, setFikirler] = useState({ bugunOneri: "", gunlukFikirler: "" });
   const [error, setError] = useState("");
   const [tab, setTab] = useState<Tab>("posts");
   const [commentFilter, setCommentFilter] = useState<"all" | "pending" | "approved" | "rejected">("all");
 
   const load = async () => {
     try {
-      const [r, dr] = await Promise.all([fetch("/api/admin"), fetch("/api/admin/linkedin-drafts")]);
-      if (!r.ok || !dr.ok) throw new Error();
+      const [r, dr, fr] = await Promise.all([
+        fetch("/api/admin"),
+        fetch("/api/admin/linkedin-drafts"),
+        fetch("/api/admin/fikirler"),
+      ]);
+      if (!r.ok || !dr.ok || !fr.ok) throw new Error();
       setData(await r.json());
+      setFikirler(await fr.json());
       const { drafts: rows } = await dr.json();
       setDrafts(
         rows.map(
@@ -200,6 +206,7 @@ export default function AdminPage() {
             ["messages", `İletişim Mesajları (${data.messages.length})`],
             ["subscribers", `Aboneler (${data.subscribers.length})`],
             ["linkedin", `LinkedIn Taslakları (${drafts.length})`],
+            ["fikirler", "Fikirler"],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -506,6 +513,35 @@ export default function AdminPage() {
             )}
           </section>
         )}
+
+        {/* FİKİRLER TAB */}
+        {tab === "fikirler" && (
+          <div className="space-y-8">
+            <section className="rounded-3xl bg-white p-6 shadow-sm">
+              <h2 className="mb-2 text-2xl font-bold text-[#071A2F]">Bugünün Önerisi</h2>
+              <p className="mb-5 text-sm text-gray-600">
+                Fikir Avcısı ajanının her gün 15:00&apos;te öne çıkardığı tek öneri.
+              </p>
+              {fikirler.bugunOneri ? (
+                <Markdown text={fikirler.bugunOneri} />
+              ) : (
+                <Empty text="Henüz bugünün önerisi oluşmadı." />
+              )}
+            </section>
+
+            <section className="rounded-3xl bg-white p-6 shadow-sm">
+              <h2 className="mb-2 text-2xl font-bold text-[#071A2F]">Günlük Fikirler Arşivi</h2>
+              <p className="mb-5 text-sm text-gray-600">
+                Her gün eklenen 3-5 aday fikrin tam araştırma dökümü, en yeni en üstte.
+              </p>
+              {fikirler.gunlukFikirler ? (
+                <Markdown text={fikirler.gunlukFikirler} />
+              ) : (
+                <Empty text="Henüz kaydedilmiş fikir yok." />
+              )}
+            </section>
+          </div>
+        )}
       </div>
     </main>
   );
@@ -513,6 +549,91 @@ export default function AdminPage() {
 
 function Empty({ text }: { text: string }) {
   return <p className="rounded-xl bg-slate-50 p-5 text-gray-600">{text}</p>;
+}
+
+function formatInline(line: string) {
+  const parts = line.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).filter(Boolean);
+  return parts.map((part, i) => {
+    const bold = part.match(/^\*\*([^*]+)\*\*$/);
+    if (bold) return <strong key={i}>{bold[1]}</strong>;
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) {
+      return (
+        <a
+          key={i}
+          href={link[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-orange-600 hover:underline"
+        >
+          {link[1]}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
+function Markdown({ text }: { text: string }) {
+  const lines = text.split("\n");
+  const blocks: ReactNode[] = [];
+  let listItems: string[] = [];
+
+  const flushList = () => {
+    if (listItems.length) {
+      blocks.push(
+        <ul key={`ul-${blocks.length}`} className="list-disc space-y-1 pl-6 text-gray-800">
+          {listItems.map((item, i) => (
+            <li key={i}>{formatInline(item)}</li>
+          ))}
+        </ul>
+      );
+      listItems = [];
+    }
+  };
+
+  lines.forEach((raw, i) => {
+    const line = raw.trimEnd();
+    if (/^\s*---\s*$/.test(line)) {
+      flushList();
+      blocks.push(<hr key={i} className="my-4 border-gray-200" />);
+    } else if (line.startsWith("### ")) {
+      flushList();
+      blocks.push(
+        <h4 key={i} className="mt-4 text-base font-bold text-[#071A2F]">
+          {formatInline(line.slice(4))}
+        </h4>
+      );
+    } else if (line.startsWith("## ")) {
+      flushList();
+      blocks.push(
+        <h3 key={i} className="mt-6 text-xl font-bold text-[#071A2F]">
+          {formatInline(line.slice(3))}
+        </h3>
+      );
+    } else if (line.startsWith("# ")) {
+      flushList();
+      blocks.push(
+        <h2 key={i} className="mt-6 text-2xl font-black text-[#071A2F]">
+          {formatInline(line.slice(2))}
+        </h2>
+      );
+    } else if (line.startsWith("- ")) {
+      listItems.push(line.slice(2));
+    } else if (line.trim() === "") {
+      flushList();
+    } else {
+      flushList();
+      blocks.push(
+        <p key={i} className="text-gray-800">
+          {formatInline(line)}
+        </p>
+      );
+    }
+  });
+  flushList();
+
+  return <div className="space-y-2">{blocks}</div>;
 }
 
 function LinkedInDraftCard({
