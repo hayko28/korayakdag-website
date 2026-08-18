@@ -194,6 +194,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: AB'ye düşük değerli e-ticaret gönderisi yapan işletmelere, lojistik/kargo firmalarıyla bu otomatik A.TR sürecine geçip geçmediklerini teyit etmelerini öneriyorum; manuel belge süreci artık gereksiz bir maliyet ve gecikme kaynağı olabilir.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "17 Ağustos 2026 (18 Ağustos 2026'da Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-08-18",
+    baslik:
+      "Türkiye Yapay Zekâ Eylem Planı (2026-2030) Cumhurbaşkanlığı genelgesiyle yürürlüğe girdi",
+    ozet:
+      "Cumhurbaşkanlığının 2026/9 sayılı genelgesi, 18 Ağustos 2026 tarihli ve 33344 sayılı Resmî Gazete'de yayımlanarak 2021-2025 Ulusal Yapay Zeka Stratejisi'nin yerini alan Türkiye Yapay Zekâ Eylem Planı'nı (2026-2030) yürürlüğe koydu. Sanayi ve Teknoloji Bakanlığı koordinasyonundaki plan; veri merkezi kurulu gücünün 2030'a kadar en az 1 gigavata çıkarılması, veri merkezi/bulut/yapay zeka altyapısı için en az 10 milyar dolar kaynağın seferber edilmesi ve kamu yatırım programlarının en az %2'sinin yapay zeka projelerine ayrılması gibi hedefler içeriyor; tüm kamu kurum ve kuruluşlarına görev veriyor.",
+    kaynakUrl:
+      "https://www.haberturk.com/ekonomi/yapay-zeka-eylem-plani-resmi-gazete-de-3906319",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Genelge doğrudan kamu kurumlarına görev veriyor olsa da, veri merkezi ve yapay zeka altyapısına yatırım planlayan özel sektör firmalarının bu eylem planı çerçevesinde açılacak teşvik ve iş birliği programlarını yakından takip etmesini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "17 Ağustos 2026 (18 Ağustos 2026'da yürürlüğe girdi)",
+    eklendiTarihi: "2026-08-18",
+    baslik:
+      "Mikro ihracat kargolarının hava yolu transit süreçleri basitleştirildi",
+    ozet:
+      "Ticaret Bakanlığı, Basitleştirilmiş Gümrük Beyannamesi kapsamındaki mikro ihracat kargolarının yurt dışına sevk edilecekleri ana aktarma havalimanlarına hızlı ve basitleştirilmiş bir usulle gönderilmesini sağlayan yeni düzenlemeyi 18 Ağustos 2026 itibarıyla uygulamaya koydu. Amaç, mikro ihracatçıların gümrük işlem sürelerini kısaltmak, operasyonel maliyetlerini azaltmak ve uluslararası pazarlara erişimini kolaylaştırmak.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/mikro-ihracat-kargolarinin-hava-yolu-transit-surecleri-basitlestirilecek/4029856",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Küçük hacimli, sık gönderi yapan e-ihracat firmalarına, kargo/lojistik ortaklarıyla bu basitleştirilmiş sürece geçip geçmediklerini teyit etmelerini öneririm; işlem süresindeki kısalma özellikle hızlı teslimat vaat eden pazaryeri satıcıları için rekabet avantajı olabilir.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "22 Temmuz 2026",
+    eklendiTarihi: "2026-08-18",
+    baslik:
+      "Reklam Kurulu 371. toplantısında yanıltıcı reklamlara 44 dosyada idari para cezası kararı aldı",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 371'inci toplantısında yanıltıcı reklam ve haksız ticari uygulamalara ilişkin 149 dosyayı görüştü; 118 dosyanın mevzuata aykırı olduğu tespit edilerek 74 dosya hakkında reklam durdurma, 44 dosya hakkında ise durdurma cezasıyla birlikte idari para cezası uygulanmasına karar verildi. Bakanlığın açıklamasına göre 2026 yılının ilk yedi ayında 21 binin üzerinde dosya karara bağlanırken toplam 185 milyon TL'yi aşan idari para cezası kesildi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-reklam-kurulu-371-toplantisini-gerceklestirdi-kurul-yaniltici-reklamlara-karsi-mucadelesini-kararlilikla-surduruyor",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Denetimlerin sıklığı ve kesilen ceza tutarındaki artış, özellikle dijital reklam ve influencer iş birliği yapan işletmelerin reklam metinlerini ve iddialarını düzenli olarak hukuki uyum açısından gözden geçirmesi gerektiğini gösteriyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
