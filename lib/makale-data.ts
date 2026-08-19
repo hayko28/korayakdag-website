@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yuksek-faiz-reel-sektoru-nasil-sikistiriyor",
+    title: "Takipteki Krediler %81 Arttı: Yüksek Faiz Reel Sektörü Nasıl Sıkıştırıyor?",
+    excerpt:
+      "2026'nın ilk yarısında takipteki krediler %81 artarak 773,3 milyar TL'ye ulaştı; tarımda %242, imalatta %103. Bu rakamlar üzerinden danışmanlık masasında en sık gördüğüm üç hatayı anlatıyorum.",
+    tag: "Strateji",
+    date: "19 Ağustos 2026",
+    readTime: "3 Dakika",
+  },
+  {
     slug: "dijital-donusum-kobilerde-neden-gecikir",
     title: "Dijital Dönüşüm KOBİ'lerde Neden Gecikir?",
     excerpt:
