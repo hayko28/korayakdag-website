@@ -94,6 +94,9 @@ export default function BlogPage() {
           <Link href="#e-ihracat" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
             9. E-İhracat Destek Programı
           </Link>
+          <Link href="#hizmet-ihracati" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
+            9.5. Bilişim, Danışmanlık, Sağlık Turizmi: Hizmet İhracatına Farklı Karar
+          </Link>
           <Link href="#limit-tablosu" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
             10. 2026 Üst Limitler Özet Tablosu
           </Link>
@@ -113,6 +116,30 @@ export default function BlogPage() {
             15. Sonuç
           </Link>
         </div>
+      </div>
+
+      {/* SEKTÖR YÖNLENDİRME KUTUSU */}
+      <div className="mt-16 rounded-2xl border-2 border-orange-300 bg-orange-50 p-8">
+        <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
+          🧭 Mal/Ürün mü İhraç Ediyorsunuz, Hizmet mi? Önce Bunu Netleştirin
+        </h2>
+        <p className="mb-4 leading-8 text-gray-700">
+          Bu yazının <strong>3&ndash;9&apos;uncu bölümlerinde</strong> anlatılan
+          Pazara Giriş Belgesi, Marka Tescili, Fuar, Birim Kira, Tanıtım, KTZ
+          ve E-İhracat destekleri <strong>5973 sayılı Karar</strong>&apos;a
+          dayanır ve öncelikle <strong>fiziksel mal/ürün ihraç eden</strong>{" "}
+          şirketleri hedefler.
+        </p>
+        <p className="leading-8 text-gray-700">
+          Yazılım/SaaS, bilişim hizmetleri, danışmanlık, sağlık turizmi,
+          eğitim gibi <strong>hizmet ihracatı</strong> yapan bir şirketseniz,
+          büyük ölçüde <strong>farklı bir Karar</strong>&apos;a (10962 sayılı)
+          tabisiniz. Karışıklığa mahal vermemek için doğrudan{" "}
+          <Link href="#hizmet-ihracati" className="font-semibold text-orange-600 underline">
+            9.5&apos;inci bölüme
+          </Link>{" "}
+          geçebilirsiniz.
+        </p>
       </div>
 
       {/* 1. SİSTEM NASIL İŞLİYOR */}
@@ -731,6 +758,194 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* 9.5 HİZMET İHRACATI */}
+      <section id="hizmet-ihracati" className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          9.5. Bilişim, Danışmanlık, Sağlık Turizmi: Hizmet İhracatı Yapan Şirketler İçin Farklı Bir Karar Geçerli
+        </h2>
+        <p className="mb-6 text-lg leading-9 text-gray-700">
+          Buraya kadar anlatılan tüm destekler (Pazara Giriş Belgesi, Marka
+          Tescili, Fuar, Birim Kira, Tanıtım, KTZ, E-İhracat) 5973 sayılı
+          Karar&apos;a dayanır ve tasarım itibarıyla{" "}
+          <strong>fiziksel mal/ürün ihracatını</strong> hedefler. Yazılım,
+          bilişim hizmetleri, danışmanlık, sağlık turizmi, eğitim, mimarlık
+          &ndash; mühendislik gibi <strong>hizmet ihracatı</strong> yapan
+          şirketler için durum farklıdır: bu şirketler 27 Şubat 2026 tarihli
+          ve 33181 sayılı Resmî Gazete&apos;de yayımlanan,{" "}
+          <strong>1 Ocak 2026&apos;dan itibaren geçerli 10962 sayılı
+          &quot;Hizmet İhracatının Tanımlanması, Sınıflandırılması ve
+          Hizmet Sektörlerinin Desteklenmesi Hakkında Karar&quot;</strong>&apos;a
+          tabidir. Bu yeni Karar, hizmet ihracatına yönelik önceki dört ayrı
+          Kararı birleştirip yürürlükten kaldırmıştır.
+        </p>
+
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-blue-700">
+              📦 5973 Sayılı Karar
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Fiziksel mal/ürün ihraç ediyorsanız (üretici, tedarikçi,
+              perakendeci) &mdash; bu yazının 3&ndash;9&apos;uncu
+              bölümlerindeki destekler size uygundur.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-purple-200 bg-purple-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-purple-700">
+              💻 10962 Sayılı Karar
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Yazılım/SaaS, bilişim, danışmanlık, sağlık turizmi, eğitim gibi
+              bir hizmeti yurt dışına satıyorsanız &mdash; aşağıdaki
+              programlar size uygundur.
+            </p>
+          </div>
+        </div>
+        <p className="mt-6 text-sm leading-7 text-gray-500">
+          Hem fiziksel ürün hem hizmet (örneğin donanım + SaaS) satan hibrit
+          iş modellerinde, gelir kalemleri kendi niteliğine göre ayrı ayrı
+          değerlendirilir; bu tür karma yapılarda hangi gelirin hangi Karar
+          kapsamına gireceğinin netleştirilmesi ayrıca önem taşır.
+        </p>
+
+        <h3 className="mb-6 mt-12 text-2xl font-bold text-[#071A2F]">
+          📋 Kapsanan Başlıca Hizmet Sektörleri
+        </h3>
+        <p className="mb-6 leading-8 text-gray-700">
+          Karar, hizmetleri Genişletilmiş Ödemeler Dengesi Hizmetler
+          Sınıflaması esas alınarak sınıflandırır. Uygulamada öne çıkan
+          sektörler arasında şunlar var:
+        </p>
+        <div className="grid gap-3 md:grid-cols-3">
+          {[
+            "Bilişim, yazılım ve dijital aracılık",
+            "Danışmanlık ve teknik müşavirlik",
+            "Sağlık turizmi",
+            "Eğitim",
+            "Lojistik ve taşımacılık",
+            "Kültürel ve yaratıcı endüstriler",
+            "Gastronomi",
+            "Fuarcılık ve kongre turizmi",
+            "Mimarlık ve mühendislik",
+          ].map((item) => (
+            <div key={item} className="rounded-xl border bg-white p-4 text-sm font-medium text-gray-700 shadow-sm">
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <h3 className="mb-6 mt-12 text-2xl font-bold text-[#071A2F]">
+          🎯 Dört Ana Destek Programı
+        </h3>
+        <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-[#071A2F] text-white">
+              <tr>
+                <th className="p-4">Program</th>
+                <th className="p-4">Ne İçeriyor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-4 font-semibold">Hizmet Sektörleri Atılım Programı</td>
+                <td className="p-4">Acente komisyonu, belgelendirme, yurt dışı birim (ofis) desteği, tanıtım/reklam, teknik müşavirlik proje giderleri gibi pazara giriş ve rekabet gücü kalemleri</td>
+              </tr>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-4 font-semibold">Markalaşma Programı</td>
+                <td className="p-4">TURQUALITY®/E-TURQUALITY® mantığına benzer, üst segmentte hizmet markası oluşturmaya yönelik kapsamlı destek</td>
+              </tr>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-4 font-semibold">Sürdürülebilirlik Programı</td>
+                <td className="p-4">Hizmet ihracatçılarının sürdürülebilirlik/ESG odaklı proje ve dönüşüm giderleri</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-semibold">Yurt Dışı Lojistik Dağıtım Ağları (YLDA) Desteği</td>
+                <td className="p-4">Yurt dışında depo/lojistik dağıtım altyapısı kurulum giderleri</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm text-gray-500">
+          Kaynak: 10962 sayılı Karar&apos;ın yürürlüğe girişini duyuran{" "}
+          Ticaret Bakanlığı (uhtgm.ticaret.gov.tr) duyurusu ve konuyu ele
+          alan bağımsız mali müşavirlik/gümrük müşavirliği sirkülerleri.
+        </p>
+
+        <div className="mt-8 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+          <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+            💰 Oran ve Üst Limitler Hakkında Not
+          </h4>
+          <p className="leading-8 text-gray-700">
+            Genel eğilim, 5973 sayılı Karar&apos;da olduğu gibi{" "}
+            <strong>%50</strong> destek oranıdır; markalaşma programında bu
+            oran ve süre daha kapsamlıdır. İkincil kaynaklarda örnek olarak
+            acente komisyonu ve belgelendirme giderleri için yıllık{" "}
+            <strong>birkaç milyon TL</strong>, markalaşma programında yıllık{" "}
+            <strong>yüzlerce milyon TL</strong> mertebesinde, YLDA kurulum
+            desteğinde ise ağ başına <strong>yüzlerce milyon TL</strong>{" "}
+            mertebesinde üst limitler aktarılıyor. Ancak taradığımız
+            kaynaklar bazı kalemlerin (özellikle tanıtım/reklam gideri) tam
+            TL tutarında birbiriyle örtüşmüyor; bu nedenle burada kesin bir
+            rakam vermiyoruz. Başvurudan önce güncel ve kesin tutarların{" "}
+            <strong>ticaret.gov.tr/destekler/hizmet-sektoru-destekleri</strong>{" "}
+            sayfasından veya ilgili hizmet ihracatçıları birliğinden teyit
+            edilmesini öneririz.
+          </p>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-red-200 bg-red-50 p-8">
+          <h4 className="mb-3 text-lg font-bold text-red-700">
+            🏥 Sağlık Turizminde Ekstra Bir Zorunluluk Var
+          </h4>
+          <p className="leading-8 text-gray-700">
+            Sağlık turizmi alanında hizmet ihracatı desteğinden yararlanmak,
+            hizmeti fiilen sunabilmekle aynı şey değildir. 26 Nisan 2025
+            tarihli <strong>Uluslararası Sağlık Turizmi ve Turistin
+            Sağlığı Hakkında Yönetmelik</strong> uyarınca, yabancı hastaya
+            hizmet veren sağlık kuruluşlarının Sağlık Bakanlığı&apos;ndan{" "}
+            <strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong>,
+            aracı kuruluşların ise <strong>USHAŞ</strong> (Uluslararası
+            Sağlık Hizmetleri A.Ş.) yetkilendirmesi alması zorunludur. Bu
+            belge, Ticaret Bakanlığı&apos;nın 10962 sayılı Karar kapsamındaki
+            ihracat desteğinden tamamen ayrı bir yükümlülüktür; destek
+            başvurusundan önce bu yetkilendirmenin tamamlanmış olması
+            gerekir.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+            <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+              Örnek &mdash; Yazılım/SaaS İhracatı
+            </h4>
+            <p className="leading-8 text-gray-700">
+              Temsili bir SaaS şirketi, ürününü Orta Doğu pazarına açmak
+              için yerel bir satış acentesiyle çalışıyor ve hedef pazara
+              yönelik dijital tanıtım harcaması yapıyor. Bu şirket 5973
+              sayılı Karar&apos;daki fuar/pazara giriş belgesi gibi mal
+              ihracatına özgü kalemlerden değil, 10962 sayılı Karar&apos;ın{" "}
+              <strong>Hizmet Sektörleri Atılım Programı</strong> kapsamındaki
+              acente komisyonu ve tanıtım desteği gibi kalemlerden
+              yararlanma yolunu değerlendirmelidir.
+            </p>
+          </div>
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+            <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+              Örnek &mdash; Sağlık Turizmi
+            </h4>
+            <p className="leading-8 text-gray-700">
+              Temsili bir özel hastane, yurt dışından hasta kabul etmeye
+              başlamadan önce Sağlık Bakanlığı&apos;ndan Uluslararası Sağlık
+              Turizmi Yetki Belgesi&apos;ni alıyor; ardından yurt dışı
+              tanıtım ve pazarlama giderleri için 10962 sayılı Karar
+              kapsamındaki destek programlarına başvuruyor. İki süreç
+              paralel yürütülebilir, ancak yetki belgesi olmadan sağlık
+              turizmi faaliyetinin kendisi mevzuata aykırı olur.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 10. TABLO */}
       <section id="limit-tablosu" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
@@ -1078,6 +1293,39 @@ export default function BlogPage() {
               malzemeleri de KDV hariç desteklenir. Tevkifata tabi
               faturalarda ise tevkifat tutarı destek hesabına dahil
               edilir.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-8">
+            <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+              Yazılım/SaaS ihracatı yapan bir şirket 5973 sayılı Karar&apos;daki fuar/pazara giriş desteklerinden yararlanabilir mi?
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Genel kural olarak hayır. 5973 sayılı Karar fiziksel mal/ürün
+              ihracatına göre tasarlanmıştır; saf yazılım/SaaS ihracatı
+              yapan bir şirket bunun yerine{" "}
+              <Link href="#hizmet-ihracati" className="text-orange-600 underline">
+                10962 sayılı Hizmet İhracatı Karar&apos;ına
+              </Link>{" "}
+              tabidir ve kendi destek programlarından (özellikle Hizmet
+              Sektörleri Atılım Programı) yararlanır. Şirket hem yazılım
+              lisansı hem fiziksel donanım satıyorsa, donanım kısmı için
+              5973&apos;ün ilgili kalemleri ayrıca değerlendirilebilir.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-8">
+            <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+              Sağlık turizmi şirketiyim; hem 10962 sayılı Karar&apos;dan hem Sağlık Bakanlığı&apos;ndan mı izin almam gerekiyor?
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Evet, bu ikisi birbirinden bağımsız süreçlerdir. 10962 sayılı
+              Karar, yurt dışı tanıtım/pazarlama gibi giderlerinizi
+              destekleyen bir <strong>teşvik</strong> mekanizmasıdır; yurt
+              dışından hasta kabul edebilmeniz ise Sağlık Bakanlığı&apos;nın{" "}
+              <strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong>{" "}
+              (aracı kuruluşlar için USHAŞ yetkilendirmesi) şartına
+              bağlıdır. Yetki belgesi olmadan faaliyetin kendisi mevzuata
+              aykırı olacağından, destek başvurusundan önce bu belgenin
+              alınmış olması gerekir.
             </p>
           </div>
         </div>
