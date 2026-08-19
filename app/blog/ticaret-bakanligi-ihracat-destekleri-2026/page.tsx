@@ -190,12 +190,15 @@ export default function BlogPage() {
               ✅ Doğrudan Ödeme Başvurusu (Harcama Önce)
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
-              Pazara Giriş Belgesi Desteği ve Yurt Dışı Marka Tescil
-              Desteği gibi &quot;belgelendirme&quot; ağırlıklı kalemlerde ön
-              onay şartı aranmaz. Şirket önce harcamayı/tescili yapar,
-              faturayı keser; ardından{" "}
-              <strong>ödeme belgesi tarihinden itibaren genellikle 6 ay
-              içinde</strong> İBGS&apos;ye ödeme başvurusunda bulunur.
+              Pazara Giriş Belgesi Desteği, Yurt Dışı Marka Tescil Desteği
+              ve <strong>fuara bireysel/münferit katılımcı olarak
+              katılan bir şirketin standart stant/katılım desteği</strong>{" "}
+              bu grupta yer alır; ön onay şartı aranmaz. Şirket önce
+              harcamayı/katılımı yapar, faturayı keser; ardından ödeme
+              belgesi tarihinden itibaren (fuarda{" "}
+              <strong>fuar bitimini izleyen 90 gün</strong>, belgelendirme
+              kalemlerinde genellikle <strong>6 ay içinde</strong>)
+              İBGS&apos;ye ödeme başvurusunda bulunur.
             </p>
           </div>
           <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
@@ -203,27 +206,40 @@ export default function BlogPage() {
               ⛔ Ön Onaya Bağlı Destekler (Başvuru Önce)
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
-              Fuar katılımı, tanıtım/reklam faaliyetleri, birim kira, KTZ
-              yetkinlik projesi ve e-ihracat destekleri gibi{" "}
+              Tanıtım/reklam faaliyetleri, birim kira, KTZ yetkinlik
+              projesi ve e-ihracat destekleri gibi{" "}
               <strong>faaliyet bazlı</strong> kalemlerde,
               faaliyetten/harcamadan önce DYS üzerinden ön onay başvurusu
-              yapılması zorunludur. <strong>Ön onay tarihinden önce
-              yapılan harcamalar, geriye dönük olarak desteklenmez.</strong>
+              yapılması zorunludur. Fuar kapsamında da yalnızca{" "}
+              <strong>organizatörün</strong> yürüttüğü tadım etkinliği,
+              sosyal medya etkileyicisi çalışması, ikili iş görüşmesi
+              alanı ve trend alanı gibi tanıtım faaliyetleri bu gruba
+              girer (organizatör bunun için fuardan en az 1 ay önce ön
+              onay başvurusu yapmak zorundadır) &mdash; katılımcı
+              firmanın kendi stant desteği bu kurala tabi değildir.{" "}
+              <strong>Ön onay tarihinden önce yapılan bu tür harcamalar,
+              geriye dönük olarak desteklenmez.</strong>
             </p>
           </div>
         </div>
         <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-            ⚠️ Pratikte En Sık Yapılan Hata
+            ⚠️ Pratikte En Sık Karıştırılan Nokta
           </h3>
           <p className="leading-8 text-gray-700">
-            Bir şirket önce fuara katılıyor, stant kirasını ödüyor,
-            sonrasında &quot;destek başvurusu yapalım&quot; diyor. Fuar veya
-            tanıtım gibi ön onay gerektiren kalemlerde bu sıra tersine
-            döndüğünde destek büyük ölçüde veya tamamen kaybedilir. Bu
-            yüzden yeni bir yurt dışı faaliyet planlanırken ilk yapılacak
-            iş, o faaliyetin hangi destek kategorisine girdiğini ve ön onay
-            gerekip gerekmediğini tespit etmektir.
+            &quot;Fuara katılmadan önce mutlaka ön onay almam gerekir&quot;
+            algısı yaygın ama standart katılımcı desteği için yanlıştır.
+            Bakanlığın o yıl için ilan ettiği destek kapsamındaki fuarlar
+            listesinde yer alan bir fuara bireysel katılımcı olarak
+            katılıp bedelini ödemek ve ardından{" "}
+            <strong>90 gün içinde</strong> belgelerle başvurmak, kuralına
+            uygun ve normal bir süreçtir. Asıl dikkat edilmesi gereken:
+            (1) fuarın gerçekten o yılki resmî listede olup olmadığını
+            katılımdan önce teyit etmek, (2) organizatör üzerinden
+            yürütülen ayrıca tanıtım faaliyetlerine katılıyorsanız
+            bunların ön onay gerektirdiğini bilmek, (3) tanıtım, birim
+            kira, KTZ ve e-ihracat gibi gerçekten ön onaylı kalemlerde
+            harcamayı onaydan önce başlatmamak.
           </p>
         </div>
       </section>
@@ -364,6 +380,22 @@ export default function BlogPage() {
           madde yurt içi fuarları, 22 ve 23&apos;üncü maddeler ise sanal
           fuar katılımı ve organizasyonunu kapsar.
         </p>
+        <div className="mb-8 rounded-2xl border-l-4 border-gray-400 bg-gray-50 p-8">
+          <h4 className="mb-3 text-lg font-bold text-[#071A2F]">
+            🛫 Uçak Bileti ve Konaklama Kapsamda mı?
+          </h4>
+          <p className="leading-8 text-gray-700">
+            Hayır. Bireysel katılımcının standart fuar katılım desteği
+            stant kirası, tasarım/kurulum ve nakliye giderleriyle
+            sınırlıdır; firma temsilcilerinin uçak bileti ve otel/konaklama
+            giderleri bu kalemin kapsamı dışındadır. Seyahat ve konaklama
+            desteği ayrı bir kalem olan{" "}
+            <Link href="#marka-tescil" className="text-orange-600 underline">
+              Yurt Dışı Pazar Araştırması Desteği
+            </Link>{" "}
+            altında (pazar araştırması amaçlı seyahatler için) mevcuttur.
+          </p>
+        </div>
         <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-left text-sm">
             <thead className="bg-[#071A2F] text-white">
@@ -434,13 +466,20 @@ export default function BlogPage() {
             arası</strong> destek alınabilir.
           </p>
         </div>
-        <div className="mt-8 rounded-2xl border border-red-200 bg-red-50 p-8">
-          <h4 className="mb-3 text-lg font-bold text-red-700">⛔ Kritik Uyarı</h4>
+        <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-8">
+          <h4 className="mb-3 text-lg font-bold text-blue-700">🔄 Süreç: Ön Onay mı, Sonradan Başvuru mu?</h4>
           <p className="leading-8 text-gray-700">
-            Fuar katılımı ön onay gerektiren bir faaliyettir. Fuar
-            başvurusu ve DYS üzerinden ön onay, fuar tarihinden{" "}
-            <strong>önce</strong> tamamlanmalıdır; fuara katıldıktan sonra
-            yapılacak başvurular değerlendirmeye alınmaz.
+            Standart katılımcı/stant desteğinde ön onay şartı{" "}
+            <strong>yoktur:</strong> fuar, Bakanlığın o yıl için ilan
+            ettiği destek kapsamındaki fuarlar listesinde olduğu sürece
+            şirket katılır, öder, fuar bitimini izleyen{" "}
+            <strong>90 gün içinde</strong> DYS üzerinden belgelerle
+            başvurur. Ön onay yalnızca organizatörün yürüttüğü tadım
+            etkinliği, sosyal medya etkileyicisi çalışması, ikili iş
+            görüşmesi alanı/teknik ekipman ve trend alanı gibi tanıtım
+            faaliyetleri için zorunludur; bu faaliyetler için organizatör
+            fuardan en az 1 ay önce DYS üzerinden ön onay başvurusunu
+            Bakanlığa iletmek zorundadır.
           </p>
         </div>
       </section>
@@ -785,7 +824,7 @@ export default function BlogPage() {
         <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
           <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-red-500">
             <li><strong>İlişkili kişilerden alınan hizmetler:</strong> Harcamayı yapan şirket ile faturayı düzenleyen taraf (ortaklar, ortakların eşi/hısımları, aynı şirketler grubu) ilişkili kişi ise, bu harcama desteklenmez.</li>
-            <li><strong>Ön onaydan önceki harcamalar:</strong> Fuar, tanıtım, birim kira, KTZ ve e-ihracat gibi ön onay gerektiren desteklerde, onay tarihinden önce yapılan harcamalar kapsam dışıdır.</li>
+            <li><strong>Ön onaydan önceki harcamalar:</strong> Tanıtım, birim kira, KTZ, e-ihracat ve fuar organizatörünün tanıtım faaliyetleri gibi ön onay gerektiren kalemlerde, onay tarihinden önce yapılan harcamalar kapsam dışıdır. (Fuara bireysel katılımın standart stant desteği bu kurala tabi değildir; harcama fuar sırasında yapılır, başvuru fuar sonrasında 90 gün içinde yapılır.)</li>
             <li><strong>Elden veya çekle yapılan ödemeler:</strong> Ödemenin bankacılık sistemi üzerinden yapılmış olması zorunludur; elden ödeme, müşteri çeki veya cirolu çekle yapılan ödemeler desteklenmez.</li>
             <li><strong>Süresi geçmiş/eksik belgeler:</strong> Eksik bilgi/belgenin bildirimden itibaren 3 ay içinde (bir kereye mahsus 3 ay ek süreyle) tamamlanmaması hâlinde başvuru, mevcut belgelerle sınırlı sonuçlandırılır.</li>
             <li><strong>Yurt içi harcamalar:</strong> Programların büyük bölümü yurt dışına yönelik faaliyetleri hedefler; yurt içi pazara yönelik reklam, yurt içi fuar (ayrı ve daha düşük limitli bir kalemdir) gibi harcamalar farklı kurallara tabidir.</li>
