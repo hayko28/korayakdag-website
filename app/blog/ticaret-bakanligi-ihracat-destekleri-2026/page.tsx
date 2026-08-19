@@ -875,21 +875,38 @@ export default function BlogPage() {
           <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
             💰 Oran ve Üst Limitler Hakkında Not
           </h4>
-          <p className="leading-8 text-gray-700">
+          <p className="mb-4 leading-8 text-gray-700">
             Genel eğilim, 5973 sayılı Karar&apos;da olduğu gibi{" "}
-            <strong>%50</strong> destek oranıdır; markalaşma programında bu
-            oran ve süre daha kapsamlıdır. İkincil kaynaklarda örnek olarak
-            acente komisyonu ve belgelendirme giderleri için yıllık{" "}
-            <strong>birkaç milyon TL</strong>, markalaşma programında yıllık{" "}
-            <strong>yüzlerce milyon TL</strong> mertebesinde, YLDA kurulum
-            desteğinde ise ağ başına <strong>yüzlerce milyon TL</strong>{" "}
-            mertebesinde üst limitler aktarılıyor. Ancak taradığımız
-            kaynaklar bazı kalemlerin (özellikle tanıtım/reklam gideri) tam
-            TL tutarında birbiriyle örtüşmüyor; bu nedenle burada kesin bir
-            rakam vermiyoruz. Başvurudan önce güncel ve kesin tutarların{" "}
-            <strong>ticaret.gov.tr/destekler/hizmet-sektoru-destekleri</strong>{" "}
-            sayfasından veya ilgili hizmet ihracatçıları birliğinden teyit
-            edilmesini öneririz.
+            <strong>%50</strong> destek oranıdır. İki bağımsız kaynakta
+            birbiriyle örtüşen Hizmet Sektörleri Atılım Programı üst
+            limitleri şöyledir:
+          </p>
+          <ul className="mb-4 ml-6 list-disc space-y-2 leading-8 text-gray-700 marker:text-blue-500">
+            <li>Acente komisyonu desteği: yıllık <strong>6.000.000 TL</strong></li>
+            <li>Belgelendirme desteği: yıllık <strong>4.000.000 TL</strong></li>
+            <li>Birim (ofis) desteği: birim başına yıllık <strong>6.000.000 TL</strong></li>
+            <li>Tanıtım/reklam/pazarlama desteği: yıllık <strong>25.000.000 TL</strong></li>
+          </ul>
+          <p className="mb-4 leading-8 text-gray-700">
+            Markalaşma Programı&apos;nda üst limit, şirketin destek
+            kapsamındaki tüm markaları marka destek programında ise yıllık{" "}
+            <strong>250.000.000 TL</strong>, en az bir markası
+            TURQUALITY®/E-TURQUALITY® destek programındaysa yıllık{" "}
+            <strong>500.000.000 TL</strong>&apos;dir. YLDA (Yurt Dışı
+            Lojistik Dağıtım Ağları) desteğinde kurulum/işletme gideri ağ
+            başına <strong>300.000.000 TL</strong>, cep depo gideri yıllık
+            ağ başına <strong>120.000.000 TL</strong>, tanıtım faaliyeti
+            gideri ise yıllık ağ başına <strong>20.000.000 TL</strong>&apos;ye
+            kadardır.
+          </p>
+          <p className="leading-8 text-sm text-gray-500">
+            Bu rakamlar iki bağımsız ikincil kaynağın (resmi genelgeyi
+            yorumlayan mali müşavirlik/danışmanlık analizleri) birbiriyle
+            örtüşen verilerine dayanır; resmi genelge PDF&apos;i teknik
+            nedenlerle doğrudan taranamadığı için madde numaraları kaynaklar
+            arasında küçük farklılıklar gösterebilir. Başvurudan önce{" "}
+            <strong>uhtgm.ticaret.gov.tr</strong> üzerinden veya ilgili
+            hizmet ihracatçıları birliğinden teyit edilmesini öneririz.
           </p>
         </div>
 
