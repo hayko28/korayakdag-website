@@ -21,5 +21,9 @@ export async function initializeDatabase() {
   // alanı için gerekli.
   await sql`CREATE TABLE IF NOT EXISTS linkedin_auth (id INTEGER PRIMARY KEY DEFAULT 1, access_token TEXT NOT NULL, person_urn TEXT, expires_at TIMESTAMPTZ NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), CONSTRAINT single_row CHECK (id = 1))`;
   await sql`CREATE TABLE IF NOT EXISTS linkedin_drafts (id SERIAL PRIMARY KEY, tarih TEXT NOT NULL, icerik TEXT NOT NULL, kaynak_baslik TEXT NOT NULL, kaynak_url TEXT, gorsel_url TEXT, video_url TEXT, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
+  // Bulut ajanları (zamanlanmış rutinler) veritabanına doğrudan bağlanamadığı
+  // için taslağı git'e dosya olarak yazıyor; bu dosya adı burada tutulup
+  // /api/admin/linkedin-drafts'ta aynı dosyanın iki kez içeri alınmasını önler.
+  await sql`ALTER TABLE linkedin_drafts ADD COLUMN IF NOT EXISTS kaynak_dosya TEXT UNIQUE`;
   initialized = true;
 }

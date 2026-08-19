@@ -10,7 +10,7 @@ Görevin: güncel, dikkat çekici, Koray'ın profesyonel kimliğine uygun BİR k
 
 ## ÖNCE OKU
 
-- `/api/admin/linkedin-drafts` (GET) veya `linkedin_drafts` veritabanı tablosu — daha önce hangi konular VE hangi FORMATLARDA (liste mi, tek rakam mı, hikaye mi, soru mu, eğlenceli mi) taslak yazılmış, hiçbirini tekrar etme. Yerel/Bash-only ortamda tabloyu doğrudan okumak için `lib/database.ts`'teki bağlantı dizesiyle (`DATABASE_URL`) basit bir sorgu çalıştırabilirsin.
+- `research/linkedin-taslaklar/` klasöründeki tüm `.json` dosyaları — daha önce hangi konular VE hangi FORMATLARDA (liste mi, tek rakam mı, hikaye mi, soru mu, eğlenceli mi) taslak yazılmış, hiçbirini tekrar etme. **Veritabanına doğrudan bağlanmaya ÇALIŞMA** — otomatik/sandbox ortamlarda `DATABASE_URL` çalışmıyor, bu klasördeki dosyalar zaten aynı bilgiyi güvenilir şekilde veriyor (bkz. madde 5).
 - `lib/gelismeler-data.ts` ve `lib/makale-data.ts` — sitede zaten var olan içerikler (konu seçiminde kaynak/link olarak kullanılabilir).
 
 ## 1) KONU SEÇİMİ — GENİŞ, AMA ZORUNLU DEĞİL
@@ -67,18 +67,17 @@ Her taslak için konuyla alakalı, telifsiz bir görsel VEYA video seç:
 
 ## 5) TEKNİK UYGULAMA
 
-Taslağı **veritabanına** ekle (bu, `/yonetim` panelinin "LinkedIn Taslakları" sekmesinin okuduğu tek kaynaktır — eski `lib/linkedin-drafts.ts` dosyası artık kullanılmıyor, silindi):
+**Taslağı veritabanına DOĞRUDAN YAZMA — sandbox/otomatik ortamlarda gerçek `DATABASE_URL` olmuyor, bağlantı başarısız oluyor ve taslak sessizce kayboluyor.** Bunun yerine taslağı git'e dosya olarak commit'le; `/yonetim` panelinin API'si (`/api/admin/linkedin-drafts`) her açıldığında bu klasördeki yeni dosyaları otomatik olarak veritabanına aktarır — canlı sunucuda gerçek veritabanı bağlantısı olduğu için bu adım güvenilir çalışır.
 
-1. Aşağıdaki alanları içeren geçici bir JSON dosyası oluştur (örn. `/tmp/linkedin-draft.json` ya da işletim sistemine uygun bir geçici yol):
-   - `tarih`: bugünün tarihi, "16 Ağustos 2026" gibi serbest metin Türkçe format
+1. `research/linkedin-taslaklar/` klasörüne, dosya adı `{YYYY-AA-GG}-{kisa-slug}.json` formatında (ör. `2026-08-20-menopoz-fikri.json`) yeni bir JSON dosyası oluştur. Alanlar:
+   - `tarih`: bugünün tarihi, "20 Ağustos 2026" gibi serbest metin Türkçe format
    - `icerik`: LinkedIn metni (paragraflar arasında boş satır, sonunda korayakdag.com linki)
    - `kaynakBaslik`: konunun kısa başlığı
    - `kaynakUrl`: (varsa) orijinal dış kaynak
    - `gorselUrl`: (varsa) Unsplash görseli
    - `videoUrl`: (varsa) Pexels videosu — `gorselUrl` ile `videoUrl` aynı taslakta ikisi birden OLMAMALI, sadece biri.
-2. `node scripts/add-linkedin-draft.mjs <json-dosya-yolu>` komutunu çalıştır. Script `DATABASE_URL` (veya `DATABASE_POSTGRES_URL`/`DEPOLAMA_URL`) ortam değişkenini kullanarak `linkedin_drafts` tablosuna ekler ve eklenen satırın id'sini yazdırır. Bu ortam değişkeni tanımlı değilse veya script hata verirse, hatayı olduğu gibi raporla — sessizce vazgeçme.
-
-Eğer B) senaryosunda yeni bir makale sayfası oluşturduysan, o dosyaları da (`app/makaleler/{yeni-slug}/page.tsx` ve `lib/makale-data.ts` güncellemesi) aynı commit'e dahil et.
+2. Bu dosyayı (ve varsa B senaryosunda oluşturduğun makale dosyalarını: `app/makaleler/{yeni-slug}/page.tsx`, `lib/makale-data.ts`) commit'le ve `main` branch'ine push'la (commit mesajı: "LinkedIn taslağı: [konu başlığı]"). **Bu adım için onay bekleme, commit/push zorunlu ve otomatik** — taslak panelde görünmesi için tek yol bu push'un tamamlanması.
+3. Eğer yeni bir makale sayfası oluşturduysan, push'tan önce `npx tsc --noEmit` ve `npm run build` çalıştırıp başarılı olduğunu doğrula.
 
 ## 6) BİLDİRİM
 
@@ -86,8 +85,8 @@ Taslak (ve varsa yeni makale) veritabanına eklendikten sonra, kullanıcıya kı
 
 ## DOĞRULAMA VE YAYINLAMA
 
-1. Yeni bir makale sayfası oluşturduysan `npx tsc --noEmit` ve `npm run build` çalıştır — hata varsa düzelt, build başarısızsa yayınlama.
-2. **Bu agent doğrudan main branch'e push etmez.** Taslağı veritabanına ekledikten ve (varsa) makale dosyalarını oluşturduktan sonra durur; commit/push kararı kullanıcıya aittir. Bunun tek istisnası: kullanıcı aynı görev içinde açıkça "commit et / push et" derse.
+1. Yeni bir makale sayfası oluşturduysan `npx tsc --noEmit` ve `npm run build` çalıştır — hata varsa düzelt, build başarısızsa yayınlama (bu durumda taslak dosyasını da commit'leme).
+2. Taslak dosyası (`research/linkedin-taslaklar/*.json`) ve varsa yeni makale dosyaları için commit/push **zorunlu ve otomatik** — bu konuda onay bekleme (madde 5.2). Taslağın kendisi yine de LinkedIn'de otomatik PAYLAŞILMIYOR; sadece panelde görünmesi için push gerekiyor, gerçek paylaşım kararı hep Koray'a ait.
 
 **Hata durumunda spam etme:** Bir kez deneyip olmuyorsa yarım bırak, mevcut durumu özetleyen bir rapor ver.
 
