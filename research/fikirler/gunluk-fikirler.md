@@ -2,325 +2,321 @@
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
 **Tarih:** 19 Ağustos 2026  
-**Hedef:** Koray'a uygun, farklı sektörlerde kanıtlanmış pazarlı fikirler — fiziksel ürün, sağlık, wellness, export
+**Hedef:** Koray'a uygun, farklı sektörlerde kanıtlanmış pazarlı fikirler — fiziksel ürün, sağlık, yaşam kalitesi, ihracat
 
 ---
 
-## FİKİR 1: Viral Trending Ürünler TikTok Shop Distributor
+## FİKİR 1: Viral Trend Ürünlerde TikTok Shop Dağıtıcılığı
 
 ### Ne Bu?
-Dünyada viral satılan ürünleri (color-changing gadgets, sleep wellness tools, smart home, beauty gadgets) Çin/ABD'den ithalat → Türk influencer'lar aracılığıyla TikTok Shop ve Instagram Shop'ta satış. "Aesthetic living", satisfying demos, impulse-buy friendly products. Örnek: Mouth tape (sleepmaxxing), smart LED lights, cleaning gadgets.
+Dünyada viral olarak satılan ürünleri (renk değiştiren aksesuarlar, uyku sağlığı ürünleri, akıllı ev cihazları, güzellik aksesuarları) Çin/ABD'den ithal edip Türk influencer'lar aracılığıyla TikTok Shop ve Instagram Shop üzerinden satmak. "Estetik yaşam" temalı, izlemesi tatmin edici tanıtım videolarıyla, anlık satın almaya uygun ürünler. Örnek: ağız bandı (uyku kalitesini artırmak için), akıllı LED aydınlatmalar, temizlik aksesuarları.
 
 ### Kanıt (Kaynaklar)
-- [CJ Dropshipping - 100+ Trending TikTok Viral Products 2026](https://cjdropshipping.com/blogs/winning-products/TikTok-Viral-products-2026)
-- [TikTok Social Commerce $3 Trillion Global by 2026](https://www.webbeeglobal.com/blog/top-trending-products-on-tiktok-shop-2026)
-- [Korea Spicy Noodles: 700,000 units sold last month via social commerce](https://www.accio.com/business/best-selling-viral-products-2026)
-- [Mouth Tape 134% YoY growth, 1.7M+ sales globally](https://www.accio.com/business/bestsellingproduct2026)
+- [CJ Dropshipping - TikTok'ta 2026'nın 100'den fazla trend ürünü](https://cjdropshipping.com/blogs/winning-products/TikTok-Viral-products-2026)
+- [TikTok üzerinden sosyal ticaretin 2026'da 3 trilyon dolara ulaşması bekleniyor](https://www.webbeeglobal.com/blog/top-trending-products-on-tiktok-shop-2026)
+- [Kore malı acılı erişte: sosyal ticaret üzerinden geçen ay 700.000 adet satıldı](https://www.accio.com/business/best-selling-viral-products-2026)
+- [Ağız bandı: küresel satışlarda yıllık %134 büyüme, 1,7 milyon+ satış](https://www.accio.com/business/bestsellingproduct2026)
 
-**Pazar Kanıtı:** TikTok global trend engine, bir video unknown ürünü bestseller yapabiliyor. Türkiye 77M internet kullanıcı, yüksek social engagement.
+**Pazar Kanıtı:** TikTok küresel bir trend motoru — tek bir video, bilinmeyen bir ürünü çok satana dönüştürebiliyor. Türkiye'de 77 milyon internet kullanıcısı ve yüksek sosyal medya etkileşimi var.
 
 ### Gelir Modeli
-- Dropshipping: 40-60% margin (ithalatçı → Türk influencer → end customer)
-- White-label: Popüler ürün kendi marka altında (₺1,000-3,000 ilk stoklama)
-- Affiliate: Influencer başına %10-15 commission
-- Satış: Ürün başına ₺50-200 (ortalama ₺100 × 100 unit/gün = ₺10k/gün potansiyel)
+- Dropshipping (stoksuz satış): %40-60 kâr marjı (ithalatçı → Türk influencer → son müşteri)
+- Kendi markası altında satış: Popüler ürünü kendi markasıyla satmak (₺1.000-3.000 ilk stok maliyeti)
+- Ortaklık geliri: Influencer başına %10-15 komisyon
+- Doğrudan satış: Ürün başına ₺50-200 (ortalama ₺100 × günde 100 adet = günlük ₺10.000 potansiyel)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Benzeri yok. Trendyol, Hepsiburada dropshipping destekliyor ama curated trending product strategy yoktur.  
+**Rakip:** Benzeri yok. Trendyol ve Hepsiburada stoksuz satışı destekliyor ama derlenmiş/küratörlü trend ürün stratejisi sunan yok.  
 **Talep Sinyalleri:**
-- TikTok/Instagram Reels Türkiye'de önemli shopping channel
-- Türk influencer'lar ürün demo içeriğine aç
-- "Bilinmeyen ama cool gadget" kategorisine Türk talebi kanıtlanmamış ama benzer pazarlar (Korea cosmetics boom) precedent
+- TikTok/Instagram Reels Türkiye'de önemli bir alışveriş kanalı haline geldi
+- Türk influencer'lar ürün tanıtım içeriğine açık
+- "Bilinmeyen ama havalı aksesuar" kategorisinde Türk talebi henüz kanıtlanmadı ama benzer pazarlardaki (Kore kozmetik patlaması gibi) emsaller umut verici
 
-**Neden Heyecan Verici:** 
-- Koray yönetim + stratejik partnership yapabilir (influencer seçimi, inventory)
-- Claude Code: ithalatçı → inventory → satış işlemlerini automate edebilir
-- Low tech, yüksek margin
+**Neden Heyecan Verici:**
+- Koray yönetim ve stratejik ortaklık rolü üstlenebilir (influencer seçimi, stok yönetimi)
+- Claude Code ile ithalat → stok → satış süreçleri otomatikleştirilebilir
+- Düşük teknik yatırım, yüksek kâr marjı
 
 ### İlk Hafta Adımı
-1. 5-10 trending product tespit et (AliExpress, CJDropshipping)
-2. 5 Türk micro-influencer (50K-500K follower) ile pilot contact kurma
-3. 1 ürünün 20 unit'ini manuel test satış (supplier'dan satın al → influencer'a ver)
-4. İlk hafta satış/engagement metric al
+1. AliExpress ve CJDropshipping üzerinden 5-10 trend ürün tespit et
+2. 5 Türk mikro-influencer'la (50-500 bin takipçili) pilot iş birliği için iletişime geç
+3. Bir ürünün 20 adedini manuel test satışına çıkar (tedarikçiden satın al → influencer'a ver)
+4. İlk haftanın satış/etkileşim verilerini topla
 
 ### Zorluk/Risk
-- Supply chain delays (Çin → Türkiye 20-40 gün)
-- Influencer satış commitment'i zor (meşgul)
-- Ürün seçim başarısızlığı (trend değiştirilebilir)
-- Türk talebi unknown (Korea cosmetics başarısı ≠ random gadgets başarısı)
+- Tedarik zinciri gecikmeleri (Çin'den Türkiye'ye 20-40 gün)
+- Influencer'ların satış taahhüdüne uyması zor olabilir (yoğun programları var)
+- Ürün seçiminde başarısızlık riski (trendler hızla değişebilir)
+- Türk talebi belirsiz (Kore kozmetik başarısı, rastgele aksesuarların da tutacağı anlamına gelmez)
 
-**Risk Derecesi:** DÜŞÜK-ORTA (low capital, high learning)
+**Risk Derecesi:** DÜŞÜK-ORTA (düşük sermaye, yüksek öğrenme potansiyeli)
 
 ---
 
-## FİKİR 2: Türkçe Veteriner Klinik AI Sesli Asistanı
+## FİKİR 2: Türkçe Veteriner Klinik Sesli Yapay Zeka Asistanı
 
 ### Ne Bu?
-Veteriner hekimlerin klinik notlarını yazması yerine **ses kaydından otomatik SOAP note** generate eden Türkçe AI aracı. "Hasta muayene ettim, belirti XYZ var, tedavi ABC" → AI klinik notlarına çevirir, muhasebe/appointment sistemine integre olur. Danışmanlık/bilirkişilik gibi hekimlerin zamanını kurtarır.
+Veteriner hekimlerin klinik notlarını elle yazması yerine, **ses kaydından otomatik muayene raporu** oluşturan Türkçe yapay zeka aracı. "Hastayı muayene ettim, şu belirtiler var, şu tedaviyi uyguladım" şeklindeki konuşmayı AI klinik notuna çevirir, muhasebe/randevu sistemine entegre olur. Danışmanlık/bilirkişilik gibi hekimlerin zamanını kurtarır.
 
 ### Kanıt (Kaynaklar)
-- [2024 Survey: 39% veterinarians already use AI, 70% use AI for admin tasks](https://co.vet/post/veterinary-ai-scribe/)
-- [TranscribeAI, Scribenote, WisprFlow — yaygın global çözümler](https://vetclinictech.com/best-ai-soap-note-tools-veterinarians/)
-- [DaySmart Vet: Daisy Voice pilot → adoption naturel](https://www.daysmart.com/vet/resources/native-ai-soap-notes-veterinary/)
-- [Turkey vet clinic market 7.2% growth 2025, 1,000+ clinic](https://www.indexbox.io/store/turkey-gymnasium-or-athletics-articles-and-equipment-market-analysis-forecast-size-trends-and-insights/)
+- [2024 Anketi: Veteriner hekimlerin %39'u şimdiden yapay zeka kullanıyor, %70'i idari işler için AI'dan yararlanıyor](https://co.vet/post/veterinary-ai-scribe/)
+- [TranscribeAI, Scribenote, WisprFlow — dünyada yaygın kullanılan çözümler](https://vetclinictech.com/best-ai-soap-note-tools-veterinarians/)
+- [DaySmart Vet'in sesli asistanı Daisy: pilot uygulamadan doğal benimsenmeye geçiş](https://www.daysmart.com/vet/resources/native-ai-soap-notes-veterinary/)
+- [Türkiye'de veteriner klinik pazarı 2025'te %7,2 büyüdü, 1.000'den fazla klinik var](https://www.indexbox.io/store/turkey-gymnasium-or-athletics-articles-and-equipment-market-analysis-forecast-size-trends-and-insights/)
 
-**Gerçek Sorun:** Türk veteriner hekimler muhasebe/SOAP yazımına 30-40% zaman harcıyor. Global örnekler 50% efektiflik artışı gösteriyor.
+**Gerçek Sorun:** Türk veteriner hekimler zamanlarının %30-40'ını muhasebe/klinik notu yazımına harcıyor. Dünyadaki örnekler bu süreçte %50 verimlilik artışı gösteriyor.
 
 ### Gelir Modeli
-- Freemium: 5 note/ay ücretsiz, pro ₺199/ay (unlimited notes + clinic system integration)
-- Clinic: 10+ hekim ₺499/ay (white-label, Veteriner + sekreter access)
-- B2B: Veteriner franchise, ağ hizmet sağlayıcıları (₺5,000+/ay white-label)
-- Affiliate: Veteriner yazılım satıcıları → komission
+- Ücretsiz paket: Ayda 5 not ücretsiz, ücretli paket ₺199/ay (sınırsız not + klinik sistemine entegrasyon)
+- Klinik paketi: 10'dan fazla hekim için ₺499/ay (kendi markasıyla sunum, veteriner + sekreter erişimi)
+- Kurumsal: Veteriner zincirleri, ağ hizmet sağlayıcıları için ₺5.000+/ay (kendi markasıyla lisanslı sunum)
+- Ortaklık geliri: Veteriner yazılım satıcılarından komisyon
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Türkçe veteriner sesli AI aracı YOK. Küresel araçlar (TranscribeAI) Türkçe destekle­miyor, tercüme uyumsuz.  
+**Rakip:** Türkçe veteriner sesli yapay zeka aracı YOK. Küresel araçlar (TranscribeAI gibi) Türkçeyi desteklemiyor, çeviri de terminolojiye uymuyor.  
 **Talep Sinyalleri:**
-- Veteriner hekimler teknik tool'lara aç (39-70% global adoption)
-- Türkçe NLP (OpenAI Whisper) veteriner terminoloji reliable
-- Clinic yönetim yazılımı (DaySmart Vet benzeri) Türkiye'de emerging
+- Veteriner hekimler teknik araçlara açık (dünyada %39-70 benimseme oranı)
+- Türkçe konuşma tanıma (OpenAI Whisper) veteriner terminolojisinde güvenilir sonuç veriyor
+- Klinik yönetim yazılımı (DaySmart Vet benzeri) Türkiye'de yeni yeni gelişiyor
 
-**Neden Heyecan Verici:** 
-- Global precedent + Türkçe gap = niche ama kanıtlanmış talep
-- Yüksek-margin B2B model
-- Koray'ın danışmanlık network vet clinic'lere ulaşabilir
+**Neden Heyecan Verici:**
+- Dünyadaki emsal + Türkçede boşluk = niş ama kanıtlanmış talep
+- Yüksek marjlı kurumsal satış modeli
+- Koray'ın danışmanlık ağı veteriner kliniklerine ulaşabilir
 
 ### İlk Hafta Adımı
-1. OpenAI Whisper Türkçe + Claude API ile sesli transkripsion prototype
-2. Gerçek veteriner klinisinden 10-15 sesli muayene kaydı al
-3. AI-generated SOAP note kalitesini vet'e review ettir
-4. 2-3 vet clinic'te beta test (aylık ₺99 deneme)
+1. OpenAI Whisper Türkçe + Claude API ile sesli döküm prototipi hazırla
+2. Gerçek bir veteriner klinisyeninden 10-15 sesli muayene kaydı al
+3. Yapay zekanın oluşturduğu klinik notlarının kalitesini veterinere kontrol ettir
+4. 2-3 veteriner kliniğinde beta test yap (aylık ₺99 deneme ücretiyle)
 
 ### Zorluk/Risk
-- Veteriner terminoloji NLP accuracy kritik (yanlış notlar liability riski)
-- SOAP format veteriner bölgesel farklılık (standart yok)
-- Teknisyen takım gerekli (Whisper API, GPT fine-tuning)
-- Privacy: ses kaydı + klinik veri → GDPR/KVKK compliance
+- Veteriner terminolojisinde konuşma tanıma doğruluğu kritik (yanlış notlar hukuki sorumluluk riski doğurur)
+- Klinik not formatı bölgesel olarak farklılaşabiliyor (standart yok)
+- Teknik ekip gerekiyor (Whisper API, model ince ayarı)
+- Gizlilik: ses kaydı + klinik veri → KVKK uyumu şart
 
-**Risk Derecesi:** ORTA (NLP accuracy + legal framework)
+**Risk Derecesi:** ORTA (konuşma tanıma doğruluğu + hukuki çerçeve)
 
 ---
 
-## FİKİR 3: Türkiye Kadınları İçin Online Fitness Coaching (Women-Centric)
+## FİKİR 3: Türk Kadınlarına Özel Online Fitness Koçluğu
 
 ### Ne Bu?
-Türk kadınlarına özel online fitness coaching platform. Pregnancy fitness, postpartum recovery, menopause wellness, PCOS/endometriosis + exercise, women-specific strength training. Koç + diğer peyzazlı trainer network. Meal planning, cycle tracking, hormonal wellness integration.
+Türk kadınlarına özel bir online fitness koçluk platformu. Hamilelik döneminde egzersiz, doğum sonrası toparlanma, menopoz dönemi sağlığı, PCOS/endometriozis ile birlikte egzersiz, kadına özel kuvvet antrenmanı. Koç ve uzman antrenör ağı; beslenme planı, adet döngüsü takibi, hormonal sağlık entegrasyonu.
 
 ### Kanıt (Kaynaklar)
-- [Global Women's Health Market USD 60.4B (2026) → USD 98.6B (2034)](https://www.fortunebusinessinsights.com/industry-reports/women-s-health-market-101847)
-- [Online Fitness Coaching Apps Market USD 1.83B (2026) → USD 3.92B (2034), CAGR 14%](https://www.intelmarketresearch.com/online-fitness-coaching-apps-market-42222)
-- [Turkey Health&Wellness Market 7.35% growth 2022-2027](https://www.euromonitor.com/health-and-wellness-in-turkey/report)
-- [Menopause support fastest-growing (13% CAGR), historically underserved](https://www.pwc.com/us/en/industries/health-industries/library/the-future-of-womens-health.html)
+- [Küresel kadın sağlığı pazarı 2026'da 60,4 milyar dolar, 2034'te 98,6 milyar dolara ulaşacak](https://www.fortunebusinessinsights.com/industry-reports/women-s-health-market-101847)
+- [Online fitness koçluk uygulamaları pazarı 2026'da 1,83 milyar dolar, 2034'te 3,92 milyar dolara ulaşacak, yıllık %14 büyüme](https://www.intelmarketresearch.com/online-fitness-coaching-apps-market-42222)
+- [Türkiye sağlık ve wellness pazarı 2022-2027 arası %7,35 büyüyor](https://www.euromonitor.com/health-and-wellness-in-turkey/report)
+- [Menopoz desteği en hızlı büyüyen kategori (yıllık %13 büyüme), tarihsel olarak yeterince hizmet almayan bir alan](https://www.pwc.com/us/en/industries/health-industries/library/the-future-of-womens-health.html)
 
-**Pazar:** Women's health undervalued, investorlar attention yeni. Turkey women talep açık (digital wellness post-pandemic).
+**Pazar:** Kadın sağlığı alanı değerinin altında görülüyor ama yatırımcı ilgisi yeni artıyor. Türkiye'de kadın talebi açık (pandemi sonrası dijital sağlık ilgisi arttı).
 
 ### Gelir Modeli
-- Freemium: Temel workout library ücretsiz, coaching ₺199/ay
-- Premium Coaching: 1:1 session ₺50/session (₺2,000/ay 40 session)
-- Corporate: Kurumsal wellness programı ₺10,000+/ay
-- Merchandise: Fitness merch (TikTok/Instagram aracılığıyla)
+- Ücretsiz paket: Temel antrenman kütüphanesi ücretsiz, koçluk ₺199/ay
+- Bireysel koçluk: Seans başına ₺50 (ayda 40 seans ile ₺2.000/ay)
+- Kurumsal: Şirketlere yönelik wellness programı ₺10.000+/ay
+- Ürün satışı: Fitness ürünleri (TikTok/Instagram üzerinden)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Turkish-language women-specific fitness platform YOK. Global (Alo Moves, Apple Fitness+) English/costly.  
+**Rakip:** Türkçe, kadına özel bir fitness platformu YOK. Küresel platformlar (Alo Moves, Apple Fitness+) İngilizce ve pahalı.  
 **Talep Sinyalleri:**
-- Turkey 77M internet user, yüksek social media engagement
-- Kadın sağlığı topic'i sosyal medyada trending
-- Menopause, pregnancy support Türkiye'de taboo-breaking (gen Z açılım)
+- Türkiye'de 77 milyon internet kullanıcısı, yüksek sosyal medya etkileşimi
+- Kadın sağlığı konusu sosyal medyada gündemde
+- Menopoz ve hamilelik desteği Türkiye'de tabuları kırıyor (genç kuşak daha açık)
 
-**Neden Heyecan Verici:** 
-- Underserved market + proven global growth (14% CAGR)
-- Koray kendi network (kadın danışmanlar, sağlık profesyonelleri) ile trainer recruit edebilir
-- Community + content flywheel (Discord, TikTok)
+**Neden Heyecan Verici:**
+- Yeterince hizmet almayan bir pazar + dünyada kanıtlanmış büyüme (yıllık %14)
+- Koray kendi ağı (kadın danışmanlar, sağlık profesyonelleri) ile antrenör bulabilir
+- Topluluk ve içerik birbirini besleyen bir döngü oluşturabilir (Discord, TikTok)
 
 ### İlk Hafta Adımı
-1. 3 peyzazlı Türk female trainer ile contact (Instagram/LinkedIn)
-2. Claude + Figma ile landing page draft
-3. 20-30 target Türk kadını (25-45 yaş, Instagram aktif) ile interview (talep validate)
-4. 1 trainer + 5 client ile MVP coaching (manual, 2 hafta)
+1. 3 uzman Türk kadın antrenörle iletişime geç (Instagram/LinkedIn üzerinden)
+2. Claude + Figma ile taslak bir tanıtım sayfası hazırla
+3. 25-45 yaş arası, Instagram'da aktif 20-30 hedef kadınla görüşerek talebi doğrula
+4. 1 antrenör + 5 danışanla iki haftalık manuel MVP koçluğu başlat
 
 ### Zorluk/Risk
-- Trainer acquisition + quality consistency
-- Network effects yavaş (kütleyi çekmek zor ilk dönem)
-- Global platformlar (Apple Fitness+) hızlı Türkiye'ye girebilir
-- Sağlık danışmanlığı → legal liability (doktor sertifikası gerekebilir)
+- Antrenör bulma ve kalite tutarlılığı zorluğu
+- Ağ etkisinin oluşması yavaş olabilir (ilk dönemde kitle çekmek zor)
+- Küresel platformlar (Apple Fitness+ gibi) hızla Türkiye'ye girebilir
+- Sağlık danışmanlığı hukuki sorumluluk doğurabilir (doktor onayı gerekebilir)
 
-**Risk Derecesi:** ORTA (network effects, regulation uncertainty)
+**Risk Derecesi:** ORTA (ağ etkisi ve düzenleme belirsizliği)
 
 ---
 
-## FİKİR 4: Menopauz Destek Topluluğu & Coaching
+## FİKİR 4: Menopoz Destek Topluluğu ve Koçluğu
 
 ### Ne Bu?
-Menopoze kadınlara yönelik **community + coaching + resources** platfo­rmu. Semptom tracking, lifestyle changes (sleep, nutrition, exercise), menopause-aware trainer coaching, doktor network, peer community. Turkey'de taboo-breaking, henüz açılmayan pazar.
+Menopoz dönemindeki kadınlara yönelik **topluluk + koçluk + kaynak** platformu. Belirti takibi, yaşam tarzı değişiklikleri (uyku, beslenme, egzersiz), menopoz konusunda bilgili antrenör koçluğu, doktor ağı, akran topluluğu. Türkiye'de tabuları kıran, henüz kimsenin girmediği bir pazar.
 
 ### Kanıt (Kaynaklar)
-- [Menopause fastest-growing women's health category, 13% CAGR](https://www.pwc.com/us/en/industries/health-industries/library/the-future-of-womens-health.html)
-- [Menopause funding boom: 2025'te menopause startups $1B+ valuations](https://www.forbes.com/sites/geristengel/2026/01/12/womens-health-a-360b-market-vastly-undervalued-by-investors/)
-- [Women report unmet support needs for menopause](https://theinsightpartners.com/reports/women-health-care-market)
-- [Turkey women engagement health topics — rapid social adoption](https://www.euromonitor.com/health-and-wellness-in-turkey/report)
+- [Menopoz, kadın sağlığında en hızlı büyüyen kategori, yıllık %13 büyüme](https://www.pwc.com/us/en/industries/health-industries/library/the-future-of-womens-health.html)
+- [Menopoz alanında yatırım patlaması: 2025'te menopoz girişimleri 1 milyar doları aşan değerlemelere ulaştı](https://www.forbes.com/sites/geristengel/2026/01/12/womens-health-a-360b-market-vastly-undervalued-by-investors/)
+- [Kadınlar menopoz konusunda karşılanmayan destek ihtiyaçları bildiriyor](https://theinsightpartners.com/reports/women-health-care-market)
+- [Türk kadınları sağlık konularına hızla ilgi gösteriyor — sosyal medyada hızlı benimseme](https://www.euromonitor.com/health-and-wellness-in-turkey/report)
 
-**Pazar:** Menopauz kadın kütlesi Türkiye'de 3M+. Taboo kültürü kırılıyor, investment gelen alan.
+**Pazar:** Türkiye'de menopoz dönemindeki kadın nüfusu 3 milyonun üzerinde. Tabu kültürü kırılıyor, yatırımın yöneldiği bir alan.
 
 ### Gelir Modeli
-- Freemium: Community + basic tracking, ₺0
-- Pro: Advanced coaching + doktor telehealtht ₺299/ay
-- Corporate: HR wellness program (kurumlar employee wellbeing bütçeyi artırıyor)
-- Affiliate: Supplement, wellness products
+- Ücretsiz paket: Topluluk + temel takip, ₺0
+- Ücretli paket: Gelişmiş koçluk + doktorla uzaktan görüşme ₺299/ay
+- Kurumsal: İK wellness programı (şirketler çalışan refahı bütçesini artırıyor)
+- Ortaklık geliri: Takviye ve wellness ürünleri
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Menopauz-focused Turkish platform YOK.  
+**Rakip:** Menopoza odaklı Türk platformu YOK.  
 **Talep Sinyalleri:**
-- Türk kadınlar yaş 45+ population yüksek (%15 75M'dan = 11M+)
-- Social media menopause topic açılmaya başladı (#menopauz, kadın sağlığı trending)
-- Tabu kültür kırılıyor (gen X/Y kadınlar açıkça konuşuyor)
+- 45 yaş üstü Türk kadın nüfusu yüksek (75 milyonun %15'i = 11 milyon+)
+- Sosyal medyada menopoz konusu açılmaya başladı (#menopoz, kadın sağlığı gündemde)
+- Tabu kültürü kırılıyor (X/Y kuşağı kadınlar konuyu açıkça konuşuyor)
 
-**Neden Heyecan Verici:** 
-- Henüz açılmamış pazar, global trend adapte etmek
-- Community stickiness yüksek (peer support modeli)
-- Low tech, high retention
-- Koray'ın danışmanlık skill + health network ile kurulabilir
+**Neden Heyecan Verici:**
+- Henüz açılmamış bir pazar, dünyadaki trendi uyarlamak mümkün
+- Akran desteği modeliyle topluluk bağlılığı yüksek
+- Düşük teknik yatırım, yüksek kullanıcı elde tutma oranı
+- Koray'ın danışmanlık becerisi + sağlık ağıyla kurulabilir
 
 ### İlk Hafta Adımı
-1. 15-20 menopauz yaşında Türk kadını ile 1:1 interview (pain points)
-2. Discord + basic website prototype
-3. 10-15 menopauz danışmanı, doktor, health coach invite (advisor + beta coach)
-4. Closed beta group başlat (şimdiye kadar 30 women, 2 hafta)
+1. Menopoz dönemindeki 15-20 Türk kadınla birebir görüşme yap (sorunlu noktaları öğren)
+2. Discord + basit bir web sitesi prototipi hazırla
+3. 10-15 menopoz danışmanı, doktor, sağlık koçunu davet et (danışman + beta koç olarak)
+4. Kapalı beta grubu başlat (ilk etapta 30 kadın, 2 hafta)
 
 ### Zorluk/Risk
-- Sağlık tavsiyesi → medical liability
-- Tabu kültü riskiBu'nde hızlı stigma break zor
-- Network effects (community loop başlatmak zor)
-- Global menopause app'ler Türkiye'ye girebilir
+- Sağlık tavsiyesi vermek hukuki sorumluluk doğurabilir
+- Tabu kültüründe hızlı bir kırılma sağlamak zor olabilir
+- Ağ etkisinin oluşması (topluluk döngüsünü başlatmak) zor
+- Küresel menopoz uygulamaları Türkiye'ye girebilir
 
-**Risk Derecesi:** DÜŞÜK-ORTA (community strength, medical liability manage edilebilir)
+**Risk Derecesi:** DÜŞÜK-ORTA (topluluk gücü var, hukuki sorumluluk yönetilebilir)
 
 ---
 
-## FİKİR 5: Türk Artisan/Handmade Ürünleri International Export Platform
+## FİKİR 5: Türk El Yapımı/Zanaat Ürünleri için Uluslararası İhracat Platformu
 
 ### Ne Bu?
-Türkiye'deki **handmade, organic, artisanal, geleneksel ürünleri** (kilim, çini, ev tekstili, natural skincare, food specialties) Amazon, Etsy, Shopify, international marketlere satışını kolaylaştıran platform. Üreticinin TL→$ dönüşüm, kargoyla, SEO, listing management'ini handle ederek commission model.
+Türkiye'deki **el yapımı, organik, zanaat, geleneksel ürünlerin** (kilim, çini, ev tekstili, doğal cilt bakımı, yöresel gıda) Amazon, Etsy, Shopify gibi uluslararası pazarlara satışını kolaylaştıran platform. Üreticinin TL-döviz dönüşümü, kargo, arama motoru optimizasyonu ve ürün listeleme yönetimini üstlenip komisyon üzerinden çalışan bir model.
 
 ### Kanıt (Kaynaklar)
-- [Turkey E-Commerce Market 2026: USD 93.7B → 2031: USD 159.6B](https://www.imarcgroup.com/turkey-e-commerce-market)
-- [Cross-Border E-Commerce Turkey: geographic advantage (Europe-Asia bridge)](https://www.strategyand.pwc.com/tr/turkish-e-commerce-ecosystem-outlook)
-- [Niche market growth: organic, handmade, specialty cosmetics — underserved](https://www.mordorintelligence.com/industry-reports/turkey-ecommerce-market)
-- [Turkish crafts/textiles global demand high, supply channel weak](https://trade.gov/country-commercial-guides/turkey-ecommerce)
+- [Türkiye e-ticaret pazarı 2026'da 93,7 milyar dolar, 2031'de 159,6 milyar dolara ulaşacak](https://www.imarcgroup.com/turkey-e-commerce-market)
+- [Sınır ötesi e-ticarette Türkiye'nin coğrafi avantajı: Avrupa-Asya köprüsü](https://www.strategyand.pwc.com/tr/turkish-e-commerce-ecosystem-outlook)
+- [Niş pazar büyümesi: organik, el yapımı, özel kozmetik — yeterince hizmet alamayan alanlar](https://www.mordorintelligence.com/industry-reports/turkey-ecommerce-market)
+- [Türk el sanatları/tekstillerine küresel talep yüksek, tedarik kanalı zayıf](https://trade.gov/country-commercial-guides/turkey-ecommerce)
 
-**Pazar:** Etsy, Amazon Handmade global, Turkish sellers çoğu manual/disorganized. Export-ready platform eksik.
+**Pazar:** Etsy ve Amazon Handmade dünya çapında büyük ama Türk satıcıların çoğu düzensiz/manuel çalışıyor. İhracata hazır bir platform eksikliği var.
 
 ### Gelir Modeli
-- Take-rate: Türk üretici satışından 15-20% commission (USD cinsinden)
-- Logistics: Kargokullanılan supplier network
-- Listing service: Premium ürün listelemek ₺299/product/ay
-- Marketing: Influencer marketing, product photography service (₺50-200/product)
+- Komisyon: Türk üreticinin satışından %15-20 (dolar üzerinden)
+- Lojistik: Kargo tedarikçi ağı hizmeti
+- Listeleme hizmeti: Öne çıkan ürün listelemesi ₺299/ürün/ay
+- Pazarlama: Influencer pazarlaması, ürün fotoğrafçılığı hizmeti (₺50-200/ürün)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Minimal. Etsy direct seller olabilir ama Türkçe support + logistics yok. Local platform: Erbey (crafts) küçük.  
+**Rakip:** Minimal. Etsy'de doğrudan satıcı olunabilir ama Türkçe destek ve lojistik yok. Yerli platformlar (Erbey gibi zanaat platformları) küçük ölçekli.  
 **Talep Sinyalleri:**
-- Turkish textiles, ceramics, food specialty global "trending" (Instagram aesthetic)
-- Turkish producer maliyeti low, quality good → 2x-4x margin opportunity
-- Cross-border logistics Turkey → EU/US fast (geographic advantage)
+- Türk tekstili, seramiği, yöresel gıdası dünyada Instagram estetiği olarak trend
+- Türk üretici maliyeti düşük, kalite iyi → 2-4 kat kâr marjı fırsatı
+- Türkiye'den AB/ABD'ye sınır ötesi lojistik hızlı (coğrafi avantaj)
 
-**Neden Heyecan Verici:** 
-- Türk üretici base var (seramik, tekstil bölgeleri — Iznik, Cappadocia, etc.)
-- Global Etsy demand Turkish handmade için clear
-- Koray'ın network (işletmeler, üreticilik danışmanlık) supplier recruitment'e yardımcı
-- Unit economics strong (₺50 local product → $50+ Amazon = 10x)
+**Neden Heyecan Verici:**
+- Güçlü bir Türk üretici tabanı var (seramik, tekstil bölgeleri — İznik, Kapadokya vb.)
+- Etsy'de Türk el yapımı ürünlere küresel talep net
+- Koray'ın ağı (işletmeler, üretici danışmanlığı) tedarikçi bulmaya yardımcı olabilir
+- Birim ekonomisi güçlü (₺50'lik yerel ürün → 50 dolar+ Amazon fiyatı = 10 kat)
 
 ### İlk Hafta Adımı
-1. 10-20 Türk handmade producer/artisan identify (Instagram, local networks)
-2. 3 category'de pilot (textiles, ceramics, food) tespit
-3. 1 üreticiyle MVP test — kendi Etsy/Amazon account'dan 3-5 product list et
-4. Logistics + payment infrastructure test (Shopify, Stripe Turkey)
+1. Instagram ve yerel ağlar üzerinden 10-20 Türk el yapımı üretici/zanaatkâr belirle
+2. 3 kategoride (tekstil, seramik, gıda) pilot çalışma başlat
+3. Bir üreticiyle MVP testi yap — kendi Etsy/Amazon hesabından 3-5 ürün listele
+4. Lojistik ve ödeme altyapısını test et (Shopify, Stripe Türkiye)
 
 ### Zorluk/Risk
-- Quality consistency (each piece handmade = variation)
-- Customs/import duties (EU, US tariff structure complex)
-- Shipping cost (handmade heavy/fragile → logistics expensive)
-- Turkish producer mindset (e-commerce export new, slow adoption)
+- Kalite tutarlılığı zor (her el yapımı parça farklılık gösterir)
+- Gümrük/ithalat vergileri (AB, ABD tarife yapısı karmaşık)
+- Kargo maliyeti (el yapımı ürünler ağır/kırılgan → lojistik pahalı)
+- Türk üreticilerin e-ticaret ihracatına alışkın olmaması (benimseme yavaş olabilir)
 
-**Risk Derecesi:** ORTA (supply chain, quality, shipping)
+**Risk Derecesi:** ORTA (tedarik zinciri, kalite, kargo)
 
 ---
 
 ## BUGÜNÜN ÖNERİSİ
 
-**→ Menopauz Destek Topluluğu & Coaching**
+**→ Menopoz Destek Topluluğu ve Koçluğu**
 
-5 fikir arasında en net değeri menopauz topluluğu sunuyor: (1) **Global trend** (13% CAGR, billion-dollar investor attention), (2) **Türkiye boş pazar** (henüz kimse yapmıyor, tabu kırılıyor), (3) **Koray skill match** (danışmanlık, health network, community building), (4) **Low tech, high retention** (community model = sticky), (5) **Scalable** (coaching + affiliate + corporate model). TikTok trending products hızlı test edilen iyi ide ama supply chain + influencer commitment riski yüksek. Veteriner AI güçlü ama NLP accuracy + medical liability risk. Women's fitness platform network effects yavaş. Turkish export platform logistics kompleks. Menopauz? Tam açılmamış, Koray'ın skill set, global precedent, community flywheel. İlk hafta: 20 meno­pauz kadını interview + Discord + 5-10 doktor/coach invite. En düşük risk, en yüksek pazar + retention.
-
----
-
-
+Beş fikir arasında en net değeri menopoz topluluğu sunuyor: (1) **Dünyada büyüyen bir trend** (yıllık %13 büyüme, milyar dolarlık yatırımcı ilgisi), (2) **Türkiye'de boş bir pazar** (henüz kimse yapmıyor, tabu kırılıyor), (3) **Koray'ın yetkinlikleriyle uyumlu** (danışmanlık, sağlık ağı, topluluk kurma), (4) **Düşük teknik yatırım, yüksek kullanıcı elde tutma** (topluluk modeli bağlılık yaratır), (5) **Büyütülebilir** (koçluk + ortaklık geliri + kurumsal model). TikTok trend ürünleri hızlı test edilebilen iyi bir fikir ama tedarik zinciri ve influencer bağlılığı riski yüksek. Veteriner yapay zeka asistanı güçlü ama konuşma tanıma doğruluğu ve hukuki sorumluluk riski taşıyor. Kadın fitness platformunda ağ etkisinin oluşması yavaş. Türk ihracat platformunda lojistik karmaşık. Menopoz konusu henüz kimsenin girmediği bir alan, Koray'ın yetkinlikleri, dünyadaki emsaller ve topluluğun kendini besleyen büyüme potansiyeliyle örtüşüyor. İlk hafta: 20 menopoz dönemindeki kadınla görüşme + Discord kurulumu + 5-10 doktor/koç daveti. En düşük risk, en yüksek pazar fırsatı ve kullanıcı bağlılığı.
 
 ---
 
-## FİKİR 1: Türkçe İş Zekası Ajanı (Zetik Türkçe Benzeri)
+## FİKİR 1: Türkçe İş Zekası Ajanı (Zetik'in Türkçe Benzeri)
 
 ### Ne Bu?
-Stratejistler, CEO'lar, yatırım danışmanları için AI ajanı. Podcast, haber, finansal raporlar, sosyal medya, borsa duyuruları gibi 10+ kaynaktan veri topla → işletme-spesifik bilgi ayrıştır → günlük/haftalık rapor sunar. Örnek: "Hepsiburada'nın son stratejik hamleleri ve pazar trendleri neler?" sorusuna otomatik detaylı cevap.
+Stratejistler, CEO'lar, yatırım danışmanları için yapay zeka ajanı. Podcast, haber, finansal raporlar, sosyal medya, borsa duyuruları gibi 10'dan fazla kaynaktan veri toplayıp işletmeye özel bilgiyi ayıklayarak günlük/haftalık rapor sunuyor. Örnek: "Hepsiburada'nın son stratejik hamleleri ve pazar trendleri neler?" sorusuna otomatik, ayrıntılı cevap.
 
 ### Kanıt (Kaynaklar)
-- [Zetik - Product Hunt #1-4 ranking, 183 upvotes (Ağustos 2026)](https://www.producthunt.com/products/zetik)
-- Yurt dışında (VAL, Klue) operational intelligence devleri $1B+ valuations alıyor
+- [Zetik - Product Hunt'ta 1-4. sıralarda, 183 oy (Ağustos 2026)](https://www.producthunt.com/products/zetik)
+- Yurt dışında (VAL, Klue) operasyonel istihbarat şirketleri 1 milyar doları aşan değerlemelere ulaşıyor
 
-**Gerçek Sorun:** Danışmanlar sürenin %30'unu "kaynak tarama"ya harcıyor.
+**Gerçek Sorun:** Danışmanlar zamanlarının %30'unu "kaynak taramaya" harcıyor.
 
 ### Gelir Modeli
-- Pro: ₺1,999/ay (5 izlenen entity, haftalık rapor)
-- Premium: ₺4,999/ay (15 entity, günlük rapor)
-- B2B: PE/VC firmaları white-label (₺10,000+/ay)
+- Standart paket: ₺1.999/ay (5 takip edilen şirket, haftalık rapor)
+- Gelişmiş paket: ₺4.999/ay (15 şirket, günlük rapor)
+- Kurumsal: Özel sermaye/girişim sermayesi firmalarına kendi markasıyla lisans (₺10.000+/ay)
 
 ### Türkiye Pazar Uyumu
 **Rakip:** Türkiye'de benzeri yok.  
-**Talep:** M&A/PE market hızlanıyor, danışmanlar "haber kaçırma" tehdidinden şikayet ediyor.
+**Talep:** Şirket birleşme/satın alma ve özel sermaye piyasası hızlanıyor, danışmanlar "haberi kaçırma" endişesinden şikayet ediyor.
 
-**Neden Heyecan Verici:** Zetik yurt dışında #1-4, Koray kendisi user. Kendi müşterilerine satabilir.
+**Neden Heyecan Verici:** Zetik yurt dışında ilk sıralarda, Koray zaten kendisi bu tür bir aracın kullanıcısı. Kendi müşterilerine satabilir.
 
 ### İlk Hafta Adımı
-1. OpenAI API + web scraper ile 5 kategori veri feed
-2. Koray'ın 3 hedef şirketi manual research → benchmark
-3. Prompt ile otomatik rapor özeti
+1. OpenAI API ve web tarama araçlarıyla 5 kategoride veri akışı kur
+2. Koray'ın 3 hedef şirketi için manuel araştırma yapıp karşılaştırma ölçütü oluştur
+3. Otomatik rapor özeti için istem (prompt) tasarla
 4. 3 danışman arkadaşına test ettir
 
 ### Zorluk/Risk
-- API maliyeti (₺500-2,000/ay)
+- API maliyeti (₺500-2.000/ay)
 - Kaynak doğruluğu riski
-- Türk sources reliability variable
+- Türkçe kaynakların güvenilirliği değişkenlik gösterebilir
 
 **Risk Derecesi:** DÜŞÜK-ORTA
 
 ---
 
-## FİKİR 2: Video Konuşma Deepfake Tespit Tool
+## FİKİR 2: Görüntülü Konuşmalarda Yapay Zeka Sahtekarlığı (Deepfake) Tespit Aracı
 
 ### Ne Bu?
-Zoom, Teams, Google Meet'te canlı deepfake/synthetic face algılar. Kurumsal güvenlik — fraud call tespit.
+Zoom, Teams, Google Meet gibi platformlarda canlı yapay zeka sahtekarlığı/sahte yüz tespiti yapıyor. Kurumsal güvenlik amaçlı — dolandırıcılık amaçlı aramaları tespit ediyor.
 
 ### Kanıt (Kaynaklar)
-- [Halo by Scam AI - PH 162 upvotes, Qualcomm partnership (Ağustos 2026)](https://www.businesswire.com/news/home/20260805515597)
-- [Arup Corp $25M Fraud via Deepfake CEO Call (2024)](https://www.bbc.com/news/business-68505412)
+- [Scam AI'nin Halo ürünü - Product Hunt'ta 162 oy, Qualcomm ile iş birliği (Ağustos 2026)](https://www.businesswire.com/news/home/20260805515597)
+- [Arup şirketi, sahte CEO görüntülü aramasıyla 25 milyon dolar dolandırıldı (2024)](https://www.bbc.com/news/business-68505412)
 
 ### Gelir Modeli
-- Per-user: ₺99/ay
-- Team: ₺499/ay (5 seats)
-- Enterprise: ₺2,000+/ay
+- Bireysel kullanıcı: ₺99/ay
+- Ekip paketi: ₺499/ay (5 kullanıcı)
+- Kurumsal: ₺2.000+/ay
 
 ### Türkiye Pazar Uyumu
 **Rakip:** Türkiye'de yok.  
-**Talep:** Banka dolandırıcılık 2025-2026'da artıyor, kurumsal güvenlik bütçeleri yükselişte.
+**Talep:** Banka dolandırıcılığı 2025-2026'da artıyor, kurumsal güvenlik bütçeleri yükseliyor.
 
-**Neden Heyecan Verici:** Boş pazar, B2B security yüksek margin.
+**Neden Heyecan Verici:** Boş pazar, kurumsal güvenlik alanı yüksek kâr marjlı.
 
 ### İlk Hafta Adımı
-1. OpenAI Vision API test (synthetic face detection)
-2. Canlı test call
-3. Banking sector compliance talk
+1. OpenAI Vision API ile sahte yüz tespitini test et
+2. Canlı test araması yap
+3. Bankacılık sektörüyle uyumluluk görüşmesi başlat
 
 ### Zorluk/Risk
-- Model accuracy kritik
-- Privacy handling (video masking)
-- Teknisyen takım şart
+- Model doğruluğu kritik
+- Gizlilik yönetimi (görüntü maskeleme)
+- Teknik ekip şart
 
 **Risk Derecesi:** ORTA
 
@@ -329,66 +325,66 @@ Zoom, Teams, Google Meet'te canlı deepfake/synthetic face algılar. Kurumsal g�
 ## FİKİR 3: "Danışmanlar Bağlantı Platformu"
 
 ### Ne Bu?
-Türkiye'deki stratejist, M&A, finans, vergi, hukuk danışmanları için exclusive network/marketplace. Koray podcast başında expert interview yapıyor. Later: matched project → commission model.
+Türkiye'deki stratejist, şirket birleşme/satın alma, finans, vergi, hukuk danışmanları için özel bir ağ/pazar yeri. Koray başlangıçta podcast üzerinden uzman röportajları yapıyor. İleride: eşleştirilen projeler üzerinden komisyon modeli.
 
 ### Kanıt (Kaynaklar)
-- [Doruk Yalçınsoy's Claude Code Community: 100+ members, viral YouTube (Ağustos 2026)](https://www.youtube.com/@dorukyalcinsoy)
+- [Doruk Yalçınsoy'un Claude Code topluluğu: 100'den fazla üye, YouTube'da viral oldu (Ağustos 2026)](https://www.youtube.com/@dorukyalcinsoy)
 
 ### Gelir Modeli
-- Membership: Danışmanlar ₺299/ay
-- Commission: Matched project başına %5-10
-- Premium Content: ₺99/ay
+- Üyelik: Danışmanlar için ₺299/ay
+- Komisyon: Eşleştirilen proje başına %5-10
+- Premium içerik: ₺99/ay
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Koray'ın network = advantage.  
-**Talep:** "Doğru danışmanı bulmak zor", danışmanlar "reliable colleague network" istiyor.
+**Rakip:** Koray'ın kendi ağı avantaj sağlıyor.  
+**Talep:** "Doğru danışmanı bulmak zor", danışmanlar "güvenilir meslektaş ağı" istiyor.
 
-**Neden Heyecan Verici:** Koray network var, content + community flywheel, low tech.
+**Neden Heyecan Verici:** Koray'ın hazır bir ağı var, içerik ve topluluk birbirini besliyor, düşük teknik yatırım gerektiriyor.
 
 ### İlk Hafta Adımı
 1. 10-15 danışman arkadaşını Discord'a davet et
-2. İlk expert interview podcast
-3. Referral tracking system
-4. 3 danışmandan feedback al
+2. İlk uzman röportaj podcast'ini yayınla
+3. Yönlendirme (referral) takip sistemi kur
+4. 3 danışmandan geri bildirim al
 
 ### Zorluk/Risk
-- Network effects yavaş (chicken-egg)
-- Reputation riski
-- Satış: danışmanlar neden referral yapmalı?
+- Ağ etkisinin oluşması yavaş (tavuk-yumurta sorunu)
+- İtibar riski
+- Satış zorluğu: danışmanlar neden yönlendirme yapsın?
 
 **Risk Derecesi:** DÜŞÜK
 
 ---
 
-## FİKİR 4: Workflow Video Capture → Otomasyon (SOP)
+## FİKİR 4: Video Kaydından İş Süreci Otomasyonu (SOP)
 
 ### Ne Bu?
-Kurumsal SOP'ları screen recording + AI ile otomatikleştir. Örnek: "Muhasebe dosyalama prosedürünü kaydet" → AI adımları tanır → n8n workflow otomatik generate. Screencap (PH 129 upvotes) benzeri.
+Kurumsal standart iş prosedürlerini (SOP) ekran kaydı + yapay zeka ile otomatikleştiriyor. Örnek: "Muhasebe dosyalama prosedürünü kaydet" → yapay zeka adımları tanıyor → n8n iş akışı otomatik oluşturuluyor. Screencap ürününe (Product Hunt'ta 129 oy) benzer.
 
 ### Kanıt (Kaynaklar)
-- [Screencap - PH 129 upvotes, privacy-first (Ağustos 2026)](https://www.producthunt.com/products/screencap)
+- [Screencap - Product Hunt'ta 129 oy, gizlilik odaklı (Ağustos 2026)](https://www.producthunt.com/products/screencap)
 
 ### Gelir Modeli
-- Per-org: ₺299/ay (1 team, 5 workflow)
-- Pro: ₺799/ay (10 workflows, n8n/Zapier export)
-- Enterprise: ₺2,000+/ay
+- Kurum başına: ₺299/ay (1 ekip, 5 iş akışı)
+- Gelişmiş paket: ₺799/ay (10 iş akışı, n8n/Zapier'e aktarım)
+- Kurumsal: ₺2.000+/ay
 
 ### Türkiye Pazar Uyumu
 **Rakip:** Yok.  
-**Talep:** Call center, finansa çalışan training cost yüksek, muhasebe SOP standardization isteniyor.
+**Talep:** Çağrı merkezi ve finans sektöründe çalışan eğitim maliyeti yüksek, muhasebe süreçlerinde standardizasyon isteniyor.
 
-**Neden Heyecan Verici:** Video capture = no coding, powerful backend, early mover.
+**Neden Heyecan Verici:** Video kaydına dayalı, kod yazmayı gerektirmeyen, güçlü bir altyapı — pazara erken girme fırsatı.
 
 ### İlk Hafta Adımı
-1. Koray'ın danışmanlık prosedürü video kaydet
-2. Step detection model test
-3. n8n workflow export template
-4. 2-3 muhasebe firmasına demo
+1. Koray'ın kendi danışmanlık sürecini video ile kaydet
+2. Adım tanıma modelini test et
+3. n8n iş akışı aktarım şablonu hazırla
+4. 2-3 muhasebe firmasına demo göster
 
 ### Zorluk/Risk
-- Step detection accuracy
-- Privacy (video → face masking)
-- Integration complexity
+- Adım tanıma doğruluğu
+- Gizlilik (video için yüz maskeleme gerekebilir)
+- Entegrasyon karmaşıklığı
 
 **Risk Derecesi:** ORTA
 
@@ -396,9 +392,9 @@ Kurumsal SOP'ları screen recording + AI ile otomatikleştir. Örnek: "Muhasebe 
 
 ## BUGÜNÜN ÖNERİSİ
 
-**→ Türkçe İş Zekası Ajanı (Zetik Türkçe Benzeri)**
+**→ Türkçe İş Zekası Ajanı (Zetik'in Türkçe Benzeri)**
 
-Koray kendisi ilk kullanıcı (danışmanlık yaparken her gün araştırma yapıyor), talep Zetik'in PH traction'ı ile kanıtlanmış, kendi danışman ağına doğrudan satış kanalı var. Deepfake Detection daha risky (teknik + model accuracy), Danışmanlar Network network effects'e bağlı (yavaş). **İlk hafta:** OpenAI API prototype, test, arkadaşa sor.
+Koray zaten bu aracın ilk kullanıcısı olur (danışmanlık yaparken her gün araştırma yapıyor), talep Zetik'in Product Hunt'taki ilgisiyle kanıtlanmış, kendi danışman ağına doğrudan bir satış kanalı var. Sahtekarlık tespit aracı daha riskli (teknik karmaşıklık + model doğruluğu), Danışmanlar Ağı ise ağ etkisine bağlı ve yavaş büyür. **İlk hafta:** OpenAI API ile prototip hazırla, test et, bir arkadaşa danış.
 
 ---
 
@@ -410,281 +406,280 @@ Koray kendisi ilk kullanıcı (danışmanlık yaparken her gün araştırma yap�
 
 ---
 
-## FİKİR 1: KOSGEB/TÜBİTAK AI Başvuru Asistanı
+## FİKİR 1: KOSGEB/TÜBİTAK Yapay Zeka Başvuru Asistanı
 
 ### Ne Bu?
-KOBİ'lerin (Küçük ve Orta Ölçekli İşletmeleri) KOSGEB ve TÜBİTAK desteklerine başvurma sürecini otomatikleştiren AI-powered SaaS aracı. Yazılım, başvuru dokümanlarini hazırlar, uyum kontrolleri yapar, başvuru öncesi eksiklik raporları sunar.
+KOBİ'lerin (Küçük ve Orta Ölçekli İşletmeler) KOSGEB ve TÜBİTAK desteklerine başvuru sürecini otomatikleştiren yapay zeka destekli araç. Başvuru dokümanlarını hazırlıyor, uyum kontrolleri yapıyor, başvuru öncesi eksiklik raporları sunuyor.
 
 ### Kanıt (Kaynaklar)
 - [KOSGEB 2026 Destekleri Rehberi - Paraşüt](https://www.parasut.com/blog/kosgeb-nedir-basvuru-ve-destekler)
 - [KOSGEB Başvuru Rehberi - Sun & Sun International](https://www.sunandsun.com.tr/kosgeb-kapasite-gelistirme-destek-programi-nedir-2026-basvuru-rehberi/)
 - [2026 KOBİ Destekleri - Faturaport](https://faturaport.com/blog/on-muhasebe/2026-kobi-destekleri-nelerdir-kosgeb-tubitak-sgk)
 
-**Gerçek Sorun:** Başvuruların reddedilme sebebi hata/eksiklikler (faaliyet kodu yanlış, YODA raporu eksik, KOBİ beyannamesinde yanlış bilgi). Çoğu KOBİ profesyonel danışman alamıyor.
+**Gerçek Sorun:** Başvuruların reddedilme sebebi genelde hata/eksiklikler (faaliyet kodu yanlış, YODA raporu eksik, KOBİ beyannamesinde yanlış bilgi). Çoğu KOBİ profesyonel danışmanlık alamıyor.
 
 ### Gelir Modeli
-- Freemium: Temel form kontrolü ücretsiz, başvuru dosyası düzenleme ₺499/başvuru
-- Premium (Danışman): Canlı danışman desteği ₺2,000-5,000/proje
-- B2B: Muhasebe firmaları, hukuk müşavirler, danışmanlık şirketlerine lisans (₺5,000-10,000/ay)
-- Affiliate: Danışman bulsturması (başarılı başvuru başına %10)
+- Ücretsiz paket: Temel form kontrolü ücretsiz, başvuru dosyası düzenleme ₺499/başvuru
+- Danışmanlı paket: Canlı danışman desteği ₺2.000-5.000/proje
+- Kurumsal: Muhasebe firmaları, hukuk müşavirleri, danışmanlık şirketlerine lisans (₺5.000-10.000/ay)
+- Ortaklık geliri: Danışman yönlendirmesi (başarılı başvuru başına %10)
 
 ### Türkiye Pazar Uyumu
 **Rakip:** Minimal. Otomatik başvuru asistanı yok. Danışmanlar manuel hizmet veriyor (çok pahalı).  
-**Talep Sinyalleri:** 
+**Talep Sinyalleri:**
 - 2026 ikinci dönem başvuruları Nisan-Mayıs'ta kapandı (talep var)
-- KOBİ'ler "danışman maliyet"inden şikayet ediyor
-- Türkiye'de 1.4+ milyon KOBİ, ≈%30'u destek başvurusu yapıyor = 400K+ potansiyel müşteri
+- KOBİ'ler "danışmanlık maliyetinden" şikayet ediyor
+- Türkiye'de 1,4 milyondan fazla KOBİ var, yaklaşık %30'u destek başvurusu yapıyor = 400 bin+ potansiyel müşteri
 
-**Neden Heyecan Verici:** KOSGEB devlet destekli, yıllık ₺50M+ bütçe. Kamu desteği sorgulanmaz, talep garantili.
+**Neden Heyecan Verici:** KOSGEB devlet destekli, yıllık ₺50 milyon+ bütçeli. Kamu desteği sorgulanmaz, talep garantili.
 
 ### İlk Hafta Adımı
-1. KOSGEB website'den 5 farklı destek programının başvuru şartlarını indir
-2. Claude + Next.js ile basit checklist aracı yap (form validation)
-3. Koray'ın kendisi bir KOBİ başvurusu scenario'sunu test et
-4. 5-10 muhasebe firmasına erişim talebi gönder (beta tester)
+1. KOSGEB internet sitesinden 5 farklı destek programının başvuru şartlarını indir
+2. Claude + Next.js ile basit bir kontrol listesi aracı hazırla (form doğrulama)
+3. Koray'ın kendisi örnek bir KOBİ başvurusu senaryosunu test etsin
+4. 5-10 muhasebe firmasına erişim talebi gönder (beta test için)
 
 ### Zorluk/Risk
-- KOSGEB kuralları sıkça güncelleniyor (kurala uyum zorlayacak)
-- Yasal sorumluluk (yanlış başvuru reddedilince kim cevap verir?)
-- Uzmanlık gerektirme (Türk vergi/hukuk bilgisi şart)
-- Deregumasyon riski (KOSGEB sistemi tamamen online hale gelirse talep azalır)
+- KOSGEB kuralları sık güncelleniyor (sürekli uyum gerektirir)
+- Hukuki sorumluluk (yanlış başvuru reddedilirse kim sorumlu olur?)
+- Uzmanlık gerektiriyor (Türk vergi/hukuk bilgisi şart)
+- Deregülasyon riski (KOSGEB sistemi tamamen online hale gelirse talep azalabilir)
 
-**Risk Derecesi:** ORTA (talep garantili ama yasal risk var)
+**Risk Derecesi:** ORTA (talep garantili ama hukuki risk var)
 
 ---
 
-## FİKİR 2: Türkçe Content Repurposing Platform
+## FİKİR 2: Türkçe İçerik Yeniden Biçimlendirme Platformu
 
 ### Ne Bu?
-Long-form içeriği (blog yazısı, podcast, video) otomatik olarak short-form formatlara (TikTok, Instagram Reels, YouTube Shorts, LinkedIn post) dönüştüren AI aracı. Türkçe-native, Türkiye'ye özel influencer/yayıncı pazarına yönelik.
+Uzun içeriği (blog yazısı, podcast, video) otomatik olarak kısa formatlara (TikTok, Instagram Reels, YouTube Shorts, LinkedIn gönderisi) dönüştüren yapay zeka aracı. Türkçe odaklı, Türkiye'ye özel influencer/yayıncı pazarına yönelik.
 
-Örnek: Koray'ın 3,000 kelimeli stratejik danışmanlık blog yazısını otomatik olarak 5 kısa video, 10 sosyal post, 1 podcast klibi yapıyor.
+Örnek: Koray'ın 3.000 kelimelik stratejik danışmanlık blog yazısını otomatik olarak 5 kısa video, 10 sosyal medya gönderisi, 1 podcast klibine dönüştürüyor.
 
 ### Kanıt (Kaynaklar)
-- [Content Repurposing AI Tools 2026 - Pictory Blog](https://pictory.ai/blog/best-ai-content-repurposing-tools-2026)
-- [Blotato: 9 Best Content Repurposing Tools](https://www.blotato.com/blog/ai-content-repurposing-tools)
-- [AI Content Repurposing Guide - Distribution.ai](https://www.distribution.ai/blog/ai-content-repurposing-guide)
+- [Yapay Zeka ile İçerik Yeniden Biçimlendirme Araçları 2026 - Pictory Blog](https://pictory.ai/blog/best-ai-content-repurposing-tools-2026)
+- [Blotato: En İyi 9 İçerik Yeniden Biçimlendirme Aracı](https://www.blotato.com/blog/ai-content-repurposing-tools)
+- [Yapay Zeka ile İçerik Yeniden Biçimlendirme Rehberi - Distribution.ai](https://www.distribution.ai/blog/ai-content-repurposing-guide)
 
-**Pazar Kanıtı:** 
-- 91% işletme video pazarlama yapıyor, 82% ROI görüyor
-- AI repurposing productivity +7x, view increase +2,000x
-- Content teama baskı: LinkedIn, TikTok, Shorts, email, blog aynı anda
+**Pazar Kanıtı:**
+- İşletmelerin %91'i video pazarlaması yapıyor, %82'si bundan geri dönüş görüyor
+- Yapay zeka ile yeniden biçimlendirme verimliliği 7 kat, izlenme artışı 2000 kat
+- İçerik ekipleri LinkedIn, TikTok, Shorts, e-posta, blog gibi kanalları aynı anda yönetme baskısı altında
 
 ### Gelir Modeli
-- Freemium: 1 repurposing/ay ücretsiz, video/post export ₺99/ay
-- Pro: ₺499/ay (10 long-form → unlimited short-form, brand voice öğren)
-- Premium: ₺1,499/ay (API access, custom export, analytics)
-- B2B: Ajanslar/yayıncılar için white-label (₺10,000+/ay)
+- Ücretsiz paket: Ayda 1 yeniden biçimlendirme ücretsiz, video/gönderi indirme ₺99/ay
+- Gelişmiş paket: ₺499/ay (10 uzun içerikten sınırsız kısa içerik, marka sesini öğrenme)
+- Premium: ₺1.499/ay (API erişimi, özel dışa aktarma, analiz)
+- Kurumsal: Ajanslar/yayıncılar için kendi markasıyla sunum (₺10.000+/ay)
 
 ### Türkiye Pazar Uyumu
 **Rakip:** Pictory, Wistia, Clippable yurt dışında başarılı. **Türkiye'de benzeri yok.**  
 **Talep Sinyalleri:**
-- Türkiye creator economy 205B→549B (2026→2030) büyüyor
-- 77M internet kullanıcı, yüksek social engagement
-- Podcast pazar "henüz başlangıçta ama büyüme potansiyeli yüksek"
-- Sosyal medya influencerler video dağıtım yükünden şikayet ediyor
+- Türkiye'de içerik üretici ekonomisi 2026-2030 arasında 205 milyar dolardan 549 milyar dolara büyüyor
+- 77 milyon internet kullanıcısı, yüksek sosyal medya etkileşimi
+- Podcast pazarı "henüz başlangıç aşamasında ama büyüme potansiyeli yüksek"
+- Sosyal medya influencer'ları video dağıtım yükünden şikayet ediyor
 
-**Neden Heyecan Verici:** Global tool'lar Türkçe optimize değil (metin parsing hatası, kültür uyumsuz). Native Türkçe tool boş pazar.
+**Neden Heyecan Verici:** Küresel araçlar Türkçe için optimize değil (metin ayrıştırma hataları, kültürel uyumsuzluk). Türkçeye özel bir araç boş bir pazar.
 
 ### İlk Hafta Adımı
-1. Koray'ın blog yazılarından 1 tanesini manual olarak video + 3 post'a çevir (benchmark)
-2. Claude + OpenAI API ile otomatik transcript → short-form script generator yap
-3. HeyGen/Pictory API'yi test et (integration maliyet check)
-4. 10-20 Türk YouTuber/podcast yapımcısına pilot access teklifi gönder
+1. Koray'ın blog yazılarından birini manuel olarak video + 3 gönderiye çevir (karşılaştırma ölçütü olarak)
+2. Claude + OpenAI API ile otomatik döküm → kısa içerik senaryosu üreteci hazırla
+3. HeyGen/Pictory API'sini test et (entegrasyon maliyetini kontrol et)
+4. 10-20 Türk YouTuber/podcast yapımcısına pilot erişim teklifi gönder
 
 ### Zorluk/Risk
-- Yurt dışı aynı pazarın 100x büyüğü (Pictory, Wistia, Synthesia rakip)
-- API maliyeti yüksek (video generation, transcription = ₺1,000+/ay)
-- Türkçe NLP kalitesi İngilizce kadar değil (algoritma hata yapabilir)
-- Influencer pazarı erişim zor (satış/pazarlama maliyeti)
+- Yurt dışındaki aynı pazar 100 kat daha büyük (Pictory, Wistia, Synthesia rakip)
+- API maliyeti yüksek (video oluşturma, döküm = ₺1.000+/ay)
+- Türkçe dil işleme kalitesi İngilizce kadar olgun değil (hata riski)
+- Influencer pazarına erişim zor (satış/pazarlama maliyeti)
 
-**Risk Derecesi:** ORTA-YÜKSEK (teknisyen takım gerekli, API maliyeti, yurt dışı rekabet)
+**Risk Derecesi:** ORTA-YÜKSEK (teknik ekip gerekli, API maliyeti, yurt dışı rekabet)
 
 ---
 
-## FİKİR 3: Stratejist AI Araştırma Asistanı
+## FİKİR 3: Stratejist Yapay Zeka Araştırma Asistanı
 
 ### Ne Bu?
-Koray gibi stratejik danışmanlar, pazarlama müdürleri, M&A uzmanları için AI araştırma aracı. "Şirket XYZ'nin pazardaki konumu nedir?", "Bu endüstride yatırım trendleri neler?", "Rakip A'nın stratejik hamleleri nelerdir?" sorularını otomatik araştırıyor, rapor yazıyor.
+Koray gibi stratejik danışmanlar, pazarlama müdürleri, şirket birleşme/satın alma uzmanları için yapay zeka araştırma aracı. "Şirket X'in pazardaki konumu nedir?", "Bu sektörde yatırım trendleri neler?", "Rakip A'nın stratejik hamleleri neler?" gibi soruları otomatik araştırıp rapor yazıyor.
 
-Yurt dışı rakip: Klue, VAL, AlphaSense. **Türkiye'de özel hali yok.**
+Yurt dışı rakipleri: Klue, VAL, AlphaSense. **Türkiye'ye özel bir versiyonu yok.**
 
 ### Kanıt (Kaynaklar)
-- [Meet VAL - AI Research Assistant](https://valonaintelligence.com/market-intelligence-software/ai-research-assistant)
-- [Klue 2026: Compete Agent](https://klue.com/topics/how-ai-helps-with-competitive-intelligence)
-- [AI Tools for Competitive Intelligence 2026 - Change Connect](https://www.changeconnect.ca/post/7-ai-tools-for-competitive-intelligence-in-2026-never-lose-a-deal-to-a-blindsight-again)
+- [VAL - Yapay Zeka Destekli Araştırma Asistanı](https://valonaintelligence.com/market-intelligence-software/ai-research-assistant)
+- [Klue 2026: Rekabet Ajanı](https://klue.com/topics/how-ai-helps-with-competitive-intelligence)
+- [2026 için Rekabet İstihbaratı Yapay Zeka Araçları - Change Connect](https://www.changeconnect.ca/post/7-ai-tools-for-competitive-intelligence-in-2026-never-lose-a-deal-to-a-blindsight-again)
 
-**Pazar:** Consultants için "strategy bottleneck" artık data değil, synthesis. Klue'ün 2026'da Gartner Magic Quadrant'ta leader olması pazar bulunduğunu kanıtlıyor.
+**Pazar:** Danışmanlar için artık "strateji darboğazı" veri değil, veriyi anlamlandırma süreci. Klue'nun 2026'da Gartner Magic Quadrant'ta lider konumda olması bu pazarın var olduğunu kanıtlıyor.
 
 ### Gelir Modeli
-- Per-report: 1 detaylı şirket analizi raporu ₺500-1,000
-- Subscription: ₺1,999/ay (unlimited araştırma, batch analysis)
-- B2B: Danışmanlık firmaları, yatırım fonları (₺5,000-15,000/ay white-label)
-- Affiliate: Koray kendi müşterilerine öner (commission %20)
+- Rapor başına: Tek bir detaylı şirket analiz raporu ₺500-1.000
+- Abonelik: ₺1.999/ay (sınırsız araştırma, toplu analiz)
+- Kurumsal: Danışmanlık firmaları, yatırım fonları için kendi markasıyla sunum (₺5.000-15.000/ay)
+- Ortaklık geliri: Koray kendi müşterilerine önerir (yaklaşık %20 komisyon)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Türkiye'de A101, CarrefourSA gibi şirketleri analyze eden AI tool yok.  
+**Rakip:** Türkiye'de A101, CarrefourSA gibi şirketleri analiz eden bir yapay zeka aracı yok.  
 **Talep Sinyalleri:**
-- M&A, PE, VC pazarı hızlıyor (2025-2026)
-- Danışman 30% zamanı "araştırma"ye gidiyor (verimsiz)
-- Türkçe kaynaklara özel akses (borsabahis.com, stkbilgisi, halka arz blogleri vs)
+- Şirket birleşme/satın alma, özel sermaye ve girişim sermayesi pazarı hızlanıyor (2025-2026)
+- Danışmanların zamanının %30'u "araştırmaya" gidiyor (verimsiz)
+- Türkçe kaynaklara özel erişim gerekiyor (borsa haberleri, sivil toplum bilgileri, halka arz blogları vb.)
 
-**Neden Heyecan Verici:** 
-- Koray kendisi TARGET CUSTOMER = Product-founder fit
-- Kendi müşterilerine satabilir (Trojan horse)
-- Türk pazar için specialized data source (borsa, yatırım grupları, startup DB)
+**Neden Heyecan Verici:**
+- Koray'ın kendisi hedef kitleyle birebir örtüşüyor
+- Kendi müşterilerine satabilir
+- Türk pazarına özel veri kaynakları kullanılabilir (borsa, yatırım grupları, girişim veritabanları)
 
 ### İlk Hafta Adımı
-1. 5-10 Türk şirketi (Teknosa, Vestel, Ticicar vs) hakkında manual research yap
-2. Claude + Perplexity API/WebSearch ile otomatik araştırma özeti üret
-3. Koray kendi kullanıp feedback ver
-4. 3-5 danışman arkadaşına "bu raporlar sizin araştırmanızı 50% azaltır mı?" sor
+1. 5-10 Türk şirketi (Teknosa, Vestel, Ticicar vb.) hakkında manuel araştırma yap
+2. Claude + Perplexity API/Web araması ile otomatik araştırma özeti üret
+3. Koray kendisi kullanıp geri bildirim versin
+4. 3-5 danışman arkadaşına "bu raporlar araştırma sürenizi yarı yarıya azaltır mı?" diye sor
 
 ### Zorluk/Risk
-- Veri doğruluğu kritik (yanlış analiz kredibilite kaybı)
-- Türkçe kaynak kalitesi değişken (yanlış bilgi riski)
-- Klue/VAL gibi yurt dışı araçlar hızlı Türkiye'ye girebilir
-- Pazar (danışman + investor) niche ama profesyonel (high-touch satış şart)
+- Veri doğruluğu kritik (yanlış analiz güven kaybına yol açar)
+- Türkçe kaynak kalitesi değişkenlik gösterebiliyor (yanlış bilgi riski)
+- Klue/VAL gibi yurt dışı araçlar hızla Türkiye'ye girebilir
+- Pazar (danışman + yatırımcı) niş ama profesyonel bir kitle (yüz yüze satış gerektirir)
 
-**Risk Derecesi:** DÜŞÜK-ORTA (Koray kullanıcı, talep açık, veri riski manage edilebilir)
+**Risk Derecesi:** DÜŞÜK-ORTA (Koray zaten kullanıcı, talep açık, veri riski yönetilebilir)
 
 ---
 
-## FİKİR 4: Türk Creators İçin Podcast Monetization Toolkit
+## FİKİR 4: Türk İçerik Üreticileri için Podcast Gelirlendirme Araç Seti
 
 ### Ne Bu?
-Türk podcasters, YouTuber, content creator'lar için gelir çeşitlendirme ve otomasyon aracı. Sponsor bulmayı, üyelik sistemini, affiliate pazarlamayı, dinamik reklam eklemeyi otomatikleştiriyor.
+Türk podcast'çi, YouTuber, içerik üretici için gelir çeşitlendirme ve otomasyon aracı. Sponsor bulmayı, üyelik sistemini, ortaklık pazarlamasını, dinamik reklam eklemeyi otomatikleştiriyor.
 
-Örnek: Metin Doğan Podcast haftada 1 saat sponsorluk bulması 5 dakikaya düşüyor.
+Örnek: Bir podcast'in haftada 1 saat süren sponsorluk arama süreci 5 dakikaya iniyor.
 
 ### Kanıt (Kaynaklar)
-- [Beehiiv Launches Podcast Hosting Tools](https://variety.com/2026/digital/news/beehiiv-podcast-hosting-shows-1236705198/)
-- [Podcast Monetization Strategies 2026 - Content Allies](https://contentallies.com/learn/top-advanced-podcast-monetization-strategies)
-- [Content Creator Economy Market 2026 - Research & Markets](https://www.researchandmarkets.com/reports/6089983/content-creator-economy-market-report)
+- [Beehiiv Podcast Barındırma Araçlarını Duyurdu](https://variety.com/2026/digital/news/beehiiv-podcast-hosting-shows-1236705198/)
+- [2026 Podcast Gelirlendirme Stratejileri - Content Allies](https://contentallies.com/learn/top-advanced-podcast-monetization-strategies)
+- [2026 İçerik Üretici Ekonomisi Pazarı - Research & Markets](https://www.researchandmarkets.com/reports/6089983/content-creator-economy-market-report)
 
-**Pazar:** Creator economy 205B (2026) → 549B (2030). Podcast "henüz olgun değil ama potansiyel yüksek" (Türkiye).
+**Pazar:** İçerik üretici ekonomisi 2026'da 205 milyar dolardan 2030'da 549 milyar dolara büyüyor. Türkiye'de podcast pazarı "henüz olgunlaşmadı ama potansiyeli yüksek."
 
 ### Gelir Modeli
-- Take-rate: Creator başına 15-20% + sponsor fee
-- Tiered Freemium: 0-500 dinleyici ücretsiz, 500+ sponsor match ₺199/ay
-- Pro: ₺499/ay (advanced sponsor intelligence, multi-channel sync)
-- Platform fee: Başarılı sponsor deal başına 10% (0% eğer direkt bulursa)
+- Komisyon: İçerik üreticisi başına %15-20 + sponsor ücreti
+- Kademeli ücretsiz paket: 0-500 dinleyici ücretsiz, 500+ için sponsor eşleştirme ₺199/ay
+- Gelişmiş paket: ₺499/ay (gelişmiş sponsor analizi, çoklu kanal senkronizasyonu)
+- Platform ücreti: Başarılı sponsor anlaşması başına %10 (doğrudan bulunursa %0)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Spotify for Creators dışında Turkish-native tool yok.  
+**Rakip:** Spotify for Creators dışında Türkçeye özel bir araç yok.  
 **Talep Sinyalleri:**
-- 77M Türk internet kullanıcı, yüksek social engagement
-- Podcast market "maturity'ye doğru yol alıyor"
-- Creators: "Sponsor bulmak zaman alıcı", "Farklı gelir kaynakları istiyorum"
+- 77 milyon Türk internet kullanıcısı, yüksek sosyal medya etkileşimi
+- Podcast pazarı olgunlaşma yoluna giriyor
+- İçerik üreticileri "sponsor bulmak zaman alıyor", "farklı gelir kaynakları istiyorum" diyor
 
-**Neden Heyecan Verici:** 
-- Global platform'lar henüz Türkçe sponsor marketplace yok
-- Türk markaları (Hepsiburada, Trendyol vs) podcast sponsorluk bütçe yeni açıyor
-- B2B potential: Sponsor vermek isteyen markalara creator match ediyor
+**Neden Heyecan Verici:**
+- Küresel platformlarda henüz Türkçe sponsor pazar yeri yok
+- Türk markaları (Hepsiburada, Trendyol vb.) podcast sponsorluğuna yeni bütçe ayırıyor
+- Kurumsal potansiyel: Sponsor olmak isteyen markaları içerik üreticileriyle eşleştiriyor
 
 ### İlk Hafta Adımı
-1. 20-30 Türk podcast bulup dinle, çıkış notları al
-2. 5 sponsor (Notion, Skillshare, Masterclass, udemy, Coursera türü) hedefle
-3. Koray'ın audio content + 2-3 podcast creator ile MVP sözleşmesi imzala
-4. İlk sponsor match'ini el ile yap, sonra otomasyon planla
+1. 20-30 Türk podcast'i dinleyip notlar çıkar
+2. 5 sponsor adayı (Notion, Skillshare, Masterclass, Udemy, Coursera benzeri) hedefle
+3. Koray'ın ses içeriği + 2-3 podcast üreticisiyle MVP anlaşması imzala
+4. İlk sponsor eşleştirmesini elle yap, sonra otomasyona geç
 
 ### Zorluk/Risk
-- Creator acquisition zor (satış/pazarlama maliyeti)
-- Sponsor flywheel yavaş (First 10 creator'a kadar loss-making)
-- Türkçe/Türk sponsorluk pazarı yeni (bütçe çekinimli)
-- Beehiiv, Spotify gibi yurt dışı platform'lar Türkiye'ye girebilir
+- İçerik üreticisi kazanmak zor (satış/pazarlama maliyeti)
+- Sponsor döngüsünün başlaması yavaş (ilk 10 içerik üreticisine kadar zarar edilebilir)
+- Türkiye'de sponsorluk pazarı yeni (bütçe konusunda çekingenlik)
+- Beehiiv, Spotify gibi yurt dışı platformlar Türkiye'ye girebilir
 
-**Risk Derecesi:** ORTA-YÜKSEK (network effect gerekli, iki taraf pazarlaması)
+**Risk Derecesi:** ORTA-YÜKSEK (ağ etkisi gerekli, iki taraflı pazar yeri zorluğu)
 
 ---
 
-## FİKİR 5: B2B Startup Compliance Helper
+## FİKİR 5: Küçük İşletmeler için Uyumluluk (Compliance) Asistanı
 
 ### Ne Bu?
-Yeni kurulan startuplar, freelancer'lar, KOBİ'ler için vergi, hukuki, HR uyumluluk otomasyonu. "Hangi vergi dosyalama tarihi?", "Kaç çalışan istihdam edebilirim?", "Proje sözleşmesi nasıl yazılmalı?" sorularını AI otomatik cevaplıyor, şablon sunar.
+Yeni kurulan girişimler, serbest çalışanlar, KOBİ'ler için vergi, hukuk, İK uyumluluk otomasyonu. "Hangi vergi dosyalama tarihi yaklaşıyor?", "Kaç çalışan istihdam edebilirim?", "Proje sözleşmesi nasıl yazılmalı?" gibi soruları yapay zeka otomatik cevaplıyor, şablon sunuyor.
 
-Türkiye-specific: SGK, KDV, Gelir Vergisi, İş Kanunu.
+Türkiye'ye özel: SGK, KDV, Gelir Vergisi, İş Kanunu.
 
 ### Kanıt (Kaynaklar)
-- [Turkey Business Process Management Market 2034 - Imarc Group](https://www.imarcgroup.com/turkey-business-process-management-market)
-- [Top Automation Software Companies Turkey 2026 - Ensun](https://ensun.io/search/automation-software/turkey)
-- [Compliance Automation Market Trend 2026 - IdeaPlan](https://www.ideaplan.io/ideas/trends/compliance-automation)
+- [Türkiye İş Süreç Yönetimi Pazarı 2034 - Imarc Group](https://www.imarcgroup.com/turkey-business-process-management-market)
+- [2026 Türkiye'de En İyi Otomasyon Yazılımı Şirketleri - Ensun](https://ensun.io/search/automation-software/turkey)
+- [2026 Uyumluluk Otomasyonu Pazar Trendi - IdeaPlan](https://www.ideaplan.io/ideas/trends/compliance-automation)
 
-**Pazar:** Turkey BPM market USD 320.2M by 2034, +8.23% CAGR. Compliance automation fastest-growing subcategory.
+**Pazar:** Türkiye iş süreç yönetimi pazarı 2034'e kadar 320,2 milyon dolara, yıllık %8,23 büyüyerek ulaşacak. Uyumluluk otomasyonu en hızlı büyüyen alt kategori.
 
 ### Gelir Modeli
-- Freemium: Temel şablon/checklist ücretsiz, İK sözleşme şablonu ₺299/yıl
-- Startup pack: ₺499/yıl (vergi calendar, HR sözleşmeleri, SGK forma)
-- Professional: ₺1,499/yıl (canlı hukuk danışmanı access, custom contract review)
-- B2B: Muhasebe firmaları, kuluçka merkezleri, kredi kurumları white-label (₺5,000+/ay)
+- Ücretsiz paket: Temel şablon/kontrol listesi ücretsiz, İK sözleşme şablonu ₺299/yıl
+- Girişim paketi: ₺499/yıl (vergi takvimi, İK sözleşmeleri, SGK formları)
+- Profesyonel paket: ₺1.499/yıl (canlı hukuk danışmanı erişimi, özel sözleşme incelemesi)
+- Kurumsal: Muhasebe firmaları, kuluçka merkezleri, kredi kurumları için kendi markasıyla sunum (₺5.000+/ay)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Compliance tool'lar var (yapı denetim, İSO auditor) ama startup-focused, Turkish-native yok.  
+**Rakip:** Uyumluluk araçları var (yapı denetimi, ISO denetçisi gibi) ama girişimlere özel, Türkçe odaklı bir araç yok.  
 **Talep Sinyalleri:**
-- Startup kuruluş maliyeti 5K-15K ₺ danışman ücretleri
-- KOBİ'ler "Hangi kaynağa güveneyim?" çıkmazında kalmış
-- KOSGEB başvuru şartları → compliance check şart
+- Girişim kuruluş maliyetinde 5-15 bin lira danışmanlık ücreti ödeniyor
+- KOBİ'ler "hangi kaynağa güveneyim?" belirsizliğinde kalıyor
+- KOSGEB başvuru şartları uyumluluk kontrolünü zorunlu kılıyor
 
-**Neden Heyecan Verici:** 
-- Hukuki riski lower (şablon liability kısıtlı)
-- Passif gelir modeli (sanal ürün)
-- Integrations: KOSGEB, vergi danışmanları, accountant ekosisteminde çalışabilir
+**Neden Heyecan Verici:**
+- Hukuki risk daha düşük (şablon sorumluluğu sınırlı)
+- Pasif gelir modeli (dijital ürün)
+- KOSGEB, vergi danışmanları, muhasebeci ekosistemiyle entegre çalışabilir
 
 ### İlk Hafta Adımı
-1. Türk İş Kanunu, SGK kurallı önemli milestones list yap (takvim)
-2. Claude + legal API ile 5 startup sözleşme şablonu oluştur
-3. 3 startup kuluçka merkezi (Galata, İstanbul, Ankara) ile konuşmalı yap
-4. Feedback al, roadmap yap
+1. Türk İş Kanunu ve SGK kurallarına göre önemli tarihlerin listesini (takvim) hazırla
+2. Claude + hukuki API ile 5 girişim sözleşme şablonu oluştur
+3. 3 girişim kuluçka merkeziyle (Galata, İstanbul, Ankara) görüşme yap
+4. Geri bildirim al, yol haritası oluştur
 
 ### Zorluk/Risk
-- Yasal sorumluluk yüksek (yanlış bilgi mahkeme davası)
-- Hukuk uzmanı gerekli (AI yetmez, review şart)
-- KOBİ'ler danışman seviyesi desteğe alışmış (self-serve tool almaz)
-- Deregulasyon riski (e-devlet portal'ı gelişebilir)
+- Hukuki sorumluluk yüksek (yanlış bilgi dava riski doğurur)
+- Hukuk uzmanı gerekli (yapay zeka tek başına yetmez, inceleme şart)
+- KOBİ'ler danışman seviyesinde desteğe alışkın (kendi kendine kullanılan araca geçiş zor)
+- Deregülasyon riski (e-devlet portalı gelişirse talep azalabilir)
 
-**Risk Derecesi:** YÜKSEK (yasal risk + expert gerekli)
+**Risk Derecesi:** YÜKSEK (hukuki risk + uzman gereksinimi)
 
 ---
 
 ## ÖZET: Koray'a Uygunluk Analizi
 
-| Fikir | Talep | Teknik | Yasal Risk | Gelir Model | Koray Fit |
+| Fikir | Talep | Teknik Uygulanabilirlik | Hukuki Risk | Gelir Modeli | Koray'a Uygunluk |
 |-------|-------|--------|-----------|-------------|-----------|
 | **KOSGEB Asistanı** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **Content Repurposing** | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-| **Stratejist AI** | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Podcast Toolkit** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
-| **Compliance Helper** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
+| **İçerik Yeniden Biçimlendirme** | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **Stratejist Yapay Zeka** | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Podcast Araç Seti** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
+| **Uyumluluk Asistanı** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
 
-**Koray'a En Uygun 3:**
-1. **Stratejist AI Araştırma Asistanı** (Kendisi kullanıcı, müşteri kanal, düşük risk)
-2. **KOSGEB Asistanı** (Garantili talep, danışmanlık paraleli, gelir model net)
-3. **Content Repurposing Platform** (Yüksek pazar potansiyel ama teknisyen takım şart)
+**Koray'a En Uygun 3 Fikir:**
+1. **Stratejist Yapay Zeka Araştırma Asistanı** (Kendisi kullanıcı, hazır müşteri kanalı, düşük risk)
+2. **KOSGEB Asistanı** (Garantili talep, danışmanlıkla paralel, gelir modeli net)
+3. **İçerik Yeniden Biçimlendirme Platformu** (Yüksek pazar potansiyeli ama teknik ekip şart)
 
 ---
 
 ## Kaynaklar
 
 **KOSGEB/TÜBİTAK:**
-- [Paraşüt KOSGEB Blog](https://www.parasut.com/blog/kosgeb-nedir-basvuru-ve-destekler)
-- [Sun & Sun Capacity Program Guide](https://www.sunandsun.com.tr/kosgeb-kapasite-gelistirme-destek-programi-nedir-2026-basvuru-rehberi/)
+- [Paraşüt KOSGEB Blogu](https://www.parasut.com/blog/kosgeb-nedir-basvuru-ve-destekler)
+- [Sun & Sun Kapasite Programı Rehberi](https://www.sunandsun.com.tr/kosgeb-kapasite-gelistirme-destek-programi-nedir-2026-basvuru-rehberi/)
 - [Faturaport 2026 KOBİ Destekleri](https://faturaport.com/blog/on-muhasebe/2026-kobi-destekleri-nelerdir-kosgeb-tubitak-sgk)
 
-**Content Repurposing:**
+**İçerik Yeniden Biçimlendirme:**
 - [Pictory AI Blog](https://pictory.ai/blog/best-ai-content-repurposing-tools-2026)
-- [Blotato: 9 Best Tools](https://www.blotato.com/blog/ai-content-repurposing-tools)
-- [Distribution.ai Guide](https://www.distribution.ai/blog/ai-content-repurposing-guide)
+- [Blotato: En İyi 9 Araç](https://www.blotato.com/blog/ai-content-repurposing-tools)
+- [Distribution.ai Rehberi](https://www.distribution.ai/blog/ai-content-repurposing-guide)
 
-**Creator Economy:**
-- [Research & Markets 2026 Report](https://www.researchandmarkets.com/reports/6089983/content-creator-economy-market-report)
-- [Beehiiv Podcast Hosting](https://variety.com/2026/digital/news/beehiiv-podcast-hosting-shows-1236705198/)
-- [Content Allies Monetization](https://contentallies.com/learn/top-advanced-podcast-monetization-strategies)
+**İçerik Üretici Ekonomisi:**
+- [Research & Markets 2026 Raporu](https://www.researchandmarkets.com/reports/6089983/content-creator-economy-market-report)
+- [Beehiiv Podcast Barındırma](https://variety.com/2026/digital/news/beehiiv-podcast-hosting-shows-1236705198/)
+- [Content Allies Gelirlendirme](https://contentallies.com/learn/top-advanced-podcast-monetization-strategies)
 
-**Competitive Intelligence:**
+**Rekabet İstihbaratı:**
 - [VAL Intelligence](https://valonaintelligence.com/market-intelligence-software/ai-research-assistant)
-- [Klue Compete Agent](https://klue.com/topics/how-ai-helps-with-competitive-intelligence)
+- [Klue Rekabet Ajanı](https://klue.com/topics/how-ai-helps-with-competitive-intelligence)
 
-**Compliance/BPM:**
-- [Imarc Turkey BPM Market](https://www.imarcgroup.com/turkey-business-process-management-market)
-- [IdeaPlan Compliance Automation](https://www.ideaplan.io/ideas/trends/compliance-automation)
-
+**Uyumluluk/İş Süreç Yönetimi:**
+- [Imarc Türkiye İş Süreç Yönetimi Pazarı](https://www.imarcgroup.com/turkey-business-process-management-market)
+- [IdeaPlan Uyumluluk Otomasyonu](https://www.ideaplan.io/ideas/trends/compliance-automation)
