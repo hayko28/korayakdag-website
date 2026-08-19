@@ -260,5 +260,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "ticaret-bakanligi-ihracat-destekleri-2026",
+    title: "Ticaret Bakanlığı İhracat Destekleri: Pazara Giriş, Fuar, E-İhracat ve Diğer Programlar (2026 Rehberi)",
+    excerpt: "Turquality dışında kalan Pazara Giriş Belgesi, Yurt Dışı Marka Tescili, Fuar Katılımı, Birim Kira (mağaza/depo/ofis), Tanıtım, Küresel Tedarik Zinciri ve E-İhracat destek programlarının 2026 güncel üst limitleri, harcama-fatura-başvuru sırası, DYS üzerinden süreç, ödeme takvimi ve geçersiz sayılan harcamalarla kapsamlı rehber.",
+    category: "İHRACAT DESTEKLERİ • TİCARET BAKANLIĞI • 2026",
+    date: "2026",
+    readTime: "20 Dakika",
+    image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
