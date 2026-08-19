@@ -26,14 +26,16 @@ function tarihiSayiyaCevir(satir: string): number {
   return new Date(yil, ay, gun).getTime();
 }
 
-// Ajanın dosyaya yazdığı sıraya güvenmeden, her günlük bölümü tarihine göre
-// en yeniden en eskiye sıralar — yeni girdi yanlışlıkla sona eklense bile
-// panelde her zaman en üstte görünür.
-function enYeniyeGoreSirala(markdown: string): string {
+type Bolum = { tarih: number; satirlar: string[] };
+
+// Ajanın dosyaya yazdığı sıraya güvenmeden, her günlük bölümü başlığındaki
+// tarihe göre böler — yeni girdi yanlışlıkla sona eklense bile panelde her
+// zaman en üstte görünür.
+function bolumleriAyir(markdown: string): { onsoz: string[]; bolumler: Bolum[] } {
   const satirlar = markdown.split("\n");
-  const bolumler: { tarih: number; satirlar: string[] }[] = [];
+  const bolumler: Bolum[] = [];
   const onsoz: string[] = [];
-  let mevcut: { tarih: number; satirlar: string[] } | null = null;
+  let mevcut: Bolum | null = null;
 
   for (const satir of satirlar) {
     if (BASLIK_RE.test(satir)) {
@@ -47,25 +49,48 @@ function enYeniyeGoreSirala(markdown: string): string {
   }
   if (mevcut) bolumler.push(mevcut);
 
+  return { onsoz, bolumler };
+}
+
+function enYeniyeGoreSirala(markdown: string): string {
+  const { onsoz, bolumler } = bolumleriAyir(markdown);
   if (bolumler.length === 0) return markdown;
 
-  bolumler.sort((a, b) => b.tarih - a.tarih);
-
-  const govde = bolumler.map((b) => b.satirlar.join("\n")).join("\n");
+  const siralanmis = [...bolumler].sort((a, b) => b.tarih - a.tarih);
+  const govde = siralanmis.map((b) => b.satirlar.join("\n")).join("\n");
   return onsoz.filter((l) => l.trim() !== "").length ? `${onsoz.join("\n")}\n${govde}` : govde;
+}
+
+// "Bugünün Önerisi" kartını ayrı bir dosyadan değil, gunluk-fikirler.md'nin
+// en güncel (en üstteki) gününün kendi "BUGÜNÜN ÖNERİSİ" bölümünden çıkarır —
+// böylece panel her zaman o günkü öneriyi gösterir, eski/güncellenmemiş bir
+// dosyaya bağımlı kalmaz.
+function bugununOnerisiniCikar(markdown: string): string {
+  const { bolumler } = bolumleriAyir(markdown);
+  if (bolumler.length === 0) return "";
+
+  const enYeni = bolumler.reduce((a, b) => (b.tarih > a.tarih ? b : a));
+  const tarihEslesme = enYeni.satirlar[0]?.match(TARIH_RE);
+  const oneriIndex = enYeni.satirlar.findIndex((s) => /BUGÜNÜN ÖNERİSİ/i.test(s));
+  if (oneriIndex === -1) return "";
+
+  const govde = enYeni.satirlar
+    .slice(oneriIndex + 1)
+    .join("\n")
+    .trim();
+  const etiket = tarihEslesme ? `**${tarihEslesme[0]}**\n\n` : "";
+  return `${etiket}${govde}`;
 }
 
 export async function GET() {
   if (!(await isAdminAuthorized())) return Response.json({ error: "Yetkisiz" }, { status: 401 });
 
   const dir = path.join(process.cwd(), "research", "fikirler");
-  const [bugunOneriRaw, gunlukFikirlerRaw] = await Promise.all([
-    readIfExists(path.join(dir, "bugun-oneri.md")),
-    readIfExists(path.join(dir, "gunluk-fikirler.md")),
-  ]);
+  const gunlukFikirlerRaw = await readIfExists(path.join(dir, "gunluk-fikirler.md"));
+  const gunlukFikirler = enYeniyeGoreSirala(gunlukFikirlerRaw);
 
   return Response.json({
-    bugunOneri: enYeniyeGoreSirala(bugunOneriRaw),
-    gunlukFikirler: enYeniyeGoreSirala(gunlukFikirlerRaw),
+    bugunOneri: bugununOnerisiniCikar(gunlukFikirlerRaw),
+    gunlukFikirler,
   });
 }
