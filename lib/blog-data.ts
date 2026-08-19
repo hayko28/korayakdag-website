@@ -260,5 +260,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "proje-bazli-tesvik-sistemi-2026-degisiklikleri",
+    title: "Proje Bazlı Teşvik Sisteminde 2026 Değişikliği: 11572 Sayılı Karar Ne Getiriyor?",
+    excerpt: "9 Ağustos 2026 tarihli ve 33335 sayılı Resmî Gazete'de yayımlanan 11572 sayılı Cumhurbaşkanı Kararı, Proje Bazlı Devlet Yardımı sisteminde fizibilite raporu şartından yatırım sonrası 5 yıllık izleme/raporlama yükümlülüğüne ve 5 milyar TL üzeri yabancı yatırımcı sözleşmesine kadar önemli değişiklikler getirdi.",
+    category: "YATIRIM TEŞVİKLERİ • PROJE BAZLI TEŞVİK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
