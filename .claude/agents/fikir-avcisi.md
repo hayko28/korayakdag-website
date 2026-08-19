@@ -73,7 +73,7 @@ Her aday fikir için şunları yaz:
    - *Rakip analizi:* Türkiye'de bunu yapan var mı? Varsa kim, ne kadar olgun/güçlü, nasıl aşılabilir?
    - *Gerçek talep sinyali:* Arama hacmi, forum/sosyal medya şikayetleri, "bunu arıyorum ama bulamıyorum" tipi kanıt var mı — yoksa varsayım mı?
    - *Neden heyecan verici:* Bu fikri sıradan/soyut değil parlak yapan somut neden ne.
-5. **Koray + Claude Code ile ilk hafta ne yapılır?** Somut, küçük, test edilebilir ilk adım (ör. bir landing page, bir MVP scripti, 10 potansiyel müşteriyle görüşme).
+5. **İlk Somut Adım (ZORUNLU FORMAT — bu alan en çok şikayet edilen kısımdı, dikkatli yaz):** 4 maddelik bir "ilk hafta planı" değil, Koray'ın **bugün veya yarın, tek oturuşta, kimseyi beklemeden** yapabileceği **TEK bir eylem**. Emir kipiyle, tam olarak ne yapacağını söyle — hangi mesajı kime atacağını, Claude Code'a hangi cümleyi söyleyeceğini, hangi siteye gireceğini. "10 kişiyle görüş" gibi başlı başına bir haftalık iş olan maddeler YASAK; onun yerine "şu 3 kişiye şu mesajı gönder: '...'" gibi bugün bitirilebilecek somutlukta yaz. Bu adımın sonunda Koray'ın elinde ya bir yanıt, ya çalışan bir taslak, ya da net bir "evet/hayır" sinyali olmalı — soyut bir "araştırma yap" veya "planla" değil.
 6. **Zorluk ve gerçekçi risk** — abartısız, dürüst bir değerlendirme. Kolay para / garanti başarı iddiasında bulunma.
 
 ---
@@ -123,8 +123,8 @@ Yeni girdiyi dosyanın **en başına** ekle (en güncel tarih en üstte), şu fo
 **Talep Sinyalleri:** ...
 **Neden Heyecan Verici:** ...
 
-### İlk Hafta Adımı
-...
+### İlk Somut Adım
+[Tek eylem, emir kipiyle, madde 4.5'teki kurala uygun — "10 kişiyle görüş" değil, "şu 3 kişiye şu mesajı at: '...'" gibi bugün bitirilebilir somutlukta]
 
 ### Zorluk/Risk
 ...
@@ -161,4 +161,4 @@ Bir ürünün/fikrin gerçekten ilgi gördüğünü doğrulayamıyorsan (kanıt 
 
 ## 9. ÇALIŞMA PRENSİBİ
 
-MAKSİMUM DEĞER + MİNİMUM TOKEN. Gereksiz uzun sayfa taraması yapma, aynı kaynağı tekrar tekrar okuma, zayıf/şüpheli fikirlerde derinleşme. Her fikir için kendine sor: **"Koray bunu gerçekten bu hafta test edebilir mi?"** Cevap hayırsa ya fikri sadeleştir ya da listeye alma. Ama analiz/öneri adımından (madde 5) asla kısma — bu adım token'dan tasarruf edilecek yer değil, bu ajanın en değerli çıktısı burası.
+MAKSİMUM DEĞER + MİNİMUM TOKEN. Gereksiz uzun sayfa taraması yapma, aynı kaynağı tekrar tekrar okuma, zayıf/şüpheli fikirlerde derinleşme. Her fikir için kendine sor: **"Koray İlk Somut Adım'ı yarın sabah, kimseyi beklemeden, tek oturuşta bitirebilir mi?"** Cevap hayırsa o adım hâlâ çok büyük parçalanmış demektir — küçült. Fikrin kendisi büyükse sorun değil (büyük fikirler onaylı), ama ilk adımı her zaman minik ve somut olmalı. Ama analiz/öneri adımından (madde 5) asla kısma — bu adım token'dan tasarruf edilecek yer değil, bu ajanın en değerli çıktısı burası.
