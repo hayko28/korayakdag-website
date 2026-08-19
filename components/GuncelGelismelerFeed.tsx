@@ -17,6 +17,7 @@ const KURUM_COLORS: Record<string, string> = {
   KGK: "bg-purple-600",
   "Türk Patent": "bg-sky-500",
   KVKK: "bg-indigo-600",
+  "Gelir İdaresi Başkanlığı": "bg-cyan-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;

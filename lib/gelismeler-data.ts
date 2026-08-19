@@ -236,6 +236,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Denetimlerin sıklığı ve kesilen ceza tutarındaki artış, özellikle dijital reklam ve influencer iş birliği yapan işletmelerin reklam metinlerini ve iddialarını düzenli olarak hukuki uyum açısından gözden geçirmesi gerektiğini gösteriyor.",
   },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "4 Ağustos 2026 (1 Temmuz 2026 itibarıyla geçerli)",
+    eklendiTarihi: "2026-08-19",
+    baslik:
+      "GİB, Muhtasar ve Prim Hizmet Beyannamesi'nde asgari ücret istisna gelir vergisi tutarını güncelledi",
+    ozet:
+      "Gelir İdaresi Başkanlığı, Dijital Vergi Dairesi üzerinden yayımladığı 4 Ağustos 2026 tarihli duyuruyla Muhtasar ve Prim Hizmet Beyannamesi'nde uygulanan asgari ücret istisna gelir vergisi tutarını, 1 Temmuz 2026'dan itibaren geçerli olmak üzere 4.537,75 TL olarak belirledi. e-Beyanname sistemi üzerinden beyanname veren mükelleflerin Beyanname Düzenleme Programı'nı (BDP) güncel sürüme yükseltmesi gerekiyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/08/04/muhsgk-asgari-ucret-istisna-gv-tutarinin-guncellenmesine-iliskin-duyuru/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Bordro ve beyanname süreçlerini dışarıdan bir mali müşavirlik ofisine bırakan işletmeler için bu tür teknik güncellemeler otomatik takip edilir; ancak bordroyu kendi bünyesinde yürüten işletmelerin BDP güncellemesini Temmuz dönemi beyannamesi öncesinde yapıp yapmadığını kontrol etmesini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "7 Ağustos 2026",
+    eklendiTarihi: "2026-08-19",
+    baslik:
+      "Ticaret Bakanlığı'nın yapay zekâ destekli E-Kolay İhracat Platformu (E-KİP), 'Kamu-Dijital Dönüşüm' kategorisinde birincilik ödülü aldı",
+    ozet:
+      "Ticaret Bakanlığı'nca devreye alınan ve yapay zekâ destekli araçlar, hedef ülke/sektör analizleri ile eğitim içerikleri sunan E-Kolay İhracat Platformu (E-KİP), Verimlilik Proje Ödülleri'nin 'Kamu-Dijital Dönüşüm' kategorisinde birincilik ödülüne layık görüldü; 49 ilden 451 proje arasından 72 proje finale kalmıştı. Birbiriyle entegre 12 modülden oluşan platform, e-ihracata yeni başlayacak ya da mevcut faaliyetini büyütmek isteyen firmalara pazar seçiminden küresel rekabete hazırlığa kadar rehberlik ediyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/ticaret-bakanliginin-e-kolay-ihracat-platformuna-odul/4020740",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: E-ihracata yeni başlayacak KOBİ'lere, ücretli danışmanlık almadan önce E-KİP'in pazar araştırması ve eğitim modüllerini incelemelerini öneririm; platform özellikle hedef pazar ve mevzuat konusunda ilk adımda faydalı bir çerçeve sunuyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
