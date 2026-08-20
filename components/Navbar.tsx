@@ -130,7 +130,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 z-[9999] w-full h-[78px] bg-gradient-to-b from-[#0F2A47] to-[#0A1B30]/95 backdrop-blur-md shadow-md">
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-6 lg:px-8">
 
         <a
           href={`${homePath}#hero`}
@@ -145,7 +145,7 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-5 xl:flex">
+        <nav className="hidden items-center gap-5 min-[1360px]:flex">
           {links.map((link) => (
             <a
               key={link.name}
@@ -176,7 +176,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 xl:hidden"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 min-[1360px]:hidden"
             aria-label={isEn ? "Open menu" : "Menüyü aç"}
           >
             <span className="h-0.5 w-5 bg-white" />
@@ -187,7 +187,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg xl:hidden">
+        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg min-[1360px]:hidden">
           {links.map((link) => (
             <a
               key={link.name}
