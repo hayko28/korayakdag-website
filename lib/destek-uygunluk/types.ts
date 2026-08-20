@@ -40,6 +40,20 @@ export type ArgeFaaliyetiKaynagi = "tamamen_kurulus_ici" | "kismen_disaridan" | 
 
 export type ProjeNiteligi = "yeni_urun" | "mevcut_urun_gelistirme" | "uretim_teknolojisi_gelistirme" | "belirsiz";
 
+// TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun 3 ana
+// hedef kategorisi (17 teknoloji alanının üst grubu). Kaynak: kullanıcı
+// tarafından iletilen "Öncelikli Ar-Ge ve Yenilik Konuları" kataloğu (2026-2028).
+export type TubitakOncelikliAlanKategorisi =
+  | "endustride_teknolojik_sicrama"
+  | "dijital_liderlik"
+  | "yesil_donusum"
+  | "kapsam_disi"
+  | "emin_degil";
+
+export type IhracatTuru = "fiziksel_mal" | "hizmet" | "her_ikisi";
+
+export type TkdkSektoru = "hayvancilik" | "tarimsal_uretim" | "gida_isleme" | "yenilenebilir_enerji" | "kirsal_turizm" | "diger";
+
 // Tüm alanlar opsiyonel: Katman 1 (ortak) doldurulmadan hiçbir program
 // değerlendirilemez, Katman 2 (programa özel) alanları boş bırakılan
 // programlar "belirsiz" sonuç döner, "uygun değil" değil.
@@ -92,6 +106,30 @@ export interface DestekBasvuruGirdisi {
   teydebOnayliProjeSayisi?: number;
   ortakliBasvuruMu?: boolean;
   teknogirisimSermayeSirketiMi?: boolean;
+
+  // TÜBİTAK 1501/1507/1832 ortak — Öncelikli Ar-Ge ve Yenilik Konuları uyumu
+  argeOncelikliAlanKategorisi?: TubitakOncelikliAlanKategorisi;
+
+  // TÜBİTAK 1832 - Sanayide Yeşil Dönüşüm
+  projeYesilDonusumHedefliMi?: boolean;
+
+  // Yatırım Teşvik Belgesi — ek kriterler
+  yuksekVeyaOrtaYuksekTeknolojiUrunMu?: boolean;
+
+  // Ticaret Bakanlığı İhracat Destekleri (5973 / 10962 sayılı Kararlar)
+  ihracatTuru?: IhracatTuru;
+  ihracatciBirligiUyesiMi?: boolean;
+  dysKayitliMi?: boolean;
+
+  // KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (KOBİ Dijital Dönüşüm DP)
+  ddxRaporuVarMi?: boolean;
+  maliKarneVarMi?: boolean;
+
+  // TKDK (IPARD III) Kırsal Kalkınma Destekleri
+  basvuranYasi?: number;
+  tkdkDesteklenenIldeMi?: boolean;
+  tkdkSektoru?: TkdkSektoru;
+  planlananProjeButcesiEuro?: number;
 
   // Lead / iletişim
   iletisimAdSoyad?: string;

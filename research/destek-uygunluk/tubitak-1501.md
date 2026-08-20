@@ -1,5 +1,15 @@
 # TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı
 
+## Ek — Öncelikli Ar-Ge ve Yenilik Konuları uyumu (2026-08-20)
+
+Kullanıcının (Koray) ilettiği "TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları" kataloğu (17 teknoloji
+alanı, 3 ana hedef: Endüstride Teknolojik Sıçrama / Dijital Liderlik / Yeşil Dönüşüm), projenin bu kategorilerden
+biriyle uyumlu olmasının değerlendirmede olumlu bir sinyal olduğunu, ancak kapsam dışı kalan güçlü gerekçeli
+projelerin de değerlendirmeye alınacağını belirtiyor. Bu nedenle formda `argeOncelikliAlanKategorisi` alanı
+eklendi ve evaluator'da (`oncelikliAlanGerekcesi`, programlar.ts) **bilgilendirme amaçlı gerekçe** olarak
+kullanıldı — sonuç durumunu ("uygun_degil") etkilemiyor, sadece "kismen_uygun" gerekçelerine olumlu/nötr bir
+not ekliyor. Aynı mantık 1507 ve 1832 evaluator'larında da paylaşılıyor.
+
 ## Durum
 
 **Tam resmi adı:** "TÜBİTAK 1501-Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı"

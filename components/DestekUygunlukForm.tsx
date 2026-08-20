@@ -47,6 +47,29 @@ const ARGE_KAYNAGI_SECENEKLERI = [
   { value: "buyuk_olcude_disaridan", label: "Büyük ölçüde dışarıdan yürütülüyor" },
 ];
 
+const ARGE_ONCELIKLI_ALAN_SECENEKLERI = [
+  { value: "emin_degil", label: "Emin değilim / atla" },
+  { value: "endustride_teknolojik_sicrama", label: "Endüstride Teknolojik Sıçrama (batarya, ileri malzeme, robotik, yarı iletken, medikal teknolojiler vb.)" },
+  { value: "dijital_liderlik", label: "Dijital Liderlik (yapay zeka, siber güvenlik, kuantum, yeni nesil haberleşme vb.)" },
+  { value: "yesil_donusum", label: "Yeşil Dönüşüm (temiz enerji, yeşil hidrojen, karbon yakalama, sektörel yeşil teknolojiler vb.)" },
+  { value: "kapsam_disi", label: "Bu kategorilerin hiçbirine girmiyor" },
+];
+
+const IHRACAT_TURU_SECENEKLERI = [
+  { value: "fiziksel_mal", label: "Fiziksel mal / ürün ihracatı" },
+  { value: "hizmet", label: "Hizmet ihracatı (yazılım, danışmanlık, sağlık turizmi, eğitim vb.)" },
+  { value: "her_ikisi", label: "Her ikisi" },
+];
+
+const TKDK_SEKTOR_SECENEKLERI = [
+  { value: "hayvancilik", label: "Hayvancılık" },
+  { value: "tarimsal_uretim", label: "Tarımsal üretim" },
+  { value: "gida_isleme", label: "Gıda işleme" },
+  { value: "yenilenebilir_enerji", label: "Yenilenebilir enerji (GES vb.)" },
+  { value: "kirsal_turizm", label: "Kırsal turizm" },
+  { value: "diger", label: "Diğer" },
+];
+
 const ONCELIKLI_GRUP_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "kadin", label: "Kadın girişimci" },
@@ -121,6 +144,22 @@ export default function DestekUygunlukForm() {
       teydebOnayliProjeSayisi: num("teydebOnayliProjeSayisi"),
       ortakliBasvuruMu: bool("ortakliBasvuruMu"),
       teknogirisimSermayeSirketiMi: bool("teknogirisimSermayeSirketiMi"),
+      argeOncelikliAlanKategorisi: (g.argeOncelikliAlanKategorisi as DestekBasvuruGirdisi["argeOncelikliAlanKategorisi"]) || undefined,
+      projeYesilDonusumHedefliMi: bool("projeYesilDonusumHedefliMi"),
+
+      yuksekVeyaOrtaYuksekTeknolojiUrunMu: bool("yuksekVeyaOrtaYuksekTeknolojiUrunMu"),
+
+      ihracatTuru: (g.ihracatTuru as DestekBasvuruGirdisi["ihracatTuru"]) || undefined,
+      ihracatciBirligiUyesiMi: bool("ihracatciBirligiUyesiMi"),
+      dysKayitliMi: bool("dysKayitliMi"),
+
+      ddxRaporuVarMi: bool("ddxRaporuVarMi"),
+      maliKarneVarMi: bool("maliKarneVarMi"),
+
+      basvuranYasi: num("basvuranYasi"),
+      tkdkDesteklenenIldeMi: bool("tkdkDesteklenenIldeMi"),
+      tkdkSektoru: (g.tkdkSektoru as DestekBasvuruGirdisi["tkdkSektoru"]) || undefined,
+      planlananProjeButcesiEuro: num("planlananProjeButcesiEuro"),
 
       iletisimAdSoyad: g.iletisimAdSoyad || undefined,
       iletisimEposta: g.iletisimEposta || undefined,
@@ -202,8 +241,8 @@ export default function DestekUygunlukForm() {
           <Tarih etiket="Kuruluş Tarihi" deger={g.kurulusTarihi} onChange={(v) => set("kurulusTarihi", v)} />
           <Metin etiket="NACE Kodu (örn. 62.01)" deger={g.naceKodu} onChange={(v) => set("naceKodu", v)} placeholder="62.01" />
           <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
-          <Sayi etiket="Yıllık Net Satış Hasılatı (TL)" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
-          <Sayi etiket="Mali Bilanço (TL, opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
+          <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+          <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
           <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
         </div>
       </Bolum>
@@ -225,7 +264,7 @@ export default function DestekUygunlukForm() {
           <EvetHayir etiket="Sanayi Sicil Belgesi var mı? (imalat için)" deger={g.sanayiSicilBelgesiVarMi} onChange={(v) => set("sanayiSicilBelgesiVarMi", v)} />
           <EvetHayir etiket="YODA raporu var mı? (imalat için)" deger={g.yodaRaporuVarMi} onChange={(v) => set("yodaRaporuVarMi", v)} />
           <Secim etiket="Hızlı büyüme muafiyeti" deger={g.hizliBuyumeMuafiyeti} onChange={(v) => set("hizliBuyumeMuafiyeti", v)} secenekler={HIZLI_BUYUME_MUAFIYET_SECENEKLERI} />
-          <Sayi etiket="Talep edilen kredi tutarı (TL)" deger={g.talepEdilenKrediTutariTl} onChange={(v) => set("talepEdilenKrediTutariTl", v)} />
+          <Tutar etiket="Talep edilen kredi tutarı" deger={g.talepEdilenKrediTutariTl} onChange={(v) => set("talepEdilenKrediTutariTl", v)} />
         </div>
         <p className="mb-2 mt-5 text-sm font-semibold text-[#071A2F]">Son 3 yıl çalışan sayısı (muafiyetiniz yoksa doldurun)</p>
         <div className="mb-4 grid grid-cols-3 gap-3">
@@ -233,32 +272,47 @@ export default function DestekUygunlukForm() {
           <Sayi etiket="2. yıl" deger={g.son3YilCalisan_2} onChange={(v) => set("son3YilCalisan_2", v)} />
           <Sayi etiket="3. yıl (güncel)" deger={g.son3YilCalisan_3} onChange={(v) => set("son3YilCalisan_3", v)} />
         </div>
-        <p className="mb-2 text-sm font-semibold text-[#071A2F]">Son 3 yıl net satış (TL)</p>
+        <p className="mb-2 text-sm font-semibold text-[#071A2F]">Son 3 yıl net satış</p>
         <div className="grid grid-cols-3 gap-3">
-          <Sayi etiket="1. yıl" deger={g.son3YilNetSatis_1} onChange={(v) => set("son3YilNetSatis_1", v)} />
-          <Sayi etiket="2. yıl" deger={g.son3YilNetSatis_2} onChange={(v) => set("son3YilNetSatis_2", v)} />
-          <Sayi etiket="3. yıl (güncel)" deger={g.son3YilNetSatis_3} onChange={(v) => set("son3YilNetSatis_3", v)} />
+          <Tutar etiket="1. yıl" deger={g.son3YilNetSatis_1} onChange={(v) => set("son3YilNetSatis_1", v)} />
+          <Tutar etiket="2. yıl" deger={g.son3YilNetSatis_2} onChange={(v) => set("son3YilNetSatis_2", v)} />
+          <Tutar etiket="3. yıl (güncel)" deger={g.son3YilNetSatis_3} onChange={(v) => set("son3YilNetSatis_3", v)} />
         </div>
       </Bolum>
 
-      <Bolum baslik="4. Yatırım Teşvik Belgesi" aciklama="Yatırım konunuz, mevcut faaliyet NACE kodunuzdan farklı olabilir.">
+      <Bolum baslik="4. KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı" aciklama="İş fikri olan girişimciler ve KOBİ'ler yılın her günü başvurabilir; asgari personel sayısı veya teknopark şartı aranmaz.">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <p className="sm:col-span-2 text-sm text-gray-500">Bu program, Şirket Bilgileri bölümündeki şirket türü, çalışan sayısı ve ciro bilgilerinizle değerlendirilir; ek bir soru gerekmez.</p>
+        </div>
+      </Bolum>
+
+      <Bolum baslik="5. KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı" aciklama="Süreç/teknoloji dönüşümü (Dijital Dönüşüm) veya kaynak verimliliği/düşük karbonlu üretim (Yeşil Dönüşüm) yatırımlarını kapsar.">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="DDX (Dijital Değişim/Dönüşüm) raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
+          <EvetHayir etiket="Güncel Mali Karneniz var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
+        </div>
+      </Bolum>
+
+      <Bolum baslik="6. Yatırım Teşvik Belgesi" aciklama="Yatırım konunuz, mevcut faaliyet NACE kodunuzdan farklı olabilir.">
         <div className="grid gap-5 sm:grid-cols-2">
           <Metin etiket="Yatırım Konusu NACE Kodu" deger={g.yatirimKonusuNaceKodu} onChange={(v) => set("yatirimKonusuNaceKodu", v)} placeholder="62.01" />
           <Secim etiket="Yatırım İli" deger={g.yatirimIli} onChange={(v) => set("yatirimIli", v)} secenekler={YATIRIM_TESVIK_ILLER.map((il) => ({ value: il, label: il }))} />
-          <Sayi etiket="Planlanan Sabit Yatırım Tutarı (TL)" deger={g.planlananSabitYatirimTutariTl} onChange={(v) => set("planlananSabitYatirimTutariTl", v)} />
+          <Tutar etiket="Planlanan Sabit Yatırım Tutarı" deger={g.planlananSabitYatirimTutariTl} onChange={(v) => set("planlananSabitYatirimTutariTl", v)} />
           <Secim etiket="Yatırım Türü" deger={g.yatirimTuru} onChange={(v) => set("yatirimTuru", v)} secenekler={YATIRIM_TURU_SECENEKLERI} />
           <EvetHayir etiket="Dijital veya Yeşil Dönüşüm Programı kapsamında mı?" deger={g.dijitalVeyaYesilDonusumMu} onChange={(v) => set("dijitalVeyaYesilDonusumMu", v)} />
           <EvetHayir etiket="Mevcut bir tesisiniz var mı?" deger={g.mevcutTesisVarMi} onChange={(v) => set("mevcutTesisVarMi", v)} />
+          <EvetHayir etiket="Yüksek veya orta-yüksek teknolojili ürün üretimi mi?" deger={g.yuksekVeyaOrtaYuksekTeknolojiUrunMu} onChange={(v) => set("yuksekVeyaOrtaYuksekTeknolojiUrunMu", v)} />
         </div>
       </Bolum>
 
-      <Bolum baslik="5. TÜBİTAK 1501 ve 1507 (Ar-Ge Destekleri)" aciklama="Ar-Ge niteliği nihai olarak TÜBİTAK hakem heyeti tarafından değerlendirilir; buradaki sorular yalnızca somut ret sinyallerini tarar.">
+      <Bolum baslik="7. TÜBİTAK 1501, 1507 ve 1832 (Ar-Ge ve Yeşil Dönüşüm Destekleri)" aciklama="Ar-Ge niteliği nihai olarak TÜBİTAK hakem heyeti tarafından değerlendirilir; buradaki sorular yalnızca somut ret sinyallerini tarar.">
         <div className="grid gap-5 sm:grid-cols-2">
           <Secim etiket="Proje niteliği" deger={g.projeNiteligi} onChange={(v) => set("projeNiteligi", v)} secenekler={PROJE_NITELIGI_SECENEKLERI} />
           <EvetHayir etiket="Proje üretim/tesis yatırımı ağırlıklı mı?" deger={g.uretimAltyapisiYatirimiAgirlikliMi} onChange={(v) => set("uretimAltyapisiYatirimiAgirlikliMi", v)} />
           <EvetHayir etiket="Proje ekibinde ilgili alanda lisans mezunu var mı?" deger={g.projeEkibindeLisansMezunuVarMi} onChange={(v) => set("projeEkibindeLisansMezunuVarMi", v)} />
           <Secim etiket="Ar-Ge faaliyeti nasıl yürütülüyor?" deger={g.argeFaaliyetiKaynagi} onChange={(v) => set("argeFaaliyetiKaynagi", v)} secenekler={ARGE_KAYNAGI_SECENEKLERI} />
-          <Sayi etiket="Talep edilecek proje bütçesi (TL, opsiyonel)" deger={g.talepEdilenProjeButcesiTl} onChange={(v) => set("talepEdilenProjeButcesiTl", v)} />
+          <Tutar etiket="Talep edilecek proje bütçesi (opsiyonel)" deger={g.talepEdilenProjeButcesiTl} onChange={(v) => set("talepEdilenProjeButcesiTl", v)} />
+          <Secim etiket="Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğuyla uyumlu mu?" deger={g.argeOncelikliAlanKategorisi} onChange={(v) => set("argeOncelikliAlanKategorisi", v)} secenekler={ARGE_ONCELIKLI_ALAN_SECENEKLERI} />
         </div>
         <p className="mb-2 mt-5 text-sm font-semibold text-[#071A2F]">Yalnızca TÜBİTAK 1507 için</p>
         <div className="grid gap-5 sm:grid-cols-2">
@@ -267,9 +321,30 @@ export default function DestekUygunlukForm() {
           <EvetHayir etiket="Ortaklı bir başvuru mu?" deger={g.ortakliBasvuruMu} onChange={(v) => set("ortakliBasvuruMu", v)} />
           <EvetHayir etiket="Teknogirişim sermaye şirketi mi?" deger={g.teknogirisimSermayeSirketiMi} onChange={(v) => set("teknogirisimSermayeSirketiMi", v)} />
         </div>
+        <p className="mb-2 mt-5 text-sm font-semibold text-[#071A2F]">Yalnızca TÜBİTAK 1832 (Sanayide Yeşil Dönüşüm) için</p>
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Proje, üretimde enerji/kaynak verimliliği, atık azaltımı veya düşük karbonlu üretim gibi somut bir yeşil dönüşüm hedefi taşıyor mu?" deger={g.projeYesilDonusumHedefliMi} onChange={(v) => set("projeYesilDonusumHedefliMi", v)} />
+        </div>
       </Bolum>
 
-      <Bolum baslik="6. İletişim Bilgileri" aciklama="Sonuçları görebilmek ve gerekirse detaylı değerlendirme için sizinle iletişime geçebilmemiz için gereklidir.">
+      <Bolum baslik="8. Ticaret Bakanlığı İhracat Destekleri" aciklama="Pazara Giriş Belgesi, Marka Tescili, Fuar, Birim Kira, Tanıtım, E-İhracat ve hizmet ihracatı destekleri dahil geniş bir program grubunu kapsar.">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="İhracat türünüz" deger={g.ihracatTuru} onChange={(v) => set("ihracatTuru", v)} secenekler={IHRACAT_TURU_SECENEKLERI} />
+          <EvetHayir etiket="İlgili İhracatçı Birliği'ne üye misiniz?" deger={g.ihracatciBirligiUyesiMi} onChange={(v) => set("ihracatciBirligiUyesiMi", v)} />
+          <EvetHayir etiket="Destek Yönetim Sistemi (DYS)'ne kayıtlı mısınız?" deger={g.dysKayitliMi} onChange={(v) => set("dysKayitliMi", v)} />
+        </div>
+      </Bolum>
+
+      <Bolum baslik="9. TKDK IPARD III Kırsal Kalkınma Destekleri" aciklama="Kırsal alanda hayvancılık, tarımsal üretim, gıda işleme, yenilenebilir enerji veya kırsal turizm yatırımı planlayan gerçek/tüzel kişiler için.">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Sayi etiket="Başvuranın yaşı (gerçek kişi başvurusuysa)" deger={g.basvuranYasi} onChange={(v) => set("basvuranYasi", v)} />
+          <EvetHayir etiket="Yatırım ili, TKDK'nın desteklenen illeri arasında mı?" deger={g.tkdkDesteklenenIldeMi} onChange={(v) => set("tkdkDesteklenenIldeMi", v)} />
+          <Secim etiket="Yatırım sektörü" deger={g.tkdkSektoru} onChange={(v) => set("tkdkSektoru", v)} secenekler={TKDK_SEKTOR_SECENEKLERI} />
+          <Tutar etiket="Planlanan proje bütçesi" deger={g.planlananProjeButcesiEuro} onChange={(v) => set("planlananProjeButcesiEuro", v)} birim="€" />
+        </div>
+      </Bolum>
+
+      <Bolum baslik="10. İletişim Bilgileri" aciklama="Sonuçları görebilmek ve gerekirse detaylı değerlendirme için sizinle iletişime geçebilmemiz için gereklidir.">
         <div className="grid gap-5 sm:grid-cols-2">
           <Metin etiket="Ad Soyad" deger={g.iletisimAdSoyad} onChange={(v) => set("iletisimAdSoyad", v)} zorunlu />
           <Metin etiket="E-posta" tip="email" deger={g.iletisimEposta} onChange={(v) => set("iletisimEposta", v)} zorunlu />
@@ -325,6 +400,25 @@ function Sayi({ etiket, deger, onChange }: { etiket: string; deger?: string; onC
     <label className="block">
       <Etiket>{etiket}</Etiket>
       <input type="number" value={deger ?? ""} onChange={(e) => onChange(e.target.value)} className={girdiSinifi} />
+    </label>
+  );
+}
+
+function Tutar({ etiket, deger, onChange, birim = "TL" }: { etiket: string; deger?: string; onChange: (v: string) => void; birim?: string }) {
+  const formatted = deger ? Number(deger.replace(/[^0-9]/g, "")).toLocaleString("tr-TR") : "";
+  return (
+    <label className="block">
+      <Etiket>{etiket}</Etiket>
+      <div className="relative">
+        <input
+          type="text"
+          inputMode="numeric"
+          value={formatted}
+          onChange={(e) => onChange(e.target.value.replace(/[^0-9]/g, ""))}
+          className={`${girdiSinifi} pr-14`}
+        />
+        <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-sm font-semibold text-gray-400">{birim}</span>
+      </div>
     </label>
   );
 }

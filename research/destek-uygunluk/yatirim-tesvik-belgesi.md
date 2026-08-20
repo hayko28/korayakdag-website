@@ -1,5 +1,21 @@
 # Yatırım Teşvik Belgesi
 
+## Ek Kriterler — "Tam Uygunluk Analizi" turu (2026-08-20)
+
+Kullanıcı isteği üzerine, mevcut evaluator'a (yatirimTesvikBelgesiDegerlendir, programlar.ts) bu dosyada zaten
+belgelenmiş ama koda henüz yansıtılmamış 3 bilgilendirme kriteri eklendi (yeni birincil kaynak araştırması
+yapılmadı, mevcut Karar/Tebliğ analizi kullanıldı):
+
+1. **Fizibilite raporu şartı** (Tebliğ Madde 7/1-ç) — planlanan tutar ≥1 milyar TL ise uyarı eklenir.
+2. **SMMM/YMM raporu eşiği** (Tebliğ EK-4, madde 8) — 50-100M TL arası SMMM, 100M TL+ YMM raporu uyarısı.
+3. **Yüksek/orta-yüksek teknolojili ürün → Öncelikli/Hedef Yatırım kategorisi bilgilendirmesi** — yeni
+   `yuksekVeyaOrtaYuksekTeknolojiUrunMu` alanı `true` ise, Madde 9'daki çok daha yüksek asgari tutar eşikleri
+   (500M/1000M TL) hakkında bilgilendirme gerekçesi eklenir.
+
+Kalan açık noktalar (EK-4 gümrük listesi, EK-5 alt bölge ilçeleri, öncelikli ürün listesi/stratejik hamle
+whitelist'leri) bu turda da işlenmedi — dosyanın "Kalan Küçük Açık Noktalar" bölümünde zaten belirtilmişti,
+form MVP'sini engellemediği için öncelik verilmedi.
+
 ## Durum — BİRİNCİL KAYNAĞA ULAŞILDI (3. tur araştırma, 2026-08-19)
 
 Önceki iki turda sanayi.gov.tr ve mevzuat.gov.tr'ye doğrudan erişim (sertifika hatası / erişim reddi) başarısız olmuştu. Bu turda **6 farklı yöntem** denendi:
