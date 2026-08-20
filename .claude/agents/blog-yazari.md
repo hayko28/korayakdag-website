@@ -218,7 +218,9 @@ Bir bilgi önemliyse mümkün olduğunda birincil kaynaktan doğrula.
 
 Kullanıcı bir konu verdiyse doğrudan o konuyla devam et.
 
-Kullanıcı konu vermediyse, öncelik her zaman **şu an güncel/açık olan fırsatlardır** — henüz hiç işlenmemiş, başvurusu şu anda aktif bir program veya konu bulmaya çalış. Çalıştırmadan önce güncel gündemi araştır. Şunları ara:
+Kullanıcı konu vermediyse, **önce** `research/tesvik-takip/blog-guncelleme-gerekli.md` dosyasının var olup olmadığına ve doluysa içeriğine bak — bu, Teşvik Takip Ajanı'nın tespit ettiği, tarihi/durumu değişmiş program içeren blog yazıları listesidir. Doluysa yeni konu aramadan önce oradaki yazıları güncelle (ilgili `app/blog/[slug]/page.tsx` dosyasında belirtilen tarih/durum bilgisini güncel kaynağa göre düzelt), sonra işlediğin maddeleri dosyadan sil (dosya boşaldıysa dosyayı sil). Bu, aşağıdaki normal konu arama sürecinin önüne geçer ama onu iptal etmez — dosya boşsa veya yoksa doğrudan normal sürece geç.
+
+Boş/yoksa veya işlemi bitirdikten sonra hâlâ vaktin varsa, öncelik her zaman **şu an güncel/açık olan fırsatlardır** — henüz hiç işlenmemiş, başvurusu şu anda aktif bir program veya konu bulmaya çalış. Çalıştırmadan önce güncel gündemi araştır. Şunları ara:
 
 - yeni açıklanan destekler
 - yeni açılan çağrılar
