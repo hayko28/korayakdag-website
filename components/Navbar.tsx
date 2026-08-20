@@ -145,12 +145,12 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="relative text-[15px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-[14px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
@@ -176,7 +176,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 lg:hidden"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 xl:hidden"
             aria-label={isEn ? "Open menu" : "Menüyü aç"}
           >
             <span className="h-0.5 w-5 bg-white" />
@@ -187,7 +187,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg lg:hidden">
+        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg xl:hidden">
           {links.map((link) => (
             <a
               key={link.name}
