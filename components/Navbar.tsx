@@ -71,6 +71,7 @@ export default function Navbar() {
         { name: "Uzmanlık Alanları", href: `${homePath}#expertise` },
         { name: "Hizmetler", href: `${homePath}#services` },
         { name: "Güncel Gelişmeler", href: "/guncel-gelismeler" },
+        { name: "Destek Uygunluk Analizi", href: "/destek-uygunluk-analizi" },
         { name: "Blog", href: `${homePath}#blog` },
         { name: "İletişim", href: `${homePath}#contact` },
       ];

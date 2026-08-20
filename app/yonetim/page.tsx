@@ -26,28 +26,43 @@ type LinkedInDraft = {
   videoUrl?: string;
 };
 
+type DestekBasvuru = {
+  id: number;
+  sirket_unvani: string | null;
+  iletisim_ad_soyad: string;
+  iletisim_eposta: string;
+  iletisim_telefon: string | null;
+  sonuclar: { programAdi: string; durum: string }[];
+  status: string;
+  created_at: string;
+};
+
 type Data = { comments: Item[]; messages: Item[]; posts: Item[]; subscribers: Item[] };
-type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin" | "fikirler";
+type Tab = "posts" | "comments" | "messages" | "subscribers" | "linkedin" | "fikirler" | "destek";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [data, setData] = useState<Data | null>(null);
   const [drafts, setDrafts] = useState<LinkedInDraft[]>([]);
   const [fikirler, setFikirler] = useState({ bugunOneri: "", gunlukFikirler: "" });
+  const [destekBasvurulari, setDestekBasvurulari] = useState<DestekBasvuru[]>([]);
   const [error, setError] = useState("");
   const [tab, setTab] = useState<Tab>("posts");
   const [commentFilter, setCommentFilter] = useState<"all" | "pending" | "approved" | "rejected">("all");
 
   const load = async () => {
     try {
-      const [r, dr, fr] = await Promise.all([
+      const [r, dr, fr, destekR] = await Promise.all([
         fetch("/api/admin"),
         fetch("/api/admin/linkedin-drafts"),
         fetch("/api/admin/fikirler"),
+        fetch("/api/admin/destek-basvurulari"),
       ]);
-      if (!r.ok || !dr.ok || !fr.ok) throw new Error();
+      if (!r.ok || !dr.ok || !fr.ok || !destekR.ok) throw new Error();
       setData(await r.json());
       setFikirler(await fr.json());
+      const { basvurular } = await destekR.json();
+      setDestekBasvurulari(basvurular);
       const { drafts: rows } = await dr.json();
       setDrafts(
         rows.map(
@@ -120,6 +135,16 @@ export default function AdminPage() {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ type, id, status }),
+    });
+    await load();
+  };
+
+  const deleteDestekBasvuru = async (id: number) => {
+    if (!confirm("Bu başvuruyu kalıcı olarak silmek istediğinize emin misiniz?")) return;
+    await fetch("/api/admin/destek-basvurulari", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, status: "deleted" }),
     });
     await load();
   };
@@ -207,6 +232,7 @@ export default function AdminPage() {
             ["subscribers", `Aboneler (${data.subscribers.length})`],
             ["linkedin", `LinkedIn Taslakları (${drafts.length})`],
             ["fikirler", "Fikirler"],
+            ["destek", `Destek Uygunluk Başvuruları (${destekBasvurulari.length})`],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -541,6 +567,64 @@ export default function AdminPage() {
               )}
             </section>
           </div>
+        )}
+
+        {/* DESTEK UYGUNLUK BAŞVURULARI TAB */}
+        {tab === "destek" && (
+          <section className="rounded-3xl bg-white p-6 shadow-sm">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-[#071A2F]">Destek Uygunluk Analizi Başvuruları</h2>
+              <p className="text-sm text-gray-600">
+                /destek-uygunluk-analizi sayfasından gelen ön analiz talepleri ve sonuçları.
+              </p>
+            </div>
+            {destekBasvurulari.length ? (
+              <div className="space-y-4">
+                {destekBasvurulari.map((b) => (
+                  <article key={b.id} className="rounded-2xl border p-5 shadow-xs">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b pb-3">
+                      <div>
+                        <b className="text-lg text-[#071A2F]">{b.sirket_unvani || b.iletisim_ad_soyad}</b>
+                        <p className="text-sm text-gray-500">
+                          {b.iletisim_ad_soyad} — {b.iletisim_eposta}
+                          {b.iletisim_telefon ? ` — ${b.iletisim_telefon}` : ""}
+                        </p>
+                      </div>
+                      <p className="text-xs text-gray-400">{new Date(b.created_at).toLocaleString("tr-TR")}</p>
+                    </div>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {b.sonuclar.map((s, i) => (
+                        <span
+                          key={i}
+                          className={`rounded-full border px-3 py-1 text-xs font-bold ${
+                            s.durum === "uygun"
+                              ? "border-green-300 bg-green-50 text-green-800"
+                              : s.durum === "kismen_uygun"
+                              ? "border-blue-300 bg-blue-50 text-blue-800"
+                              : s.durum === "belirsiz"
+                              ? "border-amber-300 bg-amber-50 text-amber-800"
+                              : "border-red-300 bg-red-50 text-red-800"
+                          }`}
+                        >
+                          {s.programAdi}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-3 flex justify-end">
+                      <button
+                        onClick={() => deleteDestekBasvuru(b.id)}
+                        className="rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-red-700"
+                      >
+                        🗑️ Sil
+                      </button>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <Empty text="Henüz destek uygunluk analizi başvurusu yok." />
+            )}
+          </section>
         )}
       </div>
     </main>

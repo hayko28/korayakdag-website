@@ -317,6 +317,9 @@ export default function BlogPage() {
                 <tr>
                   <th className="p-4">Bölge</th>
                   <th className="p-4">Asgari Yatırım (2026)</th>
+                  <th className="p-4">KDV İstisnası</th>
+                  <th className="p-4">Gümrük Vergisi Muafiyeti</th>
+                  <th className="p-4">Vergi İndirimi Oranı</th>
                   <th className="p-4">SGK İşveren Primi Desteği</th>
                   <th className="p-4">SGK İşçi Hissesi Desteği</th>
                   <th className="p-4">Faiz / Kâr Payı Desteği</th>
@@ -327,6 +330,9 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">1</td>
                   <td className="p-4">15.100.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60 (İstanbul hariç)</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Yok</td>
@@ -335,6 +341,9 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">2</td>
                   <td className="p-4">15.100.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60</td>
                   <td className="p-4">1 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Yok</td>
@@ -343,6 +352,9 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">3</td>
                   <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60</td>
                   <td className="p-4">2 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Yok</td>
@@ -351,6 +363,9 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">4</td>
                   <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60</td>
                   <td className="p-4">4 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Var</td>
@@ -359,6 +374,9 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">5</td>
                   <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60</td>
                   <td className="p-4">8 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Var</td>
@@ -367,6 +385,9 @@ export default function BlogPage() {
                 <tr>
                   <td className="p-4 font-semibold">6</td>
                   <td className="p-4">7.500.000 TL</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">Var</td>
+                  <td className="p-4">%60</td>
                   <td className="p-4">12 yıl (OSB dışı) / 14 yıl (OSB içi)</td>
                   <td className="p-4">10 yıl</td>
                   <td className="p-4">Var (en yüksek üst sınır)</td>
@@ -388,20 +409,21 @@ export default function BlogPage() {
 
           <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-              💰 Vergi İndirimi Oranı Neden Tabloda Yok?
+              💰 KDV, Gümrük ve Vergi İndirimi Neden Tabloda Sabit Görünüyor?
             </h3>
             <p className="leading-8 text-gray-700">
               Eski sistemden farklı olarak Hedef Yatırımlar ve Öncelikli
-              Yatırımlar Teşvik Sistemi&apos;nde vergi indirimi oranı (%60)
-              ve yatırıma katkı oranı (%40) bölgeye göre değil, seçilen
-              programa göre belirleniyor ve bu iki program için sabit
-              uygulanıyor; bölgeye göre asıl farklılaşan unsurlar asgari
-              yatırım tutarı, SGK desteği süresi, faiz/kâr payı desteğinin
-              varlığı ve yatırım yeri tahsisi imkanıdır. Tek istisna:{" "}
-              <strong>İstanbul&apos;da gerçekleştirilecek yatırımlar
-              vergi indirimi desteğinden yararlanamaz.</strong> Bu oranlar
-              da her yıl güncellenebildiğinden başvuru öncesi teyit
-              edilmelidir.
+              Yatırımlar Teşvik Sistemi&apos;nde KDV istisnası, gümrük
+              vergisi muafiyeti, vergi indirimi oranı (%60) ve yatırıma
+              katkı oranı (%40) bölgeye göre değil, seçilen programa göre
+              belirleniyor ve bu iki program için tüm bölgelerde aynı
+              şekilde uygulanıyor; bölgeye göre asıl farklılaşan unsurlar
+              asgari yatırım tutarı, SGK desteği süresi, faiz/kâr payı
+              desteğinin varlığı ve yatırım yeri tahsisi imkanıdır. Tek
+              istisna: <strong>İstanbul&apos;da gerçekleştirilecek
+              yatırımlar vergi indirimi desteğinden yararlanamaz.</strong>{" "}
+              Bu oranlar da her yıl güncellenebildiğinden başvuru öncesi
+              teyit edilmelidir.
             </p>
           </div>
 
@@ -478,7 +500,14 @@ export default function BlogPage() {
             katkı tutarına) ulaşana kadar devam eder. Yani{" "}
             <strong>yatırıma katkı tutarı = yatırım tutarı × %40</strong>,
             projenin sağlayacağı toplam vergi avantajının üst sınırını
-            gösterir. Gerçek başvurunuzda uygulanacak kesin destek
+            gösterir. Gümrük vergisi muafiyeti ve SGK işveren primi
+            desteğinin parasal karşılığı ise sabit bir oranla
+            hesaplanamaz — ithal makinenin GTİP kodu/menşe ülkesi ve
+            istihdam edilecek işçi sayısı/ücreti gibi projeye özel
+            girdilere bağlıdır; bu nedenle aşağıda Senaryo 1 ve Senaryo
+            6&apos;ya, yalnızca hesaplama mantığını göstermek amacıyla
+            açıkça belirtilmiş varsayımlara dayanan birer örnek tutar
+            eklenmiştir. Gerçek başvurunuzda uygulanacak kesin destek
             unsurları, oranları ve tutarları projenize özel olarak E-TUYS
             üzerinden değerlendirilir.
           </p>
@@ -503,7 +532,18 @@ export default function BlogPage() {
                 katkı oranı = <strong>7.200.000 TL&apos;ye kadar</strong>{" "}
                 vergi avantajı; firma bu tutara ulaşana kadar kurumlar
                 vergisini %25 yerine %10 oranında (yani %60 indirimli)
-                öder.
+                öder.{" "}
+                <strong>Gümrük vergisi muafiyeti — varsayımsal örnek:</strong>{" "}
+                yatırımın 4.500.000 TL&apos;lik kısmının (toplamın
+                yaklaşık %25&apos;i) yurt dışından ithal edilecek makine
+                ve teçhizata ayrıldığı ve bu makinelerin gümrük vergisi
+                oranının (GTİP koduna ve menşe ülkeye göre değişmekle
+                birlikte) örnek olarak %5 kabul edildiği bir senaryoda,
+                muafiyet sayesinde <strong>yaklaşık 225.000 TL</strong>{" "}
+                gümrük vergisi ödenmez. Gerçek oran, ithal edilecek her
+                bir kalemin GTİP kodu ve menşe ülkesine göre %0 ile çift
+                haneli seviyeler arasında değişebilir; bu rakam yalnızca
+                hesaplama mantığını göstermek içindir.
               </p>
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
@@ -605,7 +645,21 @@ export default function BlogPage() {
                 yatırımcı bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder — üstelik bu tutara 12-14
                 yıllık SGK primi desteği, faiz/kâr payı desteği ve yatırım
-                yeri tahsisinin sağladığı ilave maliyet avantajı da eklenir.
+                yeri tahsisinin sağladığı ilave maliyet avantajı da eklenir.{" "}
+                <strong>SGK işveren primi desteği — varsayımsal örnek:</strong>{" "}
+                yatırımla birlikte istihdam edilen 10 ilave işçinin aylık
+                brüt ücretinin örnek olarak 30.000 TL, işveren SGK prim
+                oranının da yaklaşık %20,5 kabul edildiği bir senaryoda,
+                aylık işveren primi 10 × 30.000 TL × %20,5 ={" "}
+                <strong>61.500 TL</strong>; bu tutarın devlet tarafından
+                karşılanması OSB dışında 12 yıl sürdüğünde toplam destek
+                yaklaşık <strong>8.856.000 TL&apos;ye</strong>, OSB
+                içinde 14 yıl sürdüğünde ise yaklaşık{" "}
+                <strong>10.332.000 TL&apos;ye</strong> ulaşır. Gerçek
+                tutar; çalışan sayısına, fiili ücretlere, sektörün SGK
+                risk sınıfına ve yıllık asgari ücret güncellemelerine
+                göre değişir, bu rakam yalnızca hesaplama mantığını
+                göstermek içindir.
               </p>
             </div>
           </div>

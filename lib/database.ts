@@ -25,5 +25,6 @@ export async function initializeDatabase() {
   // için taslağı git'e dosya olarak yazıyor; bu dosya adı burada tutulup
   // /api/admin/linkedin-drafts'ta aynı dosyanın iki kez içeri alınmasını önler.
   await sql`ALTER TABLE linkedin_drafts ADD COLUMN IF NOT EXISTS kaynak_dosya TEXT UNIQUE`;
+  await sql`CREATE TABLE IF NOT EXISTS destek_uygunluk_basvurulari (id SERIAL PRIMARY KEY, sirket_unvani TEXT, iletisim_ad_soyad TEXT NOT NULL, iletisim_eposta TEXT NOT NULL, iletisim_telefon TEXT, girdi JSONB NOT NULL, sonuclar JSONB NOT NULL, status TEXT NOT NULL DEFAULT 'yeni', created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
   initialized = true;
 }
