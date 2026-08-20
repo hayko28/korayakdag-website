@@ -264,6 +264,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: E-ihracata yeni başlayacak KOBİ'lere, ücretli danışmanlık almadan önce E-KİP'in pazar araştırması ve eğitim modüllerini incelemelerini öneririm; platform özellikle hedef pazar ve mevzuat konusunda ilk adımda faydalı bir çerçeve sunuyor.",
   },
+  {
+    kurum: "Borsa İstanbul",
+    tarih: "3 Ağustos 2026 (2026 ilk 7 ay verileri)",
+    eklendiTarihi: "2026-08-20",
+    baslik:
+      "Borsa İstanbul'da 2026'nın ilk 7 ayında 28 şirketle halka arz rekoru",
+    ozet:
+      "2026 yılının ilk yedi ayında Borsa İstanbul'da 28 şirket halka arz edilerek toplam yaklaşık 63 milyar TL kaynak sağlandı; yalnızca Temmuz ayında gerçekleşen 12 halka arzla 38,4 milyar TL toplanarak yılın en yoğun ayı oldu. Halka arzlara katılan yatırımcı sayısı 22,11 milyona ulaştı.",
+    kaynakUrl:
+      "https://www.forbes.com.tr/ekonomi/2026-da-halka-arz-rekoru-28-sirket-borsaya-acildi",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Halka arz hacmindeki bu artış, kurumsallaşma sürecini tamamlamış ve şeffaf finansal raporlamaya geçmiş şirketler için sermaye piyasasının gerçek bir alternatif finansman kanalı haline geldiğini gösteriyor; büyüme aşamasındaki şirketlerin halka arza hazırlık sürecini (bağımsız denetim, kurumsal yönetim, değerleme) şimdiden planlamaya başlamalarını öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "9 Ağustos 2026",
+    eklendiTarihi: "2026-08-20",
+    baslik:
+      "Proje Bazlı Devlet Yardımı Kararı'nda başvuru ve izleme süreçleri yeniden düzenlendi",
+    ozet:
+      "9 Ağustos 2026 tarihli ve 33335 sayılı Resmî Gazete'de yayımlanan Cumhurbaşkanlığı kararıyla, büyük ölçekli ve stratejik yatırımlara yönelik proje bazlı devlet yardımı sisteminin başvuru, değerlendirme ve izleme süreçlerinde değişikliğe gidildi. Proje başvurularında kalkınma ve yatırım bankalarınca hazırlanacak fizibilite raporu zorunlu hale getirildi; ayrıca 'Teknoloji Odaklı Sanayi Hamlesi Programı'nın adı 'Teknoloji Hamlesi Programı' olarak güncellendi.",
+    kaynakUrl:
+      "https://www.pwc.com.tr/tr/hizmetlerimiz/vergi/dolayli-vergi/bultenler/yatirim-tesvik-bultenleri/2026/yatirimlara-proje-bazli-devlet-yardimi-verilmesine-iliskin-kararda-degisiklik-yapilmasina-dair-karar.html",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Fizibilite raporu zorunluluğu, proje bazlı devlet yardımına başvuracak yatırımcılar için hazırlık süresini uzatan bir adım; kalkınma veya yatırım bankasıyla fizibilite çalışmasını başvuru takvimine göre erken planlamalarını öneririm.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "10 Ağustos 2026",
+    eklendiTarihi: "2026-08-20",
+    baslik:
+      "TOBB ve Ticaret Bakanlığı'ndan KOBİ'lerin e-ihracat ve yapay zekâ olgunluğunu artıracak çalıştay",
+    ozet:
+      "Dijital İhracatı Geliştirme Programı (DEEP) kapsamında Bolu'da düzenlenen çalıştayda TOBB, Ticaret Bakanlığı, Milletlerarası Ticaret Odası (ICC) ve TOBB ETÜ SEM iş birliğiyle KOBİ'lerin yapay zekâ destekli e-ihracat ve 'agentic commerce' dönüşümü ele alındı. Katılımcılar altı çalışma masasında dijital/yapay zekâ olgunluğu, e-ihracatta değer yaratma, eğitim-mentorluk ve pazara giriş temalarında bir araya geldi.",
+    kaynakUrl: "https://www.tobb.org.tr/Sayfalar/Detay.php?rid=15773&lst=Haberler",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: 'Agentic commerce' kavramının KOBİ gündemine girmesi, e-ihracat yapan işletmelerin önümüzdeki dönemde yapay zekâ ajanlarının ürün ve fiyat kararlarına dahil olacağı bir pazar ortamına şimdiden hazırlanması gerektiğine işaret ediyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
