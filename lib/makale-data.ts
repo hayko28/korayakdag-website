@@ -119,4 +119,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "13 Temmuz 2026",
     readTime: "3 Dakika",
   },
+  {
+    slug: "bayilik-anlasmasinda-gozden-kacan-madde",
+    title: "Bayilik Anlaşmasında Gözden Kaçan Madde: Performans Şartı",
+    excerpt:
+      "Bir bölgeyi münhasır olarak tek bir bayiye kapatıp karşılığında ölçülebilir hiçbir hedef koymamak, danışmanlık sürecinde en sık karşılaşılan kanal yönetimi hatalarından biri.",
+    tag: "Strateji",
+    date: "20 Ağustos 2026",
+    readTime: "3 Dakika",
+  },
 ];
