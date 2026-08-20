@@ -76,6 +76,8 @@ Sitede zaten kullanılan, API key gerektirmeyen **formsubmit.co** yöntemini kul
 curl -s -X POST "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
+  -H "Referer: https://korayakdag.com/" \
+  -H "Origin: https://korayakdag.com" \
   -d '{
     "_subject": "KONU_BURAYA",
     "Program": "Program adı",
@@ -86,6 +88,8 @@ curl -s -X POST "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr" \
     "Not": "kısa açıklama, varsa doğrulanamayan noktalar"
   }'
 ```
+
+**Kritik:** `Referer`/`Origin` header'ları olmadan formsubmit.co isteği HTTP 200 ile ama `{"success":"false",...}` gövdesiyle sessizce reddeder. Her gönderimden sonra curl çıktısını oku, `"success":"true"` içermiyorsa e-posta gitmemiş demektir — state dosyasındaki bildirim flag'ini `true` yapma, bir sonraki çalışmada tekrar dene.
 
 `_subject` alanını her bildirim türü için netleştir, örnek:
 - "Yeni Destek Programı: [Program Adı]"
