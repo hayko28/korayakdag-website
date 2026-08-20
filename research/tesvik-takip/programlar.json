@@ -1,4 +1,57 @@
 {
-  "sonGuncelleme": null,
-  "programlar": []
+  "sonGuncelleme": "2026-08-20",
+  "programlar": [
+    {
+      "id": "kosgeb-girisimci-destek-2026-2",
+      "ad": "Girişimci Destek Programı İş Geliştirme Çağrısı - 2. Dönem",
+      "kurum": "KOSGEB",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler",
+      "ilkTespitTarihi": "2026-08-20",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında aktif olduğu tespit edildi"
+    },
+    {
+      "id": "kosgeb-kapasite-gelistirme-2026-2",
+      "ad": "Kapasite Geliştirme Destek Programı - 2. Başvuru Dönemi",
+      "kurum": "KOSGEB",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler",
+      "ilkTespitTarihi": "2026-08-20",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında aktif olduğu tespit edildi"
+    },
+    {
+      "id": "tubitak-1501-sanayi-arge",
+      "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-programlar",
+      "ilkTespitTarihi": "2026-08-20",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında tespit edildi"
+    },
+    {
+      "id": "tubitak-1507-kobi-arge-baslangic",
+      "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-programlar",
+      "ilkTespitTarihi": "2026-08-20",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında tespit edildi"
+    }
+  ]
 }
