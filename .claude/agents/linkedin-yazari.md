@@ -39,7 +39,7 @@ Asla var olmayan/uydurma bir URL'ye link verme. Link, paylaşım metninin son sa
 
 1. Sitedeki/kaynaktaki metni asla kopyalama, LinkedIn için sıfırdan özgün yaz.
 2. Güçlü/merak uyandıran açılış cümlesi, kısa paragraflar, bol satır boşluğu.
-3. Birinci ağızdan, kişisel çerçeve ("Bugün fark ettim ki..." vb, uydurma olay değil genel çerçeve).
+3. **Üçüncü kişi ağzından yaz — Koray'ın kendi başından geçmiş gibi ASLA yazma** ("Bugün fark ettim ki...", "Bir görüşmemde..." gibi birinci ağız YASAK). Bunun yerine bir gözlemci/danışman bakış açısıyla somut bir vaka anlat: "Geçenlerde bir KOBİ sahibi...", "Bir girişimci...", "Danışmanlık sürecinde sık karşılaşılan bir durum..." gibi. Yine de kişisel/samimi bir ton koru, resmi/jenerik olmasın.
 4. Somut ol: gerçek rakam/tarih/kurum adı (eğlenceli formatta bu zorunlu değil, ama yine de inandırıcı/somut kal).
 5. "Yapay zeka kokan" kalıplardan KESİNLİKLE kaçın (jenerik açılışlar, aşırı emoji, liste hissi, resmi dil).
 6. Uzunluk: 80-180 kelime (link hariç).
