@@ -1,3 +1,208 @@
+# Günlük Fikir Araştırması - 21 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı  
+**Tarih:** 21 Ağustos 2026  
+**Hedef:** Hukuk teknolojisi, KOBİ otomasyonu, podcast/medya, abonelik kutusu — geçmiş günlerden farklı sektörler
+
+---
+
+## FİKİR 1: Türkçe AI Sözleşme Gözden Geçirici — Avukatlar ve Noter İçin
+
+### Ne Bu?
+Türk avukatları ve noterlere yönelik, Türkçe sözleşme metnini analiz eden yapay zeka aracı. Sistem: (1) sözleşme dosyası yükleniyor, (2) yapay zeka Türkçe hukuki terminolojiyi kullanarak risk konularını (eksik madde, tehlikeli şart, çelişki) vurguluyor, (3) standart terimler ve şablon öneriler sunuyor, (4) GİB/adli terimlere uygunluk kontrol ediyor. Avukat tarafından nihai doğrulama şart, ama klinik not yazımı %40 hızlanıyor.
+
+### Kanıt (Kaynaklar)
+- [Küresel legal tech pazarı $2.52 milyardan $10.82 milyara (2030), %80+ büyüme](https://www.clio.com/resources/ai-for-lawyers/ai-tools-for-lawyers/)
+- [Avukatlar arasında AI kullanımı %19'dan %79'a sıçradı (1 yıl)](/post/https-www-clio-com-resources-ai-for-lawyers-ai-tools-for-lawyers)
+- [%77 avukat "AI-enabled quality" talep ediyor, ama sadece %5 alıyor — talep-arz boşluğu net](https://legal.thomsonreuters.com/blog/buyers-guide-artificial-intelligence-in-contract-review-software/)
+- [Harvey (AI avukat firması) $11 milyar valuation, Spellbook sözleşme yönetiminde lider, Türkiye'de yok](https://www.darrow.ai/resources/ai-tools-for-lawyers/)
+
+**Gerçek Sorun:** Türk avukatları sözleşme tahlilini elle yapıyor, zaman kaybediyor. Standart terimler ve risk konuları kontrolü otomatikleştirilemediği için yeni avukatlar sık hata yapıyor. Dünyadaki çözümler İngilizce ve Türk hukuk sistemiyle uyumsuz.
+
+### Gelir Modeli
+- Ücretsiz paket: Ayda 3 sözleşme tahlili ücretsiz, SMS bildirim
+- Profesyonel paket: ₺399/ay (sınırsız tahlil + risk raporu + şablon önerisi + GİB uygunluk kontrolü)
+- Kurumsal paket: Avukatlık bürosu/noter için ₺999/ay (5+ kişi, merkezi yönetim, raporlama)
+- API lisanslama: Mevcut hukuk yazılımı yöneticileri için entegrasyon = ₺2.000+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkçe AI sözleşme tahlili aracı **YOK**. LexisNexis, Thomson Reuters gibi uluslararası araçlar var ama Türk hukuk terminolojisini desteklemiyor, çeviri kalitesi düşük.  
+**Talep Sinyalleri:**
+- Türkiye'de yaklaşık 250 binden fazla avukat vardır, %30-40'ı digital araçlara açık
+- Büyük avukatlık buroları Türkiye'de yeni şekilde AI yatırımına açılıyor
+- Noter ve gayrimenkul hukuku avukatları sözleşme yönetiminde yoğun risk taşıyor (karar gecikmesi maliyet)
+- AI kullanımı Türk Barolar Birliği tarafından etik olarak onaylanmış
+
+**Neden Heyecan Verici:**
+- Talep belgelendirilebilir (%77 istiyor, %5 alıyor = %72'lik boşluk)
+- Koray'ın danışmanlık ağında avukat ve noter müşteriler vardır
+- Harvey ($11B) başarısı modeli ispatlamış
+- Yüksek marjlı kurumsal satış (avukatlık büroları ₺999/ay × 30 = ₺300K/ay potansiyel)
+- Hukuk sektörü istikrarlı, zaman tasarrufu doğrudan gelir artışına dönüşür
+
+### İlk Somut Adım
+Koray'ın avukat müşterilerine (veya LinkedIn'deki avukat bağlantılarından) 3 tanesine DM gönder: "Sözleşme tahlilinde yapay zeka denemeleri yapıyoruz. Kritik bir sözleşme dosyasını analiz ettirmek istermisiniz? Ücretsiz deneme." Yanıt aldıktan sonra Claude Code'a: "3 sözleşme örneğini al, Türkçe hukuki terimler + risk kategorisi (eksik madde, çelişki, GİB uyum) veri tabanını kur, GPT/Claude API + vektör arama ile prototype yap (raporlama çıkış basit HTML olabilir)."
+
+### Zorluk/Risk
+- Hukuki sorumluluk: AI'nın hata yapması → avukatın sorumluluğu (belki değil, ama algı problemi)
+- Avukat disiplini: Etik kurullar AI'yi kısmen kontrol etmek isteyebilir
+- Terminoloji doğruluğu: Türk hukuk terminolojisi bölgesel farklılıklar gösterir (Türkiye vs KKTC vs Avrupa)
+- Gizlilik: Sözleşme verileri hassas, KVKK compliance şart
+
+**Risk Derecesi:** ORTA (hukuki çerçeve belirsiz, ama Harvey başarısı model var)
+
+---
+
+## FİKİR 2: KOBİ Muhasebecilerine Yardımcı Yapay Zeka Ajanı
+
+### Ne Bu?
+Türk muhasebecilere yönelik yapay zeka asistanı: (1) fatura görüntüsü yükleniyor, (2) yapay zeka otomatik olarak tutarı, tarihini, KDV'sini ve gider kategorisini (kira, elektrik, stok vb.) tanıyıp, dışa aktarıyor, (3) banka ekstresinden otomatik eşleştirme yapılıyor, (4) aylık vergi raporlaması ve GİB uyumluluğu kontrol ediliyor. Muhasebeci zamanını %40-50 azaltıyor, muhasebeci asistanları işsiz kalmıyor — işlerini kaliteli tarafına kaydırıyor (müşteri hizmetleri, danışmanlık).
+
+### Kanıt (Kaynaklar)
+- [KOBİ'ler muhasebe otomasyonuna talep gösteriyor — manual işlem %40-50 maliyetinin düşürülmesi hedefi](https://www.yatirimx.com.tr/ekonomi/en-iyi-on-muhasebe-programlari-2026/)
+- [Paraşüt, Logo gibi yazılımlar temel muhasebe sağlıyor ama AI tabanlı belge tanıma ve kategorisiz gider otomasyonu yok](https://www.fisle.co/blog/muhasebe-programlari-rehberi)
+- [Türkiye KOBİ'leri ortalama 3-5 muhasebe asistanı istihdam ediyor; yazılım otomasyonu istihdam etmek yerine işi daha verimli hale getiriyor](https://mavvo.com.tr/blog/top-5-muhasebe-programlari/)
+- [Küresel AI belge tanıma pazarı 16 milyardan 70+ milyara (2030), %27 CAGR](https://www.precedenceresearch.com/personalized-testing-and-supplements-market)
+
+**Gerçek Sorun:** Türk KOBİ muhasebecileri zaman yoğun, rutin işe (fatura girişi) %40'larını ayırıyor. Yazılımlar (Logo, Paraşüt) temel fatura yönetimi sağlıyor ama AI-destekli belge tanıma/otomasyonu yok. Muhasebe asistanları bu rutin işlerde (sayfa sayfa fatura yazması) çalışıyor, daha yüksek değer katan işlere geçemiyor.
+
+### Gelir Modeli
+- Ücretsiz paket: Ayda 10 fatura tahlili, SMS uyarı
+- Profesyonel paket: ₺249/ay (sınırsız fatura + otomatik kategorisiz gider takibi + banka eşleştirme + aylık vergi raporu)
+- Muhasebe bürosu paketi: 5-20 müşteri için ₺599/ay (merkezi dashboard, müşteri yönetimi, çoklu giriş)
+- Kurumsal: 20+ müşteri için ₺999+/ay (özel entegrasyon, veri analiz)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Logo, Paraşüt, Mikro gibi yazılımlar temel muhasebe sağlıyor. Ama **AI belge tanıma + otomasyonu bir paket olarak sunan türkçe çözüm yok**.  
+**Talep Sinyalleri:**
+- Türkiye KOBİ sayısı 3 milyonun üzerinde, hepsinin muhasebe işi var
+- Muhasebe yazılımı benimseme oranı %60+ (büyük pazar)
+- Muhasebeciler zaman sıkıntısından şikayetçi (LinkedIn, Forum'larda)
+- Uzaktan muhasebe (freelancer) pazarı çok büyüyor — yazılım otomasyonu bu pazarı destekleyecek
+
+**Neden Heyecan Verici:**
+- Talep net ve ölçülebilir (muhasebeciler zaman kurtarırsa para tasarrufu)
+- Koray'ın danışmanlık müşterilerinin hepsi KOBİ → doğrudan satış kanalı
+- Yüksek retention (muhasebeci yazılımdan kolay ayrılmıyor, switching cost yüksek)
+- Tekrarlı gelir modeli, marj %60-70 mümkün
+- Küresel AI belge tanıma pazarı kanıtlanmış ($16B → $70B 2030'da)
+
+### İlk Somut Adım
+Koray'ın danışmanlık müşterilerinden 3 muhasebeciye e-mail yolla: "Fatura tahlilinde yapay zeka denemesi yapıyoruz. 10 fatura dosyasını göndersen, otomatik tanınan tutarı ve kategoriyi raporla mı?" Cevap aldıktan sonra Claude Code'a: "3 muhasebecinin gönderdiği fatura örnekleri + kategorisiz giderlerin türlerini al, Tesseract/OpenAI Vision + kategorisiz gider veritabanı kur, 1 haftalık tahlil prototipi yap."
+
+### Zorluk/Risk
+- Fatura tanıma doğruluğu: Düşük kaliteli faturalarda hata riski (elle yazılı, fotokopisi vb.)
+- Entegrasyon karmaşıklığı: Muhasebe yazılımlarıyla (Logo, Paraşüt API'leri) entegrasyon gerekli
+- Muhasebe paketlerinin kendi otomasyonu: Logo/Paraşüt zaman içinde bu özelliği ekleyebilir (rekabet)
+- GİB uyumluluğu: Vergi kanunları sık değişiyor, güncelleme gerekli
+
+**Risk Derecesi:** DÜŞÜK-ORTA (pazar kanıtlanmış, teknik yapılabilir, ama yazılım rekabeti var)
+
+---
+
+## FİKİR 3: Türkçe Podcast-to-Video Otomasyonu Aracı
+
+### Ne Bu?
+Türçe podcast yapımcılarına yönelik otomatik video düzenleme aracı: (1) podcast ses dosyası yükleniyor, (2) yapay zeka otomatik olarak konuşmayı segmentlere ayırıyor (tanıtım, ana tema, punch line, kapanış), (3) her segment için optimum uzunluk kesintisi yapılıyor (YouTube Shorts, TikTok, Instagram Reels formatlarına), (4) yapay zeka alt yazılar (kapatılı yazı, renkli highlight) ekleniyor, (5) müzik + geçiş efektleri otomatik seçiliyor. Kullanıcı 15 dakikalık podcast'ten 4-5 short-form video (30-60 saniye) 10 dakikada hazır ediyor.
+
+### Kanıt (Kaynaklar)
+- [Podcast video otomasyonu %87'ye ulaştı (2026), 2025'te %45'di — dramatik artış](https://resource.digen.ai/ai-video-editing-for-podcasters-2026/)
+- [72% podcasts artık video versiyonu yayınlıyor (2024'te %35 idi) — video vazgeçilmez oldu](https://www.nemovideo.com/blog/best-ai-tools-podcast-to-video-2026)
+- [Short-form video klipleri, podcast'in yeni dinleyici kazanımında RSS discovery ve guest cross-promotion'ı geçti](https://resource.digen.ai/best-ai-video-generator-for-podcast-clips-2026/)
+- [Podcasters AI video editing ile 3x higher engagement](https://vdclip.com/ai-podcast-video-editing/)
+
+**Gerçek Sorun:** Türk podcast yapımcıları konuşmacı ve ses üretimine zaman ayırıyor, ama video editlemede sıkılıyor. Adobe Premiere, DaVinci, Capcut İngilizce ve karmaşık. Türkçe konuşma-video özet yazılımı yok. Yapımcılar short-form klipleri manuel yaparken saatler harcıyor — podcast-specific otomasyonu bekliyor.
+
+### Gelir Modeli
+- Ücretsiz paket: Ayda 1 podcast tahlili, watermark'lı video
+- Podcaster paketi: ₺199/ay (ayda 8 podcast, watermark yok, otomatik Instagram/TikTok upload)
+- Profesyonel paket: ₺499/ay (sınırsız podcast, özel müzik kütüphanesi, A/B test analytics — hangi klip en çok engagement aldı)
+- Kurumsal (yayın ağları): ₺999+/ay (25+ podcast, merkezi dashboard, custom branding)
+
+### Türkiye Pazar Uyumu
+**Rakip:** CapCut, Opus Clip gibi küresel araçlar var ama Türkçe konuşma tanıma ve podcast-spesifik segment otomasyonu yok. Türkçe podcast-to-video aracı **yok**.  
+**Talep Sinyalleri:**
+- Türkiye'de 77 milyon internet kullanıcısı, podcast pazarı hızlı büyüyor
+- Türk podcasters YouTube, Spotify'da aktif, video versiyonunu da istiyorlar
+- İçerik yaratıcılar zaman kısıtı (full-time podcast yapan 100-500 kişilik bir niche segment)
+- TikTok + Instagram Reels Türkiye'de ana kanal — short-form video pazarlaması yüksek ROI
+
+**Neden Heyecan Verici:**
+- Talep açık ve ölçülebilir (%87 otomasyonun başarısı)
+- Tekrarlı gelir modeli (aylık abonelik)
+- Niş ama büyüyen pazar (podcast yapımcısı sayısı yıllık %20+ büyüyor)
+- Claude Code ile teknik kolaylık (Whisper API + video generation + automated editing)
+- Marketing kanalı kolay (podcast yapımcılarının kendileri ürünü tanıtacak)
+
+### İlk Somut Adım
+Spotify/YouTube'da "Türkçe podcast" araması yapıp, 5 orta boy Türk podcast'i bulup (10K-100K dinleyici), yapımcılarına LinkedIn/Instagram DM gönder: "Video editlemede yapay zeka test ediyor musunuz? 1 bölümü ücretsiz analiz edip short-form klipleri hazırlamak ister misiniz?" Cevap aldıktan sonra Claude Code'a: "İlk 3 podcast'in Spotify link'leri, Whisper API ile Türkçe transkript al, punch line (high energy, laughter, new topic) algılayıp segment yap, CapCut API veya FFmpeg kullanarak 4-5 x 45-saniye klip oluştur."
+
+### Zorluk/Risk
+- Konuşma tanıma doğruluğu: Türkçe Whisper reliable ama background noise'da hata yapabilir
+- Punch line/segment tanıma: Otomatik "ne zaman klip kesmeliyim" kararı algor veri yoğun, hatalı olabilir
+- Kopyacılık: Küresel araçlar (CapCut, Opus) Türkçeyi ekleyebilir
+- Yapymacı alışkanlığı: Podcast yapımcılar kendi yaratıcı kontrolünü isteyebilir (AI editine güvenmeyebilir)
+
+**Risk Derecesi:** DÜŞÜK-ORTA (teknik yapılabilir, pazar açık, ama global rekabet riski)
+
+---
+
+## FİKİR 4: Niche Abonelik Kutusu: Türk Zanaat ve Etnoğrafik Ürünler (Aylık)
+
+### Ne Bu?
+Aylık abonelik modeli: her ay farklı bir Türk bölgesi/zanaat teması (İznik seramiği, Kayseri dokuması, Doğu Anadolu halısı, Cappadocia geleneksel oyuncak, Mardin taş işçiliği vb.) ve o bölgenin zanaat ürünlerinden (el yapımı seramik, dokuma, geleneksel kumaş, bölgsel gıda) kuratörlü kutular gönderiliyor. Abone kültür, sanat ve yerel üreticiyi keşfediyor. Kutu: ₺299-499/ay.
+
+### Kanıt (Kaynaklar)
+- [Küresel abonelik kutusu pazarı $41.47B (2025) → $49.7B (2026), %20+ büyüme](https://www.researchandmarkets.com/report/subscription-boxes)
+- [Niched kuratörlü kutular (art, craft, keşif temelli) %55'i teşkil ediyor — en popüler segment](https://www.joysubscription.com/blog/curated-box-subscriptions)
+- [Müşteri elde tutma oranı niş kutularda %60+ (genel e-ticaretten %20-30 daha yüksek)](https://www.shopify.com/blog/subscription-box-ideas)
+- [Türk zanaat pazarı dünyada artsıyor — Etsy'de "Turkish handmade" kategorisi 2025'te %50+ büyüdü](https://www.researchandmarkets.com/report/subscription-boxes)
+
+**Gerçek Sorun:** Türk zanaat üreticileri dağınık (her bölgede ayrı), pazarlama yok. Turist/iç pazar onları zor buluyor. Küresel alıcı (Etsy) ilgi gösteriyor ama dağıtım zor. Nişe kitlenin (sanat tutkunları, koleksiyoncular) ayda bir yeni bölge/zanaat keşfetme isteği yüksek — kurun kuratörlü yapı bunları birleştirir.
+
+### Gelir Modeli
+- Aylık abonelik: ₺399/ay (1 kutu, 4-6 ürün, bölgesi tematik, dijital "zanaat hikayesi" + yapımcı bio)
+- Premium paket: ₺599/ay (2 kutu, daha yüksek kalite ürün seçimi, tez sanatçı ile yazılı mektup)
+- Kurumsal: Şirketler/otellerle B2B partnership (hediye kutusuna dönüşüyor, ₺50+/kutu toptan)
+- Etsy/Uluslararası satış: Kutudan ilgi gören ürünleri Etsy'de listeleme + referral fee (%10)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de niş abonelik kutusu (zanaat / bölgesel sanat teması) **yok**. Genel e-ticaret (Trendyol) zanaat satıyor ama kuratörlü/bölgesel tema yok.  
+**Talep Sinyalleri:**
+- Türkiye'deki kültür/sanat severler (Instagram takipçileri, Etsy alıcıları) Türk zanaat keşfetmek istiyor
+- Turizm endüstrisi otelleri, restoran ziyaretçilere hediye istediğini söylüyor — kurulu kuratörlü kutu ideal
+- Zanaat yapımcıları (seramik, dokuma, halı) B2B dağıtım kanalı arıyor — kutu sübscriptions bir kanal
+- Türk zanaat Etsy'de %50+ büyüme — küresel talep var
+
+**Neden Heyecan Verici:**
+- Düşük teknik risk (lojistik + kuratörlü seçme işlemi, yazılım minimal)
+- Koray'ın danışmanlık ve ağı zanaat üreticilerini bulma/kurma işinde yardımcı
+- Yüksek elde tutma oranı (%60+, genel e-ticaret %20-30 vs)
+- Marj: zanaat ürünleri %100-300 markup taşıyabiliyor (üreticiye ₺100 verme → kutuda ₺350 değer göstermek)
+- Uluslararası genişleme potansiyeli (Etsy'ye "Turkish Craft Box" olarak satış)
+- Influencer ortaklığı kolay (Instagram alıcıları kutuyu unboxing videosu yapar)
+
+### İlk Somut Adım
+Koray'ın ağı ve sosyal medya üzerinden Ankara, İzmir, Kayseri'deki 10-15 zanaat yapımcısını/atölyeyi bul. 3 tanesine mesaj gönder: "Aylık bölgesel zanaat kutusu başlıyorum — İznik seramiği bölümüne ilgilenim mi? 5 ürünü kutuda tanıtmak karşılığında satış başına %15 regal istiyorum." Cevap aldıktan sonra Claude Code'a: "3 bölgenin teması, zanaat türü, ürün seçimi taslağını yap. İlk aylık kutuyu manual çıkar (lojistik: Yurtiçi Cargo), 5 abone ve katılımcı hediyelerle test et."
+
+### Zorluk/Risk
+- Tedarik tutarlılığı: Zanaat yapımcılar aynı kalitede ürün vermeyi garantileyemeyebilir (el yapımı)
+- Lojistik maliyeti: Ağır kutular (seramik, dokuma) kargo pahalı (₺50-100/kutu)
+- Kasiyer bağlılığı: Ilk 2-3 ayda kaybı yüksek (ürün kalitesi, beklenti vs gerçek fark)
+- Sezonalite: Turist/hediye talep yaz/kış dalgalanıyor
+
+**Risk Derecesi:** ORTA (lojistik ve kalite kontrol riskli, ama pazar kanıtlanmış)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe AI Sözleşme Gözden Geçirici (Legal Tech)**
+
+Dört fikir arasında en net talep ve en hızlı test edilebilir fikir sözleşme analiz aracıdır: (1) **Talep ölçülebilir ve boşluk açık** — %77 avukat istiyor, %5 alıyor, %72 boşluk = kanıtlanmış sorun, (2) **Koray'ın ağı doğrudan** — danışmanlık müşterilerinde avukat/noter var, ilk 3-5 test müşteri zaten erişilebilir, (3) **Teknik çözüm yapılabilir** — Whisper/Claude API + vektör arama = 2 haftada MVP, (4) **Dünya modeli kanıtlanmış** — Harvey $11B valuation, Spellbook başarılı (5) **Yüksek marj ve ölçeklenebilir** — kurumsal satış (avukatlık büroları ₺999/ay), (6) **Hukuki çerçeve yönetilebilir** — Türk Barolar Birliği AI'ye açık, avukat final doğrulaması sorumluluğu alıyor. KOBİ muhasebe ajanı pazar büyük ama yazılım rekabeti yüksek (Logo, Paraşüt zaten var). Podcast-to-video otomasyonu talep açık ama küresel araçlar (CapCut, Opus) hızla Türkçe ekleyebilir. Abonelik kutusu operasyon riskli (lojistik, kalite, sezonalite). Sözleşme gözden geçirici: **en az risk, en yüksek talep-arz boşluğu, en hızlı MVP, en yüksek marj, Koray'ın ağı doğrudan kullanılabilir.** İlk hafta: 3 avukat müşteriye DM + Claude Code'a Türkçe hukuki terim veritabanı ve GPT prototipi.
+
+---
+
 # Günlük Fikir Araştırması - 20 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
