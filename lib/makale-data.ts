@@ -120,6 +120,16 @@ export const MAKALELER: MakaleMeta[] = [
     readTime: "3 Dakika",
   },
   {
+    slug: "girisimcilik-ekosisteminde-sermayeye-erisim-sorunu",
+    title:
+      "EY Girişimcilik Barometresi 2026: Sermayeye Erişim Neden Hâlâ En Büyük Engel?",
+    excerpt:
+      "Girişimcilerin yüzde 71'i finansmana erişimi, yüzde 70'i ekonomik belirsizliği temel sorun görüyor; öz kaynak yüzde 61'le hâlâ birinci sırada, teşvik ve hibeler ise sadece yüzde 14'te. Ekosistem algısı iyileşirken sermaye musluğu neden aynı kalıyor?",
+    tag: "Yatırım",
+    date: "21 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "bayilik-anlasmasinda-gozden-kacan-madde",
     title: "Bayilik Anlaşmasında Gözden Kaçan Madde: Performans Şartı",
     excerpt:
