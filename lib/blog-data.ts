@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "vergi-tesvik-kredibilite-analizi-neden-gerekli-2026",
+    title: "İşletmenize AYNA Tutuyoruz: Vergi Risk, Teşvik/Fırsat ve Kredibilite Analizi Neden Her KOBİ'nin İhtiyacı?",
+    excerpt: "Çoğu işletme, taşıdığı vergi riskini bir incelemeyle, kaçırdığı teşvik fırsatını bir rakibinin haberiyle, bankanın kendisini nasıl gördüğünü ise bir kredi reddiyle öğreniyor. Vergi Risk Analizi, Teşvik ve Fırsat Analizi, Kredibilite ve Finansal Analiz paketlerinin ne işe yaradığını örnek senaryolarla anlatan rehber.",
+    category: "VERGİ & FİNANSAL YÖNETİM • DANIŞMANLIK • 2026",
+    date: "2026",
+    readTime: "7 Dakika",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-arge-urge-inovasyon-destek-programi-2026",
     title: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı: Kimler Başvurabilir, Destek Tutarları Nedir?",
     excerpt: "Girişimcilerin ve KOBİ'lerin herhangi bir tarihte başvurabildiği KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'nda 900.000 TL'ye varan destek üst limiti, gider kalemleri, başvuru şartları ve KBS üzerinden adım adım süreçle 2026 güncel rehber.",
