@@ -1,57 +1,83 @@
 {
-  "sonGuncelleme": "2026-08-20",
+  "sonGuncelleme": "2026-08-21",
   "programlar": [
     {
       "id": "kosgeb-girisimci-destek-2026-2",
       "ad": "Girişimci Destek Programı İş Geliştirme Çağrısı - 2. Dönem",
       "kurum": "KOSGEB",
-      "durum": "acik",
-      "sonBasvuruTarihi": null,
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2026-05-08",
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler",
       "ilkTespitTarihi": "2026-08-20",
-      "yeniIlanBildirildi": false,
+      "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında aktif olduğu tespit edildi"
+      "not": "2. dönem son başvuru tarihi 8 Mayıs 2026 olarak doğrulandı - program kapandı"
     },
     {
       "id": "kosgeb-kapasite-gelistirme-2026-2",
       "ad": "Kapasite Geliştirme Destek Programı - 2. Başvuru Dönemi",
       "kurum": "KOSGEB",
-      "durum": "acik",
-      "sonBasvuruTarihi": null,
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2026-06-30",
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler",
       "ilkTespitTarihi": "2026-08-20",
-      "yeniIlanBildirildi": false,
+      "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında aktif olduğu tespit edildi"
+      "not": "2. başvuru dönemi son tarihi 30 Haziran 2026 - program kapandı"
     },
     {
-      "id": "tubitak-1501-sanayi-arge",
-      "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+      "id": "tubitak-1501-sanayi-arge-1-cagri",
+      "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (1. Çağrı)",
       "kurum": "TÜBİTAK",
-      "durum": "acik",
-      "sonBasvuruTarihi": null,
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2026-03-30",
       "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-programlar",
       "ilkTespitTarihi": "2026-08-20",
-      "yeniIlanBildirildi": false,
+      "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında tespit edildi"
+      "not": "1. çağrı 30 Mart 2026'da kapandı"
     },
     {
-      "id": "tubitak-1507-kobi-arge-baslangic",
-      "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+      "id": "tubitak-1501-sanayi-arge-2-cagri",
+      "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (2. Çağrı)",
       "kurum": "TÜBİTAK",
       "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-programlar",
-      "ilkTespitTarihi": "2026-08-20",
-      "yeniIlanBildirildi": false,
+      "sonBasvuruTarihi": "2026-10-26",
+      "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
+      "ilkTespitTarihi": "2026-08-21",
+      "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Tarih doğrulanması gerekli - ilk tarama sırasında tespit edildi"
+      "not": "2. çağrı 20 Temmuz 2026'da açıldı - son başvuru 26 Ekim 2026 - e-posta gönderildi"
+    },
+    {
+      "id": "tubitak-1507-kobi-arge-baslangic-1-cagri",
+      "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (1. Çağrı)",
+      "kurum": "TÜBİTAK",
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2026-03-16",
+      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-programlar",
+      "ilkTespitTarihi": "2026-08-20",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "1. çağrı 16 Mart 2026'da kapandı"
+    },
+    {
+      "id": "tubitak-1507-kobi-arge-baslangic-2-cagri",
+      "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (2. Çağrı)",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-11-11",
+      "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
+      "ilkTespitTarihi": "2026-08-21",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "2. çağrı 20 Temmuz 2026'da açıldı - son başvuru 11 Kasım 2026 - e-posta gönderildi"
     }
   ]
 }
