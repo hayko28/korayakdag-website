@@ -305,6 +305,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: 'Agentic commerce' kavramının KOBİ gündemine girmesi, e-ihracat yapan işletmelerin önümüzdeki dönemde yapay zekâ ajanlarının ürün ve fiyat kararlarına dahil olacağı bir pazar ortamına şimdiden hazırlanması gerektiğine işaret ediyor.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "24 Temmuz 2026 (31 Temmuz 2026'da Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-08-21",
+    baslik:
+      "7590 sayılı torba kanunla vergi sisteminde kapsamlı değişiklikler yürürlüğe girdi",
+    ozet:
+      "24 Temmuz 2026 tarihli ve 7590 sayılı Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair Kanun, 31 Temmuz 2026 tarihli ve 33326 sayılı Resmî Gazete'de yayımlandı. Vergi, sosyal güvenlik, ulaştırma ve enerji dahil 22 farklı mevzuatta değişiklik yapan kanunla; nükleer enerji yatırımlarında örtülü sermaye sınırı ve damga vergisi istisnası, inşaat işlerinde KDV iadesi ile makine-teçhizat teslimlerinde KDV istisnası (1 Ağustos 2026 itibarıyla) ve binek otomobillerde asgari maktu ÖTV uygulaması gibi düzenlemeler getirildi.",
+    kaynakUrl:
+      "https://www.pwc.com.tr/tr/hizmetlerimiz/vergi/bultenler/2026/7590-sayili-kanunun-vergi-duzenlemeleri.html",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Kanunun kapsamı çok geniş olsa da, KDV iadesi ve istisna düzenlemeleri özellikle inşaat ile makine-teçhizat üreten veya ithal eden işletmeler için doğrudan nakit akışı etkisi yaratabilir; mali müşavirlerin bu maddeleri işletmeye özel olarak değerlendirmesini öneririm.",
+  },
+  {
+    kurum: "Türk Patent",
+    tarih: "10 Ağustos 2026 (2026 ilk 6 ay verileri)",
+    eklendiTarihi: "2026-08-21",
+    baslik:
+      "TÜRKPATENT verileri: Yerli patent başvuruları 2026'nın ilk yarısında %31 arttı",
+    ozet:
+      "Türk Patent ve Marka Kurumu'nun (TÜRKPATENT) açıkladığı verilere göre, 2026'nın ilk altı ayında yerli patent başvuruları bir önceki yılın aynı dönemine göre %31 artışla 3.538'den 4.641'e, yerli faydalı model başvuruları ise %23 artışla 2.021'e yükseldi. Aynı dönemde 76.215 marka, 16.567 yerli tasarım ve 173 coğrafi işaret başvurusu yapıldı; yerli marka tescilleri 49.694'e, yerli tasarım tescilleri ise 11.608'e ulaştı.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/turkpatente-6-ayda-4-bin-641-yerli-patent-basvurusu-yapildi/4022851",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Patent ve tasarım başvurularındaki bu artış, Ar-Ge yapan KOBİ'lerin sınai mülkiyet haklarını korumaya daha fazla önem verdiğini gösteriyor; ürün veya tasarım geliştiren işletmelere marka ve patent tescilini büyüme stratejilerinin erken bir adımı olarak planlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
