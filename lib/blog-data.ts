@@ -280,6 +280,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "kosgeb-kobi-dijital-donusum-destek-programi-2026",
+    title: "KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?",
+    excerpt: "EBRD iş birliğiyle yürütülen program kapsamında imalat sektöründeki KOBİ'ler, dijital olgunluk değerlendirme raporuna dayalı olarak 1-20 milyon TL yatırım kredisi ve geri ödemesiz faiz desteği kullanabiliyor. 11 Mayıs 2026 güncel yönergeye göre şartlar, gerekli belgeler ve başvuru süreci.",
+    category: "KOSGEB • DİJİTAL DÖNÜŞÜM • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "anonim-limited-sirket-asgari-sermaye-artirimi-2026",
     title: "Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: 31 Aralık 2026 Son Tarih",
     excerpt: "7511 sayılı Kanun'la Türk Ticaret Kanunu'na eklenen Geçici Madde 15 uyarınca, sermayesi asgari tutarın altında kalan anonim şirketler (250.000 TL) ve limited şirketler (50.000 TL) 31 Aralık 2026'ya kadar sermaye artırımı yapmak zorunda. Kapsam, adım adım süreç, artırım kaynakları ve artırmama halinde infisah riskiyle güncel rehber.",
