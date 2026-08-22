@@ -305,5 +305,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "doviz-donusum-destegi-2026-yeni-donem",
+    title: "Döviz Dönüşüm Desteği 2026: 2026/11 Sayılı Tebliğ ile İhracatçılar İçin Neler Değişiyor?",
+    excerpt: "1 Ağustos 2026'da yürürlüğe giren 2026/11 sayılı Tebliğ, döviz dönüşüm desteğinde 'döviz alma taahhüdü' esasını kaldırıp 'döviz pozisyonu' esasına geçti. %2-%3 destek oranları, ihracat bedelinin %35'inin satış yükümlülüğü, 1 Ekim 2026'da başlayacak yeni sistem ve ağırlaştırılan yaptırımlarla ihracatçılar için güncel rehber.",
+    category: "İHRACAT DESTEKLERİ • KAMBİYO MEVZUATI • 2026",
+    date: "2026",
+    readTime: "10 Dakika",
+    image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
