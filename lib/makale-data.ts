@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sgk-borc-yapilandirmasinda-son-hafta",
+    title: "SGK Borç Yapılandırmasında Son Hafta: 72 Ay Taksit İçin 31 Ağustos",
+    excerpt:
+      "7582 sayılı Kanun'la tecil süresi 36 aydan 72 aya çıktı, teminatsız tecil sınırı yükseldi. Ama 31 Ağustos'tan sonra hem avantajın bir kısmı hem de %29'luk faiz oranı kayboluyor. İşverenler için pratik bir bakış.",
+    tag: "Görüş",
+    date: "22 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yuksek-faiz-reel-sektoru-nasil-sikistiriyor",
     title: "Takipteki Krediler %81 Arttı: Yüksek Faiz Reel Sektörü Nasıl Sıkıştırıyor?",
     excerpt:
