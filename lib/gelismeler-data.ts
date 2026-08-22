@@ -333,6 +333,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Patent ve tasarım başvurularındaki bu artış, Ar-Ge yapan KOBİ'lerin sınai mülkiyet haklarını korumaya daha fazla önem verdiğini gösteriyor; ürün veya tasarım geliştiren işletmelere marka ve patent tescilini büyüme stratejilerinin erken bir adımı olarak planlamalarını öneririm.",
   },
+  {
+    kurum: "KGK",
+    tarih: "7 Ağustos 2026",
+    eklendiTarihi: "2026-08-22",
+    baslik:
+      "KGK, şirketlerin 2026 hesap döneminde bağımsız denetime tabi olup olmadığını sorgulayabileceği sistemi kullanıma açtı",
+    ozet:
+      "Kamu Gözetimi Kurumu (KGK), 4 Mayıs 2026 tarihli kurul kararıyla güncellenen ve 01.01.2026'da başlayan hesap dönemlerinden itibaren uygulanan yeni eşik değerlere göre şirketlerin 2026 hesap döneminde bağımsız denetime tabi olup olmadığını sorgulayabilecekleri elektronik sistemi 7 Ağustos 2026'da devreye aldı. Şirketlerin denetim kapsamına girip girmediğini belirleyen üç kriterden en az ikisinin üst üste iki hesap döneminde sağlanması esas alınıyor.",
+    kaynakUrl: "https://dtsorgu.kgk.gov.tr/giris.aspx",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Eşik değerlerin değişmesi, bir önceki yıl denetim kapsamı dışında kalan bazı şirketleri de 2026'da kapsam içine alabilir; büyüme aşamasındaki şirketlere bu sorgulama sistemini vakit kaybetmeden kontrol etmelerini öneririm — denetim yükümlülüğü, kurumsallaşma ve olası halka arz/yatırım süreçlerinin de bir ön koşulu.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "1 Ağustos 2026 (Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-08-22",
+    baslik:
+      "Döviz dönüşüm desteği 31 Ocak 2027'ye uzatıldı, sistem 1 Ekim 2026'dan itibaren katma değer esaslı işleyecek",
+    ozet:
+      "1 Ağustos 2026 tarihli ve 33327 sayılı Resmî Gazete'de yayımlanan 2026/11 sayılı Tebliğ ile ihracatçılara yönelik döviz dönüşüm desteğinin geçici %3'lük oranının uygulama süresi 31 Ocak 2027'ye kadar uzatıldı. Aynı tebliğle 1 Ekim 2026'dan itibaren desteğin firmanın döviz pozisyonu ve yarattığı katma değer esas alınarak hesaplanacağı yeni bir sisteme geçileceği, uzun süredir uygulanan 'döviz almama taahhüdü' şartının ise kaldırılacağı duyuruldu.",
+    kaynakUrl:
+      "https://www.bloomberght.com/tcmb-den-doviz-donusum-desteginde-yeni-duzenleme-3784465",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: 1 Ekim 2026'da yürürlüğe girecek katma değer esaslı yeni sistem, özellikle ithal girdi oranı yüksek ihracatçılar için destek tutarını değiştirebilir; ihracatçı müşterilerimize yeni hesaplama yöntemini şimdiden mali müşavirleriyle birlikte modellemelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
