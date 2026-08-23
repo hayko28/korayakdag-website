@@ -147,4 +147,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "20 Ağustos 2026",
     readTime: "3 Dakika",
   },
+  {
+    slug: "genc-kadinlarda-issizlik-neden-iki-kat",
+    title: "Genç Kadınlarda İşsizlik Neden Erkeklerin Neredeyse İki Katı?",
+    excerpt:
+      "TÜİK'in ikinci çeyrek verilerine göre genç işsizlik geriledi ama cinsiyet farkı büyük: genç erkeklerde %11, genç kadınlarda %19,3. Bu fark KOBİ'lerin işe alım stratejisine ve kullanılmayan bir teşvike ne söylüyor?",
+    tag: "Görüş",
+    date: "23 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
