@@ -360,6 +360,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: 1 Ekim 2026'da yürürlüğe girecek katma değer esaslı yeni sistem, özellikle ithal girdi oranı yüksek ihracatçılar için destek tutarını değiştirebilir; ihracatçı müşterilerimize yeni hesaplama yöntemini şimdiden mali müşavirleriyle birlikte modellemelerini öneririm.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "22 Ağustos 2026",
+    eklendiTarihi: "2026-08-23",
+    baslik:
+      "KOSGEB Kapasite Geliştirme Destek Programı'nın 2026 yılı 3. başvuru dönemi açıldı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır'ın açıklamasına göre, KOSGEB Kapasite Geliştirme Destek Programı'nın 2026 yılı üçüncü başvuru dönemi 22 Ağustos 2026'da başladı; başvurular 15 Eylül 2026'ya kadar KOBİ Bilgi Sistemi üzerinden alınacak. Program kapsamında işletmelere 36 ay vadeli kredilerde 30 milyon TL'ye kadar finansman, 20 puanlık faiz/kâr payı desteği ve kefalet imkânı sağlanıyor; savunma, uzay ve havacılık alanında tedarikçi geliştirme projelerinde üst limit 30 milyon TL, hızlı büyüyen veya Teknogirişim Rozetine sahip işletmelerde ise 20 milyon TL olarak uygulanıyor.",
+    kaynakUrl:
+      "https://www.sabah.com.tr/ekonomi/kucuk-esnafa-30-milyon-tl-finansman-destegi-kosgeb-basvurulari-basladi-7646332",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Şubat ve Haziran dönemlerinde başvuramayan veya projesini yetiştiremeyen üretici KOBİ'lere, 15 Eylül'e kadar süren bu üçüncü dönemi kaçırmamalarını öneririm; özellikle Teknogirişim Rozetine sahip hızlı büyüyen işletmeler için üst limit ve faiz desteği oldukça cazip.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "13 Ağustos 2026 (19 Ağustos 2026'da duyuruldu)",
+    eklendiTarihi: "2026-08-23",
+    baslik:
+      "Reklam Kurulu 372. toplantısında tüketici yorumlarını yayımlamayan firmaya haksız ticari uygulama cezası",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 13 Ağustos 2026 tarihli 372. toplantısında 105 dosyayı görüştü; mevzuata aykırı bulunan 87 dosya hakkında toplam 32 milyon 683 bin TL idari para cezası uygulanmasına karar verdi. Kurul, bir firmanın tüketici yorumlarını somut bir gerekçe göstermeden genel kurallara aykırılık gerekçesiyle yayımlamamasını haksız ticari uygulama olarak değerlendirip bu firmaya 2 milyon 167 bin TL ceza kesti; Bakanlık, 2026'nın ilk 7 ayında incelenen yaklaşık 26 bin başvuru sonucunda toplam 218 milyon TL'yi aşan idari para cezası uygulandığını açıkladı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-aldatici-reklamlar-ve-haksiz-ticari-uygulamalara-karsi-mucadelede-hiz-kesmiyor",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Web sitesinde veya pazaryeri mağazasında müşteri yorumu/değerlendirme sistemi kullanan işletmelere, olumsuz yorumları 'genel kural ihlali' gibi muğlak gerekçelerle filtrelememelerini öneririm; Kurul bu tür uygulamaları artık somut şekilde haksız ticari uygulama sayıp idari para cezasına bağlıyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
