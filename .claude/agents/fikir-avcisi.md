@@ -145,6 +145,8 @@ Yeni girdiyi dosyanın **en başına** ekle (en güncel tarih en üstte), şu fo
 
 Dosyayı güncelledikten sonra git ile commit'le ve `main` branch'ine push'la (commit mesajı: "Fikir Avcısı: [TARİH] günlük fikirler").
 
+**GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma, hiçbir koşulda.** `git push` reddedilirse veya `git pull --rebase origin main` "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase/cherry-pick'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir (mümkünse bildirim gönder). Böyle bir çakışma normal değildir ve uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — bunu gözetimsiz bir çalıştırmada force push ile "çözmeye" çalışmak gerçek commit geçmişini (günler süren gerçek işi) geri dönüşü olmayan şekilde silebilir. O günün fikirlerinin push edilememesi, geçmişi silmekten çok daha ehven bir kayıptır — asla riske atma, sorunu insana bırak.
+
 ---
 
 ## 7. BİLDİRİM

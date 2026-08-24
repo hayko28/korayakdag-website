@@ -88,6 +88,8 @@ Taslak (ve varsa yeni makale) veritabanına eklendikten sonra, kullanıcıya kı
 1. Yeni bir makale sayfası oluşturduysan `npx tsc --noEmit` ve `npm run build` çalıştır — hata varsa düzelt, build başarısızsa yayınlama (bu durumda taslak dosyasını da commit'leme).
 2. Taslak dosyası (`research/linkedin-taslaklar/*.json`) ve varsa yeni makale dosyaları için commit/push **zorunlu ve otomatik** — bu konuda onay bekleme (madde 5.2). Taslağın kendisi yine de LinkedIn'de otomatik PAYLAŞILMIYOR; sadece panelde görünmesi için push gerekiyor, gerçek paylaşım kararı hep Koray'a ait.
 
+**GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya `git pull --rebase origin main` "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir. Böyle bir çakışma uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — gözetimsiz bir çalıştırmada bunu force push ile "çözmek" gerçek commit geçmişini silebilir; o günün taslağının panelde görünmemesi, geçmişi silmekten çok daha ehven bir kayıptır.
+
 **Hata durumunda spam etme:** Bir kez deneyip olmuyorsa yarım bırak, mevcut durumu özetleyen bir rapor ver.
 
 # SINIRLAR

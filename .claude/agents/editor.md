@@ -53,6 +53,7 @@ Teknik: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.t
 1. `npx tsc --noEmit` — hata varsa düzelt.
 2. `npm run build` — hata varsa düzelt.
 3. **Bu agent doğrudan main branch'e push etmez.** Build başarılı olduktan sonra dosyaları oluşturur/düzenler ve durur; canlıya gönderme (commit/push/deploy) kararı kullanıcıya aittir. Bunun tek istisnası: kullanıcı aynı görev içinde açıkça "commit et / push et / canlıya al" derse — bu durumda `git pull --rebase origin main` sonrası main'e push et.
+4. **GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya `git pull --rebase origin main` "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir (mümkünse bildirim gönder). Böyle bir çakışma uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — gözetimsiz bir çalıştırmada bunu force push ile "çözmek" gerçek commit geçmişini silebilir.
 
 **Hata durumunda spam etme:** Build/push bir kez denemene rağmen başarısız oluyorsa, aynı işlemi tekrar tekrar deneme — hatayı tespit edip düzeltmeye çalış, yine de olmuyorsa durumu özetle ve bırak.
 

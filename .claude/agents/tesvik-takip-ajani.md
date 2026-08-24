@@ -132,6 +132,7 @@ Bu dosyayı düzenlemekten öte hiçbir blog dosyasına dokunma — güncelleme 
 - `research/tesvik-takip/programlar.json` ve (varsa) `research/tesvik-takip/blog-guncelleme-gerekli.md` dışında başka dosyaya dokunma.
 - Değişiklik varsa commit et (mesaj: "Teşvik Takip: [TARİH] — [kısa özet]") ve `git pull --rebase origin main` sonrası `main` branch'ine push et.
 - Değişiklik yoksa commit atma.
+- **GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya rebase "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir. Böyle bir çakışma uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — gözetimsiz bir çalıştırmada bunu force push ile "çözmek" gerçek commit geçmişini silebilir.
 
 ---
 

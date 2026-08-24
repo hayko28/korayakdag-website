@@ -411,6 +411,7 @@ ile ilişkili olmalı.
 - Mevcut tasarım dilini ve responsive yapıyı koru, gereksiz yeni component oluşturma.
 - `npm run build` çalıştır; hata varsa kendin düzelt, tekrar dene. Build başarısızsa yayınlama/rapor etme.
 - **Bu agent doğrudan main branch'e push etmez.** Build başarılı olduktan sonra dosyaları oluşturur/düzenler ve durur; canlıya gönderme (commit/push/deploy) kararı kullanıcıya aittir. Bunun tek istisnası: kullanıcı aynı görev içinde açıkça "commit et / push et / canlıya al" derse.
+- **GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya `git pull --rebase origin main` "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase/merge'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir (mümkünse bildirim gönder). Bu tür bir çakışma, uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — otomatik/gözetimsiz bir çalıştırmada bunu zorla "çözmek" (force push) gerçek commit geçmişini silebilir; bunu asla riske atma, sorunu insana bırak.
 
 ---
 
