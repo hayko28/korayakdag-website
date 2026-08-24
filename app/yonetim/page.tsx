@@ -764,6 +764,7 @@ function LinkedInDraftCard({
   const [copied, setCopied] = useState(false);
   const [postState, setPostState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [postError, setPostError] = useState("");
+  const [postWarning, setPostWarning] = useState("");
   const [editing, setEditing] = useState(false);
   const [draftText, setDraftText] = useState(draft.icerik);
   const [saving, setSaving] = useState(false);
@@ -789,6 +790,7 @@ function LinkedInDraftCard({
     if (!confirm("Bu yazı gerçekten LinkedIn hesabında yayınlanacak. Emin misin?")) return;
     setPostState("sending");
     setPostError("");
+    setPostWarning("");
     try {
       const r = await fetch("/api/linkedin/post", {
         method: "POST",
@@ -797,10 +799,12 @@ function LinkedInDraftCard({
           icerik: draft.icerik,
           gorselUrl: draft.gorselUrl,
           videoUrl: draft.videoUrl,
+          kaynakUrl: draft.kaynakUrl,
         }),
       });
       const data = await r.json();
       if (!r.ok) throw new Error(data.error || "Bilinmeyen hata");
+      if (data.warning) setPostWarning(data.warning);
       setPostState("done");
     } catch (e) {
       setPostState("error");
@@ -864,6 +868,9 @@ function LinkedInDraftCard({
       </div>
       {postState === "error" && (
         <p className="mt-2 text-xs font-semibold text-red-600">{postError}</p>
+      )}
+      {postWarning && (
+        <p className="mt-2 text-xs font-semibold text-amber-600">{postWarning}</p>
       )}
       {editing ? (
         <div className="mt-3 space-y-2">
