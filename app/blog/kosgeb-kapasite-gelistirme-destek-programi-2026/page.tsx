@@ -4,12 +4,13 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title:
-    "KOSGEB Kapasite Geliştirme Destek Programı 2026 | Şartlar ve Destek Tutarları | Koray Akdağ",
+    "KOSGEB Kapasite Geliştirme Destek Programı 2026 | 3. Dönem Başvuruları Açık | Koray Akdağ",
   description:
-    "KOSGEB Kapasite Geliştirme Destek Programı 2026: kimler başvurabilir, 20 milyon TL'ye kadar kredi limiti, 20 puan faiz/kâr payı desteği, desteklenen giderler, başvuru şartları ve süreci.",
+    "KOSGEB Kapasite Geliştirme Destek Programı 3. dönem başvuruları 22 Ağustos - 15 Eylül 2026 arasında açık: kimler başvurabilir, 30 milyon TL'ye kadar kredi limiti, 20 puan faiz/kâr payı desteği, desteklenen giderler, başvuru şartları ve süreci.",
   keywords: [
     "KOSGEB Kapasite Geliştirme Destek Programı",
     "KOSGEB destekleri 2026",
+    "KOSGEB 3. dönem başvurusu",
     "KOSGEB kredi faiz desteği",
     "KOBİ destekleri 2026",
     "KOSGEB başvuru şartları",
@@ -23,12 +24,22 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="KOSGEB Kapasite Geliştirme Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?"
-      description="Üretim kapasitesini artırmak isteyen KOBİ'ler için 20 milyon TL'ye kadar kredi limiti ve 20 puana varan geri ödemesiz faiz/kâr payı desteği sunan programın şartları, desteklenen giderler, başvuru süreci ve 2026 takvimi."
+      description="3. dönem başvuruları 22 Ağustos - 15 Eylül 2026 arasında açık: üretim kapasitesini artırmak isteyen KOBİ'ler için 30 milyon TL'ye kadar kredi limiti ve 20 puana varan geri ödemesiz faiz/kâr payı desteği sunan programın şartları, desteklenen giderler, başvuru süreci ve güncel takvimi."
       category="KOSGEB • DEVLET DESTEKLERİ • 2026"
       date="2026"
-      readTime="12 Dakika"
+      readTime="13 Dakika"
       slug="kosgeb-kapasite-gelistirme-destek-programi-2026"
     >
+        <div className="mb-10 rounded-2xl border-l-4 border-green-500 bg-green-50 p-6">
+          <p className="text-lg font-semibold text-green-800">
+            🟢 Güncelleme (24 Ağustos 2026): Programın 2026 yılı 3. başvuru
+            dönemi 22 Ağustos 2026&apos;da başladı, son başvuru tarihi 15 Eylül
+            2026. Genel kredi üst limiti bu dönem için 30 milyon TL&apos;ye
+            yükseltildi. Aşağıdaki 5. bölümde güncel takvimi ve tutarları
+            bulabilirsiniz.
+          </p>
+        </div>
+
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
             📌 Bu Rehberde Neler Bulacaksınız?
@@ -216,12 +227,16 @@ export default function BlogPage() {
               </thead>
               <tbody>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-5 font-semibold">Kredi Üst Limiti (genel)</td>
-                  <td className="p-5">20.000.000 TL</td>
+                  <td className="p-5 font-semibold">Kredi Üst Limiti (genel – 2026/3. dönem)</td>
+                  <td className="p-5">30.000.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Kredi Üst Limiti (savunma, havacılık, uzay tedarikçileri)</td>
                   <td className="p-5">30.000.000 TL</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-5 font-semibold">Kredi Üst Limiti (teknogirişim rozetli / hızlı büyüyen işletmeler)</td>
+                  <td className="p-5">20.000.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Kredi Alt Limiti</td>
@@ -245,6 +260,16 @@ export default function BlogPage() {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className="mt-8 rounded-2xl border-l-4 border-yellow-400 bg-yellow-50 p-6">
+            <p className="text-gray-700">
+              ⚠️ Genel kredi üst limitinin 30 milyon TL&apos;ye yükseltilmesi
+              2026 yılı 3. başvuru dönemi itibarıyla kamuoyuna yansıyan güncel
+              bir gelişmedir. KOSGEB&apos;in resmî Başvuru Kılavuzu&apos;nun
+              her dönem yeniden yayımlanabildiği dikkate alınarak, başvuru
+              anında güncel tutarı KOBİ Bilgi Sistemi üzerindeki ilgili dönem
+              duyurusundan teyit etmeniz önerilir.
+            </p>
           </div>
           <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
             <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
@@ -325,7 +350,7 @@ export default function BlogPage() {
             kapanmaktadır. 2026 yılı için KOSGEB tarafından ilan edilen
             dönemler şu şekildedir:
           </p>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-xl border p-6 shadow-sm">
               <h3 className="mb-3 text-xl font-bold text-[#071A2F]">1. Dönem</h3>
               <p className="text-gray-700">3 Şubat 2026 – 28 Şubat 2026</p>
@@ -334,21 +359,29 @@ export default function BlogPage() {
               <h3 className="mb-3 text-xl font-bold text-[#071A2F]">2. Dönem</h3>
               <p className="text-gray-700">6 Haziran 2026 – 30 Haziran 2026</p>
             </div>
+            <div className="rounded-xl border-2 border-green-500 bg-green-50 p-6 shadow-sm">
+              <h3 className="mb-3 text-xl font-bold text-green-700">3. Dönem (Başvuru Açık)</h3>
+              <p className="font-semibold text-gray-800">22 Ağustos 2026 – 15 Eylül 2026</p>
+            </div>
           </div>
           <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              📅 Ağustos 2026 İtibarıyla Durum
+              📅 Ağustos 2026 İtibarıyla Durum: Başvurular Açık
             </h3>
             <p className="leading-8 text-gray-700">
-              Bu yazının yayımlandığı tarih itibarıyla 2026 yılının 1. ve 2.
-              başvuru dönemleri tamamlanmış olup yeni bir döneme ilişkin resmî
-              tarih henüz KOSGEB tarafından ilan edilmemiştir. Program önceki
-              yıllarda yıl içinde birden fazla dönem halinde açıldığından,
-              yeni bir başvuru penceresi ilan edilme ihtimaline karşı proje
-              dosyanızı, mali tablolarınızı ve teklif almanız gereken banka
-              görüşmelerini önceden hazırlamanız başvuru anında zaman kaybını
-              önler. Güncel duyurular KOSGEB&apos;in resmî internet sitesi ve
-              KOBİ Bilgi Sistemi üzerinden yayımlanmaktadır.
+              Program 2026 yılında üçüncü kez başvuruya açıldı: 3. dönem
+              başvuruları 22 Ağustos 2026&apos;da başladı ve son başvuru
+              tarihi 15 Eylül 2026 olarak ilan edildi. Bu dönemde genel kredi
+              üst limitinin 30 milyon TL&apos;ye yükseltildiği, savunma,
+              havacılık ve uzay tedarikçisi geliştirme projelerinde de aynı
+              şekilde 30 milyon TL&apos;lik üst limitin korunduğu, teknogirişim
+              rozeti bulunan veya hızlı büyüyen işletme tanımına giren
+              projelerde ise 20 milyon TL&apos;lik limitin uygulandığı
+              bildiriliyor. Son başvuru tarihine yalnızca birkaç hafta kaldığı
+              için proje dosyanızı, mali tablolarınızı ve teklif almanız
+              gereken banka görüşmelerini hızlı ilerletmeniz kritik önemde.
+              Güncel duyurular ve kesin tutarlar KOSGEB&apos;in resmî internet
+              sitesi ve KOBİ Bilgi Sistemi üzerinden yayımlanmaktadır.
             </p>
           </div>
         </section>
@@ -445,6 +478,17 @@ export default function BlogPage() {
           <div className="space-y-6">
             <div className="rounded-2xl border p-8">
               <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+                Şu anda başvuru dönemi açık mı?
+              </h3>
+              <p className="leading-8 text-gray-700">
+                Evet. 2026 yılı 3. başvuru dönemi 22 Ağustos 2026&apos;da
+                başladı ve 15 Eylül 2026&apos;da sona erecek. Bu tarihten
+                sonra başvuru yapabilmek için KOSGEB&apos;in yeni bir dönem
+                ilan etmesi gerekir.
+              </p>
+            </div>
+            <div className="rounded-2xl border p-8">
+              <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
                 Program hibe mi, kredi mi?
               </h3>
               <p className="leading-8 text-gray-700">
@@ -509,12 +553,15 @@ export default function BlogPage() {
           <p className="mb-8 text-lg leading-9 text-gray-700">
             KOSGEB Kapasite Geliştirme Destek Programı, üretim yapan ve
             teknoloji odaklı hizmet sektörlerinde faaliyet gösteren
-            KOBİ&apos;ler için 20 milyon TL&apos;ye kadar kredi limiti ve
+            KOBİ&apos;ler için 30 milyon TL&apos;ye kadar kredi limiti ve
             20 puana varan geri ödemesiz faiz desteğiyle klasik KOSGEB
-            hibelerinin çok üzerinde bir finansman hacmi sunuyor. Ancak
-            programın kredi temelli yapısı, banka süreçleri ve KOBİ Bilgi
-            Sistemi üzerindeki başvuru detayları doğru yönetilmediğinde
-            zaman kaybına ve reddedilen başvurulara yol açabiliyor.
+            hibelerinin çok üzerinde bir finansman hacmi sunuyor. 2026
+            yılının 3. dönemi 15 Eylül 2026&apos;da kapanacağı için
+            başvurusunu değerlendiren işletmelerin vakit kaybetmeden harekete
+            geçmesi gerekiyor. Programın kredi temelli yapısı, banka
+            süreçleri ve KOBİ Bilgi Sistemi üzerindeki başvuru detayları
+            doğru yönetilmediğinde zaman kaybına ve reddedilen başvurulara
+            yol açabiliyor.
           </p>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             Şirketinizin bu programdan ve diğer güncel devlet destek/teşvik
