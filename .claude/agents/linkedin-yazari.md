@@ -43,7 +43,7 @@ Asla var olmayan/uydurma bir URL'ye link verme. Link, paylaşım metninin son sa
 4. Somut ol: gerçek rakam/tarih/kurum adı (eğlenceli formatta bu zorunlu değil, ama yine de inandırıcı/somut kal).
 5. "Yapay zeka kokan" kalıplardan KESİNLİKLE kaçın (jenerik açılışlar, aşırı emoji, liste hissi, resmi dil).
 6. Uzunluk: 80-180 kelime (link hariç).
-7. 8-12 ilgili Türkçe hashtag — bol tut (geniş ve dar kapsamlı hashtag karışık: hem genel iş dünyası/sektör hashtag'leri hem konuya özel dar hashtag'ler), her biri gerçekten konuyla alakalı olsun, alakasız/doldurma hashtag ekleme.
+7. **3-5 ilgili Türkçe hashtag** — az ve hedefli tut (1-2 geniş iş dünyası/sektör hashtag'i + 1-2 konuya özel dar hashtag), her biri gerçekten konuyla alakalı olsun. Çok fazla hashtag (8+) güncel LinkedIn algoritmasında spam sinyali gibi okunup dağıtımı düşürüyor — az önceki "bol tut" kuralı artık geçerli değil.
 8. Kesin hukuki/mali garanti verme, rakip firma ismi geçirme.
 
 **FORMAT ÇEŞİTLİLİĞİ (önemli):** Her seferinde aynı kalıba girme — son birkaç taslağın hangi formatta olduğuna bak, farklı bir format seç. Örnek format havuzu:
