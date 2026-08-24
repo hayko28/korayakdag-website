@@ -474,6 +474,157 @@ export default function BlogPage() {
             </p>
           </div>
 
+          <div className="mb-14 rounded-2xl border-2 border-[#071A2F] bg-white p-8 shadow-sm">
+            <h3 className="mb-2 text-2xl font-bold text-[#071A2F]">
+              📖 Hikaye: 10 Milyon TL&apos;lik Bir Kredi Baştan Sona Nasıl İşliyor?
+            </h3>
+            <p className="mb-8 leading-8 text-gray-700">
+              Bir işletme KOSGEB&apos;e başvurdu, Kurul{" "}
+              <strong>10.000.000 TL</strong> kredi ve <strong>20 puan</strong>{" "}
+              destekle onay verdi. Sonrasında gerçekte ne oluyor? Aşağıda,
+              KOSGEB&apos;in kendi Başvuru Kılavuzu&apos;ndaki süreç akışına
+              dayanan adım adım anlatım var.
+            </p>
+
+            <div className="space-y-8">
+              <div className="flex gap-5">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#071A2F] text-lg font-bold text-white">1</div>
+                <div>
+                  <h4 className="text-lg font-bold text-[#071A2F]">Banka kredinin tamamını hesaba yatırıyor mu?</h4>
+                  <p className="mt-2 leading-7 text-gray-700">
+                    Değişir. KOSGEB Kılavuzu&apos;na göre, Kurul&apos;un onayladığı
+                    toplam tutar, talebe göre <strong>tek seferde</strong> veya{" "}
+                    <strong>parçalar hâlinde</strong> kullandırılabilir. Tek bir
+                    kalem olarak onaylanan bir gider (örneğin tek bir CNC
+                    tezgâhı) için kredi tek seferde ve tek sözleşmeyle
+                    kullanılmak zorundadır. Makine-teçhizat/kalıp dışındaki
+                    gider türleri (personel, hizmet alımı, işletme sermayesi
+                    gibi) ise en fazla <strong>8 parçaya</strong> bölünerek
+                    ihtiyaç doğrultusunda kullandırılabilir. Yani 10 milyon
+                    TL&apos;lik bir proje, örneğin 6 milyonu makine alımında tek
+                    seferde, kalan 4 milyonu ise 3-4 ayrı kullanımda hesaba
+                    geçebilir.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-5">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#071A2F] text-lg font-bold text-white">2</div>
+                <div>
+                  <h4 className="text-lg font-bold text-[#071A2F]">İşletme ne zaman ödemeye başlıyor, ayda kaç ödeyecek, kaç yıl sürecek?</h4>
+                  <p className="mt-2 leading-7 text-gray-700">
+                    Kredi kullandırıldıktan sonra geri ödeme takvimi başlar.
+                    Taksitler <strong>aylık değil, 3&apos;er aylık dönemler
+                    hâlinde</strong> ve eşit tutarlı olarak ödenir; toplam vade
+                    36 ay (<strong>3 yıl</strong>), yani <strong>12
+                    taksit</strong>. Banka güncel piyasa faiziyle (aylık ~%3,5,
+                    3 aylık dönemde ~%10,5) çalışıyorsa, 10 milyon TL&apos;lik
+                    bu kredide işletmenin bankaya her 3 ayda bir ödeyeceği
+                    taksit <strong>≈1.503.767 TL</strong> olur — aylığa
+                    bölündüğünde ortalama <strong>≈501.256 TL/ay</strong>&apos;a
+                    denk gelir (gerçekte ödeme 3 ayda bir tek kalemde yapılır,
+                    her ay ayrı ayrı değil).
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-5">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#071A2F] text-lg font-bold text-white">3</div>
+                <div>
+                  <h4 className="text-lg font-bold text-[#071A2F]">KOSGEB 20 puanlık kısmı ne zaman, nasıl geri ödüyor?</h4>
+                  <p className="mt-2 leading-7 text-gray-700">
+                    Burası en çok kafa karıştıran adım. KOSGEB, taksiti{" "}
+                    <strong>önceden bankaya aktarmıyor</strong>. Mekanizma
+                    tersine işliyor:
+                  </p>
+                  <ol className="ml-6 mt-3 list-decimal space-y-2 text-gray-700 marker:font-bold marker:text-orange-500">
+                    <li>İşletme, ilgili 3 aylık taksitin <strong>tamamını kendi kaynağından bankaya öder</strong> (anapara + tam faiz).</li>
+                    <li>KOSGEB&apos;in atadığı KOBİ Uzmanı, o dönem için <strong>dönemsel izleme</strong> yapar; projenin gidişatında olumsuz bir durum yoksa izleme formu olumlu kaydedilir.</li>
+                    <li>İşletme, KOSGEB sistemi üzerinden <strong>ödeme (destek) talebinde</strong> bulunur ve o döneme ait harcamaları kanıtlayan belgeleri (fatura, SGK prime esas kazanç tablosu vb.) yükler.</li>
+                    <li>KOBİ Uzmanı belgeleri onaylar; o ana kadarki <strong>kümülatif</strong> uygun harcama tutarına göre Destek Hesaplama Tablosu&apos;ndan destek tutarı hesaplanır (önceki dönemlerde ödenen düşülerek).</li>
+                    <li>Onaylanan destek tutarı, işletmenin hesabına <strong>geri ödemesiz olarak aktarılır</strong> (iade edilir).</li>
+                  </ol>
+                  <p className="mt-3 leading-7 text-gray-700">
+                    Yani cevap: <strong>evet, taksit taksit</strong> ödeniyor —
+                    ama işletme önce kendi nakit akışıyla taksidin tamamını
+                    bankaya ödüyor, KOSGEB&apos;in payı birkaç hafta sürebilen
+                    izleme/onay sürecinin ardından işletmeye{" "}
+                    <strong>geri iade</strong> ediliyor. Bu nedenle işletmenin,
+                    her taksit döneminde geçici olarak taksidin tamamını
+                    karşılayacak nakit akışına sahip olması gerekir.
+                  </p>
+                  <div className="mt-4 rounded-xl border-l-4 border-yellow-400 bg-yellow-50 p-5">
+                    <p className="text-sm leading-7 text-gray-700">
+                      ⚠️ Erken kapatma yapılan taksitler için destek ödenmez;
+                      yeniden yapılandırılan finansman için de destek
+                      kesilir (ama izlemeler devam eder). Vade uzatımı
+                      yapılamaz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 className="mb-4 mt-10 text-xl font-bold text-[#071A2F]">
+              10 Milyon TL&apos;lik Kredinin 3 Yıllık Taksit Tablosu
+            </h4>
+            <div className="overflow-x-auto rounded-xl border">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-[#071A2F] text-white">
+                  <tr>
+                    <th className="p-3">Taksit</th>
+                    <th className="p-3">Ay</th>
+                    <th className="p-3">Bankaya Ödenen (Toplam Taksit)</th>
+                    <th className="p-3">Bunun İçindeki Faiz</th>
+                    <th className="p-3">KOSGEB&apos;in İade Ettiği (20 Puan)</th>
+                    <th className="p-3">İşletmenin Net Faiz Yükü</th>
+                    <th className="p-3">Anapara</th>
+                    <th className="p-3">Kalan Anapara</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b"><td className="p-3">1</td><td className="p-3">3</td><td className="p-3">1.503.767 TL</td><td className="p-3">1.050.000 TL</td><td className="p-3">500.000 TL</td><td className="p-3">550.000 TL</td><td className="p-3">453.767 TL</td><td className="p-3">9.546.233 TL</td></tr>
+                  <tr className="border-b bg-gray-50"><td className="p-3">2</td><td className="p-3">6</td><td className="p-3">1.503.767 TL</td><td className="p-3">1.002.354 TL</td><td className="p-3">477.312 TL</td><td className="p-3">525.043 TL</td><td className="p-3">501.413 TL</td><td className="p-3">9.044.820 TL</td></tr>
+                  <tr className="border-b"><td className="p-3">3</td><td className="p-3">9</td><td className="p-3">1.503.767 TL</td><td className="p-3">949.706 TL</td><td className="p-3">452.241 TL</td><td className="p-3">497.465 TL</td><td className="p-3">554.061 TL</td><td className="p-3">8.490.758 TL</td></tr>
+                  <tr className="border-b bg-gray-50"><td className="p-3">4</td><td className="p-3">12</td><td className="p-3">1.503.767 TL</td><td className="p-3">891.530 TL</td><td className="p-3">424.538 TL</td><td className="p-3">466.992 TL</td><td className="p-3">612.238 TL</td><td className="p-3">7.878.520 TL</td></tr>
+                  <tr className="border-b"><td className="p-3">5</td><td className="p-3">15</td><td className="p-3">1.503.767 TL</td><td className="p-3">827.245 TL</td><td className="p-3">393.926 TL</td><td className="p-3">433.319 TL</td><td className="p-3">676.523 TL</td><td className="p-3">7.201.997 TL</td></tr>
+                  <tr className="border-b bg-gray-50"><td className="p-3">6</td><td className="p-3">18</td><td className="p-3">1.503.767 TL</td><td className="p-3">756.210 TL</td><td className="p-3">360.100 TL</td><td className="p-3">396.110 TL</td><td className="p-3">747.558 TL</td><td className="p-3">6.454.440 TL</td></tr>
+                  <tr className="border-b"><td className="p-3">7</td><td className="p-3">21</td><td className="p-3">1.503.767 TL</td><td className="p-3">677.716 TL</td><td className="p-3">322.722 TL</td><td className="p-3">354.994 TL</td><td className="p-3">826.051 TL</td><td className="p-3">5.628.388 TL</td></tr>
+                  <tr className="border-b bg-gray-50"><td className="p-3">8</td><td className="p-3">24</td><td className="p-3">1.503.767 TL</td><td className="p-3">590.981 TL</td><td className="p-3">281.419 TL</td><td className="p-3">309.561 TL</td><td className="p-3">912.787 TL</td><td className="p-3">4.715.602 TL</td></tr>
+                  <tr className="border-b"><td className="p-3">9</td><td className="p-3">27</td><td className="p-3">1.503.767 TL</td><td className="p-3">495.138 TL</td><td className="p-3">235.780 TL</td><td className="p-3">259.358 TL</td><td className="p-3">1.008.629 TL</td><td className="p-3">3.706.972 TL</td></tr>
+                  <tr className="border-b bg-gray-50"><td className="p-3">10</td><td className="p-3">30</td><td className="p-3">1.503.767 TL</td><td className="p-3">389.232 TL</td><td className="p-3">185.349 TL</td><td className="p-3">203.883 TL</td><td className="p-3">1.114.535 TL</td><td className="p-3">2.592.437 TL</td></tr>
+                  <tr className="border-b"><td className="p-3">11</td><td className="p-3">33</td><td className="p-3">1.503.767 TL</td><td className="p-3">272.206 TL</td><td className="p-3">129.622 TL</td><td className="p-3">142.584 TL</td><td className="p-3">1.231.562 TL</td><td className="p-3">1.360.876 TL</td></tr>
+                  <tr className="bg-gray-50 font-semibold"><td className="p-3">12</td><td className="p-3">36</td><td className="p-3">1.503.767 TL</td><td className="p-3">142.892 TL</td><td className="p-3">68.044 TL</td><td className="p-3">74.848 TL</td><td className="p-3">1.360.876 TL</td><td className="p-3">0 TL</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="rounded-xl bg-gray-50 p-4 text-center">
+                <div className="text-xs font-semibold uppercase text-gray-500">Bankaya Toplam Ödenen</div>
+                <div className="mt-1 text-xl font-bold text-[#071A2F]">18.045.209 TL</div>
+              </div>
+              <div className="rounded-xl bg-gray-50 p-4 text-center">
+                <div className="text-xs font-semibold uppercase text-gray-500">KOSGEB&apos;in Toplam İadesi</div>
+                <div className="mt-1 text-xl font-bold text-green-700">3.831.052 TL</div>
+              </div>
+              <div className="rounded-xl bg-gray-50 p-4 text-center">
+                <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Net Faiz Yükü</div>
+                <div className="mt-1 text-xl font-bold text-red-700">4.214.157 TL</div>
+              </div>
+              <div className="rounded-xl bg-gray-50 p-4 text-center">
+                <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin 3 Yılda Cepten Çıkanı</div>
+                <div className="mt-1 text-xl font-bold text-red-700">14.214.157 TL</div>
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-gray-500">
+              (10.000.000 TL anapara + 4.214.157 TL kendi ödediği faiz farkı.
+              KOSGEB desteği olmasaydı işletme bankaya toplam faiz olarak
+              8.045.209 TL ödeyecekti; 20 puanlık destek bu yükün
+              yaklaşık %48&apos;ini karşılıyor.)
+            </p>
+          </div>
+
           <div className="space-y-10">
             {/* ÖRNEK 1 - İMALAT */}
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
