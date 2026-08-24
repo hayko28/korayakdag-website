@@ -442,21 +442,37 @@ export default function BlogPage() {
             5. Örnek Senaryolar: Onaydan Geri Ödemeye
           </h2>
           <p className="mb-6 text-lg leading-9 text-gray-700">
-            Aşağıdaki üç senaryo, KOSGEB&apos;in kendi yayımladığı{" "}
-            <em>Kapasite Geliştirme Destek Programı Destek Hesaplama
-            Tablosu</em>&apos;ndaki resmî formül (36 ay vade, 3&apos;er aylık
-            12 eşit taksit, sabit taksitli anüite hesaplaması) kullanılarak
-            üretilmiştir — farklı sektör ve kredi büyüklüklerinin süreci
-            somut rakamlarla nasıl etkilediğini göstermek amacıyla hazırlanan{" "}
+            Öncelikle mekanizmayı netleştirelim, çünkü en çok kafa karıştıran
+            nokta burası: KOSGEB, kredinin faiz/kâr payı oranının{" "}
+            <strong>en fazla 20 puanlık kısmını</strong> karşılar. Bankanın
+            uyguladığı gerçek faiz oranı 20 puanın{" "}
+            <strong>üzerindeyse</strong>, aşan kısmı işletme kendi öder —
+            yani işletme normalde hem anaparayı hem de bu faiz farkını geri
+            öder. Aşağıdaki örnekler, KOSGEB&apos;in resmî{" "}
+            <em>Destek Hesaplama Tablosu</em>&apos;ndaki taksit formülü
+            (36 ay vade, 3&apos;er aylık 12 eşit taksit, sabit taksitli
+            anüite hesaplaması) kullanılarak üretilmiş{" "}
             <strong>kurgusal örneklerdir</strong>, gerçek bir müşteri dosyası
-            değildir. Örneklerde, KOSGEB&apos;in resmî tablosundaki gibi banka
-            kredi faiz oranının 20 puana (destek puanına) eşit olduğu, yani
-            KOSGEB&apos;in faizin tamamını karşıladığı varsayılmıştır. Gerçek
-            hayatta banka faiz oranı 20 puanın üzerindeyse, aşan kısmı
-            işletme kendi öder — bu durumda &quot;Destek (Faiz)&quot;
-            sütunundaki tutar sabit kalır, işletmenin ayrıca ödediği faiz
-            farkı ise ayrı bir kalem olarak eklenir.
+            değildir.
           </p>
+
+          <div className="mb-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-6">
+            <h3 className="mb-2 text-xl font-bold text-[#071A2F]">
+              📈 Güncel Faiz Ortamı (Ağustos 2026)
+            </h3>
+            <p className="leading-8 text-gray-700">
+              TCMB politika faizi (bir hafta vadeli repo) şu an <strong>%37</strong>,
+              gecelik borç verme faizi %40 seviyesinde. Piyasadaki ticari/KOBİ
+              kredisi teklifleri aylık yaklaşık %3-%3,9 bandında seyrediyor —
+              yıllığa vurulduğunda kabaca %40-50 aralığına denk geliyor. Bu,
+              KOSGEB&apos;in karşıladığı 20 puanın <strong>oldukça
+              üzerinde</strong>; dolayısıyla aşağıdaki örneklerde işletmenin
+              anaparanın yanında ciddi bir faiz farkını da ödediğini
+              göreceksiniz. (Güncel bankaya özel teklifler değişkenlik
+              gösterir; başvuru anında kendi bankanızdan net oran almanız
+              gerekir.)
+            </p>
+          </div>
 
           <div className="space-y-10">
             {/* ÖRNEK 1 - İMALAT */}
@@ -468,7 +484,9 @@ export default function BlogPage() {
                 Metal işleme yapan, Sanayi Sicil Belgesi ve YODA raporu hazır
                 bir KOBİ, yeni bir CNC tezgâhı almak için başvuruyor. Kurul,
                 projeyi <strong>6.000.000 TL</strong> kredi tutarı ve{" "}
-                <strong>20 puan</strong> destek puanıyla onaylıyor.
+                <strong>20 puan</strong> destekle onaylıyor. Banka, kredide
+                (güncel piyasa ortalamasına yakın) aylık %3,5 — yani 3 aylık
+                dönemde %10,5 — faiz uyguluyor.
               </p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
@@ -476,16 +494,16 @@ export default function BlogPage() {
                   <div className="mt-1 text-xl font-bold text-[#071A2F]">6.000.000 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">676.952 TL</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit (Bankaya)</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">902.260 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
                   <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
-                  <div className="mt-1 text-xl font-bold text-green-700">2.123.430 TL</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">≈2.298.630 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">6.000.000 TL (anapara)</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Cebinden Çıkan</div>
+                  <div className="mt-1 text-xl font-bold text-red-700">≈8.528.490 TL</div>
                 </div>
               </div>
               <div className="mt-6 overflow-x-auto rounded-xl border">
@@ -494,23 +512,25 @@ export default function BlogPage() {
                     <tr>
                       <th className="p-3">Taksit</th>
                       <th className="p-3">Ne Zaman</th>
-                      <th className="p-3">KOSGEB Desteği (Faiz)</th>
-                      <th className="p-3">İşletmenin Ödediği (Anapara)</th>
+                      <th className="p-3">Bankaya Toplam Faiz</th>
+                      <th className="p-3">KOSGEB Payı (20 puan)</th>
+                      <th className="p-3">İşletmenin Faiz Farkı</th>
                       <th className="p-3">Kalan Anapara</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">300.000 TL</td><td className="p-3">376.952 TL</td><td className="p-3">5.623.048 TL</td></tr>
-                    <tr className="border-b"><td className="p-3">2</td><td className="p-3">6. ay</td><td className="p-3">281.152 TL</td><td className="p-3">395.800 TL</td><td className="p-3">5.227.247 TL</td></tr>
-                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">195.855 TL</td><td className="p-3">481.097 TL</td><td className="p-3">3.436.002 TL</td></tr>
-                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">32.236 TL</td><td className="p-3">644.717 TL</td><td className="p-3">0 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">630.000 TL</td><td className="p-3">300.000 TL</td><td className="p-3">330.000 TL</td><td className="p-3">5.727.740 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">453.726 TL</td><td className="p-3">216.060 TL</td><td className="p-3">237.666 TL</td><td className="p-3">3.872.664 TL</td></tr>
+                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">85.735 TL</td><td className="p-3">40.826 TL</td><td className="p-3">44.909 TL</td><td className="p-3">0 TL</td></tr>
                   </tbody>
                 </table>
               </div>
               <p className="mt-3 text-sm text-gray-500">
-                Taksitler ilerledikçe KOSGEB&apos;in karşıladığı faiz payı
-                azalır, işletmenin ödediği anapara payı artar — çünkü faiz her
-                dönem kalan anapara üzerinden hesaplanır.
+                İşletmenin cebinden çıkan toplam (≈8.528.490 TL) = 6.000.000 TL
+                anapara + ≈2.528.490 TL kendi ödediği faiz farkı. KOSGEB&apos;in
+                20 puanlık desteği (≈2.298.630 TL) olmasaydı, işletme bankaya
+                toplam ≈10.827.130 TL (≈4.827.130 TL faiz) ödeyecekti — yani
+                destek, toplam faiz yükünün yaklaşık %48&apos;ini karşılıyor.
               </p>
             </div>
 
@@ -521,11 +541,10 @@ export default function BlogPage() {
               </h3>
               <p className="mb-5 leading-8 text-gray-700">
                 Kurumsal yazılım geliştiren, hızlı büyüyen işletme tanımını
-                (son 3 yılda %10+ büyüme) sağlayan bir KOBİ, ürün ekibini
-                büyütmek ve yeni bir modül geliştirmek için başvuruyor.
-                Sanayi Sicil Belgesi/YODA şartı bu NACE kodunda aranmaz. Kurul,{" "}
+                sağlayan bir KOBİ, ürün ekibini büyütmek için{" "}
                 <strong>2.000.000 TL</strong> kredi ve 20 puan destekle
-                onaylıyor.
+                onaylanıyor; banka aynı şekilde 3 aylık dönemde %10,5 faiz
+                uyguluyor.
               </p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
@@ -533,23 +552,23 @@ export default function BlogPage() {
                   <div className="mt-1 text-xl font-bold text-[#071A2F]">2.000.000 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">225.651 TL</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit (Bankaya)</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">300.753 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
                   <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
-                  <div className="mt-1 text-xl font-bold text-green-700">707.810 TL</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">≈766.210 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">2.000.000 TL (anapara)</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Cebinden Çıkan</div>
+                  <div className="mt-1 text-xl font-bold text-red-700">≈2.842.830 TL</div>
                 </div>
               </div>
               <p className="mt-5 leading-8 text-gray-700">
                 Kredi alt limiti (1.000.000 TL) ile genel üst limit (20.000.000
                 TL) arasındaki her tutar aynı 12 taksitlik/36 aylık yapıda
-                değerlendirilir; sadece taksit ve destek tutarları kredi
-                büyüklüğüyle orantılı değişir.
+                değerlendirilir; sadece taksit, destek ve faiz farkı tutarları
+                kredi büyüklüğüyle orantılı değişir.
               </p>
             </div>
 
@@ -560,11 +579,12 @@ export default function BlogPage() {
               </h3>
               <p className="mb-5 leading-8 text-gray-700">
                 Savunma sanayiine tedarikçi geliştirme protokolü kapsamında
-                bildirilen ve EYDEP-B sertifikasına sahip bir imalatçı,
-                üretim hattını büyütmek için başvuruyor. Bu kategoride kredi
-                üst limiti 27.500.000 TL&apos;ye kadar çıkabiliyor; Kurul bu
+                bildirilen ve EYDEP-B sertifikasına sahip bir imalatçı, üretim
+                hattını büyütmek için başvuruyor. Bu kategoride kredi üst
+                limiti 27.500.000 TL&apos;ye kadar çıkabiliyor; Kurul bu
                 örnekte <strong>15.000.000 TL</strong> kredi ve 20 puan
-                destekle onaylıyor.
+                destekle onaylıyor, banka yine 3 aylık dönemde %10,5 faiz
+                uyguluyor.
               </p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
@@ -572,16 +592,16 @@ export default function BlogPage() {
                   <div className="mt-1 text-xl font-bold text-[#071A2F]">15.000.000 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">1.692.381 TL</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit (Bankaya)</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">2.255.651 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
                   <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
-                  <div className="mt-1 text-xl font-bold text-green-700">5.308.574 TL</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">≈5.746.580 TL</div>
                 </div>
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
-                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
-                  <div className="mt-1 text-xl font-bold text-[#071A2F]">15.000.000 TL (anapara)</div>
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Cebinden Çıkan</div>
+                  <div className="mt-1 text-xl font-bold text-red-700">≈21.321.240 TL</div>
                 </div>
               </div>
               <div className="mt-6 overflow-x-auto rounded-xl border">
@@ -590,32 +610,41 @@ export default function BlogPage() {
                     <tr>
                       <th className="p-3">Taksit</th>
                       <th className="p-3">Ne Zaman</th>
-                      <th className="p-3">KOSGEB Desteği (Faiz)</th>
-                      <th className="p-3">İşletmenin Ödediği (Anapara)</th>
+                      <th className="p-3">Bankaya Toplam Faiz</th>
+                      <th className="p-3">KOSGEB Payı (20 puan)</th>
+                      <th className="p-3">İşletmenin Faiz Farkı</th>
                       <th className="p-3">Kalan Anapara</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">750.000 TL</td><td className="p-3">942.381 TL</td><td className="p-3">14.057.619 TL</td></tr>
-                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">489.637 TL</td><td className="p-3">1.202.744 TL</td><td className="p-3">8.590.006 TL</td></tr>
-                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">80.590 TL</td><td className="p-3">1.611.792 TL</td><td className="p-3">0 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">1.575.000 TL</td><td className="p-3">750.000 TL</td><td className="p-3">825.000 TL</td><td className="p-3">14.319.349 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">1.134.315 TL</td><td className="p-3">540.150 TL</td><td className="p-3">594.165 TL</td><td className="p-3">9.681.660 TL</td></tr>
+                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">214.338 TL</td><td className="p-3">102.066 TL</td><td className="p-3">112.272 TL</td><td className="p-3">0 TL</td></tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
 
-          <div className="mt-10 rounded-2xl border-l-4 border-yellow-400 bg-yellow-50 p-6">
-            <p className="leading-8 text-gray-700">
-              ⚠️ Bu üç senaryo yalnızca hesaplama mantığını göstermek içindir.
-              Gerçek başvurunuzda: (1) Kurul&apos;un onayladığı kredi tutarı
-              talep ettiğinizden düşük çıkabilir, (2) bankanızın uyguladığı
-              gerçek faiz/kâr payı oranı 20 puanın üzerindeyse aradaki farkı
-              siz ödersiniz, (3) taksit tarihleri kredinin kullandırım
-              tarihine göre kayar. Kesin rakamlar için bankanızın teklifini ve
-              KOSGEB&apos;in size özel Destek Hesaplama Tablosu çıktısını
-              esas almanız gerekir.
-            </p>
+          <div className="mt-10 space-y-4">
+            <div className="rounded-2xl border-l-4 border-yellow-400 bg-yellow-50 p-6">
+              <p className="leading-8 text-gray-700">
+                ⚠️ <strong>Bu bir yaklaşık hesaplamadır, kesin tablo
+                değildir.</strong> KOSGEB&apos;in kendi Destek Hesaplama
+                Tablosu&apos;nun 20 puanlık payı tam olarak nasıl ayırdığına
+                dair (kalan anaparaya mı, orijinal tutara mı, hangi dönemsel
+                bileşiğe göre uygulandığına dair) resmî kılavuzda ayrıntılı
+                bir formül yayımlanmamış; yukarıdaki tablolar, kalan anapara
+                üzerinden 20 puanlık payın ayrı hesaplandığı makul bir
+                yaklaşımla üretilmiştir. Ayrıca gerçek başvurunuzda: (1)
+                Kurul&apos;un onayladığı kredi tutarı talep ettiğinizden düşük
+                çıkabilir, (2) bankanızın uyguladığı gerçek faiz/kâr payı
+                oranı burada varsayılandan farklı olacaktır, (3) taksit
+                tarihleri kredinin kullandırım tarihine göre kayar. Kesin
+                rakamlar için bankanızın güncel teklifini KOSGEB&apos;in size
+                özel Destek Hesaplama Tablosu&apos;na girmeniz gerekir.
+              </p>
+            </div>
           </div>
         </section>
 
