@@ -210,4 +210,51 @@ export const MAKALELER: MakaleMeta[] = [
     date: "24 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "yapay-zekada-deneme-donemi-bitti-olcek-donemi-basladi",
+    title:
+      "Deloitte 2026 Raporu: Yapay Zekada 'Deneme' Dönemi Bitti, Şimdi Sıra Ölçeklemede",
+    excerpt:
+      "Deloitte'un 17. kez yayımladığı Teknoloji Trendleri 2026 raporuna göre yapay zeka girişimleri gelirini SaaS şirketlerine kıyasla 5 kat daha hızlı büyütüyor. Ama çoğu KOBİ hâlâ 'önce bir pilot deneyelim' aşamasında bekliyor.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "curiosityin-14-yillik-sabrinin-karsiligi",
+    title:
+      "Curiosity'nin Mars'ta 14 Yıllık Sabrının Karşılığı: 20'den Fazla Organik Molekül",
+    excerpt:
+      "NASA'nın Curiosity aracı, 2012'den beri incelediği 3,5 milyar yıllık Mars kayalarında 20'den fazla organik molekül tespit etti. Bu keşfi özel kılan hız değil, on dört yıllık sabırlı bir birikim.",
+    tag: "Görüş",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "kararlarinizi-gercekte-kim-veriyor",
+    title: "Bir Kararı Gerçekte Kim Veriyor? Beyin Haritası Şirketler İçin de Bir Şey Söylüyor",
+    excerpt:
+      "22 laboratuvardaki nörobilimcilerin ortak çalışmasıyla bir memeli beyninin karar anındaki tam aktivite haritası ilk kez çıkarıldı: karar anında tek bir bölge değil, beynin pek çok bölgesi birden aydınlanıyor. Şirketlerdeki kararlar da sanıldığından çok daha dağınık bir süreçten geçiyor.",
+    tag: "Görüş",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "michelinin-kapadokyaya-girmesinin-dersi",
+    title: "Michelin Rehberi İlk Kez Kapadokya'ya Girdi: Kimse Beklemiyordu",
+    excerpt:
+      "Michelin Rehberi'nin 2026 Türkiye seçkisinde yıldızlı restoran sayısı 17'ye çıktı, ama en dikkat çekici gelişme bir yıldız daha değildi: Michelin ilk kez Kapadokya'daki bir restorana girdi. Rekabetin en yoğun olduğu yerde değil, kimsenin beklemediği yerde fark yaratmanın hikayesi.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "plak-satislari-neden-hala-artiyor",
+    title: "Plak Satışları 19 Yıldır Kesintisiz Artıyor: Dijital Çağda Bir Fiziksel Ürünün Dersi",
+    excerpt:
+      "RIAA verilerine göre plak satışları geçen yıl 1 milyar doları geçti; bu 1983'ten bu yana ilk kez yaşanan bir rakam. Sınırsız ve neredeyse ücretsiz dijital alternatif varken bir fiziksel ürünün ayakta kalmasının arkasında üç neden var.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
