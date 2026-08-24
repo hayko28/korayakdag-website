@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "turkiyenin-yapay-zeka-plani-kobiler-icin-ne-anlama-geliyor",
+    title: "Türkiye'nin Yapay Zeka Planı Açıklandı: KOBİ Sahipleri İçin Gerçek Anlamı Ne?",
+    excerpt:
+      "Resmî Gazete'de yayımlanan 2026-2030 Yapay Zeka Eylem Planı'nı gören bir müşterim beni aradı: \"Bizim gibi küçük bir firma için bir anlamı var mı?\" Dürüst cevabım: şu an için doğrudan değil, ama yakından takip etmeye değer.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "3 Dakika",
+  },
+  {
     slug: "sgk-borc-yapilandirmasinda-son-hafta",
     title: "SGK Borç Yapılandırmasında Son Hafta: 72 Ay Taksit İçin 31 Ağustos",
     excerpt:

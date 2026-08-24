@@ -21,6 +21,7 @@ const KURUM_COLORS: Record<string, string> = {
   "Borsa İstanbul": "bg-lime-600",
   TOBB: "bg-fuchsia-600",
   TCMB: "bg-orange-600",
+  Cumhurbaşkanlığı: "bg-slate-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;
