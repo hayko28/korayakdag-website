@@ -109,6 +109,20 @@ export default function AdminPage() {
     await load();
   };
 
+  const deleteAllDrafts = async () => {
+    if (!confirm(`${drafts.length} taslağın tümünü kalıcı olarak silmek istediğine emin misin?`)) return;
+    await Promise.all(
+      drafts.map((d) =>
+        fetch("/api/admin/linkedin-drafts", {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: d.id }),
+        })
+      )
+    );
+    await load();
+  };
+
   const login = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
@@ -485,12 +499,22 @@ export default function AdminPage() {
         {/* LINKEDIN TAB */}
         {tab === "linkedin" && (
           <section className="rounded-3xl bg-white p-6 shadow-sm">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-[#071A2F]">LinkedIn Taslakları</h2>
-              <p className="text-sm text-gray-600">
-                Otomatik paylaşılmaz. Metni oku, istersen kendi cümlenle/anekdotunla
-                düzenle, sonra kopyalayıp kendi LinkedIn hesabından paylaş.
-              </p>
+            <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-[#071A2F]">LinkedIn Taslakları</h2>
+                <p className="text-sm text-gray-600">
+                  Otomatik paylaşılmaz. Metni oku, istersen kendi cümlenle/anekdotunla
+                  düzenle, sonra kopyalayıp kendi LinkedIn hesabından paylaş.
+                </p>
+              </div>
+              {drafts.length > 0 && (
+                <button
+                  onClick={deleteAllDrafts}
+                  className="rounded-lg bg-red-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-red-700"
+                >
+                  🗑️ Hepsini Sil
+                </button>
+              )}
             </div>
             {drafts.length ? (
               <div className="space-y-4">
