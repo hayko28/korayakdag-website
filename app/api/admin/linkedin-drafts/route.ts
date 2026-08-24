@@ -52,7 +52,7 @@ export async function GET() {
   if (!(await isAdminAuthorized())) return Response.json({ error: "Yetkisiz" }, { status: 401 });
   await initializeDatabase();
   await taslakDosyalariniIceriAl();
-  const drafts = await sql`SELECT * FROM linkedin_drafts ORDER BY created_at DESC`;
+  const drafts = await sql`SELECT * FROM linkedin_drafts WHERE NOT silindi ORDER BY created_at DESC`;
   return Response.json({ drafts });
 }
 
@@ -86,6 +86,13 @@ export async function DELETE(request: Request) {
   const { id } = await request.json();
   if (!id) return Response.json({ error: "Eksik bilgi" }, { status: 400 });
   await initializeDatabase();
-  await sql`DELETE FROM linkedin_drafts WHERE id = ${id}`;
+  const [draft] = await sql`SELECT kaynak_dosya FROM linkedin_drafts WHERE id = ${id}`;
+  if (draft?.kaynak_dosya) {
+    // Kaynak dosya git'ten silinmediği için tam silme yapılırsa panel
+    // yenilendiğinde taslak tekrar içeri aktarılır — bu yüzden gizlenir.
+    await sql`UPDATE linkedin_drafts SET silindi = true WHERE id = ${id}`;
+  } else {
+    await sql`DELETE FROM linkedin_drafts WHERE id = ${id}`;
+  }
   return Response.json({ ok: true });
 }
