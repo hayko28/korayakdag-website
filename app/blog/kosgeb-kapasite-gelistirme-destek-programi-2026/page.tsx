@@ -88,23 +88,26 @@ export default function BlogPage() {
             <Link href="#tutarlar" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
               4. Kredi ve Destek Tutarları
             </Link>
+            <Link href="#ornekler" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
+              5. Örnek Senaryolar
+            </Link>
             <Link href="#giderler" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              5. Desteklenen Gider Kalemleri
+              6. Desteklenen Gider Kalemleri
             </Link>
             <Link href="#takvim" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              6. 2026 Başvuru Dönemleri
+              7. 2026 Başvuru Dönemleri
             </Link>
             <Link href="#surec" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              7. Adım Adım Başvuru Süreci
+              8. Adım Adım Başvuru Süreci
             </Link>
             <Link href="#dikkat" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              8. Dikkat Edilmesi Gerekenler
+              9. Dikkat Edilmesi Gerekenler
             </Link>
             <Link href="#sss" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              9. Sık Sorulan Sorular
+              10. Sık Sorulan Sorular
             </Link>
             <Link href="#sonuc" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              10. Sonuç
+              11. Sonuç
             </Link>
           </div>
         </div>
@@ -433,10 +436,193 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 5. GİDERLER */}
+        {/* 5. ÖRNEK SENARYOLAR */}
+        <section id="ornekler" className="mt-24 scroll-mt-24">
+          <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+            5. Örnek Senaryolar: Onaydan Geri Ödemeye
+          </h2>
+          <p className="mb-6 text-lg leading-9 text-gray-700">
+            Aşağıdaki üç senaryo, KOSGEB&apos;in kendi yayımladığı{" "}
+            <em>Kapasite Geliştirme Destek Programı Destek Hesaplama
+            Tablosu</em>&apos;ndaki resmî formül (36 ay vade, 3&apos;er aylık
+            12 eşit taksit, sabit taksitli anüite hesaplaması) kullanılarak
+            üretilmiştir — farklı sektör ve kredi büyüklüklerinin süreci
+            somut rakamlarla nasıl etkilediğini göstermek amacıyla hazırlanan{" "}
+            <strong>kurgusal örneklerdir</strong>, gerçek bir müşteri dosyası
+            değildir. Örneklerde, KOSGEB&apos;in resmî tablosundaki gibi banka
+            kredi faiz oranının 20 puana (destek puanına) eşit olduğu, yani
+            KOSGEB&apos;in faizin tamamını karşıladığı varsayılmıştır. Gerçek
+            hayatta banka faiz oranı 20 puanın üzerindeyse, aşan kısmı
+            işletme kendi öder — bu durumda &quot;Destek (Faiz)&quot;
+            sütunundaki tutar sabit kalır, işletmenin ayrıca ödediği faiz
+            farkı ise ayrı bir kalem olarak eklenir.
+          </p>
+
+          <div className="space-y-10">
+            {/* ÖRNEK 1 - İMALAT */}
+            <div className="rounded-2xl border bg-white p-8 shadow-sm">
+              <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+                🏭 Örnek 1 — İmalat Sektörü (NACE C): Makine Yatırımı
+              </h3>
+              <p className="mb-5 leading-8 text-gray-700">
+                Metal işleme yapan, Sanayi Sicil Belgesi ve YODA raporu hazır
+                bir KOBİ, yeni bir CNC tezgâhı almak için başvuruyor. Kurul,
+                projeyi <strong>6.000.000 TL</strong> kredi tutarı ve{" "}
+                <strong>20 puan</strong> destek puanıyla onaylıyor.
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Onaylanan Kredi</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">6.000.000 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">676.952 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">2.123.430 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">6.000.000 TL (anapara)</div>
+                </div>
+              </div>
+              <div className="mt-6 overflow-x-auto rounded-xl border">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-[#071A2F] text-white">
+                    <tr>
+                      <th className="p-3">Taksit</th>
+                      <th className="p-3">Ne Zaman</th>
+                      <th className="p-3">KOSGEB Desteği (Faiz)</th>
+                      <th className="p-3">İşletmenin Ödediği (Anapara)</th>
+                      <th className="p-3">Kalan Anapara</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">300.000 TL</td><td className="p-3">376.952 TL</td><td className="p-3">5.623.048 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">2</td><td className="p-3">6. ay</td><td className="p-3">281.152 TL</td><td className="p-3">395.800 TL</td><td className="p-3">5.227.247 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">195.855 TL</td><td className="p-3">481.097 TL</td><td className="p-3">3.436.002 TL</td></tr>
+                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">32.236 TL</td><td className="p-3">644.717 TL</td><td className="p-3">0 TL</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-sm text-gray-500">
+                Taksitler ilerledikçe KOSGEB&apos;in karşıladığı faiz payı
+                azalır, işletmenin ödediği anapara payı artar — çünkü faiz her
+                dönem kalan anapara üzerinden hesaplanır.
+              </p>
+            </div>
+
+            {/* ÖRNEK 2 - YAZILIM */}
+            <div className="rounded-2xl border bg-white p-8 shadow-sm">
+              <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+                💻 Örnek 2 — Bilgisayar Programlama (NACE 62): Yazılım Geliştirme
+              </h3>
+              <p className="mb-5 leading-8 text-gray-700">
+                Kurumsal yazılım geliştiren, hızlı büyüyen işletme tanımını
+                (son 3 yılda %10+ büyüme) sağlayan bir KOBİ, ürün ekibini
+                büyütmek ve yeni bir modül geliştirmek için başvuruyor.
+                Sanayi Sicil Belgesi/YODA şartı bu NACE kodunda aranmaz. Kurul,{" "}
+                <strong>2.000.000 TL</strong> kredi ve 20 puan destekle
+                onaylıyor.
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Onaylanan Kredi</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">2.000.000 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">225.651 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">707.810 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">2.000.000 TL (anapara)</div>
+                </div>
+              </div>
+              <p className="mt-5 leading-8 text-gray-700">
+                Kredi alt limiti (1.000.000 TL) ile genel üst limit (20.000.000
+                TL) arasındaki her tutar aynı 12 taksitlik/36 aylık yapıda
+                değerlendirilir; sadece taksit ve destek tutarları kredi
+                büyüklüğüyle orantılı değişir.
+              </p>
+            </div>
+
+            {/* ÖRNEK 3 - SAVUNMA */}
+            <div className="rounded-2xl border bg-white p-8 shadow-sm">
+              <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+                🛰️ Örnek 3 — Savunma Sanayi Tedarikçisi (EYDEP-B): Kapasite Büyütme
+              </h3>
+              <p className="mb-5 leading-8 text-gray-700">
+                Savunma sanayiine tedarikçi geliştirme protokolü kapsamında
+                bildirilen ve EYDEP-B sertifikasına sahip bir imalatçı,
+                üretim hattını büyütmek için başvuruyor. Bu kategoride kredi
+                üst limiti 27.500.000 TL&apos;ye kadar çıkabiliyor; Kurul bu
+                örnekte <strong>15.000.000 TL</strong> kredi ve 20 puan
+                destekle onaylıyor.
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Onaylanan Kredi</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">15.000.000 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">3 Aylık Taksit</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">1.692.381 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">Toplam KOSGEB Desteği</div>
+                  <div className="mt-1 text-xl font-bold text-green-700">5.308.574 TL</div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-4 text-center">
+                  <div className="text-xs font-semibold uppercase text-gray-500">İşletmenin Geri Ödediği</div>
+                  <div className="mt-1 text-xl font-bold text-[#071A2F]">15.000.000 TL (anapara)</div>
+                </div>
+              </div>
+              <div className="mt-6 overflow-x-auto rounded-xl border">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-[#071A2F] text-white">
+                    <tr>
+                      <th className="p-3">Taksit</th>
+                      <th className="p-3">Ne Zaman</th>
+                      <th className="p-3">KOSGEB Desteği (Faiz)</th>
+                      <th className="p-3">İşletmenin Ödediği (Anapara)</th>
+                      <th className="p-3">Kalan Anapara</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b"><td className="p-3">1</td><td className="p-3">3. ay</td><td className="p-3">750.000 TL</td><td className="p-3">942.381 TL</td><td className="p-3">14.057.619 TL</td></tr>
+                    <tr className="border-b"><td className="p-3">6</td><td className="p-3">18. ay</td><td className="p-3">489.637 TL</td><td className="p-3">1.202.744 TL</td><td className="p-3">8.590.006 TL</td></tr>
+                    <tr><td className="p-3">12</td><td className="p-3">36. ay (son taksit)</td><td className="p-3">80.590 TL</td><td className="p-3">1.611.792 TL</td><td className="p-3">0 TL</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-2xl border-l-4 border-yellow-400 bg-yellow-50 p-6">
+            <p className="leading-8 text-gray-700">
+              ⚠️ Bu üç senaryo yalnızca hesaplama mantığını göstermek içindir.
+              Gerçek başvurunuzda: (1) Kurul&apos;un onayladığı kredi tutarı
+              talep ettiğinizden düşük çıkabilir, (2) bankanızın uyguladığı
+              gerçek faiz/kâr payı oranı 20 puanın üzerindeyse aradaki farkı
+              siz ödersiniz, (3) taksit tarihleri kredinin kullandırım
+              tarihine göre kayar. Kesin rakamlar için bankanızın teklifini ve
+              KOSGEB&apos;in size özel Destek Hesaplama Tablosu çıktısını
+              esas almanız gerekir.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. GİDERLER */}
         <section id="giderler" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            5. Desteklenen Gider Kalemleri
+            6. Desteklenen Gider Kalemleri
           </h2>
           <p className="mb-10 text-lg leading-9 text-gray-700">
             Kurul tarafından onaylanan proje kapsamında kullandırılan kredi;
@@ -486,10 +672,10 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 6. TAKVİM */}
+        {/* 7. TAKVİM */}
         <section id="takvim" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            6. 2026 Başvuru Dönemleri ve Güncel Durum
+            7. 2026 Başvuru Dönemleri ve Güncel Durum
           </h2>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             Program, yıl içinde belirli başvuru dönemlerinde açılıp
@@ -532,10 +718,10 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 7. SÜREÇ */}
+        {/* 8. SÜREÇ */}
         <section id="surec" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            7. Adım Adım Başvuru Süreci
+            8. Adım Adım Başvuru Süreci
           </h2>
           <p className="mb-10 text-lg leading-9 text-gray-700">
             Başvuru süreci tamamen elektronik ortamda, KOBİ Bilgi Sistemi
@@ -600,10 +786,10 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 8. DİKKAT EDİLECEKLER */}
+        {/* 9. DİKKAT EDİLECEKLER */}
         <section id="dikkat" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            8. Dikkat Edilmesi Gereken Noktalar
+            9. Dikkat Edilmesi Gereken Noktalar
           </h2>
           <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
             <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-red-500">
@@ -618,10 +804,10 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 9. SSS */}
+        {/* 10. SSS */}
         <section id="sss" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            9. Sık Sorulan Sorular
+            10. Sık Sorulan Sorular
           </h2>
           <div className="space-y-6">
             <div className="rounded-2xl border p-8">
@@ -720,10 +906,10 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* 10. SONUÇ */}
+        {/* 11. SONUÇ */}
         <section id="sonuc" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            10. Sonuç
+            11. Sonuç
           </h2>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             KOSGEB Kapasite Geliştirme Destek Programı, üretim yapan ve
