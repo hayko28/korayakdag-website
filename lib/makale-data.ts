@@ -165,4 +165,49 @@ export const MAKALELER: MakaleMeta[] = [
     date: "23 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "muzayede-gecesinde-40-dakikada-kirilan-rekorun-dersi",
+    title: "Christie's Müzayedesinde 40 Dakikada 1,1 Milyar Dolar: Sanat Piyasası Ne Anlatıyor?",
+    excerpt:
+      "19 Mayıs 2026'da New York'ta Christie's'te bir gecede 1,1 milyar dolarlık satış gerçekleşti, ilk 40 dakikada 630 milyon dolar. Jackson Pollock'un bir tablosu 181,2 milyon dolara alıcı buldu. Rakamların arkasında sanattan çok, değer yaratmayla ilgili bir ders var.",
+    tag: "Görüş",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "all-blacksin-77-kazanma-oraninin-arkasindaki-kultur",
+    title: "Dünyanın En Başarılı Spor Takımının Sırrı: %77 Kazanma Oranı Nereden Geliyor?",
+    excerpt:
+      "Yeni Zelanda ragbi milli takımı All Blacks, 150 yılı aşkın tarihinde %77'nin üzerinde bir kazanma oranına sahip — herhangi bir büyük spor dalında görülen en yüksek oran. Bu süreklilik taktikten çok bir kültür meselesi.",
+    tag: "Görüş",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "terfi-sonrasi-yoneticilige-gecerken-yapilan-3-hata",
+    title: "Terfi Sonrası Yöneticiliğe Geçerken Yapılan 3 Hata",
+    excerpt:
+      "En iyi satış temsilcisini satış müdürü yapmak, çoğu zaman hem iyi bir satışçıyı hem de potansiyel olarak iyi bir müdürü kaybetmek anlamına gelebiliyor. Danışmanlık sürecinde en sık karşılaşılan üç yönetici geçiş hatası.",
+    tag: "Görüş",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "yapay-zeka-is-mesajlarinizi-yazarken-sorulmayan-soru",
+    title: "Yapay Zeka Artık İş Mesajlarınızı Yazabiliyor: Asıl Sorulması Gereken Soru",
+    excerpt:
+      "OpenAI, ChatGPT'nin Mac'te Apple Mesajlar uygulamasına erişip mesaj taslağı hazırlamasına ve göndermesine izin veren bir eklenti yayımladı. Özellik kullanışlı, ama KOBİ'lerin çoğu bu tür entegrasyonları hiçbir güvenlik politikası olmadan devreye alıyor.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "hiz-rekoru-kiran-robot-nasil-duracagini-bilmiyordu",
+    title: "Usain Bolt'un Rekorunu Kıran Robot Nasıl Duracağını Bilmiyordu",
+    excerpt:
+      "Pekin'deki Dünya İnsansı Robot Oyunları'nda Tiangong Ultra, 100 metreyi 9,39 saniyede koşarak Usain Bolt'un rekorunu kırdı. Ama yarışı bitirdikten sonra frenleyemedi, dolgulu bir duvara çarparak durabildi. Hız kazanmakla kontrolü elde tutmak aynı şey değil.",
+    tag: "Strateji",
+    date: "24 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
