@@ -12,6 +12,8 @@ const STRINGS = {
     fillForm: "Formu Doldur",
     phone: "Telefon",
     corporateEmail: "E-posta",
+    office: "Ofis",
+    officeAddress: "4. Levent Plaza, Eski Büyükdere Cad. No:67, Kat:5, Huzur Mh., Sarıyer / İstanbul",
     linkedinVisit: "LinkedIn profilimi ziyaret edin →",
     closeForm: "Formu kapat",
     formLabel: "İletişim Formu",
@@ -37,6 +39,8 @@ const STRINGS = {
     fillForm: "Fill Out the Form",
     phone: "Phone",
     corporateEmail: "Email",
+    office: "Office",
+    officeAddress: "4. Levent Plaza, Eski Büyükdere Cad. No:67, Floor:5, Huzur Mh., Sarıyer / Istanbul",
     linkedinVisit: "Visit my LinkedIn profile →",
     closeForm: "Close form",
     formLabel: "Contact Form",
@@ -159,12 +163,15 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
           </button>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <ContactCard title={t.phone} icon={<PhoneIcon />}>
             <a href="tel:+905060931828" className="font-semibold text-[#071A2F] hover:underline">0506 093 18 28</a>
           </ContactCard>
           <ContactCard title={t.corporateEmail} icon={<EnvelopeIcon />}>
             <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap font-semibold text-[#071A2F] hover:underline">koray.akdag@sistemglobal.com.tr</a>
+          </ContactCard>
+          <ContactCard title={t.office} icon={<PinIcon />}>
+            <p className="font-semibold text-[#071A2F]">{t.officeAddress}</p>
           </ContactCard>
           <ContactCard title="LinkedIn" icon={<LinkedInIcon />}>
             <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:underline">{t.linkedinVisit}</a>
@@ -262,6 +269,15 @@ function EnvelopeIcon() {
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3.5" y="5.5" width="17" height="13" rx="2" />
       <path d="m4.5 7 7.5 6 7.5-6" />
+    </svg>
+  );
+}
+
+function PinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z" />
+      <circle cx="12" cy="9.5" r="2.3" />
     </svg>
   );
 }
