@@ -257,4 +257,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "24 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "yoneticiler-neden-sessizce-geri-cekiliyor",
+    title: "Sessiz İstifa Artık Çalışanların Değil, Yöneticilerin Sorunu",
+    excerpt:
+      "Gallup'ın 2026 Küresel İşyeri Raporu'na göre yönetici bağlılığı 2022'de %31 iken 2025'te %22'ye düştü; çalışan bağlılığı aynı dönemde neredeyse hiç değişmedi. Şirketler yanlış katmana odaklanıyor olabilir.",
+    tag: "Görüş",
+    date: "25 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
