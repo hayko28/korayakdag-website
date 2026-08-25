@@ -22,6 +22,7 @@ const KURUM_COLORS: Record<string, string> = {
   TOBB: "bg-fuchsia-600",
   TCMB: "bg-orange-600",
   Cumhurbaşkanlığı: "bg-slate-600",
+  SPK: "bg-emerald-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;

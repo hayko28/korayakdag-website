@@ -388,6 +388,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Web sitesinde veya pazaryeri mağazasında müşteri yorumu/değerlendirme sistemi kullanan işletmelere, olumsuz yorumları 'genel kural ihlali' gibi muğlak gerekçelerle filtrelememelerini öneririm; Kurul bu tür uygulamaları artık somut şekilde haksız ticari uygulama sayıp idari para cezasına bağlıyor.",
   },
+  {
+    kurum: "SPK",
+    tarih: "13 Ağustos 2026",
+    eklendiTarihi: "2026-08-25",
+    baslik:
+      "SPK, yeşil, sürdürülebilir ve sosyal sermaye piyasası araçları için iki yeni rehberi kabul etti",
+    ozet:
+      "Sermaye Piyasası Kurulu Karar Organı, 13 Ağustos 2026 tarihli ve 49/1500 sayılı ilke kararıyla 'Yeşil, Sürdürülebilir ve Sosyal Sermaye Piyasası Araçları Rehberi' ile 'Sürdürülebilirlik Bağlantılı Sermaye Piyasası Araçları Rehberi'ni kabul etti. Mevcut yeşil ve sürdürülebilir borçlanma araçları rehberine sosyal projeler de eklenerek sosyal temalı araç ihracı mümkün hale geldi; bu kapsamdaki ihraçlarda Kurul ücretlerinde %50 indirime gidildi.",
+    kaynakUrl:
+      "https://spk.gov.tr/duyurular/basin-duyurulari/2026/yesil-surdurulebilir-ve-sosyal-sermaye-piyasasi-araclari-rehberi-ve-surdurulebilirlik-baglantili-sermaye-piyasasi-araclari-rehberi-basin-duyurusu",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Çevresel/sosyal etkisi olan bir projeyi borçlanma aracıyla finanse etmeyi düşünen büyüme aşamasındaki şirketlere, %50 ücret indirimi nedeniyle bu rehberler çerçevesinde sürdürülebilir/sosyal temalı ihraç seçeneğini mali danışmanlarıyla değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "23 Ağustos 2026",
+    eklendiTarihi: "2026-08-25",
+    baslik:
+      "Ticaret Bakanlığı, ihracatçılar için Ticarette Teknik Engeller (TTE) Platformu'nu yeniledi",
+    ozet:
+      "Ticaret Bakanlığı, 2006'dan bu yana hizmet veren Ticarette Teknik Engeller Web Platformu'nun altyapısını 23 Ağustos 2026 itibarıyla yeniledi. Platform, ihracatçıların dış pazarlardaki teknik düzenleme ve ürün güvenliği uygulamalarını ülke ve ürün bazında takip etmesine, etiketleme/ambalajlama/test/belgelendirme gibi konularda karşılaştıkları engelleri Bakanlığa bildirmesine ve Dünya Ticaret Örgütü ile AB mevzuat bildirimlerini görmesine imkan tanıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/ticarette-teknik-engellere-iliskin-internet-platformu-yenilendi/4034916",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Yurt dışına ürün gönderen işletmelere, sevkiyat öncesinde hedef pazardaki etiketleme ve belgelendirme şartlarını bu ücretsiz platform üzerinden kontrol etmelerini öneririm; gümrükte karşılaşılan teknik engellerin çoğu, sevkiyattan önce fark edilebilecek türden.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
