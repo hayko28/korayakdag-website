@@ -168,7 +168,7 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
             <a href="tel:+905060931828" className="font-semibold text-[#071A2F] hover:underline">0506 093 18 28</a>
           </ContactCard>
           <ContactCard title={t.corporateEmail} icon={<EnvelopeIcon />}>
-            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap font-semibold text-[#071A2F] hover:underline">koray.akdag@sistemglobal.com.tr</a>
+            <a href="mailto:koray.akdag@sistemglobal.com.tr" className="break-words font-semibold text-[#071A2F] hover:underline">koray.akdag@sistemglobal.com.tr</a>
           </ContactCard>
           <ContactCard title={t.office} icon={<PinIcon />}>
             <a
