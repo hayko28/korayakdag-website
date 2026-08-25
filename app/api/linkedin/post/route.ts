@@ -18,7 +18,7 @@ function escapeLinkedInText(text: string): string {
 
 export async function POST(request: Request) {
   try {
-    const { icerik, gorselUrl, videoUrl } = await request.json();
+    const { icerik, gorselUrl, videoUrl, kaynakUrl } = await request.json();
     if (!icerik) {
       return Response.json({ error: "İçerik eksik." }, { status: 400 });
     }
@@ -211,7 +211,35 @@ export async function POST(request: Request) {
     }
 
     const postId = postRes.headers.get("x-restli-id");
-    return Response.json({ ok: true, postId });
+
+    // Link, gönderi metninin İÇİNE değil ilk YORUMA ekleniyor. LinkedIn'in
+    // algoritması gövdesinde dış link olan gönderileri daha az dağıtıyor
+    // (kullanıcıyı platformda tutmak istiyor); linki ayrı bir yoruma koymak
+    // gönderiyi "native" (linksiz) sayıp normal dağıtımını sağlıyor, link
+    // yine de ilk yorumda görünür kalıyor.
+    let yorumHatasi: string | undefined;
+    if (postId && kaynakUrl) {
+      try {
+        const commentRes = await fetch(
+          `https://api.linkedin.com/rest/socialActions/${encodeURIComponent(postId)}/comments`,
+          {
+            method: "POST",
+            headers: liHeaders,
+            body: JSON.stringify({
+              actor: auth.person_urn,
+              message: { text: kaynakUrl },
+            }),
+          }
+        );
+        if (!commentRes.ok) {
+          yorumHatasi = `Gönderi paylaşıldı ama link yorumu eklenemedi (status ${commentRes.status}) — linki elle yorum olarak ekleyebilirsin: ${kaynakUrl}`;
+        }
+      } catch {
+        yorumHatasi = `Gönderi paylaşıldı ama link yorumu eklenemedi — linki elle yorum olarak ekleyebilirsin: ${kaynakUrl}`;
+      }
+    }
+
+    return Response.json({ ok: true, postId, ...(yorumHatasi ? { warning: yorumHatasi } : {}) });
   } catch (err) {
     console.error("LinkedIn paylaşım hatası:", err);
     return Response.json({ error: "Beklenmedik bir hata oluştu." }, { status: 500 });

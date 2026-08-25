@@ -28,11 +28,11 @@ Konu SADECE korayakdag.com'daki mevcut gelişme/makalelerden seçilmek zorunda d
 
 ## 2) SİTEYE BAĞLANTI — KESİN KURAL
 
-Her LinkedIn paylaşımının SONUNDA korayakdag.com'a gerçek, çalışan bir link OLMAK ZORUNDA. **Her taslakta, konu sitede daha önce işlenmiş olsa bile, o taslağa özel YENİ bir Makalelerim yazısı oluşturman ZORUNLU** (istisna yok) — LinkedIn taslağı yönetim paneline nasıl otomatik/onaysız düşüyorsa, Makalelerim yazısı da aynı şekilde otomatik/onaysız yayına girer.
+Her taslağın `kaynakUrl` alanında korayakdag.com'a gerçek, çalışan bir link OLMAK ZORUNDA. **Her taslakta, konu sitede daha önce işlenmiş olsa bile, o taslağa özel YENİ bir Makalelerim yazısı oluşturman ZORUNLU** (istisna yok) — LinkedIn taslağı yönetim paneline nasıl otomatik/onaysız düşüyorsa, Makalelerim yazısı da aynı şekilde otomatik/onaysız yayına girer.
 
-Konu hakkında KİŞİSEL/GÖRÜŞ ağırlıklı KISA bir makale yaz ve siteye ekle (Koray'ın makaleleriyle aynı yöntemle: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.tsx`'i örnek al, yeni `app/makaleler/{yeni-slug}/page.tsx` oluştur, `lib/makale-data.ts`'e kaydını ekle) — SONRA LinkedIn paylaşımında bu YENİ makaleye link ver. Konu zaten sitede bir makale/gelişme olarak var olsa bile, aynı konuyu tekrar etme; farklı bir açı/anekdot/gözlemle özgün yeni bir yazı üret ki tekrar/duplicate içerik olmasın. Böyle, paylaşılan her yazı gerçekten seni ziyaret ettiriyor ve orada hem o konuyu hem diğer içeriklerini görebiliyor. Eğlenceli/hafif format seçilse bile bu kural geçerli — eğlenceli anekdotun sonunda da makul, doğal bir siteye geçiş/link olmalı.
+Konu hakkında KİŞİSEL/GÖRÜŞ ağırlıklı KISA bir makale yaz ve siteye ekle (Koray'ın makaleleriyle aynı yöntemle: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.tsx`'i örnek al, yeni `app/makaleler/{yeni-slug}/page.tsx` oluştur, `lib/makale-data.ts`'e kaydını ekle) — SONRA `kaynakUrl`'e bu YENİ makaleyi ver. Konu zaten sitede bir makale/gelişme olarak var olsa bile, aynı konuyu tekrar etme; farklı bir açı/anekdot/gözlemle özgün yeni bir yazı üret ki tekrar/duplicate içerik olmasın. Böyle, paylaşımı okuyup gelen kişi gerçekten seni ziyaret ediyor ve orada hem o konuyu hem diğer içeriklerini görebiliyor. Eğlenceli/hafif format seçilse bile bu kural geçerli.
 
-Asla var olmayan/uydurma bir URL'ye link verme. Link, paylaşım metninin son satırına doğal bir çağrıyla eklenir (örn. "Detaylı yazım: {url}").
+**ÖNEMLİ — link paylaşım METNİNİN İÇİNE KONMAZ, ayrı alanda kalır.** LinkedIn'in algoritması gövdesinde dış link olan gönderileri daha az dağıtıyor (kullanıcıyı platformda tutmak istiyor). Bu yüzden `icerik` alanında ASLA "Detaylı yazım: {url}" gibi bir link satırı YAZMA — yazı, linke hiç ihtiyaç duymadan kendi başına tamamlanmış/doğal bitmeli. Link SADECE `kaynakUrl` alanına yazılır; paylaşım anında site otomatik olarak bunu ilk yorum olarak ekliyor, gönderi metni "native" (linksiz) kalıyor. Asla var olmayan/uydurma bir URL'ye link verme.
 
 ## 3) YAZIM KURALLARI
 
@@ -70,9 +70,9 @@ Her taslak için konuyla alakalı, telifsiz bir görsel VEYA video seç:
 
 1. `research/linkedin-taslaklar/` klasörüne, dosya adı `{YYYY-AA-GG}-{kisa-slug}.json` formatında (ör. `2026-08-20-menopoz-fikri.json`) yeni bir JSON dosyası oluştur. Alanlar:
    - `tarih`: bugünün tarihi, "20 Ağustos 2026" gibi serbest metin Türkçe format
-   - `icerik`: LinkedIn metni (paragraflar arasında boş satır, sonunda korayakdag.com linki)
+   - `icerik`: LinkedIn metni (paragraflar arasında boş satır) — İÇİNDE LİNK OLMAYACAK, kendi başına doğal bitecek
    - `kaynakBaslik`: konunun kısa başlığı
-   - `kaynakUrl`: (varsa) orijinal dış kaynak
+   - `kaynakUrl`: ZORUNLU — korayakdag.com linki (paylaşım anında otomatik ilk yorum olarak eklenir, "varsa orijinal dış kaynak" değil, madde 2'deki site linkinin kendisi)
    - `gorselUrl`: (varsa) Unsplash görseli
    - `videoUrl`: (varsa) Pexels videosu — `gorselUrl` ile `videoUrl` aynı taslakta ikisi birden OLMAMALI, sadece biri.
 2. Bu dosyayı ve her taslakta zorunlu olarak oluşturduğun makale dosyalarını (`app/makaleler/{yeni-slug}/page.tsx`, `lib/makale-data.ts`) commit'le ve `main` branch'ine push'la (commit mesajı: "LinkedIn taslağı: [konu başlığı]"). **Bu adım için onay bekleme, commit/push zorunlu ve otomatik** — taslak panelde görünmesi için tek yol bu push'un tamamlanması.

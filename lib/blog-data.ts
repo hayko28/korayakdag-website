@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "varlik-barisi-2026-nedir-sartlari-oranlari-basvuru-sureci",
+    title: "Varlık Barışı 2026 Nedir? Yurt Dışındaki Varlıklarınızı Türkiye'ye Getirmenin Şartları, Oranları ve Süreci",
+    excerpt: "7582 sayılı Kanun'la KVK'ya eklenen Geçici Madde 19 kapsamında Varlık Barışı 2026: %0-%5 arası kademeli vergi oranları, taahhüt süresi sistemi, yurt içi/yurt dışı varlık farkı, banka üzerinden bildirim süreci ve 31 Aralık 2026 - 31 Temmuz 2027 kritik tarihleriyle güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • VARLIK BARIŞI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "vergi-tesvik-kredibilite-analizi-neden-gerekli-2026",
     title: "İşletmenize AYNA Tutuyoruz: Vergi Risk, Teşvik/Fırsat ve Kredibilite Analizi Neden Her KOBİ'nin İhtiyacı?",
     excerpt: "Çoğu işletme, taşıdığı vergi riskini bir incelemeyle, kaçırdığı teşvik fırsatını bir rakibinin haberiyle, bankanın kendisini nasıl gördüğünü ise bir kredi reddiyle öğreniyor. Vergi Risk Analizi, Teşvik ve Fırsat Analizi, Kredibilite ve Finansal Analiz paketlerinin ne işe yaradığını örnek senaryolarla anlatan rehber.",
