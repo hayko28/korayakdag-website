@@ -171,7 +171,14 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
             <a href="mailto:koray.akdag@sistemglobal.com.tr" className="whitespace-nowrap font-semibold text-[#071A2F] hover:underline">koray.akdag@sistemglobal.com.tr</a>
           </ContactCard>
           <ContactCard title={t.office} icon={<PinIcon />}>
-            <p className="font-semibold text-[#071A2F]">{t.officeAddress}</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=4+Levent+Plaza+Eski+B%C3%BCy%C3%BCkdere+Cad.+No%3A67+Sar%C4%B1yer+%C4%B0stanbul"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#071A2F] hover:underline"
+            >
+              {t.officeAddress}
+            </a>
           </ContactCard>
           <ContactCard title="LinkedIn" icon={<LinkedInIcon />}>
             <a href="https://www.linkedin.com/in/koray-akda%C4%9F-07709368/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:underline">{t.linkedinVisit}</a>
