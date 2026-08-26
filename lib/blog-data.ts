@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     category: "YURT DIŞI ŞİRKET • UKRAYNA • 2026",
     date: "2026",
     readTime: "12 Dakika",
-    image: "https://images.unsplash.com/photo-1561156353-2fb3f2113c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    image: "https://images.unsplash.com/photo-1639341267320-2d062b250c0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "tacikistanda-sirket-nasil-kurulur",
