@@ -939,3 +939,115 @@ Beş fikir arasında en stratejik ve ölçeklenebilir fikir agritechdir: (1) **P
 **Not:** Bu bölüm kullanıcı talebiyle standart "tek öneri" formatının dışında hazırlandı; 10 fikir karşılaştırmalı olarak sunuldu, tek bir favori öne çıkarılmadı. Kanıt bulunamayan noktalar "doğrulanamadı" olarak açıkça belirtildi.
 
 ---
+
+# Otomotiv Özel Araştırması - 2. Tur - 27 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 27 Ağustos 2026
+**Hedef:** Bir önceki turdaki 10 fikirle (termokromik film, grafen kaplama kiti, çatı çadırı, mobil detaylı bakım, araç kokusu aboneliği, mikro-PPF bandı, EV şarj organizatörü, hava kalitesi izleyici, deri koltuk atölyesi, HUD+OBD2) çakışmayan 10 yeni otomotiv fikri. Tek bir öneri öne çıkarılmıyor, tüm adaylar kısa ve karşılaştırmalı listeleniyor.
+
+---
+
+## FİKİR 1: Araç İçi Ambiyans (RGB) LED Aydınlatma Kiti
+
+**Dünyada Durum:** TikTok Shop'ta araç içi ambiyans LED aydınlatma kitleri yoğun satış görüyor; tek bir ürün listesinde 58,6 bin adet satıldığı görülüyor, fiyatlar yaklaşık 4-70 dolar arasında değişiyor. İçerik üreticileri kapı kolu, konsol, ayak altı ve tavan şeridi montaj videolarıyla organik ilgi topluyor. ([tiktok.com](https://www.tiktok.com/shop/product/ambient-light-car-kit))
+
+**Türkiye'de Durum:** Türkiye e-ticaretinde (Trendyol, Hepsiburada) jenerik, markasız ambiyans LED kitleri satılıyor ama Türkçe kurulum videosu, araç modeline özel kesim şablonu ve marka güvencesiyle paketlenmiş bir oyuncu öne çıkmıyor.
+
+**Uyarlanabilirlik:** Düşük fiyatlı (₺300-800), düşük sermayeli, hızlı test edilebilir bir ürün. Farklılaşma noktası Türkçe kısa video içerik (Instagram Reels/TikTok) ile "önce/sonra" pazarlaması olabilir. Riski çok düşük, gelir tavanı da sınırlı — hacimle kazanılan bir iş.
+
+---
+
+## FİKİR 2: Yapay Zeka Destekli Kaza Algılama ve Otomatik Bulut Yedekleme Araç Kamerası
+
+**Dünyada Durum:** Küresel yapay zeka destekli araç kamerası pazarı 2025'te 3,32 milyar dolar değerindeydi, 2035'e kadar yıllık %16,6 büyüyerek 15,44 milyar dolara ulaşması bekleniyor. Garmin, Nexar, BlackVue gibi markalar çarpışma algılama + kablo koparsa bile kritik görüntüyü buluta otomatik yükleme özelliği sunuyor. ([snsinsider.com](https://www.snsinsider.com/reports/ai-dash-cams-market-8379))
+
+**Türkiye'de Durum:** Türkiye'de araç kamerası (araç içi kayıt cihazı) yaygın satılıyor ama çoğu temel SD kart kaydı yapan jenerik ürün; yapay zeka kaza algılama + otomatik bulut yedekleme + sigorta şirketine doğrudan kanıt gönderme özelliğine sahip, Türkçe destekli bir marka bulunamadı.
+
+**Uyarlanabilirlik:** Türkiye'de trafik kazası ve sigorta anlaşmazlıkları sık; "kaza anı otomatik kayıt altına alınır, delil kaybolmaz" vaadi güçlü bir satış noktası olabilir. Sigorta şirketleriyle ortaklık (poliçe indirimi karşılığı cihaz) potansiyel iş modeli. Zorluk: donanım + bulut altyapısı + sigorta şirketi ortaklığı orta düzeyde sermaye ve süre gerektiriyor.
+
+---
+
+## FİKİR 3: Mevsimlik Lastik Depolama ve Değişim Aboneliği (Lastik Oteli)
+
+**Dünyada Durum:** Almanya/Avusturya/Belçika/Lüksemburg'da "Reifenhotel" (lastik oteli) modeli yerleşik; ABD'de de Discount Tire, Les Schwab, TireStorage.com gibi zincirler mevsimlik lastik takımını müşteriden alıp iklim kontrollü ortamda saklayıp sezonunda değiştiriyor. ([grieshaberlog.com](https://www.grieshaberlog.com/industry-solutions/tyres/?lang=en), [tirestorage.com](https://www.tirestorage.com/partners))
+
+**Türkiye'de Durum:** Türkiye'de kış lastiği takma zorunluluğu bazı illerde var ama lastikleri müşteriden toplayıp depolayan, sezonunda eve/işyerine getirip takan uçtan uca bir "lastik oteli" hizmeti yaygın değil — çoğu kişi lastiklerini kendi evinde/balkonunda/garajında saklıyor.
+
+**Uyarlanabilirlik:** Apartman yaşamının yoğun olduğu büyükşehirlerde (depo alanı sorunu) gerçek bir ihtiyaca denk gelebilir, ama bu bir varsayım — arama hacmi/şikayet kanıtı doğrulanamadı. İş modeli: depo kirası + lastikçi ortaklığı + yerinde değişim hizmeti. Sermaye ihtiyacı (depo alanı, lojistik) diğer fikirlere göre daha yüksek.
+
+---
+
+## FİKİR 4: Araç Reklam Giydirme (Wrap Advertising) Gig Platformu
+
+**Dünyada Durum:** ABD'de Wrapify, Carvertise, Nickelytics, Wrapped Media gibi platformlar sürücülerin aracını reklamla kapladırıp ayda 100-600 dolar kazandırıyor; sürücüler genelde zaten Uber/Lyft/DoorDash gibi platformlarda çok yol kat eden kişilerden seçiliyor, kurulum ücretsiz. ([wrappedmedia.com](https://www.wrappedmedia.com/drivers), [financebuzz.com](https://financebuzz.com/get-paid-advertise-on-your-car))
+
+**Türkiye'de Durum:** Türkiye'de bu modelde faaliyet gösteren, markalarla sürücüleri eşleştiren bir platform bulunamadı; yerel esnaf/markaların araç kaplamasıyla reklam yapması bireysel anlaşmalarla, dağınık şekilde yürüyor.
+
+**Uyarlanabilirlik:** Türkiye'de yoğun trafik yapan Getir/Yemeksepeti kurye filoları, taksi/Uber sürücüleri potansiyel arz tarafı oluşturabilir; talep tarafı (yerel/ulusal marka reklamverenler) ikna edilmesi gereken taraf. İki taraflı pazar kurma zorluğu var, ama düşük sermayeli başlayabilir (aracılık komisyonu modeli).
+
+---
+
+## FİKİR 5: Far Sararması İçin DIY Restorasyon Kiti (Perakende)
+
+**Dünyada Durum:** Amazon'da Ciirvoe, Chemical Guys, 3M, QIFOR gibi markaların far restorasyon kitleri en çok satanlar listesinde; alet gerektirmeyen sür-sil formülüyle birkaç dakikada sonuç veriyor, UV korumalı seramik kaplamalı versiyonlar yıllarca koruma vaat ediyor. ([themotorguy.com](https://themotorguy.com/7-best-headlight-restoration-kits-2026/))
+
+**Türkiye'de Durum:** Türkiye'de far parlatma hizmeti oto yıkama/detaylı bakım dükkanlarında profesyonel hizmet olarak sunuluyor (ek ücretli); markalı, talimatlı, kendin-uygula perakende kiti e-ticarette sınırlı çeşitlilikte.
+
+**Uyarlanabilirlik:** Türkiye'de araç parkının ortalama yaşı yüksek (çoğu araç 10+ yaşında), sararmış far çok yaygın bir görsel sorun — düşük fiyatlı (₺150-350), düşük riskli, hızlı test edilebilir bir e-ticaret ürünü. Rekabet: ithal jenerik ürünlerle fiyat baskısı riski var.
+
+---
+
+## FİKİR 6: Akıllı Direksiyon Kilidi / Hırsızlık Önleyici Görünür Caydırıcı
+
+**Dünyada Durum:** ABD'de anahtar klonlama ve "relay attack" gibi elektronik hırsızlık yöntemlerine karşı fiziksel direksiyon kilidi kullanımı yeniden yükselişte; görünür bir direksiyon kilidi takan araçların komşu araçlara göre %60'a kadar daha az hedef alındığı belirtiliyor. ([theconsumers.guide](https://www.theconsumers.guide/reviews/best-car-anti-theft-devices-steering-wheel-locks-clubs-2026))
+
+**Türkiye'de Durum:** Türkiye'de klasik direksiyon kilidi (kulplu, "Club" tipi) yaygın satılıyor ama "akıllı" versiyon — alarm/uygulama bildirimi, kesme girişiminde ses/titreşim uyarısı verilen model — Türkiye pazarında öne çıkan bir marka görülmedi.
+
+**Uyarlanabilirlik:** Türkiye'de araç hırsızlığı ve anahtar kopyalama vakaları medyada zaman zaman gündeme geliyor ama güncel resmi istatistik bu araştırmada doğrulanamadı. Ürün düşük maliyetli ithalat/yerel üretimle test edilebilir; asıl risk "akıllı" özelliğin gerçek farklılaşma sağlayıp sağlamayacağı — basit mekanik kilit zaten yeterli caydırıcılık sunuyor olabilir.
+
+---
+
+## FİKİR 7: İkinci Ömür Elektrikli Araç Bataryası Pazaryeri ve Sertifikasyon Hizmeti
+
+**Dünyada Durum:** Küresel ikinci ömür elektrikli araç bataryası pazarı 2026'da 1,27 milyar dolardan 2034'e kadar 7,6 milyar dolara, yıllık %25,1 büyüyerek ulaşması bekleniyor; Berlin merkezli Minespider gibi şirketler batarya sağlık geçmişi doğrulanmış dijital pazaryerleri kuruyor, AB 2027'den itibaren "dijital batarya pasaportu"nu zorunlu kılıyor. ([insightaceanalytic.com](https://www.insightaceanalytic.com/report/second-life-ev-batteries-market/3142), [chargedevs.com](https://chargedevs.com/newswire/minespider-launches-digital-marketplace-for-second-life-ev-batteries-and-recycled-materials/))
+
+**Türkiye'de Durum:** Türkiye'de 500 bini geçen elektrikli araç parkı henüz yeni olduğu için kullanılmış/ikinci ömür batarya arzı sınırlı; bu alanda sertifikasyon veya pazaryeri hizmeti sunan Türk oyuncu bulunamadı — pazar henüz olgunlaşmadı.
+
+**Uyarlanabilirlik:** Bu fikir erken aşamada — Türkiye'nin EV filosu henüz yaşlanmadığı için (çoğu araç yeni) gerçek batarya arzı 3-5 yıl sonra oluşacak. Bugün için "izlenecek, ileride giriş yapılacak" bir fikir; şimdiden pazara girmek prematüre olur.
+
+---
+
+## FİKİR 8: Aylık Her Şey Dahil Araç Aboneliği Platformu
+
+**Dünyada Durum:** Küresel araç aboneliği pazarı 2025'te 10,45 milyar dolardan 2026'da 13,6 milyar dolara, yıllık %30,1 büyüyor; sigorta, bakım ve trafik/muayene gibi masrafların tek aylık ödemeye dahil edildiği model, araç sahipliğinden uzaklaşan tüketici tercihiyle büyüyor. ([verifiedmarketreports.com](https://www.verifiedmarketreports.com/product/all-inclusive-car-subscription-service-market/))
+
+**Türkiye'de Durum:** Türkiye'de operasyonel kiralama (filo kiralama) kurumsal müşteriye yönelik olgun bir sektör (Garanti Oto, Borusan Otomotiv vb.); ama bireysel tüketiciye yönelik, kısa taahhütlü, uygulama üzerinden yönetilen "her şey dahil aylık araç aboneliği" modeli Türkiye'de henüz sınırlı/olgunlaşmamış.
+
+**Uyarlanabilirlik:** Yüksek araç fiyatları ve kredi faizleri nedeniyle Türkiye'de araç sahipliği zorlaştı — abonelik modeli teorik olarak cazip. Ancak bu sermaye yoğun bir iş (araç filosu satın alma/kiralama gerektirir), Koray'ın "küçük başlangıç" kriteriyle uyuşmuyor; bağımsız girişimci için yüksek engel.
+
+---
+
+## FİKİR 9: Evcil Hayvan için Araç Seyahat Aksesuarları (Bariyer, Hamak Koltuk Örtüsü)
+
+**Dünyada Durum:** Köpek koltuk örtüsü pazarı 2025'te 524,8 milyon dolar değerinde, 2035'e kadar yıllık %4,7 büyüyerek 830,7 milyon dolara ulaşması bekleniyor; hamak tipi örtüler (köpeğin ayak boşluğuna düşmesini engelleyen bariyer) en popüler kategori, evcil hayvanı "aile üyesi" gören trend büyümeyi sürüklüyor. ([factmr.com](https://www.factmr.com/report/dog-seat-covers-market), [indexbox.io](https://www.indexbox.io/blog/dog-car-seat-cover-market-forecast-points-higher-toward-2035-driven-by-pet-humanization-and-premiumization-trends/))
+
+**Türkiye'de Durum:** Türkiye'de evcil hayvan sahipliği hızla artıyor ve evcil hayvan ürünleri pazarı büyüyor, ama araca özel köpek/kedi bariyeri, hamak koltuk örtüsü gibi ürünler Türk e-ticaretinde sınırlı çeşitlilikte ve çoğunlukla jenerik/markasız.
+
+**Uyarlanabilirlik:** Düşük fiyatlı (₺400-900), düşük riskli, hızlı test edilebilir fiziksel ürün. Türkiye'de evcil hayvan sahiplenme trendiyle örtüşüyor; pazarlama için veteriner klinikleri veya evcil hayvan influencer'larıyla iş birliği düşünülebilir. Büyük ölçekli gelir potansiyeli sınırlı ama giriş engeli çok düşük.
+
+---
+
+## FİKİR 10: Tavan Çadırı / Bagaj Kutusu Paylaşımlı (Peer-to-Peer) Kiralama Platformu
+
+**Dünyada Durum:** ABD'de RooftopCar.com gibi platformlar "araç için Airbnb" mantığıyla yerel araç sahiplerinin tavan çadırı/bagaj kutusunu günlük 10-20 dolara kiralamasını sağlıyor; FriendWitha gibi genel ekipman kiralama platformlarında da kategori olarak yer alıyor. ([rooftopcar.com](https://rooftopcar.com/), [friendwitha.com](https://friendwitha.com/rentals/all/chula-vista-ca/thule-pulse-medium-cargo-carrier-chula-vista/))
+
+**Türkiye'de Durum:** Türkiye'de bu modelde (bireyler arası, uygulama üzerinden) tavan çadırı veya bagaj kutusu kiralama hizmeti bulunamadı; isteyenler ya satın alıyor ya da sınırlı sayıda kamp malzemesi kiralama dükkanından buluyor.
+
+**Uyarlanabilirlik:** Önceki turda tespit edilen "tavan çadırı satışı" fikrinin tamamlayıcısı: satın almak yerine "yazlık 2-3 hafta kullanıp iade et" ihtiyacı olan kesim için düşük maliyetli bir platform olabilir. Zorluk: iki taraflı pazar (arz + talep) aynı anda oluşturmak gerekiyor, kullanıcı sayısı kritik eşiğe ulaşana kadar büyüme yavaş olabilir; mevsimsellik riski yüksek (yaz aylarına sıkışmış talep).
+
+---
+
+**Not:** Bu bölüm de kullanıcı talebiyle 10 fikirlik karşılaştırmalı format halinde hazırlandı, tek bir favori öne çıkarılmadı. Kanıt bulunamayan noktalar "doğrulanamadı" olarak açıkça belirtildi.
+
+---
