@@ -266,4 +266,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "25 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "asil-toplanti-koridorda-yapiliyor",
+    title: "Asıl Toplantı, Toplantı Bittikten Sonra Koridorda Yapılıyor",
+    excerpt:
+      "Toplantı odasında herkes başını sallar, kapı kapanır kapanmaz gerçek görüşler ortaya dökülür. Danışmanlık literatüründe buna \"toplantı sonrası toplantı\" deniyor — ve bu durum aslında toplantı kültürüne dair ciddi bir uyarı.",
+    tag: "Görüş",
+    date: "26 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
