@@ -416,6 +416,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yurt dışına ürün gönderen işletmelere, sevkiyat öncesinde hedef pazardaki etiketleme ve belgelendirme şartlarını bu ücretsiz platform üzerinden kontrol etmelerini öneririm; gümrükte karşılaşılan teknik engellerin çoğu, sevkiyattan önce fark edilebilecek türden.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "25 Ağustos 2026",
+    eklendiTarihi: "2026-08-26",
+    baslik:
+      "Temmuz 2026 ihracatı Cumhuriyet tarihinin en yüksek Temmuz değerine ulaştı, 54 ilde çift haneli artış",
+    ozet:
+      "Ticaret Bakanlığı'nın açıklamasına göre Türkiye'nin Temmuz 2026 ihracatı yıllık bazda %2,9 artışla 25,6 milyar dolara ulaşarak Cumhuriyet tarihinin en yüksek Temmuz ayı değerine ulaştı. Ocak-Temmuz döneminde toplam ihracat %3,4 artışla 161,6 milyar dolara çıkarken, Temmuz'da 54 ilin ihracatında artış görüldü; Mersin, İzmir, Antalya, Sakarya ve Gaziantep en yüksek tutarsal artış kaydeden iller oldu.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/2026-yili-temmuz-ayinda-ihracatimizda-cumhuriyet-tarihinin-en-yuksek-temmuz-ayi-degerine-ulasilirken-illerimizdeki-cift-haneli-ihracat-artislari-dikkat-cekti",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: 54 ilde birden görülen artış, ihracat performansının artık birkaç büyük şehre değil daha geniş bir üretim tabanına yayıldığını gösteriyor; Marmara dışındaki illerde üretim yapan ihracatçı KOBİ'lere bu momentumu değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "20 Ağustos 2026",
+    eklendiTarihi: "2026-08-26",
+    baslik:
+      "SPK'nın haftalık bülteninde İntetra Teknoloji ve Bakırcı GYO'nun halka arzına onay, çok sayıda borçlanma aracı ihracı onaylandı",
+    ozet:
+      "Sermaye Piyasası Kurulu'nun 20 Ağustos 2026 tarihli 2026/52 sayılı haftalık bülteninde İntetra Teknoloji ve Bilişim Hizmetleri A.Ş.'nin (53,60 TL'den) ve Bakırcı Gayrimenkul Yatırım Ortaklığı A.Ş.'nin (12,93 TL'den) halka arzına onay verildiği açıklandı. Aynı bültende QNB Bank, Akbank, Vestel ve Anadolu Efes gibi şirketlerin borçlanma aracı ihraçları da onaylandı; Kurul ayrıca bir payda şüpheli işlem tespit edilen kişilere işlem yasağı ve bir bağımsız denetim şirketine idari para cezası uyguladı.",
+    kaynakUrl: "https://www.bloomberght.com/spk-2-sirketin-halka-arzini-onayladi-3786074",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Halka arz onaylarının bu kadar sık gündeme gelmesi, kurumsallaşmasını tamamlamış şirketler için sermaye piyasasının hâlâ aktif bir finansman kanalı olduğunu gösteriyor; halka arzı planlayan şirketlere süreç öncesi bağımsız denetim ve değerleme adımlarını erkenden netleştirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
