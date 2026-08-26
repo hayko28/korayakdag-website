@@ -26,6 +26,30 @@ export const metadata: Metadata = {
   verification: {
     google: "zzlyEjheKuk_eAkgoCyz_fdYt485aPFKbUuiNvQQb5o",
   },
+  openGraph: {
+    title: "Koray Akdağ | Stratejik Danışmanlık",
+    description:
+      "Stratejik danışmanlık, iş geliştirme, satış yönetimi, yatırım teşvikleri ve uluslararası büyüme çözümleri.",
+    url: "https://korayakdag.com",
+    siteName: "Koray Akdağ",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "/hero-pg.png",
+        width: 1536,
+        height: 1024,
+        alt: "Koray Akdağ | Strateji ve İş Geliştirme Danışmanı",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Koray Akdağ | Stratejik Danışmanlık",
+    description:
+      "Stratejik danışmanlık, iş geliştirme, satış yönetimi, yatırım teşvikleri ve uluslararası büyüme çözümleri.",
+    images: ["/hero-pg.png"],
+  },
 };
 
 const organizationJsonLd = {
