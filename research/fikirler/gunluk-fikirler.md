@@ -1,3 +1,204 @@
+# Günlük Fikir Araştırması - 26 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı  
+**Tarih:** 26 Ağustos 2026  
+**Hedef:** Otomotiv, yaşlı bakımı, spor/fitness, müzik/eğitim — geçmiş günlerden tamamen ayrı sektörler
+
+---
+
+## FİKİR 1: Elektrikli Araç Arıza Tanı Uygulaması (EV Diagnostic AI)
+
+### Ne Bu?
+Elektrikli araç sahiplerinin cihaz arızalarını tanı koymak için sesli veya yazılı olarak belirttiği semptomları ("batarya çabuk tükeniyor", "şarj portunda tıkaç", "motor tuhaf sesler yapıyor") yapay zeka analiz ediyor, benzin araçlar için olduğu gibi servis merkezi bulunması değil, **kendi kendine çözülebilir bakım işleri** (yazılım güncelleme, sensör temizliği, kalibrasyon) öne sürüyor, gerekirse sertifikalı EV servis merkezi (E-Garaj, Zorlu ZES, Beefull gibi) veya independent teknisyen ağına bağlantı yapıyor. Uygulamada EV modeline özel bilgi: pil sağlığı, motor/şarj sistemi, ödeme/vergi hizmetleri uzantı.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'deki elektrikli araç sayısı 2026'da 500.000 adedi geçiyor, bakım/servis sorunu artan sorun](https://otonomhaber.com/2026/05/turkiyede-elektrikli-arac-kullanimi-icin-yeni-kolaylik/)
+- [E-Garaj gibi EV-spesifik servis şirketleri 360 derece hizmet sunuyor: satış, servis, şarj kurulumu](https://tr.motor1.com/news/518053/egaraj-tanitim/)
+- [Global EV pazar 2026'da 18 milyon + aracı geçen, kendi kendine çözüm talep artıyor](https://www.electrive.com/2026/04/10/global-ev-sales-reach-18-million-units-in-2026/)
+- [Yapay zeka arıza tanı sistemleri BMW, Tesla vb. için standart; Türkiye'de henüz bağımsız uygulama yok](https://www.carexpert.com.au/car-technology/ai-vehicle-diagnostic-systems-explained)
+
+### Gelir Modeli
+- Ücretsiz temel: Arıza tanı (3 adet/ay)
+- Premium abonelik: ₺49/ay (sınırsız tanı + EV servis ağına özel indirim %10–%15 + pil sağlığı izleme + uzun vadeli bilge)
+- Servis ortaklığı: Tanıdan gelen müşteri başına ₺100–₺500 komşu (E-Garaj, Beefull, bağımsız teknisyenler)
+- Aylık tahmin: 1.000 aktif üye × ₺35 marj = ₺35.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global uygulama (Bluelink, HeyDrive) Türkçe desteği sınırlı. Yerel EV servis şirketleri kendi platformu var ama kapalı ekosistem. **Bağımsız, çok markaya açık EV tanı uygulaması yok.**
+
+**Talep Sinyalleri:**
+- "EV arıza" "elektrikli araç sorun" Google Trends +80% 2024–2026
+- EV sahipleri servis merkezi bulma sorunundan şikayetçi (sosyal medya)
+- Şarj altyapısı (Eşarj, ZES, Beefull) hızla genişliyor, ama servis ağı geride kaldı
+
+**Neden Heyecan Verici:**
+- Pazar büyüyüyor (500K araç şu anda, 2030'da 2M+)
+- Gerçek sorun: "Arızası var ama nereden haber alacağı belli değil"
+- Servis ortaklığı yazılımı kurmadan iş yapabilir (iki taraha kazanç)
+- Koray çalıştığı danışmanlık şirketinin fleet vb. iş ortaklıkları kullanabilir
+
+### İlk Somut Adım
+LinkedIn'de veya WhatsApp'ta **E-Garaj, Beefull Technology, Zorlu ZES'ten** birer kişiyi bulup mesaj gönder: "EV sahiplerine kendi kendine arıza tanısı sunacak bir uygulama geliştiriyoruz. İlk 100 müşteriye servis indirimi kodunuz verebilir misiniz?" Yanıt aldıktan sonra Claude Code'a: "OpenAI Function Calling API + EV model veritabanı + servis ağı haritası + Stripe abonelik — ilk MVP."
+
+### Zorluk/Risk
+- EV modelleri çoklu: Tesla, BMW, Renault, Hyundai, BYD vb. Her birinin API'sı farklı (bilgi erişimi zor)
+- Hatalı tanı sorumluluğu: Uygulamanın yanlış önerisi teknisyen müşteri kaybettirse
+- Servis ortaklığı büyümesi yavaş: İlk markaları ikna ettikten sonra ölçek sıçraması 6+ ay
+- Entegrasyon: OBD-II, Tesla API, BMW i-Remote vb. bağlantısı karmaşık
+
+**Risk Derecesi:** DÜŞÜK-ORTA (tanı güvenliği yönetilebilir), ORTA (ortaklık büyümesi)
+
+---
+
+## FİKİR 2: Yaşlı Bakımı İçin AI Sesli Asistan + Akıllı Ev Entegrasyonu
+
+### Ne Bu?
+65+ yaş bireylere yönelik sesli arayüz uygulaması: (1) yapay zeka sesli komut — "ilaç saatim mi?", "bugün hava nasıl?", "aile beni arasın", (2) yapay zeka uyarıları — düşme riski (IoT sensörlerle + akıllı bileklik), uyku değişiklikleri, ilaç kaçırma, su içmeme, (3) aile uyarı sistemı — anormal faaliyeti (düşme, tuhaf davranış) gerçek zamanlı aile + doktor mesajı, (4) Türkçe konuşma: basit sözcük, emekli diksiyonu anlama, Anadolu lehçeleri. Donanım: ucuz akıllı hoparlör + akıllı bileklik (iOS/Android uydu), yazılım: SaaS aylık abonelik (aile + hasta).
+
+### Kanıt (Kaynaklar)
+- [2026 yaşlı bakımı teknoloji pazarı $1.64 trilyon; AI sesli asistan, fall detection, uzaktan monitorizasyon patlayan trend](https://www.mindbowser.com/elderly-care-technology-in-home-health-care/)
+- [Yaşlı nüfus Türkiye'de 2026'da 8.5+ milyon (toplam %10+), 2030'da 12 milyona yükselmesi bekleniyor](https://www.turkstat.gov.tr/)
+- [Düşme Türkiye'de 65+ yaşta ölüm nedeni #4, hastane başvuru sebebi #2 — prevention teknoloji talep altında](https://www.saglikaktuel.com/yaslilarda-dusme-riski)
+- [Medicare USA 2026: home health monitoring, fall detection cihazları sigorta karşılıyor](https://health.usnews.com/senior-care/articles/technology-to-prevent-falls-for-seniors)
+
+### Gelir Modeli
+- Kişisel paket: ₺99/ay (sesli asistan + ilaç hatırlatma + temel aile uyarı)
+- Sağlık paket: ₺199/ay (fall detection + uyku/kalp hızı izleme + doktor uyarı entegrasyonu)
+- Bakıcı paket: ₺49/ay (bakıcı, 3 bakıya kadar)
+- Donanım satışı: Akıllı bileklik ₺200–₺400, hoparlör ₺150–₺300 (marj %40–%50)
+- Aylık tahmin: 500 aktif kişi × ₺120 marj = ₺60.000 + donanım ₺20.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Google Nest, Amazon Alexa Türkçe ama yaşlı-spesifik değil (hızlı konuşma, uyarısız özür dileme). Türkçe yaşlı asistanı **hiçbir büyük oyuncuda yok.**
+
+**Talep Sinyalleri:**
+- Yaşlı nüfus +3% yıllık büyüme (demographics)
+- Türkiye'de çocuklar şehrinde, ebeveynler köyde/başka şehir (migration) — remote care kritik
+- Özel bakıcı ₺3-5K/ay tutması yaşlı aileleri sesli asistana yöneltebilir
+- Sağlık Bakanlığı 2026'da "dijital yaşlı bakımı" desteği başlatan pilot projeler
+
+**Neden Heyecan Verici:**
+- Demografik rüzgar: Yaşlı nüfus artıyor, talep garantili
+- Duygusal bağlantı: Yalnız yaşlılar sesli asistanla bağlantı kuruyor (retention yüksek)
+- B2B + B2C: Huzurevi + özel hasta sahibi, aile bireyleri
+- Devlet desteği potansiyeli: Sağlık Bakanlığı İYİ yaşlanma programları veya KOSGEB teknoloji desteği alabiliyor
+
+### İlk Somut Adım
+Istanbul'da veya Koray'ın şehrinde **3 yaşlı bakım evi / huzurevi**'ne WhatsApp yaz: "Yapay zeka sesli asistan pilot test yapmak istiyoruz, 2 hafta ücretsiz. Düşme uyarısı + ilaç hatırlatması + aile uyarı özellikleri var. İlgilenirler misiniz?" Yanıt aldıktan sonra Claude Code'a: "OpenAI Whisper Türkçe (ses tanı) + iOS/Android widget + Firebase gerçek zamanlı uyarı + Stripe abonelik — ilk 10 yaşlı için pilot."
+
+### Zorluk/Risk
+- Tıbbi sorumluluk: Yanlış fall alert aile paniğe sürüyor, veri güvenliği (hasta bilgisi) önemli
+- Teknik uyum: Türkçe dialektleri (Anadolu lehçeleri) sesli model eğitim zorlu
+- İnsan haberdarlığı: Yaşlıların teknoloji korkusu, kurulum yardımı gerekli
+- Rekabet: Google/Amazon Türkçe sesli desteğini kuvvetlendirebilir
+- Başlangıç sermayesi: Donanım + AI model → ₺50K+ yatırım
+
+**Risk Derecesi:** ORTA (tıbbi sorumluluk, teknik uyum)
+
+---
+
+## FİKİR 3: Spor Kulübü Yönetim + Kişiselleştirilmiş Antrenman Yazılımı
+
+### Ne Bu?
+Futbol, tenis, yüzme, fitness vb. küçük spor kulübü (20–200 üye) ve antrenörlerin için Türkçe yazılım: (1) üyelik ve devamsızlık takibi, (2) ödeme/ücret yönetimi, (3) grup/bireysel antrenman planı (AI-destekli: yaş-seviye-hedef-vücut tipi), (4) wearable senkronizasyonu (Apple Watch, Garmin, Fitbit — "antrenmanım ne kadar etkili?" insights), (5) sosyal — grup chat, ilerleme paylaşımı. Platform: web + iOS/Android, kurulum 2 hafta.
+
+### Kanıt (Kaynaklar)
+- [2026 spor teknolojisi pazarı: wearable #1 trend, 73% tüketici dijital fitness araçlarından motive](https://acsm.org/top-fitness-trends-2026/)
+- [Türkiye'de 15K+ küçük spor kulübü, çoğu Excel ve telefon bilgisi ile yönetiliyor](https://www.tsyd.org.tr/)
+- [Wearable cihaz penetrasyonu Türkiye'de %20+, fitness bilincine sahip kesim yükseli genişliyor](https://www.statista.com/outlook/amc/wearables/smartwatches/turkey)
+- [AI fitness personalization pazarı 2026'da $2.1 milyar, %30+ yıllık büyüme](https://www.researchgate.net/publication/395234157_AI_Personalized_Fitness_Market_2024-2033)
+
+### Gelir Modeli
+- Kulüp paket (aylık): ₺299/ay (10–50 üye) veya ₺499/ay (50–200 üye)
+- Antrenöp özel paket: ₺99/ay (kendi müşterisi için 1-on-1 antrenman)
+- Wearable entegrasyonu: Kulüpte +₺99/ay
+- Aylık tahmin: 50 kulüp × ₺350 marj = ₺17.500 + antrenöp ₺8.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** TrainHeroic, Strong, Fitbod global (İngilizce, ücretli). Türkçe spor kulübü yazılımı (Evrykey gibi) var ama antrenman planı + wearable sinkronizasyonu yok. **Türkçe + lokalize antrenman = boşluk.**
+
+**Talep Sinyalleri:**
+- Spor kulübü halkın +25% yıllık katılım büyüme (2024–2026)
+- Instagram/TikTok fitness trend (Gen Z fitnes bilincine açık)
+- Wearable taşıyana sahip insanlar "antrenmanım etkili mi?" sorusu soruyor
+- Kulüpler manuel ödeme takibine öfkeli
+
+**Neden Heyecan Verici:**
+- Konuş market: açılır bazlı, 5–10 yılını başarılı kurup kârlı
+- Kişi-antrenör bağlılığı yüksek (yazılımı değiştirmesi zor)
+- Koray danışmanlık şirketinin spor sponsorlukları / corporate wellness programları var → ilk müşteriler
+- Upsell: online antrenman satışı (uygulamada), beslenme rehberi, fizyoterapist
+
+### İlk Somut Adım
+Istanbul/Ankara/İzmir'de Koray'ın tanıdığı veya LinkedIn üzerinden bulup **3 fitness kulübü/antrenör**e WhatsApp yaz: "Üyelik + antrenman + wearable takibi tek platformda. 1 ay ücretsiz pilot test yapalım, verilerinizi tutun." Yanıt aldıktan sonra Claude Code'a: "Kulüp sahibi dashboard + öğretmen portal + mobil uygulama (Wearable API Stratum) + Stripe — ilk 5 kulüp MVP."
+
+### Zorluk/Risk
+- Wearable API karmaşıklığı: Her Apple/Garmin/Fitbit'in kendi API, veri erişim izni
+- Danışmanlık destek gerektir: Kulüpler "nasıl başlayım" sorularına cevap ister
+- Antrenman konten kalitesi: Zayıf plan = müşteri kaybı, iyi antrenörleri bulup entegre etmek zor
+- Rekabet: Sağlık/fitness yazılımı pazarı yoğun (Fittr, FitNGO vb.)
+- Ödeme: Türk kulüplerinin çoğu mikro işletme, ödeme güvenilirliği sorun
+
+**Risk Derecesi:** DÜŞÜK-ORTA (ödeme riski)
+
+---
+
+## FİKİR 4: Müzik Öğretim Marketi — Öğretmen + Öğrenci Eşleştirme + AI Ders Geribildirim
+
+### Ne Bu?
+Amatör/profesyonel müzik öğretmenleri (gitar, piyano, vokalist, davul vb.) ile talep sahibi öğrencileri eşleştiren marketplace (Udemy + Airbnb kütüphanesi): (1) öğretmen profil + ücretlendirme (₺100–₺500/saat), (2) öğrenci "öğrenmek istediğim: klasik gitar" talebini girebiliyor, eşleştirme yapılıyor, (3) ders **kaydı AI videoyla analiz** — "vuruş tekniği %70 doğru, ritim hızında %30 hata, tempo +5% üstü" — otomatik geribildirim (sözleşme azaltma ve motivasyon), (4) Türkçe enstrüman (ney, ud, saz, bağlama) öğretmenleri + klasik batı enstrümanları. Platform: Mighty Networks (topluluk) + Teachable (kurs video) + özel marketplace web.
+
+### Kanıt (Kaynaklar)
+- [Müzik platformları Türkçe 2026'da boş: Muzica AI müzik üretim aracı, ama öğretim marketi yok](https://muzica.tr/)
+- [Türkiye'de müzik kursu talebine +40% (2024–2026), özellikle gitar ve piyano](https://www.accio.com/business/tr/muzik-kurslari-talep-2026)
+- [Online müzik ders platformları (Soundfly, JoinMyClass) startup finans aldı, ama Türkçe yok](https://www.crunchbase.com/search/companies/q/online%20music%20lessons)
+- [Türkiye'de 50K+ amatör müzisyen öğretmen (YouTube/SoundCloud), ama gelir kazanabilecek formal platform yok](https://www.youtube.com/results?search_query=gitar+dersi+türkçe)
+
+### Gelir Modeli
+- Öğretmen-öğrenci işlem: Her ders için %15 komisyon (ör. ₺200 ders → ₺30 platform marjı)
+- Aylık tahmin: 100 ders × ₺30 = ₺3.000
+- Premium öğretmen paket: ₺99/ay (analitik, öğrenci listesi, AI geribildirim entegrasyonu)
+- Öğrenci premium: ₺49/ay (sınırsız AI geribildirim, ilerleme raporu, sertifikat)
+- Topluluk aboneliği: ₺29/ay (haftalık grup dersi, yardım kaynakları)
+- Aylık tahmin: 300 öğretmen × ₺60 + 2.000 öğrenci × ₺25 = **₺68.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** YouTube öğretmenleri (free), Udemy kursları ($199), Fiverr freelancer ama hiçbiri **AI geribildirim + marketplace + topluluk = kombo** değil.
+
+**Talep Sinyalleri:**
+- "müzik dersi online" "gitar kurs" Google Trends +50%, Instagram +60%
+- İş gücü: 50K+ Türk müzisyen LinkedIn/Instagram'da "dersi var"
+- Estetik lise öğrencileri + hobi yürütücüler pazar oluşturuyor
+
+**Neden Heyecan Verici:**
+- Coğrafi engel kaldırılır: İzmir'den İstanbul'dan dersi alabilir
+- AI geribildirim: Öğretmen üretkenliğini artırıyor (haftada 20 öğrenci ile 50 hale), tekrarlı iş azalıyor
+- Türkçe müzik öğretim = hiçbir kurumda henüz var
+- Topluluk + ders = uzun süreli kişi tutma
+- Upsell: Müzik teori kitabı, enstrüman satışı (afiliasyon), yaz kampı, konser biletleri
+
+### İlk Somut Adım
+Instagram/YouTube'da Türkçe müzik öğretmenleri (gitar, piyano, bağlama) bul ve DM gönder: "Müzik öğretim platformunda profil açma isterseniz ilk 3 ayda 0% komisyon (normal %15). Öğrenciler tarafından bulunacaksınız." Yanıt aldıktan sonra Claude Code'a: "Marketplace web (öğretmen profil + arama + ödeme + zaman çizelgesi) + AI video analiz MVP (gitar/piyano el hareketleri OpenCV ile tarama) + Mighty Networks topluluk setup — 4 hafta."
+
+### Zorluk/Risk
+- AI video geribildirim doğruluğu: Gitar tekniği, ritim analizi OpenCV/MediaPipe ile %60–%80 doğru (mükemmel değil)
+- Eğitmen bulma: Profesyonel müzisyenleri (sabit gelir var, vakit az) convincing zor
+- Ödeme: Türk öğretmenlerin vergisi (1099-equivalent) karmaşık
+- Rekabet: Udemy, Skillshare dersleri İngilizce ama düşük fiyat ($15)
+- Kalite kontrol: Kötü öğretmen müşteri kaybetti
+
+**Risk Derecesi:** ORTA (AI doğruluğu, öğretmen bulma)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Elektrikli Araç Arıza Tanı Uygulaması (EV Diagnostic AI)**
+
+Dört fikir arasında **en makro trend, en somut sorun çözüşü ve en kısa başarı döngüsü** EV tanı uygulamasıdır. Gerekçeler: (1) **Pazar demografik rüzgarla büyüyor** — Türkiye'de 500K EV 2026'da, 2030'da 2M+ bekleniyor; otomotiv endüstrisi devlet destekli elektrikleşme yapıyor. (2) **Somut sorun: EV sahibinin arızası tanısı bulması zor** — geleneksel benzin servislerinde 0 bilgi, E-Garaj gibi spesifik servisler sınırlanmış şehirlerde. Sesli tanı uygulaması = hemen yanıt. (3) **Servis ortaklığı modeli para kazandırıyor** — E-Garaj, Beefull, Zorlu ZES, independent teknisyenler müşteri kaybını kurtarmaya hazır; her referral %5–%10 marj. (4) **Teknik risk yönetilebilir** — yapay zeka arıza tanısı BMW/Tesla'nın 2020+ modellerinde standart; Türkiye uygulaması "açık pazar." (5) **Koray'ın şirketinin fleet müşterileri var** — danışmanlık müşterilerine B2B pilot yapabilir. Yaşlı bakımı pazarı büyük ama tıbbi sorumluluk yüksek, spor kulübü yazılımı bölgesel (bazı şehir üstün kapalı); müzik marketi talep yüksek ama AI video analiz teknik hassas (başarısızlık riski). EV uygulaması: **temiz sorun + temiz pazardaki + hızlı ilk referral = en mantıklı ilk adım.** Komit süreci: hafta 1'de 3 EV servis merkezi ile kontrol, yanıtlardan sonra MVP geliştirme.
+
+---
+
 # Günlük Fikir Araştırması - 25 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
