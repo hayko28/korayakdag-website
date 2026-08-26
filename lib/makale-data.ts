@@ -275,4 +275,49 @@ export const MAKALELER: MakaleMeta[] = [
     date: "26 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "asgari-sermaye-artirimini-erteleyenler",
+    title: "Asgari Sermaye Artırımını Erteleyenler Neyi Gözden Kaçırıyor?",
+    excerpt:
+      "\"Biz zaten büyüdük, bilançomuz farklı\" — asgari sermaye artırımı gündeme geldiğinde duyulan ilk cümle bu. Ama Geçici Madde 15 bilançoya değil, esas sermayeye bakıyor ve 31 Aralık 2026 takvimi kesin.",
+    tag: "Strateji",
+    date: "20 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "tedarikcinden-gelen-tsrs-talebi",
+    title: "TSRS'de Eşiğin Altında Kalmak, Talepten Muaf Olmak Değil",
+    excerpt:
+      "Bir tekstil ihracatçısı TSRS eşiğinin dışında kaldığını düşünüp rahatladı. Üç ay sonra İtalyan bir alıcı sürdürülebilirlik raporu istedi. Yasal muafiyetle ticari muafiyet aynı şey değil.",
+    tag: "Görüş",
+    date: "20 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "kosgeb-yapay-zeka-kredisinin-gozden-kacan-sarti",
+    title: "KOSGEB'in Yapay Zekâ Kredisinde Rakamdan Daha Önemli Olan Şart",
+    excerpt:
+      "5 milyon TL'ye kadar faizsiz destek dikkat çekiyor, ama asıl belirleyici olan 12 aylık ödemesiz dönem ve Teknogirişim Rozeti şartı. Çoğu işletme krediyi reddedilmiyor, ona hiç başvuramıyor.",
+    tag: "Strateji",
+    date: "21 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "tubitak-1832-geri-odemeli-hibeye-donusen-destek",
+    title: "TÜBİTAK 1832'de Destek Neden Önce Kredi, Sonra Hibe Oluyor?",
+    excerpt:
+      "51,5 milyon TL'ye kadar destek öngören Yeşil Dönüşüm Çağrısı'nda para önce faizsiz kredi olarak veriliyor, yeşil başarı kriterleri tutturulunca yarısı hibeye dönüşüyor. Bu yapı saf hibeden neden daha akıllı?",
+    tag: "Strateji",
+    date: "21 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "isletmenize-disaridan-bakmak",
+    title: "İşletmenize Ayna Tutuyoruz: Vergi Risk, Teşvik ve Kredibilite Körlüğü",
+    excerpt:
+      "Vergi riskini bir ceza tebligatıyla, kaçırılan teşviki bir rakibin haberiyle, kredibilite zayıflığını bir banka reddiyle öğrenmek — üçü de önceden görülebilir, kaynağı aynı kör nokta.",
+    tag: "Görüş",
+    date: "21 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
 ];
