@@ -1,5 +1,16 @@
 export type SonucDurumu = "uygun" | "kismen_uygun" | "uygun_degil" | "belirsiz";
 
+// Katman 3 — research/tesvik-takip/programlar.json'daki genel katalogdan
+// (160+ program) huni cevaplarına göre basit etiket eşleştirmesiyle çıkarılan
+// öneriler. Bunlar kural motoruyla değerlendirilmez, sadece "bunlar da
+// ilginizi çekebilir" şeklinde gösterilir — kesin uygunluk iddiası taşımaz.
+export type KatalogEslesme = {
+  ad: string;
+  kurum: string;
+  sonBasvuruTarihi: string | null;
+  kaynakUrl: string;
+};
+
 export type ProgramSonucu = {
   programId: string;
   programAdi: string;
@@ -54,9 +65,21 @@ export type IhracatTuru = "fiziksel_mal" | "hizmet" | "her_ikisi";
 
 export type TkdkSektoru = "hayvancilik" | "tarimsal_uretim" | "gida_isleme" | "yenilenebilir_enerji" | "kirsal_turizm" | "diger";
 
-// Tüm alanlar opsiyonel: Katman 1 (ortak) doldurulmadan hiçbir program
-// değerlendirilemez, Katman 2 (programa özel) alanları boş bırakılan
-// programlar "belirsiz" sonuç döner, "uygun değil" değil.
+// Ar-Ge "olgunluk seviyesi" — huni sorusu. "yok" tüm Ar-Ge programlarını eler;
+// "planliyorum" (henüz Ar-Ge yok ama başlanacak) TÜBİTAK 1507 ve KOSGEB
+// Ar-Ge/Ür-Ge/İnovasyon'un asıl hedef kitlesidir (bu programlar "başlangıç"
+// için tasarlanmış, "yok" ile karıştırılmamalı); "var_kurumsal" TÜBİTAK 1501'i
+// ve Ar-Ge Merkezi bağlamını işaret eder.
+export type ArgeDurumu = "yok" | "planliyorum" | "var_kucuk" | "var_kurumsal";
+
+export type IhracatDurumu = "yok" | "planliyorum" | "yapiyorum";
+
+export type DonusumDurumu = "yok" | "planliyorum" | "yapiyorum";
+
+// Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
+// değerlendirilemez, Katman 2 (programa özel, sadece huniden geçen adaylara
+// sorulur) alanları boş bırakılan programlar "belirsiz" sonuç döner, "uygun
+// değil" değil.
 export interface DestekBasvuruGirdisi {
   // Katman 1 — ortak şirket bilgileri
   sirketUnvani?: string;
@@ -67,6 +90,18 @@ export interface DestekBasvuruGirdisi {
   yillikNetSatisHasilatiTl?: number;
   maliBilancoTl?: number;
   turkiyedeYerlesikMi?: boolean;
+
+  // Katman 1 — huni (triyaj) soruları: hangi karmaşık program modüllerinin
+  // gösterileceğini ve genel kataloğun hangi kalemlerini öne çıkaracağını
+  // belirler. Cevaplanmayan bir huni sorusu, ilgili modülü/katalog kalemini
+  // basitçe göstermez (yanlış "uygun" riski yerine "gösterme" tercih edilir).
+  yeniGirisimciMi?: boolean; // kuruluş <3 yıl veya henüz iş fikri aşamasında
+  imalatciMi?: boolean;
+  yatirimPlanlaniyorMu?: boolean; // yeni tesis/genişleme/modernizasyon yatırımı
+  argeDurumu?: ArgeDurumu;
+  ihracatDurumu?: IhracatDurumu;
+  donusumDurumu?: DonusumDurumu; // dijital veya yeşil dönüşüm
+  kirsalYatirimVarMi?: boolean;
 
   // KOSGEB İş Geliştirme Desteği
   kosgebVeriTabaniKayitliMi?: boolean;

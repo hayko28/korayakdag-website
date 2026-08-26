@@ -1,5 +1,5 @@
 import { initializeDatabase, sql } from "@/lib/database";
-import { DestekBasvuruGirdisi, tumProgramlariDegerlendir } from "@/lib/destek-uygunluk";
+import { DestekBasvuruGirdisi, katalogEslestir, tumProgramlariDegerlendir } from "@/lib/destek-uygunluk";
 
 export async function POST(request: Request) {
   try {
@@ -10,6 +10,7 @@ export async function POST(request: Request) {
     }
 
     const sonuclar = tumProgramlariDegerlendir(girdi);
+    const katalogOnerileri = await katalogEslestir(girdi);
 
     await initializeDatabase();
     await sql`
@@ -19,7 +20,7 @@ export async function POST(request: Request) {
       (${girdi.sirketUnvani ?? null}, ${girdi.iletisimAdSoyad}, ${girdi.iletisimEposta}, ${girdi.iletisimTelefon ?? null}, ${JSON.stringify(girdi)}, ${JSON.stringify(sonuclar)})
     `;
 
-    return Response.json({ sonuclar });
+    return Response.json({ sonuclar, katalogOnerileri });
   } catch (error) {
     console.error("Destek uygunluk analizi hatası:", error);
     return Response.json({ error: "Analiz tamamlanamadı." }, { status: 500 });
