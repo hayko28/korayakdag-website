@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
   // paketine dahil edilmesini açıkça belirtiyoruz.
   outputFileTracingIncludes: {
     "/api/posts": ["./app/blog/**/page.tsx", "./app/en/blog/**/page.tsx"],
+    "/api/admin/tesvik-takip": ["./research/tesvik-takip/**"],
   },
   // Sitenin eski sürümünden Google'ın hafızasında kalan, artık var olmayan bir
   // URL. 404 yerine ana sayfaya yönlendirip Search Console hatasını temizliyoruz.

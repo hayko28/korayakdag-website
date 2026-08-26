@@ -30,5 +30,8 @@ export async function initializeDatabase() {
   // tekrar içeri aktarılır) — bunun yerine bu bayrak işaretlenip GET'te gizleniyor.
   await sql`ALTER TABLE linkedin_drafts ADD COLUMN IF NOT EXISTS silindi BOOLEAN NOT NULL DEFAULT FALSE`;
   await sql`CREATE TABLE IF NOT EXISTS destek_uygunluk_basvurulari (id SERIAL PRIMARY KEY, sirket_unvani TEXT, iletisim_ad_soyad TEXT NOT NULL, iletisim_eposta TEXT NOT NULL, iletisim_telefon TEXT, girdi JSONB NOT NULL, sonuclar JSONB NOT NULL, status TEXT NOT NULL DEFAULT 'yeni', created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
+  // Yönetim panelindeki serbest not ve görev sekmeleri (Notion yerine).
+  await sql`CREATE TABLE IF NOT EXISTS admin_notes (id SERIAL PRIMARY KEY, content TEXT NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
+  await sql`CREATE TABLE IF NOT EXISTS admin_tasks (id SERIAL PRIMARY KEY, content TEXT NOT NULL, done BOOLEAN NOT NULL DEFAULT FALSE, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`;
   initialized = true;
 }
