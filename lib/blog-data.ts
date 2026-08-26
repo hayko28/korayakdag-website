@@ -172,6 +172,24 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1715540335937-f54bf332585a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "ukraynada-sirket-nasil-kurulur",
+    title: "Ukrayna'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
+    excerpt: "TOV (Limited Şirket) kuruluşu, %18 kurumlar vergisi ve %20 KDV, Diia City teknoloji rejimi, Temmuz 2026'da onaylanan Türkiye-Ukrayna Serbest Ticaret Anlaşması, banka hesabı açma süreci, güncel kambiyo/güvenlik durumu ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Ukrayna rehberi.",
+    category: "YURT DIŞI ŞİRKET • UKRAYNA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1561156353-2fb3f2113c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "tacikistanda-sirket-nasil-kurulur",
+    title: "Tacikistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
+    excerpt: "ҶДММ (Limited Şirket) kuruluşu, %18 standart / %13 üretici kurumlar vergisi ve %14 KDV, 5 serbest ekonomi bölgesi, Adalet Bakanlığı'na tescil süreci, 2024'ten itibaren değişen vize rejimi ve e-vize seçeneği, Türkiye tarafındaki yükümlülüklerle 2026 güncel Tacikistan rehberi.",
+    category: "YURT DIŞI ŞİRKET • TACİKİSTAN • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "bulgaristanda-sirket-nasil-kurulur",
     title: "Bulgaristan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
     excerpt: "EOOD ve OOD şirket türleri, AB'nin en düşük kurumlar vergisi oranlarından %10, Euro'ya geçiş, sembolik sermaye şartı, adım adım kuruluş süreci, banka hesabı açma ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Bulgaristan rehberi.",
