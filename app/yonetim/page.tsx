@@ -111,6 +111,7 @@ export default function AdminPage() {
   const [error, setError] = useState("");
   const [tab, setTab] = useState<Tab>("posts");
   const [commentFilter, setCommentFilter] = useState<"all" | "pending" | "approved" | "rejected">("all");
+  const [tesvikArama, setTesvikArama] = useState("");
 
   const load = async () => {
     try {
@@ -927,16 +928,36 @@ export default function AdminPage() {
             )}
             <section className="rounded-3xl bg-white p-6 shadow-sm">
               <div className="mb-6">
-                <h2 className="text-2xl font-bold text-[#071A2F]">Açık Programlar</h2>
+                <h2 className="text-2xl font-bold text-[#071A2F]">
+                  Açık Programlar ({tesvikProgramlari.filter((p) => p.durum === "acik").length})
+                </h2>
                 <p className="text-sm text-gray-600">
                   Son başvuru tarihine en yakın olan en üstte. Teşvik Takip ajanı yeni ilanları ve 3 gün kala
                   hatırlatmalarını koray.akdag@sistemglobal.com.tr adresine otomatik e-postayla bildiriyor.
                 </p>
+                <input
+                  value={tesvikArama}
+                  onChange={(e) => setTesvikArama(e.target.value)}
+                  placeholder="Kurum veya program adına göre ara (ör. kadın, sera, tarım, TÜBİTAK)..."
+                  className="mt-4 w-full rounded-xl border p-3 text-gray-800"
+                />
               </div>
-              {tesvikProgramlari.filter((p) => p.durum === "acik").length ? (
+              {tesvikProgramlari.filter(
+                (p) =>
+                  p.durum === "acik" &&
+                  (tesvikArama.trim() === "" ||
+                    `${p.ad} ${p.kurum} ${p.not ?? ""}`.toLocaleLowerCase("tr-TR").includes(tesvikArama.toLocaleLowerCase("tr-TR")))
+              ).length ? (
                 <div className="space-y-3">
                   {tesvikProgramlari
-                    .filter((p) => p.durum === "acik")
+                    .filter(
+                      (p) =>
+                        p.durum === "acik" &&
+                        (tesvikArama.trim() === "" ||
+                          `${p.ad} ${p.kurum} ${p.not ?? ""}`
+                            .toLocaleLowerCase("tr-TR")
+                            .includes(tesvikArama.toLocaleLowerCase("tr-TR")))
+                    )
                     .sort((a, b) => (a.sonBasvuruTarihi ?? "9999").localeCompare(b.sonBasvuruTarihi ?? "9999"))
                     .map((p) => {
                       const gunKaldi = p.sonBasvuruTarihi
