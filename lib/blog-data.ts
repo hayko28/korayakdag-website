@@ -332,5 +332,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "10 Dakika",
     image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "kosgeb-kuresel-rekabetcilik-destek-programi-2026",
+    title: "KOSGEB Küresel Rekabetçilik Destek Programı 2026: 50 Milyon TL'ye Kadar Kredi Faiz Desteği Kimlere Sağlanıyor?",
+    excerpt: "2025'te hayata geçen ve 2026'da sürekli başvuruya açık olan programda 20-50 milyon TL kredi limiti ve 20 puanlık geri ödemesiz faiz/kâr payı desteği; hızlı büyüyen, ihracatını/Ar-Ge harcamasını artıran ve yüksek teknolojili işletmeler için başvuru şartları, desteklenen giderler ve adım adım süreç.",
+    category: "KOSGEB • İHRACAT & REKABETÇİLİK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
