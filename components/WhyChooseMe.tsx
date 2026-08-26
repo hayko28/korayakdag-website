@@ -114,8 +114,8 @@ const ICONS: Record<string, React.ReactNode> = {
 };
 
 const STRINGS = {
-  tr: { label: "Neden Ben", heading: "Neden Beni Tercih Etmelisiniz?" },
-  en: { label: "Why Me", heading: "Why Choose Me?" },
+  tr: { heading: "Neden Tercih Etmelisiniz?" },
+  en: { heading: "Why Choose Me?" },
 };
 
 export default function WhyChooseMe({ lang = "tr" }: { lang?: "tr" | "en" }) {
@@ -129,10 +129,6 @@ export default function WhyChooseMe({ lang = "tr" }: { lang?: "tr" | "en" }) {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="text-orange-500 text-lg sm:text-xl font-bold uppercase tracking-[2px] mb-3">
-            {t.label}
-          </p>
-
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black">
             {t.heading}
           </h2>
