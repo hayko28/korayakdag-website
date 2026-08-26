@@ -827,3 +827,115 @@ Koray'ın takvimini platformaya yükle, 1 hafta test et. Claude Code'a: "Mail/ta
 Beş fikir arasında en stratejik ve ölçeklenebilir fikir agritechdir: (1) **Pazar kanıtlanmış ve devlet destekli** — KKYDP 2026'da çiftçilere yazılım hibe veriyor, hedef 100 bin çiftçi, (2) **Koray'ın uzmanlığı doğrudan uygulanabilir** — devlet desteği bulma ve başvuru yazılımda özellik, (3) **Çift taraflı gelir** — abonelik + başvuru yardımı (₺500/başarılı), (4) **Hükümet dayanağı riski azaltıyor** — KKYDP pazarlama yapıyor, (5) **Ölçekleme potansiyeli** — çiftçi → kooperatif → holdingler, (6) **Su/arazi krizleri talep artıyor**. Emlak CRM açık ama kurumsal satış zor, HRIS rekabetçi, araştırma AI kalitesi riski, sekreter self-use sınırlı. Agritech: **devlet katalizleri + Koray uzmanlığı + kanıtlanmış pazar.** İlk hafta: 3 çiftçi/kooperatif görüşme + KKYDP yazılım taslağı.
 
 ---
+
+# Otomotiv Özel Araştırması - 26 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 26 Ağustos 2026
+**Hedef:** Standart günlük akışın dışında, özel talep üzerine yalnızca otomotiv (araç içi/dışı ürün, aksesuar, bakım, kişiselleştirme, hizmet) temalı 10 fikir. Bu bölümde tek bir öneri öne çıkarılmıyor, tüm adaylar kısa ve karşılaştırmalı şekilde listeleniyor.
+
+---
+
+## FİKİR 1: Isıyla Renk Değiştiren Termokromik Araç Kaplama Filmi
+
+**Dünyada Durum:** Sıcaklığa göre renk değiştiren TPU kaplama filmleri 2025-2026'da ticari ölçeğe ulaştı; Brüksel'den Lyon'a giden bir gösteri aracının rengi yolda değişince çekilen görüntü 48 saatte 12 milyon izlenme aldı. Standart kaplamaya göre yaklaşık 2,3 kat daha pahalı satılıyor ama "tek filmle dört mevsim farklı renk" vaadiyle talep görüyor. ([carlikewrap.com](https://carlikewrap.com/blogs/news/the-color-shift-trends-wrapping-cars-in-2025))
+
+**Türkiye'de Durum:** Türkiye'de STEK Türkiye, Zivent Films, Madico gibi firmalar profesyonel şeffaf boya koruma filmi (PPF) ve standart renk değiştirme kaplaması uyguluyor; termokromik/ısıya duyarlı özel filmin Türkiye'de aktif olarak pazarlandığına dair kanıt bulunamadı — bu bir boşluk olabilir ama doğrulanamadı.
+
+**Uyarlanabilirlik:** Ürünün kendisi ithal (Çin/ABD kaynaklı TPU film), Türkiye'deki iş modeli distribütörlük + uygulama servisi olur. Yüksek görsellik nedeniyle sosyal medyada organik ilgi görme potansiyeli yüksek, ama malzeme maliyeti ve uygulama ustalığı (kaplamacı eğitimi) giriş engeli oluşturuyor.
+
+---
+
+## FİKİR 2: Kendi Kendine Onarılan Grafen Seramik Kaplama DIY Kiti (Perakende)
+
+**Dünyada Durum:** ABD'de kendin-yap seramik kaplama kiti pazarı yıllık %11,5 büyüyor, 2026 sonunda pazarın %51'inden fazlasını kendin-yap tüketiciler oluşturacak; grafen katkılı hibrit kitler 2026'da satışların %10-12'sini oluşturuyor ve payı hızla artıyor. ([theconsumers.guide](https://www.theconsumers.guide/reviews/best-ceramic-coating-kits-car-paint-protection-2026), [fresh-layer.com](https://www.fresh-layer.com/blog/7-new-graphene-sprays-tested-in-depth-review))
+
+**Türkiye'de Durum:** Türkiye'de seramik kaplama neredeyse tamamen profesyonel servis olarak sunuluyor (Auto King, CarShine, SWAT Garage vb.); tüketicinin kendi başına uygulayabileceği, markalı ve talimatlı bir perakende grafen/seramik kiti Türkiye e-ticaretinde belirgin şekilde yaygın değil.
+
+**Uyarlanabilirlik:** İthal/lisanslı ürünü Trendyol/Hepsiburada üzerinden Türkçe talimat videosuyla satmak düşük sermayeli bir başlangıç olur. Risk: Türk tüketicisinin "kaplama = usta işi" algısı güçlü, kendin-yap kültürüne ısınması zaman alabilir.
+
+---
+
+## FİKİR 3: Modüler Çatı Çadırı ve Overlanding (Araçla Kamp) Ekipmanları
+
+**Dünyada Durum:** Küresel çatı çadırı pazarı 2026'da yaklaşık 291-320 milyon dolar, yıllık %7,8-8,9 büyüyerek 2035'te 570-630 milyon dolara ulaşması bekleniyor; sert kabuklu çadırların toptan siparişleri yıllık %47 arttı, araç bazlı kampçılık tercihi 2020'de %35'ten 2025'te %52'ye çıktı. ([globalgrowthinsights.com](https://www.globalgrowthinsights.com/market-reports/rooftop-tent-market-114205))
+
+**Türkiye'de Durum:** Türkiye'de karavan/kamp ekipmanı pazarı büyüyor ama çatı çadırı segmenti (özellikle sert kabuklu, hızlı kurulan modeller) sınırlı sayıda ithalatçı/nişte kalıyor; büyük zincir mağazalarda henüz yaygın değil.
+
+**Uyarlanabilirlik:** Doğa turizmi ve "vanlife" trendinin Türkiye'de büyümesiyle uyumlu; ithalat + montaj/danışmanlık hizmeti (araca uygun taşıyıcı sistem seçimi) olarak paketlenebilir. Gümrük vergisi ve nakliye maliyeti fiyatı yükseltir, bu yüzden orta-üst gelir segmentine hitap eder.
+
+---
+
+## FİKİR 4: Yerinde (Mobil) Detaylı Araç Bakım Randevu Platformu
+
+**Dünyada Durum:** ABD'de araç detaylı bakım pazarı 18,7 milyar dolara ulaştı, mobil/yerinde hizmetler yıllık %19-20 büyüyerek genel pazardan 4 kat hızlı gelişiyor; MobileWash yılda 1 milyon+ kullanıcıya, Washos yılda 1,2 milyon randevuya hizmet veriyor. ([on-demand-app.com](https://on-demand-app.com/blog/top-10-auto-detailing-apps-and-how-to-build-your-own/))
+
+**Türkiye'de Durum:** Türkiye'de detaylı bakım hizmeti sabit lokasyonlu dükkanlar (Auto King, CarShine vb.) üzerinden yürüyor; eve/işyerine gelen, uygulama üzerinden randevu alınan, ölçeklenebilir bir mobil detaylı bakım platformu (Washos/MobileWash benzeri) Türkiye'de yaygın olarak bulunamadı.
+
+**Uyarlanabilirlik:** Büyükşehirlerde (İstanbul, Ankara, İzmir) apartman/site yaşamı ve zaman kısıtı düşünüldüğünde talep sinyali mantıklı, ama doğrudan kanıt (arama hacmi, şikayet forumu) bulunamadı — varsayımdan öteye geçmiyor. İş modeli platform + bağımsız detaylı bakım ustaları ağı şeklinde, düşük sermayeli başlanabilir.
+
+---
+
+## FİKİR 5: Lüks Araç Kokusu Aboneliği (Doldurulabilir Atomizer + Niş Parfüm)
+
+**Dünyada Durum:** Otel/mekan kokulandırma sektöründeki "imza koku" trendi (Aroma360 tarzı markalar) otomotiv aksesuarına da yayılıyor; niş parfüm markalarının araç için doldurulabilir atomizer + aylık koku yenileme aboneliği sunduğu modeller yurt dışında mevcut, ancak bu spesifik pazarın büyüklüğüne dair somut rakam bulunamadı.
+
+**Türkiye'de Durum:** Türkiye'de oto kokusu tamamen ucuz, tek kullanımlık/klip tipi ürünlerle dolu bir emtia pazarı (Trendyol, Hepsiburada, n11, Tekzen) — markalı, "niş parfüm" kalitesinde, doldurulabilir ve abonelikli bir ürün Türkiye'de görülmedi.
+
+**Uyarlanabilirlik:** Lüks/prestij segmentine (yeni araç sahipleri, üst segment marka bayileri ile ortaklık) yönelik bir konumlandırma boşluğu olabilir, ama Türkiye'de "koku aboneliği" davranışının kabul görüp görmeyeceği doğrulanamadı — küçük bir pilot denemeyle test edilmeli.
+
+---
+
+## FİKİR 6: Kapı Kenarı/Tutamak İçin Görünmez Koruma Bandı (Mikro PPF Parçaları)
+
+**Dünyada Durum:** TikTok Shop ve Amazon'da "trending car accessories" listelerinde organizasyon ürünleri (bagaj düzenleyici, koltuk arası dolgu) ve dürtüsel satın almaya uygun küçük aksesuarlar öne çıkıyor; kapı kenarı/tutamak/ayna gövdesi için kesilmiş, kendin-yap uygulanan şeffaf koruma bandı seti bu kategoride popüler ürünlerden. ([carouscale.com](https://www.carouscale.com/en/tiktok-carousel/car))
+
+**Türkiye'de Durum:** Türkiye'de tam araç PPF kaplaması profesyonel hizmet olarak var (STEK, Zivent, Madico) ama sadece kapı kenarı/tutamak gibi küçük, kendin-yap uygulanabilir, ucuz koruma bandı seti şeklinde bir perakende ürün Türkiye pazarında yaygın görülmedi.
+
+**Uyarlanabilirlik:** Düşük fiyatlı (₺150-400), düşük risk, dürtüsel satın almaya uygun bir ürün — e-ticaret + kısa video içerikle (uygulama gösterimi) hızlı test edilebilir. Büyük gelir potansiyeli sınırlı ama sermaye ve zaman riski de çok düşük.
+
+---
+
+## FİKİR 7: Elektrikli Araç Şarj Kablosu Organizatörü ve Taşınabilir Şarj Aksesuar Seti
+
+**Dünyada Durum:** Küresel elektrikli araç satışları 2026'da 18 milyon adedi geçti, şarj altyapısı büyüdükçe kablo depolama, taşınabilir adaptör seti, araç bagajı için EV şarj çantası gibi tamamlayıcı aksesuarlara talep de yükseliyor (önceki gün EV arıza tanı fikri araştırmasında da doğrulanan büyüme trendiyle uyumlu). ([electrive.com](https://www.electrive.com/2026/04/10/global-ev-sales-reach-18-million-units-in-2026/))
+
+**Türkiye'de Durum:** Türkiye'de elektrikli araç sayısı 2026'da 500 bini geçti; şarj istasyonu ağı (Eşarj, ZES, Beefull) hızla büyürken, EV sahiplerine özel düzenleyici/taşıma aksesuarları (kablo çantası, adaptör organizatörü) Türk e-ticaret sitelerinde çok sınırlı çeşitlilikte.
+
+**Uyarlanabilirlik:** Büyüyen EV filosu somut ve ölçülebilir bir müşteri kitlesi sunuyor; düşük maliyetli ithalat/yerel üretim ile hızlı test edilebilir bir fiziksel ürün fırsatı. Riski düşük ama pazar büyüklüğü henüz sınırlı (500 bin araç), büyümesi EV penetrasyon hızına bağlı.
+
+---
+
+## FİKİR 8: Araç İçi Hava Kalitesi İzleyici ve İyonizer Cihazı
+
+**Dünyada Durum:** Araç içi hava temizleyici/iyonizer cihazlar TikTok/Amazon trend listelerinde "sağlık bilinci" kategorisinde yer alıyor; kokusu giderme, PM2.5 partikül azaltma iddialarıyla satılıyor, ancak bu spesifik alt kategori için bağımsız doğrulanmış satış rakamı bulunamadı.
+
+**Türkiye'de Durum:** Türkiye'de basit oto iyonizer/hava temizleyici ürünler Trendyol/Hepsiburada'da mevcut ama çoğu ucuz, jenerik, sensörsüz ürünler; gerçek zamanlı hava kalitesi ölçen (PM2.5 sensörlü) ve telefon uygulamasıyla entegre çalışan bir model belirgin şekilde eksik.
+
+**Uyarlanabilirlik:** Büyükşehirlerdeki hava kirliliği farkındalığı (İstanbul, Ankara) ile örtüşen bir konumlandırma yapılabilir, ama bu bir varsayım — gerçek talep sinyali (arama hacmi, şikayet) doğrulanamadı. Ürün ithalatı görece kolay, marka farklılaştırması "sensörlü + uygulamalı" özellikte olabilir.
+
+---
+
+## FİKİR 9: Araç Koltuğu için Tam Özel Deri Kaplama/Kişiselleştirme Atölyesi
+
+**Dünyada Durum:** Kişiselleştirilmiş/özel dikim araç içi kaplama (koltuk, konsol, direksiyon) Çin ve Orta Doğu pazarlarında büyüyen bir kişiselleştirme trendi; sahibinin ismi, özel renk/desen, marka logosu işlenmiş koltuk kaplamaları sosyal medyada "öncesi/sonrası" videolarıyla ilgi görüyor. Bu spesifik alt segment için bağımsız pazar büyüklüğü verisi bulunamadı.
+
+**Türkiye'de Durum:** Türkiye'de koltuk döşeme/kaplama zaten var olan geleneksel bir zanaat (döşemeciler, tuning firmaları) ama "tam kişiselleştirme + dijital pazarlama + e-ticaret sipariş süreci" şeklinde modernize edilmiş, markalı bir oyuncu öne çıkmıyor.
+
+**Uyarlanabilirlik:** Bu teknoloji dışı, klasik bir zanaat/hizmet işi — var olan yerel ustalarla ortaklık kurup dijital vitrin (Instagram/web sipariş sistemi) ile paketlemek düşük sermayeli bir marka fırsatı olabilir. Ölçeklenebilirlik sınırlı (elle yapılan iş), ama marj yüksek ve rekabeti düşürecek dijital pazarlama boşluğu var.
+
+---
+
+## FİKİR 10: Baş Üstü Gösterge (HUD) + OBD2 Akıllı Gösterge Cihazı
+
+**Dünyada Durum:** Amazon'da HUD kategorisinde Lufi X1, Wiiyii P6, KINGNEED gibi modeller "en çok satanlar" listelerinde; OBD2 bağlantılı, hız/yakıt/motor verisini ön cama yansıtan cihazlar TikTok'ta popüler araç teknolojisi aksesuarları arasında sayılıyor. ([caraudionow.com](https://www.caraudionow.com/best-head-up-displays/))
+
+**Türkiye'de Durum:** Türkiye'de HUD cihazları Trendyol/Hepsiburada üzerinden ithal jenerik modeller olarak satılıyor ama Türkçe arayüzlü, yerel destekli, markalı bir oyuncu öne çıkmıyor; çoğu ürün İngilizce arayüz ve düşük müşteri desteğiyle geliyor.
+
+**Uyarlanabilirlik:** Ürün kendisi emtia (Çin'den toptan alınabilir), farklılaşma noktası Türkçe arayüz + yerel garanti/destek + sadeleştirilmiş kurulum videosu olabilir. Düşük sermayeli, hızlı test edilebilir bir e-ticaret fırsatı; büyük farklılaşma olmadan marj baskısı riski var.
+
+---
+
+**Not:** Bu bölüm kullanıcı talebiyle standart "tek öneri" formatının dışında hazırlandı; 10 fikir karşılaştırmalı olarak sunuldu, tek bir favori öne çıkarılmadı. Kanıt bulunamayan noktalar "doğrulanamadı" olarak açıkça belirtildi.
+
+---
