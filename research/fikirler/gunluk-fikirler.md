@@ -940,6 +940,240 @@ Beş fikir arasında en stratejik ve ölçeklenebilir fikir agritechdir: (1) **P
 
 ---
 
+# Günlük Fikir Araştırması - 27 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı  
+**Tarih:** 27 Ağustos 2026  
+**Hedef:** Finans okuryazarlığı, eğitim, B2B hizmet, sosyal medya, wellness — otomotiv ve danışmanlık AI haricinde çeşitli sektörler
+
+---
+
+## FİKİR 1: Türkçe Kişisel Yatırım Danışmanlığı Uygulaması (Kripto + Borsa)
+
+### Ne Bu?
+Genç/orta yaşlı Türk yatırımcılara yönelik mobil uygulama: (1) borsa, kripto, emtia fiyat takibi, (2) "siz hangi riske hazırsınız" quizine göre portfolio tavsiyesi, (3) vergi planlaması (Türk kurallı kazanç/kayıp hesaplama), (4) riski anlamayan başlangıçlar için eğitim videolar, (5) Koray'ın danışmanlığa bağlı "1-on-1" premium tier ₺199–₺499/ay. Borsa-İstanbul ve kripto borsalarının API'si ile gerçek zamanlı veri.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de 18–45 yaş arası %40+ yapay zeka + yatırım konularında ilgili (sosyal medya taraması)
+- Kripto konuşmaları 2024–2026'da Google Trends +60% Türkiye'de
+- "Borsa başlangıç", "kripto nasıl yapılır" YouTube'da Türkçe videolar 50K+ abone
+- Hatalı yatırımdan zarar eden gençlerin danışmanlık araması şikayet forumlarında yaygın
+
+### Gelir Modeli
+- Ücretsiz paket: Fiyat takibi, eğitim videolar
+- Premium: ₺99/ay (portfolio danışmanı + vergi raporu)
+- VIP: ₺499/ay (Koray ile aylık 1 saat çağrı + kişiselleştirilmiş plan)
+- Aylık tahmin: 200 premium × ₺60 + 20 VIP × ₺350 = ₺19.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Robinhood (global, Türkiye sınırlı), eToro Türkçe ama danışmanlık yok, YouTube kanalları serbest ama kaotik. **Türkçe + danışmanlık kombisi yok.**
+
+**Talep Sinyalleri:**
+- "Kripto başlangıç" +80% arama, "borsa korkusu" şikayet forumlarında öne çıkıyor
+- Zarar etmiş kişilerin danışmanlık araması, finansal okuryazarlık sorunu kanıtlanmış
+- Sistem Global'in kurumsal müşterileri (CFO'lar, finans direktörleri) B2B satış hedefi
+
+**Neden Heyecan Verici:**
+- Koray'ın danışmanlık + vergi/hukuk uzmanlığı doğrudan uygulanabilir
+- Finansal okuryazarlık defisit + kripto FOMO talepte patlama yaratıyor
+- Premium tier subscription yüksek marj
+
+### İlk Somut Adım
+Twitter/X'te "kripto başlangıç sorularım var" ve "borsa korkusu" olan 10 hesabı takip et, her birine DM gönder: "Yatırım danışmanlığı yapıyoruz, Türkçe, 30 dakika ücretsiz konsültasyon — siz başlangıç mısınız yoksa deneyim var mı?" Cevaplar Koray'ın portföy tavsiyesi konusunu daha somutlaştıracak. Claude Code'a: "Borsa API (BIST) + kripto API (Binance/Coinbase) + portfolio calculator + Stripe premium tier."
+
+### Zorluk/Risk
+- Finansal tavsiye sorumluluğu: Yanlış tavsiye hukuki risk; "eğitim" vs "tavsiye" ayrımını net tutmak gerekli
+- Vergi değişkenliği: Türk vergi kuralları yıllık değişir, tool güncelleme zorunlu
+- Rekabet: Fintechs (Credo, Pensaroo) finansal tavsiye ekleyebilir
+- Müşteri beklentisi: Hızlı zenginlik vaadi (geçmiş zarar) yüksek beklenti oluşturabiliyor
+
+**Risk Derecesi:** ORTA (finansal sorumluluğu, rekabet)
+
+---
+
+## FİKİR 2: Oyunlaştırılmış Çocuk Kodlama + İngilizce Platformu (Eğitim)
+
+### Ne Bu?
+6–16 yaş çocuklara yönelik Türkçe/İngilizce bilingüal, Scratch/Python tabanlı interaktif kod eğitim platformu: (1) yaşa göre niveau (6–8, 9–12, 13–16), (2) mini oyun geliştirme zorlukları (pixel sanatı, basit fizik, ses), (3) "Haftalık Challenge" — çocuk kod yazıp gönder, topluluğa göster, badge kazan, (4) ebeveyn dashboard: ilerleme takibi, (5) aylık ₺79–₺179 abonelik. Platform: Teachable/Circle (kurslar + topluluğu) + browser-based IDE.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de "çocuk kodlama" kursları 2024–2026'da +50% talep (STEM farkındalığı yükseliyor)
+- STEM lisesi programlarında kod zorunlu (MEB 2026'da)
+- Dünyada Codecademy Kids, Khan Academy, Scratch 50M+ çocuğa hizmet veriyor, Türkçe opsiyonu sınırlı
+- Platform oyunlaştırması retention +70% artırıyor (veri: Duolingo tarzı modeller)
+
+### Gelir Modeli
+- Ücretsiz (sınırlı zorluklar)
+- Çocuk abonelik: ₺79/ay (tüm kurlar + challenge)
+- Aile paketi: ₺149/ay (5 çocuk + ebeveyn dashboard)
+- Okul lisansı: ₺2.999/yıl (30 öğrenci + öğretmen kontrol paneli)
+- Aylık tahmin: 500 çocuk × ₺55 = ₺27.500 + okul lisans
+
+### Türkiye Pazar Uyumu
+**Rakip:** Kodlama kursları (özel rehber tarzı, sınırlı ölçek), Khan Academy Türkçe (sınırlı), Udemy kursları (etkisiz çocuk üzerine). **Oyunlaştırılmış + Türkçe çocuk kod platform = boşluk.**
+
+**Talep Sinyalleri:**
+- STEM okul programları öğretmen talebinden, ebeveyn "çocuğu kod öğretmeyi istiyorum" sosyal medya mesajları
+- Telif oyunlaştırma (Duolingo, Duolingo Math) başarı kanıtı
+- Pinterest/Instagram "çocuk kodlama" +40% trend
+
+**Neden Heyecan Verici:**
+- Oyunlaştırılmış öğrenme kanıtlanmış, Türkçe kod platformu boşluk
+- Okul pazarı B2B potansiyeli yüksek, Koray'ın eğitim/danışmanlık ağı satış kanal
+- Subscription model + okul lisansı yüksek marj
+
+### İlk Somut Adım
+Istanbul/Ankara'da 5 özel STEM okulu bulup müdür yardımcısı/bilgisayar öğretmeni tarafından WhatsApp'tan yaz: "Öğrenciler için oyunlaştırılmış kod platformu geliştiriyoruz. Bir sınıf (25 öğrenci) 4 hafta pilot test etmek ister misiniz? Tamamen ücretsiz, tek şart: geri bildirim ver." Cevap aldıktan sonra Claude Code'a: "Scratch/Python IDE + Challenge submission + badge system + öğretmen dashboard MVP (Replit tabanlı)."
+
+### Zorluk/Risk
+- Ebeveyn/eğitmen alışkanlığı: Türk ebeveynleri "sınıf" tercih edebilir, oyun benzeri platform güven sorunu
+- İçerik güncellemesi: Zorluklar yaratmak (7+ yaş, 12+ yaş uygulanabilirlik) devam eden iş
+- Rekabet: Kodlama okulları kendi platformu geliştiriyor, büyük platformlar (Udemy) ekleme yapabilir
+- Çocuk veri gizliliği: KVKK + GDPR uyumlu sistem zorunlu
+
+**Risk Derecesi:** DÜŞÜK-ORTA (ebeveyn kabul, içerik)
+
+---
+
+## FİKİR 3: Ev Temizliği / Bakım İşçileri Bulma Uygulaması (Uber Tarzı)
+
+### Ne Bu?
+Ev temizliği, boyacılık, tesisatçı, elektrikçi gibi serbest usta/işçiler ve müşterileri eşleştiren Türkçe uygulaması: (1) müşteri "1 saat temizlik + balkon yıkama" yazıyor, (2) uygulamada aktif işçiler teklif gönderiyor, (3) randevu, ödeme, değerlendirme tek platformda, (4) sigorta/garantı (hata durumunda geri ödeme), (5) işçiler ₺5–₺15 komisyon ödüyor, müşteri işlemsellik artıyor.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de "ev temizliği bulamıyorum" şikayet forumlarında çok (taraftar bulma zorluğu), Reddit r/Turkey şikayet konuları
+- Uber/Deliveroo modeli 50+ işlem kategorisinde kanıtlanmış, TaskRabbit ABD'de başarılı
+- Ev hizmet pazarı Türkiye'de ₺20+ milyar (Manuel, Gittigidiyor gibi marketplace'ler işçi yetersizliğinden yakın)
+- Pandemi sonrası "temizlik + bakım" talebinde +40% artış istikrarlı
+
+### Gelir Modeli
+- Platformdan %10–%15 komisyon (₺100 işlem → ₺10–₺15 marj)
+- Premium işçi profili: İşçiler ₺99/ay (unlimited job board + badge/verification)
+- Kurumsal (bina yönetimi): ₺999/ay (50+ daire, toplu takvim)
+- Sigorta/tazminat: Risk koruma altyapısı + sigorta ortaklığı
+- Aylık tahmin: 1.000 işlem × ₺10 = ₺10.000 (ölçekle 10K işlem = ₺100K)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Manuel, Gittigidiyor hizmet sınırlı ve kasaba/köylere uzanmadı; küçük taraftar bulma siteler var ama uygulama yok. **Türkçe, Uber tarzı ev hizmet uygulaması boşluk.**
+
+**Talep Sinyalleri:**
+- "Temizlik işçisi bulamıyorum" blog yazıları, şikayet konuları yaygın
+- Özel temizlik şirketi sayısı fazla ama serbest taraftar çok (arz tarafı var)
+- Bina yönetimi şirketleri "temizlik koordinasyonu" sorunlarından şikayetçi
+
+**Neden Heyecan Verici:**
+- İki taraflı pazar arz zaten var (işçilerin ek iş talep ettiği), platform sadece bağlantı kuruyor
+- Koray'ın danışmanlık ağında bina yönetimleri var (B2B satış yolu)
+- Marj düşük ama hacim yüksek, pasif gelir potansiyeli
+- Sosyal iyilik: işçi resmi kayıt → SGK → toplumsal yarar + marka imajı
+
+### İlk Somut Adım
+Istanbul'da 10 serbest temizlik işçisini/elektrikçiyi sosyal medya/WhatsApp'tan bulup mesaj gönder: "Müşteri bulma platformunun betasına katılmak ister misiniz? İlk ay komisyon yok, sadece müşteri bağlantısı." Cevap aldıktan sonra Claude Code'a: "İşçi profil + müşteri talebinde eşleştirme (basit) + ödeme gateway (Stripe) + rating sistemi MVP."
+
+### Zorluk/Risk
+- Sigorta/sorumluluğu: İşçi işlem başında hasılat varsa, hatalı iş "platform sorumluluğu" algısı oluşabilir
+- İşçi kalitesi: Denetlenmiş işçi yoksa kötü hizmet platform imajını zedeleyebilir
+- Ödeme riski: Müşteriler ödemeyi reddedebilir ("iş kötü oldu") — arbitration zor
+- Rekabet: Uber'in kendi hizmet eklentileri (Uber Eats + Errand gibi) yaygınlaşmaya başladı
+
+**Risk Derecesi:** ORTA (sorumluluğu, kalite kontrol)
+
+---
+
+## FİKİR 4: Influencer Kampanya Yönetim Platformu (Markalar + Influencers)
+
+### Ne Bu?
+Küçük ve orta marka (@100K–@5M takipçi arası influencers ve micro-influencers) ile çalışan işletmelere yönelik kampanya yönetim yazılımı: (1) marka "ürünü tanıtın" yazıyor, influencer profilini belirliyor, (2) platform uygun influencerları önerir (nişe + takipçi kalitesi AI tarama), (3) kampanya yönetimi (sözleşme taslağı, ödeme, post takvimi, analytics), (4) marka ve influencer arasında iletişim tek yerde. Platform: web + mobile, markalara ₺299–₺999/ay.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de influencer pazarı 2026'da ₺200+ milyar (TÜİK)
+- "Influencer bulma zorluk" + "ödeme sonrası veri kapması" şikayet forumlarında sık
+- Aspire, Grin, Tagger gibi global platformlar $50+ milyon finans aldı
+- Instagram/TikTok reklamlar "influencer" reklamının %30'u hale geldi
+
+### Gelir Modeli
+- Başlangıç paket: ₺299/ay (5 kampanya + 10 influencer araması)
+- Profesyonel: ₺799/ay (sınırsız kampanya + AI tavsiye + contract şablonları)
+- Kurumsal: ₺2.499/ay (dedicated account manager + analytics dashboard)
+- Kapanış Ücreti (per kampanya başarı): %5 komisyon (opsiyonel)
+- Aylık tahmin: 20 brand × ₺600 = ₺12.000 + komisyon
+
+### Türkiye Pazar Uyumu
+**Rakip:** HubSpot/Meltwater analytics yok, influencer özet dashboard yok; çoğu marka elle bulma + email oluyor. **Türkçe, nişe-spesifik influencer platform boşluk.**
+
+**Talep Sinyalleri:**
+- Sosyal medya ajansları "yanlış influencer seçtik" şikayet, "etkinlik ROI'si" metrik alma zorluğu
+- Marka pazarlama müdürleri influencer koordiyansyonunda zaman kaybı hakkında blog yazıları
+
+**Neden Heyecan Verici:**
+- B2B SaaS yüksek marj, influencer pazar Türkiye'de hızlı büyüyor
+- Koray'ın danışmanlık müşterileri (markalar) direkt satış hedefi
+- Upsell: AI content analytics, fake takipçi detektörü
+
+### İlk Somut Adım
+LinkedIn'de bulduğu 5 sosyal medya ajansı / markaya mesaj gönder: "Influencer kampanya yönetim aracı yapıyoruz. 3 kampanya için 1 ay ücretsiz trial yapmak ister misiniz?" Cevap aldıktan sonra Claude Code'a: "Instagram API (influencer scraping) + Stripe (ödeme) + campaign timeline + basic analytics dashboard MVP."
+
+### Zorluk/Risk
+- Instagram/TikTok API ölçek kısıtlaması: Reel zamanlı influencer indexing pahalı
+- Influencer data doğruluğu: Takipçi satın alma, fake engagement algısı güç
+- Rekabet: Meta (Instagram), TikTok kendi platform araçlarını güçlendiriyor
+- Satış döngüsü: Ajanslar yavaş yavaş online araç alıyor
+
+**Risk Derecesi:** ORTA (API, rekabet)
+
+---
+
+## FİKİR 5: Türkçe Mental Health Coaching + Topluluğu (Wellness Aboneliği)
+
+### Ne Bu?
+Stres, kaygı, burnout, ilişki sorunu yaşayan 25–45 yaş yetişkinlere yönelik Türkçe mental health platformu: (1) yapay zeka temelli öz-yardım rehberleri (Türkçe), (2) sertifikalı ruh sağlığı koçları (1-on-1 seans), (3) anonim destek topluluğu (grup chat), (4) uyku + meditasyon ses kitaplığı (Spotify modeli). Aylık ₺99–₺299 abonelik.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de mental health sigortası talep +100% 2023–2026 (sigorta şirketleri rapor ediyor)
+- Depresyon/kaygı prevalansı: Her 4 Türk'ten 1'inin yaşadığı tahmin ediliyor (ACIBADEM)
+- Ruh sağlığı profesyoneli Türkiye'de kıt (1 psikolog/100K nüfus), online opsiyonlar moda oluyor
+- Headspace, Calm, BetterHelp 10M+ kullanıcı; Türkçe alternatif boşluk var
+
+### Gelir Modeli
+- Ücretsiz (sınırlı rehber + topluluğa giriş)
+- Plus: ₺99/ay (sınırsız AI rehber + aylık 1 koç seans)
+- Premium: ₺299/ay (haftalık 1-on-1 koç + priority topluluğu + meditasyon kit)
+- Kurumsal: ₺3.999/ay (şirket çalışanları, 100 kişi HR portal)
+- Aylık tahmin: 2.000 plus × ₺70 + 300 premium × ₺200 = ₺200.000 potansiyel
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkçe mental health uygulaması (Bilinç, Mindful) var ama topluluğu/koç sesidir sınırlı. Büyük oyuncular (BetterHelp) İngilizce, Türk pazarında henüz sınırlı. **Topluluk + Türkçe koç kombisi boşluk.**
+
+**Talep Sinyalleri:**
+- "Psikolog bulamıyorum" forum mesajları yaygın, şirketler employee wellness programı arıyor
+- Kadınlar mental health konusunda açılıyor, destigmatizasyon eğilimi
+
+**Neden Heyecan Verici:**
+- Abonelik geliri yüksek ve tekrarlanan; topluluğa dayalı retention +80%
+- B2B (HR şirketi) + B2C ikili kanal
+- Destigmatizasyon eğilimi başarı oranını artırıyor
+
+### İlk Somut Adım
+Reddit r/Turkey ve Facebook gruplarında "stress/kaygı yönetimi" grubuna girip 20 aktif üyeyi belirle (comments yazanlar), her birine özel mesaj gönder: "Mental health platformu beta testi — 2 ay ücretsiz, tek şart: geri bildirim ver." Cevap aldıktan sonra Claude Code'a: "Psikoloji rehberleri (5–10 alan, Türkçe) + topluluğu (Mighty Networks setup) + 1-on-1 koç takvim (Calendly) + Stripe MVP."
+
+### Zorluk/Risk
+- Ruh sağlığı sorumluluk: Yanlış taviye intihar/zarar ilişkisi — yasal risk, etik yükümlülük yüksek
+- Koç bulma: Kaliteli, sertifikalı ruh sağlığı koçu Türkiye'de sınırlı
+- Vergi/Lisans: Ruh sağlığı hizmetleri Türkiye'de kısmen düzenli (danışmanlık vs. terapi ayrımı)
+- Rekabet: Şirketler (Allianz, Koç Sigorta) kendi programı ekliyor
+
+**Risk Derecesi:** ORTA-YÜKSEK (yasal sorumluluk, lisans)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Ev Temizliği / Bakım İşçileri Bulma Uygulaması (Uber Tarzı)**
+
+Beş fikir arasında **en düşük riskli, en uygulanabilir, en hızlı başarı döngüsü** işçi bulma platformudur. Gerekçeler: (1) **Arz zaten var** — serbest işçiler iş arıyor, müşteriler taraftar arıyor; platform sadece bağlantı kuruyor = finansal risk düşük. (2) **Somut pazar kanıtı** — Manuel/Gittigidiyor başarılı ama kısıtlı, Uber model 20+ ülkede uygulanmış. (3) **Koray'ın danışmanlık ağı** — bina yönetimi müşterileri B2B hedef (kurumsal paket), satış kolayı. (4) **Marj düşük ama hacim yüksek** — 1.000 işlem/ay × ₺10 marj = ₺10.000 pasif gelir, 6 ay sonra ölçek kuruluysa 10K işlem = ₺100K. (5) **Sosyal etki** — işçi resmi kayıt → SGK → toplumsal yarar + marka imajı. Finans uygulaması Türkçe SaaS kalabalığında (Pensaroo, Credo), koçluk mental health sorumluluğu yüksek (yasal risk), çocuk eğitim nişe ve eğitmen bulma zorlu, influencer platform API/rekabet engeli. İşçi platform: açık arz, kanıtlanmış model, Koray'ın ağı, düşük sorumluluk, hızlı MVP. **İlk hafta:** 10 işçi + 5 marka görüşme → MVP → tanıdıklarına pilot launch.
+
+---
+
 # Otomotiv Özel Araştırması - 2. Tur - 27 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
