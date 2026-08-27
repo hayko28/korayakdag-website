@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ise-alim-sureclerinde-hayalet-olmak",
+    title: "İşe Alımda \"Hayalet\" Olmak: Artık İki Taraf da Birbirini Suçluyor",
+    excerpt:
+      "İşe alınmayan adayların şirket tarafından hiç geri dönüş almama oranı 2026'da %53'e çıktı. Adayların %32'si şirketi, işverenlerin çoğu adayı suçluyor. KOBİ ölçeğinde bu sessizliğin faturası itibar üzerinden ödeniyor.",
+    tag: "Görüş",
+    date: "27 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "turkiyenin-yapay-zeka-plani-kobiler-icin-ne-anlama-geliyor",
     title: "Türkiye'nin Yapay Zeka Planı Açıklandı: KOBİ Sahipleri İçin Gerçek Anlamı Ne?",
     excerpt:
