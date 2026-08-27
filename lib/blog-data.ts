@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "turkiye-emisyon-ticaret-sistemi-ets-yonetmeligi-2026",
+    title: "Türkiye Emisyon Ticaret Sistemi (ETS) Yönetmeliği Yayımlandı: Hangi Şirketler Kapsamda, Ne Yapmak Zorunda?",
+    excerpt: "27 Ağustos 2026 tarihli ve 33353 sayılı Resmî Gazete'de yayımlanan Türkiye Emisyon Ticaret Sistemi Yönetmeliği ile karbon fiyatlandırmasında yeni dönem başladı. 50.000 tCO₂e eşiği, tesis kategorileri, 2026-2027 pilot dönemi, sera gazı emisyon izni, izleme-raporlama-doğrulama yükümlülükleri, tahsisat teslimi, idari para cezaları ve SKDM (CBAM) bağlantısıyla sanayi şirketleri için uygulamaya dönük rehber.",
+    category: "SÜRDÜRÜLEBİLİRLİK • KARBON & ETS • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1759384628232-134f0d2f154d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "6111-sayili-kanun-genc-kadin-istihdam-tesviki-2026",
     title: "6111 Sayılı Kanun İstihdam Teşviki: Genç, Kadın ve Mesleki Belge Sahibi Çalışanlarda 2026 Şartları ve Son Tarih",
     excerpt: "4447 sayılı Kanun Geçici 10. Madde kapsamındaki 06111 teşvik kodlu istihdam desteğinde işveren sigorta primi payının tamamı karşılanıyor. 10769 sayılı Cumhurbaşkanı Kararı ile 31 Aralık 2026'ya uzatılan kapsama giriş tarihi, süre tablosu ve 2026 örnek tutarlarla güncel rehber.",
