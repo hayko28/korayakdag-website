@@ -443,6 +443,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Halka arz onaylarının bu kadar sık gündeme gelmesi, kurumsallaşmasını tamamlamış şirketler için sermaye piyasasının hâlâ aktif bir finansman kanalı olduğunu gösteriyor; halka arzı planlayan şirketlere süreç öncesi bağımsız denetim ve değerleme adımlarını erkenden netleştirmelerini öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "14 Temmuz 2026",
+    eklendiTarihi: "2026-08-27",
+    baslik:
+      "İmalat sanayine yönelik 1 trilyon TL'lik uygun koşullu finansman paketi açıklandı",
+    ozet:
+      "Hazine ve Maliye Bakanı Mehmet Şimşek, 14 Temmuz 2026'da imalat sanayine yönelik yeni bir finansman paketi duyurdu: Yatırım Taahhütlü Avans Kredisi bütçesi 750 milyar TL'ye yükseltilirken, işletme sermayesi ihtiyaçları için 250 milyar TL'lik yeni bir uygun koşullu kredi programı devreye alındı. İki program birlikte, imalat sektörüne toplam 1 trilyon TL'lik uygun koşullu finansman imkânı sunuyor.",
+    kaynakUrl:
+      "https://www.ahaber.com.tr/ekonomi/2026/07/14/imalat-sanayine-250-milyar-liralik-yeni-kredi-destegi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Kısa vadeli nakit akışı sıkışan imalatçı KOBİ'lere, bu yeni işletme sermayesi kredisini bankalarıyla görüşürken KOSGEB ve Eximbank kredilerindeki mevcut limitlerini birlikte değerlendirmelerini öneririm; vade ve faiz gibi detaylar bankadan bankaya farklılık gösterebiliyor.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "3 Ağustos 2026",
+    eklendiTarihi: "2026-08-27",
+    baslik:
+      "TÜBİTAK 1507 KOBİ Ar-Ge Başlangıç Destek Programı 2026 yılı 1. çağrısının değerlendirme sonuçları açıklandı",
+    ozet:
+      "TÜBİTAK, KOBİ'lere yönelik 1507 Ar-Ge Başlangıç Destek Programı'nın 2026 yılı birinci çağrısının değerlendirme sonuçlarını 3 Ağustos 2026'da açıkladı. Desteklenmesine karar verilen kuruluşlar TEYDEB sistemi üzerinden bilgilendirilirken, başvurusu reddedilen işletmelere projelerini revize ederek 2026 yılı ikinci çağrıya yeniden sunma imkânı tanındı.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/1507-tubitak-kobi-ar-ge-baslangic-destek-programi-2026-yili-1-cagrisinin-degerlendirme-sonuclari-aciklandi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: İlk başvurusu reddedilen KOBİ'lere projeyi bir kenara bırakmak yerine, değerlendirme raporundaki gerekçeleri dikkate alarak 2026/2. çağrıya revize bir başvuruyla yeniden girmelerini öneririm; ilk turdaki ret genellikle projenin değil sunumun eksik olduğunu gösteriyor.",
+  },
+  {
+    kurum: "Rekabet Kurumu",
+    tarih: "4 Ağustos 2026",
+    eklendiTarihi: "2026-08-27",
+    baslik:
+      "Rekabet Kurumu, burun spreyi pazarında hâkim durumun kötüye kullanılmasına ilişkin iki ilaç şirketine yaklaşık 24 milyon TL ceza uyguladı",
+    ozet:
+      "Rekabet Kurumu, 4 Ağustos 2026 tarihli kararıyla, içeriği ve formülü aynı olan iki üründen Sosyal Güvenlik Kurumu'na daha yüksek iskonto uygulanan ürünün pazar payını kasıtlı olarak düşük tutan Avixa İlaç ve Avigem İlaç'a uzlaşma usulüyle yaklaşık 24 milyon TL idari para cezası uyguladı. Kurul, bu uygulamanın tüketicinin uygun fiyatlı ürüne erişimini kısıtladığını ve rakiplerin pazara girişini zorlaştırdığını tespit etti.",
+    kaynakUrl:
+      "https://www.haberturk.com/ekonomi/rekabet-kurumu-ilac-sirketi-avixa-ve-avigem-e-yaklasik-24-milyon-lira-ceza-verdi-3903292",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Aynı ürünü farklı marka veya fiyat kanallarıyla pazarlayan, özellikle kamu geri ödeme sistemine tabi sektörlerdeki işletmelere, fiyatlandırma ve pazar payı stratejilerini rekabet hukuku açısından önceden bir uzmana değerlendirtmelerini öneririm; uzlaşma yolu cezayı azaltsa da itibar riski sürüyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
