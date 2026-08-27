@@ -12,7 +12,7 @@ const STRINGS = {
         <em className="not-italic text-orange-400">doğru stratejinin</em> sonucudur.
       </>
     ),
-    lead: "Global vizyon ve stratejik yaklaşımla işinizi bir üst seviyeye taşıyoruz — devlet destekleri, yatırım teşvikleri ve yurt dışı büyümede uçtan uca danışmanlık.",
+    lead: "Güçlü kurumsal ilişkiler ve derin saha deneyimiyle işinizi büyütüyoruz. Devlet destekleri, yatırım teşvikleri ve yurt dışı büyümede uçtan uca danışmanlık sunuyoruz.",
     ctaPrimary: "Ücretsiz Ön Görüşme Talep Et",
     ctaSecondary: "Hizmetleri İncele",
     stats: [
