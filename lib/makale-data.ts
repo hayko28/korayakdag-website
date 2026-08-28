@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "bridgestonun-18-yillik-lastik-sabrinin-dersi",
+    title: "18 Yıllık Ar-Ge, Saatte 20 Kilometre: Bridgestone'un Sabır Dersi",
+    excerpt:
+      "Bridgestone'un patlamayan lastiği 18 yıllık geliştirmenin ardından Japonya'da küçük bir dağ köyünde, saatte 20 kilometre hız sınırıyla trafiğe çıktı. Büyük bir teknolojiyi en riskli değil en güvenli yerde test etmenin stratejik dersi.",
+    tag: "Strateji",
+    date: "28 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ise-alim-sureclerinde-hayalet-olmak",
     title: "İşe Alımda \"Hayalet\" Olmak: Artık İki Taraf da Birbirini Suçluyor",
     excerpt:
