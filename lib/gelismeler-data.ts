@@ -485,6 +485,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Aynı ürünü farklı marka veya fiyat kanallarıyla pazarlayan, özellikle kamu geri ödeme sistemine tabi sektörlerdeki işletmelere, fiyatlandırma ve pazar payı stratejilerini rekabet hukuku açısından önceden bir uzmana değerlendirtmelerini öneririm; uzlaşma yolu cezayı azaltsa da itibar riski sürüyor.",
   },
+  {
+    kurum: "KVKK",
+    tarih: "29 Nisan 2026 (2 Haziran 2026'da Resmî Gazete'de yayımlandı, 27 Ağustos 2026'da kamuoyu duyurusu yapıldı)",
+    eklendiTarihi: "2026-08-28",
+    baslik:
+      "KVKK'dan mesai takibinde biyometrik veri kullanımına ilişkin kamuoyu duyurusu",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu, 29 Nisan 2026 tarihli ve 2026/921 sayılı, 2 Haziran 2026'da Resmî Gazete'de yayımlanan ilke kararına ilişkin veri sorumlularından gelen görüş taleplerini yanıtlayan bir kamuoyu duyurusunu 27 Ağustos 2026'da yayımladı. Duyuruya göre parmak izi, damar izi veya el ayası taraması gibi yöntemlerle yapılan mesai/devam takibi açık rıza dahil hiçbir işleme şartına dayandırılamıyor; işverenlerin şifreli kart, PIN, imza/kağıt puantaj veya RFID/NFC gibi alternatif yöntemlere geçmesi bekleniyor. Mesai takibi dışındaki biyometrik veri işleme faaliyetleri ise ayrı değerlendirmeye tabi tutuluyor.",
+    kaynakUrl:
+      "https://www.kvkk.gov.tr/Icerik/8762/mesai-takibi-amaciyla-biyometrik-veri-islenmesi-hakkinda-kisisel-verileri-koruma-kurulunun-29-04-2026-tarihli-ve-2026-921-sayili-ilke-kararina-iliskin-kamuoyu-duyurusu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Parmak izi veya el ayası taramasıyla mesai/devam takibi yapan işletmelere, önce bu uygulamanın gerçekten gerekli olup olmadığını (tesis güvenliği vb.) gözden geçirip alternatif bir doğrulama yöntemine geçiş planı hazırlamalarını öneririm; KVKK bu konuda açık rızayı bile yeterli görmüyor.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "22 Ağustos 2026",
+    eklendiTarihi: "2026-08-28",
+    baslik:
+      "Ticaret Bakanlığı, sosyal medyada usulsüz emlak ve araç ilanı veren 82 işletmeye 8,2 milyon TL ceza kesti",
+    ozet:
+      "Ticaret Bakanlığı, taşınmaz ve taşıt ticaretinde uygulanan Elektronik İlan Doğrulama Sistemi (EİDS) kapsamındaki kimlik ve yetki doğrulama zorunluluğunun Instagram, Facebook ve WhatsApp dahil tüm elektronik ortamlardaki ilanları kapsadığını 22 Ağustos 2026'da duyurdu. Denetimlerde EİDS kurallarına aykırı ilan verdiği tespit edilen 42 emlak ve 40 galeri işletmesine toplam 8,2 milyon TL idari para cezası uygulandı; Bakanlık, sosyal medyada paylaşılan ilanların EİDS üzerinden doğrulanmış link ve görsellerle uyumlu olması gerektiğini, aksi durumda hesap erişiminin engellenebileceğini hatırlattı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-tasinmaz-ve-tasit-ticaretinde-uygulanmakta-olan-elektronik-ilan-dogrulama-sistemi-eids-kapsaminda-kimlik-ve-yetki-dogrulamasi-zorunlulugunu-instagram-facebook-ve-whatsapp-da-dahil-olmak-uzere-elektronik-ortamda-verilen-tum-tasinmaz-ve-tasi",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Emlak ve galeri işletmelerine, sosyal medya hesaplarındaki her ilanı EİDS üzerinden doğrulanmış link ve görsellerle birebir eşleştirmelerini öneririm; uyumsuzluk hem idari para cezası hem de hesabın erişime kapatılması riskini birlikte getiriyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
