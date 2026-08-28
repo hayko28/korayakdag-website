@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-08-27",
+  "sonGuncelleme": "2026-08-28",
   "programlar": [
     {
       "id": "kosgeb-tekmer-destek-2025",
@@ -2080,6 +2080,45 @@
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
       "not": "Türk Telekom, TOBB, UNDP ve Habitat Derneği ortaklığı; 18 yaş üstü kadın girişimcilere yönelik, mentörlük sonunda 20 kişiye toplam 3 milyon TL hibe. DOĞRULANAMADI: resmi başvuru portalının linki haber kaynaklarında yer almıyor, Türk Telekom/TOBB/UNDP'nin kendi sitesinden teyit edilmeli."
+    },
+    {
+      "id": "tubitak-ai-kredi-programi-2026",
+      "ad": "TÜBİTAK AI Kredi Programı",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler",
+      "ilkTespitTarihi": "2026-08-28",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Yeni program - Yapay zeka ve teknoloji startupları için GO Dijital Cüzdan üzerinden kredi ve destek imkanı"
+    },
+    {
+      "id": "kosgeb-gelisim-destek-programi-2026",
+      "ad": "KOSGEB Gelişim Destek Programı",
+      "kurum": "KOSGEB",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler",
+      "ilkTespitTarihi": "2026-08-28",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Yeni program - KOBİ ölçeklenme, dijital dönüşüm ve bölgesel kalkınma amaçlı"
+    },
+    {
+      "id": "devlet-100-milyar-tl-imalat-programi-2026",
+      "ad": "100 Milyar TL İmalat Programı",
+      "kurum": "Sanayi ve Teknoloji Bakanlığı",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "ilkTespitTarihi": "2026-08-28",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Yeni program - İmalat sektörü ve istihdam artırımı amaçlı devlet desteği"
     }
   ]
 }
