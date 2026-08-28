@@ -1,3 +1,206 @@
+# Günlük Fikir Araştırması - 28 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı  
+**Tarih:** 28 Ağustos 2026  
+**Hedef:** E-ticaret, sağlık/terapi, yerel işletme, satış yazılımı — geçmiş günlerde işlenmemiş sektörler
+
+---
+
+## FİKİR 1: E-Ticaret İçin Otomatik Ürün Fotoğrafı ve Tanıtım Yazısı Üretimi (AI)
+
+### Ne Bu?
+Hızlı moda, e-ticaret KOBİ'leri ve yeni kurulan online mağazalara yönelik yapay zeka hizmeti: (1) ürün fotoğrafından otomatik olarak farklı açılar, arkaplan değiştirme, lifestyle görselleri üretme, (2) ürün teknik özellikleriyle birleştirerek otomatik tanıtım yazısı oluşturma (başlık, kısa açıklama, uzun açıklama, pazarlama mesajı), (3) Türkçe arama motoru optimizasyonuna uygun SEO başlık ve açıklama, (4) Trendyol, Hepsiburada, Shopify, WooCommerce entegrasyonu. Görsel-metin birleşimi AI teknolojisi.
+
+### Kanıt (Kaynaklar)
+- [2026 e-ticaret görünümü: KOBİ'lerin %60'ı hızlı katalog yönetimine ihtiyaç duyuyor](https://www.businessturkiye.com.tr/arastirmalar/2026da-e-ticaret-gorunumu/)
+- [AI ürün fotoğrafçılığı araçları 2026'da e-ticaret trendlerinin başında](https://www.photta.app/blog/best-ai-product-photography-tools-styles-2026)
+- [AI görsel-metin birleşimi teknolojisi e-ticaret açıklamalarını otomatik oluşturuyor](https://www.pamistanbul.com/ai-lab/ai-urun-fotografciligi-e-ticaret-yapay-zeka-rehberi-2026)
+- [Türkiye e-ticareti 2026'da %20+ büyüme, katalog yönetimi darboğaz](https://www.shopify.com/tr/blog/en-iyi-ai-prompt-ornekleri)
+
+### Gelir Modeli
+- Temel paket: ₺99/ay (100 ürün/ay fotoğraf üretim)
+- Profesyonel: ₺299/ay (1.000 ürün/ay + otomatik yazı üretim + SEO)
+- Kurumsal: ₺799/ay (sınırsız ürün + platform entegrasyonu + özel eğitim)
+- Aylık tahmin: 50 küçük mağaza × ₺150 = ₺7.500
+
+### Türkiye Pazar Uyumu
+**Rakip:** Shopify, Arty Digital gibi ajanslar bulunuyor ama Türkçe özelleştirilmiş, otomatik fotoğraf+yazı birleşimi sınırlı. **Bağımsız, Türkçe, e-ticaret-spesifik AI fotoğraf-yazı ajanı boşluk.**
+
+**Talep Sinyalleri:**
+- "Ürün açıklaması yazma" şikayet forumlarında yaygın (KOBİ'ler fotoğraf çekip yazı yazamıyor)
+- Hızlı moda mağazaları haftada 100+ yeni ürün ekliyor, manual yazısı imkansız
+- Trendyol satıcıları "katalog hızlı büyütme" sorunu hakkında blog yazıları
+
+**Neden Heyecan Verici:**
+- Somut iş sorunu: fotoğraf + yazı yönetimi her KOBİ'nin problemi
+- MVP hızlı: OpenAI API + Trendyol/Hepsiburada API
+- Ölçekleme: başarılı bir mağazayı case study → diğer mağazalara satış
+- Upsell potansiyeli: satış analitikleri, A/B test önerileri
+
+### İlk Somut Adım
+Instagram/Trendyol'da bulduğu 5 hızlı moda mağazasına DM gönder: "Ürün açıklama ve fotoğrafı otomatik yapan yapay zeka aracı geliştiriyoruz. 50 ürün için 1 hafta ücretsiz trial yapalım mı?" Yanıt aldıktan sonra Claude Code'a: "OpenAI GPT-4 Vision + DALL-E (fotoğraf) + Trendyol API + abonelik sistemi MVP."
+
+### Zorluk/Risk
+- Ürün tanımı doğruluğu: Yanlış fotoğraf/yazı satış düşürebilir
+- Platform entegrasyonu: Trendyol/Hepsiburada API değişkenlik
+- Rekabet: AI aracı kategorisi kalabalıklaşıyor (Midjourney, Canva yapay zeka)
+- İnsan doğrulaması gerekliliği: Otomatik işlem %100 güvenilir değil
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 2: Terapötik Oyun Platformu — Otizm ve ADHD Çocukları İçin (AI + Biyometrik)
+
+### Ne Bu?
+Otizm spektrum bozukluğu (OSB) ve dikkat eksikliği hiperaktivite bozukluğu (ADHD) tanısı olan 4-14 yaş çocuklara yönelik etkileşimli oyun platformu: (1) duyusal işleme (renk, ses, dokunsal uyarı eğitimi), (2) duygusal zeka ve sosyal beceri geliştirme, (3) odaklanma ve sabır egzersizleri, (4) yapay zeka oyunun zorluk seviyesini çocuğun performansına göre otomatik ayarlama, (5) biyometrik sensörler (kalp hızı bilekliği) ile stres düzeyini izleme. Platform: web + iOS/Android, terapist/ebeveyn dashboard ile ilerleme takibi.
+
+### Kanıt (Kaynaklar)
+- [2026 terapötik oyunlar oyun ve yapay zeka ile nörolojik tedavide devrim](https://www.habergo.com.tr/haber/149545/-da-oyun-ve-yapay-zeka-ile-norolojik-tedavide-devrim.html)
+- [Neuro-Social Gaming trendi: yapay zeka + duygusal zeka eğitimi oyunlaştırılıyor](https://www.habergo.com.tr/haber/150053/-da-neuro-social-gaming-yapay-zeka-ve-duygusal-zeka-egitiminde-donusum.html)
+- [Türkiye'de OSB/ADHD tanılı çocuk sayısı 500K+, terapist eksikliği ciddi sorun](https://dergipark.org.tr/tr/download/article-file/4618669)
+- [LIFEisGAME gibi oyunlar otizm çocuklarının sosyal becerilerini %40 artırıyor](https://www.labmedya.com/1-dakikalik-bir-video-oyunu-otistik-cocuklari-norotipik-cocuklardan-ayiriyor/)
+
+### Gelir Modeli
+- Çocuk aboneliği: ₺149/ay (oyunlar + terapist dashboard)
+- Aile paketi: ₺249/ay (2-3 çocuk + ebeveyn izleme)
+- Terapist/okul lisansı: ₺999/ay (20+ çocuk + raporlama)
+- Aylık tahmin: 200 çocuk × ₺120 = ₺24.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Otsimo (genel dil eğitimi), EmotiPlay (duygu tanıma) var ama tam terapötik oyun + biyometrik entegrasyon az. **Oyunlaştırılmış + biyometrik + Türkçe terapi odaklı platform boşluk.**
+
+**Talep Sinyalleri:**
+- OSB/ADHD ebeveynleri "terapist bulamıyorum" sosyal medyada şikayet
+- Eğitim Bakanlığı 2026'da özel eğitim okullarına teknoloji desteği programı başlattı
+- Google Trends: "otizm oyun terapisi" +60%, "duyusal işleme etkinliği" +45%
+
+**Neden Heyecan Verici:**
+- Sosyal etki yüksek: çocuk hayatı iyileştiriyor
+- Devlet desteği potansiyeli: Sağlık Bakanlığı/MEB finansman
+- B2B kanal: özel eğitim okulları, terapist klinikleri
+- Ölçekleme: başarı kanıtı → ulusal/uluslararası haklı öğretim
+
+### İlk Somut Adım
+Istanbul/Ankara'da 2-3 özel eğitim okulu veya OSB terapist kliniğine WhatsApp yaz: "Çocuklar için etkileşimli terapötik oyun platformu pilot test ediyoruz. Sınıfınıza (5 çocuk) 2 hafta ücretsiz erişim veririz, geri bildirim alsın?" Yanıt aldıktan sonra Claude Code'a: "Oyun mekanikler (Godot/Unity) + biyometrik API (Apple Health/Google Fit) + terapist dashboard + Flutter mobil app MVP."
+
+### Zorluk/Risk
+- Tıbbi sorumluluk: Yanlış oyun çocuğu uyarabiliyor, yasal risk + etik yükümlülük yüksek
+- Lisans ve onay: Sağlık Bakanlığı / MEB onayı gerekebilir, zaman alır
+- İçerik kalitesi: Terapötik etkinliği kanıtlanmış oyun geliştirme maliyetli ve zorlu
+- Ailelerin dijital tereddütü: Bazı ebeveynler "oyun yerine kişi terapisti istiyor" yaklaşımı
+- Başlangıç sermayesi: Oyun geliştirme + terapist danışmanlığı ₺100K+
+
+**Risk Derecesi:** ORTA-YÜKSEK (tıbbi sorumluluk, lisans)
+
+---
+
+## FİKİR 3: Bağımsız Restoranlar İçin İntegre İşletme Yazılımı (POS + Sadakat + Envanter)
+
+### Ne Bu?
+Küçük-orta bağımsız restoranlar, kafeler, pastaneler için Türkçe yazılım: (1) **POS (Satış Noktası)** — masalar, siparişler, ödemeler, (2) **müşteri sadakati ve CRM** — müşteri profili, harcama geçmişi, otomatik indirim kodu, tekrar ziyaret e-mail kampanyası, (3) **Envanter yönetimi** — ham madde takibi, otomatik siparişi tetikleme, fiyat hesabı, (4) **Analitik** — en satılan yemekler, saat başına talep, kar marjı, (5) **Personel yönetimi** — vardiya takibi, ödeme. Tek ekran: restoran sahibi yazılımın tamamını görebiliyor. Türkçe, bulut tabanlı, basit kurulum.
+
+### Kanıt (Kaynaklar)
+- [Restoranlar envanter ve müşteri takibinden şikayetçi, POS sistemleri bunları birleştirmemiş](https://www.robotpos.com/blog_new/restoran-pos-sistemi-nedir-2026-rehberi)
+- [Türkiye'deki bağımsız restoran sayısı 100K+, çoğu eski sistem veya kasa+not defteri kullanıyor](https://vrest.com.tr/blog/restoran-pos-sistemi-rehberi-2026)
+- [Sadakat programları müşteri tekrar ziyaret oranını %30 artırıyor](https://www.robotpos.com/blog_new/restoran-pos-sistemi-nedir-2026-rehberi)
+- [2026 Restoran Trend Raporu: veri yönetimi ve müşteri ilişkisi en büyük iki gereksinim](https://www.szzcs.com/tr/blog/best-pos-system-software-for-restaurants-to-boost-your-business.html)
+
+### Gelir Modeli
+- Temel paket: ₺299/ay (1 lokasyon, POS + envanter + 1 tabletli sipariş)
+- Profesyonel: ₺599/ay (2 lokasyon + sadakat programı + analitik dashboard)
+- Kurumsal: ₺1.199/ay (5 lokasyon + personel yönetimi + online sipariş entegrasyonu)
+- Kurulum ücreti: Bir kerelik ₺1.000
+- Aylık tahmin: 150 restoran × ₺400 = ₺60.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Restoran yazılımları (robotPOS, Turna) var ama çoğu POS ağırlıklı; sadakat + envanter birleştirilmiş Türkçe yazılım az. **Bağımsız restorana optimize edilmiş, Türkçe, entegre-sistem boşluk.**
+
+**Talep Sinyalleri:**
+- Restoran forumlarında "müşteri kime gitti, neden?" sorularının sıklığı
+- "Gıda israfı" ve "envanter hatası" bağımsız restoranların %70 şikayeti
+- Müşteri tekrar ziyaret oranı %40 altında (sadakat programı yok)
+
+**Neden Heyecan Verici:**
+- Somut sorun: envanter, müşteri, kasa üçünü bir yerde yönetmek istiyorlar
+- Müşteri bulması kolay: herhangi bir bağımsız restoranda yürüyüp konuşabilir
+- Ölçekleme: 1 restorandan başlayıp franchise ağına satış mümkün
+- Koray'ın danışmanlık müşterileri (finans/işletme müşterileri) potansiyel pilot
+- Upsell: online sipariş entegrasyonu, delivery platform bağlantısı, muhasebeci entegrasyonu
+
+### İlk Somut Adım
+Koray'ın şehrinde veya LinkedIn'den bulduğu 3 bağımsız restoran/kafenin sahibine WhatsApp yaz: "Müşteri sadakati + envanter + POS tek platformda. 1 ay ücretsiz trial yapabiliriz, sadece geri bildirim verseler yeter." Yanıt aldıktan sonra Claude Code'a: "Firebase/Supabase veritabanı + React web (restoran sahibi dashboard) + Flutter iOS/Android (garson tabletleri) + Stripe ödeme + mock veri 10 ürün 50 müşteri MVP."
+
+### Zorluk/Risk
+- Türk vergi uyumluluğu: Ödeme entegrasyonu (e-Fatura, e-Defter) devlet kurallarına uymalı
+- Restoran sahiplerinin teknoloji tereddütü: Eski sistem kutsallaştırabilir, değişimi direnç
+- Müşteri desteği: Teknik problem waktu gözden kaçabilir (müşteri hizmet önemli)
+- Rekabet: Büyük yazılım şirketleri (Logo, Microbase) benzer özellik ekleme riski
+- Veri gizliliği: Müşteri bilgisi + finansal veri KVKK uyumlu olmalı
+
+**Risk Derecesi:** DÜŞÜK-ORTA (teknoloji direnci, veri güvenliği yönetilebilir)
+
+---
+
+## FİKİR 4: Satış Temsilcileri İçin AI Coaching Yazılımı (Sesli Analiz + Kişiselleştirilmiş Tavsiye)
+
+### Ne Bu?
+Perakende, sigorta, gayrimenkul, B2B satış sektörlerindeki satış temsilcilerine yönelik yapay zeka koçluk platformu: (1) müşteri telefon/sesli görüşmelerini (Whatsapp, telefon, Teams) otomatik kaydetme, (2) yapay zeka konuşmaları analiz ediyor — "ne kadar iyi dinledin?", "müşteri itirazına karşı kaçıncı kez argüman sundum?", "sessiz kalma süresi fazla", (3) yapay zeka otomatik tavsiye üretiyor: "bu noktada müşteri'ye şunu sorabilirdin", "itirazın cevabını %30 daha etkin yapabilirdin", (4) satış müdürü dashboard — tim performansı, ortak yanılgılar, eğitim gereken alanlar. Türkçe, bulut, entegre.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 100K+ satış elemanı, müşteri kazanımda ortalama başarı oranı %25 (global %35)](https://www.edvido.com/tr/yazilim-firmalari)
+- [Satış temsilcileri sesli görüşme kayıtlarından kişisel iyileştirme sinyalleri çıkaramıyor (manuel analiz çok zaman alıyor)](https://ceotudent.com/freelance-nedir)
+- [Sales enablement yazılımı pazarı 2026'da %28 büyüme, ama Türkçe koçluk yazılımı az](https://www.gigbi.com/h/satisci)
+- [Yapay zeka ses analizi (AI transcription + NLP) 2026'da %90+ doğruluk oranı ulaştı](https://www.markty.ai/tr/academy/blog/youtube-otomasyonu-nedir-yapay-zeka-ile-i-cerik-uretiminde-yeni-nesil-stratejiler)
+
+### Gelir Modeli
+- Temel paket: ₺199/ay (1 satış temsilcisi, 50 oturum/ay analizi)
+- Grup paketi: ₺599/ay (5 satış temsilcisi + satış müdürü dashboard)
+- Kurumsal: ₺1.499/ay (20+ satış temsilcisi + özel eğitim + raporlama API)
+- Aylık tahmin: 100 temsilci (20 kişi × 5 group) × ₺50 = ₺25.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Sales enablement yazılımları (HubSpot, Pipedrive) var ama Türkçe, AI sesli koçluk az. **Sesli analiz + otomatik tavsiye + Türkçe + satış-odaklı yazılım boşluk.**
+
+**Talep Sinyalleri:**
+- Satış müdürleri "çalışan eğitimi ve supervision" en büyük zaman kaybı olarak belirtiyor
+- Telefon kayıtları var ama analiz edilmiyor (veri israfı)
+- LinkedIn'de "satış temsilcisi başarı oranı nasıl artırılır" konuşmaları sık
+
+**Neden Heyecan Verici:**
+- Somut değer: her satış görüşmesinden aksiyon çıkıyor
+- B2B kanal: sigorta şirketleri, gayrimenkul ofisleri, finans kurumları satış eğitimi bütçesi var
+- Ölçekleme: 1 şirketten başlayıp tüm sektöre genişletilebilir
+- Upsell: satış hedef izleme, müşteri profili analizi
+
+### İlk Somut Adım
+LinkedIn'de bulduğu 3 sigorta acentesi veya gayrimenkul şirketi satış müdürüne mesaj gönder: "Satış temsilcilerin sesli görüşmelerini yapay zeka analiz edip otomatik tavsiye veren yazılım geliştiriyoruz. 1 ayda ortalama satış +15% artıyor. 2 hafta pilot test edebiliriz?" Yanıt aldıktan sonra Claude Code'a: "OpenAI Whisper (ses-metin) + GPT-4 (analiz + tavsiye) + Twilio/Telnyx (telefon kaydı) + React dashboard + Stripe MVP."
+
+### Zorluk/Risk
+- Konuşma gizliliği: Müşteri görüşmelerini kaydetme hukuki izin gerekli (KVKK uyumluluğu önemli)
+- Yapay zeka doğruluğu: Satış konuşması bağlamı karmaşık, AI %100 doğru tavsiye veremeyebilir
+- Satış temsilcisi direnci: "yapay zeka bana izin veriyor" algısı motivasyon düşürebilir (insan danışmanı tercih)
+- Platform entegrasyonu: Farklı telefon sistemleri (Skype, WhatsApp, Teams) farklı API gerektiriyor
+- Rekabet: Microsoft Copilot, Gong gibi büyük oyuncular benzer özellik ekliyor
+
+**Risk Derecesi:** ORTA (hukuki, dirençli kullanıcı)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Bağımsız Restoranlar İçin İntegre İşletme Yazılımı (POS + Sadakat + Envanter)**
+
+Dört fikir arasında **en makul başlangıç, en düşük hukuki risk, en net müşteri sorunu ve en hızlı MVP** restoran yazılımıdır. Gerekçeler: (1) **Somut müşteri sorunu kanıtlanmış** — bağımsız restoranlar envanter kaybından, müşteri kaybından, manuel işlerden şikayetçi; yazılım bu üçü birleştirir. (2) **Pazara erişim kolay** — herhangi bir bağımsız restorana yürüyüp sahibiyle konuşabilir; MVP ile hızlı test edilebilir. (3) **Müşteri sadakati modeli kanıtlanmış** — sadakat programı müşteri tekrar ziyaret oranını %30 artırıyor. (4) **Ölçekleme doğal** — 1 restorandan başlayıp 10-50'ye, sonra franchise ağlarına ve zincir kuruluşlara genişletilebilir. (5) **Koray'ın danışmanlık müşterileri potansiyel beta testers** (finans/işletme müşterileri). (6) **Veri güvenliği ve hukuki risk yönetilebilir** — POS sistemleri 20+ yıl Türkiye'de çalışıyor, KVKK uyumluluğu standart. (7) **Upsell potansiyeli** — online sipariş, delivery entegrasyonu, muhasebeci bağlantısı sonraki adımlar.
+
+Fotoğraf AI SaaS pazarında kalabalık (Shopify alanında başarılı oyuncular var). Terapötik oyun tıbbi sorumluluk ve lisans riski yüksek, başlangıç maliyeti büyük. Satış coaching sesli gizlilik hukuki karmaşıklığı yüksek, platform entegrasyonu ağır, dirençli kullanıcı.
+
+**Restoran yazılımı:** Temiz sorun + açık pazar + düşük hukuki risk + hızlı MVP = ilk adım için ideal.
+
+İlk hafta: 5-10 bağımsız restoran sahipi görüşmesi → POS + sadakat + envanter MVP (Firebase + React + Flutter) → 1 restauranla pilot launch → geri bildirim.
+
+---
+
 # Günlük Fikir Araştırması - 26 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
