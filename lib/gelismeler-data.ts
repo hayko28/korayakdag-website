@@ -513,6 +513,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Emlak ve galeri işletmelerine, sosyal medya hesaplarındaki her ilanı EİDS üzerinden doğrulanmış link ve görsellerle birebir eşleştirmelerini öneririm; uyumsuzluk hem idari para cezası hem de hesabın erişime kapatılması riskini birlikte getiriyor.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "28 Ağustos 2026",
+    eklendiTarihi: "2026-08-29",
+    baslik:
+      "İstihdamı Koruma Destek Programı büyük işletmeleri de kapsayacak şekilde genişletildi",
+    ozet:
+      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla İstihdamı Koruma Destek Programı'nın kapsamını 28 Ağustos 2026 itibarıyla genişletti. Program artık yalnızca KOBİ'leri değil büyük işletmeleri de kapsıyor; KOSGEB'in finansman katkısı 10 puandan 12 puana çıkarılırken kredi üst limiti KOBİ'lerde 50 milyon TL, büyük işletmelerde ise 50 milyon TL'den 150 milyon TL'ye yükseltildi. Yeni dönem başvuruları 1 Eylül-31 Ekim 2026 arasında NACE Kısım C-İmalat kodlu işletmelerden alınacak.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Büyük işletmelerin de kapsama alınması ve kredi üst limitinin üç katına çıkması, tedarik zincirinde imalatçı büyük firmalarla çalışan KOBİ'ler için de dolaylı bir istikrar sinyali; imalat sektöründeki işletmelere 1 Eylül'de açılacak başvuru dönemine NACE kodlarını ve prim gün sayısı kriterlerini önceden kontrol ederek girmelerini öneririm.",
+  },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "27 Ağustos 2026 (28 Ağustos 2026'da duyuruldu)",
+    eklendiTarihi: "2026-08-29",
+    baslik:
+      "Vergi veya SGK borcu olan esnaf ve sanatkârlara Hazine faiz destekli kredilere erişimde yeni düzenleme",
+    ozet:
+      "27 Ağustos 2026 tarihli, 33353 sayılı Resmî Gazete'de yayımlanan 11648 sayılı Cumhurbaşkanlığı Kararı ile vergi veya SGK prim borcu bulunması nedeniyle Hazine faiz destekli kredilerden tamamen yararlanamayan esnaf ve sanatkârlara, daha düşük oranlı faiz desteğiyle krediye erişim imkânı getirildi. Genel kredilerde destek oranı %50'den %40'a, kaybolan meslek/genç girişimci kredilerinde %100'den %80'e, onaylı proje kredilerinde ise %60'tan %48'e indirilerek borçlu esnafın sistem dışında kalması yerine kısmi destekle krediye erişmesi sağlandı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/esnaf-ve-sanatkarlarin-hazine-faiz-destekli-kredilere-erisimine-yeni-duzenleme",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Bu düzenleme özellikle vergi veya SGK borcu nedeniyle daha önce krediye hiç erişemeyen esnaf ve küçük işletme sahipleri için bir kapı aralıyor; faiz desteği oranı düştüğü için başvurmadan önce toplam finansman maliyetini bankasıyla birlikte hesaplamasını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
