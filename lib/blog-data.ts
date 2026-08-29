@@ -368,5 +368,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "10 Dakika",
     image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "konkordato-nedir-basvuru-sureci-2026",
+    title: "Konkordato Nedir? Nasıl Başvurulur? 2026 Gider Avansı Tarifesi ve Güncel Süreç Rehberi",
+    excerpt: "26 Ağustos 2026'da Resmî Gazete'de yayımlanan yeni Konkordato Gider Avansı Tarifesi ile mahkemeye yatırılacak avans tutarları güncellendi. Konkordato nedir, kimler başvurabilir, geçici/kesin mühlet süreci nasıl işler, alacaklılar toplantısı nisabı ve konkordato ön projesinde mali tabloların rolüyle 2026 güncel rehber.",
+    category: "ŞİRKETLER HUKUKU • KONKORDATO • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1589391886645-d51941baf7fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
