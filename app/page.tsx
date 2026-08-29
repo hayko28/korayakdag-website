@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import SahadanKareler from "@/components/SahadanKareler";
 import About from "@/components/About";
 import Expertise from "@/components/Expertise";
 import Services from "@/components/Services";
+import DestekUygunlukTanitim from "@/components/DestekUygunlukTanitim";
 import Blog from "@/components/Blog";
 import WhyChooseMe from "@/components/WhyChooseMe";
 import Contact from "@/components/Contact";
@@ -19,17 +21,23 @@ export default function Home() {
 
       <Hero />
 
+      <SahadanKareler />
+
       <About />
 
       <Expertise />
 
       <Services />
 
+      <DestekUygunlukTanitim />
+
       <Blog />
 
       <WhyChooseMe />
 
       <Contact />
+
+      <DestekUygunlukTanitim />
 
       <Footer />
     </main>

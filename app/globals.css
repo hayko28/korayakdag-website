@@ -36,3 +36,13 @@ html, body {
     height: auto !important;
   }
 }
+
+/* 4. Sahadan Kareler — Kayan Fotoğraf Şeridi */
+@keyframes sahadan-kareler-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
