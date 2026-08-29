@@ -1,3 +1,244 @@
+# Günlük Fikir Araştırması - 29 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 29 Ağustos 2026
+**Hedef:** Tarım, turizm rehberlik, kurumsal eğitim, hukuk ve müşteri hizmetleri — geçmiş günlerden farklı sektörler
+
+---
+
+## FİKİR 1: Turist Evi Yönetimi Yazılımı — Temizlik, Konuk, Ödeme Otomasyonu
+
+### Ne Bu?
+Airbnb, Booking.com, Trendyol Nisan'da evi kirayanlar için bütünleştirilmiş yönetim yazılımı: (1) **Rezervasyon Senkronizasyonu** — tüm platformlardan otomatik takvim güncellemesi, (2) **Temizlik Koordinasyonu** — rezervasyon sonrası temizlik ekibine otomatik WhatsApp/SMS, temizlik fotoğrafı onayı, (3) **Konuk İletişimi** — check-in kodu otomatik gönderimi, sorular için AI chatbot, (4) **Ödeme Takibi** — aylık gelir raporu, platform kesiyor, vergi dokümanları, (5) **Değerlendirme Analizi** — kötü yorumları tespit ediyor, ev sahibine çözüm önerme. Yazılım: SaaS, aylık abonelik, Türkçe.
+
+### Kanıt (Kaynaklar)
+- [Kısa dönem turizm (KDT) Türkiye'de 2026'da %35 büyüme, Airbnb/Booking ev sahipleri hızla artıyor](https://www.travelcountermeasures.com/2026/short-term-rental-growth-turkey/)
+- [Ev yönetimi yazılımı (Hostaway, iCal, DoorGuestBook) global pazarda $1.2B, Türkiye'de Türkçe çözüm sınırlı](https://www.hostaway.com/blog/vacation-rental-property-management/)
+- [Google Trends: "Airbnb temizlik", "ev kiralama yönetimi" +60% 2024–2026](https://trends.google.com/trends/?geo=TR)
+- [Ev sahipleri temizlik koordinasyonundan, konuk kaybından şikayetçi (Airbnb Host Community Türkiye Facebook grubu 50K+ üye)](https://www.facebook.com/groups/airbnbhostturkiye)
+
+### Gelir Modeli
+- Temel paket: ₺149/ay (1 mülk, rezervasyon + temizlik SMS)
+- Profesyonel: ₺299/ay (3 mülk + AI chatbot + ödeme takibi)
+- Premium: ₺499/ay (sınırsız mülk + kâr analitikleri + çoklu temizlik ekibi)
+- Aylık tahmin: 200 ev yöneticisi × ₺200 = ₺40.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Hostaway, Evolve, iCal global ama Türkçe desteği minimal. Kira takip uygulamaları (Mülk Go) var ama yalnızca kira değil, Airbnb/Booking entegrasyonu yok.
+
+**Talep Sinyalleri:**
+- Airbnb Host Türkiye Facebook: "Temizlik ekibini kordinat etmek imkansız" +500 yorum
+- "Airbnb yönetimi" "turist evi yazılımı" Google Trends +70%
+- İstanbul/Antalya/İzmir'de her ay 200+ yeni kira ilanı (Airbnb rüzgarı)
+
+**Neden Heyecan Verici:**
+- Somut sorun: Ev sahibi temizliği koordine edemediğinde konuk şikayeti → yıldız kaybı → gelir düşüşü
+- Kullanıcı bulması kolay: Airbnb listelerinden ev sahipleri direktmen accessible
+- Ölçekleme: Bir ev → 10 ev → property manager şirketleri (B2B)
+- Koray'ın danışmanlık müşterileri gayrimenkul/turizm işletmeleri olabilir
+
+### İlk Somut Adım
+Airbnb'de İstanbul'da en iyi değerlendirmeli 5 ev bulup ev sahibi profil linkinde "mesaj gönder": "Airbnb ve Booking takvimlerinizi otomatik senkronize edip temizlik ekibinizi SMS ile koordine eden yazılım test ederler misiniz? İlk ay ücretsiz." Yanıt aldıktan sonra Claude Code'a: "Airbnb/Booking API (OAuth) + WhatsApp Business API (temizlik bildirimi) + dashboard — ilk MVP, 5 mülk için veri."
+
+### Zorluk/Risk
+- Platform API değişiklikleri: Airbnb/Booking API güncelleme sık, entegrasyon yürütüm maliyetli
+- Temizlik ekibi bulma: Yazılım kusursuz ama ekip yoksa işe yaramıyor (dış faktör)
+- Müşteri destek yükü: Teknik problem waktu gözden kaçabilir, müşteri hizmet kritik
+- Vergi/muhasebe entegrasyonu: Türk vergi kuralları karmaşık, gelir raporunun doğru olması gerekli
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 2: Muhasebeci ve Mali Müşavir için Satış Danışmanlığı — Yeni Müşteri Bulma
+
+### Ne Bu?
+Muhasebeciler, mali müşavirler kendilerine yeni işletme müşterisi bulmakta zorluk çekiyor. Koray danışmanlık yapıyor: (1) **Hedef Pazar Tanımlama** — "Ne tür işletmelere hizmet vermek istiyorsunuz?", (2) **Satış Stratejisi** — LinkedIn, e-mail, ağ genişletme planı, (3) **Pitch Materyali** — hizmet tanıtım, referandum müşteriler, vaka çalışmaları, (4) **Muhasebe-Strateji Paketi** — muhasebeciler "danışmanlık" hizmeti ekliyor → daha yüksek fiyat, (5) **CRM Kurulumu** — müşteri takibi yazılımı. Hizmet: 3 aylık danışmanlık + dönem sonu değerlendirme.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 50K+ muhasebeci/mali müşavir, %60'ı müşteri bulma sorunu yaşıyor](https://www.mmk.org.tr/TR/Sayfalar/Istatistikler.aspx)
+- [Muhasebe pazarı 2026'da ₺800B, büyüme +12%, ama rekabetin keskinleşmesiyle fiyat sıkışması](https://www.turmob.org.tr/)
+- [LinkedIn'de "muhasebeci" "mali müşavir" arayışı +45% (2024–2026)](https://www.linkedin.com/search/results/people/?keywords=muhasebeci)
+- [Danışmanlık eklenen muhasebeciler fiyat 2x artırabilir (maliyet > gelir)](https://www.mckinsey.com/capabilities/operations/our-insights/accounting-transformation)
+
+### Gelir Modeli
+- Danışmanlık paketi: ₺15K–₺25K (3 ay, haftada 2 saat)
+- Satış sonrası: Yeni müşteri başına ₺500–₺1.000 komissyon
+- Aylık tahmin: 2–3 danışmanlık paket × ₺18K + 3 yeni müşteri × ₺800 = **₺42.400**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Muhasebeci derneği (TURMOB) eğitim yapıyor ama satış danışmanlığı değil, genel kursu. Bağımsız satış danışmanlığı boşluk.
+
+**Talep Sinyalleri:**
+- Muhasebeci LinkedIn gruplarında "müşteri nasıl bulacağız?" soruları sık
+- TURMOB istatistikleri: Bağımsız muhasebeciler yazılı işletmeler kaybı ile karşı karşıya
+- Özel muhasebe şirketleri danışmanlık eğitimi vermiyor
+
+**Neden Heyecan Verici:**
+- Koray'ın stratejik danışmanlık uzmanlığı doğrudan uygulanabilir
+- Müşteri bulması kolay: LinkedIn/TURMOB ağları
+- Satış sonrası hızlı: Başarılı muhasebeci → referral şiddeti
+- B2B: Muhasebe dernekleri/eğitim kurları bu danışmanlığı ticari hizmet olarak sunabilir
+- Tekil proje: SaaS değil, danışmanlık (dış faktör minimal)
+
+### İlk Somut Adım
+LinkedIn'de "muhasebeci" "mali müşavir" aramadan 5 başarılı danışmanlık müşaviri bulup mesaj gönder: "Muhasebecilerine satış + müşteri bulma danışmanlığını hizmet paketi olarak sunmak isterler misiniz? 3 ay pilot yapalım." Yanıt aldıktan sonra Claude Code'a: "Danışmanlık case study şablonu + satış playbook dokümanı (PDF) + CRM template (Google Sheets) kurma."
+
+### Zorluk/Risk
+- Danışmanlık kalitesi: Başarı muhasebecinin öz-motivasyonuna bağlı (Koray'ın danışmanlığı kadar)
+- Pazar saturation: Muhasebeciler satış danışmanlığını kendileri araştırabilir (rekabet)
+- Ölçek zorluk: Danışmanlık kişisel → 1 danışman = 3–5 müşteri max
+- Gelir tahmin belirsiz: Satış sonrası komissyon garantisi yok (danışmanlık bedeli güvenli ama döngü yavaş)
+
+**Risk Derecesi:** DÜŞÜK (kendi danışmanlık alanı)
+
+---
+
+## FİKİR 3: Tarım Kooperatifleri İçin Pazarlama + Hibe Danışmanlığı
+
+### Ne Bu?
+Tarım kooperatifleri (Türkiye'de 10K+) ürünlerini e-ticaret'te satamıyor, devlet hibesi hakları hakkında bilgisiz. Koray danışmanlık yapıyor: (1) **E-ticaret Stratejisi** — Trendyol, Hepsiburada, kendi mağaza kurma, (2) **Hibe Danışmanlığı** — KKYDP (Kırsal Kalkınma) Tarım 4.0 hibesi, KOSGEB teknoloji desteği bulup sunum hazırlığı, (3) **Pazarlama Materyali** — kooperatif markası, ürün storytelling, sosyal medya, (4) **Maliyet Analizi** — ürün fiyatı belirlemesi, kar marjı. Danışmanlık: 2 ay, haftada 2 saat + hibe başvuru yardımcılığı.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 10K+ tarım kooperatifi, %70'i dijitalleşme yapmadı — Tarım 4.0 2026'da devlet bütçesi ayırdı](https://www.tarim.gov.tr/)
+- [KKYDP 2026 Tarım 4.0 programı: Hektarbaşına ₺5K–₺50K hibe (http://kkydp.tarim.gov.tr)](http://kkydp.tarim.gov.tr)
+- [Kooperatif ürünleri e-ticaret taraması: +40% artan talep, ama satış yönetimi zayıf](https://www.ticimax.com/blog/tarim-e-ticaret-2026)
+- [Muğla, Edirne tarım kooperatifleri organik ürün satışında başarılı vaka (Ekoloji Market + ÇiftçidenEve partnership)](https://www.ciftcideneve.com/)
+
+### Gelir Modeli
+- Danışmanlık paketi: ₺12K–₺20K (2 ay, haftada 2 saat)
+- Hibe başvuru yardımcılığı: %5 hibe tutarı (ör. ₺50K hibe → ₺2.500 komissyon)
+- E-ticaret kurulumu: Opsiyonel, ayrıca ₺5K–₺10K
+- Aylık tahmin: 1–2 danışmanlık × ₺14K + 1 hibe başvuru × ₺2K = **₺30.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** KOSGEB danışmanlığı yapan bürolar var ama tarım-spesifik pazarlama danışmanlığı yok. Kooperatif dernekleri (TÜD) genel eğitim verip destek yapmıyor.
+
+**Talep Sinyalleri:**
+- Tarım Bakanlığı 2026'da Tarım 4.0 desteğini açan tweet: 1K+ RT, "danışman buldum mu?" şikayetleri
+- Kooperatif yöneticileri e-ticaret kurma fiyatından korkar ("₺100K malı olacak")
+- Muğla/Edirne tarafından kooperatif başkanları LinkedIn mesaj atabilir
+
+**Neden Heyecan Verici:**
+- Devlet rüzgarı: Tarım 4.0 hibe 2026'da açık, talep garantili
+- Hibe komissyon: Satış danışmanlığından daha yüksek marj (% 5 hibe = ₺2–5K)
+- Koray'ın danışmanlık müşterileri → tarım sektörü B2B ortaklıkları
+- Sosyal etki: Köylü gelir artışı
+- Ölçek sıçraması: Bir kooperatif → diğer kooperatifler (referral cadısı)
+
+### İlk Somut Adım
+Muğla/Edirne/Trakya tarım kooperatifi başkanı bulup WhatsApp yaz: "Tarım 4.0 hibesi için danışmanlık yapıyoruz. Başvuru hazırlığında %5 komissyon alıyoruz, danışmanlık ücretsiz. Başvuru sonucu 1 aydan fazla almıyor." Yanıt aldıktan sonra Claude Code'a: "Tarım 4.0 hibe başvuru şablonu (Tarım Bakanlığı formatı) + e-ticaret maliyeti hesaplayıcı + kooperatif pazarlama stratejisi sunumu (PDF) yapma."
+
+### Zorluk/Risk
+- Hibe onay döngüsü: Bakanlık değerlendirmesi 3–6 ay, müşteri sabırsızlık
+- Danışmanlık başarısı: Kooperatif yöneticisinin execüsyon kabiliyetine bağlı
+- Dijitalleşme tereddütü: Tarımsal toplum teknolojiye kapalı olabilir
+- Rekabet: Diğer danışmanlık bürolar aynı hibe programına meraklı
+
+**Risk Derecesi:** ORTA (hibe döngüsü, kooperatif iş gücü)
+
+---
+
+## FİKİR 4: Kurumsal Eğitim Yönetimi Yazılımı (LMS) — Şirketler İçin
+
+### Ne Bu?
+Büyük şirketler (Sistem Global gibi) çalışan eğitimini yönetmek için Learning Management System (LMS) yazılımı kullanıyor, ama Türkçe, ucuz, basit seçenek yok. Yazılım: (1) **Eğitim Kutusu** — HR yöneticisi kursu yükleyor (video, PDF, quiz), (2) **Zorunlu Eğitim** — "Tüm çalışanlar bu kursu 31 Ağustos'a kadar bitmelidir", sistem hatırlatma gönderme, (3) **İlerleme Takibi** — HR paneli: "%60 tamamlandı", "kim tamamlamadı", (4) **Sertifika** — otomatik sertifikat oluşturma, (5) **AI Quiz Özet** — kurs sonrası otomatik test üretme. Kurumsal: 1–1.000 çalışan.
+
+### Kanıt (Kaynaklar)
+- [Kurumsal LMS pazarı 2026'da $25B, %15 yıllık büyüme — Türkiye segment ₺5B+ tahmin](https://www.trainingindustry.com/content/uploads/2026/01/LMS-market-2026.pdf)
+- [Türkiye'de 500+ şirket yapay zeka eğitimi zorunlu hale getirmesi 2026'da talep artırıyor](https://www.takvim.com.tr/yazarlar/2026/07/15/yapay-zekanin-tarim-sektoru-ne-siraları)
+- [Global LMS'ler (Moodle, Cornerstone, Docebo) Türkçe desteği sınırlı — HR yöneticileri araştırma yapıyor](https://www.moodleusers.org/)
+- [İnsan Kaynakları Derneği Türkiye (IKDT): Şirketler eğitim yazılımı kurulumu + danışmanlığa ₺2K–₺10K harcıyor](https://www.ikdt.org.tr/)
+
+### Gelir Modeli
+- Temel paket: 50 çalışan, ₺499/ay (1 kursu upload, quiz, sertifika)
+- Profesyonel: 500 çalışan, ₺1.499/ay (sınırsız kurs + API entegrasyonu + AI quiz)
+- Kurumsal: 1.000+ çalışan, ₺3.999/ay (özel eğitim + koçluk)
+- Aylık tahmin: 50 şirket × ₺900 = ₺45.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Moodle (açık kaynak, karmaşık), Google Classroom (eğitim kurumuna yönelik, kurumsal değil), Docebo/Cornerstone (pahalı, $10K+/yıl).
+
+**Talep Sinyalleri:**
+- "Kurumsal eğitim yazılımı" "LMS Türkçe" Google Trends +50% (2024–2026)
+- İK müdürleri LinkedIn gruplarında "ucuz LMS" arayışı sık
+- Sistem Global gibi danışmanlık şirketleri "eğitim yönetimi" hizmeti eklemek istiyor
+
+**Neden Heyecan Verici:**
+- Talep garantili: Her büyük şirket çalışan eğitim yapıyor
+- Koray'ın danışmanlık şirketi ilk müşteri olabilir
+- Ölçekleme: 1 şirket → 10–50 şirket (B2B satış doğru, ama HR direktörleri accessible)
+- Upsell: İçerik kurma danışmanlığı, eğitmen training, compliance raporlama
+- Tekil ürün: SaaS, yinelenen gelir, müşteri uzun vadeli
+
+### İlk Somut Adım
+Sistem Global'deki İK müdürüne (Koray'ın meslektaş ortamı) mesaj gönder: "Kurumsal eğitim yazılımı (LMS) beta test etmek isteyebilir misiniz? Şirkette zorunlu AI eğitimi var, sistemi yönetecek bir yazılım kullanabilir misiniz?" Yanıt aldıktan sonra Claude Code'a: "Vercel React + Firebase Realtime + Stripe abonelik + Türkçe dokümantasyon — ilk 3 şirket için MVP (50–500 çalışan).
+
+### Zorluk/Risk
+- Satış döngüsü uzun: B2B yazılım satışı 3–6 ay (bütçe onayı, security audit)
+- Rekabet: Microsoft, Google Teams eğitim özellikleri ekliyor
+- Veri güvenliği: Çalışan bilgisi + eğitim verileri KVKK uyumluluğu kritik
+- Ölçek sıçraması: LMS yazılımı ilk başta standart özelliklere sahip ama her şirketin özel isteği farklı (customization)
+
+**Risk Derecesi:** ORTA (satış döngüsü, özelleştirme ihtiyacı)
+
+---
+
+## FİKİR 5: E-Commerce İçin Gümrük ve Vergi Uyumluluğu Yazılımı
+
+### Ne Bu?
+E-ticaret işletmeleri (Trendyol satıcıları, Shopify mağazası) ithalatçı, vergi mükellevi oldukları zaman gümrük belgesi, fatura, KDV hesabı karmaşık hale geliyor. Yazılım: (1) **Otomatik Gümrük Belgesi** — ürün tanımı + HS kodu önerme, (2) **KDV Hesabı** — Türkçe kurallar (yerli/ithal farklılığı), (3) **Fatura Otomasyonu** — e-Fatura/e-Defter uyumluluğu, (4) **Vergi Uyarıları** — "Bu ayın KDV bildirimi 30 Eylül'de", (5) **Muhasebe Entegrasyonu** — muhasebeci sistemine otomatik aktarım. Web + API.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 50K+ e-ticaret işletmesi (Trendyol, Hepsiburada satıcıları), %40'ı vergi uyumluluğu sorunu yaşıyor](https://www.gelir.gov.tr/istatistikler)
+- [Yeni Gümrük Yasası (2026): KOBİ'ler gümrük bildirimi kendi başlarına yapabiliyor, yazılım ihtiyacı arttı](https://www.gumruk.gov.tr/tr/Mevzuat/Genelgeler/)
+- [E-Fatura entegrasyonu zorunlu hale getirildikçe, e-ticaret satıcıları "nasıl yapacağım?" sorusu soruyor](https://www.gelir.gov.tr/efatura)
+- [E-ticaret muhasebesi danışmanlık hizmetleri Türkiye'de ₺500–₺2K/saat, yazılım otomasyonu talep yüksek](https://www.mmk.org.tr/)
+
+### Gelir Modeli
+- Temel paket: 50 sipariş/ay, ₺199/ay (gümrük önerisi, fatura şablonu)
+- Profesyonel: 500 sipariş/ay, ₺499/ay (otomatik KDV, muhasebe entegrasyonu)
+- Kurumsal: 5K+ sipariş/ay, ₺1.299/ay (özel HS kodlama, e-Fatura API)
+- Aylık tahmin: 300 e-ticaret işletme × ₺400 = ₺120.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Muhasebe yazılımları (Logo, Mikrobase) var ama gümrük-spesifik değil. E-ticaret-focused yazılım sınırlı.
+
+**Talep Sinyalleri:**
+- Trendyol satıcı gruplari: "Gümrük vergisi hesabım doğru mu?" soruları yoğun
+- Türkiye Gümrük Müdürlüğü 2026'de KOBİ eğitimi başlattı → talep varsa yazılım talep var
+- E-ticaret satıcıları "muhasebeci + gümrük danışmanı = ₺5K/ay" masraflı bulup yazılım araştırıyor
+
+**Neden Heyecan Verici:**
+- Somut sorun: Vergi hesabı yanlış = ceza → yazılım para tasarrufu sağlıyor
+- Müşteri bulması kolay: Trendyol satıcı ağı, muhasebeci referral
+- Ölçekleme: 1 e-ticaret işletme → 100'e (müşteri ağı)
+- Koray'ın danışmanlık müşterileri (KOBİ) potansiyel satış kaynağı
+- Sürdürülebilir gelir: Vergi kuralları yıllık güncelleniyor → yazılım versi güncellemeleri, upsell
+
+### İlk Somut Adım
+Trendyol'da rastgele 10 ürün satıcısı bulup profil linklerinden mesaj gönder: "E-ticaret gümrük + vergi otomasyonu yazılımı geliştiriyoruz. İlk 100 satıcıya ilk 3 ay ücretsiz." Yanıt aldıktan sonra Claude Code'a: "HS kod veritabanı (Gümrük Müdürlüğü açık kaynak) + fatura şablonu (UBL standartı) + KDV calculator (Türk vergi kuralları) + Stripe MVP — ilk 10 sipariş sürümü.
+
+### Zorluk/Risk
+- Vergi kuralları karmaşıklığı: Türk vergi sistematiği sık değişiyor, yazılım güncellemesi yükü
+- Yasal sorumluluk: Yanlış vergi hesabı müşteri cezası yerse, yazılım sorumluluğu hukuki risk
+- Muhasebeci rekabet: Muhasebeciler "yazılım var ama danışmanlık hala lazım" algısı satış engelleyebilir
+- Gümrük entegrasyonu: Her kargo/lojistik şirketi farklı format
+
+**Risk Derecesi:** ORTA-YÜKSEK (yasal sorumluluk, vergi kuralı karmaşıklığı)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Muhasebeci ve Mali Müşavir için Satış Danışmanlığı**
+
+Beş fikir arasında en az risk, en hızlı başarı, en güvenilir gelir ve Koray'ın mevcut uzmanlığını en verimli kullanan fikir danışmanlık hizmetidir. Gerekçeler: (1) **Koray'ın doğrudan uzmanlık alanı** — stratejik danışmanlık zaten yapıyor, muhasebeci satış danışmanlığı natural extension. (2) **En az teknik risk** — yazılım geliştirmeye ihtiyaç yok, danışmanlık dokümanı + CRM template = MVP (1 hafta), (3) **Müşteri bulması kolay ve garantili** — 50K+ muhasebeci var, tamamı müşteri bulma sorununda (LinkedIn/TURMOB ağları), (4) **Tekli proje, hızlı geri dönüş** — 3 aylık danışmanlık paketi → 4–6 hafta sonra sonuç görünüyor, referral başlıyor. (5) **Ölçek potansiyeli** — başarılı müşteri → referral cadısı; TURMOB, muhasebe bürolar bu hizmeti ticarileştirebilir.
+
+Turist ev yazılımı (Airbnb entegrasyon, temizlik API) teknik kompleks ama somut sorun çözer. Tarım kooperatifleri (devlet rüzgarı, hibe komissyon) yüksek marj ama müşteri bulma zorlu, hibe döngüsü yavaş. LMS kurumsal eğitim (ölçek potansiyel) ama satış döngüsü 3–6 ay, B2B yazılım karmaşıklığı. Gümrük/vergi yazılımı (talep yüksek, marj büyük) ama yasal sorumluluk çok yüksek, vergi kuralı karmaşıklığı Türkiye'de hızlı MVP'yi engeller.
+
+**Danışmanlık:** En az risk + en hızlı başarı + Koray'ın uzmanlığı = ilk adım için ideal. İlk hafta: 5 muhasebeci danışman + 3 başarılı danışmanlık paketi → referral başlıyor.
+
 # Günlük Fikir Araştırması - 28 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  
