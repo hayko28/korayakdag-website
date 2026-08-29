@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ilk-girisim-battiginda-silikon-vadisi-farki",
+    title:
+      "İlk Girişim Battığında: Silikon Vadisi'nin Bakışı Türkiye'dekinden Neden Farklı",
+    excerpt:
+      "Evan Williams'ın Twitter'dan önce Odeo'yu, Travis Kalanick'in Uber'den önce Scour'u batırdığı çoğu zaman unutuluyor. Silikon Vadisi'nde 'battı' bir CV maddesiyken, Türkiye'de hâlâ bir stigma. Bu fark, yatırımcı-girişimci ilişkisini nasıl şekillendiriyor?",
+    tag: "Görüş",
+    date: "29 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "bridgestonun-18-yillik-lastik-sabrinin-dersi",
     title: "18 Yıllık Ar-Ge, Saatte 20 Kilometre: Bridgestone'un Sabır Dersi",
     excerpt:
