@@ -177,6 +177,23 @@ export default function BlogPage() {
             gerekiyor. Başvuru öncesinde aşağıdaki kriterlerin
             tamamının karşılandığından emin olunmalıdır.
           </p>
+          <div className="mb-10 rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              ❓ Mevcut Personel mi, Yeni İşe Alım mı? En Çok Karıştırılan Nokta
+            </h3>
+            <p className="mb-4 leading-8 text-gray-700">
+              Programın adı (&quot;istihdamı <strong>koruma</strong>&quot;)
+              zaten cevabı veriyor: KOBİ&apos;ler ve genel imalat
+              işletmeleri için bu program <strong>yeni personel almayı
+              değil, mevcut personeli işten çıkarmamayı</strong>
+              destekliyor. Somut bir kişi sayısı şartı yok; ölçüt tamamen
+              göreceli — kendi geçmiş ortalamanıza göre.
+            </p>
+            <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-red-500">
+              <li><strong>KOBİ / genel imalat işletmesi iseniz:</strong> Referans dönemdeki (örn. 2025 Kasım-Aralık) ortalama aylık prim gün sayınızı, koruma dönemi boyunca (en az 6 ay) koruyor veya aşıyor olmanız yeterli. 40 çalışanla başladıysanız 41. kişiyi işe almanız gerekmiyor; 40 kişiyi (veya eşdeğer prim gününü) korumanız yeterli.</li>
+              <li><strong>Yatırım teşvik belgeli büyük ölçekli işletme iseniz:</strong> Durum farklı. Bu işletmelerin, bu programdan bağımsız olarak zaten teşvik belgelerinde taahhüt ettikleri bir &quot;ilave istihdam&quot; (yeni yaratılacak iş) sayısı var. Destek/kredi almak için, tamamlama vizesini takip eden 6 aylık dönemde toplam SGK prim gün bildiriminin, <strong>taahhüt edilen ilave istihdamın yarısı × 180 gün</strong> eşiğine ulaşması gerekiyor — yani burada gerçekten yeni personel alıp sürdürmeleri gerekiyor (detaylı hesaplama için Bölüm 4, Örnek 3&apos;e bakınız).</li>
+            </ul>
+          </div>
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border border-green-200 bg-green-50 p-8">
               <h3 className="mb-6 text-2xl font-bold text-green-700">
@@ -441,11 +458,18 @@ export default function BlogPage() {
                 brüt asgari ücret 33.030 TL.
               </p>
               <div className="rounded-xl border-l-4 border-orange-500 bg-orange-50 p-6">
-                <p className="text-gray-700">Kredi limiti hesaplaması:</p>
+                <p className="text-gray-700">1) Kredi limiti hesaplaması:</p>
                 <ul className="ml-6 mt-3 list-disc space-y-2 text-gray-700 marker:text-orange-600">
                   <li>50 kişi × 33.030 TL × 6 = <strong>9.909.000 TL</strong></li>
                   <li>50.000.000 TL üst limitinin altında kaldığı için tutarın tamamı geçerli olabilir</li>
-                  <li>Tamamlama vizesinin en geç 1 Haziran 2028&apos;e kadar alınmış olması şarttır</li>
+                </ul>
+              </div>
+              <div className="mt-4 rounded-xl border-l-4 border-red-500 bg-red-50 p-6">
+                <p className="text-gray-700">2) Desteği fiilen hak etmek için — bu, kredi limitinden ayrı bir şart:</p>
+                <ul className="ml-6 mt-3 list-disc space-y-2 text-gray-700 marker:text-red-600">
+                  <li>Tamamlama vizesi en geç 1 Haziran 2028&apos;e kadar alınmalı</li>
+                  <li>Vizeyi takip eden 6 aylık dönemde toplam SGK prim gün bildirimi, (50 ÷ 2) × 180 = <strong>4.500 prim günü</strong> eşiğine ulaşmalı</li>
+                  <li>Yani Marmara Otomotiv, 50 kişilik taahhüdün tamamını değil, en az yarısını (25 kişi eşdeğeri) 6 ay boyunca fiilen istihdam etmiş olmalı</li>
                 </ul>
               </div>
               <p className="mt-4 text-sm text-gray-500">
@@ -688,13 +712,32 @@ export default function BlogPage() {
                 Büyük ölçekli, yatırım teşvik belgeli bir işletme kredi limitini nasıl hesaplar?
               </h3>
               <p className="leading-8 text-gray-700">
-                Formül: teşvik belgesinde öngörülen ilave istihdam
-                sayısı × Ocak ayı asgari ücreti × 6. Örnek 3&apos;te
-                50 kişilik ilave istihdam taahhüdü olan bir işletme
-                için bu hesaplama yaklaşık 9,9 milyon TL&apos;lik bir
-                kredi limitine karşılık gelmektedir; tamamlama
-                vizesinin en geç 1 Haziran 2028&apos;e kadar alınmış
-                olması gerekir.
+                Kredi limiti formülü: teşvik belgesinde öngörülen ilave
+                istihdam sayısı × Ocak ayı asgari ücreti × 6. Örnek
+                3&apos;te 50 kişilik ilave istihdam taahhüdü olan bir
+                işletme için bu hesaplama yaklaşık 9,9 milyon
+                TL&apos;lik bir kredi limitine karşılık gelmektedir.
+                Ancak bu, yalnızca limiti belirler; desteği fiilen hak
+                etmek ayrı bir şart — bkz. bir sonraki soru.
+              </p>
+            </div>
+            <div className="rounded-2xl border p-8">
+              <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+                Bu programda mevcut çalışanlarım mı korunuyor, yoksa yeni personel mi almalıyım?
+              </h3>
+              <p className="leading-8 text-gray-700">
+                KOBİ&apos;ler ve genel imalat işletmeleri için:
+                <strong> mevcut çalışanlarınız</strong> korunuyor;
+                somut bir kişi sayısı şartı yok, yalnızca referans
+                dönem ortalama prim gün sayınızı koruma döneminde
+                (en az 6 ay) koruyor olmanız yeterli. Yatırım teşvik
+                belgeli büyük ölçekli işletmeler için ise durum farklı:
+                bu işletmelerin teşvik belgesinde zaten taahhüt ettiği
+                &quot;ilave istihdam&quot; sayısının en az yarısını,
+                tamamlama vizesini takip eden 6 aylık dönemde
+                (yarısı × 180 gün prim eşdeğeri) fiilen istihdam etmiş
+                olması gerekiyor — bu grup için gerçekten yeni personel
+                alıp sürdürme şartı var.
               </p>
             </div>
             <div className="rounded-2xl border p-8">
