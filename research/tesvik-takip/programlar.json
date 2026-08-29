@@ -1,6 +1,19 @@
 {
-  "sonGuncelleme": "2026-08-28",
+  "sonGuncelleme": "2026-08-29",
   "programlar": [
+    {
+      "id": "istihdami-koruma-destek-programi-2026",
+      "ad": "İstihdamı Koruma Destek Programı (Yeni Esaslar)",
+      "kurum": "KOSGEB / Çalışma ve Sosyal Güvenlik Bakanlığı",
+      "durum": "acik",
+      "sonBasvuruTarihi": null,
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi",
+      "ilkTespitTarihi": "2026-08-29",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 15'e çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor, başvurular ÇSGB-KOSGEB ortak yönetimindeki yeni bir çevrimiçi portal üzerinden alınacak (açılış tarihi henüz ilan edilmedi). Çalışan başına 3.500 TL/ay destek (tekstil/giyim/deri/mobilya/düğme-fermuar), kredi üst limiti işletme başına 50 milyon TL. Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
+    },
     {
       "id": "kosgeb-tekmer-destek-2025",
       "ad": "Teknoloji Merkezi (TEKMER) Destek Programı",
