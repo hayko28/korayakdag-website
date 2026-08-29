@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "aile-sirketinde-eksik-kalan-yazili-kural",
+    title: "Aile Şirketinde Eksik Kalan Yazılı Kural: Aile Anayasası",
+    excerpt:
+      "PwC'ye göre aile şirketlerinin yalnızca yüzde 33'ü ikinci nesle sağlıklı geçebiliyor; Türkiye'de ortaklığın giderilmesi davaları 2014-2021 arasında iki kattan fazla arttı. Aradaki fark genelde tek bir belge: aile anayasası.",
+    tag: "Strateji",
+    date: "29 Ağustos 2026",
+    readTime: "3 Dakika",
+  },
+  {
     slug: "ilk-girisim-battiginda-silikon-vadisi-farki",
     title:
       "İlk Girişim Battığında: Silikon Vadisi'nin Bakışı Türkiye'dekinden Neden Farklı",
