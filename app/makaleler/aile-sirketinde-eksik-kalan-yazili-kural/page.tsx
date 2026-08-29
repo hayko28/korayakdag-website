@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import MakaleLayout from "@/components/MakaleLayout";
 import { MAKALELER } from "@/lib/makale-data";
 
@@ -28,6 +30,17 @@ export default function MakalePage() {
         yok. Danışmanlık masasında bu tablo istisna değil, kural — büyüyen
         her aile şirketinin er ya da geç karşılaştığı bir sınav.
       </p>
+
+      <div className="overflow-hidden rounded-2xl">
+        <Image
+          src="/linkedin/miras-kavgasi-vs-aile-anayasasi.png"
+          alt="Miras kavgası ile aile anayasasının karşılaştırması: kural yoksa kavga kaçınılmaz, kural varsa gelecek güvencede"
+          width={1536}
+          height={1024}
+          className="w-full"
+          sizes="(max-width: 768px) 100vw, 768px"
+        />
+      </div>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
         Sorun aile sevgisi değil, yazılı kural eksikliği
@@ -64,25 +77,81 @@ export default function MakalePage() {
       <p>
         Aile anayasası bir hukuk metni değil, aile ile şirket arasındaki
         sınırları önceden çizen bir mutabakat metni. Doğru kurulmuş bir
-        anayasada en az şunlar net olmalı:
+        anayasada en az şu altı başlık net olmalı:
       </p>
       <ol className="list-decimal space-y-2 pl-6">
         <li>
-          <strong className="text-[#071A2F]">Ortaklık şartı</strong> —
-          şirkette çalışmayan bir aile üyesi hangi koşulda pay sahibi
+          <strong className="text-[#071A2F]">Ortaklık ve hisse dağılımı</strong>{" "}
+          — şirkette çalışmayan bir aile üyesi hangi koşulda pay sahibi
           kalabilir, hangi koşulda hissesi devredilir.
         </li>
         <li>
-          <strong className="text-[#071A2F]">Yönetim yetkisi</strong> —
-          ikinci ve üçüncü nesil şirkete hangi kademeden, hangi kritere göre
-          girer.
+          <strong className="text-[#071A2F]">Yönetim ve görev dağılımı</strong>{" "}
+          — kimin hangi alanda karar yetkisi olduğu, kimin imza attığı
+          baştan tarif edilir.
         </li>
         <li>
-          <strong className="text-[#071A2F]">Değerleme ve çıkış
-          mekanizması</strong> — bir ortak ayrılmak istediğinde ya da miras
-          süreci başladığında hangi değerleme yöntemi esas alınır.
+          <strong className="text-[#071A2F]">Aileye katılım kriterleri</strong>{" "}
+          — ikinci ve üçüncü nesil şirkete hangi kademeden, hangi eğitim ve
+          deneyim şartıyla girer.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">Karar alma mekanizmaları</strong>{" "}
+          — hangi konular oy birliği, hangileri çoğunluk oyuyla, hangileri
+          tek başına yönetici kararıyla karara bağlanır.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">Anlaşmazlık çözüm yolları</strong>{" "}
+          — aile içi bir uyuşmazlık mahkemeye gitmeden önce hangi aşamalardan
+          (aile meclisi, arabuluculuk, hakem heyeti) geçer.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">
+            Değerleme ve nesiller arası devir planı
+          </strong>{" "}
+          — bir ortak ayrılmak istediğinde ya da miras süreci başladığında
+          hangi değerleme yöntemi esas alınır, devir hangi takvimde yapılır.
         </li>
       </ol>
+
+      <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
+        Aile anayasası hazırlama süreci nasıl işliyor
+      </h2>
+      <p>
+        Bu metnin sağlıklı çıkması için ailenin kendi içinden değil, tarafsız
+        bir danışmanlık desteğiyle yürütülmesi gerekir — çünkü aynı masada
+        hem baba hem evlat hem de şirkette hiç çalışmamış bir kardeş varken,
+        metni yazan kişinin kimseye yakın durmaması gerekir. Sistem Global
+        Danışmanlık bünyesinde yürütülen bu çalışmalar dört adımdan oluşur:
+      </p>
+      <ol className="list-decimal space-y-2 pl-6">
+        <li>
+          <strong className="text-[#071A2F]">Bireysel görüşmeler</strong> —
+          her aile üyesiyle ayrı ayrı, kimsenin duymadığı bir ortamda
+          konuşulur; beklenti, endişe ve önceki anlaşmazlıklar tek tek
+          dinlenir.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">Mevcut yapının analizi</strong>{" "}
+          — şirketin pay dağılımı, yönetim kurulu, varsa mevcut ortaklık
+          sözleşmesi ve şirket değeri incelenir.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">Taslak metnin oluşturulması</strong>{" "}
+          — bireysel görüşmelerden çıkan ortak zemin, yukarıdaki altı başlığı
+          kapsayan tek bir taslakta birleştirilir.
+        </li>
+        <li>
+          <strong className="text-[#071A2F]">Aile toplantısı ve mutabakat</strong>{" "}
+          — taslak ailenin tamamının önünde okunur, itiraz edilen maddeler
+          birlikte revize edilir ve son metin imzalanır.
+        </li>
+      </ol>
+      <p>
+        Süreç genellikle birkaç hafta sürer; aceleye getirilecek bir iş
+        değildir, çünkü asıl amaç hızlı bir belge değil, herkesin gerçekten
+        arkasında durduğu bir mutabakattır.
+      </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">Kısacası</h2>
       <p>
@@ -91,7 +160,14 @@ export default function MakalePage() {
         yazılmaya çalışılan her kural, taraflardan birinin çıkarına
         yontulmuş gibi görünür. Yazılı kural olmadığında aile şirketini
         koruyan tek şey, herkesin aynı anda iyi niyetli kalması oluyor; bu
-        da en kırılgan güvence.
+        da en kırılgan güvence. Bu konuda destek almak isterseniz{" "}
+        <Link
+          href="/#contact"
+          className="font-semibold text-orange-600 hover:underline"
+        >
+          benimle iletişime geçebilirsiniz
+        </Link>
+        .
       </p>
     </MakaleLayout>
   );
