@@ -64,6 +64,27 @@ export default function BlogPage() {
           </ul>
         </div>
 
+        {/* KISACA / TEK CÜMLE ÖZET */}
+        <div className="mt-10 rounded-2xl border-2 border-[#071A2F] bg-white p-8">
+          <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🎯 Kısaca: Program Ne Yapıyor?
+          </h2>
+          <p className="text-xl leading-9 text-gray-800">
+            <strong>2025 yılı Kasım ve Aralık aylarına ait ortalama SGK
+            prim gün sayısını 2026 yılında koruyan imalat sanayi
+            işletmelerine</strong>, sektörüne göre ya çalışan başına
+            aylık 3.500 TL geri ödemesiz <strong>performans desteği</strong>
+            ya da kredi faizinin bir kısmını karşılayan
+            <strong> finansman desteği</strong> sağlanır. Yani şirket yeni
+            personel almak zorunda değil; 2025 Kasım-Aralık
+            döneminde çalıştırdığı kişi sayısını (prim günü olarak)
+            2026&apos;da düşürmeden sürdürmesi yeterli. Tek istisna:
+            yatırım teşvik belgeli büyük ölçekli işletmeler — onlar
+            için ayrı ve gerçekten &quot;yeni istihdam&quot; gerektiren
+            bir kural var (Bölüm 2&apos;de detaylandırılmıştır).
+          </p>
+        </div>
+
         {/* İÇİNDEKİLER */}
         <div className="mt-16 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           <h2 className="mb-8 text-3xl font-bold text-[#071A2F]">
@@ -190,7 +211,7 @@ export default function BlogPage() {
               göreceli — kendi geçmiş ortalamanıza göre.
             </p>
             <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-red-500">
-              <li><strong>KOBİ / genel imalat işletmesi iseniz:</strong> Referans dönemdeki (örn. 2025 Kasım-Aralık) ortalama aylık prim gün sayınızı, koruma dönemi boyunca (en az 6 ay) koruyor veya aşıyor olmanız yeterli. 40 çalışanla başladıysanız 41. kişiyi işe almanız gerekmiyor; 40 kişiyi (veya eşdeğer prim gününü) korumanız yeterli.</li>
+              <li><strong>KOBİ / genel imalat işletmesi iseniz:</strong> 2025 yılı Kasım-Aralık dönemindeki ortalama aylık prim gün sayınızı, koruma dönemi boyunca (en az 6 ay) koruyor veya aşıyor olmanız yeterli. 40 çalışanla başladıysanız 41. kişiyi işe almanız gerekmiyor; 40 kişiyi (veya eşdeğer prim gününü) korumanız yeterli.</li>
               <li><strong>Yatırım teşvik belgeli büyük ölçekli işletme iseniz:</strong> Durum farklı. Bu işletmelerin, bu programdan bağımsız olarak zaten teşvik belgelerinde taahhüt ettikleri bir &quot;ilave istihdam&quot; (yeni yaratılacak iş) sayısı var. Destek/kredi almak için, tamamlama vizesini takip eden 6 aylık dönemde toplam SGK prim gün bildiriminin, <strong>taahhüt edilen ilave istihdamın yarısı × 180 gün</strong> eşiğine ulaşması gerekiyor — yani burada gerçekten yeni personel alıp sürdürmeleri gerekiyor (detaylı hesaplama için Bölüm 4, Örnek 3&apos;e bakınız).</li>
             </ul>
           </div>
@@ -202,9 +223,9 @@ export default function BlogPage() {
               <ul className="space-y-4 text-gray-700">
                 <li>✔ İmalat sanayi sektöründe faaliyet göstermek</li>
                 <li>✔ KOBİ statüsünde ise KOBİ Bilgi Sistemi kaydının ve beyannamesinin güncel olması</li>
-                <li>✔ Bakanlık tarafından belirlenecek referans dönemdeki ortalama aylık prim gün sayısını koruyor veya artırıyor olmak</li>
+                <li>✔ 2025 yılı Kasım-Aralık dönemine ait ortalama aylık prim gün sayısını 2026&apos;da koruyor veya artırıyor olmak (yönetmelik bu referans dönemini ileride Bakanlık kararıyla güncelleyebilir)</li>
                 <li>✔ İstihdam koruma döneminin en az 6 ay olması</li>
-                <li>✔ Referans dönemde ortalama prim gün sayısının sıfırdan büyük olması (sigortalı çalıştırmayan işyerleri kapsam dışıdır)</li>
+                <li>✔ Referans dönemde (2025 Kasım-Aralık) ortalama prim gün sayısının sıfırdan büyük olması (sigortalı çalıştırmayan işyerleri kapsam dışıdır)</li>
                 <li>✔ KOSGEB&apos;e vadesi geçmiş herhangi bir borcunun bulunmaması (veya yapılandırılmış olması)</li>
                 <li>✔ Programın öngördüğü taahhütname ve başvuru formunun eksiksiz sunulması</li>
               </ul>
@@ -215,8 +236,8 @@ export default function BlogPage() {
               </h3>
               <ul className="space-y-4 text-gray-700">
                 <li>❌ İmalat sanayi dışında faaliyet gösteren işletmeler</li>
-                <li>❌ Referans dönemde ortalama prim gün sayısı sıfır olan veya sigortalı çalıştırmadığı için beyanname vermeyen işyerleri</li>
-                <li>❌ Referans dönem ortalamasını koruma dönemi boyunca sağlayamayan işletmeler</li>
+                <li>❌ 2025 Kasım-Aralık döneminde ortalama prim gün sayısı sıfır olan veya sigortalı çalıştırmadığı için beyanname vermeyen işyerleri</li>
+                <li>❌ 2025 Kasım-Aralık ortalamasını koruma dönemi boyunca sağlayamayan işletmeler</li>
                 <li>❌ KOBİ Bilgi Sistemi kaydı veya beyannamesi güncel olmayan KOBİ&apos;ler</li>
                 <li>❌ Yapılandırılmamış, vadesi geçmiş KOSGEB borcu bulunan işletmeler</li>
                 <li>❌ Büyük ölçekli işletmeler için KOSGEB yerine Sanayi ve Teknoloji Bakanlığı kanalı geçerlidir</li>
@@ -230,11 +251,12 @@ export default function BlogPage() {
             <p className="mb-4 leading-8 text-gray-700">
               28 Ağustos 2026 değişikliğiyle bir işyerinin istihdamı
               koruduğu, aşağıdaki iki yöntemden biriyle tespit
-              edilebiliyor:
+              edilebiliyor (her iki yöntemde de kıyaslama noktası,
+              2025 Kasım-Aralık ortalama prim gün sayısıdır):
             </p>
             <ol className="ml-6 list-decimal space-y-3 text-gray-700 marker:font-bold marker:text-blue-600">
-              <li>Ödeme talep edilen ayın prim gün sayısının, referans dönemi ortalamasına eşit veya fazla olması</li>
-              <li>Koruma dönemi başından ödeme talep edilen aya kadarki ortalamanın, referans dönemi ortalamasına eşit veya fazla olması</li>
+              <li>Ödeme talep edilen ayın prim gün sayısının, 2025 Kasım-Aralık ortalamasına eşit veya fazla olması</li>
+              <li>Koruma dönemi başından ödeme talep edilen aya kadarki ortalamanın, 2025 Kasım-Aralık ortalamasına eşit veya fazla olması</li>
             </ol>
             <p className="mt-4 leading-8 text-gray-700">
               Prim gün hesaplamasında küsuratlar dikkate alınmıyor; 30
@@ -362,8 +384,9 @@ export default function BlogPage() {
               <div className="rounded-xl border bg-white p-6">
                 <h4 className="mb-3 text-lg font-bold text-[#071A2F]">Genel İşletmeler</h4>
                 <p className="text-gray-700">
-                  Referans dönemindeki aylık ortalama prime esas
-                  kazanç × (koruma dönemindeki ay sayısı ÷ 6). Belirli
+                  2025 Kasım-Aralık referans döneminizdeki aylık
+                  ortalama prime esas kazanç × (koruma dönemindeki ay
+                  sayısı ÷ 6). Belirli
                   teknik kriterleri karşılayan işletmelerde bu tutar
                   bir kat artırımlı uygulanabilir.
                 </p>
@@ -409,8 +432,8 @@ export default function BlogPage() {
               <p className="mb-4 leading-8 text-gray-700">
                 <strong>Anadolu Tekstil Ltd. Şti.</strong>, NACE 13
                 kapsamında konfeksiyon üretimi yapan, 40 çalışanlı bir
-                KOBİ. Referans dönemde ortalama 40 çalışanın tamamı 30
-                prim günü üzerinden bildirilmiş.
+                KOBİ. 2025 Kasım-Aralık referans döneminde ortalama 40
+                çalışanın tamamı 30 prim günü üzerinden bildirilmiş.
               </p>
               <div className="rounded-xl border-l-4 border-orange-500 bg-orange-50 p-6">
                 <p className="text-gray-700">
@@ -432,10 +455,10 @@ export default function BlogPage() {
               </h3>
               <p className="mb-4 leading-8 text-gray-700">
                 <strong>Ege Mobilya San. Tic. A.Ş.</strong>, NACE 31
-                kapsamında 25 çalışanlı bir mobilya üreticisi.
-                Referans dönemde tüm çalışanların aylık ortalama
-                prime esas kazanç toplamı 750.000 TL. İşletme, 12 aylık
-                bir koruma dönemi taahhüt ediyor.
+                kapsamında 25 çalışanlı bir mobilya üreticisi. 2025
+                Kasım-Aralık referans döneminde tüm çalışanların aylık
+                ortalama prime esas kazanç toplamı 750.000 TL.
+                İşletme, 12 aylık bir koruma dönemi taahhüt ediyor.
               </p>
               <div className="rounded-xl border-l-4 border-orange-500 bg-orange-50 p-6">
                 <p className="text-gray-700">Kredi limiti hesaplaması:</p>
@@ -623,13 +646,13 @@ export default function BlogPage() {
               ⚠️ İstihdam Korumasının Ölçüm Şekli
             </h3>
             <p className="leading-8 text-gray-700">
-              Destek tutarı, işletmenin Bakanlıkça belirlenecek
-              referans dönemine ait ortalama SGK prim gün sayısı esas
-              alınarak hesaplanır; koruma dönemi en az 6 ay olmalıdır.
-              Ortalamanın altına düşülen aylar için performans desteği
-              veya finansman desteği talep edilemez; ayrıca aynı destek
-              unsuru için KOSGEB ve Bakanlık&apos;tan eş zamanlı çifte
-              ödeme yapılmaz.
+              Destek tutarı, işletmenin 2025 yılı Kasım-Aralık dönemine
+              ait ortalama SGK prim gün sayısı esas alınarak hesaplanır;
+              koruma dönemi en az 6 ay olmalıdır. Ortalamanın altına
+              düşülen aylar için performans desteği veya finansman
+              desteği talep edilemez; ayrıca aynı destek unsuru için
+              KOSGEB ve Bakanlık&apos;tan eş zamanlı çifte ödeme
+              yapılmaz.
             </p>
           </div>
         </section>
