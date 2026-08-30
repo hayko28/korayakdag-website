@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "cotton-candy-uzum-ve-cuties-mandalinanin-markalasma-dersi",
+    title:
+      "Aynı Üzüme İki Kat Fiyat: Cotton Candy Üzüm ve Cuties Mandalinanın Markalaşma Dersi",
+    excerpt:
+      "Sekiz yıllık bir çaprazlama çalışmasıyla geliştirilen Cotton Candy üzüm, sıradan üzümün iki katı fiyata satılıp ABD'de 129 milyon dolarlık satışa ulaştı. Mandalinaya 'Cuties' adı verilince insanlar markette meyveyi değil markayı istemeye başladı. Emtia sanılan ürünlerde bile markalaşmanın ne kadar güçlü bir fiyat aracı olduğunu gösteren iki hikaye.",
+    tag: "Strateji",
+    date: "30 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "aile-sirketinde-eksik-kalan-yazili-kural",
     title: "Aile Şirketinde Eksik Kalan Yazılı Kural: Aile Anayasası",
     excerpt:
