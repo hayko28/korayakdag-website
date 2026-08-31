@@ -676,6 +676,25 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* CTA */}
+        <section className="mt-24 scroll-mt-24">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🤝 TÜBİTAK Başvuru Dosyanızı Birlikte Hazırlayalım
+            </h3>
+            <p className="leading-8 text-gray-700">
+              TÜBİTAK 1501 ve 1507 destekleri için proje önerisinin doğru
+              kapsamda kurgulanması, bütçe kalemlerinin PRODİS üzerinde
+              eksiksiz sunulması ve başvuru takviminin kaçırılmaması,
+              projenizin kabul edilme olasılığını doğrudan etkiler.{" "}
+              <Link href="/#contact" className="text-orange-600 underline">
+                Projenizi TÜBİTAK çağrısına uygun şekilde hazırlamamız için
+                bizimle iletişime geçin.
+              </Link>
+            </p>
+          </div>
+        </section>
+
         {/* 10. SONUÇ */}
         <section id="sonuc" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

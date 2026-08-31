@@ -1348,6 +1348,25 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="mt-24 scroll-mt-24">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+          <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🤝 İhracat Destek Başvurularınızda Yanınızdayız
+          </h3>
+          <p className="leading-8 text-gray-700">
+            Pazara Giriş Belgesi, fuar katılımı, marka tescili veya
+            e-ihracat destekleri arasından şirketinize uygun olanları
+            belirlemek, harcama-fatura-başvuru sırasını doğru yönetmek ve
+            ödeme sürecini hızlandırmak deneyim gerektirir.{" "}
+            <Link href="/#contact" className="text-orange-600 underline">
+              İhracat destek başvurunuzu birlikte planlamak için bizimle
+              iletişime geçin.
+            </Link>
+          </p>
+        </div>
+      </section>
+
       {/* 15. SONUÇ */}
       <section id="sonuc" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

@@ -587,6 +587,25 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* CTA */}
+        <section className="mt-24 scroll-mt-24">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🤝 Yapay Zeka Kredi Başvurunuzda Yanınızdayız
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Teknogirişim Rozeti şartını sağlamak, GO Dijital Cüzdan
+              üzerinden kredi sürecini yönetmek ve teminat ile gider
+              kalemlerini doğru planlamak, 5 milyon TL&apos;ye kadar
+              faizsiz krediden yararlanma sürecini hızlandırır.{" "}
+              <Link href="/#contact" className="text-orange-600 underline">
+                Başvurunuzu birlikte değerlendirmek için bizimle
+                iletişime geçin.
+              </Link>
+            </p>
+          </div>
+        </section>
+
         {/* 9. SONUÇ */}
         <section id="sonuc" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

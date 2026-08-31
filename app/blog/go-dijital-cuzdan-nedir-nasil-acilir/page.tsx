@@ -469,6 +469,25 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* CTA */}
+        <section className="mt-24 scroll-mt-24">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🤝 GO Dijital Cüzdan Hesap Açma Sürecinde Yardımcı Oluyoruz
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Çerçeve Sözleşmesi ve MASAK Sözleşmesi&apos;nin doğru
+              şekilde tamamlanması, evrak yükleme ve onay adımlarının
+              eksiksiz yürütülmesi, KOSGEB destek ödemelerinizin
+              gecikmeden hesabınıza ulaşmasını sağlar.{" "}
+              <Link href="/#contact" className="text-orange-600 underline">
+                Hesap açma sürecinizde destek almak için bizimle
+                iletişime geçin.
+              </Link>
+            </p>
+          </div>
+        </section>
+
         {/* 9. SONUÇ */}
         <section id="sonuc" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

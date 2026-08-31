@@ -736,6 +736,26 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* CTA */}
+        <section className="mt-24 scroll-mt-24">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🤝 ETS Kapsam ve Uyum Sürecinde Yanınızdayız
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Şirketinizin 50.000 tCO₂e eşiğine göre ETS kapsamına girip
+              girmediğini belirlemek, izleme-raporlama-doğrulama
+              yükümlülüklerini zamanında kurmak ve idari para cezası
+              riskinden kaçınmak için hazırlık sürecine erken başlamak
+              gerekir.{" "}
+              <Link href="/#contact" className="text-orange-600 underline">
+                ETS kapsam durumunuzu değerlendirmemiz için bizimle
+                iletişime geçin.
+              </Link>
+            </p>
+          </div>
+        </section>
+
         {/* 11. SONUÇ */}
         <section id="sonuc" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

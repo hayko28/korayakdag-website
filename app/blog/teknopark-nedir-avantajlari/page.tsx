@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
@@ -1084,6 +1085,26 @@ export default function TeknoparkPage() {
 
           </div>
 
+        </section>
+
+        {/* CTA */}
+        <section className="mt-24 scroll-mt-24">
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+              🤝 Teknopark Başvurusu ve Şirket Taşıma Sürecinde Yanınızdayız
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Teknopark başvurusunda hangi vergi ve SGK avantajlarından
+              yararlanabileceğinizi belirlemek, mevcut şirketinizi veya
+              ilgili faaliyeti teknoparka doğru şekilde taşımak, başvuru
+              dosyasının teknoloji geliştirme bölgesi yönetimince kabul
+              edilme olasılığını doğrudan etkiler.{" "}
+              <Link href="/#contact" className="text-orange-600 underline">
+                Şirketiniz için teknopark avantajlarını birlikte
+                değerlendirmemiz amacıyla bizimle iletişime geçin.
+              </Link>
+            </p>
+          </div>
         </section>
 
         {/* 12 SONUÇ */}

@@ -543,6 +543,26 @@ export default function Tubitak1711Page() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="mt-24 scroll-mt-24">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+          <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🤝 TÜBİTAK 1711 Başvuru Dosyanızı Birlikte Hazırlayalım
+          </h3>
+          <p className="leading-8 text-gray-700">
+            Şirket-üniversite konsorsiyumu kurmak, projeyi 5 öncelikli
+            alandan birine uygun kurgulamak ve 18 Eylül 2026 son başvuru
+            tarihine kadar PRODİS sürecini eksiksiz tamamlamak, 10 milyon
+            TL&apos;lik bütçe üst sınırından yararlanma şansınızı
+            artırır.{" "}
+            <Link href="/#contact" className="text-orange-600 underline">
+              Projenizi TÜBİTAK 1711 çağrısına hazırlamamız için bizimle
+              iletişime geçin.
+            </Link>
+          </p>
+        </div>
+      </section>
+
       {/* 10. SONUÇ */}
       <section id="sonuc" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
