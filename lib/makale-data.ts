@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "dort-gunluk-mesai-haftasi-kobiler-icin-gercek-soru",
+    title:
+      "Dört Günlük Mesai Tartışması: KOBİ'ler İçin Asıl Soru Ne?",
+    excerpt:
+      "Orta Vadeli Program'da geçen bir cümle 'Türkiye dört günlük mesaiye geçiyor' başlıklarına dönüştü, oysa kapsam ve tarih henüz netleşmedi. Polonya ve İngiltere örnekleri, İş Kanunu'ndaki iki farklı model ve KOBİ'lerin tartışmadan önce cevaplaması gereken gerçek soru.",
+    tag: "Görüş",
+    date: "31 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "cotton-candy-uzum-ve-cuties-mandalinanin-markalasma-dersi",
     title:
       "Aynı Üzüme İki Kat Fiyat: Cotton Candy Üzüm ve Cuties Mandalinanın Markalaşma Dersi",
