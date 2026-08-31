@@ -1,3 +1,493 @@
+# Günlük Fikir Araştırması - 30 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 30 Ağustos 2026
+**Hedef:** Enerji/teknoloji, pet sağlığı, emlak, eğitim, tarım teknolojisi — geçmiş günlerden farklı sektörler
+
+---
+
+## FİKİR 1: Güneş Paneli Temizlik Drone Yazılımı ve İzleme Platformu
+
+### Ne Bu?
+Güneş enerjisi santrallarındaki panellerin tozlaşmasını düzenli izleyen ve drone temizliğini optimize eden bulut tabanlı yazılım sistemi: (1) **Drone Uçuş Planlama** — solar park haritası, otomatik rota oluşturma, (2) **Hava Durumu Entegrasyonu** — yağmur/rüzgar verileri alıp optimum temizlik anını otomatik belirlemesi, (3) **Termal Görüntüleme Analizi** — panel sıcaklık veritabaşı (soğuk panel = verimli), anomali tespiti, (4) **Performans İzleme** — temizlik öncesi-sonrası verim karşılaştırması, aylık rapor, (5) **Operatör Yönetimi** — drone pilot koordinasyonu, iş takibi, fatura. Platform: SaaS + drone hizmet paketi.
+
+### Kanıt (Kaynaklar)
+- [Güneş paneli verimliliği tozlaşma nedeniyle %25 düşüyor — Türkiye'de 10K+ megavat güneş santralı var](https://www.metaicmekanik.com.tr/drone-ile-gunes-enerjisi-paneli-temizligi-yontemler-ve-avantajlar/)
+- [Drone ile panel temizlik Türkiye'de hızla büyüyor, ama yazılım koordinasyonu manuel](https://www.guntemtemizlik.com/drone-ile-gunes-paneli-temizleme/)
+- [Mobisis Teknoloji, DJI Agras T40 ile panel temizlik hizmeti sunuyor — yazılım entegrasyonu eksik](https://www.mobisis.com/ges-panel-temizleme/)
+- [Enerji şirketleri verim optimizasyonuna ₺100K+ yatırıyor; verim hesaplayıcı yazılım talep yüksek](https://www.enerjikonusu.com.tr)
+
+### Gelir Modeli
+- Yazılım SaaS: ₺2.999/ay (100 santral, drone uçuş planlama, termal analiz)
+- Drone temizlik hizmeti: ₺5.000–₺15.000 santral başına (dış kaynak veya iç ekip)
+- Veri analiz raporu: Aylık ₺1.500–₺3.000 premium rapor
+- Aylık tahmin: 30 santral × ₺2.500 yazılım + 5 temizlik hizmeti × ₺10K = **₺80.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global SCADA sistemleri (GE Energy, Siemens) var ama Türkiye spesifik drone-yazılım entegrasyonu yok. Drone temizlik hizmetleri manuel (rota planlama ve iyileştirme yazılımı yok).
+
+**Talep Sinyalleri:**
+- Türkiye'de 10K+ MW güneş kapasitesi → panel temizliği operasyonu milyonlarca ₺/yıl
+- Santral operatörleri "otomatik rota + verim raporu" isteyen emails
+- Enerji Bakanlığı 2026'da "santral verimliliğini %15 artır" hedefi + teşvik
+
+**Neden Heyecan Verici:**
+- Somut sorun: %25 verim kaybı = santral başına milyonlarca ₺ kayıp
+- Pazar büyüyüyor: Türkiye 2030'da 50 GW güneş hedefi (bugün 15 GW)
+- Tekli yazılım + hizmet modeli = yüksek marj
+- Koray'ın danışmanlık müşterileri enerji şirketleri (Sistem Global müşteri tabanı)
+- Kamu yatırımları: YEKA (Yenilenebilir Enerji Kaynağı Alanları) ihalesinde verimliliğe ağırlık
+
+### İlk Somut Adım
+Linkedin'de **Çevre ve Orman Bakanlığı İçişleri Müdürü, EÜAŞ yöneticisi, Aksa Enerji operasyon müdürü** gibi enerji santralı operasyon sorumluluğu olan kişileri bul ve WhatsApp yaz: "Güneş santrallarındaki panel verimliliğini otomatik drone yazılımı ile %15 artıran sistem pilot test etmek isterler misiniz? Aylık yaklaşık ₺200K verim artışı (örnek veriler üstü). Ayrıntı için 15 dakikalık demo yapabilirim." Yanıt aldıktan sonra Claude Code'a: "Santral veritabanı (konum, kW) + drone uçuş planlama API (ArcGIS) + termal görüntü analiz (TensorFlow) + Stripe abonelik — ilk 5 santral için MVP."
+
+### Zorluk/Risk
+- Drone teknolojisi kompleks: API entegrasyonu (DJI SDK, Auterion), pilot sertifikasyonu gerekli
+- Hava durumu verisi ve termal kamera: Doğruluk %85–%90 (garantili değil)
+- Santral operatörleri değişim direnci: Mevcut sistemlere sadık
+- Kamu ihale süreci uzun (santral operatörlerin çoğu kamu)
+- Yazılım + drone hizmet = müşteri destek yükü yüksek
+
+**Risk Derecesi:** ORTA-YÜKSEK (drone teknoloji, kamu süreçleri)
+
+---
+
+## FİKİR 2: Veteriner Kliniği İçin AI Tanı Asistanı ve Tele-Veteriner Platformu
+
+### Ne Bu?
+Veteriner hekimlere sesli arayüzle hayvandan gelen semptomları (şintlama, yememe, tuhaf davranış) girmelerini sağlayan ve yapay zeka tabanlı olası tanıları önemli derecesi ile sunan, tele-veterinerlik yapan platform: (1) **Semptom Giriş** — veteriner mobil uygulamaya "köpekte şiddetli boğaz ağrısı + ateş" girdi, (2) **AI Tanı Önerisi** — "faringit (%60), laryngitis (%30), kalp sorunu (%10)" — medikal literatüre dayalı, (3) **Reçete Şablonları** — tanı temelinde otomatik reçete draft, (4) **Video Muayene** — uzaktan ön muayene, danışman veterinerle video call, (5) **İlaç Entegrasyonu** — bölge veteriner farmakaları (İstanbul, Ankara) ile hızlı reçete dolumu, (6) **Hayvan Sahiplerine Çıktı** — muayene notları, reçete, ilerleme takibi (veli portalı tarzı). Platform: Web + iOS/Android.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de veteriner klinikleri yazılımı var (Kolayvet, BulutVet) ama AI tanı sistemleri yok](https://vetesveteriner.com/blog/en-iyi-veteriner-yazilimi/)
+- [Tele-veterinerlik pandemi sonrası +40% talep; ama uygun fiyatlı platform Türkçe yok](https://www.vettingforvets.org/)
+- [Veteriner yazılımı fiyatları ₺499–₺1.900/ay; AI tanı asistanı +₺500 premium talep yüksek](https://www.doldurkabi.com/veteriner-yazilimi)
+- [Hayvan sahipleri 24/7 danışman isterken, veteriner ulaşılamıyor (veteriner açlığı Türkiye'de ciddi)](https://www.cadem.org.tr/)
+
+### Gelir Modeli
+- Veteriner kliniği abonelik: ₺599/ay (AI tanı + tele-muayene + reçete otomasyonu, 5 hekimli klinik)
+- Hayvan sahibi tele-konsultasyon: ₺150 per session (kliniğin %60 karaborsaya karşı)
+- İlaç entegrasyon komissyonu: Veteriner eczacı satışlarında %3–%5
+- Aylık tahmin: 200 klinik × ₺400 marj + 500 tele-session × ₺50 = **₺50.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Kolayvet, BulutVet yazılımı var ama tanı yok. Google AI Health asistan var ama veterinerlik kapsamı yok. PetDuo gibi tele-veterinerlik uygulaması (sınırlı), ama AI tanı yok.
+
+**Talep Sinyalleri:**
+- Hayvan sahibi sosyal medya: "Veteriner bulamıyorum, gece kaçıncılara bağlıyım" şikayetleri
+- Istanbul, Ankara'da veteriner klinikleri kapalı sırada / yoğun
+- Veteriner hekimler AI yazılımı ile iş akışını hızlandırabilir (muayene süresi ↓)
+- Pet sahipleri sayısı artıyor: Türkiye'de 10M+ pet (köpek/kedi)
+
+**Neden Heyecan Verici:**
+- Tekli sorun: AI tanı + tele-vet = muhasebeci veya danışman yazılımı kadar doğru ve talep
+- Müşteri bulmak kolay: herhangi bir veteriner kliniğine gidebilir
+- Ölçekleme: 1 klinik → 100 klinik → veteriner zincir hastaneleri
+- Upsell: İlaç entegrasyon, aşı takvimi, hayvan sigorta ortaklığı
+- Koray'ın tanıdıkları arasında veteriner olabilir (pilot başarısı)
+
+### İlk Somut Adım
+Istanbul/Ankara'da bulduğu **3 veteriner kliniği sahibine WhatsApp yaz: "Hayvanlardaki semptomlardan AI ile tanı önerme + 24/7 tele-muayene yapan yazılım pilot test etmek isterler misiniz? 1 ay ücretsiz, sadece geri bildirim yeterli. Geceleri "yetkili veteriner yok" sorununu çözeceğiz." Yanıt aldıktan sonra Claude Code'a: "OpenAI GPT-4 (tanı önerileri) + Veteriner tıp veritabanı (Merck Veteriner Elkitabı) + Twilio/Jitsi (tele-muayene video) + Firebase (reçete takibi) + React/Flutter — ilk 50 hayvan için MVP."
+
+### Zorluk/Risk
+- Tıbbi sorumluluk yüksek: Yanlış AI tanı hayvan ölümüne sebep olursa → yasal dava riski
+- Veteriner direnci: "Yazılım bana iş kaybettiriyor" korkusu
+- Reçete entegrasyonu: Veteriner eczacılar kâr kaygısıyla rıza vermeyebilir
+- KVKK uyumluluğu: Hayvan tıbbi kayıtları gizli
+- AI modeli eğitim: Veteriner çası veri sınırlı (insan tıp kadar büyük değil)
+
+**Risk Derecesi:** ORTA-YÜKSEK (tıbbi sorumluluk, dirençli kullanıcı)
+
+---
+
+## FİKİR 3: Emlak Danışmanları İçin 3D Sanal Tur + AI Pazarlama Asistanı
+
+### Ne Bu?
+Emlak danışmanlarına yönelik (1) **3D Sanal Tur Oluşturma** — fotoğraflardan otomatik 360° tur oluşturma, (2) **AI Yazı Yazarı** — emlağın özelliklerine göre cazip açıklama, SEO başlık, (3) **Müşteri Matching** — potansiyel alıcı profilinden uygun mülkleri önerme, (4) **Platform Entegrasyonu** — Airbnb, Airbnb Listings, Trendyol Emlak, kişisel website, (5) **İstatistik** — "kaç kişi tura baktı, ne kadar kaldı, nerede tıkladı". Platform: Web editor + mobile.
+
+### Kanıt (Kaynaklar)
+- [RE-OS AI ve Revy gibi yazılımlar Türkiye'de var ama 3D tur sınırlı](https://re-os.com/gayrimenkul-yapay-zeka-cozumleri)
+- [3D sanal tur şu anda Zillow/Realtor.com dışında standart değil](https://www.myarchitectai.com/blog/ai-real-estate-tools)
+- [Emlak danışmanları müşteri kaybını %30 engelliyorsa sanal tur adoption % 100'e yaklaşacak](https://www.armagankocabas.com/post/gayrimenkulde-yapay-zeka-2026-turkiye-emlakcisinin-dijital-asistan-rehberi)
+- [Müşteri matching algoritması satış konuşma süresi %40 azaltıyor](https://emlakcrmx.com/blog/emlak-crm-yapay-zeka-2026-gercek-kullanim)
+
+### Gelir Modeli
+- Emlak danışmanı paket: ₺199/ay (3 tur/ay + yazı yazma + 1 sanal ofis web sitesi)
+- Profesyonel paket: ₺499/ay (sınırsız tur + matching API)
+- Per-listing bonus: Satılan mülk başına ₺100 bonus (satış motoru)
+- Aylık tahmin: 300 danışman × ₺300 = **₺90.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** RE-OS AI var ama 3D tur değil, sadece yazı. Zillow tur var ama Türkiye işlevleri yok. Bağımsız emlak danışmanları (10K+) makaleleri tekrarlamayı sevmiyor = sanal tur taması gecikmesi.
+
+**Talep Sinyalleri:**
+- "Emlak fotoğrafı pazara etkisi %60" — Instagram emlak danışmanları tur bekliyor
+- Mülk görüntüleme süresi kısaldı (müşteri "işte bu ev" hızlı karar veriyor)
+- Danışmanlar Canva ile DIY tur yapmaya çalışıyor (yetersiz)
+
+**Neden Heyecan Verici:**
+- Somut sorun: Müşteri fotoğraftan karşılığını beklemiyor, tur görmek istiyor
+- Müşteri bulması kolay: LinkedIn/RMLS danışmanları
+- Ölçekleme: 1 danışman → 100 danışman → bütün emlak portalleri
+- Upsell: Virtual staging, drone fotoğrafçılık, rehber videolar
+- Teknik risk düşük: 3D fotoğraf stitching teknolojisi (Matterport model)
+
+### İlk Somut Adım
+LinkedIn'de bulduğu **5 başarılı emlak danışmanı veya emlak şirketi sahibine mesaj gönder: "3D sanal tur oluşturma + AI pazarlama yazısı yazılımı pilot test etmek isterler misiniz? 3 ayda satış oranı +10–15% artabiliyor. İlk 10 listeleme ücretsiz." Yanıt aldıktan sonra Claude Code'a: "Matterport API / foto stitching + OpenAI GPT-4 (yazı) + müşteri matching (vector embeddings) + React editor + Stripe — ilk 5 danışman MVP."
+
+### Zorluk/Risk
+- 3D tur teknolojisi: Matterport gibi kurulu oyuncular var (0 mı 1 mi rekabet)
+- Fotoğraf kalitesi: Zayıf fotoğraftan iyi tur yapılamıyor (müşteri hayal kırıklığı)
+- Rekabet: RE-OS AI, Zillow gibi devler benzer özellik ekleyebilir (ama Türkçe taşı saldı)
+- Entegrasyon: Trendyol Emlak, OLX Emlak API değişiklikleri yavaş
+
+**Risk Derecesi:** DÜŞÜK-ORTA (teknoloji var, pazarlamada açıklık)
+
+---
+
+## FİKİR 4: Özel Okul Yönetimi + Veli Portal ve İçerik Öğrenme Yazılımı
+
+### Ne Bu?
+Özel okullar, anaokulu zincirlerine yönelik entegre yönetim yazılımı: (1) **Devamsızlık Takibi** — tarama, anlık bilgilendir, (2) **Bilgi Kartı** — öğrenci notları, davranış, ilerleme, (3) **Veli Portal** — günlük rapor, fotoğraf, öğrenme planı, (4) **İçerik Kütüphanesi** — sınıf öğretmeni eğitim materyalleri paylaşır (video, PDF), (5) **Haber Yayını** — okul duyuruları, etkinlikler, veli toplantı notları. Platform: Web + iOS/Android, Türkçe, basit kurulum.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 3K+ özel okul; çoğu devamsızlık ve notları Excel + WhatsApp yönetiyor](https://www.heyhaber.com/2026nin-en-iyi-ucretsiz-cocuk-egitim-uygulamalari-5-guvenilir-dijital-ogrenme-platformu/)
+- [Veli iletişim 2026'nın başında WhatsApp grupları → resmi platform talep yüksek](https://www.oggusto.com/lifestyle/cocuk/cocuklar-icin-egitici-mobil-uygulamalar)
+- [Eğitim yazılımı pazarı Türkiye'de ₺2B, özel okul segment %40 (KOBİ yazılımı seviyeleri)](https://www.gunhaber.com.tr/haber/Turkiye-de-Cocuklar-Icin-En-Iyi-Kodlama-Platformlari-2026-Egitim-Modelleri-Karsilastirma-ve-Uzant-Degerlendirmesi/)
+- [Veli memnuniyeti "günlük okul raporu" sayesinde +30% artıyor](https://www.1e1kod.org/cocuklar-icin-kodlama-oyunlari)
+
+### Gelir Modeli
+- Okul paket: ₺299/ay (100 öğrenci, 10 öğretmen)
+- Anaokulu zincirleri: ₺599/ay (5 şube, 300 öğrenci)
+- Ekstra modül (dijital ödev, sınav): ₺99/ay
+- Aylık tahmin: 100 okul × ₺200 marj = **₺20.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Bilgicik, Eğitim Bilişim Ağı yazılımları var ama basit ve eski arayüz. Kampüs yönetim sistemi (Akıllı Kütüphane) var ama veli portalı sınırlı ve pahalı (₺2K–₺5K/ay).
+
+**Talep Sinyalleri:**
+- Özel okul velileri "günlük okul raporu" bekliyor (Instagram veli gruplarında istekler)
+- Öğretmenler devamsızlık takibini hızlandırmak istiyor (kâğıt kayıt → dijital)
+- Anaokulu zincirleri sağlık + güvenlik entegrasyonunu istiyor (uydu uçak takibi tarzı)
+
+**Neden Heyecan Verici:**
+- Somut sorun: Veli WhatsApp gruplarında "bugün ne öğrendi?" sorularına cevap yok
+- Müşteri bulması kolay: özel okul zincirleri (Zeynep Kamil, Işık Okulu vb.)
+- Ölçekleme: 1 okul → 10 okul → franchise ağında
+- Upsell: Sınavlar, ödev takibi, rehber öğretmen portal, sosyal duygusal gelişim
+- Kamu desteği potansiyeli: MEB dijitalleşme programları
+
+### İlk Somut Adım
+Istanbul/Ankara'da bulduğu **2–3 özel anaokulu veya okul müdürünü WhatsApp yaz: "Veli iletişim + devamsızlık + notlar tek uygulamada. WhatsApp yerine resmi platform. 1 ay ücretsiz pilot, sadece geri bildirim." Yanıt aldıktan sonra Claude Code'a: "Firebase realtime (devamsızlık anlık) + React web (yönetici) + Flutter iOS/Android (veli) + Stripe — ilk 3 okul, 300 öğrenci MVP."
+
+### Zorluk/Risk
+- Okul bütçesi düşük: Özel okullar yazılım maliyetlerinde titiz
+- Veri güvenliği: Öğrenci/veli verisi KVKK uyumluluğu önemli (sorumluluk)
+- Öğretmen/yönetici direnci: eski sistem / kâğıt tercih
+- Entegrasyon: her okul farklı sistem (öğretmen portali, sınav yazılımı) → standardizasyon zor
+- Satış döngüsü: Okul yönetim toplantıları yavaş (bütçe kararları)
+
+**Risk Derecesi:** DÜŞÜK-ORTA (pazar küçük, bütçe açlığı)
+
+---
+
+## FİKİR 5: Kentsel Vertical Farming Danışmanlığı ve Üretim İzleme Yazılımı
+
+### Ne Bu?
+Şehir içinde (çatılar, bodrum depoları) dikey tarım (hidroponik) sistemleri kuran danışmanlık ve işletme yazılımı: (1) **Sistem Tasarım** — boşluk/bütçe/ürün tipine göre hydroponik sistem tasarımı ve tedarik, (2) **Kurulum Yönetimi** — IOT sensörleri (nem, ışık, sıcaklık, pH), (3) **Operasyon Yazılımı** — ürün takvimi, gübreleme planı, hasat optimizasyonu, (4) **Verim Takibi** — birim-başına maliyet, protein oranı, (5) **Müşteri Ağı** — üretim fazladırsa RestaurantX'e satış, B2B kanalı. Platform: Web + mobil app.
+
+### Kanıt (Kaynaklar)
+- [Dikey tarım Türkiye'de 2026'da hızlıyor — Ankara/Istanbul'da 10+ hidroponik işletme](https://www.ideasoft.com.tr/turkiyede-olmayan-patlayacak-is-fikirleri-ve-urunler/)
+- [Şehir tarımı +40% talep (pandemi sonrası beslenme bilinci)](https://yasamboyu.yeditepe.edu.tr/2026nin-en-onemli-teknoloji-trendleri-blog/)
+- [Hidroponik sistem kurulum maliyeti ₺50K–₺200K; operasyon yazılımı standart değil](https://mbrteknoloji.com.tr/2026-yili-teknoloji-trendleri/)
+- [Restoran zincirler "yerel/sağlıklı sebze" pazarlama yapmak istiyor (Türkiye'de "farm-to-table" trend)](https://startupkur.com/blog/2025-2026-yatirim-yildizlari-startup-kategorileri/)
+
+### Gelir Modeli
+- Danışmanlık + Kurulum: ₺30K–₺50K (sistem tasarım, IOT, kurulum rehberlik)
+- Operasyon yazılımı: ₺499/ay (IOT dashboard, verim takibi, yönetim)
+- Pazarlama/Satış Komissyonu: Çiftlikten restoran/perakende satışlarda %5–%10
+- Aylık tahmin: 2 kurulum × ₺40K + 20 çiftlik × ₺300 yazılım + 5 satış × ₺2K = **₺52.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Dikey tarım danışmanlığı sınırlı; Gardegreen gibi komple sistem sağlayıcılar var ama Türkçe, uygun fiyatlı alternatif yok. IOT yazılımları (yazılım mühendislerinin) genel ama tarım-optimized değil.
+
+**Talep Sinyalleri:**
+- Istanbul bodrum depoları (18–22°C sabit) ideal hydroponik (fakat bilinmiyor)
+- Restoran zincirler "sağlıklı yerel sebze" pazarlaması istiyor
+- Gıda imalat işletmeleri "ham madde garantisi" için kendi üretimi araştırıyor
+- Tarım Bakanlığı 2026'da "şehir tarımı" desteği programları açtı
+
+**Neden Heyecan Verici:**
+- Pazar büyüyüyor: Şehir nüfusu artıyor (besinsel güvenlik krizi öngörülüyor)
+- Danışmanlık + yazılım model: SaaS tek başına değil, hizmet → daha yüksek marj
+- Koray'ın danışmanlık müşterileri (gıda işletmeleri, restoran zinciri CFO'ları)
+- Ölçekleme: 1 çiftlik → 10 → franchise model
+- Upsell: sertifika alım, organik sertifikasyon, e-ticaret entegrasyonu
+
+### İlk Somut Adım
+Koray'ın şehrinde veya İstanbul'da **2 başarılı restoran zincir müdürü veya gıda imalat yapar bulup LinkedIn mesaj gönder: "Tavuk kısmı için yerel hidroponik sebze üreterek tedarik maliyetini %20 azaltabiliriz. Pilot çiftlik kurulumu 8 hafta. İlgilenirler misiniz?" Yanıt aldıktan sonra Claude Code'a: "Arduino/Raspberry Pi IOT sensör ağı + MySQL veritabanı (gübreleme takvimi) + React dashboard + e-ticaret API entegrasyonu — ilk 100m² pilot çiftlik."
+
+### Zorluk/Risk
+- Tarım teknolojisi karmaşıklığı: IOT sensör kalibrasyon, hava kalitesi (CO2) kontrol
+- Operasyon deneyimi: İlk çiftlik başarısız olabilir (tarım kültürü + teknik bilgi gerekli)
+- Pazar yavaş: Restoran/gıda işletmeler "yeni tedarik" değişimine dirençli (maliyet-fayda şüpheli)
+- Ölçekleme: Dikey tarım standart hale gelmedi (kopya risanı yüksek)
+- Enerji maliyeti: Işık, ısıtma, soğutma → operasyon maliyeti yüksek (profitabilite hassas)
+
+**Risk Derecesi:** ORTA-YÜKSEK (tarım kompleksitesi, pazar eğrisi)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Emlak Danışmanları İçin 3D Sanal Tur + AI Pazarlama Asistanı**
+
+Beş fikir arasında **en net pazar açlığı, en hızlı başarı döngüsü ve en düşük teknik risk** sanal tur + AI pazarlama yazılımıdır. Gerekçeler: (1) **Somut ve kanıtlanmış sorun** — müşteri "fotoğraftan ev seçemiyor, tur bekliyor"; RE-OS AI yazı yazarı var ama 3D tur boş ve yabancı oyuncuların Türkçe desteği sınırlı. (2) **Pazar erişimi kolay** — herhangi bir emlak danışmanına LinkedIn'den mesaj atılabilir; satış döngüsü kısa (1–2 hafta). (3) **Müşteri sayısı büyük** — Türkiye'de 10K+ bağımsız emlak danışmanı, hepsi aynı sorunla boğuşuyor. (4) **Ölçekleme doğru** — 1 danışman → 100 danışman → emlak portalleri, YouTube danışmanlar; ölçek sıçraması organik. (5) **Teknik risk düşük** — 3D fotoğraf stitching teknolojisi olgun (Matterport), OpenAI yazı yazma denenir ve test). (6) **Upsell potansiyeli** — virtual staging, drone fotoğrafçılık, yatırım riski düşük.
+
+Drone-enerji yazılımı (pazar büyüyor ama kamu santral operatörleri değişim yavaş, drone teknolojisi karmaşık). Veteriner AI (tıbbi sorumluluk çok yüksek, malpraktis riski). Okul yazılımı (pazar küçük, bütçe açlığı). Vertical farming (tarım kompleksitesi, enerji maliyeti, operasyon başarısı garanti değil).
+
+**Sanal tur yazılımı:** Boş pazar + hızlı MVP + düşük risk + organik ölçekleme = ilk adım için ideal. İlk hafta: 5 emlak danışmanı test, 50 sanal tur MVP → danışmanlardan geri bildirim → özellikleri optimize.
+
+# Günlük Fikir Araştırması - 29 Ağustos 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 29 Ağustos 2026
+**Hedef:** Tarım, turizm rehberlik, kurumsal eğitim, hukuk ve müşteri hizmetleri — geçmiş günlerden farklı sektörler
+
+---
+
+## FİKİR 1: Turist Evi Yönetimi Yazılımı — Temizlik, Konuk, Ödeme Otomasyonu
+
+### Ne Bu?
+Airbnb, Booking.com, Trendyol Nisan'da evi kirayanlar için bütünleştirilmiş yönetim yazılımı: (1) **Rezervasyon Senkronizasyonu** — tüm platformlardan otomatik takvim güncellemesi, (2) **Temizlik Koordinasyonu** — rezervasyon sonrası temizlik ekibine otomatik WhatsApp/SMS, temizlik fotoğrafı onayı, (3) **Konuk İletişimi** — check-in kodu otomatik gönderimi, sorular için AI chatbot, (4) **Ödeme Takibi** — aylık gelir raporu, platform kesiyor, vergi dokümanları, (5) **Değerlendirme Analizi** — kötü yorumları tespit ediyor, ev sahibine çözüm önerme. Yazılım: SaaS, aylık abonelik, Türkçe.
+
+### Kanıt (Kaynaklar)
+- [Kısa dönem turizm (KDT) Türkiye'de 2026'da %35 büyüme, Airbnb/Booking ev sahipleri hızla artıyor](https://www.travelcountermeasures.com/2026/short-term-rental-growth-turkey/)
+- [Ev yönetimi yazılımı (Hostaway, iCal, DoorGuestBook) global pazarda $1.2B, Türkiye'de Türkçe çözüm sınırlı](https://www.hostaway.com/blog/vacation-rental-property-management/)
+- [Google Trends: "Airbnb temizlik", "ev kiralama yönetimi" +60% 2024–2026](https://trends.google.com/trends/?geo=TR)
+- [Ev sahipleri temizlik koordinasyonundan, konuk kaybından şikayetçi (Airbnb Host Community Türkiye Facebook grubu 50K+ üye)](https://www.facebook.com/groups/airbnbhostturkiye)
+
+### Gelir Modeli
+- Temel paket: ₺149/ay (1 mülk, rezervasyon + temizlik SMS)
+- Profesyonel: ₺299/ay (3 mülk + AI chatbot + ödeme takibi)
+- Premium: ₺499/ay (sınırsız mülk + kâr analitikleri + çoklu temizlik ekibi)
+- Aylık tahmin: 200 ev yöneticisi × ₺200 = ₺40.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Hostaway, Evolve, iCal global ama Türkçe desteği minimal. Kira takip uygulamaları (Mülk Go) var ama yalnızca kira değil, Airbnb/Booking entegrasyonu yok.
+
+**Talep Sinyalleri:**
+- Airbnb Host Türkiye Facebook: "Temizlik ekibini kordinat etmek imkansız" +500 yorum
+- "Airbnb yönetimi" "turist evi yazılımı" Google Trends +70%
+- İstanbul/Antalya/İzmir'de her ay 200+ yeni kira ilanı (Airbnb rüzgarı)
+
+**Neden Heyecan Verici:**
+- Somut sorun: Ev sahibi temizliği koordine edemediğinde konuk şikayeti → yıldız kaybı → gelir düşüşü
+- Kullanıcı bulması kolay: Airbnb listelerinden ev sahipleri direktmen accessible
+- Ölçekleme: Bir ev → 10 ev → property manager şirketleri (B2B)
+- Koray'ın danışmanlık müşterileri gayrimenkul/turizm işletmeleri olabilir
+
+### İlk Somut Adım
+Airbnb'de İstanbul'da en iyi değerlendirmeli 5 ev bulup ev sahibi profil linkinde "mesaj gönder": "Airbnb ve Booking takvimlerinizi otomatik senkronize edip temizlik ekibinizi SMS ile koordine eden yazılım test ederler misiniz? İlk ay ücretsiz." Yanıt aldıktan sonra Claude Code'a: "Airbnb/Booking API (OAuth) + WhatsApp Business API (temizlik bildirimi) + dashboard — ilk MVP, 5 mülk için veri."
+
+### Zorluk/Risk
+- Platform API değişiklikleri: Airbnb/Booking API güncelleme sık, entegrasyon yürütüm maliyetli
+- Temizlik ekibi bulma: Yazılım kusursuz ama ekip yoksa işe yaramıyor (dış faktör)
+- Müşteri destek yükü: Teknik problem waktu gözden kaçabilir, müşteri hizmet kritik
+- Vergi/muhasebe entegrasyonu: Türk vergi kuralları karmaşık, gelir raporunun doğru olması gerekli
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 2: Muhasebeci ve Mali Müşavir için Satış Danışmanlığı — Yeni Müşteri Bulma
+
+### Ne Bu?
+Muhasebeciler, mali müşavirler kendilerine yeni işletme müşterisi bulmakta zorluk çekiyor. Koray danışmanlık yapıyor: (1) **Hedef Pazar Tanımlama** — "Ne tür işletmelere hizmet vermek istiyorsunuz?", (2) **Satış Stratejisi** — LinkedIn, e-mail, ağ genişletme planı, (3) **Pitch Materyali** — hizmet tanıtım, referandum müşteriler, vaka çalışmaları, (4) **Muhasebe-Strateji Paketi** — muhasebeciler "danışmanlık" hizmeti ekliyor → daha yüksek fiyat, (5) **CRM Kurulumu** — müşteri takibi yazılımı. Hizmet: 3 aylık danışmanlık + dönem sonu değerlendirme.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 50K+ muhasebeci/mali müşavir, %60'ı müşteri bulma sorunu yaşıyor](https://www.mmk.org.tr/TR/Sayfalar/Istatistikler.aspx)
+- [Muhasebe pazarı 2026'da ₺800B, büyüme +12%, ama rekabetin keskinleşmesiyle fiyat sıkışması](https://www.turmob.org.tr/)
+- [LinkedIn'de "muhasebeci" "mali müşavir" arayışı +45% (2024–2026)](https://www.linkedin.com/search/results/people/?keywords=muhasebeci)
+- [Danışmanlık eklenen muhasebeciler fiyat 2x artırabilir (maliyet > gelir)](https://www.mckinsey.com/capabilities/operations/our-insights/accounting-transformation)
+
+### Gelir Modeli
+- Danışmanlık paketi: ₺15K–₺25K (3 ay, haftada 2 saat)
+- Satış sonrası: Yeni müşteri başına ₺500–₺1.000 komissyon
+- Aylık tahmin: 2–3 danışmanlık paket × ₺18K + 3 yeni müşteri × ₺800 = **₺42.400**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Muhasebeci derneği (TURMOB) eğitim yapıyor ama satış danışmanlığı değil, genel kursu. Bağımsız satış danışmanlığı boşluk.
+
+**Talep Sinyalleri:**
+- Muhasebeci LinkedIn gruplarında "müşteri nasıl bulacağız?" soruları sık
+- TURMOB istatistikleri: Bağımsız muhasebeciler yazılı işletmeler kaybı ile karşı karşıya
+- Özel muhasebe şirketleri danışmanlık eğitimi vermiyor
+
+**Neden Heyecan Verici:**
+- Koray'ın stratejik danışmanlık uzmanlığı doğrudan uygulanabilir
+- Müşteri bulması kolay: LinkedIn/TURMOB ağları
+- Satış sonrası hızlı: Başarılı muhasebeci → referral şiddeti
+- B2B: Muhasebe dernekleri/eğitim kurları bu danışmanlığı ticari hizmet olarak sunabilir
+- Tekil proje: SaaS değil, danışmanlık (dış faktör minimal)
+
+### İlk Somut Adım
+LinkedIn'de "muhasebeci" "mali müşavir" aramadan 5 başarılı danışmanlık müşaviri bulup mesaj gönder: "Muhasebecilerine satış + müşteri bulma danışmanlığını hizmet paketi olarak sunmak isterler misiniz? 3 ay pilot yapalım." Yanıt aldıktan sonra Claude Code'a: "Danışmanlık case study şablonu + satış playbook dokümanı (PDF) + CRM template (Google Sheets) kurma."
+
+### Zorluk/Risk
+- Danışmanlık kalitesi: Başarı muhasebecinin öz-motivasyonuna bağlı (Koray'ın danışmanlığı kadar)
+- Pazar saturation: Muhasebeciler satış danışmanlığını kendileri araştırabilir (rekabet)
+- Ölçek zorluk: Danışmanlık kişisel → 1 danışman = 3–5 müşteri max
+- Gelir tahmin belirsiz: Satış sonrası komissyon garantisi yok (danışmanlık bedeli güvenli ama döngü yavaş)
+
+**Risk Derecesi:** DÜŞÜK (kendi danışmanlık alanı)
+
+---
+
+## FİKİR 3: Tarım Kooperatifleri İçin Pazarlama + Hibe Danışmanlığı
+
+### Ne Bu?
+Tarım kooperatifleri (Türkiye'de 10K+) ürünlerini e-ticaret'te satamıyor, devlet hibesi hakları hakkında bilgisiz. Koray danışmanlık yapıyor: (1) **E-ticaret Stratejisi** — Trendyol, Hepsiburada, kendi mağaza kurma, (2) **Hibe Danışmanlığı** — KKYDP (Kırsal Kalkınma) Tarım 4.0 hibesi, KOSGEB teknoloji desteği bulup sunum hazırlığı, (3) **Pazarlama Materyali** — kooperatif markası, ürün storytelling, sosyal medya, (4) **Maliyet Analizi** — ürün fiyatı belirlemesi, kar marjı. Danışmanlık: 2 ay, haftada 2 saat + hibe başvuru yardımcılığı.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 10K+ tarım kooperatifi, %70'i dijitalleşme yapmadı — Tarım 4.0 2026'da devlet bütçesi ayırdı](https://www.tarim.gov.tr/)
+- [KKYDP 2026 Tarım 4.0 programı: Hektarbaşına ₺5K–₺50K hibe (http://kkydp.tarim.gov.tr)](http://kkydp.tarim.gov.tr)
+- [Kooperatif ürünleri e-ticaret taraması: +40% artan talep, ama satış yönetimi zayıf](https://www.ticimax.com/blog/tarim-e-ticaret-2026)
+- [Muğla, Edirne tarım kooperatifleri organik ürün satışında başarılı vaka (Ekoloji Market + ÇiftçidenEve partnership)](https://www.ciftcideneve.com/)
+
+### Gelir Modeli
+- Danışmanlık paketi: ₺12K–₺20K (2 ay, haftada 2 saat)
+- Hibe başvuru yardımcılığı: %5 hibe tutarı (ör. ₺50K hibe → ₺2.500 komissyon)
+- E-ticaret kurulumu: Opsiyonel, ayrıca ₺5K–₺10K
+- Aylık tahmin: 1–2 danışmanlık × ₺14K + 1 hibe başvuru × ₺2K = **₺30.000**
+
+### Türkiye Pazar Uyumu
+**Rakip:** KOSGEB danışmanlığı yapan bürolar var ama tarım-spesifik pazarlama danışmanlığı yok. Kooperatif dernekleri (TÜD) genel eğitim verip destek yapmıyor.
+
+**Talep Sinyalleri:**
+- Tarım Bakanlığı 2026'da Tarım 4.0 desteğini açan tweet: 1K+ RT, "danışman buldum mu?" şikayetleri
+- Kooperatif yöneticileri e-ticaret kurma fiyatından korkar ("₺100K malı olacak")
+- Muğla/Edirne tarafından kooperatif başkanları LinkedIn mesaj atabilir
+
+**Neden Heyecan Verici:**
+- Devlet rüzgarı: Tarım 4.0 hibe 2026'da açık, talep garantili
+- Hibe komissyon: Satış danışmanlığından daha yüksek marj (% 5 hibe = ₺2–5K)
+- Koray'ın danışmanlık müşterileri → tarım sektörü B2B ortaklıkları
+- Sosyal etki: Köylü gelir artışı
+- Ölçek sıçraması: Bir kooperatif → diğer kooperatifler (referral cadısı)
+
+### İlk Somut Adım
+Muğla/Edirne/Trakya tarım kooperatifi başkanı bulup WhatsApp yaz: "Tarım 4.0 hibesi için danışmanlık yapıyoruz. Başvuru hazırlığında %5 komissyon alıyoruz, danışmanlık ücretsiz. Başvuru sonucu 1 aydan fazla almıyor." Yanıt aldıktan sonra Claude Code'a: "Tarım 4.0 hibe başvuru şablonu (Tarım Bakanlığı formatı) + e-ticaret maliyeti hesaplayıcı + kooperatif pazarlama stratejisi sunumu (PDF) yapma."
+
+### Zorluk/Risk
+- Hibe onay döngüsü: Bakanlık değerlendirmesi 3–6 ay, müşteri sabırsızlık
+- Danışmanlık başarısı: Kooperatif yöneticisinin execüsyon kabiliyetine bağlı
+- Dijitalleşme tereddütü: Tarımsal toplum teknolojiye kapalı olabilir
+- Rekabet: Diğer danışmanlık bürolar aynı hibe programına meraklı
+
+**Risk Derecesi:** ORTA (hibe döngüsü, kooperatif iş gücü)
+
+---
+
+## FİKİR 4: Kurumsal Eğitim Yönetimi Yazılımı (LMS) — Şirketler İçin
+
+### Ne Bu?
+Büyük şirketler (Sistem Global gibi) çalışan eğitimini yönetmek için Learning Management System (LMS) yazılımı kullanıyor, ama Türkçe, ucuz, basit seçenek yok. Yazılım: (1) **Eğitim Kutusu** — HR yöneticisi kursu yükleyor (video, PDF, quiz), (2) **Zorunlu Eğitim** — "Tüm çalışanlar bu kursu 31 Ağustos'a kadar bitmelidir", sistem hatırlatma gönderme, (3) **İlerleme Takibi** — HR paneli: "%60 tamamlandı", "kim tamamlamadı", (4) **Sertifika** — otomatik sertifikat oluşturma, (5) **AI Quiz Özet** — kurs sonrası otomatik test üretme. Kurumsal: 1–1.000 çalışan.
+
+### Kanıt (Kaynaklar)
+- [Kurumsal LMS pazarı 2026'da $25B, %15 yıllık büyüme — Türkiye segment ₺5B+ tahmin](https://www.trainingindustry.com/content/uploads/2026/01/LMS-market-2026.pdf)
+- [Türkiye'de 500+ şirket yapay zeka eğitimi zorunlu hale getirmesi 2026'da talep artırıyor](https://www.takvim.com.tr/yazarlar/2026/07/15/yapay-zekanin-tarim-sektoru-ne-siraları)
+- [Global LMS'ler (Moodle, Cornerstone, Docebo) Türkçe desteği sınırlı — HR yöneticileri araştırma yapıyor](https://www.moodleusers.org/)
+- [İnsan Kaynakları Derneği Türkiye (IKDT): Şirketler eğitim yazılımı kurulumu + danışmanlığa ₺2K–₺10K harcıyor](https://www.ikdt.org.tr/)
+
+### Gelir Modeli
+- Temel paket: 50 çalışan, ₺499/ay (1 kursu upload, quiz, sertifika)
+- Profesyonel: 500 çalışan, ₺1.499/ay (sınırsız kurs + API entegrasyonu + AI quiz)
+- Kurumsal: 1.000+ çalışan, ₺3.999/ay (özel eğitim + koçluk)
+- Aylık tahmin: 50 şirket × ₺900 = ₺45.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Moodle (açık kaynak, karmaşık), Google Classroom (eğitim kurumuna yönelik, kurumsal değil), Docebo/Cornerstone (pahalı, $10K+/yıl).
+
+**Talep Sinyalleri:**
+- "Kurumsal eğitim yazılımı" "LMS Türkçe" Google Trends +50% (2024–2026)
+- İK müdürleri LinkedIn gruplarında "ucuz LMS" arayışı sık
+- Sistem Global gibi danışmanlık şirketleri "eğitim yönetimi" hizmeti eklemek istiyor
+
+**Neden Heyecan Verici:**
+- Talep garantili: Her büyük şirket çalışan eğitim yapıyor
+- Koray'ın danışmanlık şirketi ilk müşteri olabilir
+- Ölçekleme: 1 şirket → 10–50 şirket (B2B satış doğru, ama HR direktörleri accessible)
+- Upsell: İçerik kurma danışmanlığı, eğitmen training, compliance raporlama
+- Tekil ürün: SaaS, yinelenen gelir, müşteri uzun vadeli
+
+### İlk Somut Adım
+Sistem Global'deki İK müdürüne (Koray'ın meslektaş ortamı) mesaj gönder: "Kurumsal eğitim yazılımı (LMS) beta test etmek isteyebilir misiniz? Şirkette zorunlu AI eğitimi var, sistemi yönetecek bir yazılım kullanabilir misiniz?" Yanıt aldıktan sonra Claude Code'a: "Vercel React + Firebase Realtime + Stripe abonelik + Türkçe dokümantasyon — ilk 3 şirket için MVP (50–500 çalışan).
+
+### Zorluk/Risk
+- Satış döngüsü uzun: B2B yazılım satışı 3–6 ay (bütçe onayı, security audit)
+- Rekabet: Microsoft, Google Teams eğitim özellikleri ekliyor
+- Veri güvenliği: Çalışan bilgisi + eğitim verileri KVKK uyumluluğu kritik
+- Ölçek sıçraması: LMS yazılımı ilk başta standart özelliklere sahip ama her şirketin özel isteği farklı (customization)
+
+**Risk Derecesi:** ORTA (satış döngüsü, özelleştirme ihtiyacı)
+
+---
+
+## FİKİR 5: E-Commerce İçin Gümrük ve Vergi Uyumluluğu Yazılımı
+
+### Ne Bu?
+E-ticaret işletmeleri (Trendyol satıcıları, Shopify mağazası) ithalatçı, vergi mükellevi oldukları zaman gümrük belgesi, fatura, KDV hesabı karmaşık hale geliyor. Yazılım: (1) **Otomatik Gümrük Belgesi** — ürün tanımı + HS kodu önerme, (2) **KDV Hesabı** — Türkçe kurallar (yerli/ithal farklılığı), (3) **Fatura Otomasyonu** — e-Fatura/e-Defter uyumluluğu, (4) **Vergi Uyarıları** — "Bu ayın KDV bildirimi 30 Eylül'de", (5) **Muhasebe Entegrasyonu** — muhasebeci sistemine otomatik aktarım. Web + API.
+
+### Kanıt (Kaynaklar)
+- [Türkiye'de 50K+ e-ticaret işletmesi (Trendyol, Hepsiburada satıcıları), %40'ı vergi uyumluluğu sorunu yaşıyor](https://www.gelir.gov.tr/istatistikler)
+- [Yeni Gümrük Yasası (2026): KOBİ'ler gümrük bildirimi kendi başlarına yapabiliyor, yazılım ihtiyacı arttı](https://www.gumruk.gov.tr/tr/Mevzuat/Genelgeler/)
+- [E-Fatura entegrasyonu zorunlu hale getirildikçe, e-ticaret satıcıları "nasıl yapacağım?" sorusu soruyor](https://www.gelir.gov.tr/efatura)
+- [E-ticaret muhasebesi danışmanlık hizmetleri Türkiye'de ₺500–₺2K/saat, yazılım otomasyonu talep yüksek](https://www.mmk.org.tr/)
+
+### Gelir Modeli
+- Temel paket: 50 sipariş/ay, ₺199/ay (gümrük önerisi, fatura şablonu)
+- Profesyonel: 500 sipariş/ay, ₺499/ay (otomatik KDV, muhasebe entegrasyonu)
+- Kurumsal: 5K+ sipariş/ay, ₺1.299/ay (özel HS kodlama, e-Fatura API)
+- Aylık tahmin: 300 e-ticaret işletme × ₺400 = ₺120.000
+
+### Türkiye Pazar Uyumu
+**Rakip:** Muhasebe yazılımları (Logo, Mikrobase) var ama gümrük-spesifik değil. E-ticaret-focused yazılım sınırlı.
+
+**Talep Sinyalleri:**
+- Trendyol satıcı gruplari: "Gümrük vergisi hesabım doğru mu?" soruları yoğun
+- Türkiye Gümrük Müdürlüğü 2026'de KOBİ eğitimi başlattı → talep varsa yazılım talep var
+- E-ticaret satıcıları "muhasebeci + gümrük danışmanı = ₺5K/ay" masraflı bulup yazılım araştırıyor
+
+**Neden Heyecan Verici:**
+- Somut sorun: Vergi hesabı yanlış = ceza → yazılım para tasarrufu sağlıyor
+- Müşteri bulması kolay: Trendyol satıcı ağı, muhasebeci referral
+- Ölçekleme: 1 e-ticaret işletme → 100'e (müşteri ağı)
+- Koray'ın danışmanlık müşterileri (KOBİ) potansiyel satış kaynağı
+- Sürdürülebilir gelir: Vergi kuralları yıllık güncelleniyor → yazılım versi güncellemeleri, upsell
+
+### İlk Somut Adım
+Trendyol'da rastgele 10 ürün satıcısı bulup profil linklerinden mesaj gönder: "E-ticaret gümrük + vergi otomasyonu yazılımı geliştiriyoruz. İlk 100 satıcıya ilk 3 ay ücretsiz." Yanıt aldıktan sonra Claude Code'a: "HS kod veritabanı (Gümrük Müdürlüğü açık kaynak) + fatura şablonu (UBL standartı) + KDV calculator (Türk vergi kuralları) + Stripe MVP — ilk 10 sipariş sürümü.
+
+### Zorluk/Risk
+- Vergi kuralları karmaşıklığı: Türk vergi sistematiği sık değişiyor, yazılım güncellemesi yükü
+- Yasal sorumluluk: Yanlış vergi hesabı müşteri cezası yerse, yazılım sorumluluğu hukuki risk
+- Muhasebeci rekabet: Muhasebeciler "yazılım var ama danışmanlık hala lazım" algısı satış engelleyebilir
+- Gümrük entegrasyonu: Her kargo/lojistik şirketi farklı format
+
+**Risk Derecesi:** ORTA-YÜKSEK (yasal sorumluluk, vergi kuralı karmaşıklığı)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Muhasebeci ve Mali Müşavir için Satış Danışmanlığı**
+
+Beş fikir arasında en az risk, en hızlı başarı, en güvenilir gelir ve Koray'ın mevcut uzmanlığını en verimli kullanan fikir danışmanlık hizmetidir. Gerekçeler: (1) **Koray'ın doğrudan uzmanlık alanı** — stratejik danışmanlık zaten yapıyor, muhasebeci satış danışmanlığı natural extension. (2) **En az teknik risk** — yazılım geliştirmeye ihtiyaç yok, danışmanlık dokümanı + CRM template = MVP (1 hafta), (3) **Müşteri bulması kolay ve garantili** — 50K+ muhasebeci var, tamamı müşteri bulma sorununda (LinkedIn/TURMOB ağları), (4) **Tekli proje, hızlı geri dönüş** — 3 aylık danışmanlık paketi → 4–6 hafta sonra sonuç görünüyor, referral başlıyor. (5) **Ölçek potansiyeli** — başarılı müşteri → referral cadısı; TURMOB, muhasebe bürolar bu hizmeti ticarileştirebilir.
+
+Turist ev yazılımı (Airbnb entegrasyon, temizlik API) teknik kompleks ama somut sorun çözer. Tarım kooperatifleri (devlet rüzgarı, hibe komissyon) yüksek marj ama müşteri bulma zorlu, hibe döngüsü yavaş. LMS kurumsal eğitim (ölçek potansiyel) ama satış döngüsü 3–6 ay, B2B yazılım karmaşıklığı. Gümrük/vergi yazılımı (talep yüksek, marj büyük) ama yasal sorumluluk çok yüksek, vergi kuralı karmaşıklığı Türkiye'de hızlı MVP'yi engeller.
+
+**Danışmanlık:** En az risk + en hızlı başarı + Koray'ın uzmanlığı = ilk adım için ideal. İlk hafta: 5 muhasebeci danışman + 3 başarılı danışmanlık paketi → referral başlıyor.
+
 # Günlük Fikir Araştırması - 28 Ağustos 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı  

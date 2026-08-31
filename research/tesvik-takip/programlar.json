@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-08-29",
+  "sonGuncelleme": "2026-08-31",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -31,14 +31,14 @@
       "id": "kosgeb-cop31-hizlandirma-2026",
       "ad": "COP31 Odaklı Hızlandırma Desteği",
       "kurum": "KOSGEB",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-08-30",
       "kaynakUrl": "https://kosgeb.gov.tr/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi",
       "ilkTespitTarihi": "2026-08-22",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
-      "not": "Yeni program - temiz enerji, döngüsel ekonomi, sürdürülebilir tarım ve iklim teknolojileri alanlarında işletmeler için"
+      "not": "30 Ağustos 2026'da kapandı - temiz enerji, döngüsel ekonomi, sürdürülebilir tarım ve iklim teknolojileri alanlarında işletmeler için"
     },
     {
       "id": "kosgeb-girisimci-destek-2026-2",
