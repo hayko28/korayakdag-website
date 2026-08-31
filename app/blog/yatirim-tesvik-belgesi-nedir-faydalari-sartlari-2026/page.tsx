@@ -415,8 +415,9 @@ export default function BlogPage() {
               Eski sistemden farklı olarak Hedef Yatırımlar ve Öncelikli
               Yatırımlar Teşvik Sistemi&apos;nde KDV istisnası, gümrük
               vergisi muafiyeti, vergi indirimi oranı (%60) ve yatırıma
-              katkı oranı (%40) bölgeye göre değil, seçilen programa göre
-              belirleniyor ve bu iki program için tüm bölgelerde aynı
+              katkı oranı (Hedef Yatırımlar&apos;da %20, Öncelikli
+              Yatırımlar&apos;da %30) bölgeye göre değil, seçilen programa
+              göre belirleniyor ve bu iki program için tüm bölgelerde aynı
               şekilde uygulanıyor; bölgeye göre asıl farklılaşan unsurlar
               asgari yatırım tutarı, SGK desteği süresi, faiz/kâr payı
               desteğinin varlığı ve yatırım yeri tahsisi imkanıdır. Tek
@@ -492,13 +493,13 @@ export default function BlogPage() {
             hazırlanmış <strong>örnek/varsayımsal hesaplamalardır</strong>.
             Hesaplamalarda, Hedef Yatırımlar Teşvik Sistemi&apos;nde tüm
             bölgeler için sabit uygulanan <strong>%60 vergi indirimi
-            oranı</strong> ve <strong>%40 yatırıma katkı oranı</strong>{" "}
+            oranı</strong> ve <strong>%20 yatırıma katkı oranı</strong>{" "}
             kullanılmıştır: şirket, normalde %25 olan kurumlar vergisi
             oranı yerine %60 indirimle <strong>%10 oranında</strong>{" "}
             kurumlar vergisi öder; bu indirimli oranla ödemekten kaçındığı
-            toplam vergi tutarı, yatırım tutarının %40&apos;ına (yatırıma
+            toplam vergi tutarı, yatırım tutarının %20&apos;sine (yatırıma
             katkı tutarına) ulaşana kadar devam eder. Yani{" "}
-            <strong>yatırıma katkı tutarı = yatırım tutarı × %40</strong>,
+            <strong>yatırıma katkı tutarı = yatırım tutarı × %20</strong>,
             projenin sağlayacağı toplam vergi avantajının üst sınırını
             gösterir. Gümrük vergisi muafiyeti ve SGK işveren primi
             desteğinin parasal karşılığı ise sabit bir oranla
@@ -528,8 +529,8 @@ export default function BlogPage() {
                 KDV istisnası, gümrük vergisi muafiyeti ve indirimli
                 kurumlar vergisinden ibarettir (İstanbul&apos;da yapılan
                 yatırımlarda ise vergi indirimi de uygulanmaz).{" "}
-                <strong>Sonuç:</strong> 18.000.000 TL yatırım × %40 yatırıma
-                katkı oranı = <strong>7.200.000 TL&apos;ye kadar</strong>{" "}
+                <strong>Sonuç:</strong> 18.000.000 TL yatırım × %20 yatırıma
+                katkı oranı = <strong>3.600.000 TL&apos;ye kadar</strong>{" "}
                 vergi avantajı; firma bu tutara ulaşana kadar kurumlar
                 vergisini %25 yerine %10 oranında (yani %60 indirimli)
                 öder.{" "}
@@ -560,8 +561,8 @@ export default function BlogPage() {
                 1 yıllık SGK işveren primi desteğinden yararlanır; 2. bölgede
                 faiz/kâr payı desteği ve yatırım yeri tahsisi genellikle
                 uygulanmaz. <strong>Sonuç:</strong> 15.100.000 TL yatırım ×
-                %40 yatırıma katkı oranı ={" "}
-                <strong>6.040.000 TL&apos;ye kadar</strong> vergi avantajı;
+                %20 yatırıma katkı oranı ={" "}
+                <strong>3.020.000 TL&apos;ye kadar</strong> vergi avantajı;
                 işletme bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder.
               </p>
@@ -580,8 +581,8 @@ export default function BlogPage() {
                 muafiyeti, indirimli kurumlar vergisi ve 2 yıllık SGK
                 işveren primi desteğinden yararlanır. 3. bölgede olduğu için
                 faiz/kâr payı desteği bu senaryoda devreye girmez.{" "}
-                <strong>Sonuç:</strong> 9.000.000 TL yatırım × %40 yatırıma
-                katkı oranı = <strong>3.600.000 TL&apos;ye kadar</strong>{" "}
+                <strong>Sonuç:</strong> 9.000.000 TL yatırım × %20 yatırıma
+                katkı oranı = <strong>1.800.000 TL&apos;ye kadar</strong>{" "}
                 vergi avantajı; KOBİ bu tutara ulaşana kadar kurumlar
                 vergisini %25 yerine %10 oranında (%60 indirimli) öder.
               </p>
@@ -600,8 +601,8 @@ export default function BlogPage() {
                 desteğinin yanı sıra 4. bölgeden itibaren devreye giren
                 faiz/kâr payı desteğinden ve yatırım yeri tahsisi
                 imkanından da yararlanabilir. <strong>Sonuç:</strong>{" "}
-                8.000.000 TL yatırım × %40 yatırıma katkı oranı ={" "}
-                <strong>3.200.000 TL&apos;ye kadar</strong> vergi avantajı;
+                8.000.000 TL yatırım × %20 yatırıma katkı oranı ={" "}
+                <strong>1.600.000 TL&apos;ye kadar</strong> vergi avantajı;
                 üretici bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder; bu tutara faiz/kâr payı
                 desteğinden sağlanacak ilave finansman avantajı da eklenir.
@@ -620,8 +621,8 @@ export default function BlogPage() {
                 gümrük muafiyeti, indirimli kurumlar vergisi, 8 yıllık SGK
                 işveren primi desteği, faiz/kâr payı desteği ve yatırım
                 yeri tahsisi imkanından yararlanır. <strong>Sonuç:</strong>{" "}
-                10.000.000 TL yatırım × %40 yatırıma katkı oranı ={" "}
-                <strong>4.000.000 TL&apos;ye kadar</strong> vergi avantajı;
+                10.000.000 TL yatırım × %20 yatırıma katkı oranı ={" "}
+                <strong>2.000.000 TL&apos;ye kadar</strong> vergi avantajı;
                 işletme bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder.
               </p>
@@ -640,8 +641,8 @@ export default function BlogPage() {
                 desteği ve yatırım yeri tahsisi aynı anda devreye girebilir.
                 6. bölgenin &quot;en yoğun destek paketi&quot; olarak
                 anılmasının nedeni budur. <strong>Sonuç:</strong> 7.500.000
-                TL yatırım × %40 yatırıma katkı oranı ={" "}
-                <strong>3.000.000 TL&apos;ye kadar</strong> vergi avantajı;
+                TL yatırım × %20 yatırıma katkı oranı ={" "}
+                <strong>1.500.000 TL&apos;ye kadar</strong> vergi avantajı;
                 yatırımcı bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder — üstelik bu tutara 12-14
                 yıllık SGK primi desteği, faiz/kâr payı desteği ve yatırım
