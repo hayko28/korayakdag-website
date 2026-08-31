@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "faiz-indirimi-basladi-buyume-plani-hazir-mi",
+    title: "Faiz İndirimi Başladı: Asıl Soru Kimin Büyüme Planı Hazır?",
+    excerpt:
+      "TCMB piyasayı yeniden yüzde 37'den fonlamaya başladı, kamu bankaları ticari kredi faizini pazartesiden itibaren 2-3 puan indiriyor. İki yıllık sıkı para politikasının ardından KOBİ'ler için asıl soru faizin ne kadar düştüğü değil, düşünce elde hazır bir büyüme planı olup olmadığı.",
+    tag: "Strateji",
+    date: "31 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "dort-gunluk-mesai-haftasi-kobiler-icin-gercek-soru",
     title:
       "Dört Günlük Mesai Tartışması: KOBİ'ler İçin Asıl Soru Ne?",
