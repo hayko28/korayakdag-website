@@ -541,6 +541,20 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Bu düzenleme özellikle vergi veya SGK borcu nedeniyle daha önce krediye hiç erişemeyen esnaf ve küçük işletme sahipleri için bir kapı aralıyor; faiz desteği oranı düştüğü için başvurmadan önce toplam finansman maliyetini bankasıyla birlikte hesaplamasını öneririm.",
   },
+  {
+    kurum: "SPK",
+    tarih: "28 Ağustos 2026 (29 Ağustos 2026'da yürürlüğe girdi)",
+    eklendiTarihi: "2026-08-31",
+    baslik:
+      "SPK, Yatırım Fonlarına İlişkin Rehber'i güncelleyerek serbest fonlara ve portföy yönetim şirketlerine yeni sınırlar getirdi",
+    ozet:
+      "Sermaye Piyasası Kurulu, 28 Ağustos 2026 tarihli kurul kararıyla Yatırım Fonlarına İlişkin Rehber'i güncelledi; değişiklik 29 Ağustos 2026'da yürürlüğe girdi. Serbest fonların tek bir şirketteki dolaşımdaki pay yatırımı artık halka açıklık oranına göre sınırlandırılıyor (fiili dolaşım oranı %25'in altındaki şirketlerde en fazla %8, %75 üzerindeki şirketlerde %2); geniş yetkili portföy yönetim şirketleri için 2027 başlangıcından itibaren asgari ödenmiş sermaye 500 milyon TL, sınırlı yetkili olanlar için 250 milyon TL olarak belirlendi. Mevcut kurallara uyum için şirketlere 30 Haziran 2029'a kadar süre tanındı.",
+    kaynakUrl:
+      "https://spk.gov.tr/duyurular/basin-duyurulari/2026/basin-duyurusu_28082026",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Serbest fon yöneten veya portföy yönetim şirketi kurmayı planlayan müşterilerimize, yeni sermaye ve yoğunlaşma sınırlarını 2029'a kadar tanınan uyum süresine rağmen finansman planlamalarına şimdiden dahil etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
