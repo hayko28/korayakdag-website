@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "go-dijital-cuzdan-nedir-nasil-acilir",
+    title: "GO Dijital Cüzdan Nedir? KOSGEB Destek Ödemelerinde Nasıl Kullanılır, Hesap Nasıl Açılır?",
+    excerpt: "GO Dijital Cüzdan, KOSGEB'in Yapay Zeka Kredi Programı'nda kullandığı elektronik cüzdan altyapısıdır. Çerçeve Sözleşmesi, MASAK Sözleşmesi, evrak yükleme ve onay adımlarıyla hesap açma süreci, güvenlik boyutu ve dikkat edilmesi gerekenlerle güncel rehber.",
+    category: "KOSGEB • DİJİTAL CÜZDAN • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
     title: "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?",
     excerpt: "Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı, desteklenen giderler ve 18 Eylül 2026 son başvuru tarihiyle güncel rehber.",

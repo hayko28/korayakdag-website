@@ -5,6 +5,7 @@ import BlogComments from "@/components/blog/BlogComments";
 import OtherPosts from "@/components/blog/OtherPosts";
 import SearchHighlight from "@/components/blog/SearchHighlight";
 import BackButton from "@/components/BackButton";
+import DestekUygunlukTanitim from "@/components/DestekUygunlukTanitim";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 const STRINGS = {
@@ -192,6 +193,13 @@ export default function BlogLayout({
 
           <OtherPosts posts={otherPosts} lang={lang} />
         </div>
+
+        {/* DESTEK UYGUNLUK ANALİZİ TANITIM */}
+        {lang !== "en" && (
+          <div className="mt-10">
+            <DestekUygunlukTanitim />
+          </div>
+        )}
 
         {/* COMMENTS SECTION */}
         <BlogComments />

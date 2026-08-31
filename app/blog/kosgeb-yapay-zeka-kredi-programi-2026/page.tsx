@@ -444,6 +444,62 @@ export default function BlogPage() {
               </p>
             </div>
           </div>
+
+          <div className="mt-10 rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-8">
+            <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
+              💡 GO Dijital Cüzdan Hesabı Nasıl Açılır?
+            </h3>
+            <p className="mb-6 leading-8 text-gray-700">
+              Kredi başvurusunun ön şartlarından biri GO Dijital Cüzdan
+              hesabına sahip olmaktır; hesap yoksa süreç kredi onayını
+              beklemeden başlatılabilir. Onay sonrasında zaman kaybetmemek
+              için cüzdan açılış işlemlerini önceden tamamlamak faydalı olur.
+              Aşağıdaki adımlar özet niteliğindedir;{" "}
+              <Link
+                href="/blog/go-dijital-cuzdan-nedir-nasil-acilir"
+                className="font-semibold text-orange-600 underline hover:text-orange-700"
+              >
+                GO Dijital Cüzdan&apos;ın ne olduğu, güvenlik/MASAK boyutu ve
+                ayrıntılı kayıt sürecini anlattığımız yazımızda
+              </Link>{" "}
+              konuyu daha detaylı bulabilirsiniz:
+            </p>
+            <ol className="ml-6 list-decimal space-y-4 text-gray-700 marker:font-bold marker:text-emerald-600">
+              <li>
+                <strong>Sözleşme süreci:</strong> İşletme yetkilisi, bağlı
+                bulunduğu KOSGEB Müdürlüğü&apos;ne başvurarak Çerçeve
+                Sözleşmesi, MASAK Sözleşmesi ve aydınlatma metinlerini
+                imzalar; bu aşamada imza sirküleri de teslim edilir.
+              </li>
+              <li>
+                <strong>GO Dijital Cüzdan kaydı:</strong> Sözleşme
+                tamamlandıktan sonra mobil uygulama veya web üzerinden
+                &quot;Kayıt Ol&quot; adımı tamamlanır. Münferit yetkili
+                işletmelerde tek yetkilinin tanımlı olması yeterlidir;
+                müşterek yetkili işletmelerde ise her yetkilinin kendi cep
+                telefonu numarasıyla ayrı ayrı kayıt olması gerekir.
+              </li>
+              <li>
+                <strong>Evrak yükleme:</strong> Vergi levhası, imza
+                sirküleri, ortaklık sözleşmesi gibi istenen belgeler sisteme
+                yüklenir ve başvuru onaya gönderilir; bu adım genellikle
+                birkaç dakika sürer.
+              </li>
+              <li>
+                <strong>Değerlendirme ve onay:</strong> Belgeler incelendikten
+                sonra yetkili kullanıcıya SMS ile geçici şifre gönderilir;
+                ilk girişte kalıcı şifre oluşturularak hesap aktif hale
+                gelir.
+              </li>
+              <li>
+                <strong>Kredinin cüzdana aktarılması:</strong> Kredi
+                onaylandığında tutar, işletmenin GO Dijital Cüzdan hesabına
+                blokeli olarak aktarılır ve yukarıdaki mekanizma (teminat →
+                hizmet alımı → fatura → bloke serbest bırakma) işlemeye
+                başlar.
+              </li>
+            </ol>
+          </div>
         </section>
 
         {/* 7. DİKKAT EDİLECEKLER */}
