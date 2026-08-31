@@ -21,6 +21,16 @@ export const MAKALELER: MakaleMeta[] = [
     readTime: "2 Dakika",
   },
   {
+    slug: "roman-uzay-teleskobu-derinlik-mi-genislik-mi-buyume-dersi",
+    title:
+      "Roman Uzay Teleskobu Fırlatıldı: Derinlik mi, Genişlik mi — Büyümede Doğru Soru Hangisi?",
+    excerpt:
+      "30 Ağustos 2026'da fırlatılan Roman Uzay Teleskobu, Hubble'dan en az 100 kat geniş bir alanı, 1000 kat daha hızlı tarayacak — üstelik aynı netlikte. Adını taşıdığı Nancy Grace Roman'ın hikayesiyle birlikte, şirketler için niş derinlik ile pazar genişliği arasındaki klasik ikilemi yeniden düşündüren bir örnek.",
+    tag: "Strateji",
+    date: "31 Ağustos 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "cotton-candy-uzum-ve-cuties-mandalinanin-markalasma-dersi",
     title:
       "Aynı Üzüme İki Kat Fiyat: Cotton Candy Üzüm ve Cuties Mandalinanın Markalaşma Dersi",
