@@ -139,7 +139,7 @@ export default function GuncelGelismelerFeed() {
             </p>
 
             <div className="space-y-3">
-              {MAKALELER.map((makale) => (
+              {MAKALELER.slice(0, 10).map((makale) => (
                 <Link
                   key={makale.slug}
                   href={`/makaleler/${makale.slug}`}
