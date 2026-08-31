@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yurt-disi-marka-tescil-destegi-2026-basvuru-sartlari-oranlari",
+    title: "Yurt Dışı Marka Tescil Desteği 2026: Oranlar, Üst Limit ve Adım Adım Başvuru Rehberi",
+    excerpt: "5973 sayılı Karar kapsamındaki Yurt Dışı Marka Tescil Desteği'nde %50'den %75'e çıkan destek oranları, 2026 yılı 3.698.274 TL üst limit, 4 yıllık destek süresi, DYS üzerinden adım adım başvuru süreci, gerekli belgeler ve sık yapılan hatalarla kapsamlı rehber.",
+    category: "İHRACAT DESTEKLERİ • MARKA & FİKRİ MÜLKİYET • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
     title: "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?",
     excerpt: "Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı, desteklenen giderler ve 18 Eylül 2026 son başvuru tarihiyle güncel rehber.",

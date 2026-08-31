@@ -335,18 +335,21 @@ export default function BlogPage() {
             </h3>
             <p className="leading-8 text-gray-700">
               Çağrı, KOSGEB tarafından <strong>8 Ağustos 2026</strong>&apos;da
-              ilan edildi ve başvurular <strong>30 Ağustos 2026</strong>{" "}
-              tarihine kadar alınıyor. Bu tarih, TEKMER işletici
-              kuruluşları ve Teknokent yönetici şirketlerinin KOSGEB&apos;e
-              yapacağı kurumsal başvuru için geçerli; bireysel işletmelerin
-              hızlandırma programına katılım takvimi, ilgili TEKMER/Teknokent
+              ilan edilmiş ve başvurular <strong>30 Ağustos 2026</strong>{" "}
+              tarihine kadar alınmıştır. Başvuru süresi sona ermiştir; bu
+              tarih, TEKMER işletici kuruluşları ve Teknokent yönetici
+              şirketlerinin KOSGEB&apos;e yaptığı kurumsal başvuru için
+              geçerliydi. Bireysel işletmelerin hızlandırma programına
+              katılım takvimi, başvurusu kabul edilen TEKMER/Teknokent
               tarafından ayrıca belirlenip duyurulacaktır.
             </p>
           </div>
           <p className="mt-8 leading-8 text-gray-700">
-            Başvuru süreci ve dönemleri KOSGEB tarafından güncellenebilir.
-            Güncel duyurular için KOSGEB&apos;in resmî internet sitesini
-            takip etmek gerekir.
+            <strong>Güncelleme (31 Ağustos 2026):</strong> 2026-01 COP31
+            Hızlandırma Çağrısı&apos;nın başvuru dönemi kapanmıştır. Yeni bir
+            çağrı dönemi açıldığında bu sayfa güncellenecektir; güncel
+            duyurular için KOSGEB&apos;in resmî internet sitesini takip etmek
+            gerekir.
           </p>
         </section>
 
