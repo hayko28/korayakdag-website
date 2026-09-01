@@ -3,10 +3,9 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Sole Proprietorship, Limited Company or Joint Stock Company? How Should Entrepreneurs Solve This Equation? | Koray Akdağ",
+  title: "Sole Proprietorship vs LLC vs Joint Stock Co. | Koray Akdağ",
   description:
-    "The differences in formation cost, liability, tax, minimum capital, and management between a sole proprietorship, a limited company, and a joint stock company in Turkey, compared with current 2026 figures.",
+    "Comparing formation cost, liability, tax, minimum capital, and management for a sole proprietorship, limited company, and joint stock company in Turkey (2026).",
   keywords: [
     "sole proprietorship vs limited company Turkey",
     "limited company vs joint stock company Turkey",
@@ -821,6 +820,33 @@ export default function BlogPageEn() {
           and reporting obligations, we are by your side throughout the
           entire process.
         </p>
+      </section>
+
+      {/* RELATED ARTICLES */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          Related Articles
+        </h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <Link
+            href="/en/blog/how-to-set-up-a-company-in-turkey-a-to-z"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">COMPANY FORMATION</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">
+              How to Set Up a Company in Turkey (2026)
+            </h3>
+          </Link>
+          <Link
+            href="/en/blog/investment-incentive-certificate-turkey-2026-guide"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">INCENTIVES</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">
+              Investment Incentive Certificate in Turkey
+            </h3>
+          </Link>
+        </div>
       </section>
     </BlogLayout>
   );

@@ -3,10 +3,9 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "TÜBİTAK 1501 and 1507 R&D Grants 2026 | Application Guide | Koray Akdağ",
+  title: "TÜBİTAK 1501 and 1507 R&D Grants 2026 | Koray Akdağ",
   description:
-    "A comprehensive guide to the TÜBİTAK 1501 and 1507 R&D grant programs in Turkey: who can apply, support rates, 2026 changes, supported expenses, and the application process.",
+    "A guide to TÜBİTAK 1501 and 1507 R&D grants in Turkey: who can apply, support rates, 2026 changes, supported expenses, and the application process.",
   keywords: [
     "TÜBİTAK 1501",
     "TÜBİTAK 1507",
@@ -658,6 +657,33 @@ export default function BlogPageEn() {
             together with the budget structure, work packages, and
             commercialization strategy.
           </p>
+        </section>
+
+        {/* RELATED ARTICLES */}
+        <section className="mt-24 scroll-mt-24">
+          <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+            Related Articles
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Link
+              href="/en/blog/technopark-in-turkey-tax-incentives-guide"
+              className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+            >
+              <div className="mb-2 text-sm font-semibold text-orange-600">INCENTIVES</div>
+              <h3 className="text-lg font-bold text-[#071A2F]">
+                Technopark in Turkey: Tax Incentives Guide
+              </h3>
+            </Link>
+            <Link
+              href="/en/blog/investment-incentive-certificate-turkey-2026-guide"
+              className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+            >
+              <div className="mb-2 text-sm font-semibold text-orange-600">INCENTIVES</div>
+              <h3 className="text-lg font-bold text-[#071A2F]">
+                Investment Incentive Certificate in Turkey
+              </h3>
+            </Link>
+          </div>
         </section>
     </BlogLayout>
   );

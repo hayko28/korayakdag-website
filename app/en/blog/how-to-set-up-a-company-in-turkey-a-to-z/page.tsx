@@ -3,10 +3,9 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "How to Set Up a Company in Turkey, A to Z: What Are the Advantages? (2026) | Koray Akdağ",
+  title: "How to Set Up a Company in Turkey (2026) | Koray Akdağ",
   description:
-    "A 2026 guide for foreign investors on the advantages of setting up a company in Turkey, the differences between a Limited Company and a Joint Stock Company, required documents, the step-by-step MERSIS/trade registry process, government incentives, free zones, tax incentives, costs, opening a bank account, and the link to residence permits.",
+    "A 2026 guide for foreign investors: company types, the MERSIS/trade registry process, required documents, tax incentives, and opening a bank account in Turkey.",
   keywords: [
     "how to set up a company in Turkey as a foreigner",
     "foreign investor company formation Turkey",
@@ -1199,6 +1198,33 @@ export default function BlogPageEn() {
           decisions in line with your business model and manage the entire
           process with professional support.
         </p>
+      </section>
+
+      {/* RELATED ARTICLES */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          Related Articles
+        </h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <Link
+            href="/en/blog/sole-proprietorship-vs-llc-vs-joint-stock-company-turkey"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">COMPANY FORMATION</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">
+              Sole Proprietorship, Limited Company or Joint Stock Company?
+            </h3>
+          </Link>
+          <Link
+            href="/en/blog/investment-incentive-certificate-turkey-2026-guide"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">INCENTIVES</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">
+              Investment Incentive Certificate in Turkey
+            </h3>
+          </Link>
+        </div>
       </section>
     </BlogLayout>
   );

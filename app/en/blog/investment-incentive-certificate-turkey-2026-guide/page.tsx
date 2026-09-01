@@ -3,10 +3,9 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "What Is an Investment Incentive Certificate in Turkey? Benefits, Conditions and the 2026 Guide | Koray Akdağ",
+  title: "Investment Incentive Certificate Turkey 2026 | Koray Akdağ",
   description:
-    "What is an Investment Incentive Certificate in Turkey, which authority issues it, and which support elements (VAT exemption, customs exemption, tax reduction, social security and interest support) does it provide? The new incentive system under Decision No. 9903, regions, minimum amounts, the E-TUYS application process, and the 2026 current conditions.",
+    "What an Investment Incentive Certificate in Turkey covers: VAT exemption, customs exemption, tax reduction, and the E-TUYS application process.",
   keywords: [
     "Investment Incentive Certificate Turkey",
     "investment incentive certificate conditions",
@@ -775,6 +774,33 @@ export default function BlogPageEn() {
             investment reporting and compliance obligations from a single
             point.
           </p>
+        </section>
+
+        {/* RELATED ARTICLES */}
+        <section className="mt-24 scroll-mt-24">
+          <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+            Related Articles
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Link
+              href="/en/blog/technopark-in-turkey-tax-incentives-guide"
+              className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+            >
+              <div className="mb-2 text-sm font-semibold text-orange-600">INCENTIVES</div>
+              <h3 className="text-lg font-bold text-[#071A2F]">
+                Technopark in Turkey: Tax Incentives Guide
+              </h3>
+            </Link>
+            <Link
+              href="/en/blog/tubitak-1501-1507-rd-grants-2026"
+              className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+            >
+              <div className="mb-2 text-sm font-semibold text-orange-600">R&D GRANTS</div>
+              <h3 className="text-lg font-bold text-[#071A2F]">
+                TÜBİTAK 1501 and 1507 R&D Grants 2026
+              </h3>
+            </Link>
+          </div>
         </section>
     </BlogLayout>
   );
