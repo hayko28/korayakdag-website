@@ -68,8 +68,72 @@ export default function BlogLayout({
   const blogListHref = lang === "en" ? "/en/blog" : "/blog";
   const contactHref = lang === "en" ? "/en#contact" : "/#contact";
 
+  const canonicalUrl = slug
+    ? `https://korayakdag.com${lang === "en" ? `/en/blog/${slug}` : `/blog/${slug}`}`
+    : undefined;
+
+  const articleJsonLd = canonicalUrl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: title,
+        description,
+        ...(coverImage && {
+          image: coverImage.startsWith("http")
+            ? coverImage
+            : `https://korayakdag.com${coverImage}`,
+        }),
+        author: {
+          "@type": "Person",
+          name: "Koray Akdağ",
+          url: "https://korayakdag.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Koray Akdağ | Stratejik Danışmanlık",
+          url: "https://korayakdag.com",
+        },
+        mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+        inLanguage: lang === "en" ? "en" : "tr",
+      }
+    : undefined;
+
+  const breadcrumbJsonLd = canonicalUrl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: t.home2,
+            item: `https://korayakdag.com${homeHref}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: `https://korayakdag.com${blogListHref}`,
+          },
+          { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
+        ],
+      }
+    : undefined;
+
   return (
     <main className="bg-white text-gray-700">
+      {articleJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
+      )}
+      {breadcrumbJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+      )}
       {/* HERO SECTION */}
       <section className="relative overflow-hidden bg-[#071A2F] py-20">
         {coverImage && (
