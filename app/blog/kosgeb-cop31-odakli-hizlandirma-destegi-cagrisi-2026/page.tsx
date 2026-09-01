@@ -335,12 +335,12 @@ export default function BlogPage() {
             </h3>
             <p className="leading-8 text-gray-700">
               Çağrı, KOSGEB tarafından <strong>8 Ağustos 2026</strong>&apos;da
-              ilan edildi ve başvurular <strong>30 Ağustos 2026</strong>{" "}
-              tarihine kadar alınıyor. Bu tarih, TEKMER işletici
-              kuruluşları ve Teknokent yönetici şirketlerinin KOSGEB&apos;e
-              yapacağı kurumsal başvuru için geçerli; bireysel işletmelerin
-              hızlandırma programına katılım takvimi, ilgili TEKMER/Teknokent
-              tarafından ayrıca belirlenip duyurulacaktır.
+              ilan edilmiş ve TEKMER işletici kuruluşları ile Teknokent
+              yönetici şirketlerinin KOSGEB&apos;e yapacağı kurumsal başvuru
+              süresi <strong>30 Ağustos 2026</strong> tarihinde sona ermiştir.
+              Başvuru dönemi kapanmıştır; bireysel işletmelerin hızlandırma
+              programına katılım takvimi ise, başvurusu kabul edilen ilgili
+              TEKMER/Teknokent tarafından ayrıca belirlenip duyurulacaktır.
             </p>
           </div>
           <p className="mt-8 leading-8 text-gray-700">
