@@ -212,34 +212,13 @@ export async function POST(request: Request) {
 
     const postId = postRes.headers.get("x-restli-id");
 
-    // Link, gönderi metninin İÇİNE değil ilk YORUMA ekleniyor. LinkedIn'in
-    // algoritması gövdesinde dış link olan gönderileri daha az dağıtıyor
-    // (kullanıcıyı platformda tutmak istiyor); linki ayrı bir yoruma koymak
-    // gönderiyi "native" (linksiz) sayıp normal dağıtımını sağlıyor, link
-    // yine de ilk yorumda görünür kalıyor.
-    let yorumHatasi: string | undefined;
-    if (postId && kaynakUrl) {
-      try {
-        const commentRes = await fetch(
-          `https://api.linkedin.com/rest/socialActions/${encodeURIComponent(postId)}/comments`,
-          {
-            method: "POST",
-            headers: liHeaders,
-            body: JSON.stringify({
-              actor: auth.person_urn,
-              message: { text: kaynakUrl },
-            }),
-          }
-        );
-        if (!commentRes.ok) {
-          yorumHatasi = `Gönderi paylaşıldı ama link yorumu eklenemedi (status ${commentRes.status}) — linki elle yorum olarak ekleyebilirsin: ${kaynakUrl}`;
-        }
-      } catch {
-        yorumHatasi = `Gönderi paylaşıldı ama link yorumu eklenemedi — linki elle yorum olarak ekleyebilirsin: ${kaynakUrl}`;
-      }
-    }
+    // Link artık ilk yoruma da eklenmiyor: 2026'da LinkedIn dış link içeren
+    // yorumların görünürlüğünü de ağır şekilde düşürüyor (linki gövdeye
+    // koymakla aynı ceza). Gönderi tamamen linksiz paylaşılıyor; site/WhatsApp
+    // erişimi profildeki "Öne Çıkanlar" bağlantısı üzerinden sağlanıyor.
+    void kaynakUrl;
 
-    return Response.json({ ok: true, postId, ...(yorumHatasi ? { warning: yorumHatasi } : {}) });
+    return Response.json({ ok: true, postId });
   } catch (err) {
     console.error("LinkedIn paylaşım hatası:", err);
     return Response.json({ error: "Beklenmedik bir hata oluştu." }, { status: 500 });
