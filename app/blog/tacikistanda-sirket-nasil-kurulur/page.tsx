@@ -773,6 +773,36 @@ export default function BlogPage() {
           profesyonel destek almak, sürecin hatasız ilerlemesini sağlar.
         </p>
       </section>
+
+      {/* İLGİLİ YAZILAR */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          İlgili Yazılar
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+        <Link
+          href="/blog/yurt-disinda-sirket-nasil-kurulur-avantajlari"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • İHRACAT • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Yurt Dışında Şirket Nasıl Kurulur? Avantajları Nelerdir?</h3>
+        </Link>
+        <Link
+          href="/blog/ozbekistanda-sirket-nasil-kurulur"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • ÖZBEKİSTAN • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Özbekistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları</h3>
+        </Link>
+        <Link
+          href="/blog/kazakistanda-sirket-nasil-kurulur"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • KAZAKİSTAN • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Kazakistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları</h3>
+        </Link>
+        </div>
+      </section>
     </BlogLayout>
   );
 }

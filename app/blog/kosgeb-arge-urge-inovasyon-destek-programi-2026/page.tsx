@@ -598,6 +598,36 @@ export default function BlogPage() {
           yaşanabilecek revizyon ve düzeltme taleplerini en aza indirir.
         </p>
       </section>
+
+      {/* İLGİLİ YAZILAR */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          İlgili Yazılar
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+        <Link
+          href="/blog/kosgeb-kobi-dijital-donusum-destek-programi-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • DİJİTAL DÖNÜŞÜM • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026</h3>
+        </Link>
+        <Link
+          href="/blog/kosgeb-kapasite-gelistirme-destek-programi-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • DEVLET DESTEKLERİ • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB Kapasite Geliştirme Destek Programı 2026</h3>
+        </Link>
+        <Link
+          href="/blog/tubitak-1501-1507-ar-ge-destekleri-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">TÜBİTAK • TEYDEB • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026</h3>
+        </Link>
+        </div>
+      </section>
     </BlogLayout>
   );
 }

@@ -1171,6 +1171,36 @@ export default function BlogPage() {
           bizimle iletişime geçebilirsiniz.
         </p>
       </section>
+
+      {/* İLGİLİ YAZILAR */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          İlgili Yazılar
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+        <Link
+          href="/blog/sahis-limited-anonim-sirket-karsilastirma"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">ŞİRKET KURULUŞU • GİRİŞİMCİLİK • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Şahıs Şirketi mi, Limited Şirket mi Yoksa Anonim Şirket mi?</h3>
+        </Link>
+        <Link
+          href="/blog/anonim-limited-sirket-asgari-sermaye-artirimi-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">ŞİRKETLER HUKUKU • ASGARİ SERMAYE • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: 31 Aralık 2026 Son Tarih</h3>
+        </Link>
+        <Link
+          href="/blog/yurt-disinda-sirket-nasil-kurulur-avantajlari"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • İHRACAT • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Yurt Dışında Şirket Nasıl Kurulur? Avantajları Nelerdir?</h3>
+        </Link>
+        </div>
+      </section>
     </BlogLayout>
   );
 }

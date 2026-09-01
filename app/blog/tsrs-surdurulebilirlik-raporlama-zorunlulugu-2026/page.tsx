@@ -533,6 +533,29 @@ export default function BlogPage() {
             geçebilirsiniz.
           </p>
         </section>
+
+      {/* İLGİLİ YAZILAR */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          İlgili Yazılar
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+        <Link
+          href="/blog/turkiye-emisyon-ticaret-sistemi-ets-yonetmeligi-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">SÜRDÜRÜLEBİLİRLİK • KARBON & ETS • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Türkiye Emisyon Ticaret Sistemi (ETS) Yönetmeliği</h3>
+        </Link>
+        <Link
+          href="/blog/bagimsiz-denetim-esik-degerleri-2026-degisti"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">BAĞIMSIZ DENETİM • MALİ MÜŞAVİRLİK • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Bağımsız Denetim Eşik Değerleri 2026'da Değişti</h3>
+        </Link>
+        </div>
+      </section>
     </BlogLayout>
   );
 }

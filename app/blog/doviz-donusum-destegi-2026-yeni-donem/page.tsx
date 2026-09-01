@@ -596,6 +596,29 @@ export default function BlogPage() {
             yürütmek için bizimle iletişime geçebilirsiniz.
           </p>
         </section>
+
+      {/* İLGİLİ YAZILAR */}
+      <section className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          İlgili Yazılar
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+        <Link
+          href="/blog/ticaret-bakanligi-ihracat-destekleri-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">İHRACAT DESTEKLERİ • TİCARET BAKANLIĞI • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Ticaret Bakanlığı İhracat Destekleri (2026 Rehberi)</h3>
+        </Link>
+        <Link
+          href="/blog/turquality-programi-nedir-sartlari-destekleri-2026"
+          className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+        >
+          <div className="mb-2 text-sm font-semibold text-orange-600">TURQUALITY • İHRACAT DESTEKLERİ • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Turquality Programı Nedir? Şartları, Destekleri ve 2026 Güncel Rehberi</h3>
+        </Link>
+        </div>
+      </section>
     </BlogLayout>
   );
 }
