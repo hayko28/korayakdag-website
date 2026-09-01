@@ -555,6 +555,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Serbest fon yöneten veya portföy yönetim şirketi kurmayı planlayan müşterilerimize, yeni sermaye ve yoğunlaşma sınırlarını 2029'a kadar tanınan uyum süresine rağmen finansman planlamalarına şimdiden dahil etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "12 Ağustos 2026",
+    eklendiTarihi: "2026-09-01",
+    baslik:
+      "Ticaret Bakanlığı'nın gümrük denetimlerinde 2026'nın ilk 7 ayında ek tahakkuk ve ceza tutarı 8,9 milyar TL'ye ulaştı",
+    ozet:
+      "Ticaret Bakanlığı, 2026 yılının ilk 7 ayında 19.638 gümrük beyannamesi ve 145 firmayı kapsayan denetimler sonucunda toplam 8,9 milyar TL ek tahakkuk ve ceza kararı düzenlediğini açıkladı. Bu tutarın 7,2 milyar TL'si doğrudan gümrük denetimlerinden, 1,7 milyar TL'si ise sonradan kontrol firma denetimlerinden kaynaklandı; toplam tutar 2025'in aynı dönemine göre %29 artışa işaret ediyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-2026-yilinin-ilk-7-ayinda-gerceklestirdigi-denetimlerle-gecmis-donem-gumruk-ve-dis-ticaret-islemlerinde-bir-onceki-yilin-ayni-donemine-gore-yuzde-29-artisla-toplam-8-9-milyar-tl-ek-tahakkuk-ve-ceza-karari-duzenledi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Denetim yoğunluğundaki bu artış, özellikle ithalat/ihracat işlemi yoğun olan firmalara gümrük beyannamelerini ve sonradan kontrol süreçlerini düzenli olarak bir gümrük müşaviriyle gözden geçirmelerini öneriyorum; ek tahakkuk riski çoğunlukla belge ve beyan tutarsızlıklarından doğuyor.",
+  },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "13 Ağustos 2026",
+    eklendiTarihi: "2026-09-01",
+    baslik:
+      "GİB, Dijital Vergi Dairesi'nde mükelleflerin banka POS verilerine anlık erişebileceği yeni bir modül açtı",
+    ozet:
+      "Gelir İdaresi Başkanlığı, Dijital Vergi Dairesi portalına 'Mali Bilgilerim / POS İşlem Bilgilerim' modülünü ekleyerek mükelleflerin bankalar ve ödeme kuruluşları nezdindeki fiziki ve sanal POS işlem verilerine doğrudan erişmesini sağladı. Modül üzerinden mükellefler, KDV beyannamelerindeki kredi kartlı satış tutarlarını beyan öncesinde banka POS verileriyle karşılaştırabiliyor.",
+    kaynakUrl: "https://dijital.gib.gov.tr/portal/pos-islem-bilgilerim",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: KDV beyannamesi vermeden önce bu modülü kontrol etmelerini, muhasebe kayıtlarındaki kredi kartlı satış tutarlarını banka POS verileriyle karşılaştırmalarını öneririm; uyumsuzluklar GİB tarafından 'izaha davet' sürecine konu olabiliyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
