@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     "Ar-Ge teşvikleri",
     "2026 TÜBİTAK",
   ],
+  alternates: {
+    canonical: "/blog/tubitak-1501-1507-ar-ge-destekleri-2026",
+    languages: {
+      tr: "/blog/tubitak-1501-1507-ar-ge-destekleri-2026",
+      en: "/en/blog/tubitak-1501-1507-rd-grants-2026",
+    },
+  },
 };
 
 export default function BlogPage() {

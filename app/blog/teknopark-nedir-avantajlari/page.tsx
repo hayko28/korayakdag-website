@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     "Kollektif şirket Teknopark",
     "Teknopark 4691",
   ],
+  alternates: {
+    canonical: "/blog/teknopark-nedir-avantajlari",
+    languages: {
+      tr: "/blog/teknopark-nedir-avantajlari",
+      en: "/en/blog/technopark-in-turkey-tax-incentives-guide",
+    },
+  },
 };
 
 export default function TeknoparkPage() {

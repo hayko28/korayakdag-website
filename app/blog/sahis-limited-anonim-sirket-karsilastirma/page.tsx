@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     "nevi değişikliği",
     "girişimci hangi şirket türünü kurmalı",
   ],
+  alternates: {
+    canonical: "/blog/sahis-limited-anonim-sirket-karsilastirma",
+    languages: {
+      tr: "/blog/sahis-limited-anonim-sirket-karsilastirma",
+      en: "/en/blog/sole-proprietorship-vs-llc-vs-joint-stock-company-turkey",
+    },
+  },
 };
 
 export default function BlogPage() {

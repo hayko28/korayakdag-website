@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     "yatırım teşvik belgesi destek unsurları",
     "KDV istisnası gümrük muafiyeti",
   ],
+  alternates: {
+    canonical: "/blog/yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026",
+    languages: {
+      tr: "/blog/yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026",
+      en: "/en/blog/investment-incentive-certificate-turkey-2026-guide",
+    },
+  },
 };
 
 export default function BlogPage() {

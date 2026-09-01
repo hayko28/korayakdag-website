@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     "türkiyede oturma izni şirket kurarak",
     "2026 türkiyede şirket kurma rehberi",
   ],
+  alternates: {
+    canonical: "/blog/turkiyede-adan-zye-sirket-kurmak-avantajlari",
+    languages: {
+      tr: "/blog/turkiyede-adan-zye-sirket-kurmak-avantajlari",
+      en: "/en/blog/how-to-set-up-a-company-in-turkey-a-to-z",
+    },
+  },
 };
 
 export default function BlogPage() {

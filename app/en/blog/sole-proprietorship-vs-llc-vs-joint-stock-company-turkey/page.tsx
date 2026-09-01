@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     "type conversion Turkey company",
     "which company type should an entrepreneur set up",
   ],
+  alternates: {
+    canonical: "/en/blog/sole-proprietorship-vs-llc-vs-joint-stock-company-turkey",
+    languages: {
+      en: "/en/blog/sole-proprietorship-vs-llc-vs-joint-stock-company-turkey",
+      tr: "/blog/sahis-limited-anonim-sirket-karsilastirma",
+    },
+  },
 };
 
 export default function BlogPageEn() {

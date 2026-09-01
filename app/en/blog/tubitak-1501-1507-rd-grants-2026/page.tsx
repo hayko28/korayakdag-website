@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     "R&D incentives Turkey",
     "2026 TÜBİTAK",
   ],
+  alternates: {
+    canonical: "/en/blog/tubitak-1501-1507-rd-grants-2026",
+    languages: {
+      en: "/en/blog/tubitak-1501-1507-rd-grants-2026",
+      tr: "/blog/tubitak-1501-1507-ar-ge-destekleri-2026",
+    },
+  },
 };
 
 export default function BlogPageEn() {

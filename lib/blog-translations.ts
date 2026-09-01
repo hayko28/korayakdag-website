@@ -25,6 +25,10 @@ export const BLOG_TRANSLATIONS: BlogTranslationPair[] = [
     tr: "tubitak-1501-1507-ar-ge-destekleri-2026",
     en: "tubitak-1501-1507-rd-grants-2026",
   },
+  {
+    tr: "sirket-degerleme-nedir-yontemleri-nasil-yapilir-2026",
+    en: "company-valuation-turkey-methods-guide-2026",
+  },
 ];
 
 export function getEnglishSlug(trSlug: string): string | undefined {
@@ -86,5 +90,14 @@ export const EN_STATIC_POSTS: EnStaticPost[] = [
     excerpt:
       "A complete guide to application conditions, support rates, evaluation criteria, supported expenses, and everything changing in 2026 for Turkey's TÜBİTAK 1501 and 1507 R&D grant programs.",
     image: "/tubitak-1501-1507-kapak.png",
+  },
+  {
+    slug: "company-valuation-turkey-methods-guide-2026",
+    title:
+      "What Is Company Valuation? Methods, Process, and Why It's Critical for SMEs",
+    excerpt:
+      "How DCF, multiples analysis, and net asset value work, the specific challenges SMEs face, and why valuation should be handled by a professional team, with a step-by-step 2026 guide.",
+    image:
+      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
   },
 ];

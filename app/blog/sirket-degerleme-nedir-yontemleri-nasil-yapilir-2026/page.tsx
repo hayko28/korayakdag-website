@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     "M&A değerleme",
     "şirket değerleme 2026",
   ],
+  alternates: {
+    canonical: "/blog/sirket-degerleme-nedir-yontemleri-nasil-yapilir-2026",
+    languages: {
+      tr: "/blog/sirket-degerleme-nedir-yontemleri-nasil-yapilir-2026",
+      en: "/en/blog/company-valuation-turkey-methods-guide-2026",
+    },
+  },
 };
 
 export default function BlogPage() {

@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     "Law 4691",
     "Turkey R&D incentives",
   ],
+  alternates: {
+    canonical: "/en/blog/technopark-in-turkey-tax-incentives-guide",
+    languages: {
+      en: "/en/blog/technopark-in-turkey-tax-incentives-guide",
+      tr: "/blog/teknopark-nedir-avantajlari",
+    },
+  },
 };
 
 export default function TechnoparkPageEn() {

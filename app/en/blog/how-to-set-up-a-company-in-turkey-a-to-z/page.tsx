@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     "residence permit Turkey company formation",
     "2026 Turkey company formation guide",
   ],
+  alternates: {
+    canonical: "/en/blog/how-to-set-up-a-company-in-turkey-a-to-z",
+    languages: {
+      en: "/en/blog/how-to-set-up-a-company-in-turkey-a-to-z",
+      tr: "/blog/turkiyede-adan-zye-sirket-kurmak-avantajlari",
+    },
+  },
 };
 
 export default function BlogPageEn() {

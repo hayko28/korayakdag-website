@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     "investment incentive certificate support elements",
     "VAT exemption customs exemption Turkey",
   ],
+  alternates: {
+    canonical: "/en/blog/investment-incentive-certificate-turkey-2026-guide",
+    languages: {
+      en: "/en/blog/investment-incentive-certificate-turkey-2026-guide",
+      tr: "/blog/yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026",
+    },
+  },
 };
 
 export default function BlogPageEn() {
