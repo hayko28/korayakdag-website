@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
+    title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Oranları Nedir?",
+    excerpt: "Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamındaki TÜBİTAK 1832 Çağrısı'nda 51,5 milyon TL'ye varan bütçe üst sınırı, %70-%90 destek oranı, geri ödemeli desteğin en az yarısının hibeye dönüşmesi ve 28 Eylül 2026 son başvuru tarihiyle güncel rehber.",
+    category: "TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "go-dijital-cuzdan-nedir-nasil-acilir",
     title: "GO Dijital Cüzdan Nedir? KOSGEB Destek Ödemelerinde Nasıl Kullanılır, Hesap Nasıl Açılır?",
     excerpt: "GO Dijital Cüzdan, KOSGEB'in Yapay Zeka Kredi Programı'nda kullandığı elektronik cüzdan altyapısıdır. Çerçeve Sözleşmesi, MASAK Sözleşmesi, evrak yükleme ve onay adımlarıyla hesap açma süreci, güvenlik boyutu ve dikkat edilmesi gerekenlerle güncel rehber.",
