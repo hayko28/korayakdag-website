@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Almanya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "Almanya'da GmbH, UG ve AG şirket türleri, sermaye şartları, Handelsregister tescili, adım adım kuruluş süreci, kurumlar vergisi/Gewerbesteuer/KDV oranları ve Türkiye tarafındaki yükümlülükler. 2026 güncel rehber.",
+  title: "Almanya'da Şirket Nasıl Kurulur? 2026 Rehberi | Koray Akdağ",
+  description: "Almanya'da GmbH ve UG kuruluşu, Handelsregister tescili, vergi oranları ve Türkiye'deki yükümlülüklerle 2026 güncel adım adım rehber.",
   keywords: [
     "almanyada şirket kurma",
     "almanya gmbh kuruluşu",

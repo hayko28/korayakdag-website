@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "KOSGEB Kapasite Geliştirme Destek Programı 2026 | 3. Dönem, Gerekli Belgeler | Koray Akdağ",
-  description:
-    "KOSGEB Kapasite Geliştirme Destek Programı 3. dönem başvuruları 22 Ağustos - 15 Eylül 2026 arasında açık: kredi limitleri (20-30 milyon TL), Sanayi Sicil Belgesi, YODA, hızlı büyüyen işletme şartı, desteklenen giderler ve başvuru süreci.",
+  title: "KOSGEB Kapasite Geliştirme Destek Programı | Koray Akdağ",
+  description: "KOSGEB Kapasite Geliştirme Programı 3. dönem başvuruları açık: 20-30 milyon TL kredi limiti, gerekli belgeler ve başvuru süreci.",
   keywords: [
     "KOSGEB Kapasite Geliştirme Destek Programı",
     "KOSGEB destekleri 2026",

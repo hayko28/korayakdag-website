@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "İngiltere'de Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "İngiltere'de Ltd, Sole Trader ve LLP şirket türleri, Companies House'a online kayıt, director/shareholder/registered office şartları, adım adım kuruluş süreci, Corporation Tax/VAT oranları ve Türkiye tarafındaki yükümlülükler. 2026 güncel rehber.",
+  title: "İngiltere'de Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "İngiltere'de Ltd ve LLP kuruluşu, Companies House'a kayıt, Corporation Tax/VAT oranlarıyla 2026 güncel adım adım rehber.",
   keywords: [
     "ingilterede şirket kurma",
     "ingiltere ltd kuruluşu",

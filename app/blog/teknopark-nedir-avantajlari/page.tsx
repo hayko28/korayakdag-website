@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Teknopark Nedir? Avantajları, Vergi İstisnaları ve Başvuru Rehberi | Koray Akdağ",
-  description:
-    "Teknopark nedir, kimler başvurabilir, hangi vergi ve SGK avantajları sağlanır, mevcut şirket ve çalışanlar teknoparka aktarılabilir mi, uzaktan çalışma ve KDV istisnası nasıl uygulanır?",
+  title: "Teknopark Nedir? Avantajları Nelerdir? | Koray Akdağ",
+  description: "Teknopark nedir, kimler başvurabilir, hangi vergi ve SGK avantajları sağlanır? Şirket transferi ve KDV istisnası rehberi.",
   keywords: [
     "Teknopark nedir",
     "Teknopark avantajları",

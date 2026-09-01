@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Şahıs Şirketi mi, Limited Şirket mi Yoksa Anonim Şirket mi? Girişimciler İçin Bu Denklem Nasıl Çözülür? | Koray Akdağ",
-  description:
-    "Şahıs şirketi, limited şirket ve anonim şirket arasındaki kuruluş maliyeti, sorumluluk, vergi, asgari sermaye ve yönetim farkları, 2026 güncel rakamlarla karşılaştırmalı olarak anlatılıyor.",
+  title: "Şahıs mı, Limited mi, Anonim Şirket mi? | Koray Akdağ",
+  description: "Şahıs, limited ve anonim şirket arasında kuruluş maliyeti, sorumluluk, vergi ve asgari sermaye farkları, 2026 güncel karşılaştırma.",
   keywords: [
     "şahıs şirketi mi limited şirket mi",
     "limited şirket anonim şirket farkı",

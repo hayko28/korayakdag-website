@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Özbekistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "MChJ (Limited Şirket) kuruluşu, %15 kurumlar vergisi ve %12 KDV, serbest ekonomi bölgeleri ve IT Park teşvikleri, dijital tek pencere kayıt sistemi, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Özbekistan rehberi.",
+  title: "Özbekistan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Özbekistan'da MChJ kuruluşu, %15 kurumlar vergisi, IT Park teşvikleri ve dijital tek pencere kayıt sistemiyle güncel rehber.",
   keywords: [
     "özbekistanda şirket kurma",
     "özbekistan mchj",

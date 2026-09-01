@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Tacikistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "ҶДММ (Limited Şirket) kuruluşu, %18 standart / %13 üretici kurumlar vergisi ve %14 KDV, 5 serbest ekonomi bölgesi, Adalet Bakanlığı'na tescil süreci, e-vize ile iş vizesi ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Tacikistan rehberi.",
+  title: "Tacikistan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Tacikistan'da Limited Şirket kuruluşu, %18 kurumlar vergisi, serbest ekonomi bölgeleri ve tescil süreciyle 2026 güncel rehber.",
   keywords: [
     "tacikistanda şirket kurma",
     "tacikistan ҶДММ kuruluşu",

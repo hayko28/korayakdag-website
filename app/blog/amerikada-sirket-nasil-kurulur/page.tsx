@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Amerika'da (ABD) Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "Delaware ve Wyoming eyalet karşılaştırması, LLC ve C-Corp şirket türleri, EIN alma süreci, registered agent zorunluluğu, federal ve eyalet vergi sistemi, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel ABD rehberi.",
+  title: "Amerika'da (ABD) Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Delaware/Wyoming eyalet karşılaştırması, LLC ve C-Corp kuruluşu, EIN alma ve banka hesabı süreciyle 2026 güncel ABD rehberi.",
   keywords: [
     "amerikada şirket kurma",
     "abd şirket kuruluşu",

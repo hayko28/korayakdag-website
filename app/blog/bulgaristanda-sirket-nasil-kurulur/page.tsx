@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Bulgaristan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "EOOD ve OOD şirket türleri, AB'nin en düşük kurumlar vergisi oranı %10, Euro'ya geçiş, sembolik sermaye şartı, adım adım kuruluş süreci, banka hesabı açma ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Bulgaristan rehberi.",
+  title: "Bulgaristan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Bulgaristan'da EOOD/OOD kuruluşu, AB'nin en düşük %10 kurumlar vergisi oranı ve banka hesabı süreciyle 2026 güncel rehber.",
   keywords: [
     "bulgaristanda şirket kurma",
     "bulgaristan eood ood",

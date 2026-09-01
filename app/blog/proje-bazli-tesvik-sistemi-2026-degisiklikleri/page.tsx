@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Proje Bazlı Teşvik Sistemi 2026: 11572 Sayılı Karar ile Neler Değişti? | Koray Akdağ",
-  description:
-    "9 Ağustos 2026'da yürürlüğe giren 11572 sayılı Cumhurbaşkanı Kararı, Proje Bazlı Devlet Yardımı sisteminde fizibilite raporu, izleme/raporlama yükümlülüğü ve yabancı yatırımcı hükümlerini değiştirdi. Kimleri etkiliyor, ne yapılmalı? 2026 güncel rehber.",
+  title: "Proje Bazlı Teşvik Sistemi 2026 Değişiklikleri | Koray Akdağ",
+  description: "11572 sayılı Karar ile Proje Bazlı Devlet Yardımı'nda fizibilite raporu ve yabancı yatırımcı hükümleri değişti. Kimleri etkiliyor?",
   keywords: [
     "proje bazlı teşvik sistemi 2026",
     "proje bazlı devlet yardımı",

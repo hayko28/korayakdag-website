@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı: Kimler Başvurabilir? (2026) | Koray Akdağ",
-  description:
-    "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'na girişimciler ve KOBİ'ler herhangi bir tarihte başvurabilir. 900.000 TL'ye varan destek üst limiti, gider kalemleri, başvuru şartları ve KBS üzerinden adım adım süreçle 2026 güncel rehber.",
+  title: "KOSGEB Ar-Ge, Ür-Ge, İnovasyon Destek Programı | Koray Akdağ",
+  description: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'na her tarihte başvurulabilir. 900.000 TL'ye varan destek üst limiti ve şartlar.",
   keywords: [
     "kosgeb ar-ge destek programı",
     "kosgeb ür-ge inovasyon desteği",

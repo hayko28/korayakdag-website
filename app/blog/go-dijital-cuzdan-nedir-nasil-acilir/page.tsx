@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "GO Dijital Cüzdan Nedir? KOSGEB Ödemelerinde Kullanımı ve Hesap Açma Rehberi | Koray Akdağ",
-  description:
-    "GO Dijital Cüzdan nedir, kim işletiyor, KOSGEB destek ödemelerinde nasıl kullanılıyor? Çerçeve Sözleşmesi, MASAK Sözleşmesi, evrak yükleme ve onay adımlarıyla hesap açma süreci, güvenlik boyutu ve dikkat edilmesi gerekenler.",
+  title: "GO Dijital Cüzdan Nedir? Nasıl Açılır? | Koray Akdağ",
+  description: "GO Dijital Cüzdan nedir, KOSGEB destek ödemelerinde nasıl kullanılıyor? Hesap açma adımları ve dikkat edilmesi gerekenler.",
   keywords: [
     "GO Dijital Cüzdan nedir",
     "GO Dijital Cüzdan nasıl açılır",

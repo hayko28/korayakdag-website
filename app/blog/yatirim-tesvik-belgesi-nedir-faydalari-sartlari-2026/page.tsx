@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Yatırım Teşvik Belgesi Nedir? Bölgesine ve Sektörüne Göre Faydaları, Şartları (2026) | Koray Akdağ",
-  description:
-    "Yatırım Teşvik Belgesi nedir, hangi kurum veriyor, hangi destek unsurlarını (KDV istisnası, gümrük muafiyeti, vergi indirimi, SGK ve faiz desteği) sağlıyor? Hedef Yatırımlar Teşvik Sistemi'nde hangi il hangi bölgede, hangi sektör/NACE kodu hangi destekten yararlanıyor - örnek senaryolarla 2026 güncel rehberi.",
+  title: "Yatırım Teşvik Belgesi Nedir? Faydaları | Koray Akdağ",
+  description: "Yatırım Teşvik Belgesi hangi kurum tarafından veriliyor, KDV istisnası, gümrük muafiyeti ve vergi indirimi gibi neler sağlıyor?",
   keywords: [
     "Yatırım Teşvik Belgesi nedir",
     "yatırım teşvik belgesi şartları",

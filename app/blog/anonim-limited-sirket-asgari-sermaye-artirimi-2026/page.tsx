@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: 31 Aralık 2026 Son Tarih | Koray Akdağ",
-  description:
-    "7511 sayılı Kanun ile Türk Ticaret Kanunu'na eklenen Geçici Madde 15 uyarınca, sermayesi asgari tutarın altında kalan anonim şirketler (250.000 TL) ve limited şirketler (50.000 TL) 31 Aralık 2026'ya kadar sermaye artırımı yapmak zorunda. Artırmayanlar için infisah riski, süreç ve dikkat edilmesi gerekenlerle 2026 güncel rehber.",
+  title: "Asgari Sermaye Artırımında 2026 Son Tarih | Koray Akdağ",
+  description: "Anonim (250.000 TL) ve limited (50.000 TL) şirketlerde asgari sermaye artırımı zorunluluğu, infisah riski ve son tarih rehberi.",
   keywords: [
     "anonim şirket asgari sermaye 2026",
     "limited şirket asgari sermaye 2026",

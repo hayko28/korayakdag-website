@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Turquality Programı Nedir? Başvuru Şartları ve Destekleri (2026) | Koray Akdağ",
-  description:
-    "Turquality Programı nedir, Marka Destek Programı'ndan farkı ne, kimler başvurabilir? Kabul kriterleri, ön inceleme puanlaması, %50-%75 arası destek oranları, somut örneklerle destek kalemleri ve 2026 güncel başvuru süreciyle kapsamlı Turquality rehberi.",
+  title: "Turquality Programı Nedir? Şartları Nelerdir? | Koray Akdağ",
+  description: "Turquality Programı nedir, kimler başvurabilir? Kabul kriterleri, %50-%75 arası destek oranları ve 2026 başvuru süreciyle rehber.",
   keywords: [
     "Turquality nedir",
     "Turquality programı",

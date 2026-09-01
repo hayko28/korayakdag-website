@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "İşletmeniz İçin Vergi Risk, Teşvik/Fırsat ve Kredibilite Analizi Neden Şart? (2026) | Koray Akdağ",
-  description:
-    "KOBİ'lerin çoğu, farkında olmadan taşıdığı vergi riskini, kaçırdığı teşvik fırsatını ve bankaların gözünden nasıl göründüğünü ancak bir sorunla karşılaştığında öğreniyor. Vergi Risk Analizi, Teşvik ve Fırsat Analizi, Kredibilite ve Finansal Analiz paketlerinin ne işe yaradığını örnek senaryolarla anlatan rehber.",
+  title: "İşletmede Vergi ve Teşvik Analizi Neden Şart? | Koray Akdağ",
+  description: "KOBİ'ler vergi riskini, kaçırdığı teşvik fırsatını ve bankaların gözünden görünümünü genelde bir sorunla karşılaşınca öğreniyor.",
   keywords: [
     "vergi risk analizi",
     "teşvik fırsat analizi",

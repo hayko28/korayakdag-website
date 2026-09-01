@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "6111 Sayılı Kanun İstihdam Teşviki 2026: Genç, Kadın ve Mesleki Belge Sahibi Çalışanlarda Şartlar ve Son Tarih | Koray Akdağ",
-  description:
-    "4447 sayılı Kanun Geçici 10. Madde kapsamındaki 6111 (06111) istihdam teşvikinde işveren primi tamamen karşılanıyor. 10769 sayılı Cumhurbaşkanı Kararı ile 31 Aralık 2026'ya uzatılan süre, şartlar, destek tutarları ve başvuru süreciyle güncel rehber.",
+  title: "6111 Sayılı Kanun İstihdam Teşviki 2026 | Koray Akdağ",
+  description: "6111 sayılı istihdam teşvikinde işveren primi tamamen karşılanıyor. Genç, kadın ve mesleki belgeli çalışanlar için şartlar ve 2026 son tarih.",
   keywords: [
     "6111 sayılı kanun teşviki",
     "06111 teşvik",

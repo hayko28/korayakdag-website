@@ -3,10 +3,8 @@ import Link from "next/link";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Ar-Ge Merkezi Nedir? Nasıl Kurulur? 2026 Şartları, Vergi ve SGK Avantajları | Koray Akdağ",
-  description:
-    "Ar-Ge Merkezi olma şartları, en az 15 personel eşiği, AGTM üzerinden başvuru süreci, %95'e varan gelir vergisi stopajı teşviki, SGK işveren primi desteği ve 31.12.2028'e kadar geçerli 5746 sayılı Kanun avantajlarıyla 2026 güncel rehber.",
+  title: "Ar-Ge Merkezi Nedir, Nasıl Kurulur? | Koray Akdağ",
+  description: "Ar-Ge Merkezi olma şartları, en az 15 personel eşiği, %95'e varan gelir vergisi stopajı teşviki ve SGK avantajlarıyla 2026 rehberi.",
   keywords: [
     "Ar-Ge Merkezi nedir",
     "Ar-Ge Merkezi nasıl kurulur",

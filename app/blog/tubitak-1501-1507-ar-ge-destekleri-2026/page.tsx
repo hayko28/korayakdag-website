@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026 | Başvuru Rehberi | Koray Akdağ",
-  description:
-    "TÜBİTAK 1501 ve 1507 Ar-Ge destekleri hakkında kapsamlı rehber. 2026 yılı 2. çağrısı takvimi, kimler başvurabilir, destek oranları, desteklenen giderler ve başvuru süreci.",
+  title: "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026 | Koray Akdağ",
+  description: "TÜBİTAK 1501 ve 1507 Ar-Ge destekleri: 2026 2. çağrı takvimi, kimler başvurabilir, destek oranları ve başvuru süreci rehberi.",
   keywords: [
     "TÜBİTAK 1501",
     "TÜBİTAK 1507",

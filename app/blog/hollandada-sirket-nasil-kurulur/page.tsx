@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Hollanda'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "Hollanda'da BV, Eenmanszaak ve NV şirket türleri, KVK tescili, Belastingdienst vergi numarası, adım adım kuruluş süreci, kurumlar vergisi/BTW oranları ve Türkiye tarafındaki yükümlülükler. 2026 güncel rehber.",
+  title: "Hollanda'da Şirket Nasıl Kurulur? 2026 Rehberi | Koray Akdağ",
+  description: "Hollanda'da BV ve NV kuruluşu, KVK tescili, vergi oranları ve Türkiye'deki yükümlülüklerle 2026 güncel adım adım rehber.",
   keywords: [
     "hollandada şirket kurma",
     "hollanda bv kuruluşu",

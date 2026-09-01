@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Türkiye'de A'dan Z'ye Şirket Kurmak: Avantajları Nelerdir? (2026) | Koray Akdağ",
-  description:
-    "Yabancı yatırımcılar için Türkiye'de şirket kurmanın avantajları, Limited ve Anonim Şirket farkları, gerekli belgeler, adım adım MERSİS/ticaret sicili süreci, devlet destekleri, serbest bölgeler, vergi teşvikleri, maliyetler, banka hesabı açma ve ikamet izni bağlantısıyla 2026 güncel rehber.",
+  title: "Türkiye'de Şirket Kurmanın Avantajları | Koray Akdağ",
+  description: "Yabancı yatırımcılar için Türkiye'de Limited/Anonim Şirket kuruluşu, MERSİS süreci, devlet destekleri ve vergi teşvikleriyle rehber.",
   keywords: [
     "türkiyede şirket kurma yabancı yatırımcı",
     "yabancılar türkiyede nasıl şirket kurar",

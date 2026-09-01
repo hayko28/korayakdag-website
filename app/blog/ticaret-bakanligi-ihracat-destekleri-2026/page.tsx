@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Ticaret Bakanlığı İhracat Destekleri 2026: Pazara Giriş, Fuar, E-İhracat Rehberi | Koray Akdağ",
-  description:
-    "Ticaret Bakanlığı'nın 5973 sayılı Karar kapsamındaki Pazara Giriş Belgesi, Yurt Dışı Marka Tescili, Fuar Katılımı, Birim Kira, Tanıtım, Küresel Tedarik Zinciri ve E-İhracat destek programlarının 2026 güncel oranları, üst limitleri, harcama-fatura-başvuru sırası, ödeme süreci ve sık yapılan hatalarla kapsamlı rehber.",
+  title: "Ticaret Bakanlığı İhracat Destekleri 2026 | Koray Akdağ",
+  description: "Pazara Giriş, Fuar, E-İhracat destek programlarının 2026 oranları, üst limitleri, başvuru sırası ve ödeme süreciyle rehber.",
   keywords: [
     "Ticaret Bakanlığı ihracat destekleri",
     "5973 sayılı karar",

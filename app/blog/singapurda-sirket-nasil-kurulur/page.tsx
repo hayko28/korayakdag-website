@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Singapur'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "Singapur'da Pte Ltd şirket kuruluşu, ACRA/BizFile tescil süreci, zorunlu yerel direktör şartı, %17 kurumlar vergisi ile SUTE/PTE muafiyetleri, %9 GST, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Singapur rehberi.",
+  title: "Singapur'da Şirket Nasıl Kurulur? 2026 Rehberi | Koray Akdağ",
+  description: "Singapur'da Pte Ltd kuruluşu, ACRA/BizFile tescili, zorunlu yerel direktör şartı, %17 kurumlar vergisi ve muafiyetlerle 2026 rehberi.",
   keywords: [
     "singapurda şirket kurma",
     "pte ltd nasıl kurulur",

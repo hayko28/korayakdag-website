@@ -3,9 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title: "Şirket Değerleme Nedir? Yöntemleri ve Süreci (2026) | Koray Akdağ",
-  description:
-    "Şirket değerleme nedir, DCF, çarpan analizi ve net aktif değer yöntemleri nasıl işler? KOBİ'lerin değerleme yaptırmasını gerektiren somut durumlar, süreç adımları, sık yapılan hatalar ve profesyonel değerlemenin neden gerekli olduğuyla 2026 güncel rehber.",
+  title: "Şirket Değerleme Nedir? Yöntemleri Nelerdir? | Koray Akdağ",
+  description: "DCF, çarpan analizi ve net aktif değer yöntemleriyle şirket değerleme nasıl yapılır? Süreç adımları ve sık yapılan hatalarla rehber.",
   keywords: [
     "şirket değerleme nedir",
     "şirket değerleme yöntemleri",

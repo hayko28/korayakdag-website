@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "İstihdamı Koruma Destek Programı 2026 | Yeni Esaslar, 15 Puan Destek, Örnek Hesaplamalar | Koray Akdağ",
-  description:
-    "İstihdamı Koruma Destek Programı'nda 28 Ağustos 2026'da yayımlanan yönetmelik değişikliğiyle gelen yeni esaslar: çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği, yatırım teşvik belgeli işletmeler için özel kredi limiti formülü, çevrimiçi başvuru portalı ve gerçekçi şirket örnekleriyle hesaplama.",
+  title: "İstihdamı Koruma Destek Programı 2026 | Koray Akdağ",
+  description: "28 Ağustos 2026'da değişen yönetmelikle çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği ve örnek hesaplamalar.",
   keywords: [
     "İstihdamı Koruma Destek Programı",
     "İstihdamı Koruma Destek Programı yeni esaslar",

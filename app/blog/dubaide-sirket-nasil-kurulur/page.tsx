@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Dubai'de (BAE) Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "Dubai'de mainland ve free zone şirket türleri, %9 kurumlar vergisi ve istisnalar, DMCC/JAFZA/IFZA farkları, banka hesabı açma süreci, Golden Visa bağlantısı ve Türkiye tarafındaki yükümlülüklerle 2026 güncel BAE rehberi.",
+  title: "Dubai'de (BAE) Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Dubai'de mainland ve free zone kuruluşu, %9 kurumlar vergisi, DMCC/JAFZA farkları ve Golden Visa bağlantısıyla güncel rehber.",
   keywords: [
     "dubaide şirket kurma",
     "bae şirket kuruluşu",

@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Türkiye Emisyon Ticaret Sistemi (ETS) Yönetmeliği 2026: Hangi Şirketler Kapsamda? | Koray Akdağ",
-  description:
-    "27 Ağustos 2026 tarihli Resmî Gazete'de yayımlanan Türkiye Emisyon Ticaret Sistemi Yönetmeliği ile karbon fiyatlandırmasında yeni dönem başladı. 50.000 tCO₂e eşiği, 2026-2027 pilot dönemi, sera gazı emisyon izni, izleme-raporlama-doğrulama yükümlülükleri, tahsisat teslimi ve idari para cezalarıyla şirketler için güncel rehber.",
+  title: "Türkiye Emisyon Ticaret Sistemi (ETS) 2026 | Koray Akdağ",
+  description: "50.000 tCO₂e eşiği, 2026-2027 pilot dönemi, izleme-raporlama yükümlülükleri ve idari para cezalarıyla ETS güncel rehberi.",
   keywords: [
     "türkiye emisyon ticaret sistemi",
     "ETS yönetmeliği 2026",

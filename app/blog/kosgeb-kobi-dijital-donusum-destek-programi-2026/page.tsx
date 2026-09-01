@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026 | Şartlar ve Destek Tutarları | Koray Akdağ",
-  description:
-    "KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026: imalat sektöründeki KOBİ'ler için 20 milyon TL'ye kadar kredi, dijital olgunluk değerlendirme raporu şartı, faiz desteği, başvuru süreci ve güncel yönerge (11.05.2026) esaslarıyla kapsamlı rehber.",
+  title: "KOSGEB KOBİ Dijital Dönüşüm Destek Programı | Koray Akdağ",
+  description: "İmalat KOBİ'leri için 20 milyon TL'ye kadar kredi, dijital olgunluk değerlendirmesi ve faiz desteğiyle 2026 güncel rehber.",
   keywords: [
     "KOBİ Dijital Dönüşüm Destek Programı",
     "KOSGEB dijital dönüşüm kredisi",

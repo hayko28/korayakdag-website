@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "KOSGEB Yapay Zeka Kredi Programı 2026 | 5 Milyon TL Faizsiz Kredi | Koray Akdağ",
-  description:
-    "KOSGEB'in yeni Yapay Zeka Kredi Programı: Teknogirişim Rozeti sahibi girişimlere 500 bin - 5 milyon TL faizsiz kredi, GO Dijital Cüzdan mekanizması, teminat şartları, desteklenen giderler ve 2026 başvuru süreci.",
+  title: "KOSGEB Yapay Zeka Kredi Programı 2026 | Koray Akdağ",
+  description: "Teknogirişim Rozeti sahibi girişimlere 500 bin - 5 milyon TL faizsiz kredi, teminat şartları ve 2026 başvuru süreci rehberi.",
   keywords: [
     "KOSGEB Yapay Zeka Kredi Programı",
     "KOSGEB yapay zeka kredisi",

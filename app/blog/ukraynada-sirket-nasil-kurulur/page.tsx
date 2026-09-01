@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Ukrayna'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "TOV (Limited Şirket) kuruluşu, %18 kurumlar vergisi ve %20 KDV, Diia City teknoloji rejimi, Temmuz 2026'da onaylanan Türkiye-Ukrayna Serbest Ticaret Anlaşması, banka hesabı açma süreci, güncel kambiyo/güvenlik durumu ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Ukrayna rehberi.",
+  title: "Ukrayna'da Şirket Nasıl Kurulur? 2026 Rehberi | Koray Akdağ",
+  description: "Ukrayna'da TOV kuruluşu, Diia City teknoloji rejimi, Türkiye-Ukrayna Serbest Ticaret Anlaşması ve banka hesabı süreciyle rehber.",
   keywords: [
     "ukraynada şirket kurma",
     "ukrayna tov",

@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Kazakistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "TOO (Limited Şirket) kuruluşu, AIFC (Astana Uluslararası Finans Merkezi) ve 2066'ya kadar %0 kurumlar vergisi ayrıcalığı, %20 kurumlar vergisi ve 2026'da %16'ya yükselen KDV, Avrasya Ekonomik Birliği pazar erişimi, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Kazakistan rehberi.",
+  title: "Kazakistan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Kazakistan'da TOO kuruluşu, AIFC'de %0 kurumlar vergisi avantajı, banka hesabı açma süreci ve 2026 güncel şartlarla rehber.",
   keywords: [
     "kazakistanda şirket kurma",
     "kazakistan too kuruluşu",

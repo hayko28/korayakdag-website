@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Suudi Arabistan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "MISA yatırım lisansı, LLC ve şube (branch) şirket türleri, %20 kurumlar vergisi ile Zekat ayrımı, %15 KDV, Bölgesel Merkez (RHQ) programı, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Suudi Arabistan rehberi.",
+  title: "Suudi Arabistan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "MISA yatırım lisansı, LLC kuruluşu, %20 kurumlar vergisi, %15 KDV ve Zekat ayrımıyla 2026 güncel Suudi Arabistan şirket rehberi.",
   keywords: [
     "suudi arabistanda şirket kurma",
     "misa lisansı",

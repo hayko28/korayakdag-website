@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "İtalya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "İtalya'da SRL, SRLS ve SpA şirket türleri, sermaye şartları, adım adım kuruluş süreci, IRES/IRAP/KDV oranları ve Türkiye tarafındaki bildirim yükümlülükleri. 2026 güncel rehber.",
+  title: "İtalya'da Şirket Nasıl Kurulur? 2026 Rehberi | Koray Akdağ",
+  description: "İtalya'da SRL ve SpA kuruluşu, sermaye şartları, IRES/IRAP/KDV oranları ve Türkiye'deki bildirim yükümlülükleriyle rehber.",
   keywords: [
     "italyada şirket kurma",
     "italya srl kuruluşu",

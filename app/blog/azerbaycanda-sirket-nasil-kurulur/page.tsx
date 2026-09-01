@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Azerbaycan'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları (2026) | Koray Akdağ",
-  description:
-    "MMC (Limited Şirket) kuruluşu, %20 kurumlar vergisi ve %18 KDV, sadələşdirilmiş vergi rejimi, Alat Serbest Ekonomi Bölgesi, uzaktan vekâletnameyle tescil, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Azerbaycan rehberi.",
+  title: "Azerbaycan'da Şirket Nasıl Kurulur? 2026 | Koray Akdağ",
+  description: "Azerbaycan'da MMC kuruluşu, %20 kurumlar vergisi, Alat Serbest Ekonomi Bölgesi avantajları ve banka hesabı süreciyle rehber.",
   keywords: [
     "azerbaycanda şirket kurma",
     "azerbaycan mmc kuruluşu",

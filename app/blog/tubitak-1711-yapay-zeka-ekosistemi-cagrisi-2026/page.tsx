@@ -3,10 +3,8 @@ import Link from "next/link";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları? | Koray Akdağ",
-  description:
-    "TÜBİTAK 1711 Yapay Zeka Ekosistemi 2026 Çağrısı; şirket-üniversite konsorsiyum şartı, 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı, 18 Eylül 2026 son başvuru tarihi ve adım adım PRODİS süreciyle güncel rehber.",
+  title: "TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı | Koray Akdağ",
+  description: "TÜBİTAK 1711'de şirket-üniversite konsorsiyum şartı, 10 milyon TL bütçe üst sınırı ve 18 Eylül 2026 son başvuru tarihi rehberi.",
   keywords: [
     "TÜBİTAK 1711",
     "Yapay Zeka Ekosistemi Çağrısı",

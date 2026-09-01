@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "TSRS Sürdürülebilirlik Raporlama Zorunluluğu 2026: Yeni Eşikler Kimleri Kapsıyor? | Koray Akdağ",
-  description:
-    "KGK'nın Ocak 2026'da yükselttiği TSRS eşik değerleri hangi şirketleri kapsıyor? Aktif toplamı, net satış hasılatı, çalışan sayısı kriterleri, güvence denetimi dönemi, raporlama takvimi ve hazırlık adımlarıyla güncel rehber.",
+  title: "TSRS Sürdürülebilirlik Raporlama Zorunluluğu | Koray Akdağ",
+  description: "KGK'nın yükselttiği TSRS eşikleri hangi şirketleri kapsıyor? Aktif toplamı, çalışan sayısı kriterleri ve raporlama takvimi.",
   keywords: [
     "TSRS sürdürülebilirlik raporlama zorunluluğu",
     "TSRS eşik değerleri 2026",

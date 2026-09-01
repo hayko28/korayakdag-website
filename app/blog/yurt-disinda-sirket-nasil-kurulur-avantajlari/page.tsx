@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Yurt Dışında Şirket Nasıl Kurulur? Avantajları Nelerdir? (2026) | Koray Akdağ",
-  description:
-    "Yurt dışında şirket kurma süreci, kimlerin başvurabileceği, avantajları, ideal ülkeler, Ticaret Bakanlığı teşvikleri ve dikkat edilmesi gereken noktalar. 2026 güncel rehber.",
+  title: "Yurt Dışında Şirket Nasıl Kurulur? Avantajları | Koray Akdağ",
+  description: "Yurt dışında şirket kurma süreci, kimlerin başvurabileceği, ideal ülkeler ve Ticaret Bakanlığı teşvikleriyle 2026 güncel rehber.",
   keywords: [
     "yurt dışında şirket kurma",
     "yurtdışı şirket kuruluşu",

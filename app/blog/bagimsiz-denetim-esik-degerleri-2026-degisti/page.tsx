@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Bağımsız Denetim Eşik Değerleri 2026: Yeni Kriterler Hangi Şirketleri Kapsıyor? | Koray Akdağ",
-  description:
-    "KGK'nın 17 Mart 2026'da 11066 sayılı Cumhurbaşkanı Kararı ile yükselttiği bağımsız denetim eşik değerleri (500 milyon TL aktif, 1 milyar TL ciro, 150 çalışan) hangi şirketleri etkiliyor? Kapsama giriş/çıkış kuralları, 7 Mayıs 2026 usul güncellemesi ve hazırlık süreciyle güncel rehber.",
+  title: "Bağımsız Denetim Eşik Değerleri 2026 Değişti | Koray Akdağ",
+  description: "KGK'nın yükselttiği bağımsız denetim eşikleri (500 milyon TL aktif, 1 milyar TL ciro) hangi şirketleri kapsıyor? 2026 rehberi.",
   keywords: [
     "bağımsız denetim eşik değerleri 2026",
     "bağımsız denetime tabi olma kriterleri",

@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Varlık Barışı 2026 Nedir? Yurt Dışı Varlıkları Türkiye'ye Getirmenin Şartları ve Oranları | Koray Akdağ",
-  description:
-    "7582 sayılı Kanun'la 5520 sayılı KVK'ya eklenen Geçici Madde 19 kapsamında Varlık Barışı 2026: %0-%5 arası vergi oranları, taahhüt süresi sistemi, yurt içi/yurt dışı varlık farkı, banka/aracı kurum bildirim süreci, 31 Aralık 2026 ve 31 Temmuz 2027 kritik tarihleriyle güncel rehber.",
+  title: "Varlık Barışı 2026 Nedir? Şartları ve Oranları | Koray Akdağ",
+  description: "Varlık Barışı 2026'da %0-%5 arası vergi oranları, taahhüt süresi sistemi ve 31 Aralık 2026 kritik tarihiyle güncel rehber.",
   keywords: [
     "varlık barışı 2026",
     "7582 sayılı kanun",

@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "KOSGEB COP31 Odaklı Hızlandırma Desteği Çağrısı 2026 | Kimler Başvurabilir? | Koray Akdağ",
-  description:
-    "KOSGEB'in 2026-01 COP31 Hızlandırma Çağrısı: TEKMER işletici kuruluşları ve Teknokent yönetici şirketleri için 6,5 milyon TL'ye kadar geri ödemeli destek, hedef alanlar, teknik şartlar, başvuru tarihleri ve KOBİ'ler için katılım yolu.",
+  title: "KOSGEB COP31 Hızlandırma Desteği Çağrısı 2026 | Koray Akdağ",
+  description: "KOSGEB'in COP31 Hızlandırma Çağrısı'nda TEKMER ve Teknokent şirketleri için 6,5 milyon TL'ye kadar geri ödemeli destek şartları.",
   keywords: [
     "KOSGEB COP31 desteği",
     "COP31 Hızlandırma Çağrısı",

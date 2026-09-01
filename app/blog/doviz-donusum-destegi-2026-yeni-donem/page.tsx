@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title:
-    "Döviz Dönüşüm Desteği 2026: 2026/11 Sayılı Tebliğ ile Neler Değişti? | Koray Akdağ",
-  description:
-    "1 Ağustos 2026'da yürürlüğe giren 2026/11 sayılı Tebliğ ile döviz dönüşüm desteğinde döviz pozisyonu esaslı yeni sistem, %2-%3 destek oranları, ihracat bedelinin %35'inin satış yükümlülüğü ve 1 Ekim 2026 geçiş takvimiyle ihracatçılar için kapsamlı 2026 rehberi.",
+  title: "Döviz Dönüşüm Desteği 2026'da Neler Değişti? | Koray Akdağ",
+  description: "2026/11 sayılı Tebliğ ile döviz pozisyonu esaslı yeni sistem, %2-%3 destek oranları ve ihracatçılar için geçiş takvimi rehberi.",
   keywords: [
     "döviz dönüşüm desteği 2026",
     "2026/11 sayılı tebliğ",
