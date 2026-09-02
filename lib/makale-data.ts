@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "e-ihracat-zirvesi-alici-artik-insan-degilse",
+    title:
+      "1 Milyar Dolarlık Zirve: E-İhracatta Asıl Soru Pazar Yeri Değil, Alıcının Kim Olduğu",
+    excerpt:
+      "3-5 Eylül'de İstanbul'da düzenlenen Küresel E-İhracat Zirvesi'nde bu yıl da 1 milyar doların üzerinde işlem hacmi bekleniyor; gündemde artık yapay zeka ajanlarının ticaretteki rolü var. KOBİ'lerin sorması gereken soru değişiyor: ürün sayfası bir insanı ikna edecek şekilde yazılmışsa, aynı sayfa bir alışveriş ajanını da ikna edebilir mi?",
+    tag: "Görüş",
+    date: "2 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "faiz-indirimi-basladi-buyume-plani-hazir-mi",
     title: "Faiz İndirimi Başladı: Asıl Soru Kimin Büyüme Planı Hazır?",
     excerpt:
