@@ -582,6 +582,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: KDV beyannamesi vermeden önce bu modülü kontrol etmelerini, muhasebe kayıtlarındaki kredi kartlı satış tutarlarını banka POS verileriyle karşılaştırmalarını öneririm; uyumsuzluklar GİB tarafından 'izaha davet' sürecine konu olabiliyor.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "31 Ağustos 2026",
+    eklendiTarihi: "2026-09-02",
+    baslik:
+      "Sanayi ve Teknoloji Bakanlığı'ndan KOBİ ve girişimlere yapay zekâ işlem gücü: 'Herkes İçin GPU' programı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı, 2026-2030 Türkiye Yapay Zeka Eylem Planı kapsamında girişimlere, KOBİ'lere ve araştırmacılara adil ve öngörülebilir koşullarda işlem gücü sağlamayı amaçlayan 'Herkes İçin GPU' (Ulusal Yapay Zeka Araştırma Kaynağı) Programı'nı 31 Ağustos 2026'da duyurdu. İlk aşamada en az 5 akredite yerli veri merkeziyle kapasite sözleşmesi imzalanarak yılda en az 2 milyon GPU-saat kredi tahsis edilecek; bunun en az %40'ı teknogirişimlere ayrılacak ve 2028 sonuna kadar toplam kapasitenin en az 20 milyon GPU-saate çıkarılması hedefleniyor. Programın ilk çağrısının 6 ay içinde açılması planlanıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/yapay-zekanin-islem-gucu-kobi-ve-girisimlere-herkes-icin-gpu-ile-acilacak/4042291",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: İlk çağrı henüz açılmadığı için başvuru kriterleri netleşmedi, ama yapay zekâ modeli eğitmeyi veya çalıştırmayı planlayan teknogirişim ve KOBİ'lere bu süreci şimdiden takibe almalarını öneririm; GPU erişim maliyeti küçük ekipler için ciddi bir bütçe kalemi olabiliyor.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "2 Eylül 2026",
+    eklendiTarihi: "2026-09-02",
+    baslik:
+      "Ticaret Bakanlığı, indirimli satış reklamlarına yönelik denetimleri sıklaştırdığını açıkladı",
+    ozet:
+      "Ticaret Bakanlığı, 1 Ağustos 2026'da yürürlüğe giren düzenleme sonrası indirim öncesi fiyatın kampanya başlangıcından önceki son 10 gün içindeki en düşük fiyat olması kuralına uyulup uyulmadığını hem geleneksel hem dijital platformlarda denetlemeye devam ettiğini 2 Eylül 2026'da duyurdu. Bakanlık, şartlı satış kampanyalarının da bu kurala tabi olduğunu ve tespit edilen ihlallerde Reklam Kurulu'nca 108.370 TL ile 39.916.524 TL arasında değişen idari para cezaları uygulandığını belirtti.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-tuketicilerin-ekonomik-menfaatlerinin-korunmasi-amaciyla-indirimli-satis-reklamlarina-yonelik-kapsamli-inceleme-ve-denetimlerini-kararlilikla-surduruyor",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: İndirim kampanyası yürüten işletmelere, kampanya öncesi son 10 günün fiyatlarını mutlaka belgeleyip arşivlemelerini öneririm; denetimlerin sıklığı ve ceza üst sınırının büyüklüğü düşünüldüğünde bu artık ihmal edilebilecek bir ayrıntı değil.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "29 Ağustos 2026",
+    eklendiTarihi: "2026-09-02",
+    baslik:
+      "e-Turquality destekli HubX, 1,275 milyar dolar değerlemeyle Türkiye'nin mobil uygulama alanındaki ilk unicorn'u oldu",
+    ozet:
+      "Ticaret Bakanlığı'nın e-Turquality Programı kapsamında desteklenen mobil uygulama şirketi HubX, aldığı 75 milyon dolarlık yabancı yatırımla 1 milyar 275 milyon dolar değerlemeye ulaşarak Türkiye'nin mobil uygulama alanındaki ilk unicorn'u oldu. Bakanlık, bu başarıyı e-Turquality kapsamında unicorn statüsüne ulaşan dördüncü bilişim şirketi olarak 29 Ağustos 2026'da duyurdu.",
+    kaynakUrl:
+      "https://www.bloomberght.com/hubx-mobil-uygulama-alaninda-turkiye-nin-ilk-unicornu-oldu-3786795",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: HubX örneği, e-Turquality gibi ihracat odaklı destek programlarının yalnızca pazarlama bütçesine değil, uzun vadede şirket değerlemesine de katkı sağlayabildiğini gösteriyor; yazılım veya mobil uygulama alanında büyüyen şirketlere bu tür programları erken aşamada değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
