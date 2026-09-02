@@ -2,7 +2,7 @@
 
 **Araştırmacı:** Fikir Avcısı Ajanı
 **Tarih:** 2 Eylül 2026
-**Hedef:** İçerik/medya, e-ticaret nişe, evcil hayvan, hukuk danışmanlığı — yazılım/gıda/enerji/tarım dışı sektörler
+**Hedef:** İçerik/medya, e-ticaret nişi, kira hukuku/arabuluculuk, ikinci el mobilya restorasyonu, AB karbon sınır vergisi danışmanlığı — geçmiş günlerde işlenen evcil hayvan ve genel satış danışmanlığı temalarından uzaklaşıldı
 
 ---
 
@@ -103,105 +103,115 @@ Bugün: AliExpress'te 5 en popüler fitness/yoga ürünü bul. Yarın: Claude Co
 
 ---
 
-## FİKİR 3: Pet Bakıcı/Eğitmen Uygulaması — Kolay Booking, Türkiye Pazar
+## FİKİR 3: Kira Zam Hesaplayıcı + Arabulucu Eşleştirme Platformu
 
 ### Ne Bu?
-Ankara, İstanbul gibi şehirlerde köpek, kedi bakıcısı ve eğitmen bulmayı kolaylaştıran mobil uygulama (Uber Care tarzı, petler için): (1) **Bakıcı Profili** — "16:00-19:00 müsait", "5+ yıl köpek tecrübesi", "oyun parkı geziş", fotoğraf, değerlendirme, (2) **Müşteri Booking** — pet profil → müsait bakıcı ara → 2 saatlik seans ₺150-300, (3) **GPS Takibi** — realtime konum, fotoğraf/video, (4) **Ödeme** — in-app Stripe/Papara, (5) **Değerlendirme** — yıldız + yorum, kötü bakıcı block, (6) **Sertifikasyon** — "Köpek davranış eğitmeni" sertifikalı bakıcılar özel etiket. Platform: iOS + Android, Türkçe.
+Kiracı ve ev sahiplerine yönelik ücretsiz bir web aracı: kullanıcı mevcut kira tutarını ve sözleşme/son zam tarihini girer, TÜİK'in güncel on iki aylık TÜFE ortalamasına göre o ay için uygulanabilecek yasal azami zam oranını ve yeni kira tutarını otomatik hesaplar. Taraflar anlaşamazsa (ev sahibi daha fazlasını istiyor, kiracı ödemek istemiyor, 5 yıllık rayiç bedel uyarlaması gündemde vb.) platform kullanıcıyı bölgesindeki resmi sicile kayıtlı bir arabulucuya veya kira hukuku avukatına yönlendiren bir talep formuna yönlendirir.
 
 ### Kanıt (Kaynaklar)
-- [Türkiye'de 10M+ ev hayvanı; şehirde yalnız bırakılan hayvan sorun](https://www.casinotv.com/hayvan-istatistikleri)
-- [Pet bakıcı bulma Türkiye'de zorluk ("pet bakıcısı İstanbul" +200K arama/ay)](https://trends.google.com/trends/?geo=TR)
-- [Rover, Care.com gibi global uygulamalar Türkiye'ye girmedi (boş pazar)](https://www.rover.com)
-- [Pet hizmeti pazarı Türkiye +40% (2026); veteriner + bakıcı = ₺5B+ tahmin](https://www.casinotv.com/pet-industry-turkiye)
-- [Bakıcı gelir: Haftada 5 gün, 3 saat/gün = 15 saat × ₺250 = ₺3.750/hafta = ₺15K/ay (commission after)](https://www.entrepreneur.com/pet-care-business)
+- [Kira uyuşmazlıklarında arabuluculuğa başvurmak artık dava açmadan önce yasal bir zorunluluk (dava şartı)](https://bilalalyar.av.tr/kira-arabuluculuk-tbk-339/)
+- [Kira uyuşmazlıkları Türkiye'de mahkemelere en sık taşınan dava türleri arasında](https://sumeyyeyuce.av.tr/kira-uyusmazliklari-2026-kiraci-ve-ev-sahibi-haklari-arabuluculuk-ve-dava-rehberi/)
+- [Kira zam oranı her ay güncel haber konusu; hukuk büroları TÜFE bazlı hesaplama içerikleriyle yüksek trafik çekiyor](https://www.aycabolak.av.tr/haziran-2026-kira-zam-orani-224-olarak-aciklandi/)
+- [Genel kira zam hesaplayıcıları (hesapkurdu.com) var ama arabulucu/avukat yönlendirmesi yapan bir eşleştirme aracı bulunamadı](https://www.hesapkurdu.com/konut-kredisi/h/kira-artisi-hesaplama)
 
 ### Gelir Modeli
-- Booking komissyonu: ₺150-300 seans × %20 commission → seans başına ₺30-60
-- Aylık satış tahmin: 200 seans/ay (100 müşteri, 2 seans/ay) × ₺45 commission = **₺9.000/ay**
-- Premium subscr: Bakıcı ₺99/ay, müşteri ₺49/ay (2 free seans) = 100 bakıcı + 500 müşteri × ₺50 = **₺30.000/ay**
-- **Toplam tahmin (6. ay):** ₺40K/ay
+- Hesaplayıcı tamamen ücretsiz (trafik ve potansiyel müşteri toplama aracı)
+- Anlaşmazlık formunu dolduran kullanıcıyı bölgesindeki arabulucu/avukata yönlendirme başına sabit ücret (₺150-300) veya arabulucu/avukat için aylık sabit üyelik (₺499-999/ay, sınırsız yönlendirme)
+- Ek ürün: kira sözleşmesi şablonu, rayiç bedel tespit dilekçe örneği gibi premium PDF içerikler (₺49-99)
+- **Aylık tahmin (3-6. ay, doğrulanmamış varsayım):** 20 arabulucu/avukat üyelik × ₺700 + 100 yönlendirme × ₺200 = **₺34.000/ay**
 
-### Türkية Pazar Uyumu
-**Rakip:** Yerel WhatsApp grupları var ama platform yok. Veteriner klinikleri tavsiyesi yapıyor ama kayıtlı yok. PetDuo tarzı sınırlı uygulamalar var.
+### Türkiye Pazar Uyumu
+**Rakip:** Genel kira zam hesaplayıcıları ve hukuk bürolarının blog içerikleri var, ancak "hesapla + anlaşamazsan arabulucuya yönlendir" akışını uçtan uca sunan bir eşleştirme platformu bulunamadı. Hukuk büroları kendi SEO trafiğini çekiyor ama aktif bir pazaryeri/yönlendirme modeli yok.
 
-**Talep Sinyalleri:**
-- Instagram pet sahibi grupları: "Güvenilir bakıcı bulamıyorum" +1000 comment/gün
-- Google trend: "köpek bakıcısı" "kedi bakıcısı" İstanbul/Ankara +300%
-- Veteriner klinikleri bakıcı tavsiyesi talep alıyor (veri yok)
-- Pet pazarı trend: Köpek kıyafeti, oyuncak pazarı hızla büyüyor
+**Talep Sinyalleri:** Kira uyuşmazlıkları en sık açılan dava türlerinden ve arabuluculuk artık zorunlu ilk adım — bu, platformun her ay yapısal olarak garanti bir kullanıcı akışına sahip olabileceği anlamına geliyor. Ancak gerçek arama hacmi ve yönlendirmeden ücretli müşteriye dönüşüm oranı doğrulanmadı, bu kısım varsayıma dayalı.
 
-**Neden Heyecan Verici:**
-- Pazar boş: Türkiye'de platform yok
-- Ölçekleme hızlı: 1 şehir → 3 şehir → 10 şehir (franchise)
-- Network effect: Bakıcı → müşteri → daha fazla bakıcı (viral)
-- Upsell: Veteriner ortaklıkları, pet sigorta, gıda/oyuncak marketplace
-- Koray'ın B2C/marketplace yönetim becerisi
+**Neden Heyecan Verici:** Milyonlarca kiracı ve ev sahibi her yıl aynı soruyu soruyor: "Ne kadar zam yapabilirim/yapmalıyım?" Yasal zorunluluk (arabuluculuk dava şartı) sayesinde platform organik olarak "dava öncesi zorunlu adım" konumuna oturuyor — nadir görülen, yapısal olarak talebi garanti bir sorun alanı.
 
 ### İlk Somut Adım
-Bugün: İstanbul'da 5 köpek bakıcı/eğitmenin WhatsApp numarasını topla. Mesaj gönder: "Pet bakıcılığını uygulamada listelemek istiyoruz. Pilot sürümü test etmek isterler misiniz? Aralık'ta canlı, ilk 3 ay ücretsiz." Yanıt aldıktan sonra Claude Code'a: "Firebase (profil) + React Native (iOS/Android) + Stripe (ödeme) + Google Maps (GPS) — ilk 10 bakıcı, 50 müşteri MVP."
+Bugün Claude Code'a şunu söyle: "TÜİK'in güncel on iki aylık TÜFE ortalamasını kullanarak kira zam oranını ve yeni kira tutarını hesaplayan tek sayfalık bir web aracı yap; sonucun altına 'Ev sahibinizle/kiracınızla anlaşamıyor musunuz? Bölgenizdeki arabulucuya yönlendirelim' butonu ve WhatsApp numarası isteyen bir form ekle." Sayfa bitince kendi WhatsApp numaranı forma bağla ve linki bir kiracı/ev sahibi Facebook grubunda paylaş; gelen ilk mesajları not al.
 
 ### Zorluk/Risk
-- Bakıcı kalitesi: Platform sorumluluğu yüksek (pet kötü durumda soyu olabilir)
-- Yasal: Pet hizmeti Türkiye'de düzensiz (sigorta, sorumluluk)
-- İnsani faktör: Bakıcı güvenilirliği, müşteri ilişkisi karmaşık
-- Bakıcı bulmak: 100 kaliteli bakıcı toplamak zaman alıyor
-- Veteriner rekabeti: Veteriner klinikleri kendi ağı oluşturabilir
+Arabuluculuk ücretleri resmi tarifeyle belirleniyor — arabulucudan "yönlendirme komisyonu" almanın hukuki sınırları net değil; avukatlık ve arabuluculuk meslekleri reklam/yönlendirme konusunda kısıtlamalara tabi, bu yüzden bir arabulucu veya avukatla önce bu modelin mevzuata uygunluğunu netleştirmek şart (sabit reklam/üyelik ücretine geçmek gerekebilir). TÜFE verisi her ay güncellenmeli, elle güncelleme hata riski taşır. Trafik çekmek SEO/reklam yatırımı ve zaman gerektirir.
 
-**Risk Derecesi:** ORTA-YÜKSEK (yasal belirsizlik, hayvan sağlığı sorumluluğu)
+**Risk Derecesi:** ORTA (yasal/regülasyon sınırları netleşmeli, teknik risk düşük)
 
 ---
 
-## FİKİR 4: Avukat İçin Satış + Müşteri Bulma Danışmanlığı
+## FİKİR 4: Vintage/Antika Mobilya Restorasyon Atölyesi + İçerik Markası
 
 ### Ne Bu?
-Muhasebeci danışmanlığı gibi, avukatlar ve hukuk büroları için satış danışmanlığı: (1) **Hedef Pazar Seçimi** — "Hangi tür müşteriler istiyorsunuz?", (2) **Satış Stratejisi** — LinkedIn, networking, iş ortakları ilişkileri, (3) **Pitch Materyali** — hukuk hizmeti sunumu, başarı vakaları, fiyatlandırma, (4) **CRM Kurulması** — müşteri takibi yazılımı, (5) **Web Sitesi + Pazarlama** — SEO, hukuk blogu, müşteri testimonial. Danışmanlık: 3 ay + değerlendirme.
+Eskiyen ama karakterli ahşap mobilyaları (masa, sandalye, konsol, gardırop) düşük fiyata toplayıp — ikinci el pazaryerleri, Facebook Pazaryeri, taşınan ailelerin bıraktığı eşyalar — zanaatkârlarla (marangoz, döşemeci) restore ettirip yüksek marjla satan; sürecin "önce-sonra" videolarını Instagram/TikTok'ta paylaşarak hem marka hem organik satış kanalı oluşturan fiziksel ürün + içerik hibrit bir iş.
 
 ### Kanıt (Kaynaklar)
-- [Türkiye'de 150K+ avukat ve hukuk bürosu; çoğu müşteri bulma ve pazarlamada yetersiz](https://www.barobirlik.org.tr/istatistikler)
-- [Hukuk hizmetleri pazarı Türkiye 2026'da ₺30B+, ama avukat satış eğitimi yok](https://www.ticimax.com/blog/hukuk-pazarlama)
-- [Kurumsal hukuk danışmanlığı müşteri tabanı İş Hukuku → Ceza → Ticari sırasıyla büyüyor](https://www.lexpera.com/hukuk-trendleri-2026)
-- [Avukat LinkedIn ağı +30% müşteri artışı (araştırma)](https://www.lawfuel.com/lawyer-linkedin)
+- [Nish Solutions (Berna Atahan) ikinci el lüks mobilya platformu kurmuş, müzayedecilik geçmişinden gelen uzmanlıkla vintage parçaları tanıyıp restore ediyor](https://vogue.com.tr/dekor/ikinci-el-luks-mobilyada-yeni-soluk)
+- ["Same As Before" Karaköy'deki Kurşunlu Han'da restore edilmiş vintage parçaları satıyor, her parçanın hikâyesini koruyarak ikinci hayat veriyor](https://vogue.com.tr/vogue-istanbul/vogue-istanbul-ikinci-el-mobilya-ve-vintage-dekorasyon-adresleri)
+- [OGGUSTO "vintage mobilya alabileceğiniz en iyi 10 Instagram hesabı" listesi yayınladı — talep zaten Instagram üzerinden organik karşılanıyor](https://www.oggusto.com/dekorasyon/dekorasyon-fikirleri/vintage-mobilya-alabileceginiz-adresler)
+- [Pandemi sonrası dünya genelinde mobilya/ev aksesuarı harcaması 405 milyar dolara ulaştı, nostaljik vintage parçalara talep tetiklendi (küresel veri, Türkiye'ye özel rakam doğrulanmadı)](https://www.ecwid.com/tr/blog/how-to-sell-used-furniture-online.html)
 
 ### Gelir Modeli
-- Danışmanlık paketi: ₺18K–₺30K (3 ay, haftada 2 saat)
-- Satış sonrası komissyon: Yeni kurumsal müşteri başına ₺1.000–₺5.000
-- **Aylık tahmin:** 1–2 danışmanlık × ₺20K + 1–2 komissyon × ₺2K = **₺24K–₺44K/ay**
+- Alım fiyatı ile restore edilmiş satış fiyatı arasındaki marj (genelde 2-4 kat)
+- Özel sipariş restorasyon hizmeti: müşterinin kendi eski mobilyasını restore ettirmesi, parça başına ₺1.500-₺8.000
+- İleride "önce-sonra" içerik geliriyle marka sponsorlukları/iş birlikleri (doğrulanmamış, potansiyel)
 
 ### Türkiye Pazar Uyumu
-**Rakip:** Barolar eğitim yapıyor ama satış danışmanlığı değil. Bağımsız hukuk marketing danışmanı az. Büyük avukatlık şirketleri kendi pazarlaması var ama bağımsız avukat → danışman yok.
+**Rakip:** Nish Solutions ve Same As Before gibi öncüler var ama sayıca az ve İstanbul'un belirli semtleriyle sınırlı (Karaköy, Cihangir); ülke genelinde veya farklı şehirlerde ciddi bir oyuncu yok, Instagram'daki hesapların çoğu bireysel/hobi seviyesinde kalıyor.
 
-**Talep Sinyalleri:**
-- Baro ve hukuk derneği: "Müşteri bulma zorluk" raporları
-- LinkedIn avukat grupları: "Kurumsal müşteri bulma" soruları sık
-- Müşteri kaybı: Avukat sayfası eskimiş, internet görünürlüğü yok
+**Talep Sinyalleri:** Vogue Türkiye ve OGGUSTO gibi yayın organlarının konuya ayrı haber/liste ayırması gerçek bir ilgiye işaret ediyor; ancak Türkiye'ye özel satış rakamı veya pazar büyüklüğü doğrulanamadı, küresel trend verisine dayanılıyor.
 
-**Neden Heyecan Verici:**
-- Koray'ın danışmanlık uzmanlığı doğrudan uygulanabilir
-- Pazar boşluğu: Muhasebeci danışmanlığından daha az rekabet
-- Müşteri bulması kolay: Baro ağları, hukuk derneği
-- Yüksek değer: Avukat satışı = kurumsal müşteri = yüksek tutarlar
-- Upsell: Barolar/dernek eğitim programı, hukuk pazarlama yazılımı
+**Neden Heyecan Verici:** Tüketici "seri üretim değil, hikâyesi olan mobilya" istiyor — somut ve duygusal bir satın alma motivasyonu. Düşük başlangıç sermayesiyle (birkaç parça mobilya + zanaatkâr işçiliği) test edilebilir, teknoloji riski sıfır — Koray'ın hiç kod yazmadan tamamen kendi yürütebileceği nadir bir fikir, restorasyon videoları formatı zaten ilgi çeken bir içerik türü.
 
 ### İlk Somut Adım
-Bugün: LinkedIn'de 4-5 başarılı avukat/müşteri danışmanı bul. Mesaj gönder: "Avukat bürolarına satış + müşteri bulma danışmanlığı yapıp kendilerine hizmet paketi olarak sunmak isterler misiniz? 3 ay pilot yapalım." Yanıt aldıktan sonra Claude Code'a: "Avukat satış playbook (PDF) + kurumsal müşteri stratejisi template + web pazarlama şablonu."
+Bugün Facebook Pazaryeri veya OLX'te "eski/hasarlı ahşap konsol/sandalye" araması yap, en ucuz (₺200-500 aralığında) bir parça bul ve satıcıya "bugün/yarın alabilir miyim" mesajını gönder, parçayı fiilen satın al. (Restorasyon için zanaatkâr araştırması ayrı bir sonraki adım olacak; bugünkü tek iş, elinde test edilecek gerçek bir parçanın olması.)
 
 ### Zorluk/Risk
-- Danışmanlık başarısı: Avukatın müşteri gelme kabiliyetine bağlı
-- Hukuk sektörü gelenekçi: Avukatlar pazarlama "profesyonel değil" görebilir
-- Pazar saturation: Diğer danışmanlık bürolar aynı hizmet sunabilir
-- Ölçek zorluk: Danışmanlık kişisel → 1 danışman = 3-5 müşteri max
+Restorasyon kalitesi zanaatkâra bağlı — kötü işçilik markayı baştan zedeler. Fiziksel mobilyanın nakliyesi/depolanması maliyetli ve yer kaplıyor; satılmayan parça sermayeyi bağlar (stok riski). Koray'ın zamanı kısıtlı — kaynak bulma, nakliye koordinasyonu gibi fiziksel işler yazılım işine göre daha fazla zaman alır, bu yüzden ölçeklenmesi yavaş, yan iş olarak başlamak gerekir.
 
-**Risk Derecesi:** DÜŞÜK-ORTA (kendi danışmanlık alanı)
+**Risk Derecesi:** DÜŞÜK-ORTA (teknik risk yok, zaman/fiziksel emek riski var)
+
+---
+
+## FİKİR 5: KOBİ İhracatçılar İçin AB Karbon Sınır Vergisi (CBAM) Uyum Danışmanlığı
+
+### Ne Bu?
+Avrupa Birliği'ne demir-çelik, alüminyum, çimento, gübre, elektrik ve hidrojen ihraç eden Türk KOBİ'lere yönelik, AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamındaki yükümlülükleri (karbon emisyon verisinin ölçülmesi, akredite kurumlarca doğrulanması, "Yetkili CBAM Beyan Sahibi" statüsü başvurusu, Türkiye'nin kendi emisyon ticaret sistemi kapsamında ödenen karbon vergisinin mahsup edilmesi) sadeleştirip adım adım uygulatan danışmanlık hizmeti.
+
+### Kanıt (Kaynaklar)
+- [CBAM, Ocak 2026 itibarıyla kesin uygulama aşamasına girdi; ithalatçılar için sertifika yükümlülüğü başladı](https://www.esenyelpartners.com/cbam-2026-compliance-for-turkish-exporters/)
+- [Türkiye, AB'ye CBAM kapsamındaki ürünlerin (demir-çelik, alüminyum, çimento, gübre, elektrik, hidrojen) başlıca tedarikçilerinden biri](https://www.advantisconseils.com/cbam-turkey-a-commercial-constraint-or-an-industrial-opportunity)
+- [AB'li alıcılar, tedarikçilerinden şeffaf ve doğrulanmış emisyon verisi talep ediyor; bu veriyi sağlayamayan üçüncü ülke üreticileri rekabet gücünü kaybediyor](https://www.senken.io/academy/cbam-regulation)
+- [Sürecin karmaşıklığı, Türk ihracatçılar için CBAM uyumu, kayıt süreçleri ve emisyon verisi doğrulaması konusunda somut bir danışmanlık talebi yarattığı raporlanıyor](https://oneclicklca.com/en/resources/articles/cbam-a-guide-to-carbon-border-adjustment-mechanism)
+
+### Gelir Modeli
+- Uyum danışmanlığı paketi: ₺40.000-₺100.000 (kapsam analizi, emisyon veri toplama süreci kurulumu, akredite doğrulama kurumuyla eşleştirme, başvuru evrakı hazırlığı)
+- Yıllık takip/güncelleme aboneliği: ₺15.000-₺30.000/yıl (mevzuat değişikliği takibi, yıllık beyan desteği)
+- **Aylık tahmin (doğrulanmamış varsayım):** 1-2 yeni müşteri × ₺60.000 + 5 takip aboneliği × ₺2.000 = **₺70.000-₺130.000/ay** (proje bazlı, düzensiz akış)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Büyük denetim/danışmanlık şirketleri (Deloitte, KPMG) CBAM danışmanlığı sunuyor ama bunlar büyük ölçekli ihracatçılara odaklı ve pahalı; KOBİ ölçeğindeki demir-çelik/alüminyum ihracatçılarına yönelik, uygun fiyatlı ve sade anlatımlı bir danışmanlık sunan bağımsız oyuncu sayısı sınırlı görünüyor (doğrulanmadı, daha derin araştırma gerekir).
+
+**Talep Sinyalleri:** CBAM'ın Ocak 2026'da kesin uygulamaya geçmesi ve Türkiye'nin AB'ye bu sektörlerde başlıca tedarikçi olması somut, güncel ve tarihi belirli bir tetikleyici; ancak KOBİ'lerin bu danışmanlığa ne kadar ödemeye razı olduğu ve gerçek talep hacmi doğrulanmadı.
+
+**Neden Heyecan Verici:** Bu, Koray'ın stratejik iş geliştirme/danışmanlık uzmanlığına doğrudan oturan, güncel ve zorunlu bir mevzuat değişikliği etrafında şekillenen nadir bir fırsat — devlet desteği değil ama benzer şekilde "mevzuat karmaşıklığını sadeleştirme" değeri sunuyor; Sistem Global'in kurumsal müşteri ağı üzerinden ilk pilot müşteriye ulaşmak nispeten kolay olabilir.
+
+### İlk Somut Adım
+Bugün Sistem Global'deki veya kendi ağındaki demir-çelik/alüminyum/çimento sektöründe AB'ye ihracat yapan bir şirket yöneticisine şu mesajı gönder: "AB'nin CBAM karbon sınır vergisi Ocak 2026'dan itibaren tam yürürlükte — şirketinizin bu konuda bir hazırlığı var mı? Süreci sadeleştiren bir özet doküman hazırlıyorum, 15 dakika görüşüp ihtiyacınızı öğrenebilir miyim?" Yanıt aldıktan sonra Claude Code'a: "CBAM'ın Türk ihracatçılar için 5 adımlık uyum sürecini özetleyen 2 sayfalık Türkçe bir doküman (PDF) hazırla" de.
+
+### Zorluk/Risk
+Bu alan hızlı gelişen ve teknik detayı yoğun bir AB mevzuatı — Koray'ın bunu güvenilir şekilde anlatabilmesi için ciddi bir öğrenme eğrisi var, yanlış/eksik bilgi verirse müşterinin gerçek parasal zararına (yanlış beyan, ceza) yol açabilir; bu yüzden ilk aşamada "danışmanlık" değil "farkındalık/ön bilgilendirme" seviyesinde kalıp, teknik doğrulama kısmını akredite kurumlara yönlendirmek daha güvenli olur. Satış döngüsü kurumsal ve yavaş olabilir; hedef kitle (belirli ağır sanayi ihracatçıları) diğer fikirlere göre daha dar.
+
+**Risk Derecesi:** ORTA-YÜKSEK (mevzuat karmaşıklığı, öğrenme eğrisi, dar hedef kitle)
 
 ---
 
 ## BUGÜNÜN ÖNERİSİ
 
-**→ Pet Bakıcı/Eğitmen Uygulaması — Kolay Booking, Türkiye Pazar**
+**→ Kira Zam Hesaplayıcı + Arabulucu Eşleştirme Platformu**
 
-Bu fikri seçtim çünkü: (1) **Boş pazar:** Türkiye'de Uber Care benzeri pet booking platformu yok — erken giren pazar hakim olacak. (2) **Network effect:** Bakıcı + müşteri döngüsü viral (bir bakıcı → dört bakıcı → yirmi bakıcı organik). (3) **Ölçekleme net:** 1 şehir (İstanbul) başarısı → 3 şehir (Ankara, İzmir) → 10 şehir (franchise). (4) **Müşteri bulması kolay:** Pet sahibi grupları aktif, talep çok (Google trend +300%), ama çözüm yok. (5) **Upsell:** Veteriner ortaklıkları, pet sigorta, gıda/oyuncak marketplace. (6) **Koray'ın becerilerine uygun:** Marketplace yönetim, B2C stratejisi, ağ kurma.
+Beş fikir arasında en düşük sermaye, en hızlı test edilebilirlik ve en geniş/garanti talep kesişimini bu fikirde buluyorum. Gerekçeler: (1) **Yapısal olarak garanti talep** — kira uyuşmazlıklarında arabuluculuk artık dava açmadan önce yasal zorunluluk, yani platform her ay binlerce kiracı/ev sahibinin geçmek zorunda olduğu bir adıma oturuyor. (2) **Sıfıra yakın sermaye, bugün test edilebilir** — hesaplayıcı + yönlendirme formu tek oturuşta Claude Code ile kurulup bir Facebook grubunda paylaşılabilir, gerçek talebi bir gün içinde ölçebilirsiniz. (3) **Kitle devasa** — Türkiye'de milyonlarca kiracı/ev sahibi her yıl aynı "ne kadar zam yapabilirim" sorusuyla karşılaşıyor, vintage mobilya veya CBAM gibi niş kitlelerden çok daha geniş bir taban. (4) **Koray'ın zaman kısıtına uygun** — fiziksel emek (mobilya) veya ağır mevzuat öğrenme eğrisi (CBAM) gerektirmiyor, yazılım/otomasyon ağırlıklı. Tek gerçek risk, arabulucudan komisyon almanın hukuki sınırlarının netleşmesi gerekliliği — bu, ilk günden bir arabulucu/avukatla kısa bir görüşmeyle çözülebilecek türden bir engel, fikri baştan geçersiz kılmıyor.
 
-Faceless YouTube: moda risk, platform policy. Nişe e-ticaret: trend değişkenliği, gümrük. Avukat danışmanlığı: pazar gelenekçi, ölçek sınırı. Pet uygulama = boş pazar + organik büyüme + ölçek sıçraması + somut adım.
+Faceless YouTube kanalı (FİKİR 1) teknik olarak hazır ama moda/trend riski yüksek ve rakamları büyük ölçüde varsayıma dayalı. Nişe e-ticaret dropshipping (FİKİR 2) düşük sermaye ama gümrük/kalite kontrolü kendi elinizde değil, marj trend değişkenliğine bağlı. Vintage mobilya restorasyonu (FİKİR 4) heyecanlı ve düşük teknik risk ama fiziksel emek/zaman yükü Koray'ın kısıtlarına daha az uygun. CBAM danışmanlığı (FİKİR 5) Koray'ın uzmanlığına en yakın duran fikir ama dar bir sektörel kitleye hitap ediyor ve öğrenme eğrisi + yanlış bilgi riski var.
+
+**Kira zam hesaplayıcısı:** düşük risk + bugün test edilebilirlik + yapısal olarak garanti talep = ilk adım için en mantıklı seçim. İlk hafta hedefi: aracı yayınla, 1 kiracı/ev sahibi grubunda paylaş, gelen mesaj sayısına göre gerçek talebi doğrula.
 
 ---
 
