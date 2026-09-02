@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satin-almada-ihmal-edilen-entegrasyon-kultur",
+    title:
+      "Santander, TSB'yi Satın Aldı: Mahkemelik Olan Şey Bilanço Değil, Çalışma Şekliydi",
+    excerpt:
+      "Santander, TSB'yi 2,9 milyar sterline satın aldıktan kısa süre sonra 5.000 çalışana daha önce hiç olmayan bir kural bildirdi: haftada üç gün ofis zorunluluğu. Şimdi sendika konuyu İş Mahkemesi'ne taşıyor. Birleşme ve devralmalarda en pahalıya patlayan ihmal genelde bilanço değil, kültür.",
+    tag: "Görüş",
+    date: "2 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "e-ihracat-zirvesi-alici-artik-insan-degilse",
     title:
       "1 Milyar Dolarlık Zirve: E-İhracatta Asıl Soru Pazar Yeri Değil, Alıcının Kim Olduğu",
