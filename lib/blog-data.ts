@@ -10,6 +10,24 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "marka-tescili-ve-patent-basvurusu-kobiler-icin-onemi",
+    title: "Marka Tescili ve Patent Başvurusu: KOBİ'ler İçin Neden Kritik?",
+    excerpt: "Tescilsiz markanın taşıdığı somut riskler, TÜRKPATENT'in EPATS üzerinden yürüttüğü marka tescil süreci, 2026 güncel ücret tarifesi, patent başvurusunun aşamaları ve KOBİ'lerin fikri mülkiyetini korumak için atması gereken adımlarla kapsamlı rehber.",
+    category: "MARKA VE PATENT • FİKRİ MÜLKİYET • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1727522974614-b592018e49e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "aile-sirketinden-kurumsal-yapiya-gecis-kurumsallasma",
+    title: "Kurumsallaşma: Aile Şirketinden Kurumsal Yapıya Geçiş Süreci Nasıl Yönetilir?",
+    excerpt: "Kurumsallaşmanın aşamaları, aile şirketlerinde sık yaşanan sorunlar, yönetim kurulu-icra kurulu ayrımı, aile anayasası kavramı ve KOBİ'ler için adım adım pratik bir yol haritasıyla kapsamlı rehber.",
+    category: "KURUMSAL GELİŞİM • KURUMSALLAŞMA • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "go-dijital-cuzdan-nedir-nasil-acilir",
     title: "GO Dijital Cüzdan Nedir? KOSGEB Destek Ödemelerinde Nasıl Kullanılır, Hesap Nasıl Açılır?",
     excerpt: "GO Dijital Cüzdan, KOSGEB'in Yapay Zeka Kredi Programı'nda kullandığı elektronik cüzdan altyapısıdır. Çerçeve Sözleşmesi, MASAK Sözleşmesi, evrak yükleme ve onay adımlarıyla hesap açma süreci, güvenlik boyutu ve dikkat edilmesi gerekenlerle güncel rehber.",
@@ -224,6 +242,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "11 Dakika",
     image: "https://images.unsplash.com/photo-1594803294810-c860e5d29e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "polonyada-sirket-nasil-kurulur",
+    title: "Polonya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
+    excerpt: "Sp. z o.o. şirket türü, S24 online sistemi ile noter/vekâletname yolu arasındaki fark, adım adım kuruluş süreci, %9-%19 CIT ve %23 KDV oranları ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Polonya rehberi.",
+    category: "YURT DIŞI ŞİRKET • POLONYA • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1490643504675-d15d8b3149cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "yurt-disinda-sirket-nasil-kurulur-avantajlari",
