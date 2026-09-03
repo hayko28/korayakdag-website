@@ -10,6 +10,24 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "uluslararasi-fon-ve-kredi-danismanligi-kobi-finansman-kaynaklari",
+    title: "Uluslararası Fon ve Kredi Danışmanlığı: KOBİ'ler İçin Finansman Kaynakları",
+    excerpt: "Türk Eximbank, EBRD, Dünya Bankası/IFC ve AB fonlarından (Horizon Europe, Tek Pazar Programı) KOBİ'lerin somut olarak yararlanabileceği uluslararası finansman kaynakları; kimler başvurabilir, tutar ve şart aralıkları, başvuru süreci ve profesyonel danışmanlığın neden kritik olduğuyla 2026 güncel rehber.",
+    category: "ULUSLARARASI FON • KREDİ DANIŞMANLIĞI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "sgk-tesvikleri-2026-hangi-isverenler-hangi-prim-destegi",
+    title: "SGK Teşvikleri 2026: Hangi İşverenler Hangi Prim Desteğinden Yararlanabilir?",
+    excerpt: "SGK Sigorta Primleri Genel Müdürlüğü'nün güncel sunumuna göre 2026'da yürürlükte olan 15 sigorta primi teşvik, destek ve indirimi tek yazıda: genel prim indiriminden genç/kadın istihdam teşvikine, engelli sigortalı teşvikinden Ar-Ge ve yatırım teşviklerine kadar kimler hangi destekten ne oranda yararlanabilir, karşılaştırma tablosuyla güncel rehber.",
+    category: "SGK TEŞVİKLERİ • BORDRO • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kobiler-icin-yapay-zeka-danismanligi-surec-otomasyonu-nereden-baslamali",
     title: "KOBİ'ler İçin Yapay Zeka Danışmanlığı ve Süreç Otomasyonu: Nereden Başlamalı?",
     excerpt: "AI agent ile klasik süreç otomasyonu arasındaki fark, Türkiye'de KOBİ'lerin 2026 yapay zeka benimseme durumu, müşteri hizmetleri/CRM/doküman otomasyonunda somut senaryolar, gerçekçi maliyet-ROI beklentisi ve adım adım başlangıç checklist'iyle kapsamlı rehber.",
@@ -413,5 +431,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "10 Dakika",
     image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "kdv-iadesi-nasil-alinir-2026-sartlari-sureci",
+    title: "KDV İadesi Nasıl Alınır? 2026 Şartları ve Süreci",
+    excerpt: "İhracat istisnası, indirimli orana tabi işlemler ve tevkifat uygulamasından doğan KDV alacağının nakden/mahsuben tahsili, YMM Tam Tasdik raporunun sağladığı hız avantajı, 2026 güncel limit tablosu ve adım adım başvuru süreciyle kapsamlı rehber.",
+    category: "VERGİ DANIŞMANLIĞI • KDV İADESİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
