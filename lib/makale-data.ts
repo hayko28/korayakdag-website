@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "indirim-ilanlarinda-10-gunluk-referans-fiyat-kurali",
+    title:
+      "Sonbahar Kampanyası Hazırlayan İşletmelerin Gözden Kaçırdığı Kural: 10 Günlük Referans Fiyat",
+    excerpt:
+      "Ticaret Bakanlığı'nın 1 Ağustos 2026'da yürürlüğe giren yönetmelik değişikliğiyle, bir ürüne 'indirim' etiketi konabilmesi için referans fiyatın kampanya öncesi son 10 günün en düşük fiyatı olması zorunlu. Sonbahar kampanya sezonuna hazırlanan işletmelerin bu kuralı fark etmeden ihlal ettiği üç tipik hata.",
+    tag: "Hukuk ve Vergi",
+    date: "3 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satin-almada-ihmal-edilen-entegrasyon-kultur",
     title:
       "Santander, TSB'yi Satın Aldı: Mahkemelik Olan Şey Bilanço Değil, Çalışma Şekliydi",
