@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satin-almada-sozlesmedeki-gizli-madde-kontrol-degisikligi",
+    title:
+      "Şirketi Satın Aldınız, Ertesi Gün En Büyük Müşteriniz Gitti: Sözleşmedeki Görünmeyen Madde",
+    excerpt:
+      "Kontrol değişikliği (change of control) maddesi, bir şirketin ortaklık yapısı değiştiği anda karşı tarafa sözleşmeyi tek taraflı fesih hakkı tanıyabiliyor. Bilanço satın almadan önce satır satır incelenir; sözleşmelerin ek maddeleri genelde son sıraya bırakılıyor — oysa fiyatı asıl belirleyen çoğu zaman orada saklı.",
+    tag: "Görüş",
+    date: "4 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "indirim-ilanlarinda-10-gunluk-referans-fiyat-kurali",
     title:
       "Sonbahar Kampanyası Hazırlayan İşletmelerin Gözden Kaçırdığı Kural: 10 Günlük Referans Fiyat",
