@@ -24,6 +24,7 @@ const KURUM_COLORS: Record<string, string> = {
   Cumhurbaşkanlığı: "bg-slate-600",
   SPK: "bg-emerald-600",
   "Rekabet Kurumu": "bg-red-600",
+  PwC: "bg-pink-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;

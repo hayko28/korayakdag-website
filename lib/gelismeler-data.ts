@@ -624,6 +624,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: HubX örneği, e-Turquality gibi ihracat odaklı destek programlarının yalnızca pazarlama bütçesine değil, uzun vadede şirket değerlemesine de katkı sağlayabildiğini gösteriyor; yazılım veya mobil uygulama alanında büyüyen şirketlere bu tür programları erken aşamada değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "1 Eylül 2026",
+    eklendiTarihi: "2026-09-03",
+    baslik:
+      "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nın 2026 yılı 3. çağrısı açıldı",
+    ozet:
+      "TÜBİTAK, KOBİ'lerin bir müşteri kuruluşun somut ihtiyacına yönelik geliştirdiği Ar-Ge projelerini desteklediği 1707 Sipariş Ar-Ge Destek Programı'nın 2026 yılı üçüncü ve son çağrısını 1 Eylül 2026'da açtı. Başvurular 13 Kasım 2026'ya kadar TEYDEB Proje Değerlendirme İzleme Sistemi (PRODİS) üzerinden alınacak; değerlendirmede 2026-2028 öncelikli konu başlıklarından 'Endüstride Teknolojik Sıçrama' ve 'Dijital Liderlik' alanlarına giren projelere öncelik tanınıyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: 1707'de destek, projeyi sipariş eden müşteri kuruluşla KOBİ tedarikçinin ortak finansmanına dayanıyor; somut bir çözüm ihtiyacı üzerinde anlaştığı bir müşteri kuruluşu olan KOBİ'lere, 13 Kasım'a kadar süren bu pencerede başvuru öncesi ortaklığı yazılı hale getirmelerini öneririm.",
+  },
+  {
+    kurum: "PwC",
+    tarih: "Ağustos 2026",
+    eklendiTarihi: "2026-09-03",
+    baslik:
+      "PwC CEO Araştırması Ara Dönem Görünümü: CEO'ların yalnızca yüzde 8'i yapay zekâdan hem maliyet tasarrufu hem ek gelir sağladığını bildirdi",
+    ozet:
+      "PwC'nin 59 ülke ve 27 sektörden 351 CEO ile 15 Mayıs-22 Haziran 2026 döneminde gerçekleştirdiği Ara Dönem Görünümü araştırmasına göre katılımcı CEO'ların yaklaşık yüzde 8'i son bir yılda yapay zekâ sayesinde hem maliyet tasarrufu sağladığını hem de ek gelir yarattığını, benzer bir oranın ise yeni ürün ve hizmetlerden gelir yaratmak için kanıtlanmış inovasyon uygulamaları kullandığını belirtti. Araştırmaya göre yapay zekâyı birbirinden bağımsız araçlar yerine iş genelinde bütünleşik bir yapı olarak ele alan şirketler, elde ettikleri içgörüleri aksiyona dönüştürmede daha başarılı oluyor.",
+    kaynakUrl:
+      "https://www.pwc.com.tr/tr/yayinlar/arastirmalar/ceo-survey/pwc-ceo-arastirmasi-ara-donem-gorunumu-agustos-2026.html",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Yüzde 8'lik oranın düşüklüğü dikkat çekici; sonuç alan azınlık, yapay zekâyı tek tek dağınık araçlar olarak değil şirket genelinde bütünleşik bir yapı olarak kurguluyor. KOBİ'lere yeni bir araç denemeden önce hangi süreçte somut bir kazanım hedeflediklerini netleştirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
