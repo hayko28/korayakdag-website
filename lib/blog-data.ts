@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kvkk-uyum-sureci-sirketler-icin-kisisel-verilerin-korunmasi-rehberi-2026",
+    title: "KVKK Uyum Süreci: Şirketler İçin Kişisel Verilerin Korunması Rehberi 2026",
+    excerpt: "VERBİS kayıt eşikleri, aydınlatma/açık rıza yükümlülüğü, veri işleme envanteri, 72 saatlik veri ihlali bildirimi ve 2026 güncel idari para cezalarıyla adım adım KVKK uyum rehberi.",
+    category: "HUKUK DANIŞMANLIĞI • KVKK • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "due-diligence-nedir-sirket-satin-alma-birlesme-oncesi-durum-tespiti-2026",
     title: "Due Diligence Nedir? Şirket Satın Alma ve Birleşme Öncesi Neden Kritik?",
     excerpt: "Mali, hukuki, vergisel, operasyonel ve ticari due diligence türlerinin ne incelediği, veri odası hazırlığından bulgular raporuna adım adım süreç, gizli borç/sözleşme/mülkiyet gibi sık karşılaşılan riskler ve 2026/2 sayılı Tebliğ ile güncellenen Rekabet Kurumu bildirim eşikleriyle kapsamlı rehber.",
