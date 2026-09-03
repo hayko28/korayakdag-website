@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kobiler-icin-yapay-zeka-danismanligi-surec-otomasyonu-nereden-baslamali",
+    title: "KOBİ'ler İçin Yapay Zeka Danışmanlığı ve Süreç Otomasyonu: Nereden Başlamalı?",
+    excerpt: "AI agent ile klasik süreç otomasyonu arasındaki fark, Türkiye'de KOBİ'lerin 2026 yapay zeka benimseme durumu, müşteri hizmetleri/CRM/doküman otomasyonunda somut senaryolar, gerçekçi maliyet-ROI beklentisi ve adım adım başlangıç checklist'iyle kapsamlı rehber.",
+    category: "YAZILIM VE YAPAY ZEKÂ • SÜREÇ OTOMASYONU • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "marka-tescili-ve-patent-basvurusu-kobiler-icin-onemi",
     title: "Marka Tescili ve Patent Başvurusu: KOBİ'ler İçin Neden Kritik?",
     excerpt: "Tescilsiz markanın taşıdığı somut riskler, TÜRKPATENT'in EPATS üzerinden yürüttüğü marka tescil süreci, 2026 güncel ücret tarifesi, patent başvurusunun aşamaları ve KOBİ'lerin fikri mülkiyetini korumak için atması gereken adımlarla kapsamlı rehber.",
