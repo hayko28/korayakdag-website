@@ -10,6 +10,42 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "due-diligence-nedir-sirket-satin-alma-birlesme-oncesi-durum-tespiti-2026",
+    title: "Due Diligence Nedir? Şirket Satın Alma ve Birleşme Öncesi Neden Kritik?",
+    excerpt: "Mali, hukuki, vergisel, operasyonel ve ticari due diligence türlerinin ne incelediği, veri odası hazırlığından bulgular raporuna adım adım süreç, gizli borç/sözleşme/mülkiyet gibi sık karşılaşılan riskler ve 2026/2 sayılı Tebliğ ile güncellenen Rekabet Kurumu bildirim eşikleriyle kapsamlı rehber.",
+    category: "M&A • DUE DILIGENCE • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "karbon-ayak-izi-hesaplama-kobiler-icin-rehber-2026",
+    title: "Karbon Ayak İzi Hesaplama ve Raporlama: KOBİ'ler İçin 2026 Rehberi",
+    excerpt: "AB'nin Sınırda Karbon Düzenlemesi Mekanizması (CBAM/SKDM) Ocak 2026'da kesin uygulama dönemine girdi. Kapsam 1/2/3 emisyonlar, GHG Protokolü/ISO 14064 esaslı hesaplama metodolojisi, CBAM gömülü emisyon hesabı, sertifika maliyeti (~75€/tCO₂e), raporlama takvimi ve TSRS bağlantısıyla çelik/alüminyum/çimento/gübre ihracatçısı KOBİ'ler için pratik rehber.",
+    category: "SÜRDÜRÜLEBİLİRLİK • KARBON AYAK İZİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "ulusal-uluslararasi-vergi-danismanligi-kobiler-icin-onemi",
+    title: "Ulusal ve Uluslararası Vergi Danışmanlığı: KOBİ'ler İçin Neden Gerekli?",
+    excerpt: "2026 güncel kurumlar vergisi oranları, transfer fiyatlandırması belgelendirme yükümlülükleri (form, yıllık rapor, Master File, CbCR eşikleri), yurt dışından gelir elde eden şirketlerin çifte vergilendirmeyi önleme anlaşmaları ve yurt dışı iştirak kazancı istisnasıyla vergilendirilmesi ile e-fatura/e-defter hadleriyle KOBİ'ler için kapsamlı vergi danışmanlığı rehberi.",
+    category: "VERGİ VE FİNANSAL YÖNETİM • VERGİ DANIŞMANLIĞI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "kobiler-icin-satis-stratejisi-ve-crm-surecleri",
+    title: "KOBİ'ler İçin Satış Stratejisi ve CRM Süreçleri: Müşteri Kazanımını Sistematik Hale Getirmek",
+    excerpt: "Satış hunisi/pipeline yönetimi, KOBİ için CRM seçim kriterleri, müşteri kazanım maliyeti (CAC) kavramı, bayi/kanal yönetiminde sık yapılan hatalar ve satış ekibi performans göstergeleriyle satışı kişiye değil sisteme bağlayan kapsamlı rehber.",
+    category: "PAZARLAMA VE SATIŞ • CRM • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "uluslararasi-fon-ve-kredi-danismanligi-kobi-finansman-kaynaklari",
     title: "Uluslararası Fon ve Kredi Danışmanlığı: KOBİ'ler İçin Finansman Kaynakları",
     excerpt: "Türk Eximbank, EBRD, Dünya Bankası/IFC ve AB fonlarından (Horizon Europe, Tek Pazar Programı) KOBİ'lerin somut olarak yararlanabileceği uluslararası finansman kaynakları; kimler başvurabilir, tutar ve şart aralıkları, başvuru süreci ve profesyonel danışmanlığın neden kritik olduğuyla 2026 güncel rehber.",

@@ -678,11 +678,11 @@ export default function BlogPage() {
             <h3 className="text-lg font-bold text-[#071A2F]">TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?</h3>
           </Link>
           <Link
-            href="/blog/kosgeb-kobi-dijital-donusum-destek-programi-2026"
+            href="/blog/kobiler-icin-satis-stratejisi-ve-crm-surecleri"
             className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
           >
-            <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • DİJİTAL DÖNÜŞÜM • 2026</div>
-            <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?</h3>
+            <div className="mb-2 text-sm font-semibold text-orange-600">PAZARLAMA VE SATIŞ • CRM • 2026</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">KOBİ&apos;ler İçin Satış Stratejisi ve CRM Süreçleri: Müşteri Kazanımını Sistematik Hale Getirmek</h3>
           </Link>
         </div>
       </section>
