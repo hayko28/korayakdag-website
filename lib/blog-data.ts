@@ -282,7 +282,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "istihdami-koruma-destek-programi-2026",
     title: "İstihdamı Koruma Destek Programı 2026: Yeni Esaslar, Destek Tutarları ve Örnek Hesaplamalar",
-    excerpt: "Güncelleme (28 Ağustos 2026): kredi desteği 15 puana çıkarıldı, kredi limiti formülle hesaplanıyor, yatırım teşvik belgeli büyük işletmeler için özel formül geldi. Çalışan başına 3.500 TL destek, 50 milyon TL'ye kadar kredi ve gerçekçi şirket örnekleriyle güncel rehber.",
+    excerpt: "Güncelleme (1 Eylül 2026): büyük işletmeler de finansman desteğine dahil edildi, kredi limiti 150 milyon TL'ye çıktı, başvurular 31 Ekim 2026'ya kadar açık. Çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği ve gerçekçi şirket örnekleriyle güncel rehber.",
     category: "KOSGEB • İSTİHDAM DESTEĞİ • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -300,7 +300,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026",
     title: "KOSGEB COP31 Odaklı Hızlandırma Desteği Çağrısı 2026: Kimler Başvurabilir, Destek Tutarı Nedir?",
-    excerpt: "Antalya'da düzenlenecek COP31 İklim Zirvesi öncesinde açılan çağrı kapsamında TEKMER işletici kuruluşları ve Teknokent yönetici şirketlerine 6,5 milyon TL'ye kadar geri ödemeli destek sağlanıyor. Şartlar, hedef alanlar, başvuru tarihleri ve KOBİ'ler için katılım yoluyla güncel rehber.",
+    excerpt: "Güncelleme: kurumsal başvuru dönemi 30 Ağustos 2026'da kapandı. Antalya'da düzenlenecek COP31 İklim Zirvesi öncesinde açılan çağrı kapsamında TEKMER işletici kuruluşları ve Teknokent yönetici şirketlerine 6,5 milyon TL'ye kadar geri ödemeli destek sağlanmıştı. Şartlar, hedef alanlar ve KOBİ'ler için katılım yoluyla güncel rehber.",
     category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "11 Dakika",

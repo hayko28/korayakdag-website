@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "İstihdamı Koruma Destek Programı 2026 | Koray Akdağ",
-  description: "28 Ağustos 2026'da değişen yönetmelikle çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği ve örnek hesaplamalar.",
+  description: "Güncelleme (1 Eylül 2026): büyük işletmeler de finansman desteğine dahil edildi, kredi limiti 150 milyon TL'ye çıktı. Çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği ve örnek hesaplamalar.",
   keywords: [
     "İstihdamı Koruma Destek Programı",
     "İstihdamı Koruma Destek Programı yeni esaslar",
@@ -22,7 +22,7 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="İstihdamı Koruma Destek Programı 2026: Yeni Esaslar, Destek Tutarları ve Örnek Hesaplamalar"
-      description="28 Ağustos 2026'da yayımlanan yönetmelik değişikliğiyle güncellenen İstihdamı Koruma Destek Programı: çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği, yatırım teşvik belgeli işletmeler için kredi limiti formülü ve gerçekçi şirket örnekleriyle hesaplama."
+      description="Güncelleme (1 Eylül 2026): büyük işletmeler de finansman desteğine dahil edildi, kredi limiti 150 milyon TL'ye çıktı. 28 Ağustos 2026'da yayımlanan yönetmelik değişikliğiyle güncellenen İstihdamı Koruma Destek Programı: çalışan başına 3.500 TL destek, 15 puana kadar kredi desteği, yatırım teşvik belgeli işletmeler için kredi limiti formülü ve gerçekçi şirket örnekleriyle hesaplama."
       category="KOSGEB • İSTİHDAM DESTEĞİ • 2026"
       date="2026"
       readTime="12 Dakika"
@@ -163,6 +163,26 @@ export default function BlogPage() {
             hibelerine kıyasla çok daha büyük bir bütçeyle
             tasarlandığını göstermektedir.
           </p>
+          <div className="mt-10 rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
+            <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
+              ⏰ Güncelleme (1 Eylül 2026): Büyük İşletmeler de Kapsama Alındı
+            </h3>
+            <p className="mb-4 leading-8 text-gray-700">
+              KOSGEB, 1 Eylül 2026&apos;da programın finansman desteği
+              ayağını genişletti. Buna göre:
+            </p>
+            <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-red-600">
+              <li>Daha önce bu programın KOSGEB kanalında yalnızca KOBİ&apos;ler yer alırken, artık <strong>büyük ölçekli işletmeler de</strong> KOSGEB&apos;in finansman desteğinden yararlanabiliyor.</li>
+              <li>KOSGEB tarafından karşılanan finansman desteği puanı <strong>10 puandan 12 puana</strong> yükseltildi (bu, aşağıda anlatılan genel imalat KOBİ&apos;lerindeki 15 puanlık kredi desteğinden ayrı, büyük işletmelere özgü bir orandır).</li>
+              <li>Büyük işletmeler için kredi üst limiti <strong>50 milyon TL&apos;den 150 milyon TL&apos;ye</strong> çıkarıldı; KOBİ&apos;lerde üst limit 50 milyon TL olarak devam ediyor.</li>
+              <li>Genişletilen finansman desteğine başvurular <strong>1 Eylül – 31 Ekim 2026</strong> tarihleri arasında alınıyor.</li>
+            </ul>
+            <p className="mt-4 leading-8 text-gray-700">
+              Bu genişleme, aşağıda anlatılan 28 Ağustos 2026 değişikliğinin
+              üzerine eklenen ek bir düzenlemedir; iki güncelleme birlikte
+              değerlendirilmelidir.
+            </p>
+          </div>
           <div className="mt-10 rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-8">
             <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
               🆕 28 Ağustos 2026&apos;da Ne Değişti?
@@ -273,7 +293,7 @@ export default function BlogPage() {
             <div className="rounded-xl border-l-4 border-orange-500 bg-white p-6">
               <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-orange-500">
                 <li><strong>KOBİ ölçeğindeki işletmeler</strong> — başvurularını KOSGEB üzerinden yapar.</li>
-                <li><strong>Büyük ölçekli işletmeler</strong> — başvurularını doğrudan Sanayi ve Teknoloji Bakanlığı&apos;na yapar.</li>
+                <li><strong>Büyük ölçekli işletmeler</strong> — başvurularını doğrudan Sanayi ve Teknoloji Bakanlığı&apos;na yapar; 1 Eylül 2026&apos;dan itibaren ayrıca <strong>KOSGEB&apos;in genişletilen finansman desteği kanalından</strong> da (150 milyon TL&apos;ye kadar kredi limiti, 12 puana kadar destek) yararlanabiliyor.</li>
               </ul>
             </div>
             <p className="mt-6 leading-8 text-gray-700">
@@ -564,21 +584,20 @@ export default function BlogPage() {
           </div>
           <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              📅 Ağustos 2026 İtibarıyla Durum
+              📅 Eylül 2026 İtibarıyla Durum
             </h3>
             <p className="leading-8 text-gray-700">
-              Bu yazının güncellendiği 28 Ağustos 2026 itibarıyla,
-              programın yeni esasları Resmî Gazete&apos;de yayımlanmış
-              olsa da; başvuru sırasında istenecek belge ve bilgiler
-              ile çevrimiçi başvuru portalının açılış tarihi henüz
-              Bakanlık ve KOSGEB tarafından ayrıca ilan edilmedi. Daha
-              önce Mart-Nisan 2026 döneminde başvurmuş ve onay almış
-              işletmeler, koruma dönemleri boyunca istihdamlarını
-              korumaları koşuluyla ödeme talebinde bulunmaya devam
-              edebiliyor. Henüz başvurmamış işletmelerin, yeni portal
-              açıldığında hızlı hareket edebilmek için SGK prim gün
-              verilerini, KOBİ Bilgi Sistemi kayıtlarını ve (varsa)
-              yatırım teşvik belgesi/tamamlama vizesi belgelerini
+              28 Ağustos 2026&apos;da yayımlanan yönetmelik değişikliğinin
+              ardından, 1 Eylül 2026&apos;da programın finansman desteği
+              ayağı büyük işletmeleri de kapsayacak şekilde genişletildi.
+              Genişletilen finansman desteğine yönelik başvurular{" "}
+              <strong>1 Eylül – 31 Ekim 2026</strong> tarihleri arasında
+              alınıyor. Daha önce Mart-Nisan 2026 döneminde başvurmuş ve
+              onay almış işletmeler, koruma dönemleri boyunca
+              istihdamlarını korumaları koşuluyla ödeme talebinde
+              bulunmaya devam edebiliyor. Henüz başvurmamış işletmelerin
+              SGK prim gün verilerini, KOBİ Bilgi Sistemi kayıtlarını ve
+              (varsa) yatırım teşvik belgesi/tamamlama vizesi belgelerini
               şimdiden hazırlaması önerilir. Güncel duyurular
               KOSGEB&apos;in resmî internet sitesi ve KOBİ Bilgi
               Sistemi üzerinden yayımlanmaktadır.
@@ -717,6 +736,20 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border p-8">
               <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+                Büyük ölçekli bir işletmeyim, 1 Eylül 2026 sonrası KOSGEB&apos;e başvurabilir miyim?
+              </h3>
+              <p className="leading-8 text-gray-700">
+                1 Eylül 2026&apos;dan itibaren evet. Daha önce büyük
+                ölçekli işletmeler bu programa yalnızca Sanayi ve
+                Teknoloji Bakanlığı üzerinden dahil olabiliyordu; artık
+                KOSGEB&apos;in genişletilen finansman desteği kanalından
+                da, 150 milyon TL&apos;ye kadar kredi limiti ve 12 puana
+                kadar destekle, 31 Ekim 2026&apos;ya kadar başvuru
+                yapılabiliyor.
+              </p>
+            </div>
+            <div className="rounded-2xl border p-8">
+              <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
                 28 Ağustos 2026 değişikliği sonrası şimdi ne yapmalıyım?
               </h3>
               <p className="leading-8 text-gray-700">
@@ -821,13 +854,16 @@ export default function BlogPage() {
             çıkarıldı, kredi limiti artık net formüllerle hesaplanıyor,
             yatırım teşvik belgeli büyük işletmeler için ayrı bir
             formül tanımlandı ve program 2028&apos;e kadar uzatıldı.
-            İmalat sanayinde faaliyet gösteren işletmeler için hem
-            doğrudan nakdi destek hem de 50 milyon TL&apos;ye kadar
-            kredi imkânını bir araya getiren bu program, 2026&apos;nın
-            en kapsamlı istihdam odaklı destek mekanizmalarından biri
-            olmaya devam ediyor. Yeni çevrimiçi başvuru portalının
-            açılışını beklerken, referans dönem verilerinizi ve
-            belgelerinizi şimdiden hazırlamanız kritik önem taşıyor.
+            1 Eylül 2026&apos;da ise finansman desteği ayağı büyük
+            ölçekli işletmeleri de kapsayacak şekilde genişletildi;
+            bu işletmeler için kredi üst limiti 150 milyon TL&apos;ye,
+            destek puanı 12 puana çıkarıldı ve 31 Ekim 2026&apos;ya
+            kadar başvuru penceresi açıldı. İmalat sanayinde faaliyet
+            gösteren KOBİ&apos;ler için hem doğrudan nakdi destek hem de
+            50 milyon TL&apos;ye kadar kredi imkânını, büyük işletmeler
+            için ise 150 milyon TL&apos;ye kadar kredi imkânını bir
+            araya getiren bu program, 2026&apos;nın en kapsamlı istihdam
+            odaklı destek mekanizmalarından biri olmaya devam ediyor.
           </p>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             Şirketinizin bu programdan ve diğer güncel devlet destek/teşvik
