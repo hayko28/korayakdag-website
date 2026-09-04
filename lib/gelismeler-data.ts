@@ -652,6 +652,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yüzde 8'lik oranın düşüklüğü dikkat çekici; sonuç alan azınlık, yapay zekâyı tek tek dağınık araçlar olarak değil şirket genelinde bütünleşik bir yapı olarak kurguluyor. KOBİ'lere yeni bir araç denemeden önce hangi süreçte somut bir kazanım hedeflediklerini netleştirmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Eylül 2026",
+    eklendiTarihi: "2026-09-04",
+    baslik:
+      "Ağustos 2026 ihracatı, ağustos ayları için rekor kırarak 23,5 milyar dolara ulaştı",
+    ozet:
+      "Ticaret Bakanlığı'nın açıkladığı verilere göre Türkiye'nin ağustos ayı ihracatı geçen yılın aynı ayına göre %8,1 artışla 23 milyar 467 milyon dolara çıkarak ağustos ayları itibarıyla tüm zamanların rekorunu kırdı. İthalat %10,5 artışla 28 milyar 706 milyon dolara, dış ticaret hacmi ise %9,4 artışla 52 milyar 173 milyon dolara ulaştı; Ocak-Ağustos döneminde toplam ihracat %4 artışla 185 milyar 6 milyon dolar oldu.",
+    kaynakUrl: "https://ticaret.gov.tr/haberler/2026-yili-agustos-ayi-dis-ticaret-verileri",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracattaki artışın ithalattaki artışın gerisinde kalması dış ticaret açığını büyütüyor; ihracat odaklı KOBİ'lere ciro büyümesini kur ve girdi maliyetleriyle birlikte değerlendirip nakit akışı planlarını buna göre gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "30 Ağustos 2026 (2026 ilk 6 ay verileri)",
+    eklendiTarihi: "2026-09-04",
+    baslik:
+      "2026'nın ilk yarısında 2.410 yatırım teşvik belgesi düzenlendi, imalat sektörü belgelerin %73'ünü aldı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı verilerine göre 2026 yılının Ocak-Haziran döneminde 2.437 yatırım projesi için 2.410 teşvik belgesi düzenlendi; belgeler kapsamında yaklaşık 447,9 milyar TL'lik sabit yatırım ve 64.416 kişilik istihdam hedefleniyor. İmalat sektörü 1.770 belgeyle (toplamın yaklaşık %73'ü) ilk sırada yer aldı; düzenlenen belgelerin 2.291'i yerli, 119'u yabancı sermayeli firmalara verildi.",
+    kaynakUrl:
+      "https://www.trthaber.com/haber/ekonomi/yatirim-tesviklerinde-imalat-zirvede-1770-belge-verildi-955360.html",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: İmalat sektörünün teşvik belgelerinin büyük çoğunluğunu alması, üretim yatırımı planlayan işletmeler için sistemin hâlâ en işlevsel olduğu alanın burası olduğunu gösteriyor; yeni bir yatırım kararı öncesi bölge ve sektör bazlı teşvik unsurlarını mutlaka bakanlık verileriyle birlikte değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
