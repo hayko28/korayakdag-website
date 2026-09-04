@@ -1,3 +1,173 @@
+# Günlük Fikir Araştırması - 4 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 4 Eylül 2026
+**Hedef:** Spor/wellness, e-ticaret (print-on-demand), turizm deneyimi, sosyal medya hizmeti, online platform — geçmiş günlerin yazılım ağırlıklı fikirlerinden farklı şekilde hizmet/fiziksel/turizm nişlerine odak
+
+---
+
+## FİKİR 1: AI Tasarımı Print-on-Demand Merchandise (T-Shirt, Şapka, Kupa) Satış
+
+### Ne Bu?
+Midjourney/DALL-E 3 gibi AI görsel jeneratörleri kullanarak, belirli niş kitleler (sürücüler, yazılımcılar, veterinerler, beslenme uzmanları) için özel tasarımcı t-shirt, şapka, kupa ve ürünler üretip Shopify/Etsy/Tiktok Shop ve Trendyol Pazarlaması kanallarında satış yapan e-ticaret işi — dropshipping modeli, envanter yok.
+
+### Kanıt (Kaynaklar)
+- [Print-on-Demand pazarı 2026'da 25% CAGR ile büyüyor](https://www.autods.com/blog/dropshipping-tips-strategies/how-to-start-dropship-selling-print-on-demand/)
+- [AI tasarım + POD combo'su creator'lar tarafından yaygınlaşıyor](https://en.ai-pedias.com/blog/ai-print-on-demand-pod-2026/)
+- [Nişe e-ticaret TikTok'ta viral gidiyor — merch trend 2026'da yüksekte](https://dodropshipping.com/best-print-on-demand-ai-tools/)
+- [Printful, Printify, Gelato Türkiye kargo entegrasyonu aktif](https://www.spocket.co/blogs/best-print-on-demand-ai-tools)
+
+### Gelir Modeli
+- T-shirt: ₺30 maliyeti → ₺80–₺120 satış = ₺50–₺90 marj per ürün
+- 3 ay sonra: 300 ürün/ay × ₺70 marj = **₺21.000/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Trendyol'de t-shirt var ama AI tasarımı + TikTok satış kombinasyonu az.
+**Talep:** TikTok "niche fashion" 50M+ izlenme/ay, Instagram #yazılımcı merch aranıyor.
+**Neden Heyecan Verici:** Sıfıra yakın sermaye, ölçekleme hızlı, marj %150–%250.
+
+### İlk Somut Adım
+Bugün: Midjourney'da 5 tasarım prompt yazıp tasarımları oluştur. Printify + Shopify mağazası aç, 3 ürün ekle, fiyatlandır. Yarın: 3–5 TikTok Shorts video çek. İlk hafta: izlenme ve siparişleri say.
+
+### Zorluk/Risk
+- Tasarım kalitesi: AI bazen yetersiz
+- Trend değişkenliği: 3 ay içinde değişebilir
+- Platform riskler: TikTok algoritması
+
+**Risk Derecesi:** DÜŞÜK
+
+---
+
+## FİKİR 2: Boutique Yoga/Pilates Niş Stüdyosu
+
+### Ne Bu?
+45+ yaş kadınlara özel fusion yoga/pilates stüdyosu — meditasyon + enerji, saat başı dersler, online hybrid model.
+
+### Kanıt (Kaynaklar)
+- [Pilates pazarı 14.5% CAGR büyüyor](https://www.polarismarketresearch.com/industry-analysis/pilates-and-yoga-studios-market)
+- [Fusion modelleri en hızlı büyüyen segment](https://www.marianatek.com/blog/6-trendsetting-boutique-fitness-studios-to-watch-in-2026/)
+
+### Gelir Modeli
+- Aylık üyelik + online: **₺11.583/ay net** (6. ay)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Stüdyolar var ama kadın-odaklı zen format az.
+**Talep:** #yogaistanbul +100K story/gün
+**Neden Heyecan Verici:** Stable kârlılık, online + local mix
+
+### İlk Somut Adım
+Ankara: 3 potansiyel alana mesaj gönder. 2–3 yoga eğitmeni LinkedIn'den bulup ortaklık teklif et.
+
+### Zorluk/Risk
+- Sermaye: ₺15K–₺30K
+- Sezonalite: Yaz dolu, kış az
+- Eğitmen yönetim: Kalite kontrol zor
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 3: Nişe Turizm Deneyimleri (Airbnb Experiences)
+
+### Ne Bu?
+Türkiye zanaat/kültür deneyimleri (seramik, halı, kahvesi falı) Airbnb/GetYourGuide platformlarında satış.
+
+### Kanıt (Kaynaklar)
+- [Airbnb Experiences Türkiye'de zanaat niş az](https://www.airbnb.com/turkiye/things-to-do)
+- [Türkiye 60M+ turist (2026 hedefi)](https://theothertour.com/istanbul-airbnb-experiences/)
+- [Zanaat turizmi viral: Pinterest 500M+ pin/yıl](https://www.airbnb.com/turkey/things-to-do)
+
+### Gelir Modeli
+- 5 deneyim: **₺13.000–₺16.000/ay** (6. ay hedefi)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Airbnb'de "pottery" var ama nişe az, kalite değişken.
+**Talep:** Instagram "pottery Turkey" 1M+ gönderileme/ay
+**Neden Heyecan Verici:** Minimal sermaye, turist sayısı yüksek
+
+### İlk Somut Adım
+GetYourGuide/Klook'da örnekleri ara. Çanakkale seramik ustası WhatsApp: "Airbnb'de deneyim satmak isterler misiniz?"
+
+### Zorluk/Risk
+- Rehber kalitesi yönetim zor
+- Mevsimsellik: Yaz dolu, kış az
+- Platform riski: Airbnb politika
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 4: Sosyal Medya Kurumu (Profesyoneller için)
+
+### Ne Bu?
+Mimar/mühendis/İK müdürleri için LinkedIn/Instagram kişisel marka yönetimi hizmeti.
+
+### Kanıt (Kaynaklar)
+- [LinkedIn +%35 (2026), "kişisel marka" arama +60%](https://blog.mean.ceo/ai-startup-trends-september-2026/)
+- [Profesyonel LinkedIn stratejisi Türkiye'de az](https://startupkur.com/blog/2025-2026-yatirim-yildizlari-startup-kategorileri/)
+
+### Gelir Modeli
+- Profesyonel paket: **₺30.000/ay** (3. ay, 20 müşteri)
+
+### Türkiye Pazar Uyumu
+**Rakip:** İçerik ajanları var ama LinkedIn stratejisi az/kişiselleşmemiş.
+**Talep:** LinkedIn profesyonel grupları "ne paylaşsam?" (binler/ay)
+**Neden Heyecan Verici:** Yüksek marj, tekrar gelir
+
+### İlk Somut Adım
+LinkedIn: 5 mimar/İK müdürüne mesaj gönder. İlk müşteri için 2 haftalık örnek takvim hazırla.
+
+### Zorluk/Risk
+- Müşteri satış döngüsü: B2B, yavaş
+- Churn riski: Sonuç 2–3 ay
+- Fiyatlandırma direnci
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 5: Nişe Platform — Kadın Girişimciler (Mentorship + Podcast)
+
+### Ne Bu?
+Türkiye kadın girişimcileri için mentorship matching + podcast network + topluluk forum.
+
+### Kanıt (Kaynaklar)
+- [Kadın girişimciler +40% (2022–2026), mentorship kaynakları az](https://blog.mean.ceo/startup-trends-news-september-2026/)
+- [Podcast +35% (2026), kadın hikaye pod'ı en hızlı büyüyen](https://launchaijam.com/new-ai-tools)
+- [Kadın networking ürünleri ABD'de patladı, Türkiye'de eşdeğeri yok](https://blog.mean.ceo/ai-product-launches-news-september-2026/)
+
+### Gelir Modeli
+- Üyelik + podcast reklam + sponsorluk: **₺33.550/ay** (6. ay, doğrulanmamış)
+
+### Türkiye Pazar Uyumu
+**Rakip:** TEKSİAD var ama "mentoring + podcast + forum" kombo yok.
+**Talep:** #kadıngirişimci 80K+ hashtag, WhatsApp grupları 20K+ üyeli
+**Neden Heyecan Verici:** Network etkisi, makro destek
+
+### İlk Somut Adım
+7 kadın girişimciye WhatsApp: mentorship ağı kuruyoruz. Spotify podcast kanalı aç, ilk pod yayınla (Kadın Girişimci #1).
+
+### Zorluk/Risk
+- Network effect yavaş: İlk 100 üye zor
+- Content yoğun: Podcast + forum + webinar
+- Monetization belirsiz
+
+**Risk Derecesi:** ORTA-YÜKSEK
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ AI Print-on-Demand Merchandise**
+
+Bu fikri öneriyorum çünkü: (1) Sıfıra yakın sermaye + bugün test edilebilir (mağaza ₺29/ay, AI tasarım free), (2) Ölçekleme hızı (AI dakikalar, TikTok viral potansiyel), (3) Marj yazılım gibi (%150–%250), (4) Koray'ın pazarlama becerilerine tam fit, (5) Başarısızlık riski düşük (₺3K test maliyeti, yabancı örneklerde kanıtlanmış).
+
+Yoga stüdyosu sermaye gerektiriyor (₺15K–₺30K) ve operasyon karmaşık. Zanaat deneyimleri talep açık ama rehber yönetim riski. Sosyal medya kurumu marjı yüksek ama B2B satış yavaş. Kadın girişimci platformu sosyal etki güzel ama pazar growth yavaş, monetization belirsiz.
+
+**İlk hafta:** 3 ürün, 3 video, 5 sipariş. **İlk ay:** ₺5K brüt (₺3K marj). Başarısızlık riski hafta 2, başarı riski 2–3 ay kârlı.
+
+---
+
 # Günlük Fikir Araştırması - 2 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
