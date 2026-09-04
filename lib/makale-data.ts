@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tescilsiz-markanin-buyudukce-artan-riski",
+    title: "Markanız Büyüdükçe, Tescilsiz Kalmanın Riski de Büyüyor",
+    excerpt:
+      "Türk hukukunda marka koruması kullanımdan değil tescilden doğuyor. Bir işletme ne kadar tanınır hale gelirse, markasının başkası tarafından fark edilip erken tescil ettirilme riski de o kadar artıyor — küçükken kimse bakmıyor, büyüyünce herkes bakıyor.",
+    tag: "Görüş",
+    date: "4 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satin-almada-sozlesmedeki-gizli-madde-kontrol-degisikligi",
     title:
       "Şirketi Satın Aldınız, Ertesi Gün En Büyük Müşteriniz Gitti: Sözleşmedeki Görünmeyen Madde",
