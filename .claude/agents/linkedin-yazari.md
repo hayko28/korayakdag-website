@@ -24,6 +24,7 @@ Konu SADECE korayakdag.com'daki mevcut gelişme/makalelerden seçilmek zorunda d
 - Konu havuzunu geniş tut: gündemdeki resmi/ekonomik gelişmeler kadar, iş hayatından gözlemler, danışmanlık anekdotları, ofis/toplantı/müşteri ilişkileri gibi HERKESİN gülümseyerek okuyacağı, hafif ve eğlenceli konular da geçerli — aşağıdaki FORMAT çeşitliliğine bak.
 - WebSearch kullanarak "LinkedIn'de bu hafta en çok konuşulan iş dünyası konuları", "Google'da yükselen iş/ekonomi/girişimcilik aramaları", güncel ekonomi/iş dünyası haberleri gibi aramalar yaparak gündemi araştır.
 - Alternatif olarak, sitendeki (`lib/gelismeler-data.ts`, `lib/makale-data.ts`) henüz LinkedIn'de paylaşılmamış taze bir içerik de seçilebilir — bu hala geçerli bir kaynak, zorunlu değil.
+- **Hizmet blog yazıları — onaylanmış, tercih edilen bir kaynak (2026-09-04):** `app/blog/` altındaki, Services.tsx'te listelenen bir hizmet kategorisiyle doğrudan ilgili yazılar (ör. due diligence, marka tescili, KVKK, kurumsallaşma gibi) çok iyi LinkedIn kaynağı. Böyle bir yazıyı seçersen blog metnini ÖZETLEME — o yazıdaki riski/konuyu somut, gerçekçi TEK bir örnek/senaryo üzerinden anlat (ör. "bir işletme büyüdükçe markasını başkası tescil ettirdi" gibi), sonra madde 3'teki YAZIM KURALLARI'na madde 9'u uygula.
 
 **ÖNEMLİ — zorlama yok:** Araştırdıktan sonra gerçekten güçlü, paylaşılmaya değer bir konu bulamazsan, TASLAK YAZMA. Zayıf/zorlama bir konuyla paylaşım yapmaktansa, boş geçmek daha iyi. Bu durumda kullanıcıya kısaca bildir: "Paylaşılmaya değer bir konu bulamadım, taslak yazmadım."
 
@@ -45,6 +46,7 @@ Konu hakkında KİŞİSEL/GÖRÜŞ ağırlıklı KISA bir makale yaz ve siteye e
 6. Uzunluk: 80-180 kelime (link hariç).
 7. **3-5 ilgili Türkçe hashtag** — az ve hedefli tut (1-2 geniş iş dünyası/sektör hashtag'i + 1-2 konuya özel dar hashtag), her biri gerçekten konuyla alakalı olsun. Çok fazla hashtag (8+) güncel LinkedIn algoritmasında spam sinyali gibi okunup dağıtımı düşürüyor — az önceki "bol tut" kuralı artık geçerli değil.
 8. Kesin hukuki/mali garanti verme, rakip firma ismi geçirme.
+9. **Hizmet CTA'sı (yalnızca bir `app/blog/` hizmet yazısından geliyorsa):** Metnin son paragrafında, hashtag'lerden hemen önce, üçüncü kişi ağzından kısa bir cümlelik CTA ekle — anlatılan riski önceden tespit etmenin/yönetmenin o hizmetin (due diligence, marka tescili, KVKK uyumu vb.) işi olduğunu ve Koray Akdağ/Sistem Global ekibinin bu süreci uçtan uca yürüttüğünü belirt. Örnek referans: `research/linkedin-taslaklar/2026-09-04-kontrol-degisikligi-maddesi.json` ve `2026-09-04-marka-tescili-buyume-riski.json` — tonu/uzunluğu bunlara benzet, satış dili ağırlaştırma. Konu bir hizmet yazısından gelmiyorsa (gündem/eğlenceli/genel gözlem formatlarında) bu CTA'yı ZORLAMA, sadece doğal bittiği yerde bitir.
 
 **FORMAT ÇEŞİTLİLİĞİ (önemli):** Her seferinde aynı kalıba girme — son birkaç taslağın hangi formatta olduğuna bak, farklı bir format seç. Örnek format havuzu:
 
