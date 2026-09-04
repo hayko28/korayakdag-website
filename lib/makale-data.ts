@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "imalat-finansman-paketinde-istihdam-sarti",
+    title:
+      "250 Milyar TL'lik İmalat Finansman Paketinde Görünmeyen Şart: İstihdam Taahhüdü",
+    excerpt:
+      "1 Eylül'de başvuruları açılan İmalat Sanayi Finansman Desteği'nde 12 puanlık faiz avantajının koşulu, işletmenin 2026'nın ikinci yarısında ilk yarıdaki istihdam seviyesini koruması. Düşük faiz cazip görünse de, kredi aslında altı aylık bir işgücü taahhüdü — herkes için aynı anlama gelmiyor.",
+    tag: "Strateji",
+    date: "4 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tescilsiz-markanin-buyudukce-artan-riski",
     title: "Markanız Büyüdükçe, Tescilsiz Kalmanın Riski de Büyüyor",
     excerpt:
