@@ -648,6 +648,13 @@ export default function BlogPage() {
         </h2>
         <div className="grid gap-6 md:grid-cols-3">
           <Link
+            href="/blog/tam-tasdik-nedir-kimler-yaptirmali-avantajlari-2026"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">YEMİNLİ MALİ MÜŞAVİRLİK • TAM TASDİK • 2026</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">Tam Tasdik Nedir? Kimler Yaptırmalı, Avantajları Neler?</h3>
+          </Link>
+          <Link
             href="/blog/bagimsiz-denetim-esik-degerleri-2026-degisti"
             className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
           >

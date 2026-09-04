@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tekmer-nedir-basvuru-sureci-destekleri-2026",
+    title: "TEKMER Nedir? Teknoloji Geliştirme Merkezlerine Nasıl Başvurulur?",
+    excerpt: "KOSGEB'in 3624 sayılı Kanun kapsamında yürüttüğü TEKMER programında Teknopark'tan farkı, ön kuluçka-kuluçka-hızlandırma süreci, kimlerin başvurabileceği, işletici kuruluşa sağlanan destek tutarları ve adım adım başvuru süreciyle 2026 güncel rehber.",
+    category: "TEKMER • KOSGEB • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kvkk-uyum-sureci-sirketler-icin-kisisel-verilerin-korunmasi-rehberi-2026",
     title: "KVKK Uyum Süreci: Şirketler İçin Kişisel Verilerin Korunması Rehberi 2026",
     excerpt: "VERBİS kayıt eşikleri, aydınlatma/açık rıza yükümlülüğü, veri işleme envanteri, 72 saatlik veri ihlali bildirimi ve 2026 güncel idari para cezalarıyla adım adım KVKK uyum rehberi.",
@@ -478,10 +487,28 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "kidem-tazminati-ihbar-suresi-fesih-mevzuati-2026",
+    title: "Kıdem Tazminatı, İhbar Süresi ve Fesih Mevzuatı: İşverenler İçin 2026 Rehberi",
+    excerpt: "2026 güncel kıdem tazminatı tavanı, kıdeme göre ihbar süresi tablosu, haklı fesih/haksız fesih ayrımı (İş Kanunu m.25), somut hesaplama örnekleri ve işe iade davası riskini önleyen doğru fesih usulüyle kapsamlı rehber.",
+    category: "İŞ HUKUKU • FESİH VE KIDEM MEVZUATI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kdv-iadesi-nasil-alinir-2026-sartlari-sureci",
     title: "KDV İadesi Nasıl Alınır? 2026 Şartları ve Süreci",
     excerpt: "İhracat istisnası, indirimli orana tabi işlemler ve tevkifat uygulamasından doğan KDV alacağının nakden/mahsuben tahsili, YMM Tam Tasdik raporunun sağladığı hız avantajı, 2026 güncel limit tablosu ve adım adım başvuru süreciyle kapsamlı rehber.",
     category: "VERGİ DANIŞMANLIĞI • KDV İADESİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "tam-tasdik-nedir-kimler-yaptirmali-avantajlari-2026",
+    title: "Tam Tasdik Nedir? Kimler Yaptırmalı, Avantajları Neler?",
+    excerpt: "3568 sayılı Kanun kapsamında YMM Tam Tasdik sözleşmesinin ne olduğu, sınırlı tasdikten farkı, hangi şirketlerin yaptırmasının avantajlı (hatta artık pratikte neredeyse zorunlu) olduğu, sözleşme süreci ve 2026 güncel bildirim süreleriyle kapsamlı rehber.",
+    category: "YEMİNLİ MALİ MÜŞAVİRLİK • TAM TASDİK • 2026",
     date: "2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
