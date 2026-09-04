@@ -1,9 +1,13 @@
 import { initializeDatabase, sql } from "@/lib/database";
 
-// Bugünün YYYYMM formatında LinkedIn API sürümü (LinkedIn-Version header'ı
-// için zorunlu). Dinamik hesaplanır, hep güncel kalır.
+// YYYYMM formatında LinkedIn API sürümü (LinkedIn-Version header'ı için
+// zorunlu). LinkedIn her ayın sürümünü ay başında hemen aktif etmiyor
+// (birkaç gün gecikmeli); bu yüzden bir önceki ayın sürümü kullanılıyor —
+// o her zaman kesin aktif olmuş oluyor (örn. "bu ayın sürümü henüz aktif
+// değil" hatası: NONEXISTENT_VERSION).
 function linkedinVersion(): string {
   const now = new Date();
+  now.setMonth(now.getMonth() - 1);
   return `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}`;
 }
 
