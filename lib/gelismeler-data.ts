@@ -679,6 +679,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İmalat sektörünün teşvik belgelerinin büyük çoğunluğunu alması, üretim yatırımı planlayan işletmeler için sistemin hâlâ en işlevsel olduğu alanın burası olduğunu gösteriyor; yeni bir yatırım kararı öncesi bölge ve sektör bazlı teşvik unsurlarını mutlaka bakanlık verileriyle birlikte değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "15 Haziran 2026 (ön kayıt son tarihi 14 Eylül, başvuru son tarihi 18 Eylül 2026)",
+    eklendiTarihi: "2026-09-05",
+    baslik:
+      "TÜBİTAK 1711 Yapay Zekâ Ekosistem 2026 Çağrısı'nda son başvuru günleri yaklaşıyor",
+    ozet:
+      "TÜBİTAK'ın KOBİ'ler ve büyük ölçekli firmalara yönelik 1711 Yapay Zekâ Ekosistem Programı'nın 2026 yılı çağrısında başvurular 18 Eylül 2026'da kapanıyor; ön kayıt işlemlerinin ise 14 Eylül 2026 saat 17:30'a kadar tamamlanması gerekiyor. Çağrı; akıllı üretim sistemleri, akıllı tarım-gıda-hayvancılık, finans teknolojileri, iklim değişikliği ve sürdürülebilirlik ile akıllı eğitim teknolojileri alanlarındaki yapay zekâ projelerini destekliyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1711-yapay-zeka-ekosistem-2026-yili-cagrisi-acildi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Yapay zekâ tabanlı bir ürün veya süreç geliştiren KOBİ'lere, ön kayıt son tarihinin başvuru son tarihinden dört gün önce geldiğini unutmamalarını öneririm; proje özetini ve ortaklık yapısını son haftaya bırakmadan TEYDEB/PRODİS üzerinden hazırlamaya başlamak gerekiyor.",
+  },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "5 Eylül 2026",
+    eklendiTarihi: "2026-09-05",
+    baslik:
+      "VUK Genel Tebliği (Sıra No: 595) ile dijital platformlara yeni bildirim yükümlülüğü getirildi",
+    ozet:
+      "5 Eylül 2026 tarihli ve 33361 sayılı Resmî Gazete'de yayımlanan Vergi Usul Kanunu Genel Tebliği (Sıra No: 595), 538 sıra No.lu Tebliğ'de değişiklik yaparak dijital ortamda alım-satım, kiralama, ilan ve reklam faaliyetlerine aracılık eden yer ve sosyal ağ sağlayıcılarını da bildirim yükümlülüğü kapsamına aldı. Bu sağlayıcılar artık aylık dönemler itibarıyla hizmet verdikleri internet adreslerini, kullanıcı kimlik bilgilerini ve ilan/satış işlemlerine ilişkin bilgileri Gelir İdaresi Başkanlığı'na bildirmek zorunda; tebliğ yayım tarihinde yürürlüğe girdi.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/05/vergi-usul-kanunu-genel-tebligi-sira-no-595/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Kendi platformunda üçüncü taraf satıcı/ilan barındıran veya sosyal ağ üzerinden ticari faaliyeti aracılık eden işletmelere, aylık bildirim altyapısını mali müşavirleriyle birlikte şimdiden kurmalarını öneririm; yükümlülük yayım tarihinde başladığı için geriye dönük hazırlık süresi yok.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "3 Eylül 2026",
+    eklendiTarihi: "2026-09-05",
+    baslik:
+      "SPK, Net Global Endüstriyel Yatırımlar'ın halka arzına onay verdi",
+    ozet:
+      "Sermaye Piyasası Kurulu, 3 Eylül 2026 tarihli 2026/56 sayılı haftalık bülteninde Net Global Endüstriyel Yatırımlar A.Ş.'nin halka arz başvurusunu onayladı. Şirket 25,52 TL sabit fiyatla, 62,5 milyonu sermaye artırımından, 25 milyonu mevcut ortaklardan olmak üzere toplam 87,5 milyon payı yatırımcıya sunacak; halka arz büyüklüğü yaklaşık 2,23 milyar TL, esas sermaye ise 250 milyon TL'den 312,5 milyon TL'ye çıkarılacak.",
+    kaynakUrl:
+      "https://www.bloomberght.com/spk-dan-bir-sirketin-halka-arzina-onay-3787282",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Halka arz onaylarının bu sıklıkta gelmesi, kurumsallaşmasını tamamlamış orta ölçekli şirketler için sermaye piyasasının aktif bir finansman kanalı olmayı sürdürdüğünü gösteriyor; büyüme aşamasındaki şirketlere bağımsız denetim ve değerleme adımlarını süreç başlamadan önce netleştirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
