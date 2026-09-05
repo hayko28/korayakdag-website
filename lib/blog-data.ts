@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-1707-siparis-arge-destek-programi-2026",
+    title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
+    excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber.",
+    category: "TÜBİTAK • TEYDEB • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tekmer-nedir-basvuru-sureci-destekleri-2026",
     title: "TEKMER Nedir? Teknoloji Geliştirme Merkezlerine Nasıl Başvurulur?",
     excerpt: "KOSGEB'in 3624 sayılı Kanun kapsamında yürüttüğü TEKMER programında Teknopark'tan farkı, ön kuluçka-kuluçka-hızlandırma süreci, kimlerin başvurabileceği, işletici kuruluşa sağlanan destek tutarları ve adım adım başvuru süreciyle 2026 güncel rehber.",
@@ -408,7 +417,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026",
     title: "KOSGEB COP31 Odaklı Hızlandırma Desteği Çağrısı 2026: Kimler Başvurabilir, Destek Tutarı Nedir?",
-    excerpt: "Antalya'da düzenlenecek COP31 İklim Zirvesi öncesinde açılan çağrı kapsamında TEKMER işletici kuruluşları ve Teknokent yönetici şirketlerine 6,5 milyon TL'ye kadar geri ödemeli destek sağlanıyor. Şartlar, hedef alanlar, başvuru tarihleri ve KOBİ'ler için katılım yoluyla güncel rehber.",
+    excerpt: "Güncelleme: kurumsal başvurular 30 Ağustos 2026'da kapandı. Antalya'da düzenlenecek COP31 İklim Zirvesi öncesinde açılan çağrı kapsamında TEKMER işletici kuruluşları ve Teknokent yönetici şirketlerine 6,5 milyon TL'ye kadar geri ödemeli destek sağlanmıştı. Şartlar, hedef alanlar, başvuru takvimi ve KOBİ'ler için katılım yoluyla güncel rehber.",
     category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "11 Dakika",

@@ -333,18 +333,19 @@ export default function BlogPage() {
             </h3>
             <p className="leading-8 text-gray-700">
               Çağrı, KOSGEB tarafından <strong>8 Ağustos 2026</strong>&apos;da
-              ilan edildi ve başvurular <strong>30 Ağustos 2026</strong>{" "}
-              tarihine kadar alınıyor. Bu tarih, TEKMER işletici
-              kuruluşları ve Teknokent yönetici şirketlerinin KOSGEB&apos;e
-              yapacağı kurumsal başvuru için geçerli; bireysel işletmelerin
-              hızlandırma programına katılım takvimi, ilgili TEKMER/Teknokent
-              tarafından ayrıca belirlenip duyurulacaktır.
+              ilan edildi ve TEKMER işletici kuruluşları ile Teknokent
+              yönetici şirketlerinin kurumsal başvuruları{" "}
+              <strong>9 - 30 Ağustos 2026</strong> tarihleri arasında alındı.
+              Başvuru süresi sona ermiştir; bireysel işletmelerin
+              hızlandırma programına katılım takvimi ise, başvurusu kabul
+              edilen ilgili TEKMER/Teknokent tarafından ayrıca belirlenip
+              duyurulacaktır.
             </p>
           </div>
           <p className="mt-8 leading-8 text-gray-700">
-            Başvuru süreci ve dönemleri KOSGEB tarafından güncellenebilir.
-            Güncel duyurular için KOSGEB&apos;in resmî internet sitesini
-            takip etmek gerekir.
+            KOSGEB&apos;in bu tür çağrıları dönemsel olarak yenilenebilir.
+            Yeni bir dönem açılıp açılmadığını ve güncel duyuruları KOSGEB&apos;in
+            resmî internet sitesinden takip etmek gerekir.
           </p>
         </section>
 
@@ -359,7 +360,7 @@ export default function BlogPage() {
               <li>Destek <strong>hibe değil, %100 geri ödemeli</strong> bir finansman aracıdır; 36 aylık ödemesiz dönemin ardından 4 eşit taksitte geri ödenir.</li>
               <li>Girişimlerin programa dahil olma süreci, KOSGEB&apos;in merkezi çağrı takviminden değil, ilgili TEKMER/Teknokent&apos;in kendi duyurularından takip edilmelidir.</li>
               <li>Hızlandırma programının en az 10 işletme, 1-3 ay süre ve TRL 6+ şartlarını sağlaması zorunludur; bu şartları taşımayan programlar destek kapsamına alınmaz.</li>
-              <li>Güncel destek üst limiti, oranlar ve tarihler için KOSGEB&apos;in yürürlükteki çağrı metni esas alınmalı, üçüncü taraf kaynaklardaki bilgiler tek başına yeterli görülmemelidir.</li>
+              <li>2026-01 COP31 Hızlandırma Çağrısı&apos;nda kurumsal başvuru süresi <strong>30 Ağustos 2026</strong> itibarıyla sona ermiştir; yeni bir dönem açılırsa güncel destek üst limiti, oranlar ve tarihler için KOSGEB&apos;in yürürlükteki çağrı metni esas alınmalıdır.</li>
             </ul>
           </div>
         </section>
