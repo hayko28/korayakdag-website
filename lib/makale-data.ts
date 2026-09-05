@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "musteri-verisi-yurt-disi-sunucuya-giden-kobi",
+    title:
+      "Kargo Firmasına, E-posta Programına, Muhasebe Yazılımına: Müşteri Verisi Kaç Şirkete Gidiyor?",
+    excerpt:
+      "Bir KOBİ'nin müşteri listesi tek bir yerde durmuyor artık — kargo firması, yurt dışı sunuculu e-posta pazarlama aracı, bulut muhasebe programı, CRM... Her biri ayrı bir veri aktarımı ve KVKK'nın veri güvenliği yükümlülüğü kapsamına giriyor. Şirket büyüdükçe bu zincir uzuyor, ama envanteri çıkaran çoğu zaman kimse olmuyor.",
+    tag: "Görüş",
+    date: "5 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "imalat-finansman-paketinde-istihdam-sarti",
     title:
       "250 Milyar TL'lik İmalat Finansman Paketinde Görünmeyen Şart: İstihdam Taahhüdü",
