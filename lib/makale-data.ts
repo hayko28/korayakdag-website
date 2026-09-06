@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ortaklik-ayriliginda-hangi-sirket-degeri-gecerli",
+    title:
+      "İki Ortak Ayrılıyor, İki Farklı Şirket Değeri Ortaya Çıkıyor: Hangisi Geçerli?",
+    excerpt:
+      "Ortaklık ayrılıklarını bozan şey genelde para değil, aynı şirket için kullanılan iki farklı hesaplama yöntemi. Ayrılan ortak kuruluş yılındaki emeğe bakar, kalan ortak bugünkü bilançoya — ikisi de kendi açısından haklıdır, ikisi de nesnel değildir. Bağımsız bir değerleme, tartışmayı duygudan çıkarıp rakama taşıyan tek şey.",
+    tag: "Strateji",
+    date: "6 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "musteri-verisi-yurt-disi-sunucuya-giden-kobi",
     title:
       "Kargo Firmasına, E-posta Programına, Muhasebe Yazılımına: Müşteri Verisi Kaç Şirkete Gidiyor?",
