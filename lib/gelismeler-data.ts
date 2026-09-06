@@ -721,6 +721,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Halka arz onaylarının bu sıklıkta gelmesi, kurumsallaşmasını tamamlamış orta ölçekli şirketler için sermaye piyasasının aktif bir finansman kanalı olmayı sürdürdüğünü gösteriyor; büyüme aşamasındaki şirketlere bağımsız denetim ve değerleme adımlarını süreç başlamadan önce netleştirmelerini öneririm.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "3 Eylül 2026",
+    eklendiTarihi: "2026-09-06",
+    baslik:
+      "Yatırım projelerinin finansmanında yeni bir araç: Öncelikli Finansman Belgesi getirildi",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı'nın 3 Eylül 2026 tarihli, 33359 sayılı Resmî Gazete'de yayımlanan tebliğ değişikliğiyle, mevcut Teknik ve Stratejik Öncelik (TSP) Belgesi'nin yanına 'Öncelikli Finansman Belgesi' adıyla ikinci bir kanal eklendi. TSP Belgesi'nde asgari yatırım tutarı 1 milyar TL iken, yeni belgede bu eşik 100 milyon TL'ye (Ar-Ge giderleri dahil) indirildi; imalat sanayine yönelik yatırım teşvik belgesi sahibi yatırımcılar, aracı bankalara finansman başvurusu yapmadan önce Bakanlıktan bu belgeyi talep edebiliyor. Belirli teşvik programları kapsamındaki başvurular ek değerlendirme olmaksızın belgeyi alırken, diğer başvurular Bakanlığın belirlediği kriterlere göre puanlanıyor; 50 ve üzeri puan alan projeler belgeye hak kazanıyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/03/yatirim-projelerinin-stratejik-ve-teknik-degerlendirmesinde-degisiklik-tebligi/",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Asgari tutarın 1 milyar TL'den 100 milyon TL'ye inmesi, orta ölçekli ama büyüyen imalatçı yatırımcıları da bu hızlandırılmış finansman kanalının kapsamına sokuyor; mevcut teşvik belgesi olan işletmelere, banka başvurusundan önce bu belgeyi almanın süreci kısaltıp kısaltmayacağını değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "5 Eylül 2026",
+    eklendiTarihi: "2026-09-06",
+    baslik:
+      "İhracatta vergi, resim ve harç istisnası kapsamı reeskont kredisi kullanan tüm bankaları içerecek şekilde genişletildi",
+    ozet:
+      "Ticaret Bakanlığı'nın 5 Eylül 2026 tarihli, 33361 sayılı Resmî Gazete'de yayımlanan tebliğ değişikliğiyle (İhracat: 2026/3), İhracat: 2017/4 sayılı Tebliğ'deki 'TCMB'ce Türk Eximbank'a açılan kısa vadeli senet reeskont kredileri' ifadesi 'TCMB'ce Türk Eximbank'a ve diğer bankalara açılan senet reeskont kredileri' şeklinde genişletildi. Değişiklik, ihracat, transit ticaret ve döviz kazandırıcı hizmet faaliyetlerinde uygulanan vergi, resim ve harç istisnasının reeskont kredisi kullanan diğer bankaları da kapsamasını sağlıyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/05/doviz-kazandirici-islemlerde-vergi-resim-ve-harc-istisnasi-tebligi-degisikligi-2026-3/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: İhracat finansmanında Eximbank dışındaki bankalarla da reeskont kredisi kullanan ihracatçı işletmelere, bu genişlemenin banka tercihlerinde vergi/harç istisnası avantajını nasıl etkileyebileceğini mali müşavirleriyle birlikte kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
