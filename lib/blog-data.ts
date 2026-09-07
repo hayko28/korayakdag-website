@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-girisimci-destek-programi-2026",
+    title: "KOSGEB Girişimci Destek Programı 2026: Kuruluş, İş Geliştirme ve Kredi Faiz Desteği Nasıl Alınır?",
+    excerpt: "Yeni bir iş fikri olan girişimcilerin ve 0-3 yaş aralığındaki genç işletmelerin başvurduğu KOSGEB Girişimci Destek Programı'nda iş kurma desteği, 1,5 milyon TL'ye varan iş geliştirme desteği, kadın/genç girişimciye özel kredi faiz desteği, şartlar ve 2026 başvuru takvimiyle güncel rehber.",
+    category: "KOSGEB • GİRİŞİMCİLİK DESTEĞİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1707-siparis-arge-destek-programi-2026",
     title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
     excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber.",
