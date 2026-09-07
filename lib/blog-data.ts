@@ -19,6 +19,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026",
+    title: "KOSGEB Küresel Rekabetçiliğin Geliştirilmesi Projesi: Kimler Başvurabilir, Destek Tutarları Nedir?",
+    excerpt: "2026 yılı 1. başvuru dönemi 7-30 Eylül 2026 arasında açık: hızlı büyüyen işletme şartı, 30-75 milyon TL kredi limiti, 20 puan geri ödemesiz faiz/kâr payı desteği, desteklenen giderler ve KBS üzerinden adım adım başvuru süreciyle güncel rehber.",
+    category: "KOSGEB • İHRACAT VE REKABETÇİLİK • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tekmer-nedir-basvuru-sureci-destekleri-2026",
     title: "TEKMER Nedir? Teknoloji Geliştirme Merkezlerine Nasıl Başvurulur?",
     excerpt: "KOSGEB'in 3624 sayılı Kanun kapsamında yürüttüğü TEKMER programında Teknopark'tan farkı, ön kuluçka-kuluçka-hızlandırma süreci, kimlerin başvurabileceği, işletici kuruluşa sağlanan destek tutarları ve adım adım başvuru süreciyle 2026 güncel rehber.",

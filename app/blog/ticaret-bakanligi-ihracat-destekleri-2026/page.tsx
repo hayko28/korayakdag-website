@@ -1418,11 +1418,11 @@ export default function BlogPage() {
           <h3 className="text-lg font-bold text-[#071A2F]">Döviz Dönüşüm Desteği 2026: Yeni Dönem</h3>
         </Link>
         <Link
-          href="/blog/yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026"
+          href="/blog/kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026"
           className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
         >
-          <div className="mb-2 text-sm font-semibold text-orange-600">YATIRIM TEŞVİKLERİ • DEVLET DESTEKLERİ • 2026</div>
-          <h3 className="text-lg font-bold text-[#071A2F]">Yatırım Teşvik Belgesi Nedir? Faydaları, Şartları ve 2026 Güncel Rehberi</h3>
+          <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • İHRACAT VE REKABETÇİLİK • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB Küresel Rekabetçiliğin Geliştirilmesi Projesi: Kimler Başvurabilir, Destek Tutarları Nedir?</h3>
         </Link>
         </div>
       </section>
