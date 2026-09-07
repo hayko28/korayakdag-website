@@ -749,6 +749,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İhracat finansmanında Eximbank dışındaki bankalarla da reeskont kredisi kullanan ihracatçı işletmelere, bu genişlemenin banka tercihlerinde vergi/harç istisnası avantajını nasıl etkileyebileceğini mali müşavirleriyle birlikte kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "4 Eylül 2026",
+    eklendiTarihi: "2026-09-07",
+    baslik:
+      "Türkiye'nin hizmet ihracatı 2025'te 124,9 milyar dolara ulaştı, küresel pazar payı üç kata çıktı",
+    ozet:
+      "Ticaret Bakanlığı'nın açıkladığı verilere göre Türkiye'nin hizmet ihracatı 2025'te bir önceki yıla göre %6,5 artışla 124,9 milyar dolara ulaşarak rekor kırdı; hizmet ticareti fazlası %3,6 artışla 63 milyar dolara çıkarak Türkiye'yi bu alanda dünyada 6. sıraya taşıdı. Türkiye'nin küresel hizmet ihracatındaki payı 2002'de %0,89 iken 2025'te %1,29'a yükseldi; telekomünikasyon, bilgisayar ve bilgi hizmetleri alanı yıllık %25,3 ile en hızlı büyüyen kalem oldu.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/turkiye-hizmetler-sektorunde-kuresel-pazarlardaki-agirligini-her-gecen-gun-artiriyor",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Telekomünikasyon, bilgisayar ve bilgi hizmetleri kalemindeki hızlı büyüme, yazılım ve dijital hizmet ihracatı yapan şirketler için hizmet ihracatının artık mal ihracatı kadar ciddi bir büyüme alanı olduğunu gösteriyor; bu alanda faaliyet gösteren işletmelere e-Turquality gibi hizmet sektörüne özel destekleri değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "4 Eylül 2026 (Zirve 3-5 Eylül 2026'da düzenlendi)",
+    eklendiTarihi: "2026-09-07",
+    baslik:
+      "İstanbul Küresel E-İhracat Zirvesi'nde yıl sonu hedefi 6 milyar dolar e-ihracat olarak açıklandı",
+    ozet:
+      "Ticaret Bakanlığı himayesinde, TİM organizasyonunda ve ETİD iş birliğinde 3-5 Eylül 2026'da İstanbul'da düzenlenen Küresel E-İhracat Zirvesi'nin (IGEXX) açılışında konuşan Ticaret Bakanı Ömer Bolat, yıl sonunda 6 milyar dolarlık e-ihracat rakamına ulaşmayı hedeflediklerini açıkladı. Bolat, yıllık e-ihracatı 10 bin doları aşan firma sayısının 2022'de 8.132'den 2025 sonunda 11.420'ye yükseldiğini, e-ticaretin toplam iç ticaret içindeki payının yaklaşık %19,3'e, GSYH içindeki payının ise yaklaşık %7'ye ulaştığını belirtti.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakani-omer-bolat-istanbul-kuresel-e-ihracat-zirvesinin-acilisinda-konustu",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Yıllık e-ihracatı 10 bin doları aşan firma sayısındaki artış hızının, toplam e-ticaret hacmindeki büyümenin gerisinde kaldığını görüyorum; e-ihracata henüz başlamamış KOBİ'lere, 6 milyar dolarlık hedefin büyük kısmının hâlihazırda ihracat yapan az sayıda firmadan değil, yeni katılan işletmelerden gelmesi beklendiği için bu pencereyi değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
