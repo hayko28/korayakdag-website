@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "bagimsiz-denetim-esiginde-gozden-kacan-iki-kural",
+    title:
+      "Bağımsız Denetim Eşiği Yükseldi: Rahatlamak İçin Neden Erken?",
+    excerpt:
+      "17 Mart 2026'da aktif toplamı ve ciro eşikleri belirgin biçimde yükseltildi, birçok şirket kapsam dışına çıkacağını düşündü. Ama kapsamdan çıkış tek bir yılın rakamına değil, art arda iki hesap dönemine göre belirleniyor — ve grup şirketlerinde konsolide büyüklük hâlâ sürpriz yapabiliyor.",
+    tag: "Görüş",
+    date: "7 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ortaklik-ayriliginda-hangi-sirket-degeri-gecerli",
     title:
       "İki Ortak Ayrılıyor, İki Farklı Şirket Değeri Ortaya Çıkıyor: Hangisi Geçerli?",
