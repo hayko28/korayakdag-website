@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "doviz-donusum-destegindeki-sessiz-degisiklik",
+    title:
+      "1 Ekim'e İki Ay Kala: Döviz Dönüşüm Desteğinde Taahhütten Pozisyona Geçiş",
+    excerpt:
+      "1 Ağustos 2026'da yayımlanan 2026/11 sayılı Tebliğ, ihracatçıların yıllardır verdiği 'döviz almama taahhüdü'nü kaldırıp 'döviz pozisyonu esası'na geçti. Aynı ayda dış ticaret açığı yüzde 22,3 büyürken, 1 Ekim'de fiilen başlayacak yeni sistem ihracatçı firmaların hazine süreçlerini doğrudan etkiliyor.",
+    tag: "Strateji",
+    date: "8 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "bagimsiz-denetim-esiginde-gozden-kacan-iki-kural",
     title:
       "Bağımsız Denetim Eşiği Yükseldi: Rahatlamak İçin Neden Erken?",
