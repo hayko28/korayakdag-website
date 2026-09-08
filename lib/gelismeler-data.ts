@@ -777,6 +777,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıllık e-ihracatı 10 bin doları aşan firma sayısındaki artış hızının, toplam e-ticaret hacmindeki büyümenin gerisinde kaldığını görüyorum; e-ihracata henüz başlamamış KOBİ'lere, 6 milyar dolarlık hedefin büyük kısmının hâlihazırda ihracat yapan az sayıda firmadan değil, yeni katılan işletmelerden gelmesi beklendiği için bu pencereyi değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-08",
+    baslik:
+      "KOSGEB Küresel Rekabetçilik Destek Programı'nın 2026 yılı 1. başvuru dönemi açıldı",
+    ozet:
+      "KOSGEB, KOBİ'lerin küresel pazarlarda rekabet gücünü, yenilikçi ürün geliştirme ve ticarileştirme kapasitesini artırmayı hedefleyen Küresel Rekabetçilik Destek Programı'nın 2026 yılı ilk başvuru dönemini 7 Eylül 2026'da açtı. Program kapsamında işletmelere 30-75 milyon TL arasında kredi, 20 puanlık geri ödemesiz finansman desteği ve Kredi Garanti Fonu kefaleti sağlanıyor; başvurular 30 Eylül 2026'ya kadar KOBİ Bilgi Sistemi üzerinden alınıyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: 75 milyon TL'lik üst limit ve 20 puanlık geri ödemesiz kısım, özellikle hızlı büyüyen veya ihracat performansı yüksek KOBİ'ler için ciddi bir fırsat; başvuru penceresi kısa olduğundan (30 Eylül) uygunluk kriterlerini ve proje dosyasını vakit kaybetmeden netleştirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "4 Eylül 2026",
+    eklendiTarihi: "2026-09-08",
+    baslik:
+      "TÜBİTAK 1501 Sanayi Ar-Ge Projeleri Destekleme Programı 2026 yılı 1. çağrısının sonuçları açıklandı",
+    ozet:
+      "TÜBİTAK, sanayi kuruluşlarının Ar-Ge nitelikli yenilikçi projelerini desteklediği 1501 Sanayi Ar-Ge Projeleri Destekleme Programı'nın 2026 yılı birinci çağrısına ilişkin değerlendirme süreçlerini tamamlayarak sonuçları 4 Eylül 2026'da açıkladı. Başvuru sahibi kuruluşlar projelerinin durumunu TEYDEB Proje Değerlendirme İzleme Sistemi (PRODİS) üzerinden görüntüleyebiliyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/1501-sanayi-ar-ge-projeleri-destekleme-programi-2026-yili-1-cagrisi-sonuclari-aciklandi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: TÜBİTAK genellikle değerlendirme raporunda somut ret gerekçesi paylaşıyor; ilk çağrıda olumsuz sonuç alan işletmelere projeyi bir kenara bırakmak yerine bu gerekçeleri dikkate alarak yılın ikinci çağrısına revize bir başvuruyla yeniden girmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
