@@ -24,7 +24,7 @@ export default function MakalePage() {
         Geçen hafta bir toplantı öncesi katılımcı listesine baktım: üç kişi,
         üçü de LinkedIn&apos;de aynı unvanla yazıyordu profiline: &quot;Founder
         &amp; CEO&quot;. Muhtemelen biri şirketi gerçekten kuran, biri erken
-        katılan bir ortak, biri de belki daha yeni gelen biriydi — ama
+        katılan bir ortak, biri de belki daha yeni gelen biriydi, ama
         unvanlarda hiçbir fark yoktu.
       </p>
 
@@ -65,7 +65,7 @@ export default function MakalePage() {
 
       <p>
         Ben de profilime &quot;Danışman&quot; yazıyorum, çünkü yaptığım iş tam
-        olarak bu — ama itiraf edeyim, bazen daha havalı bir şey yazmak hiç
+        olarak bu. Ama itiraf edeyim, bazen daha havalı bir şey yazmak hiç
         aklımdan geçmiyor değil.
       </p>
     </MakaleLayout>

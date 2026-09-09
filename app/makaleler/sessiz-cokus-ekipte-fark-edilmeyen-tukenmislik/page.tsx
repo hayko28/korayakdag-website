@@ -23,7 +23,7 @@ export default function MakalePage() {
       <p>
         Son dönemde İK literatüründe yeni bir terim dolaşıyor:{" "}
         <strong>quiet cracking</strong>, yani &quot;sessiz çöküş&quot;.
-        &quot;Quiet quitting&quot;den (sessiz istifa) farkı şu — çalışan işi
+        &quot;Quiet quitting&quot;den (sessiz istifa) farkı şu: çalışan işi
         bırakmıyor, açıkça şikayet de etmiyor. Sadece sessizce, çoğu zaman
         kendisi de fark etmeden motivasyonunu ve performansını kaybediyor.
       </p>
@@ -34,7 +34,7 @@ export default function MakalePage() {
       <p>
         Birincisi, toplantılarda artık hiç itiraz etmeyen, her kararı hemen
         kabul eden biri var. Bu çoğu zaman bağlılık değil, tam tersine
-        vazgeçmiş olmanın işareti — tartışmaya değecek kadar önemsemiyor.
+        vazgeçmiş olmanın işareti: tartışmaya değecek kadar önemsemiyor.
       </p>
       <p>
         İkincisi, iş kalitesi aniden düşmüyor; sessizce &quot;iyi&quot;den
@@ -54,7 +54,7 @@ export default function MakalePage() {
         Çünkü bunların hiçbiri performans değerlendirmesinde bir
         &quot;sorun&quot; olarak görünmüyor. Rakamlar hâlâ tutuyor, iş hâlâ
         teslim ediliyor. Ama üç ay sonra o kişi ya işten ayrılıyor ya da
-        kalıp, en az enerjiyle en az işi yapan biri hâline geliyor — ki bu
+        kalıp, en az enerjiyle en az işi yapan biri hâline geliyor; ki bu
         ikincisi bir işveren için genelde daha maliyetli.
       </p>
 
@@ -66,7 +66,7 @@ export default function MakalePage() {
         görüşmelerde &quot;işin nasıl gidiyor&quot; sorusuyla yetinmeyin.
         Bunun yerine ara sıra &quot;bu iş sana hâlâ anlamlı geliyor mu&quot;
         diye sorun. İlk soru statü raporu ister, ikincisi gerçek bir cevap
-        gerektirir — ve sessiz çöküşü yakalayan genelde ikinci sorudur.
+        gerektirir; ve sessiz çöküşü yakalayan genelde ikinci sorudur.
       </p>
     </MakaleLayout>
   );

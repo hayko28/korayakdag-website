@@ -22,10 +22,10 @@ export default function MakalePage() {
     >
       <p>
         Herkes müziği telefonundan dinlerken, plak satışları geçen yıl 1
-        milyar doları geçti — RIAA verilerine göre bu, 1983&apos;ten bu yana
+        milyar doları geçti; RIAA verilerine göre bu, 1983&apos;ten bu yana
         ilk kez yaşanan bir rakam. 46,8 milyon plak satıldı, bu da art arda
         19&apos;uncu büyüme yılı anlamına geliyor. Mantıken bu formatın
-        çoktan kaybolmuş olması gerekirdi — sınırsız ve neredeyse ücretsiz
+        çoktan kaybolmuş olması gerekirdi: sınırsız ve neredeyse ücretsiz
         bir dijital alternatif varken kim otuz santimlik, kırılabilir bir
         disk için para versin?
       </p>
@@ -34,19 +34,19 @@ export default function MakalePage() {
         Vinyl&apos;i ayakta tutan üç şey
       </h2>
       <p>
-        Birincisi, fiziksel sahiplenme hissi — dijital bir çalma listesinde
+        Birincisi, fiziksel sahiplenme hissi: dijital bir çalma listesinde
         olmayan, elle tutulan bir ritüel. Bir plağı zarfından çıkarmak, iğneyi
         yerleştirmek, kapak tasarımını incelemek; dinleme deneyiminin kendisi
         kadar önemli bir parça haline geliyor.
       </p>
       <p>
-        İkincisi, &quot;premium&quot; algısı — aynı albüm dijitalde neredeyse
+        İkincisi, &quot;premium&quot; algısı: aynı albüm dijitalde neredeyse
         bedavayken, plak versiyonu daha yüksek bir fiyata hâlâ alıcı
         buluyor. Fiyat burada bir engel değil, ürünün değerini gösteren bir
         işarete dönüşüyor.
       </p>
       <p>
-        Üçüncüsü, sadık ve niş bir kitle — büyük kitleye ulaşmaya çalışmak
+        Üçüncüsü, sadık ve niş bir kitle: büyük kitleye ulaşmaya çalışmak
         yerine, gerçekten önemseyen küçük bir gruba hitap etmek, o grubun
         cebini açmaya fazlasıyla yetiyor.
       </p>
@@ -58,7 +58,7 @@ export default function MakalePage() {
         Herkese en ucuza satmaya çalışan bir ürün, er ya da geç fiyat
         rekabetine mahkum kalıyor. Ama doğru kitleye anlamlı bir deneyim
         sunan, kolay kopyalanamayan bir ürün ya da hizmet, dijital rekabetin
-        ve fiyat baskısının ortasında bile büyümeye devam edebiliyor —
+        ve fiyat baskısının ortasında bile büyümeye devam edebiliyor,
         tıpkı otuz yıl önce &quot;ölmüş&quot; sayılan bir formatın bugün
         rekor kırması gibi.
       </p>

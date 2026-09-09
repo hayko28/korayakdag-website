@@ -24,7 +24,7 @@ export default function MakalePage() {
         Dünyanın dört bir yanındaki 22 laboratuvardan nörobilimcilerin ortak
         çalışmasıyla, bir memeli beyninin karar anındaki tam aktivite
         haritası ilk kez çıkarıldı. 139 fareden toplanan veriler, beynin 279
-        bölgesinde 600 binden fazla nöronun aktivitesini kapsıyor — bu da bir
+        bölgesinde 600 binden fazla nöronun aktivitesini kapsıyor; bu da bir
         farenin beyninin yaklaşık yüzde 95&apos;ine denk geliyor.
       </p>
 
@@ -36,7 +36,7 @@ export default function MakalePage() {
         bir bölgesi değil, aynı anda pek çok bölgesi birden devreye giriyor.
         Bilim insanları bu tabloyu &quot;Noel ağacı gibi aydınlanma&quot;
         olarak tanımlıyor. Yani &quot;kararı beynin şu bölgesi veriyor&quot;
-        şeklindeki basit anlatı, gerçeği yansıtmıyor — karar, dağınık ve eş
+        şeklindeki basit anlatı, gerçeği yansıtmıyor: karar, dağınık ve eş
         zamanlı bir sürecin ürünü.
       </p>
 
@@ -47,7 +47,7 @@ export default function MakalePage() {
         Bir şirkette fiyatlandırma, yatırım ya da işe alım kararını
         &quot;kimin verdiğini&quot; sorsanız genelde tek bir isim ya da
         departman söylenir: satış, finans, ya da CEO. Oysa danışmanlık
-        sürecinde görülen gerçek tablo çok daha dağınık — o kararı geçmiş
+        sürecinde görülen gerçek tablo çok daha dağınık: o kararı geçmiş
         veriler, ekip içi tartışmalar, rakip hamleleri, hatta bir önceki
         toplantıda söylenmiş yarım bir cümle besliyor. Kararı &quot;veren&quot;
         kişi çoğu zaman sadece son onayı imzalayan kişi oluyor.
@@ -56,7 +56,7 @@ export default function MakalePage() {
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">Kısacası</h2>
       <p>
         Bir kararı gerçekten iyileştirmek isteyen bir yönetici, önce
-        &quot;bu karar aslında nerelerden besleniyor&quot; sorusunu sormalı —
+        &quot;bu karar aslında nerelerden besleniyor&quot; sorusunu sormalı;
         sadece son onay kutusuna değil, o kutuya ulaşana kadar geçen tüm
         dağınık sürece bakmalı.
       </p>

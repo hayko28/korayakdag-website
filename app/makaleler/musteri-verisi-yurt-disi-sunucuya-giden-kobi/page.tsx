@@ -51,12 +51,12 @@ export default function MakalePage() {
         üçüncü tarafa, hangi amaçla ve hangi süreyle aktarıldığını gösteren
         veri işleme envanteri. Bu envanter olmadan hazırlanan aydınlatma
         metni, gerçek veri akışını yansıtmayan bir kağıt parçasından öteye
-        geçmiyor — ve bir denetimde ya da veri ihlalinde ilk sorgulanan da
+        geçmiyor; ve bir denetimde ya da veri ihlalinde ilk sorgulanan da
         tam olarak bu tutarsızlık oluyor.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
-        Risk, şirket büyüdükçe azalmıyor — çoğalıyor
+        Risk, şirket büyüdükçe azalmıyor, çoğalıyor
       </h2>
       <p>
         Küçük bir işletmenin tek bir Excel dosyasındaki müşteri listesini

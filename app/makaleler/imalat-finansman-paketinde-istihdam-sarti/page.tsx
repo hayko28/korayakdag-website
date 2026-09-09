@@ -54,7 +54,7 @@ export default function MakalePage() {
         bedavaya alınmış bir sigorta gibi işliyor. Ama son çeyrekte talep
         daralması ya da maliyet baskısı nedeniyle küçülmeyi masaya yatıran
         bir işletme için aynı kredi, tam ihtiyaç duyulduğu anda elini
-        bağlayan bir sözleşmeye dönüşebiliyor — düşük faizin cazibesine
+        bağlayan bir sözleşmeye dönüşebiliyor: düşük faizin cazibesine
         kapılıp altı ay sonra hem istihdam esnekliğini hem de destek
         avantajını birden kaybetme riski var.
       </p>

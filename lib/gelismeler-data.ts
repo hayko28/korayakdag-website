@@ -4,7 +4,7 @@ export interface GelismeItem {
   /** Bu öğenin Güncel Gelişmeler akışına eklendiği tarih (YYYY-MM-DD).
    * `tarih` alanı gelişmenin gerçekleştiği tarihi (metin olarak) gösterir;
    * `eklendiTarihi` ise akıştaki "son 45 gün" görünürlük/arşiv filtresinde
-   * kullanılır — ikisi farklı olabilir (örn. Kasım 2025'te yayımlanan bir
+   * kullanılır; ikisi farklı olabilir (örn. Kasım 2025'te yayımlanan bir
    * tebliğ, akışa Ağustos 2026'da eklenmiş olabilir). */
   eklendiTarihi: string;
   baslik: string;
@@ -45,7 +45,7 @@ export const GELISMELER: GelismeItem[] = [
       "https://tubitak.gov.tr/tr/duyuru/1501-sanayi-ar-ge-destek-programi-ve-1507-kobi-ar-ge-baslangic-destek-programi-2026-yili-2-cagrilari-acildi",
     konu: "Devlet Destekleri ve Teşvikler",
     expertNote:
-      "Koray'ın notu: Kademeli destek oranı ve ticarileşme puanlaması artık yalnızca 'proje iyi mi' değil, 'önceki TÜBİTAK projeniz gerçekten ticarileşti mi' sorusunu da öne çıkarıyor — başvuru stratejisini buna göre kurmak gerekiyor.",
+      "Koray'ın notu: Kademeli destek oranı ve ticarileşme puanlaması artık yalnızca 'proje iyi mi' değil, 'önceki TÜBİTAK projeniz gerçekten ticarileşti mi' sorusunu da öne çıkarıyor. Başvuru stratejisini buna göre kurmak gerekiyor.",
   },
   {
     kurum: "Hazine ve Maliye Bakanlığı",
@@ -82,7 +82,7 @@ export const GELISMELER: GelismeItem[] = [
       "https://www.manisamansetgazetesi.com/manisa-haberleri/ihracatcilara-yonelik-devlet-destegi-artiyor/618783",
     konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
     expertNote:
-      "Koray'ın notu: UR-GE desteğindeki bu sıçrama, özellikle sektörel iş birliği kuruluşlarıyla birlikte hareket eden ihracatçı KOBİ'ler için ciddi bir fırsat penceresi — bireysel başvuru yerine bir UR-GE grubuna dahil olmayı değerlendirmelerini öneriyorum.",
+      "Koray'ın notu: UR-GE desteğindeki bu sıçrama, özellikle sektörel iş birliği kuruluşlarıyla birlikte hareket eden ihracatçı KOBİ'ler için ciddi bir fırsat penceresi: bireysel başvuru yerine bir UR-GE grubuna dahil olmayı değerlendirmelerini öneriyorum.",
   },
   {
     kurum: "KGK",
@@ -344,7 +344,7 @@ export const GELISMELER: GelismeItem[] = [
     kaynakUrl: "https://dtsorgu.kgk.gov.tr/giris.aspx",
     konu: "Kurumsal Gelişim ve Değerleme",
     expertNote:
-      "Koray'ın notu: Eşik değerlerin değişmesi, bir önceki yıl denetim kapsamı dışında kalan bazı şirketleri de 2026'da kapsam içine alabilir; büyüme aşamasındaki şirketlere bu sorgulama sistemini vakit kaybetmeden kontrol etmelerini öneririm — denetim yükümlülüğü, kurumsallaşma ve olası halka arz/yatırım süreçlerinin de bir ön koşulu.",
+      "Koray'ın notu: Eşik değerlerin değişmesi, bir önceki yıl denetim kapsamı dışında kalan bazı şirketleri de 2026'da kapsam içine alabilir; büyüme aşamasındaki şirketlere bu sorgulama sistemini vakit kaybetmeden kontrol etmelerini öneririm. Denetim yükümlülüğü, kurumsallaşma ve olası halka arz/yatırım süreçlerinin de bir ön koşulu.",
   },
   {
     kurum: "TCMB",
@@ -809,7 +809,7 @@ export const GELISMELER: GelismeItem[] = [
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
 // son 45 gün içinde eklenmiş, en fazla 20 öğe gösterilir. Daha eskisi bu
-// listeden dışarıda kalır ama GELISMELER dizisinden silinmez — ileride bir
+// listeden dışarıda kalır ama GELISMELER dizisinden silinmez; ileride bir
 // arşiv sayfası bu tam diziyi kullanabilir. page.tsx ve GuncelGelismelerFeed
 // aynı mantığı kullanabilsin diye burada tek bir fonksiyonda tutuluyor.
 const VISIBLE_WINDOW_DAYS = 45;

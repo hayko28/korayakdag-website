@@ -23,7 +23,7 @@ export default function MakalePage() {
     >
       <p>
         Ortaklık ayrılıklarını çoğu zaman para bozmaz. Bozan şey, aynı
-        şirket için masaya konan iki farklı hesaplamadır — ve ikisi de,
+        şirket için masaya konan iki farklı hesaplamadır; ve ikisi de,
         kendi sahibinin gözünden bakıldığında son derece makul görünür.
       </p>
 
@@ -49,7 +49,7 @@ export default function MakalePage() {
         diğeri gelecekteki nakit akışına bakıyor; biri duygusal emeği
         fiyata dahil ediyor, diğeri yalnızca bilançoyu görüyor.
         Sohbet uzadıkça pozisyonlar sertleşiyor, ilişki geriliyor ve
-        çoğu zaman iş ortaklığından çok daha değerli bir şey — güven —
+        çoğu zaman iş ortaklığından çok daha değerli bir şey, güven,
         önce zedeleniyor.
       </p>
 
@@ -67,7 +67,7 @@ export default function MakalePage() {
         çalışması, tarafların hiçbirinin öznel rakamı yerine; finansal
         tabloların normalize edilmiş hâlini, sektördeki emsalleri ve
         şirketin gerçek büyüme potansiyelini esas alır. Sonuç tek bir
-        kesin sayı değil, gerekçeli bir değer aralığıdır — ama bu aralık
+        kesin sayı değil, gerekçeli bir değer aralığıdır; ama bu aralık
         bile, iki tarafın da kendi masasına oturup pazarlığı bitirmesi
         için genelde yeterli olur. Değerleme raporunu tartışmadan önce
         değil, tartışma büyümeden önce almak, hem ilişkiyi hem de zamanı

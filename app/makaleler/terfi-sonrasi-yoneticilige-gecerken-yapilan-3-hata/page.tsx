@@ -22,7 +22,7 @@ export default function MakalePage() {
     >
       <p>
         Bir şirkette en çok satış yapan temsilci, genelde bir sonraki satış
-        müdürü oluyor. Mantıklı görünüyor — ama danışmanlık masasında bu
+        müdürü oluyor. Mantıklı görünüyor, ama danışmanlık masasında bu
         geçişin sık sık iki kayıpla sonuçlandığını görüyorum: hem iyi bir
         satışçı, hem de zorlanan bir yönetici.
       </p>
@@ -53,7 +53,7 @@ export default function MakalePage() {
       <p>
         Bir kişiye &quot;artık yöneticisin&quot; demek, onu bir gecede
         yönetici yapmıyor. Geri bildirim verme, toplantı yönetme, hedef
-        belirleme gibi beceriler doğuştan gelmiyor — öğretilmesi gereken
+        belirleme gibi beceriler doğuştan gelmiyor; öğretilmesi gereken
         şeyler. Bu eğitim atlandığında, yeni yönetici genelde eski
         alışkanlıklarına, yani bizzat satış yapmaya geri dönüyor.
       </p>
@@ -61,7 +61,7 @@ export default function MakalePage() {
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">Kısacası</h2>
       <p>
         Bu üç noktayı gözden geçiren şirketler, terfi ettirdikleri kişiyi
-        kaybetmek yerine gerçekten kazanıyor — hem yeni bir yönetici, hem de
+        kaybetmek yerine gerçekten kazanıyor: hem yeni bir yönetici, hem de
         onun yerini dolduracak bir satış kültürü kazanıyorlar.
       </p>
     </MakaleLayout>

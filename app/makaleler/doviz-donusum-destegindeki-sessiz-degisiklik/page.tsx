@@ -49,7 +49,7 @@ export default function MakalePage() {
         <strong>&quot;belirli süre döviz almama taahhüdü&quot;</strong>{" "}
         esasını kaldırıp yerine <strong>&quot;döviz pozisyonu&quot;</strong>{" "}
         esasını getiriyor. Kulağa teknik bir muhasebe detayı gibi gelse de
-        bu değişiklik firmaların hazine sürecini doğrudan etkiliyor —
+        bu değişiklik firmaların hazine sürecini doğrudan etkiliyor:
         firma artık bir söz vermek yerine, döviz varlık ve yükümlülük
         dengesi üzerinden değerlendiriliyor. Buna karşılık yaptırımlar da
         ağırlaştırıldı: uyumsuzluk tespit edilirse artık yalnızca destek

@@ -26,8 +26,8 @@ export default function MakalePage() {
         üzerinde 18 yıl çalışıldı. Ve 8 Temmuz 2026&apos;da, dünyanın dört bir
         yanındaki otoyollarda değil, Japonya&apos;nın Shiga eyaletindeki
         Higashiomi şehrinde, nüfusunun yüzde 60&apos;ından fazlası yaşlı olan
-        küçük bir dağ köyünde trafiğe çıktı. Aracın adı Okueigenji Keiryu Car
-        — 4,8 kilometrelik bir güzergahta yolcu taşıyan, hızı saatte 20
+        küçük bir dağ köyünde trafiğe çıktı. Aracın adı Okueigenji Keiryu Car:
+        4,8 kilometrelik bir güzergahta yolcu taşıyan, hızı saatte 20
         kilometreyi geçmeyen küçük bir otonom araç.
       </p>
 
@@ -58,7 +58,7 @@ export default function MakalePage() {
         On sekiz yıl boyunca bir teknolojiye yatırım yapmak zaten nadir bir
         disiplin. Ama o yatırımı, en gösterişli değil en kontrollü sahnede
         sınamak ayrı bir stratejik olgunluk. Küçük ölçekte doğrulanan bir
-        fikir, büyük ölçekte çok daha az sürprizle büyüyor — bu, yalnızca
+        fikir, büyük ölçekte çok daha az sürprizle büyüyor; bu, yalnızca
         lastik teknolojisi için değil, herhangi bir yeni ürün ya da hizmetin
         pazara çıkış sırası için de geçerli bir ders.
       </p>

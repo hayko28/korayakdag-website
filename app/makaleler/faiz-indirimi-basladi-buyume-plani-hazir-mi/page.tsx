@@ -23,7 +23,7 @@ export default function MakalePage() {
       <p>
         Ağustos ayının son haftasında iki gelişme art arda geldi. Merkez
         Bankası, piyasayı yeniden bir hafta vadeli repo ihaleleriyle yüzde
-        37&apos;den fonlamaya başladı — bu, fiili fonlama maliyetinde yaklaşık
+        37&apos;den fonlamaya başladı; bu, fiili fonlama maliyetinde yaklaşık
         3 puanlık örtülü bir indirim anlamına geliyor. Ardından VakıfBank
         Genel Müdürü Osman Arslan, kamu bankalarının pazartesiden itibaren
         ticari kredi faizlerini 2-3 puan aşağı çekeceğini açıkladı. Kredi
@@ -39,7 +39,7 @@ export default function MakalePage() {
         KOBİ genişleme kararını rafa kaldırdı: yeni şube, ek kapasite, ikinci
         vardiya, ihracat yatırımı gibi planlar &quot;faiz düşünce
         bakarız&quot; cümlesiyle ertelendi. Şimdi o cümlenin karşılığı
-        gelmeye başladı. Ama burada gözden kaçan bir ayrım var — faizin
+        gelmeye başladı. Ama burada gözden kaçan bir ayrım var: faizin
         düşmesi ile işletmenin büyümeye hazır olması aynı şey değil.
       </p>
 
@@ -51,7 +51,7 @@ export default function MakalePage() {
         haberi çıktığında bir kısım işletme hemen bankaya koşup uygun
         gördüğü ilk krediyi çeker, parayı nereye koyacağına sonra karar
         verir. Diğer kısım ise elinde zaten hazır bekleyen bir büyüme
-        planıyla masaya oturur — hangi makineye, hangi pazara, hangi
+        planıyla masaya oturur: hangi makineye, hangi pazara, hangi
         personele öncelik vereceği net, kredi sadece o planı hızlandıran
         bir araçtır. İki yıl boyunca yüksek faizle boğuşan işletmelerin
         çoğu ilk soruyu değil, ikinci soruyu hazırlamış olmalıydı.

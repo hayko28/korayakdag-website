@@ -39,7 +39,7 @@ export default function MakalePage() {
         &quot;Cuties&quot; adı verildi; küçük, kolay soyulan taneler seçilip
         özenli bir ambalajla sunuldu. Bugün Amerika&apos;da tüketicilerin
         büyük bölümü markette mandalina değil, doğrudan &quot;Cuties&quot;
-        istiyor — tıpkı mendile &quot;Kleenex&quot; demek gibi. Marka,
+        istiyor, tıpkı mendile &quot;Kleenex&quot; demek gibi. Marka,
         yüzlerce milyon dolarlık bir işe dönüştü.
       </p>
 

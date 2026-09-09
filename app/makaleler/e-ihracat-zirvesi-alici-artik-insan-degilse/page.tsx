@@ -42,7 +42,7 @@ export default function MakalePage() {
         artık tek başına yeterli değil. Büyük pazaryerlerinin bir
         kısmında ürünü artık bir insan değil, kullanıcı adına arama
         yapıp karşılaştırma yaparak karar veren bir alışveriş ajanı
-        inceliyor — fiyatı, teslimat süresini, iade koşullarını,
+        inceliyor: fiyatı, teslimat süresini, iade koşullarını,
         stok bilgisini okuyup satın alma kararını o veriyor.
       </p>
 
@@ -52,7 +52,7 @@ export default function MakalePage() {
       <p>
         Bir insan alıcı ürün fotoğrafına, markanın hikayesine, sayfanın
         tasarımına bakıp karar verebilir. Bir yazılım ajanı bunların
-        çoğunu okumaz; yapılandırılmış veriye bakar — ürün başlığı ne
+        çoğunu okumaz; yapılandırılmış veriye bakar: ürün başlığı ne
         kadar net, stok ve teslimat bilgisi ne kadar güncel, iade
         politikası ne kadar açık yazılmış. Bugüne kadar &quot;müşteri
         deneyimi&quot; başlığı altında düşünülen bu detaylar, artık aynı

@@ -25,7 +25,7 @@ export default function MakalePage() {
         alınan ilk tepki neredeyse hep aynı: &quot;biz zaten büyüdük,
         bilançomuz farklı.&quot; Oysa 7511 sayılı Kanun&apos;la Türk Ticaret
         Kanunu&apos;na eklenen Geçici Madde 15 bilançoya değil, esas
-        sermayeye bakıyor — ve 2024 öncesi kurulmuş binlerce şirket hâlâ
+        sermayeye bakıyor ve 2024 öncesi kurulmuş binlerce şirket hâlâ
         kuruluş gününden kalma tutarda duruyor.
       </p>
 
@@ -38,7 +38,7 @@ export default function MakalePage() {
         aldığı için &quot;yıl sonuna doğru hallederiz&quot; diye
         düşünülüyor. Ama yıl sonuna yaklaştıkça noterlerde ve ticaret
         sicillerinde aynı anda yüzlerce şirket aynı işlemi yapmaya
-        çalışacak — bu da süreci beklenenden daha uzun hale getiriyor.
+        çalışacak; bu da süreci beklenenden daha uzun hale getiriyor.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
@@ -46,7 +46,7 @@ export default function MakalePage() {
       </h2>
       <p>
         31 Aralık 2026&apos;ya kadar tanınan geçiş süresi kaçırılırsa kanun,
-        artırım yapmayan şirketler için infisah riskinden söz ediyor —
+        artırım yapmayan şirketler için infisah riskinden söz ediyor:
         şirketin kendiliğinden sona ermesi. Bu, &quot;sonra bakarız&quot;
         diyerek geçiştirilecek bir madde değil, takvimi kesin bir yükümlülük.
       </p>
@@ -55,7 +55,7 @@ export default function MakalePage() {
       <p>
         Bilanço büyümüş olabilir, ama esas sermaye ayrı bir sicil kalemi.
         Şirket sahiplerinin bu ikisini birbirinden ayırt edememesi, konunun
-        yıl sonuna kadar ertelenmesinin asıl sebebi — ve yıl sonu, bu tür
+        yıl sonuna kadar ertelenmesinin asıl sebebi; ve yıl sonu, bu tür
         işlemler için en kalabalık, en yavaş dönem.
       </p>
     </MakaleLayout>

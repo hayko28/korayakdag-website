@@ -24,7 +24,7 @@ export default function MakalePage() {
         30 Ağustos 2026 sabahı NASA&apos;nın Nancy Grace Roman Uzay
         Teleskobu, Florida&apos;dan bir Falcon Heavy roketiyle fırlatıldı.
         Teleskop gökyüzünü Hubble&apos;a kıyasla en az 100 kat daha geniş bir
-        alanda ve 1000 kat daha hızlı tarayacak — üstelik Hubble&apos;ın
+        alanda ve 1000 kat daha hızlı tarayacak; üstelik Hubble&apos;ın
         netliğinden ödün vermeden. On yılı aşkın süren bir mühendislik
         çabasının sonucu bu rakamlar.
       </p>
@@ -38,21 +38,21 @@ export default function MakalePage() {
         rağmen Hubble Uzay Teleskobu projesini yıllarca savundu; meslektaşları
         arasında &quot;Hubble&apos;ın Annesi&quot; olarak anılırdı. Hubble
         1990&apos;da fırlatıldığında görüş alanı dardı ama derinliği
-        benzersizdi — gökyüzünün küçücük bir noktasına saatlerce odaklanıp
+        benzersizdi: gökyüzünün küçücük bir noktasına saatlerce odaklanıp
         inanılmaz ayrıntı çıkarabiliyordu. Roman, kendi adını taşıyan bu yeni
         teleskobun fırlatılışını görecek kadar yaşamadı; 2018&apos;de hayatını
         kaybetti.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
-        Derinlik mi, genişlik mi — yanlış soru olabilir
+        Derinlik mi, genişlik mi: yanlış soru olabilir
       </h2>
       <p>
         Şirketlerde de benzer bir ikilem sürekli tekrar eder: niş bir müşteri
         kitlesinde derinleşip uzmanlaşmak mı, yoksa pazarı geniş taramak mı
         doğru? Danışmanlık sürecinde çoğu işletme sahibi bu iki seçenek
         arasında bir yerde sıkışıp kalıyor, mevcut ürünü veya ekibi zorlayarak
-        her ikisini birden yapmaya çalışıyor — ve genelde ikisinde de
+        her ikisini birden yapmaya çalışıyor; ve genelde ikisinde de
         ortalama bir sonuç alıyor.
       </p>
       <p>
@@ -62,8 +62,8 @@ export default function MakalePage() {
         optik ve algılayıcı sistemine ihtiyaç vardı. Aynı şekilde bir şirket
         de mevcut satış ekibini, ürününü ya da süreçlerini daha sert
         çalıştırarak ölçek kazanamaz; ölçeklenmeyi hedefliyorsa bunun için
-        kurulmuş ayrı bir sistem — farklı bir kanal, farklı bir organizasyon
-        yapısı, farklı bir fiyatlama modeli — kurması gerekir.
+        kurulmuş ayrı bir sistem (farklı bir kanal, farklı bir organizasyon
+        yapısı, farklı bir fiyatlama modeli) kurması gerekir.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">Kısacası</h2>

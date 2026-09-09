@@ -63,19 +63,19 @@ export default function MakalePage() {
       </p>
       <ol className="list-decimal space-y-2 pl-6">
         <li>
-          <strong className="text-[#071A2F]">Bugünü kurtaran iş</strong> —
+          <strong className="text-[#071A2F]">Bugünü kurtaran iş:</strong>{" "}
           kısa vadeli satış ve fırsatlar.
         </li>
         <li>
-          <strong className="text-[#071A2F]">Yarını inşa eden iş</strong> —
+          <strong className="text-[#071A2F]">Yarını inşa eden iş:</strong>{" "}
           mevcut müşteri ilişkilerini derinleştirmek, çapraz satış, referans
           ağı.
         </li>
         <li>
           <strong className="text-[#071A2F]">
-            Geleceği belirleyen iş
+            Geleceği belirleyen iş:
           </strong>{" "}
-          — stratejik ortaklıklar, yeni pazarlar, yeni iş modelleri.
+          stratejik ortaklıklar, yeni pazarlar, yeni iş modelleri.
         </li>
       </ol>
       <p>

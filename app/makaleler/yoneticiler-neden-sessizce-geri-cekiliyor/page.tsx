@@ -50,7 +50,7 @@ export default function MakalePage() {
         yönetici artık itiraz etmiyor, sadece iletiyor. Ekibiyle
         arasındaki tampon rolünü bırakmış, mesajı olduğu gibi aktaran bir
         aracıya dönüşmüş oluyor. Bu, bağlılığın değil, tükenmişliğin
-        belirtisi — ve çoğu zaman üst yönetim bunu &quot;disiplinli
+        belirtisi; ve çoğu zaman üst yönetim bunu &quot;disiplinli
         liderlik&quot; sanıyor.
       </p>
 
@@ -59,7 +59,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Orta kademe yönetici hem üstünden gelen baskıyı karşılamak, hem
-        ekibini korumak, hem de kendi işini yetiştirmek zorunda —
+        ekibini korumak, hem de kendi işini yetiştirmek zorunda;
         üstelik bu üç rolün hiçbiri için ayrı bir zaman tanınmıyor. Şirket
         büyüdükçe bu kademeye yeni sorumluluk eklemek kolay, ama o
         sorumluluğu taşıyacak zamanı veya yetkiyi vermek genelde ihmal
@@ -75,7 +75,7 @@ export default function MakalePage() {
         olarak uygulayın ve sonuçları karşılaştırın. Bir şirketin
         çalışan bağlılığını gerçekten yükseltmek istiyorsa, önce o
         çalışanları doğrudan yöneten kişinin ne kadar bağlı olduğuna
-        bakması gerekiyor — çünkü bağlılık, tıpkı tükenmişlik gibi,
+        bakması gerekiyor, çünkü bağlılık, tıpkı tükenmişlik gibi,
         yukarıdan aşağıya sızan bir şey.
       </p>
     </MakaleLayout>

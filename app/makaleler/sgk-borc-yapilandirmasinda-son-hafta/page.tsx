@@ -22,7 +22,7 @@ export default function MakalePage() {
     >
       <p>
         Danışmanlık görüşmelerinde son günlerde en çok sorulan konulardan
-        biri SGK borç yapılandırması oldu. Haklılar da — 7582 sayılı Kanun
+        biri SGK borç yapılandırması oldu. Haklılar da: 7582 sayılı Kanun
         ile 6183 sayılı Kanun&apos;un tecil-taksitlendirme hükümlerinde
         yapılan değişiklik, işverenler için gerçekten kayda değer bir fırsat
         yaratıyor. Ama fırsatın önemli bir kısmı 31 Ağustos 2026&apos;da
@@ -50,7 +50,7 @@ export default function MakalePage() {
         puanlık bu fark, birkaç yüz bin TL&apos;lik bir borç için bile
         binlerce TL&apos;lik ek yüke dönüşebiliyor. Üstelik başvuru
         yapılmadığı sürece SGK&apos;nın icra ve haciz süreçleri normal
-        seyrinde devam ediyor — yani beklemenin maliyeti yalnızca faiz farkı
+        seyrinde devam ediyor; yani beklemenin maliyeti yalnızca faiz farkı
         değil.
       </p>
 
@@ -59,7 +59,7 @@ export default function MakalePage() {
       </h2>
       <p>
         <strong>Birincisi:</strong> Muhasebeciyle veya mali müşavirle
-        borcun güncel dökümünü çıkarmak — SGK e-Devlet üzerinden borç
+        borcun güncel dökümünü çıkarmak: SGK e-Devlet üzerinden borç
         durumu birkaç dakikada görülebiliyor, ertelemenin bir maliyeti yok
         ama bilmemenin var.
       </p>

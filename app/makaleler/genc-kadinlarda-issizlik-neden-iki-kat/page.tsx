@@ -25,7 +25,7 @@ export default function MakalePage() {
         verileri ilk bakışta iyimser bir tablo çiziyor: genel işsizlik oranı
         %7,9&apos;a, genç işsizlik oranı ise bir önceki çeyreğe göre 1 puan
         azalarak %13,9&apos;a geriledi. Ama rakamı cinsiyete göre ayırınca
-        tablo değişiyor — genç erkeklerde işsizlik %11 iken genç kadınlarda
+        tablo değişiyor: genç erkeklerde işsizlik %11 iken genç kadınlarda
         %19,3. Aradaki fark neredeyse iki kat.
       </p>
 
@@ -63,7 +63,7 @@ export default function MakalePage() {
         adayları eleme aşamasında dezavantajlı görmek yerine maliyet
         avantajlı görmek; işe alım öncesi muhasebeci veya İK danışmanıyla
         hangi teşvik kodunun uygulanabileceğini netleştirmek; ve bordro
-        sürecinde bu teşvikin gerçekten uygulandığını kontrol etmek —
+        sürecinde bu teşvikin gerçekten uygulandığını kontrol etmek,
         çünkü çoğu zaman teşvik hakkı var olduğu halde sistemde
         işaretlenmediği için hiç kullanılmıyor.
       </p>

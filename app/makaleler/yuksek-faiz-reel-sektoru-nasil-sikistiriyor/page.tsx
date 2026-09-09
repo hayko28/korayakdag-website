@@ -36,7 +36,7 @@ export default function MakalePage() {
         metal sektöründe %106, imalat sanayisinde %103, tekstilde %84,
         gıdada %47 arttı. KOBİ&apos;lere ait takipteki krediler ise %116
         artışla 276,3 milyar TL&apos;ye çıkmış. Yani sorun tek bir sektöre
-        özgü değil — üretimin neredeyse tamamına yayılmış bir finansman
+        özgü değil: üretimin neredeyse tamamına yayılmış bir finansman
         baskısından bahsediyoruz.
       </p>
 
@@ -59,7 +59,7 @@ export default function MakalePage() {
         <strong>Üçüncüsü:</strong> KOSGEB, TÜBİTAK ve yatırım teşvik
         sistemindeki faizsiz veya düşük maliyetli finansman araçlarını hiç
         değerlendirmemek. Bu programların büyük kısmı tam da bugün takipteki
-        alacaklara giren sektörler — imalat, metal, tekstil, gıda — için
+        alacaklara giren sektörler (imalat, metal, tekstil, gıda) için
         tasarlanmış durumda.
       </p>
 

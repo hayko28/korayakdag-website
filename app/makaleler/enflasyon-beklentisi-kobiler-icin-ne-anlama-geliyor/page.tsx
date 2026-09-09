@@ -46,7 +46,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Danışmanlık yaptığım firmaların çoğu tek bir sayıya göre karar
-        veriyor — genelde de o an medyada en çok konuşulan sayıya. Ama bu
+        veriyor, genelde de o an medyada en çok konuşulan sayıya. Ama bu
         ayki anket, yıl sonu ile önümüzdeki 12 ay arasında gerçek bir
         ayrışma olduğunu gösteriyor. Fiyatlama, tedarik sözleşmesi ve
         finansman kararlarını tek bir beklentiye göre kurmak, bu tabloda
@@ -57,7 +57,7 @@ export default function MakalePage() {
         Benim önerim
       </h2>
       <p>
-        Yıl sonuna kadar nakit akışında bir miktar ek tampon bırakın —
+        Yıl sonuna kadar nakit akışında bir miktar ek tampon bırakın;
         kısa vadeli beklenti hâlâ yukarı yönlü. Orta vadeli tedarik ve
         finansman anlaşmalarını ise 12 ay sonrası için piyasanın gördüğü
         göreli iyileşmeyi hesaba katarak kurgulayın. İkisini aynı sayıyla
@@ -66,8 +66,8 @@ export default function MakalePage() {
       </p>
 
       <p>
-        Rakamlar ay ay değişiyor, ama bu ayrışmayı takip etmek — tek bir
-        beklenti yerine eğrinin şekline bakmak — karar kalitesini gerçekten
+        Rakamlar ay ay değişiyor, ama bu ayrışmayı takip etmek (tek bir
+        beklenti yerine eğrinin şekline bakmak) karar kalitesini gerçekten
         değiştiriyor.
       </p>
     </MakaleLayout>

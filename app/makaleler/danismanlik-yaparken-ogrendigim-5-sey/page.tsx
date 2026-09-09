@@ -46,7 +46,7 @@ export default function MakalePage() {
         Doğru bir stratejiyi yanlış zamanda uygulamak, yanlış bir stratejiyi
         doğru zamanda uygulamaktan daha maliyetli olabiliyor. Bir yatırım
         teşviki başvurusunu üretim başladıktan sonra yapmak, en klasik
-        örneklerden biri — halbuki zamanlama, süreç kadar önemli.
+        örneklerden biri, halbuki zamanlama süreç kadar önemli.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
@@ -74,13 +74,13 @@ export default function MakalePage() {
       <p>
         Aynı sektörde, aynı büyüklükte iki şirket bile birbirinden çok
         farklı ihtiyaçlar taşıyabiliyor. Hazır şablon çözümler yerine, her
-        seferinde şirketin kendi durumuna bakarak başlamak — yavaş görünse
+        seferinde şirketin kendi durumuna bakarak başlamak, yavaş görünse
         de, doğru sonucu veren yol.
       </p>
 
       <p>
         Bu beş ders, bana kitaplardan değil, doğrudan masanın karşısındaki
-        insanlardan geldi. Danışmanlığı bu yüzden seviyorum — her görüşme,
+        insanlardan geldi. Danışmanlığı bu yüzden seviyorum: her görüşme,
         aynı zamanda bir şey daha öğrendiğim an oluyor.
       </p>
 

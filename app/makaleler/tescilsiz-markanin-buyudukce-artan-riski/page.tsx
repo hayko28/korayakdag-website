@@ -24,7 +24,7 @@ export default function MakalePage() {
       <p>
         Bir markanın en kırılgan olduğu an genellikle iflas ettiği gün
         değil, tanınır hale geldiği gündür. Küçükken kimse bakmaz;
-        büyüyünce herkes bakar — ve bu bakışların hepsi iyi niyetli olmaz.
+        büyüyünce herkes bakar; ve bu bakışların hepsi iyi niyetli olmaz.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
@@ -34,7 +34,7 @@ export default function MakalePage() {
         Bölgesinde yıllarca aynı isimle üretim yapan bir tekstil atölyesi
         düşünülsün. Ürünleri beğenilir, isim ağızdan ağıza yayılır, birkaç
         yıl içinde bölge dışında da bilinir hale gelir. Sahibi markasını
-        hiç tescil ettirmemiştir — &quot;zaten herkes bizi bu isimle
+        hiç tescil ettirmemiştir; &quot;zaten herkes bizi bu isimle
         tanıyor&quot; diye düşünmüştür. Tam bu noktada, haberi bile olmadan
         bir şey olur: aynı ismi başka biri TÜRKPATENT nezdinde kendi adına
         tescil ettirir.
@@ -49,14 +49,14 @@ export default function MakalePage() {
         tescilli bir hak karşısında çoğu zaman yeterli olmuyor; en fazla
         daha ağır ispat yükü taşıyan haksız rekabet hükümlerine
         dayanılabiliyor. Sonrası basit ama acımasız işliyor: yıllarca inşa
-        edilen isim artık hukuken bir başkasının — atölye sahibi ya
+        edilen isim artık hukuken bir başkasının. Atölye sahibi ya
         sıfırdan yeni bir isimle başlıyor ya da kendi markasını
         kullanabilmek için tescili elinde tutan kişiyle pazarlık etmek
         zorunda kalıyor.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
-        Büyüme, riski azaltmıyor — artırıyor
+        Büyüme, riski azaltmıyor, artırıyor
       </h2>
       <p>
         Bu noktada sezgiye aykırı bir şey oluyor: marka ne kadar büyür ve

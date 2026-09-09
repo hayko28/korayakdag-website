@@ -53,7 +53,7 @@ export default function MakalePage() {
         İnternette teşvikle ilgili o kadar çok, birbiriyle çelişen,
         güncelliğini yitirmiş bilgi var ki, işletme sahibi araştırmaya
         başladığı an kaybolup gidiyor. Hangi program hâlâ açık, hangisi
-        kapandı, hangi rakam güncel — bunu ayırt etmek bile başlı başına bir
+        kapandı, hangi rakam güncel: bunu ayırt etmek bile başlı başına bir
         iş.
       </p>
 
@@ -67,7 +67,7 @@ export default function MakalePage() {
 
       <p>
         <strong className="text-[#071A2F]">
-          Üçüncüsü — ve bence en önemlisi — &quot;bu bana ne kazandırır&quot;
+          Üçüncüsü (ve bence en önemlisi) &quot;bu bana ne kazandırır&quot;
           sorusunun net cevaplanmamış olması.
         </strong>{" "}
         Rakamlar soyut kaldığında, işletme sahibi zaman ayırmaya değer
@@ -84,7 +84,7 @@ export default function MakalePage() {
         Her yatırım veya büyüme kararı öncesinde, en azından &quot;bize
         uygun bir destek var mı&quot; sorusunu sormanızı öneririm. Cevap
         hayır bile olsa, en fazla bir görüşme kaybedersiniz. Cevap evetse,
-        bazen bir yatırımın maliyetinin üçte birini geri kazanabiliyorsunuz —
+        bazen bir yatırımın maliyetinin üçte birini geri kazanabiliyorsunuz;
         bu, göz ardı edilecek bir fark değil.
       </p>
 

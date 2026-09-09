@@ -46,7 +46,7 @@ export default function MakalePage() {
         Satışları, ekibi ya da şube sayısını hızla büyütmek dışarıdan bir
         başarı gibi görünür. Ama süreçler, raporlama ve karar mekanizmaları
         aynı hızda gelişmediyse, şirket de tıpkı bu robot gibi bir noktada
-        &quot;frenleyemeden&quot; bir duvara çarpıyor — nakit sıkışıklığı,
+        &quot;frenleyemeden&quot; bir duvara çarpıyor: nakit sıkışıklığı,
         kalite kaybı ya da kontrolsüz bir kriz şeklinde.
       </p>
 

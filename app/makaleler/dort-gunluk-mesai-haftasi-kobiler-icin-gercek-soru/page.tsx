@@ -51,8 +51,8 @@ export default function MakalePage() {
       <p>
         İş Kanunu&apos;nun 63. maddesi haftalık azami çalışma süresini 45
         saat olarak belirliyor, bunu gün sayısına değil toplam saate
-        bağlıyor. Yani &quot;4 gün 45 saat&quot; modeli — saatleri dört güne
-        sıkıştırmak — teorik olarak bugün bile mevcut mevzuatla
+        bağlıyor. Yani &quot;4 gün 45 saat&quot; modeli (saatleri dört güne
+        sıkıştırmak), teorik olarak bugün bile mevcut mevzuatla
         tartışılabilir bir zemine sahip. &quot;4 gün 32 saat&quot; modeli
         ise tamamen farklı bir şey: ücret kesintisi olmadan gerçek bir
         süre kısaltması. Kamuoyunda ikisi sık sık aynı başlık altında
@@ -67,7 +67,7 @@ export default function MakalePage() {
         Danışmanlık masasında bu konu gündeme geldiğinde ilk soru genelde
         &quot;biz buna hazır mıyız&quot; oluyor. Ama ondan önce cevaplanması
         gereken bir soru var: işletme, mevcut beş günün kaçında gerçekten
-        üretken çalışıyor? Çoğu KOBİ bunu hiç ölçmüyor — toplantı süresi,
+        üretken çalışıyor? Çoğu KOBİ bunu hiç ölçmüyor: toplantı süresi,
         bekleme süresi, tekrar eden manuel işler genelde hiçbir zaman
         kayıt altına alınmıyor. Gün sayısını tartışmadan önce zamanın nereye
         gittiğini görmek gerekiyor; aksi halde pilot uygulama genişlese

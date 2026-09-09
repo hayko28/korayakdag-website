@@ -37,9 +37,9 @@ export default function MakalePage() {
         Bu fark tesadüf değil, yapısal bir sonuç. Kurumsal değerler
         genelde üst yönetim toplantısında yazılıp bir sunumda,
         bir duvarda ya da işe giriş dokümanında sabitleniyor. Şirket
-        büyüdükçe bu değerlerin günlük işe — bir yöneticinin bir
+        büyüdükçe bu değerlerin günlük işe (bir yöneticinin bir
         çalışanı nasıl uyardığına, bir terfi kararının nasıl
-        açıklandığına, bir hatanın nasıl karşılandığına — çevrilmesi
+        açıklandığına, bir hatanın nasıl karşılandığına) çevrilmesi
         kimsenin görevi olmuyor. Üst yönetim değerlerin var olduğunu
         bilir; saha o değerlerin günlük pratiğe dönüşüp dönüşmediğini
         yaşar.
@@ -50,12 +50,12 @@ export default function MakalePage() {
       </h2>
       <p>
         On, yirmi kişilik bir ekipte kültür kurucunun davranışından
-        okunur — ayrıca bir belgeye gerek yoktur. Elli, yüz kişiyi
+        okunur; ayrıca bir belgeye gerek yoktur. Elli, yüz kişiyi
         geçtiğinde arada katman oluşur: bölge müdürü, departman
         yöneticisi, ekip lideri. Her katman değerleri kendi üslubuyla
         yorumlar; bazıları sıkı, bazıları gevşek uygular. Sonuçta aynı
         şirkette çalışan iki kişi, tamamen farklı bir kültür
-        deneyimler — biri &quot;burada dürüstçe itiraz edilebiliyor&quot;
+        deneyimler: biri &quot;burada dürüstçe itiraz edilebiliyor&quot;
         derken diğeri &quot;burada itiraz eden cezalandırılıyor&quot;
         diyebilir.
       </p>

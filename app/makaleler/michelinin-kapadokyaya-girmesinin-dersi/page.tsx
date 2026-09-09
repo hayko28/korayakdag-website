@@ -22,7 +22,7 @@ export default function MakalePage() {
     >
       <p>
         Kapadokya deyince akla ilk gelen şey sıcak hava balonu turları ve
-        otantik taş oteller — &quot;gurme mutfak&quot; listenin çok gerisinde
+        otantik taş oteller; &quot;gurme mutfak&quot; listenin çok gerisinde
         bir yerde durur, en azından geçen yıla kadar öyleydi. Michelin
         Rehberi&apos;nin 2026 Türkiye seçkisinde toplam 171 restoran yer
         aldı, yıldızlı restoran sayısı 17&apos;ye çıktı. Ama listenin en
@@ -36,7 +36,7 @@ export default function MakalePage() {
       <p>
         Bir danışmanlık ekibine on yıl önce &quot;Kapadokya&apos;da fine
         dining restoranı açacağız&quot; deseniz, muhtemelen önce bir pazar
-        araştırması önerirlerdi — bölgeye gelen turist profili balon turu ve
+        araştırması önerirlerdi: bölgeye gelen turist profili balon turu ve
         müze gezisine odaklı, &quot;gurme yemek için buraya gelen olmaz&quot;
         derlerdi. Sayılara bakarsanız da onları haklı çıkarırdınız: bölgenin
         gastronomi altyapısı, İstanbul ya da İzmir&apos;le kıyaslanamazdı.
@@ -49,7 +49,7 @@ export default function MakalePage() {
         Ama Revithia bu beklentiyi tam tersine çevirdi: rekabetin en yoğun
         olduğu İstanbul&apos;da onlarca restorandan biri daha olmak yerine,
         kimsenin beklemediği bir bölgede fark yaratmayı seçti. Sonuç, büyük
-        şehirdeki pek çok köklü restoranın alamadığı bir tanınırlık oldu —
+        şehirdeki pek çok köklü restoranın alamadığı bir tanınırlık oldu,
         çünkü orada rekabet neredeyse yoktu, dikkat çekmek için binlerce
         restoranın arasından sıyrılmak gerekmiyordu.
       </p>

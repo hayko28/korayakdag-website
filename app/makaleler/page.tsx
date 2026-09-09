@@ -36,7 +36,7 @@ export default function MakalelerPage() {
               Kişisel Görüş ve Deneyim Yazılarım
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-gray-200">
-              Bloğumdaki SEO rehberlerinden farklı — devlet destekleri,
+              Bloğumdaki SEO rehberlerinden farklı: devlet destekleri,
               danışmanlık, teşvikler ve iş geliştirme üzerine kendi gözlem ve
               görüşlerimi paylaştığım kişisel yazılar.
             </p>

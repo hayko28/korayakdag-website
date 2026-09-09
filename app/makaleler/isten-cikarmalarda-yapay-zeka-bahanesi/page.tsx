@@ -24,7 +24,7 @@ export default function MakalePage() {
         Bu yıl büyük işten çıkarma duyuran şirketlerin açıklamalarını art arda
         okuyunca ilginç bir örüntü fark ettim: Block çalışanlarının yaklaşık
         %40&apos;ını, Cloudflare da %20&apos;sini işten çıkardı ve ikisi de
-        gerekçe olarak aynı şeyi gösterdi — yapay zeka sayesinde artık daha
+        gerekçe olarak aynı şeyi gösterdi: yapay zeka sayesinde artık daha
         az kişiyle daha fazla iş yapabiliyorlarmış.
       </p>
 
@@ -44,7 +44,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Çünkü &quot;yapay zekaya geçtik, verimlilik arttı&quot; demek
-        yatırımcıya güven veriyor — hatta bazı şirketlerin hisseleri bu
+        yatırımcıya güven veriyor; hatta bazı şirketlerin hisseleri bu
         açıklamayla birlikte yükseldi. Ama &quot;pandemi döneminde fazla işe
         aldık&quot;, &quot;marjlarımız daralıyor&quot; ya da &quot;maliyet
         baskısı var&quot; demek aynı etkiyi yaratmıyor. Aynı sonucun iki

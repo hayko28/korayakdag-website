@@ -44,13 +44,13 @@ export default function MakalePage() {
 
       <p>
         Rapora göre girişimcilerin işlerini finanse etme yöntemi yüzde
-        61&apos;lik oranla hâlâ öz kaynaklar — kendi birikimi, aile desteği,
+        61&apos;lik oranla hâlâ öz kaynaklar: kendi birikimi, aile desteği,
         ortakların cebi. Banka kredisi yüzde 20&apos;de, devlet teşvik ve
         hibe programları ise sadece yüzde 14&apos;te kalıyor. Danışmanlık
         tarafında baktığımda bu tablo hiç şaşırtıcı değil; çoğu girişimci
         için &quot;dış kaynak&quot; demek hâlâ ya bankaya gitmek ya da hiç
-        gitmemek. Aradaki geniş alan — KOSGEB, TÜBİTAK, yatırım teşvik
-        sistemi gibi faizsiz veya hibeye dönüşebilen mekanizmalar — büyük
+        gitmemek. Aradaki geniş alan (KOSGEB, TÜBİTAK, yatırım teşvik
+        sistemi gibi faizsiz veya hibeye dönüşebilen mekanizmalar) büyük
         ölçüde kullanılmıyor.
       </p>
 
@@ -63,7 +63,7 @@ export default function MakalePage() {
         kanallar ya bilinmiyor ya da başvuru süreci karmaşık görülüyor; bu
         yüzden zaman kaybetmeden bildiği yola, öz kaynağa veya krediye
         yöneliyor. Oysa doğru eşleştirilmiş bir teşvik veya hibe, sermaye
-        maliyetini banka kredisine göre ciddi şekilde düşürebiliyor —
+        maliyetini banka kredisine göre ciddi şekilde düşürebiliyor;
         özellikle yüksek faiz ortamında bu fark, bir yatırımın yapılabilir
         olup olmadığını belirleyen kritik bir eşiğe dönüşüyor.
       </p>
@@ -74,7 +74,7 @@ export default function MakalePage() {
         Ekosistem algısının iyileşmesi iyi haber, ama tek başına yeterli
         değil. Bir girişimin büyüme hızını asıl belirleyen, o iyimserliğin
         arkasında hangi finansman karmasının durduğu. Öz kaynak ve kredi
-        dışındaki üçüncü seçeneği — teşvik ve hibe sistemini — masaya
+        dışındaki üçüncü seçeneği (teşvik ve hibe sistemini) masaya
         koymadan alınan bir büyüme kararı, aslında elindeki seçeneklerin
         yalnızca üçte birini kullanmış oluyor.
       </p>

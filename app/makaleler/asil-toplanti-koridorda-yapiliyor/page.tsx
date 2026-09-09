@@ -22,7 +22,7 @@ export default function MakalePage() {
     >
       <p>
         Bir toplantı odasının kapısı kapandığında, aslında hiçbir şey bitmiş
-        olmuyor — tam tersine, çoğu zaman asıl konuşma o andan sonra
+        olmuyor. Tam tersine, çoğu zaman asıl konuşma o andan sonra
         başlıyor. Danışmanlık literatüründe buna &quot;toplantı sonrası
         toplantı&quot; deniyor: masada söylenmeyen itirazların, gerçek
         endişelerin ve dürüst yorumların koridorda, asansörde ya da kapıdan
@@ -37,13 +37,13 @@ export default function MakalePage() {
         değerlendirmesinde bu durum gözle görülür şekilde tekrar etti:
         toplantı odasında bütçe kararına kimse itiraz etmedi, herkes başını
         salladı. Kapıdan çıkar çıkmaz iki departman yöneticisi arasında geçen
-        kısa sohbette gerçek görüş ortaya çıktı — bütçenin gerçekçi olmadığı,
+        kısa sohbette gerçek görüş ortaya çıktı: bütçenin gerçekçi olmadığı,
         ama kimsenin ilk itiraz eden olmak istemediği.
       </p>
       <p>
         Bunun nedeni basit: masada hiyerarşi var, kayıt altına alınma
         endişesi var, &quot;ilk konuşan ben olmayayım&quot; refleksi var.
-        Koridorda bunların hiçbiri yok — sadece iki kişi ve serbestçe
+        Koridorda bunların hiçbiri yok, sadece iki kişi ve serbestçe
         söylenen bir cümle.
       </p>
 
@@ -61,7 +61,7 @@ export default function MakalePage() {
         Pratikte işe yarayan birkaç yöntem var: karar vericinin görüşünü en
         son açıklaması, herkesin görüşünü toplantıdan önce yazılı olarak
         alması ya da toplantıyı küçük gruplara bölmek. Amaç koridoru
-        kapatmak değil — koridordaki dürüstlüğün bir kısmını masaya
+        kapatmak değil, koridordaki dürüstlüğün bir kısmını masaya
         taşıyabilmek.
       </p>
 

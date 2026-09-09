@@ -24,7 +24,7 @@ export default function MakalePage() {
       <p>
         Bir şirket satın alma anlaşmasında en tehlikeli cümle, genelde
         sözleşmenin gövdesinde değil, ekindeki bir maddede saklanır. Adı:
-        kontrol değişikliği (change of control) maddesi. Basit anlamı şu —
+        kontrol değişikliği (change of control) maddesi. Basit anlamı şu:
         şirketin ortaklık yapısı değiştiği anda, karşı taraf (en büyük
         müşteri, en kritik tedarikçi, kiraya veren) o sözleşmeyi tek taraflı
         feshedebilir.
@@ -38,7 +38,7 @@ export default function MakalePage() {
         müşteriden geldiğini biliyor ve teklif ettiği fiyatı da buna göre
         veriyor. Ama o müşteriyle yapılan sözleşmenin ek maddelerini kimse
         satır satır okumamış oluyor. Devir tamamlanır tamamlanmaz müşteri,
-        sözleşmedeki bu hakkı kullanıp ilişkiyi sonlandırabiliyor — satın
+        sözleşmedeki bu hakkı kullanıp ilişkiyi sonlandırabiliyor: satın
         alınan cironun büyük kısmı, kapanış imzasından bir gün sonra bir
         gecede buharlaşabiliyor.
       </p>
@@ -50,8 +50,8 @@ export default function MakalePage() {
         Bilanço, satın alma sürecinde en çok mesai harcanan kalemdir; kâr
         gerçek mi, nakit akışı sağlıklı mı, sorulur da sorulur. Sözleşmelerin
         ek maddeleri ise çoğu zaman &quot;standart metin&quot; muamelesi
-        görüp son sıraya bırakılır. Oysa fiyatı asıl belirleyen —
-        şirketin gelecekteki geliri — genelde bilançoda değil, o ek maddede
+        görüp son sıraya bırakılır. Oysa fiyatı asıl belirleyen
+        (şirketin gelecekteki geliri) genelde bilançoda değil, o ek maddede
         saklıdır.
       </p>
 

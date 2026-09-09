@@ -7,7 +7,7 @@ export interface MakaleMeta {
   readTime: string;
 }
 
-// Koray'ın kişisel görüş yazıları — SEO odaklı blog rehberlerinden ayrı,
+// Koray'ın kişisel görüş yazıları, SEO odaklı blog rehberlerinden ayrı,
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
@@ -34,7 +34,7 @@ export const MAKALELER: MakaleMeta[] = [
     title:
       "Bağımsız Denetim Eşiği Yükseldi: Rahatlamak İçin Neden Erken?",
     excerpt:
-      "17 Mart 2026'da aktif toplamı ve ciro eşikleri belirgin biçimde yükseltildi, birçok şirket kapsam dışına çıkacağını düşündü. Ama kapsamdan çıkış tek bir yılın rakamına değil, art arda iki hesap dönemine göre belirleniyor — ve grup şirketlerinde konsolide büyüklük hâlâ sürpriz yapabiliyor.",
+      "17 Mart 2026'da aktif toplamı ve ciro eşikleri belirgin biçimde yükseltildi, birçok şirket kapsam dışına çıkacağını düşündü. Ama kapsamdan çıkış tek bir yılın rakamına değil, art arda iki hesap dönemine göre belirleniyor ve grup şirketlerinde konsolide büyüklük hâlâ sürpriz yapabiliyor.",
     tag: "Görüş",
     date: "7 Eylül 2026",
     readTime: "2 Dakika",
@@ -44,7 +44,7 @@ export const MAKALELER: MakaleMeta[] = [
     title:
       "İki Ortak Ayrılıyor, İki Farklı Şirket Değeri Ortaya Çıkıyor: Hangisi Geçerli?",
     excerpt:
-      "Ortaklık ayrılıklarını bozan şey genelde para değil, aynı şirket için kullanılan iki farklı hesaplama yöntemi. Ayrılan ortak kuruluş yılındaki emeğe bakar, kalan ortak bugünkü bilançoya — ikisi de kendi açısından haklıdır, ikisi de nesnel değildir. Bağımsız bir değerleme, tartışmayı duygudan çıkarıp rakama taşıyan tek şey.",
+      "Ortaklık ayrılıklarını bozan şey genelde para değil, aynı şirket için kullanılan iki farklı hesaplama yöntemi. Ayrılan ortak kuruluş yılındaki emeğe bakar, kalan ortak bugünkü bilançoya; ikisi de kendi açısından haklıdır, ikisi de nesnel değildir. Bağımsız bir değerleme, tartışmayı duygudan çıkarıp rakama taşıyan tek şey.",
     tag: "Strateji",
     date: "6 Eylül 2026",
     readTime: "2 Dakika",
@@ -54,7 +54,7 @@ export const MAKALELER: MakaleMeta[] = [
     title:
       "Kargo Firmasına, E-posta Programına, Muhasebe Yazılımına: Müşteri Verisi Kaç Şirkete Gidiyor?",
     excerpt:
-      "Bir KOBİ'nin müşteri listesi tek bir yerde durmuyor artık — kargo firması, yurt dışı sunuculu e-posta pazarlama aracı, bulut muhasebe programı, CRM... Her biri ayrı bir veri aktarımı ve KVKK'nın veri güvenliği yükümlülüğü kapsamına giriyor. Şirket büyüdükçe bu zincir uzuyor, ama envanteri çıkaran çoğu zaman kimse olmuyor.",
+      "Bir KOBİ'nin müşteri listesi tek bir yerde durmuyor artık: kargo firması, yurt dışı sunuculu e-posta pazarlama aracı, bulut muhasebe programı, CRM... Her biri ayrı bir veri aktarımı ve KVKK'nın veri güvenliği yükümlülüğü kapsamına giriyor. Şirket büyüdükçe bu zincir uzuyor, ama envanteri çıkaran çoğu zaman kimse olmuyor.",
     tag: "Görüş",
     date: "5 Eylül 2026",
     readTime: "2 Dakika",
@@ -64,7 +64,7 @@ export const MAKALELER: MakaleMeta[] = [
     title:
       "250 Milyar TL'lik İmalat Finansman Paketinde Görünmeyen Şart: İstihdam Taahhüdü",
     excerpt:
-      "1 Eylül'de başvuruları açılan İmalat Sanayi Finansman Desteği'nde 12 puanlık faiz avantajının koşulu, işletmenin 2026'nın ikinci yarısında ilk yarıdaki istihdam seviyesini koruması. Düşük faiz cazip görünse de, kredi aslında altı aylık bir işgücü taahhüdü — herkes için aynı anlama gelmiyor.",
+      "1 Eylül'de başvuruları açılan İmalat Sanayi Finansman Desteği'nde 12 puanlık faiz avantajının koşulu, işletmenin 2026'nın ikinci yarısında ilk yarıdaki istihdam seviyesini koruması. Düşük faiz cazip görünse de, kredi aslında altı aylık bir işgücü taahhüdü; herkes için aynı anlama gelmiyor.",
     tag: "Strateji",
     date: "4 Eylül 2026",
     readTime: "2 Dakika",
@@ -73,7 +73,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "tescilsiz-markanin-buyudukce-artan-riski",
     title: "Markanız Büyüdükçe, Tescilsiz Kalmanın Riski de Büyüyor",
     excerpt:
-      "Türk hukukunda marka koruması kullanımdan değil tescilden doğuyor. Bir işletme ne kadar tanınır hale gelirse, markasının başkası tarafından fark edilip erken tescil ettirilme riski de o kadar artıyor — küçükken kimse bakmıyor, büyüyünce herkes bakıyor.",
+      "Türk hukukunda marka koruması kullanımdan değil tescilden doğuyor. Bir işletme ne kadar tanınır hale gelirse, markasının başkası tarafından fark edilip erken tescil ettirilme riski de o kadar artıyor: küçükken kimse bakmıyor, büyüyünce herkes bakıyor.",
     tag: "Görüş",
     date: "4 Eylül 2026",
     readTime: "2 Dakika",
@@ -83,7 +83,7 @@ export const MAKALELER: MakaleMeta[] = [
     title:
       "Şirketi Satın Aldınız, Ertesi Gün En Büyük Müşteriniz Gitti: Sözleşmedeki Görünmeyen Madde",
     excerpt:
-      "Kontrol değişikliği (change of control) maddesi, bir şirketin ortaklık yapısı değiştiği anda karşı tarafa sözleşmeyi tek taraflı fesih hakkı tanıyabiliyor. Bilanço satın almadan önce satır satır incelenir; sözleşmelerin ek maddeleri genelde son sıraya bırakılıyor — oysa fiyatı asıl belirleyen çoğu zaman orada saklı.",
+      "Kontrol değişikliği (change of control) maddesi, bir şirketin ortaklık yapısı değiştiği anda karşı tarafa sözleşmeyi tek taraflı fesih hakkı tanıyabiliyor. Bilanço satın almadan önce satır satır incelenir; sözleşmelerin ek maddeleri genelde son sıraya bırakılıyor. Oysa fiyatı asıl belirleyen çoğu zaman orada saklı.",
     tag: "Görüş",
     date: "4 Eylül 2026",
     readTime: "2 Dakika",
@@ -140,9 +140,9 @@ export const MAKALELER: MakaleMeta[] = [
   {
     slug: "roman-uzay-teleskobu-derinlik-mi-genislik-mi-buyume-dersi",
     title:
-      "Roman Uzay Teleskobu Fırlatıldı: Derinlik mi, Genişlik mi — Büyümede Doğru Soru Hangisi?",
+      "Roman Uzay Teleskobu Fırlatıldı: Derinlik mi, Genişlik mi? Büyümede Doğru Soru Hangisi?",
     excerpt:
-      "30 Ağustos 2026'da fırlatılan Roman Uzay Teleskobu, Hubble'dan en az 100 kat geniş bir alanı, 1000 kat daha hızlı tarayacak — üstelik aynı netlikte. Adını taşıdığı Nancy Grace Roman'ın hikayesiyle birlikte, şirketler için niş derinlik ile pazar genişliği arasındaki klasik ikilemi yeniden düşündüren bir örnek.",
+      "30 Ağustos 2026'da fırlatılan Roman Uzay Teleskobu, Hubble'dan en az 100 kat geniş bir alanı, 1000 kat daha hızlı tarayacak; üstelik aynı netlikte. Adını taşıdığı Nancy Grace Roman'ın hikayesiyle birlikte, şirketler için niş derinlik ile pazar genişliği arasındaki klasik ikilemi yeniden düşündüren bir örnek.",
     tag: "Strateji",
     date: "31 Ağustos 2026",
     readTime: "2 Dakika",
@@ -225,7 +225,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "dijital-donusum-kobilerde-neden-gecikir",
     title: "Dijital Dönüşüm KOBİ'lerde Neden Gecikir?",
     excerpt:
-      "Sipariş takibini WhatsApp grubundan yapan bir firma, yurt dışı siparişini zamanında yetiştiremediği için kaybetti. Sorun üretim kapasitesi değildi — bilginin nerede olduğuydu.",
+      "Sipariş takibini WhatsApp grubundan yapan bir firma, yurt dışı siparişini zamanında yetiştiremediği için kaybetti. Sorun üretim kapasitesi değildi, bilginin nerede olduğuydu.",
     tag: "Görüş",
     date: "17 Ağustos 2026",
     readTime: "2 Dakika",
@@ -234,7 +234,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "sessiz-cokus-ekipte-fark-edilmeyen-tukenmislik",
     title: "Quiet Cracking: Ekibinizde Sessizce Tükenenleri Nasıl Fark Edersiniz?",
     excerpt:
-      "2026'nın yeni İK terimi \"quiet cracking\" — çalışan işi bırakmadan, şikayet etmeden sessizce motivasyonunu kaybediyor. Danışmanlık yaptığım ekiplerde gördüğüm üç erken belirti ve ne yapılabileceği.",
+      "2026'nın yeni İK terimi \"quiet cracking\": çalışan işi bırakmadan, şikayet etmeden sessizce motivasyonunu kaybediyor. Danışmanlık yaptığım ekiplerde gördüğüm üç erken belirti ve ne yapılabileceği.",
     tag: "Görüş",
     date: "16 Ağustos 2026",
     readTime: "2 Dakika",
@@ -307,7 +307,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "yurt-disina-acilmadan-once-3-soru",
     title: "Yurt Dışına Açılmadan Önce Sormanız Gereken 3 Soru",
     excerpt:
-      "\"Hangi ülke daha avantajlı\" sorusu erken bir soru. Ondan önce cevaplanması gereken üç soru var — ve bu soruları atlayan projeler ilk yıl ciddi sorunlar yaşıyor.",
+      "\"Hangi ülke daha avantajlı\" sorusu erken bir soru. Ondan önce cevaplanması gereken üç soru var ve bu soruları atlayan projeler ilk yıl ciddi sorunlar yaşıyor.",
     tag: "Strateji",
     date: "20 Temmuz 2026",
     readTime: "3 Dakika",
@@ -362,7 +362,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "all-blacksin-77-kazanma-oraninin-arkasindaki-kultur",
     title: "Dünyanın En Başarılı Spor Takımının Sırrı: %77 Kazanma Oranı Nereden Geliyor?",
     excerpt:
-      "Yeni Zelanda ragbi milli takımı All Blacks, 150 yılı aşkın tarihinde %77'nin üzerinde bir kazanma oranına sahip — herhangi bir büyük spor dalında görülen en yüksek oran. Bu süreklilik taktikten çok bir kültür meselesi.",
+      "Yeni Zelanda ragbi milli takımı All Blacks, 150 yılı aşkın tarihinde %77'nin üzerinde bir kazanma oranına sahip; herhangi bir büyük spor dalında görülen en yüksek oran. Bu süreklilik taktikten çok bir kültür meselesi.",
     tag: "Görüş",
     date: "24 Ağustos 2026",
     readTime: "2 Dakika",
@@ -454,7 +454,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "asil-toplanti-koridorda-yapiliyor",
     title: "Asıl Toplantı, Toplantı Bittikten Sonra Koridorda Yapılıyor",
     excerpt:
-      "Toplantı odasında herkes başını sallar, kapı kapanır kapanmaz gerçek görüşler ortaya dökülür. Danışmanlık literatüründe buna \"toplantı sonrası toplantı\" deniyor — ve bu durum aslında toplantı kültürüne dair ciddi bir uyarı.",
+      "Toplantı odasında herkes başını sallar, kapı kapanır kapanmaz gerçek görüşler ortaya dökülür. Danışmanlık literatüründe buna \"toplantı sonrası toplantı\" deniyor ve bu durum aslında toplantı kültürüne dair ciddi bir uyarı.",
     tag: "Görüş",
     date: "26 Ağustos 2026",
     readTime: "2 Dakika",
@@ -463,7 +463,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "asgari-sermaye-artirimini-erteleyenler",
     title: "Asgari Sermaye Artırımını Erteleyenler Neyi Gözden Kaçırıyor?",
     excerpt:
-      "\"Biz zaten büyüdük, bilançomuz farklı\" — asgari sermaye artırımı gündeme geldiğinde duyulan ilk cümle bu. Ama Geçici Madde 15 bilançoya değil, esas sermayeye bakıyor ve 31 Aralık 2026 takvimi kesin.",
+      "\"Biz zaten büyüdük, bilançomuz farklı\": asgari sermaye artırımı gündeme geldiğinde duyulan ilk cümle bu. Ama Geçici Madde 15 bilançoya değil, esas sermayeye bakıyor ve 31 Aralık 2026 takvimi kesin.",
     tag: "Strateji",
     date: "20 Ağustos 2026",
     readTime: "2 Dakika",
@@ -499,7 +499,7 @@ export const MAKALELER: MakaleMeta[] = [
     slug: "isletmenize-disaridan-bakmak",
     title: "İşletmenize Ayna Tutuyoruz: Vergi Risk, Teşvik ve Kredibilite Körlüğü",
     excerpt:
-      "Vergi riskini bir ceza tebligatıyla, kaçırılan teşviki bir rakibin haberiyle, kredibilite zayıflığını bir banka reddiyle öğrenmek — üçü de önceden görülebilir, kaynağı aynı kör nokta.",
+      "Vergi riskini bir ceza tebligatıyla, kaçırılan teşviki bir rakibin haberiyle, kredibilite zayıflığını bir banka reddiyle öğrenmek: üçü de önceden görülebilir, kaynağı aynı kör nokta.",
     tag: "Görüş",
     date: "21 Ağustos 2026",
     readTime: "2 Dakika",

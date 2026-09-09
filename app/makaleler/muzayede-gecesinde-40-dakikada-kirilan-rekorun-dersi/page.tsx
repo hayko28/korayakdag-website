@@ -25,7 +25,7 @@ export default function MakalePage() {
         teklifler art arda geldi: sadece 40 dakikada 630 milyon dolarlık
         sanat eseri el değiştirdi. Gecenin tamamında toplam satış 1,1 milyar
         doları buldu. Jackson Pollock&apos;un bir tablosu tek başına 181,2
-        milyon dolara alıcı buldu — sanatçının açık artırma rekoru.
+        milyon dolara alıcı buldu; sanatçının açık artırma rekoru.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
@@ -37,7 +37,7 @@ export default function MakalePage() {
         açılmamış bir koleksiyondan geliyordu. Bu eserler daha önce hiçbir
         müzayedeye çıkmamış, sıradan bir yatırım aracı gibi de
         pazarlanmamıştı. Tam da bu yüzden salona girer girmez rekabeti
-        kızıştırdı — alıcılar bir daha ele geçiremeyecekleri bir fırsatla
+        kızıştırdı: alıcılar bir daha ele geçiremeyecekleri bir fırsatla
         karşı karşıya olduklarını biliyordu.
       </p>
 
@@ -47,8 +47,8 @@ export default function MakalePage() {
       <p>
         Herkesin sunduğu bir hizmeti biraz daha ucuza satan bir firma, er ya
         da geç fiyat rekabetine mahkum kalıyor. Buna karşılık kendine özgü,
-        kolay kopyalanamayan ve sabırla inşa edilmiş bir konumlanma —
-        tıpkı bir koleksiyon gibi — piyasaya çıktığında değerini kendisi
+        kolay kopyalanamayan ve sabırla inşa edilmiş bir konumlanma,
+        tıpkı bir koleksiyon gibi, piyasaya çıktığında değerini kendisi
         belirliyor. Danışmanlık masasında sık gördüğüm hata, şirketlerin
         kendi farklılaşan yönlerini fiyat indirimiyle gölgelemesi.
       </p>

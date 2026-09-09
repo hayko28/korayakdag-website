@@ -26,7 +26,7 @@ export default function MakalePage() {
         <strong className="text-[#071A2F]">münhasır</strong> bir anlaşma
         imzalıyor. Bölge o bayiye kapatılıyor, karşılığında ise somut,
         ölçülebilir hiçbir performans şartı konmuyor. İki üç yıl sonra o
-        bölgedeki ciro toplam cironun yüzde birkaçında kalıyor — ama sözleşme
+        bölgedeki ciro toplam cironun yüzde birkaçında kalıyor, ama sözleşme
         hâlâ yürürlükte, firma kendi bölgesine başka bir kanaldan giremiyor.
       </p>
 
@@ -36,8 +36,8 @@ export default function MakalePage() {
       <p>
         Bir bölgeyi tek bir bayiye kapatmak, o bayinin gerçekten satacağına
         dair bir bahistir. Bayi tarafında bu riski dengeleyen bir mekanizma
-        yoksa — yani hedefi tutturamazsa münhasırlığın gözden geçirileceğine
-        dair bir madde yoksa — firma tek taraflı bir yükümlülük altına
+        yoksa, yani hedefi tutturamazsa münhasırlığın gözden geçirileceğine
+        dair bir madde yoksa, firma tek taraflı bir yükümlülük altına
         giriyor. Bayi için ise durum tam tersi: baskı hissetmeden, rahatça
         bekleyebiliyor.
       </p>
@@ -48,16 +48,16 @@ export default function MakalePage() {
       <p>Doğru kurulmuş bir bayilik veya distribütörlük anlaşmasında şunlar mutlaka yer almalı:</p>
       <ol className="list-decimal space-y-2 pl-6">
         <li>
-          <strong className="text-[#071A2F]">Yıllık minimum alım veya satış hedefi</strong> —
+          <strong className="text-[#071A2F]">Yıllık minimum alım veya satış hedefi:</strong>{" "}
           rakamla, dönemsel olarak tanımlanmış.
         </li>
         <li>
-          <strong className="text-[#071A2F]">Net bir tetikleyici</strong> —
+          <strong className="text-[#071A2F]">Net bir tetikleyici:</strong>{" "}
           hedef art arda iki dönem tutmazsa münhasırlığın kalkacağı veya
           gözden geçirileceği açıkça yazılı olmalı.
         </li>
         <li>
-          <strong className="text-[#071A2F]">Makul bir çıkış maddesi</strong> —
+          <strong className="text-[#071A2F]">Makul bir çıkış maddesi:</strong>{" "}
           ilişkiyi hukuki ihtilafa girmeden sonlandırabilecek bir yol.
         </li>
       </ol>

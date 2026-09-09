@@ -25,7 +25,7 @@ export default function MakalePage() {
         günden bu yana on dört yıldır gezegenin yüzeyinde yavaş yavaş
         ilerliyor, toprak ve kaya örnekliyor. Son analizlerde, aracın
         incelediği 3,5 milyar yıllık kayalarda 20&apos;den fazla organik
-        molekül tespit edildi — bilim insanları bunu Mars&apos;ta bir
+        molekül tespit edildi; bilim insanları bunu Mars&apos;ta bir
         zamanlar yaşam için gerekli kimyasal altyapının var olabileceğine
         dair en güçlü işaretlerden biri olarak değerlendiriyor.
       </p>
@@ -49,7 +49,7 @@ export default function MakalePage() {
         ortaya çıktığı görülüyor: çeyreklik hedeflerin peşinde koşarken
         değil, yıllar süren tutarlı bir birikimin sonunda. Bir pazara girmek,
         bir markayı oturtmak ya da sağlam bir müşteri portföyü kurmak da tıpkı
-        Mars&apos;ta yaşam izi aramak gibi — sonuç genelde ilk denemede
+        Mars&apos;ta yaşam izi aramak gibi: sonuç genelde ilk denemede
         değil, sabırla tekrarlanan küçük adımlarda ortaya çıkıyor.
       </p>
 

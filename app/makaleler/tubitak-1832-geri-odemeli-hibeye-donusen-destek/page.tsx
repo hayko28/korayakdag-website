@@ -47,7 +47,7 @@ export default function MakalePage() {
         Saf hibe programlarında işletmenin asıl motivasyonu bazen projeyi
         başarıyla bitirmek değil, parayı almak oluyor. Burada geri ödeme
         riski baştan var olduğu için, hedeflenen verimlilik kazanımına
-        gerçekten ulaşmak işletmenin kendi çıkarına dönüşüyor — devletin
+        gerçekten ulaşmak işletmenin kendi çıkarına dönüşüyor: devletin
         parası, işletmenin disiplinine bağlanmış oluyor.
       </p>
 
@@ -55,7 +55,7 @@ export default function MakalePage() {
       <p>
         Enerji verimliliği yatırımı planlayan bir sanayi kuruluşu için asıl
         soru &quot;ne kadar destek alırım&quot; değil, &quot;yeşil başarı
-        kriterlerini gerçekten tutturabilir miyim&quot; olmalı — çünkü
+        kriterlerini gerçekten tutturabilir miyim&quot; olmalı, çünkü
         hibeye dönüşen kısım, ancak o soru cevaplanırsa gerçekleşiyor.
       </p>
     </MakaleLayout>

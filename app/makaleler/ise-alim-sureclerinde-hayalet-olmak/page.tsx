@@ -22,7 +22,7 @@ export default function MakalePage() {
     >
       <p>
         Bir KOBİ sahibi son işe alım sürecini şöyle özetliyor: 200 başvuru,
-        üç mülakat turu, en sonunda en iyi adaya teklif — ve sessizlik.
+        üç mülakat turu, en sonunda en iyi adaya teklif ve sessizlik.
         Aday telefonu açmıyor, mesaja dönmüyor, LinkedIn&apos;de son giriş
         tarihi güncelleniyor ama ona hiç yanıt gelmiyor. Aynı işveren bir yıl
         önce tam tersini yapmış, elemeyi kaybettiği adaylara hiç dönüş

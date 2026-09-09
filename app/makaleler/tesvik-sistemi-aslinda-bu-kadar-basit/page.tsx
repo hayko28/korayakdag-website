@@ -24,7 +24,7 @@ export default function MakalePage() {
         &quot;Teşvik sistemi çok karmaşık&quot; cümlesini duyduğumda, genelde
         şunu söylüyorum: karmaşık olan sistem değil, sisteme dair anlatılan
         hikaye. Bölge, oran, EK-3, E-TUYS gibi terimler bir araya geldiğinde
-        göz korkutucu bir tablo oluşuyor — ama işin özü aslında çok basit üç
+        göz korkutucu bir tablo oluşuyor, ama işin özü aslında çok basit üç
         soruya iniyor.
       </p>
 
@@ -34,8 +34,8 @@ export default function MakalePage() {
       <p>
         Türkiye altı teşvik bölgesine ayrılmış durumda. Yatırımınızın
         yapılacağı il, hangi destek unsurlarından yararlanabileceğinizi
-        doğrudan belirliyor. Bunu bir &quot;harita sorusu&quot; gibi düşünün
-        — karmaşık bir hesap değil, sadece &quot;hangi bölgedeyim&quot;
+        doğrudan belirliyor. Bunu bir &quot;harita sorusu&quot; gibi düşünün:
+        karmaşık bir hesap değil, sadece &quot;hangi bölgedeyim&quot;
         sorusunun cevabı.
       </p>
 
@@ -64,7 +64,7 @@ export default function MakalePage() {
         Bu üç sorunun cevabını netleştirdiğinizde, önünüzde hangi destek
         unsurlarının (vergi indirimi, SGK desteği, faiz desteği gibi)
         olduğu zaten ortaya çıkıyor. Zor olan kısım, bu üç cevabı doğru ve
-        güncel bilgiyle eşleştirmek — çünkü oranlar, tutarlar ve şartlar
+        güncel bilgiyle eşleştirmek, çünkü oranlar, tutarlar ve şartlar
         zaman zaman değişiyor.
       </p>
 
@@ -76,7 +76,7 @@ export default function MakalePage() {
       </p>
 
       <p>
-        Sistem karmaşık değil — sadece doğru anlatılmadığında karmaşık
+        Sistem karmaşık değil, sadece doğru anlatılmadığında karmaşık
         görünüyor.
       </p>
     </MakaleLayout>

@@ -34,7 +34,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Yine Gartner&apos;a göre, 2026 sonuna kadar kurumsal uygulamaların
-        %40&apos;ı görev bazlı bir yapay zeka ajanı içerecek — bu oran
+        %40&apos;ı görev bazlı bir yapay zeka ajanı içerecek; bu oran
         2025&apos;te %5&apos;in altındaydı. Yani adaptasyon hızı çok yüksek.
         Ama bu hızlı büyümeyle az önceki iptal tahminini yan yana koyunca
         ortaya çıkan tablo net: şirketlerin büyük bölümü bu teknolojiyi
@@ -57,7 +57,7 @@ export default function MakalePage() {
       <p>
         &quot;Yapay zeka ajanı kuralım&quot; diye başlamayın. Önce
         işletmenizde haftada en az birkaç saat manuel işe giden tek bir
-        süreci bulun — fatura eşleştirme, teklif takibi, stok kontrolü, fark
+        süreci bulun: fatura eşleştirme, teklif takibi, stok kontrolü, fark
         etmez. Sadece o süreci otomatikleştirin, sonucu ölçün, ancak ondan
         sonra genişletin.
       </p>

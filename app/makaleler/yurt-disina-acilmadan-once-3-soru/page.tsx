@@ -25,7 +25,7 @@ export default function MakalePage() {
         işletme sahipleriyle konuştuğumda, ilk sorulan şeyin genelde
         &quot;hangi ülke daha avantajlı&quot; olduğunu görüyorum. Bu yanlış
         bir soru değil, ama erken bir soru. Ondan önce cevaplanması gereken
-        üç soru var — ve bu üç soruyu atlayan projelerin çoğu, ilk yıl
+        üç soru var; ve bu üç soruyu atlayan projelerin çoğu, ilk yıl
         içinde ciddi sorunlar yaşıyor.
       </p>
 
@@ -36,7 +36,7 @@ export default function MakalePage() {
         Bu soru gereksiz basit görünebilir ama cevap genelde net değil.
         &quot;Vergi avantajı için mi&quot;, &quot;yeni müşteri için mi&quot;,
         &quot;tedarik zincirine yakın olmak için mi&quot;, &quot;prestij
-        için mi&quot; — her cevap, tamamen farklı bir ülke ve yapı seçimine
+        için mi&quot;: her cevap, tamamen farklı bir ülke ve yapı seçimine
         götürüyor. Sadece &quot;yurt dışında olmak iyi görünür&quot; diye
         çıkılan yollar, çoğu zaman maliyetli birer deneyime dönüşüyor.
       </p>
@@ -59,7 +59,7 @@ export default function MakalePage() {
       <p>
         Yurt dışında bir şirket kurmak, &quot;kuruluş&quot; aşamasından
         ibaret değil. Banka hesabı açmak, yerel muhasebe/vergi
-        yükümlülüklerini takip etmek, gerekirse yerel bir temsilci bulmak —
+        yükümlülüklerini takip etmek, gerekirse yerel bir temsilci bulmak;
         bunların hepsi kuruluştan sonraki ilk yılda yönetilmesi gereken
         işler. Bu sorumluluğu kimin üstleneceği net değilse, şirket
         &quot;kağıt üzerinde&quot; kalıyor ve beklenen faydayı sağlamıyor.
@@ -67,7 +67,7 @@ export default function MakalePage() {
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">Sonuç</h2>
       <p>
-        Doğru ülke seçimi elbette önemli — ama bu üç soruya net cevabınız
+        Doğru ülke seçimi elbette önemli, ama bu üç soruya net cevabınız
         yoksa, hangi ülkeyi seçerseniz seçin sonuç benzer olacaktır. Ben bu
         görüşmelere genelde &quot;hangi ülke&quot; sorusuyla değil, bu üç
         soruyla başlıyorum. Cevaplar netleştiğinde, doğru ülke ve yapı

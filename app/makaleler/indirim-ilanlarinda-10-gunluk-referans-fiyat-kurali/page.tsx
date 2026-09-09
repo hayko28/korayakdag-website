@@ -39,7 +39,7 @@ export default function MakalePage() {
         Uzun süredir yaygın bir alışkanlık şuydu: kampanyadan birkaç gün
         önce fiyatı bilinçli olarak artırıp, sonra büyük bir
         &quot;indirim&quot; oranıyla duyurmak. Yeni kural bu pratiği
-        doğrudan hedef alıyor — referans fiyat artık son 10 günün en
+        doğrudan hedef alıyor: referans fiyat artık son 10 günün en
         düşük fiyatı olmak zorunda, satıcının kampanya öncesi son gün
         belirlediği fiyat değil. Bu geçmişi olan bir e-ticaret
         işletmesi, aynı yöntemi Eylül kampanyasında da uygularsa hem
@@ -63,7 +63,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Yönetmelik değişikliği hukuk departmanı ya da danışmanla
-        sınırlı kalırsa işe yaramıyor — kampanya metnini yazan,
+        sınırlı kalırsa işe yaramıyor; kampanya metnini yazan,
         görseli hazırlayan, reklamı yayınlayan ekip kuralı bilmiyorsa
         ihlal yine oluşuyor. Sahte veya doğrulanamayan
         &quot;müşteri yorumu&quot; kullanımına ve çocuklara yönelik

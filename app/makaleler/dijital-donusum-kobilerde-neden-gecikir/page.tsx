@@ -32,7 +32,7 @@ export default function MakalePage() {
         yetiştiremediği için kaybetti. Üretim kapasitesi yeterliydi, işçilik
         de sorun değildi. Sorun şuydu: hangi siparişin hangi aşamada olduğunu,
         hangi malzemenin stokta kalmadığını tam olarak kimse bilmiyordu. Bilgi
-        vardı ama dağınıktı — birinin telefonunda, birinin kafasında,
+        vardı ama dağınıktı: birinin telefonunda, birinin kafasında,
         birinin masasındaki kağıtta.
       </p>
 
@@ -59,7 +59,7 @@ export default function MakalePage() {
         ihracat siparişinde, stok yanlış sayıldığı için iki kez sipariş
         edilen bir hammaddede, hangi müşterinin ne zaman arandığını kimsenin
         hatırlamadığı bir satış sürecinde görünüyor. Bunların hiçbiri tek
-        başına dramatik değil — ama toplamda bir firmanın büyüme hızını
+        başına dramatik değil, ama toplamda bir firmanın büyüme hızını
         belirliyor.
       </p>
 
@@ -70,7 +70,7 @@ export default function MakalePage() {
         Danışmanlık sürecinde ilk sorduğum soru genelde şu oluyor: &quot;Şu an
         şirketinizde hangi bilgi sadece bir kişinin kafasında ya da bir
         WhatsApp grubunda yaşıyor?&quot; Cevap genelde uzun bir liste
-        oluyor — ve o liste, aslında dijital dönüşümün nereden başlaması
+        oluyor; ve o liste, aslında dijital dönüşümün nereden başlaması
         gerektiğini kendisi gösteriyor. Büyük bir sistemle değil, en çok
         kaybı yaratan tek bir süreçle başlamak, çoğu KOBİ için hem daha
         gerçekçi hem de sonucu çok daha hızlı görülen bir yaklaşım.

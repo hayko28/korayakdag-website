@@ -34,7 +34,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Alıcı, tedarik zincirindeki firmalardan sürdürülebilirlik verisi ve
-        karbon ayak izi raporu istiyordu — kendi TSRS yükümlülüğünü
+        karbon ayak izi raporu istiyordu; kendi TSRS yükümlülüğünü
         tedarikçilerine devrediyordu. Firma yasal olarak kapsam dışıydı ama
         ticari olarak değildi. Danışmanlık sürecinde bu ayrım sürekli gözden
         kaçıyor: eşik değerleri yalnızca yasal zorunluluğu belirliyor, AB&apos;nin
@@ -46,7 +46,7 @@ export default function MakalePage() {
         Hazırlıksızlığın bedeli müşteri kaybı
       </h2>
       <p>
-        Firma sonunda gönüllü olarak TSRS uyumlu bir rapor hazırladı —
+        Firma sonunda gönüllü olarak TSRS uyumlu bir rapor hazırladı,
         zorunluluktan değil, müşteriyi kaybetmemek için. Bu, kapsam dışı
         kalmanın hazırlıksız kalmayı meşrulaştırmadığının somut bir örneği.
       </p>

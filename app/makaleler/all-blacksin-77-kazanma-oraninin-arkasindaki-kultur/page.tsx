@@ -24,7 +24,7 @@ export default function MakalePage() {
         Yeni Zelanda ragbi milli takımı All Blacks&apos;in 150 yılı aşkın
         resmi maç geçmişindeki kazanma oranı yüzde 77&apos;nin üzerinde.
         Herhangi bir büyük spor dalında, herhangi bir ülkenin milli
-        takımında görülen en yüksek oran bu — dünyanın hiçbir kulüp ya da
+        takımında görülen en yüksek oran bu; dünyanın hiçbir kulüp ya da
         milli takımı bu sürekliliğe yaklaşamıyor.
       </p>
 
@@ -33,7 +33,7 @@ export default function MakalePage() {
       </h2>
       <p>
         Bu oranın arkasında parlak transferlerden çok basit bir alışkanlık
-        var: &quot;sweep the sheds&quot; — soyunma odasını, kaptan da olsa
+        var: &quot;sweep the sheds&quot;, yani soyunma odasını, kaptan da olsa
         en genç yedek de olsa, maçtan sonra oyuncular kendileri süpürür.
         Kimse bu işi başkasına bırakmaz, kimse &quot;bu benim seviyemin
         altında bir iş&quot; demez. Fikir açık: takımı gerçekten büyük
@@ -49,7 +49,7 @@ export default function MakalePage() {
         yetenekli bireylerden değil, hiç kimsenin küçük sorumluluğu
         savsaklamadığı bir kültürden çıktığını görüyorum. Sürdürülebilir
         başarı, tek bir parlak çeyrekten değil, sıradan görevlerin hiç
-        aksatılmadan tekrarlanmasından geliyor — tıpkı soyunma odasını
+        aksatılmadan tekrarlanmasından geliyor, tıpkı soyunma odasını
         süpürmek gibi.
       </p>
 
