@@ -116,7 +116,7 @@ export default function BlogPage() {
         </p>
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <p className="leading-8 text-gray-700">
-            Tam tasdik, kural olarak <strong>ihtiyaridir</strong> — yani
+            Tam tasdik, kural olarak <strong>ihtiyaridir</strong>; yani
             hiçbir şirket sadece &quot;kurumlar vergisi mükellefiyim&quot;
             diye tam tasdik yaptırmak zorunda değildir. Ancak aşağıda
             detaylandırdığımız gibi, belirli istisna ve indirimlerden

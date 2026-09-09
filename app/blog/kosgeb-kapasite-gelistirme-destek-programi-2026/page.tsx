@@ -249,7 +249,7 @@ export default function BlogPage() {
               <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-orange-500">
                 <li>Hesaplama, işletmenin ortak/bağlı işletmeleri dikkate alınmaksızın <strong>yalnızca başvuru sahibi işletmenin kendi verileri</strong> üzerinden yapılır.</li>
                 <li>Net satış verileri, enflasyondan arındırmak için <strong>GSYH Deflatörü</strong> ile düzeltilir.</li>
-                <li>Başlangıç yılı ve karşılaştırma periyodu her başvuru dönemi için KOSGEB tarafından yeniden belirlenir (örneğin 2026/2. dönem için başlangıç yılı 2022, veriler 2022-2025 alınmıştı) — bu nedenle 3. dönem için geçerli baz yılı, başvuru öncesinde KOBİ Bilgi Sistemi&apos;ndeki dönem duyurusundan teyit edilmelidir.</li>
+                <li>Başlangıç yılı ve karşılaştırma periyodu her başvuru dönemi için KOSGEB tarafından yeniden belirlenir (örneğin 2026/2. dönem için başlangıç yılı 2022, veriler 2022-2025 alınmıştı). Bu nedenle 3. dönem için geçerli baz yılı, başvuru öncesinde KOBİ Bilgi Sistemi&apos;ndeki dönem duyurusundan teyit edilmelidir.</li>
               </ul>
               <div className="mt-6 rounded-xl border-l-4 border-green-500 bg-green-50 p-6">
                 <p className="font-semibold text-green-800">
@@ -334,7 +334,7 @@ export default function BlogPage() {
                   almamaktadır. Projeniz dijital dönüşüm yatırımı içeriyorsa,
                   başvuru öncesinde bu konudaki güncel şartı KOBİ Bilgi
                   Sistemi&apos;ndeki dönem duyurusundan veya KOSGEB&apos;in
-                  bölge müdürlüğünden teyit etmenizi öneririz — Model
+                  bölge müdürlüğünden teyit etmenizi öneririz: Model
                   Fabrikaların dijital dönüşüm hizmetleri, proje kapsamına
                   YODA sürecinin bir uzantısı olarak da girebilmektedir.
                 </p>
@@ -370,15 +370,15 @@ export default function BlogPage() {
                   <td className="p-5">20.000.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-5 font-semibold">Kredi Üst Limiti — EYDEP-A (savunma/havacılık/uzay tedarikçi geliştirme)</td>
+                  <td className="p-5 font-semibold">Kredi Üst Limiti: EYDEP-A (savunma/havacılık/uzay tedarikçi geliştirme)</td>
                   <td className="p-5">30.000.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-5 font-semibold">Kredi Üst Limiti — EYDEP-B</td>
+                  <td className="p-5 font-semibold">Kredi Üst Limiti: EYDEP-B</td>
                   <td className="p-5">27.500.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-5 font-semibold">Kredi Üst Limiti — EYDEP-C</td>
+                  <td className="p-5 font-semibold">Kredi Üst Limiti: EYDEP-C</td>
                   <td className="p-5">25.000.000 TL</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
@@ -444,7 +444,7 @@ export default function BlogPage() {
             nokta burası: KOSGEB, kredinin faiz/kâr payı oranının{" "}
             <strong>en fazla 20 puanlık kısmını</strong> karşılar. Bankanın
             uyguladığı gerçek faiz oranı 20 puanın{" "}
-            <strong>üzerindeyse</strong>, aşan kısmı işletme kendi öder —
+            <strong>üzerindeyse</strong>, aşan kısmı işletme kendi öder;
             yani işletme normalde hem anaparayı hem de bu faiz farkını geri
             öder. Aşağıdaki örnekler, KOSGEB&apos;in resmî{" "}
             <em>Destek Hesaplama Tablosu</em>&apos;ndaki taksit formülü
@@ -461,7 +461,7 @@ export default function BlogPage() {
             <p className="leading-8 text-gray-700">
               TCMB politika faizi (bir hafta vadeli repo) şu an <strong>%37</strong>,
               gecelik borç verme faizi %40 seviyesinde. Piyasadaki ticari/KOBİ
-              kredisi teklifleri aylık yaklaşık %3-%3,9 bandında seyrediyor —
+              kredisi teklifleri aylık yaklaşık %3-%3,9 bandında seyrediyor;
               yıllığa vurulduğunda kabaca %40-50 aralığına denk geliyor. Bu,
               KOSGEB&apos;in karşıladığı 20 puanın <strong>oldukça
               üzerinde</strong>; dolayısıyla aşağıdaki örneklerde işletmenin
@@ -518,7 +518,7 @@ export default function BlogPage() {
                     taksit</strong>. Banka güncel piyasa faiziyle (aylık ~%3,5,
                     3 aylık dönemde ~%10,5) çalışıyorsa, 10 milyon TL&apos;lik
                     bu kredide işletmenin bankaya her 3 ayda bir ödeyeceği
-                    taksit <strong>≈1.503.767 TL</strong> olur — aylığa
+                    taksit <strong>≈1.503.767 TL</strong> olur; aylığa
                     bölündüğünde ortalama <strong>≈501.256 TL/ay</strong>&apos;a
                     denk gelir (gerçekte ödeme 3 ayda bir tek kalemde yapılır,
                     her ay ayrı ayrı değil).
@@ -543,7 +543,7 @@ export default function BlogPage() {
                     <li>Onaylanan destek tutarı, işletmenin hesabına <strong>geri ödemesiz olarak aktarılır</strong> (iade edilir).</li>
                   </ol>
                   <p className="mt-3 leading-7 text-gray-700">
-                    Yani cevap: <strong>evet, taksit taksit</strong> ödeniyor —
+                    Yani cevap: <strong>evet, taksit taksit</strong> ödeniyor,
                     ama işletme önce kendi nakit akışıyla taksidin tamamını
                     bankaya ödüyor, KOSGEB&apos;in payı birkaç hafta sürebilen
                     izleme/onay sürecinin ardından işletmeye{" "}
@@ -627,15 +627,15 @@ export default function BlogPage() {
             {/* ÖRNEK 1 - İMALAT */}
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🏭 Örnek 1 — İmalat Sektörü (NACE C): Makine Yatırımı
+                🏭 Örnek 1: İmalat Sektörü (NACE C): Makine Yatırımı
               </h3>
               <p className="mb-5 leading-8 text-gray-700">
                 Metal işleme yapan, Sanayi Sicil Belgesi ve YODA raporu hazır
                 bir KOBİ, yeni bir CNC tezgâhı almak için başvuruyor. Kurul,
                 projeyi <strong>6.000.000 TL</strong> kredi tutarı ve{" "}
                 <strong>20 puan</strong> destekle onaylıyor. Banka, kredide
-                (güncel piyasa ortalamasına yakın) aylık %3,5 — yani 3 aylık
-                dönemde %10,5 — faiz uyguluyor.
+                (güncel piyasa ortalamasına yakın) aylık %3,5 (yani 3 aylık
+                dönemde %10,5) faiz uyguluyor.
               </p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="rounded-xl bg-gray-50 p-4 text-center">
@@ -678,7 +678,7 @@ export default function BlogPage() {
                 İşletmenin cebinden çıkan toplam (≈8.528.490 TL) = 6.000.000 TL
                 anapara + ≈2.528.490 TL kendi ödediği faiz farkı. KOSGEB&apos;in
                 20 puanlık desteği (≈2.298.630 TL) olmasaydı, işletme bankaya
-                toplam ≈10.827.130 TL (≈4.827.130 TL faiz) ödeyecekti — yani
+                toplam ≈10.827.130 TL (≈4.827.130 TL faiz) ödeyecekti; yani
                 destek, toplam faiz yükünün yaklaşık %48&apos;ini karşılıyor.
               </p>
             </div>
@@ -686,7 +686,7 @@ export default function BlogPage() {
             {/* ÖRNEK 2 - YAZILIM */}
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                💻 Örnek 2 — Bilgisayar Programlama (NACE 62): Yazılım Geliştirme
+                💻 Örnek 2: Bilgisayar Programlama (NACE 62): Yazılım Geliştirme
               </h3>
               <p className="mb-5 leading-8 text-gray-700">
                 Kurumsal yazılım geliştiren, hızlı büyüyen işletme tanımını
@@ -724,7 +724,7 @@ export default function BlogPage() {
             {/* ÖRNEK 3 - SAVUNMA */}
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🛰️ Örnek 3 — Savunma Sanayi Tedarikçisi (EYDEP-B): Kapasite Büyütme
+                🛰️ Örnek 3: Savunma Sanayi Tedarikçisi (EYDEP-B): Kapasite Büyütme
               </h3>
               <p className="mb-5 leading-8 text-gray-700">
                 Savunma sanayiine tedarikçi geliştirme protokolü kapsamında

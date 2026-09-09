@@ -173,7 +173,7 @@ export default function BlogPage() {
           Tacikistan mevzuatında birden fazla şirket türü tanımlanmış olsa
           da, yabancı sermayeli küçük ve orta ölçekli girişimlerin neredeyse
           tamamı tek bir yapıyı tercih ediyor: ҶДММ (Ҷамъияти дорои
-          масъулияти маҳдуд — Limited Şirket).
+          масъулияти маҳдуд: Limited Şirket).
         </p>
         <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-left">

@@ -173,10 +173,10 @@ export default function BlogPage() {
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Kazakistan&apos;da yapılanırken verilecek en önemli karar,
           şirketin standart Kazakistan hukuku altında bir{" "}
-          <strong>TOO (Товарищество с ограниченной ответственностью
-          — Limited Şirket)</strong> olarak mı, yoksa Astana&apos;daki
+          <strong>TOO (Товарищество с ограниченной ответственностью:
+          Limited Şirket)</strong> olarak mı, yoksa Astana&apos;daki
           ayrı yargı bölgesi olan{" "}
-          <strong>AIFC (Astana International Financial Centre —
+          <strong>AIFC (Astana International Financial Centre:
           Astana Uluslararası Finans Merkezi)</strong> bünyesinde mi
           kurulacağıdır. Bu iki yapı, hukuk sistemi, vergi rejimi ve
           hedef faaliyet alanı bakımından temelden farklıdır.
@@ -242,8 +242,8 @@ export default function BlogPage() {
           kalanından ayrı, kendi yasama, yargı ve düzenleyici organlarına
           sahip özel bir yargı bölgesidir. İngiliz common law
           esasına dayanan hukuk sistemi, kendi mahkemesi (AIFC Court) ve
-          Uluslararası Tahkim Merkezi (International Arbitration Centre
-          — IAC) ile Kazakistan&apos;ın genel yargı sisteminden bağımsız
+          Uluslararası Tahkim Merkezi (International Arbitration Centre:
+          IAC) ile Kazakistan&apos;ın genel yargı sisteminden bağımsız
           çalışır. Bu yapı, özellikle yabancı yatırımcılara tanıdık bir
           hukuki güvence sunar.
         </p>
@@ -363,7 +363,7 @@ export default function BlogPage() {
             4.3. Elektronik Tescil Başvurusu
           </h3>
           <p className="leading-8 text-gray-700">
-            Başvuru, elektronik imza (EDS — elektron sandık qoyush) ile
+            Başvuru, elektronik imza (EDS: elektron sandık qoyush) ile
             e-Gov portalı veya &quot;Azamattarğa arналған үкімет&quot;
             (Halka Hizmet) merkezleri üzerinden yapılır. Belgeler eksiksiz
             olduğunda tescil başvurusu genellikle 1 iş günü içinde
@@ -379,7 +379,7 @@ export default function BlogPage() {
           </h3>
           <p className="leading-8 text-gray-700">
             Tescil onaylandığında şirkete BIN (Business Identification
-            Number — İşletme Kimlik Numarası) verilir ve şirket otomatik
+            Number: İşletme Kimlik Numarası) verilir ve şirket otomatik
             olarak vergi dairesine kaydedilir. Ardından şirket kaşesi
             çıkarılır, KDV mükellefiyeti gerekiyorsa ayrıca kayıt
             yapılır ve kurumsal banka hesabı açılış süreci başlatılır.
@@ -471,7 +471,7 @@ export default function BlogPage() {
           <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-yellow-600">
             <li>
               Kurumsal hesap açılışı için şirketin BIN&apos;i ve
-              yetkili müdürün/başkanın bireysel kimlik numarası (IIN —
+              yetkili müdürün/başkanın bireysel kimlik numarası (IIN:
               Individual Identification Number) gereklidir; IIN, şirket
               tescili tamamlandıktan sonra otomatik olarak veya ayrı bir
               başvuruyla alınabilir.
@@ -486,7 +486,7 @@ export default function BlogPage() {
               standart uygulamadır.
             </li>
             <li>
-              UBO (Ultimate Beneficial Owner — Gerçek Faydalanıcı)
+              UBO (Ultimate Beneficial Owner: Gerçek Faydalanıcı)
               beyanı, sermayenin kaynağının netliği ve faaliyet
               konusunun açık tanımlanması, kara para aklamayı önleme
               (AML) kontrollerinde onay ihtimalini artırır.

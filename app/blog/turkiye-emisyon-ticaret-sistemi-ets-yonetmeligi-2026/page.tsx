@@ -124,7 +124,7 @@ export default function BlogPage() {
           {/* ŞEMA */}
           <div className="my-10 rounded-2xl border border-gray-200 bg-gray-50 p-8">
             <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
-              🔄 ETS Döngüsü — Bir Yıl Nasıl İşliyor?
+              🔄 ETS Döngüsü: Bir Yıl Nasıl İşliyor?
             </h3>
             <svg viewBox="0 0 760 150" className="w-full" role="img" aria-label="ETS yıllık döngü şeması">
               <defs>
@@ -174,7 +174,7 @@ export default function BlogPage() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🗓️ 9 Temmuz 2025 — 7552 Sayılı İklim Kanunu
+                🗓️ 9 Temmuz 2025: 7552 Sayılı İklim Kanunu
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li>✔ Resmî Gazete: 09.07.2025, Sayı 32951</li>
@@ -185,7 +185,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border border-orange-200 bg-orange-50 p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🗓️ 27 Ağustos 2026 — ETS Yönetmeliği
+                🗓️ 27 Ağustos 2026: ETS Yönetmeliği
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li>✔ Resmî Gazete: 27.08.2026, Sayı 33353</li>
@@ -282,7 +282,7 @@ export default function BlogPage() {
           <p className="mb-8 text-lg leading-9 text-gray-700">
             Türkiye ETS, doğrudan maliyet doğuran bir sisteme sıçramak yerine
             kademeli bir geçiş kurgusuyla tasarlandı. Bu, şirketlere gerçek bir
-            hazırlık penceresi tanıyor — ama bu pencere sınırlı.
+            hazırlık penceresi tanıyor, ama bu pencere sınırlı.
           </p>
           <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-left">
@@ -364,16 +364,16 @@ export default function BlogPage() {
               </h3>
               <ul className="space-y-4 text-gray-700">
                 <li>
-                  <strong>30 Nisan</strong> — Bir önceki takvim yılına ait sera
+                  <strong>30 Nisan</strong>: Bir önceki takvim yılına ait sera
                   gazı emisyon ve faaliyet seviyesi raporlarının Başkanlığa
                   sunulması
                 </li>
                 <li>
-                  <strong>Kasım ayı sonu</strong> — Doğrulanmış emisyon miktarına
+                  <strong>Kasım ayı sonu</strong>: Doğrulanmış emisyon miktarına
                   denk gelen tahsisatın teslim edilmesi
                 </li>
                 <li>
-                  <strong>İzlemeye başlamadan en az 6 ay önce</strong> — İzleme
+                  <strong>İzlemeye başlamadan en az 6 ay önce</strong>: İzleme
                   planının onay için Başkanlığa gönderilmesi
                 </li>
               </ul>
@@ -523,7 +523,7 @@ export default function BlogPage() {
                 son üç ayına ilişkin birincil ve ikincil piyasa ağırlıklı
                 ortalama tahsisat fiyatlarından yüksek olanının{" "}
                 <strong>iki katı</strong> tutarında ceza uygulanır. Ayrıca eksik
-                tahsisat, takip eden yılın yükümlülüğüne eklenir — yani ceza
+                tahsisat, takip eden yılın yükümlülüğüne eklenir; yani ceza
                 ödemek yükümlülüğü ortadan kaldırmaz.
               </li>
               <li>

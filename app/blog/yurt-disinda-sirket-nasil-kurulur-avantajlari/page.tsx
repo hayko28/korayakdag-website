@@ -440,7 +440,7 @@ export default function BlogPage() {
             hissedar bilgileri, yasal adres beyanı vb.) detaylı biçimde
             incelenmelidir. Bu aşamada hukuk ve mevzuat uyumunu bilen bir
             danışmanla çalışmak, ileride ortaya çıkabilecek uyum sorunlarını
-            önemli ölçüde azaltır — bu süreci sizin adınıza biz yürütüyoruz.
+            önemli ölçüde azaltır. Bu süreci sizin adınıza biz yürütüyoruz.
           </p>
         </div>
 

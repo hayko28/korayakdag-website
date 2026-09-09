@@ -196,7 +196,7 @@ export default function BlogPage() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-2xl border border-orange-200 bg-orange-50 p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🌍 CBAM (SKDM) — Kesin Dönem
+                🌍 CBAM (SKDM): Kesin Dönem
               </h3>
               <p className="leading-8 text-gray-700">
                 AB&apos;nin Sınırda Karbon Düzenlemesi Mekanizması, 2023-2025
@@ -211,7 +211,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                📊 TSRS — Güvence Denetimi Dönemi
+                📊 TSRS: Güvence Denetimi Dönemi
               </h3>
               <p className="leading-8 text-gray-700">
                 Belirli eşik değerlerini aşan şirketler için{" "}
@@ -466,8 +466,8 @@ export default function BlogPage() {
               sertifika fiyatı yaklaşık <strong>75,36 €/tCO₂e</strong>,
               ikinci çeyreğinde ise yaklaşık <strong>75,28 €/tCO₂e</strong>{" "}
               olarak açıklandı. Bu, ürün başına gömülü emisyonun her bir
-              tonunun AB pazarında bu bedelle fiyatlandığı anlamına gelir —
-              rakam ihracat fiyatlandırmasında dikkate alınması gereken
+              tonunun AB pazarında bu bedelle fiyatlandığı anlamına gelir.
+              Bu rakam, ihracat fiyatlandırmasında dikkate alınması gereken
               somut bir maliyet kalemidir. Güncel çeyreklik fiyat, Avrupa
               Komisyonu&apos;nun resmî CBAM sayfasından takip edilmelidir.
             </p>

@@ -49,7 +49,7 @@ export default function BlogPage() {
           <li>✔ 2026&apos;da yürürlükte olan 15 SGK teşvikinin tam listesi</li>
           <li>✔ Her teşvik için kimler yararlanabilir, oran/tutar nedir?</li>
           <li>✔ Tüm teşvikleri özetleyen karşılaştırma tablosu</li>
-          <li>✔ Teşviklerin bordroya nasıl yansıtıldığı — adım adım süreç</li>
+          <li>✔ Teşviklerin bordroya nasıl yansıtıldığı: adım adım süreç</li>
           <li>✔ Aynı anda birden fazla teşvik kullanılabilir mi?</li>
           <li>✔ Artık yeni girişe kapalı olan teşvikler (27103 gibi)</li>
           <li>✔ Sık sorulan sorular</li>

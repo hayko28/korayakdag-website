@@ -508,7 +508,7 @@ export default function BlogPage() {
             projenin sağlayacağı toplam vergi avantajının üst sınırını
             gösterir. Gümrük vergisi muafiyeti ve SGK işveren primi
             desteğinin parasal karşılığı ise sabit bir oranla
-            hesaplanamaz — ithal makinenin GTİP kodu/menşe ülkesi ve
+            hesaplanamaz. İthal makinenin GTİP kodu/menşe ülkesi ve
             istihdam edilecek işçi sayısı/ücreti gibi projeye özel
             girdilere bağlıdır; bu nedenle aşağıda Senaryo 1 ve Senaryo
             6&apos;ya, yalnızca hesaplama mantığını göstermek amacıyla
@@ -520,7 +520,7 @@ export default function BlogPage() {
           <div className="space-y-6">
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 1 — Bursa&apos;da Otomotiv Yan Sanayi Üretimi (1. Bölge)
+                Senaryo 1: Bursa&apos;da Otomotiv Yan Sanayi Üretimi (1. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Bursa&apos;da (1. bölge) motorlu taşıt parçaları imalatı
@@ -530,7 +530,7 @@ export default function BlogPage() {
                 listesinde geniş kapsamlı yer aldığı için başvurabilir. 1.
                 bölgede SGK işveren primi desteği, SGK işçi hissesi desteği,
                 faiz/kâr payı desteği ve yatırım yeri tahsisi{" "}
-                <strong>uygulanmaz</strong> — bu bölgede belge esas olarak
+                <strong>uygulanmaz</strong>; bu bölgede belge esas olarak
                 KDV istisnası, gümrük vergisi muafiyeti ve indirimli
                 kurumlar vergisinden ibarettir (İstanbul&apos;da yapılan
                 yatırımlarda ise vergi indirimi de uygulanmaz).{" "}
@@ -539,7 +539,7 @@ export default function BlogPage() {
                 vergi avantajı; firma bu tutara ulaşana kadar kurumlar
                 vergisini %25 yerine %10 oranında (yani %60 indirimli)
                 öder.{" "}
-                <strong>Gümrük vergisi muafiyeti — varsayımsal örnek:</strong>{" "}
+                <strong>Gümrük vergisi muafiyeti, varsayımsal örnek:</strong>{" "}
                 yatırımın 4.500.000 TL&apos;lik kısmının (toplamın
                 yaklaşık %25&apos;i) yurt dışından ithal edilecek makine
                 ve teçhizata ayrıldığı ve bu makinelerin gümrük vergisi
@@ -554,7 +554,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 2 — Konya&apos;da Modern Seracılık Yatırımı (2. Bölge)
+                Senaryo 2: Konya&apos;da Modern Seracılık Yatırımı (2. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Konya&apos;da (2. bölge) modern sera teknolojisiyle
@@ -574,7 +574,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 3 — Gaziantep&apos;te Hazır Giyim Üretimi (3. Bölge)
+                Senaryo 3: Gaziantep&apos;te Hazır Giyim Üretimi (3. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Gaziantep&apos;te (3. bölge) hazır giyim imalatı (NACE 14)
@@ -594,7 +594,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 4 — Malatya&apos;da Tarım Makineleri İmalatı (4. Bölge)
+                Senaryo 4: Malatya&apos;da Tarım Makineleri İmalatı (4. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Malatya&apos;da (4. bölge) tarım makineleri imalatı (NACE 28)
@@ -615,7 +615,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 5 — Hatay&apos;da Gıda İşleme Tesisi (5. Bölge)
+                Senaryo 5: Hatay&apos;da Gıda İşleme Tesisi (5. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Hatay&apos;da (5. bölge) tarımsal ürünlerin işlenmesi/gıda
@@ -634,7 +634,7 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
               <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
-                Senaryo 6 — Diyarbakır&apos;da Kimyasal Madde Üretimi (6. Bölge)
+                Senaryo 6: Diyarbakır&apos;da Kimyasal Madde Üretimi (6. Bölge)
               </h4>
               <p className="leading-8 text-gray-700">
                 Diyarbakır&apos;da (6. bölge) kimyasal madde imalatı (NACE
@@ -649,10 +649,10 @@ export default function BlogPage() {
                 TL yatırım × %20 yatırıma katkı oranı ={" "}
                 <strong>1.500.000 TL&apos;ye kadar</strong> vergi avantajı;
                 yatırımcı bu tutara ulaşana kadar kurumlar vergisini %10
-                oranında (%60 indirimli) öder — üstelik bu tutara 12-14
+                oranında (%60 indirimli) öder; üstelik bu tutara 12-14
                 yıllık SGK primi desteği, faiz/kâr payı desteği ve yatırım
                 yeri tahsisinin sağladığı ilave maliyet avantajı da eklenir.{" "}
-                <strong>SGK işveren primi desteği — varsayımsal örnek:</strong>{" "}
+                <strong>SGK işveren primi desteği, varsayımsal örnek:</strong>{" "}
                 yatırımla birlikte istihdam edilen 10 ilave işçinin aylık
                 brüt ücretinin örnek olarak 30.000 TL, işveren SGK prim
                 oranının da yaklaşık %20,5 kabul edildiği bir senaryoda,
@@ -701,18 +701,18 @@ export default function BlogPage() {
               </h3>
               <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-orange-500">
                 <li>
-                  <strong>Teknoloji Hamlesi Programı</strong> — öncelikli
+                  <strong>Teknoloji Hamlesi Programı</strong>: öncelikli
                   ürün listesinde yer alan, yüksek teknolojili ve ithal
                   ikamesi sağlayan üretim yatırımlarını hedefler.
                 </li>
                 <li>
-                  <strong>Yerel Kalkınma Hamlesi Programı</strong> —
+                  <strong>Yerel Kalkınma Hamlesi Programı</strong>:
                   bölgeler arası gelişmişlik farkını azaltmayı; illerin
                   potansiyeline uygun, yüksek başarı olasılığı taşıyan
                   yatırımları destekler.
                 </li>
                 <li>
-                  <strong>Stratejik Hamle Programı</strong> — yeşil ve dijital
+                  <strong>Stratejik Hamle Programı</strong>: yeşil ve dijital
                   dönüşüm ile yüksek ölçekli, ithalat bağımlılığını azaltan
                   stratejik üretim yatırımları için tasarlanmış, en yüksek
                   destek tavanlarına sahip programdır.
@@ -725,13 +725,13 @@ export default function BlogPage() {
               </h3>
               <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-orange-500">
                 <li>
-                  <strong>Öncelikli Yatırımlar Teşvik Sistemi</strong> —
+                  <strong>Öncelikli Yatırımlar Teşvik Sistemi</strong>:
                   maden arama, yenilenebilir enerji ekipmanı imalatı,
                   lisanslı depoculuk, sera teknolojileri gibi Bakanlıkça
                   belirlenmiş öncelikli alanlardaki yatırımları kapsar.
                 </li>
                 <li>
-                  <strong>Hedef Yatırımlar Teşvik Sistemi</strong> — yukarıda
+                  <strong>Hedef Yatırımlar Teşvik Sistemi</strong>: yukarıda
                   detaylandırdığımız, il/bölge ve NACE koduna göre işleyen,
                   çoğu KOBİ ve orta ölçekli yatırımın değerlendirildiği
                   program.

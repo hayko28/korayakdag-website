@@ -437,7 +437,7 @@ export default function BlogPage() {
             genellikle ABD kaynaklı vergilendirilebilir geliri (ECI)
             bulunmaz; bu durumda federal gelir vergisi doğmayabilir. Ancak
             bu, beyanname ve bilgi formu yükümlülüklerini ortadan
-            kaldırmaz — foreign-owned (yabancı sahipli) LLC&apos;lerin her
+            kaldırmaz: foreign-owned (yabancı sahipli) LLC&apos;lerin her
             yıl Form 5472 ve pro forma Form 1120 dosyalaması, gelir olmasa
             dahi zorunludur ve eksik/geç dosyalamanın cezası form başına
             en az 25.000 USD&apos;dir. Türkiye ile ABD arasındaki Çifte
@@ -607,7 +607,7 @@ export default function BlogPage() {
             ✅ Eyalet seçimini yalnızca kuruluş ücretine göre değil, yatırımcı ve büyüme planına göre yapın
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Form 5472/1120 yükümlülüğünü gelir olmasa dahi asla atlamayın — ceza 25.000 USD&apos;den başlar
+            ✅ Form 5472/1120 yükümlülüğünü gelir olmasa dahi asla atlamayın: ceza 25.000 USD&apos;den başlar
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Delaware C-Corp&apos;ta franchise tax hesaplama yöntemini doğru seçin, varsayılan yöntem yüksek fatura çıkarabilir

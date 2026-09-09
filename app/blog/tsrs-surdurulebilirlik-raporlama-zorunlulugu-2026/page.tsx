@@ -141,7 +141,7 @@ export default function BlogPage() {
             değişmedi: aşağıdaki üç kriterden <strong>en az ikisinin</strong>{" "}
             eşik değerini <strong>art arda iki hesap döneminde</strong>{" "}
             aşan işletmeler kapsama girer. Değişen, bu eşiklerin kendisi
-            oldu — ve oldukça belirgin biçimde yükseldi.
+            oldu; hem de oldukça belirgin biçimde yükseldi.
           </p>
           <div className="mt-4 overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-left">
@@ -181,7 +181,7 @@ export default function BlogPage() {
               değerlendirilebilecek bazı orta-büyük ölçekli şirketler, yeni
               eşiklerle birlikte 2025 hesap dönemi itibarıyla zorunlu
               raporlama kapsamının dışında kalabilir. Ancak bu, şirketin
-              hiçbir şey yapmasına gerek olmadığı anlamına gelmez — kapsam
+              hiçbir şey yapmasına gerek olmadığı anlamına gelmez: kapsam
               durumunun güncel eşiklere göre yeniden ve resmî olarak teyit
               edilmesi gerekir.
             </p>

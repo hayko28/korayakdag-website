@@ -579,8 +579,8 @@ export default function BlogPage() {
             yükseltilerek kapsam daraltıldı, 7 Mayıs 2026&apos;da ise kapsam
             belirleme usulünde önemli netleştirmeler yapıldı. Bu tablo,
             şirketlerin &quot;bağımsız denetime tabi miyim&quot; sorusunu
-            güncel verilerle ve güncel usulle yeniden sormasını gerektiriyor
-            — özellikle 2026 hesap dönemi kapanışına yaklaşırken bu
+            güncel verilerle ve güncel usulle yeniden sormasını gerektiriyor.
+            Özellikle 2026 hesap dönemi kapanışına yaklaşırken bu
             değerlendirmeyi erken yapmak, hem uyum riskini hem de olası
             zaman baskısını önemli ölçüde azaltır.
           </p>

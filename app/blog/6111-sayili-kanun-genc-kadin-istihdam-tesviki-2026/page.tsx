@@ -113,8 +113,8 @@ export default function BlogPage() {
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <p className="leading-8 text-gray-700">
             Kısaca: teşvik kalıcı değil, her yıl yeniden uzatılan bir
-            uygulama. Şu anki geçerli son tarih <strong>31 Aralık 2026</strong>{" "}
-            — bu tarihe kadar işe alınmayan personel için (yeni bir uzatma
+            uygulama. Şu anki geçerli son tarih <strong>31 Aralık 2026</strong>.
+            Bu tarihe kadar işe alınmayan personel için (yeni bir uzatma
             kararı çıkmadığı sürece) teşvik hakkı doğmuyor.
           </p>
         </div>

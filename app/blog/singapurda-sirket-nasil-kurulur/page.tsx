@@ -308,7 +308,7 @@ export default function BlogPage() {
             <li>
               Geçerli bir Employment Pass (EP) sahibi olup, Çalışma Bakanlığı
               (MOM) tarafından verilen Onay Mektubu&apos;na (Letter of
-              Consent) sahip kişiler — ancak bu yol yalnızca şirket
+              Consent) sahip kişiler. Ancak bu yol yalnızca şirket
               tescilinden <em>sonra</em> işletilebilir; kuruluş anında EP
               sahibi bir direktör atanamaz.
             </li>

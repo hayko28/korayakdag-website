@@ -562,7 +562,7 @@ export default function BlogPage() {
           </div>
           <div className="mt-12 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              📅 2026 Yılı 2. Çağrısı — Güncel Takvim
+              📅 2026 Yılı 2. Çağrısı: Güncel Takvim
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
               TÜBİTAK 1501 ve 1507 programları genellikle yılda 2 kez çağrıya

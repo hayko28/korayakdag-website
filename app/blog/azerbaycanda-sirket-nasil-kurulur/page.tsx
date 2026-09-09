@@ -171,7 +171,7 @@ export default function BlogPage() {
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Azerbaycan mevzuatı birden fazla tüzel kişilik türü tanısa da,
           pratikte yabancı yatırımcıların neredeyse tamamı{" "}
-          <strong>MMC (Məhdud Məsuliyyətli Cəmiyyət — Limited Şirket)</strong>{" "}
+          <strong>MMC (Məhdud Məsuliyyətli Cəmiyyət: Limited Şirket)</strong>{" "}
           yapısını tercih eder. Bunun temel nedeni, esnek yönetim yapısı,
           düşük kuruluş maliyeti ve asgari sermaye şartının bulunmamasıdır.
         </p>
@@ -220,7 +220,7 @@ export default function BlogPage() {
           Bakü&apos;nün yaklaşık 70 km güneybatısında, Hazar Denizi
           kıyısında kurulan{" "}
           <strong>Alat Serbest Ekonomi Bölgesi (Alat Sərbəst İqtisadi
-          Zonası — AFEZ)</strong>, ihracat odaklı üretim ve uluslararası
+          Zonası, AFEZ)</strong>, ihracat odaklı üretim ve uluslararası
           ticaret hizmetleri için özel bir teşvik rejimi sunar.
         </p>
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
@@ -348,7 +348,7 @@ export default function BlogPage() {
           </h3>
           <p className="leading-8 text-gray-700">
             Başvuru onaylandığında şirkete VOEN (Vergi Ödəyicisinin
-            Eyniləşdirmə Nömrəsi — Vergi Kimlik Numarası) verilir ve tescil
+            Eyniləşdirmə Nömrəsi: Vergi Kimlik Numarası) verilir ve tescil
             genellikle 1-3 iş günü içinde tamamlanır. Ardından şirket
             kaşesi çıkarılır, yetkili temsilci için ASAN İmza (Azerbaycan
             devlet e-hizmetlerinde kullanılan dijital imza) tanımlanır ve
@@ -446,7 +446,7 @@ export default function BlogPage() {
               istisnai durumlardır.
             </li>
             <li>
-              UBO (Ultimate Beneficial Owner — Gerçek Faydalanıcı) beyanı,
+              UBO (Ultimate Beneficial Owner: Gerçek Faydalanıcı) beyanı,
               sermayenin kaynağının netliği ve faaliyet konusunun açık
               tanımlanması, kara para aklamayı önleme (AML) kontrollerinde
               onay ihtimalini artırır.
