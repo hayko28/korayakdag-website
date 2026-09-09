@@ -805,6 +805,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: TÜBİTAK genellikle değerlendirme raporunda somut ret gerekçesi paylaşıyor; ilk çağrıda olumsuz sonuç alan işletmelere projeyi bir kenara bırakmak yerine bu gerekçeleri dikkate alarak yılın ikinci çağrısına revize bir başvuruyla yeniden girmelerini öneririm.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "3 Ağustos 2026 (başvurular 28 Eylül 2026'da kapanıyor)",
+    eklendiTarihi: "2026-09-09",
+    baslik:
+      "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 döneminde başvurular 28 Eylül'de kapanıyor",
+    ozet:
+      "TÜBİTAK, Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamındaki 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026 yılı ikinci dönemini 3 Ağustos 2026'da başvuruya açtı; başvurular 28 Eylül 2026 saat 23:59'a kadar PRODİS üzerinden alınıyor. Çağrı; iklim değişikliği, temiz ve döngüsel ekonomi, sürdürülebilir tarım gibi alanlarda yeşil dönüşüme katkı sağlayacak Ar-Ge ve inovasyon projelerini destekliyor; hibe oranı KOBİ'lerde %80'e, deprem bölgesindeki KOBİ'lerde %90'a kadar çıkabiliyor, sermaye şirketlerine ayrıca en fazla %50 geri ödemeli faizsiz destek sağlanıyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1832-sanayide-yesil-donusum-2026-2-cagrisi-basvuruya-acildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: %80-90 aralığındaki hibe oranı TÜBİTAK programları içinde oldukça yüksek; yeşil dönüşüm veya döngüsel ekonomi odaklı bir Ar-Ge fikri olan KOBİ'lere 28 Eylül'e kadar süren bu pencereyi değerlendirmelerini öneririm, ancak geri ödemeli kısım için Banka Referans Mektubu şartını erken netleştirmeleri gerekiyor.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "9-10 Eylül 2026",
+    eklendiTarihi: "2026-09-09",
+    baslik:
+      "GITEX Ai Türkiye 2026, 300'ün üzerinde şirket ve 100'ü aşkın yatırımcıyla İstanbul'da başladı",
+    ozet:
+      "Cumhurbaşkanlığı Yatırım ve Finans Ofisi ev sahipliğinde, Sanayi ve Teknoloji Bakanlığı'nın stratejik desteğiyle düzenlenen GITEX Ai Türkiye 2026, 9-10 Eylül'de İstanbul Fuar Merkezi'nde kapılarını açtı. Etkinlikte 20 farklı ülkeden 300'ün üzerinde şirket ve girişim ile 100'den fazla yatırımcı bir araya geliyor; Turcorn 100 programından seçilen 39 şirketten 24'ü teknolojilerini sergiliyor. Odak alanları arasında sürdürülebilir tarım, yapay zekâ destekli eğitim, kurumsal teknolojiler, sağlık ve altyapı yer alıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/gitex-ai-turkiye-2026-kitalar-arasi-girisimcilik-ekosistemlerini-istanbul-da-bir-araya-getirecek/4049668",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Yapay zekâ alanında ürün veya çözüm geliştiren girişimlere, bu tür kamu destekli uluslararası etkinlikleri yalnızca network kurmak için değil, yurt dışı yatırımcı ve iş birliği görüşmelerini önceden planlayarak katılmalarını öneririm; iki günlük yoğun bir programda hazırlıksız katılımın getirisi sınırlı kalıyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
