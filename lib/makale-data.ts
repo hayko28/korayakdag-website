@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kurumsal-kulturde-77-37-farki",
+    title: "Yöneticilerin Yüzde 77'si, Çalışanların Yüzde 37'si: Kültür Aynı Şirkette Neden Bu Kadar Farklı Görünüyor?",
+    excerpt:
+      "DHR Global'in 2026 Workforce Trends Raporu'na göre yöneticilerin yüzde 77'si şirket kültürünü çok önemli buluyor, giriş seviyesi çalışanların sadece yüzde 37'si aynı fikirde. Aradaki fark bir algı hatası değil, kültürün büyürken katman katman kaybolmasının sonucu.",
+    tag: "Görüş",
+    date: "9 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "doviz-donusum-destegindeki-sessiz-degisiklik",
     title:
       "1 Ekim'e İki Ay Kala: Döviz Dönüşüm Desteğinde Taahhütten Pozisyona Geçiş",
