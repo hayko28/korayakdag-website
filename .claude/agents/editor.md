@@ -24,7 +24,9 @@ Bu ajanın iki ayrı işi var; ikisini de her çalıştırmada kontrol et, ama m
 
 **Eksik kategoriler — doğru öncelik sırası:** `lib/gelismeler-data.ts`'teki boş/az kategorilere (örn. Kurumsal Gelişim ve Değerleme, Pazarlama ve Satış Geliştirme, Yazılım ve Yapay Zekâ Çözümleri) taze haber bulursan öncelik ver. AMA taze (45-60 gün içi) bir haber bulamazsan, o kategoriyi ZORLA DOLDURMA — boş kalsın, bir sonraki çalıştırmada tekrar dene. Boş kategori, yanlış/eski tarihli bir öğeden daha iyidir.
 
-Kaynak hiyerarşisi (kesin uyulmalı): 1) resmi kurum siteleri (kosgeb.gov.tr, tubitak.gov.tr, ticaret.gov.tr, sanayi.gov.tr, iskur.gov.tr, kgk.gov.tr, turkpatent.gov.tr, hmb.gov.tr) 2) Resmî Gazete 3) tanınmış büyük medya (Anadolu Ajansı, Bloomberg HT, Dünya Gazetesi, Hürriyet Ekonomi, NTV, Sabah Ekonomi) veya PwC/KPMG/Deloitte/EY gibi büyük firmaların resmi bültenleri. Küçük/tanınmayan danışmanlık bloglarını, SEO içerik sitelerini birincil kaynak olarak KULLANMA — başka yerde doğrulayamıyorsan o gelişmeyi ekleme. Tarihi doğrula, rakam/oran uydurma.
+**Araştırma önceliği:** Yeni gelişme/haber ararken İLK ÖNCE ekonomik haberlere bak (enflasyon, dış ticaret açığı/ihracat-ithalat verileri, faiz kararı, döviz kuru, büyüme/PMI verileri, TÜİK ve TCMB açıklamaları gibi somut, rakamlı makro veriler). Bu tür haberler genelde "Hukuk, Vergi ve Mali Danışmanlık" kategorisine düşer, veri KOBİ'leri doğrudan ilgilendiriyorsa ilgili başka bir kategoriye de yazılabilir. Taze ve doğrulanmış ekonomik veri bulamazsan diğer 5 kategoriye geç.
+
+Kaynak hiyerarşisi (kesin uyulmalı): 1) resmi kurum siteleri (kosgeb.gov.tr, tubitak.gov.tr, ticaret.gov.tr, sanayi.gov.tr, iskur.gov.tr, kgk.gov.tr, turkpatent.gov.tr, hmb.gov.tr, tuik.gov.tr, tcmb.gov.tr) 2) Resmî Gazete 3) tanınmış büyük medya (Anadolu Ajansı, Bloomberg HT, Dünya Gazetesi, Hürriyet Ekonomi, NTV, Sabah Ekonomi) veya PwC/KPMG/Deloitte/EY gibi büyük firmaların resmi bültenleri. Küçük/tanınmayan danışmanlık bloglarını, SEO içerik sitelerini birincil kaynak olarak KULLANMA — başka yerde doğrulayamıyorsan o gelişmeyi ekleme. Tarihi doğrula, rakam/oran uydurma.
 
 Veri alanları (GelismeItem arayüzüne uy): kurum, tarih (gelişmenin gerçek olay tarihi, serbest metin, örn. "12 Ağustos 2026"), eklendiTarihi (bu çalıştırmanın gerçek tarihi, ISO "YYYY-MM-DD" — sayfadaki 45 günlük görünürlük penceresi için kritik, yanlış girme), baslik, ozet (2-3 cümle), kaynakUrl (gerçek çalışan URL), konu (yukarıdaki 6 kategoriden biri), expertNote (opsiyonel, Koray'ın birinci ağızdan yorumu, "Koray'ın notu:" ile başlar).
 
@@ -42,9 +44,17 @@ Aynı haberi tekrar ekleme. `KURUM_COLORS`'ta (`components/GuncelGelismelerFeed.
 
 Bunlar SEO blog yazıları DEĞİL (`app/blog`'a dokunma). Koray'ın birinci ağızdan kişisel gözlem/görüş yazıları — mevcut örneklere (`app/makaleler/*/page.tsx`) ton olarak benzemeli: açılış gözlemi/anekdot, 2-4 somut nokta, kısa kapanış. ~500-800 kelime, SEO yapısı yok, samimi ama uzman ses. Mevcut makalelerde işlenmiş konuyu tekrar etme.
 
+Konu ararken Bölüm 1'deki aynı öncelik geçerli: önce güncel bir ekonomik veri/gelişme (enflasyon, dış ticaret, faiz, kur, büyüme gibi) makaleye konu olabilir mi diye bak, ardından diğer konu alanlarına geç.
+
 **Aynı uyarılar burada da geçerli:** kesin hukuki/mali garanti verme, rakip firma ismi geçirme.
 
 Teknik: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.tsx`'i örnek al, yeni `app/makaleler/{yeni-slug}/page.tsx` oluştur; `lib/makale-data.ts`'e kaydını ekle.
+
+---
+
+## NOKTALAMA — EM DASH YASAĞI (2026-09-09'da Koray'ın geri bildirimiyle eklendi)
+
+Hem gelişme özetlerinde/expertNote'ta hem makalelerde em dash (—) karakterini KULLANMA — bu, Koray'ın fark ettiği bir yapay zekâ yazısı belirtisi. İki fikri bağlamak için nokta (yeni cümle), virgül+bağlaç veya iki nokta üst üste kullan. Normal tire (-) bileşik kelime/tarih aralığı gibi durumlarda serbest, sadece cümle bağlama amaçlı uzun tire yasak. Yazıyı bitirmeden metinde "—" geçip geçmediğini kontrol et.
 
 ---
 

@@ -290,6 +290,19 @@ Uzunluk: ortalama ~12 dakikalık okuma (~2200-2500 kelime), aşma.
 
 ---
 
+## 7B. NOKTALAMA — EM DASH YASAĞI (2026-09-09'da Koray'ın geri bildirimiyle eklendi)
+
+Metinde em dash (—) karakterini KULLANMA. Bu karakter yapay zekâ yazısının en belirgin işaretlerinden biri ve Koray'ın dikkatini çekti. İki cümleyi/fikri bağlamak için em dash yerine:
+- Cümleyi bitirip nokta koy, yeni cümleye büyük harfle başla, VEYA
+- Virgül kullan (bağlaç gerektiren durumlarda "ve", "ama", "çünkü" gibi bir bağlaçla birlikte), VEYA
+- İki nokta üst üste (:) — bir listeyi/açıklamayı tanıtıyorsan.
+
+Normal tire (-) kullanımı SERBEST: bileşik kelimeler (Ar-Ge, e-fatura), sayı/tarih aralıkları (2026-2027, 30-75 milyon TL), NACE kod aralıkları gibi durumlarda tire kullanmaya devam et — yasak olan sadece uzun tire (—) ile cümle/fikir bağlama alışkanlığı.
+
+Yazıyı tamamlamadan önce metinde "—" karakteri geçip geçmediğini kontrol et, geçiyorsa yukarıdaki yöntemlerle düzelt.
+
+---
+
 ## 8. SEO
 
 Her yazı için:
