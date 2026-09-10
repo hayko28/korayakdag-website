@@ -805,6 +805,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: TÜBİTAK genellikle değerlendirme raporunda somut ret gerekçesi paylaşıyor; ilk çağrıda olumsuz sonuç alan işletmelere projeyi bir kenara bırakmak yerine bu gerekçeleri dikkate alarak yılın ikinci çağrısına revize bir başvuruyla yeniden girmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Eylül 2026",
+    eklendiTarihi: "2026-09-10",
+    baslik:
+      "TÜİK Ağustos 2026 enflasyon verilerini açıkladı: Yıllık TÜFE yüzde 31,51'e geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 3 Eylül 2026'da açıkladığı verilere göre tüketici fiyatları ağustosta aylık yüzde 1,84, yıllık bazda yüzde 31,51 arttı; yıllık enflasyon bir önceki aya göre 0,24 puan geriledi. Eğitim yüzde 53,44, konut-su-elektrik-gaz grubu yüzde 39,77 ve ulaştırma yüzde 35,08 ile en yüksek yıllık artış gösteren harcama gruplarından oldu.",
+    kaynakUrl:
+      "https://tr.euronews.com/business/2026/09/03/yillik-enflasyon-agustosta-tuike-gore-yuzde-3151-enaga-gore-yuzde-4903",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Enflasyondaki yavaşlama kademeli ilerliyor, ama eğitim ve konut gibi kalemlerdeki yüksek artış KOBİ'lerin maliyet ve fiyatlama planlarını hâlâ zorluyor. İşletmelere yıl sonu bütçe ve fiyat revizyonlarını tek bir genel enflasyon rakamı yerine kendi girdi kalemlerindeki fiili artışlara göre yapmalarını öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "31 Ağustos 2026 (Temmuz 2026 verileri)",
+    eklendiTarihi: "2026-09-10",
+    baslik:
+      "TÜİK Temmuz 2026 işgücü istatistiklerini açıkladı: İşsizlik oranı yüzde 8,1'e yükseldi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun açıkladığı verilere göre mevsim etkisinden arındırılmış işsizlik oranı temmuzda bir önceki aya göre 0,5 puan artışla yüzde 8,1'e yükseldi; işsiz sayısı 150 bin kişi artarak 2 milyon 860 bine ulaştı. İstihdam edilenlerin sayısı aynı dönemde 388 bin kişi azalarak 32 milyon 362 bine geriledi, istihdam oranı ise yüzde 48,3'e düştü.",
+    kaynakUrl:
+      "https://www.takvim.com.tr/ekonomi/2026/08/31/tuik-temmuz-2026-issizlik-oranini-acikladi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: İstihdamdaki aylık gerileme, özellikle sezonluk işletmelerde yeni işe alım ve prim planlamasını gözden geçirmek için bir uyarı niteliğinde. İşveren maliyetlerini iyileştirebilecek SGK teşviklerini bu dönemde tekrar değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
