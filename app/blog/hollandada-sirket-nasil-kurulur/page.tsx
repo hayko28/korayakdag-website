@@ -27,6 +27,8 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="hollandada-sirket-nasil-kurulur"
+      ctaHeading="Hollanda'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="BV kuruluşu, noter ve KvK süreci, KDV numarası ve Hollanda'nın geniş çifte vergilendirme anlaşması ağının doğru kullanımı. Hollanda'da yapılanma sürecinizi baştan sona yönetiyoruz."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

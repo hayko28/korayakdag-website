@@ -25,6 +25,8 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="bulgaristanda-sirket-nasil-kurulur"
+      ctaHeading="Bulgaristan'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="OOD veya EOOD kuruluşu, %10 kurumlar vergisi avantajının doğru kullanımı, KDV kaydı ve Avrupa Birliği pazarına erişim. Bulgaristan'da yapılanma sürecinizi baştan sona yönetiyoruz."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

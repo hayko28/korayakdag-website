@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="12 Dakika"
       slug="suudi-arabistanda-sirket-nasil-kurulur"
+      ctaHeading="Suudi Arabistan'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="MISA yatırım lisansı, LLC kuruluşu, sermaye şartları ve Vizyon 2030 kapsamındaki sektörel fırsatlar. Suudi Arabistan'da yapılanma sürecinizi baştan sona yönetiyoruz."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

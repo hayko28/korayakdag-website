@@ -44,6 +44,10 @@ interface BlogLayoutProps {
   coverImage?: string;
   slug?: string;
   lang?: "tr" | "en";
+  /** Yazının konusuna özel CTA başlığı. Verilmezse genel başlık kullanılır. */
+  ctaHeading?: string;
+  /** Yazının konusuna özel CTA metni. Verilmezse genel metin kullanılır. */
+  ctaText?: string;
   children: React.ReactNode;
 }
 
@@ -56,6 +60,8 @@ export default function BlogLayout({
   coverImage,
   slug,
   lang = "tr",
+  ctaHeading,
+  ctaText,
   children,
 }: BlogLayoutProps) {
   // EN tarafında henüz çevrilmiş yazı listesi olmadığı için (TR statik
@@ -220,10 +226,10 @@ export default function BlogLayout({
       <section className="mx-auto max-w-5xl px-6 pb-12">
         <div className="rounded-3xl bg-[#071A2F] p-10 text-white shadow-xl">
           <h3 className="mb-5 text-3xl font-bold">
-            {t.ctaHeading}
+            {ctaHeading ?? t.ctaHeading}
           </h3>
           <p className="mb-8 text-lg leading-8 text-gray-300">
-            {t.ctaText}
+            {ctaText ?? t.ctaText}
           </p>
 
           <div className="flex flex-wrap gap-4">

@@ -1,6 +1,27 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+
+// Hizmet kalemlerinden ilgili blog yazısına iç link. Ana sayfa sitenin en
+// yetkili sayfası olduğu için buradan verilen linkler yurt dışı şirket
+// kuruluşu yazılarının aramada yükselmesine doğrudan katkı sağlıyor.
+// Anahtarlar categoriesByLang.tr içindeki metinlerle birebir aynı olmalı.
+const ITEM_LINKS: Record<string, string> = {
+  "🇵🇱 Polonya": "/blog/polonyada-sirket-nasil-kurulur",
+  "🇮🇹 İtalya": "/blog/italyada-sirket-nasil-kurulur",
+  "🇩🇪 Almanya": "/blog/almanyada-sirket-nasil-kurulur",
+  "🇬🇧 İngiltere": "/blog/ingilterede-sirket-nasil-kurulur",
+  "🇳🇱 Hollanda": "/blog/hollandada-sirket-nasil-kurulur",
+  "🇦🇪 Birleşik Arap Emirlikleri (Dubai)": "/blog/dubaide-sirket-nasil-kurulur",
+  "🇸🇦 Suudi Arabistan": "/blog/suudi-arabistanda-sirket-nasil-kurulur",
+  "🇺🇸 Amerika Birleşik Devletleri": "/blog/amerikada-sirket-nasil-kurulur",
+  "🇸🇬 Singapur": "/blog/singapurda-sirket-nasil-kurulur",
+  "🇦🇿 Azerbaycan": "/blog/azerbaycanda-sirket-nasil-kurulur",
+  "🇰🇿 Kazakistan": "/blog/kazakistanda-sirket-nasil-kurulur",
+  "🇺🇿 Özbekistan": "/blog/ozbekistanda-sirket-nasil-kurulur",
+  "🇧🇬 Bulgaristan": "/blog/bulgaristanda-sirket-nasil-kurulur",
+};
 
 export const categoriesByLang = {
   tr: [
@@ -660,14 +681,29 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
                       </h4>
                     </div>
                     <ul className="grid gap-2">
-                      {category.items.map((item, i) => (
-                        <li
-                          key={i}
-                          className="bg-white/5 rounded-lg px-3 py-2 text-sm text-gray-200 border border-white/5"
-                        >
-                          ✔ {item}
-                        </li>
-                      ))}
+                      {category.items.map((item, i) => {
+                        const href = ITEM_LINKS[item];
+                        return (
+                          <li
+                            key={i}
+                            className="bg-white/5 rounded-lg text-sm text-gray-200 border border-white/5 transition hover:border-orange-400/40"
+                          >
+                            {href ? (
+                              <Link
+                                href={href}
+                                className="flex items-center justify-between gap-2 px-3 py-2 transition hover:text-orange-300"
+                              >
+                                <span>✔ {item}</span>
+                                <span aria-hidden="true" className="text-orange-400/70">
+                                  →
+                                </span>
+                              </Link>
+                            ) : (
+                              <span className="block px-3 py-2">✔ {item}</span>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 );

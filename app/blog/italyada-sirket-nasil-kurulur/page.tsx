@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="10 Dakika"
       slug="italyada-sirket-nasil-kurulur"
+      ctaHeading="İtalya'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="SRL kuruluşu, noter süreci, Partita IVA vergi numarası ve Avrupa pazarına erişim kurgusu. İtalya'da yapılanma sürecinizi baştan sona yönetiyoruz."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

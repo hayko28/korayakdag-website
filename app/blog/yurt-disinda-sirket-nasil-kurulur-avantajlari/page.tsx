@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="9 Dakika"
       slug="yurt-disinda-sirket-nasil-kurulur-avantajlari"
+      ctaHeading="Yurt Dışında Şirket Kuruluşu İçin Destek Alın"
+      ctaText="Polonya'dan Dubai'ye, Kazakistan'dan ABD'ye 13 ülkede şirket kuruluşu ve yapılanma hizmeti veriyoruz. Hangi ülkenin iş modelinize uygun olduğunu ve süreci nasıl yöneteceğimizi birlikte belirleyelim."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

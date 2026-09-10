@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="12 Dakika"
       slug="kazakistanda-sirket-nasil-kurulur"
+      ctaHeading="Kazakistan'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="TOO mu AIFC mi, vergi kurgusu, banka hesabı açma süreci ve Türkiye tarafındaki yükümlülükler. Kazakistan'da yapılanma sürecinizi baştan sona yönetiyoruz. İş modelinize uygun yapıyı birlikte belirleyelim."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

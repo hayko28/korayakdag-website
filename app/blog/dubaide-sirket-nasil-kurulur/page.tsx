@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="dubaide-sirket-nasil-kurulur"
+      ctaHeading="Dubai ve BAE'de Şirket Kuruluşu İçin Destek Alın"
+      ctaText="Free zone mu mainland mı, hangi serbest bölge, lisans türü, vize kotası ve %9 kurumlar vergisi sonrası doğru kurgu. BAE'de yapılanma sürecinizi baştan sona yönetiyoruz. İş modelinize uygun seçeneği birlikte belirleyelim."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

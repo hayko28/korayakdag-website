@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="ozbekistanda-sirket-nasil-kurulur"
+      ctaHeading="Özbekistan'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="MChJ kuruluşu, yabancı yatırımcıya açık teşvikler, vergi kaydı ve banka hesabı süreci. Özbekistan'da yapılanma sürecinizi baştan sona yönetiyoruz. İhtiyacınızı birlikte değerlendirelim."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="12 Dakika"
       slug="ukraynada-sirket-nasil-kurulur"
+      ctaHeading="Doğu Avrupa'da Yapılanmayı Değerlendiriyor musunuz?"
+      ctaText="Ukrayna gibi yeniden yapılanma sürecindeki pazarlarda yatırım düşünüyorsanız, risk ve fırsat dengesini doğru kurmak kritik. Polonya, Bulgaristan ve Hollanda başta olmak üzere aktif olarak kuruluş hizmeti verdiğimiz Avrupa pazarlarıyla karşılaştırmalı bir değerlendirme için bize ulaşın."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

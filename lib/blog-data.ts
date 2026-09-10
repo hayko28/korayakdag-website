@@ -530,5 +530,50 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "dubai-free-zone-mu-mainland-mi-maliyet-karsilastirma",
+    title: "Dubai'de Free Zone mu Mainland mı? Karar Kriterleri ve 2026 Gerçek Maliyet Tablosu",
+    excerpt: "Mülkiyet, yerel pazara satış hakkı, ofis şartı, vize kotası ve denetim açısından free zone ile mainland arasındaki gerçek farklar. 2026 güncel maliyet karşılaştırması (AED-USD), QFZP %0 istisnasının kaybedildiği durumlar, IFZA/DMCC/SHAMS/Meydan/JAFZA/DIFC eşleşmesi ve Türkiye tarafındaki yükümlülüklerle karar rehberi.",
+    category: "YURT DIŞI ŞİRKET • BAE (DUBAİ) • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1526495124232-a04e1849168c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "abd-llc-mi-c-corp-mi-turk-girisimciler-icin-rehber",
+    title: "ABD'de LLC mi C-Corp mu? Türk Girişimciler İçin Yapı ve Eyalet Seçimi Karar Rehberi",
+    excerpt: "LLC ile C-Corp arasındaki gerçek vergi farkı, Delaware, Wyoming, Nevada, Florida ve Texas'ın 2026 maliyet tablosu, foreign qualification ve nexus riski, EIN/ITIN süreci, Form 5472 cezaları, BOI bildiriminin güncel durumu ve iş modeline göre karar tablosuyla kapsamlı rehber.",
+    category: "YURT DIŞI ŞİRKET • ABD • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "almanyada-gmbh-kurulus-maliyeti-ug-alternatifi",
+    title: "Almanya'da GmbH Kuruluş Maliyeti, Sermaye Şartı ve UG Alternatifi",
+    excerpt: "GmbH ile UG (haftungsbeschränkt) arasındaki gerçek farklar, 2026 güncel kuruluş ve yıllık işletme maliyetleri, şehre göre değişen efektif vergi yükü, vergi numarası süreci, yabancı ortak için özel durumlar ve Türkiye tarafındaki yükümlülüklerle karar rehberi.",
+    category: "YURT DIŞI ŞİRKET • ALMANYA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "kazakistanda-vergi-oranlari-astana-hub-aifc-tesvikleri",
+    title: "Kazakistan'da Vergi Oranları, 2026 Vergi Reformu, AIFC ve Astana Hub Teşvikleri",
+    excerpt: "1 Ocak 2026'da yürürlüğe giren yeni Vergi Kanunu ile KDV %16'ya çıktı, kayıt eşiği yarıya indi ve sektörel kurumlar vergisi oranları yeniden düzenlendi. AIFC'nin 2066'ya uzanan muafiyeti, Astana Hub teşvikleri, temettü stopajı ve Türkiye'deki kontrol edilen yabancı kurum kuralıyla sayısal karşılaştırmalı rehber.",
+    category: "YURT DIŞI ŞİRKET • KAZAKİSTAN • VERGİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "polonya-avrupaya-ihracat-ussu-sirket-kurulusu",
+    title: "Polonya'yı Avrupa'ya İhracat ve Lojistik Üssü Olarak Kullanmak",
+    excerpt: "Polonya'da şirket kurup AB pazarına açılma stratejisi: Gümrük Birliği ve A.TR mekaniği, AB içi KDV numarası ve reverse charge, ithalatta KDV erteleme, %9-%19 CIT ve Estonya usulü rejim, depo/fulfillment kurgusu ve sayısal örnekle 2026 rehberi.",
+    category: "YURT DIŞI ŞİRKET • İHRACAT ÜSSÜ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];

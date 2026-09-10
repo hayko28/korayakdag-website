@@ -26,6 +26,8 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="azerbaycanda-sirket-nasil-kurulur"
+      ctaHeading="Azerbaycan'da Şirket Kuruluşu İçin Destek Alın"
+      ctaText="MMC kuruluşu, vergi kaydı, banka hesabı açılışı ve Türkiye tarafındaki yükümlülükler dahil Azerbaycan'da yapılanma sürecinizi baştan sona yönetiyoruz. İhtiyacınızı birlikte değerlendirelim."
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
