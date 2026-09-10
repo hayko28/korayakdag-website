@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yeni-tesvik-belgesinde-100-milyon-1-milyar-esigi",
+    title:
+      "Yeni Finansman Belgesi Duyuruldu: KOBİ mi, Büyük Yatırımcı mı İçin?",
+    excerpt:
+      "3 Eylül 2026'da Sanayi ve Teknoloji Bakanlığı, yatırım teşvik belgesi sahipleri için Öncelikli Finansman Belgesi ve Teknik ve Stratejik Öncelik Belgesi'ni yürürlüğe koydu. Asgari yatırım tutarları 100 milyon TL ve 1 milyar TL; küçük ve orta ölçekli işletmeler için asıl kapı hâlâ başka yerde duruyor.",
+    tag: "Görüş",
+    date: "10 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kurumsal-kulturde-77-37-farki",
     title: "Yöneticilerin Yüzde 77'si, Çalışanların Yüzde 37'si: Kültür Aynı Şirkette Neden Bu Kadar Farklı Görünüyor?",
     excerpt:
