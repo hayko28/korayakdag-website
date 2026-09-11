@@ -833,6 +833,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İstihdamdaki aylık gerileme, özellikle sezonluk işletmelerde yeni işe alım ve prim planlamasını gözden geçirmek için bir uyarı niteliğinde. İşveren maliyetlerini iyileştirebilecek SGK teşviklerini bu dönemde tekrar değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-11",
+    baslik:
+      "TCMB Eylül 2026 PPK toplantısında politika faizini yüzde 37'de sabit tuttu",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 10 Eylül 2026 tarihli toplantısında bir hafta vadeli repo ihale faiz oranını (politika faizi) yüzde 37 seviyesinde sabit tuttu; gecelik borç verme faizi yüzde 40, borçlanma faizi ise yüzde 35,5 olarak korundu. Kurul, fiyat istikrarı sağlanana kadar sürdürülecek sıkı para politikası duruşunun talep, kur ve beklenti kanalları üzerinden dezenflasyon sürecini güçlendireceğini; enflasyon görünümünde belirgin ve kalıcı bir bozulma olması halinde duruşun sıkılaştırılacağını yineledi.",
+    kaynakUrl:
+      "https://tr.euronews.com/business/2026/09/10/merkez-bankasi-politika-faizini-yuzde-37de-sabit-tuttu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faizin art arda altıncı toplantıda aynı seviyede kalması, kredi maliyeti planlaması açısından bir miktar öngörülebilirlik sağlıyor. Faiz indirimi beklentisiyle yatırım veya finansman kararını erteleyen KOBİ'lere, mevcut sıkı duruşun en azından ekim toplantısına kadar süreceğini dikkate alarak planlarını buna göre yapmalarını öneririm.",
+  },
+  {
+    kurum: "İSO",
+    tarih: "1 Eylül 2026 (Ağustos 2026 verileri)",
+    eklendiTarihi: "2026-09-11",
+    baslik:
+      "İSO Türkiye İmalat PMI ağustosta 48,1'e yükseldi, sektördeki daralma üçüncü ayında hız kesti",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global iş birliğiyle hazırladığı Türkiye İmalat PMI endeksi, ağustosta temmuzdaki 47,7 seviyesinden 48,1'e yükselerek son üç ayın en yüksek değerine ulaştı; endeks 50 eşik değerinin altında kalmaya devam ederek sektördeki daralmanın sürdüğünü, ancak hızının yavaşladığını gösterdi. Yeni siparişler ve ihracat siparişleri ağustosta da geriledi, imalatçılar üretimlerini üst üste üçüncü ay azalttı; yakıt ve hammadde fiyatlarındaki artış nedeniyle girdi maliyeti enflasyonu son üç ayın en yüksek seviyesine çıktı.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomik-veriler/imalatta-toparlanma-isareti-pmida-uc-ayin-en-yuksek-seviyesi-haberi-838310",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Endeksin hâlâ 50'nin altında olması imalat sektöründeki daralmanın sürdüğünü gösteriyor; girdi maliyetlerindeki artış da eklenince, üretim yapan KOBİ'lere fiyatlama ve stok kararlarını yalnızca talep beklentisine değil, maliyet trendine göre de gözden geçirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
