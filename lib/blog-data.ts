@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yurt-disinda-sirket-marka-satin-alma-destegi-2026",
+    title: "Yurt Dışında Şirket ve Marka Satın Alma Desteği: 2026 Güncel Oranlar ve Başvuru Süreci",
+    excerpt: "Ticaret Bakanlığı'nın 7 Mart 2026 tarihli 11007 sayılı Kararla güncellediği Şirket ve Marka Alım Desteği'nde 28 milyon TL danışmanlık, 171 milyon TL faiz desteği bütçesi, kira/tanıtım gideri kalemleri, kimlerin yararlanabileceği ve DYS üzerinden adım adım başvuru süreciyle kapsamlı rehber.",
+    category: "İHRACAT DESTEKLERİ • M&A • 2026",
+    date: "2026",
+    readTime: "9 Dakika",
+    image: "https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1707-siparis-arge-destek-programi-2026",
     title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
     excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber.",
