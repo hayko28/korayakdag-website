@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "imalat-pmi-toparlanma-mi-yavaslayan-daralma-mi",
+    title:
+      "PMI Üçüncü Ayın En Yüksek Seviyesinde: Bu Gerçekten Toparlanma mı?",
+    excerpt:
+      "İSO Türkiye İmalat PMI ağustosta 48,1'e çıkarak manşetlerde 'toparlanma işareti' olarak yer aldı. Ama endeks hâlâ 50 eşiğinin altında, yeni siparişler üçüncü ay üst üste geriliyor ve girdi maliyeti enflasyonu son üç ayın zirvesinde. Rakamı manşetten değil, alt kalemlerden okumak gerekiyor.",
+    tag: "Görüş",
+    date: "11 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yeni-tesvik-belgesinde-100-milyon-1-milyar-esigi",
     title:
       "Yeni Finansman Belgesi Duyuruldu: KOBİ mi, Büyük Yatırımcı mı İçin?",
