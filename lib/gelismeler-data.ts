@@ -861,6 +861,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Endeksin hâlâ 50'nin altında olması imalat sektöründeki daralmanın sürdüğünü gösteriyor; girdi maliyetlerindeki artış da eklenince, üretim yapan KOBİ'lere fiyatlama ve stok kararlarını yalnızca talep beklentisine değil, maliyet trendine göre de gözden geçirmelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "11 Eylül 2026 (Temmuz 2026 verileri)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "TCMB'nin Temmuz 2026 ödemeler dengesi verileri: Cari işlemler hesabı 8 ay sonra fazla verdi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın 11 Eylül 2026'da açıkladığı ödemeler dengesi verilerine göre cari işlemler hesabı temmuz ayında 36 milyon dolar fazla vererek 8 aylık aradan sonra ilk kez artıya döndü. 12 aylık kümülatif cari açık 40,7 milyar dolara, dış ticaret açığı ise 77,2 milyar dolara ulaşırken, altın ve enerji hariç yıllıklandırılmış cari denge 27,8 milyar dolar fazla verdi; hizmetler dengesi yıllık bazda 63,5 milyar dolar fazla kaydetti.",
+    kaynakUrl: "https://www.aa.com.tr/tr/ekonomi/odemeler-dengesi-verileri-aciklandi/4053983",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek aylık fazla, yılın genelindeki 40,7 milyar dolarlık kümülatif açığı tersine çevirmiyor; asıl dikkat çeken nokta hizmet gelirlerinin (özellikle turizm) cari dengeyi ne kadar güçlü desteklediği. İhracatçı ve ithalatçı işletmelere döviz ve finansman planlarını tek bir aylık veriye değil 12 aylık trende bakarak yapmalarını öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "8 Eylül 2026 (11 Eylül 2026'da yürürlüğe girdi)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "SPK, borsada pay sahipliği bildirim eşiğini yüzde 3'e düşürdü, fiili dolaşım oranını yeniden tanımladı",
+    ozet:
+      "Sermaye Piyasası Kurulu'nun 8 Eylül 2026 tarihli kararıyla, Borsa İstanbul'da işlem gören şirketlerde pay veya oy hakkı sahipliğine ilişkin bildirim yükümlülüğü eşiği yüzde 5'ten yüzde 3'e düşürüldü. Aynı kararla fiili dolaşımdaki pay oranı; kamu payı, hazine/geri alınan paylar, yönetim kurulu ve üst düzey yönetim payları ile yurt dışı piyasalarda işlem gören paylar hariç tutularak yeniden tanımlandı. Yeni eşik ve fiili dolaşım verileri 11 Eylül 2026'dan itibaren Merkezi Kayıt Kuruluşu tarafından günlük olarak hesaplanıp kamuya açıklanmaya başlandı.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/spk-fiili-dolasim-orani-ve-pay-sahipligine-iliskin-kararlarini-acikladi/4051494",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bildirim eşiğinin yüzde 3'e inmesi, halka açık şirketlerde pay yoğunlaşmasının artık çok daha erken aşamada görünür hale geleceği anlamına geliyor; halka açık olan veya halka açılmayı planlayan şirketlere ortaklık yapısı takibini bu yeni eşiğe göre gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Ağustos 2026 (program 22-24 Eylül 2026'da düzenlenecek)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "Ticaret Bakanlığı'ndan KOBİ'lere ücretsiz 'İhracat Süreçleri ve Devlet Destekleri' eğitim programı",
+    ozet:
+      "Ticaret Bakanlığı, ihracata yeni başlayacak veya mevcut faaliyetini büyütmek isteyen işletmeler için 22-23-24 Eylül 2026 tarihlerinde çevrimiçi 'İhracat Süreçleri ve Devlet Destekleri Eğitim Programı' düzenleyecek. Katılım ücretsiz olup başvurular egitimbasvuru.ticaret.gov.tr üzerinden 21 Eylül 2026'ya kadar alınıyor; program sonunda yapılacak on soruluk sınavda en az yüzde 50 başarı gösterenlere dijital başarı sertifikası veriliyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/duyurular/ticaret-bakanligi-ihracat-surecleri-ve-devlet-destekleri-egitim-programi-22-23-24-eylul-2026",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracata yeni başlayacak KOBİ'lere, ücretli bir danışmanlık sürecine girmeden önce bu tür ücretsiz kamu eğitimlerini bir ön hazırlık adımı olarak değerlendirmelerini öneririm; temel süreç ve destek mekanizmalarını buradan öğrenmek sonraki adımları daha isabetli kılabilir.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
