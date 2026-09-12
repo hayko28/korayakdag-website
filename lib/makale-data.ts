@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satis-tek-kisinin-hafizasinda-kalinca",
+    title:
+      "Satış Müdürü İzne Çıkınca Şirket Neden Amneziye Giriyor?",
+    excerpt:
+      "Bir tekstil firmasında satış müdürü iki haftalık izne çıktığında, hangi müşteriye son teklifin ne zaman gönderildiğini kimse hatırlamıyor. Satışın yazılı bir stratejiye değil tek bir kişinin hafızasına bağlı kalması, KOBİ'lerde büyümeyi frenleyen görünmez risklerden biri.",
+    tag: "Strateji",
+    date: "12 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "imalat-pmi-toparlanma-mi-yavaslayan-daralma-mi",
     title:
       "PMI Üçüncü Ayın En Yüksek Seviyesinde: Bu Gerçekten Toparlanma mı?",
