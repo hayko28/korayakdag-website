@@ -902,6 +902,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İhracata yeni başlayacak KOBİ'lere, ücretli bir danışmanlık sürecine girmeden önce bu tür ücretsiz kamu eğitimlerini bir ön hazırlık adımı olarak değerlendirmelerini öneririm; temel süreç ve destek mekanizmalarını buradan öğrenmek sonraki adımları daha isabetli kılabilir.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "31 Ağustos 2026 (2026 yılı 2. çeyrek verileri)",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Türkiye ekonomisi 2026 yılının ikinci çeyreğinde yıllık bazda yüzde 2,3 büyüdü",
+    ozet:
+      "Türkiye İstatistik Kurumu verilerine göre gayrisafi yurt içi hasıla, 2026 yılının ikinci çeyreğinde bir önceki yılın aynı dönemine göre yüzde 2,3 arttı. Mevsim ve takvim etkilerinden arındırılmış GSYH bir önceki çeyreğe göre yüzde 1,1 yükselirken, sanayi sektörü yüzde 2,4, tarım sektörü yüzde 13,3 büyüdü; özel tüketim harcamaları yüzde 3,5 artarken kamu tüketim harcaması yüzde 1,8 geriledi.",
+    kaynakUrl: "https://www.sbb.gov.tr/2026-yili-2-ceyrek-buyume-verileri/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Büyümenin sabit sermaye yatırımlarından çok özel tüketimden gelmesi dikkat çekici. Yatırım kararını erteleyen KOBİ'lere, bu tabloyu tek başına bir sinyal olarak değil kendi sektörlerindeki talep ve maliyet verileriyle birlikte değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Ticaret Bakanlığı, kadın kooperatiflerinin e-ticarete erişimi için beş platformla protokol imzaladı",
+    ozet:
+      "Ticaret Bakanlığı, 2025-2029 Türkiye Kooperatifçilik Stratejisi ve Eylem Planı kapsamında beş e-ticaret aracı hizmet sağlayıcısıyla kadın kooperatiflerini e-ticaret yoluyla destekleme protokolü imzaladı. Protokole göre çoğunluk üyesi kadın olan kooperatifler platformlara ücretsiz üye olabilecek, satışlarda ilk 6 ay komisyon alınmayacak, sonraki 4,5 yıl boyunca ise komisyon oranı yüzde 1 olarak uygulanacak; kooperatif ürünleri ayrıca platformların ana sayfa ve kampanya alanlarında öne çıkarılacak.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/kadin-kooperatiflerine-e-ticarette-guclu-destek",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Tedarikçisi veya iş ortağı arasında kadın kooperatifi bulunan işletmelere, bu protokolü kooperatifle paylaşıp düşük komisyonlu dönemi ürün çeşitliliğini ve görünürlüğü artırmak için değerlendirmelerini öneririm; fırsat penceresi özellikle ilk 6 aylık komisyonsuz dönemde daha avantajlı.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "Ağustos 2026 (2026 yılı ilk 8 ay verileri)",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Ticaret Bakanlığı'nın 2026 yılı ilk 8 aylık piyasa denetim bilançosu açıklandı: 2,24 milyar TL idari para cezası",
+    ozet:
+      "Ticaret Bakanlığı, 2026 yılının ilk sekiz ayında yaklaşık 322 bin firma ve 39,2 milyon ürünü denetlediğini, bu kapsamda toplam 2,24 milyar TL idari para cezası uygulandığını açıkladı. Denetimler fahiş fiyat, stokçuluk, otomotiv, gayrimenkul, kuyumculuk ve haksız ticari uygulamalar ile ön ödemeli konut satışı, abonelik ve mesafeli satış sözleşmeleri gibi tüketici sözleşmelerini kapsadı; yalnızca ağustos ayında 39.758 işletme denetlenerek 8.951 işletmeye toplam 366,6 milyon TL ceza kesildi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanliginin-2026-yili-agustos-ayi-itibariyla-piyasa-denetim-bilancosu-belli-oldu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Denetim hacminin bu kadar geniş olması, fiyatlandırma ve sözleşme metinlerini yalnızca satış anında değil düzenli aralıklarla gözden geçirmeyi gerektiriyor. Özellikle abonelik ve mesafeli satış sözleşmesiyle çalışan işletmelere sözleşme şablonlarını güncel mevzuata göre bir kez daha kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
