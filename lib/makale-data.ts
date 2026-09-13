@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sosyal-medyada-satisin-vergi-radarina-girmesi",
+    title:
+      "Sosyal Medyada Satış Yapmak Artık Neden Eskisi Kadar 'Gayri Resmi' Değil?",
+    excerpt:
+      "5 Eylül 2026'da yayımlanan 595 Sıra No'lu Vergi Usul Kanunu Genel Tebliği, dijital ortamdaki bildirim yükümlülüğünü sosyal ağ sağlayıcılarına ve ilan yayınlayan yer sağlayıcılarına kadar genişletti. Instagram vitrinleri ve sosyal medya üzerinden satış yapan küçük işletmeler için hacimden bağımsız yeni bir takip dönemi başlıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "13 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satis-tek-kisinin-hafizasinda-kalinca",
     title:
       "Satış Müdürü İzne Çıkınca Şirket Neden Amneziye Giriyor?",
