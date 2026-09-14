@@ -215,9 +215,9 @@ export const MAKALELER: MakaleMeta[] = [
   },
   {
     slug: "sgk-borc-yapilandirmasinda-son-hafta",
-    title: "SGK Borç Yapılandırmasında Son Hafta: 72 Ay Taksit İçin 31 Ağustos",
+    title: "SGK Borç Yapılandırması Kapandı: Fırsatı Kaçıranlar İçin Sıradaki Adımlar",
     excerpt:
-      "7582 sayılı Kanun'la tecil süresi 36 aydan 72 aya çıktı, teminatsız tecil sınırı yükseldi. Ama 31 Ağustos'tan sonra hem avantajın bir kısmı hem de %29'luk faiz oranı kayboluyor. İşverenler için pratik bir bakış.",
+      "Tecil süresini 36 aydan 72 aya çıkaran SGK borç yapılandırması başvuruları 31 Ağustos'ta sona erdi. Fırsatı değerlendiremeyen işverenler için mevcut durum, riskler ve bir sonraki yapılandırma dönemine hazırlık.",
     tag: "Görüş",
     date: "22 Ağustos 2026",
     readTime: "2 Dakika",

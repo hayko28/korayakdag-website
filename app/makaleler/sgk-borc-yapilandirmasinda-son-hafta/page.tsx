@@ -21,37 +21,41 @@ export default function MakalePage() {
       slug={meta.slug}
     >
       <p>
-        Danışmanlık görüşmelerinde son günlerde en çok sorulan konulardan
-        biri SGK borç yapılandırması oldu. Haklılar da: 7582 sayılı Kanun
-        ile 6183 sayılı Kanun&apos;un tecil-taksitlendirme hükümlerinde
-        yapılan değişiklik, işverenler için gerçekten kayda değer bir fırsat
-        yaratıyor. Ama fırsatın önemli bir kısmı 31 Ağustos 2026&apos;da
-        kapanıyor.
+        Ağustos ayı boyunca danışmanlık görüşmelerinde en çok sorulan
+        konulardan biri SGK borç yapılandırmasıydı. 6183 sayılı
+        Kanun&apos;un tecil-taksitlendirme hükümlerinde yapılan değişiklik,
+        işverenler için gerçekten kayda değer bir fırsattı. Ancak başvuru
+        süresi 31 Ağustos 2026&apos;da sona erdi ve şu an itibarıyla yeni
+        başvuru alınmıyor. Bu yazıyı bu aramayla bulanlar için asıl soru
+        artık şu: fırsatı kaçırdıysanız elinizde ne kaldı, sırada ne var?
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
-        Değişen ne?
+        Kapanan fırsat neydi?
       </h2>
       <p>
-        Daha önce azami tecil süresi 36 aydı, şimdi 72 aya çıktı. Teminat
-        aranmaksızın tecil yapılabilecek borç tutarı da ciddi biçimde
-        yükseltildi. Kapsama 2026 Haziran ayı ve öncesine ait sigorta
-        primleri, işsizlik sigortası primleri ve kesinleşmiş idari para
-        cezaları giriyor. Yani salgın sonrası dönemde biriken, ötelenen ya
-        da unutulan borçların büyük kısmı bu düzenlemenin içinde.
+        Daha önce azami tecil süresi 36 aydı, bu düzenlemeyle 72 aya
+        çıkarılmıştı. Teminat aranmaksızın tecil yapılabilecek borç tutarı
+        da ciddi biçimde yükseltilmişti. Kapsama 2026 Haziran ayı ve
+        öncesine ait sigorta primleri, işsizlik sigortası primleri ve
+        kesinleşmiş idari para cezaları giriyordu. 31 Ağustos&apos;a kadar
+        başvuranlar için yıllık tecil faizi %29 olarak uygulandı; bu
+        tarihten sonra başvuru kapısı tamamen kapandı.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
-        Tarih neden bu kadar kritik?
+        Fırsatı kaçırdıysanız durumunuz ne?
       </h2>
       <p>
-        31 Ağustos&apos;a kadar başvuranlar için yıllık tecil faizi %29
-        olarak uygulanıyor; bu tarihten sonra oran %39&apos;a çıkıyor. On
-        puanlık bu fark, birkaç yüz bin TL&apos;lik bir borç için bile
-        binlerce TL&apos;lik ek yüke dönüşebiliyor. Üstelik başvuru
+        Başvuru yapılmadığı için bu düzenlemeden yararlanma hakkı kalmadı.
+        Ama bu, SGK borcu için hiçbir seçenek kalmadığı anlamına gelmiyor.
+        6183 sayılı Kanun&apos;un genel tecil-taksitlendirme hükümleri
+        (bu özel düzenlemeden bağımsız, süresiz olarak var olan
+        mekanizma) hâlâ işliyor; sadece koşullar (36 aylık üst sınır,
+        güncel gecikme zammı oranı) daha az avantajlı. Başvuru
         yapılmadığı sürece SGK&apos;nın icra ve haciz süreçleri normal
-        seyrinde devam ediyor; yani beklemenin maliyeti yalnızca faiz farkı
-        değil.
+        seyrinde devam ediyor, bu yüzden borcu görmezden gelmenin bir
+        maliyeti var.
       </p>
 
       <h2 className="mt-2 text-2xl font-bold text-[#071A2F]">
@@ -59,28 +63,29 @@ export default function MakalePage() {
       </h2>
       <p>
         <strong>Birincisi:</strong> Muhasebeciyle veya mali müşavirle
-        borcun güncel dökümünü çıkarmak: SGK e-Devlet üzerinden borç
-        durumu birkaç dakikada görülebiliyor, ertelemenin bir maliyeti yok
-        ama bilmemenin var.
+        borcun güncel dökümünü çıkarmak. SGK e-Devlet üzerinden borç
+        durumu birkaç dakikada görülebiliyor.
       </p>
       <p>
-        <strong>İkincisi:</strong> Nakit akışına göre 36 ay mı yoksa 72 ay
-        mı daha uygun, buna göre taksit planını seçmek. Uzun vade rahatlık
-        sağlıyor ama toplam faiz maliyetini de artırıyor; bunun hesabını
-        önceden yapmak gerekiyor.
+        <strong>İkincisi:</strong> Genel tecil-taksitlendirme hükümleri
+        çerçevesinde başvuru yapıp yapmamayı değerlendirmek. Şartlar
+        Ağustos&apos;taki kadar avantajlı olmasa da, hiç başvurmamaktan
+        her zaman daha iyi bir konumda bırakıyor.
       </p>
       <p>
-        <strong>Üçüncüsü:</strong> Başvuruyu 31 Ağustos&apos;u beklemeden
-        yapmak. Son güne bırakılan başvurularda sistem yoğunluğu ve evrak
-        eksikliği yüzünden fırsatın kaçırıldığı çok görülüyor.
+        <strong>Üçüncüsü:</strong> Bir sonraki genel yapılandırma dönemine
+        hazırlıklı olmak. Türkiye&apos;de bu tür düzenlemeler periyodik
+        olarak tekrar gündeme geliyor; borç dökümünü ve nakit akış
+        planını güncel tutan işletmeler, yeni bir fırsat çıktığında
+        hazırlık kaybetmeden hareket edebiliyor.
       </p>
 
       <p>
-        Faiz oranlarının yüksek seyrettiği bir dönemde, devletin kendi
-        alacağı için sunduğu bu tür yapılandırma imkanları aslında bir
-        işletme için en ucuz finansman kaynaklarından biri. Kullanılmadan
-        geçirilecek her hafta, bu maliyet avantajının küçülmesi anlamına
-        geliyor.
+        Devletin kendi alacağı için sunduğu bu tür yapılandırma imkanları,
+        çıktıkları dönemde bir işletme için en ucuz finansman
+        kaynaklarından biri oluyor. Bir sonraki fırsat çıktığında hazır
+        olmak isteyen işverenler için borç durumunun ve stratejinin önden
+        netleştirilmesi, kaybedilecek zamanı en aza indiriyor.
       </p>
     </MakaleLayout>
   );
