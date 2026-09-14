@@ -13,6 +13,7 @@ const STRINGS = {
       { name: "Uzmanlık Alanları", href: "#expertise" },
       { name: "Hizmetler", href: "#services" },
       { name: "Blog", href: "#blog" },
+      { name: "Teşvik Takvimi", href: "/tesvik-takvimi" },
     ],
     contactHeading: "İletişim",
     cta: "Ücretsiz Ön Görüşme →",
@@ -72,7 +73,10 @@ export default function Footer({ lang = "tr" }: { lang?: "tr" | "en" }) {
             <ul className="space-y-3">
               {t.links.map((link) => (
                 <li key={link.name}>
-                  <a href={`${t.homePath}${link.href}`} className="text-sm transition hover:text-white">
+                  <a
+                    href={link.href.startsWith("/") ? link.href : `${t.homePath}${link.href}`}
+                    className="text-sm transition hover:text-white"
+                  >
                     {link.name}
                   </a>
                 </li>
