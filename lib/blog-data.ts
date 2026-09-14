@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-girisimci-destek-programi-2026",
+    title: "KOSGEB Girişimci Destek Programı Nedir? Kimler Başvurabilir, Ne Kadar Destek Alınır?",
+    excerpt: "Geleneksel ve İleri Girişimci Destek Programı arasındaki fark, kuruluş/performans/sertifika desteği tutarları, %75 oranlı makine-teçhizat-yazılım desteği, genç/kadın/engelli ek desteği ve adım adım başvuru süreciyle 2026 güncel KOSGEB Girişimci Destek Programı rehberi.",
+    category: "KOSGEB • GİRİŞİMCİLİK DESTEĞİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1752051548874-7d2176a84007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1707-siparis-arge-destek-programi-2026",
     title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
     excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber.",

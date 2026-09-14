@@ -833,6 +833,158 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İstihdamdaki aylık gerileme, özellikle sezonluk işletmelerde yeni işe alım ve prim planlamasını gözden geçirmek için bir uyarı niteliğinde. İşveren maliyetlerini iyileştirebilecek SGK teşviklerini bu dönemde tekrar değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-11",
+    baslik:
+      "TCMB Eylül 2026 PPK toplantısında politika faizini yüzde 37'de sabit tuttu",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 10 Eylül 2026 tarihli toplantısında bir hafta vadeli repo ihale faiz oranını (politika faizi) yüzde 37 seviyesinde sabit tuttu; gecelik borç verme faizi yüzde 40, borçlanma faizi ise yüzde 35,5 olarak korundu. Kurul, fiyat istikrarı sağlanana kadar sürdürülecek sıkı para politikası duruşunun talep, kur ve beklenti kanalları üzerinden dezenflasyon sürecini güçlendireceğini; enflasyon görünümünde belirgin ve kalıcı bir bozulma olması halinde duruşun sıkılaştırılacağını yineledi.",
+    kaynakUrl:
+      "https://tr.euronews.com/business/2026/09/10/merkez-bankasi-politika-faizini-yuzde-37de-sabit-tuttu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faizin art arda altıncı toplantıda aynı seviyede kalması, kredi maliyeti planlaması açısından bir miktar öngörülebilirlik sağlıyor. Faiz indirimi beklentisiyle yatırım veya finansman kararını erteleyen KOBİ'lere, mevcut sıkı duruşun en azından ekim toplantısına kadar süreceğini dikkate alarak planlarını buna göre yapmalarını öneririm.",
+  },
+  {
+    kurum: "İSO",
+    tarih: "1 Eylül 2026 (Ağustos 2026 verileri)",
+    eklendiTarihi: "2026-09-11",
+    baslik:
+      "İSO Türkiye İmalat PMI ağustosta 48,1'e yükseldi, sektördeki daralma üçüncü ayında hız kesti",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global iş birliğiyle hazırladığı Türkiye İmalat PMI endeksi, ağustosta temmuzdaki 47,7 seviyesinden 48,1'e yükselerek son üç ayın en yüksek değerine ulaştı; endeks 50 eşik değerinin altında kalmaya devam ederek sektördeki daralmanın sürdüğünü, ancak hızının yavaşladığını gösterdi. Yeni siparişler ve ihracat siparişleri ağustosta da geriledi, imalatçılar üretimlerini üst üste üçüncü ay azalttı; yakıt ve hammadde fiyatlarındaki artış nedeniyle girdi maliyeti enflasyonu son üç ayın en yüksek seviyesine çıktı.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomik-veriler/imalatta-toparlanma-isareti-pmida-uc-ayin-en-yuksek-seviyesi-haberi-838310",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Endeksin hâlâ 50'nin altında olması imalat sektöründeki daralmanın sürdüğünü gösteriyor; girdi maliyetlerindeki artış da eklenince, üretim yapan KOBİ'lere fiyatlama ve stok kararlarını yalnızca talep beklentisine değil, maliyet trendine göre de gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "11 Eylül 2026 (Temmuz 2026 verileri)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "TCMB'nin Temmuz 2026 ödemeler dengesi verileri: Cari işlemler hesabı 8 ay sonra fazla verdi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın 11 Eylül 2026'da açıkladığı ödemeler dengesi verilerine göre cari işlemler hesabı temmuz ayında 36 milyon dolar fazla vererek 8 aylık aradan sonra ilk kez artıya döndü. 12 aylık kümülatif cari açık 40,7 milyar dolara, dış ticaret açığı ise 77,2 milyar dolara ulaşırken, altın ve enerji hariç yıllıklandırılmış cari denge 27,8 milyar dolar fazla verdi; hizmetler dengesi yıllık bazda 63,5 milyar dolar fazla kaydetti.",
+    kaynakUrl: "https://www.aa.com.tr/tr/ekonomi/odemeler-dengesi-verileri-aciklandi/4053983",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek aylık fazla, yılın genelindeki 40,7 milyar dolarlık kümülatif açığı tersine çevirmiyor; asıl dikkat çeken nokta hizmet gelirlerinin (özellikle turizm) cari dengeyi ne kadar güçlü desteklediği. İhracatçı ve ithalatçı işletmelere döviz ve finansman planlarını tek bir aylık veriye değil 12 aylık trende bakarak yapmalarını öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "8 Eylül 2026 (11 Eylül 2026'da yürürlüğe girdi)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "SPK, borsada pay sahipliği bildirim eşiğini yüzde 3'e düşürdü, fiili dolaşım oranını yeniden tanımladı",
+    ozet:
+      "Sermaye Piyasası Kurulu'nun 8 Eylül 2026 tarihli kararıyla, Borsa İstanbul'da işlem gören şirketlerde pay veya oy hakkı sahipliğine ilişkin bildirim yükümlülüğü eşiği yüzde 5'ten yüzde 3'e düşürüldü. Aynı kararla fiili dolaşımdaki pay oranı; kamu payı, hazine/geri alınan paylar, yönetim kurulu ve üst düzey yönetim payları ile yurt dışı piyasalarda işlem gören paylar hariç tutularak yeniden tanımlandı. Yeni eşik ve fiili dolaşım verileri 11 Eylül 2026'dan itibaren Merkezi Kayıt Kuruluşu tarafından günlük olarak hesaplanıp kamuya açıklanmaya başlandı.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/spk-fiili-dolasim-orani-ve-pay-sahipligine-iliskin-kararlarini-acikladi/4051494",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bildirim eşiğinin yüzde 3'e inmesi, halka açık şirketlerde pay yoğunlaşmasının artık çok daha erken aşamada görünür hale geleceği anlamına geliyor; halka açık olan veya halka açılmayı planlayan şirketlere ortaklık yapısı takibini bu yeni eşiğe göre gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Ağustos 2026 (program 22-24 Eylül 2026'da düzenlenecek)",
+    eklendiTarihi: "2026-09-12",
+    baslik:
+      "Ticaret Bakanlığı'ndan KOBİ'lere ücretsiz 'İhracat Süreçleri ve Devlet Destekleri' eğitim programı",
+    ozet:
+      "Ticaret Bakanlığı, ihracata yeni başlayacak veya mevcut faaliyetini büyütmek isteyen işletmeler için 22-23-24 Eylül 2026 tarihlerinde çevrimiçi 'İhracat Süreçleri ve Devlet Destekleri Eğitim Programı' düzenleyecek. Katılım ücretsiz olup başvurular egitimbasvuru.ticaret.gov.tr üzerinden 21 Eylül 2026'ya kadar alınıyor; program sonunda yapılacak on soruluk sınavda en az yüzde 50 başarı gösterenlere dijital başarı sertifikası veriliyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/duyurular/ticaret-bakanligi-ihracat-surecleri-ve-devlet-destekleri-egitim-programi-22-23-24-eylul-2026",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracata yeni başlayacak KOBİ'lere, ücretli bir danışmanlık sürecine girmeden önce bu tür ücretsiz kamu eğitimlerini bir ön hazırlık adımı olarak değerlendirmelerini öneririm; temel süreç ve destek mekanizmalarını buradan öğrenmek sonraki adımları daha isabetli kılabilir.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "31 Ağustos 2026 (2026 yılı 2. çeyrek verileri)",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Türkiye ekonomisi 2026 yılının ikinci çeyreğinde yıllık bazda yüzde 2,3 büyüdü",
+    ozet:
+      "Türkiye İstatistik Kurumu verilerine göre gayrisafi yurt içi hasıla, 2026 yılının ikinci çeyreğinde bir önceki yılın aynı dönemine göre yüzde 2,3 arttı. Mevsim ve takvim etkilerinden arındırılmış GSYH bir önceki çeyreğe göre yüzde 1,1 yükselirken, sanayi sektörü yüzde 2,4, tarım sektörü yüzde 13,3 büyüdü; özel tüketim harcamaları yüzde 3,5 artarken kamu tüketim harcaması yüzde 1,8 geriledi.",
+    kaynakUrl: "https://www.sbb.gov.tr/2026-yili-2-ceyrek-buyume-verileri/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Büyümenin sabit sermaye yatırımlarından çok özel tüketimden gelmesi dikkat çekici. Yatırım kararını erteleyen KOBİ'lere, bu tabloyu tek başına bir sinyal olarak değil kendi sektörlerindeki talep ve maliyet verileriyle birlikte değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Ticaret Bakanlığı, kadın kooperatiflerinin e-ticarete erişimi için beş platformla protokol imzaladı",
+    ozet:
+      "Ticaret Bakanlığı, 2025-2029 Türkiye Kooperatifçilik Stratejisi ve Eylem Planı kapsamında beş e-ticaret aracı hizmet sağlayıcısıyla kadın kooperatiflerini e-ticaret yoluyla destekleme protokolü imzaladı. Protokole göre çoğunluk üyesi kadın olan kooperatifler platformlara ücretsiz üye olabilecek, satışlarda ilk 6 ay komisyon alınmayacak, sonraki 4,5 yıl boyunca ise komisyon oranı yüzde 1 olarak uygulanacak; kooperatif ürünleri ayrıca platformların ana sayfa ve kampanya alanlarında öne çıkarılacak.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/kadin-kooperatiflerine-e-ticarette-guclu-destek",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Tedarikçisi veya iş ortağı arasında kadın kooperatifi bulunan işletmelere, bu protokolü kooperatifle paylaşıp düşük komisyonlu dönemi ürün çeşitliliğini ve görünürlüğü artırmak için değerlendirmelerini öneririm; fırsat penceresi özellikle ilk 6 aylık komisyonsuz dönemde daha avantajlı.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "Ağustos 2026 (2026 yılı ilk 8 ay verileri)",
+    eklendiTarihi: "2026-09-13",
+    baslik:
+      "Ticaret Bakanlığı'nın 2026 yılı ilk 8 aylık piyasa denetim bilançosu açıklandı: 2,24 milyar TL idari para cezası",
+    ozet:
+      "Ticaret Bakanlığı, 2026 yılının ilk sekiz ayında yaklaşık 322 bin firma ve 39,2 milyon ürünü denetlediğini, bu kapsamda toplam 2,24 milyar TL idari para cezası uygulandığını açıkladı. Denetimler fahiş fiyat, stokçuluk, otomotiv, gayrimenkul, kuyumculuk ve haksız ticari uygulamalar ile ön ödemeli konut satışı, abonelik ve mesafeli satış sözleşmeleri gibi tüketici sözleşmelerini kapsadı; yalnızca ağustos ayında 39.758 işletme denetlenerek 8.951 işletmeye toplam 366,6 milyon TL ceza kesildi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanliginin-2026-yili-agustos-ayi-itibariyla-piyasa-denetim-bilancosu-belli-oldu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Denetim hacminin bu kadar geniş olması, fiyatlandırma ve sözleşme metinlerini yalnızca satış anında değil düzenli aralıklarla gözden geçirmeyi gerektiriyor. Özellikle abonelik ve mesafeli satış sözleşmesiyle çalışan işletmelere sözleşme şablonlarını güncel mevzuata göre bir kez daha kontrol etmelerini öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "31 Ağustos 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "Türkiye Yapay Zekâ Eylem Planı kapsamında 'Herkes İçin GPU Programı' duyuruldu",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı ile Siber Güvenlik Başkanlığı, Ulusal Yapay Zeka Araştırma Kaynağı Programı olarak da adlandırılan 'Herkes İçin GPU Programı'nı duyurdu. Program; akredite yerli veri merkezleri, TÜBİTAK ULAKBİM (TRUBA) ve Ulusal Hesaplama Portföyü kapasitesini tek çatı altında birleştirerek girişimlere, KOBİ'lere ve araştırmacılara GPU-saat kredisi üzerinden hesaplama gücü sunmayı hedefliyor. İlk aşamada yılda en az 2 milyon GPU-saat kredi tahsis edilmesi ve bunun en az yüzde 40'ının teknogirişimlere ayrılması, 2028 sonuna kadar kapasitenin 20 milyon GPU-saate çıkarılması öngörülüyor; programın ilk çağrısının yaklaşık 6 ay içinde açılması planlanıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/yapay-zekanin-islem-gucu-kobi-ve-girisimlere-herkes-icin-gpu-ile-acilacak/4042291",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Program henüz başvuruya açılmadı, ilk çağrı takvimi netleşmedi. Yapay zekâ altyapısına yatırım planlayan KOBİ'lere, GPU maliyetini şimdiden bütçelemek yerine bu programın başvuru koşullarının netleşmesini takip etmelerini öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "KOSGEB Küresel Rekabetçilik Destek Programı'nda yeni başvuru dönemi açıldı",
+    ozet:
+      "KOSGEB, yenilikçi ürün geliştirme ve ticarileştirme kapasitesini artırmayı hedefleyen Küresel Rekabetçilik Destek Programı'nın yeni başvuru dönemini 7 Eylül 2026'da açtı. Program kapsamında hızlı büyüyen veya yüksek teknolojili, ihracat performansı kriterlerini karşılayan işletmelere 30-75 milyon TL arasında kredi ve 20 puanlık geri ödemesiz finansman desteği sağlanıyor; başvurular KOBİ Bilgi Sistemi üzerinden 30 Eylül 2026'ya kadar alınıyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Kredi alt limitinin 30 milyon TL olması, bu programı küçük ölçekli işletmelerden çok belirli bir büyüklüğe ulaşmış, ihracat performansı olan KOBİ'ler için anlamlı kılıyor; başvuru öncesi ihracat kriterini karşılayıp karşılamadığınızı netleştirmenizi öneririm. Son başvuru 30 Eylül, süre kısa.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "TCMB politika faizini yüzde 37'de sabit tuttu",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 10 Eylül 2026 tarihli toplantısında bir hafta vadeli repo faizini (politika faizi) yüzde 37'de sabit tuttu; gecelik borç verme faizi yüzde 40, borçlanma faizi ise yüzde 35,5 olarak korundu. Kurul, son dönem enflasyon gerçekleşmeleri ve öncü göstergelerin enflasyonun ana eğiliminin gerilediğine işaret ettiğini, ancak jeopolitik gelişmelerle yüksek seyreden enerji fiyatlarının yukarı yönlü risk oluşturduğunu belirterek fiyat istikrarı sağlanana kadar sıkı para politikası duruşunun sürdürüleceğini açıkladı.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-38",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faizin sabit kalması, kredi kullanmayı planlayan KOBİ'ler için finansman maliyetinde kısa vadede belirgin bir rahatlama beklememek gerektiği anlamına geliyor; nakit akışı ve yatırım planlarını 'faiz yakında düşer' varsayımına göre değil mevcut seviyeye göre kurmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece

@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-09-10",
+  "sonGuncelleme": "2026-09-14",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -75,7 +75,7 @@
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
+      "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
       "not": "3. dönem başvuruları 22 Ağustos 2026'da açıldı, son başvuru 15 Eylül 2026 - ölçek büyütme ve dijital dönüşüm yatırımları için 30 milyon TL'ye kadar finansman"
     },
@@ -2085,13 +2085,13 @@
       "id": "tobb-turktelekom-dijitalde-hayat-kolay-2026",
       "ad": "'Dijitalde Hayat Kolay' Projesi - Kadın Girişimcilere Mentörlük ve Hibe",
       "kurum": "TOBB / Türk Telekom / UNDP",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-13",
       "kaynakUrl": "https://www.karar.com/ekonomi-haberleri/turk-telekomdan-kadin-girisimcilere-3-milyon-tl-hibe-ve-mentorluk-2066855",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": true,
-      "sonBildirilenTarih": "2026-09-08",
+      "sonBildirilenTarih": "2026-09-13",
       "not": "Türk Telekom, TOBB, UNDP ve Habitat Derneği ortaklığı; 18 yaş üstü kadın girişimcilere yönelik, mentörlük sonunda 20 kişiye toplam 3 milyon TL hibe (09/2026). Doğrulandı: resmi haber kaynakları tutarlı, başvurular 13 Eylül 2026'da kapanıyor. 5 gün kala uyarısı gönderildi."
     },
     {

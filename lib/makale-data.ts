@@ -11,6 +11,46 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tazminatsiz-fesihte-6-is-gunluk-hak-dusurucu-sure",
+    title:
+      "Tazminatsız Fesih Hakkı Neden Genelde Kaçırılıyor? 6 İş Günlük Süre",
+    excerpt:
+      "İş Kanunu m.26'daki hak düşürücü süre, bir çalışanın ahlak ve iyiniyet kurallarına aykırı davranışını işverenin öğrendiği günden başlıyor ve yalnızca 6 iş günü sürüyor. Soruşturma, üst onayı ve hukuk görüşü derken bu süreyi kaçıran işverenler, kesin ve belgeli bir olayda bile kıdem ve ihbar tazminatı ödemek zorunda kalıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "14 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "sosyal-medyada-satisin-vergi-radarina-girmesi",
+    title:
+      "Sosyal Medyada Satış Yapmak Artık Neden Eskisi Kadar 'Gayri Resmi' Değil?",
+    excerpt:
+      "5 Eylül 2026'da yayımlanan 595 Sıra No'lu Vergi Usul Kanunu Genel Tebliği, dijital ortamdaki bildirim yükümlülüğünü sosyal ağ sağlayıcılarına ve ilan yayınlayan yer sağlayıcılarına kadar genişletti. Instagram vitrinleri ve sosyal medya üzerinden satış yapan küçük işletmeler için hacimden bağımsız yeni bir takip dönemi başlıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "13 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "satis-tek-kisinin-hafizasinda-kalinca",
+    title:
+      "Satış Müdürü İzne Çıkınca Şirket Neden Amneziye Giriyor?",
+    excerpt:
+      "Bir tekstil firmasında satış müdürü iki haftalık izne çıktığında, hangi müşteriye son teklifin ne zaman gönderildiğini kimse hatırlamıyor. Satışın yazılı bir stratejiye değil tek bir kişinin hafızasına bağlı kalması, KOBİ'lerde büyümeyi frenleyen görünmez risklerden biri.",
+    tag: "Strateji",
+    date: "12 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
+    slug: "imalat-pmi-toparlanma-mi-yavaslayan-daralma-mi",
+    title:
+      "PMI Üçüncü Ayın En Yüksek Seviyesinde: Bu Gerçekten Toparlanma mı?",
+    excerpt:
+      "İSO Türkiye İmalat PMI ağustosta 48,1'e çıkarak manşetlerde 'toparlanma işareti' olarak yer aldı. Ama endeks hâlâ 50 eşiğinin altında, yeni siparişler üçüncü ay üst üste geriliyor ve girdi maliyeti enflasyonu son üç ayın zirvesinde. Rakamı manşetten değil, alt kalemlerden okumak gerekiyor.",
+    tag: "Görüş",
+    date: "11 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yeni-tesvik-belgesinde-100-milyon-1-milyar-esigi",
     title:
       "Yeni Finansman Belgesi Duyuruldu: KOBİ mi, Büyük Yatırımcı mı İçin?",
