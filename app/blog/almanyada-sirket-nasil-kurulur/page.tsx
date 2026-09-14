@@ -651,11 +651,11 @@ export default function BlogPage() {
           <h3 className="text-lg font-bold text-[#071A2F]">Hollanda'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları</h3>
         </Link>
         <Link
-          href="/blog/italyada-sirket-nasil-kurulur"
+          href="/blog/almanyada-gmbh-kurulus-maliyeti-ug-alternatifi"
           className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
         >
-          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • İTALYA • 2026</div>
-          <h3 className="text-lg font-bold text-[#071A2F]">İtalya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları</h3>
+          <div className="mb-2 text-sm font-semibold text-orange-600">YURT DIŞI ŞİRKET • ALMANYA • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">Almanya'da GmbH Kuruluş Maliyeti, Sermaye Şartı ve UG Alternatifi</h3>
         </Link>
         </div>
       </section>
