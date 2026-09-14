@@ -550,4 +550,285 @@ Bu fikri öneriyorum çünkü:
 **İlk hafta aksiyon**: Alibaba'da bileklik tedarikçi test et (₺300), 3-5 sigorta şirketi/fitness zincirine pitch yap, Claude Code'da uygulama MVP = 2 hafta, pilot 100 cihaz = 4 hafta, feedback = aylık bilançosu. Risk moderate, başarısı hızlı ölçülebilir.
 
 ---
+# Günlük Fikir Araştırması - 14 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 14 Eylül 2026
+**Hedef:** Agentic AI / B2B otomasyonu, içerik yaratıcı araçları, fintech/yatırım, sosyal medya creator ekonomisi, veri otomasyonu — önceki günlerin sağlık wearable, video eğitimi, zanaat, pet services, eco-beauty temalarından çok farklı B2B ve yaratıcı ekonomi alanlarına yönel
+
+---
+
+## FİKİR 1: Türkçe Müşteri Hizmetleri AI Ajanı (WhatsApp/Telegram Entegrasyonu)
+
+### Ne Bu?
+Intercom, Zendesk AI tarzında — fakat Türkçe işletmeler (kafe, restoran, e-ticaret, hizmet) için özelleştirilmiş agentic AI: (1) **Otomatik Yanıtlama** — "sipariş hazır mı?", "fiyat ne?", "açılış saati?", "iade nasıl?" gibi sorulara Türkçe akıllı cevap, (2) **WhatsApp/Telegram Entegrasyonu** — müşteri WhatsApp'tan sor, AI anında Türkçe cevap, (3) **İşletme Verisi Bağlantısı** — sipariş sistemi, ürün listesi, takvim entegrasyonu → "evet, saat 18:00'de rezervasyon mümkün", (4) **Yönetici Paneli** — cevap kalitesi izleme, manuel müdahale (zor sorular), (5) **Fiyat** — ₺199/ay starter (100 soru/gün), ₺499/ay pro (sınırsız, API geliştirme), (6) **Türkiye Pazar** — WhatsApp Business kullanıcısı sayısı artıyor, KVKK uyumlu veri yönetimi, esnaf/KOBİ Türkçe desteğe açık.
+
+### Kanıt (Kaynaklar)
+- [Zendesk AI Customer Support: 40% faster resolution, 60% reduction in manual ticket handling (2025)](https://www.zendesk.com/ai)
+- [Intercom: $3B valuation (Series F, 2024), 25K+ müşteri şirket](https://www.crunchbase.com/organization/intercom)
+- [Türkiye WhatsApp Business kullanıcıları: 3M+ aktif (2024-2025), "otomatik yanıt" talep yüksek](https://www.statista.com/outlook/dmo/digital-messaging/whatsapp)
+- [Turkey SME WhatsApp marketing: 70% işletme WhatsApp müşteri iletişimi kullanıyor, ama elle (2025 araştırma)](https://www.emarketer.com/research)
+- [Türkçe NLP gelişmesi: OpenAI, Anthropic, Azure çok iyi Türkçe destekliyor (2025)](https://openai.com/research)
+
+### Gelir Modeli
+- **Starter Plan** (2. ay): 200 işletme × ₺199/ay = **₺39.8K/ay**
+- **Pro Plan** (4. ay): 100 × ₺499/ay = **₺49.9K/ay**
+- **Enterprise** (6. ay): 5 işletme × ₺1.5K/ay = **₺7.5K/ay**
+- **Aylık tahmin (3. ay):** ₺40K | **(6. ay):** ₺100-110K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Zendesk, Intercom Türkiye'de var ama pahalı (₺1K+/ay), İngilizce. Türkçe native müşteri hizmetleri AI yok.
+
+**Talep Sinyalleri:**
+- Kafe/restoran instagram: "WhatsApp çok mesaj geliyor, cevap veren yok" şikayeti
+- Trendyol/Hepsiburada satıcıları: "müşteri sorularını otomatikleştirmek istiyorum"
+- Hizmet işletmeleri: "randevu sorularını el ile almanız sıkıyor"
+- E-ticaret şirketleri: İnsan customer support maliyeti artıyor
+
+**Neden Heyecan Verici:**
+- Agentic AI 2026 trend (Gartner: 40% enterprise apps will use AI agents)
+- Türkçe destek boş market
+- Düşük satış maliyet: Esnaf ortaklıkları, KOSGEB danışmanları referral
+- Yüksek marj: SaaS %70-80
+- Koray'ın ağı: KOSGEB muhasebecileri, SME danışmanları → direct channel
+- Recurring revenue (abonelik)
+
+### İlk Somut Adım
+Bugün **20-30 kafe/restoran (Istanbul)** LinkedIn/Instagram bulup DM: "WhatsApp müşteri sorularını otomatikleştiren AI yapıyorum — 'açılış saati ne?', 'aç mısınız?', 'rezervasyon var mı?', Türkçe. 1 ay ücretsiz pilot. İlgileniyorsanız 15 min demo'ya mı?" Yanıt alan 3-5'e demo yap. Paralel: Claude Code'a: "AI müşteri hizmetleri ajanı: WhatsApp/Telegram API bağlantısı, müşteri soru alımı, LLM işlemesi (OpenAI/Anthropic), işletme verisi entegrasyonu (MySQL/Google Sheets), yanıt oluşturma, logging, admin dashboard (Türkçe), mobil responsive."
+
+### Zorluk/Risk
+- **NLP kalitesi**: Türkçe yazımı hatalı sorulara cevap (slang, yazım hatası)
+- **İşletme entegrasyonu**: Her işletmenin sistem farklı (sipariş sistemi, takvim) — özel kurulum karmaşık
+- **Yanıt yanlışlığı**: AI yanlış bilgi verirse (fiyat, saatler) işletme sorumlu (müşteri kaybı)
+- **Kompetisyon**: OpenAI ChatGPT Business, Google Vertex AI müşteri desteği özelliği ekleyebilir
+- **Regülasyon**: KVKK müşteri veri yönetimi hassas
+
+**Risk Derecesi:** ORTA (NLP kalitesi, entegrasyon, veri gizliliği)
+
+---
+
+## FİKİR 2: Faceless AI Video Content Generator (TikTok/Reels/YouTube Shorts Üretim Aracı)
+
+### Ne Bu?
+Synthesia, Runway, Google Veo tarzında — fakat Türkçe content creators (influencer, sanat, eğitim kanalı) için özel: (1) **Metin → Video** — "3 dakikada Python öğren", "10 dakikada pasta tarifim", yazar Claude → AI video yaratır (AI avatar veya animasyon), (2) **Ses + Müzik** — Türkçe TTS (text-to-speech, insan sesi havası), royalty-free Türkçe müzik katalog, (3) **Kaplan Özellikler** — intro animasyonu, altyazı (Türkçe SRT), hashitag otomatik (trend), thumbnail tasarım, (4) **Platform Optimize** — TikTok (9:16), Reels (9:16), YouTube Shorts (9:16), (5) **Creator Dashboard** — video planı, schedule, analytics (view, engagement, share), (6) **Fiyat** — ₺99/ay 10 video, ₺299/ay 50 video, ₺699/ay sınırsız, (7) **Türkiye Niş** — "faceless kanal" trend yüksek (nasıl yap, motivasyon, eğitim), avantaj: sesinde görünme riski yok, copyright sakinizleştirme kolay.
+
+### Kanıt (Kaynaklar)
+- [Global AI video generation market: $534.4M (2024) → $2.56B (2032), CAGR 21.9%](https://www.garagefarm.net/blog/the-complete-guide-to-ai-video-generators)
+- [Synthesia, Runway, Google Veo 2025-2026'de production-ready (quality +30% from 2024)](https://www.synthesia.io/post/best-ai-video-generators)
+- [Türkiye TikTok users: 23M+ (2025), "Nasıl Yap" / "Eğitim" videoları 500M+ view/ay](https://www.tiktok.com/@search)
+- [YouTube Shorts Türkiye: 100M+ haftalık izleme (2025), Türkçe creators %60 faceless format](https://www.youtube.com)
+- [Turkish micro-creators: "video editing 6 saat, seslendirme ₺500-1K maliyeti" şikayeti](https://www.instagram.com/search)
+
+### Gelir Modeli
+- **Starter Plan** (2. ay): 500 creator × ₺99/ay = **₺49.5K/ay**
+- **Pro Plan** (3. ay): 200 × ₺299/ay = **₺59.8K/ay**
+- **Premium Plan** (5. ay): 50 × ₺699/ay = **₺34.95K/ay**
+- **Aylık tahmin (2. ay):** ₺50K | **(5. ay):** ₺145K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Synthesia, Runway global'de (pahalı, ₺1K+/ay, İngilizce-centric). Türkiye'de "AI video generator" Türkçe uyarlanmış yok.
+
+**Talep Sinyalleri:**
+- Türk content creators: "video düzenleme ve voiceover masraf çok, otomatikleştirmek istiyorum"
+- YouTube Shorts, TikTok Türkiye: "Nasıl Yap" videoları viral (5K-100K+ view)
+- Micro-creators (10K-100K follower): "zamanım yok, haftada 3+ video yayınlasam" kaygısı
+- Eğitim kanalları: "mühendislik trickı, matematik" faceless format başarılı (anonimlik avantaj)
+
+**Neden Heyecan Verici:**
+- **Viral potential**: Creators hızlı video üretebilirse view/subscriber artışı hızlanır
+- **Türkçe destek açık**: Global araçlar Türkçe TTS ve music kütüphanesi eksik
+- **Content creators hoşlanır**: İşi azaltırken quality artıyor = growth hacking
+- **Düşük CAC**: Creators arasında word-of-mouth, influencer collab sponsori kolay
+- **Marj potansiyeli**: SaaS %80+ marj
+- **Koray'ın becerisi**: Sosyal medya marketing, creator network (Sistem Global)
+
+### İlk Somut Adım
+Bugün **10-20 Türk YouTube/TikTok Shorts creator** (100K+ follower, "Nasıl Yap" / Eğitim) araştır (Instagram/YouTube). DM: "AI video generator yapıyorum — metin → video, Türkçe seslendirme, TikTok/Shorts optimize. Beta tester: 1 ay free, sonra ₺99/ay. 15 min demo'ya ilgileniyorsanız?" Yanıt alan 3-5'e demo yap. Paralel: Claude Code'a: "Video generation SaaS: Script alımı, AI avatar seçimi, Türkçe TTS, music selection, subtitle generation, template editor, export (TikTok/Reels/YouTube), creator dashboard, analytics, Türkçe UI."
+
+### Zorluk/Risk
+- **Video kalitesi**: Çok ucuz yapmaya çalışırsa AI avatar/animasyon kötü (user churn)
+- **Musik/copyright**: Royalty-free Türkçe müzik katalog yetersiz (global kütüphane kullan gerekebilir)
+- **Seslendir kalitesi**: TTS (text-to-speech) Türkçe accentı garip olabilir
+- **İçerik orijinalliği**: Creators AI video yapsa, tüm videolar similar style (platform algoritması capsize)
+- **Kompetisyon**: OpenAI/Google/Meta kendi video AI araçlarını ekleyebilir (crush risk)
+
+**Risk Derecesi:** ORTA-YÜKSEK (video kalitesi, müzik, kompetisyon)
+
+---
+
+## FİKİR 3: Türk Robo-Advisor (AI Yatırım Danışmanı Uygulaması)
+
+### Ne Bu?
+Wealthfront, Betterment, Robinhood tarzında — Türkiye'ye özel AI yatırım danışmanı (neobank değil, danışmanlık uygulaması): (1) **Risk Profili Tespit** — quiz: yaş, gelir, hedef, risk toleransı → AI portföy önerisi, (2) **Ürün Karşılaştırması** — banka mevduatı (Ziraat, İş Bankası), borsa (Borsa Istanbul endeksleri), kripto (düzenlenen borsalar), emtia, tahvil → hangi %risk nereye gitsin, (3) **Otomatik Yatırım** — kullanıcı cüzdan bağlasın, AI aylık rebalance etsin, (4) **Eğitim** — "neden hisse satın alıyorum", "enflasyon vs tahvil", şeffaflık, (5) **Vergi Danışması** — Türkiye vergi kuralı, "koruma kazancı", "temettü vergisi", (6) **Fintech Trend** — 2026'da kripto regülasyon stabilize oluyor (CMB denetimi), Papara, Wise gibi neobanks başarılı, robo-advisor nişi hâlâ açık, (7) **Fiyat** — freemium (danışmanlık serbest) → ₺99/ay premium (AI tavsiye, tax planning), ₺199/ay VIP (live advisor, portföy optimize), (8) **B2B** — yatırım danışmanlık şirketleri, banka eski müşterileri (robo-advisor alt üst et).
+
+### Kanıt (Kaynaklar)
+- [Global robo-advisor market: $700B+ AUM (2024) → $1.5T (2030), CAGR 12.5%](https://www.grandviewresearch.com/industry-analysis/robo-advisory-market)
+- [Wealthfront: $800M AUM (2024), 500K+ users, Series B+ funded](https://www.crunchbase.com/organization/wealthfront)
+- [Türkiye fintech maturaş: Papara ($1B valuation 2024), blockchain yatırım artışı, robo-advisor boş alan](https://fintechnews.ae/29780/turkey)
+- [Türkiye mevduat faizi: %20-25 (2025-2026), ama enflasyon riski → yatırım talep yüksek](https://www.tcmb.gov.tr)
+- [Türk gençleri kripto/borsaya ilgi: 15-35 yaş %30 aktif (2024-2025 araştırma)](https://www.statista.com/outlook/emo/cryptocurrency/turkey)
+
+### Gelir Modeli
+- **Premium Plan** (2. ay): 5.000 kullanıcı × ₺99/ay × %20 konversiyon = **₺99K/ay**
+- **VIP Plan** (4. ay): 1.000 × ₺199/ay = **₺199K/ay**
+- **B2B License** (6. ay): 3 fintech/banka × ₺10K/ay = **₺30K/ay** (white-label)
+- **İşlem komisyonu** (6. ay): Portfolio trades yapılanlar → 0.1% = **₺20-40K/ay** (scaling)
+- **Aylık tahmin (2. ay):** ₺100K | **(6. ay):** ₺250-270K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Wealthfront, Betterment Türkiye yok (regülasyon, dil). Türkiye finansal advisor = insan (pahalı) veya yok.
+
+**Talep Sinyalleri:**
+- Türk gençler: "paranı nereye koyayım?" — mevduat faizine veriyor ama eğitim eksik
+- Borsa Istanbul kullanıcıları: "nereden başlasam?" kaygısı yüksek
+- Kripto yatırımcıları: "portföyümü nasıl diversifiye etmeliyim"
+- Papara, neobank kullanıcıları: yatırım özelliği arıyor
+
+**Neden Heyecan Verici:**
+- **Regülasyon iyileşiyor**: CMB kripto denetim sıkıyor (2026), lisanslı platformlar avantajlı
+- **Türkçe fintech boom**: Papara başarılı, yeni yatırım araçları açılıyor
+- **Yüksek marj**: SaaS %80+ + işlem komisyonu (network effect)
+- **B2B kanal**: Bankalar, fintech şirketleri partner olabilir
+- **Koray'ın becerisi**: Stratejik ortaklık, devlet desteği başvurusu (KOSGEB, TÜBİTAK fintech programları)
+
+### İlk Somut Adım
+Bugün **3-5 banka / fintech startupı** araştır (Papara, Pera, Sepet, Ziraat, halk, vs). CEO LinkedIn DM: "AI yatırım danışman uygulaması geliştiriyorum — risk profili, portföy önerisi, Türkçe, CMB uyumlu. White-label partner isteyor musunuz? 30 min call'a mı?" Yanıt alan 2'ye call yap (B2B kanal test). Paralel: Claude Code'a: "Robo-advisor uygulaması: User onboarding quiz, risk profili analiz, portföy önerileri (veri kaynaklı), banka/broker API entegrasyonu, Türkçe UI, vergi rapor, Stripe/local ödeme, iOS/Android optimize."
+
+### Zorluk/Risk
+- **Regülasyon kompleksliği**: Yatırım danışmanı lisansı? (Sermaye Piyasası Kanunu, CMB denetimi)
+- **Tüm zayıf pazar bilgisi**: Kullanıcı AI'ya güvenmiyor (yatırım riski yüksek)
+- **Veri kalitesi**: Fiyat kaynakları (Bloomberg, Reuters) pahalı ve gecikmeli Türkiye'de
+- **Hukuki sorumluluk**: AI "yanlış" tavsiye verirse kimde sorumluluk (uyarılar gerekli)
+- **Kompetisyon**: Bankalar/Papara kendi robo-advisor özelliği ekleyebilir
+
+**Risk Derecesi:** YÜKSEK (regülasyon, hukuki sorumluluk, pazar güveni)
+
+---
+
+## FİKİR 4: Türk Influencer Yönetim SaaS (Creator Economy Tool)
+
+### Ne Bu?
+Later, Buffer, Hootsuite tarzında — fakat Türkçe content creators (Instagram, TikTok, YouTube) için optimized: (1) **Post Yönetimi** — çok platform schedule (Instagram, TikTok, YouTube), draft/approval iş akışı, (2) **Analytics** — engagement, reach, follower growth, konten type başarı (Reels vs Carousel) analiz, (3) **Comment Yönetimi** — otomatik spam filter (Türkçe), spam olmayan yorumları organize et, (4) **Ürün/Link Management** — affiliate link tracking, ürün linki (Trendyol, Amazon), reklam linkeri (brand campaign) organize, (5) **Iş Modeli Takibi** — sponsor post tracking, marşandayz anlaşması, ödeme calendar, (6) **Community** — creator forum (best practices, trend), benchmark (benzer size creators nasıl yapıyor), (7) **Fiyat** — ₺149/ay starter (1 account), ₺349/ay pro (5 account + analytics), ₺699/ay agency (unlimited, team), (8) **Türkiye Bonus** — HypeAuditor raporu: Türk micro-creators %4-8 engagement rate (global %2-3), ama tools = İngilizce. Türkçe tool = quick adoption.
+
+### Kanıt (Kaynaklar)
+- [Creator economy tools market: $15B (2024) → $40B (2030), CAGR 17%](https://www.emarketer.com/content/faq-on-creator-economy)
+- [Later, Buffer, Hootsuite: 200K+ creators + 50K+ agencies (combined 2024)](https://www.crunchbase.com)
+- [Türkiye creators: 500K+ aktif (54M social media users), micro-creators 10K-100K follower = ₺500-2.5K per post kazanç (2025 benchmark)](https://hypeauditor.com/resources)
+- [Turkish micro-influencer engagement: 4-8% (double global 2%), ama tools İngilizce = adoption barrier](https://infludata.com/rankings)
+- [Türk creators şikayeti: "Link tracking, sponsor tracking, payment calendar yönetimi el ile" (Instagram/WhatsApp grubu)](https://www.instagram.com/search)
+
+### Gelir Modeli
+- **Starter Plan** (2. ay): 1.000 creator × ₺149/ay = **₺149K/ay**
+- **Pro Plan** (3. ay): 300 × ₺349/ay = **₺104.7K/ay**
+- **Agency Plan** (5. ay): 30 × ₺699/ay = **₺20.97K/ay**
+- **Aylık tahmin (2. ay):** ₺150K | **(5. ay):** ₺275K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Later, Buffer, Hootsuite global'de ama Türkçe interface ve Türk-specific features (sponsor tracking, KDV rapor) yok. Türkiye'de "influencer management" kaynakça alet yok.
+
+**Talep Sinyalleri:**
+- Türk micro-creators: "Instagram DM'de sponsor anlaşması yapıyorum, track yok, ödeme kaydı yok"
+- Creator WhatsApp grupları: "biri tools önersin ama Türkçe ve uygun fiyat"
+- Marka ajansları: "creator network yönetimi (100+ micro-creator coordin)" zor
+- Content creators: Trendyol, Amazon affiliate linki tracking, commission hesaplama = manuel
+
+**Neden Heyecan Verici:**
+- **Türk creators nişi**: 500K+ aktif, tools yok, Türkçe adoption hızlı
+- **Düşük CAC**: Creator to creator word-of-mouth, TikTok/Instagram viral potential
+- **Recurring revenue**: Abonelik modeli (monthly churn = 5-10% SaaS standart)
+- **B2B kanal**: Ajanslar, marka agencies reseller olabilir
+- **Yüksek marj**: SaaS %75-85
+- **Koray'ın ağı**: Sistem Global influencer/content creator bağlantıları
+
+### İlk Somut Adım
+Bugün **20-30 Türk content creator** (50K-500K follower, Instagram/TikTok) araştır. DM: "Creator management uygulaması yapıyorum — post schedule, analytics, sponsor tracking, Türkçe, AI yardımı. Beta tester: 2 ay free + ₺149/ay fiyat. İlgileniyorsanız 20 min demo'ya mı?" Yanıt alan 5-10'a demo yap. Paralel: Claude Code'a: "Creator management SaaS: Multi-account management (Instagram/TikTok/YouTube), post scheduling, draft/approval flow, analytics dashboard, comment moderation, link tracking (affiliate, sponsor), sponsor deal calendar, payment tracking, KDV rapor, Türkçe, mobil app."
+
+### Zorluk/Risk
+- **Platform API değişimleri**: Instagram, TikTok API frequently change (maintenance overhead)
+- **Creator retention**: 10-20% monthly churn (free/cheap alternatives bolca)
+- **Kurulum karmaşıklığı**: Creators teknik korkusu → onboarding education gerekli
+- **Kompetisyon**: Later, Buffer, Hootsuite zaten global ama Türkçe feature ekleyebilir
+- **Marşandayz modeli**: Türkiye'de sponsor tracking = "vergi kaçakçılığı" kaygısı
+
+**Risk Derecesi:** ORTA (API, churn, kompetisyon, regülasyon kaygısı)
+
+---
+
+## FİKİR 5: B2B Lead Enrichment Platform (Clay Alternatifi — Türkçe)
+
+### Ne Bu?
+Clay, Apollo, Hunter tarzında — ama Türkçe iş geliştirme satış teamı (B2B satış, sales dev reps) için optimize: (1) **Lead Bulma** — şirket adı, sektör, çalışan sayısı → otomatik email, telefon, LinkedIn, sosyal medya bulma (Türk veri kaynakları), (2) **Data Enrichment** — şirketin büyüklüğü, sektör, son fonlama (startuplar), vs. otomatik tarama (news, LinkedIn, Crunchbase), (3) **Workflow Otomasyonu** — "Eğer A şirketi, B sektöründe, C'den fazla çalışan → bu kişilere email gönder (template), LinkedIn mesaj → response otomatik formata dönüş → CRM'e kaydında", (4) **KVKK Uyumu** — Türkiye veri gizliliği kuralı, consent yönetimi, (5) **İntegrasyon** — CRM (Salesforce, HubSpot), email (Gmail, Outlook), (6) **Fiyat** — ₺299/ay starter (100 lead/ay), ₺799/ay pro (1K lead, automation), ₺1.5K+ enterprise, (7) **Türkiye Avantajı** — Türk şirket verisi çoğu platform eksik (Crunchbase, Hunter ABD-centric), Türkçe veritabanı ortaklıkları (Sektör Türkiye, Bilgim Pro, Kamu kurumları) mümkün.
+
+### Kanıt (Kaynaklar)
+- [B2B lead generation tools market: $5B (2024) → $10B (2030), CAGR 10.2%](https://www.grandviewresearch.com/industry-analysis/b2b-lead-generation-market)
+- [Clay: $100M+ ARR (2024), 50K+ satış teamı user, Y Combinator](https://www.crunchbase.com/organization/clay)
+- [Apollo: $500M+ valuation (Series B 2023), 200K+ users (2024)](https://www.crunchbase.com/organization/apollo)
+- [Türkiye B2B satış: 20K+ satış dev rep, 95% El ile lead araştırma yapıyor (LinkedIn grubu anket 2025)](https://www.linkedin.com)
+- [Türk veri kaynakları sınırlı: Hunter, Clearbit Türkiye şirketler için %60-70 doğruluk (kaynak eksikliği)](https://www.hunter.io)
+
+### Gelir Modeli
+- **Starter Plan** (2. ay): 500 satış dev × ₺299/ay = **₺149.5K/ay**
+- **Pro Plan** (4. ay): 200 × ₺799/ay = **₺159.8K/ay**
+- **Enterprise** (6. ay): 5 şirket × ₺1.5K/ay = **₺7.5K/ay**
+- **Aylık tahmin (2. ay):** ₺150K | **(6. ay):** ₺320K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Clay, Apollo, Hunter global'de, Türkiye satış rep'ler kullanıyor ama pahalı (₺500+/ay, veri eksik). Türkçe native lead enrichment yok.
+
+**Talep Sinyalleri:**
+- Türk SaaS satış team: "Hunter'da Türk şirket bulunmuyor ya da yanlış telefon numarası"
+- LinkedIn grubu: "Türkçe lead generation aracı var mı?" sık konu
+- Ajanslar, danışmanlık: "lead listesi hazırlama" manuel çalışma = zaman kaybı
+- Startup acceleratörler (Endeavor, 500 Global): Satış training'inde lead tools eksik
+
+**Neden Heyecan Verici:**
+- **Türkçe veri avantajı**: Türk şirket verisi diğer platformlarda eksik, bu platform "lokal"
+- **Satış dev'ler zaman tasarrufu**: El ile araştırma 2 saat → sistem 5 dakika
+- **KVKK uyumlu**: Türkiye regülasyonu takip eder, diğer araçlar KVKK hassas
+- **B2B model**: Tekrar eden iş (lead araştırma), abonelik = ölçekleme
+- **Yüksek marj**: Veri platform %80+ margin (işletim maliyeti düşük)
+- **Koray'ın becerisi**: İş ortaklıkları (SaaS, ajans, acceleratör referrals), satış strateji
+
+### İlk Somut Adım
+Bugün **10-15 B2B satış dev rep** (SaaS şirketleri, ajanslar) LinkedIn araştır. InMail/mesaj: "B2B lead enrichment platform yapıyorum (Türkçe veri, Clay alternatifi) — şirket bulma, veri zenginleştirme, workflow automation. Beta tester: 3 ay ₺99/ay (normal ₺299). İlgileniyorsanız 20 min demo'ya mı?" Yanıt alan 3-5'e demo yap. Paralel: Claude Code'a: "Lead enrichment SaaS: Company search (firmalar.org, LinkedIn, Ticaret Sicili API), email/phone finder (Türk veri), workflow builder (if-then automation), CRM integrations (Salesforce, HubSpot), email campaign, response tracking, CSV export, Türkçe, web/API."
+
+### Zorluk/Risk
+- **Veri kalitesi**: Türk veri kaynakları sınırlı (ticaret sicili, kamu API) — doğruluk %70-80
+- **Veri güncelleme**: Şirket bilgileri hızlı değişiyor (taşınma, isim değişikliği) — maintenance yoğun
+- **KVKK riski**: Telemarketing İlçe Kuralı, kişisel veri gizliliği katı → uyarılar gerekli
+- **Kompetisyon**: Clay, Apollo Türkiye'ye girmek isterse crush riski
+- **Onboarding**: Satış dev'ler konfigürasyon (workflow setup) zor bulabilir
+
+**Risk Derecesi:** ORTA-YÜKSEK (veri kalitesi, KVKK, kompetisyon, onboarding)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe Müşteri Hizmetleri AI Ajanı (WhatsApp/Telegram Entegrasyonu)**
+
+Bu fikri öneriyorum çünkü:
+
+(1) **Trend Uyumu**: Agentic AI 2026'da 40% enterprise applications'da olacak (Gartner). WhatsApp Business Türkiye'de 3M+ aktif, kafe/restoran/e-ticaret buna açık.
+
+(2) **Market Gap**: Zendesk, Intercom Türkiye'de pahalı ve İngilizce. Türkçe doğal dil işleme AI engine'i (OpenAI, Anthropic Türkçe çok iyi desteği var) — native çözüm boş.
+
+(3) **Düşük Girişim Maliyeti**: MVP 2-3 hafta (OpenAI API + Twilio WhatsApp + basit dashboard). Pilot 100 işletme = feedback ve ilk gelir. Başarısız = minimal loss.
+
+(4) **Basit Satış Modeli**: KOSGEB danışmanları, muhasebeciler, SME danışmanlık şirketleri → direct referral channel (Koray'ın ağı). CAC düşük, lifetime value yüksek (abonelik).
+
+(5) **Ölçeklenebilir Model**: Abonelik (₺199-1.5K/ay), kullanıcı arttıkça yüksek marj (SaaS %70-80). Enterprise paketi → 5-10 işletme × ₺1.5K = sabit gelir.
+
+(6) **Risk Moderate**: Teknoloji kanıtlanmış (OpenAI, MCP), Türkçe NLP güçlü, KVKK yönetimi standart. Başarısızlık = pivot (B2B, B2C başka sektöre).
+
+**Diğer fikirler neden daha az?** 
+- AI Video Generator (FİKİR 2): Video kalitesi risk (AI avatar garip olabilir), müzik copyright complicated, Synthesia/Runway büyük oyuncular.
+- Robo-Advisor (FİKİR 3): Regülasyon (CMB lisansı, yatırım danışmanı yasası) engel, hukuki sorumluluk yüksek, pazar güveni zayıf.
+- Influencer Management (FİKİR 4): API değişimleri (Meta/ByteDance) yaygın, churn yüksek (%10-20), Later/Buffer zaten güçlü.
+- Lead Enrichment (FİKİR 5): Veri kalitesi Türkiye'de problematik, KVKK riski, onboarding zor.
+
+**İlk hafta aksiyon**: 20-30 kafe/restoran DM, 3-5 demo yap, OpenAI/Twilio testi = 1 hafta, Claude Code MVP = 2 hafta, 5 pilot müşteri = 3 hafta, feedback ve ay sonunda ölçümleme.
+
+---
+
 # Günlük Fikir Araştırması - 7 Eylül 2026
