@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tazminatsiz-fesihte-6-is-gunluk-hak-dusurucu-sure",
+    title:
+      "Tazminatsız Fesih Hakkı Neden Genelde Kaçırılıyor? 6 İş Günlük Süre",
+    excerpt:
+      "İş Kanunu m.26'daki hak düşürücü süre, bir çalışanın ahlak ve iyiniyet kurallarına aykırı davranışını işverenin öğrendiği günden başlıyor ve yalnızca 6 iş günü sürüyor. Soruşturma, üst onayı ve hukuk görüşü derken bu süreyi kaçıran işverenler, kesin ve belgeli bir olayda bile kıdem ve ihbar tazminatı ödemek zorunda kalıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "14 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sosyal-medyada-satisin-vergi-radarina-girmesi",
     title:
       "Sosyal Medyada Satış Yapmak Artık Neden Eskisi Kadar 'Gayri Resmi' Değil?",
