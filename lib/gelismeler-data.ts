@@ -943,6 +943,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Denetim hacminin bu kadar geniş olması, fiyatlandırma ve sözleşme metinlerini yalnızca satış anında değil düzenli aralıklarla gözden geçirmeyi gerektiriyor. Özellikle abonelik ve mesafeli satış sözleşmesiyle çalışan işletmelere sözleşme şablonlarını güncel mevzuata göre bir kez daha kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "31 Ağustos 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "Türkiye Yapay Zekâ Eylem Planı kapsamında 'Herkes İçin GPU Programı' duyuruldu",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı ile Siber Güvenlik Başkanlığı, Ulusal Yapay Zeka Araştırma Kaynağı Programı olarak da adlandırılan 'Herkes İçin GPU Programı'nı duyurdu. Program; akredite yerli veri merkezleri, TÜBİTAK ULAKBİM (TRUBA) ve Ulusal Hesaplama Portföyü kapasitesini tek çatı altında birleştirerek girişimlere, KOBİ'lere ve araştırmacılara GPU-saat kredisi üzerinden hesaplama gücü sunmayı hedefliyor. İlk aşamada yılda en az 2 milyon GPU-saat kredi tahsis edilmesi ve bunun en az yüzde 40'ının teknogirişimlere ayrılması, 2028 sonuna kadar kapasitenin 20 milyon GPU-saate çıkarılması öngörülüyor; programın ilk çağrısının yaklaşık 6 ay içinde açılması planlanıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/yapay-zekanin-islem-gucu-kobi-ve-girisimlere-herkes-icin-gpu-ile-acilacak/4042291",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Program henüz başvuruya açılmadı, ilk çağrı takvimi netleşmedi. Yapay zekâ altyapısına yatırım planlayan KOBİ'lere, GPU maliyetini şimdiden bütçelemek yerine bu programın başvuru koşullarının netleşmesini takip etmelerini öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "KOSGEB Küresel Rekabetçilik Destek Programı'nda yeni başvuru dönemi açıldı",
+    ozet:
+      "KOSGEB, yenilikçi ürün geliştirme ve ticarileştirme kapasitesini artırmayı hedefleyen Küresel Rekabetçilik Destek Programı'nın yeni başvuru dönemini 7 Eylül 2026'da açtı. Program kapsamında hızlı büyüyen veya yüksek teknolojili, ihracat performansı kriterlerini karşılayan işletmelere 30-75 milyon TL arasında kredi ve 20 puanlık geri ödemesiz finansman desteği sağlanıyor; başvurular KOBİ Bilgi Sistemi üzerinden 30 Eylül 2026'ya kadar alınıyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Kredi alt limitinin 30 milyon TL olması, bu programı küçük ölçekli işletmelerden çok belirli bir büyüklüğe ulaşmış, ihracat performansı olan KOBİ'ler için anlamlı kılıyor; başvuru öncesi ihracat kriterini karşılayıp karşılamadığınızı netleştirmenizi öneririm. Son başvuru 30 Eylül, süre kısa.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-14",
+    baslik:
+      "TCMB politika faizini yüzde 37'de sabit tuttu",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 10 Eylül 2026 tarihli toplantısında bir hafta vadeli repo faizini (politika faizi) yüzde 37'de sabit tuttu; gecelik borç verme faizi yüzde 40, borçlanma faizi ise yüzde 35,5 olarak korundu. Kurul, son dönem enflasyon gerçekleşmeleri ve öncü göstergelerin enflasyonun ana eğiliminin gerilediğine işaret ettiğini, ancak jeopolitik gelişmelerle yüksek seyreden enerji fiyatlarının yukarı yönlü risk oluşturduğunu belirterek fiyat istikrarı sağlanana kadar sıkı para politikası duruşunun sürdürüleceğini açıkladı.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-38",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faizin sabit kalması, kredi kullanmayı planlayan KOBİ'ler için finansman maliyetinde kısa vadede belirgin bir rahatlama beklememek gerektiği anlamına geliyor; nakit akışı ve yatırım planlarını 'faiz yakında düşer' varsayımına göre değil mevcut seviyeye göre kurmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
