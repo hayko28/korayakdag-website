@@ -985,6 +985,46 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Faizin sabit kalması, kredi kullanmayı planlayan KOBİ'ler için finansman maliyetinde kısa vadede belirgin bir rahatlama beklememek gerektiği anlamına geliyor; nakit akışı ve yatırım planlarını 'faiz yakında düşer' varsayımına göre değil mevcut seviyeye göre kurmalarını öneririm.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "13 Eylül 2026",
+    eklendiTarihi: "2026-09-15",
+    baslik:
+      "Sanayi ve Teknoloji Bakanlığı'ndan yarı iletken üretimine 5 milyar dolarlık HIT-Çip Çağrısı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı, HIT-30 Yüksek Teknoloji Yatırım Programı kapsamında HIT-Çip Çağrısı'nı 13 Eylül 2026'da kamuoyuna duyurdu. Çağrı; kimlik, pasaport ve endüstriyel uygulamalarda kullanılan çiplerin yurt içinde üretilmesini hedefliyor, 65 nanometre ve üzeri teknolojiyle yılda en az 1 milyon çip üretim kapasitesi kurulmasını amaçlıyor; külçe (ingot), wafer, test ve paketleme dahil değer zincirinin tamamını kapsayan yatırımlara toplam 5 milyar dolarlık destek bütçesi ayrıldı.",
+    kaynakUrl: "https://hit30.sanayi.gov.tr/cagrilar",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: HIT-Çip Çağrısı bütçe büyüklüğü ve teknoloji eşiği itibarıyla esas olarak büyük ölçekli, sermaye yoğun yatırımcılara yönelik. Yarı iletken değer zincirinde tedarikçi veya alt yüklenici olmayı planlayan KOBİ'lere, bu ekosistemin oluşma sürecini şimdiden yakından takip etmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "11 Eylül 2026",
+    eklendiTarihi: "2026-09-15",
+    baslik: "TÜBİTAK BiGG Yatırım Programı'nın 2026 yılı 2. çağrısı açıldı",
+    ozet:
+      "TÜBİTAK, Türkiye'nin ilk yatırım tabanlı girişimcilik destek programı olan BiGG Yatırım Programı'nın 2026 yılı ikinci çağrısını 11 Eylül 2026'da duyurdu. Aşama 1 hızlandırma sürecini tamamlayıp Mükemmeliyet Mührü alan girişimlere yüzde 3 hisse karşılığında 1.350.000 TL yatırım yapılıyor; en yüksek puanlı üç girişim ise GCIP kapsamında yüzde 5 hisse karşılığında 2.250.000 TL'ye kadar yatırım alabiliyor. Başvurular 30 Eylül 2026'ya, belge sunumu ise 7 Ekim 2026'ya kadar sürüyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/turkiyenin-ilk-yatirim-tabanli-girisimcilik-destek-programi-olan-bigg-yatirim-programinin-2026-2-cagrisi-acildi",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Hisse karşılığı yatırım modeli, girişimcinin şirket değerlemesini erken aşamada üçüncü bir tarafla müzakere etmesini gerektiriyor; başvuru öncesi güncel şirket değerlemesini ve hisse devri sonrası ortaklık yapısını bir danışmanla birlikte netleştirmelerini öneririm.",
+  },
+  {
+    kurum: "KVKK",
+    tarih: "10 Ağustos 2026 (Eylül 2026'da karar özeti yayımlandı)",
+    eklendiTarihi: "2026-09-15",
+    baslik:
+      "KVKK, izinsiz reklam SMS'i gönderen ve arama yapan tasarruf finansman şirketine 1 milyon TL ceza verdi",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu'nun 10 Ağustos 2026 tarihli ve 2026/1183 sayılı karar özetine göre, bir tasarruf finansman şirketi üçüncü bir kişiden 'marka elçisi' programı üzerinden temin ettiği cep telefonu numarasına, hiçbir veri işleme şartına dayanmadan reklam içerikli SMS gönderip arama yaptığı için 1.000.000 TL idari para cezasına çarptırıldı. Kurul, numaranın üçüncü taraftan elde edilmesinden aramanın kaydedilmesine kadar sürecin hiçbir aşamasında geçerli bir açık rıza veya başka bir hukuki sebep gösterilemediğini tespit etti.",
+    kaynakUrl:
+      "https://www.kvkk.gov.tr/Icerik/8896/kisisel-verileri-koruma-kurulunun-yeni-yayinlanan-karar-ozetleri",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Referans/tavsiye programı veya üçüncü taraf listeleriyle SMS ya da arama tabanlı pazarlama yapan işletmelere, her bir numaranın hangi hukuki sebeple ve ne zaman alındığını belgelemelerini öneririm; bu karardaki ceza tek bir mesajdan değil, sürecin tamamındaki rıza eksikliğinden doğdu.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
