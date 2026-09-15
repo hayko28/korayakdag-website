@@ -303,6 +303,24 @@ Yazıyı tamamlamadan önce metinde "—" karakteri geçip geçmediğini kontrol
 
 ---
 
+## 7C. ZORUNLU YAPI BLOKLARI — SEO ANATOMİSİ (2026-09-15'te eklendi)
+
+Koray, rakip sitelerin (özellikle gokaygul.com) SEO kurgusunu incelettirdi. O sitedeki en güçlü yazıların ortak anatomisi analiz edildi ve buradaki eksik bloklar zorunlu hale getirildi. Amaç: "bilgi veren yazı" değil, "Google'da bulunan + güven oluşturan + hizmete bağlanan yazı" üretmek.
+
+Her yeni blog yazısında (2200-2500 kelime sınırı içinde, yazıyı şişirmeden) aşağıdaki bloklar MUTLAKA bulunmalı:
+
+1. **Kısa cevap kutusu** — Yazının en başında, giriş paragrafından hemen sonra, 3-7 maddelik bir özet kutusu. Kullanıcı yazının tamamını okumasa bile ana cevabı almalı.
+2. **İçindekiler** — 1500+ kelimelik yazılarda anchor-link'li bir içindekiler bloğu (mevcut `yurt-disinda-sirket-nasil-kurulur-avantajlari` yazısındaki gibi). Kısa yazılarda (1500 kelime altı) zorunlu değil.
+3. **"Karıştırmayın" / "Dikkat" kutusu** — Konuyla ilgili gerçek kullanıcıların sık karıştırdığı iki kavramı veya sık yapılan bir hatayı ayrıştıran, görsel olarak öne çıkan bir kutu (kırmızı/turuncu vurgu, mevcut tasarım dilindeki `border-l-4` / renkli arka plan kutuları gibi).
+4. **Uzman Notu kutusu** — Mevcut yazılarda zaten kullanılan "💡 Uzman Notu" / "Uzman Notu" kalıbını her yazıda standart hale getir. Bu kutu, mevzuatın kuru anlatımının ötesinde, uygulamada gözden kaçan bir inceliği, bir yorumu veya bir riski vurgulamalı. **KRİTİK SINIR:** Burada asla uydurma/somut "bir müşterimizde şöyle oldu" tarzı sahte vaka veya anekdot yazma — Koray'ın onaylamadığı gerçek bir olayı ona atfetmek yanıltıcı olur. Bunun yerine mevzuatın/uygulamanın kendisinden çıkan, genelleştirilmiş ama somut bir profesyonel yorum yaz (ör. "Başvurularda en sık gözden kaçan nokta X ile Y'nin birlikte değerlendirilmesi gerektiğidir" gibi, spesifik bir "müşteri" iddiası olmadan).
+5. **Resmî Kaynaklar bölümü** — Yazının sonuna doğru, ayrı bir başlık altında araştırmada kullanılan birincil kaynaklara (madde 4'teki hiyerarşiye göre) giden gerçek linkler listesi. Bu artık iç araştırma değil, sayfada görünen bir blok olmalı.
+6. **FAQ — artık zorunlu, opsiyonel değil.** En az 5 soru-cevap. Sorular gerçekten Google'da aranabilecek, kullanıcının aklındaki somut sorular olmalı (People Also Ask mantığı), FAQ'daki hiçbir bilgi ana metinde daha önce geçmemiş olamaz durumda kalmamalı; FAQ ana metni özetleyip pekiştirmeli.
+7. **Teslimat odaklı CTA** — "Bizimle iletişime geçin" gibi soyut CTA yerine, o yazının konusuyla ilgili somut bir sonraki adım tanımla: "Şirketinizin [X] uygunluğunu birlikte değerlendirelim" + varsa `/destek-uygunluk-analizi` sayfasına veya ilgili hizmet açıklamasına link + iletişim CTA'sı. CTA'da gerçekte sunulmayan bir teslimatı (ör. "20 sayfalık rapor") iddia etme; sadece Koray Akdağ/Sistem Global'in gerçekten sunduğu hizmet çerçevesinde somutlaştır.
+
+**Long-tail başlık tercihi:** Konu seçerken mümkün olduğunda genel başlıklar yerine ("KOSGEB Destekleri Nedir?") gerçek bir şirket sahibinin Google'a yazabileceği spesifik problem cümlesini başlık yap ("NACE Kodum Ürettiğim Üründen Farklıysa KOSGEB Desteği Alabilir miyim?" gibi). Rekabeti düşük, niyeti yüksek sorgular önceliklidir.
+
+---
+
 ## 8. SEO
 
 Her yazı için:
