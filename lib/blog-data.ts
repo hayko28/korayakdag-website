@@ -11,12 +11,12 @@ export interface BlogPostMeta {
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-bigg-yatirim-programi-2026-2-cagrisi",
-    title: "TÜBİTAK BiGG Yatırım Programı Nedir? 2026-2. Çağrı: Kimler Başvurabilir, Yatırım Tutarı ve Hisse Oranı",
-    excerpt: "Türkiye'nin ilk yatırım tabanlı girişimcilik destek programı BiGG Yatırım'ın 2026-2. çağrısında Faz 1'i tamamlayan girişimcilere %3 hisse karşılığı 1.350.000 TL yatırım, Faz 2-3 yapısı, 30 Eylül 2026 son başvuru tarihi ve yatırım sonrası şirket kuruluşu süreciyle güncel rehber.",
+    title: "TÜBİTAK BiGG Yatırım Programı 2026-2 Çağrısı: 1.350.000 TL Yatırım Nasıl Alınır?",
+    excerpt: "Türkiye'nin ilk yatırım tabanlı girişimcilik destek programı BiGG Yatırım'ın (1812) 2026-2 çağrısında %3 hisse karşılığında 1.350.000 TL, temiz teknoloji kategorisinde %5 hisse karşılığında 2.250.000 TL yatırım imkânı. Faz 1-2-3 yapısı, kimler başvurabilir, 30 Eylül 2026 son başvuru tarihi ve yatırım sonrası şirket kuruluş yükümlülükleriyle güncel rehber.",
     category: "TÜBİTAK • GİRİŞİMCİLİK DESTEĞİ • 2026",
     date: "2026",
     readTime: "12 Dakika",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    image: "https://images.unsplash.com/photo-1680781632885-ab108445f5e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "kosgeb-girisimci-destek-programi-2026",
