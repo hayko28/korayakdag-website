@@ -72,6 +72,7 @@ export default function Navbar() {
         { name: "Hizmetler", href: `${homePath}#services` },
         { name: "Güncel Gelişmeler", href: "/guncel-gelismeler" },
         { name: "Destek Uygunluk Analizi", href: "/destek-uygunluk-analizi" },
+        { name: "Teşvik Takvimi", href: "/tesvik-takvimi" },
         { name: "Blog", href: `${homePath}#blog` },
         { name: "İletişim", href: `${homePath}#contact` },
       ];
@@ -145,7 +146,7 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-5 min-[1360px]:flex">
+        <nav className="hidden items-center gap-8 min-[1600px]:flex">
           {links.map((link) => (
             <a
               key={link.name}
@@ -176,7 +177,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 min-[1360px]:hidden"
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 min-[1600px]:hidden"
             aria-label={isEn ? "Open menu" : "Menüyü aç"}
           >
             <span className="h-0.5 w-5 bg-white" />
@@ -187,7 +188,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg min-[1360px]:hidden">
+        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg min-[1600px]:hidden">
           {links.map((link) => (
             <a
               key={link.name}
