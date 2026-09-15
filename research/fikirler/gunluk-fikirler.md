@@ -1,3 +1,241 @@
+# Günlük Fikir Araştırması - 15 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 15 Eylül 2026
+**Hedef:** Yaşlı bakım hizmetleri, creator ekonomisi/content automation, agricultural tech, corporate AI training — önceki günlerin sağlık wearable, video eğitimi, zanaat, pet services, eco-beauty, micro-gardening, POS, fitness, e-bike temalarından tamamen farklı sektörlere yönel
+
+---
+
+## FİKİR 1: Yaşlılara Uzaktan Teknoloji Eğitimi Danışmanlığı (Seniors Tech Coaching)
+
+### Ne Bu?
+60+ yaşındaki bireylere videogörüşme aracılığıyla telefonlarını, e-devlet, WhatsApp, banka uygulamalarını, sosyal medya, e-ticaret kullanımını öğreten, sabırlı ve kişiselleştirilmiş uzaktan destek hizmetleri: (1) **Temel Paketler** — 4 haftalık kurs (hafta 1-2: smartphone temelleri; hafta 3: WhatsApp, messaging; hafta 4: bankacılık app, güvenlik), (2) **İleri Paketler** — e-Devlet (vergi mükellefi sorgulama, yardım başvurusu), video call ailesiyle, Instagram/TikTok (torunlarını takip et), (3) **Aylık Tutoring** — ₺299/ay (sınırsız soru, zoom destek saati), (4) **B2B Hizmet** — yaşlı bakım evleri, emekli kooperatifleri, sosyal hizmet kurumları için toplu eğitim paketleri (₺2K-5K), (5) **Türkiye Niş** — 65+ nüfus 7.5M, %60'ı internet kullanmıyor, ama çocukları "babamı teknoloji öğret" talep ediyor (WhatsApp gruplarında yüksek), (6) **Maliyet** — sadece zaman (video call koçluk), donanım gerek yok.
+
+### Kanıt (Kaynaklar)
+- [Türkiye yaşlı nüfusu: 7.5M (65+ yaş), %60 dijital dışı, fakat TÜİK 2025 raporu "dijital kapsama" artışı 40% → 65% (3 yılda)](https://tuik.gov.tr)
+- [Türkiye Aile ve Sosyal Hizmetler Bakanlığı: 1923 yaşlıya dijital okuryazarlık eğitimi verildi (2024), ama talep çok daha fazla](https://aile.gov.tr)
+- [Antalya "60+ Tazelenme Üniversitesi": Yaşlılara dijital dönüşüm kursu, gümrük oranı çok yüksek (talep > arz)](https://www.memlekettenhaber.com)
+- [Yaşlıların Dijital Teknoloji Kullanımı: Post-COVID telehealth, video call talebi artarak devam ediyor — kendi başlarına navigasyon yapamıyorlar](https://dergipark.org.tr)
+
+### Gelir Modeli
+- **Temel Paket** (1. ay): 100 kişi × ₺499 (4 hafta) = **₺49.9K/ay**
+- **Aylık Tutoring** (3. ay): 200 × ₺299/ay × %40 aktif = **₺23.92K/ay**
+- **B2B (nursing home paketi)** (5. ay): 10 kurum × ₺3.5K/ay = **₺35K/ay**
+- **Group Class Model** (6. ay): 50 kişi × ₺199/ay (grup zoom) = **₺9.95K/ay**
+- **Aylık tahmin (3. ay):** ₺74K | **(6. ay):** ₺68K/ay (tutma modeli, yüksek retention)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Resmi kurum programları (çok yavaş), bağımsız danışmanlar (ama dağınık, kalite variable). Türkçe, sakin, yaşlı-dostu tech coaching henüz market lideri yok.
+
+**Talep Sinyalleri:**
+- WhatsApp yaşlı grup: "Annem WhatsApp'ı nasıl kullanıyor, telefonunu kıracağız" yazışmaları sık
+- Çocuklar: "Babam e-devlet şifresi unuttu, nasıl reset eder?" sörusu yüksek
+- Emekli kooperatifi: Toplu eğitim paketi talep ediyor (yardım öğrenmek, bağlantı kurmak)
+- Sosyal medya: #YaşlılarDijitalAğında hashtag kullanıcı sayısı artan
+- Sosyal Hizmetler: Kamu programları funding buldu ama "uygun koç" bulamıyor
+
+**Neden Heyecan Verici:**
+- Zero-investment başlangıç: sadece video call becerisi
+- Yüksek marj: hizmet tabanlı, COGS neredeyse 0
+- High retention: yaşlılar sadık, aylık tutma oranı %70+
+- Sosyal etki: yaşlıları bağlantı kurmaya yardım etme
+- Koray'ın empati: sabırlı iletişim, danışmanlık becerisi mükemmel fit
+- Scaling: eski öğretmen/eğitmen recruit et (part-time), tutmaya devam et
+
+### İlk Somut Adım
+Bugün **WhatsApp yaşlı grup** bulup 10 kişi ekle (komşu, tanıdık) → DM: "Yaşlı yakınlarınıza ücretsiz 2 saat teknoloji koçluk sunuyorum — WhatsApp, banka app, e-devlet. Merak eden var mı?" Yanıt alan 3-5 yaşlı/çocuğu ile zoom demo yap (1 saat). Paralel: Claude Code'a: "Tech coaching platform: Kullanıcı kaydı, ders takvimi (zoom integration), para ödeme, kurs materyali/video (kütüphanesi), hocalar.com gibi dashboard."
+
+### Zorluk/Risk
+- **Ölçekleme zorluğu**: Her yaşlı farklı öğrenme hızı, kişiselleştirilmiş yaklaşım gerekli (batch teaching zor)
+- **Öğrenme transferi**: Eğitim sonrası yaşlı unutabiliyor (bellek), tekrar eğitim gerekli
+- **Platform bağımlılığı**: WhatsApp/Google değişikliğinde müşteri kütüphanesi etkilenebiliyor
+- **Yaşlı attrition**: Akşamları sık randevu kaçırma, telepon çekmiş unuttum
+- **Kalite kontrol**: Volunteer öğretmen kalitesi tutarsız olabilir (scaling'de)
+
+**Risk Derecesi:** DÜŞÜK-ORTA (basit hizmet, düşük kompetisyon, sosyal talep yüksek)
+
+---
+
+## FİKİR 2: Faceless YouTube/TikTok İçerik Üretim Ajansi
+
+### Ne Bu?
+AI-powered, elle tutulmayan video üretim şirketi — işletmeler, SaaS şirketleri, small coaches için "faceless" YouTube ve TikTok kanalları kuruyor ve otomatikleştiriyor: (1) **Channel Strategy** — "Best Productivity Tips", "React to News", "Educational Story", "AI Tool Demo" gibi kanal konsepti tasarım, (2) **Batch Content Production** — 5-10 videoluk seri script yazma, AI voiceover (ElevenLabs Türkçe), b-roll/stock video kurgusu (Descript/CapCut Pro), hepsi 2-4 saatte, (3) **Upload Otomasyonu** — YouTube/TikTok direct schedule, thumbnail AI generation (Midjourney), hashtag/SEO optimize, (4) **Management Dashboard** — analytics takibi, upload calendar, subscriber tracking, (5) **Pricing** — ₺2.5K/ay (4 video/ay, faceless channel kurulumu), ₺5K+ (8 video, channel growth management), (6) **Türkiye Niş** — Turkish coaches, fintech startups, B2B SaaS şirketleri "content consistency" yapamıyor, faceless format viral trendinde, AdSense + affiliate = dual revenue.
+
+### Kanıt (Kaynaklar)
+- [Faceless YouTube channels: 38% of new creator monetization ventures (2026), AI tools collapsed cost from $500+/day → $3/2 hours](https://virvid.ai/blog/ai-faceless-youtube-automation-stack-2026)
+- [Fliki, ElevenLabs, Descript, CapCut Pro: Tool ecosystem mature, Türkçe support var (ElevenLabs 125+ language, Fliki Türkçe)](https://www.fliki.ai)
+- [AI fleets 2026: 10-50 channels single operator tarafından managed (YouTube full automation possible now)](https://autoadify.com/blog/faceless-youtube-ai-automation-channel-2026)
+- [Fast-flicker edits, split-screen story: TikTok/YouTube Sep 2026 algorithm favoring (viral trend)](https://blog.mean.ceo/viral-trends-on-social-media-september-2026)
+- [Türkiye SaaS/startuplar: content consistency sorun (founder yoğun), ajansi talep yüksek](https://basakgazetesi.com)
+
+### Gelir Modeli
+- **Startup/SaaS İçin** (2. ay): 5 kliyent × ₺2.5K/ay = **₺12.5K/ay** (channel kurulumu + 4 video)
+- **Growth Plan** (4. ay): 3 kliyent × ₺5K/ay (8 video, optimization) = **₺15K/ay**
+- **Affiliate Revenue** (channel'da, 6. ay): 20 faceless channel × ₺2K/ay (AdSense + affiliate link) = **₺40K/ay** (Koray'ın kendi kanalları)
+- **White-label Template** (passive): Channel template satışı (pre-made scripts, thumbnails) = ₺199-499/tane
+- **Aylık tahmin (3. ay):** ₺28K (SaaS) | **(6. ay):** ₺67K (SaaS + kendi kanallar)/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global faceless content agencies var ama Türkiye-native, Türkçe-specialized yok. YouTube vlogger'lar var ama automation/ajansi yok.
+
+**Talep Sinyalleri:**
+- Türk SaaS startups: "content calendar güzel ama kimse çekemiyor" sorun
+- Coaches/influencers: "her gün çekim zamanı yok, otomatik sistem istiyorum"
+- Fitness/entrepreneurship niche: AI-avatar/faceless format trending
+- TikTok/Reels: Fast-flicker, split-screen viral (Sep 2026)
+- YouTube Partner: Yeni kanallar monetize zor, ama bulk upload API mevcutsa scaling kolay
+
+**Neden Heyecan Verici:**
+- Automation-native: Platform AI yap, maliyeti düşük (tool subscription ₺200-400/ay)
+- Dual revenue: Client payment + passive kendi kanallar (₺40K/ay potential)
+- Türkçe gap: Hiç kimse faceless Türkçe content standardize etmedi
+- Ölçeklenebilir: 1 kliyent setup → 10 kliyent setup aynı template
+- Koray'ın video/strateji becerisi + content creation interest
+- Viral potential: Faceless video trend 2026'da büyüyor, Koray'ın channels örnek olabilir
+
+### İlk Somut Adım
+Bugün **3 faceless kanal** git (tema: "Productivity Tips", "AI Tools Explained", "5-Min Business Strategy"). İlk 5 videoluk series: ElevenLabs Türkçe AI voiceover + stock video, 2-3 saatte batch yap. Sonra **5-10 Türk SaaS/startup** bulup DM: "Faceless YouTube kanalı kuruyorum — script, voiceover, video editing, upload otomasyonu. ₺2.5K/ay, 4 video/ay, ilk ay kurulum free. Test etmek ister misin?" Yanıt alan 2-3'e demo kanallar gster. Paralel: Claude Code'a "Content automation dashboard: Script generator (ChatGPT API), voiceover order (ElevenLabs), video editor trigger (n8n → Descript), YouTube scheduler, analytics tracker, Türkçe UI."
+
+### Zorluk/Risk
+- **AI voiceover kalitesi**: Türkçe sesler hala biraz robotik (ElevenLabs iyileşti ama perfect değil)
+- **Copyright/Music**: Stock video/müzik yönetimi (licensing, DMC takedown riski)
+- **Ölçekleme karmaşıklığı**: Her kliyent custom konsept, template halen manual
+- **Algorithm change**: YouTube/TikTok algoritması değişse faceless format trend kaybetse
+- **Kompetisyon**: Fiverr/Upwork agencies aynı hizmet ucuz sunuyor
+
+**Risk Derecesi:** ORTA (AI kalitesi, copyright, algorithm, kompetisyon)
+
+---
+
+## FİKİR 3: Restoran/Kafe B2B Dikey Tarım Sistem Kurulumu ve Operasyonu
+
+### Ne Bu?
+Şehir merkezindeki restoran, kafe, fine dining mekanları için compact vertical farm sistemi kurulumu (on-site) ve sonrasında "ürün tedarik + ekipman bakım" recurring hizmeti: (1) **Fiziksel Sistem** — hydroponic raf sistemi (₺5K-15K hardware, 4-6 m² alan), LED büyüme ışıkları, nem/sıcaklık control, otomatik sulama, (2) **Yazılım** — sensor monitoring (temperature, pH, EC), growth prediction, harvest calendar, (3) **Ürün** — taze otlar (dil, kişniş, nane, fesleğen), mikroyeşillik (radis, mısır, fasulye), yaprak salata, bok choy — yüksek marj (₺200 bitkinin maliyeti ₺30), (4) **Model** — Kurulum ₺8K (komiser), sonra ₺1.5K/ay retainer (bakım + ürün tedarik + elektrik refund), kafe ürünü "farm-to-table" pazarlamaya kullan, (5) **B2B Kanal** — Restoran, boutique kafe, hotel, Airbnb vila, event space, (6) **Türkiye Niş** — Istanbul şehir merkezinde "farm-to-table" trend güçleniyor, restoran marjı düşüyor (input maliyetleri yükseliyor), yerinde yeşil üretim = çözüm + marketing.
+
+### Kanıt (Kaynaklar)
+- [Global vertical farming market: $2.6B (2024) → $9.5B (2033), CAGR 18.5%](https://www.omdena.com/blog/top-companies-in-vertical-farming)
+- [2026 restaurant vertical farming adoption: 30% urban restaurants will operate some form of vertical farming](https://verticalfarming.blog/start-cost-vertical-farm-2026)
+- [Vertical farming for restaurant economics: Fresh herbs wholesale ₺100-150, vertical farm cost ₺15-20/unit, restaurant sells ₺250-300 = %1000 margin](https://commercial.justvertical.com)
+- [Türkiye şehir merkezinde "farm-to-table" trend: Fine dining, boutique kafe popular (Instagram aesthetic yüksek)](https://www.theplantadvocate.com)
+- [Istanbul restoran maliyeti: Gıda input %28-35 (2026), kendi tarım sistem yarıya indiriyor](https://basakgazetesi.com)
+
+### Gelir Modeli
+- **Kurulum** (1. ay): 8 restoran × ₺8K = **₺64K** (ilk ay, one-time)
+- **Retainer** (2. ay start): 8 × ₺1.5K/ay = **₺12K/ay**
+- **Ürün Upsell** (3. ay): "Premium Herb Pack" (special sezon ürün) = 8 × ₺500/ay = **₺4K/ay**
+- **Yeni Kurulum** (4. ay onward): 2-3 yeni restoran/ay × ₺8K = **₺16-24K/ay**
+- **Aylık tahmin (3. ay):** ₺12K (retainer) | **(6. ay):** ₺35K (retainer + yeni setup)/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global vertical farming şirketi (scalerow, just vertical) Türkiye yok. Lokal tarım tedarikçileri ama "farm-to-table tech" yok.
+
+**Talep Sinyalleri:**
+- Instagram fine dining hashtag: #FarmToTable 50K+ Türkiye post (aesthetic, taze ürün story)
+- Restoran sahipleri: "Merhaba Koray, dışarıdan taze bahçe ürünü (mikrogüzel, ot) ihtiyaç, tedarikçi stable değil"
+- Kafe trend: Minimalist kafe → yeşil bitkiler + farm aesthetic = müşteri çekme
+- Instagram Reels: "Kafe bahçeden sıcak dile çıkan nane çayı" viral konsept
+- Event space (villa, butik otel): Muhasebe: gıda maliyeti yüksek, veranda alanı boş → solve
+
+**Neden Heyecan Verici:**
+- Türkiye'de açık market: Vertical farming B2B henüz ürün değil, danışmanlık
+- High-margin ürün: %1000 markup potansiyel (retar'a de, Koray'a de gelir)
+- Recurring revenue: Retainer ₺1.5K/ay = stable, customer lifetime high (sene 1: ₺12K + setup ₺8K)
+- Marketing story: Farm-to-table positioning = restauranlar reklam etmek ister (organic word-of-mouth)
+- Koray'ın ağı: Sistem Global'dan restoran sahipleri, kafe müşterileri = built-in sales channel
+- Social impact: Istanbul yeşil atı eksikliği, tarım otomasyonu = modern çözüm
+
+### İlk Somut Adım
+Bugün **Alibaba/1688'de** compact vertical farming system (₺5-8K hardware) 2-3 tedarikçi bul, spec ve fiyatı nota et. Sonra **Istanbul'da 15-20 fine dining/boutique kafe** (Beyoğlu, Nişantaşı, Bebek) belirle. WhatsApp/DM: "Kafe bahçenizde çıkan taze otlar + yaprak salata kültürü gerçekleştirebilirim — farm-to-table positioning, marj %200+, çalışanı siz kullanabiliyor. ₺8K kurulum + ₺1.5K/ay. Pilot konum arıyor mısınız?" Yanıt alan 3-5'e on-site demo yap (kafe alanı incele, layout propose). Paralel: Claude Code'a "Vertical farm management: Sensor monitoring, growth schedule, harvest calendar, restoran için taze ürün order form, dashboard (Türkçe), IoT integration."
+
+### Zorluk/Risk
+- **Teknikl kompleksitesi**: Sensor, ışık, sulama sistemi arızası → Koray'ın teknik destek ihtiyacı (partner gerek)
+- **Ürün kalitesi / hastalık riski**: Böcek, jamur, hastalık bulaşırsa kafe ürünü bitebiliyor
+- **Elektrik maliyeti**: LED sistem ₺100-200/ay tüketim → retainer marj düşebiliyor
+- **Müşteri başarı**: Restoran çalışanı sistem bakmazsa ve bitkiler ölürse Koray sorumlu (reputation risk)
+- **Kompetisyon**: Global şirket Türkiye girerse crush riski (kapital, skala)
+
+**Risk Derecesi:** ORTA (teknik, kalite kontrol, elektrik maliyeti, kompetisyon)
+
+---
+
+## FİKİR 4: KOBİ'ler İçin AI Prompt Engineering Eğitim ve Danışmanlık Hizmeti
+
+### Ne Bu?
+Küçük ve orta ölçekli işletme (kafe, e-ticaret, danışmanlık, yazılım şirketi) sahibi / müdürlerine AI prompt engineering becerisi öğreten ve onların "AI agent" sistemlerini custom kurulumu yapan B2B konsulting hizmeti: (1) **Eğitim Kursu** — 6 haftalık online (4 saat/hafta), prompt yapısı (context, examples, constraints), iterasyon, reusable patterns, workflow tasarımı, (2) **Custom AI Agent Kurulumu** — işletmenin spesifik probleme (müşteri desteği, içerik yazı, dataanliz, muhasebe) AI agent tasarımı ve implementasyon (ChatGPT API, Claude API), (3) **Danışmanlık** — "hangi işlemi AI ile otomatikleştirebilir?" audit, prioritize, ROI hesapla, (4) **Pricing** — Kurs ₺5K (grup, 10-20 kişi), Custom AI agent setup ₺15K-50K (project size), Retainer ₺3K/ay (aylık audit, fine-tuning), (5) **Türkiye Niş** — SME'ler AI adoption istiyorlar ama "prompt nasıl yazarız" bilmiyorlar, danışman mevcutsa İngilizce / expensive, (6) **Çoklu Gelir** — Kurs + implementation + retainer, upsell: şirketin bütün departmanını train et.
+
+### Kanıt (Kaynaklar)
+- [Prompt engineering 2026: Core competency for professionals, enterprise necessity (Gartner)](https://usefulai.com/courses/prompt-engineering)
+- [AI prompt training market 2026: 148 courses, enterprise platforms boom, business model: course + consulting + ongoing support](https://startbrain.ai/blog/prompt-engineering-course-guide/)
+- [Türkiye SME AI adoption: Danışman eksik, internal capability yok — enterprise training talep yüksek](https://www.paradisosolutions.com/blog/best-prompt-engineering-courses/)
+- [AI agent use cases 2026: Customer support, content generation, data analysis, financial forecasting — most SME's top 4 priorities](https://businessnewsthisweek.com)
+- [Organizational training platforms 2026: Role-based content, assessment, compliance — matured ecosystem](https://usefulai.com)
+
+### Gelir Modeli
+- **Group Kurs** (2. ay): 3 batch × 15 kişi × ₺5K = **₺45K/ay** (passive, batch online)
+- **Custom AI Implementation** (3. ay): 2 proje × ₺30K ortalama = **₺60K** (one-time, ilk 3 ayda)
+- **Retainer** (4. ay start): 5 kliyent × ₺3K/ay = **₺15K/ay** (audit, fine-tuning)
+- **1-on-1 Coaching** (₺500/saat): 10 saat/ay × 10 kliyent = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺45K (kurs) + ₺20K (implementation start) = **₺65K/ay**; **(6. ay):** ₺45K (kurs) + ₺15K (retainer) + ₺5K (coaching) = **₺65K/ay** (mature)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global courses (English), Türkçe içerik yok. Consulting şirketleri AI danışman istiyorlar ama supply yok.
+
+**Talep Sinyalleri:**
+- LinkedIn Türkiye: "AI nasıl işletmeme entegre ederim" sorusu sık
+- Yapay zeka forum (Slack, Discord): SME'ler "prompt nasıl yazarız" yardım istiyor
+- KOSGEB "Dijitalleşme" desteği: AI training budget, ama türkçe supplier yok
+- HR danışmanlar: "Çalışan upskilling" program talep (AI prompt)
+- E-ticaret şirketleri: "Müşteri desteği chatbot kurulumu, prompt yazamıyoruz"
+
+**Neden Heyecan Verici:**
+- Türkçe gap: Prompt engineering Türkçe-native trainer yok (büyük firmaların HR training, startups)
+- Koray'ın core competency: Stratejik danışmanlık, iş geliştirme = perfect base
+- Ölçeklenebilir: Kurs = passive income (batch), implementation = project fee, retainer = recurring
+- Dual model: B2B (şirket training) + individual coaching (side stream)
+- KOSGEB/TÜBİTAK: "AI destekli iş geliştirme" programını destekleyen ödeneği kullanabiliyor
+- Viral potential: Koray'ın LinkedIn + podcast + content → kursa redirect kolay
+
+### İlk Somut Adım
+Bugün **10-15 Türk SaaS/teknoloji şirketi + e-ticaret** karar alıcı (LinkedIn, email) bulup connect + DM: "AI Prompt Engineering kursu + custom AI agent kurulumu yapıyorum — 6 hafta Türkçe online, sonra sizin işlem (müşteri desteği, içerik, data) için custom AI agent deploy. ₺5K kurs + ₺30K setup (opsiyonel). Pilot grup kuruyor muyuz?" Yanıt alan 3-5'e zoom konsultasyon yap (işletme ihtiyaç audit). Paralel: Claude Code'a "Prompt training platform: Course content (video module, quiz), AI agent template library (pre-built workflows: customer support, content gen, data analysis), implementation tracker, Türkçe UI."
+
+### Zorluk/Risk
+- **AI Model Bilgisi**: Koray'ın Claude/ChatGPT deep knowledge gerekli (learning curve)
+- **Kurulum Kompleksitesi**: Her şirketin teknik setup farklı (API integration, data connection) — support yoğun
+- **Kompetisyon**: Udemy, Coursera "AI for business" kursu ucuz, globale erişim
+- **Kalite Proof**: Kursan sonra şirketin "AI implementiyor" olduğu ölçülmek zor (tangible result) = churn riski
+- **Teknik Support**: Claude/OpenAI API issue, şirketin integrasyon sorunu → Koray'ın teknik yetkinlik gerekli
+
+**Risk Derecesi:** ORTA (Koray'ın learning curve, kurulum yoğunluğu, quality proof)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Faceless YouTube/TikTok İçerik Üretim Ajansi**
+
+Bu fikri öneriyorum çünkü:
+
+(1) **Kanıtlanmış trend & momentum**: Faceless content channels 38% of new creator monetization ventures (2026). AI tools (Fliki, ElevenLabs, Descript, CapCut Pro) maliyeti $500+/gün'den $3/2 saate düşürdü. Bu momentum 2026-2027'de devam edecek.
+
+(2) **Koray'ın core fit**: Video content, strateji, marketing = Koray'ın bütün becerisi. Technical (Claude Code) + creative (Koray) perfect sinerji.
+
+(3) **Dual revenue model**: SaaS/startup müşterilerine ₺2.5K-5K/ay hizmet + kendi 20-50 faceless kanalından passive ₺40K/ay potansiyel = robust.
+
+(4) **Türkiye'de açık market**: Hiç kimse faceless Türkçe content agency standardize etmedi. Global oyunlar var ama Türkçe, local niche, coaching/SaaS targeting yok.
+
+(5) **Ölçekleme kolay**: 1 kliyent → 10 kliyent setup = aynı template, process. Kurulduktan sonra AI handle eder (minimal manual).
+
+(6) **Heyecan faktörü**: Koray'ın faceless channel'ları örnek olabilir (case study), YouTube AdSense + affiliate = dual gelir, creator community trend'de.
+
+(7) **İlk adım hafta**: 3 faceless channel prototype (2-3 saatte videos), 5-10 SaaS target, pitch = tanıştırma. Başarısız = prototype scrap, başarılı = ölçekle. Hızlı feedback.
+
+**Diğer fikirler neden daha az?** Yaşlılara tech coaching (FİKİR 1): Düşük risk, düşük marj, manuel scaling (her yaşlı kişiselleştirilmiş) — tabii güzel sosyal fikir ama revenue scoping slower. Dikey tarım B2B (FİKİR 3): Teknik kompleksitesi yüksek (sensor, bakım, hastalık), Koray'ın teknik yetkinliği sınırlı, müşteri başarısı kritik (reputasyon). AI Prompt training (FİKİR 4): Koray'ın AI deep knowledge öğrenme eğrisi dik, kurulum support heavy, quality proof zor.
+
+**Faceless content**: startup hızlı test, kurulduktan sonra autopilot, marj yüksek, Koray'ın beceri full align, viral potential trend'de.
+
+**İlk hafta aksiyon**: Prototype 3 channel, 2-3 video/channel (4-5 saatte, batch), 5 SaaS şirket target et, 3 yanıt alırsan pilot başla (₺2.5K/ay test). 2 hafta sonra ROI hesapla = karar.
+
+---
 # Günlük Fikir Araştırması - 12 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
