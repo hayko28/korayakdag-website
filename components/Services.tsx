@@ -9,6 +9,7 @@ import Link from "next/link";
 // Anahtarlar categoriesByLang.tr içindeki metinlerle birebir aynı olmalı.
 const ITEM_LINKS: Record<string, string> = {
   "KOSGEB": "/kosgeb-danismanlik",
+  "Yatırım Teşvik Belgesi": "/yatirim-tesvik-belgesi-danismanligi",
   "🇵🇱 Polonya": "/blog/polonyada-sirket-nasil-kurulur",
   "🇮🇹 İtalya": "/blog/italyada-sirket-nasil-kurulur",
   "🇩🇪 Almanya": "/blog/almanyada-sirket-nasil-kurulur",
