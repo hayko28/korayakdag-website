@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tavsiye-programiyla-gelen-numaraya-reklam-smsi",
+    title:
+      "Tavsiye Programıyla Gelen Numaraya Reklam SMS'i Göndermenin Bedeli: 1 Milyon TL",
+    excerpt:
+      "Kişisel Verileri Koruma Kurulu'nun Ağustos 2026 tarihli kararına göre bir şirket, 'marka elçisi' tavsiye programı üzerinden edindiği bir telefon numarasına açık rıza almadan reklam SMS'i gönderip arama yaptığı için 1 milyon TL idari para cezası aldı. Tavsiye/referans programı ya da üçüncü taraf listesiyle pazarlama yapan işletmeler için sürecin her adımı aynı riski taşıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "15 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tazminatsiz-fesihte-6-is-gunluk-hak-dusurucu-sure",
     title:
       "Tazminatsız Fesih Hakkı Neden Genelde Kaçırılıyor? 6 İş Günlük Süre",
