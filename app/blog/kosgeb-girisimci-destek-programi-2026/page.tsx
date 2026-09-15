@@ -579,6 +579,13 @@ export default function BlogPage() {
             <div className="mb-2 text-sm font-semibold text-orange-600">TEKMER • KOSGEB • 2026</div>
             <h3 className="text-lg font-bold text-[#071A2F]">TEKMER Nedir? Teknoloji Geliştirme Merkezlerine Nasıl Başvurulur?</h3>
           </Link>
+          <Link
+            href="/blog/kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi"
+            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
+          >
+            <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • NACE KODU • 2026</div>
+            <h3 className="text-lg font-bold text-[#071A2F]">NACE Kodu Ürettiğim Ürünle Uyuşmuyorsa KOSGEB Desteği Alabilir miyim?</h3>
+          </Link>
         </div>
       </section>
     </BlogLayout>

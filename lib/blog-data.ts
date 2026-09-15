@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi",
+    title: "Şirketimin NACE Kodu Ürettiğim Ürünle Uyuşmuyorsa KOSGEB Desteği Alabilir miyim?",
+    excerpt: "Vergi dairesindeki ana faaliyet kodunuz ile fiilen ürettiğiniz/sattığınız ürün farklıysa ne olur? Ana faaliyet ile alt faaliyet kodu ayrımı, başvurunun reddedilme riski, Sanayi Sicil Belgesi bağlantısı ve NACE kodu güncelleme sürecine dair 2026 güncel rehber.",
+    category: "KOSGEB • NACE KODU • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1764185800646-f75f7e16e465?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-girisimci-destek-programi-2026",
     title: "KOSGEB Girişimci Destek Programı Nedir? Kimler Başvurabilir, Ne Kadar Destek Alınır?",
     excerpt: "Geleneksel ve İleri Girişimci Destek Programı arasındaki fark, kuruluş/performans/sertifika desteği tutarları, %75 oranlı makine-teçhizat-yazılım desteği, genç/kadın/engelli ek desteği ve adım adım başvuru süreciyle 2026 güncel KOSGEB Girişimci Destek Programı rehberi.",

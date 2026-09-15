@@ -51,6 +51,7 @@ const PROGRAMS = [
   { name: "KOBİ Dijital Dönüşüm Destek Programı", href: "/blog/kosgeb-kobi-dijital-donusum-destek-programi-2026" },
   { name: "Yapay Zeka Kredi Programı", href: "/blog/kosgeb-yapay-zeka-kredi-programi-2026" },
   { name: "İstihdamı Koruma Destek Programı", href: "/blog/istihdami-koruma-destek-programi-2026" },
+  { name: "NACE Kodu Uyuşmazlığında Destek Alınır mı?", href: "/blog/kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi" },
 ];
 
 export default function KosgebDanismanlikPage() {
