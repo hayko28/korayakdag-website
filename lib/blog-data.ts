@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi",
+    title: "Makine/Ekipman Yatırımı Yapacağım: KOSGEB mi Yatırım Teşvik Belgesi mi Daha Avantajlı?",
+    excerpt: "Yatırım tutarına göre karar matrisi: KOSGEB'in kredi + faiz desteği modeli (20-30 milyon TL kredi limiti) ile Yatırım Teşvik Belgesi'nin KDV/gümrük/vergi avantajı (7,5-15,1 milyon TL asgari yatırım şartı) arasındaki fark, mükerrer destek yasağı ve varsayımsal örnek senaryoyla 2026 güncel karşılaştırma rehberi.",
+    category: "KOSGEB • YATIRIM TEŞVİK BELGESİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1585201731775-0597e1be4bfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi",
     title: "Şirketimin NACE Kodu Ürettiğim Ürünle Uyuşmuyorsa KOSGEB Desteği Alabilir miyim?",
     excerpt: "Vergi dairesindeki ana faaliyet kodunuz ile fiilen ürettiğiniz/sattığınız ürün farklıysa ne olur? Ana faaliyet ile alt faaliyet kodu ayrımı, başvurunun reddedilme riski, Sanayi Sicil Belgesi bağlantısı ve NACE kodu güncelleme sürecine dair 2026 güncel rehber.",

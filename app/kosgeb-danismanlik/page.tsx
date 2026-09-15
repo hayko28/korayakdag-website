@@ -52,6 +52,7 @@ const PROGRAMS = [
   { name: "Yapay Zeka Kredi Programı", href: "/blog/kosgeb-yapay-zeka-kredi-programi-2026" },
   { name: "İstihdamı Koruma Destek Programı", href: "/blog/istihdami-koruma-destek-programi-2026" },
   { name: "NACE Kodu Uyuşmazlığında Destek Alınır mı?", href: "/blog/kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi" },
+  { name: "KOSGEB mi Yatırım Teşvik Belgesi mi Daha Avantajlı?", href: "/blog/makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi" },
 ];
 
 export default function KosgebDanismanlikPage() {

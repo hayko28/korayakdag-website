@@ -47,6 +47,7 @@ const RELATED = [
   { name: "Yatırım Teşvik Belgesi Nedir? Faydaları, Şartları ve 2026 Rehberi", href: "/blog/yatirim-tesvik-belgesi-nedir-faydalari-sartlari-2026" },
   { name: "Proje Bazlı Teşvik Sisteminde 2026 Değişikliği", href: "/blog/proje-bazli-tesvik-sistemi-2026-degisiklikleri" },
   { name: "Yeni Finansman Belgesi: KOBİ mi, Büyük Yatırımcı mı İçin?", href: "/makaleler/yeni-tesvik-belgesinde-100-milyon-1-milyar-esigi" },
+  { name: "KOSGEB mi Yatırım Teşvik Belgesi mi Daha Avantajlı?", href: "/blog/makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi" },
 ];
 
 export default function YatirimTesvikBelgesiDanismanligiPage() {
