@@ -188,13 +188,13 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] w-full bg-[#0F2A47] shadow-lg min-[1600px]:hidden">
+        <nav className="absolute left-0 top-[78px] flex w-full flex-wrap justify-center gap-3 bg-[#0F2A47] px-6 py-5 shadow-lg min-[1600px]:hidden">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block border-b border-white/10 px-6 py-4 text-[#E7ECF2] transition hover:border-orange-400 hover:text-white"
+              className="rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-center text-[13.5px] font-medium text-[#E7ECF2] transition hover:border-orange-400 hover:bg-white/10 hover:text-white"
             >
               {link.name}
             </a>
