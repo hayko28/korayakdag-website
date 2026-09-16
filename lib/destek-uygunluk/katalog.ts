@@ -61,7 +61,7 @@ export async function katalogEslestir(g: DestekBasvuruGirdisi): Promise<KatalogE
   if (g.donusumDurumu && g.donusumDurumu !== "yok") {
     aramaKelimeleri.push("dijital dönüşüm", "yeşil dönüşüm", "enerji verimliliği", "karbon", "döngüsel", "sürdürülebilir", "verimlilik artırıcı");
   }
-  if (g.kirsalYatirimVarMi) {
+  if (g.kirsalYatirimDurumu && g.kirsalYatirimDurumu !== "yok") {
     aramaKelimeleri.push("tarım", "kırsal", "hayvancılık", "çiftçi", "sera", "orköy", "besicilik");
   }
   if (g.argeDurumu && g.argeDurumu !== "yok") {

@@ -1,5 +1,32 @@
 # KOSGEB Kapasite Geliştirme Destek Programı
 
+## GÜNCELLEME (2026-09-17) — hızlı büyüme muafiyeti listesi daraldı
+
+Koray'ın canlı uygulamada test edip "eski veri kullanmışsın" diye işaret etmesi üzerine yeniden araştırıldı.
+11/05/2026 tarihli ve 730087 sayılı Başkanlık Makamı Oluru ile program metni "Uygulama Esasları"ndan
+"Yönerge"ye dönüştürüldü ve **MADDE 13(9)** ile hızlı büyüyen işletme muafiyeti köklü biçimde daraltıldı:
+
+- **Eski liste (aşağıdaki "Durum" ve "Hızlı Büyüyen İşletme" bölümlerinde anlatılan, artık GEÇERSİZ):**
+  a) KOSGEB/TÜBİTAK Ar-Ge projesi tamamlama, b) 5746 Ar-Ge Merkezi, c) TÜR belgesi, ç) Teknoloji Geliştirme
+  Bölgesi, d) TEKMER, e) tedarikçi sipariş sözleşmesi.
+- **Yeni liste (11/05/2026'dan itibaren geçerli, MADDE 13/9):**
+  a) **Teknogirişim Rozeti sahibi olmak**, b) tedarikçi geliştirmeye yönelik belirlenen sektörlerde iş birliği.
+
+Haziran 2026 tarihli Başvuru Kılavuzu v2.0'daki canlı sistem ekran görüntüleri de başvuru formunda artık
+sadece bu üç seçeneğin ("Hızlı Büyüme Koşulu", "Teknogirişim Rozeti Sahibi Olmak", "Tedarikçi geliştirmeye
+yönelik iş birliği") sunulduğunu doğruluyor.
+
+**Kaynaklar:**
+- [Kapasite Geliştirme Destek Programı Yönergesi, Rev. No 12 (05/07/2026)](https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/KAPAS%C4%B0TE%20GEL%C4%B0ST%C4%B0RME/2026/2026.05.12/Kapasite_Gelis%CC%A7tirme_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf) — MADDE 13(9) ve 37 no'lu dipnot
+- [Başvuru Kılavuzu Haziran 2026 v2.0](https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/KAPAS%C4%B0TE%20GEL%C4%B0ST%C4%B0RME/2026/Kapasite_Gelis%CC%A7tirme_Destek_Program%C4%B1_Bas%CC%A7vuru_K%C4%B1lavuzu__2.0.pdf) — sayfa 8
+- [KOSGEB resmi program sayfası](https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi)
+
+Aşağıdaki "Durum" ve "Hızlı Büyüyen İşletme" bölümleri, 21/12/2025 revizyonlu eski metne dayanıyor — istisna
+listesi kısmı artık geçersiz, geri kalan bilgiler (KOBİ ölçeği, NACE kısıtı, kredi tutarı vb.) hâlâ geçerli
+görünüyor ama bu araştırma bir dahaki güncellemede baştan sona tazelenmeli.
+
+---
+
 ## Durum
 
 Yürürlükte. Uygulama Esasları kodu **UE-37/08**, revizyon tarihi **21/12/2025** (en güncel resmi versiyon, bu araştırma tarihinde geçerli). İlk yürürlük tarihi 26/11/2024. Program, 26/11/2024'ten bu yana en az 20 kez (Başkanlık Makamı Oluru ile) revize edilmiş; büyüme şartının tanımı da bu revizyonlardan biriyle (27/2/2025 tarih ve 556101 sayılı Oluru) değişmiştir. **Uygulama Esasları resmi bir "tebliğ" değil, KOSGEB'in kendi iç düzenleyici işlemidir** — Resmi Gazete'de yayımlanmaz, KOSGEB'in dayanak aldığı asıl mevzuat aşağıda listelenmiştir. [kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi — erişim: 19/08/2026]

@@ -73,7 +73,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
   if (girdi.ihracatDurumu === "yapiyorum") {
     taslaklar.push(turqualityDegerlendir(girdi));
   }
-  if (girdi.kirsalYatirimVarMi !== false) {
+  if (girdi.kirsalYatirimDurumu !== "yok") {
     taslaklar.push(tkdkDegerlendir(girdi));
   }
 

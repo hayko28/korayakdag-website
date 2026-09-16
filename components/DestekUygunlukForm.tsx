@@ -3,7 +3,7 @@
 import { FormEvent, useState } from "react";
 import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
-import { YATIRIM_TESVIK_ILLER } from "@/lib/destek-uygunluk/yardimcilar";
+import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 
 type Girdi = Record<string, string>;
 
@@ -24,14 +24,11 @@ const YATIRIM_TURU_SECENEKLERI = [
   { value: "nakil", label: "Nakil" },
 ];
 
+// 11/05/2026 Yönerge güncellemesiyle sadece bu iki istisna kaldı (eskiden 6 kategori vardı).
 const HIZLI_BUYUME_MUAFIYET_SECENEKLERI = [
   { value: "yok", label: "Muafiyet yok — büyüme şartı üzerinden değerlendirilsin" },
-  { value: "kosgeb_tubitak_arge_tamamlandi", label: "KOSGEB/TÜBİTAK destekli Ar-Ge projesi tamamlandı (son 5 yıl içinde)" },
-  { value: "arge_merkezi_5746", label: "5746 sayılı Kanun kapsamında Ar-Ge Merkezi statüsü" },
-  { value: "tur_belgesi", label: "Geçerli Teknolojik Ürün Deneyim (TÜR) belgesi" },
-  { value: "tgb_faaliyet_4691", label: "Teknoloji Geliştirme Bölgesi'nde faaliyet (4691 sayılı Kanun)" },
-  { value: "tekmer_faaliyet", label: "TEKMER'de faaliyet" },
-  { value: "tedarikci_siparis_sozlesmesi", label: "Büyük işletmeyle tedarikçi geliştirme sipariş sözleşmesi" },
+  { value: "teknogirisim_rozeti", label: "Teknogirişim Rozeti sahibiyim" },
+  { value: "tedarikci_gelistirme_isbirligi", label: "Tedarikçi geliştirmeye yönelik belirlenen sektörlerde iş birliği" },
 ];
 
 const PROJE_NITELIGI_SECENEKLERI = [
@@ -89,6 +86,12 @@ const DONUSUM_DURUMU_SECENEKLERI = [
   { value: "yapiyorum", label: "Evet, uyguluyorum" },
 ];
 
+const KIRSAL_YATIRIM_DURUMU_SECENEKLERI = [
+  { value: "yok", label: "Yok" },
+  { value: "planliyorum", label: "Yok ama planlıyorum" },
+  { value: "yapiyorum", label: "Evet, mevcut bir yatırımım var" },
+];
+
 const ONCELIKLI_GRUP_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "kadin", label: "Kadın girişimci" },
@@ -138,7 +141,7 @@ const PERSONALAR: { ikon: string; baslik: string; aciklama: string; alanlar: Per
     ikon: "🌾",
     baslik: "Kırsal / tarımsal yatırımım var",
     aciklama: "Hayvancılık, tarımsal üretim, gıda işleme veya kırsal turizm alanında yatırım planlıyorum.",
-    alanlar: { yeniGirisimciMi: "hayir", kirsalYatirimVarMi: "evet" },
+    alanlar: { yeniGirisimciMi: "hayir", kirsalYatirimDurumu: "yapiyorum" },
   },
 ];
 
@@ -149,13 +152,14 @@ const ZORUNLU_HUNI_ALANLARI: { anahtar: string; etiket: string }[] = [
   { anahtar: "argeDurumu", etiket: "Ar-Ge / yenilik durumunuz nedir?" },
   { anahtar: "ihracatDurumu", etiket: "İhracat durumunuz nedir?" },
   { anahtar: "donusumDurumu", etiket: "Dijital veya yeşil dönüşüm yatırımı" },
-  { anahtar: "kirsalYatirimVarMi", etiket: "Kırsal alanda bir yatırımınız var mı?" },
+  { anahtar: "kirsalYatirimDurumu", etiket: "Kırsal alanda bir yatırımınız var mı?" },
 ];
 
 export default function DestekUygunlukForm() {
   const [g, setG] = useState<Girdi>({});
   const [submitting, setSubmitting] = useState(false);
   const [sonuclar, setSonuclar] = useState<ProgramSonucu[] | null>(null);
+  const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hata, setHata] = useState("");
   const [seciliPersona, setSeciliPersona] = useState<number | null>(null);
@@ -202,7 +206,7 @@ export default function DestekUygunlukForm() {
       argeDurumu: (g.argeDurumu as DestekBasvuruGirdisi["argeDurumu"]) || undefined,
       ihracatDurumu: (g.ihracatDurumu as DestekBasvuruGirdisi["ihracatDurumu"]) || undefined,
       donusumDurumu: (g.donusumDurumu as DestekBasvuruGirdisi["donusumDurumu"]) || undefined,
-      kirsalYatirimVarMi: bool("kirsalYatirimVarMi"),
+      kirsalYatirimDurumu: (g.kirsalYatirimDurumu as DestekBasvuruGirdisi["kirsalYatirimDurumu"]) || undefined,
 
       kosgebVeriTabaniKayitliMi: bool("kosgebVeriTabaniKayitliMi"),
       ileriGirisimciEgitimiTamamlandiMi: bool("ileriGirisimciEgitimiTamamlandiMi"),
@@ -309,9 +313,13 @@ export default function DestekUygunlukForm() {
       setHata("Devam etmek için KVKK Aydınlatma Metni'ni onaylamanız gerekiyor.");
       return;
     }
+    const ilkKezMi = sonuclar === null;
     const yeniSonuclar = await calistirAnaliz();
     if (yeniSonuclar) {
-      setAcikSonuclar(new Set(yeniSonuclar.slice(0, 1).map((s) => s.programId)));
+      if (ilkKezMi) {
+        setAcikSonuclar(new Set(yeniSonuclar.slice(0, 1).map((s) => s.programId)));
+      }
+      setDuzenleModuAcik(false);
       window.scrollTo({ top: document.getElementById("sonuclar")?.offsetTop ?? 0, behavior: "smooth" });
     }
   };
@@ -323,7 +331,7 @@ export default function DestekUygunlukForm() {
     setAcikSonuclar((prev) => new Set(prev).add(programId));
   };
 
-  if (sonuclar) {
+  if (sonuclar && !duzenleModuAcik) {
     return (
       <div id="sonuclar" className="space-y-6">
         <div className="rounded-2xl border border-amber-300 bg-amber-50 p-5 text-sm text-amber-900">
@@ -431,10 +439,10 @@ export default function DestekUygunlukForm() {
         </div>
         <button
           type="button"
-          onClick={() => setSonuclar(null)}
+          onClick={() => setDuzenleModuAcik(true)}
           className="text-sm font-semibold text-orange-500 hover:underline"
         >
-          ← Bilgileri düzenle
+          ← Şirket bilgilerini / huni sorularını düzenle
         </button>
       </div>
     );
@@ -442,6 +450,16 @@ export default function DestekUygunlukForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-10">
+      {sonuclar && duzenleModuAcik && (
+        <button
+          type="button"
+          onClick={() => setDuzenleModuAcik(false)}
+          className="flex items-center gap-2 rounded-xl border border-gray-300 bg-white px-4 py-2.5 text-sm font-bold text-[#071A2F] shadow-sm transition hover:border-orange-400 hover:text-orange-600"
+        >
+          ← Sonuçlara dön (bilgiler kaybolmaz)
+        </button>
+      )}
+
       <div className="sticky top-[78px] z-10 -mx-6 border-b border-gray-200 bg-white/95 px-6 py-3 backdrop-blur sm:mx-0 sm:rounded-2xl sm:border sm:shadow-sm">
         <div className="mb-1.5 flex items-center justify-between text-xs font-semibold text-gray-500">
           <span>Form ilerlemesi</span>
@@ -508,7 +526,7 @@ export default function DestekUygunlukForm() {
           <Secim zorunlu etiket="Ar-Ge / yenilik durumunuz nedir?" deger={g.argeDurumu} onChange={(v) => set("argeDurumu", v)} secenekler={ARGE_DURUMU_SECENEKLERI} />
           <Secim zorunlu etiket="İhracat durumunuz nedir?" deger={g.ihracatDurumu} onChange={(v) => set("ihracatDurumu", v)} secenekler={IHRACAT_DURUMU_SECENEKLERI} />
           <Secim zorunlu etiket="Dijital veya yeşil dönüşüm yatırımı" deger={g.donusumDurumu} onChange={(v) => set("donusumDurumu", v)} secenekler={DONUSUM_DURUMU_SECENEKLERI} />
-          <EvetHayir zorunlu etiket="Kırsal alanda (tarım, hayvancılık, kırsal turizm vb.) bir yatırımınız var mı?" deger={g.kirsalYatirimVarMi} onChange={(v) => set("kirsalYatirimVarMi", v)} />
+          <Secim zorunlu etiket="Kırsal alanda (tarım, hayvancılık, kırsal turizm vb.) bir yatırımınız var mı?" deger={g.kirsalYatirimDurumu} onChange={(v) => set("kirsalYatirimDurumu", v)} secenekler={KIRSAL_YATIRIM_DURUMU_SECENEKLERI} />
           <Secim etiket="Öncelikli grup" deger={g.oncelikliGrup} onChange={(v) => set("oncelikliGrup", v)} secenekler={ONCELIKLI_GRUP_SECENEKLERI} />
         </div>
       </Bolum>
@@ -558,7 +576,7 @@ export default function DestekUygunlukForm() {
         disabled={submitting}
         className="w-full rounded-xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {submitting ? "Analiz ediliyor…" : "Uygunluk Analizini Görüntüle"}
+        {submitting ? "Analiz ediliyor…" : sonuclar ? "Bilgileri Güncelle ve Sonuçlara Dön" : "Uygunluk Analizini Görüntüle"}
       </button>
     </form>
   );
@@ -618,18 +636,43 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Güncel Mali Karneniz var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
         </div>
       );
-    case "yatirim-tesvik-belgesi":
+    case "yatirim-tesvik-belgesi": {
+      const bolge = ilinBolgesi(g.yatirimIli);
+      const asgari = bolge ? yatirimAsgariTutarTl(bolge) : null;
       return (
         <div className="grid gap-5 sm:grid-cols-2">
-          <Metin etiket="Yatırım Konusu NACE Kodu" deger={g.yatirimKonusuNaceKodu} onChange={(v) => set("yatirimKonusuNaceKodu", v)} placeholder="62.01" />
           <Secim etiket="Yatırım İli" deger={g.yatirimIli} onChange={(v) => set("yatirimIli", v)} secenekler={YATIRIM_TESVIK_ILLER.map((il) => ({ value: il, label: il }))} />
-          <Tutar etiket="Planlanan Sabit Yatırım Tutarı" deger={g.planlananSabitYatirimTutariTl} onChange={(v) => set("planlananSabitYatirimTutariTl", v)} />
-          <Secim etiket="Yatırım Türü" deger={g.yatirimTuru} onChange={(v) => set("yatirimTuru", v)} secenekler={YATIRIM_TURU_SECENEKLERI} />
+          <div>
+            <Metin etiket="Yatırım Konusu NACE Kodu" deger={g.yatirimKonusuNaceKodu} onChange={(v) => set("yatirimKonusuNaceKodu", v)} placeholder={g.naceKodu || "62.01"} />
+            <p className="mt-1.5 text-xs text-gray-500">
+              Şirketinizin genel NACE kodundan farklı olabilir (örn. şirketiniz ticaretle uğraşıyor ama üretim
+              yatırımı yapıyorsanız). Aynıysa şirket bilgilerinizdeki kodu ({g.naceKodu || "—"}) yazabilirsiniz.
+            </p>
+          </div>
+          <div>
+            <Tutar etiket="Planlanan Sabit Yatırım Tutarı" deger={g.planlananSabitYatirimTutariTl} onChange={(v) => set("planlananSabitYatirimTutariTl", v)} />
+            {asgari ? (
+              <p className="mt-1.5 text-xs font-semibold text-orange-600">
+                {g.yatirimIli} ({bolge}. bölge) için 2026 asgari tutar: {asgari.toLocaleString("tr-TR")} TL
+              </p>
+            ) : (
+              <p className="mt-1.5 text-xs text-gray-500">Önce yukarıdan ili seçerseniz o bölgenin asgari tutarını burada gösteririm.</p>
+            )}
+          </div>
+          <div>
+            <Secim etiket="Yatırım Türü" deger={g.yatirimTuru} onChange={(v) => set("yatirimTuru", v)} secenekler={YATIRIM_TURU_SECENEKLERI} />
+            <p className="mt-1.5 text-xs text-gray-500">
+              Sadece yeni makine/ekipman almayı planlıyorsanız: kapasitenizi artıracaksa <strong>Tevsi</strong>,
+              mevcut makineleri yenileyecekseniz <strong>Modernizasyon</strong> seçin — resmî kararda ayrı bir
+              "makine alımı" kategorisi yok, bu ikisinden birine giriyor.
+            </p>
+          </div>
           <EvetHayir etiket="Dijital veya Yeşil Dönüşüm Programı kapsamında mı?" deger={g.dijitalVeyaYesilDonusumMu} onChange={(v) => set("dijitalVeyaYesilDonusumMu", v)} />
           <EvetHayir etiket="Mevcut bir tesisiniz var mı?" deger={g.mevcutTesisVarMi} onChange={(v) => set("mevcutTesisVarMi", v)} />
           <EvetHayir etiket="Yüksek veya orta-yüksek teknolojili ürün üretimi mi?" deger={g.yuksekVeyaOrtaYuksekTeknolojiUrunMu} onChange={(v) => set("yuksekVeyaOrtaYuksekTeknolojiUrunMu", v)} />
         </div>
       );
+    }
     case "tubitak-1501":
     case "tubitak-1507":
     case "tubitak-1832":

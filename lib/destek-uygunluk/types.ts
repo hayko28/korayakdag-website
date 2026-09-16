@@ -36,14 +36,14 @@ export type SirketTuru =
 
 export type OncelikliGrup = "kadin" | "genc" | "engelli" | "gazi_sehit_yakini" | "yok";
 
+// 11/05/2026 tarihli Yönerge güncellemesiyle (MADDE 13/9) daraltıldı — eskiden
+// 6 istisna kategorisi vardı (Ar-Ge tamamlama, Ar-Ge Merkezi, TÜR belgesi,
+// TGB, TEKMER, tedarikçi sipariş sözleşmesi), artık sadece bu ikisi geçerli.
+// Kaynak: research/destek-uygunluk/kosgeb-kapasite-gelistirme.md "GÜNCELLEME (2026-09-17)".
 export type HizliBuyumeMuafiyeti =
   | "yok"
-  | "kosgeb_tubitak_arge_tamamlandi"
-  | "arge_merkezi_5746"
-  | "tur_belgesi"
-  | "tgb_faaliyet_4691"
-  | "tekmer_faaliyet"
-  | "tedarikci_siparis_sozlesmesi";
+  | "teknogirisim_rozeti"
+  | "tedarikci_gelistirme_isbirligi";
 
 export type YatirimTuru =
   | "komple_yeni"
@@ -82,6 +82,8 @@ export type IhracatDurumu = "yok" | "planliyorum" | "yapiyorum";
 
 export type DonusumDurumu = "yok" | "planliyorum" | "yapiyorum";
 
+export type KirsalYatirimDurumu = "yok" | "planliyorum" | "yapiyorum";
+
 // Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
 // değerlendirilemez, Katman 2 (programa özel, sadece huniden geçen adaylara
 // sorulur) alanları boş bırakılan programlar "belirsiz" sonuç döner, "uygun
@@ -107,7 +109,7 @@ export interface DestekBasvuruGirdisi {
   argeDurumu?: ArgeDurumu;
   ihracatDurumu?: IhracatDurumu;
   donusumDurumu?: DonusumDurumu; // dijital veya yeşil dönüşüm
-  kirsalYatirimVarMi?: boolean;
+  kirsalYatirimDurumu?: KirsalYatirimDurumu; // TKDK gelecekteki planı da kapsar, sadece mevcut yatırımı değil
 
   // KOSGEB İş Geliştirme Desteği
   kosgebVeriTabaniKayitliMi?: boolean;
