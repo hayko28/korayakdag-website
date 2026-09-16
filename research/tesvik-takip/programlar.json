@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-09-15",
+  "sonGuncelleme": "2026-09-16",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -70,7 +70,7 @@
       "id": "kosgeb-kapasite-gelistirme-2026-3",
       "ad": "Kapasite Geliştirme Destek Programı - 3. Başvuru Dönemi",
       "kurum": "KOSGEB",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-15",
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi",
       "ilkTespitTarihi": "2026-08-26",
