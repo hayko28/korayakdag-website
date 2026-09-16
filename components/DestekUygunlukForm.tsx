@@ -142,6 +142,16 @@ const PERSONALAR: { ikon: string; baslik: string; aciklama: string; alanlar: Per
   },
 ];
 
+const ZORUNLU_HUNI_ALANLARI: { anahtar: string; etiket: string }[] = [
+  { anahtar: "yeniGirisimciMi", etiket: "Yeni bir girişimci misiniz?" },
+  { anahtar: "imalatciMi", etiket: "İmalat/üretim sektöründe mi faaliyet gösteriyorsunuz?" },
+  { anahtar: "yatirimPlanlaniyorMu", etiket: "Yeni tesis, genişleme veya modernizasyon yatırımı planlıyor musunuz?" },
+  { anahtar: "argeDurumu", etiket: "Ar-Ge / yenilik durumunuz nedir?" },
+  { anahtar: "ihracatDurumu", etiket: "İhracat durumunuz nedir?" },
+  { anahtar: "donusumDurumu", etiket: "Dijital veya yeşil dönüşüm yatırımı" },
+  { anahtar: "kirsalYatirimVarMi", etiket: "Kırsal alanda bir yatırımınız var mı?" },
+];
+
 export default function DestekUygunlukForm() {
   const [g, setG] = useState<Girdi>({});
   const [submitting, setSubmitting] = useState(false);
@@ -253,18 +263,14 @@ export default function DestekUygunlukForm() {
       iletisimAdSoyad: g.iletisimAdSoyad || undefined,
       iletisimEposta: g.iletisimEposta || undefined,
       iletisimTelefon: g.iletisimTelefon || undefined,
+      ekAciklama: g.ekAciklama || undefined,
     };
   };
 
-  const ZORUNLU_HUNI_ALANLARI: { anahtar: string; etiket: string }[] = [
-    { anahtar: "yeniGirisimciMi", etiket: "Yeni bir girişimci misiniz?" },
-    { anahtar: "imalatciMi", etiket: "İmalat/üretim sektöründe mi faaliyet gösteriyorsunuz?" },
-    { anahtar: "yatirimPlanlaniyorMu", etiket: "Yeni tesis, genişleme veya modernizasyon yatırımı planlıyor musunuz?" },
-    { anahtar: "argeDurumu", etiket: "Ar-Ge / yenilik durumunuz nedir?" },
-    { anahtar: "ihracatDurumu", etiket: "İhracat durumunuz nedir?" },
-    { anahtar: "donusumDurumu", etiket: "Dijital veya yeşil dönüşüm yatırımı" },
-    { anahtar: "kirsalYatirimVarMi", etiket: "Kırsal alanda bir yatırımınız var mı?" },
-  ];
+  const zorunluAlanlarSayisi = ZORUNLU_HUNI_ALANLARI.length + 2; // + ad soyad, e-posta
+  const doldurulanSayisi =
+    ZORUNLU_HUNI_ALANLARI.filter((a) => g[a.anahtar]).length + (g.iletisimAdSoyad ? 1 : 0) + (g.iletisimEposta ? 1 : 0);
+  const ilerlemeYuzdesi = Math.round((doldurulanSayisi / zorunluAlanlarSayisi) * 100);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -402,6 +408,28 @@ export default function DestekUygunlukForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-10">
+      <div className="sticky top-[78px] z-10 -mx-6 border-b border-gray-200 bg-white/95 px-6 py-3 backdrop-blur sm:mx-0 sm:rounded-2xl sm:border sm:shadow-sm">
+        <div className="mb-1.5 flex items-center justify-between text-xs font-semibold text-gray-500">
+          <span>Form ilerlemesi</span>
+          <span>%{ilerlemeYuzdesi}</span>
+        </div>
+        <div className="h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+          <div className="h-full rounded-full bg-orange-500 transition-all" style={{ width: `${ilerlemeYuzdesi}%` }} />
+        </div>
+      </div>
+
+      <div className="grid gap-3 sm:grid-cols-3">
+        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+          <span className="text-lg">⚡</span> Anında sonuç — bekleme yok
+        </div>
+        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+          <span className="text-lg">🆓</span> Tamamen ücretsiz, taahhüt yok
+        </div>
+        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+          <span className="text-lg">🔒</span> Verileriniz yalnızca analiz için kullanılır
+        </div>
+      </div>
+
       <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
         <h2 className="text-xl font-bold text-[#071A2F]">Önce sizi kısaca tanıyalım</h2>
         <p className="mb-5 mt-1 text-sm text-gray-500">
@@ -581,6 +609,16 @@ export default function DestekUygunlukForm() {
           <Metin etiket="E-posta" tip="email" deger={g.iletisimEposta} onChange={(v) => set("iletisimEposta", v)} zorunlu />
           <Metin etiket="Telefon" tip="tel" deger={g.iletisimTelefon} onChange={(v) => set("iletisimTelefon", v)} />
         </div>
+        <label className="mt-5 block">
+          <Etiket>Eklemek istediğiniz bir şey var mı? (opsiyonel)</Etiket>
+          <textarea
+            value={g.ekAciklama ?? ""}
+            onChange={(e) => set("ekAciklama", e.target.value)}
+            rows={3}
+            placeholder="Yukarıdaki sorulara sığmayan bir durum, özel bir hedefiniz veya sormak istediğiniz bir şey varsa buraya yazabilirsiniz."
+            className={girdiSinifi}
+          />
+        </label>
         <label className="mt-5 flex items-start gap-2.5 text-sm text-gray-600">
           <input
             type="checkbox"

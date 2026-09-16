@@ -183,4 +183,5 @@ export interface DestekBasvuruGirdisi {
   iletisimAdSoyad?: string;
   iletisimEposta?: string;
   iletisimTelefon?: string;
+  ekAciklama?: string; // serbest metin — kural motoru kullanmaz, yalnızca değerlendirme sırasında bağlam için saklanır
 }
