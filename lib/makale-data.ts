@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satin-almada-devralinan-eski-iscilik-borclari",
+    title:
+      "Bir Şirket Satın Aldığınızda, Onun Geçmiş İşçilik Borçlarını da Devralır Mısınız?",
+    excerpt:
+      "Bir lojistik firması satın aldığı bir depolama şirketinin eski çalışanlarından açılan bir davayla üç ay sonra karşılaştı; dava hem eski hem yeni sahibine yöneltilmişti. Türk Ticaret Kanunu m.178, devralanı işçinin devirden önce doğmuş alacaklarından da sorumlu tutuyor; bu risk bilançoda değil, personel dosyalarında saklı.",
+    tag: "Hukuk ve Vergi",
+    date: "16 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "e-ticaret-hacmi-buyurken-kobiler-nerede",
     title: "E-Ticaret Hacmi 4,5 Trilyon TL'yi Geçti: Bu Büyümenin Neresindesiniz?",
     excerpt:
