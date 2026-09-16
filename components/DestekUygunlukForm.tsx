@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
+import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
 
 type Girdi = Record<string, string>;
 
@@ -100,6 +101,8 @@ const ONCELIKLI_GRUP_SECENEKLERI = [
   { value: "gazi_sehit_yakini", label: "Gazi veya birinci derece şehit yakını" },
 ];
 
+const ADIMLAR = ["Şirket Bilgileri", "Şirket Hedefleri", "Ön Analiz", "Detaylı Program Analizi", "Sonuç"];
+
 const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
   uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "Uygunsunuz" },
   kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "Muhtemelen uygun — görüşme gerekli" },
@@ -162,14 +165,19 @@ export default function DestekUygunlukForm() {
   const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hata, setHata] = useState("");
-  const [seciliPersona, setSeciliPersona] = useState<number | null>(null);
+  const [seciliPersonalar, setSeciliPersonalar] = useState<Set<number>>(new Set());
   const [kvkkOnay, setKvkkOnay] = useState(false);
   const [acikSonuclar, setAcikSonuclar] = useState<Set<string>>(new Set());
 
   const set = (key: string, value: string) => setG((prev) => ({ ...prev, [key]: value }));
 
   const personaSec = (index: number) => {
-    setSeciliPersona(index);
+    setSeciliPersonalar((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
+      return next;
+    });
     setG((prev) => ({ ...prev, ...PERSONALAR[index].alanlar }));
     document.getElementById("bolum-1")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -276,6 +284,17 @@ export default function DestekUygunlukForm() {
     ZORUNLU_HUNI_ALANLARI.filter((a) => g[a.anahtar]).length + (g.iletisimAdSoyad ? 1 : 0) + (g.iletisimEposta ? 1 : 0);
   const ilerlemeYuzdesi = Math.round((doldurulanSayisi / zorunluAlanlarSayisi) * 100);
 
+  // 5 adımlık gösterge için hangi adımın aktif olduğunu mevcut state'ten türetir.
+  const aktifAdim = (() => {
+    if (!sonuclar || duzenleModuAcik) {
+      return ZORUNLU_HUNI_ALANLARI.some((a) => g[a.anahtar]) || seciliPersonalar.size > 0 ? 2 : 1;
+    }
+    if (acikSonuclar.size === 0) return 3;
+    const acikProgramlar = sonuclar.filter((s) => acikSonuclar.has(s.programId));
+    const hepsiNetlesti = acikProgramlar.every((s) => s.durum === "uygun" || s.durum === "uygun_degil");
+    return hepsiNetlesti ? 5 : 4;
+  })();
+
   // Analizi çalıştırır (ilk gönderim veya bir kartın "Analizi Güncelle" butonu için ortak).
   // Başarılıysa güncel sonuç listesini döner (state henüz güncellenmeden çağırana lazım olabiliyor).
   const calistirAnaliz = async (): Promise<ProgramSonucu[] | null> => {
@@ -334,17 +353,31 @@ export default function DestekUygunlukForm() {
   if (sonuclar && !duzenleModuAcik) {
     return (
       <div id="sonuclar" className="space-y-6">
+        <AdimGostergesi aktifAdim={aktifAdim} />
         <div className="rounded-2xl border border-amber-300 bg-amber-50 p-5 text-sm text-amber-900">
-          Bu sonuçlar, girdiğiniz bilgilere dayalı bir <strong>ön değerlendirmedir</strong> ve resmi başvuru
-          sonucu ya da kesin uygunluk teyidi yerine geçmez. Mevzuat sık güncellenir; kesin sonuç için ilgili
-          kurumun güncel şartları ve bir danışman değerlendirmesi gereklidir.
+          Bu sonuçlar, girdiğiniz bilgilere dayalı bir <strong>ön değerlendirmedir</strong>, başvurunuzun kabul
+          edilme ihtimali değildir. "Uygunluk Eşleşmesi" yalnızca profilinizin programın bilinen şartlarıyla ne
+          kadar örtüştüğünü gösterir; resmi başvuru sonucu ya da kesin uygunluk teyidi yerine geçmez. Mevzuat
+          sık güncellenir; kesin sonuç için ilgili kurumun güncel şartları ve bir danışman değerlendirmesi
+          gereklidir.
         </div>
 
         <div>
           <h2 className="text-lg font-bold text-[#071A2F]">
-            Size en uygun {Math.min(5, sonuclar.length)} program
+            Şirketiniz için {sonuclar.length} potansiyel fırsat tespit ettik
           </h2>
-          <p className="text-sm text-gray-500">Puana göre sıralandı — detay kriterleri görmek için bir karta tıklayın.</p>
+          <div className="mt-3 flex flex-wrap gap-4 text-sm">
+            <span className="flex items-center gap-1.5">
+              🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun").length}</strong> ön uygun
+            </span>
+            <span className="flex items-center gap-1.5">
+              🟡 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun" || s.durum === "belirsiz").length}</strong> detaylı inceleme gerekli
+            </span>
+            <span className="flex items-center gap-1.5">
+              🔴 <strong>{sonuclar.filter((s) => s.durum === "uygun_degil").length}</strong> ilk elemede uygun değil
+            </span>
+          </div>
+          <p className="mt-3 text-sm text-gray-500">Eşleşmeye göre sıralandı — detay kriterleri görmek için bir karta tıklayın.</p>
         </div>
 
         {sonuclar.map((s) => {
@@ -367,9 +400,9 @@ export default function DestekUygunlukForm() {
                   <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
                 </div>
                 <div className="flex flex-shrink-0 items-center gap-3">
-                  <div className="text-center">
-                    <div className={`text-2xl font-black leading-none ${PUAN_RENK(s.puan)}`}>{s.puan}</div>
-                    <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">/ 10 puan</div>
+                  <div className="text-center" title="Bu puan başvurunun kabul edilme ihtimali değildir; şirket bilgilerinizin programın kriterleriyle eşleşme düzeyini gösteren bir ön değerlendirme skorudur.">
+                    <div className={`text-2xl font-black leading-none ${PUAN_RENK(s.puan)}`}>{s.puan * 10}</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Uygunluk<br />Eşleşmesi</div>
                   </div>
                   <span className={`flex h-8 w-8 items-center justify-center rounded-full border text-sm transition ${acik ? "rotate-180" : ""}`}>
                     ▾
@@ -378,7 +411,9 @@ export default function DestekUygunlukForm() {
               </button>
               {acik && (
                 <div className="border-t border-black/10 p-6 pt-5">
-                  <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">Değerlendirme kriterleri</p>
+                  <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">
+                    {s.durum === "uygun_degil" ? "Neden uygun görünmüyor?" : "Neden uygun görünüyorsunuz?"}
+                  </p>
                   <ul className="mb-3 list-disc space-y-1 pl-5 text-sm text-gray-800">
                     {s.gerekceler.map((gerekce, i) => <li key={i}>{gerekce}</li>)}
                   </ul>
@@ -431,6 +466,27 @@ export default function DestekUygunlukForm() {
             </ul>
           </div>
         )}
+        {ilgiliDanismanlikAlanlari(g).length > 0 && (
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Şirketiniz İçin Değerlendirilebilecek Danışmanlık Alanları</h3>
+            <p className="mb-4 text-sm text-gray-600">
+              Cevaplarınıza göre, yukarıdaki devlet destekleri dışında bu alanlarda da danışmanlık hizmeti veriyoruz.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {ilgiliDanismanlikAlanlari(g).map((a) => (
+                <Link
+                  key={a.href}
+                  href={a.href}
+                  className="rounded-xl border border-gray-200 bg-white p-4 transition hover:border-orange-400 hover:shadow-md"
+                >
+                  <div className="text-sm font-bold text-[#071A2F]">{a.baslik} →</div>
+                  <div className="mt-1 text-xs leading-relaxed text-gray-500">{a.aciklama}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="rounded-2xl border border-gray-200 bg-[#071A2F] p-8 text-center text-white shadow-lg">
           <p className="mb-4 text-lg font-semibold">Sonuçları birlikte değerlendirip başvuru sürecini konuşalım mı?</p>
           <Link href="/#contact" className="inline-block rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600">
@@ -461,6 +517,9 @@ export default function DestekUygunlukForm() {
       )}
 
       <div className="sticky top-[78px] z-10 -mx-6 border-b border-gray-200 bg-white/95 px-6 py-3 backdrop-blur sm:mx-0 sm:rounded-2xl sm:border sm:shadow-sm">
+        <div className="mb-2 overflow-x-auto">
+          <AdimGostergesi aktifAdim={aktifAdim} />
+        </div>
         <div className="mb-1.5 flex items-center justify-between text-xs font-semibold text-gray-500">
           <span>Form ilerlemesi</span>
           <span>%{ilerlemeYuzdesi}</span>
@@ -483,9 +542,9 @@ export default function DestekUygunlukForm() {
       </div>
 
       <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
-        <h2 className="text-xl font-bold text-[#071A2F]">Önce sizi kısaca tanıyalım</h2>
+        <h2 className="text-xl font-bold text-[#071A2F]">Şirketiniz için hangileri geçerli?</h2>
         <p className="mb-5 mt-1 text-sm text-gray-500">
-          Size en yakın olanı seçin, aşağıdaki bazı soruları sizin için önceden işaretleyelim. İstediğiniz an değiştirebilirsiniz.
+          Birden fazlasını seçebilirsiniz — aşağıdaki bazı soruları sizin için önceden işaretleyelim. İstediğiniz an değiştirebilirsiniz.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {PERSONALAR.map((p, i) => (
@@ -493,10 +552,14 @@ export default function DestekUygunlukForm() {
               key={p.baslik}
               type="button"
               onClick={() => personaSec(i)}
-              className={`rounded-2xl border p-4 text-left transition hover:border-orange-400 hover:shadow-md ${
-                seciliPersona === i ? "border-orange-500 bg-orange-50" : "border-gray-200 bg-white"
+              aria-pressed={seciliPersonalar.has(i)}
+              className={`relative rounded-2xl border p-4 text-left transition hover:border-orange-400 hover:shadow-md ${
+                seciliPersonalar.has(i) ? "border-orange-500 bg-orange-50" : "border-gray-200 bg-white"
               }`}
             >
+              {seciliPersonalar.has(i) && (
+                <span className="absolute right-3 top-3 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-xs text-white">✓</span>
+              )}
               <div className="mb-2 text-3xl">{p.ikon}</div>
               <div className="mb-1 text-sm font-bold text-[#071A2F]">{p.baslik}</div>
               <div className="text-xs leading-relaxed text-gray-500">{p.aciklama}</div>
@@ -510,7 +573,12 @@ export default function DestekUygunlukForm() {
           <Metin etiket="Şirket Unvanı" deger={g.sirketUnvani} onChange={(v) => set("sirketUnvani", v)} />
           <Secim etiket="Şirket Türü" deger={g.sirketTuru} onChange={(v) => set("sirketTuru", v)} secenekler={SIRKET_TURU_SECENEKLERI} />
           <Tarih etiket="Kuruluş Tarihi" deger={g.kurulusTarihi} onChange={(v) => set("kurulusTarihi", v)} />
-          <Metin etiket="NACE Kodu (örn. 62.01)" deger={g.naceKodu} onChange={(v) => set("naceKodu", v)} placeholder="62.01" />
+          <div>
+            <Metin etiket="NACE Kodu (örn. 62.01)" deger={g.naceKodu} onChange={(v) => set("naceKodu", v)} placeholder="62.01" />
+            {g.naceKodu && naceAciklamaBul(g.naceKodu) && (
+              <p className="mt-1.5 text-xs text-gray-500">→ {naceAciklamaBul(g.naceKodu)}</p>
+            )}
+          </div>
           <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
           <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
           <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
@@ -737,6 +805,68 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
     default:
       return null;
   }
+}
+
+// Huni cevaplarına göre, kural motorunun değerlendirmediği ama alakalı
+// olabilecek Koray Akdağ danışmanlık hizmetlerini önerir (site içi hub
+// sayfalarına bağlanır, ayrı bir uygunluk hesabı yapılmaz).
+function ilgiliDanismanlikAlanlari(g: Girdi): { baslik: string; aciklama: string; href: string }[] {
+  const alanlar: { baslik: string; aciklama: string; href: string }[] = [];
+  if (g.ihracatDurumu && g.ihracatDurumu !== "yok") {
+    alanlar.push({
+      baslik: "İhracat Destekleri ve Turquality",
+      aciklama: "Pazara giriş, fuar, e-ihracat ve markalaşma desteklerinde uygunluk analizi ve başvuru süreci.",
+      href: "/ihracat-destekleri-danismanligi",
+    });
+  }
+  if (g.yatirimPlanlaniyorMu === "evet") {
+    alanlar.push({
+      baslik: "Yatırım Teşvik Belgesi",
+      aciklama: "Yatırımınızın hangi destek unsurlarına hak kazandığını birlikte hesaplayalım.",
+      href: "/yatirim-tesvik-belgesi-danismanligi",
+    });
+  }
+  if (g.argeDurumu && g.argeDurumu !== "yok") {
+    alanlar.push({
+      baslik: "TÜBİTAK Ar-Ge Destekleri",
+      aciklama: "Projenize uygun TÜBİTAK çağrısının belirlenmesinden başvuru dosyasına kadar destek.",
+      href: "/tubitak-danismanlik",
+    });
+  }
+  if (g.imalatciMi === "evet" || g.yeniGirisimciMi === "evet" || g.yatirimPlanlaniyorMu === "evet") {
+    alanlar.push({
+      baslik: "KOSGEB Danışmanlığı",
+      aciklama: "Hangi KOSGEB programına uygun olduğunuzdan başvuru dosyanıza kadar uçtan uca destek.",
+      href: "/kosgeb-danismanlik",
+    });
+  }
+  // programId tekrarını önle
+  return alanlar.filter((a, i) => alanlar.findIndex((b) => b.href === a.href) === i);
+}
+
+function AdimGostergesi({ aktifAdim }: { aktifAdim: number }) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-1 gap-y-2 text-xs font-semibold">
+      {ADIMLAR.map((etiket, i) => {
+        const adimNo = i + 1;
+        const tamamlandi = adimNo < aktifAdim;
+        const aktif = adimNo === aktifAdim;
+        return (
+          <div key={etiket} className="flex items-center gap-1">
+            <span
+              className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 ${
+                aktif ? "bg-[#071A2F] text-white" : tamamlandi ? "text-green-600" : "text-gray-400"
+              }`}
+            >
+              <span>{tamamlandi ? "✓" : String(adimNo).padStart(2, "0")}</span>
+              <span className="hidden sm:inline">{etiket}</span>
+            </span>
+            {adimNo < ADIMLAR.length && <span className="text-gray-300">→</span>}
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 function Bolum({ baslik, aciklama, children, id }: { baslik: string; aciklama?: string; children: React.ReactNode; id?: string }) {
