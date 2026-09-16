@@ -599,11 +599,11 @@ export default function BlogPage() {
           <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB Kapasite Geliştirme Destek Programı 2026</h3>
         </Link>
         <Link
-          href="/blog/kosgeb-yapay-zeka-kredi-programi-2026"
+          href="/blog/kosgeb-yesil-sanayi-destek-programi-2026"
           className="rounded-2xl border bg-white p-6 shadow-sm transition hover:border-orange-500 hover:shadow-md"
         >
-          <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • YAPAY ZEKA • 2026</div>
-          <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB Yapay Zeka Kredi Programı 2026</h3>
+          <div className="mb-2 text-sm font-semibold text-orange-600">KOSGEB • YEŞİL DÖNÜŞÜM • 2026</div>
+          <h3 className="text-lg font-bold text-[#071A2F]">KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi</h3>
         </Link>
         <Link
           href="/blog/kosgeb-arge-urge-inovasyon-destek-programi-2026"

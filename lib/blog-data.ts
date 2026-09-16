@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-yesil-sanayi-destek-programi-2026",
+    title: "KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi Yatırımınıza Ne Kadar Destek Alırsınız?",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, imalatçı KOBİ'lere çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sunuyor. Şartları, oranları ve başvuru süreci.",
+    category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1775317628391-a0429fe3be1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi",
     title: "Makine/Ekipman Yatırımı Yapacağım: KOSGEB mi Yatırım Teşvik Belgesi mi Daha Avantajlı?",
     excerpt: "Yatırım tutarına göre karar matrisi: KOSGEB'in kredi + faiz desteği modeli (20-30 milyon TL kredi limiti) ile Yatırım Teşvik Belgesi'nin KDV/gümrük/vergi avantajı (7,5-15,1 milyon TL asgari yatırım şartı) arasındaki fark, mükerrer destek yasağı ve varsayımsal örnek senaryoyla 2026 güncel karşılaştırma rehberi.",
