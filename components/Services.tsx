@@ -10,6 +10,7 @@ import Link from "next/link";
 const ITEM_LINKS: Record<string, string> = {
   "KOSGEB": "/kosgeb-danismanlik",
   "Yatırım Teşvik Belgesi": "/yatirim-tesvik-belgesi-danismanligi",
+  "Ticaret Bakanlığı Destekleri": "/ihracat-destekleri-danismanligi",
   "🇵🇱 Polonya": "/blog/polonyada-sirket-nasil-kurulur",
   "🇮🇹 İtalya": "/blog/italyada-sirket-nasil-kurulur",
   "🇩🇪 Almanya": "/blog/almanyada-sirket-nasil-kurulur",
