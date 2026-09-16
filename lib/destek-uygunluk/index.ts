@@ -3,7 +3,8 @@ import {
   kosgebIsGelistirmeDegerlendir,
   kosgebKapasiteGelistirmeDegerlendir,
   kosgebArgeUrgeInovasyonDegerlendir,
-  kosgebDijitalYesilDonusumDegerlendir,
+  kosgebDijitalDonusumDegerlendir,
+  kosgebYesilSanayiDegerlendir,
   yatirimTesvikBelgesiDegerlendir,
   tubitak1501Degerlendir,
   tubitak1507Degerlendir,
@@ -61,7 +62,8 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(tubitak1501Degerlendir(girdi));
   }
   if (girdi.donusumDurumu !== "yok") {
-    taslaklar.push(kosgebDijitalYesilDonusumDegerlendir(girdi));
+    taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
+    taslaklar.push(kosgebYesilSanayiDegerlendir(girdi));
     taslaklar.push(tubitak1832Degerlendir(girdi));
   }
   if (girdi.yatirimPlanlaniyorMu !== false) {

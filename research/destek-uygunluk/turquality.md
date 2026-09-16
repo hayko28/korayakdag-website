@@ -1,5 +1,22 @@
 # Turquality / Marka Destek Programı — Uygunluk Kriterleri
 
+## DÜZELTME (2026-09-17) — birincil kaynakla teyit edildi
+
+Koray'ın uyarısı üzerine ticaret.gov.tr'deki "Marka ve TURQUALITY® Desteğine İlişkin Genelge" PDF'i
+(birincil kaynak) doğrudan okunarak teyit edildi. Kesin madde metni:
+
+> **MADDE 14/1-c:** Başvuruda bulunulan markaya ilişkin yurt içi tescil **başvuru** tarihinin yurt dışı
+> tescil **başvuru** tarihinden **önce veya aynı tarihte** olması gerekir.
+
+Önceki metin "tescil" diyordu, doğrusu "başvuru tarihi"; ayrıca "aynı tarihte" olması da yeterli —
+sadece kesin olarak yurt dışı başvurusunun yurt içinden ÖNCE yapılmış olması diskalifiye ediyor.
+Kod ve aşağıdaki metin buna göre güncellendi, alttaki mantık (boolean soru) zaten doğruydu.
+
+Kaynak: https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf
+
+---
+
+
 Kaynak: `app/blog/turquality-programi-nedir-sartlari-destekleri-2026/page.tsx` içinde
 araştırılmış, Marka ve Turquality Desteklerine İlişkin Genelge'ye dayanan bilgiler.
 

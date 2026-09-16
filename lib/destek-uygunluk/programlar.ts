@@ -112,7 +112,12 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     gerekceler.push(`İşletme ölçeği "${olcek}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
   }
-  if (olcek === null) eksikAlanlar.push("çalışan sayısı / yıllık ciro-bilanço");
+  if (olcek === null) {
+    // Hangisinin eksik olduğunu ayrı ayrı bildir — ikisi birden eksik değilse
+    // "zaten girdim" hissi yaratan tek bir kombine mesaj yerine.
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
   else if (!kosgebDesteklenenSektorMu(g.naceKodu)) {
@@ -356,7 +361,10 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki (mikro/küçük/orta) sermaye şirketlerine açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
   }
-  if (olcek === null) eksikAlanlar.push("çalışan sayısı / yıllık ciro-bilanço");
+  if (olcek === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
 
   const bekleyen = g.teydebBekleyenProjeSayisi ?? 0;
   const onayli = g.teydebOnayliProjeSayisi ?? 0;
@@ -425,7 +433,10 @@ export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): Pro
       gerekceler.push("Şirket kurulmuşsa bu program yalnızca KOBİ ölçeğindeki (mikro/küçük/orta) sermaye şirketlerine açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
       return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
     }
-    if (olcek === null) eksikAlanlar.push("çalışan sayısı / yıllık ciro-bilanço (KOBİ ölçeği için)");
+    if (olcek === null) {
+      if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+      if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+    }
   }
 
   gerekceler.push("Henüz şirketi olmayan, bir iş fikrine dayalı 'Yeni Girişimci' olarak (ömür boyu en fazla 1 defa) ya da kurulu bir KOBİ olarak (Ar-Ge/İnovasyon projesinde sınırsız, Ür-Ge projesinde en fazla 3 kez) başvurulabilir; aynı anda yalnızca 1 proje desteklenir.");
@@ -553,8 +564,12 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
 
 // --- 9) KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (KOBİ Dijital Dönüşüm DP) ---
 // Kaynak: research/destek-uygunluk/kosgeb-dijital-yesil-donusum.md
-export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
-  const meta = { programId: "kosgeb-dijital-yesil-donusum", programAdi: "KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı", kurum: "KOSGEB" };
+// --- 9a) KOBİ Dijital Dönüşüm Destek Programı ---
+// Kaynak: research/destek-uygunluk/kosgeb-dijital-yesil-donusum.md — 2026-09-17'de
+// "Yeşil Sanayi Destek Programı"ndan AYRILDI (iki bağımsız program olduğu doğrulandı,
+// ortak DDX/Mali Karne şartı yok).
+export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-dijital-donusum", programAdi: "KOBİ Dijital Dönüşüm Destek Programı", kurum: "KOSGEB" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
 
@@ -572,7 +587,16 @@ export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): P
     gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık.");
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
   }
-  if (olcek === null) eksikAlanlar.push("çalışan sayısı / yıllık ciro-bilanço");
+  if (olcek === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
+  else if (!imalatSektoruMu(g.naceKodu)) {
+    gerekceler.push("Bu program NACE Kısım C (İmalat, 10-33) sektöründeki işletmelere açık — girilen NACE kodu imalat dışında görünüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) kapsam dışı.", gerekceler);
+  }
 
   if (g.ddxRaporuVarMi === false) {
     gerekceler.push("Başvurunun ön şartı olan Dijital Değişim/Dönüşüm (DDX) raporu henüz alınmamış.");
@@ -586,11 +610,12 @@ export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): P
   }
   if (g.maliKarneVarMi === undefined) eksikAlanlar.push("Mali Karne durumu");
 
-  gerekceler.push("Şirket türü ve KOBİ ölçeği şartları sağlanıyor; program hem Dijital Dönüşüm (süreç/teknoloji entegrasyonu) hem Yeşil Dönüşüm (kaynak verimliliği, düşük karbonlu üretim, döngüsel ekonomi) yatırımlarını aynı çatı altında destekliyor.");
+  gerekceler.push("Şirket türü, KOBİ ölçeği ve imalat sektörü şartları sağlanıyor.");
 
   const uyarilar = [
     "İşletme başına destek üst limiti 20.000.000 TL'ye kadar olup büyük kısmı geri ödemeli (kredi faiz/kâr payı desteği) niteliktedir; hibe oranı kalem bazında değişir.",
     "24 aylık uygulama süresi ve 36 aya varan vade söz konusudur; kesin oran ve limitler başvuru anında KOSGEB'in güncel Yönergesiyle teyit edilmelidir.",
+    "Ayrıca son mali yıl Öz Kaynaklar Toplamı'nın pozitif olması ve son 3 mali yıldan en az birinde Faaliyet Kârı'nın pozitif olması gerekiyor — bu ön analizde ayrıca sorulmuyor, başvuru öncesi mali tablolarınızla kontrol edilmeli.",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -603,6 +628,71 @@ export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): P
   }
 
   return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun", "Girilen bilgilere göre ön koşulların tamamı sağlanıyor.", gerekceler, uyarilar);
+}
+
+// --- 9b) Yeşil Sanayi Destek Programı ---
+// Kaynak: research/destek-uygunluk/yesil-sanayi-destek-programi.md — DİKKAT: bu program
+// diğer 9 programa göre daha az derinlemesine araştırıldı (ikincil kaynak özeti, PDF tam
+// metniyle teyit edilmedi). Bu yüzden bilinçli olarak muhafazakâr: hiçbir zaman "uygun"
+// dönmez, en fazla "kismen_uygun"; şirket türü gibi teyit edilmemiş bir şart hard rule
+// olarak eklenmedi.
+export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-yesil-sanayi", programAdi: "Yeşil Sanayi Destek Programı", kurum: "KOSGEB" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar = [
+    "Destek oranı %60 (deprem bölgesi illerinde %80-90), proje süresi 8-12 ay öngörülüyor.",
+    "Bu programın araştırması diğerlerine göre daha az derinlemesine yapıldı (Uygulama Esasları'nın tam metni satır satır okunmadı) — başvuru öncesi mutlaka KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
+  ];
+
+  const mali = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
+  if (olcek === "kobi_disi") {
+    gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler, uyarilar);
+  }
+  if (olcek === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
+  else if (!imalatSektoruMu(g.naceKodu)) {
+    gerekceler.push("Program imalatçı KOBİ'lere yönelik — girilen NACE kodu imalat (Kısım C) dışında görünüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) kapsam dışı görünüyor.", gerekceler, uyarilar);
+  } else {
+    gerekceler.push("İmalat sektöründe faaliyet gösteriyorsunuz.");
+  }
+
+  if (g.yesilSanayiProjeTemasi === undefined || g.yesilSanayiProjeTemasi === "emin_degil") {
+    eksikAlanlar.push("proje teması (yenilenebilir enerji / kaynak verimliliği / atık yönetimi / döngüsel ekonomi)");
+  } else {
+    const TEMA_ETIKET: Record<string, string> = {
+      yenilenebilir_enerji: "yenilenebilir enerji",
+      kaynak_verimliligi: "kaynak verimliliği",
+      atik_yonetimi: "atık yönetimi",
+      dongusel_ekonomi: "döngüsel ekonomi",
+    };
+    gerekceler.push(`Proje teması (${TEMA_ETIKET[g.yesilSanayiProjeTemasi]}) programın kapsadığı alanlardan biriyle örtüşüyor.`);
+  }
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre bilinen genel kriterlere uyuyorsunuz; araştırma derinliği sınırlı olduğu için kesin sonuç KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
+    gerekceler,
+    uyarilar
+  );
 }
 
 // --- 10) TKDK - IPARD III Kırsal Kalkınma Destekleri ---
@@ -685,10 +775,10 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
   }
 
   if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === true) {
-    gerekceler.push("Yurt dışı marka tescili, yurt içi tescilden önce yapılmış — bu sıra diskalifiye eden bir durum, yurt içi tescil önce alınmış olmalı.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil sırası uygun değil.", gerekceler, uyarilar);
+    gerekceler.push("Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", gerekceler, uyarilar);
   }
-  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescilin yurt içi tescilden önce olup olmadığı");
+  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescil başvurusunun yurt içi tescil başvurusundan önce mi yapıldığı (aynı tarih sorun değil)");
 
   if (g.markaYurtIciTescilVarMi === false) {
     gerekceler.push("Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.");

@@ -87,6 +87,14 @@ const DONUSUM_DURUMU_SECENEKLERI = [
   { value: "yapiyorum", label: "Evet, uyguluyorum" },
 ];
 
+const YESIL_SANAYI_TEMA_SECENEKLERI = [
+  { value: "yenilenebilir_enerji", label: "Yenilenebilir enerji" },
+  { value: "kaynak_verimliligi", label: "Kaynak verimliliği" },
+  { value: "atik_yonetimi", label: "Atık yönetimi" },
+  { value: "dongusel_ekonomi", label: "Döngüsel ekonomi" },
+  { value: "emin_degil", label: "Emin değilim" },
+];
+
 const KIRSAL_YATIRIM_DURUMU_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "planliyorum", label: "Yok ama planlıyorum" },
@@ -107,8 +115,12 @@ const ADIMLAR = ["Şirket Bilgileri", "Şirket Hedefleri", "Ön Analiz", "Detayl
 // (uygun / kismen_uygun / belirsiz / uygun_degil) değişmedi.
 const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
   uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "🟢 Ön Uygun" },
-  kismen_uygun: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Potansiyel Uygun — Detay Gerekli" },
-  belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Potansiyel Uygun — Detay Gerekli" },
+  // kismen_uygun: nesnel kriterler bu araçla kontrol edilebildiği kadarıyla
+  // karşılanıyor, ama nihai karar sizin girdiğiniz bilgiden değil dış bir
+  // değerlendirmeden çıkıyor (danışmanlık puanlaması, E-TUYS incelemesi vb.).
+  kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "🔵 Koşullu Uygun — Resmi Değerlendirmeye Tabi" },
+  // belirsiz: eksikAlanlar dolu — karar sizin daha fazla bilgi girmenize bağlı.
+  belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Bilgi Eksik — Tamamlayın" },
   uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "🔴 İlk Elemede Uygun Değil" },
 };
 
@@ -262,6 +274,7 @@ export default function DestekUygunlukForm() {
 
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
       maliKarneVarMi: bool("maliKarneVarMi"),
+      yesilSanayiProjeTemasi: (g.yesilSanayiProjeTemasi as DestekBasvuruGirdisi["yesilSanayiProjeTemasi"]) || undefined,
 
       basvuranYasi: num("basvuranYasi"),
       tkdkDesteklenenIldeMi: bool("tkdkDesteklenenIldeMi"),
@@ -373,7 +386,10 @@ export default function DestekUygunlukForm() {
               🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun").length}</strong> ön uygun
             </span>
             <span className="flex items-center gap-1.5">
-              🟡 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun" || s.durum === "belirsiz").length}</strong> detaylı inceleme gerekli
+              🔵 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun").length}</strong> koşullu uygun
+            </span>
+            <span className="flex items-center gap-1.5">
+              🟡 <strong>{sonuclar.filter((s) => s.durum === "belirsiz").length}</strong> bilgi eksik
             </span>
             <span className="flex items-center gap-1.5">
               🔴 <strong>{sonuclar.filter((s) => s.durum === "uygun_degil").length}</strong> ilk elemede uygun değil
@@ -481,8 +497,10 @@ export default function DestekUygunlukForm() {
                       <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
                       {s.durum === "uygun" &&
                         "Bu program için başvuru sürecini birlikte planlayalım — aşağıdaki İletişime Geç'e tıklayın."}
-                      {(s.durum === "belirsiz" || s.durum === "kismen_uygun") &&
+                      {s.durum === "belirsiz" &&
                         "Yukarıdaki eksik bilgileri tamamlayıp \"Analizi Güncelle\"ye basın; net değilseniz bizimle görüşün."}
+                      {s.durum === "kismen_uygun" &&
+                        "Girdiğiniz bilgilere göre nesnel ön şartları sağlıyorsunuz; nihai karar resmi başvuru/danışmanlık değerlendirmesiyle netleşir. Süreci birlikte planlamak için bizimle görüşün."}
                       {olumsuz &&
                         "Bu program şu an için uygun görünmüyor; diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına göz atabilirsiniz."}
                     </div>
@@ -702,6 +720,35 @@ export default function DestekUygunlukForm() {
 // Sonuç kartı "belirsiz" durumdaysa, o programa özel eksik soruları kartın
 // içinde gösterir. Şirket Bilgileri/huni soruları burada tekrar sorulmaz —
 // yalnızca o programa özgü Katman 2 alanları.
+// KOBİ ölçeği (çalışan sayısı + yıllık ciro/bilanço) birden fazla programda
+// kriter olarak kontrol ediliyor. Bu alanlar zaten Şirket Bilgileri'nde
+// sorulduğu için burada TEKRAR "eksik" gibi görünmesin diye: doluysa salt
+// okunur bir onay satırı, boşsa (kullanıcı Bölüm 1'de atlamışsa) aynı
+// state anahtarına bağlı düzenlenebilir alan gösterir — Bölüm 1'e
+// dönmeye gerek kalmaz, buradan girilen değer oraya da yansır.
+function KobiOlcegiAlanlari({ g, set }: { g: Girdi; set: (k: string, v: string) => void }) {
+  const calisanDolu = !!g.calisanSayisi;
+  const ciroDolu = !!(g.yillikNetSatisHasilatiTl || g.maliBilancoTl);
+  return (
+    <div className="grid gap-5 sm:grid-cols-2">
+      {calisanDolu ? (
+        <div className="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
+          ✓ Çalışan sayınız: <strong>{g.calisanSayisi}</strong> — kriter açısından değerlendirildi.
+        </div>
+      ) : (
+        <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
+      )}
+      {ciroDolu ? (
+        <div className="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
+          ✓ Yıllık ciro/bilanço bilginiz alındı — kriter açısından değerlendirildi.
+        </div>
+      ) : (
+        <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+      )}
+    </div>
+  );
+}
+
 function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; set: (k: string, v: string) => void }) {
   switch (programId) {
     case "kosgeb-is-gelistirme":
@@ -718,7 +765,8 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
     case "kosgeb-kapasite-gelistirme":
       return (
         <>
-          <div className="grid gap-5 sm:grid-cols-2">
+          <KobiOlcegiAlanlari g={g} set={set} />
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
             <EvetHayir etiket="Bu program daha önce kullanıldı mı?" deger={g.kapasiteProgramiDahaOnceKullanildiMi} onChange={(v) => set("kapasiteProgramiDahaOnceKullanildiMi", v)} />
             <EvetHayir etiket="Sanayi Sicil Belgesi var mı? (imalat için)" deger={g.sanayiSicilBelgesiVarMi} onChange={(v) => set("sanayiSicilBelgesiVarMi", v)} />
             <EvetHayir etiket="YODA raporu var mı? (imalat için)" deger={g.yodaRaporuVarMi} onChange={(v) => set("yodaRaporuVarMi", v)} />
@@ -741,16 +789,30 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
       );
     case "kosgeb-arge-urge-inovasyon":
       return (
-        <p className="text-sm text-gray-500">
-          Bu program, Şirket Bilgileri bölümündeki şirket türü, çalışan sayısı ve ciro bilgilerinizle
-          değerlendirilir; ek bir soru gerekmez. Eksik görünüyorsa yukarı dönüp Şirket Bilgileri'ni tamamlayın.
-        </p>
+        <div>
+          <KobiOlcegiAlanlari g={g} set={set} />
+          <p className="mt-3 text-sm text-gray-500">
+            Şirket türü ve KOBİ ölçeği dışında ek bir soru gerekmez.
+          </p>
+        </div>
       );
-    case "kosgeb-dijital-yesil-donusum":
+    case "kosgeb-dijital-donusum":
       return (
-        <div className="grid gap-5 sm:grid-cols-2">
-          <EvetHayir etiket="DDX (Dijital Değişim/Dönüşüm) raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
-          <EvetHayir etiket="Güncel Mali Karneniz var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
+        <div>
+          <KobiOlcegiAlanlari g={g} set={set} />
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+            <EvetHayir etiket="DDX (Dijital Değişim/Dönüşüm) raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
+            <EvetHayir etiket="Güncel Mali Karneniz var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
+          </div>
+        </div>
+      );
+    case "kosgeb-yesil-sanayi":
+      return (
+        <div>
+          <KobiOlcegiAlanlari g={g} set={set} />
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+            <Secim etiket="Projenizin teması nedir?" deger={g.yesilSanayiProjeTemasi} onChange={(v) => set("yesilSanayiProjeTemasi", v)} secenekler={YESIL_SANAYI_TEMA_SECENEKLERI} />
+          </div>
         </div>
       );
     case "yatirim-tesvik-belgesi": {

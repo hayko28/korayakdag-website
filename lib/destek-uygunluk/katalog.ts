@@ -18,6 +18,8 @@ const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "girişimci destek",
   "ar-ge, ür-ge",
   "dijital ve yeşil dönüşüm",
+  "kobi dijital dönüşüm",
+  "yeşil sanayi",
   "yatırım teşvik sistemi",
   "1501",
   "1507",

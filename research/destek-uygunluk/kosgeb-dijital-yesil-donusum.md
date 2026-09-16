@@ -1,4 +1,21 @@
-# KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (evaluator kaynağı)
+# KOSGEB Dijital Dönüşüm Destek Programı (evaluator kaynağı)
+
+## DÜZELTME (2026-09-17) — İKİ AYRI PROGRAM, YANLIŞLIKLA BİRLEŞTİRİLMİŞTİ
+
+Koray'ın canlı testte fark etmesi üzerine araştırıldı: bu program ("KOBİ Dijital Dönüşüm Destek
+Programı", resmi ad budur) ile "Yeşil Sanayi Destek Programı" (bkz. ayrı dosya
+research/destek-uygunluk/yesil-sanayi-destek-programi.md) **gerçekten iki bağımsız program** — ortak
+DDX/Mali Karne şartı yok, farklı Uygulama Esasları/Genelge'ye tabiler. Motor artık bunları
+`kosgebDijitalDonusumDegerlendir` ve `kosgebYesilSanayiDegerlendir` olarak ayrı fonksiyonlarda
+değerlendiriyor. Ayrıca resmi kaynak, Dijital Dönüşüm için NACE Kısım C (İmalat) sektör şartı ve
+"son mali yıl Öz Kaynaklar Toplamı pozitif + son 3 mali yıldan en az birinde Faaliyet Karı pozitif"
+şartını da doğruladı — ikincisi form alanı olarak eklenmedi (kapsam genişletme riski), sadece uyarı
+notu olarak eklendi.
+
+Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
+
+---
+
 
 ## Durum — İKİNCİL KAYNAK (WebSearch, 2026-08-20)
 
@@ -14,7 +31,7 @@ ustad.co, kobitime.com) kullanıldı.
   yapılamıyor.
 - 24 aylık uygulama süresi, 36 aya varan vade.
 
-## Evaluator mantığı (lib/destek-uygunluk/programlar.ts → kosgebDijitalYesilDonusumDegerlendir)
+## Evaluator mantığı (lib/destek-uygunluk/programlar.ts → kosgebDijitalDonusumDegerlendir; Yeşil Sanayi kısmı 2026-09-17'de kosgebYesilSanayiDegerlendir olarak ayrıldı, bkz. yesil-sanayi-destek-programi.md)
 - Şirket türü (sermaye şirketi) + KOBİ ölçek kontrolü (diğer KOSGEB programlarıyla aynı desen).
 - `ddxRaporuVarMi === false` veya `maliKarneVarMi === false` → doğrudan "uygun_degil" (bunlar programın
   bilinen zorunlu ön koşulları).

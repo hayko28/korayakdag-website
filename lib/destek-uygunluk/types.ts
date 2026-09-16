@@ -84,6 +84,13 @@ export type DonusumDurumu = "yok" | "planliyorum" | "yapiyorum";
 
 export type KirsalYatirimDurumu = "yok" | "planliyorum" | "yapiyorum";
 
+export type YesilSanayiProjeTemasi =
+  | "yenilenebilir_enerji"
+  | "kaynak_verimliligi"
+  | "atik_yonetimi"
+  | "dongusel_ekonomi"
+  | "emin_degil";
+
 // Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
 // değerlendirilemez, Katman 2 (programa özel, sadece huniden geçen adaylara
 // sorulur) alanları boş bırakılan programlar "belirsiz" sonuç döner, "uygun
@@ -164,9 +171,12 @@ export interface DestekBasvuruGirdisi {
   ihracatciBirligiUyesiMi?: boolean;
   dysKayitliMi?: boolean;
 
-  // KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (KOBİ Dijital Dönüşüm DP)
+  // KOBİ Dijital Dönüşüm Destek Programı
   ddxRaporuVarMi?: boolean;
   maliKarneVarMi?: boolean;
+
+  // Yeşil Sanayi Destek Programı (Dijital Dönüşüm'den AYRI bir program — 2026-09-17'de ayrıldı)
+  yesilSanayiProjeTemasi?: YesilSanayiProjeTemasi;
 
   // TKDK (IPARD III) Kırsal Kalkınma Destekleri
   basvuranYasi?: number;
@@ -179,7 +189,7 @@ export interface DestekBasvuruGirdisi {
   turqualitySon1YilIhracatUsd?: number; // 10M USD istisnası için
   markaYurtIciTescilVarMi?: boolean; // en az 1 yıl önce alınmış
   markaYurtDisiTescilVarMi?: boolean; // Madrid Protokolü ülkesinde
-  markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // true ise diskalifiye
+  markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // MADDE 14/1-c: yurt dışı BAŞVURU tarihi, yurt içi BAŞVURU tarihinden önce ise true — aynı tarih diskalifiye ETMEZ
 
   // Lead / iletişim
   iletisimAdSoyad?: string;
