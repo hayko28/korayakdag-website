@@ -103,11 +103,13 @@ const ONCELIKLI_GRUP_SECENEKLERI = [
 
 const ADIMLAR = ["Şirket Bilgileri", "Şirket Hedefleri", "Ön Analiz", "Detaylı Program Analizi", "Sonuç"];
 
+// Yalnızca UI etiketleri — motorun ürettiği gerçek durum değerleri
+// (uygun / kismen_uygun / belirsiz / uygun_degil) değişmedi.
 const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
-  uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "Uygunsunuz" },
-  kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "Muhtemelen uygun — görüşme gerekli" },
-  belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "Belirsiz — bilgi eksik" },
-  uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "Uygun görünmüyor" },
+  uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "🟢 Ön Uygun" },
+  kismen_uygun: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Potansiyel Uygun — Detay Gerekli" },
+  belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Potansiyel Uygun — Detay Gerekli" },
+  uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "🔴 İlk Elemede Uygun Değil" },
 };
 
 const PUAN_RENK = (puan: number) =>
@@ -409,37 +411,84 @@ export default function DestekUygunlukForm() {
                   </span>
                 </div>
               </button>
-              {acik && (
-                <div className="border-t border-black/10 p-6 pt-5">
-                  <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">
-                    {s.durum === "uygun_degil" ? "Neden uygun görünmüyor?" : "Neden uygun görünüyorsunuz?"}
-                  </p>
-                  <ul className="mb-3 list-disc space-y-1 pl-5 text-sm text-gray-800">
-                    {s.gerekceler.map((gerekce, i) => <li key={i}>{gerekce}</li>)}
-                  </ul>
-                  {s.uyarilar && s.uyarilar.length > 0 && (
-                    <ul className="mb-3 space-y-1 border-t border-black/10 pt-3 text-xs text-gray-600">
-                      {s.uyarilar.map((uyari, i) => <li key={i}>⚠ {uyari}</li>)}
-                    </ul>
-                  )}
-                  {s.durum === "belirsiz" && (
-                    <div className="rounded-xl border border-gray-200 bg-white p-5">
-                      <p className="mb-4 text-xs font-bold uppercase tracking-wide text-gray-500">
-                        Sonucu netleştirmek için bu soruları cevaplayın
+              {acik && (() => {
+                const { eksikKriterler, digerUyarilar } = uyarilariAyikla(s.uyarilar);
+                const olumsuz = s.durum === "uygun_degil";
+                return (
+                  <div className="border-t border-black/10 p-6 pt-5 space-y-5">
+                    <p className="text-xs italic text-gray-500">
+                      Bu skor, verdiğiniz bilgiler ile program kriterleri arasındaki eşleşmeyi gösterir. Başvurunun kabul edileceği anlamına gelmez.
+                    </p>
+                    <div>
+                      <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">
+                        Neden bu sonucu aldınız?
                       </p>
-                      <ProgramSorulari programId={s.programId} g={g} set={set} />
-                      <button
-                        type="button"
-                        onClick={() => kartGuncelle(s.programId)}
-                        disabled={submitting}
-                        className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
-                      >
-                        {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
-                      </button>
+                      <ul className="space-y-1.5 text-sm text-gray-800">
+                        {s.gerekceler.map((gerekce, i) => (
+                          <li key={i} className="flex gap-2">
+                            <span className={olumsuz ? "text-red-500" : "text-green-600"}>{olumsuz ? "✗" : "✓"}</span>
+                            <span>{gerekce}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  )}
-                </div>
-              )}
+
+                    {eksikKriterler.length > 0 && (
+                      <div>
+                        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">
+                          Eksik / Doğrulanması Gereken Kriterler
+                        </p>
+                        <ul className="space-y-1.5 text-sm text-gray-800">
+                          {eksikKriterler.map((kriter, i) => (
+                            <li key={i} className="flex gap-2">
+                              <span className="text-amber-500">⚠</span>
+                              <span>{kriter}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {digerUyarilar.length > 0 && (
+                      <div>
+                        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">
+                          Başvuru Öncesi Dikkat Edilmesi Gerekenler
+                        </p>
+                        <ul className="space-y-1 text-xs text-gray-600">
+                          {digerUyarilar.map((uyari, i) => <li key={i}>ⓘ {uyari}</li>)}
+                        </ul>
+                      </div>
+                    )}
+
+                    {s.durum === "belirsiz" && (
+                      <div className="rounded-xl border border-gray-200 bg-white p-5">
+                        <p className="mb-4 text-xs font-bold uppercase tracking-wide text-gray-500">
+                          Sonucu netleştirmek için bu soruları cevaplayın
+                        </p>
+                        <ProgramSorulari programId={s.programId} g={g} set={set} />
+                        <button
+                          type="button"
+                          onClick={() => kartGuncelle(s.programId)}
+                          disabled={submitting}
+                          className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
+                        >
+                          {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
+                        </button>
+                      </div>
+                    )}
+
+                    <div className="rounded-xl bg-gray-50 p-4 text-sm text-gray-700">
+                      <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
+                      {s.durum === "uygun" &&
+                        "Bu program için başvuru sürecini birlikte planlayalım — aşağıdaki İletişime Geç'e tıklayın."}
+                      {(s.durum === "belirsiz" || s.durum === "kismen_uygun") &&
+                        "Yukarıdaki eksik bilgileri tamamlayıp \"Analizi Güncelle\"ye basın; net değilseniz bizimle görüşün."}
+                      {olumsuz &&
+                        "Bu program şu an için uygun görünmüyor; diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına göz atabilirsiniz."}
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           );
         })}
@@ -810,6 +859,21 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
 // Huni cevaplarına göre, kural motorunun değerlendirmediği ama alakalı
 // olabilecek Koray Akdağ danışmanlık hizmetlerini önerir (site içi hub
 // sayfalarına bağlanır, ayrı bir uygunluk hesabı yapılmaz).
+// Motor, eksik/doğrulanması gereken alanları uyarılar dizisine tek bir
+// "Eksik bilgiler: A, B, C." cümlesi olarak yazıyor (bkz. lib/destek-uygunluk/
+// programlar.ts — tüm fonksiyonlarda aynı sabit önek). Bu fonksiyon o cümleyi
+// ayrıştırıp madde madde gösterir; motor değişmedi, sadece sunum ayrıştırıldı.
+const EKSIK_BILGI_ONEKI = "Eksik bilgiler: ";
+function uyarilariAyikla(uyarilar?: string[]): { eksikKriterler: string[]; digerUyarilar: string[] } {
+  if (!uyarilar) return { eksikKriterler: [], digerUyarilar: [] };
+  const eksikSatiri = uyarilar.find((u) => u.startsWith(EKSIK_BILGI_ONEKI));
+  const digerUyarilar = uyarilar.filter((u) => u !== eksikSatiri);
+  const eksikKriterler = eksikSatiri
+    ? eksikSatiri.slice(EKSIK_BILGI_ONEKI.length).replace(/\.$/, "").split(",").map((s) => s.trim()).filter(Boolean)
+    : [];
+  return { eksikKriterler, digerUyarilar };
+}
+
 function ilgiliDanismanlikAlanlari(g: Girdi): { baslik: string; aciklama: string; href: string }[] {
   const alanlar: { baslik: string; aciklama: string; href: string }[] = [];
   if (g.ihracatDurumu && g.ihracatDurumu !== "yok") {
