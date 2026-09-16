@@ -28,6 +28,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1775317628391-a0429fe3be1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "kosgeb-segem-destek-programi-kobi-basvurabilir-mi",
+    title: "KOSGEB SEGEM Destek Programı Nedir? KOBİ Olarak Doğrudan Başvurabilir miyim?",
+    excerpt: "21 Aralık 2025'te yürürlüğe giren Sektörel Gelişim Merkezi (SEGEM) Destek Programı, KOBİ'lere doğrudan nakit destek vermiyor; sektörel eğitim/danışmanlık merkezi kuracak anonim şirketleri (işletici kuruluş) destekliyor. Kimler başvurabilir, 2026 yılı 6.506.000 TL üst limiti ve KOBİ'lerin bu programdan dolaylı nasıl yararlanacağıyla güncel rehber.",
+    category: "KOSGEB • SEGEM • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1690356107685-3725367f6f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi",
     title: "Makine/Ekipman Yatırımı Yapacağım: KOSGEB mi Yatırım Teşvik Belgesi mi Daha Avantajlı?",
     excerpt: "Yatırım tutarına göre karar matrisi: KOSGEB'in kredi + faiz desteği modeli (20-30 milyon TL kredi limiti) ile Yatırım Teşvik Belgesi'nin KDV/gümrük/vergi avantajı (7,5-15,1 milyon TL asgari yatırım şartı) arasındaki fark, mükerrer destek yasağı ve varsayımsal örnek senaryoyla 2026 güncel karşılaştırma rehberi.",
