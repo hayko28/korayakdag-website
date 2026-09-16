@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi",
+    title: "KOSGEB KOBİGEL - KOBİ Gelişim Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
+    excerpt: "KOBİ'lerin proje teklif çağrıları üzerinden rekabet gücünü ve katma değerini artırmasını hedefleyen KOBİGEL - KOBİ Gelişim Destek Programı 15 Nisan 2024'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından benzer bir gelişim projesi olan KOBİ'lerin bakabileceği güncel seçenekler.",
+    category: "KOSGEB • KOBİGEL DESTEK PROGRAMI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "/blog-gorselleri/kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi.png"
+  },
+  {
     slug: "kosgeb-teknoyatirim-destek-programi-basvuruya-kapandi-mi",
     title: "KOSGEB Teknolojik Ürün Yatırım (TEKNOYATIRIM) Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Ar-Ge Sonrası Ürününüz İçin Alternatifler",
     excerpt: "Ar-Ge/Ür-Ge sonucu ortaya çıkan bir ürünü seri üretime geçirmek isteyen KOBİ'lerin başvurduğu KOSGEB TEKNOYATIRIM Destek Programı 30 Haziran 2025'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek tutarları ve kapanışın ardından bakılabilecek güncel seçenekler.",
