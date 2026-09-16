@@ -1188,14 +1188,14 @@
       "id": "yad-kosgeb-is-birligi-destek-programi",
       "ad": "İş Birliği Destek Programı",
       "kurum": "KOSGEB",
-      "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2025-02-28",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "T.C. Cumhurbaşkanlığı Yatırım Ofisi'nin resmi \"Devlet Destekleri ve Teşvikler\" portalında (yatirimadestek.gov.tr) aktif olarak listelenen bir standart destek/teşvik uygulamasıdır."
+      "not": "DÜZELTME (2026-09-17): yatirimadestek.gov.tr agregatörü bu programı hâlâ aktif listeliyordu, ancak KOSGEB'in kendi resmi \"Yürürlükten Kaldırılan Destekler\" sayfası programın 28.02.2025'te başvuruya kapatıldığını doğruluyor. Blog yazısı: /blog/kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi"
     },
     {
       "id": "yad-ticaret-bakanligi-serbest-bolgelerde-saglanan-muafiyet-ve-tesvikler",
@@ -1227,14 +1227,14 @@
       "id": "yad-kosgeb-kobi-teknolojik-urun-yatirim-kobi-teknoyatirim-destek-progra",
       "ad": "KOBİ Teknolojik Ürün Yatırım (KOBİ TEKNOYATIRIM) Destek Programı",
       "kurum": "KOSGEB",
-      "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2025-06-30",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "T.C. Cumhurbaşkanlığı Yatırım Ofisi'nin resmi \"Devlet Destekleri ve Teşvikler\" portalında (yatirimadestek.gov.tr) aktif olarak listelenen bir standart destek/teşvik uygulamasıdır."
+      "not": "DÜZELTME (2026-09-17): yatirimadestek.gov.tr agregatörü bu programı hâlâ aktif listeliyordu, ancak KOSGEB'in kendi resmi \"Yürürlükten Kaldırılan Destekler\" sayfası programın 30.06.2025'te başvuruya kapatıldığını doğruluyor. Blog yazısı: /blog/kosgeb-teknoyatirim-destek-programi-basvuruya-kapandi-mi"
     },
     {
       "id": "yad-tubitak-1515-oncul-ar-ge-laboratuvarlari-destekleme-programi",

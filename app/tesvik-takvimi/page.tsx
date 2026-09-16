@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import TesvikTakvimiFeed from "@/components/TesvikTakvimiFeed";
 import {
-  getKurumListesi,
+  anaKurum,
   getSonGuncelleme,
   getTesvikProgramlari,
 } from "@/lib/tesvik-takvimi-data";
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function TesvikTakvimiPage() {
   const programlar = getTesvikProgramlari();
   const acikSayisi = programlar.filter((p) => p.durum === "acik").length;
-  const kurumSayisi = getKurumListesi(programlar).length;
+  const kurumSayisi = new Set(programlar.map((p) => anaKurum(p.kurum))).size;
   const sonGuncelleme = new Date(getSonGuncelleme()).toLocaleDateString("tr-TR", {
     day: "numeric",
     month: "long",
