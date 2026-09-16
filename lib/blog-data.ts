@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi",
+    title: "KOSGEB İş Birliği Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
+    excerpt: "KOBİ'lerin ortak üretim, ortak tasarım ve ortak pazarlama projeleri için iş birliği kurmasını destekleyen KOSGEB programı 28 Şubat 2025'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından ortak proje arayan KOBİ'lerin bakabileceği güncel seçenekler.",
+    category: "KOSGEB • İŞ BİRLİĞİ DESTEK PROGRAMI • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "/blog-gorselleri/kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi.png"
+  },
+  {
     slug: "kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026",
     title: "KOSGEB YÖNDE Destek Programı Nedir? Dijital Dönüşüm, Sürdürülebilirlik Raporu ve Yalın Üretim Analizinize Ne Kadar Destek Alırsınız?",
     excerpt: "İmalat sektöründeki küçük ve orta ölçekli işletmelere özel YÖNDE - Yönderlik ve Değerlendirme Destek Programı'nda dört ayrı hizmet kalemi (Dijital Dönüşüm, Sürdürülebilirlik Raporlaması, YODA, Bağımsız Değerlendirme) %100 geri ödemesiz destekleniyor. Kimler başvurabilir, hangi hizmet ne kadar destekleniyor ve süreç nasıl işliyor; güncel kaynaklarla derledik.",
