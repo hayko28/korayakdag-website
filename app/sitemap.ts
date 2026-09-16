@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/kosgeb-danismanlik`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/yatirim-tesvik-belgesi-danismanligi`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/ihracat-destekleri-danismanligi`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/tubitak-danismanlik`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en`, changeFrequency: "weekly", priority: 0.6 },
     { url: `${BASE_URL}/en/blog`, changeFrequency: "weekly", priority: 0.5 },
     { url: `${BASE_URL}/gizlilik-politikasi`, changeFrequency: "yearly", priority: 0.3 },
