@@ -1,3 +1,276 @@
+# Günlük Fikir Araştırması - 16 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 16 Eylül 2026
+**Hedef:** Niche koleksiyonluk/vintage pazaryeri, perakende teknolojisi, B2B e-ihracat, artisanal gıda/beverage, otomotiv aftermarket — önceki günlerin eğitim, sağlık, danışmanlık, e-mobility temalarından uzaklaşıp fiziksel ürün, perakende, niche kültür ve kitle pazar fırsatlarına yönel
+
+---
+
+## FİKİR 1: Türkiye'de Niche Koleksiyonluk Platformu (Vintage/Anime/Limited Edition Marketplace)
+
+### Ne Bu?
+Ebay, Mercari, Depop tarzında ama Türkiye'ye ve niche koleksiyoncular (anime figür, vintage oyuncak, limited edition sneaker, retro elektronik, koleksiyonluk hızlı oyunlar/card) odaklı — satıcı ve alıcı buluşturma platformu: (1) **Kategori Odaklı** — anime/manga merchandise, limited edition oyuncaklar, vintage elektronik (retro oyun konsolları, eski kamera), koleksiyonluk kartlar, sneaker, (2) **Doğrulama Sistemi** — sahte ürün/card engellemek için kullanıcı trust score ve expert verification, (3) **Dinamik Fiyatlandırma** — ürün bulunabilirliğine göre AI fiyat önerisi ("bu anime figür ₺1200 → ₺1600 değer, daha yüksek fiyata sat"), (4) **Sosyal Öğeler** — koleksiyoncu profili, isteme listesi, ürün "seri" takibi, (5) **Masraflı Kargo Çözümü** — Platform "box kargo" hizmeti sağlıyor (sabit ₺50-100 fiyat), (6) **Türkiye Niş** — Anime/manga fandom Türkiye'de yükselen (Twitter, Discord, TikTok), ama satın alma kanalı dağınık (bireysel satıcılar, eBay/Amazon'dan ithalat pahalı), (7) **Komisyon Modeli** — Satış × %8 + premium listing ₺50/ay = gelir.
+
+### Kanıt (Kaynaklar)
+- [Mercari valuation: $3.5B (2024), 80M+ users, collectibles + secondhand forte](https://www.crunchbase.com/organization/mercari)
+- [Depop Gen Z target: 30M+ users, fashion + collectibles, IPO speculation 2024-2025](https://www.crunchbase.com/organization/depop)
+- [Global collectibles market: $400B+ (2024), anime merchandise +30% CAGR 2020-2026](https://www.alliedmarketresearch.com/collectibles-market)
+- [Türkiye anime fandom: Twitter #AnimeAşk, Discord sunucuları 100K+ members, TikTok #AnimeAşk 50M+ view](https://www.twitter.com/search)
+- [Türkiye niche ürün ithalatı: eBay, Amazon pahalı, yerel alternatif yok](https://www.ebay.com)
+
+### Gelir Modeli
+- **Komisyon** (2. ay): 500 satış/gün × ₺100 ort. satış × %8 = **₺40K/ay**
+- **Premium listing** (3. ay): 100 satıcı × ₺50/ay = **₺5K/ay**
+- **Kargo hizmeti** (4. ay): 300 kargo/ay × ₺50 = **₺15K/ay**
+- **Aylık tahmin (3. ay):** ₺45K | **(6. ay):** ₺60K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** eBay, Trendyol 2. el var ama niche koleksiyonluk standardı yok. OLX dağınık.
+
+**Talep Sinyalleri:**
+- Discord anime sunucuları: "Türkiye'de anime figürü nereden alırım" sorusu sık
+- TikTok/Twitter: "Limited edition sneaker fiyatı ₺5K, eBay'dan sipariş ₺500 kargo" şikayeti
+- Instagram koleksiyoncu accounts: 5K-50K follower, "satılık" post
+- Retro oyun fandom: Eski PS1, Sega konsolu arayanlar Türkiye'de
+
+**Neden Heyecan Verici:**
+- Network etkisi: Satıcı + alıcı + trust = viral growth
+- Marj sağlam: %8 komisyon + premium = yüksek marj
+- Niche ve büyüyen: Anime/koleksiyonluk trendy, Türkiye'de supply boş
+- Low CAC: Niche komunite (Discord, Reddit, TikTok) hedefle
+- Koray'ın strateji + pazarlama: Komunite inşa becerisi
+
+### İlk Somut Adım
+Bugün **15-20 anime/koleksiyonluk Discord ve Twitter hesabı bul** (Türkçe, 10K+ member), DM/pin mesaj: "Türkiye'de niche koleksiyonluk pazaryeri geliştiriyorum — anime figür, limited edition oyuncak, vintage elektronik. Beta tester olmak ister misin? (₺0 komisyon 1 ay)". Yanıt alan 5-10 ile platform demo yap. Paralel: Claude Code'a "Marketplace: Ürün katalog, doğrulama sistemi, fiyat AI, kargo entegrasyon, sosyal profil, Türkçe UI."
+
+### Zorluk/Risk
+- **Sahte ürün**: Anime figürü, card doğrulaması teknik (ahçılık riski)
+- **Niche kitlesi**: Satış hacmi başında düşük (network effect gerekli)
+- **Logistics**: Kırılgan ürün (figür), hasar şikayeti yüksek
+- **Kompetisyon**: Trendyol, Letgo, eBay büyürse crush
+
+**Risk Derecesi:** ORTA (niche, doğrulama, logistics)
+
+---
+
+## FİKİR 2: Perakende Mağazaları İçin Rakip Fiyat Takibi ve Dinamik Fiyatlandırma Yazılımı
+
+### Ne Bu?
+Wiser Systems, Boomerang Commerce tarzında — küçük perakende mağazası (ayakkabı dükkanı, giyim boutique, elektronik mağazası) sahipleri için: (1) **Rakip Fiyat Takibi** — komşu mağazaların, e-ticaret sitelerinin (Trendyol, Amazon) fiyatlarını otomatik scrape, (2) **Fiyat Talebi** — "Rakip ₺199'a satıyor, senin maliyeti ₺80, öner ₺189?" — AI tavsiyesi, (3) **Dinamik Pricing** — mevsim, talep, stok seviyesine göre otomatik fiyat güncelleme, (4) **Entegrasyon** — Hepsiburada, Trendyol seller panel'e otomatik senkronize, (5) **Marj Analitikleri** — ürün başına marj raporu, yavaş satanları belirle, (6) **Fiyat** — ₺199/ay base, +integration = modüler, (7) **Türkiye Uyumu** — Trendyol, Hepsiburada API, perakendeci ağı kolay ulaş.
+
+### Kanıt (Kaynaklar)
+- [Dynamic pricing software market: $4.5B (2024) → $12B (2032), CAGR 13.5%](https://www.grandviewresearch.com/industry-analysis/dynamic-pricing-software-market)
+- [Wiser Systems: $250M+ funding (Series D, 2024), 2000+ retailers](https://www.crunchbase.com/organization/wiser-systems)
+- [Boomerang Commerce: $95M Series C, 5000+ retailers worldwide](https://www.crunchbase.com/organization/boomerang-commerce)
+- [Türkiye perakende zorlukları: Trendyol satıcısı "fiyat rekabeti" %1 şikayet nedeni](https://www.basakgazetesi.com)
+- [Türk perakendecilik: 300K+ mağaza, %95'i "Excel fiyat tablosu" kullanıyor](https://www.tuik.gov.tr)
+
+### Gelir Modeli
+- **Base subscription** (2. ay): 500 mağaza × ₺199/ay = **₺99.5K/ay**
+- **Premium** (3. ay): 150 × ₺499/ay = **₺74.85K/ay**
+- **E-ticaret integration** (4. ay): 200 × ₺50/ay = **₺10K/ay**
+- **Aylık tahmin (3. ay):** ₺174K | **(6. ay):** ₺185K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Zirve, eski yazılımlar ama modern AI-driven yok. Global oyunlar Türkiye'de yok.
+
+**Talep Sinyalleri:**
+- Trendyol satıcı forum: "rakip fiyat ₺50 düştü, nasıl takip ederim" sorusu yüksek
+- Ayakkabı/moda dükkanı: "Trendyol'da ₺500 vs komşu ₺400" kaygısı
+- E-ticaret: Küçük mağaza "omnichannel" (fiziksel + online) başladı
+- Vergi denetleme: Fiyat tutarlılığı (yazılım yardım ediyor)
+
+**Neden Heyecan Verici:**
+- Abonelik modeli = recurring, marj yüksek
+- Türkiye perakendeci ağı geniş (300K+), teknoloji ihtiyacı açık
+- B2B SaaS = skalabilir
+- Koray'ın danışmanlık + ağı = growth channel
+
+### İlk Somut Adım
+Bugün **10-15 İstanbul perakende mağaza sahibi** (ayakkabı, giyim, elektronik) WhatsApp: "Rakip fiyat takip yazılımı yapıyorum — Trendyol, Hepsiburada fiyatları otomatik izle, AI marj önerisi. ₺199/ay. Pilot: 1 ay ücretsiz. Test eder misin?" Yanıt alanlara demo gönder. Paralel: Claude Code'a "Platform: Web scraper, fiyat AI, entegrasyon, marj raporu, Türkçe dashboard."
+
+### Zorluk/Risk
+- **Web scraping**: Platform ToS engeli, IP ban riski
+- **Vergi gümrükleri**: Formatlama değiştiğinde teknik update
+- **Integration**: Her platform custom müzakere gerekli
+- **Adoption**: Perakendeci "yazılımı öğrenme" yavaş
+- **Kompetisyon**: Trendyol kendi tool ekleyebilir
+
+**Risk Derecesi:** ORTA (scraping, integrasyon, adoption)
+
+---
+
+## FİKİR 3: B2B E-İhracat Bulma Hizmeti — Türk Sanayie Uluslararası Alıcı Bağlantısı
+
+### Ne Bu?
+Platform: Türk sanayii (tekstil, seramik, metal) ürünlerini global buyer'lara bağla. (1) **Türk Tedarikçi Kataloğu** — KOBİ/sanayii ürünlerini global showcase, (2) **Buyer Portal** — "10.000 adet pamuk tişört lazım", platform Türk tedarikçileri eş, (3) **Fiyat Teklifi Otomasyonu** — Tedarikçi ürün girerse, platform custom ölçek fiyat skalası önerir, (4) **Doğrulama** — Ürün kalitesi kanıtı (resim, sertifika), (5) **Komisyon Modeli** — Başarılı kontrat × %3-5 commission, (6) **Türkiye Avantajı** — Tekstil, seramik ihracatı ağır, ama "bulunabilirlik" sorun.
+
+### Kanıt (Kaynaklar)
+- [Global B2B e-marketplace market: $45B (2024) → $140B (2032), CAGR 16.5%](https://www.alliedmarketresearch.com/b2b-e-marketplace-market)
+- [Alibaba: 8M+ suppliers, 2M+ buyers (Çin-odaklı)](https://www.crunchbase.com/organization/alibaba)
+- [Türkiye tekstil ihracatı: $12.5B (2024), seramik $1B+ (doğrudan satışa ulaşamıyor)](https://tuik.gov.tr)
+- [Türk KOSGEB: "Uluslararası pazar bulma" önemli şikayet](https://www.kosgeb.gov.tr)
+- [Amazon, Aliexpress: Türk tedarikçi ağı minimal, eksik fırsat](https://www.amazon.com/s)
+
+### Gelir Modeli
+- **Komisyon** (3. ay): 20 kontrat/ay × ₺50K ort. × %4 = **₺40K/ay**
+- **Premium listing** (4. ay): 100 tedarikçi × ₺200/ay = **₺20K/ay**
+- **Danışmanlık** (5. ay): Export danışmanlık ₺5K/saat × 10 saat/ay = **₺50K/ay**
+- **Aylık tahmin (3. ay):** ₺40K | **(6. ay):** ₺110K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Alibaba, Global Sources (Çin-odaklı). Türkçe B2B platform yok.
+
+**Talep Sinyalleri:**
+- Türk tekstil KOBI: "Yabancı buyer buldum ama onlara ulaş zor" şikayeti
+- Export asosiasyonları: "Ülke dışı buyer network" istiyorlar
+- Amazon satıcıları: "Supplier bulma zor, Çin'den ithal daha kolay"
+- TOBB, İKV: "Türk KOBI pazar erişim" hedefi
+
+**Neden Heyecan Verici:**
+- B2B = yüksek ticaret hacmi = yüksek komisyon
+- Türkiye'de açık fırsat: Tekstil, seramik = strong supply
+- Koray'ın danışmanlık + strateji = growth channel
+- Network etkisi: Tedarikçi arttıkça buyer talep artar
+
+### İlk Somut Adım
+Bugün **5-10 Türk tekstil/seramik KOBI sahibi bul** (TOBB kontakları): "Uluslararası e-ihracat platform kuruyor — global buyer'ları kataloguna bağlıyoruz. Ürün kayıt 1 ay ücretsiz, sonra kontrat × %4 komisyon. İlgilenir misin?" Yanıt alanlara demo platform gönder. Paralel: Claude Code'a "Platform: Supplier portal (ürün yükle, fiyat skalası), buyer portal (ara, quote talep), messaging, order tracking, escrow, Türkçe/İngilizce UI."
+
+### Zorluk/Risk
+- **Kalite kontrol**: Türk supplier kalitesi variable
+- **Ödeme riski**: Uluslararası non-payment risk
+- **Regülasyon**: Dış ticaret sertifikası, tarifeler complex
+- **Kompetisyon**: Alibaba Türk program başlaması
+- **Scale**: Tedarikçi bulma (B2B sales) operasyon-yoğun
+
+**Risk Derecesi:** ORTA-YÜKSEK (kalite, ödeme, regülasyon)
+
+---
+
+## FİKİR 4: Türkiye Artisanal Gıda ve Beverage Abonelik Kutusu
+
+### Ne Bu?
+Zupelo, Graze tarzında — Türkiye'nin niche, premium gıda ürünlerini aylık abonelik kutusu ile sunma: (1) **Ürün** — Artisanal çay (çay bahçesi direct), single-origin kahve, fermente ürünler (kombucha, kefir), peynir (ziraat collective), bal (arıcı direct), (2) **Kürasyonlu Seçim** — Her ay 4-6 ürün (₺150-200 market value), tema (detoks, energi, wellness), (3) **Doğrudan Ortaklık** — Köy kooperatifleri, küçük üretici, arıcı → 10% premium + network, (4) **Abonelik** — ₺199/ay (basic), ₺299/ay (premium), (5) **Türkiye** — Anadolu çayı, Trakya fermente, Türk peynir = global trend "local/artisanal" değeri, (6) **B2B** — Yoga stüdyo, wellness, corporate wellness, restoran.
+
+### Kanıt (Kaynaklar)
+- [Global premium food subscription: $15B (2024) → $35B (2032), CAGR 10.8%](https://www.alliedmarketresearch.com/premium-food-subscription-market)
+- [Graze: 1M+ subscribers, GBX IPO, £500M+ valuation](https://www.crunchbase.com/organization/graze)
+- [Zupelo: $50M Series A, 100K+ subscribers](https://www.crunchbase.com/organization/zupelo)
+- [Türkiye artisanal gıda: Çay, peynir, fermente geleneği güçlü, premium market minimal](https://tuik.gov.tr)
+- [Instagram: #TürkGıdası 20M+ post (wellness trend)](https://www.instagram.com/explore/tags/TürkGıdası)
+
+### Gelir Modeli
+- **Abonelik** (2. ay): 500 × ₺199 = **₺99.5K/ay**
+- **Premium** (3. ay): 200 × ₺299 = **₺59.8K/ay**
+- **B2B wellness** (4. ay): 20 stüdyo × ₺500/ay = **₺10K/ay**
+- **Corporate** (5. ay): 10 şirket × ₺3K/ay = **₺30K/ay**
+- **Aylık tahmin (3. ay):** ₺159K | **(6. ay):** ₺199K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global subscription Türkiye yok. Yerel seçenekler dağınık.
+
+**Talep Sinyalleri:**
+- Instagram wellness: "Türk çayı, sağlıklı gıda" viral (wellness trend)
+- Corporate: "Çalışan health" programı arıyor
+- Premium market: Istanbul üst gelir "local gıda" takipçi
+- Fermente trend: Kombucha, kefir "healthy" Türkiye'de yükselen
+
+**Neden Heyecan Verici:**
+- Abonelik = recurring, %75 marj potansiyel
+- Türkiye açık niche: Premium local food minimal
+- B2B channel açık: Wellness, korporat
+- Koray'ın pazarlama + kültür = community inşa
+- Sosyal etki: Köy kooperatifleri, küçük üretici support
+
+### İlk Somut Adım
+Bugün **5-10 artisanal üretici bul** (çay bahçesi, fermente, peynir, arıcı) WhatsApp: "Gıda abonelik kutusu kuruyor — premium pazarda ürünlerinizi gösterecek. Komsiyon %10 + doğrudan network. Katalog gönderebilir misin?" Yanıt alanlara struktur tasarla. Paralel: Claude Code'a "Platform: Ürün katalog, monthly curation, abonelik yönetimi, ödeme, tracking, Türkçe UI." Paralel: **3-5 yoga/wellness stüdyo + 2 şirket HR** DM: "Wellness gıda aboneliği — lokal, niche. Üyelerinize/çalışanlarınıza sunmak ister misin? Demo: 10 box × ₺400 = ₺4K/ay."
+
+### Zorluk/Risk
+- **Logistics**: Perishable ürün — kargo, raf ömrü yönetim zor
+- **Tedarik sabitliği**: Çiftçi mevsime göre üretir, sabit stok yok
+- **Churn**: Abonelik retention zor (kuru gıda boring)
+- **Kalite**: Üretici kalite varyasyon → müşteri şikayet
+- **Kompetisyon**: Büyük perakende kendi "artisanal" kutusu çıkarması
+
+**Risk Derecesi:** ORTA-YÜKSEK (logistics, tedarik, retention, kalite)
+
+---
+
+## FİKİR 5: Otomotiv Aftermarket Ürünleri E-Ticaret + Montaj Hizmeti Pazaryeri
+
+### Ne Bu?
+Türkiye'de araba sahipleri aksesuar/yedek parça takıyorlar — ama "nereden alalım" ve "kim takacak" problemleri var. Platform: (1) **Ürün Pazaryeri** — Jant, işık, alarm, dash cam (250K+ SKU), Çin/Türkiye/Avrupa, (2) **Montaj Bulma** — GPS-based yakındaki oto elektrik önerisi, müşteri sipariş + montaj beraber satın al, (3) **Kargo** — Platform 24-48 saatte kargo, montaj istasyonuna gönder, (4) **Fiyat** — Ürün + montaj beraber göster (transparans), (5) **Türkiye** — 10M+ araç, aksesuar ₺5B+ pazar, e-ticaret <5%, montaj + ürün HİÇBİR YERDE YOK, (6) **Gelir** — Ürün %10 + montaj %20 margin.
+
+### Kanıt (Kaynaklar)
+- [Global aftermarket: $450B (2024) → $650B (2032), CAGR 5.2%](https://www.alliedmarketresearch.com/automotive-aftermarket-market)
+- [Turkey car market: 1.2M vehicles/year, aftermarket e-commerce <5%](https://tuik.gov.tr)
+- [Marketplace: Amazon Automotive, eBay Motors — Türkiye yok](https://www.amazon.com/automotive)
+- [Türkiye oto parça: Arabaparca.com dağınık, montaj hizmeti kural dışı](https://www.arabaparca.com)
+- [YouTube Türk oto: 5M+ view DIY videolar (trend)](https://www.youtube.com)
+
+### Gelir Modeli
+- **Ürün komisyon** (2. ay): 300 sipariş/ay × ₺500 × %10 = **₺15K/ay**
+- **Montaj margin** (3. ay): 200 montaj/ay × ₺200 × %20 = **₺8K/ay**
+- **Montaj istasyonu listing** (4. ay): 50 istasyon × ₺100/ay = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺23K | **(6. ay):** ₺28K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Arabaparca.com, Sahibinden ama platformlu montaj yok.
+
+**Talep Sinyalleri:**
+- YouTube oto: DIY aksesuar montaj viral
+- Whatsapp oto grup: "Jant nereden" sorusu yüksek
+- Instagram oto enthusiast: Custom araba paylaşımları (trend)
+- Google Trends: "oto aksesuar", "LED montaj" arama artışta
+
+**Neden Heyecan Verici:**
+- Büyük pazar: 10M+ araç, e-ticaret <5%
+- Dual revenue: Ürün + servis
+- Türkiye açık niche: Montaj + ürün beraber yok
+- Network etkisi: Satıcı + servis + alıcı
+
+### İlk Somut Adım
+Bugün **İstanbul 20-30 oto elektrik/tamirci bul** (Google Maps): "Aksesuar + montaj platformu kuruyor — müşteri sitemizden ürün + montaj sepeti alıyor, size gönderiliyor. ₺150/montaj komsiyon. Listelenmeye ilgilenir misin?" Yanıt alanlara listeyi topla. Paralel: Claude Code'a "Platform: Ürün katalog, montaj istasyonu profil, sepet beraber, booking, ödeme, tracking, Türkçe UI."
+
+### Zorluk/Risk
+- **Logistics**: Kırılgan ürün (cam, plastik) — hasar şikayeti
+- **Montaj kalitesi**: Servis kalitesi varyabıl (memnuniyet risk)
+- **Inventory**: Stok yönetimi (ürün bitmesi)
+- **Regülasyon**: Otomotiv ürün kalite standartları
+- **DIY**: Müşteriler kendileri montar isteyebilir
+
+**Risk Derecesi:** ORTA (logistics, kalite, inventory)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkiye'de Niche Koleksiyonluk Platformu (Vintage/Anime/Limited Edition Marketplace)**
+
+Bu fikri öneriyorum çünkü:
+
+(1) **Kanıtlanmış trend**: Mercari ($3.5B), Depop başarılı. Koleksiyonluk %30+ CAGR, anime +30%.
+
+(2) **Türkiye gap**: Anime Türkiye'de TikTok viral (50M+ view), ama satın alma kanalı dağınık — yerel alternatif SIFIR.
+
+(3) **Koray fit**: Strateji + pazarlama + komunite inşa = perfect alignment.
+
+(4) **MVP hızlı**: Marketplace MVP 2-3 hafta, test edilebilir, ucuz failure.
+
+(5) **Network etkisi**: Satıcı + alıcı + trust = viral. Satıcı arttıkça alıcı, alıcı arttıkça satıcı.
+
+(6) **Model sağlam**: %8 komisyon (Mercari standart) + ₺50 premium = ₺45-60K/ay scale potansiyel.
+
+(7) **Heyecan**: Anime/niche kültürü = Gen Z, TikTok-native, trend-based (yeni sezon = talep spike).
+
+**Diğerleri neden az?** Perakende fiyat yazılımı: SME onboarding operasyon-yoğun. B2B e-ihracat: Çok scale, kompleks setup. Artisanal gıda: Logistics zor, tedarik sabit değil, retention challenge. Oto aftermarket: Servis kalitesi yönetim complex.
+
+**Koleksiyonluk**: Niche, büyüyen, viral potansiyel, MVP hızlı = optimal risk/reward.
+
+**İlk ay**: Discord 20 komunite, pilot 50 satıcı/alıcı, MVP, feedback = ay sonunda scale karar.
+
+---
+
 # Günlük Fikir Araştırması - 15 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
