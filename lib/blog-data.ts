@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-teknoyatirim-destek-programi-basvuruya-kapandi-mi",
+    title: "KOSGEB Teknolojik Ürün Yatırım (TEKNOYATIRIM) Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Ar-Ge Sonrası Ürününüz İçin Alternatifler",
+    excerpt: "Ar-Ge/Ür-Ge sonucu ortaya çıkan bir ürünü seri üretime geçirmek isteyen KOBİ'lerin başvurduğu KOSGEB TEKNOYATIRIM Destek Programı 30 Haziran 2025'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek tutarları ve kapanışın ardından bakılabilecek güncel seçenekler.",
+    category: "KOSGEB • TEKNOYATIRIM DESTEK PROGRAMI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi",
     title: "KOSGEB İş Birliği Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
     excerpt: "KOBİ'lerin ortak üretim, ortak tasarım ve ortak pazarlama projeleri için iş birliği kurmasını destekleyen KOSGEB programı 28 Şubat 2025'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından ortak proje arayan KOBİ'lerin bakabileceği güncel seçenekler.",
