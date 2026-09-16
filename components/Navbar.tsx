@@ -158,6 +158,18 @@ export default function Navbar() {
           ))}
         </nav>
 
+        <nav className="mx-3 hidden min-w-0 flex-1 items-center gap-1.5 overflow-x-auto py-1 [scrollbar-width:none] sm:flex min-[1600px]:hidden [&::-webkit-scrollbar]:hidden">
+          {links.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="flex-shrink-0 whitespace-nowrap rounded-md border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] font-medium text-[#C9D6E4] transition hover:border-orange-400 hover:bg-white/10 hover:text-white"
+            >
+              {link.name}
+            </a>
+          ))}
+        </nav>
+
         <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
           <a
             href={`${homePath}#hero`}
@@ -177,7 +189,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 min-[1600px]:hidden"
+            className="flex h-10 w-10 flex-shrink-0 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/20 bg-white/10 sm:hidden"
             aria-label={isEn ? "Open menu" : "Menüyü aç"}
           >
             <span className="h-0.5 w-5 bg-white" />
@@ -188,7 +200,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <nav className="absolute left-0 top-[78px] flex w-full flex-wrap justify-center gap-3 bg-[#0F2A47] px-6 py-5 shadow-lg min-[1600px]:hidden">
+        <nav className="absolute left-0 top-[78px] flex w-full flex-wrap justify-center gap-3 bg-[#0F2A47] px-6 py-5 shadow-lg sm:hidden">
           {links.map((link) => (
             <a
               key={link.name}
