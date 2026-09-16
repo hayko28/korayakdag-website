@@ -1025,6 +1025,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Referans/tavsiye programı veya üçüncü taraf listeleriyle SMS ya da arama tabanlı pazarlama yapan işletmelere, her bir numaranın hangi hukuki sebeple ve ne zaman alındığını belgelemelerini öneririm; bu karardaki ceza tek bir mesajdan değil, sürecin tamamındaki rıza eksikliğinden doğdu.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "11 Eylül 2026",
+    eklendiTarihi: "2026-09-16",
+    baslik:
+      "TCMB Eylül 2026 Piyasa Katılımcıları Anketi: yıl sonu enflasyon beklentisi yüzde 29,61'e yükseldi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın 7-9 Eylül 2026'da 67 katılımcıyla gerçekleştirdiği Piyasa Katılımcıları Anketi'ne göre cari yıl sonu TÜFE beklentisi yüzde 29,43'ten yüzde 29,61'e yükseldi, 12 ay sonrası enflasyon beklentisi ise yüzde 23,70 olarak açıklandı. Katılımcıların yıl sonu dolar/TL beklentisi 51,57 TL'ye gerilerken, 2026 büyüme beklentisi yüzde 3,1'den yüzde 3,0'a indi.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Enflasyon beklentisindeki hafif yükseliş ile büyüme beklentisindeki hafif gerileme aynı ankette birlikte görülüyor. İşletmelere yıl sonu bütçe çalışmalarında tek bir senaryo yerine bu iki eğilimi birlikte dikkate almalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "15 Eylül 2026",
+    eklendiTarihi: "2026-09-16",
+    baslik:
+      "Ticaret Bakanı Bolat: Türkiye'de e-ticaret hacmi 2025'te 4,5 trilyon TL'ye ulaştı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat, İstanbul'da düzenlenen E-Ticaret ve Perakende Zirvesi'nde ETBİS verilerine dayanarak Türkiye'nin e-ticaret hacminin 2025'te bir önceki yıla göre yüzde 52,2 artışla 4,5 trilyon TL'ye (115,5 milyar dolar) ulaştığını açıkladı. E-ticaret faaliyetinde bulunan işletme sayısı 2019'da 64 bin iken 2025 sonunda 634 bine çıktı, işlem sayısı ise aynı dönemde 1,36 milyardan yaklaşık 6 milyara yükseldi.",
+    kaynakUrl:
+      "https://www.ekonomim.com/ekonomi/ticaret-bakani-bolat-turkiyede-e-ticaret-hacmi-45-trilyon-tlyi-asti-haberi-918384",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: İşletme sayısındaki on kata yakın artış, e-ticaretin artık yalnızca büyük oyunculara özgü bir kanal olmadığını gösteriyor. Henüz online satışa başlamamış KOBİ'lere, bu büyümenin hâlâ sürdüğünü ve pazara giriş maliyetinin önceki yıllara göre göreli olarak düştüğünü hatırlatmak isterim.",
+  },
+  {
+    kurum: "Türk Eximbank",
+    tarih: "21 Ağustos 2026",
+    eklendiTarihi: "2026-09-16",
+    baslik:
+      "Türk Eximbank 39. yılında 2026 hedefini 59 milyar dolarlık ihracat desteği olarak açıkladı",
+    ozet:
+      "Ticaret Bakanlığı, Türk Eximbank'ın kuruluşunun 39. yıl dönümü vesilesiyle yaptığı açıklamada, bankanın 2026 yılında ihracatçılara toplam 59 milyar dolarlık kredi ve sigorta/garanti desteği sağlamayı hedeflediğini duyurdu. Bankanın yaklaşık 20 bin müşterisinin yüzde 83'ünü KOBİ'ler oluştururken, kullandırılan ihracat kredilerinin yüzde 47'si yüksek ve orta yüksek teknolojili ürünlerin ihracatına yönelik oldu.",
+    kaynakUrl:
+      "https://www.ekonomim.com/ekonomi/turk-eximbank-ihracatcilara-59-milyar-dolar-destek-verecek-haberi-913533",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Müşteri portföyünün büyük çoğunluğunun KOBİ olması, Eximbank kredi ve sigorta ürünlerinin sadece büyük ihracatçılara değil orta ve küçük ölçekli ihracatçılara da açık olduğunu gösteriyor. İhracata yeni başlayan işletmelere alacak sigortası ve kısa vadeli ihracat kredisi seçeneklerini bankayla birlikte değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece

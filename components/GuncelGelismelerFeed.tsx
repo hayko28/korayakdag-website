@@ -27,6 +27,7 @@ const KURUM_COLORS: Record<string, string> = {
   PwC: "bg-pink-600",
   TÜİK: "bg-yellow-600",
   İSO: "bg-stone-600",
+  "Türk Eximbank": "bg-zinc-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;
