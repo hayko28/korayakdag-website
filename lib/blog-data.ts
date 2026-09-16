@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-stratejik-urun-destek-programi-2026",
+    title: "KOSGEB Stratejik Ürün Destek Programı: Teknoloji Hamlesi'nde Onaylanan Ürünüme Ne Kadar Destek Alırım?",
+    excerpt: "Teknoloji Odaklı Sanayi Hamlesi (HAMLE) Programı çağrı planında onaylanan ürünleri üreten KOBİ'lere KOSGEB'in sağladığı 50.000 TL bağımsız değerlendirme desteği ve 10.000.000 TL'ye kadar %80 oranlı personel gideri desteği; güncel 2026 HAMLE çağrı takvimi, başvuru şartları ve süreciyle rehber.",
+    category: "KOSGEB • TEKNOLOJİ HAMLESİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1748000970909-845f4aa144d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-yesil-sanayi-destek-programi-2026",
     title: "KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi Yatırımınıza Ne Kadar Destek Alırsınız?",
     excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, imalatçı KOBİ'lere çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sunuyor. Şartları, oranları ve başvuru süreci.",
