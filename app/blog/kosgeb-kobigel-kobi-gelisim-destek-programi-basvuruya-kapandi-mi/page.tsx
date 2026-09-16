@@ -27,7 +27,7 @@ export default function BlogPage() {
       readTime="12 Dakika"
       slug="kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi"
       programDurumu="kapali"
-      coverImage="/blog-gorselleri/kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi.png"
+      coverImage="https://images.unsplash.com/photo-1647427060118-4911c9821b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       ctaHeading="Gelişim Projeniz İçin Hangi Destek Uygun, Birlikte Bakalım"
       ctaText="KOBİGEL kapansa da KOBİ'lerin ölçek büyütme, dijitalleşme ve rekabet gücünü artırma ihtiyacı bitmedi. Şirketinizin bugün hangi güncel KOSGEB destek programına uygun olduğunu birlikte değerlendirelim."
     >

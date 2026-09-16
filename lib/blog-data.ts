@@ -16,7 +16,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     category: "KOSGEB • KOBİGEL DESTEK PROGRAMI • 2026",
     date: "2026",
     readTime: "12 Dakika",
-    image: "/blog-gorselleri/kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi.png"
+    image: "https://images.unsplash.com/photo-1647427060118-4911c9821b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "kosgeb-teknoyatirim-destek-programi-basvuruya-kapandi-mi",
@@ -34,7 +34,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     category: "KOSGEB • İŞ BİRLİĞİ DESTEK PROGRAMI • 2026",
     date: "2026",
     readTime: "11 Dakika",
-    image: "/blog-gorselleri/kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi.png"
+    image: "https://images.unsplash.com/photo-1652211955967-99c892925469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
     slug: "kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026",

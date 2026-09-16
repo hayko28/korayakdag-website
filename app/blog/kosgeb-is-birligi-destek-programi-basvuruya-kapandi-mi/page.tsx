@@ -27,7 +27,7 @@ export default function BlogPage() {
       readTime="11 Dakika"
       slug="kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi"
       programDurumu="kapali"
-      coverImage="/blog-gorselleri/kosgeb-is-birligi-destek-programi-basvuruya-kapandi-mi.png"
+      coverImage="https://images.unsplash.com/photo-1652211955967-99c892925469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       ctaHeading="Ortak Proje Yerine Hangi Destek Size Uygun, Birlikte Bakalım"
       ctaText="İş Birliği Destek Programı kapansa da KOBİ'lerin ortak üretim, tedarikçi geliştirme veya ihracat odaklı iş birliği ihtiyacı bitmedi. Şirketinizin bugün hangi güncel KOSGEB veya Ticaret Bakanlığı destek programına uygun olduğunu birlikte değerlendirelim."
     >
