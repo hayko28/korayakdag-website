@@ -26,6 +26,7 @@ export default function BlogPage() {
       date="2026"
       readTime="13 Dakika"
       slug="istihdami-koruma-destek-programi-2026"
+      programDurumu="acik"
       coverImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">

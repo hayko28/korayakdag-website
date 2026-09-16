@@ -34,6 +34,7 @@ export default function BlogPage() {
       date="2026"
       readTime="12 Dakika"
       slug="tubitak-1501-1507-ar-ge-destekleri-2026"
+      programDurumu="acik"
     >
         <div className="rounded-2xl border-l-4 border-green-500 bg-green-50 p-8">
           <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">

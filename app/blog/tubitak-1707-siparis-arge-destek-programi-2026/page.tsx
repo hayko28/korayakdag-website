@@ -29,6 +29,7 @@ export default function Tubitak1707Page() {
       readTime="13 Dakika"
       coverImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1707-siparis-arge-destek-programi-2026"
+      programDurumu="acik"
     >
       {/* GİRİŞ / UYARI KUTUSU */}
       <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">

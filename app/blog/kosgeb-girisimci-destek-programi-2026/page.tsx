@@ -28,6 +28,7 @@ export default function BlogPage() {
       date="2026"
       readTime="13 Dakika"
       slug="kosgeb-girisimci-destek-programi-2026"
+      programDurumu="acik"
       coverImage="https://images.unsplash.com/photo-1752051548874-7d2176a84007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       ctaHeading="Girişimcilik Sürecinizi Baştan Sona Yönetelim"
       ctaText="Uygulamalı Girişimcilik Eğitiminden başvuru evrakına, kurul sunumundan ödeme talebine kadar KOSGEB Girişimci Destek Programı sürecinin tamamında yanınızdayız. İş fikrinizi birlikte değerlendirelim."

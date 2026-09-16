@@ -29,6 +29,7 @@ export default function Tubitak1711Page() {
       readTime="12 Dakika"
       coverImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026"
+      programDurumu="acik"
     >
       {/* GİRİŞ / UYARI KUTUSU */}
       <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">

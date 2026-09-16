@@ -44,6 +44,9 @@ interface BlogLayoutProps {
   coverImage?: string;
   slug?: string;
   lang?: "tr" | "en";
+  /** Yazı belirli bir başvuru dönemi olan bir destek/teşvik programını konu alıyorsa,
+   * programın güncel durumunu gösteren rozet. Program temelli olmayan yazılarda verilmez. */
+  programDurumu?: "acik" | "kapali";
   /** Yazının konusuna özel CTA başlığı. Verilmezse genel başlık kullanılır. */
   ctaHeading?: string;
   /** Yazının konusuna özel CTA metni. Verilmezse genel metin kullanılır. */
@@ -62,6 +65,7 @@ export default function BlogLayout({
   lang = "tr",
   ctaHeading,
   ctaText,
+  programDurumu,
   children,
 }: BlogLayoutProps) {
   // EN tarafında henüz çevrilmiş yazı listesi olmadığı için (TR statik
@@ -188,8 +192,29 @@ export default function BlogLayout({
             </div>
           </div>
 
-          <div className="inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md">
-            {category}
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="inline-flex rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md">
+              {category}
+            </div>
+
+            {programDurumu && (
+              <div
+                className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold shadow-md ${
+                  programDurumu === "acik"
+                    ? "bg-emerald-500 text-white"
+                    : "bg-red-500 text-white"
+                }`}
+              >
+                <span className="h-2 w-2 rounded-full bg-white" />
+                {programDurumu === "acik"
+                  ? lang === "en"
+                    ? "Program Active"
+                    : "Program Aktif"
+                  : lang === "en"
+                    ? "Program Closed"
+                    : "Program Kapalı"}
+              </div>
+            )}
           </div>
 
           <h1 className="mt-8 max-w-4xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">

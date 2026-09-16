@@ -26,6 +26,7 @@ export default function BlogPage() {
       date="2026"
       readTime="12 Dakika"
       slug="kosgeb-yapay-zeka-kredi-programi-2026"
+      programDurumu="acik"
       coverImage="https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">

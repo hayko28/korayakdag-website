@@ -26,6 +26,7 @@ export default function BlogPage() {
       date="2026"
       readTime="13 Dakika"
       slug="kosgeb-arge-urge-inovasyon-destek-programi-2026"
+      programDurumu="acik"
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">

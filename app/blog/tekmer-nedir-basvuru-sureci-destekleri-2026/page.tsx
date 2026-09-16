@@ -30,6 +30,7 @@ export default function BlogPage() {
       readTime="13 Dakika"
       coverImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tekmer-nedir-basvuru-sureci-destekleri-2026"
+      programDurumu="acik"
     >
       {/* GİRİŞ */}
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">

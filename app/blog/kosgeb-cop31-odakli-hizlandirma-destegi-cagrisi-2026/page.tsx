@@ -26,6 +26,7 @@ export default function BlogPage() {
       date="2026"
       readTime="11 Dakika"
       slug="kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026"
+      programDurumu="kapali"
       coverImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">

@@ -30,15 +30,15 @@ export default function BlogPage() {
       date="2026"
       readTime="16 Dakika"
       slug="kosgeb-kapasite-gelistirme-destek-programi-2026"
+      programDurumu="kapali"
     >
-        <div className="mb-10 rounded-2xl border-l-4 border-green-500 bg-green-50 p-6">
-          <p className="text-lg font-semibold text-green-800">
-            🟢 Güncelleme (24 Ağustos 2026): Programın 2026 yılı 3. başvuru
-            dönemi 22 Ağustos 2026&apos;da başladı, son başvuru tarihi 15 Eylül
-            2026. Rehbere Sanayi Sicil Belgesi, YODA ve hızlı büyüyen işletme
-            tanımını içeren yeni bir bölüm (Bölüm 3) eklendi; kredi üst limiti
-            tablosu da KOSGEB&apos;in resmî destek sayfası ve Başvuru
-            Kılavuzu&apos;yla teyit edilerek düzeltildi.
+        <div className="mb-10 rounded-2xl border-l-4 border-gray-400 bg-gray-50 p-6">
+          <p className="text-lg font-semibold text-gray-700">
+            ⚪ Güncelleme (16 Eylül 2026): Programın 2026 yılı 3. başvuru
+            dönemi 15 Eylül 2026 itibarıyla sona erdi, şu an için yeni bir
+            başvuru dönemi ilan edilmedi. Aşağıdaki şart, kredi limiti ve
+            belge bilgileri programın genel yapısı olarak güncelliğini
+            koruyor; yeni bir dönem açıldığında bu yazı güncellenecektir.
           </p>
         </div>
 
