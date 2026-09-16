@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026",
+    title: "KOSGEB YÖNDE Destek Programı Nedir? Dijital Dönüşüm, Sürdürülebilirlik Raporu ve Yalın Üretim Analizinize Ne Kadar Destek Alırsınız?",
+    excerpt: "İmalat sektöründeki küçük ve orta ölçekli işletmelere özel YÖNDE - Yönderlik ve Değerlendirme Destek Programı'nda dört ayrı hizmet kalemi (Dijital Dönüşüm, Sürdürülebilirlik Raporlaması, YODA, Bağımsız Değerlendirme) %100 geri ödemesiz destekleniyor. Kimler başvurabilir, hangi hizmet ne kadar destekleniyor ve süreç nasıl işliyor; güncel kaynaklarla derledik.",
+    category: "KOSGEB • YÖNDE DESTEK PROGRAMI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "/blog-gorselleri/kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026.png"
+  },
+  {
     slug: "kosgeb-stratejik-urun-destek-programi-2026",
     title: "KOSGEB Stratejik Ürün Destek Programı: Teknoloji Hamlesi'nde Onaylanan Ürünüme Ne Kadar Destek Alırım?",
     excerpt: "Teknoloji Odaklı Sanayi Hamlesi (HAMLE) Programı çağrı planında onaylanan ürünleri üreten KOBİ'lere KOSGEB'in sağladığı 50.000 TL bağımsız değerlendirme desteği ve 10.000.000 TL'ye kadar %80 oranlı personel gideri desteği; güncel 2026 HAMLE çağrı takvimi, başvuru şartları ve süreciyle rehber.",
