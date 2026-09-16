@@ -11,7 +11,8 @@ export type KatalogEslesme = {
   kaynakUrl: string;
 };
 
-export type ProgramSonucu = {
+// Değerlendirme fonksiyonlarının ürettiği ham sonuç (henüz puansız).
+export type ProgramSonucuTaslak = {
   programId: string;
   programAdi: string;
   kurum: string;
@@ -19,6 +20,11 @@ export type ProgramSonucu = {
   ozet: string;
   gerekceler: string[];
   uyarilar?: string[];
+};
+
+// index.ts'te taslağa puan eklenerek üretilen, arayüze giden nihai sonuç.
+export type ProgramSonucu = ProgramSonucuTaslak & {
+  puan: number; // 0-10, durum kategorisi içinde gerekçe sayısına göre türetilir
 };
 
 export type SirketTuru =
@@ -165,6 +171,13 @@ export interface DestekBasvuruGirdisi {
   tkdkDesteklenenIldeMi?: boolean;
   tkdkSektoru?: TkdkSektoru;
   planlananProjeButcesiEuro?: number;
+
+  // Turquality / Marka Destek Programı
+  turqualitySon3YilOrtalamaIhracatUsd?: number;
+  turqualitySon1YilIhracatUsd?: number; // 10M USD istisnası için
+  markaYurtIciTescilVarMi?: boolean; // en az 1 yıl önce alınmış
+  markaYurtDisiTescilVarMi?: boolean; // Madrid Protokolü ülkesinde
+  markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // true ise diskalifiye
 
   // Lead / iletişim
   iletisimAdSoyad?: string;

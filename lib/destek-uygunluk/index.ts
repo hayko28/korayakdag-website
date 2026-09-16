@@ -1,4 +1,4 @@
-import { DestekBasvuruGirdisi, ProgramSonucu } from "./types";
+import { DestekBasvuruGirdisi, ProgramSonucu, ProgramSonucuTaslak, SonucDurumu } from "./types";
 import {
   kosgebIsGelistirmeDegerlendir,
   kosgebKapasiteGelistirmeDegerlendir,
@@ -10,11 +10,33 @@ import {
   tubitak1832Degerlendir,
   ticaretBakanligiIhracatDesteklerDegerlendir,
   tkdkDegerlendir,
+  turqualityDegerlendir,
 } from "./programlar";
 
 export * from "./types";
 export { YATIRIM_TESVIK_ILLER } from "./yardimcilar";
 export { katalogEslestir } from "./katalog";
+
+// Durum kategorisini 0-10 puan aralığına, gerekçe sayısına göre (o aralık
+// içinde) küçük bir varyasyonla çevirir. Puan, mevcut kural motorunun
+// ürettiği kategoriyi görselleştirmenin bir yolu — motorun kendisi
+// değiştirilmedi, hiçbir programın uygunluk mantığı bu ekleme ile değişmez.
+function puanHesapla(durum: SonucDurumu, gerekceSayisi: number): number {
+  switch (durum) {
+    case "uygun":
+      return gerekceSayisi >= 4 ? 10 : 9;
+    case "kismen_uygun":
+      return 6 + Math.min(2, Math.floor(gerekceSayisi / 2));
+    case "belirsiz":
+      return 4 + Math.min(2, Math.floor(gerekceSayisi / 3));
+    case "uygun_degil":
+      return Math.max(0, 3 - gerekceSayisi);
+  }
+}
+
+function puanEkle(taslak: ProgramSonucuTaslak): ProgramSonucu {
+  return { ...taslak, puan: puanHesapla(taslak.durum, taslak.gerekceler.length) };
+}
 
 // Katman 1'deki huni (triyaj) cevaplarına göre hangi karmaşık program
 // modüllerinin değerlendirmeye alınacağını belirler. Triyaj sorusu henüz
@@ -23,34 +45,40 @@ export { katalogEslestir } from "./katalog";
 // AÇIKÇA o modülü dışlıyorsa (örn. argeDurumu === "yok") modül hiç
 // çalıştırılmaz ve sonuç listesine girmez.
 export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramSonucu[] {
-  const sonuclar: ProgramSonucu[] = [];
+  const taslaklar: ProgramSonucuTaslak[] = [];
 
   if (girdi.yeniGirisimciMi !== false) {
-    sonuclar.push(kosgebIsGelistirmeDegerlendir(girdi));
+    taslaklar.push(kosgebIsGelistirmeDegerlendir(girdi));
   }
   if (girdi.yeniGirisimciMi !== true) {
-    sonuclar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
+    taslaklar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
   }
   if (girdi.argeDurumu !== "yok") {
-    sonuclar.push(kosgebArgeUrgeInovasyonDegerlendir(girdi));
-    sonuclar.push(tubitak1507Degerlendir(girdi));
+    taslaklar.push(kosgebArgeUrgeInovasyonDegerlendir(girdi));
+    taslaklar.push(tubitak1507Degerlendir(girdi));
   }
   if (girdi.argeDurumu === "var_kucuk" || girdi.argeDurumu === "var_kurumsal") {
-    sonuclar.push(tubitak1501Degerlendir(girdi));
+    taslaklar.push(tubitak1501Degerlendir(girdi));
   }
   if (girdi.donusumDurumu !== "yok") {
-    sonuclar.push(kosgebDijitalYesilDonusumDegerlendir(girdi));
-    sonuclar.push(tubitak1832Degerlendir(girdi));
+    taslaklar.push(kosgebDijitalYesilDonusumDegerlendir(girdi));
+    taslaklar.push(tubitak1832Degerlendir(girdi));
   }
   if (girdi.yatirimPlanlaniyorMu !== false) {
-    sonuclar.push(yatirimTesvikBelgesiDegerlendir(girdi));
+    taslaklar.push(yatirimTesvikBelgesiDegerlendir(girdi));
   }
   if (girdi.ihracatDurumu !== "yok") {
-    sonuclar.push(ticaretBakanligiIhracatDesteklerDegerlendir(girdi));
+    taslaklar.push(ticaretBakanligiIhracatDesteklerDegerlendir(girdi));
+  }
+  if (girdi.ihracatDurumu === "yapiyorum") {
+    taslaklar.push(turqualityDegerlendir(girdi));
   }
   if (girdi.kirsalYatirimVarMi !== false) {
-    sonuclar.push(tkdkDegerlendir(girdi));
+    taslaklar.push(tkdkDegerlendir(girdi));
   }
 
-  return sonuclar;
+  const DURUM_SIRASI: Record<SonucDurumu, number> = { uygun: 0, kismen_uygun: 1, belirsiz: 2, uygun_degil: 3 };
+  return taslaklar
+    .map(puanEkle)
+    .sort((a, b) => DURUM_SIRASI[a.durum] - DURUM_SIRASI[b.durum] || b.puan - a.puan);
 }

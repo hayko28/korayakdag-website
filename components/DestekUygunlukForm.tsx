@@ -104,14 +104,69 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
   uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "Uygun görünmüyor" },
 };
 
+const PUAN_RENK = (puan: number) =>
+  puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";
+
+type PersonaAlanlari = Record<string, string>;
+
+const PERSONALAR: { ikon: string; baslik: string; aciklama: string; alanlar: PersonaAlanlari }[] = [
+  {
+    ikon: "🌱",
+    baslik: "Yeni girişimciyim",
+    aciklama: "İş fikrimi hayata geçirmek veya yeni kurduğum işletmemi büyütmek için destek arıyorum.",
+    alanlar: { yeniGirisimciMi: "evet" },
+  },
+  {
+    ikon: "🏭",
+    baslik: "Mevcut işletmem büyüyor",
+    aciklama: "Kurulu bir işletmem var, yeni yatırım/kapasite artırımı planlıyorum.",
+    alanlar: { yeniGirisimciMi: "hayir", yatirimPlanlaniyorMu: "evet" },
+  },
+  {
+    ikon: "🌍",
+    baslik: "İhracat yapıyorum",
+    aciklama: "Yurt dışı pazarlara açılmak veya mevcut ihracatımı büyütmek istiyorum.",
+    alanlar: { yeniGirisimciMi: "hayir", ihracatDurumu: "yapiyorum" },
+  },
+  {
+    ikon: "🔬",
+    baslik: "Yeni ürün / Ar-Ge projem var",
+    aciklama: "Yeni bir ürün, teknoloji veya üretim yöntemi geliştiriyorum.",
+    alanlar: { yeniGirisimciMi: "hayir", argeDurumu: "planliyorum" },
+  },
+  {
+    ikon: "🌾",
+    baslik: "Kırsal / tarımsal yatırımım var",
+    aciklama: "Hayvancılık, tarımsal üretim, gıda işleme veya kırsal turizm alanında yatırım planlıyorum.",
+    alanlar: { yeniGirisimciMi: "hayir", kirsalYatirimVarMi: "evet" },
+  },
+];
+
 export default function DestekUygunlukForm() {
   const [g, setG] = useState<Girdi>({});
   const [submitting, setSubmitting] = useState(false);
   const [sonuclar, setSonuclar] = useState<ProgramSonucu[] | null>(null);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hata, setHata] = useState("");
+  const [seciliPersona, setSeciliPersona] = useState<number | null>(null);
+  const [kvkkOnay, setKvkkOnay] = useState(false);
+  const [acikSonuclar, setAcikSonuclar] = useState<Set<string>>(new Set());
 
   const set = (key: string, value: string) => setG((prev) => ({ ...prev, [key]: value }));
+
+  const personaSec = (index: number) => {
+    setSeciliPersona(index);
+    setG((prev) => ({ ...prev, ...PERSONALAR[index].alanlar }));
+    document.getElementById("bolum-1")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const sonucAcKapa = (programId: string) =>
+    setAcikSonuclar((prev) => {
+      const next = new Set(prev);
+      if (next.has(programId)) next.delete(programId);
+      else next.add(programId);
+      return next;
+    });
 
   const parseGirdi = (): DestekBasvuruGirdisi => {
     const num = (k: string) => (g[k] ? Number(g[k].replace(/[^0-9.-]/g, "")) : undefined);
@@ -189,15 +244,41 @@ export default function DestekUygunlukForm() {
       tkdkSektoru: (g.tkdkSektoru as DestekBasvuruGirdisi["tkdkSektoru"]) || undefined,
       planlananProjeButcesiEuro: num("planlananProjeButcesiEuro"),
 
+      turqualitySon3YilOrtalamaIhracatUsd: num("turqualitySon3YilOrtalamaIhracatUsd"),
+      turqualitySon1YilIhracatUsd: num("turqualitySon1YilIhracatUsd"),
+      markaYurtIciTescilVarMi: bool("markaYurtIciTescilVarMi"),
+      markaYurtDisiTescilVarMi: bool("markaYurtDisiTescilVarMi"),
+      markaYurtDisiTescilYurtIciTescildenOnceMi: bool("markaYurtDisiTescilYurtIciTescildenOnceMi"),
+
       iletisimAdSoyad: g.iletisimAdSoyad || undefined,
       iletisimEposta: g.iletisimEposta || undefined,
       iletisimTelefon: g.iletisimTelefon || undefined,
     };
   };
 
+  const ZORUNLU_HUNI_ALANLARI: { anahtar: string; etiket: string }[] = [
+    { anahtar: "yeniGirisimciMi", etiket: "Yeni bir girişimci misiniz?" },
+    { anahtar: "imalatciMi", etiket: "İmalat/üretim sektöründe mi faaliyet gösteriyorsunuz?" },
+    { anahtar: "yatirimPlanlaniyorMu", etiket: "Yeni tesis, genişleme veya modernizasyon yatırımı planlıyor musunuz?" },
+    { anahtar: "argeDurumu", etiket: "Ar-Ge / yenilik durumunuz nedir?" },
+    { anahtar: "ihracatDurumu", etiket: "İhracat durumunuz nedir?" },
+    { anahtar: "donusumDurumu", etiket: "Dijital veya yeşil dönüşüm yatırımı" },
+    { anahtar: "kirsalYatirimVarMi", etiket: "Kırsal alanda bir yatırımınız var mı?" },
+  ];
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setHata("");
+    const eksik = ZORUNLU_HUNI_ALANLARI.find((a) => !g[a.anahtar]);
+    if (eksik) {
+      setHata(`Lütfen "${eksik.etiket}" sorusunu cevaplayın.`);
+      document.getElementById("bolum-2")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    if (!kvkkOnay) {
+      setHata("Devam etmek için KVKK Aydınlatma Metni'ni onaylamanız gerekiyor.");
+      return;
+    }
     setSubmitting(true);
     try {
       const res = await fetch("/api/destek-uygunluk", {
@@ -209,6 +290,7 @@ export default function DestekUygunlukForm() {
       if (!res.ok) throw new Error(data.error || "Analiz tamamlanamadı.");
       setSonuclar(data.sonuclar);
       setKatalogOnerileri(data.katalogOnerileri ?? []);
+      setAcikSonuclar(new Set(data.sonuclar.slice(0, 1).map((s: ProgramSonucu) => s.programId)));
       window.scrollTo({ top: document.getElementById("sonuclar")?.offsetTop ?? 0, behavior: "smooth" });
     } catch (err) {
       setHata(err instanceof Error ? err.message : "Bir hata oluştu.");
@@ -225,25 +307,59 @@ export default function DestekUygunlukForm() {
           sonucu ya da kesin uygunluk teyidi yerine geçmez. Mevzuat sık güncellenir; kesin sonuç için ilgili
           kurumun güncel şartları ve bir danışman değerlendirmesi gereklidir.
         </div>
-        {sonuclar.map((s) => (
-          <div key={s.programId} className={`rounded-2xl border p-6 shadow-sm ${DURUM_STIL[s.durum].renk}`}>
-            <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-              <h3 className="text-lg font-bold text-[#071A2F]">{s.programAdi}</h3>
-              <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${DURUM_STIL[s.durum].renk}`}>
-                {DURUM_STIL[s.durum].etiket}
-              </span>
+
+        <div>
+          <h2 className="text-lg font-bold text-[#071A2F]">
+            Size en uygun {Math.min(5, sonuclar.length)} program
+          </h2>
+          <p className="text-sm text-gray-500">Puana göre sıralandı — detay kriterleri görmek için bir karta tıklayın.</p>
+        </div>
+
+        {sonuclar.map((s) => {
+          const acik = acikSonuclar.has(s.programId);
+          return (
+            <div key={s.programId} className={`rounded-2xl border shadow-sm transition ${DURUM_STIL[s.durum].renk}`}>
+              <button
+                type="button"
+                onClick={() => sonucAcKapa(s.programId)}
+                className="flex w-full flex-wrap items-center justify-between gap-3 p-6 text-left"
+                aria-expanded={acik}
+              >
+                <div className="min-w-0">
+                  <div className="mb-1 flex flex-wrap items-center gap-2">
+                    <h3 className="text-lg font-bold text-[#071A2F]">{s.programAdi}</h3>
+                    <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${DURUM_STIL[s.durum].renk}`}>
+                      {DURUM_STIL[s.durum].etiket}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
+                </div>
+                <div className="flex flex-shrink-0 items-center gap-3">
+                  <div className="text-center">
+                    <div className={`text-2xl font-black leading-none ${PUAN_RENK(s.puan)}`}>{s.puan}</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">/ 10 puan</div>
+                  </div>
+                  <span className={`flex h-8 w-8 items-center justify-center rounded-full border text-sm transition ${acik ? "rotate-180" : ""}`}>
+                    ▾
+                  </span>
+                </div>
+              </button>
+              {acik && (
+                <div className="border-t border-black/10 p-6 pt-5">
+                  <p className="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">Değerlendirme kriterleri</p>
+                  <ul className="mb-3 list-disc space-y-1 pl-5 text-sm text-gray-800">
+                    {s.gerekceler.map((gerekce, i) => <li key={i}>{gerekce}</li>)}
+                  </ul>
+                  {s.uyarilar && s.uyarilar.length > 0 && (
+                    <ul className="space-y-1 border-t border-black/10 pt-3 text-xs text-gray-600">
+                      {s.uyarilar.map((uyari, i) => <li key={i}>⚠ {uyari}</li>)}
+                    </ul>
+                  )}
+                </div>
+              )}
             </div>
-            <p className="mb-3 text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
-            <ul className="mb-3 list-disc space-y-1 pl-5 text-sm text-gray-800">
-              {s.gerekceler.map((gerekce, i) => <li key={i}>{gerekce}</li>)}
-            </ul>
-            {s.uyarilar && s.uyarilar.length > 0 && (
-              <ul className="space-y-1 border-t border-black/10 pt-3 text-xs text-gray-600">
-                {s.uyarilar.map((uyari, i) => <li key={i}>⚠ {uyari}</li>)}
-              </ul>
-            )}
-          </div>
-        ))}
+          );
+        })}
         {katalogOnerileri.length > 0 && (
           <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6">
             <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Ayrıca İlginizi Çekebilir</h3>
@@ -286,7 +402,30 @@ export default function DestekUygunlukForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-10">
-      <Bolum baslik="1. Şirket Bilgileri" aciklama="Bu bilgiler tüm programların ön değerlendirmesinde kullanılır.">
+      <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
+        <h2 className="text-xl font-bold text-[#071A2F]">Önce sizi kısaca tanıyalım</h2>
+        <p className="mb-5 mt-1 text-sm text-gray-500">
+          Size en yakın olanı seçin, aşağıdaki bazı soruları sizin için önceden işaretleyelim. İstediğiniz an değiştirebilirsiniz.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {PERSONALAR.map((p, i) => (
+            <button
+              key={p.baslik}
+              type="button"
+              onClick={() => personaSec(i)}
+              className={`rounded-2xl border p-4 text-left transition hover:border-orange-400 hover:shadow-md ${
+                seciliPersona === i ? "border-orange-500 bg-orange-50" : "border-gray-200 bg-white"
+              }`}
+            >
+              <div className="mb-2 text-3xl">{p.ikon}</div>
+              <div className="mb-1 text-sm font-bold text-[#071A2F]">{p.baslik}</div>
+              <div className="text-xs leading-relaxed text-gray-500">{p.aciklama}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <Bolum baslik="1. Şirket Bilgileri" aciklama="Bu bilgiler tüm programların ön değerlendirmesinde kullanılır." id="bolum-1">
         <div className="grid gap-5 sm:grid-cols-2">
           <Metin etiket="Şirket Unvanı" deger={g.sirketUnvani} onChange={(v) => set("sirketUnvani", v)} />
           <Secim etiket="Şirket Türü" deger={g.sirketTuru} onChange={(v) => set("sirketTuru", v)} secenekler={SIRKET_TURU_SECENEKLERI} />
@@ -299,7 +438,7 @@ export default function DestekUygunlukForm() {
         </div>
       </Bolum>
 
-      <Bolum baslik="2. Birkaç Kısa Soru" aciklama="Bu cevaplara göre aşağıda sadece size uygun olabilecek program bölümleri açılır — ilgisiz onlarca soruyla uğraşmazsınız.">
+      <Bolum baslik="2. Birkaç Kısa Soru" aciklama="Bu cevaplara göre aşağıda sadece size uygun olabilecek program bölümleri açılır — ilgisiz onlarca soruyla uğraşmazsınız." id="bolum-2">
         <div className="grid gap-5 sm:grid-cols-2">
           <EvetHayir zorunlu etiket="Yeni bir girişimci misiniz? (kuruluşu 3 yıldan az veya henüz iş fikri aşamasında)" deger={g.yeniGirisimciMi} onChange={(v) => set("yeniGirisimciMi", v)} />
           <EvetHayir zorunlu etiket="İmalat/üretim sektöründe mi faaliyet gösteriyorsunuz?" deger={g.imalatciMi} onChange={(v) => set("imalatciMi", v)} />
@@ -413,6 +552,18 @@ export default function DestekUygunlukForm() {
       </Bolum>
       )}
 
+      {g.ihracatDurumu === "yapiyorum" && (
+      <Bolum baslik="8B. Turquality / Marka Destek Programı" aciklama="Düzenli ihracatı olan, markalaşma yolculuğundaki şirketler için. Turquality mi yoksa Marka Destek Programı mı olacağınız danışmanlık ön inceleme puanına bağlıdır, burada nesnel eşik şartları kontrol edilir.">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Tutar etiket="Son 3 yıl ortalama ihracat" deger={g.turqualitySon3YilOrtalamaIhracatUsd} onChange={(v) => set("turqualitySon3YilOrtalamaIhracatUsd", v)} birim="$" />
+          <Tutar etiket="Son 1 yıl ihracat (10M$ istisnası için, opsiyonel)" deger={g.turqualitySon1YilIhracatUsd} onChange={(v) => set("turqualitySon1YilIhracatUsd", v)} birim="$" />
+          <EvetHayir etiket="Markanın yurt içi tescili var mı? (en az 1 yıl önce)" deger={g.markaYurtIciTescilVarMi} onChange={(v) => set("markaYurtIciTescilVarMi", v)} />
+          <EvetHayir etiket="Markanın Madrid Protokolü ülkesinde yurt dışı tescili var mı?" deger={g.markaYurtDisiTescilVarMi} onChange={(v) => set("markaYurtDisiTescilVarMi", v)} />
+          <EvetHayir etiket="Yurt dışı tescil, yurt içi tescilden önce mi yapıldı?" deger={g.markaYurtDisiTescilYurtIciTescildenOnceMi} onChange={(v) => set("markaYurtDisiTescilYurtIciTescildenOnceMi", v)} />
+        </div>
+      </Bolum>
+      )}
+
       {g.kirsalYatirimVarMi === "evet" && (
       <Bolum baslik="9. TKDK IPARD III Kırsal Kalkınma Destekleri" aciklama="Kırsal alanda hayvancılık, tarımsal üretim, gıda işleme, yenilenebilir enerji veya kırsal turizm yatırımı planlayan gerçek/tüzel kişiler için.">
         <div className="grid gap-5 sm:grid-cols-2">
@@ -430,6 +581,21 @@ export default function DestekUygunlukForm() {
           <Metin etiket="E-posta" tip="email" deger={g.iletisimEposta} onChange={(v) => set("iletisimEposta", v)} zorunlu />
           <Metin etiket="Telefon" tip="tel" deger={g.iletisimTelefon} onChange={(v) => set("iletisimTelefon", v)} />
         </div>
+        <label className="mt-5 flex items-start gap-2.5 text-sm text-gray-600">
+          <input
+            type="checkbox"
+            checked={kvkkOnay}
+            onChange={(e) => setKvkkOnay(e.target.checked)}
+            className="mt-0.5 h-4 w-4 rounded border-gray-300 accent-orange-500"
+          />
+          <span>
+            Kişisel verilerimin bu ön analiz kapsamında işlenmesine ilişkin{" "}
+            <Link href="/gizlilik-politikasi" target="_blank" className="font-semibold text-orange-600 hover:underline">
+              KVKK Aydınlatma Metni
+            </Link>
+            &apos;ni okudum, onaylıyorum.
+          </span>
+        </label>
       </Bolum>
 
       {hata && <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{hata}</p>}
@@ -445,9 +611,9 @@ export default function DestekUygunlukForm() {
   );
 }
 
-function Bolum({ baslik, aciklama, children }: { baslik: string; aciklama?: string; children: React.ReactNode }) {
+function Bolum({ baslik, aciklama, children, id }: { baslik: string; aciklama?: string; children: React.ReactNode; id?: string }) {
   return (
-    <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
+    <section id={id} className="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
       <h2 className="text-xl font-bold text-[#071A2F]">{baslik}</h2>
       {aciklama && <p className="mb-5 mt-1 text-sm text-gray-500">{aciklama}</p>}
       <div className={aciklama ? "" : "mt-5"}>{children}</div>
@@ -512,27 +678,51 @@ function Tarih({ etiket, deger, onChange }: { etiket: string; deger?: string; on
   );
 }
 
+const butonSinifi = (secili: boolean) =>
+  `rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${
+    secili ? "border-orange-500 bg-orange-50 text-orange-700" : "border-gray-300 bg-white text-gray-700 hover:border-orange-300"
+  }`;
+
+// 8'den fazla seçenekte buton grid kullanışsızlaşıyor (örn. 81 il) — o durumda dropdown'a düşer.
 function Secim({ etiket, deger, onChange, secenekler, zorunlu }: { etiket: string; deger?: string; onChange: (v: string) => void; secenekler: { value: string; label: string }[]; zorunlu?: boolean }) {
+  if (secenekler.length > 8) {
+    return (
+      <label className="block">
+        <Etiket zorunlu={zorunlu}>{etiket}</Etiket>
+        <select value={deger ?? ""} onChange={(e) => onChange(e.target.value)} required={zorunlu} className={girdiSinifi}>
+          <option value="">Seçiniz</option>
+          {secenekler.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
+        </select>
+      </label>
+    );
+  }
   return (
-    <label className="block">
+    <div className="block sm:col-span-2">
       <Etiket zorunlu={zorunlu}>{etiket}</Etiket>
-      <select value={deger ?? ""} onChange={(e) => onChange(e.target.value)} required={zorunlu} className={girdiSinifi}>
-        <option value="">Seçiniz</option>
-        {secenekler.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
-      </select>
-    </label>
+      <div className="flex flex-wrap gap-2">
+        {secenekler.map((s) => (
+          <button key={s.value} type="button" onClick={() => onChange(s.value)} className={butonSinifi(deger === s.value)}>
+            {s.label}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
 
 function EvetHayir({ etiket, deger, onChange, zorunlu }: { etiket: string; deger?: string; onChange: (v: string) => void; zorunlu?: boolean }) {
   return (
-    <label className="block">
+    <div className="block">
       <Etiket zorunlu={zorunlu}>{etiket}</Etiket>
-      <select value={deger ?? ""} onChange={(e) => onChange(e.target.value)} required={zorunlu} className={girdiSinifi}>
-        <option value="">{zorunlu ? "Seçiniz" : "Bilmiyorum / atla"}</option>
-        <option value="evet">Evet</option>
-        <option value="hayir">Hayır</option>
-      </select>
-    </label>
+      <div className="flex flex-wrap gap-2">
+        <button type="button" onClick={() => onChange("evet")} className={butonSinifi(deger === "evet")}>Evet</button>
+        <button type="button" onClick={() => onChange("hayir")} className={butonSinifi(deger === "hayir")}>Hayır</button>
+        {!zorunlu && deger && (
+          <button type="button" onClick={() => onChange("")} className="rounded-xl px-3 py-2.5 text-xs font-semibold text-gray-400 hover:text-gray-600">
+            Temizle
+          </button>
+        )}
+      </div>
+    </div>
   );
 }

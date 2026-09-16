@@ -24,6 +24,7 @@ const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "1832",
   "ihracat destekleri",
   "ipard",
+  "turquality",
 ];
 
 function anahtarKelimeGecerMi(metin: string, kelimeler: string[]): boolean {

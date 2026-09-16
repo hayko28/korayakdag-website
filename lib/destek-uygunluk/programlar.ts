@@ -1,4 +1,4 @@
-import { DestekBasvuruGirdisi, ProgramSonucu, SonucDurumu } from "./types";
+import { DestekBasvuruGirdisi, ProgramSonucuTaslak, SonucDurumu } from "./types";
 import {
   ilinBolgesi,
   imalatSektoruMu,
@@ -17,13 +17,13 @@ function sonuc(
   ozet: string,
   gerekceler: string[],
   uyarilar?: string[]
-): ProgramSonucu {
+): ProgramSonucuTaslak {
   return { programId, programAdi, kurum, durum, ozet, gerekceler, uyarilar };
 }
 
 // --- 1) KOSGEB İş Geliştirme Desteği (Girişimci Destek Programı) ---
 // Kaynak: research/destek-uygunluk/kosgeb-is-gelistirme.md (UE-35/10)
-export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = {
     programId: "kosgeb-is-gelistirme",
     programAdi: "KOSGEB İş Geliştirme Desteği (Girişimci Destek Programı)",
@@ -89,7 +89,7 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
 
 // --- 2) KOSGEB Kapasite Geliştirme Destek Programı ---
 // Kaynak: research/destek-uygunluk/kosgeb-kapasite-gelistirme.md (UE-37/08)
-export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = {
     programId: "kosgeb-kapasite-gelistirme",
     programAdi: "KOSGEB Kapasite Geliştirme Destek Programı",
@@ -190,7 +190,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
 // Kaynak: research/destek-uygunluk/yatirim-tesvik-belgesi.md (9903 sayılı Karar + Tebliğ 2025/1)
 // Karmaşıklığı nedeniyle bu değerlendirme HİÇBİR ZAMAN kesin "uygun" döndürmez,
 // en fazla "kismen_uygun" (ön kategori tahmini) verir.
-export function yatirimTesvikBelgesiDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function yatirimTesvikBelgesiDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "yatirim-tesvik-belgesi", programAdi: "Yatırım Teşvik Belgesi", kurum: "Sanayi ve Teknoloji Bakanlığı" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -283,7 +283,7 @@ function argeRetSinyalleriVarMi(g: DestekBasvuruGirdisi): string | null {
 
 // --- 4) TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı ---
 // Kaynak: research/destek-uygunluk/tubitak-1501.md
-export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "tubitak-1501", programAdi: "TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı", kurum: "TÜBİTAK" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -337,7 +337,7 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
 
 // --- 5) TÜBİTAK 1507 - KOBİ Ar-Ge Başlangıç Destek Programı ---
 // Kaynak: research/destek-uygunluk/tubitak-1507.md
-export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "tubitak-1507", programAdi: "TÜBİTAK 1507 - KOBİ Ar-Ge Başlangıç Destek Programı", kurum: "TÜBİTAK" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -406,7 +406,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
 
 // --- 6) KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı ---
 // Kaynak: research/destek-uygunluk/kosgeb-arge-urge-inovasyon.md (blog: kosgeb-arge-urge-inovasyon-destek-programi-2026)
-export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "kosgeb-arge-urge-inovasyon", programAdi: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı", kurum: "KOSGEB" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -454,7 +454,7 @@ export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): Pro
 // Kapsam çok geniş (10'un üzerinde alt destek kalemi) olduğundan bu değerlendirme
 // hiçbir zaman kesin "uygun" döndürmez — hangi Karar'a ve hangi alt kaleme
 // girdiğinizi belirleyen bir ön yönlendirmedir.
-export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "ticaret-bakanligi-ihracat-destekleri", programAdi: "Ticaret Bakanlığı İhracat Destekleri", kurum: "Ticaret Bakanlığı" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -501,7 +501,7 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
 // --- 8) TÜBİTAK 1832 - Sanayide Yeşil Dönüşüm Programı ---
 // Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamında, TEYDEB tarafından yürütülür.
 // Kaynak: research/destek-uygunluk/tubitak-1832.md
-export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "tubitak-1832", programAdi: "TÜBİTAK 1832 - Sanayide Yeşil Dönüşüm Programı", kurum: "TÜBİTAK" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -553,7 +553,7 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
 
 // --- 9) KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (KOBİ Dijital Dönüşüm DP) ---
 // Kaynak: research/destek-uygunluk/kosgeb-dijital-yesil-donusum.md
-export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "kosgeb-dijital-yesil-donusum", programAdi: "KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı", kurum: "KOSGEB" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -607,7 +607,7 @@ export function kosgebDijitalYesilDonusumDegerlendir(g: DestekBasvuruGirdisi): P
 
 // --- 10) TKDK - IPARD III Kırsal Kalkınma Destekleri ---
 // Kaynak: research/destek-uygunluk/tkdk-ipard.md
-export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
+export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "tkdk-ipard", programAdi: "TKDK IPARD III Kırsal Kalkınma Destekleri", kurum: "Tarım ve Kırsal Kalkınmayı Destekleme Kurumu (TKDK)" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
@@ -651,6 +651,72 @@ export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucu {
   return sonuc(
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre genel çerçeveye uyuyorsunuz; kesin uygunluk güncel çağrı dönemine göre belirlenir.",
+    gerekceler,
+    uyarilar
+  );
+}
+
+// --- 10) Turquality / Marka Destek Programı ---
+// Kaynak: research/destek-uygunluk/turquality.md
+export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "turquality-marka-destek", programAdi: "Turquality / Marka Destek Programı", kurum: "Ticaret Bakanlığı" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar = [
+    "Turquality ile Marka Destek Programı arasındaki seçim, görevlendirilen danışmanlık firmasının 100 puanlık ön inceleme raporuna dayanır (50 altı ret, 50-80 Marka, 80-100 Turquality). Bu araç yalnızca nesnel eşik şartlarını (ihracat tutarı, tescil) kontrol eder; puanlamanın öznel kısmını (marka gücü, kurumsal kapasite) simüle edemez.",
+  ];
+
+  const ortalamaIhracat = g.turqualitySon3YilOrtalamaIhracatUsd;
+  const sonYilIhracat = g.turqualitySon1YilIhracatUsd;
+  const ihracatEsigiSaglaniyor =
+    (ortalamaIhracat !== undefined && ortalamaIhracat >= 3_000_000) ||
+    (sonYilIhracat !== undefined && sonYilIhracat >= 10_000_000);
+
+  if (ortalamaIhracat !== undefined || sonYilIhracat !== undefined) {
+    if (!ihracatEsigiSaglaniyor) {
+      gerekceler.push(
+        "Son 3 yıl ortalama ihracat en az 3.000.000 ABD Doları (ya da son 1 yılda en az 10.000.000 ABD Doları istisnası) şartı sağlanmıyor."
+      );
+      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İhracat tutarı eşiğin altında.", gerekceler, uyarilar);
+    }
+    gerekceler.push("İhracat tutarı eşiği (3 yıl ortalama 3.000.000 USD veya son 1 yılda 10.000.000 USD) sağlanıyor.");
+  } else {
+    eksikAlanlar.push("son 3 yıl ortalama ihracat tutarı (veya son 1 yıl ihracat istisnası)");
+  }
+
+  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === true) {
+    gerekceler.push("Yurt dışı marka tescili, yurt içi tescilden önce yapılmış — bu sıra diskalifiye eden bir durum, yurt içi tescil önce alınmış olmalı.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil sırası uygun değil.", gerekceler, uyarilar);
+  }
+  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescilin yurt içi tescilden önce olup olmadığı");
+
+  if (g.markaYurtIciTescilVarMi === false) {
+    gerekceler.push("Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", gerekceler, uyarilar);
+  }
+  if (g.markaYurtIciTescilVarMi === undefined) eksikAlanlar.push("yurt içi marka tescili (en az 1 yıl önce alınmış)");
+
+  if (g.markaYurtDisiTescilVarMi === false) {
+    gerekceler.push("Aynı markanın Madrid Protokolü'ne taraf en az bir ülkede yurt dışı tescili bulunmuyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "Yurt dışı marka tescili henüz yok.", gerekceler, [
+      ...uyarilar,
+      "Yurt dışı tescil şartı başvuru anına kadar tamamlanabilir; süreci birlikte planlayabiliriz.",
+    ]);
+  }
+  if (g.markaYurtDisiTescilVarMi === undefined) eksikAlanlar.push("yurt dışı (Madrid Protokolü ülkesi) marka tescili");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle nesnel eşik şartlarının çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "İhracat tutarı ve marka tescili eşiklerini sağlıyorsunuz; Turquality mi yoksa Marka Destek Programı mı kapsamına alınacağınız danışmanlık firmasının ön inceleme puanına bağlı.",
     gerekceler,
     uyarilar
   );
