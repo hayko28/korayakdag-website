@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "faizin-dusecegi-varsayimiyla-kurulan-buyume-plani",
+    title:
+      "Merkez Bankası Faizi Beşinci Kez Sabit Tuttu: Büyüme Planınız Hâlâ Ayakta mı?",
+    excerpt:
+      "TCMB, 10 Eylül'de politika faizini yüzde 37'de sabit tutarak ocaktaki indirimden bu yana üst üste beşinci kez değişikliğe gitmedi. Yılın başında 'faiz kademeli düşecek' varsayımıyla hazırlanan birçok yatırım bütçesi, sekiz ay sonra hâlâ aynı finansman maliyetiyle karşı karşıya.",
+    tag: "Görüş",
+    date: "17 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satin-almada-devralinan-eski-iscilik-borclari",
     title:
       "Bir Şirket Satın Aldığınızda, Onun Geçmiş İşçilik Borçlarını da Devralır Mısınız?",
