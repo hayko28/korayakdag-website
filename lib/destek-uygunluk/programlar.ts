@@ -204,6 +204,32 @@ export function yatirimTesvikBelgesiDegerlendir(g: DestekBasvuruGirdisi): Progra
     "Kesin başvuru E-TUYS üzerinden yapılır ve mutlaka bir teşvik danışmanı/YMM ile teyit edilmelidir.",
   ];
 
+  // Tebliğ Madde 3 tanımı gereği tevsi/modernizasyon/ürün çeşitlendirme/entegrasyon/nakil
+  // yatırımlarının hepsi ÜZERİNE YAPILDIĞI mevcut bir tesisi varsayar — yalnızca "komple
+  // yeni yatırım" mevcut tesis gerektirmez. Bu iki alan birbirine bağlı olduğu halde
+  // önceden hiç karşılaştırılmıyordu, "Tevsi" + "mevcut tesis yok" gibi tanım gereği
+  // imkânsız bir kombinasyon sessizce "kismen_uygun" dönebiliyordu.
+  const MEVCUT_TESIS_GEREKTIREN_TURLER: Record<string, string> = {
+    tevsi: "Tevsi (kapasite artırımı)",
+    modernizasyon: "Modernizasyon",
+    urun_cesitlendirme: "Ürün çeşitlendirme",
+    entegrasyon: "Entegrasyon",
+    nakil: "Nakil",
+  };
+  if (g.yatirimTuru !== undefined && g.yatirimTuru !== "komple_yeni" && g.mevcutTesisVarMi === false) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Yatırım türü ile mevcut tesis bilgisi birbiriyle çelişiyor, önce bunu netleştirmemiz gerekiyor.",
+      [
+        `"${MEVCUT_TESIS_GEREKTIREN_TURLER[g.yatirimTuru] ?? g.yatirimTuru}" yatırım türü, tanımı gereği (Tebliğ Madde 3) üzerine yapılacağı mevcut bir tesisi varsayar, ama "mevcut tesisiniz yok" belirtilmiş — bu iki cevap birbiriyle çelişiyor.`,
+      ],
+      [
+        ...uyarilar,
+        "Gerçekten mevcut bir üretim tesisiniz yoksa yatırım türünü \"Komple yeni yatırım\" olarak değiştirin; mevcut bir tesisiniz varsa \"Mevcut bir tesisiniz var mı?\" sorusunu \"Evet\" olarak güncelleyin.",
+      ]
+    );
+  }
+
   const pozitifListede = yatirimTesvikPozitifListedeMi(g.yatirimKonusuNaceKodu);
   if (pozitifListede === null) eksikAlanlar.push("yatırım konusu NACE kodu");
   else if (!pozitifListede && g.dijitalVeyaYesilDonusumMu !== true) {
