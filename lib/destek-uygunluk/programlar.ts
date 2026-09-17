@@ -484,8 +484,13 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
   }
 
   if (g.ihracatciBirligiUyesiMi === false) {
-    gerekceler.push("İlgili İhracatçı Birliği'ne üyelik, bu destek grubunun neredeyse tamamı için ön koşuldur ve henüz sağlanmamış.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "İhracatçı Birliği üyeliği eksik.", gerekceler, uyarilar);
+    gerekceler.push("İlgili İhracatçı Birliği'ne üyelik, bu destek grubundaki alt kalemlerin neredeyse tamamı için ön koşuldur; üye olmadığınız belirtilmiş.");
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "uygun_degil",
+      "İhracatçı Birliği üyeliği bulunmuyor.",
+      gerekceler,
+      [...uyarilar, "İstisnai olarak üyelik gerektirmeyen birkaç alt kalem olabilir; kesinleştirmek için bir dış ticaret danışmanına danışmanız önerilir."]
+    );
   }
   if (g.ihracatciBirligiUyesiMi === undefined) eksikAlanlar.push("İhracatçı Birliği üyeliği durumu");
 
