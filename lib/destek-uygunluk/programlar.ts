@@ -392,8 +392,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
 
   const retSinyali = argeRetSinyalleriVarMi(g);
   if (retSinyali) {
-    gerekceler.push(retSinyali);
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", gerekceler);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", [retSinyali]);
   }
   if (g.projeEkibindeLisansMezunuVarMi === undefined) eksikAlanlar.push("proje ekibinde lisans mezunu personel durumu");
 
@@ -497,11 +496,10 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
   }
 
   if (g.ihracatciBirligiUyesiMi === false) {
-    gerekceler.push("İlgili İhracatçı Birliği'ne üyelik, bu destek grubundaki alt kalemlerin neredeyse tamamı için ön koşuldur; üye olmadığınız belirtilmiş.");
     return sonuc(
       meta.programId, meta.programAdi, meta.kurum, "uygun_degil",
       "İhracatçı Birliği üyeliği bulunmuyor.",
-      gerekceler,
+      ["İlgili İhracatçı Birliği'ne üyelik, bu destek grubundaki alt kalemlerin neredeyse tamamı için ön koşuldur; üye olmadığınız belirtilmiş."],
       [...uyarilar, "İstisnai olarak üyelik gerektirmeyen birkaç alt kalem olabilir; kesinleştirmek için bir dış ticaret danışmanına danışmanız önerilir."]
     );
   }
@@ -808,14 +806,16 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
   }
 
   if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === true) {
-    gerekceler.push("Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", gerekceler, uyarilar);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", [
+      "Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.",
+    ], uyarilar);
   }
   if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescil başvurusunun yurt içi tescil başvurusundan önce mi yapıldığı (aynı tarih sorun değil)");
 
   if (g.markaYurtIciTescilVarMi === false) {
-    gerekceler.push("Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", gerekceler, uyarilar);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", [
+      "Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.",
+    ], uyarilar);
   }
   if (g.markaYurtIciTescilVarMi === undefined) eksikAlanlar.push("yurt içi marka tescili (en az 1 yıl önce alınmış)");
 
