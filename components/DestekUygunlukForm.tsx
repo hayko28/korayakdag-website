@@ -995,6 +995,10 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
     case "tubitak-1832":
       return (
         <>
+          <p className="mb-4 rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-800">
+            ℹ️ Bu sorular aynı Ar-Ge projenizle ilgili olduğu için TÜBİTAK 1501, 1507 ve 1832 kartları arasında
+            ortaktır — birinde verdiğiniz cevap diğerlerinde de görünür.
+          </p>
           <div className="grid gap-5 sm:grid-cols-2">
             <Secim etiket="Proje niteliği" deger={g.projeNiteligi} onChange={(v) => set("projeNiteligi", v)} secenekler={PROJE_NITELIGI_SECENEKLERI} />
             <EvetHayir etiket="Proje üretim/tesis yatırımı ağırlıklı mı?" deger={g.uretimAltyapisiYatirimiAgirlikliMi} onChange={(v) => set("uretimAltyapisiYatirimiAgirlikliMi", v)} />
