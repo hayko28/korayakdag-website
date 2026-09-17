@@ -352,6 +352,7 @@ export default function DestekUygunlukForm() {
 
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
       maliKarneVarMi: bool("maliKarneVarMi"),
+      maliYeterlilikSaglaniyorMu: bool("maliYeterlilikSaglaniyorMu"),
       yesilSanayiProjeTemasi: (g.yesilSanayiProjeTemasi as DestekBasvuruGirdisi["yesilSanayiProjeTemasi"]) || undefined,
 
       basvuranYasi: num("basvuranYasi"),
@@ -910,7 +911,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="İleri girişimci eğitimi tamamlandı mı?" deger={g.ileriGirisimciEgitimiTamamlandiMi} onChange={(v) => set("ileriGirisimciEgitimiTamamlandiMi", v)} />
           <Sayi etiket="Girişimcinin ortaklık payı (%)" deger={g.ortaklikPayiYuzde} onChange={(v) => set("ortaklikPayiYuzde", v)} />
           <EvetHayir etiket="Girişimci münferit temsile yetkili mi?" deger={g.girisimciMunferitTemsilYetkisiVarMi} onChange={(v) => set("girisimciMunferitTemsilYetkisiVarMi", v)} />
-          <EvetHayir etiket="Bu destek daha önce kullanıldı mı?" deger={g.isGelistirmeDestegiDahaOnceKullanildiMi} onChange={(v) => set("isGelistirmeDestegiDahaOnceKullanildiMi", v)} />
+          <EvetHayir etiket="İş Geliştirme Desteği (veya alternatifi Faiz/Kâr Payı Desteği) daha önce kullanıldı mı? (İş Kurma Desteği ayrı, bunu etkilemez)" deger={g.isGelistirmeDestegiDahaOnceKullanildiMi} onChange={(v) => set("isGelistirmeDestegiDahaOnceKullanildiMi", v)} />
           <EvetHayir etiket="İmalat/üretim sektöründe mi faaliyet gösteriyorsunuz?" deger={g.imalatciMi} onChange={(v) => set("imalatciMi", v)} />
         </div>
       );
@@ -962,8 +963,9 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
         <div>
           <KobiOlcegiAlanlari g={g} set={set} />
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
-            <EvetHayir etiket="DDX (Dijital Değişim/Dönüşüm) raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
-            <EvetHayir etiket="Güncel Mali Karneniz var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
+            <EvetHayir etiket="Dijital dönüşüm/olgunluk değerlendirme raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
+            <EvetHayir etiket="Güncel mali yeterlilik bilginiz (bankaların paylaştığı finansal veri) var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
+            <EvetHayir etiket="Son mali yıl Öz Kaynaklar Toplamınız pozitif mi VE son 3 mali yıldan en az birinde Faaliyet Kârınız pozitif mi?" deger={g.maliYeterlilikSaglaniyorMu} onChange={(v) => set("maliYeterlilikSaglaniyorMu", v)} />
           </div>
         </div>
       );

@@ -1,5 +1,28 @@
 # KOSGEB Kapasite Geliştirme Destek Programı
 
+## DÜZELTME (2026-09-18) — Rev.14 Yönerge (11/09/2026) ile tam teyit edildi
+
+Program son 4 ayda 2 kez revize edilmiş (Rev.12→14); pdftotext ile tam metin okundu:
+
+- **Şirket türü şartı GÜNCEL DEĞİLDİ**: 11/05/2026 tarihli 730087 sayılı Olur ile MADDE 13/4
+  değişmiş — eski "yalnızca limited/anonim" şartı kaldırılmış, yerine "TTK'da tanımlı gerçek
+  veya tüzel kişi statüsü" gelmiş. Şahıs işletmeleri artık başvurabiliyor. Kod düzeltildi.
+- **YODA/Sanayi Sicil raporunun 1 yıllık geçerlilik şartı** (MADDE 13/8) hiç kontrol
+  edilmiyordu — form seviyesinde yeni bir tarih alanı eklemek yerine uyarı olarak belirtildi.
+- **Program kapsamı artık yalnızca "ölçek büyütme" değil, dijital dönüşüm yatırımlarını da
+  içeriyor** (MADDE 1, 5) — bu ön analiz dijital dönüşüm track'ini ayrıca modellemiyor,
+  uyarı eklendi.
+- **Sonuç koşulsuz "uygun" dönüyordu** — MADDE 18: Kurul her projeyi 100 üzerinden puanlar
+  (50 altı ret), 50+ olanlar sınırlı kontenjan için rekabetçi sıralamaya tabi. Tavan artık
+  "kismen_uygun".
+- Doğrulanan, DEĞİŞMEYEN noktalar: KOBİ ölçek şartı (mikro/büyük hariç), NACE listesi (C,
+  61, 62, 63, 72), hızlı büyüme %10 eşiği ve GSYH Deflatörü hesabı, muafiyet listesi
+  (Teknogirişim Rozeti + tedarikçi geliştirme iş birliği) hâlâ güncel.
+
+Kaynak: https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/KAPASİTE%20GELİSTİRME/2026/2026.08.21/00-Kapasite_Geliştirme_Destek_Programı_Yönergesi_11.09.26.pdf
+
+---
+
 ## GÜNCELLEME (2026-09-17) — hızlı büyüme muafiyeti listesi daraldı
 
 Koray'ın canlı uygulamada test edip "eski veri kullanmışsın" diye işaret etmesi üzerine yeniden araştırıldı.

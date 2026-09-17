@@ -201,6 +201,10 @@ export interface DestekBasvuruGirdisi {
   // KOBİ Dijital Dönüşüm Destek Programı
   ddxRaporuVarMi?: boolean;
   maliKarneVarMi?: boolean;
+  // Yönerge Rev.05 MADDE 7/7 (birincil kaynaktan doğrulandı, 2026-09-18): son mali yıl
+  // Öz Kaynaklar Toplamı pozitif VE son 3 mali yıldan en az birinde Faaliyet Kârı pozitif
+  // olmalı — sert bir ön koşul, önceden yalnızca uyarı metninde geçip hiç sorulmuyordu.
+  maliYeterlilikSaglaniyorMu?: boolean;
 
   // Yeşil Sanayi Destek Programı (Dijital Dönüşüm'den AYRI bir program — 2026-09-17'de ayrıldı)
   yesilSanayiProjeTemasi?: YesilSanayiProjeTemasi;

@@ -1,5 +1,28 @@
 # Turquality / Marka Destek Programı — Uygunluk Kriterleri
 
+## DÜZELTME (2026-09-18) — kalan kriterler de birincil kaynaktan (26/06/2026 yürürlük) teyit edildi
+
+Güncel "Marka ve TURQUALITY® Desteğine İlişkin Genelge" (26/06/2026 yürürlük) PDF'i tam metin
+okundu. Tescil sırası kriteri (MADDE 14/1-c) zaten doğruydu. Bulunanlar:
+
+- **50/80/100 puanlık ön inceleme sistemi ana gövdede (madde 1-38) DOĞRULANAMADI** — eklerde
+  (Ek-1..10) olabilir, bu oturumda erişilemedi. Kod artık bunu kesin kural değil "tahmini
+  bilgi" olarak sunuyor.
+- **İki hard-rule tamamen eksikti**: MADDE 14/1-ç (tescil sahibi başvurucunun kendisi, ona
+  organik bağlı bir yurt içi şirket veya aynı holding/topluluğa bağlı bir şirket olmalı —
+  organik bağsız 3. şirket adına tescil yasak) ve MADDE 14/1-d (Türk malı/marka imajına
+  aykırı ifade/sembol/ülke-şehir-bölge ismi yasağı). Yeni form alanı eklemek yerine
+  bilgilendirici uyarı olarak eklendi.
+- **MADDE 14/3 istisnası eksikti**: 87. fasılda (bağlantılı/otonom/paylaşımlı/elektrikli
+  akıllı cihazlar) üretim yapanlar için ihracat eşiği aranmıyor — uyarı eklendi.
+- Yurt dışı tescil eksikliğinin "belirsiz" (ret değil) sayılması korundu, ama MADDE 14/1-b'nin
+  yurt içiyle aynı bağlayıcılıkta "en az 1 yıl önce" şartı taşıdığı vurgulanacak şekilde uyarı
+  güçlendirildi — "başvuru anına kadar tamamlanabilir" değil, süreç önceden başlatılmalı.
+
+Kaynak: https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf
+
+---
+
 ## DÜZELTME (2026-09-17) — birincil kaynakla teyit edildi
 
 Koray'ın uyarısı üzerine ticaret.gov.tr'deki "Marka ve TURQUALITY® Desteğine İlişkin Genelge" PDF'i

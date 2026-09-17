@@ -1,5 +1,26 @@
 # Girişimci Destek Programı - İş Geliştirme Desteği (KOSGEB)
 
+## DÜZELTME (2026-09-18) — birincil kaynakla (UE-35/11, Rev. 10/03/2026) tam teyit edildi
+
+pdftotext ile tam metin okundu. İki gerçek hata bulundu ve düzeltildi:
+
+- **"Bir kez yararlanma" kuralı (MADDE 5/13)** yalnızca İş Geliştirme Desteği'nin kendisi
+  (veya alternatifi Faiz/Kâr Payı Desteği) içindir — İş Kurma Desteği'ni ayrıca almış olmak
+  bunu ETKİLEMEZ, ikisi birlikte alınabilir. Eski kod/gerekçe metni "(İş Geliştirme dahil)"
+  ifadesiyle bunu yanlış genişletiyordu.
+- **Sonuç koşulsuz "uygun" dönüyordu** — MADDE 20 uyarınca başvurular Kurul (≥50/100) ve
+  Jüri (≥50/100) puanlamasından geçer, sonra rekabetçi bir sıralamaya (kontenjan) tabi
+  tutulur; karar nihaidir, itiraz edilemez (MADDE 26/1). Tavan artık "kismen_uygun".
+
+Doğrulanan diğer noktalar (değişmedi): 3 yıl işletme yaşı sınırı, NACE listesi (C, 61, 62,
+63, 72), ayrı "ileri girişimci eğitimi" şartı, %50 ortaklık payı, münferit temsil yetkisi —
+hepsi doğru. Eklenen uyarılar: destek oranı %80, geri ödemesiz üst limit 1.500.000 TL
+(+150.000 TL öncelikli gruplarda), İş Kurma ile birlikte toplam üst limit 2.000.000 TL.
+
+Kaynak: https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Girişimcilik/2026/2026.03.11/UE.35_(11)_GDP_Uygulama_-_Esasları.pdf
+
+---
+
 ## Durum
 
 - Kullanıcının belirttiği "KOSGEB İş Geliştirme Desteği" adının güncel resmi karşılığı: **"Girişimci Destek Programı"** çatısı altındaki **"İş Geliştirme Desteği"** (destek unsuru), 2026 yılında dönemsel "İş Geliştirme Çağrısı" olarak açılıyor.

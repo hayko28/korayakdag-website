@@ -70,16 +70,22 @@ export function yatirimAsgariTutarTl(bolge: number): number {
 // (üretim/imalat varsayımını çürüten kısım). Tam liste ~9 sayfa; burada formun
 // otomatik ön-elemesi için en sık karşılaşılan NACE bölümleri tutuluyor.
 // Kaynak: research/destek-uygunluk/yatirim-tesvik-belgesi.md "EK-3 tam kapsamı".
+// 2026-09-18 DÜZELTME (birincil kaynak, Karar EK-3 metni doğrudan okundu): bölüm 36
+// (su temini) EK-3'te YOK (E grubunda sadece 38-atık var) ve bölüm 61 (telekomünikasyon)
+// EK-3'te YOK (K grubunda yalnızca 62.1/63.1 alt kodları, koşullu) — kaldırıldı. A (tarım,
+// 01-03) ve B (madencilik, 05-09) grupları hiç yoktu, EK-3'te gerçekten var — eklendi.
 export function yatirimTesvikPozitifListedeMi(naceKodu?: string): boolean | null {
   if (!naceKodu) return null;
   const bolum = parseInt(naceKodu.slice(0, 2), 10);
   if (Number.isNaN(bolum)) return null;
   const KAPSAMDAKI_BOLUMLER = new Set([
+    1, 2, 3, // A - tarım, ormancılık, balıkçılık
+    5, 6, 7, 8, 9, // B - madencilik
     ...Array.from({ length: 33 - 10 + 1 }, (_, i) => 10 + i), // C - İmalat
-    35, 36, // D/E - enerji, su
+    35, 38, // D/E - enerji, atık
     49, 50, 51, 52, // H - ulaştırma/depolama
     55, // I - konaklama (turizm)
-    61, 62, 63, // K - telekom/yazılım/bilişim
+    62, 63, // K - yazılım/bilişim (telekom/61 EK-3'te yok)
     72, // N - Ar-Ge
     85, // Q - eğitim
     86, 87, 88, // R - sağlık/bakım/kreş

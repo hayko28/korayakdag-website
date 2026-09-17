@@ -1,5 +1,31 @@
 # Yatırım Teşvik Belgesi
 
+## DÜZELTME (2026-09-18) — 9903 sayılı Karar'ın tam metni (36 madde + EK-1..5) okundu
+
+9903 sayılı Karar'ın Resmi Gazete metni ve Tebliğ Madde 3 tanımları birincil kaynaktan
+doğrulandı. Karar mantığı (mevcut tesis/yatırım türü tutarlılığı, bölgesel asgari tutar,
+fizibilite/SMMM-YMM eşikleri, yüksek teknoloji eşikleri, "kismen_uygun" tavanı) doğru
+bulundu. Bulunan gerçek hatalar:
+
+- **`yatirimTesvikPozitifListedeMi` (yardimcilar.ts) EK-3 ile örtüşmüyordu**: bölüm 36 (su
+  temini) EK-3'te YOK (E grubunda sadece 38-atık var), bölüm 61 (telekomünikasyon) EK-3'te
+  YOK (K grubunda yalnızca 62.1/63.1 alt kodları, koşullu). A (tarım, 01-03) ve B
+  (madencilik, 05-09) grupları EK-3'te GERÇEKTEN VAR ama kodda hiç yoktu — meşru tarım/maden
+  yatırımları yanlışlıkla "pozitif liste dışı" sonucu alabiliyordu. Hepsi düzeltildi.
+- **İki istisna modellenmiyordu**: MADDE 9/1-m (ihtisas serbest bölgesinde yazılım, asgari
+  tutar aranmaz) ve MADDE 18/5 (1.bölgeden 4/5/6.bölgeye NACE 10-32/38.2 nakil + en az 50
+  istihdam, asgari tutar aranmaz). Yeni form alanı eklemek yerine bilgilendirici uyarı olarak
+  eklendi (kapsam/zaman kısıtı nedeniyle).
+- **Eksik uyarılar eklendi**: KOBİ-dışı/Yerel Kalkınma yatırımcıları için MADDE 5/9 "%2
+  ekosistem geliştirme planı" zorunluluğu; MADDE 33 diğer kamu desteğiyle (KOSGEB/TÜBİTAK)
+  aynı gider kaleminde çakışma yasağı.
+- 2026 bölgesel asgari tutarlar (15.100.000 / 7.500.000 TL) resmi RG referansıyla (%25,49
+  yeniden değerleme, RG 27/11/2025-33090) çapraz doğrulandı, DOĞRU — değişmedi.
+
+Kaynak: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf
+
+---
+
 ## Ek Kriterler — "Tam Uygunluk Analizi" turu (2026-08-20)
 
 Kullanıcı isteği üzerine, mevcut evaluator'a (yatirimTesvikBelgesiDegerlendir, programlar.ts) bu dosyada zaten
