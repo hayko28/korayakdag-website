@@ -56,7 +56,11 @@ export async function katalogEslestir(g: DestekBasvuruGirdisi): Promise<KatalogE
     return [];
   }
 
-  const aramaKelimeleri: string[] = [];
+  // Hiçbir destek/kredi/teşvik gözden kaçmasın diye: huni cevaplarına göre özel
+  // anahtar kelimelerin yanında, HER profilde aranan genel bir taban da var —
+  // bu katman zaten kesin uygunluk iddiası taşımıyor ("ayrıca ilginizi çekebilir"),
+  // bu yüzden geniş taramak, dar tarayıp bir şeyi atlamaktan daha güvenli.
+  const aramaKelimeleri: string[] = ["istihdam", "sgk teşvik", "kredi garanti fonu", "genel kredi"];
   if (g.ihracatDurumu && g.ihracatDurumu !== "yok") {
     aramaKelimeleri.push("ihracat", "pazara giriş", "fuar", "marka tescil", "e-ihracat", "turquality", "tanıtım desteği");
   }
@@ -69,12 +73,14 @@ export async function katalogEslestir(g: DestekBasvuruGirdisi): Promise<KatalogE
   if (g.argeDurumu && g.argeDurumu !== "yok") {
     aramaKelimeleri.push("ar-ge", "yenilik", "inovasyon", "teknoloji transferi", "patent", "tasarım merkezi");
   }
+  if (g.yatirimPlanlaniyorMu === true) {
+    aramaKelimeleri.push("yatırım", "kredi", "finansman", "makine", "ekipman");
+  }
   if (g.oncelikliGrup === "kadin") aramaKelimeleri.push("kadın");
   if (g.oncelikliGrup === "genc") aramaKelimeleri.push("genç");
   if (g.oncelikliGrup === "engelli") aramaKelimeleri.push("engelli");
+  if (g.oncelikliGrup === "gazi_sehit_yakini") aramaKelimeleri.push("gazi", "şehit");
   if (g.imalatciMi) aramaKelimeleri.push("imalat", "sanayi sicil", "üretim");
-
-  if (aramaKelimeleri.length === 0) return [];
 
   const eslesenler = programlar.filter((p) => {
     if (p.durum !== "acik") return false;

@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
-import { HIZMET_HEDEF_SECENEKLERI, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
+import { HIZMET_HEDEF_SECENEKLERI, programaBagliHizmetiBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
 
 type Girdi = Record<string, string>;
 
@@ -127,6 +127,48 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
 
 const PUAN_RENK = (puan: number) =>
   puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";
+
+// Kart başlığındaki sağ üst gösterge. Yalnızca "uygun" durumunda ham puan (XX/100)
+// gösterilir — bu, tek durum kategorisi ki puan gerçekten "ön koşulların tamamı
+// doğrulandı" anlamına geliyor. Diğer durumlarda ham puan göstermek yanıltıcı:
+// "kismen_uygun" için düşük bir sayı (60-80), nesnel kriterlerin TAMAMI
+// sağlandığında bile hep aynı görünür (nihai karar resmi/danışman değerlendirmesine
+// bağlı programlarda tasarım gereği asla "uygun"a çıkmaz — bkz. TÜBİTAK/Turquality/
+// Yatırım Teşvik/İhracat Destekleri/TKDK/Yeşil Sanayi), bu da "neden hep %70'te
+// takılı kalıyor" izlenimi yaratıyordu. Puan sıralamada (index.ts) kullanılmaya
+// devam ediyor, sadece bu rozette gösterilmiyor.
+function DurumGostergesi({ durum, puan }: { durum: SonucDurumu; puan: number }) {
+  if (durum === "uygun") {
+    return (
+      <div className="text-center" title="Bu puan başvurunun kabul edilme ihtimali değildir; şirket bilgilerinizin programın kriterleriyle eşleşme düzeyini gösteren bir ön değerlendirme skorudur.">
+        <div className={`text-2xl font-black leading-none ${PUAN_RENK(puan)}`}>{puan * 10}</div>
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Uygunluk<br />Eşleşmesi</div>
+      </div>
+    );
+  }
+  if (durum === "kismen_uygun") {
+    return (
+      <div className="text-center" title="Girdiğiniz bilgilerle nesnel ön kriterlerin tamamı sağlanıyor; nihai karar resmi başvuru veya danışmanlık değerlendirmesine bağlıdır, bu yüzden bir yüzde ile gösterilmiyor.">
+        <div className="text-2xl leading-none text-blue-600">✓</div>
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Kriterler<br />Sağlanıyor</div>
+      </div>
+    );
+  }
+  if (durum === "belirsiz") {
+    return (
+      <div className="text-center" title="Henüz eksik bilgi var; kartı açıp tamamladığınızda sonuç netleşir.">
+        <div className="text-2xl leading-none text-amber-500">…</div>
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Bilgi<br />Bekleniyor</div>
+      </div>
+    );
+  }
+  return (
+    <div className="text-center" title="Girilen bilgilerle ilk elemede uygun görünmüyor.">
+      <div className="text-2xl leading-none text-red-500">✕</div>
+      <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Uygun<br />Görünmüyor</div>
+    </div>
+  );
+}
 
 type PersonaAlanlari = Record<string, string>;
 
@@ -434,10 +476,7 @@ export default function DestekUygunlukForm() {
                   <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
                 </div>
                 <div className="flex flex-shrink-0 items-center gap-3">
-                  <div className="text-center" title="Bu puan başvurunun kabul edilme ihtimali değildir; şirket bilgilerinizin programın kriterleriyle eşleşme düzeyini gösteren bir ön değerlendirme skorudur.">
-                    <div className={`text-2xl font-black leading-none ${PUAN_RENK(s.puan)}`}>{s.puan * 10}</div>
-                    <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Uygunluk<br />Eşleşmesi</div>
-                  </div>
+                  <DurumGostergesi durum={s.durum} puan={s.puan} />
                   <span className={`flex h-8 w-8 items-center justify-center rounded-full border text-sm transition ${acik ? "rotate-180" : ""}`}>
                     ▾
                   </span>
@@ -520,6 +559,22 @@ export default function DestekUygunlukForm() {
                       {olumsuz &&
                         "Bu program şu an için uygun görünmüyor; diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına göz atabilirsiniz."}
                     </div>
+
+                    {(s.durum === "uygun" || s.durum === "kismen_uygun") && (() => {
+                      const h = programaBagliHizmetiBul(s.programId);
+                      return h ? (
+                        <Link
+                          href={h.href}
+                          className="flex items-center justify-between gap-3 rounded-xl border border-orange-200 bg-orange-50 p-4 transition hover:border-orange-400"
+                        >
+                          <div>
+                            <div className="text-xs font-bold uppercase tracking-wide text-orange-500">💼 Bu programla ilgili hizmetimiz</div>
+                            <div className="text-sm font-bold text-[#071A2F]">{h.ikon} {h.baslik}</div>
+                          </div>
+                          <span className="flex-shrink-0 text-sm font-semibold text-orange-600">İncele →</span>
+                        </Link>
+                      ) : null;
+                    })()}
                   </div>
                 );
               })()}

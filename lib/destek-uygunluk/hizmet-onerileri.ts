@@ -25,6 +25,10 @@ interface HizmetTanimi {
   ikon: string;
   aktif: boolean;
   tetikle: (g: DestekBasvuruGirdisi) => string | null;
+  // Destek motorundaki (programlar.ts) hangi programId'lerin karşılığı olduğunu
+  // belirtir — sonuç kartında "bu programla ilgili hizmetimiz" olarak gösterilir.
+  // Karşılığı olmayan hizmetler (blog yazılarına bağlı olanlar) bu alanı boş bırakır.
+  ilgiliProgramIdler?: string[];
 }
 
 const hedefSecili = (g: DestekBasvuruGirdisi, anahtar: string): boolean =>
@@ -43,6 +47,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
       if (g.ihracatDurumu === "planliyorum") return "İhracata başlama hedefiniz nedeniyle";
       return null;
     },
+    ilgiliProgramIdler: ["ticaret-bakanligi-ihracat-destekleri", "turquality-marka-destek"],
   },
   {
     id: "kosgeb-danismanlik",
@@ -57,6 +62,13 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
       if (g.imalatciMi === true) return "İmalat sektöründeki faaliyetiniz nedeniyle";
       return null;
     },
+    ilgiliProgramIdler: [
+      "kosgeb-is-gelistirme",
+      "kosgeb-kapasite-gelistirme",
+      "kosgeb-arge-urge-inovasyon",
+      "kosgeb-dijital-donusum",
+      "kosgeb-yesil-sanayi",
+    ],
   },
   {
     id: "tubitak-danismanlik",
@@ -66,6 +78,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🔬",
     aktif: true,
     tetikle: (g) => (g.argeDurumu && g.argeDurumu !== "yok" ? "Ar-Ge faaliyetiniz nedeniyle" : null),
+    ilgiliProgramIdler: ["tubitak-1501", "tubitak-1507", "tubitak-1832"],
   },
   {
     id: "yatirim-tesvik-danismanligi",
@@ -75,6 +88,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🏗️",
     aktif: true,
     tetikle: (g) => (g.yatirimPlanlaniyorMu === true ? "Yeni yatırım planınız nedeniyle" : null),
+    ilgiliProgramIdler: ["yatirim-tesvik-belgesi"],
   },
   {
     id: "teknopark-danismanligi",
@@ -206,6 +220,15 @@ export function onerilenHizmetleriBul(g: DestekBasvuruGirdisi): HizmetOnerisi[] 
     }
   }
   return eslesenler.slice(0, MAKS_HIZMET);
+}
+
+// Bir destek programı sonuç kartında "bu programla ilgili hizmetimiz" olarak
+// gösterilecek hizmeti bulur (varsa). Katalogdaki tanım sırasına göre ilk eşleşen
+// döner; karşılığı olmayan programlar için null (kart hiç gösterilmez).
+export function programaBagliHizmetiBul(programId: string): HizmetOnerisi | null {
+  const h = HIZMET_KATALOGU.find((h) => h.aktif && h.ilgiliProgramIdler?.includes(programId));
+  if (!h) return null;
+  return { id: h.id, baslik: h.baslik, aciklama: h.aciklama, href: h.href, ikon: h.ikon, neden: "Bu programla ilgili hizmetimiz" };
 }
 
 export const HIZMET_HEDEF_SECENEKLERI = [

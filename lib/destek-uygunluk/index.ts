@@ -17,7 +17,7 @@ import {
 export * from "./types";
 export { YATIRIM_TESVIK_ILLER } from "./yardimcilar";
 export { katalogEslestir } from "./katalog";
-export { onerilenHizmetleriBul, HIZMET_HEDEF_SECENEKLERI, type HizmetOnerisi } from "./hizmet-onerileri";
+export { onerilenHizmetleriBul, programaBagliHizmetiBul, HIZMET_HEDEF_SECENEKLERI, type HizmetOnerisi } from "./hizmet-onerileri";
 
 // Durum kategorisini 0-10 puan aralığına, gerekçe sayısına göre (o aralık
 // içinde) küçük bir varyasyonla çevirir. Puan, mevcut kural motorunun
