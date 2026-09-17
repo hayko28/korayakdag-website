@@ -346,6 +346,7 @@ export default function DestekUygunlukForm() {
       argeUrgeGirisimciDahaOnceKullanildiMi: bool("argeUrgeGirisimciDahaOnceKullanildiMi"),
 
       kapasiteProgramiDahaOnceKullanildiMi: bool("kapasiteProgramiDahaOnceKullanildiMi"),
+      kapasiteDijitalDonusumTrackiMi: bool("kapasiteDijitalDonusumTrackiMi"),
       sanayiSicilBelgesiVarMi: bool("sanayiSicilBelgesiVarMi"),
       yodaRaporuVarMi: bool("yodaRaporuVarMi"),
       hizliBuyumeMuafiyeti: (g.hizliBuyumeMuafiyeti as DestekBasvuruGirdisi["hizliBuyumeMuafiyeti"]) || undefined,
@@ -986,6 +987,18 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <KobiOlcegiAlanlari g={g} set={set} />
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
             <EvetHayir etiket="Bu program daha önce kullanıldı mı?" deger={g.kapasiteProgramiDahaOnceKullanildiMi} onChange={(v) => set("kapasiteProgramiDahaOnceKullanildiMi", v)} />
+            <EvetHayir
+              etiket="Başvurunuz dijital dönüşüm yatırımı track'inde mi? (Hayır ise genel ölçek büyütme track'i varsayılır)"
+              deger={g.kapasiteDijitalDonusumTrackiMi}
+              onChange={(v) => set("kapasiteDijitalDonusumTrackiMi", v)}
+            />
+            {g.kapasiteDijitalDonusumTrackiMi === "evet" && (
+              <EvetHayir
+                etiket="Dijital dönüşüm/olgunluk değerlendirme raporunuz var mı?"
+                deger={g.ddxRaporuVarMi}
+                onChange={(v) => set("ddxRaporuVarMi", v)}
+              />
+            )}
             <EvetHayir etiket="Sanayi Sicil Belgesi var mı? (imalat için)" deger={g.sanayiSicilBelgesiVarMi} onChange={(v) => set("sanayiSicilBelgesiVarMi", v)} />
             <EvetHayir etiket="YODA raporu var mı? (imalat için)" deger={g.yodaRaporuVarMi} onChange={(v) => set("yodaRaporuVarMi", v)} />
             <Secim etiket="Hızlı büyüme muafiyeti" deger={g.hizliBuyumeMuafiyeti} onChange={(v) => set("hizliBuyumeMuafiyeti", v)} secenekler={HIZLI_BUYUME_MUAFIYET_SECENEKLERI} />

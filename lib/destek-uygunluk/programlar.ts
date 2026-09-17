@@ -153,6 +153,22 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
   }
   if (g.kapasiteProgramiDahaOnceKullanildiMi === undefined) eksikAlanlar.push("daha önce yararlanma durumu");
 
+  // Program iki ayrı track sunuyor: genel ölçek büyütme ve dijital dönüşüm yatırımı.
+  // Dijital dönüşüm/olgunluk değerlendirme raporu YALNIZCA dijital dönüşüm track'inde
+  // zorunlu — önceden bu koşulsuz bir uyarı notuydu, gerçek bir soru/kapı değildi.
+  if (g.kapasiteDijitalDonusumTrackiMi === true) {
+    if (g.ddxRaporuVarMi === false) {
+      gerekceler.push("Dijital dönüşüm yatırımı track'inde başvuru için dijital dönüşüm/olgunluk değerlendirme raporu zorunlu — henüz alınmamış.");
+      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Dijital dönüşüm/olgunluk değerlendirme raporu eksik.", gerekceler);
+    }
+    if (g.ddxRaporuVarMi === undefined) {
+      eksikAlanlar.push("dijital dönüşüm/olgunluk değerlendirme raporu durumu (dijital dönüşüm track'i için zorunlu)");
+    }
+  }
+  if (g.kapasiteDijitalDonusumTrackiMi === undefined) {
+    eksikAlanlar.push("başvurunun genel ölçek büyütme mi yoksa dijital dönüşüm yatırımı track'i mi olduğu");
+  }
+
   // Hızlı büyüyen işletme şartı (ya da muafiyet)
   const muafiyetVar = g.hizliBuyumeMuafiyeti !== undefined && g.hizliBuyumeMuafiyeti !== "yok";
   let buyumeUyari: string | undefined;
@@ -186,8 +202,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
 
   const uyarilar = [
     "Bu program hibe değil, banka kredisinin faiz/kâr payı giderine destektir (anapara işletmeye geri ödemelidir); kredi üst limiti savunma/havacılık/uzay tedarikçi iş birliğinde EYDEP sertifika seviyesine göre 25-30 milyon TL'ye çıkabilir.",
-    "YODA raporunun (ve dijital dönüşüm yatırımı başvurularında dijital dönüşüm/olgunluk değerlendirme raporunun) başvuru tarihinden geriye en fazla 1 yıl içinde alınmış olması gerekiyor — bu ön analizde raporun tarihi sorulmuyor, başvuru öncesi kontrol edilmelidir.",
-    "Program kapsamı yalnızca 'ölçek büyütme' değil, dijital dönüşüm yatırımlarını da içeriyor; bu ön analiz dijital dönüşüm başvuru track'ini ayrıca modellememektedir.",
+    "YODA raporunun (ve dijital dönüşüm track'inde dijital dönüşüm/olgunluk değerlendirme raporunun) başvuru tarihinden geriye en fazla 1 yıl içinde alınmış olması gerekiyor — bu ön analizde raporun tarihi sorulmuyor, başvuru öncesi kontrol edilmelidir.",
     "MADDE 18 uyarınca Kurul her projeyi 100 üzerinden puanlar (50 altı ret), 50 ve üzeri olanlar sınırlı kontenjan için rekabetçi bir sıralamaya tabi tutulur — ön koşulların sağlanması başvuru hakkı verir, kesin onay anlamına gelmez.",
     "Uygulama Esasları sık güncelleniyor (bu program son 4 ayda 2 kez revize edildi); başvuru anında KOSGEB'in güncel metniyle teyit edilmelidir.",
   ];

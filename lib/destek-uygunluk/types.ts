@@ -180,6 +180,10 @@ export interface DestekBasvuruGirdisi {
 
   // KOSGEB Kapasite Geliştirme Destek Programı
   kapasiteProgramiDahaOnceKullanildiMi?: boolean;
+  // Program iki ayrı track sunuyor: genel ölçek büyütme ve dijital dönüşüm yatırımı.
+  // Yalnızca dijital dönüşüm track'inde başvuranlar için dijital dönüşüm/olgunluk
+  // değerlendirme raporu (bkz. ddxRaporuVarMi) zorunlu; genel track'te aranmaz.
+  kapasiteDijitalDonusumTrackiMi?: boolean;
   sanayiSicilBelgesiVarMi?: boolean;
   yodaRaporuVarMi?: boolean;
   hizliBuyumeMuafiyeti?: HizliBuyumeMuafiyeti;
