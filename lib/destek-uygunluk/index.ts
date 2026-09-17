@@ -5,10 +5,18 @@ import {
   kosgebArgeUrgeInovasyonDegerlendir,
   kosgebDijitalDonusumDegerlendir,
   kosgebYesilSanayiDegerlendir,
+  kosgebStratejikUrunDegerlendir,
+  kosgebKureselRekabetcilikDegerlendir,
+  kosgebYondeDegerlendir,
+  argeMerkeziStatusuDegerlendir,
+  tasarimMerkeziStatusuDegerlendir,
   yatirimTesvikBelgesiDegerlendir,
   tubitak1501Degerlendir,
   tubitak1507Degerlendir,
   tubitak1832Degerlendir,
+  tubitak1812Degerlendir,
+  tubitak1707Degerlendir,
+  tubitak1831Degerlendir,
   ticaretBakanligiIhracatDesteklerDegerlendir,
   tkdkDegerlendir,
   turqualityDegerlendir,
@@ -51,13 +59,18 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
 
   if (girdi.yeniGirisimciMi !== false) {
     taslaklar.push(kosgebIsGelistirmeDegerlendir(girdi));
+    taslaklar.push(tubitak1812Degerlendir(girdi));
   }
   if (girdi.yeniGirisimciMi !== true) {
     taslaklar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
+    taslaklar.push(kosgebKureselRekabetcilikDegerlendir(girdi));
   }
   if (girdi.argeDurumu !== "yok") {
     taslaklar.push(kosgebArgeUrgeInovasyonDegerlendir(girdi));
     taslaklar.push(tubitak1507Degerlendir(girdi));
+    taslaklar.push(tubitak1707Degerlendir(girdi));
+    taslaklar.push(argeMerkeziStatusuDegerlendir(girdi));
+    taslaklar.push(tasarimMerkeziStatusuDegerlendir(girdi));
   }
   if (girdi.argeDurumu === "var_kucuk" || girdi.argeDurumu === "var_kurumsal") {
     taslaklar.push(tubitak1501Degerlendir(girdi));
@@ -66,9 +79,14 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
     taslaklar.push(kosgebYesilSanayiDegerlendir(girdi));
     taslaklar.push(tubitak1832Degerlendir(girdi));
+    taslaklar.push(tubitak1831Degerlendir(girdi));
   }
   if (girdi.yatirimPlanlaniyorMu !== false) {
     taslaklar.push(yatirimTesvikBelgesiDegerlendir(girdi));
+    taslaklar.push(kosgebStratejikUrunDegerlendir(girdi));
+  }
+  if (girdi.imalatciMi !== false) {
+    taslaklar.push(kosgebYondeDegerlendir(girdi));
   }
   if (girdi.ihracatDurumu !== "yok") {
     taslaklar.push(ticaretBakanligiIhracatDesteklerDegerlendir(girdi));

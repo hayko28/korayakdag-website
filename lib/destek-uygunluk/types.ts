@@ -109,6 +109,36 @@ export type YesilSanayiProjeTemasi =
   | "alt_bilesen_1_2" // İklim eylemi, kaynak verimliliği, sürdürülebilirlik — destek oranı %70
   | "emin_degil";
 
+// KOSGEB Stratejik Ürün Destek Programı — Bakanlık ön başvuru aşaması (birincil kaynak,
+// UE-13/08 Rev. 24/03/2026, MADDE 14-17).
+export type StratejikUrunBakanlikBasvuruDurumu =
+  | "yapmadim"
+  | "sonuc_bekliyor"
+  | "kesin_basvuruya_davet_edildim"
+  | "reddedildim";
+
+// KOSGEB Küresel Rekabetçilik Destek Programı (UE-38/01, Rev. 07/03/2025) — KOBİGEL'in
+// devamı DEĞİL. Dört alternatif uygunluk yolundan biri (MADDE 6) sağlanmalı.
+export type KureselRekabetcilikKriteri =
+  | "hizli_buyuyen_teknoloji_ihracat" // hızlı büyüyen + orta-yüksek/yüksek teknoloji + 3 yıl art arda ihracat artışı
+  | "hizli_buyuyen_ihracat_arge" // hızlı büyüyen + 3 yıl art arda ihracat VE Ar-Ge artışı
+  | "yuksek_teknoloji_oncelikli_urun" // yüksek teknoloji + orta ölçekli + Hamle öncelikli ürün listesi + Sanayi Sicil Belgesi
+  | "turcorn_100" // Turcorn 100 Programına kabul edilmiş
+  | "hicbiri";
+
+export type YondeHizmetTuru =
+  | "dijital_donusum_yol_haritasi"
+  | "surdurulebilirlik_raporlamasi"
+  | "yoda_analizi"
+  | "birden_fazla";
+
+// TÜBİTAK 1812 (BiGG Yatırım) — 1501/1507/1832'den ayrı, henüz şirketi olmayan girişimciye
+// yönelik bir mekanizma olduğu için kendi "hangi aşamadasınız" alanı.
+export type GirisimciSirketDurumu =
+  | "henuz_sirket_yok"
+  | "yeni_kurulmus_girisim_sirketi"
+  | "kurulu_sirket_3yil_uzeri";
+
 // Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
 // değerlendirilemez, Katman 2 (programa özel, sadece huniden geçen adaylara
 // sorulur) alanları boş bırakılan programlar "belirsiz" sonuç döner, "uygun
@@ -221,6 +251,58 @@ export interface DestekBasvuruGirdisi {
   markaYurtIciTescilVarMi?: boolean; // en az 1 yıl önce alınmış
   markaYurtDisiTescilVarMi?: boolean; // Madrid Protokolü ülkesinde
   markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // MADDE 14/1-c: yurt dışı BAŞVURU tarihi, yurt içi BAŞVURU tarihinden önce ise true — aynı tarih diskalifiye ETMEZ
+
+  // KOSGEB Stratejik Ürün Destek Programı (UE-13/08, Rev. 24/03/2026, birincil kaynak) —
+  // iki aşamalı: Bakanlık ön başvuru (Teknoloji Odaklı Sanayi Hamlesi) → KOSGEB.
+  stratejikUrunBakanlikBasvuruDurumu?: StratejikUrunBakanlikBasvuruDurumu;
+  stratejikUrunOncelikliListede?: boolean;
+  yeniPersonelIstihdamPlaniVarMi?: boolean; // yalnızca bilgilendirici (personel gideri desteği)
+  yerliMaliBelgesiPlaniVarMi?: boolean; // yalnızca bilgilendirici (destek oranı %45'e çıkar)
+
+  // KOSGEB Küresel Rekabetçilik Destek Programı (UE-38/01, Rev. 07/03/2025) — KOBİGEL'in
+  // devamı DEĞİL, 2025'te başlatılan ayrı/yeni bir kredi bazlı program.
+  kureselRekabetcilikKriteri?: KureselRekabetcilikKriteri;
+  kureselRekabetcilikKrediTutariTl?: number;
+  kureselRekabetcilikDahaOnceKullanildiMi?: boolean;
+
+  // KOSGEB YÖNDE - Yönderlik ve Değerlendirme Destek Programı — danışmanlık/analiz hizmeti
+  // (dijital dönüşüm yol haritası, sürdürülebilirlik raporlaması, YODA), yatırım değil.
+  yondeDahaOnceYararlanildiMi?: boolean;
+  yondeHizmetTuru?: YondeHizmetTuru;
+
+  // Ar-Ge Merkezi statüsü (5746 sayılı Kanun) — hem "statüsü zaten var, teşvikleri
+  // netleştir" hem "statüye aday mıyım" senaryosunu kapsar.
+  argeMerkeziStatusuVarMi?: boolean;
+  tamZamanEsdegerArgePersoneliSayisi?: number;
+  argeFaaliyetleriAyriBirimdeMi?: boolean;
+
+  // Tasarım Merkezi statüsü (5746 sayılı Kanun, Ar-Ge Merkezi'nden ayrı, daha düşük personel
+  // eşiği) — aynı ikili senaryo (mevcut statü / adaylık).
+  tasarimMerkeziStatusuVarMi?: boolean;
+  tasarimPersoneliSayisiTze?: number;
+  tasarimBirimiAyriOrganizeMi?: boolean;
+
+  // TÜBİTAK 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — 1501/1507/
+  // 1832'den TAMAMEN AYRI bir mekanizma: kurulu şirketlere hibe değil, henüz şirketi olmayan
+  // girişimciye kuluçka merkezi aracılığıyla hisse karşılığı doğrudan TÜBİTAK yatırımı.
+  girisimciSirketDurumu?: GirisimciSirketDurumu;
+  kuluckaFaz1TamamlandiMi?: boolean;
+  hisseKarsiligiYatirimKabulEdiyorMu?: boolean;
+
+  // TÜBİTAK 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı — üçlü yapı
+  // (Müşteri Kuruluş + Tedarikçi KOBİ + TÜBİTAK), 1501/1507'den farklı, kendi bütçe/ilişki
+  // alanları var (aynı proje 1501/1507 ile paylaşılan alanları kullanmaz).
+  musteriKurulusVarMi?: boolean;
+  musteriKurulusIliskiliTarafMi?: boolean; // ortaklık/sermaye/yönetim bağı veya akrabalık varsa doğrudan ret
+  musteriKurulusFinansmanTaahhuduVarMi?: boolean; // giderlerin en az %40'ını karşılama taahhüdü
+  siparisArGeProjeButcesiTl?: number;
+
+  // TÜBİTAK 1831 - Yeşil İnovasyon Teknoloji Mentörlük Programı — Ar-Ge projesi değil,
+  // TÜBİTAK'ın "Çözüm Ortakları" listesinden alınan danışmanlık/mentörlük hizmeti.
+  cozumOrtagiListedeMi?: boolean;
+  ortakliBasvuruMu1831?: boolean; // MADDE 10.2: ortaklı başvuru kabul edilmiyor
+  basvuru1831DahaOnceKacKezKullanildi?: number; // MADDE 10.3: en fazla 3 kez
+  ayniCozumOrtagiIleKacProje?: number; // aynı ortakla en fazla 2 defa
 
   // Lead / iletişim
   iletisimAdSoyad?: string;

@@ -24,9 +24,18 @@ const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "1501",
   "1507",
   "1832",
+  "1812",
+  "1707",
+  "1831",
   "ihracat destekleri",
   "ipard",
   "turquality",
+  "stratejik ürün",
+  "küresel rekabetçilik",
+  "yönde",
+  "yönderlik",
+  "ar-ge merkezi",
+  "tasarım merkezi",
 ];
 
 function anahtarKelimeGecerMi(metin: string, kelimeler: string[]): boolean {

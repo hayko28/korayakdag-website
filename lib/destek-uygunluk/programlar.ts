@@ -964,3 +964,573 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
     uyarilar
   );
 }
+
+// --- 11) KOSGEB Stratejik Ürün Destek Programı ---
+// Kaynak: research/destek-uygunluk/kosgeb-stratejik-urun.md — UE-13/08 (Rev. 24/03/2026),
+// birincil kaynaktan (pdftotext) doğrulandı, 2026-09-18. İki aşamalı: Bakanlık ön başvuru
+// (Teknoloji Odaklı Sanayi Hamlesi) → KOSGEB. Nihai karar Bakanlık Değerlendirme Komitesi'ne
+// bağlı, KOSGEB Kurulu yalnızca gider kalemi uygunluğunu inceleyip görüş sunar (MADDE 17,
+// 19-20); onay "kazanılmış hak teşkil etmez" (MADDE 15/4) — tavan hep "kismen_uygun".
+export function kosgebStratejikUrunDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-stratejik-urun", programAdi: "KOSGEB Stratejik Ürün Destek Programı", kurum: "KOSGEB / Sanayi ve Teknoloji Bakanlığı" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+
+  if (g.sirketTuru !== undefined && g.sirketTuru !== "limited" && g.sirketTuru !== "anonim" && g.sirketTuru !== "diger_sermaye") {
+    gerekceler.push("Bu program yalnızca Türkiye'de yerleşik sermaye şirketi statüsündeki KOBİ'lere açık.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Şirket türü uygun değil.", gerekceler);
+  }
+  if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
+
+  const mali1 = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek1 = kobiOlceguHesapla(g.calisanSayisi, mali1);
+  if (olcek1 === "kobi_disi") {
+    gerekceler.push("KOSGEB yasal olarak yalnızca KOBİ ölçeğindeki işletmeleri destekleyebiliyor — büyük ölçekli firmalar Bakanlığın Hamle Programı'ndan doğrudan yararlanır, bu KOSGEB ayağı kapsamına girmez.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
+  }
+  if (olcek1 === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali1 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.stratejikUrunBakanlikBasvuruDurumu === "reddedildim") {
+    gerekceler.push("Sanayi ve Teknoloji Bakanlığı'na yapılan ön başvuru reddedilmiş — bu program iki aşamalı olduğu için (Bakanlık ön başvuru → KOSGEB), bu aşamayı geçmeden KOSGEB ayağı değerlendirilemez.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Bakanlık ön başvurusu reddedilmiş.", gerekceler);
+  }
+  if (g.stratejikUrunBakanlikBasvuruDurumu === "sonuc_bekliyor") {
+    gerekceler.push("Bakanlık ön başvurusu yapılmış, sonuç henüz bekleniyor — kesin başvuruya davet edilmeden KOSGEB ayağı değerlendirilemez.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "Bakanlık ön başvuru sonucu bekleniyor.", gerekceler, [
+      "Kesin başvuruya davet edilirseniz Portal üzerinden KOSGEB'e yönlendirilirsiniz; o aşamada bu analizi güncelleyebiliriz.",
+    ]);
+  }
+  if (g.stratejikUrunBakanlikBasvuruDurumu === undefined || g.stratejikUrunBakanlikBasvuruDurumu === "yapmadim") {
+    eksikAlanlar.push("Sanayi ve Teknoloji Bakanlığı'na (Teknoloji Odaklı Sanayi Hamlesi Programı) ön başvuru yapılıp yapılmadığı");
+  } else {
+    gerekceler.push("Bakanlık ön başvurusu kesin başvuruya davet edilme aşamasına ulaşmış.");
+  }
+
+  if (g.stratejikUrunOncelikliListede === false) {
+    gerekceler.push("Üretilecek ürün, Bakanlığın ilgili çağrı dönemi Öncelikli Ürün Listesi'nde yer almıyor — bu program yalnızca listedeki orta-yüksek/yüksek teknolojili ürünleri kapsıyor (MADDE 5).");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ürün öncelikli listede değil.", gerekceler);
+  }
+  if (g.stratejikUrunOncelikliListede === undefined) eksikAlanlar.push("üretilecek ürünün Bakanlığın Öncelikli Ürün Listesi'nde yer alıp almadığı");
+  else gerekceler.push("Üretilecek ürün Öncelikli Ürün Listesi'yle örtüşüyor.");
+
+  if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB Bilgi Sistemi (KBS) kaydının aktif ve güncel olup olmadığı");
+
+  if (g.yeniPersonelIstihdamPlaniVarMi === true) {
+    gerekceler.push("Son 4 aydır işletmede istihdam edilmemiş yeni personel istihdamı planlanıyor — personel gideri ayrıca geri ödemesiz desteklenebilir (üst limitin %30'u).");
+  }
+  if (g.yerliMaliBelgesiPlaniVarMi === true) {
+    gerekceler.push("Yerli Malı Belgesi'yle alım planlanıyor — geri ödemesiz destek oranı %45'e kadar çıkabilir (standart oran %60 toplam destek, kalem bazında değişir).");
+  }
+
+  const uyarilar1 = [
+    "Toplam destek üst limiti 6.000.000 TL (1.800.000 TL geri ödemesiz + 4.200.000 TL geri ödemeli); proje süresi 8-36 ay.",
+    "Nihai karar Sanayi ve Teknoloji Bakanlığı Değerlendirme Komitesi'ne aittir; KOSGEB Kurulu yalnızca gider kalemi uygunluğu görüşü sunar. Başvuru/taahhütname onayı kazanılmış hak teşkil etmez.",
+    "Başvurular sürekli değil, Bakanlığın ilan ettiği çağrı dönemlerinde (Mobilite, Üretimde Yapısal Dönüşüm, Sağlık ve Kimya Ürünleri, Dijital Dönüşüm vb.) yapılır; güncel çağrı takvimi kosgeb.gov.tr'den teyit edilmelidir.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar1, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul Bakanlık Değerlendirme Komitesi'nin kararına bağlıdır.",
+    gerekceler,
+    uyarilar1
+  );
+}
+
+// --- 12) KOSGEB Küresel Rekabetçilik Destek Programı ---
+// Kaynak: research/destek-uygunluk/kosgeb-kuresel-rekabetcilik.md — UE-38/01 (Rev. 07/03/2025),
+// birincil kaynaktan doğrulandı, 2026-09-18. KOBİGEL'in devamı DEĞİL — 2025'te başlatılan
+// ayrı/yeni bir kredi (faiz/kâr payı desteği) programı. Dört alternatif uygunluk yolundan
+// biri sağlanmalı (MADDE 6). Kurul (≥50/100) + Jüri (nihai, itiraz edilemez) değerlendirmesi
+// var, bu yüzden tavan "kismen_uygun".
+export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-kuresel-rekabetcilik", programAdi: "KOSGEB Küresel Rekabetçilik Destek Programı", kurum: "KOSGEB" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+
+  if (g.sirketTuru !== undefined && g.sirketTuru !== "limited" && g.sirketTuru !== "anonim") {
+    gerekceler.push("Bu program yalnızca limited veya anonim şirketlere açık.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Şirket türü uygun değil.", gerekceler);
+  }
+  if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
+
+  const mali2 = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek2 = kobiOlceguHesapla(g.calisanSayisi, mali2);
+  if (olcek2 === "kobi_disi") {
+    gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık — büyük ölçekli firmalar kapsam dışı.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
+  }
+  if (olcek2 === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali2 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.kureselRekabetcilikDahaOnceKullanildiMi === true) {
+    gerekceler.push("Bu programdan işletme başına yalnızca bir kez yararlanılabiliyor — bu hak daha önce kullanılmış.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Destek hakkı daha önce kullanılmış.", gerekceler);
+  }
+  if (g.kureselRekabetcilikDahaOnceKullanildiMi === undefined) eksikAlanlar.push("daha önce yararlanma durumu");
+
+  const KRESEL_KRITER_ETIKET: Record<string, string> = {
+    hizli_buyuyen_teknoloji_ihracat: "hızlı büyüyen işletme + orta-yüksek/yüksek teknoloji + 3 yıl art arda ihracat artışı",
+    hizli_buyuyen_ihracat_arge: "hızlı büyüyen işletme + 3 yıl art arda ihracat VE Ar-Ge artışı",
+    yuksek_teknoloji_oncelikli_urun: "yüksek teknoloji + orta ölçek + Hamle Programı öncelikli ürün listesi",
+    turcorn_100: "Turcorn 100 Programı'na kabul edilmiş olma",
+  };
+  if (g.kureselRekabetcilikKriteri === undefined) {
+    eksikAlanlar.push("dört alternatif uygunluk kriterinden (MADDE 6) hangisini sağladığınız");
+  } else if (g.kureselRekabetcilikKriteri === "hicbiri") {
+    gerekceler.push("MADDE 6'daki dört alternatif uygunluk kriterinden (hızlı büyüme+teknoloji+ihracat, hızlı büyüme+ihracat+Ar-Ge, yüksek teknoloji+öncelikli ürün, Turcorn 100) hiçbiri sağlanmıyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Uygunluk kriterlerinden hiçbiri sağlanmıyor.", gerekceler);
+  } else if (g.kureselRekabetcilikKriteri === "yuksek_teknoloji_oncelikli_urun" && g.sanayiSicilBelgesiVarMi === false) {
+    gerekceler.push("Bu kriter (yüksek teknoloji + öncelikli ürün) geçerli bir Sanayi Sicil Belgesi'ni şart koşuyor — bu belge yok.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sanayi Sicil Belgesi eksik.", gerekceler);
+  } else {
+    gerekceler.push(`Uygunluk kriterlerinden biri sağlanıyor: ${KRESEL_KRITER_ETIKET[g.kureselRekabetcilikKriteri]}.`);
+  }
+
+  if (g.kureselRekabetcilikKrediTutariTl !== undefined && (g.kureselRekabetcilikKrediTutariTl < 5_000_000 || g.kureselRekabetcilikKrediTutariTl > 50_000_000)) {
+    gerekceler.push(`Talep edilen kredi tutarı (${g.kureselRekabetcilikKrediTutariTl.toLocaleString("tr-TR")} TL), programın kredi aralığının (5.000.000-50.000.000 TL) dışında kalıyor.`);
+  }
+
+  const uyarilar2 = [
+    "Bu bir hibe değil, bankadan kullanılan ticari krediye faiz/kâr payı desteğidir (geri ödemesiz destek kısmı, anapara işletmeye geri ödemelidir); azami vade 36 ay, proje süresi 24 ay (+6 ay uzatılabilir).",
+    "İşletme başına yıllık faiz/kâr payı desteği üst limiti 10.000.000 TL'dir.",
+    "Değerlendirme iki aşamalı: Kurul 100 üzerinden puanlar (ortalama en az 50 olmalı), nihai kararı Jüri verir ve bu karara itiraz edilemez.",
+    "Başvurular sürekli kabul ediliyor (dönem/tarih aralığı yok); güncel başvuru kılavuzu kosgeb.gov.tr'den teyit edilmelidir.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar2, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul Kurul puanlaması ve Jüri kararına bağlıdır.",
+    gerekceler,
+    uyarilar2
+  );
+}
+
+// --- 13) KOSGEB YÖNDE - Yönderlik ve Değerlendirme Destek Programı ---
+// Kaynak: research/destek-uygunluk/kosgeb-yonde.md — resmi Yönerge (20.08.2026) taranmış/
+// sıkıştırılmış PDF olduğu için tam metin okunamadı, iki bağımsız ikincil kaynakla çapraz
+// doğrulandı (orta-yüksek güven), 2026-09-18. Doğrudan yatırım DEĞİL — danışmanlık/analiz/
+// yol haritası hizmeti (dijital dönüşüm, sürdürülebilirlik raporlaması, YODA).
+export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-yonde", programAdi: "KOSGEB YÖNDE - Yönderlik ve Değerlendirme Destek Programı", kurum: "KOSGEB" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+
+  const mali3 = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek3 = kobiOlceguHesapla(g.calisanSayisi, mali3);
+  if (olcek3 === "mikro" || olcek3 === "kobi_disi") {
+    gerekceler.push(`İşletme ölçeği "${olcek3}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
+  }
+  if (olcek3 === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali3 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
+  else if (!imalatSektoruMu(g.naceKodu)) {
+    gerekceler.push("Bu program NACE Kısım C (İmalat, 10-33) sektöründeki işletmelere açık — girilen NACE kodu imalat dışında görünüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) kapsam dışı.", gerekceler);
+  }
+
+  if (g.yondeDahaOnceYararlanildiMi === true) {
+    gerekceler.push("Bu programdan işletme başına yalnızca bir kez yararlanılabiliyor — bu hak daha önce kullanılmış.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Destek hakkı daha önce kullanılmış.", gerekceler);
+  }
+  if (g.yondeDahaOnceYararlanildiMi === undefined) eksikAlanlar.push("daha önce yararlanma durumu");
+
+  const YONDE_HIZMET_ETIKET: Record<string, string> = {
+    dijital_donusum_yol_haritasi: "Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası",
+    surdurulebilirlik_raporlamasi: "Sürdürülebilirlik Raporlaması",
+    yoda_analizi: "Yalın Olgunluk Değerlendirme Analizi (YODA)",
+    birden_fazla: "birden fazla hizmet kalemi",
+  };
+  if (g.yondeHizmetTuru === undefined) eksikAlanlar.push("hangi YÖNDE hizmetinden (dijital dönüşüm yol haritası / sürdürülebilirlik raporlaması / YODA) yararlanmak istediğiniz");
+  else gerekceler.push(`Talep edilen hizmet: ${YONDE_HIZMET_ETIKET[g.yondeHizmetTuru]}.`);
+
+  gerekceler.push("KOBİ ölçeği ve imalat sektörü şartları sağlanıyor.");
+
+  const uyarilar3 = [
+    "Bu bir yatırım desteği değil, danışmanlık/analiz hizmeti desteğidir: %80 oranında, geri ödemesiz (hibe); toplam üst limit 280.000 TL (hizmet kalemlerine göre alt limitlere bölünür), süre 36 ay.",
+    "Değerlendirme sürecinin (kurul/jüri mi, yoksa nesnel eşik kontrolü mü) tam detayı bu oturumda birincil kaynaktan teyit edilemedi — güvenlik payı olarak tavan 'kısmen uygun' tutuldu.",
+    "Bu hizmetin çıktısı (yol haritası/rapor) başka bir KOSGEB programına (örn. Kapasite Geliştirme, KOBİ Dijital Dönüşüm) zorunlu ön koşul değildir, bağımsız bir destektir.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar3, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor.",
+    gerekceler,
+    uyarilar3
+  );
+}
+
+// --- 14) Ar-Ge Merkezi Statüsü ---
+// Kaynak: research/destek-uygunluk/arge-merkezi-statusu.md — 5746 sayılı Kanun, birincil
+// kaynağa (agtm.sanayi.gov.tr) SSL hatasıyla erişilemedi, birden fazla bağımsız ikincil
+// kaynakla (mali müşavirlik siteleri, sitenin kendi blog yazısı) çapraz doğrulandı, orta
+// güven, 2026-09-18. Personel eşiği Cumhurbaşkanı kararıyla 50'den 15'e indirilmiş (bazı
+// sektörlerde 30); teşvik süresi 2028 sonuna uzatılmış (7555 sayılı Kanun, Seri No:10 Tebliğ).
+export function argeMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "arge-merkezi-statusu", programAdi: "Ar-Ge Merkezi Statüsü", kurum: "Sanayi ve Teknoloji Bakanlığı" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar4 = [
+    "Personel eşiği ve teşvik oranları sık güncellendiği için (son değişiklik 7555 sayılı Kanun ve Eylül 2025 tarihli Seri No:10 Tebliğ) başvuru öncesi Sanayi ve Teknoloji Bakanlığı Ar-Ge Teşvikleri Genel Müdürlüğü ile teyit edilmelidir.",
+  ];
+
+  if (g.argeMerkeziStatusuVarMi === true) {
+    gerekceler.push("Ar-Ge Merkezi statünüz zaten mevcut.");
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "uygun",
+      "Ar-Ge Merkezi statünüz mevcut; teşviklerden yararlanabilirsiniz.",
+      gerekceler,
+      [
+        ...uyarilar4,
+        "Sağlanan başlıca teşvikler: Ar-Ge indirimi (%100, koşullu +%50), gelir vergisi stopajı teşviki (doktora %95/yüksek lisans %90/diğer %80), SGK işveren hissesinin yarısının Hazine tarafından karşılanması, damga vergisi istisnası. 7555 sayılı Kanun'la gelir vergisi stopajı ve damga vergisi istisnası brüt asgari ücretin 40 katıyla sınırlandırıldı (01/08/2025'ten itibaren).",
+      ]
+    );
+  }
+  if (g.argeMerkeziStatusuVarMi === undefined) eksikAlanlar.push("Ar-Ge Merkezi statüsünün zaten olup olmadığı");
+
+  if (g.tamZamanEsdegerArgePersoneliSayisi !== undefined && g.tamZamanEsdegerArgePersoneliSayisi < 15) {
+    gerekceler.push(`Tam zaman eşdeğer Ar-Ge personeli sayınız (${g.tamZamanEsdegerArgePersoneliSayisi}) asgari eşiğin (15, bazı sektörlerde 30) altında.`);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Asgari Ar-Ge personeli şartı sağlanmıyor.", gerekceler, uyarilar4);
+  }
+  if (g.tamZamanEsdegerArgePersoneliSayisi === undefined) eksikAlanlar.push("tam zaman eşdeğer Ar-Ge personeli sayısı");
+  else gerekceler.push(`Tam zaman eşdeğer Ar-Ge personeli sayınız (${g.tamZamanEsdegerArgePersoneliSayisi}) bilinen asgari eşiğin (15) üzerinde — bazı sektörlerde (örn. otomotiv) eşik 30'a çıkabilir, NACE kodunuza göre teyit edilmelidir.`);
+
+  if (g.argeFaaliyetleriAyriBirimdeMi === false) {
+    gerekceler.push("Ar-Ge faaliyetlerinin şirketin diğer birimlerinden fiziksel olarak ayrılmış bir alanda yürütülmesi zorunlu şartı sağlanmıyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ayrı Ar-Ge birimi şartı sağlanmıyor.", gerekceler, uyarilar4);
+  }
+  if (g.argeFaaliyetleriAyriBirimdeMi === undefined) eksikAlanlar.push("Ar-Ge faaliyetlerinin ayrı/bağımsız bir birimde yürütülüp yürütülmediği");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar4, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre Ar-Ge Merkezi statüsü için asgari şartları sağlıyor gibi görünüyorsunuz; nihai statü Bakanlığın belge incelemesi ve yerinde inceleme heyeti değerlendirmesine bağlıdır.",
+    gerekceler,
+    uyarilar4
+  );
+}
+
+// --- 15) Tasarım Merkezi Statüsü ---
+// Kaynak: research/destek-uygunluk/tasarim-merkezi-statusu.md — 5746 sayılı Kanun, birincil
+// kaynağa (agtm.sanayi.gov.tr) SSL hatasıyla erişilemedi, ikincil kaynaklarla (sitenin kendi
+// blog yazısı dahil) orta güvenle doğrulandı, 2026-09-18. Ar-Ge Merkezi'nden AYRI bir statü,
+// daha düşük personel eşiği (10 TZE); ikisi birlikte alınabilir (karşılıklı dışlayıcı değil).
+export function tasarimMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "tasarim-merkezi-statusu", programAdi: "Tasarım Merkezi Statüsü", kurum: "Sanayi ve Teknoloji Bakanlığı" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar5 = [
+    "Ar-Ge Merkezi ile büyük ölçüde aynı vergi/SGK teşvik mekanizmasını kullanır; temel bilimler mezunu ek istihdam desteği Tasarım Merkezleri için geçerli değildir. Başvuru öncesi Bakanlık ile teyit edilmelidir.",
+  ];
+
+  if (g.tasarimMerkeziStatusuVarMi === true) {
+    gerekceler.push("Tasarım Merkezi statünüz zaten mevcut.");
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "uygun",
+      "Tasarım Merkezi statünüz mevcut; teşviklerden yararlanabilirsiniz.",
+      gerekceler,
+      uyarilar5
+    );
+  }
+  if (g.tasarimMerkeziStatusuVarMi === undefined) eksikAlanlar.push("Tasarım Merkezi statüsünün zaten olup olmadığı");
+
+  if (g.tasarimPersoneliSayisiTze !== undefined && g.tasarimPersoneliSayisiTze < 10) {
+    gerekceler.push(`Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız (${g.tasarimPersoneliSayisiTze}) asgari eşiğin (10) altında.`);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Asgari tasarım personeli şartı sağlanmıyor.", gerekceler, uyarilar5);
+  }
+  if (g.tasarimPersoneliSayisiTze === undefined) eksikAlanlar.push("münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayısı");
+  else gerekceler.push(`Tasarım personeli sayınız (${g.tasarimPersoneliSayisiTze}) asgari eşiğin (10) üzerinde.`);
+
+  if (g.tasarimBirimiAyriOrganizeMi === false) {
+    gerekceler.push("Tasarım faaliyetinin fiziksel olarak ayrılmış, giriş-çıkışı izlenebilir ayrı bir birim/alan olarak örgütlenmesi zorunlu şartı sağlanmıyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ayrı tasarım birimi şartı sağlanmıyor.", gerekceler, uyarilar5);
+  }
+  if (g.tasarimBirimiAyriOrganizeMi === undefined) eksikAlanlar.push("tasarım biriminin ayrı/bağımsız organize edilip edilmediği");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar5, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre Tasarım Merkezi statüsü için asgari şartları sağlıyor gibi görünüyorsunuz; nihai statü Bakanlığın belge incelemesi ve yerinde inceleme heyeti değerlendirmesine bağlıdır.",
+    gerekceler,
+    uyarilar5
+  );
+}
+
+// --- 16) TÜBİTAK 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) ---
+// Kaynak: research/destek-uygunluk/tubitak-1812.md — 2026-1 Ön Tohum Yatırım çağrı duyurusu,
+// birincil kaynaktan (tubitak.gov.tr) doğrulandı, 2026-09-18. 1501/1507/1832'den TAMAMEN
+// AYRI bir mekanizma: kurulu şirketlere hibe değil, henüz şirketi olmayan/yeni kurulan
+// girişimciye kuluçka merkezi aracılığıyla hisse karşılığı doğrudan TÜBİTAK yatırımı.
+export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "tubitak-1812", programAdi: "TÜBİTAK 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)", kurum: "TÜBİTAK" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar6 = [
+    "Program 3 fazlıdır: Faz 1 kuluçka merkezi hızlandırma (eğitim/mentorluk), Faz 2 Ön Tohum Yatırım (~1.350.000 TL karşılığında %3 hisse), Faz 3 Tohum Yatırım (büyüme, %10'a kadar). Destek hibe değil, TÜBİTAK'ın doğrudan hisse karşılığı yatırımıdır.",
+    "2026-1 çağrısı: hızlandırma 2 Mart 2026-31 Temmuz 2028, başvuru 15 Haziran-3 Temmuz 2026 — dönemsel çağrılarla ilerler, sürekli değildir; güncel çağrı takvimi tubitak.gov.tr'den teyit edilmelidir.",
+  ];
+
+  if (g.girisimciSirketDurumu === "kurulu_sirket_3yil_uzeri") {
+    gerekceler.push("Bu program henüz şirketi olmayan veya yeni kurulmuş girişimcilere yöneliktir — kurulu, köklü bir şirket iseniz bu programın hedef kitlesi değilsiniz. TÜBİTAK 1501/1507 (kurumsal Ar-Ge hibe desteği) daha uygun olabilir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kurulu/köklü şirketler için uygun değil.", gerekceler);
+  }
+  if (g.girisimciSirketDurumu === undefined) eksikAlanlar.push("henüz şirketiniz olup olmadığı / girişim aşamanız");
+
+  if (g.hisseKarsiligiYatirimKabulEdiyorMu === false) {
+    gerekceler.push("Bu program hibe değil, hisse karşılığı (equity) yatırım sağlıyor — hisse vermeyi kabul etmiyorsanız bu program size uygun değil, hibe esaslı TÜBİTAK 1507 veya KOSGEB Girişimci Destek Programı'na bakılabilir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Hisse karşılığı yatırım kabul edilmiyor.", gerekceler);
+  }
+  if (g.hisseKarsiligiYatirimKabulEdiyorMu === undefined) eksikAlanlar.push("hisse karşılığı (equity) yatırımı kabul edip etmediğiniz");
+
+  if (g.kuluckaFaz1TamamlandiMi === false) {
+    gerekceler.push("Ön Tohum/Tohum Yatırım aşamasına geçmeden önce bir kuluçka merkezinin yürüttüğü Faz 1 hızlandırma programının tamamlanmış olması gerekiyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "Kuluçka merkezi hızlandırma programı henüz tamamlanmamış.", gerekceler, [
+      ...uyarilar6,
+      "Önce bir uygulayıcı kuruluşun (kuluçka merkezi) hızlandırma programına başvurmanız gerekiyor; bu tamamlandıktan sonra Ön Tohum Yatırım başvurusu yapılabilir.",
+    ]);
+  }
+  if (g.kuluckaFaz1TamamlandiMi === undefined) eksikAlanlar.push("kuluçka merkezi Faz 1 hızlandırma programının tamamlanıp tamamlanmadığı");
+  else gerekceler.push("Kuluçka merkezi Faz 1 hızlandırma programı tamamlanmış.");
+
+  gerekceler.push("Girişim aşamanız ve hisse karşılığı yatırım kabulünüz bu programın hedef profiliyle örtüşüyor.");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar6, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; Ön Tohum Yatırım kararı TÜBİTAK'ın değerlendirme sürecine bağlıdır.",
+    gerekceler,
+    uyarilar6
+  );
+}
+
+// --- 17) TÜBİTAK 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı ---
+// Kaynak: research/destek-uygunluk/tubitak-1707.md — üçlü yapı (Müşteri Kuruluş + Tedarikçi
+// KOBİ + TÜBİTAK), birincil kaynaktan (tubitak.gov.tr duyuru sayfaları) orta-yüksek güvenle
+// doğrulandı, 2026-09-18. 1501/1507'nin paylaştığı ekip/ret sinyali mantığını kullanır —
+// bütçe/ilişki alanları ise siparişe dayalı yapıya özel, kendi alanları var.
+export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "tubitak-1707", programAdi: "TÜBİTAK 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı", kurum: "TÜBİTAK" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+
+  if (g.sirketTuru !== undefined && g.sirketTuru !== "limited" && g.sirketTuru !== "anonim") {
+    gerekceler.push("Bu programa (Tedarikçi KOBİ tarafı) yalnızca Türkiye'de yerleşik sermaye şirketleri başvurabilir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kuruluş türü uygun değil.", gerekceler);
+  }
+  if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
+
+  const mali7 = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek7 = kobiOlceguHesapla(g.calisanSayisi, mali7);
+  if (olcek7 === "kobi_disi") {
+    gerekceler.push("Tedarikçi taraf yalnızca KOBİ ölçeğindeki işletmeler olabilir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
+  }
+  if (olcek7 === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali7 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.musteriKurulusVarMi === false) {
+    gerekceler.push("Bu program, büyük bir firmanın veya kamu kurumunun (Müşteri Kuruluş) siparişi/talebi üzerine Ar-Ge projesi geliştiren KOBİ'lere yönelik — böyle bir Müşteri Kuruluş belirtilmemiş. Kendi projenizi geliştiriyorsanız TÜBİTAK 1501/1507 daha uygun olabilir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Müşteri Kuruluş yok — 1501/1507'ye bakılabilir.", gerekceler);
+  }
+  if (g.musteriKurulusVarMi === undefined) eksikAlanlar.push("projenin bir Müşteri Kuruluşun (büyük firma/kamu kurumu) siparişi üzerine olup olmadığı");
+
+  if (g.musteriKurulusIliskiliTarafMi === true) {
+    gerekceler.push("Müşteri Kuruluş ile aranızda ortaklık, sermaye ilişkisi, ortak yönetim veya akrabalık bulunuyor — bu durum doğrudan ret sebebidir.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Müşteri Kuruluş ile ilişkili taraf durumu var.", gerekceler);
+  }
+  if (g.musteriKurulusIliskiliTarafMi === undefined) eksikAlanlar.push("Müşteri Kuruluş ile ortaklık/sermaye/yönetim ilişkisi veya akrabalık olup olmadığı");
+
+  if (g.musteriKurulusFinansmanTaahhuduVarMi === false) {
+    gerekceler.push("Müşteri Kuruluş'un proje giderlerinin en az %40'ını karşılama taahhüdü bu programın temel şartlarından biri — bu taahhüt henüz yok.");
+    eksikAlanlar.push("Müşteri Kuruluş'un finansman taahhüdü (İşbirliği Sözleşmesi)");
+  } else if (g.musteriKurulusFinansmanTaahhuduVarMi === undefined) {
+    eksikAlanlar.push("Müşteri Kuruluş'un giderlerin en az %40'ını karşılama taahhüdü olup olmadığı");
+  } else {
+    gerekceler.push("Müşteri Kuruluş'un en az %40 finansman taahhüdü mevcut.");
+  }
+
+  const retSinyali7 = argeEkipRetSinyaliVarMi(g);
+  if (retSinyali7) {
+    gerekceler.push(retSinyali7);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", gerekceler);
+  }
+
+  if (g.siparisArGeProjeButcesiTl !== undefined && g.siparisArGeProjeButcesiTl > 10_000_000) {
+    gerekceler.push(`Proje bütçesi (${g.siparisArGeProjeButcesiTl.toLocaleString("tr-TR")} TL), programın üst limitini (10.000.000 TL) aşıyor.`);
+  }
+
+  const uyarilar7 = [
+    "TÜBİTAK kabul edilen giderin %40'ını hibe olarak karşılar, Müşteri Kuruluş en az %40'ını finanse eder (kalan kısım KOBİ'ye ait olabilir) — bu, 1501/1507'de olmayan üçlü bir finansman modelidir.",
+    "Azami proje bütçesi 10.000.000 TL, azami süre 24 aydır.",
+    "Ar-Ge/yenilik niteliği nihai olarak hakem ve Grup Yürütme Kurulu (GYK) tarafından proje bazında değerlendirilir; bu araç bu değerlendirmeyi öngöremez.",
+    "2026'da dönemsel çağrılarla açılıyor (2026-3 çağrısı 1 Eylül-13 Kasım 2026 aktif görünüyor); güncel çağrı takvimi tubitak.gov.tr'den teyit edilmelidir.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar7, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul hakem/GYK değerlendirmesine bağlıdır.",
+    gerekceler,
+    uyarilar7
+  );
+}
+
+// --- 18) TÜBİTAK 1831 - Yeşil İnovasyon Teknoloji Mentörlük Programı ---
+// Kaynak: research/destek-uygunluk/tubitak-1831.md — Çağrı Duyurusu (1831-2024-1, 15/05/2025
+// güncellemesi) tam metin madde madde okundu, 2026-09-18, yüksek güven. TÜBİTAK 1832 (Ar-Ge
+// projesi) ve KOSGEB Yeşil Sanayi'den (yatırım) AYRI — Ar-Ge projesi/yatırım değil, TÜBİTAK'ın
+// "Çözüm Ortakları" listesinden alınan danışmanlık/mentörlük hizmeti; diğer yeşil dönüşüm
+// programlarına ön koşul değildir, birbirini dışlamaz.
+export function tubitak1831Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "tubitak-1831", programAdi: "TÜBİTAK 1831 - Yeşil İnovasyon Teknoloji Mentörlük Programı", kurum: "TÜBİTAK" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+
+  if (g.sirketTuru !== undefined && g.sirketTuru !== "limited" && g.sirketTuru !== "anonim" && g.sirketTuru !== "diger_sermaye") {
+    gerekceler.push("Bu programa yalnızca Türkiye'de yerleşik sermaye şirketleri başvurabilir (MADDE 10.1) — şahıs işletmesi, vakıf/dernek/kooperatif, adi ortaklık başvuramaz.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kuruluş türü uygun değil.", gerekceler);
+  }
+  if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
+
+  if (g.turkiyedeYerlesikMi === false) {
+    gerekceler.push("Türkiye'de yerleşik olmayan kuruluşlar başvuramaz (MADDE 10.1).");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Türkiye'de yerleşiklik şartı sağlanmıyor.", gerekceler);
+  }
+
+  const mali8 = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
+    ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
+    : undefined;
+  const olcek8 = kobiOlceguHesapla(g.calisanSayisi, mali8);
+  if (olcek8 === "kobi_disi") {
+    gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık (MADDE 10.1).");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
+  }
+  if (olcek8 === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali8 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.ortakliBasvuruMu1831 === true) {
+    gerekceler.push("MADDE 10.2 uyarınca bu programda ortaklı (konsorsiyum) başvuru kabul edilmiyor — tek başına KOBİ olarak başvurulmalı.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ortaklı başvuru kabul edilmiyor.", gerekceler);
+  }
+  if (g.ortakliBasvuruMu1831 === undefined) eksikAlanlar.push("başvurunun tek başına mı yoksa ortaklı mı yapılacağı");
+
+  if (g.cozumOrtagiListedeMi === false) {
+    gerekceler.push("MADDE 5.5 uyarınca hizmet alınacak danışmanlık kuruluşunun TÜBİTAK'ın 'Çözüm Ortakları' listesinde yer alması gerekiyor — listede değilse başvuru değerlendirmeye alınmıyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Çözüm ortağı listede değil.", gerekceler);
+  }
+  if (g.cozumOrtagiListedeMi === undefined) eksikAlanlar.push("hizmet alınacak danışmanlık kuruluşunun TÜBİTAK Çözüm Ortakları listesinde olup olmadığı");
+
+  if (g.basvuru1831DahaOnceKacKezKullanildi !== undefined && g.basvuru1831DahaOnceKacKezKullanildi >= 3) {
+    gerekceler.push("MADDE 10.3 uyarınca aynı KOBİ bu programdan en fazla 3 kez yararlanabiliyor — bu hak dolmuş.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kullanım hakkı dolmuş (en fazla 3 kez).", gerekceler);
+  }
+  if (g.ayniCozumOrtagiIleKacProje !== undefined && g.ayniCozumOrtagiIleKacProje >= 2) {
+    gerekceler.push("Aynı Çözüm Ortağı ile en fazla 2 proje yürütülebiliyor — bu sınıra ulaşılmış.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Aynı çözüm ortağıyla proje sınırına ulaşılmış.", gerekceler);
+  }
+
+  gerekceler.push("Şirket türü, yerleşiklik, KOBİ ölçeği ve tekil başvuru şartları sağlanıyor.");
+
+  const uyarilar8 = [
+    "Bu bir Ar-Ge projesi veya yatırım desteği değildir — TÜBİTAK'ın Çözüm Ortakları listesinden alınan bir mentörlük/teknik yardım hizmetidir: mevcut durum tespiti, boşluk analizi, çözüm geliştirme ve Yol Haritası Raporu.",
+    "Destek oranı %90; üst limit dolar bazlı (KDV hariç 7.000 USD) ve dönemsel olarak TL'ye çevriliyor — güncel TL tutarı başvuru anında TÜBİTAK'tan teyit edilmelidir.",
+    "TÜBİTAK 1832 (Ar-Ge projesi) veya KOSGEB Yeşil Sanayi (yatırım) programlarına ön koşul değildir, onlarla birlikte veya bağımsız yürütülebilir; Yol Haritası Raporu ileride bu programlara başvuruda kullanılabilir.",
+    "Değerlendirme 4 boyutlu bir panel puanlamasına tabidir (her biri %25 ağırlık); kadın liderlik/ortaklık/çalışan çoğunluğu +3 bonus puan sağlayabilir.",
+    "Başvurular sürekli açık (dönemsel çağrı değil), TÜBİTAK ayrıca duyuru yapana kadar (program bütçesi tükenene kadar) kabul ediliyor.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar8, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul panel puanlamasına bağlıdır.",
+    gerekceler,
+    uyarilar8
+  );
+}

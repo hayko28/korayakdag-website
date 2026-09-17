@@ -113,6 +113,37 @@ const KIRSAL_YATIRIM_DURUMU_SECENEKLERI = [
   { value: "yapiyorum", label: "Evet, mevcut bir yatırımım var" },
 ];
 
+// UE-13/08 Rev. 24/03/2026 MADDE 14-17 (birincil kaynak) — iki aşamalı başvuru sürecinin durumu.
+const STRATEJIK_URUN_BASVURU_SECENEKLERI = [
+  { value: "yapmadim", label: "Henüz yapmadım" },
+  { value: "sonuc_bekliyor", label: "Yaptım, sonuç bekliyorum" },
+  { value: "kesin_basvuruya_davet_edildim", label: "Kesin başvuruya davet edildim" },
+  { value: "reddedildim", label: "Reddedildim" },
+];
+
+// UE-38/01 Rev. 07/03/2025 MADDE 6 (birincil kaynak) — dört alternatif uygunluk yolundan biri.
+const KURESEL_REKABETCILIK_KRITER_SECENEKLERI = [
+  { value: "hizli_buyuyen_teknoloji_ihracat", label: "Hızlı büyüyen işletme + orta-yüksek/yüksek teknoloji + 3 yıl art arda ihracat artışı" },
+  { value: "hizli_buyuyen_ihracat_arge", label: "Hızlı büyüyen işletme + 3 yıl art arda ihracat VE Ar-Ge artışı" },
+  { value: "yuksek_teknoloji_oncelikli_urun", label: "Yüksek teknoloji + orta ölçek + Hamle Programı öncelikli ürün listesi" },
+  { value: "turcorn_100", label: "Turcorn 100 Programı'na kabul edildim" },
+  { value: "hicbiri", label: "Hiçbiri / emin değilim" },
+];
+
+const YONDE_HIZMET_SECENEKLERI = [
+  { value: "dijital_donusum_yol_haritasi", label: "Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası" },
+  { value: "surdurulebilirlik_raporlamasi", label: "Sürdürülebilirlik Raporlaması" },
+  { value: "yoda_analizi", label: "Yalın Olgunluk Değerlendirme Analizi (YODA)" },
+  { value: "birden_fazla", label: "Birden fazlası" },
+];
+
+// TÜBİTAK 1812 (BiGG Yatırım) — 1501/1507/1832'den ayrı, girişim aşaması sorusu.
+const GIRISIMCI_SIRKET_DURUMU_SECENEKLERI = [
+  { value: "henuz_sirket_yok", label: "Henüz şirketim yok, iş fikri aşamasındayım" },
+  { value: "yeni_kurulmus_girisim_sirketi", label: "Yeni kurulmuş bir girişim şirketim var" },
+  { value: "kurulu_sirket_3yil_uzeri", label: "3 yıldan uzun süredir kurulu, köklü bir şirketim var" },
+];
+
 const ONCELIKLI_GRUP_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "kadin", label: "Kadın girişimci" },
@@ -365,6 +396,40 @@ export default function DestekUygunlukForm() {
       markaYurtIciTescilVarMi: bool("markaYurtIciTescilVarMi"),
       markaYurtDisiTescilVarMi: bool("markaYurtDisiTescilVarMi"),
       markaYurtDisiTescilYurtIciTescildenOnceMi: bool("markaYurtDisiTescilYurtIciTescildenOnceMi"),
+
+      stratejikUrunBakanlikBasvuruDurumu: (g.stratejikUrunBakanlikBasvuruDurumu as DestekBasvuruGirdisi["stratejikUrunBakanlikBasvuruDurumu"]) || undefined,
+      stratejikUrunOncelikliListede: bool("stratejikUrunOncelikliListede"),
+      yeniPersonelIstihdamPlaniVarMi: bool("yeniPersonelIstihdamPlaniVarMi"),
+      yerliMaliBelgesiPlaniVarMi: bool("yerliMaliBelgesiPlaniVarMi"),
+
+      kureselRekabetcilikKriteri: (g.kureselRekabetcilikKriteri as DestekBasvuruGirdisi["kureselRekabetcilikKriteri"]) || undefined,
+      kureselRekabetcilikKrediTutariTl: num("kureselRekabetcilikKrediTutariTl"),
+      kureselRekabetcilikDahaOnceKullanildiMi: bool("kureselRekabetcilikDahaOnceKullanildiMi"),
+
+      yondeDahaOnceYararlanildiMi: bool("yondeDahaOnceYararlanildiMi"),
+      yondeHizmetTuru: (g.yondeHizmetTuru as DestekBasvuruGirdisi["yondeHizmetTuru"]) || undefined,
+
+      argeMerkeziStatusuVarMi: bool("argeMerkeziStatusuVarMi"),
+      tamZamanEsdegerArgePersoneliSayisi: num("tamZamanEsdegerArgePersoneliSayisi"),
+      argeFaaliyetleriAyriBirimdeMi: bool("argeFaaliyetleriAyriBirimdeMi"),
+
+      tasarimMerkeziStatusuVarMi: bool("tasarimMerkeziStatusuVarMi"),
+      tasarimPersoneliSayisiTze: num("tasarimPersoneliSayisiTze"),
+      tasarimBirimiAyriOrganizeMi: bool("tasarimBirimiAyriOrganizeMi"),
+
+      girisimciSirketDurumu: (g.girisimciSirketDurumu as DestekBasvuruGirdisi["girisimciSirketDurumu"]) || undefined,
+      kuluckaFaz1TamamlandiMi: bool("kuluckaFaz1TamamlandiMi"),
+      hisseKarsiligiYatirimKabulEdiyorMu: bool("hisseKarsiligiYatirimKabulEdiyorMu"),
+
+      musteriKurulusVarMi: bool("musteriKurulusVarMi"),
+      musteriKurulusIliskiliTarafMi: bool("musteriKurulusIliskiliTarafMi"),
+      musteriKurulusFinansmanTaahhuduVarMi: bool("musteriKurulusFinansmanTaahhuduVarMi"),
+      siparisArGeProjeButcesiTl: num("siparisArGeProjeButcesiTl"),
+
+      cozumOrtagiListedeMi: bool("cozumOrtagiListedeMi"),
+      ortakliBasvuruMu1831: bool("ortakliBasvuruMu1831"),
+      basvuru1831DahaOnceKacKezKullanildi: num("basvuru1831DahaOnceKacKezKullanildi"),
+      ayniCozumOrtagiIleKacProje: num("ayniCozumOrtagiIleKacProje"),
 
       iletisimAdSoyad: g.iletisimAdSoyad || undefined,
       iletisimEposta: g.iletisimEposta || undefined,
@@ -1091,6 +1156,84 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Yatırım ili, TKDK'nın desteklenen illeri arasında mı?" deger={g.tkdkDesteklenenIldeMi} onChange={(v) => set("tkdkDesteklenenIldeMi", v)} />
           <Secim etiket="Yatırımınız hangi IPARD III tedbirine giriyor?" deger={g.tkdkSektoru} onChange={(v) => set("tkdkSektoru", v)} secenekler={TKDK_SEKTOR_SECENEKLERI} />
           <Tutar etiket="Planlanan proje bütçesi" deger={g.planlananProjeButcesiEuro} onChange={(v) => set("planlananProjeButcesiEuro", v)} birim="€" />
+        </div>
+      );
+    case "kosgeb-stratejik-urun":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="Sanayi ve Teknoloji Bakanlığı'na (Teknoloji Odaklı Sanayi Hamlesi) ön başvuru durumunuz nedir?" deger={g.stratejikUrunBakanlikBasvuruDurumu} onChange={(v) => set("stratejikUrunBakanlikBasvuruDurumu", v)} secenekler={STRATEJIK_URUN_BASVURU_SECENEKLERI} />
+          <EvetHayir etiket="Üreteceğiniz ürün, Bakanlığın Öncelikli Ürün Listesi'nde yer alıyor mu?" deger={g.stratejikUrunOncelikliListede} onChange={(v) => set("stratejikUrunOncelikliListede", v)} />
+          <EvetHayir etiket="KOSGEB Bilgi Sistemi (KBS) kaydınız aktif ve güncel mi?" deger={g.kosgebVeriTabaniKayitliMi} onChange={(v) => set("kosgebVeriTabaniKayitliMi", v)} />
+          <EvetHayir etiket="Son 4 aydır işletmede istihdam edilmemiş yeni personel istihdamı planlıyor musunuz?" deger={g.yeniPersonelIstihdamPlaniVarMi} onChange={(v) => set("yeniPersonelIstihdamPlaniVarMi", v)} />
+          <EvetHayir etiket="Yerli Malı Belgesi'yle alım yapmayı planlıyor musunuz?" deger={g.yerliMaliBelgesiPlaniVarMi} onChange={(v) => set("yerliMaliBelgesiPlaniVarMi", v)} />
+        </div>
+      );
+    case "kosgeb-kuresel-rekabetcilik":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="Aşağıdaki dört kriterden hangisi işletmenizi tanımlıyor?" deger={g.kureselRekabetcilikKriteri} onChange={(v) => set("kureselRekabetcilikKriteri", v)} secenekler={KURESEL_REKABETCILIK_KRITER_SECENEKLERI} />
+          {g.kureselRekabetcilikKriteri === "yuksek_teknoloji_oncelikli_urun" && (
+            <EvetHayir etiket="Geçerli bir Sanayi Sicil Belgeniz var mı?" deger={g.sanayiSicilBelgesiVarMi} onChange={(v) => set("sanayiSicilBelgesiVarMi", v)} />
+          )}
+          <Tutar etiket="Talep etmeyi planladığınız kredi tutarı" deger={g.kureselRekabetcilikKrediTutariTl} onChange={(v) => set("kureselRekabetcilikKrediTutariTl", v)} />
+          <EvetHayir etiket="Bu programdan daha önce yararlandınız mı?" deger={g.kureselRekabetcilikDahaOnceKullanildiMi} onChange={(v) => set("kureselRekabetcilikDahaOnceKullanildiMi", v)} />
+        </div>
+      );
+    case "kosgeb-yonde":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="Hangi YÖNDE hizmetinden yararlanmak istiyorsunuz?" deger={g.yondeHizmetTuru} onChange={(v) => set("yondeHizmetTuru", v)} secenekler={YONDE_HIZMET_SECENEKLERI} />
+          <EvetHayir etiket="Bu programdan daha önce yararlandınız mı?" deger={g.yondeDahaOnceYararlanildiMi} onChange={(v) => set("yondeDahaOnceYararlanildiMi", v)} />
+        </div>
+      );
+    case "arge-merkezi-statusu":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Ar-Ge Merkezi statünüz zaten var mı?" deger={g.argeMerkeziStatusuVarMi} onChange={(v) => set("argeMerkeziStatusuVarMi", v)} />
+          {g.argeMerkeziStatusuVarMi !== "evet" && (
+            <>
+              <Sayi etiket="Tam zaman eşdeğer Ar-Ge personeli sayınız" deger={g.tamZamanEsdegerArgePersoneliSayisi} onChange={(v) => set("tamZamanEsdegerArgePersoneliSayisi", v)} />
+              <EvetHayir etiket="Ar-Ge faaliyetleriniz fiziksel olarak ayrı bir birimde mi yürütülüyor?" deger={g.argeFaaliyetleriAyriBirimdeMi} onChange={(v) => set("argeFaaliyetleriAyriBirimdeMi", v)} />
+            </>
+          )}
+        </div>
+      );
+    case "tasarim-merkezi-statusu":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Tasarım Merkezi statünüz zaten var mı?" deger={g.tasarimMerkeziStatusuVarMi} onChange={(v) => set("tasarimMerkeziStatusuVarMi", v)} />
+          {g.tasarimMerkeziStatusuVarMi !== "evet" && (
+            <>
+              <Sayi etiket="Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız" deger={g.tasarimPersoneliSayisiTze} onChange={(v) => set("tasarimPersoneliSayisiTze", v)} />
+              <EvetHayir etiket="Tasarım faaliyetiniz fiziksel olarak ayrı, izlenebilir bir birim/alan olarak mı örgütlü?" deger={g.tasarimBirimiAyriOrganizeMi} onChange={(v) => set("tasarimBirimiAyriOrganizeMi", v)} />
+            </>
+          )}
+        </div>
+      );
+    case "tubitak-1812":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="Girişim aşamanız nedir?" deger={g.girisimciSirketDurumu} onChange={(v) => set("girisimciSirketDurumu", v)} secenekler={GIRISIMCI_SIRKET_DURUMU_SECENEKLERI} />
+          <EvetHayir etiket="Bir kuluçka merkezinin Faz 1 hızlandırma programını tamamladınız mı?" deger={g.kuluckaFaz1TamamlandiMi} onChange={(v) => set("kuluckaFaz1TamamlandiMi", v)} />
+          <EvetHayir etiket="Hisse karşılığı (equity) yatırımı kabul ediyor musunuz?" deger={g.hisseKarsiligiYatirimKabulEdiyorMu} onChange={(v) => set("hisseKarsiligiYatirimKabulEdiyorMu", v)} />
+        </div>
+      );
+    case "tubitak-1707":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Projeniz büyük bir firma veya kamu kurumunun (Müşteri Kuruluş) siparişi/talebi üzerine mi?" deger={g.musteriKurulusVarMi} onChange={(v) => set("musteriKurulusVarMi", v)} />
+          <EvetHayir etiket="Müşteri Kuruluş ile aranızda ortaklık/sermaye/yönetim ilişkisi veya akrabalık var mı?" deger={g.musteriKurulusIliskiliTarafMi} onChange={(v) => set("musteriKurulusIliskiliTarafMi", v)} />
+          <EvetHayir etiket="Müşteri Kuruluş, proje giderlerinin en az %40'ını karşılamayı taahhüt ediyor mu?" deger={g.musteriKurulusFinansmanTaahhuduVarMi} onChange={(v) => set("musteriKurulusFinansmanTaahhuduVarMi", v)} />
+          <Tutar etiket="Proje bütçesi" deger={g.siparisArGeProjeButcesiTl} onChange={(v) => set("siparisArGeProjeButcesiTl", v)} />
+        </div>
+      );
+    case "tubitak-1831":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Hizmet almayı planladığınız danışmanlık kuruluşu TÜBİTAK'ın Çözüm Ortakları listesinde mi?" deger={g.cozumOrtagiListedeMi} onChange={(v) => set("cozumOrtagiListedeMi", v)} />
+          <EvetHayir etiket="Bu başvuruyu başka bir kuruluşla ortaklaşa mı yapacaksınız?" deger={g.ortakliBasvuruMu1831} onChange={(v) => set("ortakliBasvuruMu1831", v)} />
+          <Sayi etiket="Bu programı daha önce kaç kez kullandınız?" deger={g.basvuru1831DahaOnceKacKezKullanildi} onChange={(v) => set("basvuru1831DahaOnceKacKezKullanildi", v)} />
+          <Sayi etiket="Aynı çözüm ortağıyla kaç proje yürüttünüz?" deger={g.ayniCozumOrtagiIleKacProje} onChange={(v) => set("ayniCozumOrtagiIleKacProje", v)} />
         </div>
       );
     default:
