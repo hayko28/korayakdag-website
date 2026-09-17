@@ -226,6 +226,7 @@ export default function DestekUygunlukForm() {
   const [seciliPersonalar, setSeciliPersonalar] = useState<Set<number>>(new Set());
   const [kvkkOnay, setKvkkOnay] = useState(false);
   const [acikSonuclar, setAcikSonuclar] = useState<Set<string>>(new Set());
+  const [duzenleAcik, setDuzenleAcik] = useState<Set<string>>(new Set());
 
   const set = (key: string, value: string) => setG((prev) => ({ ...prev, [key]: value }));
 
@@ -253,6 +254,14 @@ export default function DestekUygunlukForm() {
 
   const sonucAcKapa = (programId: string) =>
     setAcikSonuclar((prev) => {
+      const next = new Set(prev);
+      if (next.has(programId)) next.delete(programId);
+      else next.add(programId);
+      return next;
+    });
+
+  const duzenleAcKapa = (programId: string) =>
+    setDuzenleAcik((prev) => {
       const next = new Set(prev);
       if (next.has(programId)) next.delete(programId);
       else next.add(programId);
@@ -420,6 +429,13 @@ export default function DestekUygunlukForm() {
   const kartGuncelle = async (programId: string) => {
     await calistirAnaliz();
     setAcikSonuclar((prev) => new Set(prev).add(programId));
+    // Güncelleme bitince düzenleme alanı otomatik kapanır — kart temiz görünür,
+    // tekrar düzeltmek isterse aşağıdaki "Cevapları Düzenle" ile yine açabilir.
+    setDuzenleAcik((prev) => {
+      const next = new Set(prev);
+      next.delete(programId);
+      return next;
+    });
   };
 
   if (sonuclar && !duzenleModuAcik) {
@@ -531,22 +547,44 @@ export default function DestekUygunlukForm() {
                       </div>
                     )}
 
-                    <div className="rounded-xl border border-gray-200 bg-white p-5">
-                      <p className="mb-4 text-xs font-bold uppercase tracking-wide text-gray-500">
-                        {s.durum === "belirsiz"
-                          ? "Sonucu netleştirmek için bu soruları cevaplayın"
-                          : "Cevaplardan biri yanlış girildiyse veya durumunuz değiştiyse burada düzeltebilirsiniz"}
-                      </p>
-                      <ProgramSorulari programId={s.programId} g={g} set={set} />
-                      <button
-                        type="button"
-                        onClick={() => kartGuncelle(s.programId)}
-                        disabled={submitting}
-                        className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
-                      >
-                        {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
-                      </button>
-                    </div>
+                    {(() => {
+                      const zorunluAcik = s.durum === "belirsiz";
+                      const duzenleGorunur = zorunluAcik || duzenleAcik.has(s.programId);
+                      return (
+                        <div className="rounded-xl border border-gray-200 bg-white">
+                          <button
+                            type="button"
+                            onClick={() => !zorunluAcik && duzenleAcKapa(s.programId)}
+                            aria-expanded={duzenleGorunur}
+                            className={`flex w-full items-center justify-between gap-3 p-4 text-left ${zorunluAcik ? "cursor-default" : ""}`}
+                          >
+                            <p className="text-xs font-bold uppercase tracking-wide text-gray-500">
+                              {zorunluAcik
+                                ? "Sonucu netleştirmek için bu soruları cevaplayın"
+                                : "✏️ Cevapları Düzenle"}
+                            </p>
+                            {!zorunluAcik && (
+                              <span className={`flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border text-xs transition ${duzenleGorunur ? "rotate-180" : ""}`}>
+                                ▾
+                              </span>
+                            )}
+                          </button>
+                          {duzenleGorunur && (
+                            <div className="border-t border-gray-100 p-5 pt-4">
+                              <ProgramSorulari programId={s.programId} g={g} set={set} />
+                              <button
+                                type="button"
+                                onClick={() => kartGuncelle(s.programId)}
+                                disabled={submitting}
+                                className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
+                              >
+                                {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
 
                     <div className="rounded-xl bg-gray-50 p-4 text-sm text-gray-700">
                       <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
