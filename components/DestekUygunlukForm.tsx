@@ -70,13 +70,14 @@ const IHRACAT_TURU_SECENEKLERI = [
   { value: "her_ikisi", label: "Her ikisi" },
 ];
 
+// IPARD III'ün resmi tedbir yapısı (tkdk.gov.tr, birincil kaynaktan doğrulandı, 2026-09-17).
 const TKDK_SEKTOR_SECENEKLERI = [
-  { value: "hayvancilik", label: "Hayvancılık" },
-  { value: "tarimsal_uretim", label: "Tarımsal üretim" },
-  { value: "gida_isleme", label: "Gıda işleme" },
-  { value: "yenilenebilir_enerji", label: "Yenilenebilir enerji (GES vb.)" },
-  { value: "kirsal_turizm", label: "Kırsal turizm" },
-  { value: "diger", label: "Diğer" },
+  { value: "m1_fiziki_varlik", label: "M1 - Tarımsal İşletmelerin Fiziki Varlıkları" },
+  { value: "m3_isleme_pazarlama", label: "M3 - Tarım-Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması" },
+  { value: "m4_cevre_iklim", label: "M4 - Tarım-Çevre-İklim ve Organik Tarım" },
+  { value: "m5_leader", label: "M5 - LEADER Yerel Kalkınma" },
+  { value: "m7_cesitlendirme", label: "M7 - Çiftlik Faaliyetlerinin Çeşitlendirilmesi (kırsal turizm, yenilenebilir enerji vb. dahil)" },
+  { value: "diger", label: "Bunların hiçbirine girmiyor / emin değilim" },
 ];
 
 const ARGE_DURUMU_SECENEKLERI = [
@@ -98,11 +99,11 @@ const DONUSUM_DURUMU_SECENEKLERI = [
   { value: "yapiyorum", label: "Evet, uyguluyorum" },
 ];
 
+// KOSGEB Yeşil Sanayi Destek Programı Yönergesi'nin resmi 2 Alt Bileşen yapısı (birincil
+// kaynaktan doğrulandı, 2026-09-17) — eski 4'lü sınıflama resmi terim değildi.
 const YESIL_SANAYI_TEMA_SECENEKLERI = [
-  { value: "yenilenebilir_enerji", label: "Yenilenebilir enerji" },
-  { value: "kaynak_verimliligi", label: "Kaynak verimliliği" },
-  { value: "atik_yonetimi", label: "Atık yönetimi" },
-  { value: "dongusel_ekonomi", label: "Döngüsel ekonomi" },
+  { value: "alt_bilesen_1_1", label: "Alt Bileşen 1.1: Enerji sistemlerinin karbonsuzlaştırılması (örn. GES)" },
+  { value: "alt_bilesen_1_2", label: "Alt Bileşen 1.2: İklim eylemi, kaynak verimliliği, sürdürülebilirlik" },
   { value: "emin_degil", label: "Emin değilim" },
 ];
 
@@ -310,6 +311,8 @@ export default function DestekUygunlukForm() {
       girisimciMunferitTemsilYetkisiVarMi: bool("girisimciMunferitTemsilYetkisiVarMi"),
       oncelikliGrup: (g.oncelikliGrup as DestekBasvuruGirdisi["oncelikliGrup"]) || undefined,
       isGelistirmeDestegiDahaOnceKullanildiMi: bool("isGelistirmeDestegiDahaOnceKullanildiMi"),
+
+      argeUrgeGirisimciDahaOnceKullanildiMi: bool("argeUrgeGirisimciDahaOnceKullanildiMi"),
 
       kapasiteProgramiDahaOnceKullanildiMi: bool("kapasiteProgramiDahaOnceKullanildiMi"),
       sanayiSicilBelgesiVarMi: bool("sanayiSicilBelgesiVarMi"),
@@ -940,8 +943,17 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
       return (
         <div>
           <KobiOlcegiAlanlari g={g} set={set} />
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+            <EvetHayir
+              etiket="Girişimci olarak bu destekten daha önce yararlandınız mı?"
+              deger={g.argeUrgeGirisimciDahaOnceKullanildiMi}
+              onChange={(v) => set("argeUrgeGirisimciDahaOnceKullanildiMi", v)}
+            />
+          </div>
           <p className="mt-3 text-sm text-gray-500">
-            Şirket türü ve KOBİ ölçeği dışında ek bir soru gerekmez.
+            Henüz şirketiniz kurulmadıysa veya şahıs işletmesiyseniz bu soru sizi
+            ilgilendirir (girişimci hakkı ömür boyu 1 kez); kurulu bir KOBİ (A.Ş./Ltd.) iseniz
+            sınır yoktur, cevabınız sonucu etkilemez.
           </p>
         </div>
       );
@@ -1075,7 +1087,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
         <div className="grid gap-5 sm:grid-cols-2">
           <Sayi etiket="Başvuranın yaşı (gerçek kişi başvurusuysa)" deger={g.basvuranYasi} onChange={(v) => set("basvuranYasi", v)} />
           <EvetHayir etiket="Yatırım ili, TKDK'nın desteklenen illeri arasında mı?" deger={g.tkdkDesteklenenIldeMi} onChange={(v) => set("tkdkDesteklenenIldeMi", v)} />
-          <Secim etiket="Yatırım sektörü" deger={g.tkdkSektoru} onChange={(v) => set("tkdkSektoru", v)} secenekler={TKDK_SEKTOR_SECENEKLERI} />
+          <Secim etiket="Yatırımınız hangi IPARD III tedbirine giriyor?" deger={g.tkdkSektoru} onChange={(v) => set("tkdkSektoru", v)} secenekler={TKDK_SEKTOR_SECENEKLERI} />
           <Tutar etiket="Planlanan proje bütçesi" deger={g.planlananProjeButcesiEuro} onChange={(v) => set("planlananProjeButcesiEuro", v)} birim="€" />
         </div>
       );

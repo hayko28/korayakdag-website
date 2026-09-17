@@ -1,5 +1,29 @@
 # KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı (evaluator kaynağı)
 
+## DÜZELTME (2026-09-17) — DÜŞÜK-ORTA GÜVEN, kısmen düzeltildi
+
+Resmi Uygulama Esasları PDF'leri (kosgeb.gov.tr) görüntü/sıkıştırılmış formatta geldiği için bu
+oturumda metni çıkarılamadı; yalnızca resmi HTML özet sayfası ve ikincil kaynaklar kullanılabildi.
+Yine de şu somut sorunlar tespit edilip düzeltildi:
+
+- `argeUrgeGirisimciDahaOnceKullanildiMi` alanı types.ts'te ve formda TANIMLIYDI ama evaluator
+  hiç okumuyordu (ölü alan) — bağlandı, artık "girişimci ömür boyu 1 kez" kuralını kontrol ediyor.
+- Sonuç koşulsuz "uygun" dönüyordu; kendi kaynağı da nihai kararın Değerlendirme ve Karar
+  Kurulu'na ait olduğunu söylüyor — diğer kurul onaylı programlarla tutarlı olacak şekilde tavan
+  "kismen_uygun" yapıldı.
+- "Toplam destek üst limiti 900.000 TL" iddiası ARAŞTIRMADA ÇELİŞKİYLE karşılaştı (bazı kaynaklar
+  750.000 TL / 1.100.000 TL / 6.000.000 TL, kalem bazlı alt limitler gösteriyor) — hangisinin
+  doğru olduğu bu oturumda netleştirilemedi, bu yüzden kesin rakam kaldırılıp "kalem bazında
+  değişir, güncel çağrı ile teyit edilmeli" uyarısına çevrildi.
+- Ür-Ge'nin "patent/doktora/TÜR belgesi kaynaklı olma" şartı hiçbir kaynakta teyit edilemedi —
+  uyarı metninde "teyit edilemedi, KOSGEB ile netleştirin" notu eklendi.
+
+**Kalan açık nokta**: "sahis"/tanımsız şirket türünde KOBİ ölçek kontrolünün atlanması ve sektör
+kısıtı olmadığı varsayımı hâlâ doğrulanamadı — bir sonraki turda PDF manuel indirilip (OCR/
+pdftotext) okunmalı.
+
+---
+
 ## Kaynak
 Sitede zaten yayınlanmış, sourced blog yazısı: `app/blog/kosgeb-arge-urge-inovasyon-destek-programi-2026/page.tsx`.
 

@@ -433,7 +433,8 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
 
   const retSinyali = argeRetSinyalleriVarMi(g);
   if (retSinyali) {
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", [retSinyali]);
+    gerekceler.push(retSinyali);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", gerekceler);
   }
   if (g.projeEkibindeLisansMezunuVarMi === undefined) eksikAlanlar.push("proje ekibinde lisans mezunu personel durumu");
   if (g.uretimYatirimNiteligi === undefined) eksikAlanlar.push("makine/teçhizat/tesis alımının projedeki rolü");
@@ -496,13 +497,28 @@ export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): Pro
     }
   }
 
+  // Girişimci (henüz şirketi olmayan veya şahıs işletmesi) için "ömür boyu en fazla
+  // 1 defa" kuralı — KOBİ'ler için sınırsız olduğundan yalnızca bu grupta soruluyor/kontrol ediliyor.
+  const girisimciKapsaminda = g.sirketTuru === undefined || g.sirketTuru === "sahis";
+  if (girisimciKapsaminda && g.argeUrgeGirisimciDahaOnceKullanildiMi === true) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "uygun_degil",
+      "Girişimci olarak bu destek hakkı daha önce kullanılmış.",
+      ["Ar-Ge ve İnovasyon Projesi kapsamında girişimciler bu destekten ömür boyu en fazla 1 kez yararlanabiliyor — bu hak daha önce kullanılmış."]
+    );
+  }
+  if (girisimciKapsaminda && g.argeUrgeGirisimciDahaOnceKullanildiMi === undefined) {
+    eksikAlanlar.push("girişimci olarak bu destekten daha önce yararlanılıp yararlanılmadığı");
+  }
+
   gerekceler.push("Henüz şirketi olmayan, bir iş fikrine dayalı 'Yeni Girişimci' olarak (ömür boyu en fazla 1 defa) ya da kurulu bir KOBİ olarak (Ar-Ge/İnovasyon projesinde sınırsız, Ür-Ge projesinde en fazla 3 kez) başvurulabilir; aynı anda yalnızca 1 proje desteklenir.");
-  gerekceler.push("Ar-Ge Merkezi statüsünün aksine asgari personel sayısı, teknopark kaydı veya ciro şartı aranmaz; toplam destek üst limiti 900.000 TL'ye kadardır (gider kalemine göre %75-%100 oranında, makine-teçhizatta kısmen geri ödemeli).");
+  gerekceler.push("Ar-Ge Merkezi statüsünün aksine asgari personel sayısı, teknopark kaydı veya ciro şartı aranmaz.");
 
   const uyarilar = [
-    "Ür-Ge (Ürün Geliştirme) kapsamı yalnızca KOSGEB'in desteklediği sektörlerdeki KOBİ'lere açıktır ve ürünün daha önce desteklenmiş bir Ar-Ge/yenilik projesi, patent, doktora çalışması veya TÜR Deneyim Belgesi gibi bir kaynaktan doğmuş olması gerekir — Ar-Ge/İnovasyon kapsamında bu şart aranmaz.",
+    "Destek üst limiti ve oranları kalem bazında (nitelikli personel, makine-teçhizat, sınai mülkiyet vb.) değişir ve güncel çağrıya göre farklılık gösterebilir — bu ön analizde tek bir rakam varsayılmıyor, kesin tutar KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
+    "Ür-Ge (Ürün Geliştirme) kapsamının, ürünün daha önce desteklenmiş bir Ar-Ge/yenilik projesi, patent, doktora çalışması veya TÜR Deneyim Belgesi gibi bir kaynaktan doğmuş olmasını gerektirdiği görülüyor, ancak bu şart bu oturumda birincil kaynaktan tam teyit edilemedi — başvuru öncesi KOSGEB ile netleştirilmelidir.",
     "Aynı gider kalemi için Yatırım Teşvik Belgesi gibi başka bir kurumdan eşzamanlı destek alınamaz.",
-    "Başvurular KOBİ Bilgi Sistemi (KBS) üzerinden yılın herhangi bir tarihinde yapılabilir; nihai kabul Değerlendirme ve Karar Kurulu'na aittir.",
+    "Başvurular KOBİ Bilgi Sistemi (KBS) üzerinden yılın herhangi bir tarihinde yapılabilir; nihai kabul Değerlendirme ve Karar Kurulu'na aittir — bu yüzden bu araç kesin \"uygun\" değil, en fazla \"ön koşulları sağlıyor\" sonucu verir.",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -514,7 +530,12 @@ export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): Pro
     );
   }
 
-  return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun", "Girilen bilgilere göre ön koşullar sağlanıyor.", gerekceler, uyarilar);
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul Değerlendirme ve Karar Kurulu'na aittir.",
+    gerekceler,
+    uyarilar
+  );
 }
 
 // --- 7) Ticaret Bakanlığı İhracat Destekleri (5973 / 10962 sayılı Kararlar) ---
@@ -707,26 +728,29 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
 }
 
 // --- 9b) Yeşil Sanayi Destek Programı ---
-// Kaynak: research/destek-uygunluk/yesil-sanayi-destek-programi.md — DİKKAT: bu program
-// diğer 9 programa göre daha az derinlemesine araştırıldı (ikincil kaynak özeti, PDF tam
-// metniyle teyit edilmedi). Bu yüzden bilinçli olarak muhafazakâr: hiçbir zaman "uygun"
-// dönmez, en fazla "kismen_uygun"; şirket türü gibi teyit edilmemiş bir şart hard rule
-// olarak eklenmedi.
+// Kaynak: research/destek-uygunluk/yesil-sanayi-destek-programi.md — 2026-09-17'de resmi
+// Yönerge'nin (Rev.No:04) tam metni birincil kaynaktan (webdosya.kosgeb.gov.tr, pdftotext ile)
+// okundu. Önceki sürüm ikincil kaynağa dayanıyordu ve birkaç önemli noktada yanlıştı: mikro
+// ölçek istisnası kontrol edilmiyordu, NACE/imalat hard rule'u Yönerge'de yok (sektör çağrıya
+// bağlı), proje teması 4'lü değil resmi 2 Alt Bileşen yapısında, destek oranı/süre yanlıştı
+// ve EN ÖNEMLİSİ: destek HİBE DEĞİL, GERİ ÖDEMELİ — bu hiç belirtilmiyordu.
 export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "kosgeb-yesil-sanayi", programAdi: "Yeşil Sanayi Destek Programı", kurum: "KOSGEB" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
   const uyarilar = [
-    "Destek oranı %60 (deprem bölgesi illerinde %80-90), proje süresi 8-12 ay öngörülüyor.",
-    "Bu programın araştırması diğerlerine göre daha az derinlemesine yapıldı (Uygulama Esasları'nın tam metni satır satır okunmadı) — başvuru öncesi mutlaka KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
+    "Bu destek HİBE DEĞİLDİR, GERİ ÖDEMELİDİR: 12 ay ödemesiz dönemin ardından 6 eşit taksitte geri ödenir; zamanında ödenirse faizsizdir, gecikirse yasal faiz işler ve teminat nakde çevrilebilir.",
+    "Destek oranı Alt Bileşen 1.1'de (enerji sistemlerinin karbonsuzlaştırılması) %60, Alt Bileşen 1.2'de (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) %70'tir; deprem bölgesindeki (11 il) illerde hasar derecesine göre azami %90'a çıkabilir. Proje süresi 8-24 ay (4 ay katları).",
+    "Kodda henüz sorulmayan ek ön koşullar da var: şirket sermayesinin en az %75'inin özel sektöre ait olması ve kamu çoğunluk kontrolü bulunmaması, asgari bir kredi skoru, Çevresel-Sosyal Yönetim Sistemi riskinin düşük/orta olması, kuruluşun en az 2 yıldır faaliyette olması, Alt Bileşen 1.1 için yıllık enerji tüketiminin en az 20 TEP olması, Dünya Bankası'nın \"uygun bulunmayan faaliyet\" listesinde olmama ve aynı anda yalnızca 1 çağrıya/toplamda en fazla 2 projeye başvurabilme sınırı. Bunlar başvuru öncesi KOSGEB ile mutlaka teyit edilmelidir.",
+    "Sektör kapsamı genel Yönerge'de sabitlenmemiş, ilan edilen çağrıya göre belirleniyor — güncel çağrı kapsamı kosgeb.gov.tr üzerinden teyit edilmelidir.",
   ];
 
   const mali = g.yillikNetSatisHasilatiTl !== undefined || g.maliBilancoTl !== undefined
     ? Math.max(g.yillikNetSatisHasilatiTl ?? 0, g.maliBilancoTl ?? 0)
     : undefined;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
-  if (olcek === "kobi_disi") {
-    gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık.");
+  if (olcek === "mikro" || olcek === "kobi_disi") {
+    gerekceler.push(`İşletme ölçeği "${olcek}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler, uyarilar);
   }
   if (olcek === null) {
@@ -734,24 +758,12 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
     if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
-  if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
-  else if (!imalatSektoruMu(g.naceKodu)) {
-    gerekceler.push("Program imalatçı KOBİ'lere yönelik — girilen NACE kodu imalat (Kısım C) dışında görünüyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) kapsam dışı görünüyor.", gerekceler, uyarilar);
-  } else {
-    gerekceler.push("İmalat sektöründe faaliyet gösteriyorsunuz.");
-  }
-
   if (g.yesilSanayiProjeTemasi === undefined || g.yesilSanayiProjeTemasi === "emin_degil") {
-    eksikAlanlar.push("proje teması (yenilenebilir enerji / kaynak verimliliği / atık yönetimi / döngüsel ekonomi)");
+    eksikAlanlar.push("projenin Alt Bileşen 1.1 (enerji sistemlerinin karbonsuzlaştırılması) mi yoksa Alt Bileşen 1.2 (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) mi kapsamına girdiği");
+  } else if (g.yesilSanayiProjeTemasi === "alt_bilesen_1_1") {
+    gerekceler.push("Proje, Alt Bileşen 1.1 (enerji sistemlerinin karbonsuzlaştırılması, örn. GES) kapsamıyla örtüşüyor — destek oranı %60.");
   } else {
-    const TEMA_ETIKET: Record<string, string> = {
-      yenilenebilir_enerji: "yenilenebilir enerji",
-      kaynak_verimliligi: "kaynak verimliliği",
-      atik_yonetimi: "atık yönetimi",
-      dongusel_ekonomi: "döngüsel ekonomi",
-    };
-    gerekceler.push(`Proje teması (${TEMA_ETIKET[g.yesilSanayiProjeTemasi]}) programın kapsadığı alanlardan biriyle örtüşüyor.`);
+    gerekceler.push("Proje, Alt Bileşen 1.2 (iklim eylemi, kaynak verimliliği, sürdürülebilirlik) kapsamıyla örtüşüyor — destek oranı %70.");
   }
 
   if (eksikAlanlar.length > 0) {
@@ -765,26 +777,34 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
 
   return sonuc(
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
-    "Girilen bilgilere göre bilinen genel kriterlere uyuyorsunuz; araştırma derinliği sınırlı olduğu için kesin sonuç KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
+    "Girilen bilgilere göre ölçek ve tema kriterleri sağlanıyor; yukarıdaki ek ön koşullar ve nihai onay KOSGEB Kurulu'nun değerlendirmesine tabidir.",
     gerekceler,
     uyarilar
   );
 }
 
 // --- 10) TKDK - IPARD III Kırsal Kalkınma Destekleri ---
-// Kaynak: research/destek-uygunluk/tkdk-ipard.md
+// Kaynak: research/destek-uygunluk/tkdk-ipard.md — 2026-09-17'de tkdk.gov.tr'nin resmi
+// tedbir yapısı (Duyuru/Rehber sayfaları, birincil kaynak) doğrulandı: gerçek tedbirler
+// M1/101, M3/103, M4/201, M5/202, M7/302 — eski "hayvancılık/GES/kırsal turizm" sınıflaması
+// bu resmi yapıyla örtüşmüyordu (GES ve kırsal turizm ayrı tedbir değil, M7/302 alt kalemi).
+// Yaş aralığı (18-65) ve tedbir bazlı bütçe limitleri (örn. M7 için 500.000 Euro) yalnızca
+// ikincil kaynaktan doğrulanabildi, tkdk.gov.tr'nin tedbir rehberi PDF'leri okunamadı
+// (şifreli geldi) — bu yüzden hard rule değil, bilgilendirici uyarı olarak tutuluyor.
 export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   const meta = { programId: "tkdk-ipard", programAdi: "TKDK IPARD III Kırsal Kalkınma Destekleri", kurum: "Tarım ve Kırsal Kalkınmayı Destekleme Kurumu (TKDK)" };
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
   const uyarilar = [
-    "TKDK hibeleri yalnızca Kurum tarafından ilan edilen çağrı dönemlerinde, belirlenen desteklenen illerde ve sektörlerde açılır; güncel çağrı takvimi ve il/sektör listesi tkdk.gov.tr üzerinden teyit edilmelidir.",
-    "Proje bütçesi kabul edilebilirlik alt-üst sınırları çağrı dönemine ve tedbire göre değişebilir; 2026 çağrı döneminde genel aralık yaklaşık 5.000-3.000.000 Euro olarak görülüyor.",
+    "TKDK hibeleri yalnızca Kurum tarafından ilan edilen çağrı dönemlerinde, belirlenen desteklenen illerde ve tedbirlerde açılır; güncel çağrı takvimi tkdk.gov.tr/Duyuru üzerinden teyit edilmelidir.",
+    "Desteklenen il listesi 42 il olarak görülüyor (tkdk.gov.tr SSS sayfası); kaynak sayfa eski tarihli olabilir, güncel il listesi başvuru öncesi mutlaka teyit edilmelidir.",
+    "Proje bütçesi alt/üst limitleri TEDBİR BAZINDA değişir (örn. M7/302 için görülen üst limit ~500.000 Euro) — bu ön analizde tek bir aralık varsayılmıyor, kesin limit seçtiğiniz tedbirin güncel Başvuru Çağrı Rehberi'nden teyit edilmelidir.",
+    "Yaş (gerçek kişi başvurularında) ve mikro ölçek hariç tutma gibi bazı şartlar yalnızca ikincil kaynaklardan görüldü, TKDK'nın tedbir rehberi PDF'leriyle teyit edilemedi — kesinleştirmek için bir TKDK danışmanına danışmanız önerilir.",
   ];
 
   if (g.basvuranYasi !== undefined && (g.basvuranYasi < 18 || g.basvuranYasi > 65)) {
-    gerekceler.push(`Gerçek kişi başvurularında yaş 18-65 aralığında olmalı — girilen yaş (${g.basvuranYasi}) bu aralığın dışında (tüzel kişilik başvurularında bu şart aranmaz).`);
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "Yaş şartı gerçek kişi başvurusu için sağlanmıyor.", gerekceler, uyarilar);
+    gerekceler.push(`Gerçek kişi başvurularında yaş 18-65 aralığında olmalı — girilen yaş (${g.basvuranYasi}) bu aralığın dışında görünüyor (tüzel kişilik başvurularında bu şart aranmaz). Bu eşik yalnızca ikincil kaynaktan doğrulanabildi, kesinleştirmek gerekir.`);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "belirsiz", "Yaş şartı gerçek kişi başvurusu için sağlanmıyor gibi görünüyor.", gerekceler, uyarilar);
   }
   if (g.basvuranYasi === undefined) eksikAlanlar.push("başvuranın yaşı (gerçek kişi başvurusuysa)");
 
@@ -794,15 +814,22 @@ export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
   }
   if (g.tkdkDesteklenenIldeMi === undefined) eksikAlanlar.push("yatırım ilinin TKDK destekli iller arasında olup olmadığı");
 
-  if (g.tkdkSektoru === undefined) eksikAlanlar.push("yatırım sektörü (hayvancılık / tarımsal üretim / gıda işleme / yenilenebilir enerji / kırsal turizm)");
+  const TEDBIR_ETIKET: Record<string, string> = {
+    m1_fiziki_varlik: "M1/101 - Tarımsal İşletmelerin Fiziki Varlıkları",
+    m3_isleme_pazarlama: "M3/103 - Tarım-Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması",
+    m4_cevre_iklim: "M4/201 - Tarım-Çevre-İklim ve Organik Tarım",
+    m5_leader: "M5/202 - LEADER Yerel Kalkınma",
+    m7_cesitlendirme: "M7/302 - Çiftlik Faaliyetlerinin Çeşitlendirilmesi (kırsal turizm, yenilenebilir enerji vb. dahil)",
+  };
+  if (g.tkdkSektoru === undefined) eksikAlanlar.push("yatırımın hangi IPARD III tedbirine girdiği");
   else if (g.tkdkSektoru === "diger") {
-    gerekceler.push("Belirtilen sektör, TKDK'nın güncel olarak desteklediği ana alanların (hayvancılık, tarımsal üretim, gıda işleme, yenilenebilir enerji/GES, kırsal turizm) dışında görünüyor.");
+    gerekceler.push("Belirtilen yatırım, IPARD III'ün resmi tedbir yapısındaki (M1, M3, M4, M5, M7) alanların hiçbirine net biçimde girmiyor gibi görünüyor.");
   } else {
-    gerekceler.push(`Belirtilen sektör (${g.tkdkSektoru}), TKDK'nın güncel destek kapsamındaki ana alanlardan biriyle örtüşüyor.`);
+    gerekceler.push(`Belirtilen yatırım, IPARD III'ün "${TEDBIR_ETIKET[g.tkdkSektoru]}" tedbiriyle örtüşüyor.`);
   }
 
-  if (g.planlananProjeButcesiEuro !== undefined && (g.planlananProjeButcesiEuro < 5_000 || g.planlananProjeButcesiEuro > 3_000_000)) {
-    gerekceler.push(`Planlanan proje bütçesi (${g.planlananProjeButcesiEuro.toLocaleString("tr-TR")} Euro), 2026 çağrı döneminde görülen genel aralığın (5.000-3.000.000 Euro) dışında kalıyor.`);
+  if (g.planlananProjeButcesiEuro !== undefined) {
+    gerekceler.push(`Planlanan proje bütçesi ${g.planlananProjeButcesiEuro.toLocaleString("tr-TR")} Euro — tedbir bazlı kesin alt/üst limitler için güncel Başvuru Çağrı Rehberi ile teyit edilmelidir.`);
   }
 
   if (eksikAlanlar.length > 0) {
@@ -851,16 +878,14 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
   }
 
   if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === true) {
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", [
-      "Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.",
-    ], uyarilar);
+    gerekceler.push("Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", gerekceler, uyarilar);
   }
   if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescil başvurusunun yurt içi tescil başvurusundan önce mi yapıldığı (aynı tarih sorun değil)");
 
   if (g.markaYurtIciTescilVarMi === false) {
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", [
-      "Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.",
-    ], uyarilar);
+    gerekceler.push("Başvurulan markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili bulunmuyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", gerekceler, uyarilar);
   }
   if (g.markaYurtIciTescilVarMi === undefined) eksikAlanlar.push("yurt içi marka tescili (en az 1 yıl önce alınmış)");
 

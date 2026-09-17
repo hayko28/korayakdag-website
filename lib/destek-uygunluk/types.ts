@@ -78,7 +78,15 @@ export type TubitakOncelikliAlanKategorisi =
 
 export type IhracatTuru = "fiziksel_mal" | "hizmet" | "her_ikisi";
 
-export type TkdkSektoru = "hayvancilik" | "tarimsal_uretim" | "gida_isleme" | "yenilenebilir_enerji" | "kirsal_turizm" | "diger";
+// IPARD III'ün resmi tedbir yapısı (tkdk.gov.tr, birincil kaynaktan doğrulandı, 2026-09-17) —
+// "yenilenebilir_enerji" ve "kirsal_turizm" ayrı tedbir DEĞİL, M7/302'nin alt yatırım konuları.
+export type TkdkSektoru =
+  | "m1_fiziki_varlik" // M1/101 - Tarımsal İşletmelerin Fiziki Varlıkları
+  | "m3_isleme_pazarlama" // M3/103 - Tarım-Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması
+  | "m4_cevre_iklim" // M4/201 - Tarım-Çevre-İklim ve Organik Tarım
+  | "m5_leader" // M5/202 - LEADER Yerel Kalkınma
+  | "m7_cesitlendirme" // M7/302 - Çiftlik Faaliyetlerinin Çeşitlendirilmesi (kırsal turizm, yenilenebilir enerji vb. dahil)
+  | "diger";
 
 // Ar-Ge "olgunluk seviyesi" — huni sorusu. "yok" tüm Ar-Ge programlarını eler;
 // "planliyorum" (henüz Ar-Ge yok ama başlanacak) TÜBİTAK 1507 ve KOSGEB
@@ -93,11 +101,12 @@ export type DonusumDurumu = "yok" | "planliyorum" | "yapiyorum";
 
 export type KirsalYatirimDurumu = "yok" | "planliyorum" | "yapiyorum";
 
+// KOSGEB Yeşil Sanayi Destek Programı Yönergesi Rev.No:04 (birincil kaynak, tam metin
+// pdftotext ile okundu, 2026-09-17) — resmi ayrım 4 değil 2 alt bileşen; eski "yenilenebilir
+// enerji/kaynak verimliliği/atık yönetimi/döngüsel ekonomi" sınıflaması resmi terim değildi.
 export type YesilSanayiProjeTemasi =
-  | "yenilenebilir_enerji"
-  | "kaynak_verimliligi"
-  | "atik_yonetimi"
-  | "dongusel_ekonomi"
+  | "alt_bilesen_1_1" // Enerji sistemlerinin karbonsuzlaştırılması (GES vb.) — destek oranı %60
+  | "alt_bilesen_1_2" // İklim eylemi, kaynak verimliliği, sürdürülebilirlik — destek oranı %70
   | "emin_degil";
 
 // Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
@@ -134,6 +143,10 @@ export interface DestekBasvuruGirdisi {
   girisimciMunferitTemsilYetkisiVarMi?: boolean;
   oncelikliGrup?: OncelikliGrup;
   isGelistirmeDestegiDahaOnceKullanildiMi?: boolean;
+
+  // KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı — Ar-Ge/İnovasyon Projesi'nde
+  // girişimciler ömür boyu en fazla 1 kez yararlanabilir (KOBİ'ler için sınırsız).
+  argeUrgeGirisimciDahaOnceKullanildiMi?: boolean;
 
   // KOSGEB Kapasite Geliştirme Destek Programı
   kapasiteProgramiDahaOnceKullanildiMi?: boolean;
