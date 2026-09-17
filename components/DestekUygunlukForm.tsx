@@ -531,22 +531,22 @@ export default function DestekUygunlukForm() {
                       </div>
                     )}
 
-                    {s.durum === "belirsiz" && (
-                      <div className="rounded-xl border border-gray-200 bg-white p-5">
-                        <p className="mb-4 text-xs font-bold uppercase tracking-wide text-gray-500">
-                          Sonucu netleştirmek için bu soruları cevaplayın
-                        </p>
-                        <ProgramSorulari programId={s.programId} g={g} set={set} />
-                        <button
-                          type="button"
-                          onClick={() => kartGuncelle(s.programId)}
-                          disabled={submitting}
-                          className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
-                        >
-                          {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
-                        </button>
-                      </div>
-                    )}
+                    <div className="rounded-xl border border-gray-200 bg-white p-5">
+                      <p className="mb-4 text-xs font-bold uppercase tracking-wide text-gray-500">
+                        {s.durum === "belirsiz"
+                          ? "Sonucu netleştirmek için bu soruları cevaplayın"
+                          : "Cevaplardan biri yanlış girildiyse veya durumunuz değiştiyse burada düzeltebilirsiniz"}
+                      </p>
+                      <ProgramSorulari programId={s.programId} g={g} set={set} />
+                      <button
+                        type="button"
+                        onClick={() => kartGuncelle(s.programId)}
+                        disabled={submitting}
+                        className="mt-5 rounded-xl bg-[#071A2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#0F2A47] disabled:opacity-60"
+                      >
+                        {submitting ? "Güncelleniyor…" : "Analizi Güncelle"}
+                      </button>
+                    </div>
 
                     <div className="rounded-xl bg-gray-50 p-4 text-sm text-gray-700">
                       <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
@@ -557,7 +557,7 @@ export default function DestekUygunlukForm() {
                       {s.durum === "kismen_uygun" &&
                         "Girdiğiniz bilgilere göre nesnel ön şartları sağlıyorsunuz; nihai karar resmi başvuru/danışmanlık değerlendirmesiyle netleşir. Süreci birlikte planlamak için bizimle görüşün."}
                       {olumsuz &&
-                        "Bu program şu an için uygun görünmüyor; diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına göz atabilirsiniz."}
+                        "Bu program şu an için uygun görünmüyor; yukarıdaki cevaplardan biri değiştiyse (örn. şimdi bir belgeniz varsa) güncelleyip \"Analizi Güncelle\"ye basabilirsiniz. Diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına da göz atabilirsiniz."}
                     </div>
 
                     {(s.durum === "uygun" || s.durum === "kismen_uygun") && (() => {
