@@ -273,10 +273,9 @@ function oncelikliAlanGerekcesi(kategori: DestekBasvuruGirdisi["argeOncelikliAla
   return `Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun "${ETIKET[kategori]}" ana hedef kategorisiyle uyumlu işaretlenmiş — güncel öncelikli alanlarla örtüşme, değerlendirmede olumlu bir sinyal olarak görülür.`;
 }
 
-function argeRetSinyalleriVarMi(g: DestekBasvuruGirdisi): string | null {
-  if (g.uretimAltyapisiYatirimiAgirlikliMi === true) {
-    return "Proje, üretim/üretim altyapısına yönelik yatırım ağırlıklı (tesis-tezgah alımı) olarak işaretlenmiş — bu tür projeler Ar-Ge içeriği taşımadığı gerekçesiyle doğrudan reddedilebilir.";
-  }
+// 1501/1507/1832 ortak: proje ekibi/kaynak yetersizliği sinyalleri (üretim yatırımı
+// kontrolü HARİÇ — o, 1832 için ayrı ve daha dar tanımlı, bkz. tubitak1832Degerlendir).
+function argeEkipRetSinyaliVarMi(g: DestekBasvuruGirdisi): string | null {
   if (g.projeEkibindeLisansMezunuVarMi === false) {
     return "Proje ekibinde konuyla ilgili en az lisans derecesine sahip personel bulunmadığı belirtilmiş — bu, ön değerlendirmede doğrudan ret sebebi olabilir.";
   }
@@ -284,6 +283,20 @@ function argeRetSinyalleriVarMi(g: DestekBasvuruGirdisi): string | null {
     return "Ar-Ge faaliyetinin büyük ölçüde dışarıdan hizmet alımıyla yapıldığı belirtilmiş — kuruluşun kendi Ar-Ge katkısının yetersiz görülme riski var.";
   }
   return null;
+}
+
+// Yalnızca TÜBİTAK 1501/1507 için: "sadece tezgah/tesis almak Ar-Ge değildir" —
+// bu iki programda iyi bilinen, birincil kaynaktan doğrulanmış bir TEYDEB hakem ret
+// gerekçesi. 1832 bu fonksiyonu KULLANMAZ (bkz. tubitak1832Degerlendir) çünkü 1832'nin
+// kendi resmi kriteri daha dar: pilot/demonstrasyon ölçekli ekipman alımı ret sebebi
+// DEĞİL, yalnızca projenin ESAS İTİBARİYLE endüstriyel ölçekte kapasite yatırımı olması
+// ret sebebi (MADDE 20.2) — 2026-09-17'de bu ayrım fark edilmeden 1832'ye de bu genel
+// kural uygulanıyordu, meşru pilot ölçekli projeleri yanlış reddediyordu; düzeltildi.
+function argeRetSinyalleriVarMi(g: DestekBasvuruGirdisi): string | null {
+  if (g.uretimAltyapisiYatirimiAgirlikliMi === true) {
+    return "Proje, üretim/üretim altyapısına yönelik yatırım ağırlıklı (tesis-tezgah alımı) olarak işaretlenmiş — bu tür projeler Ar-Ge içeriği taşımadığı gerekçesiyle doğrudan reddedilebilir.";
+  }
+  return argeEkipRetSinyaliVarMi(g);
 }
 
 // --- 4) TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı ---
@@ -539,9 +552,23 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (g.projeYesilDonusumHedefliMi === undefined) eksikAlanlar.push("projenin yeşil dönüşüm (enerji/kaynak verimliliği, atık azaltımı vb.) hedefi taşıyıp taşımadığı");
 
-  const retSinyali = argeRetSinyalleriVarMi(g);
-  if (retSinyali) {
-    gerekceler.push(retSinyali);
+  // MADDE 20.2 (1832 Çağrı Duyurusu 2025-3, birincil kaynaktan doğrulandı, 2026-09-17):
+  // "Proje üretim altyapısı oluşturmaya yönelik yatırım projesidir" ret nedenidir — ama
+  // Madde 6 pilot/demonstrasyon ölçekli üretim faaliyetlerini AÇIKÇA destekliyor. Bu yüzden
+  // 1501/1507'nin kaba "üretim yatırımı ağırlıklı mı" sorusu yerine, projenin ESAS
+  // İTİBARİYLE endüstriyel ölçekte bir yatırım projesi mi yoksa pilot ölçekli bir
+  // doğrulama çalışması mı olduğunu soruyoruz.
+  if (g.projeEndustriyelOlcekYatirimMi === true) {
+    gerekceler.push("Proje, esas itibariyle endüstriyel ölçekte üretim/kapasite yatırımı (yatırım projesi) olarak işaretlenmiş — 1832 Çağrı Duyurusu MADDE 20.2 uyarınca bu, ön değerlendirmede doğrudan ret önerisine konu olabilecek bir durumdur (pilot/demonstrasyon ölçekli ekipman alımından farklı olarak).");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Proje esas itibariyle endüstriyel ölçekte yatırım niteliğinde görünüyor.", gerekceler);
+  }
+  if (g.projeEndustriyelOlcekYatirimMi === undefined) {
+    eksikAlanlar.push("projenin pilot/demonstrasyon ölçekli bir doğrulama çalışması mı, yoksa endüstriyel ölçekte bir kapasite yatırımı mı olduğu");
+  }
+
+  const ekipSinyali = argeEkipRetSinyaliVarMi(g);
+  if (ekipSinyali) {
+    gerekceler.push(ekipSinyali);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", gerekceler);
   }
 
@@ -551,8 +578,9 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   gerekceler.push("Kuruluş türü, Türkiye'de yerleşiklik ve yeşil dönüşüm hedefi şartları sağlanıyor, somut bir ret sinyali görülmedi.");
 
   const uyarilar = [
-    "Program, Teknoloji Hazırlık Seviyesi (TRL) 3-9 arası, ticarileştirme hedefli teknoloji doğrulama/geliştirme projelerine odaklıdır; nihai Ar-Ge niteliği hakem değerlendirmesine tabidir.",
-    "Bu program dönemsel çağrılarla açılır (Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamında); güncel çağrı takvimi ve bütçe üst limiti TÜBİTAK TEYDEB üzerinden teyit edilmelidir.",
+    "Program, Teknoloji Hazırlık Seviyesi (THS) en az 5 (tercihen 6) ile başlayıp THS 9'a (ticarileştirme) kadar ilerleyen projelere odaklıdır; nihai Ar-Ge niteliği hakem değerlendirmesine tabidir.",
+    "Dünya Bankası destekli olduğu için Çevresel-Sosyal Yönetim Çerçevesi (ESMF) şartlarına uygunluk da ayrıca aranır — bu ön analizde sorulmuyor, başvuru öncesi teyit edilmelidir.",
+    "Bu program dönemsel çağrılarla açılır (Türkiye Yeşil Sanayi Projesi kapsamında); güncel çağrı takvimi ve bütçe üst limiti TÜBİTAK TEYDEB üzerinden teyit edilmelidir.",
   ];
 
   if (eksikAlanlar.length > 0) {

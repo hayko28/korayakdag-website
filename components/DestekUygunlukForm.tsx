@@ -329,6 +329,7 @@ export default function DestekUygunlukForm() {
       teknogirisimSermayeSirketiMi: bool("teknogirisimSermayeSirketiMi"),
       argeOncelikliAlanKategorisi: (g.argeOncelikliAlanKategorisi as DestekBasvuruGirdisi["argeOncelikliAlanKategorisi"]) || undefined,
       projeYesilDonusumHedefliMi: bool("projeYesilDonusumHedefliMi"),
+      projeEndustriyelOlcekYatirimMi: bool("projeEndustriyelOlcekYatirimMi"),
 
       yuksekVeyaOrtaYuksekTeknolojiUrunMu: bool("yuksekVeyaOrtaYuksekTeknolojiUrunMu"),
 
@@ -996,12 +997,20 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
       return (
         <>
           <p className="mb-4 rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-800">
-            ℹ️ Bu sorular aynı Ar-Ge projenizle ilgili olduğu için TÜBİTAK 1501, 1507 ve 1832 kartları arasında
-            ortaktır — birinde verdiğiniz cevap diğerlerinde de görünür.
+            ℹ️ Aşağıdaki sorular (üretim yatırımı sorusu hariç) aynı Ar-Ge projenizle ilgili olduğu için TÜBİTAK
+            1501, 1507 ve 1832 kartları arasında ortaktır — birinde verdiğiniz cevap diğerlerinde de görünür.
           </p>
           <div className="grid gap-5 sm:grid-cols-2">
             <Secim etiket="Proje niteliği" deger={g.projeNiteligi} onChange={(v) => set("projeNiteligi", v)} secenekler={PROJE_NITELIGI_SECENEKLERI} />
-            <EvetHayir etiket="Proje üretim/tesis yatırımı ağırlıklı mı?" deger={g.uretimAltyapisiYatirimiAgirlikliMi} onChange={(v) => set("uretimAltyapisiYatirimiAgirlikliMi", v)} />
+            {programId === "tubitak-1832" ? (
+              <EvetHayir
+                etiket="Proje, esas itibariyle endüstriyel ölçekte bir üretim/kapasite yatırımı mı? (pilot/demonstrasyon ölçekli ekipman alımı bu kapsamda sayılmaz)"
+                deger={g.projeEndustriyelOlcekYatirimMi}
+                onChange={(v) => set("projeEndustriyelOlcekYatirimMi", v)}
+              />
+            ) : (
+              <EvetHayir etiket="Proje üretim/tesis yatırımı ağırlıklı mı?" deger={g.uretimAltyapisiYatirimiAgirlikliMi} onChange={(v) => set("uretimAltyapisiYatirimiAgirlikliMi", v)} />
+            )}
             <EvetHayir etiket="Proje ekibinde ilgili alanda lisans mezunu var mı?" deger={g.projeEkibindeLisansMezunuVarMi} onChange={(v) => set("projeEkibindeLisansMezunuVarMi", v)} />
             <Secim etiket="Ar-Ge faaliyeti nasıl yürütülüyor?" deger={g.argeFaaliyetiKaynagi} onChange={(v) => set("argeFaaliyetiKaynagi", v)} secenekler={ARGE_KAYNAGI_SECENEKLERI} />
             <Tutar etiket="Talep edilecek proje bütçesi (opsiyonel)" deger={g.talepEdilenProjeButcesiTl} onChange={(v) => set("talepEdilenProjeButcesiTl", v)} />

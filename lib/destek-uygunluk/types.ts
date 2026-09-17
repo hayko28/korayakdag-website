@@ -162,6 +162,11 @@ export interface DestekBasvuruGirdisi {
 
   // TÜBİTAK 1832 - Sanayide Yeşil Dönüşüm
   projeYesilDonusumHedefliMi?: boolean;
+  // MADDE 20.2 (1832 Çağrı Duyurusu): true ise proje esas itibariyle endüstriyel ölçekte
+  // bir kapasite yatırımı (ret sebebi) — pilot/demonstrasyon ölçekli ekipman alımından
+  // (Madde 6, desteklenir) kasıtlı olarak ayrı bir alan; 1501/1507'nin
+  // uretimAltyapisiYatirimiAgirlikliMi alanıyla KARIŞTIRILMAMALI.
+  projeEndustriyelOlcekYatirimMi?: boolean;
 
   // Yatırım Teşvik Belgesi — ek kriterler
   yuksekVeyaOrtaYuksekTeknolojiUrunMu?: boolean;
