@@ -134,6 +134,10 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🌐",
     aktif: true,
     tetikle: (g) => (hedefSecili(g, "yurtdisi_sirket") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    // İhracat destekleri/Turquality'ye uygun çıkan işletmeler genelde yurt dışı
+    // pazara açılma/yapılanma ihtiyacına da yaklaşıyor — hedef ayrıca seçilmese de
+    // bu iki program sonucunun altında ek fırsat olarak gösterilir.
+    ilgiliProgramIdler: ["ticaret-bakanligi-ihracat-destekleri", "turquality-marka-destek"],
   },
   {
     id: "marka-patent-danismanligi",
@@ -143,6 +147,9 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🛡️",
     aktif: true,
     tetikle: (g) => (hedefSecili(g, "marka_patent") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    // Turquality/Marka Destek Programı'nın kendisi yurt içi/yurt dışı marka tescili
+    // şart koşuyor — bu eksikse (sonuç "belirsiz" dönse bile) tam ihtiyaç anı budur.
+    ilgiliProgramIdler: ["turquality-marka-destek"],
   },
   {
     id: "kdv-iade-danismanligi",
@@ -223,12 +230,19 @@ export function onerilenHizmetleriBul(g: DestekBasvuruGirdisi): HizmetOnerisi[] 
 }
 
 // Bir destek programı sonuç kartında "bu programla ilgili hizmetimiz" olarak
-// gösterilecek hizmeti bulur (varsa). Katalogdaki tanım sırasına göre ilk eşleşen
-// döner; karşılığı olmayan programlar için null (kart hiç gösterilmez).
-export function programaBagliHizmetiBul(programId: string): HizmetOnerisi | null {
-  const h = HIZMET_KATALOGU.find((h) => h.aktif && h.ilgiliProgramIdler?.includes(programId));
-  if (!h) return null;
-  return { id: h.id, baslik: h.baslik, aciklama: h.aciklama, href: h.href, ikon: h.ikon, neden: "Bu programla ilgili hizmetimiz" };
+// gösterilecek hizmetleri bulur (varsa, birden fazla olabilir — ör. İhracat
+// Destekleri hem İhracat/Turquality danışmanlığına hem Yurt Dışı Şirket
+// Kuruluşu'na bağlı). Katalogdaki tanım sırasına göre TÜM eşleşenleri döner;
+// karşılığı olmayan programlar için boş dizi (hiç kart gösterilmez).
+export function programaBagliHizmetleriBul(programId: string): HizmetOnerisi[] {
+  return HIZMET_KATALOGU.filter((h) => h.aktif && h.ilgiliProgramIdler?.includes(programId)).map((h) => ({
+    id: h.id,
+    baslik: h.baslik,
+    aciklama: h.aciklama,
+    href: h.href,
+    ikon: h.ikon,
+    neden: "Bu programla ilgili hizmetimiz",
+  }));
 }
 
 export const HIZMET_HEDEF_SECENEKLERI = [

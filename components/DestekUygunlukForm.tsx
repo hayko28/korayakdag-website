@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
-import { HIZMET_HEDEF_SECENEKLERI, programaBagliHizmetiBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
+import { HIZMET_HEDEF_SECENEKLERI, programaBagliHizmetleriBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
 
 type Girdi = Record<string, string>;
 
@@ -679,20 +679,31 @@ export default function DestekUygunlukForm() {
                         "Bu program şu an için uygun görünmüyor; yukarıdaki cevaplardan biri değiştiyse (örn. şimdi bir belgeniz varsa) güncelleyip \"Analizi Güncelle\"ye basabilirsiniz. Diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına da göz atabilirsiniz."}
                     </div>
 
-                    {(s.durum === "uygun" || s.durum === "kismen_uygun") && (() => {
-                      const h = programaBagliHizmetiBul(s.programId);
-                      return h ? (
-                        <Link
-                          href={h.href}
-                          className="flex items-center justify-between gap-3 rounded-xl border border-orange-200 bg-orange-50 p-4 transition hover:border-orange-400"
-                        >
-                          <div>
-                            <div className="text-xs font-bold uppercase tracking-wide text-orange-500">💼 Bu programla ilgili hizmetimiz</div>
-                            <div className="text-sm font-bold text-[#071A2F]">{h.ikon} {h.baslik}</div>
-                          </div>
-                          <span className="flex-shrink-0 text-sm font-semibold text-orange-600">İncele →</span>
-                        </Link>
-                      ) : null;
+                    {(() => {
+                      // "uygun_degil" (kesin ret) durumunda hizmet önerisi göstermiyoruz —
+                      // ret genelde bu hizmetlerin çözemeyeceği bir sebepten (şirket türü,
+                      // ölçek vb.). "belirsiz" dahil ediliyor çünkü eksik olan şart (ör.
+                      // marka tescili, DDX raporu) tam da bu hizmetlerin çözdüğü şey olabilir.
+                      if (s.durum === "uygun_degil") return null;
+                      const hizmetler = programaBagliHizmetleriBul(s.programId);
+                      if (hizmetler.length === 0) return null;
+                      return (
+                        <div className="space-y-2">
+                          {hizmetler.map((h) => (
+                            <Link
+                              key={h.id}
+                              href={h.href}
+                              className="flex items-center justify-between gap-3 rounded-xl border border-orange-200 bg-orange-50 p-4 transition hover:border-orange-400"
+                            >
+                              <div>
+                                <div className="text-xs font-bold uppercase tracking-wide text-orange-500">💼 Bu programla ilgili hizmetimiz</div>
+                                <div className="text-sm font-bold text-[#071A2F]">{h.ikon} {h.baslik}</div>
+                              </div>
+                              <span className="flex-shrink-0 text-sm font-semibold text-orange-600">İncele →</span>
+                            </Link>
+                          ))}
+                        </div>
+                      );
                     })()}
                   </div>
                 );
