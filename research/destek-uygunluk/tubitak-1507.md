@@ -1,5 +1,18 @@
 # TÜBİTAK 1507 - KOBİ Ar-Ge Başlangıç Destek Programı
 
+## DÜZELTME (2026-09-17) — üretim/tesis yatırımı kriteri, birincil kaynakla teyit edildi
+
+1507'nin güncel Uygulama Esasları doğrudan okundu; **MADDE 9/2** ve **MADDE 12**, 1501'in
+MADDE 10/2 ve MADDE 13'üyle birebir aynı metni içeriyor (tek fark: 1507'nin oransal destek
+oranı süreye bağlı değil, sabit %40, GYK kararıyla %25'e kadar indirilebilir — 1507'nin
+azami 18 aylık proje süresi kısa olduğu için). Ayrıntılı gerekçe ve düzeltme için bkz.
+`tubitak-1501.md` DÜZELTME notu — aynı mantık, aynı kod değişikliği (`uretimYatirimNiteligi`)
+1507 için de uygulandı.
+
+Kaynak: https://tubitak.gov.tr/sites/default/files/2026-04/1507_Uygulama_Esaslari_77YK_yetki_5.3.2026_tarih_ve_908456_sayili_Baskanlik_Oluru_islenmis_hali.pdf
+
+---
+
 ## Durum
 
 Program yürürlükte. Resmi/tam adı: **"1507-KOBİ Ar-Ge Başlangıç Destek Programı"** (kısaca "KOBİ Ar-Ge Projeleri Destek Programı" veya "KOBİ Ar-Ge Destek Programı" olarak da anılabilir — Uygulama Esasları Madde 59).

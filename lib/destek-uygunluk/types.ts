@@ -57,6 +57,15 @@ export type ArgeFaaliyetiKaynagi = "tamamen_kurulus_ici" | "kismen_disaridan" | 
 
 export type ProjeNiteligi = "yeni_urun" | "mevcut_urun_gelistirme" | "uretim_teknolojisi_gelistirme" | "belirsiz";
 
+// TÜBİTAK 1501 MADDE 10/2 - 13 ve 1507 MADDE 9/2 - 12 (2026 Uygulama Esasları, birincil
+// kaynaktan doğrulandı, 2026-09-17): makine/teçhizat/tesis alımının projedeki rolüne göre
+// üç farklı sonuç var — tek bir "yatırım ağırlıklı mı?" evet/hayır sorusu bunu ayırt edemiyor.
+export type UretimYatirimNiteligi =
+  | "yok" // projede böyle bir alım yok — kritere tabi değil
+  | "arge_hizmetinde" // tasarım/prototip/pilot tesis/test-ölçüm cihazı → tam (%100) desteklenir
+  | "seri_uretimde_de_kullanilacak" // Ar-Ge sonrası seri üretimde de kullanılacak zorunlu ekipman/kalıp → oransal desteklenir
+  | "esas_amac_uretim_kapasitesi"; // projenin esas amacı üretim kapasitesi kurmak, Ar-Ge içeriği yok/zayıf → RET (MADDE 10/2-1501, 9/2-1507)
+
 // TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun 3 ana
 // hedef kategorisi (17 teknoloji alanının üst grubu). Kaynak: kullanıcı
 // tarafından iletilen "Öncelikli Ar-Ge ve Yenilik Konuları" kataloğu (2026-2028).
@@ -146,7 +155,7 @@ export interface DestekBasvuruGirdisi {
   // TÜBİTAK 1501 ve 1507 (ortak Ar-Ge şartları)
   projeKonusu?: string;
   projeNiteligi?: ProjeNiteligi;
-  uretimAltyapisiYatirimiAgirlikliMi?: boolean;
+  uretimYatirimNiteligi?: UretimYatirimNiteligi;
   projeEkibindeLisansMezunuVarMi?: boolean;
   argeFaaliyetiKaynagi?: ArgeFaaliyetiKaynagi;
   talepEdilenProjeButcesiTl?: number;

@@ -1,4 +1,4 @@
-import { DestekBasvuruGirdisi, ProgramSonucuTaslak, SonucDurumu } from "./types";
+import { DestekBasvuruGirdisi, ProgramSonucuTaslak, SonucDurumu, UretimYatirimNiteligi } from "./types";
 import {
   ilinBolgesi,
   imalatSektoruMu,
@@ -285,18 +285,30 @@ function argeEkipRetSinyaliVarMi(g: DestekBasvuruGirdisi): string | null {
   return null;
 }
 
-// Yalnızca TÜBİTAK 1501/1507 için: "sadece tezgah/tesis almak Ar-Ge değildir" —
-// bu iki programda iyi bilinen, birincil kaynaktan doğrulanmış bir TEYDEB hakem ret
-// gerekçesi. 1832 bu fonksiyonu KULLANMAZ (bkz. tubitak1832Degerlendir) çünkü 1832'nin
-// kendi resmi kriteri daha dar: pilot/demonstrasyon ölçekli ekipman alımı ret sebebi
-// DEĞİL, yalnızca projenin ESAS İTİBARİYLE endüstriyel ölçekte kapasite yatırımı olması
-// ret sebebi (MADDE 20.2) — 2026-09-17'de bu ayrım fark edilmeden 1832'ye de bu genel
-// kural uygulanıyordu, meşru pilot ölçekli projeleri yanlış reddediyordu; düzeltildi.
+// Yalnızca TÜBİTAK 1501/1507 için. 1501 MADDE 10/2 ve 1507 MADDE 9/2 (2026 Uygulama
+// Esasları, birincil kaynaktan doğrulandı, 2026-09-17) BİREBİR AYNI metni içeriyor: ret
+// sebebi yalnızca projenin ESAS/AĞIRLIKLI amacının üretim kapasitesi kurmak olması ve
+// Ar-Ge içeriğinin yok/zayıf olması — tesis/tezgah/prototip alımının kendisi değil (bkz.
+// MADDE 13-1501/12-1507: Ar-Ge'ye hizmet eden alımlar %100, seri üretimde de kullanılacak
+// zorunlu ekipman oransal desteklenir). 1832 bu fonksiyonu KULLANMAZ (bkz.
+// tubitak1832Degerlendir), kendi MADDE 20.2 kriterini kullanır.
 function argeRetSinyalleriVarMi(g: DestekBasvuruGirdisi): string | null {
-  if (g.uretimAltyapisiYatirimiAgirlikliMi === true) {
-    return "Proje, üretim/üretim altyapısına yönelik yatırım ağırlıklı (tesis-tezgah alımı) olarak işaretlenmiş — bu tür projeler Ar-Ge içeriği taşımadığı gerekçesiyle doğrudan reddedilebilir.";
+  if (g.uretimYatirimNiteligi === "esas_amac_uretim_kapasitesi") {
+    return "Projenin esas/ağırlıklı amacının üretim kapasitesi kurmak olduğu, Ar-Ge/tasarım/doğrulama içeriğinin yok veya çok zayıf olduğu belirtilmiş — bu tür projeler doğrudan reddedilebilir (1501 MADDE 10/2, 1507 MADDE 9/2).";
   }
   return argeEkipRetSinyaliVarMi(g);
+}
+
+// Aynı MADDE 13-1501/12-1507: üretim/tesis alımı ret sebebi değilse, projedeki rolüne
+// göre destek oranını etkileyen bilgilendirici bir gerekçe döner (ret değil).
+function uretimYatirimGerekcesi(niteligi: UretimYatirimNiteligi | undefined, oransalDestekMetni: string): string | null {
+  if (niteligi === "arge_hizmetinde") {
+    return "Üretim/tesis ile ilgili alımlar tasarım, prototip üretimi, pilot tesis kurulumu veya test/analiz/ölçüm gibi doğrudan Ar-Ge faaliyetine hizmet ediyor — bu kalemler tam (%100) desteklenir.";
+  }
+  if (niteligi === "seri_uretimde_de_kullanilacak") {
+    return `Ar-Ge sonrası seri üretimde de kullanılacak zorunlu alet/teçhizat/kalıp içeriyor — bu kalemler tam değil, oransal desteklenir (${oransalDestekMetni}).`;
+  }
+  return null;
 }
 
 // --- 4) TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı ---
@@ -323,7 +335,10 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", gerekceler);
   }
   if (g.projeEkibindeLisansMezunuVarMi === undefined) eksikAlanlar.push("proje ekibinde lisans mezunu personel durumu");
-  if (g.uretimAltyapisiYatirimiAgirlikliMi === undefined) eksikAlanlar.push("proje niteliği (üretim yatırımı ağırlıklı mı)");
+  if (g.uretimYatirimNiteligi === undefined) eksikAlanlar.push("makine/teçhizat/tesis alımının projedeki rolü");
+
+  const uretimYatirimNotu1501 = uretimYatirimGerekcesi(g.uretimYatirimNiteligi, "proje süresi (ay) × %2, taban %40, bazı bileşenlerde %25'e kadar inebilir");
+  if (uretimYatirimNotu1501) gerekceler.push(uretimYatirimNotu1501);
 
   const oncelikliAlanNotu1501 = oncelikliAlanGerekcesi(g.argeOncelikliAlanKategorisi);
   if (oncelikliAlanNotu1501) gerekceler.push(oncelikliAlanNotu1501);
@@ -395,6 +410,10 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön değerlendirmede ret riski yüksek somut bir sinyal var.", [retSinyali]);
   }
   if (g.projeEkibindeLisansMezunuVarMi === undefined) eksikAlanlar.push("proje ekibinde lisans mezunu personel durumu");
+  if (g.uretimYatirimNiteligi === undefined) eksikAlanlar.push("makine/teçhizat/tesis alımının projedeki rolü");
+
+  const uretimYatirimNotu1507 = uretimYatirimGerekcesi(g.uretimYatirimNiteligi, "sabit %40, GYK kararıyla %25'e kadar indirilebilir");
+  if (uretimYatirimNotu1507) gerekceler.push(uretimYatirimNotu1507);
 
   const oncelikliAlanNotu1507 = oncelikliAlanGerekcesi(g.argeOncelikliAlanKategorisi);
   if (oncelikliAlanNotu1507) gerekceler.push(oncelikliAlanNotu1507);

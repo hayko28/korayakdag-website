@@ -1,5 +1,29 @@
 # TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı
 
+## DÜZELTME (2026-09-17) — üretim/tesis yatırımı kriteri, birincil kaynakla teyit edildi
+
+Koray'ın "bu soru kafa karıştırıcı, uygun olan yatırım hangisiyse onu sormak lazım değil mi"
+sorusu üzerine 1501'in güncel (29/12/2025-77YK, 2026 yürürlük) Uygulama Esasları PDF'i
+(tubitak.gov.tr, birincil kaynak) doğrudan okundu:
+
+- **MADDE 10/2**: Ret sebebi yalnızca "üretim/üretim altyapısına yönelik yatırım AĞIRLIKLI
+  (tesis-tezgah alımı içeren) ve Ar-Ge içeriği bulunmayan/yetersiz" projeler — makine/teçhizat
+  alımının varlığı DEĞİL, projenin esas amacının bu olması ve Ar-Ge içeriğinin yok/zayıf olması.
+- **MADDE 13** (Oransal destek uygulaması): (a) Test/analiz/ölçüm cihazı gibi Ar-Ge altyapısının
+  parçası olan alımlar → %100 desteklenir. (b) Ar-Ge sonrası seri üretimde de kullanılacak
+  zorunlu alet/teçhizat/kalıp → oransal desteklenir (proje süresi (ay) × %2, taban %40, bazı
+  bileşenlerde %25'e kadar inebilir). (c) Prototipe girdi oluşturan malzeme/modül → %100.
+
+Eski ikili "üretim/tesis yatırımı ağırlıklı mı? Evet/Hayır" sorusu, meşru Ar-Ge projelerini
+(pilot tesis, prototip, test cihazı alımı içeren) yanlışlıkla "ret" gösteriyordu. Kod
+güncellendi: `uretimAltyapisiYatirimiAgirlikliMi` (boolean) → `uretimYatirimNiteligi`
+(4 seçenekli: yok / arge_hizmetinde / seri_uretimde_de_kullanilacak /
+esas_amac_uretim_kapasitesi). Yalnızca son seçenek ret sonucu üretir.
+
+Kaynak: https://tubitak.gov.tr/sites/default/files/2026-01/77_YK_1501_islenmis_hali.pdf
+
+---
+
 ## Ek — Öncelikli Ar-Ge ve Yenilik Konuları uyumu (2026-08-20)
 
 Kullanıcının (Koray) ilettiği "TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları" kataloğu (17 teknoloji

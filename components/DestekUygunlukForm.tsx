@@ -40,6 +40,16 @@ const PROJE_NITELIGI_SECENEKLERI = [
   { value: "belirsiz", label: "Henüz netleşmedi" },
 ];
 
+// 1501 MADDE 10/2-13, 1507 MADDE 9/2-12 (2026 Uygulama Esasları, birincil kaynaktan
+// doğrulandı): makine/teçhizat/tesis alımının projedeki rolüne göre üç farklı sonuç var,
+// tek bir "yatırım ağırlıklı mı?" evet/hayır sorusu bunu ayırt edemediği için değiştirildi.
+const URETIM_YATIRIM_NITELIGI_SECENEKLERI = [
+  { value: "yok", label: "Projede makine/teçhizat/tesis alımı yok" },
+  { value: "arge_hizmetinde", label: "Alımlar doğrudan Ar-Ge'ye hizmet ediyor (tasarım, prototip, pilot tesis, test/ölçüm cihazı)" },
+  { value: "seri_uretimde_de_kullanilacak", label: "Ar-Ge sonrası seri üretimde de kullanılacak zorunlu ekipman/kalıp" },
+  { value: "esas_amac_uretim_kapasitesi", label: "Projenin esas amacı üretim kapasitesi kurmak, Ar-Ge içeriği yok/zayıf" },
+];
+
 const ARGE_KAYNAGI_SECENEKLERI = [
   { value: "tamamen_kurulus_ici", label: "Tamamen kuruluş içinde yürütülüyor" },
   { value: "kismen_disaridan", label: "Kısmen dışarıdan hizmet alımı var" },
@@ -318,7 +328,7 @@ export default function DestekUygunlukForm() {
 
       projeKonusu: g.projeKonusu || undefined,
       projeNiteligi: (g.projeNiteligi as DestekBasvuruGirdisi["projeNiteligi"]) || undefined,
-      uretimAltyapisiYatirimiAgirlikliMi: bool("uretimAltyapisiYatirimiAgirlikliMi"),
+      uretimYatirimNiteligi: (g.uretimYatirimNiteligi as DestekBasvuruGirdisi["uretimYatirimNiteligi"]) || undefined,
       projeEkibindeLisansMezunuVarMi: bool("projeEkibindeLisansMezunuVarMi"),
       argeFaaliyetiKaynagi: (g.argeFaaliyetiKaynagi as DestekBasvuruGirdisi["argeFaaliyetiKaynagi"]) || undefined,
       talepEdilenProjeButcesiTl: num("talepEdilenProjeButcesiTl"),
@@ -1009,7 +1019,12 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
                 onChange={(v) => set("projeEndustriyelOlcekYatirimMi", v)}
               />
             ) : (
-              <EvetHayir etiket="Proje üretim/tesis yatırımı ağırlıklı mı?" deger={g.uretimAltyapisiYatirimiAgirlikliMi} onChange={(v) => set("uretimAltyapisiYatirimiAgirlikliMi", v)} />
+              <Secim
+                etiket="Projenizdeki makine/teçhizat/tesis alımlarının rolünü en iyi hangisi tanımlar?"
+                deger={g.uretimYatirimNiteligi}
+                onChange={(v) => set("uretimYatirimNiteligi", v)}
+                secenekler={URETIM_YATIRIM_NITELIGI_SECENEKLERI}
+              />
             )}
             <EvetHayir etiket="Proje ekibinde ilgili alanda lisans mezunu var mı?" deger={g.projeEkibindeLisansMezunuVarMi} onChange={(v) => set("projeEkibindeLisansMezunuVarMi", v)} />
             <Secim etiket="Ar-Ge faaliyeti nasıl yürütülüyor?" deger={g.argeFaaliyetiKaynagi} onChange={(v) => set("argeFaaliyetiKaynagi", v)} secenekler={ARGE_KAYNAGI_SECENEKLERI} />
