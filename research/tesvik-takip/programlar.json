@@ -6,13 +6,13 @@
       "ad": "İstihdamı Koruma Destek Programı (Yeni Esaslar)",
       "kurum": "KOSGEB / Çalışma ve Sosyal Güvenlik Bakanlığı",
       "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi",
+      "sonBasvuruTarihi": "2026-10-31",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
       "ilkTespitTarihi": "2026-08-29",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
-      "sonBildirilenTarih": null,
-      "not": "28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 15'e çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor, başvurular ÇSGB-KOSGEB ortak yönetimindeki yeni bir çevrimiçi portal üzerinden alınacak (açılış tarihi henüz ilan edilmedi). Çalışan başına 3.500 TL/ay destek (tekstil/giyim/deri/mobilya/düğme-fermuar), kredi üst limiti işletme başına 50 milyon TL. Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
+      "sonBildirilenTarih": "2026-10-31",
+      "not": "GÜNCELLEME (2026-09-17): Genişletilen kapsamdaki finansman desteği için başvurular resmen açıldı, 1 Eylül - 31 Ekim 2026 tarihleri arasında alınıyor (daha önce açılış tarihi ilan edilmemişti). 28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 12'ye çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor. Çalışan başına 3.500 TL/ay destek (tekstil/giyim/deri/mobilya/düğme-fermuar); kredi üst limiti KOBİ'ler için 50 milyon TL, büyük işletmeler için 150 milyon TL'ye yükseltildi (önceki limit 50 milyon TL idi). Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
     },
     {
       "id": "kosgeb-tekmer-destek-2025",
@@ -2096,16 +2096,16 @@
     },
     {
       "id": "tubitak-ai-kredi-programi-2026",
-      "ad": "TÜBİTAK AI Kredi Programı",
-      "kurum": "TÜBİTAK",
+      "ad": "Yapay Zekâ Kredi Programı",
+      "kurum": "KOSGEB",
       "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.tubitak.gov.tr/tr/destekler",
+      "sonBasvuruTarihi": "2026-12-31",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi",
       "ilkTespitTarihi": "2026-08-28",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Yeni program - Yapay zeka ve teknoloji startupları için GO Dijital Cüzdan üzerinden kredi ve destek imkanı"
+      "not": "DÜZELTME (2026-09-17): kurum yanlışlıkla TÜBİTAK olarak kaydedilmişti, doğrusu KOSGEB'dir. Teknogirişim Rozeti sahibi teknoloji girişimlerine GO Dijital Cüzdan üzerinden yapay zeka altyapı/araç hizmetleri (GPU/CPU/RAM, veri depolama, AI platformları) için 500 bin - 5 milyon TL arası faizsiz/komisyonsuz kredi; 12 ay ödemesiz dönem sonrası 12 eşit taksit. Başvurular 9 Temmuz - 31 Aralık 2026 arası kosgeb.gov.tr SGB üzerinden alınıyor. Not: TÜBİTAK'ın ayrı bir programı olan 1711 Yapay Zeka Ekosistem Çağrısı ayrı kayıt olarak eklendi (tubitak-1711-yapay-zeka-ekosistem-2026)."
     },
     {
       "id": "kosgeb-gelisim-destek-programi-2026",
@@ -2118,7 +2118,7 @@
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Yeni program - KOBİ ölçeklenme, dijital dönüşüm ve bölgesel kalkınma amaçlı"
+      "not": "BELİRSİZ (2026-09-17): Bu isimde ayrı/bağımsız bir KOSGEB programı, kosgeb.gov.tr'nin güncel aktif destekler listesinde (9 program: Girişimci, Kapasite Geliştirme, Küresel Rekabetçilik, KOBİ Dijital Dönüşüm, YÖNDE, İstihdamı Koruma, Teknoloji Merkezi, SEGEM, Yapay Zekâ Kredisi) doğrulanamadı. Not metnindeki \"ölçeklenme, dijital dönüşüm\" tanımı Kapasite Geliştirme Destek Programı'nın (bkz. kosgeb-kapasite-gelistirme-* kayıtları) tanımıyla örtüşüyor; muhtemelen o programla karıştırılmış/mükerrer bir kayıt. Ayrıca ismen benzer \"KOBİGEL - KOBİ Gelişim Destek Programı\" 15.04.2024'te yürürlükten kaldırılmış durumda (bkz. kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler). Doğrulanamadığı için durum değiştirilmedi, yeni bildirim gönderilmedi."
     },
     {
       "id": "devlet-100-milyar-tl-imalat-programi-2026",
@@ -2145,6 +2145,58 @@
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
       "not": "KOBİ ve büyük ölçekli sermaye şirketlerinin iklim değişikliği, temiz/döngüsel ekonomi, temiz enerji, sürdürülebilir tarım ve akıllı ulaşım alanlarındaki yeşil Ar-Ge/yenilik projelerine önce geri ödemeli, sonuç kriterleri tutturulunca kısmen hibeye dönüşen destek sağlıyor. 2026-2 çağrısında kuruluş bazlı ön kayıt 24 Eylül 2026, son başvuru 28 Eylül 2026 (23.59) olarak duyuruldu; kesin tarih için TÜBİTAK'ın 2026-2 Çağrı Duyurusu PDF'i teyit edilmeli."
+    },
+    {
+      "id": "tubitak-1707-siparis-arge-2026-3",
+      "ad": "1707 - Sipariş Ar-Ge Programı (2026 Yılı 3. Çağrısı)",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-11-13",
+      "kaynakUrl": "https://tubitak.gov.tr/tr/duyuru/1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi",
+      "ilkTespitTarihi": "2026-09-17",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Müşteri kuruluşun gereksinimlerini karşılamak üzere KOBİ'lerin geliştirdiği çözüm önerilerinin Ar-Ge faaliyetine dönüştürülüp ticarileştirilmesini destekliyor (TÜBİTAK + müşteri kuruluş ortak finansmanı). Başvurular PRODİS üzerinden 1 Eylül - 13 Kasım 2026 (23:59) arası alınıyor; bu dönemde sadece \"Sanayide Teknolojik Sıçrama\" ve \"Dijital Liderlik\" konu başlıklı projeler değerlendirmede öncelikli."
+    },
+    {
+      "id": "tubitak-1812-bigg-yatirim-2026-2",
+      "ad": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) - 2026-2 Tohum Öncesi Yatırım Çağrısı",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-09-30",
+      "kaynakUrl": "https://tubitak.gov.tr/tr/duyuru/turkiyenin-ilk-yatirim-tabanli-girisimcilik-destek-programi-olan-bigg-yatirim-programinin-2026-2-cagrisi-acildi",
+      "ilkTespitTarihi": "2026-09-17",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Uygulayıcı kuruluşların yürüttüğü 1. Aşama faaliyetlerini tamamlayıp Mükemmeliyet Mührü alan girişimlere %3 hisse karşılığında 1.350.000 TL yatırım sağlanıyor. Başvurular PRODİS üzerinden 30 Eylül 2026'ya kadar alınıyor - son başvuruya 13 gün kaldığı için yakından takip edilmeli."
+    },
+    {
+      "id": "tubitak-1711-yapay-zeka-ekosistem-2026",
+      "ad": "1711 - Yapay Zekâ Ekosistem 2026 Yılı Çağrısı",
+      "kurum": "TÜBİTAK",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-10-02",
+      "kaynakUrl": "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1711-yapay-zeka-ekosistem-2026-yili-cagrisi-acildi",
+      "ilkTespitTarihi": "2026-09-17",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Üniversite/kamu araştırma merkezi bilgi birikimine dayanan yapay zeka çözümlerinin ürünleştirilmesini destekliyor; başvuran şirketin en az bir teknoloji sağlayıcı firma ve en az bir üniversite/kamu araştırma merkezi ile konsorsiyum kurması şart. 2026 öncelik alanları: Akıllı Üretim Sistemleri, Akıllı Tarım/Gıda/Hayvancılık, Finansal Teknolojiler, İklim Değişikliği ve Sürdürülebilirlik, Akıllı Eğitim Teknolojileri. Başvuru dönemi 15 Haziran - 2 Ekim 2026 (23:59); kuruluş bazlı ön kayıt için son tarih 28 Eylül 2026 (23:59) - ön kayıt yapmayanlar kesin başvuru yapamaz, bu yüzden pratikte fiili son tarih 28 Eylül'e yakın kabul edilmeli."
+    },
+    {
+      "id": "kosgeb-kuresel-rekabetcilik-2026-1-donem",
+      "ad": "Küresel Rekabetçilik Destek Programı - 2026 Yılı 1. Başvuru Dönemi",
+      "kurum": "KOSGEB",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-09-30",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
+      "ilkTespitTarihi": "2026-09-17",
+      "yeniIlanBildirildi": true,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "2026 yılı 1. başvuru dönemi 7 Eylül 2026'da başladı, başvurular 30 Eylül 2026'ya kadar alınıyor. KOBİ'lere yenilikçi ürün geliştirme/ticarileştirme, üretim verimliliği, tedarik zinciri ve uluslararası pazarlara açılma amaçlı 30-75 milyon TL'ye kadar kredi finansmanı sağlanıyor, finansman maliyetinin 20 puanlık kısmı geri ödemesiz. Genel program (yad-kosgeb-kuresel-rekabetcilik-destek-programi) süresiz/dönemsiz olarak ayrıca takip ediliyor; bu kayıt somut son başvuru tarihi olan güncel dönem çağrısını izliyor."
     }
   ]
 }
