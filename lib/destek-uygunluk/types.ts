@@ -196,4 +196,9 @@ export interface DestekBasvuruGirdisi {
   iletisimEposta?: string;
   iletisimTelefon?: string;
   ekAciklama?: string; // serbest metin — kural motoru kullanmaz, yalnızca değerlendirme sırasında bağlam için saklanır
+  // Destek/program kural motoru (bu dosyadaki programlar.ts) bu alanı HİÇ okumaz —
+  // yalnızca hizmet-onerileri.ts'teki danışmanlık hizmeti eşleştirmesi için kullanılır.
+  // Şirket Değerleme, M&A, Yurt Dışı Şirket Kuruluşu gibi hizmetlerin mevcut huni
+  // sorularında (Ar-Ge/ihracat/yatırım durumu vb.) karşılığı olmadığı için eklendi.
+  hizmetHedefleri?: string[];
 }

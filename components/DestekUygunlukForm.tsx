@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
+import { HIZMET_HEDEF_SECENEKLERI, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
 
 type Girdi = Record<string, string>;
 
@@ -178,12 +179,24 @@ export default function DestekUygunlukForm() {
   const [sonuclar, setSonuclar] = useState<ProgramSonucu[] | null>(null);
   const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
+  const [hizmetOnerileri, setHizmetOnerileri] = useState<HizmetOnerisi[]>([]);
   const [hata, setHata] = useState("");
   const [seciliPersonalar, setSeciliPersonalar] = useState<Set<number>>(new Set());
   const [kvkkOnay, setKvkkOnay] = useState(false);
   const [acikSonuclar, setAcikSonuclar] = useState<Set<string>>(new Set());
 
   const set = (key: string, value: string) => setG((prev) => ({ ...prev, [key]: value }));
+
+  // hizmetHedefleri, destek motoru tarafından okunmayan, yalnızca hizmet
+  // eşleştirmede kullanılan çoktan seçmeli bir alan — tek bir "g" anahtarında
+  // virgülle ayrılmış liste olarak tutulur (diğer flat state alanlarıyla aynı desen).
+  const hizmetHedefiSecili = (deger: string) => (g.hizmetHedefleri ?? "").split(",").includes(deger);
+  const hizmetHedefiDegistir = (deger: string) => {
+    const mevcut = new Set((g.hizmetHedefleri ?? "").split(",").filter(Boolean));
+    if (mevcut.has(deger)) mevcut.delete(deger);
+    else mevcut.add(deger);
+    set("hizmetHedefleri", Array.from(mevcut).join(","));
+  };
 
   const personaSec = (index: number) => {
     setSeciliPersonalar((prev) => {
@@ -291,6 +304,7 @@ export default function DestekUygunlukForm() {
       iletisimEposta: g.iletisimEposta || undefined,
       iletisimTelefon: g.iletisimTelefon || undefined,
       ekAciklama: g.ekAciklama || undefined,
+      hizmetHedefleri: g.hizmetHedefleri ? g.hizmetHedefleri.split(",").filter(Boolean) : undefined,
     };
   };
 
@@ -325,6 +339,7 @@ export default function DestekUygunlukForm() {
       if (!res.ok) throw new Error(data.error || "Analiz tamamlanamadı.");
       setSonuclar(data.sonuclar);
       setKatalogOnerileri(data.katalogOnerileri ?? []);
+      setHizmetOnerileri(data.hizmetOnerileri ?? []);
       return data.sonuclar as ProgramSonucu[];
     } catch (err) {
       setHata(err instanceof Error ? err.message : "Bir hata oluştu.");
@@ -378,6 +393,7 @@ export default function DestekUygunlukForm() {
         </div>
 
         <div>
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-orange-500">🎯 Destek &amp; Finansman Fırsatları</p>
           <h2 className="text-lg font-bold text-[#071A2F]">
             Şirketiniz için {sonuclar.length} potansiyel fırsat tespit ettik
           </h2>
@@ -533,21 +549,25 @@ export default function DestekUygunlukForm() {
             </ul>
           </div>
         )}
-        {ilgiliDanismanlikAlanlari(g).length > 0 && (
+        {hizmetOnerileri.length > 0 && (
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Şirketiniz İçin Değerlendirilebilecek Danışmanlık Alanları</h3>
+            <p className="mb-1 text-xs font-bold uppercase tracking-wide text-orange-500">💼 Hizmetler</p>
+            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Şirketiniz İçin Değerlendirilebilecek Hizmetler</h3>
             <p className="mb-4 text-sm text-gray-600">
-              Cevaplarınıza göre, yukarıdaki devlet destekleri dışında bu alanlarda da danışmanlık hizmeti veriyoruz.
+              Verdiğiniz bilgiler ve belirttiğiniz hedefler doğrultusunda aşağıdaki hizmet alanları sizin için
+              değerlendirilebilir. Bunlar destek/teşvik programı değil, danışmanlık hizmetidir; bu yüzden
+              yukarıdaki gibi bir uygunluk skoru taşımaz.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
-              {ilgiliDanismanlikAlanlari(g).map((a) => (
+              {hizmetOnerileri.map((h) => (
                 <Link
-                  key={a.href}
-                  href={a.href}
+                  key={h.id}
+                  href={h.href}
                   className="rounded-xl border border-gray-200 bg-white p-4 transition hover:border-orange-400 hover:shadow-md"
                 >
-                  <div className="text-sm font-bold text-[#071A2F]">{a.baslik} →</div>
-                  <div className="mt-1 text-xs leading-relaxed text-gray-500">{a.aciklama}</div>
+                  <div className="text-sm font-bold text-[#071A2F]">{h.ikon} {h.baslik} →</div>
+                  <div className="mt-1 text-xs leading-relaxed text-gray-500">{h.aciklama}</div>
+                  <div className="mt-2 text-xs font-semibold text-orange-600">🎯 {h.neden}</div>
                 </Link>
               ))}
             </div>
@@ -555,9 +575,10 @@ export default function DestekUygunlukForm() {
         )}
 
         <div className="rounded-2xl border border-gray-200 bg-[#071A2F] p-8 text-center text-white shadow-lg">
-          <p className="mb-4 text-lg font-semibold">Sonuçları birlikte değerlendirip başvuru sürecini konuşalım mı?</p>
+          <p className="mb-2 text-lg font-semibold">Şirketiniz için uygun seçenekleri birlikte değerlendirelim.</p>
+          <p className="mb-4 text-sm text-white/70">Sonuçları birlikte değerlendirip başvuru sürecini konuşalım mı?</p>
           <Link href="/#contact" className="inline-block rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600">
-            İletişime Geç
+            Uzmanla Görüşmek İstiyorum
           </Link>
         </div>
         <button
@@ -663,6 +684,30 @@ export default function DestekUygunlukForm() {
           <Secim zorunlu etiket="Dijital veya yeşil dönüşüm yatırımı" deger={g.donusumDurumu} onChange={(v) => set("donusumDurumu", v)} secenekler={DONUSUM_DURUMU_SECENEKLERI} />
           <Secim zorunlu etiket="Kırsal alanda (tarım, hayvancılık, kırsal turizm vb.) bir yatırımınız var mı?" deger={g.kirsalYatirimDurumu} onChange={(v) => set("kirsalYatirimDurumu", v)} secenekler={KIRSAL_YATIRIM_DURUMU_SECENEKLERI} />
           <Secim etiket="Öncelikli grup" deger={g.oncelikliGrup} onChange={(v) => set("oncelikliGrup", v)} secenekler={ONCELIKLI_GRUP_SECENEKLERI} />
+        </div>
+        <div className="mt-5">
+          <Etiket>Ek hedefleriniz var mı? (opsiyonel, birden fazla seçebilirsiniz)</Etiket>
+          <p className="mb-3 text-xs text-gray-500">
+            Bunlar destek/teşvik uygunluğunu etkilemez, yalnızca sonuç ekranında size uygun danışmanlık
+            hizmetlerini önerebilmemiz için kullanılır.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {HIZMET_HEDEF_SECENEKLERI.map((h) => (
+              <button
+                key={h.value}
+                type="button"
+                aria-pressed={hizmetHedefiSecili(h.value)}
+                onClick={() => hizmetHedefiDegistir(h.value)}
+                className={`rounded-full border px-3.5 py-1.5 text-sm transition ${
+                  hizmetHedefiSecili(h.value)
+                    ? "border-orange-500 bg-orange-50 text-orange-700"
+                    : "border-gray-200 bg-white text-gray-600 hover:border-orange-300"
+                }`}
+              >
+                {h.label}
+              </button>
+            ))}
+          </div>
         </div>
       </Bolum>
 
@@ -934,40 +979,6 @@ function uyarilariAyikla(uyarilar?: string[]): { eksikKriterler: string[]; diger
     ? eksikSatiri.slice(EKSIK_BILGI_ONEKI.length).replace(/\.$/, "").split(",").map((s) => s.trim()).filter(Boolean)
     : [];
   return { eksikKriterler, digerUyarilar };
-}
-
-function ilgiliDanismanlikAlanlari(g: Girdi): { baslik: string; aciklama: string; href: string }[] {
-  const alanlar: { baslik: string; aciklama: string; href: string }[] = [];
-  if (g.ihracatDurumu && g.ihracatDurumu !== "yok") {
-    alanlar.push({
-      baslik: "İhracat Destekleri ve Turquality",
-      aciklama: "Pazara giriş, fuar, e-ihracat ve markalaşma desteklerinde uygunluk analizi ve başvuru süreci.",
-      href: "/ihracat-destekleri-danismanligi",
-    });
-  }
-  if (g.yatirimPlanlaniyorMu === "evet") {
-    alanlar.push({
-      baslik: "Yatırım Teşvik Belgesi",
-      aciklama: "Yatırımınızın hangi destek unsurlarına hak kazandığını birlikte hesaplayalım.",
-      href: "/yatirim-tesvik-belgesi-danismanligi",
-    });
-  }
-  if (g.argeDurumu && g.argeDurumu !== "yok") {
-    alanlar.push({
-      baslik: "TÜBİTAK Ar-Ge Destekleri",
-      aciklama: "Projenize uygun TÜBİTAK çağrısının belirlenmesinden başvuru dosyasına kadar destek.",
-      href: "/tubitak-danismanlik",
-    });
-  }
-  if (g.imalatciMi === "evet" || g.yeniGirisimciMi === "evet" || g.yatirimPlanlaniyorMu === "evet") {
-    alanlar.push({
-      baslik: "KOSGEB Danışmanlığı",
-      aciklama: "Hangi KOSGEB programına uygun olduğunuzdan başvuru dosyanıza kadar uçtan uca destek.",
-      href: "/kosgeb-danismanlik",
-    });
-  }
-  // programId tekrarını önle
-  return alanlar.filter((a, i) => alanlar.findIndex((b) => b.href === a.href) === i);
 }
 
 function AdimGostergesi({ aktifAdim }: { aktifAdim: number }) {
