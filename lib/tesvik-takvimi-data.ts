@@ -70,6 +70,13 @@ const PROGRAM_BLOG_SLUGS: Record<string, string> = {
   "tubitak-1507-kobi-arge-baslangic-1-cagri": "tubitak-1501-1507-ar-ge-destekleri-2026",
   "tubitak-1507-kobi-arge-baslangic-2-cagri": "tubitak-1501-1507-ar-ge-destekleri-2026",
   "istihdami-koruma-destek-programi-2026": "istihdami-koruma-destek-programi-2026",
+  "tubitak-1832-yesil-donusum-2026-2": "tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
+  "tubitak-1707-siparis-arge-2026-3": "tubitak-1707-siparis-arge-destek-programi-2026",
+  "tubitak-1711-yapay-zeka-ekosistem-2026":
+    "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
+  "kosgeb-kuresel-rekabetcilik-2026-1-donem":
+    "kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026",
+  "tubitak-ai-kredi-programi-2026": "kosgeb-yapay-zeka-kredi-programi-2026",
 };
 
 export function getTesvikProgramlari(): TesvikProgram[] {

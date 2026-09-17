@@ -523,6 +523,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
+    title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'ya kadar açık. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla güncel rehber.",
+    category: "TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "turquality-programi-nedir-sartlari-destekleri-2026",
     title: "Turquality Programı Nedir? Şartları, Destekleri ve 2026 Güncel Rehberi",
     excerpt: "Marka Destek Programı ile Turquality arasındaki puanlama esaslı fark (50-80 puan Marka, 80-100 puan Turquality), kabul kriterleri, %50'den %75'e varan destek oranları, somut örneklerle sağladığı fayda, süre/üst limitler ve adım adım başvuru süreciyle 2026 güncel Turquality rehberi.",
