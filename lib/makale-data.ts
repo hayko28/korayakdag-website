@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tam-tasdik-esiginde-500-bin-1-milyon-tl-siniri",
+    title:
+      "Tam Tasdik Eşiğinde 500 Bin - 1 Milyon TL Sınırı: Şirketiniz Farkında mı?",
+    excerpt:
+      "2026'dan itibaren bir şirketin beyannamesindeki tek bir istisna/indirim kalemi 500.000 TL'yi, toplamı ise 1.000.000 TL'yi aştığında YMM tasdik raporu zorunlu hale geliyor. Süresinde imzalanmış bir tam tasdik sözleşmesi yoksa, her kalem için ayrı ayrı sınırlı tasdik raporu almak gerekiyor; bu eşiği yıl ortasında fark etmek zaman ve maliyet kaybına yol açıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "18 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "faizin-dusecegi-varsayimiyla-kurulan-buyume-plani",
     title:
       "Merkez Bankası Faizi Beşinci Kez Sabit Tuttu: Büyüme Planınız Hâlâ Ayakta mı?",
