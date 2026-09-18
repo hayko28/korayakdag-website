@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-kuresel-rekabetcilik-destek-programi-2026",
+    title: "KOSGEB Küresel Rekabetçilik Destek Programı 2026: 30-75 Milyon TL Kredi Desteğine Kimler Başvurabilir?",
+    excerpt: "2026 yılı 1. başvuru dönemi 7-30 Eylül 2026 arası açık. Hızlı büyüyen, ihracat/Ar-Ge artışı gösteren veya yüksek teknolojili KOBİ'lere 30-75 milyon TL kredi limiti ve 20 puanlık geri ödemesiz finansman desteği sunan programın başvuru kriterleri, destek tutarları ve süreciyle güncel rehber.",
+    category: "KOSGEB • KÜRESEL REKABETÇİLİK • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1699588999949-e25959a59550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi",
     title: "KOSGEB KOBİGEL - KOBİ Gelişim Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
     excerpt: "KOBİ'lerin proje teklif çağrıları üzerinden rekabet gücünü ve katma değerini artırmasını hedefleyen KOBİGEL - KOBİ Gelişim Destek Programı 15 Nisan 2024'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından benzer bir gelişim projesi olan KOBİ'lerin bakabileceği güncel seçenekler.",
@@ -228,7 +237,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
     title: "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?",
-    excerpt: "Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı, desteklenen giderler ve 18 Eylül 2026 son başvuru tarihiyle güncel rehber.",
+    excerpt: "Güncelleme: TÜBİTAK başvuru süresini uzattı. Ön kayıt son tarihi 28 Eylül, kesin başvuru son tarihi 2 Ekim 2026 (23:59). Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu bu çağrıda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve desteklenen giderlerle güncel rehber.",
     category: "TÜBİTAK • YAPAY ZEKA • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -498,7 +507,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "istihdami-koruma-destek-programi-2026",
     title: "İstihdamı Koruma Destek Programı 2026: Yeni Esaslar, Destek Tutarları ve Örnek Hesaplamalar",
-    excerpt: "Güncelleme (28 Ağustos 2026): kredi desteği 15 puana çıkarıldı, kredi limiti formülle hesaplanıyor, yatırım teşvik belgeli büyük işletmeler için özel formül geldi. Çalışan başına 3.500 TL destek, 50 milyon TL'ye kadar kredi ve gerçekçi şirket örnekleriyle güncel rehber.",
+    excerpt: "Güncelleme: 2026-2 döneminde (1 Eylül-31 Ekim 2026 başvuru) sadece finansman desteği açık, kredi destek puanı 10'dan 12'ye çıkarıldı; performans desteği (3.500 TL) bu dönemde yok. KOBİ için 50 milyon TL, büyük işletmeler için 150 milyon TL'ye kadar kredi limiti ve gerçekçi şirket örnekleriyle güncel rehber.",
     category: "KOSGEB • İSTİHDAM DESTEĞİ • 2026",
     date: "2026",
     readTime: "12 Dakika",
