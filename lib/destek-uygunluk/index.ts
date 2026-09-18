@@ -2,7 +2,6 @@ import { DestekBasvuruGirdisi, ProgramSonucu, ProgramSonucuTaslak, SonucDurumu }
 import {
   kosgebIsGelistirmeDegerlendir,
   kosgebKapasiteGelistirmeDegerlendir,
-  kosgebArgeUrgeInovasyonDegerlendir,
   kosgebDijitalDonusumDegerlendir,
   kosgebYesilSanayiDegerlendir,
   kosgebStratejikUrunDegerlendir,
@@ -70,7 +69,6 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(kosgebKureselRekabetcilikDegerlendir(girdi));
   }
   if (girdi.argeDurumu !== "yok") {
-    taslaklar.push(kosgebArgeUrgeInovasyonDegerlendir(girdi));
     taslaklar.push(tubitak1507Degerlendir(girdi));
     taslaklar.push(tubitak1707Degerlendir(girdi));
     taslaklar.push(argeMerkeziStatusuDegerlendir(girdi));

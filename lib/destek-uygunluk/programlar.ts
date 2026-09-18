@@ -204,6 +204,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     "YODA raporunun (ve dijital dönüşüm track'inde dijital dönüşüm/olgunluk değerlendirme raporunun) başvuru tarihinden geriye en fazla 1 yıl içinde alınmış olması gerekiyor — bu ön analizde raporun tarihi sorulmuyor, başvuru öncesi kontrol edilmelidir.",
     "MADDE 18 uyarınca Kurul her projeyi 100 üzerinden puanlar (50 altı ret), 50 ve üzeri olanlar sınırlı kontenjan için rekabetçi bir sıralamaya tabi tutulur — ön koşulların sağlanması başvuru hakkı verir, kesin onay anlamına gelmez.",
     "Uygulama Esasları sık güncelleniyor (bu program son 4 ayda 2 kez revize edildi); başvuru anında KOSGEB'in güncel metniyle teyit edilmelidir.",
+    "Program dönemsel çağrılarla yürütülüyor; 3. başvuru dönemi (22 Ağustos - 15 Eylül 2026) kapanmış, yeni dönem tarihi henüz KOSGEB tarafından ilan edilmemiş — güncel başvuru penceresinin açık olup olmadığı kosgeb.gov.tr'den kontrol edilmelidir.",
   ];
   if (buyumeUyari) uyarilar.push(buyumeUyari);
 
@@ -504,72 +505,6 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   );
 }
 
-// --- 6) KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı ---
-// Kaynak: research/destek-uygunluk/kosgeb-arge-urge-inovasyon.md (blog: kosgeb-arge-urge-inovasyon-destek-programi-2026)
-export function kosgebArgeUrgeInovasyonDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
-  const meta = { programId: "kosgeb-arge-urge-inovasyon", programAdi: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı", kurum: "KOSGEB" };
-  const gerekceler: string[] = [];
-  const eksikAlanlar: string[] = [];
-
-  if (g.sirketTuru === "dernek_vakif_kooperatif_birlik_adi_ortaklik") {
-    gerekceler.push("Bu program, iş fikrine dayalı gerçek kişi girişimcilere veya KOBİ ölçeğindeki sermaye şirketlerine açık — dernek/vakıf/kooperatif/birlik/adi ortaklık statüsü kapsam dışı.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kuruluş türü kapsam dışı.", gerekceler);
-  }
-
-  if (g.sirketTuru !== undefined && g.sirketTuru !== "sahis") {
-    const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
-    const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
-    if (olcek === "kobi_disi") {
-      gerekceler.push("Şirket kurulmuşsa bu program yalnızca KOBİ ölçeğindeki (mikro/küçük/orta) sermaye şirketlerine açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler);
-    }
-    if (olcek === null) {
-      if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-      if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
-    }
-  }
-
-  // Girişimci (henüz şirketi olmayan veya şahıs işletmesi) için "ömür boyu en fazla
-  // 1 defa" kuralı — KOBİ'ler için sınırsız olduğundan yalnızca bu grupta soruluyor/kontrol ediliyor.
-  const girisimciKapsaminda = g.sirketTuru === undefined || g.sirketTuru === "sahis";
-  if (girisimciKapsaminda && g.argeUrgeGirisimciDahaOnceKullanildiMi === true) {
-    return sonuc(
-      meta.programId, meta.programAdi, meta.kurum, "uygun_degil",
-      "Girişimci olarak bu destek hakkı daha önce kullanılmış.",
-      ["Ar-Ge ve İnovasyon Projesi kapsamında girişimciler bu destekten ömür boyu en fazla 1 kez yararlanabiliyor — bu hak daha önce kullanılmış."]
-    );
-  }
-  if (girisimciKapsaminda && g.argeUrgeGirisimciDahaOnceKullanildiMi === undefined) {
-    eksikAlanlar.push("girişimci olarak bu destekten daha önce yararlanılıp yararlanılmadığı");
-  }
-
-  gerekceler.push("Henüz şirketi olmayan, bir iş fikrine dayalı 'Yeni Girişimci' olarak (ömür boyu en fazla 1 defa) ya da kurulu bir KOBİ olarak (Ar-Ge/İnovasyon projesinde sınırsız, Ür-Ge projesinde en fazla 3 kez) başvurulabilir; aynı anda yalnızca 1 proje desteklenir.");
-  gerekceler.push("Ar-Ge Merkezi statüsünün aksine asgari personel sayısı, teknopark kaydı veya ciro şartı aranmaz.");
-
-  const uyarilar = [
-    "Destek üst limiti ve oranları kalem bazında (nitelikli personel, makine-teçhizat, sınai mülkiyet vb.) değişir ve güncel çağrıya göre farklılık gösterebilir — bu ön analizde tek bir rakam varsayılmıyor, kesin tutar KOSGEB'in güncel Uygulama Esasları ile teyit edilmelidir.",
-    "Ür-Ge (Ürün Geliştirme) kapsamının, ürünün daha önce desteklenmiş bir Ar-Ge/yenilik projesi, patent, doktora çalışması veya TÜR Deneyim Belgesi gibi bir kaynaktan doğmuş olmasını gerektirdiği görülüyor, ancak bu şart bu oturumda birincil kaynaktan tam teyit edilemedi — başvuru öncesi KOSGEB ile netleştirilmelidir.",
-    "Aynı gider kalemi için Yatırım Teşvik Belgesi gibi başka bir kurumdan eşzamanlı destek alınamaz.",
-    "Başvurular KOBİ Bilgi Sistemi (KBS) üzerinden yılın herhangi bir tarihinde yapılabilir; nihai kabul Değerlendirme ve Karar Kurulu'na aittir — bu yüzden bu araç kesin \"uygun\" değil, en fazla \"ön koşulları sağlıyor\" sonucu verir.",
-  ];
-
-  if (eksikAlanlar.length > 0) {
-    return sonuc(
-      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
-      "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
-      gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
-    );
-  }
-
-  return sonuc(
-    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
-    "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul Değerlendirme ve Karar Kurulu'na aittir.",
-    gerekceler,
-    uyarilar
-  );
-}
-
 // --- 7) Ticaret Bakanlığı İhracat Destekleri (5973 / 10962 sayılı Kararlar) ---
 // Kaynak: research/destek-uygunluk/ticaret-bakanligi-ihracat-destekleri.md (blog: ticaret-bakanligi-ihracat-destekleri-2026)
 // Kapsam çok geniş (10'un üzerinde alt destek kalemi) olduğundan bu değerlendirme
@@ -628,6 +563,12 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
       gerekceler.push("Markanız zaten tescilli — yurt dışında da tescil ettirmeyi planlıyorsanız Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar Md.4) bu kapsamda değerlendirilebilir.");
     } else if (g.markaTesciliVarMi === false) {
       gerekceler.push("Yurt Dışı Marka Tescil Desteği, yurt içinde zaten tescilli bir markanın yurt dışına taşınmasını kapsar; henüz tescilli bir markanız olmadığı belirtilmiş — önce yurt içi marka tescilinin alınması gerekir.");
+    }
+    if (g.kureselTedarikZinciriVarMi === true) {
+      gerekceler.push("Büyük bir küresel tedarik zincirine girmeye çalışıyor veya bunu planlıyorsunuz — Küresel Tedarik Zinciri Yetkinlik Projesi Desteği (5973 sayılı Karar Md.10) bu kapsamda değerlendirilebilir.");
+    }
+    if (g.eIhracatVarMi === true) {
+      gerekceler.push("Yurt dışı pazaryerleri veya kendi e-ticaret siteniz üzerinden satış yapıyor veya yapmayı planlıyorsunuz — E-İhracat Destek Programı bu kapsamda değerlendirilebilir (5973'ten bağımsız, ayrı bir mevzuata, 5986 sayılı E-İhracat Destekleri Hakkında Karar'a dayanır).");
     }
   }
 
@@ -1713,6 +1654,7 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
   const eksikAlanlar: string[] = [];
   const uyarilar = [
     "2026-2 dönemi başvuruları 1 Eylül - 31 Ekim 2026 tarihleri arasında açık; bu tarihten sonra bu dönem için yeni başvuru alınmaz.",
+    "Program dönemsel yürütülüyor: 2026-2 dönemi kapandıktan sonra KOSGEB yeni bir dönem (2026-3 vb.) açabilir, farklı kurallarla (örn. performans desteğinin geri gelmesi/kaldırılması, farklı referans-koruma dönemi tarihleri) — bu analiz yalnızca 2026-2 dönemi kurallarını yansıtıyor, yeni dönem açıldığında güncel duyuru kontrol edilmelidir.",
     "Bu dönemde yalnızca finansman desteği (kredi faiz/kâr payının 12 puana kadarki kısmı, geri ödemesiz) var — performans desteği (çalışan başına aylık 3.500 TL) bu dönemde uygulanmıyor.",
     "Kredi limiti, Ocak-Haziran 2026 dönemine ait aylık ortalama prime esas kazanç toplamına göre hesaplanır; KOBİ'lerde üst limit 50.000.000 TL, büyük işletmelerde 150.000.000 TL.",
   ];

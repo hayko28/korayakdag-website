@@ -65,10 +65,16 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ilgiliProgramIdler: [
       "kosgeb-is-gelistirme",
       "kosgeb-kapasite-gelistirme",
-      "kosgeb-arge-urge-inovasyon",
       "kosgeb-dijital-donusum",
       "kosgeb-yesil-sanayi",
       "kosgeb-tekmer",
+      // 2026-09-18 denetimi: bu 4 program daha önce hiçbir hizmet kartına bağlı değildi —
+      // hepsi zaten var olan /kosgeb-danismanlik sayfasının kapsamına giriyor.
+      "kosgeb-stratejik-urun",
+      "kosgeb-kuresel-rekabetcilik",
+      "kosgeb-yonde",
+      "istihdami-koruma-destek-programi",
+      "tubitak-1812",
     ],
   },
   {
@@ -79,7 +85,10 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🔬",
     aktif: true,
     tetikle: (g) => (g.argeDurumu && g.argeDurumu !== "yok" ? "Ar-Ge faaliyetiniz nedeniyle" : null),
-    ilgiliProgramIdler: ["tubitak-1501", "tubitak-1507", "tubitak-1832"],
+    // 2026-09-18 denetimi: 1707/1831 hiçbir hizmet kartına bağlı değildi. 1812 (BiGG,
+    // girişimci odaklı) kasıtlı olarak buraya değil kosgeb-danismanlik'e eklendi —
+    // hedef kitlesi (yeni girişimci) o karta daha yakın.
+    ilgiliProgramIdler: ["tubitak-1501", "tubitak-1507", "tubitak-1832", "tubitak-1707", "tubitak-1831"],
   },
   {
     id: "yatirim-tesvik-danismanligi",

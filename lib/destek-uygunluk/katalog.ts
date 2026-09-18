@@ -16,7 +16,6 @@ type KatalogProgram = {
 const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "kapasite geliştirme",
   "girişimci destek",
-  "ar-ge, ür-ge",
   "dijital ve yeşil dönüşüm",
   "kobi dijital dönüşüm",
   "yeşil sanayi",

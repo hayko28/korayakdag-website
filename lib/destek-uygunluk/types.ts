@@ -199,10 +199,6 @@ export interface DestekBasvuruGirdisi {
   oncelikliGrup?: OncelikliGrup;
   isGelistirmeDestegiDahaOnceKullanildiMi?: boolean;
 
-  // KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı — Ar-Ge/İnovasyon Projesi'nde
-  // girişimciler ömür boyu en fazla 1 kez yararlanabilir (KOBİ'ler için sınırsız).
-  argeUrgeGirisimciDahaOnceKullanildiMi?: boolean;
-
   // KOSGEB Kapasite Geliştirme Destek Programı
   kapasiteProgramiDahaOnceKullanildiMi?: boolean;
   // Program iki ayrı track sunuyor: genel ölçek büyütme ve dijital dönüşüm yatırımı.
@@ -263,6 +259,8 @@ export interface DestekBasvuruGirdisi {
   yurtDisindaReklamTanitimVarMi?: boolean; // Tanıtım Desteği — üyelik şartı yok
   pazaraGirisBelgesiIhtiyaciVarMi?: boolean; // Pazara Giriş Belgesi Desteği (Md.3) — zorunlu sertifika/test/ruhsat
   markaTesciliVarMi?: boolean; // Yurt Dışı Marka Tescil Desteği (Md.4) yurt içi tescilli marka şartına bağlı — yoksa marka danışmanlığı cross-sell tetiklenir
+  kureselTedarikZinciriVarMi?: boolean; // Küresel Tedarik Zinciri Yetkinlik Projesi Desteği (Md.10)
+  eIhracatVarMi?: boolean; // E-İhracat Destek Programı — 5986 sayılı Karar (5973'ten ayrı mevzuat), pazaryeri/e-ticaret sitesi satışı
 
   // İstihdamı Koruma Destek Programı — 2026-2 dönemi (1 Eylül-31 Ekim 2026 başvuru,
   // KOSGEB/Sanayi ve Teknoloji Bakanlığı ortak yürütür). Sadece finansman desteği açık;

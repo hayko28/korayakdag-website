@@ -1,5 +1,15 @@
 # KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı (evaluator kaynağı)
 
+## KALDIRILDI (2026-09-18) — PROGRAM RESMEN KAPANMIŞ, evaluator siteden çıkarıldı
+
+KOSGEB'in resmi "Yürürlükten Kaldırılan Destekler" sayfası (kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler,
+iki bağımsız WebFetch sorgusuyla doğrulandı) bu programı birebir isimle listeliyor:
+"Bu program 15.04.2024 tarihinde başvuruya kapatılmıştır." Güncel KOSGEB 9 programlık aktif
+destekler listesinde de (kosgeb.gov.tr/site/tr/genel/destekler) yer almıyor, yerine gelen bir
+program da belirtilmemiş. Tıpkı KOBİGEL/TeknoYatırım/İş Birliği-Güçbirliği kalıbında olduğu gibi
+— `kosgebArgeUrgeInovasyonDegerlendir` fonksiyonu, ilgili type alanları, form sorusu ve hizmet
+kartı bağlantıları koddan kaldırıldı. Bu dosya yalnızca tarihsel kayıt olarak tutuluyor.
+
 ## DÜZELTME (2026-09-17) — DÜŞÜK-ORTA GÜVEN, kısmen düzeltildi
 
 Resmi Uygulama Esasları PDF'leri (kosgeb.gov.tr) görüntü/sıkıştırılmış formatta geldiği için bu

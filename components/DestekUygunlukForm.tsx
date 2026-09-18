@@ -377,8 +377,6 @@ export default function DestekUygunlukForm() {
       oncelikliGrup: (g.oncelikliGrup as DestekBasvuruGirdisi["oncelikliGrup"]) || undefined,
       isGelistirmeDestegiDahaOnceKullanildiMi: bool("isGelistirmeDestegiDahaOnceKullanildiMi"),
 
-      argeUrgeGirisimciDahaOnceKullanildiMi: bool("argeUrgeGirisimciDahaOnceKullanildiMi"),
-
       kapasiteProgramiDahaOnceKullanildiMi: bool("kapasiteProgramiDahaOnceKullanildiMi"),
       kapasiteDijitalDonusumTrackiMi: bool("kapasiteDijitalDonusumTrackiMi"),
       sanayiSicilBelgesiVarMi: bool("sanayiSicilBelgesiVarMi"),
@@ -1152,24 +1150,6 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           </div>
         </>
       );
-    case "kosgeb-arge-urge-inovasyon":
-      return (
-        <div>
-          <KobiOlcegiAlanlari g={g} set={set} />
-          <div className="mt-5 grid gap-5 sm:grid-cols-2">
-            <EvetHayir
-              etiket="Girişimci olarak bu destekten daha önce yararlandınız mı?"
-              deger={g.argeUrgeGirisimciDahaOnceKullanildiMi}
-              onChange={(v) => set("argeUrgeGirisimciDahaOnceKullanildiMi", v)}
-            />
-          </div>
-          <p className="mt-3 text-sm text-gray-500">
-            Henüz şirketiniz kurulmadıysa veya şahıs işletmesiyseniz bu soru sizi
-            ilgilendirir (girişimci hakkı ömür boyu 1 kez); kurulu bir KOBİ (A.Ş./Ltd.) iseniz
-            sınır yoktur, cevabınız sonucu etkilemez.
-          </p>
-        </div>
-      );
     case "kosgeb-dijital-donusum":
       return (
         <div>
@@ -1295,6 +1275,8 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
                 <EvetHayir etiket="Yurt dışında reklam/tanıtım faaliyeti yürütüyor musunuz veya yürütmeyi planlıyor musunuz?" deger={g.yurtDisindaReklamTanitimVarMi} onChange={(v) => set("yurtDisindaReklamTanitimVarMi", v)} />
                 <EvetHayir etiket="Ürününüz için yurt dışında zorunlu bir sertifika/test/ruhsat alıyor musunuz veya almayı planlıyor musunuz?" deger={g.pazaraGirisBelgesiIhtiyaciVarMi} onChange={(v) => set("pazaraGirisBelgesiIhtiyaciVarMi", v)} />
                 <EvetHayir etiket="Tescilli bir markanız var mı?" deger={g.markaTesciliVarMi} onChange={(v) => set("markaTesciliVarMi", v)} />
+                <EvetHayir etiket="Büyük bir küresel tedarik zincirine girmeye çalışıyor musunuz veya bunu planlıyor musunuz?" deger={g.kureselTedarikZinciriVarMi} onChange={(v) => set("kureselTedarikZinciriVarMi", v)} />
+                <EvetHayir etiket="Yurt dışı pazaryerleri veya kendi e-ticaret siteniz üzerinden satış yapıyor musunuz veya yapmayı planlıyor musunuz?" deger={g.eIhracatVarMi} onChange={(v) => set("eIhracatVarMi", v)} />
               </div>
             </>
           )}
