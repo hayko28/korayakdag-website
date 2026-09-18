@@ -11,6 +11,16 @@ export function kobiOlceguHesapla(calisanSayisi?: number, maliUst?: number): Kob
   return "kobi_disi";
 }
 
+// Yönetmelik MADDE 5: "yıllık net satış hasılatı veya mali bilançosundan HERHANGİ
+// BİRİ" eşiği aşmıyorsa KOBİ sayılır — bu bir VEYA testi. İkisi de biliniyorsa
+// işletmenin lehine olan (düşük) değer esas alınmalı; yalnızca biri biliniyorsa o
+// kullanılır. (Önceden yanlışlıkla büyük olan alınıyordu, bu bazı gerçek KOBİ'leri
+// haksız yere "KOBİ dışı" gösterebiliyordu.)
+export function kobiMaliUstDeger(ciro?: number, bilanco?: number): number | undefined {
+  if (ciro !== undefined && bilanco !== undefined) return Math.min(ciro, bilanco);
+  return ciro ?? bilanco;
+}
+
 export function isletmeYasiYil(kurulusTarihi?: string): number | null {
   if (!kurulusTarihi) return null;
   const kurulus = new Date(kurulusTarihi);
