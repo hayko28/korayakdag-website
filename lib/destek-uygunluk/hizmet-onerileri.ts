@@ -52,7 +52,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
   {
     id: "kosgeb-danismanlik",
     baslik: "KOSGEB Danışmanlığı",
-    aciklama: "Hangi KOSGEB programına uygun olduğunuzdan başvuru dosyanıza kadar uçtan uca destek.",
+    aciklama: "Hangi KOSGEB programına uygun olduğunuzdan başvuru dosyanıza kadar uçtan uca destek; dijital dönüşüm/olgunluk değerlendirme (DDX) raporu hazırlama dahil.",
     href: "/kosgeb-danismanlik",
     ikon: "🏭",
     aktif: true,
@@ -68,6 +68,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
       "kosgeb-arge-urge-inovasyon",
       "kosgeb-dijital-donusum",
       "kosgeb-yesil-sanayi",
+      "kosgeb-tekmer",
     ],
   },
   {
@@ -98,6 +99,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🧪",
     aktif: true,
     tetikle: (g) => (g.argeDurumu === "planliyorum" || g.argeDurumu === "var_kucuk" ? "Ar-Ge faaliyetiniz nedeniyle" : null),
+    ilgiliProgramIdler: ["teknopark-statusu"],
   },
   {
     id: "arge-merkezi-danismanligi",
@@ -107,6 +109,7 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ikon: "🧬",
     aktif: true,
     tetikle: (g) => (g.argeDurumu === "var_kurumsal" ? "Kurumsallaşmış Ar-Ge faaliyetiniz nedeniyle" : null),
+    ilgiliProgramIdler: ["arge-merkezi-statusu", "tasarim-merkezi-statusu"],
   },
   {
     id: "sirket-degerleme-danismanligi",
