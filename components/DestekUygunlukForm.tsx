@@ -917,9 +917,20 @@ export default function DestekUygunlukForm() {
                   <p className="mt-1.5 text-xs text-gray-500">→ {naceAciklamaBul(g.naceKodu)}</p>
                 )}
               </div>
-              <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
-              <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
-              <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
+              <CalisanSayisiAlani deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
+              <div>
+                <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+                <p className="mt-1.5 text-xs text-gray-500">
+                  Son kapanmış mali yılınızın rakamı; yıldan yıla değişiyorsa yaklaşık girmeniz yeterli.
+                </p>
+              </div>
+              <div>
+                <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
+                <p className="mt-1.5 text-xs text-gray-500">
+                  Bilanço toplam aktifiniz. KOBİ ölçeğinde ciro veya bilançodan hangisi eşiğin altındaysa o esas
+                  alınır, ikisini de bilmiyorsanız sadece ciroyu girmeniz yeterli.
+                </p>
+              </div>
               <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
             </div>
           </Bolum>
@@ -1078,7 +1089,7 @@ function KobiOlcegiAlanlari({ g, set }: { g: Girdi; set: (k: string, v: string) 
           ✓ Çalışan sayınız: <strong>{g.calisanSayisi}</strong> — kriter açısından değerlendirildi.
         </div>
       ) : (
-        <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
+        <CalisanSayisiAlani deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
       )}
       {ciroDolu ? (
         <div className="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
@@ -1504,6 +1515,48 @@ function Sayi({ etiket, deger, onChange }: { etiket: string; deger?: string; onC
       <Etiket>{etiket}</Etiket>
       <input type="number" value={deger ?? ""} onChange={(e) => onChange(e.target.value)} className={girdiSinifi} />
     </label>
+  );
+}
+
+// Çalışan sayısı, KOBİ ölçeğini belirleyen resmi eşiklerden (10/50/250) hangi
+// tarafta olduğunuzu anlamak için soruluyor — tam sayı bilmiyorsanız aralık
+// seçmeniz yeterli, alttaki kutuya da doğrudan tam sayı girebilirsiniz.
+const CALISAN_ARALIKLARI = [
+  { etiket: "1-9 kişi", deger: "5" },
+  { etiket: "10-49 kişi", deger: "25" },
+  { etiket: "50-249 kişi", deger: "100" },
+  { etiket: "250+ kişi", deger: "300" },
+];
+
+function CalisanSayisiAlani({ deger, onChange }: { deger?: string; onChange: (v: string) => void }) {
+  return (
+    <div>
+      <Etiket>Çalışan Sayısı</Etiket>
+      <div className="mb-2 flex flex-wrap gap-2">
+        {CALISAN_ARALIKLARI.map((a) => (
+          <button
+            key={a.etiket}
+            type="button"
+            onClick={() => onChange(a.deger)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+              deger === a.deger
+                ? "border-orange-500 bg-orange-50 text-orange-700"
+                : "border-gray-200 bg-white text-gray-600 hover:border-orange-300"
+            }`}
+          >
+            {a.etiket}
+          </button>
+        ))}
+      </div>
+      <input
+        type="number"
+        value={deger ?? ""}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder="Tam sayıyı biliyorsanız buraya girebilirsiniz"
+        className={girdiSinifi}
+      />
+      <p className="mt-1.5 text-xs text-gray-500">Yalnızca 10/50/250 eşiklerinin hangi tarafında olduğunuz önemli — yaklaşık olması yeterli.</p>
+    </div>
   );
 }
 
