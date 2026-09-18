@@ -603,6 +603,27 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
     gerekceler.push("Hem fiziksel mal hem hizmet ihracatı belirtilmiş — gelir kalemleri kendi niteliğine göre ayrı ayrı, sırasıyla 5973 ve 10962 sayılı Kararlar kapsamında değerlendirilmelidir.");
   }
 
+  // 2026-09-18: Koray'ın önerisiyle eklendi — 5973 sayılı Karar'ın en sık kullanılan 3 alt
+  // kalemi (Fuar, Birim Kira, Tanıtım) artık ayrı ayrı soruluyor; hangisi "yapıyorum" ya da
+  // "yapacağım" ise o kaleme özel, doğru gerekçe gösteriliyor (genel tek cümle yerine).
+  // Yalnızca fiziksel mal ihracatında geçerli (5973'ün kapsamı); bu üç soru bilgilendirici,
+  // eksik bilgi olarak sayılmıyor, çünkü hiçbiri genel uygunluğu değiştirmiyor.
+  if (g.ihracatTuru === "fiziksel_mal" || g.ihracatTuru === "her_ikisi") {
+    if (g.fuarKatilimiVarMi === true) {
+      gerekceler.push(
+        g.ihracatciBirligiUyesiMi === false
+          ? "Yurt içi/dışı fuarlara katılıyor veya katılmayı planlıyorsunuz — Fuar Desteği (uçak/konaklama dahil) bu kapsamda değerlendirilebilir, ANCAK bu kalem İhracatçı Birliği üyeliği şartına tabi ve üye olmadığınız belirtilmiş."
+          : "Yurt içi/dışı fuarlara katılıyor veya katılmayı planlıyorsunuz — Fuar Desteği (uçak/konaklama dahil) bu kapsamda değerlendirilebilir."
+      );
+    }
+    if (g.yurtDisindaBirimDepoKiralamaVarMi === true) {
+      gerekceler.push("Yurt dışında birim/depo kiralıyor veya kiralamayı planlıyorsunuz — Birim Kira Desteği bu kapsamda değerlendirilebilir (bu kalemde İhracatçı Birliği üyeliği aranmıyor).");
+    }
+    if (g.yurtDisindaReklamTanitimVarMi === true) {
+      gerekceler.push("Yurt dışında reklam/tanıtım faaliyeti yürütüyor veya yürütmeyi planlıyorsunuz — Tanıtım Desteği bu kapsamda değerlendirilebilir (bu kalemde İhracatçı Birliği üyeliği aranmıyor).");
+    }
+  }
+
   // 2026-09-18 DÜZELTME: birincil kaynaktan (5973 ve 10962 sayılı Kararların tam metni)
   // doğrulandı — İhracatçı Birliği üyeliği bu destek grubunun "neredeyse tamamı" için değil,
   // yalnızca FUAR destekleri (5973 MADDE 7-8, "yurt içi/dışı fuar katılımcısı" tanımı) ve

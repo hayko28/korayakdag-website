@@ -415,6 +415,9 @@ export default function DestekUygunlukForm() {
       ihracatTuru: (g.ihracatTuru as DestekBasvuruGirdisi["ihracatTuru"]) || undefined,
       ihracatciBirligiUyesiMi: bool("ihracatciBirligiUyesiMi"),
       dysKayitliMi: bool("dysKayitliMi"),
+      fuarKatilimiVarMi: bool("fuarKatilimiVarMi"),
+      yurtDisindaBirimDepoKiralamaVarMi: bool("yurtDisindaBirimDepoKiralamaVarMi"),
+      yurtDisindaReklamTanitimVarMi: bool("yurtDisindaReklamTanitimVarMi"),
 
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
       maliKarneVarMi: bool("maliKarneVarMi"),
@@ -1259,10 +1262,22 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
       );
     case "ticaret-bakanligi-ihracat-destekleri":
       return (
-        <div className="grid gap-5 sm:grid-cols-2">
-          <Secim etiket="İhracat türünüz" deger={g.ihracatTuru} onChange={(v) => set("ihracatTuru", v)} secenekler={IHRACAT_TURU_SECENEKLERI} />
-          <EvetHayir etiket="İlgili İhracatçı Birliği'ne üye misiniz?" deger={g.ihracatciBirligiUyesiMi} onChange={(v) => set("ihracatciBirligiUyesiMi", v)} />
-          <EvetHayir etiket="Destek Yönetim Sistemi (DYS)'ne kayıtlı mısınız?" deger={g.dysKayitliMi} onChange={(v) => set("dysKayitliMi", v)} />
+        <div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <Secim etiket="İhracat türünüz" deger={g.ihracatTuru} onChange={(v) => set("ihracatTuru", v)} secenekler={IHRACAT_TURU_SECENEKLERI} />
+            <EvetHayir etiket="İlgili İhracatçı Birliği'ne üye misiniz?" deger={g.ihracatciBirligiUyesiMi} onChange={(v) => set("ihracatciBirligiUyesiMi", v)} />
+            <EvetHayir etiket="Destek Yönetim Sistemi (DYS)'ne kayıtlı mısınız?" deger={g.dysKayitliMi} onChange={(v) => set("dysKayitliMi", v)} />
+          </div>
+          {(g.ihracatTuru === "fiziksel_mal" || g.ihracatTuru === "her_ikisi") && (
+            <>
+              <p className="mb-2 mt-5 text-sm font-semibold text-[#071A2F]">Hangi faaliyetleri yapıyor veya yapmayı planlıyorsunuz?</p>
+              <div className="grid gap-5 sm:grid-cols-2">
+                <EvetHayir etiket="Yurt içi/dışı fuarlara katılıyor musunuz veya katılmayı planlıyor musunuz? (uçak/konaklama desteği için)" deger={g.fuarKatilimiVarMi} onChange={(v) => set("fuarKatilimiVarMi", v)} />
+                <EvetHayir etiket="Yurt dışında birim/depo kiralıyor musunuz veya kiralamayı planlıyor musunuz?" deger={g.yurtDisindaBirimDepoKiralamaVarMi} onChange={(v) => set("yurtDisindaBirimDepoKiralamaVarMi", v)} />
+                <EvetHayir etiket="Yurt dışında reklam/tanıtım faaliyeti yürütüyor musunuz veya yürütmeyi planlıyor musunuz?" deger={g.yurtDisindaReklamTanitimVarMi} onChange={(v) => set("yurtDisindaReklamTanitimVarMi", v)} />
+              </div>
+            </>
+          )}
         </div>
       );
     case "turquality-marka-destek":
