@@ -1067,6 +1067,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Müşteri portföyünün büyük çoğunluğunun KOBİ olması, Eximbank kredi ve sigorta ürünlerinin sadece büyük ihracatçılara değil orta ve küçük ölçekli ihracatçılara da açık olduğunu gösteriyor. İhracata yeni başlayan işletmelere alacak sigortası ve kısa vadeli ihracat kredisi seçeneklerini bankayla birlikte değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "5 Eylül 2026",
+    eklendiTarihi: "2026-09-18",
+    baslik:
+      "İhracat reeskont kredilerinde BSMV istisnası uzun vadeli kredileri de kapsayacak şekilde genişletildi",
+    ozet:
+      "5 Eylül 2026 tarihli ve 33361 sayılı Resmî Gazete'de yayımlanan 11723 sayılı Cumhurbaşkanı Kararı ile ihracat, transit ticaret, döviz kazandırıcı hizmet ve faaliyetlere ilişkin vergi, resim ve harç istisnası düzenlemesinde değişikliğe gidildi. Karar ile ticari bankalarca kullandırılan reeskont kredilerinde uygulanan Banka ve Sigorta Muameleleri Vergisi istisnasının kapsamı, mevcut kısa vadeli kredilerin yanı sıra Türk Eximbank ve ticari bankalarca kullandırılan uzun vadeli reeskont kredilerini de içerecek şekilde genişletildi.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/05/reeskont-kredilerinde-bsmv-istisnasi-genisletildi/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Uzun vadeli reeskont kredisi kullanan veya kullanmayı planlayan ihracatçı firmalara, bankalarıyla birlikte bu istisnanın kredi maliyetine ne kadar yansıdığını teyit etmelerini öneririm; önceki uygulamada yalnızca kısa vadeli krediyle sınırlı olan avantaj artık daha geniş bir finansman yelpazesine yayılıyor.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "17 Eylül 2026",
+    eklendiTarihi: "2026-09-18",
+    baslik:
+      "TÜBİTAK 1711 Yapay Zekâ Ekosistem 2026 Çağrısı'nda son başvuru tarihi 2 Ekim'e uzatıldı",
+    ozet:
+      "TÜBİTAK, 15 Haziran 2026'da açtığı 1711 Yapay Zekâ Ekosistem 2026 Yılı Çağrısı'nda son başvuru tarihini, konsorsiyum oluşturma süreçlerinin devam etmesi ve sektörden gelen taleplerin artması gerekçesiyle 2 Ekim 2026 saat 23.59'a uzattı; ön kayıt işlemlerinin ise 28 Eylül 2026 saat 23.59'a kadar tamamlanması gerekiyor. Program, yapay zekâ çözümüne ihtiyaç duyan bir şirketin en az bir teknoloji sağlayıcı şirket ve bu alanda deneyimli bir üniversite araştırma merkezi veya kamu araştırma enstitüsüyle konsorsiyum kurmasını şart koşuyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1711-yapay-zeka-ekosistem-2026-yili-cagrisi-acildi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Süre uzatımı, teknoloji sağlayıcı bir şirket ile uygun bir üniversite veya kamu araştırma merkezi bulup henüz konsorsiyum kuramamış işletmelere ek bir fırsat penceresi açıyor. Yapay zekâ çözümüne ihtiyaç duyan şirketlere bu süreyi konsorsiyum ortaklarını netleştirmek için değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "3 Eylül 2026 (halka arz 9-11 Eylül 2026'da gerçekleşti)",
+    eklendiTarihi: "2026-09-18",
+    baslik:
+      "SPK, Net Global Endüstriyel Yatırımlar'ın halka arzına onay verdi: yaklaşık 2,2 milyar TL büyüklüğünde arz",
+    ozet:
+      "Sermaye Piyasası Kurulu'nun 3 Eylül 2026 tarihli ve 2026/56 sayılı haftalık bülteninde, Net Global Endüstriyel Yatırımlar A.Ş.'nin halka arzına onay verildiği açıklandı. Şirketin 250 milyon TL olan sermayesi 62,5 milyon TL'lik artırımla 312,5 milyon TL'ye çıkarılırken, pay başına 25,52 TL sabit fiyattan toplam 87,5 milyon payın satışa sunulmasıyla halka arz büyüklüğü yaklaşık 2,23 milyar TL'ye ulaştı; talep toplama 9-11 Eylül 2026 tarihlerinde gerçekleştirildi.",
+    kaynakUrl:
+      "https://www.bloomberght.com/spk-dan-bir-sirketin-halka-arzina-onay-3787282",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Sanayi ve üretim odaklı orta ölçekli şirketlerin de halka arz yoluyla kaynak yaratabildiğini gösteren bir örnek daha. Büyüme aşamasındaki üretim şirketlerine, halka arzı bir finansman seçeneği olarak değerlendirmeden önce bağımsız denetim ve kurumsal yönetim altyapılarını gözden geçirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
