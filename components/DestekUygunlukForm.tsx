@@ -1511,33 +1511,68 @@ const CALISAN_ARALIKLARI = [
 ];
 
 function CalisanSayisiAlani({ deger, onChange }: { deger?: string; onChange: (v: string) => void }) {
+  // Aralık butonu seçildiğinde, arka planda (eşik hesabı için) temsili bir sayı
+  // yazılır ama bunu kullanıcıya "girdiğiniz sayı" gibi göstermeyiz — sadece
+  // hangi butonun seçili olduğu vurgulanır. Kullanıcı gerçekten tam sayısını
+  // biliyorsa "Tam sayıyı ben gireceğim" ile manuel moda geçebilir.
+  const seciliAralik = CALISAN_ARALIKLARI.find((a) => a.deger === deger);
+  const [manuelMod, setManuelMod] = useState(!!deger && !seciliAralik);
+
+  if (!manuelMod) {
+    return (
+      <div>
+        <Etiket>Çalışan Sayısı</Etiket>
+        <div className="mb-1.5 flex flex-wrap gap-2">
+          {CALISAN_ARALIKLARI.map((a) => (
+            <button
+              key={a.etiket}
+              type="button"
+              onClick={() => onChange(a.deger)}
+              aria-pressed={deger === a.deger}
+              className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+                deger === a.deger
+                  ? "border-orange-500 bg-orange-50 text-orange-700"
+                  : "border-gray-200 bg-white text-gray-600 hover:border-orange-300"
+              }`}
+            >
+              {a.etiket}
+            </button>
+          ))}
+        </div>
+        <button
+          type="button"
+          onClick={() => {
+            // Aralık seçiliyken (temsili sayı state'te duruyor) manuel moda
+            // geçerken bu sahte sayıyı temizleriz — ekranda boş görünüp
+            // arka planda eski aralık değeri kalmasın.
+            if (seciliAralik) onChange("");
+            setManuelMod(true);
+          }}
+          className="text-xs font-semibold text-orange-600 hover:underline"
+        >
+          Tam sayıyı biliyorum, kendim gireceğim
+        </button>
+        <p className="mt-1.5 text-xs text-gray-500">Yalnızca 10/50/250 eşiklerinin hangi tarafında olduğunuz önemli — yaklaşık olması yeterli.</p>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Etiket>Çalışan Sayısı</Etiket>
-      <div className="mb-2 flex flex-wrap gap-2">
-        {CALISAN_ARALIKLARI.map((a) => (
-          <button
-            key={a.etiket}
-            type="button"
-            onClick={() => onChange(a.deger)}
-            className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-              deger === a.deger
-                ? "border-orange-500 bg-orange-50 text-orange-700"
-                : "border-gray-200 bg-white text-gray-600 hover:border-orange-300"
-            }`}
-          >
-            {a.etiket}
-          </button>
-        ))}
-      </div>
       <input
         type="number"
-        value={deger ?? ""}
+        value={seciliAralik ? "" : deger ?? ""}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Tam sayıyı biliyorsanız buraya girebilirsiniz"
         className={girdiSinifi}
       />
-      <p className="mt-1.5 text-xs text-gray-500">Yalnızca 10/50/250 eşiklerinin hangi tarafında olduğunuz önemli — yaklaşık olması yeterli.</p>
+      <button
+        type="button"
+        onClick={() => setManuelMod(false)}
+        className="mt-1.5 text-xs font-semibold text-gray-500 hover:text-orange-600 hover:underline"
+      >
+        ← Aralık seçmek istiyorum
+      </button>
     </div>
   );
 }
