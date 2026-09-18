@@ -1549,3 +1549,135 @@ export function tubitak1831Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     uyarilar8
   );
 }
+
+// --- 19) Teknopark (Teknoloji Geliştirme Bölgesi) Statüsü ---
+// Kaynak: research/destek-uygunluk/teknopark-statusu.md — 4691 sayılı Kanun, MADDE 14(g) ve
+// Geçici Madde 2 (resmigazete.gov.tr konsolide metni, birincil kaynak, orta güven), 2026-09-18.
+// Ar-Ge Merkezi/Tasarım Merkezi'yle (5746 sayılı Kanun) AYNI faaliyet için AYNI ANDA
+// kullanılamaz (5746 MADDE 4/5, çifte teşvik yasağı) — farklı birim/faaliyetler için ikisi
+// birden mümkün. Teşvikler 31/12/2028 ile sınırlı.
+export function teknoparkStatusuDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "teknopark-statusu", programAdi: "Teknopark (Teknoloji Geliştirme Bölgesi) Statüsü", kurum: "Sanayi ve Teknoloji Bakanlığı" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar = [
+    "Teşvikler (gelir/kurumlar vergisi istisnası, KDV istisnası, gelir vergisi stopajı terkini, damga vergisi istisnası, SGK işveren payı desteği) 31/12/2028 tarihine kadar geçerlidir (4691 sayılı Kanun Geçici Madde 2); 2028 sonrası için henüz bir uzatım mevzuata girmedi.",
+    "İstisna yalnızca bölge içi Ar-Ge/yazılım/tasarım/yenilik faaliyetinden doğan kazanca uygulanır — bölge dışı faaliyet geliriyle karışık muhasebeleştirilmemelidir.",
+  ];
+
+  if (g.teknoparkFaaliyetTuru === "kapsam_disi") {
+    gerekceler.push("Faaliyetiniz 4691 sayılı Kanun MADDE 14(g)'nin kapsadığı Ar-Ge, yazılım geliştirme, tasarım veya yenilik faaliyeti niteliğinde görünmüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Faaliyet türü kapsam dışı.", gerekceler);
+  }
+  if (g.teknoparkFaaliyetTuru === undefined) eksikAlanlar.push("faaliyetinizin Ar-Ge/yazılım geliştirme/tasarım/yenilik niteliğinde olup olmadığı");
+
+  if (g.teknoparkStatusuVarMi === true) {
+    gerekceler.push("Teknopark (TGB) statünüz zaten mevcut.");
+    if (g.argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu === true) {
+      gerekceler.push("5746 sayılı Kanun MADDE 4/5 uyarınca aynı faaliyet/personel için hem Ar-Ge/Tasarım Merkezi teşvikinden hem Teknopark teşvikinden AYNI ANDA yararlanılamaz — hangi rejimin kullanılacağı netleştirilmeli.");
+      return sonuc(
+        meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+        "Teknopark statünüz var, ancak aynı faaliyet için çifte teşvik yasağı (MADDE 4/5) nedeniyle hangi rejimi kullanacağınız netleştirilmeli.",
+        gerekceler,
+        uyarilar
+      );
+    }
+    if (g.teknoparkKazancAyristirmaYapiliyorMu === false) {
+      gerekceler.push("Bölge içi/dışı kazanç ayrıştırması henüz yapılmıyor — istisna yalnızca bölge içi faaliyetten doğan kazanca uygulandığı için bu ayrım gerekiyor.");
+    } else if (g.teknoparkKazancAyristirmaYapiliyorMu === undefined) {
+      eksikAlanlar.push("bölge içi/dışı kazanç ayrıştırmasının yapılıp yapılmadığı");
+    }
+    if (eksikAlanlar.length > 0) {
+      return sonuc(
+        meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+        "Teknopark statünüz var, ancak bazı alanlar eksik.",
+        gerekceler,
+        [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      );
+    }
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "uygun",
+      "Teknopark statünüz mevcut; belirttiğiniz faaliyet türü için teşviklerden yararlanabilirsiniz.",
+      gerekceler,
+      uyarilar
+    );
+  }
+  if (g.teknoparkStatusuVarMi === undefined) eksikAlanlar.push("Teknopark (TGB) statüsünün zaten olup olmadığı");
+
+  gerekceler.push("Faaliyet türünüz Teknopark kapsamındaki alanlarla örtüşüyor gibi görünüyor.");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "Girilen bilgilere göre Teknopark'a (TGB) aday olabilirsiniz; başvuru ilgili TGB'nin yönetici şirketine yapılır ve Proje Değerlendirme Komisyonu'nun kararına bağlıdır.",
+    gerekceler,
+    uyarilar
+  );
+}
+
+// --- 20) KOSGEB TEKMER (Teknoloji Merkezi) — Girişimci/İşletme Kabulü ---
+// Kaynak: research/destek-uygunluk/kosgeb-tekmer.md — Uygulama Esasları (Yürürlük 07/10/2025,
+// birincil kaynak, pdftotext ile tam metin okundu), 2026-09-18. KRİTİK: KOSGEB'in nakit
+// desteği (Kuruluş/Performans/Hızlandırma Desteği) doğrudan girişimciye/işletmeye DEĞİL,
+// TEKMER'i kuran-işleten İşletici Kuruluşa (üniversite, TGB yönetici şirketi, TTO, OSB,
+// oda/borsa, vakıf/dernek, melek yatırımcı, tüzel firma — MADDE 8) gider. Girişimci/işletme
+// olarak KOSGEB'e değil, ilgili (fiilen kurulmuş) bir TEKMER'in kendi Proje Değerlendirme
+// Kurulu'na başvurulur — standart, madde bazlı bir eşik yok, bu yüzden bu evaluator hiçbir
+// zaman kesin "uygun" dönmez (kabul edildiğini bildiren kullanıcı hariç) ve süreci net
+// biçimde açıklar.
+export function kosgebTekmerDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-tekmer", programAdi: "KOSGEB TEKMER (Teknoloji Merkezi) — Girişimci/İşletme Kabulü", kurum: "KOSGEB" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const uyarilar = [
+    "Bu, KOSGEB'e yaptığınız doğrudan bir başvuru DEĞİLDİR — KOSGEB'in nakit desteği (Kuruluş Desteği, Performans Desteği, Hızlandırma Desteği) TEKMER'i işleten kuruluşa (üniversite, TGB yönetici şirketi, TTO, OSB, oda/borsa vb.) gider. Siz, ilgili TEKMER'in kendi Proje Değerlendirme Kurulu'na başvurup kabul edilmeniz gerekiyor; bu karar KOSGEB'in genel/standart bir kriterine değil, o TEKMER'in kendi değerlendirmesine bağlıdır.",
+    "TEKMER'in girişimciye/işletmeye sunduğu başlıca imkanlar: ofis/çalışma alanı tahsisi, mentorluk, eğitim, danışmanlık, ağlara erişim, yatırımcı bulma desteği, hızlandırıcı program; kabul edilirseniz 5746 sayılı Kanun kapsamında Ar-Ge vergi/SGK muafiyetlerinden de yararlanabilirsiniz.",
+    "TEKMER, TÜBİTAK 1812 (BiGG) veya KOSGEB İş Kurma/İş Geliştirme Desteği gibi diğer girişimcilik destekleriyle birlikte kullanılabilir — dışlayıcı değildir.",
+  ];
+
+  if (g.tekmerBasvuruDurumu === "kabul_edildim") {
+    gerekceler.push("İlgili TEKMER'in Proje Değerlendirme Kurulu'nca kabul edildiğiniz belirtilmiş.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun", "İlgili TEKMER tarafından kabul edilmişsiniz.", gerekceler, uyarilar);
+  }
+  if (g.tekmerBasvuruDurumu === "reddedildim") {
+    gerekceler.push("Başvurduğunuz TEKMER'in Proje Değerlendirme Kurulu'nca reddedildiğiniz belirtilmiş — her TEKMER'in kendi kurulu ayrı karar verdiği için başka bir TEKMER'e (tema/bölge uygunsa) tekrar başvurmanız mümkündür.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Başvurduğunuz TEKMER tarafından reddedilmiş.", gerekceler, uyarilar);
+  }
+
+  if (g.tekmerTemaUyumu === "uyumsuz") {
+    gerekceler.push("İş fikriniz, bilinen TEKMER temalarıyla (enerji, savunma, ilaç/medikal, biyoteknoloji, yazılım/yapay zeka, elektronik vb.) örtüşmüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "TEKMER temasıyla örtüşmüyor.", gerekceler, uyarilar);
+  }
+  if (g.tekmerTemaUyumu === undefined) eksikAlanlar.push("iş fikrinizin TEKMER temalarından (enerji, savunma, ilaç/medikal, biyoteknoloji, yazılım/YZ vb.) biriyle örtüşüp örtüşmediği");
+  else gerekceler.push("İş fikriniz bilinen TEKMER temalarından biriyle örtüşüyor.");
+
+  if (g.yakinBolgedeTekmerVarMi === false) {
+    gerekceler.push("Bölgenizde veya hedeflediğiniz ilde faal bir TEKMER bulunmadığı belirtilmiş — bu durumda başvurabileceğiniz bir TEKMER yok.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Erişilebilir bir TEKMER bulunmuyor.", gerekceler, uyarilar);
+  }
+  if (g.yakinBolgedeTekmerVarMi === undefined) eksikAlanlar.push("bölgenizde/hedeflediğiniz ilde faal bir TEKMER olup olmadığı");
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
+      gerekceler,
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+    );
+  }
+
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
+    "İş fikriniz ve erişiminiz uygun görünüyor; ilgili TEKMER'e kabul başvurusu yapmanız önerilir (nihai karar o TEKMER'in kendi kuruluna bağlıdır).",
+    gerekceler,
+    uyarilar
+  );
+}

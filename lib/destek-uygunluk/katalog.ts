@@ -36,6 +36,10 @@ const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "yönderlik",
   "ar-ge merkezi",
   "tasarım merkezi",
+  "teknopark",
+  "teknoloji geliştirme bölgesi",
+  "tekmer",
+  "teknoloji merkezi",
 ];
 
 function anahtarKelimeGecerMi(metin: string, kelimeler: string[]): boolean {

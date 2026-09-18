@@ -139,6 +139,31 @@ export type GirisimciSirketDurumu =
   | "yeni_kurulmus_girisim_sirketi"
   | "kurulu_sirket_3yil_uzeri";
 
+// Teknopark (TGB) statüsü — 4691 sayılı Kanun MADDE 14(g) (birincil kaynak, resmigazete.gov.tr
+// konsolide metni, 2026-09-18) kapsamındaki faaliyet türleri.
+export type TeknoparkFaaliyetTuru =
+  | "yazilim_gelistirme"
+  | "arge"
+  | "tasarim"
+  | "yenilik"
+  | "kapsam_disi";
+
+export type TeknoparkBasvuruAsamasi =
+  | "basvurmadim"
+  | "basvurdu_sonuc_bekliyor"
+  | "kabul_edildi";
+
+// KOSGEB TEKMER — Ar-Ge/yenilik temasıyla uyumluluk (birincil kaynak, Uygulama Esasları
+// 07/10/2025, 2026-09-18). Nihai kabul, KOSGEB'in genel kriterlerine değil, başvurulan
+// TEKMER'in kendi Proje Değerlendirme Kurulu'na bağlı olduğu için "uyum" bazlı bir alan.
+export type TekmerTemaUyumu = "uyumlu" | "kismen_uyumlu" | "uyumsuz" | "emin_degil";
+
+export type TekmerBasvuruDurumu =
+  | "henuz_basvurmadim"
+  | "basvurdu_bekliyor"
+  | "kabul_edildim"
+  | "reddedildim";
+
 // Tüm alanlar opsiyonel: Katman 1 (ortak + huni) doldurulmadan hiçbir program
 // değerlendirilemez, Katman 2 (programa özel, sadece huniden geçen adaylara
 // sorulur) alanları boş bırakılan programlar "belirsiz" sonuç döner, "uygun
@@ -307,6 +332,23 @@ export interface DestekBasvuruGirdisi {
   ortakliBasvuruMu1831?: boolean; // MADDE 10.2: ortaklı başvuru kabul edilmiyor
   basvuru1831DahaOnceKacKezKullanildi?: number; // MADDE 10.3: en fazla 3 kez
   ayniCozumOrtagiIleKacProje?: number; // aynı ortakla en fazla 2 defa
+
+  // Teknopark (TGB) statüsü (4691 sayılı Kanun) — "zaten teknoparktayım" (teşvik netleştirme)
+  // ve "adayım" (başvuru uygunluğu) senaryolarını Ar-Ge Merkezi ile aynı desende kapsar.
+  teknoparkStatusuVarMi?: boolean;
+  teknoparkFaaliyetTuru?: TeknoparkFaaliyetTuru;
+  teknoparkKazancAyristirmaYapiliyorMu?: boolean; // istisna yalnızca bölge içi faaliyet kazancına uygulanır
+  // 5746 MADDE 4/5: aynı faaliyet için hem Ar-Ge/Tasarım Merkezi hem Teknopark (4691 Geçici
+  // Madde 2) teşviki birlikte alınamaz — çifte teşvik yasağı kontrolü.
+  argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu?: boolean;
+  teknoparkBasvuruAsamasi?: TeknoparkBasvuruAsamasi;
+
+  // KOSGEB TEKMER — DİKKAT: KOSGEB'in nakit desteği doğrudan girişimciye/işletmeye değil,
+  // TEKMER'i işleten kuruluşa (üniversite/TGB yönetici şirketi/TTO vb.) gider. Girişimci/
+  // işletme olarak KOSGEB'e değil, ilgili TEKMER'in kendi kabul kuruluna başvurulur.
+  tekmerTemaUyumu?: TekmerTemaUyumu;
+  yakinBolgedeTekmerVarMi?: boolean;
+  tekmerBasvuruDurumu?: TekmerBasvuruDurumu;
 
   // Lead / iletişim
   iletisimAdSoyad?: string;

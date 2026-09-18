@@ -144,6 +144,35 @@ const GIRISIMCI_SIRKET_DURUMU_SECENEKLERI = [
   { value: "kurulu_sirket_3yil_uzeri", label: "3 yıldan uzun süredir kurulu, köklü bir şirketim var" },
 ];
 
+// 4691 sayılı Kanun MADDE 14(g) (birincil kaynak) — Teknopark kapsamındaki faaliyet türleri.
+const TEKNOPARK_FAALIYET_TURU_SECENEKLERI = [
+  { value: "yazilim_gelistirme", label: "Yazılım geliştirme" },
+  { value: "arge", label: "Ar-Ge" },
+  { value: "tasarim", label: "Tasarım" },
+  { value: "yenilik", label: "Yenilik (inovasyon)" },
+  { value: "kapsam_disi", label: "Bunların hiçbiri değil" },
+];
+
+const TEKNOPARK_BASVURU_ASAMASI_SECENEKLERI = [
+  { value: "basvurmadim", label: "Henüz başvurmadım" },
+  { value: "basvurdu_sonuc_bekliyor", label: "Başvurdum, sonuç bekliyorum" },
+  { value: "kabul_edildi", label: "Kabul edildim" },
+];
+
+const TEKMER_TEMA_UYUMU_SECENEKLERI = [
+  { value: "uyumlu", label: "Uyumlu (enerji, savunma, ilaç/medikal, biyoteknoloji, yazılım/YZ vb.)" },
+  { value: "kismen_uyumlu", label: "Kısmen uyumlu / emin değilim" },
+  { value: "uyumsuz", label: "Uyumsuz" },
+  { value: "emin_degil", label: "Bilmiyorum" },
+];
+
+const TEKMER_BASVURU_DURUMU_SECENEKLERI = [
+  { value: "henuz_basvurmadim", label: "Henüz başvurmadım" },
+  { value: "basvurdu_bekliyor", label: "Başvurdum, sonuç bekliyorum" },
+  { value: "kabul_edildim", label: "Kabul edildim" },
+  { value: "reddedildim", label: "Reddedildim" },
+];
+
 const ONCELIKLI_GRUP_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "kadin", label: "Kadın girişimci" },
@@ -431,6 +460,16 @@ export default function DestekUygunlukForm() {
       ortakliBasvuruMu1831: bool("ortakliBasvuruMu1831"),
       basvuru1831DahaOnceKacKezKullanildi: num("basvuru1831DahaOnceKacKezKullanildi"),
       ayniCozumOrtagiIleKacProje: num("ayniCozumOrtagiIleKacProje"),
+
+      teknoparkStatusuVarMi: bool("teknoparkStatusuVarMi"),
+      teknoparkFaaliyetTuru: (g.teknoparkFaaliyetTuru as DestekBasvuruGirdisi["teknoparkFaaliyetTuru"]) || undefined,
+      teknoparkKazancAyristirmaYapiliyorMu: bool("teknoparkKazancAyristirmaYapiliyorMu"),
+      argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu: bool("argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu"),
+      teknoparkBasvuruAsamasi: (g.teknoparkBasvuruAsamasi as DestekBasvuruGirdisi["teknoparkBasvuruAsamasi"]) || undefined,
+
+      tekmerTemaUyumu: (g.tekmerTemaUyumu as DestekBasvuruGirdisi["tekmerTemaUyumu"]) || undefined,
+      yakinBolgedeTekmerVarMi: bool("yakinBolgedeTekmerVarMi"),
+      tekmerBasvuruDurumu: (g.tekmerBasvuruDurumu as DestekBasvuruGirdisi["tekmerBasvuruDurumu"]) || undefined,
 
       iletisimAdSoyad: g.iletisimAdSoyad || undefined,
       iletisimEposta: g.iletisimEposta || undefined,
@@ -1258,6 +1297,31 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Bu başvuruyu başka bir kuruluşla ortaklaşa mı yapacaksınız?" deger={g.ortakliBasvuruMu1831} onChange={(v) => set("ortakliBasvuruMu1831", v)} />
           <Sayi etiket="Bu programı daha önce kaç kez kullandınız?" deger={g.basvuru1831DahaOnceKacKezKullanildi} onChange={(v) => set("basvuru1831DahaOnceKacKezKullanildi", v)} />
           <Sayi etiket="Aynı çözüm ortağıyla kaç proje yürüttünüz?" deger={g.ayniCozumOrtagiIleKacProje} onChange={(v) => set("ayniCozumOrtagiIleKacProje", v)} />
+        </div>
+      );
+    case "teknopark-statusu":
+      return (
+        <div>
+          <EvetHayir etiket="Teknopark (TGB) statünüz zaten var mı?" deger={g.teknoparkStatusuVarMi} onChange={(v) => set("teknoparkStatusuVarMi", v)} />
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+            <Secim etiket="Faaliyetinizin niteliği nedir?" deger={g.teknoparkFaaliyetTuru} onChange={(v) => set("teknoparkFaaliyetTuru", v)} secenekler={TEKNOPARK_FAALIYET_TURU_SECENEKLERI} />
+            {g.teknoparkStatusuVarMi === "evet" ? (
+              <>
+                <EvetHayir etiket="Bölge içi/dışı kazanç ayrıştırması yapılıyor mu?" deger={g.teknoparkKazancAyristirmaYapiliyorMu} onChange={(v) => set("teknoparkKazancAyristirmaYapiliyorMu", v)} />
+                <EvetHayir etiket="Aynı faaliyet için Ar-Ge Merkezi veya Tasarım Merkezi teşviki de alınıyor mu?" deger={g.argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu} onChange={(v) => set("argeVeyaTasarimMerkeziTesvikiAyniFaaliyetIcinAliniyorMu", v)} />
+              </>
+            ) : (
+              <Secim etiket="Başvuru aşamanız nedir?" deger={g.teknoparkBasvuruAsamasi} onChange={(v) => set("teknoparkBasvuruAsamasi", v)} secenekler={TEKNOPARK_BASVURU_ASAMASI_SECENEKLERI} />
+            )}
+          </div>
+        </div>
+      );
+    case "kosgeb-tekmer":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Secim etiket="İş fikriniz TEKMER temalarıyla ne kadar örtüşüyor?" deger={g.tekmerTemaUyumu} onChange={(v) => set("tekmerTemaUyumu", v)} secenekler={TEKMER_TEMA_UYUMU_SECENEKLERI} />
+          <EvetHayir etiket="Bölgenizde/hedeflediğiniz ilde faal bir TEKMER var mı?" deger={g.yakinBolgedeTekmerVarMi} onChange={(v) => set("yakinBolgedeTekmerVarMi", v)} />
+          <Secim etiket="Bir TEKMER'e başvuru durumunuz nedir?" deger={g.tekmerBasvuruDurumu} onChange={(v) => set("tekmerBasvuruDurumu", v)} secenekler={TEKMER_BASVURU_DURUMU_SECENEKLERI} />
         </div>
       );
     default:

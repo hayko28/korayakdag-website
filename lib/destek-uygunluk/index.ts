@@ -17,6 +17,8 @@ import {
   tubitak1812Degerlendir,
   tubitak1707Degerlendir,
   tubitak1831Degerlendir,
+  teknoparkStatusuDegerlendir,
+  kosgebTekmerDegerlendir,
   ticaretBakanligiIhracatDesteklerDegerlendir,
   tkdkDegerlendir,
   turqualityDegerlendir,
@@ -60,6 +62,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
   if (girdi.yeniGirisimciMi !== false) {
     taslaklar.push(kosgebIsGelistirmeDegerlendir(girdi));
     taslaklar.push(tubitak1812Degerlendir(girdi));
+    taslaklar.push(kosgebTekmerDegerlendir(girdi));
   }
   if (girdi.yeniGirisimciMi !== true) {
     taslaklar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
@@ -71,6 +74,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(tubitak1707Degerlendir(girdi));
     taslaklar.push(argeMerkeziStatusuDegerlendir(girdi));
     taslaklar.push(tasarimMerkeziStatusuDegerlendir(girdi));
+    taslaklar.push(teknoparkStatusuDegerlendir(girdi));
   }
   if (girdi.argeDurumu === "var_kucuk" || girdi.argeDurumu === "var_kurumsal") {
     taslaklar.push(tubitak1501Degerlendir(girdi));
