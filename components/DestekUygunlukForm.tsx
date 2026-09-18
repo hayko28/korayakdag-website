@@ -298,6 +298,11 @@ export default function DestekUygunlukForm() {
   const [kvkkOnay, setKvkkOnay] = useState(false);
   const [acikSonuclar, setAcikSonuclar] = useState<Set<string>>(new Set());
   const [duzenleAcik, setDuzenleAcik] = useState<Set<string>>(new Set());
+  // İlk dolduruşta formu 3 ekrana (Şirket Bilgileri → Sorular/Hedefler → İletişim)
+  // bölen sihirbaz adımı — sadece görünümü değiştirir, sorular/kurallar/uygunluk
+  // mantığı hiç değişmedi. "Cevapları düzenle" (sonuç varken geri dönme) modunda
+  // wizard uygulanmaz, tüm bölümler tek sayfada kalır (mevcut davranış).
+  const [wizardAdim, setWizardAdim] = useState<1 | 2 | 3>(1);
 
   const set = (key: string, value: string) => setG((prev) => ({ ...prev, [key]: value }));
 
@@ -484,9 +489,15 @@ export default function DestekUygunlukForm() {
     ZORUNLU_HUNI_ALANLARI.filter((a) => g[a.anahtar]).length + (g.iletisimAdSoyad ? 1 : 0) + (g.iletisimEposta ? 1 : 0);
   const ilerlemeYuzdesi = Math.round((doldurulanSayisi / zorunluAlanlarSayisi) * 100);
 
+  // İlk dolduruş sırasında (henüz sonuç yok) form 3 ekrana bölünmüş bir sihirbaz
+  // olarak gösterilir; sonuç varken "cevapları düzenle" ile geri dönülürse mevcut
+  // (tüm bölümler tek sayfada) davranış korunur.
+  const wizardAktif = sonuclar === null;
+
   // 5 adımlık gösterge için hangi adımın aktif olduğunu mevcut state'ten türetir.
   const aktifAdim = (() => {
-    if (!sonuclar || duzenleModuAcik) {
+    if (wizardAktif) return wizardAdim === 1 ? 1 : 2;
+    if (duzenleModuAcik) {
       return ZORUNLU_HUNI_ALANLARI.some((a) => g[a.anahtar]) || seciliPersonalar.size > 0 ? 2 : 1;
     }
     if (acikSonuclar.size === 0) return 3;
@@ -526,6 +537,7 @@ export default function DestekUygunlukForm() {
     const eksik = ZORUNLU_HUNI_ALANLARI.find((a) => !g[a.anahtar]);
     if (eksik) {
       setHata(`Lütfen "${eksik.etiket}" sorusunu cevaplayın.`);
+      if (wizardAktif) setWizardAdim(2);
       document.getElementById("bolum-2")?.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
@@ -841,63 +853,70 @@ export default function DestekUygunlukForm() {
         </div>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-3">
-        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
-          <span className="text-lg">⚡</span> Anında sonuç — bekleme yok
-        </div>
-        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
-          <span className="text-lg">🆓</span> Tamamen ücretsiz, taahhüt yok
-        </div>
-        <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
-          <span className="text-lg">🔒</span> Verileriniz yalnızca analiz için kullanılır
-        </div>
-      </div>
-
-      <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
-        <h2 className="text-xl font-bold text-[#071A2F]">Şirketiniz için hangileri geçerli?</h2>
-        <p className="mb-5 mt-1 text-sm text-gray-500">
-          Birden fazlasını seçebilirsiniz — aşağıdaki bazı soruları sizin için önceden işaretleyelim. İstediğiniz an değiştirebilirsiniz.
-        </p>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {PERSONALAR.map((p, i) => (
-            <button
-              key={p.baslik}
-              type="button"
-              onClick={() => personaSec(i)}
-              aria-pressed={seciliPersonalar.has(i)}
-              className={`relative rounded-2xl border p-4 text-left transition hover:border-orange-400 hover:shadow-md ${
-                seciliPersonalar.has(i) ? "border-orange-500 bg-orange-50" : "border-gray-200 bg-white"
-              }`}
-            >
-              {seciliPersonalar.has(i) && (
-                <span className="absolute right-3 top-3 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-xs text-white">✓</span>
-              )}
-              <div className="mb-2 text-3xl">{p.ikon}</div>
-              <div className="mb-1 text-sm font-bold text-[#071A2F]">{p.baslik}</div>
-              <div className="text-xs leading-relaxed text-gray-500">{p.aciklama}</div>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <Bolum baslik="1. Şirket Bilgileri" aciklama="Bu bilgiler tüm programların ön değerlendirmesinde kullanılır." id="bolum-1">
-        <div className="grid gap-5 sm:grid-cols-2">
-          <Metin etiket="Şirket Unvanı" deger={g.sirketUnvani} onChange={(v) => set("sirketUnvani", v)} />
-          <Secim etiket="Şirket Türü" deger={g.sirketTuru} onChange={(v) => set("sirketTuru", v)} secenekler={SIRKET_TURU_SECENEKLERI} />
-          <Tarih etiket="Kuruluş Tarihi" deger={g.kurulusTarihi} onChange={(v) => set("kurulusTarihi", v)} />
-          <div>
-            <Metin etiket="NACE Kodu (örn. 62.01)" deger={g.naceKodu} onChange={(v) => set("naceKodu", v)} placeholder="62.01" />
-            {g.naceKodu && naceAciklamaBul(g.naceKodu) && (
-              <p className="mt-1.5 text-xs text-gray-500">→ {naceAciklamaBul(g.naceKodu)}</p>
-            )}
+      {(!wizardAktif || wizardAdim === 1) && (
+        <div className="grid gap-3 sm:grid-cols-3">
+          <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+            <span className="text-lg">⚡</span> Anında sonuç — bekleme yok
           </div>
-          <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
-          <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
-          <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
-          <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
+          <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+            <span className="text-lg">🆓</span> Tamamen ücretsiz, taahhüt yok
+          </div>
+          <div className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700">
+            <span className="text-lg">🔒</span> Verileriniz yalnızca analiz için kullanılır
+          </div>
         </div>
-      </Bolum>
+      )}
 
+      {(!wizardAktif || wizardAdim === 1) && (
+        <>
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
+            <h2 className="text-xl font-bold text-[#071A2F]">Şirketiniz için hangileri geçerli?</h2>
+            <p className="mb-5 mt-1 text-sm text-gray-500">
+              Birden fazlasını seçebilirsiniz — aşağıdaki bazı soruları sizin için önceden işaretleyelim. İstediğiniz an değiştirebilirsiniz.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+              {PERSONALAR.map((p, i) => (
+                <button
+                  key={p.baslik}
+                  type="button"
+                  onClick={() => personaSec(i)}
+                  aria-pressed={seciliPersonalar.has(i)}
+                  className={`relative rounded-2xl border p-4 text-left transition hover:border-orange-400 hover:shadow-md ${
+                    seciliPersonalar.has(i) ? "border-orange-500 bg-orange-50" : "border-gray-200 bg-white"
+                  }`}
+                >
+                  {seciliPersonalar.has(i) && (
+                    <span className="absolute right-3 top-3 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-xs text-white">✓</span>
+                  )}
+                  <div className="mb-2 text-3xl">{p.ikon}</div>
+                  <div className="mb-1 text-sm font-bold text-[#071A2F]">{p.baslik}</div>
+                  <div className="text-xs leading-relaxed text-gray-500">{p.aciklama}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <Bolum baslik="1. Şirket Bilgileri" aciklama="Bu bilgiler tüm programların ön değerlendirmesinde kullanılır." id="bolum-1">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <Metin etiket="Şirket Unvanı" deger={g.sirketUnvani} onChange={(v) => set("sirketUnvani", v)} />
+              <Secim etiket="Şirket Türü" deger={g.sirketTuru} onChange={(v) => set("sirketTuru", v)} secenekler={SIRKET_TURU_SECENEKLERI} />
+              <Tarih etiket="Kuruluş Tarihi" deger={g.kurulusTarihi} onChange={(v) => set("kurulusTarihi", v)} />
+              <div>
+                <Metin etiket="NACE Kodu (örn. 62.01)" deger={g.naceKodu} onChange={(v) => set("naceKodu", v)} placeholder="62.01" />
+                {g.naceKodu && naceAciklamaBul(g.naceKodu) && (
+                  <p className="mt-1.5 text-xs text-gray-500">→ {naceAciklamaBul(g.naceKodu)}</p>
+                )}
+              </div>
+              <Sayi etiket="Çalışan Sayısı" deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
+              <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+              <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
+              <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
+            </div>
+          </Bolum>
+        </>
+      )}
+
+      {(!wizardAktif || wizardAdim === 2) && (
       <Bolum baslik="2. Birkaç Kısa Soru" aciklama="Bu cevaplara göre aşağıda sadece size uygun olabilecek program bölümleri açılır — ilgisiz onlarca soruyla uğraşmazsınız." id="bolum-2">
         <div className="grid gap-5 sm:grid-cols-2">
           <EvetHayir zorunlu etiket="Yeni bir girişimci misiniz? (kuruluşu 3 yıldan az veya henüz iş fikri aşamasında)" deger={g.yeniGirisimciMi} onChange={(v) => set("yeniGirisimciMi", v)} />
@@ -934,54 +953,98 @@ export default function DestekUygunlukForm() {
           </div>
         </div>
       </Bolum>
+      )}
 
-      <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5 text-sm text-blue-900">
-        Programlara özel sorular burada değil, sonuç ekranında ilgili programın kartına tıklayınca çıkacak —
-        şimdi sadece genel bilgileri doldurmanız yeterli.
-      </div>
+      {(!wizardAktif || wizardAdim === 3) && (
+        <>
+          <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5 text-sm text-blue-900">
+            Programlara özel sorular burada değil, sonuç ekranında ilgili programın kartına tıklayınca çıkacak —
+            şimdi sadece genel bilgileri doldurmanız yeterli.
+          </div>
 
-      <Bolum baslik="3. İletişim Bilgileri" aciklama="Sonuçları görebilmek ve gerekirse detaylı değerlendirme için sizinle iletişime geçebilmemiz için gereklidir.">
-        <div className="grid gap-5 sm:grid-cols-2">
-          <Metin etiket="Ad Soyad" deger={g.iletisimAdSoyad} onChange={(v) => set("iletisimAdSoyad", v)} zorunlu />
-          <Metin etiket="E-posta" tip="email" deger={g.iletisimEposta} onChange={(v) => set("iletisimEposta", v)} zorunlu />
-          <Metin etiket="Telefon" tip="tel" deger={g.iletisimTelefon} onChange={(v) => set("iletisimTelefon", v)} />
-        </div>
-        <label className="mt-5 block">
-          <Etiket>Eklemek istediğiniz bir şey var mı? (opsiyonel)</Etiket>
-          <textarea
-            value={g.ekAciklama ?? ""}
-            onChange={(e) => set("ekAciklama", e.target.value)}
-            rows={3}
-            placeholder="Yukarıdaki sorulara sığmayan bir durum, özel bir hedefiniz veya sormak istediğiniz bir şey varsa buraya yazabilirsiniz."
-            className={girdiSinifi}
-          />
-        </label>
-        <label className="mt-5 flex items-start gap-2.5 text-sm text-gray-600">
-          <input
-            type="checkbox"
-            checked={kvkkOnay}
-            onChange={(e) => setKvkkOnay(e.target.checked)}
-            className="mt-0.5 h-4 w-4 rounded border-gray-300 accent-orange-500"
-          />
-          <span>
-            Kişisel verilerimin bu ön analiz kapsamında işlenmesine ilişkin{" "}
-            <Link href="/gizlilik-politikasi" target="_blank" className="font-semibold text-orange-600 hover:underline">
-              KVKK Aydınlatma Metni
-            </Link>
-            &apos;ni okudum, onaylıyorum.
-          </span>
-        </label>
-      </Bolum>
+          <Bolum baslik="3. İletişim Bilgileri" aciklama="Sonuçları görebilmek ve gerekirse detaylı değerlendirme için sizinle iletişime geçebilmemiz için gereklidir.">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <Metin etiket="Ad Soyad" deger={g.iletisimAdSoyad} onChange={(v) => set("iletisimAdSoyad", v)} zorunlu />
+              <Metin etiket="E-posta" tip="email" deger={g.iletisimEposta} onChange={(v) => set("iletisimEposta", v)} zorunlu />
+              <Metin etiket="Telefon" tip="tel" deger={g.iletisimTelefon} onChange={(v) => set("iletisimTelefon", v)} />
+            </div>
+            <label className="mt-5 block">
+              <Etiket>Eklemek istediğiniz bir şey var mı? (opsiyonel)</Etiket>
+              <textarea
+                value={g.ekAciklama ?? ""}
+                onChange={(e) => set("ekAciklama", e.target.value)}
+                rows={3}
+                placeholder="Yukarıdaki sorulara sığmayan bir durum, özel bir hedefiniz veya sormak istediğiniz bir şey varsa buraya yazabilirsiniz."
+                className={girdiSinifi}
+              />
+            </label>
+            <label className="mt-5 flex items-start gap-2.5 text-sm text-gray-600">
+              <input
+                type="checkbox"
+                checked={kvkkOnay}
+                onChange={(e) => setKvkkOnay(e.target.checked)}
+                className="mt-0.5 h-4 w-4 rounded border-gray-300 accent-orange-500"
+              />
+              <span>
+                Kişisel verilerimin bu ön analiz kapsamında işlenmesine ilişkin{" "}
+                <Link href="/gizlilik-politikasi" target="_blank" className="font-semibold text-orange-600 hover:underline">
+                  KVKK Aydınlatma Metni
+                </Link>
+                &apos;ni okudum, onaylıyorum.
+              </span>
+            </label>
+          </Bolum>
+        </>
+      )}
 
       {hata && <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{hata}</p>}
 
-      <button
-        type="submit"
-        disabled={submitting}
-        className="w-full rounded-xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70"
-      >
-        {submitting ? "Analiz ediliyor…" : sonuclar ? "Bilgileri Güncelle ve Sonuçlara Dön" : "Uygunluk Analizini Görüntüle"}
-      </button>
+      {wizardAktif ? (
+        <div className="flex items-center justify-between gap-3">
+          {wizardAdim > 1 ? (
+            <button
+              type="button"
+              onClick={() => {
+                setWizardAdim((a) => (a === 3 ? 2 : 1));
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="rounded-xl border border-gray-300 px-6 py-3.5 font-semibold text-[#071A2F] transition hover:border-orange-400"
+            >
+              ← Geri
+            </button>
+          ) : (
+            <span />
+          )}
+          {wizardAdim < 3 ? (
+            <button
+              type="button"
+              onClick={() => {
+                setWizardAdim((a) => (a === 1 ? 2 : 3));
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="rounded-xl bg-orange-500 px-8 py-3.5 font-semibold text-white transition hover:bg-orange-600"
+            >
+              Devam Et →
+            </button>
+          ) : (
+            <button
+              type="submit"
+              disabled={submitting}
+              className="rounded-xl bg-orange-500 px-8 py-3.5 font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70"
+            >
+              {submitting ? "Analiz ediliyor…" : "Uygunluk Analizini Görüntüle"}
+            </button>
+          )}
+        </div>
+      ) : (
+        <button
+          type="submit"
+          disabled={submitting}
+          className="w-full rounded-xl bg-orange-500 px-6 py-4 text-lg font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70"
+        >
+          {submitting ? "Analiz ediliyor…" : "Bilgileri Güncelle ve Sonuçlara Dön"}
+        </button>
+      )}
     </form>
   );
 }
