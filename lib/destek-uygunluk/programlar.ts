@@ -622,6 +622,18 @@ export function ticaretBakanligiIhracatDesteklerDegerlendir(g: DestekBasvuruGird
     if (g.yurtDisindaReklamTanitimVarMi === true) {
       gerekceler.push("Yurt dışında reklam/tanıtım faaliyeti yürütüyor veya yürütmeyi planlıyorsunuz — Tanıtım Desteği bu kapsamda değerlendirilebilir (bu kalemde İhracatçı Birliği üyeliği aranmıyor).");
     }
+    if (g.pazaraGirisBelgesiIhtiyaciVarMi === true) {
+      gerekceler.push("Ürününüz için yurt dışında zorunlu bir sertifika/test/ruhsat alıyor veya almayı planlıyorsunuz — Pazara Giriş Belgesi Desteği (5973 sayılı Karar Md.3) bu kapsamda değerlendirilebilir.");
+    }
+    // Md.4 kapsamındaki Yurt Dışı Marka Tescil Desteği, yurt içinde ZATEN tescilli bir
+    // markanın yurt dışına taşınmasını destekler — tescilsiz marka bu kalemden doğrudan
+    // yararlanamaz, önce yurt içi tescil gerekir (bu durumda destek yerine marka/patent
+    // danışmanlığı hizmeti öneriliyor — bkz. hizmet-onerileri.ts).
+    if (g.markaTesciliVarMi === true) {
+      gerekceler.push("Markanız zaten tescilli — yurt dışında da tescil ettirmeyi planlıyorsanız Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar Md.4) bu kapsamda değerlendirilebilir.");
+    } else if (g.markaTesciliVarMi === false) {
+      gerekceler.push("Yurt Dışı Marka Tescil Desteği, yurt içinde zaten tescilli bir markanın yurt dışına taşınmasını kapsar; henüz tescilli bir markanız olmadığı belirtilmiş — önce yurt içi marka tescilinin alınması gerekir.");
+    }
   }
 
   // 2026-09-18 DÜZELTME: birincil kaynaktan (5973 ve 10962 sayılı Kararların tam metni)

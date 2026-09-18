@@ -418,6 +418,8 @@ export default function DestekUygunlukForm() {
       fuarKatilimiVarMi: bool("fuarKatilimiVarMi"),
       yurtDisindaBirimDepoKiralamaVarMi: bool("yurtDisindaBirimDepoKiralamaVarMi"),
       yurtDisindaReklamTanitimVarMi: bool("yurtDisindaReklamTanitimVarMi"),
+      pazaraGirisBelgesiIhtiyaciVarMi: bool("pazaraGirisBelgesiIhtiyaciVarMi"),
+      markaTesciliVarMi: bool("markaTesciliVarMi"),
 
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
       maliKarneVarMi: bool("maliKarneVarMi"),
@@ -1275,6 +1277,8 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
                 <EvetHayir etiket="Yurt içi/dışı fuarlara katılıyor musunuz veya katılmayı planlıyor musunuz? (uçak/konaklama desteği için)" deger={g.fuarKatilimiVarMi} onChange={(v) => set("fuarKatilimiVarMi", v)} />
                 <EvetHayir etiket="Yurt dışında birim/depo kiralıyor musunuz veya kiralamayı planlıyor musunuz?" deger={g.yurtDisindaBirimDepoKiralamaVarMi} onChange={(v) => set("yurtDisindaBirimDepoKiralamaVarMi", v)} />
                 <EvetHayir etiket="Yurt dışında reklam/tanıtım faaliyeti yürütüyor musunuz veya yürütmeyi planlıyor musunuz?" deger={g.yurtDisindaReklamTanitimVarMi} onChange={(v) => set("yurtDisindaReklamTanitimVarMi", v)} />
+                <EvetHayir etiket="Ürününüz için yurt dışında zorunlu bir sertifika/test/ruhsat alıyor musunuz veya almayı planlıyor musunuz?" deger={g.pazaraGirisBelgesiIhtiyaciVarMi} onChange={(v) => set("pazaraGirisBelgesiIhtiyaciVarMi", v)} />
+                <EvetHayir etiket="Tescilli bir markanız var mı?" deger={g.markaTesciliVarMi} onChange={(v) => set("markaTesciliVarMi", v)} />
               </div>
             </>
           )}

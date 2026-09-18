@@ -152,7 +152,9 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     tetikle: (g) => (hedefSecili(g, "marka_patent") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
     // Turquality/Marka Destek Programı'nın kendisi yurt içi/yurt dışı marka tescili
     // şart koşuyor — bu eksikse (sonuç "belirsiz" dönse bile) tam ihtiyaç anı budur.
-    ilgiliProgramIdler: ["turquality-marka-destek"],
+    // Ticaret Bakanlığı'nın Yurt Dışı Marka Tescil Desteği (5973 Md.4) de aynı şekilde
+    // önce yurt içi tescil şartına bağlı — markaTesciliVarMi === false ise tam ihtiyaç anı.
+    ilgiliProgramIdler: ["turquality-marka-destek", "ticaret-bakanligi-ihracat-destekleri"],
   },
   {
     id: "kdv-iade-danismanligi",

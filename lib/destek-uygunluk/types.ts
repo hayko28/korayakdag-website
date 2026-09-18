@@ -256,11 +256,13 @@ export interface DestekBasvuruGirdisi {
   ihracatTuru?: IhracatTuru;
   ihracatciBirligiUyesiMi?: boolean;
   dysKayitliMi?: boolean;
-  // 5973 sayılı Karar'ın en sık kullanılan 3 alt kalemi — hangisi "yapıyorum/yapacağım" ise
+  // 5973 sayılı Karar'ın en sık kullanılan alt kalemleri — hangisi "yapıyorum/yapacağım" ise
   // o kaleme özel gerekçe gösterilir; bilgilendirici, eksik bilgi sayılmaz.
   fuarKatilimiVarMi?: boolean; // Fuar Desteği (uçak/konaklama dahil) — İhracatçı Birliği üyeliği şart
   yurtDisindaBirimDepoKiralamaVarMi?: boolean; // Birim Kira Desteği — üyelik şartı yok
   yurtDisindaReklamTanitimVarMi?: boolean; // Tanıtım Desteği — üyelik şartı yok
+  pazaraGirisBelgesiIhtiyaciVarMi?: boolean; // Pazara Giriş Belgesi Desteği (Md.3) — zorunlu sertifika/test/ruhsat
+  markaTesciliVarMi?: boolean; // Yurt Dışı Marka Tescil Desteği (Md.4) yurt içi tescilli marka şartına bağlı — yoksa marka danışmanlığı cross-sell tetiklenir
 
   // KOBİ Dijital Dönüşüm Destek Programı
   ddxRaporuVarMi?: boolean;
