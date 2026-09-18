@@ -421,6 +421,11 @@ export default function DestekUygunlukForm() {
       pazaraGirisBelgesiIhtiyaciVarMi: bool("pazaraGirisBelgesiIhtiyaciVarMi"),
       markaTesciliVarMi: bool("markaTesciliVarMi"),
 
+      istihdamiKorumaTaahhutEdebilirMi: bool("istihdamiKorumaTaahhutEdebilirMi"),
+      referansDonemSigortaliCalisaniVarMi: bool("referansDonemSigortaliCalisaniVarMi"),
+      kobiBilgiSistemiKayitGuncelMi: bool("kobiBilgiSistemiKayitGuncelMi"),
+      kosgebVadesiGecmisBorcuVarMi: bool("kosgebVadesiGecmisBorcuVarMi"),
+
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
       maliKarneVarMi: bool("maliKarneVarMi"),
       maliYeterlilikSaglaniyorMu: bool("maliYeterlilikSaglaniyorMu"),
@@ -767,29 +772,6 @@ export default function DestekUygunlukForm() {
             </div>
           );
         })}
-        {katalogOnerileri.length > 0 && (
-          <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6">
-            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Ayrıca İlginizi Çekebilir</h3>
-            <p className="mb-4 text-sm text-gray-600">
-              Verdiğiniz cevaplara göre, yukarıdaki detaylı analiz dışında kalan genel destek kataloğundan öne
-              çıkan diğer programlar — bunlar için ayrı bir uygunluk hesabı yapılmadı, sadece ön tarama sonucu
-              önerilir.
-            </p>
-            <ul className="space-y-2">
-              {katalogOnerileri.map((k, i) => (
-                <li key={i} className="rounded-xl border border-orange-100 bg-white p-3 text-sm">
-                  <a href={k.kaynakUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:text-orange-600 hover:underline">
-                    {k.ad}
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    {k.kurum}
-                    {k.sonBasvuruTarihi ? ` — Son başvuru: ${k.sonBasvuruTarihi}` : ""}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
         {hizmetOnerileri.length > 0 && (
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
             <p className="mb-1 text-xs font-bold uppercase tracking-wide text-orange-500">💼 Hizmetler</p>
@@ -812,6 +794,29 @@ export default function DestekUygunlukForm() {
                 </Link>
               ))}
             </div>
+          </div>
+        )}
+        {katalogOnerileri.length > 0 && (
+          <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6">
+            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Ayrıca İlginizi Çekebilir</h3>
+            <p className="mb-4 text-sm text-gray-600">
+              Verdiğiniz cevaplara göre, yukarıdaki detaylı analiz dışında kalan genel destek kataloğundan öne
+              çıkan diğer programlar — bunlar için ayrı bir uygunluk hesabı yapılmadı, sadece ön tarama sonucu
+              önerilir.
+            </p>
+            <ul className="space-y-2">
+              {katalogOnerileri.map((k, i) => (
+                <li key={i} className="rounded-xl border border-orange-100 bg-white p-3 text-sm">
+                  <a href={k.kaynakUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:text-orange-600 hover:underline">
+                    {k.ad}
+                  </a>
+                  <span className="ml-2 text-gray-500">
+                    {k.kurum}
+                    {k.sonBasvuruTarihi ? ` — Son başvuru: ${k.sonBasvuruTarihi}` : ""}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
 
@@ -1329,6 +1334,15 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
         <div className="grid gap-5 sm:grid-cols-2">
           <Secim etiket="Hangi YÖNDE hizmetinden yararlanmak istiyorsunuz?" deger={g.yondeHizmetTuru} onChange={(v) => set("yondeHizmetTuru", v)} secenekler={YONDE_HIZMET_SECENEKLERI} />
           <EvetHayir etiket="Bu programdan daha önce yararlandınız mı?" deger={g.yondeDahaOnceYararlanildiMi} onChange={(v) => set("yondeDahaOnceYararlanildiMi", v)} />
+        </div>
+      );
+    case "istihdami-koruma-destek-programi":
+      return (
+        <div className="grid gap-5 sm:grid-cols-2">
+          <EvetHayir etiket="Ocak-Haziran 2026 döneminde sigortalı çalışanınız var mıydı?" deger={g.referansDonemSigortaliCalisaniVarMi} onChange={(v) => set("referansDonemSigortaliCalisaniVarMi", v)} />
+          <EvetHayir etiket="Ocak-Haziran 2026 ortalama prim gün sayınızı Temmuz-Aralık 2026'da (en az 6 ay) koruyabilir misiniz?" deger={g.istihdamiKorumaTaahhutEdebilirMi} onChange={(v) => set("istihdamiKorumaTaahhutEdebilirMi", v)} />
+          <EvetHayir etiket="KOBİ Bilgi Sistemi kaydınız ve beyannameniz güncel mi?" deger={g.kobiBilgiSistemiKayitGuncelMi} onChange={(v) => set("kobiBilgiSistemiKayitGuncelMi", v)} />
+          <EvetHayir etiket="KOSGEB'e vadesi geçmiş (yapılandırılmamış) bir borcunuz var mı?" deger={g.kosgebVadesiGecmisBorcuVarMi} onChange={(v) => set("kosgebVadesiGecmisBorcuVarMi", v)} />
         </div>
       );
     case "arge-merkezi-statusu":

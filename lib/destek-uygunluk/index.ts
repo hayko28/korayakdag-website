@@ -22,6 +22,7 @@ import {
   ticaretBakanligiIhracatDesteklerDegerlendir,
   tkdkDegerlendir,
   turqualityDegerlendir,
+  istihdamiKorumaDegerlendir,
 } from "./programlar";
 
 export * from "./types";
@@ -91,6 +92,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
   }
   if (girdi.imalatciMi !== false) {
     taslaklar.push(kosgebYondeDegerlendir(girdi));
+    taslaklar.push(istihdamiKorumaDegerlendir(girdi));
   }
   if (girdi.ihracatDurumu !== "yok") {
     taslaklar.push(ticaretBakanligiIhracatDesteklerDegerlendir(girdi));

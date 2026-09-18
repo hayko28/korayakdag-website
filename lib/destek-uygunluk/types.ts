@@ -264,6 +264,14 @@ export interface DestekBasvuruGirdisi {
   pazaraGirisBelgesiIhtiyaciVarMi?: boolean; // Pazara Giriş Belgesi Desteği (Md.3) — zorunlu sertifika/test/ruhsat
   markaTesciliVarMi?: boolean; // Yurt Dışı Marka Tescil Desteği (Md.4) yurt içi tescilli marka şartına bağlı — yoksa marka danışmanlığı cross-sell tetiklenir
 
+  // İstihdamı Koruma Destek Programı — 2026-2 dönemi (1 Eylül-31 Ekim 2026 başvuru,
+  // KOSGEB/Sanayi ve Teknoloji Bakanlığı ortak yürütür). Sadece finansman desteği açık;
+  // referans dönem Ocak-Haziran 2026, koruma dönemi Temmuz-Aralık 2026 ortalama prim günü.
+  istihdamiKorumaTaahhutEdebilirMi?: boolean;
+  referansDonemSigortaliCalisaniVarMi?: boolean;
+  kobiBilgiSistemiKayitGuncelMi?: boolean;
+  kosgebVadesiGecmisBorcuVarMi?: boolean;
+
   // KOBİ Dijital Dönüşüm Destek Programı
   ddxRaporuVarMi?: boolean;
   maliKarneVarMi?: boolean;
