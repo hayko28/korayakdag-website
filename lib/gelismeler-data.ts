@@ -1109,6 +1109,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Sanayi ve üretim odaklı orta ölçekli şirketlerin de halka arz yoluyla kaynak yaratabildiğini gösteren bir örnek daha. Büyüme aşamasındaki üretim şirketlerine, halka arzı bir finansman seçeneği olarak değerlendirmeden önce bağımsız denetim ve kurumsal yönetim altyapılarını gözden geçirmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "10 Eylül 2026 (2026 yılı Temmuz verileri)",
+    eklendiTarihi: "2026-09-19",
+    baslik:
+      "TÜİK: Sanayi üretimi temmuzda yıllık yüzde 0,3, aylık yüzde 1 geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 10 Eylül 2026'da açıkladığı verilere göre sanayi üretim endeksi temmuzda yıllık bazda yüzde 0,3, bir önceki aya göre ise yüzde 1 azaldı. Madencilik ve taş ocakçılığı endeksi yıllık yüzde 3,8, elektrik-gaz-buhar üretimi ve dağıtımı endeksi yüzde 5,6 gerilerken, imalat sanayi endeksi yıllık bazda yüzde 0,3 arttı.",
+    kaynakUrl:
+      "https://www.cumhuriyet.com.tr/ekonomi/sanayi-uretimi-temmuzda-geriledi-tuik-verileri-aciklandi-2536357",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Genel endeksteki gerilemeye karşın imalat sanayinin hafif de olsa artıda kalması dikkat çekici. Üretim planlaması yapan işletmelere genel başlığa değil, kendi alt sektörlerindeki (madencilik, imalat, enerji) ayrışan tabloya bakarak karar vermelerini öneririm.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "18 Eylül 2026 (2026 yılı ilk 8 ay verileri)",
+    eklendiTarihi: "2026-09-19",
+    baslik:
+      "TOBB verileri: 2026'nın ilk 8 ayında kurulan şirket sayısı yüzde 6,4 arttı",
+    ozet:
+      "TOBB'un açıkladığı verilere göre 2026 yılının Ocak-Ağustos döneminde kurulan şirket sayısı bir önceki yılın aynı dönemine göre yüzde 6,4 artışla 71.224'ten 75.814'e yükseldi; bu şirketlerin 68.253'ünü limited, 7.559'unu anonim şirketler oluşturdu. Aynı dönemde kapanan şirket sayısı yüzde 1,1 azalışla 18.284'e gerilerken, yalnızca ağustos ayında 9.212 şirket kuruldu.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomik-veriler/tobb-acikladi-8-ayda-75-bin-814-sirket-kuruldu-haberi-840514",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Kuruluş sayısındaki artışın kapanış sayısındaki hafif gerilemeyle birlikte gelmesi olumlu bir sinyal, ama yeni kurulan bir şirketin uzun vadede ayakta kalması ayrı bir konu. Şirketleşme kararını yalnızca vergi avantajına göre değil, büyüme planına uygun bir kurumsal yapıya göre vermelerini öneririm.",
+  },
+  {
+    kurum: "KVKK",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-19",
+    baslik:
+      "KVKK, müşteri bilgilerini internet sitesinde herkese açık bırakan online satıcıya 200 bin TL ceza verdi",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu'nun karar özetine göre, online giyim satışı yapan bir işletme, müşterilerine ait kişisel bilgileri internet sitesi üzerinden üçüncü kişilerin erişimine açık bıraktığı için 200.000 TL idari para cezasına çarptırıldı. Kurul, bu erişimin Kişisel Verilerin Korunması Kanunu'ndaki veri işleme şartlarından hiçbirine dayanmadığını tespit etti.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/gundem/kvkk-musteri-bilgilerini-internet-sitesinde-erisime-acan-saticiya-idari-para-cezasi-verdi/4052859",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Online satış yapan işletmelere, web sitesi ve e-ticaret altyapılarında müşteri bilgilerinin yetkisiz veya sınırsız erişime açık olup olmadığını teknik ekipleriyle ya da dış bir uzmanla düzenli aralıklarla kontrol ettirmelerini öneririm; bu tür bir güvenlik açığı çoğu zaman fark edilmeden uzun süre devam edebiliyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
