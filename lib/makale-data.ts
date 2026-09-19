@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-imalat-kredisi-tedarikci-kobiye-guvence",
+    title:
+      "KOSGEB'in İmalat Kredisini 150 Milyon TL'ye Çıkarması Aslında Kimi İlgilendiriyor?",
+    excerpt:
+      "KOSGEB, 28 Ağustos'ta İstihdamı Koruma Destek Programı'nı büyük imalat işletmelerini de kapsayacak şekilde genişletti; üst limit 50 milyon TL'den 150 milyon TL'ye çıktı. Haberin gerçek muhatabı çoğu zaman krediyi alan büyük firma değil, ona sipariş bağlı küçük tedarikçidir.",
+    tag: "Devlet Destekleri",
+    date: "19 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tam-tasdik-esiginde-500-bin-1-milyon-tl-siniri",
     title:
       "Tam Tasdik Eşiğinde 500 Bin - 1 Milyon TL Sınırı: Şirketiniz Farkında mı?",
