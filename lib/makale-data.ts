@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "bigg-yatirim-programi-45-milyon-tl-degerleme",
+    title:
+      "TÜBİTAK BiGG'den Yatırım Alan Girişimin Değeri Aslında Kaç TL?",
+    excerpt:
+      "TÜBİTAK BiGG Yatırım Programı'nın 2026 ikinci çağrısında iki farklı yatırım rakamı var: yüzde 3 hisse karşılığında 1.350.000 TL, yüzde 5 hisse karşılığında 2.250.000 TL. İkisini de yüzdesine bölünce aynı sonuç çıkıyor: 45 milyon TL. Başvuru öncesi bu örtük değerlemenin ne anlama geldiğini bilmek gerekiyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "20 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-imalat-kredisi-tedarikci-kobiye-guvence",
     title:
       "KOSGEB'in İmalat Kredisini 150 Milyon TL'ye Çıkarması Aslında Kimi İlgilendiriyor?",
