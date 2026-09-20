@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı | Koray Akdağ",
-  description: "TÜBİTAK 1711'de şirket-üniversite konsorsiyum şartı, 10 milyon TL bütçe üst sınırı ve 18 Eylül 2026 son başvuru tarihi rehberi.",
+  description: "TÜBİTAK 1711'de şirket-üniversite konsorsiyum şartı, 10 milyon TL bütçe üst sınırı ve uzatılan 2 Ekim 2026 son başvuru tarihi rehberi.",
   keywords: [
     "TÜBİTAK 1711",
     "Yapay Zeka Ekosistemi Çağrısı",
@@ -23,7 +23,7 @@ export default function Tubitak1711Page() {
   return (
     <BlogLayout
       title="TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?"
-      description="Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve 18 Eylül 2026 son başvuru tarihiyle güncel rehber."
+      description="Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve 2 Ekim 2026'ya uzatılan son başvuru tarihiyle güncel rehber."
       category="TÜBİTAK • YAPAY ZEKA • 2026"
       date="2026"
       readTime="12 Dakika"
@@ -32,21 +32,23 @@ export default function Tubitak1711Page() {
       programDurumu="acik"
     >
       {/* GİRİŞ / UYARI KUTUSU */}
-      <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
+      <div className="rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-8">
         <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
-          🔴 Son Başvuru 18 Eylül 2026: Ön Kayıt İçin Zaman Daralıyor
+          🟢 Güncelleme: Son Başvuru Tarihi 2 Ekim 2026&apos;ya Uzatıldı
         </h2>
         <p className="leading-8 text-gray-700">
           TÜBİTAK, 2022&apos;den bu yana her yıl açtığı{" "}
           <strong>1711 Yapay Zeka Ekosistemi Çağrısı&apos;nın</strong> beşincisini
-          15 Haziran 2026&apos;da başvuruya açtı. Başvurular{" "}
-          <strong>18 Eylül 2026 saat 23:59&apos;da</strong> kapanacak; ancak kuruluş
-          bazlı ön kayıt işleminin <strong>14 Eylül 2026 saat 17:30&apos;a</strong>{" "}
-          kadar tamamlanmış olması gerekiyor. Bu çağrının en kritik özelliği,
-          şirketlerin tek başına değil, mutlaka bir üniversite veya kamu
-          araştırma kurumuyla birlikte konsorsiyum kurarak başvurabilmesi.
-          Konsorsiyum kurma ve işbirliği sözleşmesi hazırlama süreci zaman
-          aldığından, hazırlığa hemen başlamak gerekiyor.
+          15 Haziran 2026&apos;da başvuruya açtı. Başlangıçta 18 Eylül 2026 olan
+          son başvuru tarihi <strong>2 Ekim 2026 saat 23:59&apos;a (UTC+3)</strong>{" "}
+          kadar uzatıldı; kuruluş bazlı ön kayıt işleminin ise{" "}
+          <strong>28 Eylül 2026 saat 23:59&apos;a</strong> kadar tamamlanmış
+          olması gerekiyor (ön kayıt yapılmadan nihai başvuru yapılamıyor). Bu
+          çağrının en kritik özelliği, şirketlerin tek başına değil, mutlaka
+          bir üniversite veya kamu araştırma kurumuyla birlikte konsorsiyum
+          kurarak başvurabilmesi. Konsorsiyum kurma ve işbirliği sözleşmesi
+          hazırlama süreci zaman aldığından, hazırlığa vakit kaybetmeden
+          başlamak gerekiyor.
         </p>
       </div>
 
@@ -361,12 +363,12 @@ export default function Tubitak1711Page() {
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">💻</div>
             <h3 className="text-lg font-bold">4. PRODİS Ön Kaydı</h3>
-            <p className="mt-2 text-sm text-gray-600">14 Eylül 2026, 17:30&apos;a kadar tamamlanmalı</p>
+            <p className="mt-2 text-sm text-gray-600">28 Eylül 2026, 23:59&apos;a kadar tamamlanmalı</p>
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">📤</div>
             <h3 className="text-lg font-bold">5. Nihai Başvuru</h3>
-            <p className="mt-2 text-sm text-gray-600">18 Eylül 2026, 23:59&apos;a kadar PRODİS üzerinden</p>
+            <p className="mt-2 text-sm text-gray-600">2 Ekim 2026, 23:59&apos;a kadar PRODİS üzerinden</p>
           </div>
         </div>
         <div className="mt-12 overflow-x-auto rounded-2xl border bg-white">
@@ -384,11 +386,11 @@ export default function Tubitak1711Page() {
               </tr>
               <tr className="border-b">
                 <td className="p-4 font-semibold">Ön Kayıt Son Tarihi</td>
-                <td className="p-4">14 Eylül 2026, 17:30</td>
+                <td className="p-4">28 Eylül 2026, 23:59</td>
               </tr>
               <tr>
-                <td className="p-4 font-semibold text-red-600">Nihai Başvuru (Çağrı Kapanışı)</td>
-                <td className="p-4 font-semibold text-red-600">18 Eylül 2026, 23:59 (UTC+3)</td>
+                <td className="p-4 font-semibold text-red-600">Nihai Başvuru (Çağrı Kapanışı, uzatıldı)</td>
+                <td className="p-4 font-semibold text-red-600">2 Ekim 2026, 23:59 (UTC+3)</td>
               </tr>
             </tbody>
           </table>
@@ -475,9 +477,10 @@ export default function Tubitak1711Page() {
               ilişkilendirilmesi, değerlendirmede önemli bir avantaj sağlar.
             </li>
             <li>
-              Ön kayıt son tarihi (14 Eylül), nihai başvuru tarihinden (18
-              Eylül) önce geldiği için bu iki tarih birbirine
-              karıştırılmamalıdır.
+              Ön kayıt son tarihi (28 Eylül), uzatılan nihai başvuru
+              tarihinden (2 Ekim) önce geldiği için bu iki tarih birbirine
+              karıştırılmamalıdır; ön kayıt yapılmadan nihai başvuru
+              yapılamaz.
             </li>
             <li>
               Rakamsal üst limitler ve destek oranları TÜBİTAK tarafından her
@@ -550,9 +553,9 @@ export default function Tubitak1711Page() {
           </h3>
           <p className="leading-8 text-gray-700">
             Şirket-üniversite konsorsiyumu kurmak, projeyi 5 öncelikli
-            alandan birine uygun kurgulamak ve 18 Eylül 2026 son başvuru
-            tarihine kadar PRODİS sürecini eksiksiz tamamlamak, 10 milyon
-            TL&apos;lik bütçe üst sınırından yararlanma şansınızı
+            alandan birine uygun kurgulamak ve uzatılan 2 Ekim 2026 son
+            başvuru tarihine kadar PRODİS sürecini eksiksiz tamamlamak, 10
+            milyon TL&apos;lik bütçe üst sınırından yararlanma şansınızı
             artırır.{" "}
             <Link href="/#contact" className="text-orange-600 underline">
               Projenizi TÜBİTAK 1711 çağrısına hazırlamamız için bizimle
@@ -576,9 +579,10 @@ export default function Tubitak1711Page() {
           gerektiriyor.
         </p>
         <p className="text-lg leading-9 text-gray-700">
-          18 Eylül 2026 son başvuru tarihine kadar kalan süre kısıtlı
-          olduğundan, uygun bir üniversite/araştırma kurumu ortağı belirleme,
-          işbirliği sözleşmesini hazırlama ve PRODİS ön kaydını tamamlama
+          TÜBİTAK&apos;ın son başvuru tarihini 2 Ekim 2026&apos;ya uzatması
+          ek bir hazırlık süresi sağlasa da, uygun bir üniversite/araştırma
+          kurumu ortağı belirleme, işbirliği sözleşmesini hazırlama ve 28
+          Eylül 2026&apos;ya kadar tamamlanması gereken PRODİS ön kaydı
           adımlarına vakit kaybetmeden başlanması önerilir.
         </p>
       </section>

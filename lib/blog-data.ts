@@ -228,7 +228,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
     title: "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?",
-    excerpt: "Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı, desteklenen giderler ve 18 Eylül 2026 son başvuru tarihiyle güncel rehber.",
+    excerpt: "Güncelleme: TÜBİTAK son başvuru tarihini 2 Ekim 2026'ya uzattı (kuruluş bazlı ön kayıt son tarihi ise 28 Eylül 2026). Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve desteklenen giderlerle güncel rehber.",
     category: "TÜBİTAK • YAPAY ZEKA • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -498,7 +498,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "istihdami-koruma-destek-programi-2026",
     title: "İstihdamı Koruma Destek Programı 2026: Yeni Esaslar, Destek Tutarları ve Örnek Hesaplamalar",
-    excerpt: "Güncelleme (28 Ağustos 2026): kredi desteği 15 puana çıkarıldı, kredi limiti formülle hesaplanıyor, yatırım teşvik belgeli büyük işletmeler için özel formül geldi. Çalışan başına 3.500 TL destek, 50 milyon TL'ye kadar kredi ve gerçekçi şirket örnekleriyle güncel rehber.",
+    excerpt: "Güncelleme (28 Ağustos 2026): 2026-2 döneminde (1 Eylül-31 Ekim 2026 başvuru) finansman desteği 10 puandan 12 puana çıkarıldı, kredi limiti KOBİ'lerde 50 milyon TL'de sabit kalırken büyük işletmelerde 150 milyon TL'ye yükseldi ve kapsam ilk kez büyük işletmeleri de içerecek şekilde genişledi. Kredi limiti formülü, yatırım teşvik belgeli büyük işletmeler için özel formül ve gerçekçi şirket örnekleriyle güncel rehber.",
     category: "KOSGEB • İSTİHDAM DESTEĞİ • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -674,5 +674,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "tubitak-bigg-yatirim-1812-programi-2026-2-cagrisi",
+    title: "TÜBİTAK BiGG Yatırım (1812) Programı 2026-2 Çağrısı: 1.350.000 TL Yatırımı Hangi Şartlarla Alırsınız?",
+    excerpt: "Türkiye'nin ilk hisse karşılığı yatırım esaslı kamu destek programı BiGG Yatırım'ın (1812) 2026-2 çağrısı 30 Eylül 2026'ya kadar açık. Mükemmeliyet Mührü alan girişimcilere %3 hisse karşılığında 1.350.000 TL yatırım, şirketin ne zaman kurulması gerektiği ve 1512'den farkıyla güncel rehber.",
+    category: "TÜBİTAK • BiGG YATIRIM • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1712342109846-a8fcb1c883ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
