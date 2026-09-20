@@ -1151,6 +1151,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Online satış yapan işletmelere, web sitesi ve e-ticaret altyapılarında müşteri bilgilerinin yetkisiz veya sınırsız erişime açık olup olmadığını teknik ekipleriyle ya da dış bir uzmanla düzenli aralıklarla kontrol ettirmelerini öneririm; bu tür bir güvenlik açığı çoğu zaman fark edilmeden uzun süre devam edebiliyor.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "3 Ağustos 2026 (2026 yılı 2. çağrısı, başvurular 28 Eylül 2026'ya kadar sürüyor)",
+    eklendiTarihi: "2026-09-20",
+    baslik:
+      "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026 yılı 2. dönemi başvuruya açık",
+    ozet:
+      "TÜBİTAK, Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026 yılı ikinci dönemini başvuruya açtı. Program, firmaların yeşil dönüşüme yönelik Ar-Ge projelerine faizsiz geri ödemeli destek sağlıyor; üst limit mikro ve küçük işletmelerde 15 milyon TL, orta ölçekli işletmelerde 24 milyon TL, büyük işletmelerde ise 51,5 milyon TL olarak belirlendi. Destek oranı KOBİ'lerde yüzde 80'e, deprem bölgesindeki KOBİ'lerde yüzde 90'a kadar çıkabiliyor; geri ödeme proje bitiminden 1 yıl sonra başlıyor.",
+    kaynakUrl:
+      "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/icerik-1832-sanayide-yesil-donusum-cagrisi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Desteğin faizsiz ama geri ödemeli olması, saf hibe bekleyen işletmeler için bazen kafa karıştırıyor; başvuru öncesinde projenin nakit akışına geri ödeme takviminin nasıl oturacağını hesaplamalarını öneririm. Deprem bölgesindeki KOBİ'ler için yüzde 90'lık destek oranı özellikle değerlendirmeye değer.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "9-10 Eylül 2026 (GITEX AI Türkiye etkinliğinde açıklandı)",
+    eklendiTarihi: "2026-09-20",
+    baslik:
+      "Sanayi ve Teknoloji Bakanlığı, yapay zekâ girişimlerine yönelik 150 milyon dolarlık girişim sermayesi fonu duyurdu",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, İstanbul Fuar Merkezi'nde düzenlenen GITEX AI Türkiye etkinliğinde yapay zekâ odaklı girişim sermayesi fonlarına 150 milyon dolarlık kamu kaynağı ayrıldığını açıkladı. Kaynağın, erken ve büyüme aşamasındaki yapay zekâ şirketlerinin finansmana erişimini desteklemek için kullanılması planlanıyor. Kacır, Türkiye'de halihazırda yaklaşık 1.500 yapay zekâ girişimi bulunduğunu, hedefin 100 bin teknoloji girişimine ulaşmak ve unicorn şirketlerin toplam değerlemesini 100 milyar dolara çıkarmak olduğunu belirtti.",
+    kaynakUrl:
+      "https://www.chip.com.tr/galeri/turkiye-yapay-zeka-girisimleri-icin-150-milyon-dolarlik-kamu-kaynagi-ayiriyor_183693.html",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Fon henüz kuruluş aşamasında, başvuru koşulları ve takvimi netleşmedi. Erken aşama yapay zekâ girişimlerine, çağrı açıldığında hazır olabilmek için finansal projeksiyon ve ortaklık yapılarını şimdiden düzenlemelerini öneririm.",
+  },
+  {
+    kurum: "OECD",
+    tarih: "18 Eylül 2026",
+    eklendiTarihi: "2026-09-20",
+    baslik:
+      "OECD'nin Türkiye KOBİ Politikaları raporu: KOBİ'lerin çok uluslu şirketlerle bağları güçleniyor",
+    ozet:
+      "OECD'nin 'Batı Balkanlar ve Türkiye için KOBİ Politikaları Endeksi 2026 - Türkiye Ekonomi Profili' raporuna göre KOBİ'ler Türkiye'deki istihdamın yaklaşık yüzde 68,5'ini, yaratılan katma değerin ise yüzde 41,2'sini oluşturuyor. Rapor, tedarikçi geliştirme ve eşleştirme girişimlerinin yaygınlaşmasıyla KOBİ'lerle çok uluslu şirketler arasındaki kalıcı iş bağlantılarının arttığını, KOSGEB aracılığıyla yürütülen Yeşil Sanayi Programı'ndan yararlanan KOBİ sayısının ilk yıldaki 866'dan 2025'te 1.743'e yükseldiğini ortaya koydu. OECD, kaydedilen ilerlemeye rağmen KOBİ'lerin verimlilik ve yapısal dönüşüm potansiyelinin hâlâ tam olarak kullanılamadığına dikkat çekti.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomi/turkiyede-istihdamin-yuzde-685i-onlarin-elinde-oecd-yeni-tabloyu-acikladi-haberi-840396",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Tedarikçi geliştirme ve eşleştirme programlarına dahil olan KOBİ'lerin çok uluslu şirketlerle kurduğu bağlantılar, çoğu zaman yeni pazarlara tek başına açılmaktan daha hızlı ve daha az riskli bir büyüme kanalı olabiliyor. Sanayi bölgelerinde faaliyet gösteren üretici KOBİ'lere bu tür eşleştirme programlarını yakından takip etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece

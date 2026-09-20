@@ -28,6 +28,7 @@ const KURUM_COLORS: Record<string, string> = {
   TÜİK: "bg-yellow-600",
   İSO: "bg-stone-600",
   "Türk Eximbank": "bg-zinc-600",
+  OECD: "bg-neutral-600",
 };
 
 const FEED_COLLAPSED_COUNT = 5;
