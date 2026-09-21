@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "arge-merkezinden-vazgecmenin-3-yanlis-gerekcesi",
+    title:
+      "Ar-Ge Merkezi'nden Vazgeçmenin En Sık Görülen 3 Yanlış Gerekçesi",
+    excerpt:
+      "15 tam zaman eşdeğer Ar-Ge personeline ulaşan birçok imalat ve mühendislik firması, Ar-Ge Merkezi başvurusunu üç yanlış gerekçeyle rafa kaldırıyor: 'sadece teknopark için', 'süreç aylarca sürer', 'bu ölçek için değil'. Üçü de mevzuata uymuyor; karşılığında yüzde 95'e varan stopaj teşviki ve SGK prim desteği masada duruyor.",
+    tag: "Devlet Destekleri",
+    date: "21 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "bigg-yatirim-programi-45-milyon-tl-degerleme",
     title:
       "TÜBİTAK BiGG'den Yatırım Alan Girişimin Değeri Aslında Kaç TL?",
