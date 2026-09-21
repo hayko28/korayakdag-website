@@ -1193,6 +1193,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Tedarikçi geliştirme ve eşleştirme programlarına dahil olan KOBİ'lerin çok uluslu şirketlerle kurduğu bağlantılar, çoğu zaman yeni pazarlara tek başına açılmaktan daha hızlı ve daha az riskli bir büyüme kanalı olabiliyor. Sanayi bölgelerinde faaliyet gösteren üretici KOBİ'lere bu tür eşleştirme programlarını yakından takip etmelerini öneririm.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-09-21",
+    baslik:
+      "KOSGEB Küresel Rekabetçilik Destek Programı'nın 2026 yılı 1. dönemi başvuruya açıldı",
+    ozet:
+      "KOSGEB, hızlı büyüyen ve yüksek/orta yüksek teknolojili KOBİ'lere yönelik Küresel Rekabetçilik Destek Programı'nın 2026 yılı ilk başvuru dönemini 7 Eylül 2026'da açtı; başvurular 30 Eylül 2026'ya kadar alınacak. Program kapsamında işletmelere 30-75 milyon TL arasında kredi, 20 puanlık geri ödemesiz finansman desteği ve KGF kefaleti sağlanıyor; 2025'te uygulamaya alınan program kapsamında bugüne kadar 71 KOBİ toplam 3 milyar TL finansmana erişim imkânı buldu.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Kredi alt limitinin 30 milyon TL'den başlaması, programı daha çok orta-büyük ölçekli ve ihracat/Ar-Ge performansı belirginleşmiş KOBİ'ler için anlamlı kılıyor; başvuru öncesi son üç yıllık ihracat veya Ar-Ge harcaması artışını gösteren verileri hazır bulundurmalarını öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "31 Ağustos 2026",
+    eklendiTarihi: "2026-09-21",
+    baslik:
+      "Sanayi ve Teknoloji Bakanlığı'ndan KOBİ ve girişimlere yönelik 'Herkes İçin GPU' programı duyuruldu",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı, 2026-2030 Türkiye Yapay Zekâ Eylem Planı kapsamında, yapay zekâ modeli geliştiren girişim, KOBİ ve araştırmacıların yüksek maliyetli hesaplama altyapısına erişimini kolaylaştırmayı amaçlayan 'Herkes İçin GPU' (Ulusal Yapay Zekâ Araştırma Kaynağı) Programı'nı duyurdu. İlk aşamada en az 5 akredite yerli veri merkezinden yılda en az 2 milyon GPU-saat kredi tahsis edilecek, bunun en az yüzde 40'ı teknogirişimlere ayrılacak; hedef 2028 sonuna kadar bu kapasiteyi en az 20 milyon GPU-saate çıkarmak. İlk çağrının önümüzdeki 6 ay içinde açılması planlanıyor.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/yapay-zekanin-islem-gucu-kobi-ve-girisimlere-herkes-icin-gpu-ile-acilacak/4042291",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Program henüz ilk çağrı aşamasında değil, başvuru koşulları netleşmedi. Yapay zekâ modeli eğitmek için işlem gücüne ihtiyaç duyan erken aşama girişimlere ve KOBİ'lere, çağrı açıldığında hazır olabilmek için proje ve altyapı ihtiyaçlarını şimdiden netleştirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "17 Eylül 2026 (2026 yılı Temmuz verileri)",
+    eklendiTarihi: "2026-09-21",
+    baslik:
+      "TÜİK: Perakende satış hacmi temmuzda yıllık yüzde 10,4 arttı, genel ticaret satış hacmi geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 17 Eylül 2026'da açıkladığı verilere göre temmuzda ticaret satış hacmi yıllık bazda yüzde 0,6, aylık bazda ise yüzde 2,5 geriledi. Buna karşın perakende ticaret satış hacmi yıllık yüzde 10,4, aylık yüzde 0,2 artarken; toptan ticaret yıllık yüzde 4,2, motorlu araç ve motosiklet ticareti ise yıllık yüzde 9,8 geriledi.",
+    kaynakUrl:
+      "https://www.aa.com.tr/tr/ekonomi/ticaret-satis-hacmi-temmuzda-yillik-bazda-azalirken-perakende-satis-hacmi-artti/4053950",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Perakendedeki güçlü artışla toptan ticaret ve motorlu araç satışlarındaki gerilemenin aynı anda görülmesi, talebin son tüketiciye yakın kanallarda yoğunlaştığına işaret ediyor. Hem perakende hem toptan kanalda satış yapan işletmelere kanal bazında ayrı satış ve stok planlaması yapmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
