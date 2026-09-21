@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "ur-ge-proje-destegi-nedir-kobi-basvuru-sureci-2026",
+    title: "UR-GE Proje Desteği Nedir? KOBİ Olarak Tek Başıma mı Başvururum, Bir Birliğe mi Katılmalıyım?",
+    excerpt: "UR-GE (Uluslararası Rekabetçiliğin Geliştirilmesi) Proje Desteği bireysel bir hibe değil, işbirliği kuruluşu (İhracatçı Birliği, Oda, sektör derneği vb.) üzerinden yürütülen kolektif bir ihracat destek modelidir. İşbirliği kuruluşu tanımı, 2026 güncel destek tutarları (%75 oranında, proje bazında 29,5 milyon TL'ye varan tavan), proje şartları ve KOBİ olarak katılım süreciyle güncel rehber.",
+    category: "İHRACAT DESTEKLERİ • UR-GE • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1748780381580-3250e4bb4ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi",
     title: "KOSGEB KOBİGEL - KOBİ Gelişim Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
     excerpt: "KOBİ'lerin proje teklif çağrıları üzerinden rekabet gücünü ve katma değerini artırmasını hedefleyen KOBİGEL - KOBİ Gelişim Destek Programı 15 Nisan 2024'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından benzer bir gelişim projesi olan KOBİ'lerin bakabileceği güncel seçenekler.",
