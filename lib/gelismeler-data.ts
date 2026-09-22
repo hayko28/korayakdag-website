@@ -1235,6 +1235,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Perakendedeki güçlü artışla toptan ticaret ve motorlu araç satışlarındaki gerilemenin aynı anda görülmesi, talebin son tüketiciye yakın kanallarda yoğunlaştığına işaret ediyor. Hem perakende hem toptan kanalda satış yapan işletmelere kanal bazında ayrı satış ve stok planlaması yapmalarını öneririm.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "28 Ağustos 2026 (2 Eylül 2026'da güncellendi)",
+    eklendiTarihi: "2026-09-22",
+    baslik:
+      "KOSGEB İstihdamı Koruma Destek Programı'nın kapsamı büyük işletmeleri de içine alacak şekilde genişletildi",
+    ozet:
+      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla yürüttüğü İstihdamı Koruma Destek Programı'nın kapsamını genişletti. Düzenlemeyle büyük işletmeler de programa dahil edildi; kredi üst limiti KOBİ'lerde 50 milyon TL'ye, büyük işletmelerde 150 milyon TL'ye çıkarıldı ve KOSGEB'in karşıladığı finansman desteği 10 puandan 12 puana yükseltildi. Başvurular 1 Eylül-31 Ekim 2026 tarihleri arasında KOBİ Bilgi Sistemi üzerinden alınıyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Programın artık büyük işletmeleri de kapsaması, tedarik zincirinde büyük ölçekli imalatçılarla çalışan KOBİ'ler için de dolaylı bir istikrar sinyali sayılabilir. İmalat sanayinde faaliyet gösteren işletmelere 31 Ekim'e kadar süren başvuru penceresini değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "5 Eylül 2026",
+    eklendiTarihi: "2026-09-22",
+    baslik:
+      "Sosyal medya ve e-ticaret üzerinden satış yapanlara yönelik vergi bildirim yükümlülüğü genişletildi",
+    ozet:
+      "5 Eylül 2026 tarihli ve 33361 sayılı Resmî Gazete'de yayımlanan Vergi Usul Kanunu Genel Tebliği (Sıra No: 595) ile elektronik ticaret aracı hizmet sağlayıcılarının, sosyal ağ sağlayıcılarının, yer ve erişim sağlayıcılarının bildirim yükümlülüğü kapsamı genişletildi. Yer ve sosyal ağ sağlayıcıları artık aylık dönemler itibarıyla hizmetin sunulduğu internet adresini, hizmet verilen kişilerin kimlik bilgilerini ve ilan bilgilerini Gelir İdaresi Başkanlığı'na bildirmekle yükümlü.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/05/vergi-usul-kanunu-genel-tebligi-sira-no-595/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Sosyal medya üzerinden ürün veya hizmet satan ya da kendi kanallarından e-ticaret yapan işletmelere, kullandıkları platformun bu yeni bildirim yükümlülüğüne nasıl uyum sağladığını sormalarını öneririm; kayıt dışı görünen gelirlerin idare nezdinde daha görünür hale gelmesi bekleniyor.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "4 Eylül 2026",
+    eklendiTarihi: "2026-09-22",
+    baslik:
+      "KOSGEB, işletmelerin beş yıllık performansını ölçen 'İşletme Değerlendirme Raporu'nu Findeks üzerinden sundu",
+    ozet:
+      "KOSGEB, işletmelerin künye bilgileri, insan kaynakları, Ar-Ge/yenilik, verimlilik, ihracat ve finansman göstergelerini beş yıllık veri temelinde bir araya getiren İşletme Değerlendirme Raporu'nu (İDR) duyurdu. Rapor, işletmelerin kendi sektörel ve bölgesel konumunu görmesine, finansmana erişim ve ticari ilişkilerde veri temelli bir referans sunmasına yardımcı olmak amacıyla Findeks Platformu üzerinden işletmelere 120 TL, üçüncü kişilere 240 TL karşılığında sunuluyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bu tür standart bir rapor, banka veya yatırımcı görüşmesine hazırlanan işletmeler için hızlı ve düşük maliyetli bir ilk adım olabilir. Raporun genel bir çerçeve sunduğunu, şirkete özel bir değerleme ya da durum tespiti (due diligence) çalışmasının yerini tutmadığını hatırlatmak isterim.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
