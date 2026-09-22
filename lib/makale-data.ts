@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satin-almada-kodun-fikri-mulkiyeti-kimde",
+    title: "Satın Alınan Şirketin Yazılımı, Hukuken Kime Ait?",
+    excerpt:
+      "Bir yazılım şirketinin satışı, durum tespiti sürecinde tek bir eksik belgeyle üç ay ertelendi: çekirdek algoritmayı yazan kurucu ortak ayrılırken hisse devri yapılmış ama fikri mülkiyet devir sözleşmesi hiç imzalanmamıştı. Kullanmak, hukuken sahibi olmak anlamına gelmiyor.",
+    tag: "Hukuk ve Vergi",
+    date: "22 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "arge-merkezinden-vazgecmenin-3-yanlis-gerekcesi",
     title:
       "Ar-Ge Merkezi'nden Vazgeçmenin En Sık Görülen 3 Yanlış Gerekçesi",
