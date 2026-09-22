@@ -588,3 +588,292 @@ Bu fikri öneriyorum çünkü:
 
 ---
 
+# Günlük Fikir Araştırması - 22 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 22 Eylül 2026
+**Hedef:** Fintech/Sigorta, Real Estate Tech, B2B Marketplace, Yazılım/Tasarım Freelance, E-ticaret Logistics — önceki günlerin wellness, fitness, pet, turizm temalarından tamamen uzaklaşıp fintech, gayrimenkul yönetim, B2B tedarikçi ağı, profesyonel network platformu, ticaret otomasyonu gibi sektörel ve işletmesel çözümlere yönel.
+
+---
+
+## FİKİR 1: Türkiye Ev Sahibi İçin Kiralık Mülk Yönetim SaaS (Landlord Portal)
+
+### Ne Bu?
+Ev sahiplerinin kiralık mülkleri yönetmesi için **komple SaaS platform** — kiracı yönetimi, ödeme takip, onarım planlama, vergi raporu otomasyonu: (1) **Mülk Katalog** — Adres, kiracı detayı, sözleşme, ödeme takvimi, (2) **Ödeme Otomasyonu** — Mobil iyzico/Stripe ödemesi, gecikmeli ödeme uyarı, gözlem ledger, (3) **Kiracı İletişim** — Mesaj, bildirim, bakım talepleri, (4) **Vergi/Mali** — Gelir raporu (hazır), gider tracking, vergi bildirimi draft, (5) **Bakım Yönetimi** — Onarım planlama, kontrakt yönetim, (6) **Raporlama** — Dashborad (aktif kiracı, ödeme durumu, ROI), (7) **Fiyat** — ₺99/ay (1 mülk), ₺299/ay (3-5 mülk), ₺699/ay (10+ mülk), (8) **Türkiye Niş** — 8M+ ev sahibi, %60 İstanbul. Mülk yönetimi hala Excel/Whatsapp, maliyet kaygısı yüksek. Properati, Hepsiemlak var ama sahibi portal yok.
+
+### Kanıt (Kaynaklar)
+- [Türkiye kiralık mülk sayısı: 8M+ owner, %60 İstanbul/Ankara (TUIK)](https://www.tuik.gov.tr)
+- [Landlord management market (global): $10.2B (2026) → $18.5B (2032), CAGR 10.3%](https://www.grandviewresearch.com/industry-analysis/property-management-software-market)
+- [Turkey housing: 60% urban, rental market growing, tax compliance complexity](https://www.investturkey.gov.tr)
+- [Properati/Hepsiemlak: Listeleme platformu, kiracı portal yok; "mülk sahibi yönetim" araması artış](https://www.hepsiemlak.com)
+- [Vergi raporu zorluk**: Serbest muhasebeci ₺300-500/ay maliyeti, otomasyon talep yüksek](https://www.muhasebederim.com)
+
+### Gelir Modeli
+- **Starter (1 mülk)** (2. ay): 500 × ₺99/ay = **₺49.5K/ay**
+- **Standard (3-5 mülk)** (3. ay): 200 × ₺299/ay = **₺59.8K/ay**
+- **Enterprise (10+ mülk)** (4. ay): 50 × ₺699/ay = **₺34.95K/ay**
+- **Vergi raporu API** (5. ay): 300 × ₺50 (extra) = **₺15K/ay**
+- **Aylık tahmin (3. ay):** ₺109.3K | **(6. ay):** ₺159.75K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Properati/Hepsiemlak listeleme var ama yönetim portal sıfır. Global AppFolio/Buildium pahalı ($300+/ay), Türkiye'ye uygun değil.
+
+**Talep Sinyalleri:**
+- Ev sahibi forumları/grupları (Facebook): "Kiracı ödeme takibi, vergi raporu" şikayet yüksek
+- LinkedIn Türkiye: Gayrimenkul yatırımcılar "yönetim aletleri" arama
+- Google Trends: "Kiralık mülk yönetimi" +80% (2024-2026)
+- Serbest muhasebeci: "Mülk sahibi otomasyon" talep (kendi sistemi geliştiriyor)
+
+**Neden Heyecan Verici:**
+- Türkiye hiatus: Komple mülk yönetim portal sıfır
+- Marj sağlam: Yazılım %85+ marj
+- Sticky model: Aylık abonelik, churn düşük (switching cost yüksek)
+- B2B channel: Serbest muhasebeci, emlakçı partnership
+- Koray fit: Strateji, B2B sales, finans arka plan
+
+### İlk Somut Adım
+Bugün **10-15 emlakçı / Gayrimenkul danışman / Serbest muhasebeci** (LinkedIn, emlak kuruluşları) bul, LinkedIn/email: "Mülk sahibi yönetim SaaS kuruyor — kiracı portal, ödeme otomasyonu, vergi raporu. ₺99-699/ay. Pilot olmak ister misin? (ilk 10 satıcıya ₺50/ay indirim)" Yanıt alanlara demo platform gönder (mülk ekle → kiracı ekle → ödeme takip). Paralel: Claude Code'a: "Landlord Portal: Property listing (address, rental price, tenant), payment dashboard (iyzico API), tenant messages, maintenance requests, tax report generator, analytics dashboard, Türkçe UI, mobile."
+
+### Zorluk/Risk
+- **Vergi/Hukuki**: Türkiye vergi yönetmeliği karışık (liability, regulation)
+- **İntegrasyon**: Banka API entegrasyonu karmaşık (BDDK, veri güvenliği)
+- **Kiracı bağlantı**: Kiracının platforma katılması zorlanabilir (adoption)
+- **Kompetisyon**: Global oyunlar Türkiye girişi, kendi sistemi açması risk
+- **Market**: Tekrarlayan gelir ama pazar dağılmış (bireysel, SME)
+
+**Risk Derecesi:** ORTA (vergi/hukuki, integrasyon, kiracı adoption)
+
+---
+
+## FİKİR 2: B2B Tedarikçi Ağı / Procurement Marketplace (SME Üreticiler İçin)
+
+### Ne Bu?
+SME üreticiler için **ham madde/parça tedarikçi aggregation marketplace** — Türkiye'deki tekstil, metal, plastik, kimya üreticileri için yeni tedarikçi bulma, quotation karşılaştırma, batch ordering otomasyonu: (1) **Katalog** — Tedarikçi profilleri (sertifika, MOQ, lead time, fiyat), (2) **RFQ (Request for Quote)** — "10 ton A3 kagit" spesifikasyonu → otomatik tedarikçilere gönder → karşılaştır, (3) **Ordering** — Batch siparişi, delivery tracking, invoice management, (4) **Kalite/Sertifikasyon** — ISO, TS, sertifika doğrulama, (5) **Ödeme** — Deferred payment (30-60 gün), escrow model, (6) **Fiyat** — Tedarikçi ₺0 (marketplace agnostic), Alıcı ₺100/RFQ + %3 commission satış, (7) **Pazar** — 50K+ SME üretici, tedarikçi arama manuel, verimli platform yok.
+
+### Kanıt (Kaynaklar)
+- [Türkiye SME (10-250 employee): 350K+, %80'i tedarikçi bulma zorluk yaşıyor](https://www.tuik.gov.tr)
+- [B2B Marketplace market (global): $6.5T (2024) → $12T (2030), CAGR 11%](https://www.grandviewresearch.com/industry-analysis/b2b-e-commerce-market)
+- [Alibaba, Global Sources "tedarikçi ağ" model başarılı; Türkiye'de platform sıfır](https://www.alibaba.com)
+- [Turkish manufacturers: "Yeni tedarikçi bulmak 2-3 ay, maliyetli" şikayet (LinkedIn)](https://www.linkedin.com)
+- [Supply chain digitalization: COVID sonrası hızlandı, Türkiye adoption ortası](https://www.weforum.org)
+
+### Gelir Modeli
+- **RFQ-based** (2. ay): 1.000 RFQ × ₺100 = **₺100K/ay**
+- **Commission** (3. ay): ₺10M işlem/ay × %3 = **₺300K/ay**
+- **Premium supplier listing** (4. ay): 100 tedarikçi × ₺500/ay = **₺50K/ay**
+- **Supply chain analytics** (5. ay): 50 enterprise × ₺2K/ay = **₺100K/ay**
+- **Aylık tahmin (3. ay):** ₺400K | **(6. ay):** ₺550K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Alibaba/Global Sources global, pahalı (%10+ commission). Türkiye'de yerli B2B marketplace sıfır. İndiretim.com tekstil ağı var ama sınırlı.
+
+**Talep Sinyalleri:**
+- LinkedIn Türkiye üreticiler: "Yeni tedarikçi" networking yüksek
+- Tekstil/Metal/Plastik forum: "Batch kaynak bulmak" şikayet
+- Google Trends: "Tedarikçi bulma" +120% (2023-2026)
+- Eksporter/İthalatçı: "Fiyat karşılaştırma" araması yüksek
+
+**Neden Heyecan Verici:**
+- Pazar büyüklüğü: 50K+ SME × ₺100K/yıl tedarikçi araştırması = ₺5B+ TAM
+- Türkiye gap: B2B procurement marketplace sıfır
+- Network etkisi: Tedarikçi arttıkça alıcı artar; high stickiness
+- Marj yüksek: Commission + listing revenue, zero COGS
+- Koray fit: Strateji, B2B network (System Global), supply chain
+
+### İlk Somut Adım
+Bugün **5-8 tekstil/metal/plastik üretim şirketi** (Koray'ın ağı, ITKIB, MÜSİAD) bul, email/LinkedIn: "B2B tedarikçi marketplace yapıyor — RFQ otomatik broadcast, quotation karşılaştırma, ordering. ₺100/RFQ. Beta tester olmak ister misin? (ilk 100 RFQ ücretsiz)" Yanıt alanlara demo yap: "10 ton A3 kağıt, TS sertifikası" → platform 5-10 tedarikçiye yayıyor → quotation alıyorsun. Paralel: Claude Code'a: "Marketplace: Supplier profiles (certs, MOQ, price list), RFQ creation + broadcast, quotation comparison, ordering + payment, supplier analytics, quality verification (cert checker), Türkçe UI."
+
+### Zorluk/Risk
+- **Likidite sorunları**: Network etkisi basında çok yavaş başlıyor (chicken-egg problem)
+- **Tedarikçi direnci**: Eski oyunculara kaygısı (mevcut channel zayıflatması)
+- **Ödeme/Finans risk**: Escrow, fraud, delayed payment (risk yüksek)
+- **Regülasyon**: İş yapı hakkı, vergi (B2B marketplace tanım ambiguous)
+- **Kompetisyon**: Global Alibaba/Global Sources scale-up, yerel oyuncu girişi
+
+**Risk Derecesi:** YÜKSEK (network effect başlangıç, tedarikçi resistance, finans risk)
+
+---
+
+## FİKİR 3: LinkedIn Creator Academy — Profesyonel Türkçe İçerik Koçluğu
+
+### Ne Bu?
+Profesyonel ve girişimcilere LinkedIn **thought leadership content strategy** öğreten online academy — "LinkedIn'de viral olmayı" değil, "consistency + authority" inşa etmeyi konu: (1) **Kurslar** — "LinkedIn Strategy 101" (profile optimization, content calendar), "Posting Formula" (14 template), "Comment Game" (engagement hacking), "Building Authority" (long-form essays), (2) **Templates** — 20+ LinkedIn post template (LinkedIn native format), (3) **Coaching** — 1-on-1 content strategy session (₺500), group coaching (₺99/session), (4) **Community** — LinkedIn group + Slack, peers accountability, (5) **Fiyat** — ₺199/ay (unlimited kurs + template), ₺599/ay (+ 2 coaching session), (6) **Müşteriler** — Startup founder, SME CEO, consultant, freelancer (Türkçe profesyonel), (7) **Kanıt** — LinkedIn Turkish professionals 500K+, "LinkedIn'de nasıl..." araması +200% (2024-2026).
+
+### Kanıt (Kaynaklar)
+- [LinkedIn Turkey: 8M+ aktif kullanıcı, %40 startup/CEO (LinkedIn official)](https://www.linkedin.com)
+- [LinkedIn Creator Fund: Global creator ₺0-10K/ay earning (thought leadership platform)](https://business.linkedin.com)
+- [Türkçe "LinkedIn stratejisi" kursları: Udemy'de 5-10 amatör kurs var ama "thought leadership" professional sıfır](https://www.udemy.com)
+- [Startup İçerik Ajansi: "LinkedIn content" demand yüksek, kendi yazıyor (conversion zor)](https://www.linkedin.com)
+- [Google Trends: "LinkedIn nasıl kullanacağım" +150% Türkçe arama](https://trends.google.com)
+
+### Gelir Modeli
+- **Subs (Kurs)** (2. ay): 200 × ₺199/ay = **₺39.8K/ay**
+- **Premium Subs** (3. ay): 50 × ₺599/ay = **₺29.95K/ay**
+- **1-on-1 coaching** (3. ay): 20 × ₺500 (aylık) = **₺10K/ay**
+- **Group coaching (live)** (4. ay): 100 × ₺99 (monthly) = **₺9.9K/ay**
+- **Aylık tahmin (3. ay):** ₺69.75K | **(6. ay):** ₺89.65K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global LinkedIn Learning var (İngilizce, ₺200+/ay). Türkçe creator academy sıfır. Türk consultant'lar informal coaching yapıyor.
+
+**Talep Sinyalleri:**
+- LinkedIn Türkçe: "LinkedIn stratejisi" comment ve message yüksek
+- Startup forum/Slack: "LinkedIn'de nasıl KPI yaparız" soru sık
+- Instagram/TikTok: "LinkedIn growth" trend (format ters, ama ilgi yüksek)
+- Freelancer gruplarda: "Client kazanmak için LinkedIn" şikayet
+
+**Neden Heyecan Verici:**
+- Türkiye gap: Profesyonel LinkedIn "thought leadership" academy sıfır
+- Sticky model: Aylık abonelik + community + accountability (high retention)
+- Marj sağlam: Yazılım %85+ marj + coaching %75+ marj
+- Network etkisi: Student wins → case study → brand authority → viral
+- Koray fit: Strateji, B2B positioning, thought leadership positioning
+
+### İlk Somut Adım
+Bugün **15-20 Türkçe startup founder / CEO / LinkedIn active profesyonel** (LinkedIn bul, DM: "LinkedIn creator academy yapıyor — content strategy kurslar, template, 1-on-1 coaching. ₺199/ay. Beta tester olmak ister misin? (ilk 30 student ₺50/ay indirim)" Yanıt alan 10-15'e free "LinkedIn Strategy 101" mikro-kurs ver (5 video, 15 min). Paralel: Claude Code'a: "Creator Academy: Course platform (video, templates, assignments), 1-on-1 booking, group coaching (Zoom), community Slack, progress tracking, LinkedIn analytics integration, Türkçe UI."
+
+### Zorluk/Risk
+- **Positioning**: Koray'ın kendi LinkedIn authority baseline gerekli (credibility)
+- **Churn**: Kurs → completion rate genelde düşük (30-40%)
+- **Coaching scale**: 1-on-1 coaching manpower intensive (limited growth)
+- **LinkedIn policy**: API restrictions, content moderation changes
+- **Kompetisyon**: Global Udemy/LinkedIn Learning scale-up, yerel consultant girişi
+
+**Risk Derecesi:** ORTA (positioning baseline, churn, coach scaling)
+
+---
+
+## FİKİR 4: Türkiye Gig Worker Sigortası SaaS (Kurye, Taksi, Freelancer)
+
+### Ne Bu?
+Gig worker'lar için (Trendyol kurye, Uber taksi, freelancer) **sigorta otomasyonu ve danışmanlık SaaS** — bağımsız çalışanlar için sağlık, sorumluluk, hayat sigortası bulma, karşılaştırma, talep yönetimi: (1) **Profil** — Çalışma türü, gelir, risk profili, (2) **Sigorta Eşleştirme** — AI (risk profili → sigorta önerisi), (3) **Karşılaştırma** — 5-10 sigorta şirketi quotation, (4) **Talep Yönetimi** — Claim tracking, documentation, (5) **Tax/Maliye** — Sigorta primini expense claim olarak track, (6) **Fiyat** — Gig worker ₺0 kayıt, sigorta şirketi ₺50/lead, platform ₺20/policy commission, (7) **Pazar** — Türkiye'de 500K+ gig worker (Trendyol/Uber/Freelancer), sigorta minimal.
+
+### Kanıt (Kaynaklar)
+- [Türkiye gig economy: 300K-500K worker (Trendyol kurye, Uber, Getir, freelancer) (OECD)](https://www.oecd.org)
+- [Global gig insurance market: $8.2B (2024) → $18.5B (2032), CAGR 12%](https://www.fortunebusinessinsights.com)
+- [Türk gig worker sigorta: %20 sigortalı, kalan riski göz ardı ediyor (uzman görüşü)](https://www.sozcu.com.tr)
+- [Freelancer groups (Slack/Discord/Telegram): "Sigorta nedir, gerekli mi" soru sık](https://www.linkedin.com)
+- [Türkiye startup sigorta: Beyn, Agahaber var ama gig worker niche sıfır](https://www.crunchbase.com)
+
+### Gelir Modeli
+- **Insurance leads** (2. ay): 500 × ₺50 (sigorta şirketi lead fee) = **₺25K/ay**
+- **Policy commission** (3. ay): 200 × ₺20 (policy) = **₺4K/ay**
+- **Premium matching service** (4. ay): 30 × ₺199/ay (manual verification) = **₺5.97K/ay**
+- **Tax/Compliance report** (5. ay): 100 × ₺50 (report) = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺29K | **(6. ay):** ₺39.97K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global Stride Health (US), Catch (freelancer tax). Türkiye'de gig insurance marketplace sıfır. Sigorta şirketleri "gig worker" segment görmediği.
+
+**Talep Sinyalleri:**
+- Gig worker groups (Facebook/Telegram): "Sigortasız çalışmanın riski" tartışma yüksek
+- Reddit/Forum: "Kurye/freelancer nasıl sigortalı olacağım" sorular
+- Google Trends: "Gig worker sigorta" +90% Türkçe (2024-2026)
+- Trendyol/Uber HR: "Kurye sigorta" option talep (dahili olmayıp harici platform istiyorlar)
+
+**Neden Heyecan Verici:**
+- Türkiye gap: Gig insurance SaaS sıfır
+- Dual revenue: Worker minimal, sigorta şirketi lead fee yüksek
+- Network etkisi: Gig worker arttıkça, sigorta şirketi arttıkça
+- Regulatory tailwind: Türkiye "gig worker registration" tartışması (sigorta yakında zorunlu olabilir)
+- Koray fit: Strateji, B2B finans background
+
+### İlk Somut Adım
+Bugün **3-5 Türk sigorta şirketi** (Aksigorta, Allianz, AXA — gig segment) bul, email: "Gig worker sigorta platform kuruyor — qualified lead ₺50. 100+ kurye/freelancer ile pilot. Maliyor? İlk 1000 lead ₺30/lead special rate." Yanıt alan 2-3'ten LOI al. Paralel: **50-100 Trendyol kurye / Freelancer** DM: "Sigortanız var mı? Gerekli mi? Platform yapıyor — 2 min profile, 5 sigorta options göster." Paralel: Claude Code'a: "Insurance SaaS: Worker profile, risk assessment, insurance matching, quotation comparison, enrollment, claims tracking, tax report, sigorta şirketi dashboard, Türkçe UI."
+
+### Zorluk/Risk
+- **Regülasyon**: Sigorta broker hukuki framework (Türkiye'de lisans gerekli olabilir)
+- **Sigorta şirketi direnci**: Eski channel koruması, yeni platform kaygısı
+- **Worker adoption**: Sigorta yüksek sigorta maliyeti (₺150-500/ay), dönüş zor
+- **Lead quality**: Qualifier lead vs. buyer lead (conversion uncertainty)
+- **Kompetisyon**: Sigorta şirketleri kendi platform açması risk
+
+**Risk Derecesi:** YÜKSEK (regülasyon, sigorta şirketi direnci, adoption)
+
+---
+
+## FİKİR 5: Trendyol/Hepsi Satıcı İçin Inventory + Dropship Manager (Multi-Channel Sync)
+
+### Ne Bu?
+**E-ticaret satıcı SaaS** — Trendyol/Hepsiburada/Amazon satıcıları için inventory otomasyonu ve dropship fulfillment manager: (1) **Multi-channel Sync** — Trendyol inventory → Hepsiburada otomatik güncelle (stock sync), (2) **Dropship Integration** — Supplier inventory → auto-list on channel, (3) **Order Routing** — Order alındı → otomatik kargo/dropship provider'a git, (4) **Financials** — Marj tracking, cost accounting per order, profitability by product, (5) **Supplier Management** — Supplier portal, SLA tracking, rating, (6) **Reporting** — Dashboard (daily sales, inventory aging, supplier performance), (7) **Fiyat** — ₺99/ay (temel), ₺299/ay (advanced inventory), ₺699/ay (full dropship), (8) **Pazar** — Türkiye'de 50K+ e-ticaret satıcı, %80'i manual inventory.
+
+### Kanıt (Kaynaklar)
+- [Türkiye e-ticaret satıcı: 50K+ (Trendyol 15K+, Hepsiburada, Amazon) (İTO)](https://www.itonet.org.tr)
+- [Multi-channel inventory platform (global): Sellfy, Multichannel central platform, $200M+ market](https://www.sellfy.com)
+- [Türkiye satıcı şikayet: "Multi-channel inventory hell", manuel sync, hata yüksek (LinkedIn)](https://www.linkedin.com)
+- [Dropshipping trend: COVID sonrası yüksek, Türkiye'de supplier network eksik](https://www.ecommercenews.eu)
+- [Trendyol API: Açık, satıcı entegrasyon destekliyor, opportunity açık](https://seller.trendyol.com)
+
+### Gelir Modeli
+- **Basic subscription** (2. ay): 1.000 × ₺99/ay = **₺99K/ay**
+- **Advanced plan** (3. ay): 300 × ₺299/ay = **₺89.7K/ay**
+- **Enterprise dropship** (4. ay): 50 × ₺699/ay = **₺34.95K/ay**
+- **Commission on fulfilled orders** (5. ay): 500 order/ay × ₺10 commission = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺188.7K | **(6. ay):** ₺228.65K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global Sellfy, ShipBob pahalı ($300+/ay). Türkçe ürün sıfır. Satıcılar yapay zeka hata (stok out, oversell).
+
+**Talep Sinyalleri:**
+- Trendyol seller groups (Facebook/Telegram): "Multi-channel inventory" şikayet #1
+- LinkedIn e-ticaret: "Inventory automation" araması yüksek
+- YouTube Türk e-ticaret: Inventory yönetim "tutorial yok" (pain point)
+- Satıcı forumları: Overselling, manual sync hatası tekrarlanan sorun
+
+**Neden Heyecan Verici:**
+- Türkiye gap: Multi-channel inventory + dropship SaaS sıfır
+- Pazar büyüklüğü: 50K satıcı × ₺300 ort = ₺15M+ TAM
+- Marj sağlam: SaaS %80+ marj
+- Sticky model: Platform bağımlılık yüksek (switching cost)
+- Koray fit: E-ticaret ağı, B2B SaaS background (System Global)
+
+### İlk Somut Adım
+Bugün **10-15 aktif Trendyol/Hepsiburada satıcı** (LinkedIn/forum, koray'ın ağı) bul, DM: "Multi-channel inventory SaaS yapıyor — Trendyol-Hepsiburada sync otomasyonu, dropship support. ₺99-699/ay. Beta tester olmak ister misin? (ilk 20 satıcıya 3 ay ₺30/ay special)" Yanıt alan 5-10'a demo yap: "10 ürün Trendyol listesi → Hepsi sync → inventory update → otomatik." Paralel: Claude Code'a: "Seller SaaS: Multi-channel inventory dashboard, Trendyol/Hepsi API integration, order router (fulfillment logic), supplier portal, margin calculator, reporting, payment gateway, Türkçe UI."
+
+### Zorluk/Risk
+- **API bağımlılık**: Trendyol/Hepsi API value değişse, güvenilirlik riski
+- **Satıcı adoption**: Sistemi öğrenme (manual workflow change zor)
+- **Dropship logistics**: Supplier quality kontrol (reputation riski)
+- **Kompetisyon**: Global Sellfy/ShipBob Türkiye girişi, yerli startup
+- **Market saturation**: E-ticaret market belki doymuş (CAC yüksek olabilir)
+
+**Risk Derecesi:** ORTA (API bağımlılık, adoption, logistics)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ B2B Tedarikçi Ağı / Procurement Marketplace**
+
+Bu fikri öneriyorum çünkü:
+
+**(1) Pazar boyutu ve kanıt:** 50K+ SME üretici, ₺5B+ yıllık tedarikçi araştırma cost. Global Alibaba/Global Sources billion-dollar platform. Türkiye'de sıfır çözüm = açık market.
+
+**(2) Türkiye gap:** B2B procurement marketplace Türkiye'de yok. Üreticiler hala manuel (faks, telefon, email) tedarikçi arıyor. Platform = 70% zaman tasarrufu + %20 maliyet azaltması.
+
+**(3) Network etkisi + Sticky:** Tedarikçi sayısı arttıkça alıcı artar; alıcı arttıkça tedarikçi artar. Bir kez giriş yaptı mı, switching cost yüksek (2-3 yıl müşteri potansiyeli).
+
+**(4) Marj + Ölçekleme:** RFQ ₺100, commission %3, supplier listing ₺500/ay = %85+ marj. Teknoloji sabit, scaling sanal.
+
+**(5) Koray'ın positioning:** Supply chain danışmanlık background, B2B network (System Global), strateji expertise = ideal fit.
+
+**(6) MVP hızlı:** Supplier catalog (manual) + RFQ system (Airtable MVP) + quotation matching (script) = 4-6 hafta MVP. Beta: 10 alıcı + 20 tedarikçi = go/no-go 2 hafta.
+
+**Diğerleri neden daha az?**
+
+- **Kiralık Mülk SaaS (FİKİR 1):** Uygulanabilir market var (8M ev sahibi), ama vergi/hukuki risk yüksek, kişisel (B2C) adoption yavaş. Profitability belirsiz.
+
+- **LinkedIn Academy (FİKİR 3):** Koray'ın positioning (thought leadership) baseline gerekli; churn yüksek (online course typical %60 churn). Tercihli değil.
+
+- **Gig Insurance (FİKİR 4):** Regülasyon riski yüksek (broker lisansı), sigorta şirketi direnci, worker adoption zor (price-sensitive). High-risk, low-upside.
+
+- **E-ticaret Inventory (FİKİR 5):** Proven market (Sellfy başarılı), ama Türkiye satıcı benzeş ürün çokça (Odoo, Shopify), CAC yüksek, churn ortası. Tercihli değil.
+
+- **B2B Tedarikçi Marketplace:** Network etkisi + pazar boyutu + Türkiye gap + marj + Koray fit + MVP hızlı + defensible (multi-sided) = optimal risk/reward balance. Bir kez traction bulduk mı, scale hızlı ve sticky.
+
+**SEÇILME NEDENİ:** Pazar büyüklüğü ($5B+ TAM) + Türkiye SIFIR kompetisyon + network etkisi (high defensibility) + Koray fit mükemmel + MVP trivial (4 hafta) + marj %85+ = long-term asset ve venture-scale potansiyeli.
+
+**İlk adım:** Bugün 5 alıcı + 10 tedarikçi outreach. Yanıt: "2 hafta, MVP supplier catalog + RFQ tester gönder". Week 3-4: 10 alıcı + 20 tedarikçi beta test = 5-10 RFQ/hafta = proof-of-concept.
+
+---
+
