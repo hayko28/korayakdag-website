@@ -703,6 +703,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1752737050681-a2756917304b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "turk-eximbank-ihracat-kredisi-ve-alacak-sigortasi-rehberi",
+    title: "Türk Eximbank İhracat Kredisi ve Alacak Sigortası Rehberi",
+    excerpt: "Türk Eximbank'ın kısa vadeli (Sevk Öncesi, Reeskont, İhracata Hazırlık) ve orta-uzun vadeli ihracat kredileri, %90 tazminat oranlı Kısa Vadeli Alacak Sigortası, kimlerin başvurabileceği, güncel faiz oranları ve başvuru süreciyle KOBİ ihracatçılar için kapsamlı rehber.",
+    category: "İHRACAT FİNANSMANI • TÜRK EXIMBANK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "e-ihracat-amazon-etsy-trendyol-global-satisa-nasil-baslanir",
     title: "E-İhracat: Amazon, Etsy ve Trendyol Global'de Satışa Nasıl Başlanır?",
     excerpt: "Amazon Global Selling, Etsy ve Trendyol Global'de satıcı olma süreci, gerekli belgeler, 3 Ocak 2026'da yürürlüğe giren 600 kg/30.000 Euro'luk güncel mikro ihracat (ETGB) limitleri, KDV istisnası ve ödeme altyapısıyla mikro ihracatçılar için kapsamlı rehber.",
