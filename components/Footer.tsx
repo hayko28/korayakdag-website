@@ -14,6 +14,7 @@ const STRINGS = {
       { name: "Hizmetler", href: "#services" },
       { name: "Blog", href: "#blog" },
       { name: "Teşvik Takvimi", href: "/tesvik-takvimi" },
+      { name: "Şirket Değerleme Hesaplama", href: "/sirket-degerleme-hesaplama" },
     ],
     contactHeading: "İletişim",
     cta: "Ücretsiz Ön Görüşme →",

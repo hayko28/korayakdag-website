@@ -728,6 +728,13 @@ export default function BlogPage() {
                 için bizimle iletişime geçin.
               </Link>
             </p>
+            <p className="mt-4 leading-8 text-gray-700">
+              Hemen bir fikir edinmek isterseniz,{" "}
+              <Link href="/sirket-degerleme-hesaplama" className="text-orange-600 underline">
+                ücretsiz Şirket Değerleme Hesaplayıcı
+              </Link>{" "}
+              ile net kârınız ve sektörünüze göre kazanç çarpanı yöntemiyle ön bir değer aralığı görebilirsiniz.
+            </p>
           </div>
         </section>
 
