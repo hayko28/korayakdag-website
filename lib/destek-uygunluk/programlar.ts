@@ -82,7 +82,7 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
   const uyarilar = [
     "Destek oranı %80, geri ödemesiz destek üst limiti 1.500.000 TL'dir (öncelikli gruplarda +150.000 TL); İş Kurma Desteği ile birlikte alınan toplam üst limit 2.000.000 TL'yi geçemez. Uygulama süresi 36 aydır.",
     "MADDE 20 uyarınca başvurular önce Kurul (en az 50/100) ve Jüri (en az 50/100) puanlamasından geçer, sonra sınırlı kontenjan için rekabetçi bir sıralamaya tabi tutulur; yalnızca sıralamada yeterli olanlar desteklenir ve karar nihaidir, itiraz edilemez (MADDE 26/1). Bu yüzden ön koşulların sağlanması başvuru hakkı verir, kesin onay anlamına gelmez.",
-    "Program dönemsel başvuru çağrılarıyla yürütülüyor (kardeş programı Kapasite Geliştirme'de olduğu gibi); güncel başvuru döneminin açık olup olmadığı kosgeb.gov.tr'den teyit edilmelidir.",
+    "Program dönemsel başvuru çağrılarıyla yürütülüyor (kardeş programı Kapasite Geliştirme'de olduğu gibi); 2026 Yılı 2. Dönem (20 Nisan-8 Mayıs 2026) kapandı, yeni dönem henüz KOSGEB tarafından ilan edilmedi — güncel durum kosgeb.gov.tr'den teyit edilmelidir. (Kaynak: kosgeb.gov.tr, 2026-09-23 doğrulandı.)",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -90,7 +90,9 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      true,
+      "8 Mayıs 2026 (2. dönem, kapandı)"
     );
   }
 
@@ -98,7 +100,9 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre başvuru ön koşullarının tamamı sağlanıyor; nihai kabul Kurul/Jüri puanlaması ve rekabetçi sıralamaya bağlıdır.",
     gerekceler,
-    uyarilar
+    uyarilar,
+    true,
+    "8 Mayıs 2026 (2. dönem, kapandı)"
   );
 }
 

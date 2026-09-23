@@ -206,7 +206,7 @@ export default function TesvikTakvimiFeed({
                                   ? `Son başvuru: ${tarih}${
                                       kalan !== null && kalan >= 0 ? ` (${kalan} gün kaldı)` : ""
                                     }`
-                                  : "Süreklilik arz eden destek"}
+                                  : "Belirli bir başvuru dönemi/son tarih kaydı yok — bazı programlar dönemsel çağrılarla yürüyebilir, güncel durumu kaynak linkten teyit edin"}
                               </p>
 
                               {notKisa && (
