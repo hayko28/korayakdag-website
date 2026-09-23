@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "halka arza hazırlık",
     "fiyat tespit raporu",
   ],
+  alternates: {
+    canonical: "/blog/halka-arz-sureci-kobiler-icin-on-hazirlik-ve-sartlar",
+  },
 };
 
 export default function BlogPage() {
