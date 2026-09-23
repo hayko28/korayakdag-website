@@ -14,13 +14,129 @@ interface BlogListPost {
 }
 
 const STRINGS = {
-  tr: { all: "Tümü", other: "Diğer", readMore: "Devamını Oku →" },
-  en: { all: "All", other: "Other", readMore: "Read More →" },
+  tr: {
+    all: "Tümü",
+    other: "Diğer",
+    readMore: "Devamını Oku →",
+    categoriesTitle: "Kategoriler",
+    allPosts: "Tüm Yazılar",
+    popularTags: "Popüler Etiketler",
+    postSuffix: "yazı",
+    clearFilter: "Filtreyi Temizle",
+  },
+  en: {
+    all: "All",
+    other: "Other",
+    readMore: "Read More →",
+    categoriesTitle: "Categories",
+    allPosts: "All Articles",
+    popularTags: "Popular Tags",
+    postSuffix: "posts",
+    clearFilter: "Clear Filter",
+  },
 };
 
 function primaryCategory(category: string | undefined, otherLabel: string) {
   if (!category) return otherLabel;
   return category.split("•")[0].trim();
+}
+
+// Ham kategori adlarını (bkz. lib/blog-data.ts) daha az sayıda üst başlıkta
+// toplar. Eşleşmeyen (ör. yeni eklenen) bir kategori otomatik "Diğer"
+// grubuna düşer, bu yüzden yeni kategori eklemek bu listeyi güncellemeyi
+// gerektirmez.
+const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: string[] }[] = [
+  {
+    name: "Teşvikler & Destekler",
+    icon: "💰",
+    color: "bg-orange-100 text-orange-600",
+    members: [
+      "KOSGEB",
+      "TÜBİTAK",
+      "TEKMER",
+      "TEKNOPARK",
+      "AR-GE MERKEZİ",
+      "YATIRIM TEŞVİKLERİ",
+      "SGK TEŞVİKLERİ",
+      "İHRACAT DESTEKLERİ",
+      "TURQUALITY",
+      "ULUSLARARASI FON",
+      "MELEK YATIRIMCI",
+    ],
+  },
+  {
+    name: "Vergi, Finans & Denetim",
+    icon: "📊",
+    color: "bg-blue-100 text-blue-600",
+    members: [
+      "VERGİ VE FİNANSAL YÖNETİM",
+      "VERGİ & FİNANSAL YÖNETİM",
+      "VERGİ DANIŞMANLIĞI",
+      "BAĞIMSIZ DENETİM",
+      "YEMİNLİ MALİ MÜŞAVİRLİK",
+    ],
+  },
+  {
+    name: "Şirket & Hukuk",
+    icon: "🏢",
+    color: "bg-green-100 text-green-600",
+    members: [
+      "HUKUK DANIŞMANLIĞI",
+      "İŞ HUKUKU",
+      "ŞİRKETLER HUKUKU",
+      "TİCARİ SÖZLEŞMELER",
+      "AİLE ŞİRKETLERİ",
+    ],
+  },
+  {
+    name: "Yurt Dışı & Uluslararası İşler",
+    icon: "🌍",
+    color: "bg-purple-100 text-purple-600",
+    members: [
+      "YURT DIŞI ŞİRKET",
+      "ŞİRKET KURULUŞU",
+      "E-İHRACAT",
+      "İHRACAT FİNANSMANI",
+      "GÜMRÜK MEVZUATI",
+    ],
+  },
+  {
+    name: "Büyüme & İş Geliştirme",
+    icon: "📈",
+    color: "bg-rose-100 text-rose-600",
+    members: [
+      "KURUMSAL GELİŞİM",
+      "STRATEJİK İŞ ORTAKLIKLARI",
+      "DİJİTAL PAZARLAMA",
+      "PAZARLAMA VE SATIŞ",
+      "HALKA ARZ",
+    ],
+  },
+  {
+    name: "Marka, Patent & Değerleme",
+    icon: "🛡️",
+    color: "bg-teal-100 text-teal-600",
+    members: [
+      "MARKA VE PATENT",
+      "MARKA DEĞERLEME",
+      "ŞİRKET DEĞERLEME",
+      "M&A",
+      "FRANCHISE SİSTEMİ",
+    ],
+  },
+  {
+    name: "Teknoloji & Sürdürülebilirlik",
+    icon: "💡",
+    color: "bg-amber-100 text-amber-600",
+    members: ["YAZILIM VE YAPAY ZEKÂ", "SÜRDÜRÜLEBİLİRLİK"],
+  },
+];
+
+function groupOf(rawCategory: string, otherLabel: string) {
+  for (const group of CATEGORY_GROUPS) {
+    if (group.members.includes(rawCategory)) return group.name;
+  }
+  return otherLabel;
 }
 
 export default function BlogList({
@@ -38,21 +154,55 @@ export default function BlogList({
   const searchParams = useSearchParams();
   const active = searchParams.get("kategori") || t.all;
 
-  const categories = useMemo(() => {
+  const rawCategories = useMemo(
+    () => posts.map((post) => primaryCategory(post.category, t.other)),
+    [posts, t.other]
+  );
+
+  const groupCards = useMemo(() => {
     const counts = new Map<string, number>();
-    for (const post of posts) {
-      const key = primaryCategory(post.category, t.other);
-      counts.set(key, (counts.get(key) ?? 0) + 1);
+    for (const raw of rawCategories) {
+      const group = groupOf(raw, t.other);
+      counts.set(group, (counts.get(group) ?? 0) + 1);
     }
-    return Array.from(counts.entries());
-  }, [posts, t.other]);
+    const defined = CATEGORY_GROUPS.map((group) => ({
+      ...group,
+      count: counts.get(group.name) ?? 0,
+    })).filter((group) => group.count > 0);
 
-  const filtered =
-    active === t.all
-      ? posts
-      : posts.filter((post) => primaryCategory(post.category, t.other) === active);
+    const otherCount = counts.get(t.other) ?? 0;
+    if (otherCount > 0) {
+      defined.push({
+        name: t.other,
+        icon: "📁",
+        color: "bg-gray-100 text-gray-600",
+        members: [],
+        count: otherCount,
+      });
+    }
+    return defined;
+  }, [rawCategories, t.other]);
 
-  const selectCategory = (name: string) => {
+  const popularTags = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const raw of rawCategories) {
+      if (raw === t.other) continue;
+      counts.set(raw, (counts.get(raw) ?? 0) + 1);
+    }
+    return Array.from(counts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 8);
+  }, [rawCategories, t.other]);
+
+  const filtered = useMemo(() => {
+    if (active === t.all) return posts;
+    return posts.filter((post) => {
+      const raw = primaryCategory(post.category, t.other);
+      return raw === active || groupOf(raw, t.other) === active;
+    });
+  }, [posts, active, t.all, t.other]);
+
+  const selectFilter = (name: string) => {
     const params = new URLSearchParams(searchParams.toString());
     if (name === t.all) {
       params.delete("kategori");
@@ -65,31 +215,71 @@ export default function BlogList({
 
   return (
     <div>
-      <div className="mb-10 flex flex-wrap items-center gap-3">
-        <button
-          onClick={() => selectCategory(t.all)}
-          className={`rounded-full border px-5 py-2 text-sm font-semibold transition ${
-            active === t.all
-              ? "border-[#071A2F] bg-[#071A2F] text-white"
-              : "border-gray-200 text-[#071A2F] hover:border-[#071A2F]"
-          }`}
-        >
-          {t.all} <span className="opacity-60">{posts.length}</span>
-        </button>
+      <div className="mb-10">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-2xl font-bold text-[#071A2F]">{t.categoriesTitle}</h2>
+          {active !== t.all && (
+            <button
+              onClick={() => selectFilter(t.all)}
+              className="text-sm font-semibold text-orange-500 transition hover:text-orange-600"
+            >
+              {t.clearFilter} ✕
+            </button>
+          )}
+        </div>
 
-        {categories.map(([name, count]) => (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {groupCards.map((group) => (
+            <button
+              key={group.name}
+              onClick={() => selectFilter(group.name)}
+              className={`rounded-2xl border p-5 text-left transition hover:-translate-y-1 hover:shadow-lg ${
+                active === group.name
+                  ? "border-[#071A2F] bg-[#071A2F]/5"
+                  : "border-gray-100 bg-white"
+              }`}
+            >
+              <div
+                className={`mb-3 flex h-11 w-11 items-center justify-center rounded-full text-xl ${group.color}`}
+              >
+                {group.icon}
+              </div>
+              <p className="font-bold text-[#071A2F]">{group.name}</p>
+              <p className="mt-1 text-sm font-semibold text-orange-500">
+                {group.count} {t.postSuffix}
+              </p>
+            </button>
+          ))}
+
           <button
-            key={name}
-            onClick={() => selectCategory(name)}
-            className={`rounded-full border px-5 py-2 text-sm font-semibold transition ${
-              active === name
-                ? "border-[#071A2F] bg-[#071A2F] text-white"
-                : "border-gray-200 text-[#071A2F] hover:border-[#071A2F]"
-            }`}
+            onClick={() => selectFilter(t.all)}
+            className="flex flex-col justify-between rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
           >
-            {name} <span className="opacity-60">{count}</span>
+            <p className="text-lg font-bold">{t.allPosts}</p>
+            <p className="mt-4 text-2xl">→</p>
           </button>
-        ))}
+        </div>
+
+        {popularTags.length > 0 && (
+          <div className="mt-6 flex flex-wrap items-center gap-2 border-t border-gray-100 pt-6">
+            <span className="mr-1 text-sm font-semibold text-gray-500">
+              🏷️ {t.popularTags}:
+            </span>
+            {popularTags.map(([name]) => (
+              <button
+                key={name}
+                onClick={() => selectFilter(name)}
+                className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
+                  active === name
+                    ? "border-[#071A2F] bg-[#071A2F] text-white"
+                    : "border-gray-200 text-gray-600 hover:border-orange-400 hover:text-orange-500"
+                }`}
+              >
+                {name}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
