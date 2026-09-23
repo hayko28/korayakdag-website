@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "dijital-pazarlama-seo-kobiler-icin-organik-musteri-kazanimi-yol-haritasi",
+    title: "Dijital Pazarlama ve SEO ile Organik Müşteri Kazanımı: KOBİ'ler İçin Pratik Yol Haritası",
+    excerpt: "Reklam bütçesine bağımlı kalmadan sürdürülebilir müşteri akışı kurmak isteyen KOBİ'ler için anahtar kelime araştırması, site içi ve teknik SEO temelleri, Google İşletme Profili ile yerel arama görünürlüğü, düzenli içerik stratejisi ve sık yapılan hatalarla pratik bir SEO yol haritası.",
+    category: "DİJİTAL PAZARLAMA • SEO • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1686061593213-98dad7c599b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "ticari-sozlesme-yonetimi-tedarikci-bayi-distributorluk-sozlesmeleri",
     title: "Ticari Sözleşme Yönetimi: Tedarikçi, Bayi ve Distribütörlük Sözleşmelerinde Dikkat Edilmesi Gerekenler",
     excerpt: "Tedarikçi sözleşmelerinde cezai şart ve mücbir sebep maddeleri, bayilik sözleşmelerinde münhasırlık ve TTK m.122 denkleştirme tazminatı riski, distribütörlük sözleşmelerinde Rekabet Kurumu'nun dikey anlaşmalar tebliği kapsamındaki bölge kısıtlamalarıyla kapsamlı rehber.",
