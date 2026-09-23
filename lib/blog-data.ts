@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "halka-arz-sureci-kobiler-icin-on-hazirlik-ve-sartlar",
+    title: "Halka Arz Süreci: KOBİ'ler İçin Ön Hazırlık ve Şartlar",
+    excerpt: "Borsa İstanbul'un KOBİ'lere özel Gelişen İşletmeler Pazarı (GİP) sayesinde halka arz, göründüğünden daha erişilebilir bir büyüme seçeneği. Banka kredisi ve özel sermaye yatırımıyla karşılaştırma, Yıldız/Ana/Alt Pazar ve GİP şartları, bağımsız denetim geçmişi, izahname süreci ve maliyet kalemleriyle kapsamlı 2026 rehberi.",
+    category: "HALKA ARZ • SERMAYE PİYASASI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1746037870491-b2e415517d0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi",
     title: "KOSGEB KOBİGEL - KOBİ Gelişim Destek Programı Hâlâ Başvuruya Açık mı? Kapanma Tarihi ve Şimdi Bakılması Gereken Seçenekler",
     excerpt: "KOBİ'lerin proje teklif çağrıları üzerinden rekabet gücünü ve katma değerini artırmasını hedefleyen KOBİGEL - KOBİ Gelişim Destek Programı 15 Nisan 2024'te başvuruya kapatıldı ve yürürlükten kaldırılan destekler listesine alındı. Eski kapsamı, destek oranları ve kapanışın ardından benzer bir gelişim projesi olan KOBİ'lerin bakabileceği güncel seçenekler.",
