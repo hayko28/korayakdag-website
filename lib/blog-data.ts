@@ -737,5 +737,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "franchise-sistemi-kurmak-marka-sahibi-icin-surec-sozlesme-sartlari",
+    title: "Franchise Sistemi Kurmak: Marka Sahibi İçin Süreç, Sözleşme ve Danışmanlık İhtiyacı",
+    excerpt: "Kendi mağazasını tek başına çoğaltmak yerine bağımsız yatırımcılarla büyümek isteyen marka sahipleri için franchise vermenin ön koşulları (tescilli marka, operasyon el kitabı, pilot mağaza), franchise sözleşmesinin unsurları ve Rekabet Kurumu'nun dikey anlaşma tebliği kapsamındaki güncel hukuki çerçeveyle kapsamlı rehber.",
+    category: "FRANCHISE SİSTEMİ • MARKA BÜYÜTME • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1601371006911-6b69ea24127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
