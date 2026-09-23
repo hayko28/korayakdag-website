@@ -540,6 +540,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"GO Dijital Cüzdan bir banka mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. GO Dijital Cüzdan, GO Dijital Teknoloji Hizmetleri A.Ş. tarafından işletilen bir elektronik cüzdan/ödeme uygulamasıdır; klasik bir mevduat bankası değildir. KOSGEB ile yapılan iş birliği protokolü kapsamında bazı destek/kredi ödemelerinin akışını yönetmek için kullanılıyor."}},{"@type":"Question","name":"Hesap açmak ücretli mi?","acceptedAnswer":{"@type":"Answer","text":"Hesap açılış süreci, ilgili KOSGEB programına başvurunun doğal bir parçası olarak yürütülür. Güncel ücret/komisyon bilgisi için sözleşme aşamasında sunulan Çerçeve Sözleşmesi metninin ve KOSGEB Müdürlüğü'nün güncel bilgilendirmesinin esas alınması gerekir."}},{"@type":"Question","name":"GO Dijital Cüzdan hesabım varsa her KOSGEB desteğine mi başvurabilirim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Cüzdan hesabına sahip olmak, tek başına bir destek programına başvuru hakkı vermez. Her programın kendine ait başvuru şartları vardır; GO Dijital Cüzdan bu şartlardan yalnızca biri, yani ödeme/aktarım altyapısıdır."}},{"@type":"Question","name":"Kayıt sırasında hangi telefon numarası kullanılmalı?","acceptedAnswer":{"@type":"Answer","text":"Münferit yetkili işletmelerde tek yetkilinin kendi cep telefonu numarası yeterlidir. Müşterek yetkili işletmelerde ise her yetkilinin, kendi adına kayıtlı cep telefonu numarasıyla ayrı ayrı kayıt olması gerekir."}},{"@type":"Question","name":"Onay süreci ne kadar sürüyor?","acceptedAnswer":{"@type":"Answer","text":"Evrakların sisteme yüklenmesi genellikle birkaç dakika sürerken, GO Dijital tahsis biriminin değerlendirme süresi belgelerin eksiksizliğine göre değişebilir. Belgelerin güncel ve tam olması, süreci ciddi şekilde hızlandırır."}}]}) }}
+      />
     </BlogLayout>
   );
 }

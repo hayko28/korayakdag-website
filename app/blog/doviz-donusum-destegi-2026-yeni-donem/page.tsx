@@ -620,6 +620,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"2026/11 sayılı Tebliğ ne zaman yürürlüğe girdi?","acceptedAnswer":{"@type":"Answer","text":"1 Ağustos 2026 tarihli Resmî Gazete'de yayımlanarak yürürlüğe girdi. Ancak döviz pozisyonu esaslı yeni sistem, 1 Ekim 2026'dan itibaren fiilen uygulanmaya başlayacak; iki tarih arasındaki dönem bir geçiş süresi olarak öngörülüyor."}},{"@type":"Question","name":"Destek oranı hâlâ %3 mü?","acceptedAnswer":{"@type":"Answer","text":"Temel oran %2'dir; geçici olarak uygulanan %3'lük yüksek destek oranı, ilgili şartları sağlayan firmalar için 31 Ocak 2027'ye kadar uzatılmıştır. Bu tarihten sonra oranların yeniden değerlendirilip değerlendirilmeyeceği TCMB'nin ileride yayımlayacağı düzenlemelere bağlı."}},{"@type":"Question","name":"\"Döviz almama taahhüdü\" tamamen kalktı mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, eski sistemdeki süreye bağlı döviz almama taahhüdü kaldırıldı. Bunun yerine firmanın döviz pozisyonu esas alınan bir yapıya geçildi; bu da firmalara ticari döviz işlemlerinde daha fazla esneklik sağlıyor."}},{"@type":"Question","name":"Tedarikçi firmalar destekten nasıl yararlanacak?","acceptedAnswer":{"@type":"Answer","text":"İhracatçıya girdi sağlayan tedarikçi firmaların belirli şartlarla kapsama alınması öngörülüyor. Bu şartların somut uygulaması, aracı bankaların ve TCMB'nin yayımlayacağı uygulama talimatlarıyla netleşecek; bu nedenle tedarikçi konumundaki firmaların bankalarıyla güncel durumu teyit etmesi önerilir."}},{"@type":"Question","name":"Uyumsuzluk tespit edilirse ne olur?","acceptedAnswer":{"@type":"Answer","text":"Ödenen destek geri istenir; ayrıca kur farkı, kanuni faiz, TCMB kaynaklı kredi kısıtlaması ve ağır ihlallerde suç duyurusu gibi yaptırımlarla karşılaşılabilir. Bu nedenle beyan ve raporlama süreçlerinin titizlikle yürütülmesi büyük önem taşıyor."}}]}) }}
+      />
     </BlogLayout>
   );
 }

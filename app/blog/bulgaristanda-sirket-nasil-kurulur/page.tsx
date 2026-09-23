@@ -707,6 +707,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bulgaristan'da şirket kurmak için ülkede bulunmam gerekir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Noterde düzenlenip apostil şerhi eklenen bir vekâletname ile tüm kuruluş süreci Türkiye'den ayrılmadan yürütülebilir. Yerel temsilci, sermaye hesabının açılması ve Ticaret Sicili başvurusu dahil işlemleri sizin adınıza tamamlar."}},{"@type":"Question","name":"EOOD ile OOD arasındaki temel fark nedir?","acceptedAnswer":{"@type":"Answer","text":"EOOD tek ortaklı, OOD ise iki veya daha fazla ortaklı Limited Şirket yapısıdır. Vergi rejimi ve hukuki çerçeve aynıdır; seçim, kurucu sayısına ve karar alma mekanizmasına göre yapılır. EOOD sonradan yeni ortak eklenerek OOD'ye dönüştürülebilir."}},{"@type":"Question","name":"Bulgaristan'da %10 kurumlar vergisi tüm şirketler için mi geçerli?","acceptedAnswer":{"@type":"Answer","text":"Evet, %10 sabit kurumlar vergisi oranı şirket büyüklüğü veya kâr dilimine bakılmaksızın tüm sermaye şirketlerine uygulanır. Dağıtılan kâr payı üzerinden ayrıca %5 temettü vergisi kesilir."}},{"@type":"Question","name":"Euro'ya geçiş şirket kuruluşunu nasıl etkiledi?","acceptedAnswer":{"@type":"Answer","text":"1 Ocak 2026'dan itibaren Bulgaristan'da tüm resmi işlemler, faturalar ve muhasebe kayıtları Euro üzerinden tutuluyor. Bu değişiklik Türk yatırımcılar için BGN kur riskini ortadan kaldırıyor ve diğer AB ülkeleriyle finansal raporlamayı kolaylaştırıyor."}},{"@type":"Question","name":"Kuruluş süreci ne kadar sürer?","acceptedAnswer":{"@type":"Answer","text":"Belgeler eksiksiz hazırlandığında Ticaret Sicili tescili genellikle 3-5 iş günü içinde tamamlanır. Vekâletname, apostil ve tercüme süreçleri dahil edildiğinde toplam süre birkaç gün ile 1-2 hafta arasında değişir; banka hesabı açılışı bu süreye ayrıca eklenmelidir."}}]}) }}
+      />
     </BlogLayout>
   );
 }

@@ -745,6 +745,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yeni kurulan şirket başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yeni kurulmuş (startup) olmak tek başına engel değildir. Şirketin sermaye şirketi olması ve projenin güçlü bir Ar-Ge içeriğine sahip olması yeterlidir."}},{"@type":"Question","name":"Geliri veya cirosu olmayan firma başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. TÜBİTAK değerlendirmesinde şirketin geçmiş cirosundan ziyade projenin niteliği, ekibin yetkinliği ve ticarileşme potansiyeli ön plandadır."}},{"@type":"Question","name":"Destek geri ödemeli midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. TÜBİTAK 1501 ve 1507 programları geri ödemesiz hibe desteğidir. Onaylanan harcamalarınızın belirtilen oranları (%75 veya %60) hesabınıza ödenir."}},{"@type":"Question","name":"Danışmanlık almak zorunlu mudur?","acceptedAnswer":{"@type":"Answer","text":"Hayır, zorunlu değildir. Ancak projenin TÜBİTAK terminolojisine uygun yazılması, bütçenin doğru kurgulanması ve hakem sürecinin yönetilmesi açısından profesyonel danışmanlık almak başarı oranını artırmaktadır."}}]}) }}
+      />
     </BlogLayout>
   );
 }

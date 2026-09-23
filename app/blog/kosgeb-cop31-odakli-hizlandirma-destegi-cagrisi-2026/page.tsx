@@ -504,6 +504,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bir KOBİ olarak doğrudan KOSGEB'e başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Bu çağrıda başvuru sahibi TEKMER işletici kuruluşları ve GO sahibi Teknokent yönetici şirketleridir. İşletmeler, bu kurumların düzenlediği hızlandırma programına katılımcı olarak dahil olur."}},{"@type":"Question","name":"Destek hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Ne klasik hibe ne de banka kredisidir. Destek %100 geri ödemelidir; 36 aylık ödemesiz dönemin ardından 3'er aylık dönemlerde 4 eşit taksitte KOSGEB'e geri ödenir."}},{"@type":"Question","name":"Her sektörden işletme hızlandırma programına dahil olabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program, sıfır atık ve döngüsel ekonomi, temiz enerji dönüşümü, sürdürülebilir tarım, karbon yönetimi ve yeşil teknoloji gibi dokuz ana başlık altında toplanan iklim ve sürdürülebilirlik odaklı alanları hedefliyor."}},{"@type":"Question","name":"TRL 6 ne anlama gelir?","acceptedAnswer":{"@type":"Answer","text":"Teknoloji Hazırlık Seviyesi (TRL) 6, ürünün ilgili operasyonel ortama benzer bir ortamda prototip veya sistem düzeyinde test edildiği, laboratuvar aşamasını geride bırakmış bir olgunluk seviyesini ifade eder."}},{"@type":"Question","name":"Bulunduğum ildeki TEKMER veya Teknokent bu çağrıya katılıyor mu, nasıl öğrenirim?","acceptedAnswer":{"@type":"Answer","text":"Bu bilgi merkezi olarak tek bir listede yayımlanmaz; her TEKMER veya Teknokent, çağrıya katılım kararını kendi yönetimi belirler ve kendi kanallarından duyurur. İlgili kuruma doğrudan başvurup COP31 Hızlandırma Çağrısı kapsamında bir program planlayıp planlamadıklarını sormanız en sağlıklı yoldur."}}]}) }}
+      />
     </BlogLayout>
   );
 }

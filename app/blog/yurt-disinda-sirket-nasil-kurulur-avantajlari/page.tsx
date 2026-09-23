@@ -656,6 +656,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Türk vatandaşı tek başına yurt dışında şirket kurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Hedef ülkenin yabancı yatırımcılara yönelik şartlarını sağlamak kaydıyla, gerçek kişiler de tek başına yurt dışında şirket kurabilir. Bazı ülkelerde yerel bir ortak veya temsilci bulundurma zorunluluğu olabileceği unutulmamalıdır."}},{"@type":"Question","name":"Yurt dışında kurulan şirketin Türkiye'de de vergisi olur mu?","acceptedAnswer":{"@type":"Answer","text":"Türkiye'de yerleşik gerçek ve tüzel kişilerin yurt dışından elde ettiği kazançlar da Türkiye'de beyan yükümlülüğüne tabi olabilir. Çifte vergilendirmeyi önlemek için ilgili ülkede ödenen verginin Türkiye'de hesaplanan vergiden mahsup edilmesi genel uygulamadır; detaylar ÇVÖA hükümlerine ve somut duruma göre değişir."}},{"@type":"Question","name":"En hızlı ve kolay şirket kurulan ülke hangisidir?","acceptedAnswer":{"@type":"Answer","text":"Estonya, e-Residency sistemi sayesinde tamamen dijital ortamda birkaç gün içinde şirket kurulmasına imkân tanır. İngiltere de düşük maliyet ve hızlı süreçle öne çıkan ülkeler arasındadır."}},{"@type":"Question","name":"Yurt dışında şirket kurmak için danışmanlık almak zorunlu mu?","acceptedAnswer":{"@type":"Answer","text":"Zorunlu değildir ancak yasal düzenlemeler, bildirim yükümlülükleri ve vergi planlaması karmaşık olabildiğinden, hukuk ve vergi konularında profesyonel destek almak hata riskini ve zaman kaybını azaltır."}}]}) }}
+      />
     </BlogLayout>
   );
 }

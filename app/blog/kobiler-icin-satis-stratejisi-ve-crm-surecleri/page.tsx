@@ -731,6 +731,10 @@ export default function BlogPage() {
           </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Küçük bir KOBİ'nin gerçekten CRM'e ihtiyacı var mı?","acceptedAnswer":{"@type":"Answer","text":"Müşteri sayısı birkaç düzineyi geçen ve birden fazla kişinin satışla ilgilendiği hemen her şirkette CRM ihtiyacı ortaya çıkar. Bir kişinin hafızasına veya kişisel dosyalarına bağlı kalan müşteri bilgisi, o kişi ayrıldığında ya da izne çıktığında şirket için ciddi bir risk taşır."}},{"@type":"Question","name":"CRM kurmak için önce ne yapılmalı?","acceptedAnswer":{"@type":"Answer","text":"Önce yazılım seçilmemeli; önce satış hunisinin aşamaları ve her aşamanın geçiş şartı tanımlanmalıdır. Süreç netleşmeden seçilen bir CRM, şirketin gerçek ihtiyacına uymayan modüllerle dolar ve kısa sürede terk edilir."}},{"@type":"Question","name":"CAC hangi sıklıkla hesaplanmalı?","acceptedAnswer":{"@type":"Answer","text":"Aylık veya en geç üç ayda bir hesaplanması, kanal performansındaki değişimleri zamanında görebilmek için yeterlidir. Yıllık tek bir hesaplama, hangi ayda hangi kanalın verimsizleştiğini gizler."}},{"@type":"Question","name":"Bayi ağı ile doğrudan satışı aynı anda yürütmek riskli mi?","acceptedAnswer":{"@type":"Answer","text":"Doğru yönetilirse riskli değildir; ancak bölge ve segment ayrımı net çizilmeli ve bu kurallar bayilerle önceden paylaşılmalıdır. Aksi hâlde kanal çakışması fiyat kırılmasına ve bayi güveninin zedelenmesine yol açar."}},{"@type":"Question","name":"Satış stratejisi ile CRM süreci ne kadar sürede oturur?","acceptedAnswer":{"@type":"Answer","text":"Strateji ve huni tasarımı birkaç hafta içinde tamamlanabilir; ekibin yeni sisteme tam alışması ve verinin güvenilir hâle gelmesi ise genellikle birkaç ayı bulur. Önemli olan süreci kademeli uygulamak ve disiplini bırakmamaktır."}}]}) }}
+      />
     </BlogLayout>
   );
 }

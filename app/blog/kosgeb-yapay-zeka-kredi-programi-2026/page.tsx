@@ -667,6 +667,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Teknogirişim Rozetim yok, önce onu mu almalıyım?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yapay Zeka Kredisi'ne başvurabilmenin ön şartı, başvuru tarihi itibarıyla geçerli bir Teknogirişim Rozeti'ne sahip olmaktır. Rozetiniz yoksa süreç teknogirisim.sanayi.gov.tr üzerinden başlatılmalı ve rozet onaylandıktan sonra kredi başvurusu yapılmalıdır."}},{"@type":"Question","name":"Kredi gerçekten faizsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, yönergeye göre kullandırılan kredi için herhangi bir faiz veya komisyon uygulanmıyor. İşletme yalnızca kullandığı anaparayı, 12 aylık ödemesiz dönemin ardından 4 eşit taksitte geri ödüyor."}},{"@type":"Question","name":"Krediyi işletme sermayesi veya başka bir gider için kullanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kredi yalnızca protokol kapsamındaki yapay zeka veri merkezi ve hizmet sağlayıcılarından alınan GPU/CPU/RAM, veri depolama ve AI araç/platform hizmetlerinin ödemesinde kullanılabilir; nakit çekim veya başka amaçlı harcama söz konusu değildir."}},{"@type":"Question","name":"Teminat şart mı, teminatsız başvuru yapılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Teminat zorunludur. Onaylanan kredi tutarı GO Dijital Cüzdan hesabına önce blokeli olarak aktarılır; blokenin kaldırılıp kullanılabilir hale gelmesi için yönergedeki şartlara uygun bir banka Kesin Teminat Mektubu sunulması gerekir."}},{"@type":"Question","name":"Başvuru şu an (Ağustos 2026) açık mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, program 9 Temmuz 2026'da başladı ve mevcut takvime göre 31 Aralık 2026'ya kadar başvuruya açık. Uygulamada bütçe ve kontenjana bağlı erken kapanış ihtimaline karşı güncel durumun KOSGEB'in resmî duyurularından teyit edilmesi önerilir."}}]}) }}
+      />
     </BlogLayout>
   );
 }

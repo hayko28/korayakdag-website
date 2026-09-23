@@ -619,6 +619,10 @@ export default function Tubitak1711Page() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Üniversite ortağı bulamıyorum, yine de başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır, 1711 Çağrısı'nda konsorsiyum şartı zorunludur. Üniversite veya kamu araştırma kurumu ortağı yoksa, üniversite ortağı aramak yerine TÜBİTAK 1501/1507 veya KOSGEB Yapay Zeka Kredi Programı gibi tek başına başvurulabilen alternatifler değerlendirilebilir."}},{"@type":"Question","name":"Destek geri ödemeli mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır, 1711 Çağrısı kapsamındaki destek geri ödemesiz hibe niteliğindedir. Onaylanan harcamaların ilgili oranı TÜBİTAK tarafından karşılanır."}},{"@type":"Question","name":"Birden fazla şirket veya üniversite konsorsiyuma dahil olabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, konsorsiyum yapısı birden fazla talep eden kuruluş ve birden fazla teknoloji sağlayıcı kuruluşla genişletilebilir. Önemli olan asgari şartın (en az 1 şirket + en az 1 üniversite/kamu araştırma kurumu) sağlanmasıdır."}},{"@type":"Question","name":"Ön kayıt ile nihai başvuru arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Ön kayıt, kuruluşun PRODİS sisteminde tanımlanması ve başvuru sürecine teknik olarak hazır hale gelmesi anlamına gelir. Nihai başvuru ise proje önerisinin tüm ekleriyle birlikte PRODİS üzerinden TÜBİTAK'a resmi olarak sunulmasıdır. Ön kayıt tamamlanmadan nihai başvuru yapılamaz."}}]}) }}
+      />
     </BlogLayout>
   );
 }

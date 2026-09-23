@@ -676,6 +676,10 @@ export default function BlogPage() {
           </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"KOBİ'ler doğrudan EBRD veya Dünya Bankası'na başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır, genel kural olarak hayır. Bu kurumlar Türkiye'deki ticari bankalara kredi hattı açıyor; KOBİ, bu kaynaktan yararlanmak için doğrudan aracı bankaya başvuruyor. Doğru bankayı ve doğru fon hattını bilmek başvurunun ilk adımı."}},{"@type":"Question","name":"Eximbank kredisi almak için ihracatçı olmak şart mı?","acceptedAnswer":{"@type":"Answer","text":"Kısa vadeli ürünlerde evet; ihracatçı, imalatçı-ihracatçı veya ihracata yönelik mal üreten imalatçı olmak ya da döviz kazandırıcı hizmet sağlamak gerekiyor. Henüz ihracata başlamamış ama ihracata hazırlanan üretici firmalar da bazı ürünlerden yararlanabiliyor."}},{"@type":"Question","name":"Bu kaynaklar hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Eximbank, EBRD ve Dünya Bankası/IFC kaynaklı ürünler ağırlıklı olarak kredi niteliğinde. AB'nin Horizon Europe gibi Ar-Ge programları ise bazı alt bileşenlerde hibeyle öz sermaye yatırımını bir arada sunan karma finansman modelleri içerebiliyor."}},{"@type":"Question","name":"Başvuru için hangi belgeler gerekiyor?","acceptedAnswer":{"@type":"Answer","text":"Kuruma göre değişmekle birlikte genel olarak son dönem mali tablolar, faaliyet/ihracat performans verileri, fizibilite raporu, çok yıllı finansal projeksiyon ve varsa çevresel-sosyal etki bilgileri isteniyor."}},{"@type":"Question","name":"Birden fazla kaynağa aynı anda başvurulabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, farklı ihtiyaçlar için paralel başvuru yapılabilir; ancak aynı yatırım/harcama kalemi genelde birden fazla kaynaktan aynı anda finanse edilemiyor. Bu nedenle başvuru stratejisinin baştan bütüncül planlanması önemli."}}]}) }}
+      />
     </BlogLayout>
   );
 }

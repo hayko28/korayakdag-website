@@ -656,6 +656,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Varlık Barışı 2026'dan yararlanmak için vergi mükellefi olmak gerekiyor mu?","acceptedAnswer":{"@type":"Answer","text":"Yurt dışı varlıklar için hayır; gerçek ve tüzel kişiler vergi mükellefi olma şartı aranmaksızın başvurabilir. Yurt içi kayıt dışı varlıklarda ise düzenleme yalnızca gelir veya kurumlar vergisi mükelleflerini kapsıyor."}},{"@type":"Question","name":"En avantajlı %0 oranından yararlanmak için ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Varlığı 5 yıl ve üzeri süreyle vadeli hesapta veya DİBS gibi belirlenen araçlarda tutma taahhüdünde bulunmanız ve bildirimi izleyen 10 gün içinde tutarı bu araca dönüştürmeniz gerekir. Taahhüt süresince varlığı bozdurmamanız şarttır."}},{"@type":"Question","name":"Bildirimi vergi dairesine mi yapıyorum?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Bildirim banka veya aracı kuruma Genel Tebliğ ekindeki form ile yapılır; vergiyi tahsil edip vergi dairesine beyan etme ve ödeme yükümlülüğü ilgili banka/aracı kuruma aittir."}},{"@type":"Question","name":"Süreyi kaçırırsam ne olur?","acceptedAnswer":{"@type":"Answer","text":"31 Aralık 2026'yı kaçırırsanız, 31 Temmuz 2027'ye kadar (Cumhurbaşkanı uzatırsa daha uzun bir süreye kadar) yine başvurabilirsiniz; ancak 1 Ocak 2027'den itibaren oranlara yarım puanlık bir artış uygulanır."}},{"@type":"Question","name":"Yurt dışındaki şirketimin kâr payını bu kapsamda getirebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Yurt dışı şirketinizden elde ettiğiniz ve yurt dışında tuttuğunuz para, döviz veya menkul kıymet niteliğindeki kazançlar kural olarak kapsama girebilir. Somut durumun düzenlemeye uygunluğunun, şirket yapınız ve gelir türünüz özelinde değerlendirilmesi gerekir."}}]}) }}
+      />
     </BlogLayout>
   );
 }

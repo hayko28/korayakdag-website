@@ -641,6 +641,10 @@ export default function Tubitak1707Page() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bir KOBİ olarak Müşteri Kuruluş bulmadan tek başıma başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. 1707 Sipariş Ar-Ge'de başvuru mutlaka bir Müşteri Kuruluş ve en az bir Tedarikçi KOBİ'nin ortak imzasıyla yapılır. Tek başınıza başvurmak istiyorsanız TÜBİTAK 1501 veya 1507 gibi ortaklık şartı olmayan programlar değerlendirilebilir."}},{"@type":"Question","name":"Büyük ölçekli bir şirket Tedarikçi Kuruluş olabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Tedarikçi Kuruluş her zaman KOBİ ölçeğinde olmak zorundadır. Müşteri Kuruluş ise KOBİ veya büyük ölçekli işletme olabilir."}},{"@type":"Question","name":"Destek geri ödemeli mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır, TÜBİTAK'ın verdiği %40'lık pay geri ödemesiz hibedir. Ancak Müşteri Kuruluş ve Tedarikçi Kuruluş kendi katkı paylarını kendi kaynaklarından karşılar; bu kısım bir hibe değil, tarafların doğrudan finansmanıdır."}},{"@type":"Question","name":"Birden fazla Tedarikçi Kuruluş aynı projede yer alabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, her biri KOBİ olmak şartıyla birden fazla Tedarikçi Kuruluş proje ortağı olabilir. Ancak bir projede yalnızca bir Müşteri Kuruluş bulunabilir."}},{"@type":"Question","name":"2026-3 çağrısını kaçırırsam ne zaman yeni bir dönem açılır?","acceptedAnswer":{"@type":"Answer","text":"2026-3, TÜBİTAK'ın 2026 yılı için planladığı üçüncü ve son 1707 çağrı dönemidir. Yeni bir dönemin ne zaman açılacağı TÜBİTAK tarafından ayrıca duyurulur; güncel çağrı takvimini TÜBİTAK'ın resmî internet sitesinden takip etmek gerekir."}}]}) }}
+      />
     </BlogLayout>
   );
 }

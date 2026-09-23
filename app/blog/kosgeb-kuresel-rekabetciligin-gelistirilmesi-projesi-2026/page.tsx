@@ -676,6 +676,10 @@ export default function BlogPage() {
           </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Küresel Rekabetçiliğin Geliştirilmesi Projesi ile Küresel Rekabetçilik Destek Programı aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, iç içe geçmiş iki isim söz konusu. KOSGEB'in resmî destek programının adı \"Küresel Rekabetçilik Destek Programı\"dır; işletmelerin bu program kapsamında KBS üzerinden sunduğu başvuru ise \"Küresel Rekabetçiliğin Geliştirilmesi Projesi\" olarak adlandırılır."}},{"@type":"Question","name":"Program hibe mi, geri ödemesi olan bir destek mi?","acceptedAnswer":{"@type":"Answer","text":"Kredinin anaparası bankaya geri ödenir; KOSGEB yalnızca kredinin faiz/kâr payı giderinin 20 puanlık kısmını geri ödemesiz olarak karşılar. Dolayısıyla program tam bir hibe değil, sübvansiyonlu kredi modeliyle çalışır."}},{"@type":"Question","name":"Her KOBİ başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Genel KOSGEB kayıt şartlarının yanında, işletmenin hızlı büyüyen + yüksek/orta-yüksek teknoloji, hızlı büyüyen + ihracat/Ar-Ge artışı, öncelikli ürün üreten orta ölçekli işletme, Turcorn 100 kapsamı veya ilan edilen çağrı şartları kriterlerinden en az birini sağlaması gerekir."}},{"@type":"Question","name":"Kredi hangi bankalardan kullanılabilir?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB ile protokol imzalamış Ziraat Bankası, Halkbank, VakıfBank ve Ziraat Katılım Bankası üzerinden kredi kullanılabilir."}},{"@type":"Question","name":"2026'da başka başvuru dönemi olacak mı?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB program açıklamasında dönemsel çağrı usulünü kullanıyor; 1. dönem 30 Eylül 2026'da kapanacak. Yıl içinde yeni dönem açılıp açılmayacağı KOSGEB'in resmî duyurularından takip edilmelidir."}}]}) }}
+      />
     </BlogLayout>
   );
 }

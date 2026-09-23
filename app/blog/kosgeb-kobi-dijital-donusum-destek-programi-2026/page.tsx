@@ -617,6 +617,10 @@ export default function BlogPage() {
         </Link>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Program hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"İkisinin karışımı gibi çalışır. İşletme protokollü bir bankadan yatırım kredisi kullanır ve anaparayı geri öder; KOSGEB ise kredinin faiz giderinin belirli bir puanlık kısmını geri ödemesiz olarak işletmeye öder."}},{"@type":"Question","name":"İmalat dışındaki sektörler başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca NACE Rev. 2'ye göre Kısım C - İmalat sektöründe faaliyet gösteren KOBİ'lere açıktır."}},{"@type":"Question","name":"Dijital olgunluk değerlendirme raporunu kim hazırlayabilir?","acceptedAnswer":{"@type":"Answer","text":"Yalnızca KOSGEB Başkanlık Makamı Oluru ile bu alanda yetkilendirilmiş kurum ve danışmanlar rapor hazırlayabilir. Güncel uygulamada bunlar TÜBİTAK TÜSSİDE, MESS MEXT ve İHKİB Dijital Dönüşüm Merkezi bünyesindeki sertifikalı danışmanlardır."}},{"@type":"Question","name":"Mikro işletmeler başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca küçük ve orta ölçekli işletmelere açıktır, mikro ölçekli işletmeler kapsam dışıdır."}},{"@type":"Question","name":"İkinci el makine alımı destekleniyor mu?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Yönerge, destek kapsamındaki makine, teçhizat, yazılım ve donanımın yeni olması şartını açıkça arıyor."}}]}) }}
+      />
     </BlogLayout>
   );
 }
