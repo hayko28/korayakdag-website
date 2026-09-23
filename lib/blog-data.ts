@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yapay-zeka-kvkk-otomatik-karar-alma-kisisel-veri-isleme-sinirlari",
+    title: "Yapay Zeka ve KVKK: Otomatik Karar Alma ile Kişisel Veri İşleme Sınırları",
+    excerpt: "CV eleme, kredi skorlama ve müşteri segmentasyonu gibi yapay zeka destekli otomatik kararlarda KVKK'nın 11/1-g maddesi, KVKK Kurulu'nun 2024-2026 döneminde yayımladığı güncel rehberler ve şirketler için aydınlatma, itiraz mekanizması, tedarikçi sözleşmesi gibi pratik uyum adımlarıyla kapsamlı rehber.",
+    category: "HUKUK DANIŞMANLIĞI • KVKK • YAPAY ZEKÂ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "aile-sirketlerinde-ortaklik-payi-devri-ve-veraset-planlamasi",
     title: "Aile Şirketlerinde Ortaklık Payı Devri ve Veraset Planlaması: Hisseler Miras Kalırsa Ne Olur?",
     excerpt: "Aile şirketi sahibinin vefatı halinde ortaklık payının Türk Medeni Kanunu'ndaki saklı pay kurallarına göre mirasçılara nasıl geçtiği, 2026 Veraset ve İntikal Vergisi oranları ve hayattayken pay devri, aile anayasası, holding yapısı gibi planlama araçlarıyla kapsamlı rehber.",
