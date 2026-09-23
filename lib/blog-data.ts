@@ -719,5 +719,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "marka-degerleme-brand-valuation-nedir-sirket-degerlemesinden-farki",
+    title: "Marka Değerleme (Brand Valuation) Nedir? Şirket Değerlemesinden Farkı",
+    excerpt: "ISO 10668 standardının şart koştuğu finansal, hukuki ve davranışsal analiz üçlüsü, royalty relief/piyasa/maliyet bazlı marka değerleme yöntemleri, TMS 38 uyarınca marka değerinin ne zaman bilançoya girebildiği ve marka değerlemesinin şirket satışı, lisanslama, kredi teminatı gibi hangi durumlarda gerekli olduğuyla kapsamlı rehber.",
+    category: "MARKA DEĞERLEME • FİKRİ MÜLKİYET • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
