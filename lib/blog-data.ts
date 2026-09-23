@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kripto-varliklarin-vergilendirilmesi-turkiyede-2026-guncel-durum",
+    title: "Kripto Varlıkların Vergilendirilmesi: Türkiye'de 2026 Güncel Durum",
+    excerpt: "Kripto varlıklara özel bağlayıcı bir vergi kanunu şu an itibarıyla yürürlükte değil. TBMM'ye Mart 2026'da sunulan ve aynı ay geri çekilen kanun teklifinin akıbeti, mevcut GVK/KVK uygulaması, SPK'nın 7518 sayılı Kanun'la gelen lisans denetimi, TCMB'nin ödeme yasağı ve şirketler için güncel durumla dürüst bir rehber.",
+    category: "VERGİ DANIŞMANLIĞI • KRİPTO VARLIK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "gumruk-mevzuati-yetkilendirilmis-yukumlu-statusu-yys-nedir",
     title: "Gümrük Mevzuatı ve Yetkilendirilmiş Yükümlü Statüsü (YYS) Nedir?",
     excerpt: "Düzenli ihracat/ithalat yapan firmalara yeşil hat, eksik beyan, kısmi teminat ve izinli gönderici/alıcı gibi somut avantajlar sağlayan YYS (Yetkilendirilmiş Yükümlü Statüsü); başvuru şartları, dört ana değerlendirme kriteri ve Ticaret Bakanlığı'na başvuru süreciyle 2026 güncel rehber.",
