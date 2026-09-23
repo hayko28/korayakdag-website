@@ -880,11 +880,306 @@ Bu fikri öneriyorum çünkü:
 
 ---
 
-# Günlük Fikir Araştırması - 22 Eylül 2026
+# Günlük Fikir Araştırması - 23 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
-**Tarih:** 22 Eylül 2026
-**Hedef:** Fintech/Sigorta, Real Estate Tech, B2B Marketplace, Yazılım/Tasarım Freelance, E-ticaret Logistics — önceki günlerin wellness, fitness, pet, turizm temalarından tamamen uzaklaşıp fintech, gayrimenkul yönetim, B2B tedarikçi ağı, profesyonel network platformu, ticaret otomasyonu gibi sektörel ve işletmesel çözümlere yönel.
+**Tarih:** 23 Eylül 2026
+**Hedef:** Foodtech bölgesel mutfak, Eğitim özel ders, Agritech çiftçi ağı, İç tasarım AI, Otomotiv B2B — önceki günlerin B2B SaaS, fintech, gayrimenkul, e-ticaret temalarından tamamen uzaklaşıp gıda/yemek, eğitim/koçluk, tarım/doğrudan satış, ev/tasarım, otomotiv/endüstriyel gibi niş ve fiziksel hizmet sektörlerine yönel.
+
+---
+
+## FİKİR 1: Türkiye Bölgesel Mutfak Pazaryeri (Kuratlı Yemek Markaları)
+
+### Ne Bu?
+Gaziantep, İzmir, Hatay, Rize gibi **bölgesel mutfakların özel ürünlerini kuratlı bir pazaryerde** satıp küresel ölçekte tanıtan platform — geleneksel tarif, yerel ham maddeler, artisanal yemek yapan küçük işletmeleri merkezi platformda birleştiren e-ticaret + B2B hizmet: (1) **Satıcılar** — Bölgesel yemek ustası, aile işletmesi, KOSGEB destekli yemek üreticileri, (2) **Ürünler** — Antep fıstığı pastası, Hatay böreği, İzmir lokantası sosları, Rize çayı karışımları (food artisan goods), (3) **DTC Model** — Tüketiciye doğrudan (B2C), beyaz etiket ihracat (B2B), restoran tedarik, (4) **Kuratlı İçerik** — Ürün hikayesi (tarih, üretim, aile), reçeteler, videosu (TikTok/Instagram), (5) **Lojistik** — Nişköy + Posta/Yurtiçi teşebbüs, fast chill box, (6) **Marj** — ₺150 maliyet → ₺450 satış (DTC) = %66 marj, B2B toplu ₺200-250, (7) **Pazar** — Türkiye yemek sektörü ₺150B (2026), foodtech $342B (2027 projeksiyon), diaspora (90M Türk yurt dışında) nostalji pazarı.
+
+### Kanıt (Kaynaklar)
+- [Foodtech pazar 2027: $342B projeksiyon (CAGR 12-15%)](https://webrazzi.com/2021/05/26/2027-de-342-milyar-dolar-olmasi-beklenen-foodtech-sektorunun-son-durumu/)
+- [Türkiye yemek sektörü: ₺150B (2026), e-ticaret penetrasyonu %8-12% (artış hızlanıyor)](https://www.webtekno.com/en-iyi-yemek-siparis-uygulamalari-h221857.html)
+- [Artisan food trend global: +18% yıllık (authenticity + storytelling talep)](https://adisyo.com/blog/2026-restoran-cafe-trendleri)
+- [Diaspora nostalji pazarı: 90M Türk yurt dışında, "kendi mutfağı" arıyor (sosyal medya talep sinyalleri)](https://www.horecatrend.com/2026/06/27/turkiyenin-en-iyi-5-gida-start-upi/)
+- [Ghost kitchens / Hayalet mutfaklar Türkiye'de yükselen trend (margin, düşük invest)](https://partner.allzin.com/restoran-teknoloji-trendleri/)
+
+### Gelir Modeli
+- **DTC e-ticaret satış** (2. ay): 200 satış/ay × ₺300 ort marj = **₺60K/ay**
+- **B2B toplu (restoran, kafe)** (3. ay): 20 restoran × ₺2K/ay = **₺40K/ay**
+- **Kurasyonlu kutu aboneliği** (3. ay): 150 × ₺299/ay ("Hatay Lezzeti" monthly box) = **₺44.85K/ay**
+- **Satıcı listing/advertising** (4. ay): 50 satıcı × ₺200/ay = **₺10K/ay**
+- **İhracat lisanslama** (5. ay): 3 diaspora distributor × ₺1K/ay = **₺3K/ay**
+- **Aylık tahmin (3. ay):** ₺104.85K | **(6. ay):** ₺157.85K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Catering Türkiye (toplu/event), Yemeksepeti/Getir (genel), ama **kuratlı bölgesel artisan mutfak pazaryeri** — SIFIR. Global Goldbelly (US local food) benzeri Türkiye açık.
+
+**Talep Sinyalleri:**
+- Instagram #AntepMutfağı #TurkishCuisine: Diaspora nostalji şikayet, "nereden bulacağım" soru yüksek
+- Yurtdışı Türk grupları (Facebook): "Eski tadını verken" ürün araması çok
+- LinkedIn KOSGEB destekli üreticiler: "Kendi markası olma" isteği (ancak pazarlama bütçesi yok)
+- TikTok/Reels: "Bizim yöremizin yemekleri" trend video (format viral olabiliyor)
+- Artisan food aggregator talep: Specialty store, diaspora deli yerine online
+
+**Neden Heyecan Verici:**
+- Türkiye-diaspora bağlantısı: Nostaljik ürün talep yüksek, pricing power yüksek
+- Marj sağlam: DTC %60+, B2B %40+ (dual channel)
+- Kuratlı hikaye: "Yapıcı ve tarifini" marketingi kolay, viral potansiyel
+- KOSGEB/TÜBİTAK + branding positioning: Koray danışmanlık → ürünleşme
+- Işık ayıklan: Nişköy + sosyal medya (B2C), LinkedIn (B2B) = low CAC
+
+### İlk Somut Adım
+Bugün **10-15 Gaziantep/Hatay/İzmir yemek üreticisi** (KOSGEB veritabanı, Bölge Ticaret Odası, Instagram başarılı satıcılar) bul, DM: "Bölgesel mutfak pazaryeri yapıyor — online satış, B2B restoran tedarik, kuratlı kutu aboneliği. ₺0 başlangıç (commission %25). İlgilenir misin? (ilk 50 satıcıya ₺500 marketing credit)" Yanıt alan 5-8'e zoom: ürün fotoğrafı + üretim kapasitesi + B2B interest sorusu. Günün sonu: 3+ satıcı "listelenmeye hazır" taahhüdü = marketplace pilot sinyali.
+
+### Zorluk/Risk
+- **Gıda regülasyonu**: Her satıcı HADCP/hijyen sertifikası (tahlil/belge yükü)
+- **Lojistik soğuk zincir**: Perishable ürünler (maliyet yüksek, hatalı teslimat risk)
+- **Satıcı kalitesi**: Tüketici beklentisi (Instagram fotoğraf ≠ gerçek ürün) mismatch riski
+- **Markt başlangıcı**: İlk satıcı/ürün aggregation zaman alıyor (chicken-egg)
+- **Regülasyon**: Gıda denetim yasağı, izin/kayıt komplekslik
+
+**Risk Derecesi:** ORTA (regülasyon, lojistik, satıcı quality)
+
+---
+
+## FİKİR 2: Türkiye Özel Ders Yapay Zeka Matching Platformu (EdTech)
+
+### Ne Bu?
+Özel ders hocaları ve öğrencileri **yapay zeka eşleştirme algoritması ile** bağlayan platform — öğrenci profili (vücut tipi, hedef, zaman takvimi, bütçe) + hedef (LGS, KPSS, İngilizce, matematik) → yapay zeka "best matching" öğretmeni öner, automated booking, progress tracking, (1) **Öğretmen Profilleri** — Bağımsız, rehber okul, özel kurs şirketi hocaları, sertifika, deneyim, (2) **Öğrenci Onboarding** — Vücut (yaş, seviye, hedef), tercihler (saat, format, fiyat), yapay zeka eşleşme, (3) **Lesson Management** — Booking, zoom/meet link, attendance tracking, yeterlilik testi (quiz), (4) **Analytics** — Öğretmen performans, öğrenci ilerleme, öğrenme stilleri (AI), (5) **Fiyat** — Öğrenci ₺0 kayıt (free matching), öğretmen platform'dan ₺50 ek ödeme (aylık), ders başına ₺30 commission ₺300-500 ders (10% orta marj), (6) **Pazar** — Türkiye 15M+ K-12 öğrenci, %60 özel ders alıyor (₺80B pazar), yapay zeka matching sıfır.
+
+### Kanıt (Kaynaklar)
+- [Türkiye online eğitim pazar: 2026'da hızlı büyüme (yapay zeka + hybrid model)](https://www.derslig.com/)
+- [Özel ders ortalama fiyat: 300-500 ₺/saat (branş ve deneyime göre 150-1200 ₺ range)](https://www.ogretmenbulun.com.tr/blog/online-ozel-ders-vermek-iyi-platformlar)
+- [Türkiye özel ders platformları: Derslig, Mentoria, Preply, ama yapay zeka matching yok](https://mentoria.tr/blog/turkiyenin-en-iyi-ozel-ders-siteleri)
+- [EdTech yapay zeka trend: Personalized learning paths, adaptive algorithms (global best practice)](https://derste.com/yazilar/ozel-ders/online-ozel-ders-platformlari-karsilastirma-2026/)
+- [Türk öğrenci pazar: 15M+ K-12, %60 özel ders + online kurs kullanıyor (COVID + yarışmacı baskı)](https://www.bilgierdemdir.com/2026/09/en-iyi-online-kurs-platformlar-2026.html)
+
+### Gelir Modeli
+- **Öğretmen subscription** (2. ay): 500 × ₺50/ay = **₺25K/ay**
+- **Lesson commission** (3. ay): 5000 ders/ay × ₺300 ort × 10% = **₺150K/ay**
+- **Group lessons** (3. ay): 50 grup/ay × ₺1200 × 15% = **₺9K/ay**
+- **Corporate B2B** (4. ay): 10 kurumsal client × ₺5K/ay (çalışan özel ders) = **₺50K/ay**
+- **Premium teacher badge** (5. ay): 100 öğretmen × ₺100/ay = **₺10K/ay**
+- **Aylık tahmin (3. ay):** ₺184K | **(6. ay):** ₺244K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Mentoria, Derslig, Preply (global) var, ama **yapay zeka matching + Türkçe context** sıfır. Şu anki platformlar manuel (öğretmen profili oku, tıkla).
+
+**Talep Sinyalleri:**
+- Öğrenci forumları: "Doğru öğretmen bulmak zor, deneme yanılma" şikayet
+- Öğretmen grupları (Facebook/Telegram): "Daha fazla öğrenci bulma" isteği (marketplace çekiciliği)
+- LinkedIn Türkçe: "Yapay zeka eğitim matching" interest artan (trend)
+- Kurumsal (HR/training): "Çalışan eğitim portalı" talep (LinkedIn Learning pahalı)
+- Google Trends: "Online özel ders" +150% arama (2024-2026)
+
+**Neden Heyecan Verici:**
+- Pazar büyüklüğü: ₺80B özel ders pazarı, %5 penetrasyon = ₺4B+ digital TAM
+- Yapay zeka differentiation: Matching algoritması = defensible, stickiness yüksek
+- Dual-sided network: Öğretmen (supply) + öğrenci (demand) both incentivized
+- Marj sağlam: Commission 10-15% + subscription, %75+ platform marj
+- Koray'ın fit: Eğitim danışmanlık background + B2B/B2C sales (corporate + studnets)
+
+### İlk Somut Adım
+Bugün **15-20 bağımsız özel ders hocası** (Mentoria, Derslig aktif, LinkedIn öğretmen grupları) bul, DM: "Yapay zeka matching platform yapıyor — AI bunu uygun öğrenci bul, otomatik booking, progress track. Öğretmen ₺50/ay + ₺30 ders commission (₺300 ders = ₺30 ekstra income). Pilot olmak ister misin?" Yanıt alan 8-10'a: "Profil ekleyecek misin? (başarılı ilk 20 öğretmene ₺200 bonus)" Paralel: 50-100 öğrenci (Derslig, forum, grup) DM: "Yapay zeka matching — seni uygun hoça bağlayabilirim, ₺0 fee, sadece hoca öder." Günün sonu: 5+ öğretmen + 15+ öğrenci "evet trial" = network seed.
+
+### Zorluk/Risk
+- **Network effect başlangıcı**: Chicken-egg (öğretmen ararsanız costly, öğrenci ararsanız offering zayıf)
+- **AI matching kalitesi**: Algoritma error riski (kötü match = churn)
+- **Öğretmen kalitesi**: Credential verification (sahte öğretmen riski), liability
+- **Kompetisyon**: Global Preply, Udemy scale-up, yerli Mentoria/Derslig strengthen
+- **Churn**: Öğrenci (bitiş), öğretmen (daha iyi platform) churn risk ortası
+
+**Risk Derecesi:** ORTA (network effect, AI kalitesi, churn)
+
+---
+
+## FİKİR 3: Türkiye Çiftçi-Alıcı Doğrudan Satış Pazaryeri (Agritech)
+
+### Ne Bu?
+Çiftçileri **end-customer veya B2B alıcıyla doğrudan bağlayan pazaryeri** — aracı kaldırıp, marj artıp, tazelik sağlayan platform. Arpa, misır, domates, elma, zeytin, tarım ürünleri — yerel pazar, dış ticaret, restaurant/market tedarik: (1) **Çiftçi Profilleri** — Ürün, alan, üretim takvimi, sertifika (organik, IP), (2) **Ürün Listing** — Fotoğraf, maliyet, beklenen fiyat, hasat tarihi (forward booking), (3) **Alıcı Tipi** — B2B (market, restoran, proje), B2C (tüketici kutusu), dünya (ithalatçı), (4) **Smart Pricing** — Çiftçi → "ne kadara satmalıyım" öner (AI, pazar fiyatı, hasat beklentisi), (5) **Lojistik** — Kooperatif/kargo ortak (logistik provider network), (6) **Fiyat** — Çiftçi ₺0, alıcı commission %8-12 (B2C işlem), %5 (B2B), (7) **Pazar** — 2.5M çiftçi Türkiye, tarım üretim ₺200B (2026), agritech market $8.15B (2024) → $34.83B (2034, CAGR 15.3%).
+
+### Kanıt (Kaynaklar)
+- [Global agritech pazar: $8.15B (2024) → $34.83B (2034), CAGR 15.3%, AI adoption %60 farms](https://www.startus-insights.com/innovators-guide/agriculture-trends/)
+- [Türkiye tarımsal üretim: ₺200B+ (2026), aracı maliyeti %20-30 (kayıp marj)](https://www.webagron.com/tarim-sektorunde-dijital-donusum/)
+- [Çiftçi doğrudan satış trend: Organik premium, aracısız marj artış (global trend)](https://farmonaut.com/blogs/agritech-nedir-2026da-tarimda-guclu-dijital-donusum/)
+- [Turkish farmer digitalization: %30 adoption (low), online pazar minimal (gap)](https://www.agnavigator.com/Article/2026/01/29/ten-trends-that-will-shape-farming-in-2026/)
+- [Blockchain supply chain: Trazecability trend (farm-to-table, trust signal)](https://blog.agribazaar.com/the-big-agritech-ideas-that-will-shape-2026/)
+
+### Gelir Modeli
+- **B2C satış commission** (2. ay): 500 × ₺300 satış × 12% = **₺18K/ay**
+- **B2B pazar/restoran** (3. ay): 100 × ₺5000 işlem × 5% = **₺25K/ay**
+- **Premium farmer listing** (4. ay): 100 çiftçi × ₺150/ay = **₺15K/ay**
+- **Forward booking subscription** (4. ay): 50 B2B alıcı × ₺500/ay = **₺25K/ay**
+- **Organic/IP certification API** (5. ay): 30 × ₺200 = **₺6K/ay**
+- **Aylık tahmin (3. ay):** ₺43K | **(6. ay):** ₺89K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Aracı sistemi dominant (tarımsal kooperatif, toptancı pazarı), online pazaryeri minimal. Global AgriBazaar, Alibaba tarım (Türkiye girişi limited).
+
+**Talep Sinyalleri:**
+- Çiftçi forumları: "Adil fiyat bulamıyorum, aracı çok alıyor" şikayet
+- Restoran/Market: "Taze doğrudan alabiliyorsem" talep (premium willing-to-pay)
+- Google Trends: "Çiftçiden doğrudan almak" +80% Türkçe arama
+- Organik tarım trend: %15+ premium fiyat (marj improvement)
+- B2B (market, restoran): "Sabit tedarikçi" güvenilirlik isteği
+
+**Neden Heyecan Verici:**
+- Aracı kaldırma: Çiftçi +20-30% marj, alıcı -10% (win-win)
+- Agritech pazar büyüyor: $34.83B (2034), AI adoption %60+
+- Türkiye gap: Online tarım pazaryeri sıfır (aggregation fırsat)
+- Network etkisi: Çiftçi → talep artar, talep → çiftçi artar
+- Koray'ın fit: Danışmanlık, kooperatif network (System Global), B2B satış
+
+### İlk Somut Adım
+Bugün **5-10 Marmara/Ege bölgesi çiftçi** (Koray'ın ağı, kooperatif, Gıda Birliği) bul, WhatsApp: "Doğrudan satış pazaryeri yapıyor — market/restoran/tüketiciye ürün sat, aracıyı kaldır, marj artır. ₺0 başlangıç, %5-12 commission başarılı satışta. Listelenmeye ilgilenir misin? (ilk hasat seasonuna kadar ₺0)" Yanıt alan 3-5'e: "Kaç ton tahmini satarsan, hangi fiyat hedefin?" Paralel: 10-15 restoran/market (LinkedIn, forum, Koray'ın ağı) bul: "Çiftçiden doğrudan taze sebze alabilir misin, tedarikçi portal yapıyoruz?" Günün sonu: 3 çiftçi + 5 alıcı "ilgilenen" = pilot seed.
+
+### Zorluk/Risk
+- **Lojistik soğuk zincir**: Kırılgan ürünler (hızlı teslimat + kalite), maliyet yüksek
+- **Çiftçi dijitalizasyon**: Yaş, teknoloji direnci, smartphone kullanım (adoption zor)
+- **Seasonalite**: Ürün takvimi (mevsim), tutarsız supply
+- **Kalite control**: Standardizasyon yok, ürün özelliklerinde varyasyon (alıcı beklentisi mismatch)
+- **Regülasyon**: Tarım ürünü sertifikası, denetim (GKGM, veteriner)
+
+**Risk Derecesi:** YÜKSEK (lojistik, çiftçi adoption, seasonalite, kalite control)
+
+---
+
+## FİKİR 4: AI Ev Tasarım Danışmanlığı (Virtual Interior Design SaaS)
+
+### Ne Bu?
+Ev sahipleri ve mimarlar için **yapay zeka entegre ev tasarım platform** — oda fotoğrafı yükle + "modern", "rustic", "minimalist" stil seç → yapay zeka 10+ tasarım render et, furniture öner, bütçe optimize, satın alma linki (Trendyol, Amazon): (1) **AI Visualizer** — Oda fotoğrafı → AI render (Midjourney/Runway), furniture placement, renkler, (2) **Style Library** — 50+ tasarım şablonu (modern minimalist, vintage, bohemian vb.), (3) **Smart Shopping** — Furniture önerişi → Trendyol/Amazon link (affiliate %), (4) **Space Planner** — Oda ölçüleri + bütçe → optimal layout, furniture list, (5) **Before/After** — Comparison slider, social media share, (6) **Fiyat** — ₺49/ay (3 room render), ₺99/ay (unlimited + shopping link commission), ₺399/ay (professional architect tier + client management), (7) **Pazar** — Home decor spending Türkiye ₺120B (2026), virtual staging global trend (+27% CAGR).
+
+### Kanıt (Kaynaklar)
+- [AI interior design market: +27% CAGR, $10-20/month price point vs traditional ₺2000-12000+](https://www.sprakdesign.com/ai-interior-design-2026-guide/)
+- [Virtual staging adoption 2026: Interactive + intelligent visualization (scale trust signals)](https://www.reimaginehome.ai/blogs/top-interior-design-trends-2026)
+- [Smart home + AI design trend: Systems learning behavior, automation (IoT integration)](https://www.homevisualizer.ai/blog/ai-interior-design-trends-2026)
+- [Türkiye ev tasarım pazarı: ₺120B home decor, online adoption %15-20% (growth hızlı)](https://www.decory.ai/blog)
+- [Data-driven design: Sustainability focus + interactive visualization (2026 lead trend)](https://www.rakinteriors.com/blog/interior-design-trends-2026:-how-technology-is-shaping-the-future-of-modern-homes-)
+
+### Gelir Modeli
+- **Basic subscription** (2. ay): 300 × ₺49/ay = **₺14.7K/ay**
+- **Premium subscription** (3. ay): 100 × ₺99/ay = **₺9.9K/ay**
+- **Professional architect** (3. ay): 20 × ₺399/ay = **₺7.98K/ay**
+- **Furniture affiliate commission** (3. ay): 500 design × ₺150 satış × 8% = **₺6K/ay**
+- **White-label architect firms** (4. ay): 5 × ₺1K/ay = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺37.68K | **(6. ay):** ₺42.68K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Trendyol (furniture shop), Hepsiburada (shopping) var, ama **AI tasarım + satın alma integration** — sıfır. Global Decorilla, Decory pahalı/İngilizce.
+
+**Talep Sinyalleri:**
+- Instagram: #ApartmanTasarımı #OdaTasarımı trending (video viral, ilgi yüksek)
+- Pinterest Türkçe: "Küçük oda dekorasyonu" search +150% (furnishing isteği)
+- Facebook groups: "Rengini seçeceğim, fikir ver" sorular yüksek
+- YouTube: "Oda tasarımı AI" video trend (search intent high)
+- Trendyol: Furniture kategorisi %20+ yıllık büyüme
+
+**Neden Heyecan Verici:**
+- Türkiye gap: AI tasarım + shopping integration SIFIR (direct-to-purchase flow yok)
+- Marj sağlam: Subscription %85+, affiliate %8 high-volume
+- Stickiness: Ev satın alma/renovasyon döngüsel (recurring customer)
+- Viral potential: Tasarım before/after → social media share → organik (low CAC)
+- Koray fit: Strateji + visual branding positioning (Sistem Global)
+
+### İlk Somut Adım
+Bugün **20-30 İstanbul ev sahipleri + freelancer tasarımcı** (Instagram DIY accounts, Pinterest, Airbnb hosts) bul, DM: "AI ev tasarım platformu yapıyor — oda fotoğrafı yükle, stil seç, 10+ render gör, Trendyol linki al. ₺49/ay 3 room. Beta tester olmak ister misin? (ilk 50 free, sonra ₺0.99)" Yanıt alan 15-20'ye: 1 oda render demo yap (Midjourney/manual high-quality). Günün sonu: "Müşteri olmaya hazırım" feedback = MVP start signal.
+
+### Zorluk/Risk
+- **AI render kalitesi**: Furniture realism, color accuracy, perspective (kötü kalite = trust loss)
+- **Ölçü doğruluğu**: Oda dimensiyon reader (kamera perspektif hatası), design mismatch
+- **Furniture database**: Trendyol/Amazon katalog entegrasyon (API complexity, stale data)
+- **Affiliate commission**: Trendyol commission rate (%8-12) değişirse marj risk
+- **Kompetisyon**: Trendyol kendi AI tasarım araçı yapabilir, Airbnb (Airbnb Design Match trend)
+
+**Risk Derecesi:** ORTA (AI kalitesi, ölçü doğruluğu, affiliate terms)
+
+---
+
+## FİKİR 5: Oto Tamircileri İçin Yedek Parça B2B Platform (Automotive SaaS)
+
+### Ne Bu?
+Bağımsız oto elektrikçi, tornacı, asistan tamircileri için **yedek parça tedarik SaaS** — tedarikçi network'ünü merkezi portalde birleştiren, oto parça kodunu arat → 5-10 tedarikçi fiyat compare → order, kargo track, muhasebe entegrasyon: (1) **Parça Kataloğu** — OEM code database (Renault, Fiat, Toyota, etc.), türü (motor, jant, cam, elektrik), (2) **Tedarikçi Network** — 100+ oto yedek parça distribütörü, organize, fiyat/stok güncelle, (3) **Smart Search** — "Renault Clio jant 16 inç" → tedarikçilere broadcast, quotation al, (4) **Ordering** — Online sipariş, kargo otomatik, invoice (fatura entegrasyon), (5) **Finansal** — Muhasebe yazılımı entegrasyon (Parasut, Muhasebedim), gider tracking, (6) **Fiyat** — Tamirci ₺0 (marketplace agnostic), tedarikçi listing ₺300-500/ay (premium), platform %5 commission satış, (7) **Pazar** — 30K+ oto tamircisi Türkiye, yedek parça sektörü ₺30B (2026), B2B automotive e-commerce $71.3B (2023) → $199.5B (2032, CAGR 18.4%).
+
+### Kanıt (Kaynaklar)
+- [Automotive B2B e-commerce: $71.3B (2023) → $199.5B (2032), CAGR 18.4%](https://tr.b2bstore.com/otomotiv-ve-yan-sanayi/)
+- [Türkiye oto yedek parça pazarı: ₺30B+ (2026), B2B digital penetrasyon <%10](https://teknolojigundemi.tr/turkiyedeki-pazaryerleri-listesi-2026)
+- [Oto tamircileri: 30K+ bağımsız, manual (Excel/WhatsApp) tedarik, inefficiency yüksek](https://sadeceb2b.com/)
+- [B2B oto yazılımları (SadeceB2B, Zeggaonline): Gelişiyor, ama marketplace UI ve matching optimization eksik](https://www.zeggaonline.com/urun-gruplarimiz/eticaret-cozumleri/oto-yedek-parca-b2b-sistemi/)
+- [Oto sektörü digitalization: +15% yıllık büyüme, lojistik B2B trend](https://otomotivb2b.com/b2b-yazilimi)
+
+### Gelir Modeli
+- **Tedarikçi premium listing** (2. ay): 50 × ₺300/ay = **₺15K/ay**
+- **Satış commission** (3. ay): ₺5M işlem/ay × 5% = **₺250K/ay**
+- **Muhasebe API entegrasyon** (4. ay): 100 tamirci × ₺50/ay = **₺5K/ay**
+- **Logistics partner (kargo tracking)** (5. ay): 1000 delivery × ₺5 = **₺5K/ay**
+- **Analytics/Inventory report** (5. ay): 50 tamirci × ₺100/ay = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺265K | **(6. ay):** ₺280K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** SadeceB2B, Zeggaonline, Oto Yazılımı var ama UI/matching optimization sıfır. Global oyuncular Türkiye minimal. Tedarikçi-tamirci hâlâ WhatsApp/telefon (digitalization gap açık).
+
+**Talep Sinyalleri:**
+- Oto tamircisi forumları (Facebook/Telegram): "Kargo beklemesi", "fiyat karşılaştırma" şikayet
+- LinkedIn oto sektörü: "Supply chain digitalization" trend
+- YouTube oto: "Yedek parça bulma" tutorial demand yüksek
+- Google Trends: "Oto yedek parça B2B" +60% Türkçe
+- Tedarikçi: "Daha fazla tamirci müşterisi" talep
+
+**Neden Heyecan Verici:**
+- Pazar büyüklüğü: 30K tamirci × ₺50K yıllık tedarik = ₺1.5B+ TAM
+- Automotive e-commerce büyüyor: $199.5B (2032 projesyon), B2B ağırlığı %50+
+- Türkiye gap: Digital B2B matching + logistics SIFIR (operasyon heavy)
+- Marj yüksek: Commission %5, subscription fixed, zero COGS (sanal)
+- Sticky model: Tamirci switch cost yüksek (sistem öğrenme, tedarikçi ağ bağımlılığı)
+
+### İlk Somut Adım
+Bugün **10-15 bağımsız oto tamircisi** (LinkedIn, forum, mekanik köy, Koray'ın ağı) bul, WhatsApp/DM: "Yedek parça B2B platform yapıyor — parça kodu arat, 5-10 tedarikçi fiyat gör, order + kargo track. ₺0 başlangıç, %5 commission. Test ister misin? (ilk 100 order %3 commission, ₺0 kargo)" Yanıt alan 5-8'e: "Şu anda kaç parça/ay alıyorsun, tedarikçiler kimler?" Paralel: 10-15 tedarikçi (Oto Yazılım, ITOYD) bul: "Platform yapıyor, 100+ tamirci müşteri potansiyel. ₺300/ay premium listing, ₺0 başlangıç. Listelenmeye ilgilenir misin?" Günün sonu: 3-5 tamirci + 5 tedarikçi "pilot evet" = MVP seed.
+
+### Zorluk/Risk
+- **Parça kod entegrasyon**: OEM (Renault, Fiat, Toyota) database maintenance (kompleks API)
+- **Tedarikçi adoption**: Eski sistem bağımlılığı, new platform kaygısı (resistance yüksek)
+- **Logistics**: Kargo entegrasyon (Yurtiçi, Aras, MNG farklı API), reliability risk
+- **Kompetisyon**: Global oyunlar (AutoZone, eBay Motors) Türkiye girişi risk
+- **Finans risk**: Tedarikçi ödeme güvenliği (kredi check, fraude risk)
+
+**Risk Derecesi:** ORTA-YÜKSEK (parça entegrasyon, tedarikçi adoption, logistics, fraud)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Bölgesel Mutfak Pazaryeri (Kuratlı Yemek Markaları)**
+
+Bu fikri öneriyorum çünkü:
+
+**(1) Pazar boyutu + Türkiye-diaspora fırsat:** Türkiye yemek sektörü ₺150B (2026), foodtech $342B (2027), diaspora 90M Türk yurt dışında nostalji pazarı = high-value segment.
+
+**(2) Türkiye gap + kuratlı diferensiasyon:** Yemeksepeti/Getir genel, Catering Türkiye event-focused. **Kuratlı bölgesel artisan mutfak + storytelling** — sıfır kompetisyon. Gaziantep fıstığı, Hatay böregi, diaspora "eski tadı" arama yüksek.
+
+**(3) Marj sağlam + dual channel:** DTC %60+ marj (direkt satış), B2B %40+ (restoran tedarik) = diversified revenue. Subscription box (abonelik) = recurring.
+
+**(4) Koray'ın fit:** Danışmanlık background (KOSGEB üreticilere), B2B network (System Global), strateji (kuratlı brand positioning). İçerik + pazarlama (LinkedIn, sosyal medya) kolay.
+
+**(5) MVP hızlı + test trivial:** 5-8 satıcı outreach (bugün), 3+ commit = pazaryeri seed pilot. Lojistik MVP (Nişköy, kargo partner) 1-2 hafta.
+
+**(6) Sosyal etki + brand positioning:** "Türk mutfağını dünyaya" messaging = Koray'ın thought leadership positioning + System Global credibility spillover.
+
+**Diğerleri neden daha az?**
+
+- **Özel Ders AI Matching (FİKİR 2):** EdTech kanıtlanmış pazar, ama chicken-egg network problem yüksek (öğretmen/öğrenci simultaneous pull gerekli). Churn ortası (öğrenci bitişi). Tercihli değil.
+
+- **Çiftçi Pazaryeri (FİKİR 3):** Agritech pazar büyüyor ($34.83B 2034), Türkiye gap açık, ama **lojistik soğuk zincir** kompleks, **çiftçi dijitalizasyon** risk yüksek (yaş, teknoloji resistance), **seasonalite** volatilite (revenue düzensiz). Fondatör capex yüksek (lojistik altyapı).
+
+- **AI Ev Tasarım (FİKİR 4):** Heyecan verici (trend), marj sağlam (affiliate), ama **AI render kalitesi** riski (kötü output = brand damage), furniture database maintenance (stale data), **Trendyol kendi araç yapma** riski (affiliate income uncertain). Standalone business değil, integrated channel olarak daha uygun.
+
+- **Oto Tamircileri B2B (FİKİR 5):** Automotive e-commerce gigantic ($199.5B 2032), marj yüksek, ama **parça kod entegrasyon** kompleks (teknik yük), **tedarikçi adoption** resistance (eski sistem bağımlılığı), **fraud/finans risk** yüksek (ödemesiz alış). Yüksek operasyon expertise gerekli.
+
+- **Bölgesel Mutfak:** Storytelling-driven (Koray strength), marj sağlam (dual channel), diaspora nostalji high-value, MVP trivial, test fast = **optimal risk/reward/Koray-fit/MVP-speed balance.**
+
+**SEÇILME NEDENİ:** Diaspora nostalji pazarı (high-value, sticky), kuratlı differentiation (zıpkın pazar, low kompetisyon), marj sağlam, Koray'ın danışmanlık + positioning perfect fit, MVP 1-2 hafta, test same-day = long-term lifestyle brand + venture-scale potansiyeli.
+
+**İlk takvim:** Gün 1 (bugün) = 5 satıcı commit. Hafta 1 = 10-15 satıcı + lojistik partner. Hafta 2 = MVP pazaryeri (Shopify + custom), 20 ürün live. Hafta 3-4 = B2C + B2B beta test, ilk satışlar = proof-of-concept. Ay 2 = kuratlı kutu abonelik launch, diaspora marketing push, ₺30-40K/ay run rate target.
+
+---
+
+
 
 ---
 
