@@ -551,6 +551,13 @@ export default function BlogPage() {
               iletişime geçebilirsiniz.
             </Link>
           </p>
+          <p className="mt-4 leading-8 text-gray-700">
+            Hemen bir fikir edinmek isterseniz,{" "}
+            <Link href="/kdv-iadesi-hesaplama" className="text-orange-600 underline">
+              ücretsiz KDV İadesi Hesaplayıcı
+            </Link>{" "}
+            ile işlem bedeliniz ve yüklenilen KDV&apos;nize göre tahmini iade tutarınızı görebilirsiniz.
+          </p>
         </div>
       </section>
 
