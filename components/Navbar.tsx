@@ -66,7 +66,6 @@ export default function Navbar() {
         { name: "Contact", href: `${homePath}#contact` },
       ]
     : [
-        { name: "Ana Sayfa", href: `${homePath}#hero` },
         { name: "Hakkımda", href: `${homePath}#about` },
         { name: "Uzmanlık Alanları", href: `${homePath}#expertise` },
         { name: "Hizmetler", href: `${homePath}#services` },
@@ -77,6 +76,11 @@ export default function Navbar() {
         { name: "Blog", href: `${homePath}#blog` },
         { name: "İletişim", href: `${homePath}#contact` },
       ];
+
+  // Geniş masaüstü menüsünde tek satıra sığdırmak için bu iki araç
+  // "Araçlar" başlığı altında gruplanır (diğer menülerde ayrı ayrı görünür).
+  const toolLinkNames = ["Destek Uygunluk Analizi", "Şirket Değerleme Hesaplama"];
+  const toolLinks = links.filter((link) => toolLinkNames.includes(link.name));
 
   const LanguageSwitch = ({ className = "" }: { className?: string }) => (
     <div
@@ -147,16 +151,47 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-3 min-[1440px]:flex">
-          {links.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="relative whitespace-nowrap text-[12px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {link.name}
-            </a>
-          ))}
+        <nav className="hidden items-center gap-5 min-[1440px]:flex">
+          {links.map((link) => {
+            if (toolLinkNames.includes(link.name)) {
+              if (link.name !== toolLinkNames[0]) return null;
+              return (
+                <div key="Araçlar" className="group relative">
+                  <button
+                    type="button"
+                    className="flex items-center gap-1 whitespace-nowrap text-[13px] font-medium text-[#C9D6E4] transition group-hover:text-white group-focus-within:text-white"
+                  >
+                    Araçlar
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" strokeWidth="2.2" className="mt-px">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div className="invisible absolute left-1/2 top-full z-10 min-w-[240px] -translate-x-1/2 pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                    <div className="rounded-xl border border-white/10 bg-[#0F2A47] p-2 shadow-xl">
+                      {toolLinks.map((tool) => (
+                        <a
+                          key={tool.name}
+                          href={tool.href}
+                          className="block rounded-lg px-4 py-2.5 text-[13px] font-medium text-[#C9D6E4] transition hover:bg-white/10 hover:text-white"
+                        >
+                          {tool.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                className="relative whitespace-nowrap text-[13px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </nav>
 
         <nav className="relative mx-3 hidden min-w-0 flex-1 sm:max-[1439px]:flex">
