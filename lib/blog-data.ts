@@ -683,5 +683,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1712342109846-a8fcb1c883ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "melek-yatirimci-bireysel-katilim-yatirimcisi-vergi-avantajlari-2026",
+    title: "Melek Yatırımcı (Bireysel Katılım Yatırımcısı) Nedir? Vergi Avantajları ve Girişime Yatırım Süreci",
+    excerpt: "Hazine ve Maliye Bakanlığı'ndan lisans alan gerçek kişiler, erken aşama girişimlere yaptıkları yatırımın %75-100'ünü yıllık gelir vergisi matrahından indirebiliyor. 2026 güncel lisanslama ölçütleri (2.509.800 TL gelir / 12.549.000 TL servet), 2.500.000 TL azami indirim tutarı, 2 yıl elde tutma şartı ve girişimcinin yatırım alma süreciyle kapsamlı rehber.",
+    category: "MELEK YATIRIMCI • VERGİ TEŞVİKİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
