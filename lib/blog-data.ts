@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "ticari-sozlesme-yonetimi-tedarikci-bayi-distributorluk-sozlesmeleri",
+    title: "Ticari Sözleşme Yönetimi: Tedarikçi, Bayi ve Distribütörlük Sözleşmelerinde Dikkat Edilmesi Gerekenler",
+    excerpt: "Tedarikçi sözleşmelerinde cezai şart ve mücbir sebep maddeleri, bayilik sözleşmelerinde münhasırlık ve TTK m.122 denkleştirme tazminatı riski, distribütörlük sözleşmelerinde Rekabet Kurumu'nun dikey anlaşmalar tebliği kapsamındaki bölge kısıtlamalarıyla kapsamlı rehber.",
+    category: "TİCARİ SÖZLEŞMELER • İŞ GELİŞTİRME • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1645736315000-6f788915923b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "is-sagligi-guvenligi-isg-yukumlulukleri-isverenler-icin-2026-rehberi",
     title: "İş Sağlığı ve Güvenliği (İSG) Yükümlülükleri: İşverenler İçin 2026 Rehberi",
     excerpt: "6331 sayılı Kanun'a göre işyeri tehlike sınıfları, 2025'ten itibaren genişleyen iş güvenliği uzmanı/işyeri hekimi bulundurma zorunluluğu, risk değerlendirmesi, İSG Kurulu ve %25,49 oranında güncellenen 2026 idari para cezalarıyla tehlikeli/çok tehlikeli sınıftaki imalat KOBİ'leri için kapsamlı rehber.",
