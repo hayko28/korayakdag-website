@@ -692,5 +692,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "stratejik-is-ortakligi-ortak-girisim-joint-venture-nasil-kurulur",
+    title: "Stratejik İş Ortaklığı ve Ortak Girişim (Joint Venture) Modelleri Nasıl Kurulur?",
+    excerpt: "Stratejik iş ortaklığı ile ortak girişim (JV) arasındaki fark, TTK/TBK çerçevesinde ortaklık sözleşmesi unsurları (kâr paylaşımı, çıkış hükümleri, rekabet yasağı, tahkim), 11 Şubat 2026'da yürürlüğe giren 2026/2 sayılı Tebliğ ile güncellenen Rekabet Kurulu ciro eşikleri ve adım adım kuruluş süreciyle kapsamlı rehber.",
+    category: "STRATEJİK İŞ ORTAKLIKLARI • ORTAK GİRİŞİM • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1752737050681-a2756917304b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
