@@ -159,15 +159,29 @@ export default function Navbar() {
         </nav>
 
         <nav className="mx-3 hidden min-w-0 flex-1 items-center justify-center gap-2 overflow-x-auto py-1 [scrollbar-width:none] sm:flex min-[1600px]:hidden [&::-webkit-scrollbar]:hidden">
-          {links.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="flex-shrink-0 whitespace-nowrap rounded-md border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-medium text-[#C9D6E4] transition hover:border-orange-400 hover:bg-white/10 hover:text-white"
-            >
-              {link.name}
-            </a>
-          ))}
+          {links.map((link) => {
+            const isRoute = !link.href.includes("#");
+            const isCurrent = isRoute && pathname === link.href;
+            const isContact = link.name === "İletişim" || link.name === "Contact";
+
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                className={
+                  isContact
+                    ? "flex-shrink-0 whitespace-nowrap rounded-md border border-orange-500 bg-orange-500 px-3 py-2 text-[12px] font-bold text-white shadow-[0_4px_14px_-4px_rgba(249,115,22,0.65)] transition hover:-translate-y-0.5 hover:border-orange-400 hover:bg-orange-400 hover:shadow-[0_6px_18px_-4px_rgba(249,115,22,0.8)]"
+                    : `flex-shrink-0 whitespace-nowrap rounded-md border px-3 py-2 text-[12px] font-semibold transition hover:-translate-y-0.5 ${
+                        isCurrent
+                          ? "border-orange-300 bg-gradient-to-b from-orange-500/40 to-orange-500/15 text-white"
+                          : "border-orange-400/40 bg-gradient-to-b from-orange-500/20 to-orange-500/5 text-[#FDF1E7] hover:border-orange-300 hover:from-orange-500/40 hover:to-orange-500/20 hover:text-white hover:shadow-[0_6px_16px_-6px_rgba(249,115,22,0.55)]"
+                      }`
+                }
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </nav>
 
         <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
