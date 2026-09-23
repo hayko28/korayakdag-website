@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "aile-sirketlerinde-ortaklik-payi-devri-ve-veraset-planlamasi",
+    title: "Aile Şirketlerinde Ortaklık Payı Devri ve Veraset Planlaması: Hisseler Miras Kalırsa Ne Olur?",
+    excerpt: "Aile şirketi sahibinin vefatı halinde ortaklık payının Türk Medeni Kanunu'ndaki saklı pay kurallarına göre mirasçılara nasıl geçtiği, 2026 Veraset ve İntikal Vergisi oranları ve hayattayken pay devri, aile anayasası, holding yapısı gibi planlama araçlarıyla kapsamlı rehber.",
+    category: "AİLE ŞİRKETLERİ • VERASET PLANLAMASI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1753164726479-867fa7a7e341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "halka-arz-sureci-kobiler-icin-on-hazirlik-ve-sartlar",
     title: "Halka Arz Süreci: KOBİ'ler İçin Ön Hazırlık ve Şartlar",
     excerpt: "Borsa İstanbul'un KOBİ'lere özel Gelişen İşletmeler Pazarı (GİP) sayesinde halka arz, göründüğünden daha erişilebilir bir büyüme seçeneği. Banka kredisi ve özel sermaye yatırımıyla karşılaştırma, Yıldız/Ana/Alt Pazar ve GİP şartları, bağımsız denetim geçmişi, izahname süreci ve maliyet kalemleriyle kapsamlı 2026 rehberi.",
