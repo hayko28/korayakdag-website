@@ -81,6 +81,7 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
   const uyarilar = [
     "Destek oranı %80, geri ödemesiz destek üst limiti 1.500.000 TL'dir (öncelikli gruplarda +150.000 TL); İş Kurma Desteği ile birlikte alınan toplam üst limit 2.000.000 TL'yi geçemez. Uygulama süresi 36 aydır.",
     "MADDE 20 uyarınca başvurular önce Kurul (en az 50/100) ve Jüri (en az 50/100) puanlamasından geçer, sonra sınırlı kontenjan için rekabetçi bir sıralamaya tabi tutulur; yalnızca sıralamada yeterli olanlar desteklenir ve karar nihaidir, itiraz edilemez (MADDE 26/1). Bu yüzden ön koşulların sağlanması başvuru hakkı verir, kesin onay anlamına gelmez.",
+    "Program dönemsel başvuru çağrılarıyla yürütülüyor (kardeş programı Kapasite Geliştirme'de olduğu gibi); güncel başvuru döneminin açık olup olmadığı kosgeb.gov.tr'den teyit edilmelidir.",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -662,7 +663,7 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   const uyarilar = [
     "Program, Teknoloji Hazırlık Seviyesi (THS) en az 5 (tercihen 6) ile başlayıp THS 9'a (ticarileştirme) kadar ilerleyen projelere odaklıdır; nihai Ar-Ge niteliği hakem değerlendirmesine tabidir.",
     "Dünya Bankası destekli olduğu için Çevresel-Sosyal Yönetim Çerçevesi (ESMF) şartlarına uygunluk da ayrıca aranır — bu ön analizde sorulmuyor, başvuru öncesi teyit edilmelidir.",
-    "Bu program dönemsel çağrılarla açılır (Türkiye Yeşil Sanayi Projesi kapsamında); güncel çağrı takvimi ve bütçe üst limiti TÜBİTAK TEYDEB üzerinden teyit edilmelidir.",
+    "Bu program dönemsel çağrılarla açılır (Türkiye Yeşil Sanayi Projesi kapsamında); güncel çağrı (2026-2) son başvurusu 28 Eylül 2026 — bu tarihten sonra yeni çağrı ilan edilene kadar başvuru alınmayabilir, güncel durum TÜBİTAK TEYDEB üzerinden teyit edilmelidir.",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -1090,7 +1091,7 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
     "Bu bir hibe değil, bankadan kullanılan ticari krediye faiz/kâr payı desteğidir (geri ödemesiz destek kısmı, anapara işletmeye geri ödemelidir); azami vade 36 ay, proje süresi 24 ay (+6 ay uzatılabilir).",
     "İşletme başına yıllık faiz/kâr payı desteği üst limiti 10.000.000 TL'dir.",
     "Değerlendirme iki aşamalı: Kurul 100 üzerinden puanlar (ortalama en az 50 olmalı), nihai kararı Jüri verir ve bu karara itiraz edilemez.",
-    "Başvurular sürekli kabul ediliyor (dönem/tarih aralığı yok); güncel başvuru kılavuzu kosgeb.gov.tr'den teyit edilmelidir.",
+    "Başvurular sürekli değil, dönemsel çağrılarla alınıyor; güncel (2026 Yılı 1. Başvuru Dönemi) son başvuru 30 Eylül 2026 — bu tarihten sonra yeni dönem ilan edilene kadar başvuru alınmayabilir, güncel durum kosgeb.gov.tr'den teyit edilmelidir.",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -1300,7 +1301,7 @@ export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   const eksikAlanlar: string[] = [];
   const uyarilar6 = [
     "Program 3 fazlıdır: Faz 1 kuluçka merkezi hızlandırma (eğitim/mentorluk), Faz 2 Ön Tohum Yatırım (~1.350.000 TL karşılığında %3 hisse), Faz 3 Tohum Yatırım (büyüme, %10'a kadar). Destek hibe değil, TÜBİTAK'ın doğrudan hisse karşılığı yatırımıdır.",
-    "2026-1 çağrısı: hızlandırma 2 Mart 2026-31 Temmuz 2028, başvuru 15 Haziran-3 Temmuz 2026 — dönemsel çağrılarla ilerler, sürekli değildir; güncel çağrı takvimi tubitak.gov.tr'den teyit edilmelidir.",
+    "2026-2 çağrısı açık: son başvuru 30 Eylül 2026 — dönemsel çağrılarla ilerler, sürekli değildir; güncel çağrı takvimi tubitak.gov.tr'den teyit edilmelidir.",
   ];
 
   if (g.girisimciSirketDurumu === "kurulu_sirket_3yil_uzeri") {
@@ -1340,8 +1341,7 @@ export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ön koşullar sağlanıyor; Ön Tohum Yatırım kararı TÜBİTAK'ın değerlendirme sürecine bağlıdır.",
     gerekceler,
-    uyarilar6,
-    true // 2026-1 çağrısı başvurusu (15 Haziran-3 Temmuz 2026) kapandı, yeni çağrı henüz ilan edilmedi
+    uyarilar6
   );
 }
 

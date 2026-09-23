@@ -28,7 +28,9 @@ const ZATEN_MODELLENEN_ANAHTAR_KELIMELER = [
   "1831",
   "ihracat destekleri",
   "ipard",
-  "turquality",
+  "marka ve turquality", // yalnızca modellenen "Marka ve TURQUALITY® Desteği" — ayrı ve
+  // modellenmemiş "E-Turquality (Bilişimin Yıldızları)" bilişim programını yanlışlıkla
+  // dışlamasın diye kasıtlı olarak "turquality" değil bu daha dar ifade kullanılıyor.
   "stratejik ürün",
   "küresel rekabetçilik",
   "yönde",
