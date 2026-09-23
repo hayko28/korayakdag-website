@@ -338,6 +338,8 @@ oluştur.
 
 **ZORUNLU — canonical etiketi:** `metadata` objesine mutlaka `alternates: { canonical: "/blog/<slug>" }` ekle (slug klasör adıyla birebir aynı olmalı). Root layout'taki (`app/layout.tsx`) `alternates.canonical: "/"` alt sayfalara miras kaldığı için, bunu eklemeyen her yazı Google'a "asıl adresim ana sayfa" sinyali gönderir ve indekslenmesi/sıralaması baskılanır — 2026-09-23'te 74 eski yazıda bulunup düzeltilen sitewide bir hataydı, yeni yazılarda tekrarlanmamalı.
 
+**ZORUNLU — FAQPage schema:** SSS bölümündeki (`id="sss"`) her soru/cevap çiftini, `</BlogLayout>` kapanışından hemen önce bir `<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[...]}) }} />` bloğu olarak da ekle. Her soru `{"@type":"Question","name":"<soru metni>","acceptedAnswer":{"@type":"Answer","text":"<cevap metni, düz metin, JSX etiketleri temizlenmiş>"}}`. Bu, 2026-09-24'te 86 eski yazıya toplu eklenen bir zengin snippet (rich result) iyileştirmesiydi, yeni yazılarda baştan eklenmeli.
+
 Anahtar kelime doldurma yapma.
 
 Başlıkları sadece SEO için değil, gerçekten kullanıcıların soracağı sorulara cevap verecek şekilde oluştur.
