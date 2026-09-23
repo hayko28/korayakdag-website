@@ -746,5 +746,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "12 Dakika",
     image: "https://images.unsplash.com/photo-1601371006911-6b69ea24127e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "sirket-birlesme-bolunme-vergi-ertelemesi-devir-bolunme-rejimi",
+    title: "Şirket Birleşme ve Bölünmelerinde Vergi Ertelemesi: Devir/Bölünme Rejimi Nasıl İşler?",
+    excerpt: "5520 sayılı Kurumlar Vergisi Kanunu m.19-20 çerçevesinde devir (birleşme), tam/kısmi bölünme ve hisse değişimi işlemlerinde kurumlar vergisi ve KDV'nin kayıtlı değer esasıyla nasıl ertelendiği, şartlar ve şartlar bozulursa doğacak geriye dönük vergi riskiyle kapsamlı rehber.",
+    category: "M&A • VERGİ DANIŞMANLIĞI • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1733190232275-be739ca2629d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
