@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yapay-zeka-yatirimi-istihdam-plani-farki",
+    title:
+      "Girişimciler Yapay Zekaya Yüzde 82 Yatırım Yapıyor, İşe Almaya Yüzde 34: Aradaki Fark Ne Anlatıyor?",
+    excerpt:
+      "EY Girişimcilik Barometresi 2026'ya göre girişimcilerin yüzde 82'si yapay zeka ve makine öğrenimini iş süreçlerine entegre etmiş durumda; aynı raporda tam zamanlı istihdam planlayan girişimci oranı ise yüzde 44'ten yüzde 34'e gerilemiş. İki eğri arasındaki fark, organizasyon tasarımı için görmezden gelinmemesi gereken bir sinyal.",
+    tag: "Strateji",
+    date: "23 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satin-almada-kodun-fikri-mulkiyeti-kimde",
     title: "Satın Alınan Şirketin Yazılımı, Hukuken Kime Ait?",
     excerpt:
