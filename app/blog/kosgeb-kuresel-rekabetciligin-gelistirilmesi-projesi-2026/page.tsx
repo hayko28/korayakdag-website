@@ -28,6 +28,7 @@ export default function BlogPage() {
       readTime="13 Dakika"
       slug="kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026"
       programDurumu="acik"
+      sonBasvuruTarihi="30 Eylül 2026"
     >
       <div className="rounded-2xl border border-green-200 bg-green-50 p-8">
         <p className="text-lg font-semibold text-green-800">

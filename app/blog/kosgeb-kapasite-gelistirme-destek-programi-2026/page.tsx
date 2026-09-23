@@ -31,6 +31,7 @@ export default function BlogPage() {
       readTime="16 Dakika"
       slug="kosgeb-kapasite-gelistirme-destek-programi-2026"
       programDurumu="kapali"
+      sonBasvuruTarihi="15 Eylül 2026 (3. dönem, kapandı)"
     >
         <div className="mb-10 rounded-2xl border-l-4 border-gray-400 bg-gray-50 p-6">
           <p className="text-lg font-semibold text-gray-700">

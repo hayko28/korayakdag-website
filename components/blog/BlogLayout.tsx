@@ -47,6 +47,10 @@ interface BlogLayoutProps {
   /** Yazı belirli bir başvuru dönemi olan bir destek/teşvik programını konu alıyorsa,
    * programın güncel durumunu gösteren rozet. Program temelli olmayan yazılarda verilmez. */
   programDurumu?: "acik" | "kapali";
+  /** Bilinen, elle doğrulanmış güncel çağrı/dönem son başvuru tarihi (serbest metin, örn.
+   * "28 Eylül 2026") — verilirse programDurumu rozetinin yanında ayrı, görünür bir tarih
+   * rozeti olarak gösterilir. Yalnızca programDurumu ile birlikte anlamlıdır. */
+  sonBasvuruTarihi?: string;
   /** Yazının konusuna özel CTA başlığı. Verilmezse genel başlık kullanılır. */
   ctaHeading?: string;
   /** Yazının konusuna özel CTA metni. Verilmezse genel metin kullanılır. */
@@ -66,6 +70,7 @@ export default function BlogLayout({
   ctaHeading,
   ctaText,
   programDurumu,
+  sonBasvuruTarihi,
   children,
 }: BlogLayoutProps) {
   // EN tarafında henüz çevrilmiş yazı listesi olmadığı için (TR statik
@@ -213,6 +218,12 @@ export default function BlogLayout({
                   : lang === "en"
                     ? "Program Closed"
                     : "Program Kapalı"}
+              </div>
+            )}
+
+            {programDurumu && sonBasvuruTarihi && (
+              <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-red-700 shadow-md">
+                📅 {lang === "en" ? "Deadline:" : "Son Başvuru:"} {sonBasvuruTarihi}
               </div>
             )}
           </div>

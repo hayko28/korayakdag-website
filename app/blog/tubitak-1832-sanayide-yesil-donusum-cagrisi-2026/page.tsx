@@ -31,6 +31,7 @@ export default function Tubitak1832Page() {
       coverImage="https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1832-sanayide-yesil-donusum-cagrisi-2026"
       programDurumu="acik"
+      sonBasvuruTarihi="28 Eylül 2026"
       ctaHeading="TÜBİTAK 1832 Başvuru Dosyanızı Birlikte Hazırlayalım"
       ctaText="Yeşil Dönüşüm Göstergelerinden hangisini hedefleyebileceğinizden proje bütçenizin ölçeğinize göre doğru kalemlere dağıtılmasına kadar, 28 Eylül 2026 son başvuru tarihine yetişecek şekilde dosyanızı birlikte hazırlayabiliriz."
     >

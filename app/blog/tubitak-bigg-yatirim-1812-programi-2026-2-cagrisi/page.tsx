@@ -29,6 +29,7 @@ export default function BlogPage() {
       readTime="12 Dakika"
       slug="tubitak-bigg-yatirim-1812-programi-2026-2-cagrisi"
       programDurumu="acik"
+      sonBasvuruTarihi="30 Eylül 2026"
       coverImage="https://images.unsplash.com/photo-1712342109846-a8fcb1c883ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
       {/* KISA CEVAP KUTUSU */}
