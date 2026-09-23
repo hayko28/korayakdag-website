@@ -4,6 +4,19 @@ import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import {
+  PiggyBank,
+  BarChart3,
+  Building2,
+  Globe2,
+  TrendingUp,
+  ShieldCheck,
+  Lightbulb,
+  Folder,
+  Tag,
+  ArrowRight,
+  type LucideIcon,
+} from "lucide-react";
 
 interface BlogListPost {
   slug: string;
@@ -45,10 +58,15 @@ function primaryCategory(category: string | undefined, otherLabel: string) {
 // toplar. Eşleşmeyen (ör. yeni eklenen) bir kategori otomatik "Diğer"
 // grubuna düşer, bu yüzden yeni kategori eklemek bu listeyi güncellemeyi
 // gerektirmez.
-const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: string[] }[] = [
+const CATEGORY_GROUPS: {
+  name: string;
+  icon: LucideIcon;
+  color: string;
+  members: string[];
+}[] = [
   {
     name: "Teşvikler & Destekler",
-    icon: "💰",
+    icon: PiggyBank,
     color: "bg-orange-100 text-orange-600",
     members: [
       "KOSGEB",
@@ -66,7 +84,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Vergi, Finans & Denetim",
-    icon: "📊",
+    icon: BarChart3,
     color: "bg-blue-100 text-blue-600",
     members: [
       "VERGİ VE FİNANSAL YÖNETİM",
@@ -78,7 +96,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Şirket & Hukuk",
-    icon: "🏢",
+    icon: Building2,
     color: "bg-green-100 text-green-600",
     members: [
       "HUKUK DANIŞMANLIĞI",
@@ -90,7 +108,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Yurt Dışı & Uluslararası İşler",
-    icon: "🌍",
+    icon: Globe2,
     color: "bg-purple-100 text-purple-600",
     members: [
       "YURT DIŞI ŞİRKET",
@@ -102,7 +120,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Büyüme & İş Geliştirme",
-    icon: "📈",
+    icon: TrendingUp,
     color: "bg-rose-100 text-rose-600",
     members: [
       "KURUMSAL GELİŞİM",
@@ -114,7 +132,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Marka, Patent & Değerleme",
-    icon: "🛡️",
+    icon: ShieldCheck,
     color: "bg-teal-100 text-teal-600",
     members: [
       "MARKA VE PATENT",
@@ -126,7 +144,7 @@ const CATEGORY_GROUPS: { name: string; icon: string; color: string; members: str
   },
   {
     name: "Teknoloji & Sürdürülebilirlik",
-    icon: "💡",
+    icon: Lightbulb,
     color: "bg-amber-100 text-amber-600",
     members: ["YAZILIM VE YAPAY ZEKÂ", "SÜRDÜRÜLEBİLİRLİK"],
   },
@@ -174,7 +192,7 @@ export default function BlogList({
     if (otherCount > 0) {
       defined.push({
         name: t.other,
-        icon: "📁",
+        icon: Folder,
         color: "bg-gray-100 text-gray-600",
         members: [],
         count: otherCount,
@@ -211,6 +229,9 @@ export default function BlogList({
     }
     const query = params.toString();
     router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+    document
+      .getElementById("blog-posts")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -229,41 +250,52 @@ export default function BlogList({
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {groupCards.map((group) => (
-            <button
-              key={group.name}
-              onClick={() => selectFilter(group.name)}
-              className={`rounded-2xl border p-5 text-left transition hover:-translate-y-1 hover:shadow-lg ${
-                active === group.name
-                  ? "border-[#071A2F] bg-[#071A2F]/5"
-                  : "border-gray-100 bg-white"
-              }`}
-            >
-              <div
-                className={`mb-3 flex h-11 w-11 items-center justify-center rounded-full text-xl ${group.color}`}
+          {groupCards.map((group) => {
+            const Icon = group.icon;
+            return (
+              <button
+                key={group.name}
+                onClick={() => selectFilter(group.name)}
+                className={`group relative overflow-hidden rounded-2xl border p-5 text-left transition hover:-translate-y-1 hover:shadow-lg ${
+                  active === group.name
+                    ? "border-[#071A2F] bg-[#071A2F]/5"
+                    : "border-gray-100 bg-white"
+                }`}
               >
-                {group.icon}
-              </div>
-              <p className="font-bold text-[#071A2F]">{group.name}</p>
-              <p className="mt-1 text-sm font-semibold text-orange-500">
-                {group.count} {t.postSuffix}
-              </p>
-            </button>
-          ))}
+                <Icon
+                  className={`pointer-events-none absolute -bottom-4 -right-4 h-24 w-24 opacity-[0.07] transition group-hover:opacity-[0.12] ${group.color.split(" ")[1]}`}
+                  strokeWidth={1.5}
+                />
+                <div
+                  className={`relative mb-3 flex h-11 w-11 items-center justify-center rounded-full ${group.color}`}
+                >
+                  <Icon className="h-5 w-5" strokeWidth={2} />
+                </div>
+                <p className="relative font-bold text-[#071A2F]">{group.name}</p>
+                <p className="relative mt-1 text-sm font-semibold text-orange-500">
+                  {group.count} {t.postSuffix}
+                </p>
+              </button>
+            );
+          })}
 
           <button
             onClick={() => selectFilter(t.all)}
-            className="flex flex-col justify-between rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <p className="text-lg font-bold">{t.allPosts}</p>
-            <p className="mt-4 text-2xl">→</p>
+            <ArrowRight
+              className="pointer-events-none absolute -bottom-4 -right-4 h-24 w-24 text-white opacity-10 transition group-hover:opacity-20"
+              strokeWidth={1.5}
+            />
+            <p className="relative text-lg font-bold">{t.allPosts}</p>
+            <ArrowRight className="relative mt-4 h-6 w-6" strokeWidth={2} />
           </button>
         </div>
 
         {popularTags.length > 0 && (
           <div className="mt-6 flex flex-wrap items-center gap-2 border-t border-gray-100 pt-6">
-            <span className="mr-1 text-sm font-semibold text-gray-500">
-              🏷️ {t.popularTags}:
+            <span className="mr-1 flex items-center gap-1 text-sm font-semibold text-gray-500">
+              <Tag className="h-4 w-4" strokeWidth={2} /> {t.popularTags}:
             </span>
             {popularTags.map(([name]) => (
               <button
@@ -282,7 +314,7 @@ export default function BlogList({
         )}
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div id="blog-posts" className="grid scroll-mt-24 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filtered.map((post) => (
           <Link
             key={post.slug}
