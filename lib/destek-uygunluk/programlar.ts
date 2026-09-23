@@ -17,9 +17,10 @@ function sonuc(
   durum: SonucDurumu,
   ozet: string,
   gerekceler: string[],
-  uyarilar?: string[]
+  uyarilar?: string[],
+  cagriKapali?: boolean
 ): ProgramSonucuTaslak {
-  return { programId, programAdi, kurum, durum, ozet, gerekceler, uyarilar };
+  return { programId, programAdi, kurum, durum, ozet, gerekceler, uyarilar, cagriKapali };
 }
 
 // --- 1) KOSGEB İş Geliştirme Desteği (Girişimci Destek Programı) ---
@@ -221,7 +222,8 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre başvuru ön koşullarının tamamı sağlanıyor; nihai kabul Kurul puanlaması (≥50/100) ve kontenjan sıralamasına bağlıdır.",
     gerekceler,
-    uyarilar
+    uyarilar,
+    true // 3. başvuru dönemi (22 Ağustos-15 Eylül 2026) kapandı, yeni dönem henüz ilan edilmedi
   );
 }
 
@@ -1338,7 +1340,8 @@ export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ön koşullar sağlanıyor; Ön Tohum Yatırım kararı TÜBİTAK'ın değerlendirme sürecine bağlıdır.",
     gerekceler,
-    uyarilar6
+    uyarilar6,
+    true // 2026-1 çağrısı başvurusu (15 Haziran-3 Temmuz 2026) kapandı, yeni çağrı henüz ilan edilmedi
   );
 }
 

@@ -20,6 +20,10 @@ export type ProgramSonucuTaslak = {
   ozet: string;
   gerekceler: string[];
   uyarilar?: string[];
+  // true ise: nesnel kriterler sağlanıyor ama programın GÜNCEL çağrı/başvuru dönemi
+  // şu an kapalı (bilinen, elle doğrulanmış bir tarih aralığına göre) — "uygun" veya
+  // "kismen_uygun" durumuyla birlikte kullanılır, arayüzde ayrı bir rozetle gösterilir.
+  cagriKapali?: boolean;
 };
 
 // index.ts'te taslağa puan eklenerek üretilen, arayüze giden nihai sonuç.

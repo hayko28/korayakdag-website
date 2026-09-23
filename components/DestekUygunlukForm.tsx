@@ -196,6 +196,12 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
   uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "🔴 İlk Elemede Uygun Değil" },
 };
 
+// cagriKapali === true olan programlar için durum rengini/etiketini ezer — kriterler
+// sağlansa bile programın GÜNCEL çağrı/başvuru dönemi kapalıyken "Ön Uygun"/"Koşullu
+// Uygun" gösterip "hemen başvurabilirsiniz" izlenimi vermemek için ayrı bir rozet.
+const CAGRI_KAPALI_STIL = { renk: "border-orange-300 bg-orange-50 text-orange-800", etiket: "🟠 Kriterler Uygun — Çağrı Şu An Kapalı" };
+const kartStili = (s: ProgramSonucu) => (s.cagriKapali ? CAGRI_KAPALI_STIL : DURUM_STIL[s.durum]);
+
 const PUAN_RENK = (puan: number) =>
   puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";
 
@@ -597,11 +603,16 @@ export default function DestekUygunlukForm() {
           </h2>
           <div className="mt-3 flex flex-wrap gap-4 text-sm">
             <span className="flex items-center gap-1.5">
-              🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun").length}</strong> ön uygun
+              🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun" && !s.cagriKapali).length}</strong> ön uygun
             </span>
             <span className="flex items-center gap-1.5">
-              🔵 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun").length}</strong> koşullu uygun
+              🔵 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun" && !s.cagriKapali).length}</strong> koşullu uygun
             </span>
+            {sonuclar.some((s) => s.cagriKapali) && (
+              <span className="flex items-center gap-1.5">
+                🟠 <strong>{sonuclar.filter((s) => s.cagriKapali).length}</strong> çağrısı şu an kapalı
+              </span>
+            )}
             <span className="flex items-center gap-1.5">
               🟡 <strong>{sonuclar.filter((s) => s.durum === "belirsiz").length}</strong> bilgi eksik
             </span>
@@ -614,8 +625,9 @@ export default function DestekUygunlukForm() {
 
         {sonuclar.map((s) => {
           const acik = acikSonuclar.has(s.programId);
+          const stil = kartStili(s);
           return (
-            <div key={s.programId} className={`rounded-2xl border shadow-sm transition ${DURUM_STIL[s.durum].renk}`}>
+            <div key={s.programId} className={`rounded-2xl border shadow-sm transition ${stil.renk}`}>
               <button
                 type="button"
                 onClick={() => sonucAcKapa(s.programId)}
@@ -625,8 +637,8 @@ export default function DestekUygunlukForm() {
                 <div className="min-w-0">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
                     <h3 className="text-lg font-bold text-[#071A2F]">{s.programAdi}</h3>
-                    <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${DURUM_STIL[s.durum].renk}`}>
-                      {DURUM_STIL[s.durum].etiket}
+                    <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${stil.renk}`}>
+                      {stil.etiket}
                     </span>
                   </div>
                   <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
@@ -728,14 +740,16 @@ export default function DestekUygunlukForm() {
 
                     <div className="rounded-xl bg-gray-50 p-4 text-sm text-gray-700">
                       <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
-                      {s.durum === "uygun" &&
-                        "Bu program için başvuru sürecini birlikte planlayalım — aşağıdaki İletişime Geç'e tıklayın."}
-                      {s.durum === "belirsiz" &&
-                        "Yukarıdaki eksik bilgileri tamamlayıp \"Analizi Güncelle\"ye basın; net değilseniz bizimle görüşün."}
-                      {s.durum === "kismen_uygun" &&
-                        "Girdiğiniz bilgilere göre nesnel ön şartları sağlıyorsunuz; nihai karar resmi başvuru/danışmanlık değerlendirmesiyle netleşir. Süreci birlikte planlamak için bizimle görüşün."}
-                      {olumsuz &&
-                        "Bu program şu an için uygun görünmüyor; yukarıdaki cevaplardan biri değiştiyse (örn. şimdi bir belgeniz varsa) güncelleyip \"Analizi Güncelle\"ye basabilirsiniz. Diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına da göz atabilirsiniz."}
+                      {s.cagriKapali
+                        ? "Kriterleri sağlıyorsunuz ama programın güncel çağrı/başvuru dönemi şu an kapalı — hemen başvuru yapılamaz. Yeni dönem açıldığında hazır olmak için süreci şimdiden birlikte planlayabiliriz, bizimle görüşün."
+                        : s.durum === "uygun"
+                        ? "Bu program için başvuru sürecini birlikte planlayalım — aşağıdaki İletişime Geç'e tıklayın."
+                        : s.durum === "belirsiz"
+                        ? "Yukarıdaki eksik bilgileri tamamlayıp \"Analizi Güncelle\"ye basın; net değilseniz bizimle görüşün."
+                        : s.durum === "kismen_uygun"
+                        ? "Girdiğiniz bilgilere göre nesnel ön şartları sağlıyorsunuz; nihai karar resmi başvuru/danışmanlık değerlendirmesiyle netleşir. Süreci birlikte planlamak için bizimle görüşün."
+                        : olumsuz &&
+                          "Bu program şu an için uygun görünmüyor; yukarıdaki cevaplardan biri değiştiyse (örn. şimdi bir belgeniz varsa) güncelleyip \"Analizi Güncelle\"ye basabilirsiniz. Diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına da göz atabilirsiniz."}
                     </div>
 
                     {(() => {
@@ -930,6 +944,11 @@ export default function DestekUygunlukForm() {
                 </p>
               </div>
               <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
+              <EvetHayir
+                etiket="Kırsal kalkınma yatırımı planlıyorsanız: yatırım ili, TKDK'nın desteklenen illeri arasında mı?"
+                deger={g.tkdkDesteklenenIldeMi}
+                onChange={(v) => set("tkdkDesteklenenIldeMi", v)}
+              />
             </div>
           </Bolum>
         </>
@@ -1296,7 +1315,6 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
       return (
         <div className="grid gap-5 sm:grid-cols-2">
           <Sayi etiket="Başvuranın yaşı (gerçek kişi başvurusuysa)" deger={g.basvuranYasi} onChange={(v) => set("basvuranYasi", v)} />
-          <EvetHayir etiket="Yatırım ili, TKDK'nın desteklenen illeri arasında mı?" deger={g.tkdkDesteklenenIldeMi} onChange={(v) => set("tkdkDesteklenenIldeMi", v)} />
           <Secim etiket="Yatırımınız hangi IPARD III tedbirine giriyor?" deger={g.tkdkSektoru} onChange={(v) => set("tkdkSektoru", v)} secenekler={TKDK_SEKTOR_SECENEKLERI} />
           <Tutar etiket="Planlanan proje bütçesi" deger={g.planlananProjeButcesiEuro} onChange={(v) => set("planlananProjeButcesiEuro", v)} birim="€" />
         </div>

@@ -139,6 +139,20 @@ Her iki durumda da `research/tesvik-takip/blog-guncelleme-gerekli.md` dosyasına
 
 Bu dosyayı düzenlemekten öte hiçbir blog dosyasına dokunma — güncelleme/yeni yazı işini Blog Yazarı ajanı yapar.
 
+**5c) Uygunluk Motoru (Destek Uygunluk Analizi) senkronizasyonu:** Sitede ayrıca `lib/destek-uygunluk/programlar.ts` diye ayrı, çok daha detaylı bir kural motoru var — kullanıcının şirket bilgilerini bu dosyadaki her programın resmî şartlarıyla (mevzuat maddesi düzeyinde) karşılaştırıp "Ön Uygun/Koşullu Uygun/Belirsiz/Uygun Değil" sonucu üretiyor. Bu dosyadaki kuralları SEN DEĞİŞTİRME (mevzuat yorumu içeren karmaşık iş mantığı, yanlış düzenleme yanlış sonuca yol açar) — sadece bir programın **çağrı/başvuru dönemi durumu değiştiğinde** (yeni dönem açıldı, mevcut dönem kapandı, tarih uzadı) bunu tespit edip not düş:
+
+1. Değişikliği tespit ettiğin program için `lib/destek-uygunluk/programlar.ts`'i hedefli grep'le (program adı/kurum anahtar kelimesiyle — tüm dosyayı baştan okuma, ~1700 satır).
+2. Eşleşme bulursan (dosyada o fonksiyonun `sonuc(...)` çağrısında `cagriKapali: true`/`true` bayrağı veya çağrı tarihinden bahseden bir uyarı metni varsa) `research/tesvik-takip/uygunluk-motoru-guncelleme-gerekli.md` dosyasına ekle (yoksa oluştur, varsa en altına ekle):
+   ```
+   ## [Program Adı] — [Tarih]
+   - Dosya: lib/destek-uygunluk/programlar.ts (fonksiyon adı, grep ile bulduğun)
+   - Değişiklik: [ör. "3. dönem yeniden açıldı (X-Y), cagriKapali bayrağı false yapılmalı" VEYA "yeni dönem ilan edildi, tarih X-Y"]
+   - Kaynak: [doğrulama linki]
+   ```
+3. Eşleşme yoksa (program bu motorda hiç modellenmemiş) hiçbir şey yapma.
+
+Bu dosyayı düzenlemekten öte `lib/destek-uygunluk/` klasöründeki hiçbir dosyaya dokunma.
+
 ---
 
 ## 6. GÜRÜLTÜ YAPMA
@@ -151,7 +165,7 @@ Bu dosyayı düzenlemekten öte hiçbir blog dosyasına dokunma — güncelleme/
 
 ## 7. TEKNİK UYGULAMA (git)
 
-- `research/tesvik-takip/programlar.json` ve (varsa) `research/tesvik-takip/blog-guncelleme-gerekli.md` dışında başka dosyaya dokunma.
+- `research/tesvik-takip/programlar.json` ve (varsa) `research/tesvik-takip/blog-guncelleme-gerekli.md` / `research/tesvik-takip/uygunluk-motoru-guncelleme-gerekli.md` dışında başka dosyaya dokunma.
 - Değişiklik varsa commit et (mesaj: "Teşvik Takip: [TARİH] — [kısa özet]") ve `git pull --rebase origin main` sonrası `main` branch'ine push et.
 - Değişiklik yoksa commit atma.
 - **GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya rebase "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir. Böyle bir çakışma uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — gözetimsiz bir çalıştırmada bunu force push ile "çözmek" gerçek commit geçmişini silebilir.
@@ -160,7 +174,7 @@ Bu dosyayı düzenlemekten öte hiçbir blog dosyasına dokunma — güncelleme/
 
 ## 8. RAPOR
 
-İşin sonunda kısa özet: kaç program kontrol edildi, kaç yeni bulundu, kaç bildirim gönderildi (türleriyle), blog güncelleme notu düşüldü mü.
+İşin sonunda kısa özet: kaç program kontrol edildi, kaç yeni bulundu, kaç bildirim gönderildi (türleriyle), blog güncelleme notu düşüldü mü, uygunluk motoru güncelleme notu düşüldü mü.
 
 ---
 

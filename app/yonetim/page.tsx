@@ -32,7 +32,7 @@ type DestekBasvuru = {
   iletisim_ad_soyad: string;
   iletisim_eposta: string;
   iletisim_telefon: string | null;
-  sonuclar: { programAdi: string; durum: string }[];
+  sonuclar: { programAdi: string; durum: string; cagriKapali?: boolean }[];
   status: string;
   created_at: string;
 };
@@ -798,7 +798,9 @@ export default function AdminPage() {
                         <span
                           key={i}
                           className={`rounded-full border px-3 py-1 text-xs font-bold ${
-                            s.durum === "uygun"
+                            s.cagriKapali
+                              ? "border-orange-300 bg-orange-50 text-orange-800"
+                              : s.durum === "uygun"
                               ? "border-green-300 bg-green-50 text-green-800"
                               : s.durum === "kismen_uygun"
                               ? "border-blue-300 bg-blue-50 text-blue-800"
@@ -806,8 +808,9 @@ export default function AdminPage() {
                               ? "border-amber-300 bg-amber-50 text-amber-800"
                               : "border-red-300 bg-red-50 text-red-800"
                           }`}
+                          title={s.cagriKapali ? "Kriterler uygun, çağrı şu an kapalı" : undefined}
                         >
-                          {s.programAdi}
+                          {s.programAdi}{s.cagriKapali ? " ⏸" : ""}
                         </span>
                       ))}
                     </div>
