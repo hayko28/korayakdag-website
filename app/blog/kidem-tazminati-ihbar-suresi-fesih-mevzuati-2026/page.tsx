@@ -581,6 +581,13 @@ export default function BlogPage() {
               bizimle iletişime geçebilirsiniz.
             </Link>
           </p>
+          <p className="mt-4 leading-8 text-gray-700">
+            Hemen bir fikir edinmek isterseniz,{" "}
+            <Link href="/kidem-tazminati-hesaplama" className="text-orange-600 underline">
+              ücretsiz Kıdem Tazminatı Hesaplayıcı
+            </Link>{" "}
+            ile brüt ücretiniz ve kıdem sürenize göre 2026 güncel tavan tutarına göre brüt ve net tutarı görebilirsiniz.
+          </p>
         </div>
       </section>
 
