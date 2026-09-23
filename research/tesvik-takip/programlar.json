@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-09-19",
+  "sonGuncelleme": "2026-09-23",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -682,13 +682,13 @@
       "ad": "Küresel Rekabetçilik Destek Programı",
       "kurum": "KOSGEB",
       "durum": "acik",
-      "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "sonBasvuruTarihi": "2026-09-30",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "T.C. Cumhurbaşkanlığı Yatırım Ofisi'nin resmi \"Devlet Destekleri ve Teşvikler\" portalında (yatirimadestek.gov.tr) aktif olarak listelenen bir standart destek/teşvik uygulamasıdır."
+      "not": "2026 yılı 1. dönem başvuruları 7 Eylül 2026'de açıldı, son başvuru 30 Eylül 2026"
     },
     {
       "id": "yad-tarim-ve-orman-bakanligi-hayvancilik-destekleri",
