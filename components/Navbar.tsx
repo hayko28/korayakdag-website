@@ -159,7 +159,7 @@ export default function Navbar() {
                 <div key="Araçlar" className="group relative">
                   <button
                     type="button"
-                    className="flex items-center gap-1 whitespace-nowrap text-[13px] font-medium text-[#C9D6E4] transition group-hover:text-white group-focus-within:text-white"
+                    className="flex items-center gap-1 whitespace-nowrap text-[15px] font-semibold text-[#C9D6E4] transition group-hover:text-white group-focus-within:text-white"
                   >
                     Araçlar
                     <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" strokeWidth="2.2" className="mt-px">
@@ -186,7 +186,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="relative whitespace-nowrap text-[13px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative whitespace-nowrap text-[15px] font-semibold text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.name}
               </a>
