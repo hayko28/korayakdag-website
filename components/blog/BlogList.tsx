@@ -272,7 +272,7 @@ export default function BlogList({
               <button
                 key={group.name}
                 onClick={() => selectFilter(group.name)}
-                className={`group relative h-32 overflow-hidden rounded-2xl text-left transition hover:-translate-y-1 hover:shadow-lg ${
+                className={`group relative h-36 overflow-hidden rounded-2xl text-left transition hover:-translate-y-1 hover:shadow-lg ${
                   active === group.name ? "ring-2 ring-[#071A2F]" : ""
                 } ${!group.image ? "border border-gray-100 bg-white" : ""}`}
               >
@@ -294,24 +294,24 @@ export default function BlogList({
                   />
                 )}
                 <div
-                  className={`absolute left-2.5 top-2.5 flex h-7 w-7 items-center justify-center rounded-full ${
+                  className={`absolute left-2.5 top-2.5 flex h-8 w-8 items-center justify-center rounded-full ${
                     group.image ? "bg-white/20 backdrop-blur-sm" : group.color
                   }`}
                 >
                   <Icon
-                    className={`h-3.5 w-3.5 ${group.image ? "text-white" : ""}`}
+                    className={`h-4 w-4 ${group.image ? "text-white" : ""}`}
                     strokeWidth={2}
                   />
                 </div>
                 <div className="absolute bottom-2 left-2.5 right-2.5">
                   <p
-                    className={`text-[13px] font-bold leading-tight ${
+                    className={`text-sm font-extrabold leading-tight ${
                       group.image ? "text-white" : "text-[#071A2F]"
                     }`}
                   >
                     {group.name}
                   </p>
-                  <p className="mt-0.5 text-[11px] font-bold text-orange-400">
+                  <p className="mt-0.5 text-xs font-bold text-orange-400">
                     {group.count} {t.postSuffix}
                   </p>
                 </div>
@@ -321,10 +321,10 @@ export default function BlogList({
 
           <button
             onClick={() => selectFilter(t.all)}
-            className="flex h-32 flex-col justify-between rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-3.5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
+            className="flex h-36 flex-col justify-between rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-4 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <p className="text-sm font-bold">{t.allPosts}</p>
-            <ArrowRight className="h-4 w-4" strokeWidth={2} />
+            <p className="text-base font-extrabold">{t.allPosts}</p>
+            <ArrowRight className="h-5 w-5" strokeWidth={2} />
           </button>
         </div>
 
