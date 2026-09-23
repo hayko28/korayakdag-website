@@ -14,12 +14,12 @@ const ITEM_LINKS: Record<string, string> = {
   "TÜBİTAK Destekleri": "/tubitak-danismanlik",
   "🇵🇱 Polonya": "/blog/polonyada-sirket-nasil-kurulur",
   "🇮🇹 İtalya": "/blog/italyada-sirket-nasil-kurulur",
-  "🇩🇪 Almanya": "/blog/almanyada-sirket-nasil-kurulur",
+  "🇩🇪 Almanya": "/yurt-disinda-sirket-kurulusu/almanya",
   "🇬🇧 İngiltere": "/blog/ingilterede-sirket-nasil-kurulur",
   "🇳🇱 Hollanda": "/blog/hollandada-sirket-nasil-kurulur",
-  "🇦🇪 Birleşik Arap Emirlikleri (Dubai)": "/blog/dubaide-sirket-nasil-kurulur",
+  "🇦🇪 Birleşik Arap Emirlikleri (Dubai)": "/yurt-disinda-sirket-kurulusu/dubai",
   "🇸🇦 Suudi Arabistan": "/blog/suudi-arabistanda-sirket-nasil-kurulur",
-  "🇺🇸 Amerika Birleşik Devletleri": "/blog/amerikada-sirket-nasil-kurulur",
+  "🇺🇸 Amerika Birleşik Devletleri": "/yurt-disinda-sirket-kurulusu/abd",
   "🇸🇬 Singapur": "/blog/singapurda-sirket-nasil-kurulur",
   "🇦🇿 Azerbaycan": "/blog/azerbaycanda-sirket-nasil-kurulur",
   "🇰🇿 Kazakistan": "/blog/kazakistanda-sirket-nasil-kurulur",
@@ -433,6 +433,7 @@ export const GROUP_DEFS = [
     tr: { title: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme" },
     en: { title: "Overseas Company Formation & International Business Development" },
     categoryIndexes: [1, 17],
+    href: "/yurt-disinda-sirket-kurulusu",
   },
   {
     icon: "scale",
@@ -670,6 +671,15 @@ export default function Services({ lang = "tr" }: { lang?: "tr" | "en" }) {
               </div>
               <button type="button" onClick={() => setOpen(null)} aria-label={t.close} className="rounded-lg p-1 text-2xl text-white hover:bg-white/10">×</button>
             </div>
+
+            {"href" in activeGroup && activeGroup.href && (
+              <Link
+                href={activeGroup.href}
+                className="mb-6 inline-flex items-center gap-2 rounded-lg bg-orange-500/15 px-4 py-2 text-sm font-semibold text-orange-300 transition hover:bg-orange-500/25"
+              >
+                {lang === "en" ? "See the full process and country guides" : "Tüm süreci ve ülke rehberlerini gör"} →
+              </Link>
+            )}
 
             <div className="sm:columns-2 sm:gap-6">
               {activeGroup.categoryIndexes.map((catIndex) => {

@@ -58,11 +58,21 @@ const organizationJsonLd = {
   name: "Koray Akdağ | Stratejik Danışmanlık",
   url: "https://korayakdag.com",
   telephone: "+905060931828",
+  logo: "https://korayakdag.com/koray-akdag-logo.svg",
+  image: "https://korayakdag.com/hero-pg.png",
   description:
     "Stratejik danışmanlık, iş geliştirme, yatırım teşvikleri, devlet destekleri ve yurt dışında/Türkiye'de şirket kuruluşu hizmetleri.",
   founder: {
     "@type": "Person",
     name: "Koray Akdağ",
+    sameAs: ["https://www.linkedin.com/in/koray-akda%C4%9F-07709368/"],
+  },
+  sameAs: ["https://www.linkedin.com/in/koray-akda%C4%9F-07709368/"],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "4. Levent Plaza, Eski Büyükdere Cad. No:67, Kat:5, Huzur Mh.",
+    addressLocality: "Sarıyer / İstanbul",
+    addressCountry: "TR",
   },
   areaServed: "TR",
   knowsAbout: [

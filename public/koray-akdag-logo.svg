@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 180" role="img" aria-labelledby="title desc">
+  <title id="title">Koray Akdağ Stratejik Danışmanlık logosu</title>
+  <desc id="desc">Lacivert ve turuncu, stratejik büyümeyi temsil eden KA monogramı ve kelime işareti.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M83 27v126M83 91l57-64M83 91l57 62" stroke="#0A1B30" stroke-width="16"/>
+    <path d="M125 112h37l-18.5-42z" fill="#F97316" stroke="#F97316" stroke-width="4"/>
+    <path d="M37 143c8-55 37-96 92-119" stroke="#F97316" stroke-width="7" stroke-dasharray="2 13"/>
+    <circle cx="34" cy="146" r="8" fill="#F97316" stroke="none"/>
+  </g>
+  <g fill="#0A1B30">
+    <text x="207" y="85" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800" letter-spacing="3">KORAY AKDAĞ</text>
+    <text x="211" y="122" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="5" fill="#D9670F">STRATEJİK DANIŞMANLIK</text>
+  </g>
+</svg>

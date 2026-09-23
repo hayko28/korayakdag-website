@@ -21,9 +21,48 @@ export default function MakaleLayout({
   children,
 }: MakaleLayoutProps) {
   const otherMakaleler = MAKALELER.filter((m) => m.slug !== slug);
+  const current = MAKALELER.find((m) => m.slug === slug);
+  const canonicalUrl = `https://korayakdag.com/makaleler/${slug}`;
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: current?.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Koray Akdağ",
+      url: "https://korayakdag.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Koray Akdağ | Stratejik Danışmanlık",
+      url: "https://korayakdag.com",
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+    inLanguage: "tr",
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://korayakdag.com/" },
+      { "@type": "ListItem", position: 2, name: "Makalelerim", item: "https://korayakdag.com/makaleler" },
+      { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
+    ],
+  };
 
   return (
     <main className="bg-white text-gray-700">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#071A2F] py-20">
         <div className="relative z-10 mx-auto w-full max-w-4xl px-6">
