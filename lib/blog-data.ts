@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "is-sagligi-guvenligi-isg-yukumlulukleri-isverenler-icin-2026-rehberi",
+    title: "İş Sağlığı ve Güvenliği (İSG) Yükümlülükleri: İşverenler İçin 2026 Rehberi",
+    excerpt: "6331 sayılı Kanun'a göre işyeri tehlike sınıfları, 2025'ten itibaren genişleyen iş güvenliği uzmanı/işyeri hekimi bulundurma zorunluluğu, risk değerlendirmesi, İSG Kurulu ve %25,49 oranında güncellenen 2026 idari para cezalarıyla tehlikeli/çok tehlikeli sınıftaki imalat KOBİ'leri için kapsamlı rehber.",
+    category: "İŞ HUKUKU • İSG MEVZUATI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1705579611249-9861db5469ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yapay-zeka-kvkk-otomatik-karar-alma-kisisel-veri-isleme-sinirlari",
     title: "Yapay Zeka ve KVKK: Otomatik Karar Alma ile Kişisel Veri İşleme Sınırları",
     excerpt: "CV eleme, kredi skorlama ve müşteri segmentasyonu gibi yapay zeka destekli otomatik kararlarda KVKK'nın 11/1-g maddesi, KVKK Kurulu'nun 2024-2026 döneminde yayımladığı güncel rehberler ve şirketler için aydınlatma, itiraz mekanizması, tedarikçi sözleşmesi gibi pratik uyum adımlarıyla kapsamlı rehber.",
