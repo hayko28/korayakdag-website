@@ -1277,6 +1277,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Bu tür standart bir rapor, banka veya yatırımcı görüşmesine hazırlanan işletmeler için hızlı ve düşük maliyetli bir ilk adım olabilir. Raporun genel bir çerçeve sunduğunu, şirkete özel bir değerleme ya da durum tespiti (due diligence) çalışmasının yerini tutmadığını hatırlatmak isterim.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Eylül 2026",
+    eklendiTarihi: "2026-09-23",
+    baslik:
+      "Ağustos 2026 ihracatı Cumhuriyet tarihinin en yüksek Ağustos değerine ulaştı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat'ın açıklamasına göre Türkiye'nin Ağustos 2026 ihracatı yıllık bazda yüzde 8,1 artışla 23,5 milyar dolara çıkarak Cumhuriyet tarihinin en yüksek Ağustos ayı değerine ulaştı. Ocak-Ağustos döneminde toplam ihracat yüzde 4 artışla 185 milyar dolara, yıllıklandırılmış ihracat ise 280,3 milyar dolarla tüm zamanların en yüksek seviyesine çıktı; aynı dönemde ithalat yüzde 10,5 artışla 28,7 milyar dolara yükseldi ve dış ticaret açığı genişledi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/tum-zamanlarin-en-yuksek-agustos-ayi-ihracat-rakamina-ulasildi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracattaki artışın yanında ithalatın daha hızlı büyüyüp dış ticaret açığını genişletmesi, ihracatçı KOBİ'lerin sadece satış hacmine değil girdi maliyetlerine ve döviz pozisyonuna da dikkat etmesi gerektiğini gösteriyor. Yıl sonu bütçe planlamasında bu iki eğilimi birlikte değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "22 Eylül 2026",
+    eklendiTarihi: "2026-09-23",
+    baslik:
+      "SPK, pay geri alımlarında toplam bedel üst sınırını geçici olarak kaldırdı",
+    ozet:
+      "Sermaye Piyasası Kurulu Karar Organı'nın 22 Eylül 2026 tarihli ve 60/1711 sayılı kararıyla, 19 Mart 2025 tarihli ilke kararı kapsamında yapılan pay geri alımlarında Geri Alınan Paylar Tebliği'nin 9. maddesinin üçüncü fıkrasında yer alan toplam bedele ilişkin üst sınırın, Kurulca aksi yönde bir açıklama yapılıncaya kadar uygulanmayacağı duyuruldu. Karar, Borsa İstanbul'da piyasa istikrarını desteklemeyi ve şirketlerin kendi paylarını geri almasını kolaylaştırmayı amaçlıyor.",
+    kaynakUrl:
+      "https://www.haberturk.com/ekonomi/son-dakika-spk-hisse-pay-geri-alimlarinda-ust-sinir-kaldirildi-3914273",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bu düzenleme doğrudan halka açık şirketleri ilgilendiriyor. Halka arza hazırlanan büyüme aşamasındaki şirketlere ise sermaye piyasası kurallarının kriz veya oynaklık dönemlerinde ne kadar hızlı esnetilebildiğini görmek açısından takip etmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "17 Eylül 2026",
+    eklendiTarihi: "2026-09-23",
+    baslik:
+      "TÜBİTAK 1711 Yapay Zekâ Ekosistem 2026 Çağrısı'nda başvuru süresi 2 Ekim 2026'ya uzatıldı",
+    ozet:
+      "TÜBİTAK, akıllı üretim, akıllı tarım, finans teknolojileri, iklim değişikliği ve akıllı eğitim alanlarında yapay zeka çözümlerini desteklemeyi amaçlayan 1711 Yapay Zekâ Ekosistem 2026 Çağrısı'nın başvuru süresini, konsorsiyum oluşturma süreçlerinin devam etmesi gerekçesiyle 2 Ekim 2026 saat 23.59'a kadar uzattı. Çağrı, şirketlerin teknoloji sağlayıcıları, akademik kurumlar ve araştırma merkezleriyle konsorsiyum kurarak başvurmasını öngörüyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1711-yapay-zeka-ekosistem-2026-yili-cagrisi-acildi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Süre uzatımı, tek başına başvuramayan küçük ölçekli yazılım ve yapay zeka firmalarına bir teknoloji sağlayıcı veya akademik kurumla konsorsiyum kurmak için ek zaman tanıyor. Bu haftaları yeni ortak aramaktan çok, elde mevcut proje metnini netleştirmeye ayırmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
