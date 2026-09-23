@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface BlogListPost {
   slug: string;
@@ -32,7 +33,10 @@ export default function BlogList({
   lang?: "tr" | "en";
 }) {
   const t = STRINGS[lang];
-  const [active, setActive] = useState(t.all);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const active = searchParams.get("kategori") || t.all;
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
@@ -49,7 +53,14 @@ export default function BlogList({
       : posts.filter((post) => primaryCategory(post.category, t.other) === active);
 
   const selectCategory = (name: string) => {
-    setActive(name);
+    const params = new URLSearchParams(searchParams.toString());
+    if (name === t.all) {
+      params.delete("kategori");
+    } else {
+      params.set("kategori", name);
+    }
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
   };
 
   return (
