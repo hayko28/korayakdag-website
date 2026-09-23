@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "üniversite sanayi işbirliği yapay zeka",
     "2026 TÜBİTAK çağrıları",
   ],
+  alternates: {
+    canonical: "/blog/tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
+  },
 };
 
 export default function Tubitak1711Page() {

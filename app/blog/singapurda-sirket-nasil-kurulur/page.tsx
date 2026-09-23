@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "singapur gst oranı",
     "2026 singapur şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/singapurda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

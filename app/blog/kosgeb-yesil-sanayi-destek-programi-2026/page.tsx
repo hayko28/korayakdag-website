@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "KOSGEB yeşil dönüşüm",
     "çatı tipi GES KOSGEB desteği",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-yesil-sanayi-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

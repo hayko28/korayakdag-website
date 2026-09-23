@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "HAMLE çağrısı 2026",
     "KOSGEB yüksek teknoloji desteği",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-stratejik-urun-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

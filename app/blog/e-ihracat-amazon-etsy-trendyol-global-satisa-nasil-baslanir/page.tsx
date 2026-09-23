@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "e-ihracat vergi",
     "pazaryeri ihracat danışmanlığı",
   ],
+  alternates: {
+    canonical: "/blog/e-ihracat-amazon-etsy-trendyol-global-satisa-nasil-baslanir",
+  },
 };
 
 export default function BlogPage() {

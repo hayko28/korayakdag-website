@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "azerbaycanda banka hesabı açma",
     "2026 azerbaycan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/azerbaycanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

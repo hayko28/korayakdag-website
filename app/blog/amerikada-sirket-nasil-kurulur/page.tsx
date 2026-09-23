@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "llc vs c-corp",
     "2026 amerikada şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/amerikada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

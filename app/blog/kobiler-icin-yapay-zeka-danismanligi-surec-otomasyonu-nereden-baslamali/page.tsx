@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "müşteri hizmetleri otomasyonu yapay zeka",
     "yapay zeka danışmanlığı 2026",
   ],
+  alternates: {
+    canonical: "/blog/kobiler-icin-yapay-zeka-danismanligi-surec-otomasyonu-nereden-baslamali",
+  },
 };
 
 export default function BlogPage() {

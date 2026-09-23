@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "tahsisat teslim yükümlülüğü",
     "SKDM CBAM türkiye ETS",
   ],
+  alternates: {
+    canonical: "/blog/turkiye-emisyon-ticaret-sistemi-ets-yonetmeligi-2026",
+  },
 };
 
 export default function BlogPage() {

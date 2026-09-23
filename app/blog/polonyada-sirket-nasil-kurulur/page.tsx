@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "polonya kdv oranı",
     "2026 polonya şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/polonyada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "türkiye kazakistan çifte vergilendirme anlaşması",
     "kontrol edilen yabancı kurum kazancı kazakistan",
   ],
+  alternates: {
+    canonical: "/blog/kazakistanda-vergi-oranlari-astana-hub-aifc-tesvikleri",
+  },
 };
 
 export default function BlogPage() {

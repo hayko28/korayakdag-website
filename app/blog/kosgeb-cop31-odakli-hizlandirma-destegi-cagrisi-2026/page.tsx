@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "iklim teknolojileri desteği",
     "KOSGEB 6,5 milyon TL destek",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026",
+  },
 };
 
 export default function BlogPage() {

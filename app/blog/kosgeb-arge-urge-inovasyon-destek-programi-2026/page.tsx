@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "kosgeb ar-ge desteği şartları 2026",
     "kosgeb ür-ge projesi nedir",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-arge-urge-inovasyon-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

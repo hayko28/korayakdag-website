@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "sgk teşvik kodu 06111",
     "2026 istihdam teşviki son tarih",
   ],
+  alternates: {
+    canonical: "/blog/6111-sayili-kanun-genc-kadin-istihdam-tesviki-2026",
+  },
 };
 
 export default function BlogPage() {

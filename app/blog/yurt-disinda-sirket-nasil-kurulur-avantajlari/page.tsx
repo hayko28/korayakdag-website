@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "uluslararası şirket kuruluşu",
     "2026 yurtdışı şirket kurma",
   ],
+  alternates: {
+    canonical: "/blog/yurt-disinda-sirket-nasil-kurulur-avantajlari",
+  },
 };
 
 export default function BlogPage() {

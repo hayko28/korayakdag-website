@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "üreten KOBİ desteği",
     "KOSGEB Bilgi Sistemi başvuru",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-kapasite-gelistirme-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

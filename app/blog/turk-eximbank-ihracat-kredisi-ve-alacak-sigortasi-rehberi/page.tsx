@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "eximbank kobi kredisi",
     "ihracat finansmanı danışmanlığı",
   ],
+  alternates: {
+    canonical: "/blog/turk-eximbank-ihracat-kredisi-ve-alacak-sigortasi-rehberi",
+  },
 };
 
 export default function BlogPage() {

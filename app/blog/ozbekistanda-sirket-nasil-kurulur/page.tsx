@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "taşkent şirket kuruluşu",
     "2026 özbekistan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/ozbekistanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

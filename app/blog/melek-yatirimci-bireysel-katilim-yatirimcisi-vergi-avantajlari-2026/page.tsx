@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "Hazine ve Maliye Bakanlığı melek yatırımcı lisansı",
     "girişim şirketine yatırım vergi indirimi",
   ],
+  alternates: {
+    canonical: "/blog/melek-yatirimci-bireysel-katilim-yatirimcisi-vergi-avantajlari-2026",
+  },
 };
 
 export default function BlogPage() {

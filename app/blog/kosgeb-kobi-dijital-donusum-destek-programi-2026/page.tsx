@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "KOSGEB faiz desteği 2026",
     "KOBİ Bilgi Sistemi başvuru",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-kobi-dijital-donusum-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

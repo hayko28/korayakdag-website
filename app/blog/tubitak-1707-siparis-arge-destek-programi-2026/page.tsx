@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "TÜBİTAK 1707 2026-3",
     "ortaklı Ar-Ge projesi",
   ],
+  alternates: {
+    canonical: "/blog/tubitak-1707-siparis-arge-destek-programi-2026",
+  },
 };
 
 export default function Tubitak1707Page() {

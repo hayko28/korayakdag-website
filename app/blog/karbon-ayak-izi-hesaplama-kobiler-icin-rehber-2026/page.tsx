@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "SKDM gömülü emisyon hesaplama",
     "ISO 14064 karbon ayak izi",
   ],
+  alternates: {
+    canonical: "/blog/karbon-ayak-izi-hesaplama-kobiler-icin-rehber-2026",
+  },
 };
 
 export default function BlogPage() {

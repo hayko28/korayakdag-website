@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "KOSGEB elektronik cüzdan",
     "GO Dijital MASAK sözleşmesi",
   ],
+  alternates: {
+    canonical: "/blog/go-dijital-cuzdan-nedir-nasil-acilir",
+  },
 };
 
 export default function BlogPage() {

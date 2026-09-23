@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "kadın girişimci desteği kosgeb",
     "kosgeb 2026 destekleri",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-girisimci-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

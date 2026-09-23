@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "belastingdienst vergi numarası",
     "2026 hollanda şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/hollandada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

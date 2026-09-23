@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "KOSGEB girişimci destekleri",
     "GPU kredi desteği",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-yapay-zeka-kredi-programi-2026",
+  },
 };
 
 export default function BlogPage() {

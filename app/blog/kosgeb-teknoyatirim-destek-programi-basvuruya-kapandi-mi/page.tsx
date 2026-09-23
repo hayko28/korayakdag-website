@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "KOSGEB yürürlükten kaldırılan destekler",
     "teknolojik ürün ticarileştirme desteği 2026",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-teknoyatirim-destek-programi-basvuruya-kapandi-mi",
+  },
 };
 
 export default function BlogPage() {

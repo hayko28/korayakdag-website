@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "kayıt dışı varlık beyanı 2026",
     "varlık barışı taahhüt süresi",
   ],
+  alternates: {
+    canonical: "/blog/varlik-barisi-2026-nedir-sartlari-oranlari-basvuru-sureci",
+  },
 };
 
 export default function BlogPage() {

@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "proje bazlı teşvik başvurusu",
     "teknoloji hamlesi programı 2026",
   ],
+  alternates: {
+    canonical: "/blog/proje-bazli-tesvik-sistemi-2026-degisiklikleri",
+  },
 };
 
 export default function BlogPage() {

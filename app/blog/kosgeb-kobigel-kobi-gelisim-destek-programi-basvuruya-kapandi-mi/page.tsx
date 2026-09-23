@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "KOBİGEL yerine hangi destek",
     "KOSGEB Kapasite Geliştirme Destek Programı",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-kobigel-kobi-gelisim-destek-programi-basvuruya-kapandi-mi",
+  },
 };
 
 export default function BlogPage() {

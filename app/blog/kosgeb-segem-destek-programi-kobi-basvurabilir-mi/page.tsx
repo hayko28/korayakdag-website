@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "Rekabetçi Sektörler Programı KOSGEB",
     "SEGEM 2026",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-segem-destek-programi-kobi-basvurabilir-mi",
+  },
 };
 
 export default function BlogPage() {

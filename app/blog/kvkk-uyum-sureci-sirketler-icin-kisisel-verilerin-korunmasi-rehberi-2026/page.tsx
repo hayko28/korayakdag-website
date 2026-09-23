@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "veri ihlali bildirimi 72 saat",
     "kvkk idari para cezaları 2026",
   ],
+  alternates: {
+    canonical: "/blog/kvkk-uyum-sureci-sirketler-icin-kisisel-verilerin-korunmasi-rehberi-2026",
+  },
 };
 
 export default function BlogPage() {

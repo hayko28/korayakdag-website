@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "sanayide yeşil dönüşüm son başvuru tarihi",
     "TÜBİTAK yeşil sanayi projesi",
   ],
+  alternates: {
+    canonical: "/blog/tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
+  },
 };
 
 export default function Tubitak1832Page() {

@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "Ar-Ge indirimi",
     "Ar-Ge Merkezi Teknopark farkı",
   ],
+  alternates: {
+    canonical: "/blog/arge-merkezi-nedir-nasil-kurulur-sartlari-vergi-avantajlari-2026",
+  },
 };
 
 export default function ArgeMerkeziPage() {

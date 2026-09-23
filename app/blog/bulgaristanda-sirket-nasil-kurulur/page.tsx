@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "bulgaristan euro geçişi",
     "2026 bulgaristan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/bulgaristanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

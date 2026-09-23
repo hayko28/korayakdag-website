@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "4447 sayılı kanun teşvikleri",
     "5510 sayılı kanun 81 madde",
   ],
+  alternates: {
+    canonical: "/blog/sgk-tesvikleri-2026-hangi-isverenler-hangi-prim-destegi",
+  },
 };
 
 export default function BlogPage() {

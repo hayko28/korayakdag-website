@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "markalaşma desteği",
     "Ticaret Bakanlığı Turquality",
   ],
+  alternates: {
+    canonical: "/blog/turquality-programi-nedir-sartlari-destekleri-2026",
+  },
 };
 
 export default function BlogPage() {

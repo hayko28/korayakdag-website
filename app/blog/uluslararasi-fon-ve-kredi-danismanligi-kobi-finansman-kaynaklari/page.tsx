@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "uluslararası kredi başvurusu",
     "2026 KOBİ kredi kaynakları",
   ],
+  alternates: {
+    canonical: "/blog/uluslararasi-fon-ve-kredi-danismanligi-kobi-finansman-kaynaklari",
+  },
 };
 
 export default function BlogPage() {

@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "anonim şirket 250.000 tl sermaye",
     "limited şirket 50.000 tl sermaye",
   ],
+  alternates: {
+    canonical: "/blog/anonim-limited-sirket-asgari-sermaye-artirimi-2026",
+  },
 };
 
 export default function BlogPage() {

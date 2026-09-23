@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "italya kdv oranı",
     "2026 italya şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/italyada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

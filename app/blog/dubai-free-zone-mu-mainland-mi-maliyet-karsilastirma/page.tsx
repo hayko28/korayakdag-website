@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "bae kdv kayıt eşiği",
     "kontrol edilen yabancı kurum dubai",
   ],
+  alternates: {
+    canonical: "/blog/dubai-free-zone-mu-mainland-mi-maliyet-karsilastirma",
+  },
 };
 
 export default function BlogPage() {

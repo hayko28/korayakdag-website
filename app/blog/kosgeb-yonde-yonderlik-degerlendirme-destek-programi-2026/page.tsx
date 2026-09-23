@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "bağımsız değerlendirme hizmeti desteği KOSGEB",
     "YÖNDE 2026",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

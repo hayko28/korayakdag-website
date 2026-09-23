@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "regional headquarters rhq programı",
     "2026 suudi arabistan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/suudi-arabistanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

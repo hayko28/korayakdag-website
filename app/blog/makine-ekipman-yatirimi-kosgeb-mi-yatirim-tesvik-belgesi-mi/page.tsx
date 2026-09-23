@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "kosgeb kredi limiti asgari yatırım tutarı",
     "9903 sayılı karar kosgeb farkı",
   ],
+  alternates: {
+    canonical: "/blog/makine-ekipman-yatirimi-kosgeb-mi-yatirim-tesvik-belgesi-mi",
+  },
 };
 
 export default function BlogPage() {

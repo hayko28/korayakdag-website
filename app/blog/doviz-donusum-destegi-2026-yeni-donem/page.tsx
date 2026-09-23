@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "döviz kazandırıcı işlemler desteği",
     "ihracatçı destekleri 2026",
   ],
+  alternates: {
+    canonical: "/blog/doviz-donusum-destegi-2026-yeni-donem",
+  },
 };
 
 export default function BlogPage() {

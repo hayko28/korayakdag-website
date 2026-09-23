@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "organizasyon ve süreç tasarımı",
     "kurumsallaşma nedir",
   ],
+  alternates: {
+    canonical: "/blog/aile-sirketinden-kurumsal-yapiya-gecis-kurumsallasma",
+  },
 };
 
 export default function BlogPage() {

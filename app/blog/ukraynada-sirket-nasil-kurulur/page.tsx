@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "kiev şirket kuruluşu",
     "2026 ukrayna şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/ukraynada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

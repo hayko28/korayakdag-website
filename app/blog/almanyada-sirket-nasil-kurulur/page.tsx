@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "handelsregister tescili",
     "2026 almanya şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/almanyada-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

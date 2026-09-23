@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "rekabet kurumu birleşme devralma izni 2026",
     "due diligence raporu nedir",
   ],
+  alternates: {
+    canonical: "/blog/due-diligence-nedir-sirket-satin-alma-birlesme-oncesi-durum-tespiti-2026",
+  },
 };
 
 export default function BlogPage() {

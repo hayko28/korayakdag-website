@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "yabancı ortaklı şirket kurma",
     "stratejik ortaklık danışmanlığı",
   ],
+  alternates: {
+    canonical: "/blog/stratejik-is-ortakligi-ortak-girisim-joint-venture-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

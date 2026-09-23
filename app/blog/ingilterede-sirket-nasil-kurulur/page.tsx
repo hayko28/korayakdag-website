@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "hmrc utr kaydı",
     "2026 ingiltere şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/ingilterede-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

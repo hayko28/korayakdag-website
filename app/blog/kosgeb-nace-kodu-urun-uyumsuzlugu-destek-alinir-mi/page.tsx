@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "vergi dairesi nace kodu değişikliği",
     "kosgeb destek uygunluğu",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-nace-kodu-urun-uyumsuzlugu-destek-alinir-mi",
+  },
 };
 
 export default function BlogPage() {

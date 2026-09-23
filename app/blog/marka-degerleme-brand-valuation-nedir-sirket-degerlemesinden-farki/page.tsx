@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "marka lisanslama değerleme",
     "franchise marka değeri",
   ],
+  alternates: {
+    canonical: "/blog/marka-degerleme-brand-valuation-nedir-sirket-degerlemesinden-farki",
+  },
 };
 
 export default function BlogPage() {

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "TÜBİTAK BiGG Fonu",
     "yatırım tabanlı girişimcilik destek programı",
   ],
+  alternates: {
+    canonical: "/blog/tubitak-bigg-yatirim-1812-programi-2026-2-cagrisi",
+  },
 };
 
 export default function BlogPage() {

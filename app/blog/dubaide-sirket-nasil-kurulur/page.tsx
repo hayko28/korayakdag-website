@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "dubai golden visa",
     "2026 dubai şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/dubaide-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

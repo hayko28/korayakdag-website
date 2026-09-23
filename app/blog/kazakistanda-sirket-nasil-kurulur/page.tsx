@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "avrasya ekonomik birliği kazakistan",
     "2026 kazakistan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/kazakistanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

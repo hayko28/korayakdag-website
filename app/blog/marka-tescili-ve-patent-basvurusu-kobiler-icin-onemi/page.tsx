@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "yurt dışı marka tescili",
     "fikri mülkiyet KOBİ",
   ],
+  alternates: {
+    canonical: "/blog/marka-tescili-ve-patent-basvurusu-kobiler-icin-onemi",
+  },
 };
 
 export default function BlogPage() {

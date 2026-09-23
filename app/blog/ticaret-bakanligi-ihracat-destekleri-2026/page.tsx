@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "ihracat destekleri 2026",
     "İhracatçı Birlikleri destek başvurusu",
   ],
+  alternates: {
+    canonical: "/blog/ticaret-bakanligi-ihracat-destekleri-2026",
+  },
 };
 
 export default function BlogPage() {

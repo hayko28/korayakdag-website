@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "polonya yatırım teşvik bölgesi",
     "2026 polonya ihracat stratejisi",
   ],
+  alternates: {
+    canonical: "/blog/polonya-avrupaya-ihracat-ussu-sirket-kurulusu",
+  },
 };
 
 export default function BlogPage() {

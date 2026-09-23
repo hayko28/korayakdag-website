@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "musterprotokoll noter ücreti",
     "transparenzregister bildirimi",
   ],
+  alternates: {
+    canonical: "/blog/almanyada-gmbh-kurulus-maliyeti-ug-alternatifi",
+  },
 };
 
 export default function BlogPage() {

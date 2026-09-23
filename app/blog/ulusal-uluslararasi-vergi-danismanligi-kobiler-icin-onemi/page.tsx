@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "e-fatura e-defter zorunluluğu 2026",
     "çifte vergilendirmeyi önleme anlaşması",
   ],
+  alternates: {
+    canonical: "/blog/ulusal-uluslararasi-vergi-danismanligi-kobiler-icin-onemi",
+  },
 };
 
 export default function BlogPage() {

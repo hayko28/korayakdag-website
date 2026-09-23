@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "teminat mektubu ile kdv iade",
     "kdv iade süresi ne kadar",
   ],
+  alternates: {
+    canonical: "/blog/kdv-iadesi-nasil-alinir-2026-sartlari-sureci",
+  },
 };
 
 export default function BlogPage() {

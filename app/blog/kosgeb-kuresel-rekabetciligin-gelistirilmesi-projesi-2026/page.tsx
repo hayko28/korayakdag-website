@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "turcorn 100 kosgeb",
     "kosgeb kobi bilgi sistemi başvuru",
   ],
+  alternates: {
+    canonical: "/blog/kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026",
+  },
 };
 
 export default function BlogPage() {

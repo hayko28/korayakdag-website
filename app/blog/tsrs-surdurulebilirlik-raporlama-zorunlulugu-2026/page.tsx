@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "ESG raporlama Türkiye 2026",
     "TSRS uyumlu sürdürülebilirlik raporu",
   ],
+  alternates: {
+    canonical: "/blog/tsrs-surdurulebilirlik-raporlama-zorunlulugu-2026",
+  },
 };
 
 export default function BlogPage() {

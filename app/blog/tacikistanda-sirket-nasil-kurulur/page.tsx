@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "tacikistan vize e-vize",
     "2026 tacikistan şirket kuruluşu",
   ],
+  alternates: {
+    canonical: "/blog/tacikistanda-sirket-nasil-kurulur",
+  },
 };
 
 export default function BlogPage() {

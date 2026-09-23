@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "yeminli mali müşavir tam tasdik",
     "3568 sayılı kanun tam tasdik",
   ],
+  alternates: {
+    canonical: "/blog/tam-tasdik-nedir-kimler-yaptirmali-avantajlari-2026",
+  },
 };
 
 export default function BlogPage() {

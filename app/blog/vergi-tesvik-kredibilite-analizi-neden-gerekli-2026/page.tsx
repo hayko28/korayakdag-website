@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "vergi denetimi riski",
     "Sistem Global danışmanlık",
   ],
+  alternates: {
+    canonical: "/blog/vergi-tesvik-kredibilite-analizi-neden-gerekli-2026",
+  },
 };
 
 export default function BlogPage() {

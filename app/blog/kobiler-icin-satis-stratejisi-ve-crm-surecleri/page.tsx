@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "müşteri kazanımı",
     "B2B satış",
   ],
+  alternates: {
+    canonical: "/blog/kobiler-icin-satis-stratejisi-ve-crm-surecleri",
+  },
 };
 
 export default function BlogPage() {

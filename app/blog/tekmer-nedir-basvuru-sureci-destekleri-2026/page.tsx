@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "TEKMER proje yazımı",
     "TEKMER danışmanlığı",
   ],
+  alternates: {
+    canonical: "/blog/tekmer-nedir-basvuru-sureci-destekleri-2026",
+  },
 };
 
 export default function BlogPage() {

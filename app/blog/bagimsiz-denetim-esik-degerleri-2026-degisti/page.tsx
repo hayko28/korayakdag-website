@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "aktif toplamı net satış hasılatı çalışan sayısı",
     "şirketler ne zaman bağımsız denetime tabi olur",
   ],
+  alternates: {
+    canonical: "/blog/bagimsiz-denetim-esik-degerleri-2026-degisti",
+  },
 };
 
 export default function BlogPage() {

@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "büyük işletme istihdamı koruma",
     "KOSGEB prim gün desteği Ocak Haziran 2026",
   ],
+  alternates: {
+    canonical: "/blog/istihdami-koruma-destek-programi-2026",
+  },
 };
 
 export default function BlogPage() {

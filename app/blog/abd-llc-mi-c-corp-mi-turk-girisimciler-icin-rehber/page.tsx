@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "foreign qualification nedir",
     "abd ekonomik nexus eşiği",
   ],
+  alternates: {
+    canonical: "/blog/abd-llc-mi-c-corp-mi-turk-girisimciler-icin-rehber",
+  },
 };
 
 export default function BlogPage() {

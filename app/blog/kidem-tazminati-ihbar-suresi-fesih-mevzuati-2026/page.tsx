@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "işçi savunma alma",
     "iş hukuku danışmanlığı",
   ],
+  alternates: {
+    canonical: "/blog/kidem-tazminati-ihbar-suresi-fesih-mevzuati-2026",
+  },
 };
 
 export default function BlogPage() {
