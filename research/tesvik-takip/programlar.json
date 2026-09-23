@@ -384,12 +384,12 @@
       "kurum": "KOSGEB",
       "durum": "acik",
       "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "T.C. Cumhurbaşkanlığı Yatırım Ofisi'nin resmi \"Devlet Destekleri ve Teşvikler\" portalında (yatirimadestek.gov.tr) aktif olarak listelenen bir standart destek/teşvik uygulamasıdır."
+      "not": "2026-09-23'te kosgeb.gov.tr'den doğrulandı: bu destek, girişimci/işletmelere değil, TEKMER işleten kuruluşlara (üniversite, TTO, OSB yönetici şirketi vb.) yöneliktir ve 'sürekli açık' değildir — dönemsel, isimli çağrılarla yürütülüyor (güncel: 2026-01 COP31 Hızlandırma Çağrısı). KOBİ/girişimci olarak KOSGEB'e değil, ilgili TEKMER'in kendi kabul kuruluna başvurulur (bkz. lib/destek-uygunluk/programlar.ts kosgeb-tekmer)."
     },
     {
       "id": "yad-sanayi-ve-teknoloji-bakanligi-yatirim-tesvik-sistemi-9903-sayili-karar",
@@ -657,12 +657,12 @@
       "kurum": "KOSGEB",
       "durum": "acik",
       "sonBasvuruTarihi": null,
-      "kaynakUrl": "https://www.yatirimadestek.gov.tr/gelismis-arama?status=1",
+      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "T.C. Cumhurbaşkanlığı Yatırım Ofisi'nin resmi \"Devlet Destekleri ve Teşvikler\" portalında (yatirimadestek.gov.tr) aktif olarak listelenen bir standart destek/teşvik uygulamasıdır."
+      "not": "2026-09-23'te kosgeb.gov.tr'den doğrulandı: 'sürekli açık' DEĞİLDİR — başvurular Sanayi ve Teknoloji Bakanlığı'nın Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında ilan edilen sürelerde yapılıyor. Resmi sayfada güncel çağrının açık/kapalı olduğu veya son tarihi belirtilmiyor; güncel durum Bakanlığın Hamle Programı çağrı planından veya KOSGEB 444 1 567'den teyit edilmelidir."
     },
     {
       "id": "yad-sanayi-ve-teknoloji-bakanligi-proje-bazli-tesvik-sistemi-2016-9495-sayili-karar",
