@@ -147,28 +147,30 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-8 min-[1600px]:flex">
+        <nav className="hidden items-center gap-3 min-[1440px]:flex">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="relative text-[14px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
+              className="relative whitespace-nowrap text-[12px] font-medium text-[#C9D6E4] transition hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
           ))}
         </nav>
 
-        <nav className="mx-3 hidden min-w-0 flex-1 items-center justify-center gap-2 overflow-x-auto py-1 [scrollbar-width:none] sm:flex min-[1600px]:hidden [&::-webkit-scrollbar]:hidden">
-          {links.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="flex-shrink-0 whitespace-nowrap rounded-md border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-medium text-[#C9D6E4] transition hover:border-orange-400 hover:bg-white/10 hover:text-white"
-            >
-              {link.name}
-            </a>
-          ))}
+        <nav className="relative mx-3 hidden min-w-0 flex-1 sm:max-[1439px]:flex">
+          <div className="flex w-full items-center gap-2 overflow-x-auto py-1 [scrollbar-width:none] [-webkit-mask-image:linear-gradient(to_right,black_92%,transparent_100%)] [mask-image:linear-gradient(to_right,black_92%,transparent_100%)] [&::-webkit-scrollbar]:hidden">
+            {links.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="flex-shrink-0 whitespace-nowrap rounded-md border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-medium text-[#C9D6E4] transition hover:border-orange-400 hover:bg-white/10 hover:text-white"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
         </nav>
 
         <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
