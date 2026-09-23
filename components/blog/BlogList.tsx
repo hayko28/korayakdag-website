@@ -62,12 +62,15 @@ const CATEGORY_GROUPS: {
   name: string;
   icon: LucideIcon;
   color: string;
+  image: string;
   members: string[];
 }[] = [
   {
     name: "Teşvikler & Destekler",
     icon: PiggyBank,
     color: "bg-orange-100 text-orange-600",
+    image:
+      "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "KOSGEB",
       "TÜBİTAK",
@@ -86,6 +89,8 @@ const CATEGORY_GROUPS: {
     name: "Vergi, Finans & Denetim",
     icon: BarChart3,
     color: "bg-blue-100 text-blue-600",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "VERGİ VE FİNANSAL YÖNETİM",
       "VERGİ & FİNANSAL YÖNETİM",
@@ -98,6 +103,8 @@ const CATEGORY_GROUPS: {
     name: "Şirket & Hukuk",
     icon: Building2,
     color: "bg-green-100 text-green-600",
+    image:
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "HUKUK DANIŞMANLIĞI",
       "İŞ HUKUKU",
@@ -110,6 +117,8 @@ const CATEGORY_GROUPS: {
     name: "Yurt Dışı & Uluslararası İşler",
     icon: Globe2,
     color: "bg-purple-100 text-purple-600",
+    image:
+      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "YURT DIŞI ŞİRKET",
       "ŞİRKET KURULUŞU",
@@ -122,6 +131,8 @@ const CATEGORY_GROUPS: {
     name: "Büyüme & İş Geliştirme",
     icon: TrendingUp,
     color: "bg-rose-100 text-rose-600",
+    image:
+      "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "KURUMSAL GELİŞİM",
       "STRATEJİK İŞ ORTAKLIKLARI",
@@ -134,6 +145,8 @@ const CATEGORY_GROUPS: {
     name: "Marka, Patent & Değerleme",
     icon: ShieldCheck,
     color: "bg-teal-100 text-teal-600",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: [
       "MARKA VE PATENT",
       "MARKA DEĞERLEME",
@@ -146,6 +159,8 @@ const CATEGORY_GROUPS: {
     name: "Teknoloji & Sürdürülebilirlik",
     icon: Lightbulb,
     color: "bg-amber-100 text-amber-600",
+    image:
+      "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     members: ["YAZILIM VE YAPAY ZEKÂ", "SÜRDÜRÜLEBİLİRLİK"],
   },
 ];
@@ -194,6 +209,7 @@ export default function BlogList({
         name: t.other,
         icon: Folder,
         color: "bg-gray-100 text-gray-600",
+        image: "",
         members: [],
         count: otherCount,
       });
@@ -249,46 +265,66 @@ export default function BlogList({
           )}
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {groupCards.map((group) => {
             const Icon = group.icon;
             return (
               <button
                 key={group.name}
                 onClick={() => selectFilter(group.name)}
-                className={`group relative overflow-hidden rounded-2xl border p-5 text-left transition hover:-translate-y-1 hover:shadow-lg ${
-                  active === group.name
-                    ? "border-[#071A2F] bg-[#071A2F]/5"
-                    : "border-gray-100 bg-white"
-                }`}
+                className={`group relative h-32 overflow-hidden rounded-2xl text-left transition hover:-translate-y-1 hover:shadow-lg ${
+                  active === group.name ? "ring-2 ring-[#071A2F]" : ""
+                } ${!group.image ? "border border-gray-100 bg-white" : ""}`}
               >
-                <Icon
-                  className={`pointer-events-none absolute -bottom-4 -right-4 h-24 w-24 opacity-[0.07] transition group-hover:opacity-[0.12] ${group.color.split(" ")[1]}`}
-                  strokeWidth={1.5}
-                />
+                {group.image ? (
+                  <>
+                    <Image
+                      src={group.image}
+                      alt={group.name}
+                      fill
+                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#071A2F]/90 via-[#071A2F]/45 to-[#071A2F]/5" />
+                  </>
+                ) : (
+                  <Icon
+                    className={`pointer-events-none absolute -bottom-4 -right-4 h-20 w-20 opacity-[0.08] ${group.color.split(" ")[1]}`}
+                    strokeWidth={1.5}
+                  />
+                )}
                 <div
-                  className={`relative mb-3 flex h-11 w-11 items-center justify-center rounded-full ${group.color}`}
+                  className={`absolute left-2.5 top-2.5 flex h-7 w-7 items-center justify-center rounded-full ${
+                    group.image ? "bg-white/20 backdrop-blur-sm" : group.color
+                  }`}
                 >
-                  <Icon className="h-5 w-5" strokeWidth={2} />
+                  <Icon
+                    className={`h-3.5 w-3.5 ${group.image ? "text-white" : ""}`}
+                    strokeWidth={2}
+                  />
                 </div>
-                <p className="relative font-bold text-[#071A2F]">{group.name}</p>
-                <p className="relative mt-1 text-sm font-semibold text-orange-500">
-                  {group.count} {t.postSuffix}
-                </p>
+                <div className="absolute bottom-2 left-2.5 right-2.5">
+                  <p
+                    className={`text-[13px] font-bold leading-tight ${
+                      group.image ? "text-white" : "text-[#071A2F]"
+                    }`}
+                  >
+                    {group.name}
+                  </p>
+                  <p className="mt-0.5 text-[11px] font-bold text-orange-400">
+                    {group.count} {t.postSuffix}
+                  </p>
+                </div>
               </button>
             );
           })}
 
           <button
             onClick={() => selectFilter(t.all)}
-            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
+            className="flex h-32 flex-col justify-between rounded-2xl bg-gradient-to-br from-[#071A2F] to-[#123b63] p-3.5 text-left text-white transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <ArrowRight
-              className="pointer-events-none absolute -bottom-4 -right-4 h-24 w-24 text-white opacity-10 transition group-hover:opacity-20"
-              strokeWidth={1.5}
-            />
-            <p className="relative text-lg font-bold">{t.allPosts}</p>
-            <ArrowRight className="relative mt-4 h-6 w-6" strokeWidth={2} />
+            <p className="text-sm font-bold">{t.allPosts}</p>
+            <ArrowRight className="h-4 w-4" strokeWidth={2} />
           </button>
         </div>
 
