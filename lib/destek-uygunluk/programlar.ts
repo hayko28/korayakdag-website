@@ -18,9 +18,10 @@ function sonuc(
   ozet: string,
   gerekceler: string[],
   uyarilar?: string[],
-  cagriKapali?: boolean
+  cagriKapali?: boolean,
+  sonBasvuruTarihi?: string
 ): ProgramSonucuTaslak {
-  return { programId, programAdi, kurum, durum, ozet, gerekceler, uyarilar, cagriKapali };
+  return { programId, programAdi, kurum, durum, ozet, gerekceler, uyarilar, cagriKapali, sonBasvuruTarihi };
 }
 
 // --- 1) KOSGEB İş Geliştirme Desteği (Girişimci Destek Programı) ---
@@ -202,7 +203,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
   gerekceler.push("Şirket türü, KOBİ ölçeği ve NACE sektörü şartları sağlanıyor.");
 
   const uyarilar = [
-    "Bu program hibe değil, banka kredisinin faiz/kâr payı giderine destektir (anapara işletmeye geri ödemelidir); kredi üst limiti savunma/havacılık/uzay tedarikçi iş birliğinde EYDEP sertifika seviyesine göre 25-30 milyon TL'ye çıkabilir.",
+    "Bu program hibe değil, banka kredisinin faiz/kâr payı giderine destektir (anapara işletmeye geri ödemelidir); genel kredi üst limiti 20.000.000 TL'dir, savunma/havacılık/uzay tedarikçi geliştirme iş birliğinde (EYDEP) sertifika seviyesine göre 25.000.000-30.000.000 TL'ye çıkabilir.",
     "YODA raporunun (ve dijital dönüşüm track'inde dijital dönüşüm/olgunluk değerlendirme raporunun) başvuru tarihinden geriye en fazla 1 yıl içinde alınmış olması gerekiyor — bu ön analizde raporun tarihi sorulmuyor, başvuru öncesi kontrol edilmelidir.",
     "MADDE 18 uyarınca Kurul her projeyi 100 üzerinden puanlar (50 altı ret), 50 ve üzeri olanlar sınırlı kontenjan için rekabetçi bir sıralamaya tabi tutulur — ön koşulların sağlanması başvuru hakkı verir, kesin onay anlamına gelmez.",
     "Uygulama Esasları sık güncelleniyor (bu program son 4 ayda 2 kez revize edildi); başvuru anında KOSGEB'in güncel metniyle teyit edilmelidir.",
@@ -215,7 +216,9 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      true,
+      "15 Eylül 2026 (3. dönem, kapandı)"
     );
   }
 
@@ -224,7 +227,8 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     "Girilen bilgilere göre başvuru ön koşullarının tamamı sağlanıyor; nihai kabul Kurul puanlaması (≥50/100) ve kontenjan sıralamasına bağlıdır.",
     gerekceler,
     uyarilar,
-    true // 3. başvuru dönemi (22 Ağustos-15 Eylül 2026) kapandı, yeni dönem henüz ilan edilmedi
+    true, // 3. başvuru dönemi (22 Ağustos-15 Eylül 2026) kapandı, yeni dönem henüz ilan edilmedi
+    "15 Eylül 2026 (3. dönem, kapandı)"
   );
 }
 
@@ -664,6 +668,7 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     "Program, Teknoloji Hazırlık Seviyesi (THS) en az 5 (tercihen 6) ile başlayıp THS 9'a (ticarileştirme) kadar ilerleyen projelere odaklıdır; nihai Ar-Ge niteliği hakem değerlendirmesine tabidir.",
     "Dünya Bankası destekli olduğu için Çevresel-Sosyal Yönetim Çerçevesi (ESMF) şartlarına uygunluk da ayrıca aranır — bu ön analizde sorulmuyor, başvuru öncesi teyit edilmelidir.",
     "Bu program dönemsel çağrılarla açılır (Türkiye Yeşil Sanayi Projesi kapsamında); güncel çağrı (2026-2) son başvurusu 28 Eylül 2026 — bu tarihten sonra yeni çağrı ilan edilene kadar başvuru alınmayabilir, güncel durum TÜBİTAK TEYDEB üzerinden teyit edilmelidir.",
+    "Destek oranı büyük ölçekli şirketlerde %70, KOBİ'lerde %80, deprem bölgesindeki (11 il) KOBİ'lerde %90'dır. Proje bütçesi üst sınırı mikro/küçük ölçekte 15.000.000 TL, orta ölçekte 24.000.000 TL, büyük ölçekte 51.500.000 TL'dir. (Kaynak: TÜBİTAK 1832 çağrı sayfası, tubitak.gov.tr, 2026-09-23 doğrulandı.)",
   ];
 
   if (eksikAlanlar.length > 0) {
@@ -671,11 +676,13 @@ export function tubitak1832Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Somut bir ret sebebi görünmüyor ama ön koşulları tam değerlendirmek için eksik bilgi var.",
       gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      undefined,
+      "28 Eylül 2026"
     );
   }
 
-  return sonuc(meta.programId, meta.programAdi, meta.kurum, "kismen_uygun", "Kuruluş, ön koşulları sağlıyor ve somut bir ret sinyali yok.", gerekceler, uyarilar);
+  return sonuc(meta.programId, meta.programAdi, meta.kurum, "kismen_uygun", "Kuruluş, ön koşulları sağlıyor ve somut bir ret sinyali yok.", gerekceler, uyarilar, undefined, "28 Eylül 2026");
 }
 
 // --- 9) KOSGEB Dijital ve Yeşil Dönüşüm Destek Programı (KOBİ Dijital Dönüşüm DP) ---
@@ -1083,13 +1090,13 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
     gerekceler.push(`Uygunluk kriterlerinden biri sağlanıyor: ${KRESEL_KRITER_ETIKET[g.kureselRekabetcilikKriteri]}.`);
   }
 
-  if (g.kureselRekabetcilikKrediTutariTl !== undefined && (g.kureselRekabetcilikKrediTutariTl < 5_000_000 || g.kureselRekabetcilikKrediTutariTl > 50_000_000)) {
-    gerekceler.push(`Talep edilen kredi tutarı (${g.kureselRekabetcilikKrediTutariTl.toLocaleString("tr-TR")} TL), programın kredi aralığının (5.000.000-50.000.000 TL) dışında kalıyor.`);
+  if (g.kureselRekabetcilikKrediTutariTl !== undefined && (g.kureselRekabetcilikKrediTutariTl < 30_000_000 || g.kureselRekabetcilikKrediTutariTl > 75_000_000)) {
+    gerekceler.push(`Talep edilen kredi tutarı (${g.kureselRekabetcilikKrediTutariTl.toLocaleString("tr-TR")} TL), 2026 Yılı 1. Başvuru Dönemi çağrısının kredi aralığının (30.000.000-75.000.000 TL) dışında kalıyor.`);
   }
 
   const uyarilar2 = [
     "Bu bir hibe değil, bankadan kullanılan ticari krediye faiz/kâr payı desteğidir (geri ödemesiz destek kısmı, anapara işletmeye geri ödemelidir); azami vade 36 ay, proje süresi 24 ay (+6 ay uzatılabilir).",
-    "İşletme başına yıllık faiz/kâr payı desteği üst limiti 10.000.000 TL'dir.",
+    "Kredinin faiz/kâr payı oranının en fazla 20 puanlık kısmı KOSGEB tarafından geri ödemesiz karşılanır (sabit bir TL üst limiti değil, puan bazlı bir mekanizmadır); anlaşmalı bankanın uyguladığı oran 20 puanın üzerindeyse aşan kısmı işletmeye aittir. (Kaynak: KOSGEB 2026 Yılı 1. Başvuru Dönemi duyurusu, kosgeb.gov.tr, 2026-09-23 doğrulandı.)",
     "Değerlendirme iki aşamalı: Kurul 100 üzerinden puanlar (ortalama en az 50 olmalı), nihai kararı Jüri verir ve bu karara itiraz edilemez.",
     "Başvurular sürekli değil, dönemsel çağrılarla alınıyor; güncel (2026 Yılı 1. Başvuru Dönemi) son başvuru 30 Eylül 2026 — bu tarihten sonra yeni dönem ilan edilene kadar başvuru alınmayabilir, güncel durum kosgeb.gov.tr'den teyit edilmelidir.",
   ];
@@ -1099,7 +1106,9 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar2, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar2, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      undefined,
+      "30 Eylül 2026"
     );
   }
 
@@ -1107,7 +1116,9 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ön koşullar sağlanıyor; nihai kabul Kurul puanlaması ve Jüri kararına bağlıdır.",
     gerekceler,
-    uyarilar2
+    uyarilar2,
+    undefined,
+    "30 Eylül 2026"
   );
 }
 
@@ -1333,7 +1344,9 @@ export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların çoğu sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar6, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar6, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      undefined,
+      "30 Eylül 2026"
     );
   }
 
@@ -1341,7 +1354,9 @@ export function tubitak1812Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ön koşullar sağlanıyor; Ön Tohum Yatırım kararı TÜBİTAK'ın değerlendirme sürecine bağlıdır.",
     gerekceler,
-    uyarilar6
+    uyarilar6,
+    undefined,
+    "30 Eylül 2026"
   );
 }
 
@@ -1711,7 +1726,9 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      undefined,
+      "31 Ekim 2026"
     );
   }
 
@@ -1719,6 +1736,8 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ön koşullar sağlanıyor; kesin kredi limiti ve onay KOSGEB/protokollü banka değerlendirmesine bağlıdır.",
     gerekceler,
-    uyarilar
+    uyarilar,
+    undefined,
+    "31 Ekim 2026"
   );
 }

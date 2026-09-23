@@ -24,6 +24,10 @@ export type ProgramSonucuTaslak = {
   // şu an kapalı (bilinen, elle doğrulanmış bir tarih aralığına göre) — "uygun" veya
   // "kismen_uygun" durumuyla birlikte kullanılır, arayüzde ayrı bir rozetle gösterilir.
   cagriKapali?: boolean;
+  // Bilinen, elle doğrulanmış güncel çağrı/dönem son başvuru tarihi (serbest metin,
+  // örn. "30 Eylül 2026") — doluysa arayüzde kart başlığında ayrı, görünür bir tarih
+  // rozetiyle gösterilir; sadece uyarılar metninin içine gömülmez.
+  sonBasvuruTarihi?: string;
 };
 
 // index.ts'te taslağa puan eklenerek üretilen, arayüze giden nihai sonuç.

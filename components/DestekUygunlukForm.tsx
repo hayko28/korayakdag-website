@@ -640,6 +640,11 @@ export default function DestekUygunlukForm() {
                     <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${stil.renk}`}>
                       {stil.etiket}
                     </span>
+                    {s.sonBasvuruTarihi && (
+                      <span className="rounded-full border border-red-300 bg-red-50 px-3 py-1 text-xs font-bold text-red-700">
+                        📅 Son Başvuru: {s.sonBasvuruTarihi}
+                      </span>
+                    )}
                   </div>
                   <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
                 </div>
