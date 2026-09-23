@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "gumruk-mevzuati-yetkilendirilmis-yukumlu-statusu-yys-nedir",
+    title: "Gümrük Mevzuatı ve Yetkilendirilmiş Yükümlü Statüsü (YYS) Nedir?",
+    excerpt: "Düzenli ihracat/ithalat yapan firmalara yeşil hat, eksik beyan, kısmi teminat ve izinli gönderici/alıcı gibi somut avantajlar sağlayan YYS (Yetkilendirilmiş Yükümlü Statüsü); başvuru şartları, dört ana değerlendirme kriteri ve Ticaret Bakanlığı'na başvuru süreciyle 2026 güncel rehber.",
+    category: "GÜMRÜK MEVZUATI • İHRACAT DESTEKLERİ • 2026",
+    date: "2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "dijital-pazarlama-seo-kobiler-icin-organik-musteri-kazanimi-yol-haritasi",
     title: "Dijital Pazarlama ve SEO ile Organik Müşteri Kazanımı: KOBİ'ler İçin Pratik Yol Haritası",
     excerpt: "Reklam bütçesine bağımlı kalmadan sürdürülebilir müşteri akışı kurmak isteyen KOBİ'ler için anahtar kelime araştırması, site içi ve teknik SEO temelleri, Google İşletme Profili ile yerel arama görünürlüğü, düzenli içerik stratejisi ve sık yapılan hatalarla pratik bir SEO yol haritası.",
