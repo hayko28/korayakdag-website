@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sunum-hazirlayalim-karari-ertelemenin-kibar-yolu",
+    title: "'Bir Sunum Hazırlayalım': Kararı Ertelemenin En Kibar Yolu",
+    excerpt:
+      "Bir şirkette bütçe kararı, bir haftalık 34 slaytlık sunum hazırlığından sonra ilk altı slaytın ardından üç cümlelik bir cevapla alındı. 'Buna bir sunum hazırlayalım' cümlesinin çoğu zaman gizlediği şey bilgi eksikliği değil, kararı erteleme isteği.",
+    tag: "Görüş",
+    date: "24 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yapay-zeka-yatirimi-istihdam-plani-farki",
     title:
       "Girişimciler Yapay Zekaya Yüzde 82 Yatırım Yapıyor, İşe Almaya Yüzde 34: Aradaki Fark Ne Anlatıyor?",
