@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "arge-merkezi-tasarim-merkezi-teknopark-tesvik-hesaplama-personel-ornekleri",
+    title: "Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle",
+    excerpt: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",
+    category: "AR-GE MERKEZİ • TASARIM MERKEZİ • TEKNOPARK • 2026",
+    date: "2026",
+    readTime: "14 Dakika",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kripto-varliklarin-vergilendirilmesi-turkiyede-2026-guncel-durum",
     title: "Kripto Varlıkların Vergilendirilmesi: Türkiye'de 2026 Güncel Durum",
     excerpt: "Kripto varlıklara özel bağlayıcı bir vergi kanunu şu an itibarıyla yürürlükte değil. TBMM'ye Mart 2026'da sunulan ve aynı ay geri çekilen kanun teklifinin akıbeti, mevcut GVK/KVK uygulaması, SPK'nın 7518 sayılı Kanun'la gelen lisans denetimi, TCMB'nin ödeme yasağı ve şirketler için güncel durumla dürüst bir rehber.",
