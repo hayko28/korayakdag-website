@@ -1319,6 +1319,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Süre uzatımı, tek başına başvuramayan küçük ölçekli yazılım ve yapay zeka firmalarına bir teknoloji sağlayıcı veya akademik kurumla konsorsiyum kurmak için ek zaman tanıyor. Bu haftaları yeni ortak aramaktan çok, elde mevcut proje metnini netleştirmeye ayırmalarını öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "10 Eylül 2026",
+    eklendiTarihi: "2026-09-24",
+    baslik:
+      "TCMB, Eylül ayında politika faizini beşinci kez üst üste yüzde 37'de sabit tuttu",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 10 Eylül 2026 tarihli toplantısında bir hafta vadeli repo ihale faiz oranını yüzde 37'de sabit tuttu; gecelik borç verme faizi yüzde 40, borçlanma faizi yüzde 35,5 seviyesinde korundu. Kurul, aylık dalgalanmalara rağmen enflasyonun ana eğiliminde düşüşe işaret eden veriler görüldüğünü belirterek politika faizinin yeterli süre sıkı tutulacağını yineledi. Bir sonraki toplantı 23 Ekim 2026'da gerçekleştirilecek.",
+    kaynakUrl:
+      "https://www.forbes.com.tr/para-yatirim/tcmb-faiz-kararini-acikladi-eylul-2026-faiz-karari",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faizin beşinci kez değişmeden kalması, yıl başında düşüş beklentisiyle hazırlanmış birçok yatırım ve finansman bütçesinin hâlâ aynı maliyet ortamıyla çalıştığı anlamına geliyor. Kredi kullanımını planlayan işletmelere bütçelerini güncel faiz seviyesine göre yeniden gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Eylül 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-09-24",
+    baslik: "TÜİK: Ağustos 2026'da yıllık enflasyon yüzde 31,51'e geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 3 Eylül 2026'da açıkladığı verilere göre tüketici fiyat endeksi ağustosta aylık yüzde 1,84 arttı, yıllık enflasyon ise temmuza göre 0,24 puan azalarak yüzde 31,51 oldu. Enerji, gıda, alkollü içecek ve altın hariç hesaplanan çekirdek enflasyon (C endeksi) yıllık yüzde 30,07 olarak gerçekleşirken, yurt içi üretici fiyat endeksindeki yıllık artış yüzde 27,95 seviyesinde kaldı.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-agustos-ayi-tuketici-ve-uretici-fiyat-gelismeleri-aciklandi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yıllık enflasyondaki sınırlı gerilemeye karşın çekirdek enflasyonun hâlâ yüksek seyretmesi, fiyatlama ve bütçe planlamasında temkinli davranmayı gerektiriyor. İşletmelere yıl sonu bütçelerini tek bir aylık veriye değil, çekirdek eğilimi de dikkate alarak güncellemelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
