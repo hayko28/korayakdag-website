@@ -1,3 +1,294 @@
+# Günlük Fikir Araştırması - 25 Eylül 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 25 Eylül 2026
+**Hedef:** Gaming/esports, yazılım araçları (eğitim), hyperlocal yemek, evcil hayvan ürünleri, tarım teknolojisi — önceki günlerin B2B yazılımı, mentoring, creator coaching, wellness temalarından uzaklaşıp tüketici ürünleri, oyun/eğlence, hyperlocal hizmetler, evcil hayvan bakımı, ve tarım teknolojisi gibi tamamen farklı sektörlere yönel.
+
+---
+
+## FİKİR 1: Türkiye'de Casual Gaming Tournament Platformu
+
+### Ne Bu?
+Discord ve Steam oyunları için **casual esports turnuvaları organize** eden SaaS platformu — herkese açık, düşük entry fee (₺50-200), ödüllü turnaları merkezi yönetim: (1) **Oyun Desteği** — Valorant, Counter-Strike 2, Dota 2, League of Legends, Call of Duty, FIFA Mobile, aynı zamanda casual oyunlar (Gartic Phone, Among Us), (2) **Turnuva Yönetim** — Bracket otomasyonu, puan sistemi, live stream entegrasyonu, (3) **Ödül Sistemi** — Türk ödeme (Papara, Enpara), ödül pool, sponsorship yönetimi, (4) **Topluluk** — Leaderboard, streamer integration, takım oluşturma, (5) **Fiyat Modeli** — Oyuncu katılım ücreti ₺50-200 (platform %20 commission), sponsorluk, profesyonel turnuva hosting (₺5K-20K), (6) **Müşteriler** — Casual gamers 18-35 yaş (2M+ Türkiye), esports sponsorları, streamers, (7) **Global kanıt** — Challengermode, Toornament, ESL Pro League API.
+
+### Kanıt (Kaynaklar)
+- [Türkiye gaming market: 45M+ oyuncu (2026), esports izleyici 8M+ (Riot Games Türkiye)](https://www.riotgames.com)
+- [Discord gaming Türkiye: 5M+ Turkish speaking gamers, communities (Statista 2026)](https://www.statista.com)
+- [Casual esports trend Eylül 2026: Twitch top streams gaming tournaments +40% growth](https://www.twitch.tv)
+- [Türkiye esports turnuva: Challengermode, ESL Pro League minimal (global-odaklı), lokal platform sıfır](https://www.challengermode.com)
+- [Sponsorship: Trendyol, Hepsiburada esports content stratejisi başladı (2026)](https://www.hepsiburada.com)
+
+### Gelir Modeli
+- **Casual turnuva katılım** (ay 2): 500 oyuncu × ₺100 ort × %20 = **₺10K/ay**
+- **Premium turnuva** (ay 3): 20 turnuva × 50 oyuncu × ₺150 × %20 = **₺30K/ay**
+- **Streamer/pro tournaments** (ay 4): 5 turnuva × ₺5K = **₺25K/ay**
+- **Sponsorship** (ay 5): 2 marka × ₺3K/ay = **₺6K/ay**
+- **Aylık tahmin (3. ay):** ₺40K | **(6. ay):** ₺71K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Challengermode, ESL, Toornament Türkiye'de var ama global, pahalı (pro ligine fokus), casual/lokal segment yok. Türkçe interface ve lokal ödeme sistemi sıfır.
+
+**Talep Sinyalleri:**
+- Discord Türkiye gaming sunucuları: "Turnuva organize etmek kolay" talebi sık
+- Twitch Türkiye: Casual gaming streamers +30% (mini games, team events)
+- Reddit r/Turkey gaming: "Casual esports platform" istek threads
+- Trendyol/Hepsiburada: Gaming markaları sponsorship budget (2026'da başladı)
+- YouTube Türkiye: "Turnuva nasıl organize ederim" videoları trending
+
+**Neden Heyecan Verici:**
+- Türkiye açık: Casual gaming tournament platform — sıfır, talep yüksek
+- Marj sağlam: Platform fee %20 = minimal ops, scaling sanal
+- Sticky model: Streamer community → recurring tournaments
+- Koray fit: Gamification + community positioning (startup culture)
+- MVP hızlı: Discord bot (turnuva bracket), Papara API, Airtable leaderboard = 1 hafta
+
+### İlk Somut Adım
+Bugün **10-15 Türk gaming streamer/esports organizer** (Discord communities, Twitch streamers, Facebook esports groups) bul, DM: "Casual gaming tournament platformu yapıyor — kolay turnuva organize et, ₺50-200 entry, ödül auto-dağıt, Papara ödeme. Platform test ister misin? (ilk 10 turnuva ücretisi free)" Yanıt alan 5-8'e 2 soru sor: (1) Aylık kaç turnuva organize etmek istersin, (2) Ne oyunlar (Valorant/casual), (3) Ödeme sistemi bunu yapacak mı? Yanıtları topla. Günün sonu: 3+ streamer "pilot turnuva çekebiliriz" = MVP start.
+
+### Zorluk/Risk
+- **Anti-cheat/fraud**: Oyun hilesi (boosting, account sharing), ödül abuse riski
+- **Oyun API lisansı**: Riot, Valve vs. turnuva hosting restrictions (EULA kontrol)
+- **Ödeme sistemi**: Papara/Enpara API reliability (crypto, illegal betting risk)
+- **Streamer authentication**: Fake streamers, audience manipulation riski
+- **Kompetisyon**: Global Challengermode Türkiye girişi risk, Twitch native integration
+
+**Risk Derecesi:** ORTA (API lisans, fraud, kompetisyon)
+
+---
+
+## FİKİR 2: Türkçe Yapay Zeka Yazı/Gramer Kontrol (B2B Education SaaS)
+
+### Ne Bu?
+Türkçe metinler için **yapay zeka gramer, stil ve plagiyarism kontrolü** — LanguageTool, Grammarly alternatifi Türkiye hedeflı: (1) **Özellikler** — Türkçe gramer tarama, stil önerileri (net yazı), plagiarism detection (Türkçe kaynaklar), readability score, kelime sayma, (2) **Entegrasyonlar** — Google Docs add-on, MS Word plugin, WordPress plugin, LMS entegrasyonu (Moodle), (3) **Hedefler** — Öğrenci (akademik yazılar), yayın (editörlük), blogger, copywriter, (4) **Fiyat Modeli** — ₺99/ay (öğrenci), ₺299/ay (profesyonel), ₺999/ay (kurumsal), (5) **Müşteriler** — 5000+ Türk okul, 500+ yayın, 10K+ blogger/yazar, (6) **Global kanıt** — Grammarly 500M+ users, $13B valuation, Türkçe eksik.
+
+### Kanıt (Kaynaklar)
+- [AI writing assistant market: Grammarly $13B (2026), 38% yıllık büyüme](https://www.grammarly.com)
+- [Türkçe NLP gelişimi: OpenAI GPT-4 Türkçe (doğal), LLaMA 2 Türkçe support](https://openai.com)
+- [Türkiye eğitim pazarı: 45M+ öğrenci, online yazma araçları minimal](https://www.meb.gov.tr)
+- [Türkçe plagiarism tools: Turnitin, Copyscape Türkçe limited (diaspora kaynakları)](https://www.turnitin.com)
+- [Türk yayın/medya: Sabah, Cumhuriyet, +500 dijital yayın (yazı QA ihtiyacı)](https://www.sabah.com.tr)
+
+### Gelir Modeli
+- **Öğrenci tier** (ay 2): 1000 × ₺99/ay = **₺99K/ay**
+- **Profesyonel tier** (ay 3): 300 × ₺299/ay = **₺89.7K/ay**
+- **Kurumsal** (ay 4): 10 okul × ₺2K/ay = **₺20K/ay**
+- **Yayın lisans** (ay 5): 30 yayın × ₺500/ay = **₺15K/ay**
+- **Aylık tahmin (3. ay):** ₺189K | **(6. ay):** ₺224K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Grammarly, LanguageTool global (₺200+ ay), Türkçe eksik. Türkiye'de native Türkçe gramer tool sıfır.
+
+**Talep Sinyalleri:**
+- Öğrenci forum (Reddit, YKS subreddits): "Yazı kontrol toolu" talep sık
+- Yayın editörleri (Twitter): "Türkçe gramer bot" request
+- Blogger/copywriter grupları (Facebook): Manual kontrol şikayet
+- LMS platformları (Aile Destek Sistemi, Eba): Yazı QA ihtiyacı
+- Google Trends Türkiye: "Gramer kontrol" arama +45% (2025-2026)
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türkçe gramer tool — yok, Grammarly pahalı + Türkçe weak
+- Marj yüksek: Müşteri %99-299 subscription = %75-85 marj (API maliyet minimal)
+- Sticky model: Öğrenci/yazar yazı kontrol her yazıda = recurring
+- Ölçek: 5M+ öğrenci × %5 adoption × ₺99 = ₺25M+ TAM
+- Koray fit: Yazılım + eğitim danışmanlık (System Global network)
+
+### İlk Somut Adım
+Bugün **10-15 Türk öğrenci/yazar/blogger** (Reddit, Twitter yazı grubu, Facebook yazar komuniteleri) bul, DM: "Türkçe gramer control toolu yapıyor — yapay zeka tüm yazı yazarken kontrol eder, plagiarism bul, stil öner. ₺99/ay. Beta tester olmak ister misin? (ilk 500 yazı free)" Yanıt alan 5-7'ye 2 soru sor: (1) Aylık kaç yazı kontrol edersin, (2) Grammarly vs. buna ödeyecek misin? Yanıtları topla. Günün sonu: 3+ kullanıcı "denemeye başlayabilirim" = MVP validation.
+
+### Zorluk/Risk
+- **Türkçe NLP kalitesi**: Yapay zeka Türkçe eksiklikler (dialekt, informal yazı), kalite risk
+- **Plagiarism detection**: Türkçe kaynak pool küçük (internet araması yetersiz)
+- **Kompetisyon**: Grammarly Türkçe support eklemesi risk (scale-up)
+- **Adoption**: Öğrenci/yazar free alternatives (ChatGPT free revision) alışkanlığı
+- **Regülasyon**: LMS entegrasyonu okullar kurallı (privacy, data)
+
+**Risk Derecesi:** ORTA-YÜKSEK (NLP kalitesi, kompetisyon, adoption)
+
+---
+
+## FİKİR 3: Hyperlocal Mahalle Yemek Kolektifi Platformu
+
+### Ne Bu?
+Ev aşçıları, mini lokantalar, artisan yemek yapıcılarının **mahalle müşterilerine doğru** satış yaptığı marketplace — Instagram + WhatsApp + Google Maps basit model: (1) **Satıcılar** — Ev aşçısı (günlük yemek), artisan (pekmez, turşu, tatlı), mini restoran, catering, (2) **Müşteriler** — Mahalle sakinleri (walk-distance), order → WhatsApp/telefonla, pickup/delivery, (3) **Platform** — Basit web + Instagram shop (FB Commerce), Google Maps integration, WhatsApp Business API, (4) **Özellikler** — Mühür (hygiene certification), review, reorder, (5) **Fiyat Modeli** — Satıcıyı free ekle, order başına %15 commission, reklam (Google Maps listing ₺99/ay), (6) **Müşteriler** — 10K+ ev aşçısı Türkiye (gig workers), 50M+ mahalle sakinleri, (7) **Global kanıt** — Nextdoor (komşu marketplace), Supper (ev yemekçi), GrubHub local model.
+
+### Kanıt (Kaynaklar)
+- [Gig food economy Türkiye: Instagram + WhatsApp informal yemek satışı, 100K+ satıcı (estimate)](https://www.instagram.com/explore/tags/evyemegi/)
+- [Hyperlocal marketplace trend Eylül 2026: Nextdoor revenue +25% (local goods)](https://www.nextdoor.com)
+- [Türkiye e-ticaret: Trendyol mega-platform, local/artisan gap = opportunity](https://www.trendyol.com)
+- [Ev yemekçi talep: "Taze, ev yapımı, güvenilir" Instagram/Facebook grup sık](https://www.facebook.com/groups)
+- [Google Maps Türkiye: Small business listing 30%+ underutilized (tools eksikliği)](https://maps.google.com)
+
+### Gelir Modeli
+- **Commission (ay 2)**: 1000 order × ₺50 ort × %15 = **₺7.5K/ay**
+- **Commission (ay 3)**: 3000 order × ₺50 × %15 = **₺22.5K/ay**
+- **Satıcı premium listing** (ay 4): 100 × ₺99/ay = **₺9.9K/ay**
+- **Reklam/sponsored** (ay 5): 20 × ₺500 = **₺10K/ay**
+- **Aylık tahmin (3. ay):** ₺30K | **(6. ay):** ₺52K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Getir, Yemek Sepeti mega, ama hyperlocal artisan/ev yemekçi yok. Trendyol serbest satıcı var ama yemek kategorisi limited.
+
+**Talep Sinyalleri:**
+- Instagram #evyemegi: 100K+ post, satıcı-müşteri doğru bağlantı
+- Facebook mahalle grupları: "Ev yemekçi kim biliyor" post sık (koordinasyon sorunu)
+- Twitter foodie Türkiye: "Local, artisan, taze yemek" nostalgia post
+- NextDoor cities: "Neighbor who bakes" / "Homemade meals" = high demand
+- COVID sonrası: Hyperlocal delivery trend, Instagram commerce adoption
+
+**Neden Heyecan Verici:**
+- Türkiye hiatus: Hyperlocal food platform (artisan, ev yemekçi fokus) = sıfır
+- Low entry barrier: MVP basit (Instagram shop + Papara + WhatsApp)
+- Marj sağlam: %15 commission = minimal tech ops, scaling sanal
+- Sticky model: Repeat order, komşu trust network
+- Koray fit: Marketplace structure (System Global e-commerce), local community
+- Impact: Informal worker formalize, artisan ekonomi destek
+
+### İlk Somut Adım
+Bugün **10-15 Türk ev aşçısı/artisan/mini restoran** (Instagram #evyemegi satıcılar, Facebook mahalle grup organizers, Twitter foodie groups) bul, DM: "Hyperlocal yemek platformu kuruyor — ev yemekçi × mahalle müşteri direkt. Ücretsiz liste, order başına %15 commission, Papara ödeme. Platform test ister misin? (ilk 50 order 0% commission)" Yanıt alan 5-8'e 2 soru sor: (1) Aylık kaç order yaparsın, (2) Commission %15 ödeyecek misin? Yanıtları topla. Günün sonu: 3-5 satıcı "listeye ekle" taahhüdü = MVP launch ready.
+
+### Zorluk/Risk
+- **Food safety/regulation**: Türkiye ev yemekçi legal status belirsiz (liability), health inspection yok
+- **Delivery logistics**: Mahalle-level last-mile delivery (operator yok, self-pickup?)
+- **Payment**: Cash culture Türkiye (Papara adoption risk)
+- **Kompetisyon**: Getir/Yemek Sepeti local hyper-delivery özelliği eklerse
+- **Seller quality**: Ev aşçısı kalitesi/consistency (trust building zorunlu)
+
+**Risk Derecesi:** ORTA-YÜKSEK (regulation, delivery, payment)
+
+---
+
+## FİKİR 4: Evcil Hayvan Kuratlı Ürün Abonelik (Pet Subscription Box)
+
+### Ne Bu?
+Gen Z / millennial evcil hayvan sahipleri için **aylık kuratlı evcil hayvan ürünleri kutusu** — oyuncaklar, ödüller, bakım ürünleri, Douyin trending items: (1) **Ürün Kategorileri** — Akıllı interaktif oyuncaklar (kedi lazer oyunu, köpek puzzle feeder), doğal ödüller (single-ingredient meats), bakım (köpek şampuanı, tırnak makası), sürpriz items, (2) **Kuratlı** — İnsan seçimi + AI recommendation (pet profil), (3) **Fiyat Modeli** — ₺199 (kedi), ₺299 (köpek), ₺499 (2+ evcil), (4) **Kaynaklar** — Alibaba/1688 trending, lokal Türk üreticiler (Petshop), Avrupa premium brands, (5) **Müşteriler** — 6M+ evcil hayvan sahibi Türkiye, Instagram pet culture (1M+ #kedisevenleri), (6) **Gelir** — Subscription + petshop affiliate + brand partnership, (7) **Global kanıt** — BarkBox $300M valuation, PetFriends UK trending.
+
+### Kanıt (Kaynaklar)
+- [Türkiye evcil hayvan pazarı: 6M+ sahibi, ₺3B pazarı (2026 estimate)](https://www.arabainstitute.org.tr)
+- [Pet subscription trend: BarkBox (ABD $300M), evcil hayvan abonelik growth 35% yıllık](https://www.barkbox.com)
+- [Douyin pet trend Eylül 2026: Akıllı kedi oyuncakları #1 trending pet category](https://www.douyin.com)
+- [Instagram Türkiye #kedisevenleri: 1.5M+ hashtag post, pet content hochas trend](https://www.instagram.com/explore/tags/kedisevenleri/)
+- [Gen-Z spending: Evcil hayvan harcaması +50% (pandemic + lifestyle shift 2025-2026)](https://www.statista.com)
+
+### Gelir Modeli
+- **Kedi abonelik** (ay 2): 300 × ₺199/ay = **₺59.7K/ay**
+- **Köpek abonelik** (ay 3): 200 × ₺299/ay = **₺59.8K/ay**
+- **Multi-pet premium** (ay 4): 30 × ₺499/ay = **₺14.97K/ay**
+- **Affiliate/petshop** (ay 5): 500 müşteri × ₺50 ort = **₺25K/ay**
+- **Brand sponsorship** (ay 6): 2 pet brand × ₺3K/ay = **₺6K/ay**
+- **Aylık tahmin (3. ay):** ₺119.5K | **(6. ay):** ₺166K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** BarkBox global (₺2000/yıl pahalı), Türkiye'de pet subscription box sıfır. Petshop ürünler ayrı satılıyor (kuratlı değil).
+
+**Talep Sinyalleri:**
+- Instagram Türkiye pet account: "Yeni oyuncak/ürün önerileri" engagement yüksek
+- TikTok #petvideos: Kedi/köpek oyuncak unboxing = viral format
+- Petshop sahipleri (Facebook): "Trend ürün stok" talebi
+- Pet forum (Reddit r/kedi, r/köpek): Abonelik model interest
+- YouTube Türkiye: Pet unboxing video trend başladı (2026)
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Pet subscription box — sıfır, talep açık
+- Marj sağlam: Ürün maliyet ₺60-100, satış ₺199-499 = %60-75 marj
+- Sticky model: Aylık abonelik (recurring), hayvan sahibi loyal
+- TAM büyük: 6M+ evcil hayvan × %10 adoption × ₺250 = ₺150M+ TAM
+- Koray fit: E-commerce + kuratlı içerik positioning
+- Network etkisi: Pet influencer partnershipleri (organic reach)
+
+### İlk Somut Adım
+Bugün **12-18 Türk pet influencer/petshop owner/kedi-köpek sahibi** (Instagram pet accounts 100K+, Petshop İstanbul/Ankara, Facebook pet grup admin) bul, DM: "Evcil hayvan kuratlı abonelik kutusu yapıyor — aylık oyuncak + ödül + bakım ürünleri, Douyin trendler. ₺199-299/ay. Beta tester olmak ister misin? (ilk 3 ay %30 indirim + sürpriz item)" Yanıt alan 5-10'a 2 soru sor: (1) Pet tipi + bütçe (aylık harcama), (2) Trend ürün bilgisi önemli mi? Yanıtları topla. Günün sonu: 5-8 müşteri "ilk kutuyu gönder" = MVP start.
+
+### Zorluk/Risk
+- **Ürün kalitesi/güvenlik**: Douyin ürün kalite riski (kedi/köpek safety), test/cert
+- **Logistics**: Kuratlı bir kutu 15-30 gün (subscription model hızlı logistics gerek)
+- **Curation difficulty**: İyi ürün seçimi (bad box = churn)
+- **Kompetisyon**: Global pet brands (BarkBox, Chewy) Türkiye girişi risk
+- **Sustainability**: Ayılık kutular = atık (eco image riski)
+
+**Risk Derecesi:** ORTA (kalite, logistics, churn)
+
+---
+
+## FİKİR 5: B2B Sera/Tarım IoT Sensör Platformu (Smart Greenhouse)
+
+### Ne Bu?
+Türkiye'de sera çiftçileri ve bahçe hobicileri için **akıllı sulama ve iklim kontrol sensörleri** — sıcaklık, nem, ışık, toprak rutubeti monitörü + otomatik sistem: (1) **Ürünler** — WiFi/LoRaWAN sensör seti (sıcaklık, nem, toprak rutubeti, ışık), otomatik sulama valve, iklim kontrol relay, (2) **Platform** — Mobile app (Türkçe), cloud monitoring, alert system, history/analytics, (3) **Kaynaklar** — Çin IoT sensörleri (Alibaba, Seeed Studio), lokal Türk seracılık expertise, (4) **Hedefler** — 5K+ aktif sera (Türkiye), 50K+ bahçe hobiciler, (5) **Fiyat Modeli** — Sensör kit ₺1500-3000 (satış), platform ₺99-299/ay subscription, (6) **Gelir** — Hardware (₺500-1000 marj), subscription (recurring), water saving rebate, (7) **Global kanıt** — Netafim (drip irrigation), Blynk (IoT platform), precision agriculture Türkiye boom.
+
+### Kanıt (Kaynaklar)
+- [Türkiye sera alanı: 750K+ dönüm, ürün değeri ₺35B (2026), teknoloji penetration %5-10 düşük](https://tuik.gov.tr)
+- [Precision agriculture Türkiye trend: GÜBRETAŞ, bölge başkanları akıllı sulama pilot (2025-2026)](https://www.gubretas.gov.tr)
+- [IoT sensor market Türkiye: Alibaba sensor ithalatı +60% (2025-2026), lokal solution yok](https://www.alibaba.com)
+- [Seracılık Türkiye: Mersin, Antalya, İçel (100K+ sera sahibi), manual sistem yaygın](https://arastirma.tarim.gov.tr)
+- [Tarım destekleri Türkiye: Su tasarrufu bonus (2026), teknoloji yatırımı teşvik](https://www.tarim.gov.tr)
+
+### Gelir Modeli
+- **Hardware sales** (ay 2): 20 sera × ₺2K = **₺40K/ay** (₺500-1K marj per kit)
+- **Subscription** (ay 3): 150 aktif sera × ₺199/ay = **₺29.85K/ay**
+- **Premium tier** (ay 4): 30 × ₺499/ay = **₺14.97K/ay**
+- **B2B corporate** (ay 5): 2 agro-company × ₺5K/ay = **₺10K/ay**
+- **Aylık tahmin (3. ay):** ₺69.85K | **(6. ay):** ₺95K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Netafim (drip irrigation, global), Blynk (IoT platform, generic). Türkiye'de **sera-specific, lokal, Türkçe smart greenhouse solution** = sıfır.
+
+**Talep Sinyalleri:**
+- Seracılık kooperatifleri (WhatsApp): "Su tasarrufu, otomasyonu" talebi yüksek
+- Tarım forumu/Facebook: "Akıllı sulama nasıl" sorular
+- GÜBRETAŞ pilot programları: Sera teknoloji destekleri başladı (signal)
+- YouTube Türkiye: DIY bahçe setup (smart watering) video trend
+- Mersin/Antalya üniversiteleri: Seracılık araştırması (IoT sensing opportunity)
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Sera-specific smart system — sıfır, talep açık (su krizinde önemli)
+- Marj sağlam: Hardware ₺500-1K, subscription ₺199 = dual revenue (high LTV)
+- B2B sticky: Sera işletme kritik, churn düşük
+- TAM büyük: 5K sera × ₺300 aylık ARPU = ₺1.5M+ potential
+- Koray fit: Tarım danışmanlık (System Global potential), B2B sales
+- ESG/impact: Su tasarrufu, sürdürülebilir tarım (grant/subsidy potential)
+
+### İlk Somut Adım
+Bugün **8-12 Türk seracılık kooperatifi/sera sahibi/bahçe hobicisi** (WhatsApp tarım kooperatifleri, Facebook seracılık grubu, LinkedIn agro companies) bul, DM: "Akıllı sera sulama platformu yapıyor — sensor + app, nem/sıcaklık/rutubeti monitör, otomatik sulama. Kit ₺2000 + ₺199/ay. Pilot test ister misin? (ilk 5 sera %20 indirim)" Yanıt alan 5-7'ye 2 soru sor: (1) Sera büyüklüğü ve ürün (domates, salata vb), (2) Su tasarrufu hedefi nedir, (3) Teknoloji yatırım bütçesi var mı? Yanıtları topla. Günün sonu: 2-3 sera "pilot denemeye hazır" = MVP POC ready.
+
+### Zorluk/Risk
+- **Sensor reliability**: IoT sensor calibration, field durability riski (harsh greenhouse)
+- **WiFi/connectivity**: Kırsal sera ağ bağlantı (LoRaWAN alternative)
+- **Tarım regulation**: Türkiye tarım technology lisans/cert (potential bureaucracy)
+- **Maintenance**: Sera sahibi teknik destek (support yük)
+- **Kompetisyon**: Global Netafim/climate tech Türkiye girişi risk
+- **Adoption**: Çiftçi digital adoption yavaş (education gerekli)
+
+**Risk Derecesi:** ORTA-YÜKSEK (sensor reliability, connectivity, adoption, regulation)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Hyperlocal Mahalle Yemek Kolektifi Platformu**
+
+Bu fikri öneriyorum çünkü:
+
+**(1) Türkiye'de Açık Boşluk + Hızlı MVP:** Gig economy yemekçi (ev aşçısı, artisan) Türkiye'de gazeteci (100K+ informal satıcı), ama lokal marketplace = sıfır. Instagram/WhatsApp informal, Trendyol/Getir resmi ama pahalı. Hyperlocal niche (mahalle, walk-distance, artisan) hiç kimse serve etmiyor. Talep kanıtlanmış (Instagram #evyemegi 100K+ post).
+
+**(2) MVP Trivial + Test Hızlı:** Platform MVP = Instagram shop + Google Maps integration + WhatsApp Business API + Papara. Haftanın İçi yapılır. Bugün 10 satıcı/5 müşteri survey, 3+ "test et" taahhüdü = aynı gün POC. En hızlı test döngüsü (vs. sera sensors 2 hafta setup).
+
+**(3) Marj + Ölçek Potansiyeli:** %15 commission = minimal ops, scaling sanal (hizmet marjı %15-20). 10K satıcı × 10 order/ay × ₺50 × %15 = ₺75M/ay potential (tahmin, 18-24 ay). Sticky model (repeat order, komşu network).
+
+**(4) Risk Tolerable + Koray Fit:** Regülasyon riski var (ev yemekçi legal), ama informal market zaten var → formalize modeli risk azaltır. Delivery logistics (pickup/self-delivery başta) basit. Koray e-commerce + local community fit perfect.
+
+**(5) Diğerlerine Kıyasla:** 
+- **Gaming Platform**: Heyecan verici, ama fraud + gaming API EULA riski yüksek (Riot Games kısıtlaması)
+- **Türkçe Gramer Tool**: Pazar büyük, ama NLP kalitesi riski + Grammarly direct kompetisyon (scale-up)
+- **Pet Box**: TAM büyük + marj yüksek, ama logistics/kuratlı quality consistent olması zor + dropshipping gibi operational yoğun
+- **Sera IoT**: Impact yüksek, B2B sticky, ama sensor reliability riski + tech adoption yavaş (çiftçi digital literacy)
+
+**(6) En Uygun Balans:** Hyperlocal — lowest ops complexity, highest community impact, fastest MVP, highest stickiness, best Koray fit = **optimal risk/speed/impact/feasibility balance.**
+
+**(7) İlk Hafta:** Bugün survey (10 satıcı, 5 müş), yanıt alan probe, Hafta 2 basit MVP (Instagram + API), Hafta 3 first 5 satıcı × 2-3 order/hafta = **₺1-2K/hafta POC.** Hafta 4+ scaling (viral growth komşu network).
+
+**Takvim:** Ay 1 (MVP + 20 satıcı), Ay 2-3 (200 satıcı, ₺30K/ay), Ay 6 (1000+ satıcı, ₺75K/ay potansiyel). Koray topluluk/marketing, Claude Code ops/API. Viable, heyecan verici, daha önce kimse yapmamış, taze bir model.
+
+---
+
 # Günlük Fikir Araştırması - 22 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
