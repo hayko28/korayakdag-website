@@ -1346,6 +1346,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıllık enflasyondaki sınırlı gerilemeye karşın çekirdek enflasyonun hâlâ yüksek seyretmesi, fiyatlama ve bütçe planlamasında temkinli davranmayı gerektiriyor. İşletmelere yıl sonu bütçelerini tek bir aylık veriye değil, çekirdek eğilimi de dikkate alarak güncellemelerini öneririm.",
   },
+  {
+    kurum: "KVKK",
+    tarih: "5 Eylül 2026 (kamuoyuna duyurulan karar özeti)",
+    eklendiTarihi: "2026-09-25",
+    baslik:
+      "KVKK, uçak içi internet hizmetinde gereksiz açık rıza talebine 90 bin TL ceza verdi",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu, bir internet servis sağlayıcısının uçak yolculuğunda internet kullanmak isteyen yolculardan, hizmetin sunulması için gerekli olmadığı halde kişisel verilerin işlenmesine dair açık rıza almasını hukuka ve dürüstlük kuralına aykırı bularak 90.000 TL idari para cezası uyguladı. Kurul, hizmetin açık rıza şartına bağlanmasının rızanın özgür iradeyle verilip verilmediğini şüpheli hale getirdiğini ve verinin açık rıza dışında başka bir hukuki sebeple de işlenebileceğini vurguladı.",
+    kaynakUrl:
+      "https://www.sabah.com.tr/gundem/2026/09/05/ucakta-sunulan-internet-hizmeti-icin-acik-riza-istediler-kvkk-ceza-verdi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Birçok işletme, veri işleme için hangi hukuki sebebin uygun olduğunu değerlendirmeden refleks olarak 'açık rıza' formu kullanıyor. Bu karar, hizmetin sunumunu gereksiz yere açık rızaya bağlamanın tek başına bir ihlal sayılabileceğini gösteriyor; üyelik veya hizmet sözleşmelerindeki rıza metinlerini bu açıdan gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "21 Eylül 2026 (2026 yılı Eylül verileri)",
+    eklendiTarihi: "2026-09-25",
+    baslik:
+      "TCMB Eylül anketi: Reel kesim güveni hafif arttı, imalat sanayinde kapasite kullanımı yükseldi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın 21 Eylül 2026'da açıkladığı verilere göre mevsimsellikten arındırılmış Reel Kesim Güven Endeksi eylülde bir önceki aya göre 0,1 puan artışla 102,5'e, imalat sanayi genelinde mevsimsellikten arındırılmış Kapasite Kullanım Oranı ise 0,6 puan artışla yüzde 74,1'e yükseldi. Ankette gelecek üç aydaki ihracat sipariş miktarı, mevcut mamul mal stoku ve sabit sermaye yatırım harcamasına ilişkin beklentilerin endeksi olumsuz yönde etkilediği belirtildi.",
+    kaynakUrl:
+      "https://www.bloomberght.com/reel-sektor-guveni-eylul-de-geriledi-3788930",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Kapasite kullanımındaki artışa rağmen ihracat siparişi ve yatırım harcaması beklentilerinin zayıf kalması, imalatçı işletmelerin kısa vadeli üretim toparlanmasını henüz uzun vadeli bir yatırım kararına dönüştürmediğine işaret ediyor. Yatırım planlarını bu iki sinyali birlikte değerlendirerek gözden geçirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
