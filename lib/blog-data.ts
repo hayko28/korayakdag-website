@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "konkordato-basvurusunda-finansal-tablo-standardi-degisikligi-2026",
+    title: "Konkordatoya Başvuracak Şirketler İçin Yeni Kural: Finansal Tablolarınız Hangi Standarda Göre Hazırlanmalı?",
+    excerpt: "13 Mayıs 2026 tarihli ve 33252 sayılı Resmî Gazete'de yayımlanan yönetmelik değişikliğiyle konkordato talebine eklenecek finansal tabloların TMS/TFRS, BOBİ FRS veya VUK standardından hangisine göre hazırlanacağı, şirketin bağımsız denetime tabi olup olmamasına göre netleşti. Kapsamı, bağımsız denetim raporu bildirim süresi ve hazırlık sürecinde dikkat edilmesi gerekenler.",
+    category: "KONKORDATO • FİNANSAL RAPORLAMA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1741540420787-cc5c1b454413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "arge-merkezi-tasarim-merkezi-teknopark-tesvik-hesaplama-personel-ornekleri",
     title: "Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle",
     excerpt: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",
