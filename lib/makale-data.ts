@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "orta-vadeli-programda-enflasyon-hedefi-revizyonu",
+    title:
+      "Orta Vadeli Program'da Enflasyon Hedefi Bir Yılda Nasıl Yüzde 16'dan Yüzde 28,4'e Çıktı?",
+    excerpt:
+      "6 Eylül'de yayımlanan 2027-2029 Orta Vadeli Programı, bir önceki programın 2026 için verdiği yüzde 16 enflasyon hedefini yüzde 28,4'e revize etti. Bu belgeye göre bütçe kuran şirketler için asıl ders, resmi hedefin kendisi değil, hedefin bir yılda nasıl neredeyse iki katına çıkabildiği.",
+    tag: "Strateji",
+    date: "25 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sunum-hazirlayalim-karari-ertelemenin-kibar-yolu",
     title: "'Bir Sunum Hazırlayalım': Kararı Ertelemenin En Kibar Yolu",
     excerpt:
