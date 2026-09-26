@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "reeskont-kredisinde-net-ihracatci-sarti-kalkti",
+    title:
+      "İhracat Reeskont Kredisinde 'Net İhracatçı' Şartı Kalktı: Kim Şimdi Başvurabilir?",
+    excerpt:
+      "5 Eylül 2026'da yürürlüğe giren düzenlemeyle reeskont kredisi 'net ihracatçı' tanımından 'ihracatçı skoru' sistemine geçti; firma başına günlük limit 45 milyon TL'den 60 milyon TL'ye, toplam günlük limit 300 milyon TL'den 5 milyar TL'ye çıktı. Yıllar önce bu şarttan reddedilip bir daha hiç bakmayan firmalar için asıl mesele, o reddin bugün hâlâ geçerli olup olmadığı.",
+    tag: "Devlet Destekleri",
+    date: "26 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "orta-vadeli-programda-enflasyon-hedefi-revizyonu",
     title:
       "Orta Vadeli Program'da Enflasyon Hedefi Bir Yılda Nasıl Yüzde 16'dan Yüzde 28,4'e Çıktı?",
