@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "elli-elli-ortaklikta-kilitlenme-riski",
+    title:
+      "Yüzde 50-Yüzde 50 Ortaklıkta Kilitlenme (Deadlock) Riski: Sözleşmede En Çok Unutulan Madde",
+    excerpt:
+      "İki ortağın eşit hisseye sahip olduğu ortak girişimlerde, kritik bir kararda taraflar anlaşamazsa şirket fiilen yönetilemez hâle gelebiliyor. Kilitlenme (deadlock) mekanizması, sözleşmenin kuruluş aşamasında eklenmesi gereken, ama en sık gözden kaçan maddelerden biri.",
+    tag: "Hukuk ve Vergi",
+    date: "27 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "reeskont-kredisinde-net-ihracatci-sarti-kalkti",
     title:
       "İhracat Reeskont Kredisinde 'Net İhracatçı' Şartı Kalktı: Kim Şimdi Başvurabilir?",
