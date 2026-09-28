@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "spk-pay-geri-alim-ust-siniri-kalkti",
+    title: "SPK Pay Geri Alımlarında Üst Sınırı Neden Kaldırdı?",
+    excerpt:
+      "Sermaye Piyasası Kurulu, 22 Eylül 2026'da aldığı kararla borsada işlem gören şirketlerin pay geri alımlarındaki toplam bedel üst sınırını tamamen kaldırdı. Karar teknik görünse de, halka açılmaya hazırlanan her büyüme aşamasındaki şirketin cevaplaması gereken bir soruyu gündeme getiriyor: sermaye ne zaman büyümeye, ne zaman kendine yatırılır?",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "28 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "elli-elli-ortaklikta-kilitlenme-riski",
     title:
       "Yüzde 50-Yüzde 50 Ortaklıkta Kilitlenme (Deadlock) Riski: Sözleşmede En Çok Unutulan Madde",
