@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-09-28",
+  "sonGuncelleme": "2026-09-29",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -2137,7 +2137,7 @@
       "id": "tubitak-1832-yesil-donusum-2026-2",
       "ad": "1832 - Sanayide Yeşil Dönüşüm Çağrısı (2026-2)",
       "kurum": "TÜBİTAK",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-28",
       "kaynakUrl": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/icerik-1832-sanayide-yesil-donusum-cagrisi",
       "ilkTespitTarihi": "2026-09-17",
@@ -2181,8 +2181,8 @@
       "kaynakUrl": "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1711-yapay-zeka-ekosistem-2026-yili-cagrisi-acildi",
       "ilkTespitTarihi": "2026-09-17",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
-      "sonBildirilenTarih": null,
+      "ucGunKalaBildirildi": true,
+      "sonBildirilenTarih": "2026-09-29",
       "not": "Üniversite/kamu araştırma merkezi bilgi birikimine dayanan yapay zeka çözümlerinin ürünleştirilmesini destekliyor; başvuran şirketin en az bir teknoloji sağlayıcı firma ve en az bir üniversite/kamu araştırma merkezi ile konsorsiyum kurması şart. 2026 öncelik alanları: Akıllı Üretim Sistemleri, Akıllı Tarım/Gıda/Hayvancılık, Finansal Teknolojiler, İklim Değişikliği ve Sürdürülebilirlik, Akıllı Eğitim Teknolojileri. Başvuru dönemi 15 Haziran - 2 Ekim 2026 (23:59); kuruluş bazlı ön kayıt için son tarih 28 Eylül 2026 (23:59) - ön kayıt yapmayanlar kesin başvuru yapamaz, bu yüzden pratikte fiili son tarih 28 Eylül'e yakın kabul edilmeli."
     },
     {
