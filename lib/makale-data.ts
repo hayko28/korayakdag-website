@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-kuresel-rekabetcilik-destek-programi-kriterleri",
+    title:
+      "KOSGEB Küresel Rekabetçilik Destek Programı: 75 Milyon TL Kredi Kimin İşine Yarar?",
+    excerpt:
+      "KOSGEB'in 7-30 Eylül 2026 arasında başvuru alan Küresel Rekabetçilik Destek Programı, hızlı büyüyen KOBİ'lere 30-75 milyon TL kredi ve 20 puanlık geri ödemesiz finansman desteği sunuyor. Ama üç şart, çoğu başvuruyu daha ilk elemede eliyor; asıl mesele rakamlar değil, kimin gerçekten kapsamda olduğu.",
+    tag: "Devlet Destekleri",
+    date: "29 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "spk-pay-geri-alim-ust-siniri-kalkti",
     title: "SPK Pay Geri Alımlarında Üst Sınırı Neden Kaldırdı?",
     excerpt:
