@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "e-ihracat-destek-limitleri-depo-kira-destegi-kalkti",
+    title:
+      "E-İhracat Destek Limitleri Yüzde 29,28 Arttı, Ama Bir Kalem Tamamen Kalktı",
+    excerpt:
+      "Ticaret Bakanlığı, 22 Eylül 2026'da e-ihracat destek genelgesini güncelledi: üst limitler yüzde 29,28 arttı, hedef ülke listesi 35'e çıktı. Ama aynı güncellemeyle yurt dışı depo kira desteği yürürlükten kalktı; manşeti okuyup ayrıntıyı atlayan başvurular eksik bütçeyle yola çıkabilir.",
+    tag: "Devlet Destekleri",
+    date: "30 Eylül 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-kuresel-rekabetcilik-destek-programi-kriterleri",
     title:
       "KOSGEB Küresel Rekabetçilik Destek Programı: 75 Milyon TL Kredi Kimin İşine Yarar?",
