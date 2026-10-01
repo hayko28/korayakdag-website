@@ -2163,14 +2163,14 @@
       "id": "tubitak-1812-bigg-yatirim-2026-2",
       "ad": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) - 2026-2 Tohum Öncesi Yatırım Çağrısı",
       "kurum": "TÜBİTAK",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-30",
       "kaynakUrl": "https://tubitak.gov.tr/tr/duyuru/turkiyenin-ilk-yatirim-tabanli-girisimcilik-destek-programi-olan-bigg-yatirim-programinin-2026-2-cagrisi-acildi",
       "ilkTespitTarihi": "2026-09-17",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
-      "not": "Uygulayıcı kuruluşların yürüttüğü 1. Aşama faaliyetlerini tamamlayıp Mükemmeliyet Mührü alan girişimlere %3 hisse karşılığında 1.350.000 TL yatırım sağlanıyor. Başvurular PRODİS üzerinden 30 Eylül 2026'ya kadar alınıyor - son başvuruya 13 gün kaldığı için yakından takip edilmeli."
+      "not": "Uygulayıcı kuruluşların yürüttüğü 1. Aşama faaliyetlerini tamamlayıp Mükemmeliyet Mührü alan girişimlere %3 hisse karşılığında 1.350.000 TL yatırım sağlanıyor. Başvurular PRODİS üzerinden 30 Eylül 2026'ya kadar alınıyor - son başvuruya 13 gün kaldığı için yakından takip edilmeli. | 2026-10-01: başvuru süresi doldu (30 Eylül), uzatma duyurusu bulunmadı. Uygulayıcı kuruluşların belge teslimi 7 Ekim, Aşama 2 değerlendirme 12 Ekim-20 Kasım 2026."
     },
     {
       "id": "tubitak-1711-yapay-zeka-ekosistem-2026",
@@ -2189,7 +2189,7 @@
       "id": "kosgeb-kuresel-rekabetcilik-2026-1-donem",
       "ad": "Küresel Rekabetçilik Destek Programı - 2026 Yılı 1. Başvuru Dönemi",
       "kurum": "KOSGEB",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-30",
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
       "ilkTespitTarihi": "2026-09-17",
