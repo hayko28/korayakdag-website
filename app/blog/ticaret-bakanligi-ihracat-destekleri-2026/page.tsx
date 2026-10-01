@@ -624,28 +624,56 @@ export default function BlogPage() {
         </h2>
         <p className="mb-6 text-lg leading-9 text-gray-700">
           5973 sayılı Karar&apos;ın 10&apos;uncu maddesi kapsamındaki bu
-          destek, Türk imalatçı/ihracatçıların büyük küresel firmaların
-          veya perakende zincirlerinin{" "}
-          <strong>onaylı tedarikçisi hâline gelmesini</strong> hedefler.
-          Kalite sertifikasyonu, denetim/uyum danışmanlığı, eğitim ve
-          tanıtım giderlerinin yanı sıra yurt dışı depo kira ve depolama
-          hizmet giderlerini de kapsar.
+          destek, Türk üretici/ihracatçıların büyük küresel firmaların{" "}
+          <strong>onaylı tedarikçisi hâline gelmesini</strong> teşvik eder.
+          Tek bir kalem değil, iki ayrı destek unsurundan oluşur: KTZ
+          yetkinlik projesi giderleri ve küresel tedarik zincirine yönelik
+          yurt dışı depo kira/depolama giderleri. İkisinin şartları, oranları
+          ve üst limitleri birbirinden farklıdır.
         </p>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="mb-10 rounded-2xl border-l-4 border-gray-400 bg-gray-50 p-8">
+          <h4 className="mb-3 text-lg font-bold text-[#071A2F]">
+            👥 Kimler Başvurabilir
+          </h4>
+          <p className="leading-8 text-gray-700">
+            Sadece <strong>üretici</strong> şirketler. Bir tedarikçinin KTZ
+            yetkinlik projesi desteğine başvurabilmesi için üretici olması
+            zorunlu tutulur, salt ticaret/aracılık faaliyeti bu şartı
+            karşılamaz. Bir şirket, aynı anda yalnızca{" "}
+            <strong>1 adet</strong> KTZ yetkinlik projesinden destek alabilir.
+          </p>
+        </div>
+
+        <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
+          8.1. KTZ Yetkinlik Projesi Desteği
+        </h3>
+        <p className="mb-6 leading-8 text-gray-700">
+          Şirketin küresel bir tedarik zincirine girebilmesi için
+          gerçekleştirdiği yatırım ve yetkinlik geliştirme giderlerini
+          kapsar.
+        </p>
+        <h4 className="mb-4 text-lg font-bold text-[#071A2F]">
+          📦 Desteklenen Gider Kalemleri
+        </h4>
+        <ul className="mb-8 ml-6 list-disc space-y-3 text-lg text-gray-700 marker:text-orange-500">
+          <li><strong>Makine, ekipman, donanım, yazılım</strong> alımları</li>
+          <li><strong>Eğitim ve danışmanlık</strong> giderleri</li>
+          <li><strong>Sertifikasyon</strong> giderleri (küresel tedarikçinin talep ettiği kalite/uyum sertifikaları)</li>
+          <li><strong>Test/analiz</strong> giderleri</li>
+          <li><strong>Ürün doğrulama</strong> giderleri</li>
+        </ul>
+        <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
-            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">💰 2026 Üst Limitleri</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li>✔ Yetkinlik projesi giderleri: <strong>73.990.020 TL</strong></li>
-              <li>✔ Yurt dışı depo kira + depolama: <strong>19.728.672 TL</strong></li>
-            </ul>
+            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">💰 Destek Oranı</h3>
+            <p className="leading-8 text-gray-700"><strong>%50</strong></p>
+          </div>
+          <div className="rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">⏱️ Süre</h3>
+            <p className="leading-8 text-gray-700">Proje onayından itibaren <strong>2 yıl</strong></p>
           </div>
           <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
-            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">👥 Kimler Başvurabilir</h3>
-            <p className="leading-8 text-gray-700">
-              Büyük küresel değer zincirine tedarikçi olma potansiyeli
-              taşıyan imalatçı ihracatçılar; süreç proje onayı ve ön onay
-              gerektirir.
-            </p>
+            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">📈 2026 Üst Limiti</h3>
+            <p className="leading-8 text-gray-700">Şirket başına <strong>73.990.020 TL</strong></p>
           </div>
         </div>
         <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
@@ -653,12 +681,81 @@ export default function BlogPage() {
             Örnek &mdash; Otomotiv Yan Sanayi Tedarikçiliği
           </h4>
           <p className="leading-8 text-gray-700">
-            Temsili bir otomotiv yan sanayi firması, küresel bir üreticiye
-            tedarikçi olabilmek için gerekli kalite sertifikasyonu ve
-            denetim danışmanlığı sürecine <strong>5.000.000 TL</strong>{" "}
-            harcıyor. Proje ön onayı alınmış olması kaydıyla, bu tutarın
-            önemli bir kısmı 2026 yetkinlik projesi üst limiti (73.990.020
-            TL) dahilinde desteklenebilir.
+            Temsili bir otomotiv yan sanayi üreticisi, küresel bir ana
+            sanayiye tedarikçi olabilmek için gerekli kalite sertifikasyonu,
+            test/analiz ve denetim danışmanlığı sürecine{" "}
+            <strong>5.000.000 TL</strong> harcıyor. Proje ön onayı alınmış
+            olması kaydıyla bu tutarın <strong>%50&apos;si, yani 2.500.000
+            TL&apos;si</strong> desteklenebilir; bu rakam 2026 üst limitinin
+            (73.990.020 TL) çok altında kaldığı için harcamanın tamamı
+            değerlendirmeye girer.
+          </p>
+        </div>
+
+        <h3 className="mb-6 mt-16 text-2xl font-bold text-[#071A2F]">
+          8.2. Yurt Dışı Depo Kira ve Depolama Hizmet Desteği
+        </h3>
+        <p className="mb-6 leading-8 text-gray-700">
+          Bu kalem, yurt dışındaki ana sanayiye{" "}
+          <strong>orijinal parça üreten ve/veya tedarik eden</strong>{" "}
+          şirketlerin, Türkiye&apos;de üretilen ürünlerini pazarladıkları
+          yurt dışı depo kira giderleri ile depolama hizmetlerini (yükleme,
+          boşaltma, elleçleme) kapsar.
+        </p>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">💰 Destek Oranı</h3>
+            <ul className="space-y-2 leading-8 text-gray-700">
+              <li>Temel oran: <strong>%50</strong></li>
+              <li>Hedef ülkeler listesindeki ülkeler için: <strong>+20 puan</strong> (%70&apos;e kadar)</li>
+              <li>Depodaki tüm ürünler hedef sektörlerdeyse: <strong>+5 puan ilave</strong> (%75&apos;e kadar)</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+            <h3 className="mb-3 text-xl font-bold text-[#071A2F]">📈 Üst Limit ve Süre</h3>
+            <ul className="space-y-2 leading-8 text-gray-700">
+              <li>2026 üst limiti: <strong>19.728.672 TL/yıl</strong></li>
+              <li>Her ülke için en fazla <strong>4 yıl</strong> yararlanılır</li>
+              <li>Bir şirket en fazla <strong>25 birim</strong> için destek alabilir</li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-white p-8 shadow-sm">
+          <h4 className="mb-3 text-xl font-bold text-[#071A2F]">
+            Örnek &mdash; Hedef Ülkede Depo Kirası
+          </h4>
+          <p className="leading-8 text-gray-700">
+            Yukarıdaki otomotiv yan sanayi üreticisi, ürünlerini
+            pazarladığı bir hedef ülkede yıllık{" "}
+            <strong>2.000.000 TL</strong> depo kirası ve depolama gideri
+            ödüyor. Ülke hedef ülkeler listesinde olduğu ve depodaki tüm
+            ürünler hedef sektörde yer aldığı için destek oranı{" "}
+            <strong>%75&apos;e</strong> çıkıyor; buna göre yıllık{" "}
+            <strong>1.500.000 TL</strong> desteklenebilir, bu tutar 2026
+            üst limitinin (19.728.672 TL) altında kaldığı için tamamı
+            değerlendirmeye girer.
+          </p>
+        </div>
+        <p className="mt-4 text-sm text-gray-500">
+          Kaynak: T.C. Sanayi ve Teknoloji Bakanlığı Yatırıma Destek
+          Platformu, &quot;Küresel Tedarik Zinciri Desteği Özet Bilgi
+          Formu&quot; ve Ticaret Bakanlığı &quot;Küresel Tedarik Zinciri
+          Desteklerine İlişkin Genelge&quot;.
+        </p>
+
+        <div className="mt-10 rounded-2xl border border-blue-200 bg-blue-50 p-8">
+          <h4 className="mb-3 text-lg font-bold text-blue-700">🔄 Başvuru Süreci</h4>
+          <p className="leading-8 text-gray-700">
+            Başvuru dönemi <strong>sürekli açıktır</strong>, belirli bir
+            çağrı takvimi yoktur. Hem KTZ yetkinlik projesi hem de yurt
+            dışı depo kira/depolama desteği için{" "}
+            <strong>ön onay zorunludur</strong>: gerekli belgelerle
+            birlikte Destek Yönetim Sistemi (DYS) üzerinden Ticaret
+            Bakanlığı İhracat Genel Müdürlüğü&apos;ne başvurulur. Ön onay
+            alındıktan sonraki harcamalar kapsama girer. Destek{" "}
+            <strong>ödemesi</strong> için ise ayrı bir başvuru, yine DYS
+            üzerinden incelemeci kuruluş olan İhracatçı Birlikleri Genel
+            Sekreterliği&apos;ne (İBGS) yapılır.
           </p>
         </div>
       </section>

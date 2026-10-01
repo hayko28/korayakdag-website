@@ -217,17 +217,6 @@ export default function BlogList({
     return defined;
   }, [rawCategories, t.other]);
 
-  const popularTags = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const raw of rawCategories) {
-      if (raw === t.other) continue;
-      counts.set(raw, (counts.get(raw) ?? 0) + 1);
-    }
-    return Array.from(counts.entries())
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 8);
-  }, [rawCategories, t.other]);
-
   const filtered = useMemo(() => {
     if (active === t.all) return posts;
     return posts.filter((post) => {
@@ -235,6 +224,23 @@ export default function BlogList({
       return raw === active || groupOf(raw, t.other) === active;
     });
   }, [posts, active, t.all, t.other]);
+
+  // Aktif filtre bir üst grupsa (ör. "Teşvikler & Destekler") etiketler o
+  // grubun kendi kurumlarına (KOSGEB, TÜBİTAK...) daralır; "Tümü" seçiliyken
+  // genel popüler etiketler gösterilir.
+  const popularTags = useMemo(() => {
+    const isGroupActive = active !== t.all && CATEGORY_GROUPS.some((g) => g.name === active);
+    const source = isGroupActive ? filtered : posts;
+    const counts = new Map<string, number>();
+    for (const post of source) {
+      const raw = primaryCategory(post.category, t.other);
+      if (raw === t.other) continue;
+      counts.set(raw, (counts.get(raw) ?? 0) + 1);
+    }
+    return Array.from(counts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, isGroupActive ? 20 : 8);
+  }, [posts, filtered, active, t.all, t.other]);
 
   const selectFilter = (name: string) => {
     const params = new URLSearchParams(searchParams.toString());
