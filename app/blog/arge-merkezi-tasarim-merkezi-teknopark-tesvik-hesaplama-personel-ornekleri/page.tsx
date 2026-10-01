@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "Ar-Ge Merkezi, Tasarım Merkezi, Teknopark Teşvik Hesaplama Örnekleri | Koray Akdağ",
-  description: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK primi desteği ve Ar-Ge indiriminin personel tablosu üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",
+  description: "22 kişilik Ar-Ge Merkezi, 11 kişilik Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK primi desteği ve Ar-Ge indiriminin personel tablosu üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",
   keywords: [
     "Ar-Ge Merkezi teşvik hesaplama",
     "Tasarım Merkezi teşvik hesaplama",
@@ -26,7 +26,7 @@ export default function ArgeTesvikHesaplamaPage() {
   return (
     <BlogLayout
       title="Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle"
-      description="15 kişilik bir Ar-Ge Merkezi, 10 kişilik bir Tasarım Merkezi ve bir Teknopark şirketi için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden nasıl hesaplandığını adım adım inceliyoruz."
+      description="22 kişilik bir Ar-Ge Merkezi, 11 kişilik bir Tasarım Merkezi ve bir Teknopark şirketi için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden nasıl hesaplandığını adım adım inceliyoruz."
       category="AR-GE MERKEZİ • TASARIM MERKEZİ • TEKNOPARK • 2026"
       date="2026"
       readTime="14 Dakika"
@@ -59,9 +59,11 @@ export default function ArgeTesvikHesaplamaPage() {
         <ul className="ml-6 list-disc space-y-2 marker:text-green-600">
           <li>Ar-Ge Merkezi'nde asgari 15 (bazı sektörlerde 30) tam zaman eşdeğer (TZE) Ar-Ge personeli şartı vardır; destek personeli bu sayının en fazla %10'u kadar olabilir.</li>
           <li>Tasarım Merkezi'nde asgari eşik 10 TZE tasarım personelidir, destek personeli sınırı aynı şekilde %10'dur.</li>
-          <li>Teknopark'ta genel bir minimum personel şartı yoktur; destek personeli sınırı da farklıdır, Ar-Ge/yazılım personeli sayısını aşamaz.</li>
+          <li>Teknopark'ta genel bir minimum personel şartı yoktur; destek personeli sınırı Ar-Ge ve tasarım personelinin %10'udur (toplam personeli 15'e kadar olan firmalarda %20).</li>
           <li>Gelir vergisi stopajı, Ar-Ge Merkezi ve Tasarım Merkezi'nde personelin eğitim durumuna göre %80, %90 veya %95 kademeli uygulanır.</li>
-          <li>Teknopark'ta ise uygun personelin ücretinden hesaplanan gelir vergisinin tamamı (asgari geçim indirimi sonrası kalan kısım) terkin edilir; eğitim durumuna göre kademe yoktur.</li>
+          <li>Teknopark'ta ise uygun personelin ücretinden hesaplanan gelir vergisinin tamamı (asgari ücret istisnası uygulandıktan sonra kalan kısım) terkin edilir; eğitim durumuna göre kademe yoktur.</li>
+          <li>Makine ve teçhizat alımında KDV istisnası hem Ar-Ge/Tasarım Merkezi'nde hem Teknopark'ta uygun Ar-Ge, yenilik ve tasarım faaliyetleri için uygulanabilir; Teknopark'ta ayrıca bölgede üretilen uygun yazılımın satışı da KDV'den istisnadır.</li>
+          <li>Stopaj teşviki, SGK işveren hissesi desteği ve Teknopark kazanç istisnası 31.12.2028 tarihine kadar uygulanır.</li>
           <li>SGK işveren primi desteği her üç yapıda da aynı mekanizmayla işler: uygun personelin prime esas kazancı üzerinden hesaplanan işveren payının yarısı Hazine tarafından karşılanır.</li>
           <li>Personel ay ortasında işe başlar veya ayrılırsa teşvik, fiilen çalışılan gün sayısına göre kıst olarak hesaplanır.</li>
         </ul>
@@ -123,13 +125,13 @@ export default function ArgeTesvikHesaplamaPage() {
                 <td className="p-4 font-semibold">Destek Personeli Sınırı</td>
                 <td className="p-4">Ar-Ge personeli sayısının %10'u</td>
                 <td className="p-4">Tasarım personeli sayısının %10'u</td>
-                <td className="p-4">Ar-Ge/yazılım personeli sayısını aşamaz</td>
+                <td className="p-4">Ar-Ge/tasarım personelinin %10'u (toplam personeli 15'e kadar olan firmalarda %20)</td>
               </tr>
               <tr className="border-b bg-white">
                 <td className="p-4 font-semibold">Gelir Vergisi Stopajı</td>
                 <td className="p-4">Eğitime göre kademeli: %80 / %90 / %95</td>
                 <td className="p-4">Eğitime göre kademeli: %80 / %90 / %95</td>
-                <td className="p-4">Kademesiz, verginin tamamı terkin (asgari geçim indirimi sonrası)</td>
+                <td className="p-4">Kademesiz, verginin tamamı terkin (asgari ücret istisnası sonrası kalan vergi)</td>
               </tr>
               <tr className="border-b bg-white">
                 <td className="p-4 font-semibold">SGK İşveren Primi Desteği</td>
@@ -142,6 +144,12 @@ export default function ArgeTesvikHesaplamaPage() {
                 <td className="p-4">Var (2 yıl, asgari ücret tutarında)</td>
                 <td className="p-4">Yok</td>
                 <td className="p-4">Yok</td>
+              </tr>
+              <tr className="border-b bg-white">
+                <td className="p-4 font-semibold">KDV İstisnası</td>
+                <td className="p-4">Ar-Ge faaliyetinde kullanılan yeni makine ve teçhizat alımı</td>
+                <td className="p-4">Tasarım faaliyetinde kullanılan yeni makine ve teçhizat alımı</td>
+                <td className="p-4">Bölgedeki Ar-Ge/yenilik/tasarım faaliyetinde kullanılan yeni makine ve teçhizat alımı; ayrıca bölgede üretilen uygun yazılım teslim ve hizmetleri</td>
               </tr>
               <tr className="bg-white">
                 <td className="p-4 font-semibold">Kurumlar/Gelir Vergisi İstisnası Kapsamı</td>
@@ -255,7 +263,7 @@ export default function ArgeTesvikHesaplamaPage() {
         <div className="space-y-4">
           {[
             { n: "1", t: "Çalışan SGK ve işsizlik sigortası kesintisi", d: "90.000 TL x %15 (SGK işçi payı + işsizlik sigortası işçi payı) = 13.500 TL" },
-            { n: "2", t: "Gelir vergisi matrahı", d: "90.000 TL - 13.500 TL = 76.500 TL (asgari geçim indirimi ve varsa diğer indirimler ayrıca düşülür)" },
+            { n: "2", t: "Gelir vergisi matrahı", d: "90.000 TL - 13.500 TL = 76.500 TL (asgari ücrete isabet eden kısım gelir vergisinden istisna edilir; örnek, sadelik için dilim oranı üzerinden gösterilmiştir)" },
             { n: "3", t: "Hesaplanan gelir vergisi (örnek dilim oranı)", d: "76.500 TL x %20 = 15.300 TL (gerçek tutar, ücretin kümülatif gelir vergisi tarifesindeki dilimine göre değişir)" },
             { n: "4", t: "5746 kapsamında %90 stopaj teşviki", d: "15.300 TL x %90 = 13.770 TL, bu tutar muhtasar beyanname üzerinden terkin edilir, Hazine tarafından karşılanır" },
             { n: "5", t: "İşverenin fiilen beyan ettiği gelir vergisi", d: "15.300 TL - 13.770 TL = 1.530 TL" },
@@ -293,7 +301,12 @@ export default function ArgeTesvikHesaplamaPage() {
             İş kazası ve meslek hastalığı prim oranı işkoluna göre %1,5 ile
             %7,5 arasında değişir; yukarıdaki %22,75 düşük riskli bir Ar-Ge
             ofisi için kullanılan örnek bir orandır, gerçek oran işyerinizin
-            tehlike sınıfına göre belirlenir.
+            tehlike sınıfına göre belirlenir. Ayrıca uygulamada önce
+            5510 sayılı Kanun kapsamındaki prim indirimi (4 puan, imalat
+            sektöründe 5 puan) uygulanır, destek bu indirimden sonra kalan
+            işveren payının yarısı üzerinden hesaplanır; bu nedenle yukarıdaki
+            tutar basitleştirilmiş bir gösterimdir ve gerçekte biraz daha
+            düşük çıkar.
           </p>
         </div>
 
@@ -499,12 +512,13 @@ export default function ArgeTesvikHesaplamaPage() {
         </div>
 
         <p className="mt-6 leading-8">
-          Destek personeli sayısı (2), Ar-Ge/yazılım personeli sayısını (6)
-          aşmadığından her iki destek personeli de istisnadan
-          yararlanabiliyor. Ar-Ge Merkezi'ndeki gibi katı bir %10 sınırı
-          burada geçerli değildir; sınır doğrudan Ar-Ge/yazılım personeli
-          sayısıdır. SGK işveren primi desteği ise Ar-Ge Merkezi ile aynı
-          mekanizmayla, işveren payının yarısı Hazine tarafından
+          Destek personeli sınırı Ar-Ge/yazılım personelinin %10'udur, ancak
+          toplam personeli 15'e kadar olan bölge firmalarında bu oran %20
+          uygulanır. Örnekteki firmanın toplam personeli 8 kişi olduğu için
+          oran %20'dir; 6 Ar-Ge/yazılım personelinin %20'si 1,2 eder ve
+          küsurat bir üst tam sayıya yuvarlanarak 2 destek personeline kadar
+          teşvik uygulanabilir. SGK işveren primi desteği ise Ar-Ge Merkezi
+          ile aynı mekanizmayla, işveren payının yarısı Hazine tarafından
           karşılanarak uygulanır.
         </p>
       </section>
@@ -572,15 +586,15 @@ export default function ArgeTesvikHesaplamaPage() {
               Ar-Ge Merkezi ve Tasarım Merkezi'nde oran personelin eğitim
               durumuna göre %80, %90 veya %95 olarak değişir. Teknopark'ta
               ise eğitim ayrımı yapılmaz, uygun personelin ücretinden
-              hesaplanan verginin tamamı (asgari geçim indirimi sonrası
+              hesaplanan verginin tamamı (asgari ücret istisnası sonrası
               kalan kısım) terkin edilir.
             </li>
             <li>
               <strong>Destek personeli sınırı her yapıda aynı formülle hesaplanmaz.</strong>{" "}
               Ar-Ge Merkezi ve Tasarım Merkezi'nde destek personeli, ilgili
               Ar-Ge/tasarım personeli sayısının %10'unu geçemez. Teknopark'ta
-              ise sınır doğrudan Ar-Ge/yazılım personeli sayısıdır, yüzde 10
-              gibi sabit bir oran uygulanmaz.
+              da sınır %10'dur, ancak toplam personeli 15'e kadar olan
+              bölge firmalarında %20 uygulanır.
             </li>
           </ul>
         </div>
@@ -797,7 +811,7 @@ export default function ArgeTesvikHesaplamaPage() {
               Merkezi ve Tasarım Merkezi'nde stopaj oranı personelin eğitim
               durumuna göre %80, %90 veya %95 olarak kademelidir. Teknopark
               mevzuatında ise eğitim ayrımı yapılmaz, uygun personelin
-              ücretinden hesaplanan verginin tamamı, asgari geçim indirimi
+              ücretinden hesaplanan verginin tamamı, asgari ücret istisnası
               sonrası kalan kısım üzerinden terkin edilir.
             </p>
           </div>
@@ -898,7 +912,7 @@ export default function ArgeTesvikHesaplamaPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1. Ar-Ge Merkezi'nde destek personeli sayısı %10'u aşarsa ne olur?","acceptedAnswer":{"@type":"Answer","text":"Destek personeli sayısı, Ar-Ge/tasarım personeli sayısının %10'unu aşarsa, teşvik brüt ücreti en düşük olan destek personelinden başlanarak sınır dahilindeki kişilere uygulanır; sınırı aşan kısım o dönem için teşvikten yararlanamaz."}},{"@type":"Question","name":"2. Ay ortasında işe başlayan bir Ar-Ge personeli için teşvik nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Teşvik, o ay için fiilen çalışılan gün sayısı üzerinden kıst olarak hesaplanır. Örneğin 30 günlük bir ayda 15 gün çalışan personelin brüt ücreti ikiye bölünerek kıst tutar bulunur ve gelir vergisi stopajı teşviki ile SGK işveren primi desteği bu kıst tutar üzerinden uygulanır."}},{"@type":"Question","name":"3. Teknopark'ta şirketin tüm cirosu KDV'den istisna mıdır?","acceptedAnswer":{"@type":"Answer","text":"Hayır. KDV istisnası yalnızca uygun yazılım/Ar-Ge geliştirme faaliyetinden elde edilen gelirlere uygulanır. Danışmanlık, donanım satışı veya bölge dışı faaliyetlerden elde edilen gelir normal KDV oranına tabidir ve istisna kapsamındaki gelirle ayrı hesaplarda izlenmesi gerekir."}},{"@type":"Question","name":"4. Tasarım Merkezi'nde temel bilimler mezunu personel desteği var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. 2 yıl süreyle asgari ücret tutarında sağlanan temel bilimler mezunu ek desteği yalnızca Ar-Ge Merkezleri için öngörülmüştür, Tasarım Merkezleri bu destekten yararlanamaz."}},{"@type":"Question","name":"5. Ar-Ge indirimi ile gelir vergisi stopajı teşviki aynı şey midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Ar-Ge indirimi, ilgili giderlerin kurumlar vergisi matrahından düşülmesini sağlayan bir kurumlar vergisi avantajıdır. Gelir vergisi stopajı teşviki ise personel ücretinden hesaplanan gelir vergisinin belirli bir oranının işveren tarafından Hazine'ye ödenmemesini sağlayan ayrı bir teşviktir; ikisi birlikte, ama farklı vergi türleri üzerinden uygulanır."}},{"@type":"Question","name":"6. Ar-Ge Merkezi'nin kademeli stopaj oranı ile Teknopark'ın tam istisnası neden farklı?","acceptedAnswer":{"@type":"Answer","text":"Bu iki teşvik farklı kanunlara (5746 ve 4691) dayanır. Ar-Ge Merkezi ve Tasarım Merkezi'nde stopaj oranı personelin eğitim durumuna göre %80, %90 veya %95 olarak kademelidir. Teknopark mevzuatında ise eğitim ayrımı yapılmaz, uygun personelin ücretinden hesaplanan verginin tamamı, asgari geçim indirimi sonrası kalan kısım üzerinden terkin edilir."}},{"@type":"Question","name":"7. SGK işveren primi desteği hangi kazanç üzerinden hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Destek, uygun Ar-Ge, tasarım, yazılım veya destek personelinin gerçek prime esas kazancı üzerinden hesaplanan sigorta primi işveren hissesinin yarısının Hazine ve Maliye Bakanlığı tarafından karşılanması şeklinde işler; her üç yapıda da (Ar-Ge Merkezi, Tasarım Merkezi, Teknopark) aynı mekanizma uygulanır."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1. Ar-Ge Merkezi'nde destek personeli sayısı %10'u aşarsa ne olur?","acceptedAnswer":{"@type":"Answer","text":"Destek personeli sayısı, Ar-Ge/tasarım personeli sayısının %10'unu aşarsa, teşvik brüt ücreti en düşük olan destek personelinden başlanarak sınır dahilindeki kişilere uygulanır; sınırı aşan kısım o dönem için teşvikten yararlanamaz."}},{"@type":"Question","name":"2. Ay ortasında işe başlayan bir Ar-Ge personeli için teşvik nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Teşvik, o ay için fiilen çalışılan gün sayısı üzerinden kıst olarak hesaplanır. Örneğin 30 günlük bir ayda 15 gün çalışan personelin brüt ücreti ikiye bölünerek kıst tutar bulunur ve gelir vergisi stopajı teşviki ile SGK işveren primi desteği bu kıst tutar üzerinden uygulanır."}},{"@type":"Question","name":"3. Teknopark'ta şirketin tüm cirosu KDV'den istisna mıdır?","acceptedAnswer":{"@type":"Answer","text":"Hayır. KDV istisnası yalnızca uygun yazılım/Ar-Ge geliştirme faaliyetinden elde edilen gelirlere uygulanır. Danışmanlık, donanım satışı veya bölge dışı faaliyetlerden elde edilen gelir normal KDV oranına tabidir ve istisna kapsamındaki gelirle ayrı hesaplarda izlenmesi gerekir."}},{"@type":"Question","name":"4. Tasarım Merkezi'nde temel bilimler mezunu personel desteği var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. 2 yıl süreyle asgari ücret tutarında sağlanan temel bilimler mezunu ek desteği yalnızca Ar-Ge Merkezleri için öngörülmüştür, Tasarım Merkezleri bu destekten yararlanamaz."}},{"@type":"Question","name":"5. Ar-Ge indirimi ile gelir vergisi stopajı teşviki aynı şey midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Ar-Ge indirimi, ilgili giderlerin kurumlar vergisi matrahından düşülmesini sağlayan bir kurumlar vergisi avantajıdır. Gelir vergisi stopajı teşviki ise personel ücretinden hesaplanan gelir vergisinin belirli bir oranının işveren tarafından Hazine'ye ödenmemesini sağlayan ayrı bir teşviktir; ikisi birlikte, ama farklı vergi türleri üzerinden uygulanır."}},{"@type":"Question","name":"6. Ar-Ge Merkezi'nin kademeli stopaj oranı ile Teknopark'ın tam istisnası neden farklı?","acceptedAnswer":{"@type":"Answer","text":"Bu iki teşvik farklı kanunlara (5746 ve 4691) dayanır. Ar-Ge Merkezi ve Tasarım Merkezi'nde stopaj oranı personelin eğitim durumuna göre %80, %90 veya %95 olarak kademelidir. Teknopark mevzuatında ise eğitim ayrımı yapılmaz, uygun personelin ücretinden hesaplanan verginin tamamı, asgari ücret istisnası sonrası kalan kısım üzerinden terkin edilir."}},{"@type":"Question","name":"7. SGK işveren primi desteği hangi kazanç üzerinden hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Destek, uygun Ar-Ge, tasarım, yazılım veya destek personelinin gerçek prime esas kazancı üzerinden hesaplanan sigorta primi işveren hissesinin yarısının Hazine ve Maliye Bakanlığı tarafından karşılanması şeklinde işler; her üç yapıda da (Ar-Ge Merkezi, Tasarım Merkezi, Teknopark) aynı mekanizma uygulanır."}}]}) }}
       />
     </BlogLayout>
   );
