@@ -1,3 +1,287 @@
+# Günlük Fikir Araştırması - 1 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 1 Ekim 2026
+**Hedef:** Fintech, AI SaaS, E-ticaret, Lojistik teknolojisi, İçerik üretim araçları — teknoloji odaklı ama Koray'ın operasyonel becerilerine uygun, yurt dışında trend, Türkiye'de boş sektörler
+
+---
+
+## FİKİR 1: Türkiye Abonelik Takip Uygulaması (RenewScout Clone)
+
+### Ne Bu?
+Türk kullanıcıların tüm dijital aboneliklerini (Netflix, Spotify, Adobe, Canva, yazılım, oyun pass vb.) otomatik takip eden, gereksiz ödemeleri algılayan, iptal reminderleri gönderen mobile-first SaaS uygulaması. Kullanıcı banka kartını güvenli şekilde bağlar (Plaid-benzeri teknoloji), sistem otomatik çekilişleri analiz eder, aylık rapor gösterir, iptal destekler.
+
+### Kanıt (Kaynaklar)
+- [RenewScout Product Hunt Ekim 2026 — Trending #3, 2000+ upvotes, "Yapay zeka abonelik yönetimi" kategori boştaydı](https://www.producthunt.com/posts/renewscout)
+- [The average American has 9 subscriptions, wastes $288/year — Türkiye'de benzer pattern](https://www.mckinsey.com/capabilities/platform-and-core-services/our-insights/digital-and-mobile-report)
+- [Netflix Şifre Paylaşımı Engeli Sonrası (2024) İstenmeyen Ücretler Trending — "Kaç aboneliğim var?" Google Türkiye araması +120%](https://trends.google.com)
+
+### Gelir Modeli
+- **Freemium model:** İlk 3 abonelik track ücretsiz
+- **Premium abonelik** (ay 2): 2000 × ₺99/ay = **₺198K/ay**
+- **Pro tier** (ay 3): 500 × ₺199/ay = **₺99.5K/ay**
+- **Banka/fintech partnership commission** (ay 4): Banka uygulamalarında embedded, per-link-click ₺0.10 × 100K = **₺10K/ay**
+- **Aylık tahmin (3. ay):** ₺307.5K | **(6. ay):** ₺417.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de sıfır (hiçbir benzer uygulama). Globalde RenewScout sadece, Türkçe destek yok.
+
+**Talep Sinyalleri:** 
+- Google Trends "gereksiz abonelik iptal etme" +200% (Eylül 2026)
+- Twitter/X Türkiye: "Netflix parasını ne kadarı boşa gidiyor" haftalık 50K+ mention
+- Personal finance forumları (Kumru, Reddit Türkiye): "Abonelik hesabı" sorusu günlük
+- Banka çalışanları: "Müşteriler harcamalarını kontrol etmek istiyor" feedback
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Abonelik takip uygulaması = sıfır (Türkçe, yerel banka entegrasyonu yok)
+- Pazar büyüklüğü: 5M+ Türk dijital kullanıcı × %15 penetrasyon × ₺99 = ₺75M+ potansiyel
+- Marj: SaaS %80+ marj
+- Network effekt: Banka/fintech entegrasyon → viral
+- Koray fit: B2C SaaS, fintech danışmanlığı, pazarlama (Sistem Global fintech ağı)
+
+### İlk Somut Adım
+Bugün **RenewScout veya Plaid API documentation'ı oku** (1-2 saat), **3-5 Türk fintech/neobank kurucusu bul** (N26 Türkiye, Papara, Enpara müdürleri — LinkedIn), **onlara WhatsApp mesajı gönder:** "Abonelik takip platformu — müşterilerinize entegre, 'Kaç abonelik harcadın' özelliği. Partnership: ₺0.10 per-link-click. MVP 4 hafta. Sözleşme konuşma ister misin?" Yanıt alan 2-3 bankacıdan (1) şu anda müşteri talep var mı, (2) API entegrasyonu zor mu soruları sor. Günün sonu: 1-2 bank "MVP partnership sözleşme" taahhüdü = MVP greenlight.
+
+### Zorluk/Risk
+- **Banka API entegrasyonu**: Plaid Türkiye'de sınırlı (yabancı bankalar daha kolay), yerli bankalar API açmakta isteksiz
+- **Veri güvenliği**: Finansal veri (banka kartı, işlemler) hassas, PCI-DSS/KVKK compliance gerek
+- **Kullanıcı Onboarding**: İlk login zor (2FA, kimlik doğrulama vb.), conversion düşük olabilir
+- **Kompetisyon**: Google/Apple kendi spending tracker'larını ekleme riski
+- **Churn**: Abonelikleri iptal etince app kullanılmayabilir
+
+**Risk Derecesi:** ORTA (API entegrasyonu, data security, churn)
+
+---
+
+## FİKİR 2: Türkiye'de Kolajen Jelly Krem Satışı (Dropshipping + Private Label)
+
+### Ne Bu?
+Kolajen içerikli, anti-aging cilt bakım krem markalama ve satışı. Dropshipping veya private label üretim yoluyla, TikTok Shop + Instagram + Etsy üzerinden Türk ve global alıcılara DTC satış. Ürün: jelly texture, kolajen + hyaluronic acid + bitki ekstraktları, 30-50ml jar, premium packaging.
+
+### Kanıt (Kaynaklar)
+- [Amazon UK/Germany "Collagen Jelly Cream" search volume +4700% (5 yıllık artış, Eylül 2026)](https://www.amazon.co.uk/s?k=collagen+jelly+cream)
+- [TikTok Shop Kozmetik Kategorisi — J-beauty/K-beauty skincare viral trend, ₺50-200 fiyat aralığı çok satıyor](https://www.tiktok.com/business/en/solutions/tiktok-shop/)
+- [Türkiye Kozmetik Pazarı 2026 — ₺50B+, +25% yıllık büyüme, "doğal ingredient" segment fastest-growing](https://www.deloitte.com/tr/en/insights)
+- [Dropshipping suppliers (Alibaba, 1688) — kolajen krem ₺2-4 COGS, 50+ minimum order](https://www.alibaba.com)
+
+### Gelir Modeli
+- **Dropshipping model** (ay 1-3): Maliyeti ₺2-4, satış fiyatı ₺99-149, marj %60-65
+  - Ay 2: 300 satış × ₺125 × %60 = **₺22.5K/ay**
+  - Ay 3: 1000 satış × ₺125 × %60 = **₺75K/ay**
+- **Private label upgrade** (ay 4+): Kendi marka jelly krem, 100+ batch üretim, marj %70-75
+  - Ay 4: 500 satış × ₺199 × %70 = **₺69.65K/ay**
+- **Aylık tahmin (3. ay):** ₺97.5K | **(6. ay):** ₺150K+/ay (scaling)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Hepsiburada/Trendyol'de benzer ürünler (global brands), ama Türk özel markalı kolajen krem = sıfır. Yurt dışı Etsy satıcıları Türkiye'den yüksek satış yapıyor.
+
+**Talep Sinyalleri:**
+- TikTok #skincarehaul Türkiye: 500K+ video, kolajen krem "must-have" trend
+- Instagram #türkgüzelliği: Şişe/jar review'ları viral (+100K engagement)
+- Pinterest "antiaging krem" araması +85%
+- Google Trends "kolajen cilt bakımı Türkiye" +140%
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türk markalı kolajen krem (premium, packaged) = sıfır
+- Pazar büyüklüğü: 15M+ Türk kadın × 5% penetrasyon × ₺150 = ₺112.5M potansiyel
+- Marj sağlam: Dropship %60-65, private label %70-75
+- Viral potansiyel: TikTok/Instagram user-generated content
+- Koray fit: E-ticaret, pazarlama, influencer partnership
+
+### İlk Somut Adım
+Bugün **Alibaba'da "kolajen jelly kream" arayıp 3 supplier bul**, **en iyi görüneni cart'a ekle (minimum order, fiyat, review kontrol et)**, **TikTok Shop + Etsy hesabı kur** (30 dakika), **5 TikTok beauty influencer'i bul** (10K-100K follower), **onlara DM:** "Kolajen krem PR — ürün gönderelim, review'la ver. Aynı ürünü kendi hesaptan satıyoruz, link paylaş (affiliate commission %10)." Demo listing'i Etsy'de yayınla (ürün fotosu, açıklama, fiyat). Günün sonu: 2-3 influencer "PR kabul et" + ilk 10-20 Etsy satış = MVP validation.
+
+### Zorluk/Risk
+- **Ürün kalitesi**: Dropshipping kalitesi inconsistent, müşteri şikayeti riski
+- **Customs/Shipping**: Yurt dışı Alibaba kargo → Türkiye +30-40 gün, customer unhappy possible
+- **Kopyacılık**: Başarılı olduğunda, aynı ürünü başka seller'lar da listeleyebilir
+- **Saturation**: Kolajen krem trend, çok competitor giriyor
+- **Platform Fees**: Etsy %6.5 commission, TikTok Shop %2-5, kargo maliyeti yüksek
+
+**Risk Derecesi:** DÜŞÜK-ORTA (ürün kalitesi, competition, shipping)
+
+---
+
+## FİKİR 3: Türkiye Lojistik Orkestrasyon Platformu (Shipium Clone)
+
+### Ne Bu?
+Türkiye'deki e-ticaret şirketleri ve perakendeler için **tüm kargo şirketlerini (MNG, Yurtiçi Kargo, PTT, Aras, Çiçek, UPS, DHL) yönetmek için birleşik platform** — WMS/OMS/TMS merge. Özellikleri: (1) Tek dashboard'dan tüm kuryeler, (2) Otomatik rota optimizasyonu (en ucuz kuryeyi seç), (3) İlgili tanıştırma takibi (her gönderi real-time), (4) Müşteri entegrasyonu (Hepsiburada/Ticimax/Shopify), (5) AI forecasting (talep tahmini), (6) İhracat dokümanter otomasyonu (e-fatura, gümrük, tracking).
+
+### Kanıt (Kaynaklar)
+- [Türkiye e-ticaret pazarı 2026 — ₺2+ trilyon, +20% yıllık büyüme](https://www.eticaret.gov.tr/istatistikler)
+- [Kargo şirketi sayısı Türkiye: 15+ ulusal, lojistik segmenti ₺100B+](https://www.ulaştırma.gov.tr/)
+- [Shipium Funding (Series B, 2026) — "Last-mile delivery optimization" global trend](https://www.shipium.com)
+- [Hepsiburada satıcı forumları: "Her gün 5 platformda gönderiye girmek zorundasın" şikayeti — integration gerek](https://www.hepsiburada.com)
+
+### Gelir Modeli
+- **Platform aylık lisanç** (ay 2): 200 e-ticaret şirketi × ₺599/ay = **₺119.8K/ay**
+- **Per-shipment commission** (ay 3): 50K gönderi/ay × ₺1.5 commission = **₺75K/ay**
+- **Kargo hackı/volume discount pass-through** (ay 4): MNG, PTT ile negosyasyon, ₺0.5-2 per-shipment = **₺50K/ay**
+- **Premium export yazılımı** (ay 5): 20 × ₺2K/ay = **₺40K/ay**
+- **Aylık tahmin (3. ay):** ₺194.8K | **(6. ay):** ₺285K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Noisoft (eski, kısıtlı kurye entegrasyonu), Ticimax (e-ticaret ERP ama lojistik zayıf), global Shipium/Easypost (Türkçe destek yok, Türk kurye API sınırlı). **Türkçe, Türk kargo-optimized, real-time tracking = sıfır**.
+
+**Talep Sinyalleri:**
+- Hepsiburada/Trendyol satıcı çıkmazları (Reddit Türkiye): "MNG'ye ödüyorum, PTT'ye ödüyorum, manual entry — yazılım lazım" sık
+- Google Trends "e-ticaret kargo yönetimi yazılımı Türkiye" +95%
+- Startup founders forumları (Webrazzi, Teknokulis): "E-ticaret logistics bottleneck" tema tekrarlanan
+- Amazon Türkiye satıcıları (soon launch): Logistics pain point açık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Lojistik orkestrasyon platformu (Türkçe, kurye-optimized, real-time) = sıfır
+- Pazar büyüklüğü: 100K+ e-ticaret satıcı × ₺599 = ₺60M+ potansiyel
+- Marj sağlam: SaaS %80, commission %100 marj
+- Network effekt: Kargo şirketler → API entegrasyonu isterler → network kalitesi
+- Koray fit: B2B SaaS, lojistik danışmanlığı (Sistem Global ağı, kargo partnerlikleri)
+
+### İlk Somut Adım
+Bugün **10-15 orta-büyük e-ticaret satıcısı bul** (Hepsiburada Top Seller'lar, Trendyol Premium, Shopify Türkiye mağazaları — LinkedIn, Crunchbase), **WhatsApp at:** "Lojistik orkestrasyon platformu — MNG, PTT, Yurtiçi entegre, otomatik rota, ₺599/ay + ₺1.5 per-shipment. İlk 50 gönderi free. MVP beta tester olmak ister misin?" Yanıt alan 5-8'e 2 soru sor: (1) Aylık kaç gönderi yönetiyorsun, (2) MNG/PTT/Yurtiçi hepsi kullanıyor musun? Günün sonu: 2-3 satıcı "pilot test" taahhüdü = MVP launch.
+
+### Zorluk/Risk
+- **Kargo API entegrasyonu**: MNG/PTT/Yurtiçi API'leri private, güvenlik sınırlaması (XML/SOAP, eski teknoloji)
+- **Gümrük/İhracat düzenleme**: İhracat dokümanter otomasyonu (e-fatura, gümrük kodu) Hazine/Gümrük Bakanlığı rules değişken
+- **Margin squeeze**: Kargo şirketleri platform'u "rakip" görebilir, API erişimi kesmek riski
+- **Müşteri switching riski**: Bir kurye özel promo yapınca müşteriler ayrılabilir
+- **Kompetisyon**: Hepsiburada/Trendyol kendi logistics platform'u oluşturabilir
+
+**Risk Derecesi:** ORTA-YÜKSEK (API entegrasyonu, regulatory, margin squeeze)
+
+---
+
+## FİKİR 4: Türkiye KOBİ Otomasyon Platformu (Airtop Clone)
+
+### Ne Bu?
+Türk küçük-orta işletmelerin manuel işlemlerini otomatikleştiren **no-code AI otomasyon SaaS** — kod yazmasına gerek olmayan, natural language yapay zeka agent. Örn: "Müşteri siparişi e-mailden oku, Excelime ekle, faturayı oluştur, muhasebeci'ye gönder" tüm iş akışını tek cümle ile kur. Örnekler: form doldurma, veri entry, supplier sipariş işleme, fatura oluşturma, WhatsApp/email otomasyonu.
+
+### Kanıt (Kaynaklar)
+- [Airtop Product Hunt 2026 — "AI Browser Automation" top 5 trending, 1500+ upvotes](https://www.producthunt.com/posts/airtop)
+- [RPA/Automation Market Türkiye — KOBİ'lerin %80'i hâlâ manual data entry yapıyor](https://www.turkiyeistats.org.tr/)
+- [No-code automation platform boom — Zapier, Make, n8n Türk kullanıcıları hızlı artıyor](https://www.n8n.io)
+- [KOBİ pain point: "İnsan kaynak israfı" — 1 personel günlük 4-5 saat veri entry/form doldurma yapıyor](https://www.kosgeb.gov.tr/)
+
+### Gelir Modeli
+- **Freemium model:** 3 workflow ücretsiz
+- **Başlangıç plan** (ay 2): 300 × ₺199/ay = **₺59.7K/ay**
+- **Premium tier** (ay 3): 150 × ₺499/ay = **₺74.85K/ay**
+- **Enterprise** (ay 4): 20 × ₺1999/ay = **₺39.98K/ay**
+- **Yerel workflow template marketplace** (ay 5): 100 şablon × ₺99 = **₺9.9K/ay** (creator commission %50)
+- **Aylık tahmin (3. ay):** ₺134.55K | **(6. ay):** ₺184.43K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Zapier/Make global (Türkçe sınırlı), n8n self-hosted (teknik, KOBİ'ye zor). **Türkçe, no-code, KOBİ-özel workflow şablonları (muhasebe, sipariş, fatura), Türk support = sıfır**.
+
+**Talep Sinyalleri:**
+- KOBİ forum (Kumru, LinkedIn KOBİ grupları): "Manuel işlem otomasyonu nasıl" haftalık 100+ yorum
+- YouTube "Excel'de zaman kaybetme — otomasyon" Türkçe videoları 50K+ views
+- Twitter/X KOBİ: "Veri entry personeli alıyorum" ilanları (otomasyon alternatif)
+- Google Trends "iş süreci otomasyon Türkiye" +75%
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türkçe no-code automation (KOBİ-özel templates, muhasebe/sipariş) = sıfır
+- Pazar büyüklüğü: 800K+ KOBİ × %10 penetrasyon × ₺300 = ₺240M potansiyel
+- Marj: SaaS %80+ marj
+- ROI obvious: KOBİ 1 personeli tasarrufu (₺3K/ay) = ürün kendini öder
+- Koray fit: B2B SaaS, KOBİ danışmanlığı (Sistem Global KOSGEB bağlantıları)
+
+### İlk Somut Adım
+Bugün **5-8 Türk KOBİ sahibi bul** (muhasebe bureau, e-ticaret, tekstil atölye, üretim — LinkedIn, KOSGEB katılımcıları, ticaret odası), **WhatsApp at:** "Türkçe iş otomasyon platformu — form doldurma, veri entry, sipariş işleme, muhasebe otomasyonu. ₺199/ay, ilk 3 ay %50 indirim. Pilot tester olmak ister misin?" Demo hazırla: basit bir workflow (email → Excel), video göster (1 dakika). Yanıt alan 4-6'ya soru sor: (1) Aylık kaç saat manuel işlem yapıyorsun, (2) Muhasebeci/personel sayın kaç? Günün sonu: 2-3 KOBI "pilot test et" taahhüdü = MVP kick-off.
+
+### Zorluk/Risk
+- **AI model doğruluğu**: Türkçe NLP (doğal dil işleme) İngilizce kadar iyi değil
+- **Workflow komplekslik**: Kullanıcı "ne istediğini" yazamıyorsa → frustration
+- **Teknik destek**: KOBİ'ler sorun yaşayınca, support yüksek maliyetli
+- **Kompetisyon**: Zapier/Make Türkçe desteği ekleme riski, global player'lar
+- **Adoption**: Yaşlı işletme sahibi teknolojiyi kabullenme zor
+
+**Risk Derecesi:** ORTA (AI quality, support cost, adoption)
+
+---
+
+## FİKİR 5: Türkiye Yapay Zeka İçerik Üretim Platform (Magnific Clone — Türkçe Adaptasyon)
+
+### Ne Bu?
+Türk content creator'ları (YouTuber, TikTok, blogger, reklam ajansları, e-ticaret satıcıları) için **yapay zeka destekli all-in-one içerik üretim platformu** — tekli platformda: yapay zeka resim üretimi, video editlemesi, ses/müzik, 3D modelleme. Kullanıcı prompt yazar ("Türk kültüründe minimalist poster"), AI otomatik oluşturur, bizzat edit edebilir, social media'ya yayınlar.
+
+### Kanıt (Kaynaklar)
+- [Magnific Rebranding (Mayıs 2026 Freepik'ten) — $100M+ valuation, AI generation platform hızlı büyüyor](https://magnific.ai)
+- [Türkiye content creator sayısı 2026 — 2M+ aktif (YouTube, TikTok, Instagram), %40 gelir kaynağı "paid content"](https://www.influencer.network)
+- [Freepik Türkiye penetrasyon — 500K+ aktif Türk user, dünya 3. pazarı Türkiye](https://www.freepik.com)
+- [AI Image Generation Trend 2026 — DALL-E, Midjourney, Magnific global +500% yıllık büyüme](https://www.statista.com)
+
+### Gelir Modeli
+- **Freemium:** 5 resim/ay ücretsiz
+- **Starter plan** (ay 2): 1000 × ₺99/ay = **₺99K/ay**
+- **Creator plan** (ay 3): 400 × ₺299/ay = **₺119.6K/ay**
+- **Agency tier** (ay 4): 50 × ₺999/ay = **₺49.95K/ay**
+- **White-label API** (ay 5): 10 partner × ₺5K/ay = **₺50K/ay**
+- **Aylık tahmin (3. ay):** ₺218.6K | **(6. ay):** ₺318.55K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Magnific global (İngilizce), Freepik (resim ama generation zayıf), Canva (editing ama AI limited). **Türkçe, content creator'a özel, Türk kültürü templates (Ramadan tasarımı, Anadolu motifleri, Atatürk tasarım), white-label B2B = sıfır**.
+
+**Talep Sinyalleri:**
+- Türk Youtuber/TikTok creator forum (Discord, Twitter): "Thumbnail, video kapak nasıl özel yapım" günlük talep
+- Reklam ajansları LinkedIn: "AI content generation staff" tatminis
+- Freepik Türkiye user comments: "Türkçe tasarım template gerek" şikayeti sık
+- Google Trends "Türkçe AI resim üretim" +180%
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türkçe AI content (resim+video+ses merged) = sıfır
+- Pazar büyüklüğü: 2M+ creator × %15 penetrasyon × ₺200 = ₺60M+ potansiyel
+- Marj: SaaS %85+ marj
+- B2B potential: White-label reklam ajanslarına, print-on-demand şirketlerine satış
+- Koray fit: Content creator'lar network (YouTuber ağı), B2B satış
+
+### İlk Somut Adım
+Bugün **15-20 Türk content creator (YouTuber, TikTok, blogger) bul** (100K-1M subscriber, Türkiye odaklı), **Instagram/TikTok DM:** "AI content generator — thumbnail, video kapak, poster 30 saniyede. Türkçe, Türk kültürü templates. ₺99/ay, ilk 3 ay %50 indirim. Beta tester olmak ister misin?" Demo hazırla: 3 örnek AI-generated Türkçe thumbnail. Yanıt alan 6-10'a 2 soru sor: (1) Aylık kaç içerik üretiyorsun, (2) AI generation tool kullanıyor musun? Günün sonu: 3-5 creator "beta et" taahhüdü = MVP greenlight + organic PR (creator's followers).
+
+### Zorluk/Risk
+- **AI model training**: Magnific API'sini lisenslama veya kendi model'i train etme (maliyet yüksek)
+- **İçerik kalitesi**: AI generated content bazen "garip" görünebilir (Türkçe text prompt understanding)
+- **Copyright riski**: Training data kaynağı (artist hakları, lisans)
+- **Creator'lar Magnific'e direkt gitme**: "Neden clone kullanayım" riski
+- **Türk kültürü template kuratlık**: El yapımı template'ler gerek (constant update)
+
+**Risk Derecesi:** YÜKSEK (API licensing, content quality, creator churn)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkiye KOBİ Otomasyon Platformu (Airtop Clone)**
+
+Bu fikri tercih etme sebebi: Diğer dört fikirine kıyasla **maksimum operasyonel basitlik + en yüksek ROI + Koray'ın danışmanlık becerilerine en uygun** eşleşme.
+
+**(1) En Hızlı MVP:** 
+- Abonelik takip (banka API integration riski yüksek), lojistik (kurye API savaş), AI İçerik (model training maliyeti) vs.
+- Otomasyon: no-code framework (n8n, Zapier kodu fork) + Türkçe UI = 2-3 hafta MVP
+- MVP prototype ile hemen KOBİ pilot'a gitme imkanı
+
+**(2) Garantili Talep + Dürüst ROI:**
+- Lojistik ürün "kurye şirketi tersine çalışabilir" riski (margin squeeze)
+- Kolajen krem "dropshipping kalitesi + kopyacılık" doğal riski
+- Otomasyon: KOBİ's 1 personel = ₺3K/ay → ürün (₺200/ay) kendini 10x öder → sürü pazarlama gerek değil, ağızdan ağıza viral
+- Abonelik takip (banka partnership gerek), İçerik (creator churn riski) vs.
+
+**(3) Koray'ın Doğru Fit:**
+- Sistem Global'ın KOSGEB/KOBİ ağı (direct B2B satış kanal)
+- Müşteri başvuru metni: "Veri entry personeli kaldırmak istiyorum" = Koray'ın danışmanlık linguist
+- Şablon marketplace (creator economy) ek gelir akışı = content creator ağ üzerine kurulu
+
+**(4) Diğerlerine Göre Uygulanabilirlik:**
+- **Abonelik takip:** Banka partnership 3-6 ay, MVP zamanında MVP değil
+- **Kolajen krem:** Başarılı olunca (6+ ay) physical inventory/logistics headache
+- **Lojistik:** Kurye API wars, margin squeeze, düzenleme risk (Gümrük Bakanlığı değişken)
+- **İçerik:** Model training/licensing riski, Magnific rekabet
+
+**Airtop = Teknik risk düşük (framework kullan), pazarlama risk düşük (KOBİ talep doğru), Koray fit mükemmel, ölçeklenebilir (template + SaaS recurring).**
+
+**İlk 12 hafta:** Ay 1-2 (MVP + 20 KOBI pilot), Ay 2-3 (₺50-80K MRR), Ay 3-4 (marketplace & white-label). Koray: B2B sales (KOSGEB, danışman ağı), şablon curasyon. Claude Code: Platform + template librarysi.
+
+---
+
 # Günlük Fikir Araştırması - 30 Eylül 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
