@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "arge-muhendisi-maasinin-vergi-kalemi",
+    title: "Bir Ar-Ge Mühendisinin Maaşındaki Vergi Kalemi Kime Ait?",
+    excerpt:
+      "Brüt 90.000 TL maaşlı bir Ar-Ge mühendisi için aylık gelir vergisi örnek hesapta 15.300 TL çıkıyor, Ar-Ge Merkezi belgesiyle bunun 13.770 TL'si terkin ediliyor. Tek bir belgenin bordroya etkisi.",
+    tag: "Devlet Destekleri",
+    date: "1 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "e-ihracat-destek-limitleri-depo-kira-destegi-kalkti",
     title:
       "E-İhracat Destek Limitleri Yüzde 29,28 Arttı, Ama Bir Kalem Tamamen Kalktı",
