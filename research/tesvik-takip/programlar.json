@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-09-29",
+  "sonGuncelleme": "2026-10-01",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -681,7 +681,7 @@
       "id": "yad-kosgeb-kuresel-rekabetcilik-destek-programi",
       "ad": "Küresel Rekabetçilik Destek Programı",
       "kurum": "KOSGEB",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-09-30",
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi",
       "ilkTespitTarihi": "2026-08-26",
