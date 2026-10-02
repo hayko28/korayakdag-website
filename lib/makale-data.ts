@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "teklif-sonrasi-takip-sureci",
+    title: "Teklif Sonrası Sessizlik: Satış Sürecinin Yönetilmeyen Kısmı",
+    excerpt:
+      "Bir teklifin kaybedilme sebebi çoğu zaman fiyat değil, gönderildikten sonraki takibin bir kişinin hafızasına bırakılması. Danışmanlık pratiğinde görülen üç aşamalı takip planı, bu sessiz süreci şansa değil sisteme bağlıyor.",
+    tag: "Strateji",
+    date: "2 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "arge-muhendisi-maasinin-vergi-kalemi",
     title: "Bir Ar-Ge Mühendisinin Maaşındaki Vergi Kalemi Kime Ait?",
     excerpt:
