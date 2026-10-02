@@ -1,3 +1,151 @@
+# Günlük Fikir Araştırması - 2 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 2 Ekim 2026
+**Hedef:** Sağlık/wellness, evcil hayvan, spor/fitness, ev tamiratı, iç tasarım — fiziksel hizmetler, lokal işletmeler
+
+---
+
+## FİKİR 1: Türkiye Evcil Hayvan Hizmetleri Pazaryeri (Rover/Wag Modeli)
+
+### Ne Bu?
+Evcil hayvan sahipleri ile veteriner, groomer, pet sitter, trainer bağlayan marketplace.
+
+### Kanıt (Kaynaklar)
+- Rover 300K+ sitter, 5M+ pet owner; Türkiye 8M+ pet sahip × ₺80B+/yıl, +18% büyüme
+- Google Trends "köpek bakıcısı" +140%, Instagram #köpekstyle 500K+ post
+
+### Gelir Modeli
+- Commission 20%: (100 × 200 TL) × %20 = ₺4K/ay (ay 2)
+- Vet randevu: (150 × 500 TL) × %10 = ₺7.5K/ay (ay 3)
+- Premium + trainer: ₺10.92K/ay (ay 4-5)
+- **Ay 3:** ₺11.5K | **Ay 6:** ₺25.42K/ay
+
+### Türkiye Pazar Uyumu
+Rakip yok (Rover/Wag global, Türkçe yok). Pazar ₺320M.
+
+### İlk Somut Adım
+10-15 sitter bul (Instagram #petgroomerturkey), WhatsApp: "Marketplace — ₺99/ay profil, %20 commission." Cevap: ayda kaç hizmet, online booking mi gerek? Sonuç: 3-5 sitter "start" = MVP.
+
+### Risk: ORTA (vetting, legal)
+
+---
+
+## FİKİR 2: Türkiye Ev Tamirat On-Demand (Handy)
+
+### Ne Bu?
+Ev sahipleri × tesisatçı/elektrikçi/boyacı → aynı gün booking marketplace.
+
+### Kanıt (Kaynaklar)
+- Handy 100K+, $10B+ valuation; Türkiye ₺200B+, +22%, "teknisyen bulamıyorum" viral
+- Google "tesisatçı" 5000+ günlük, Twitter haftalık trend
+
+### Gelir Modeli
+- Commission 25%: (200 × 400 TL) × %25 = ₺20K/ay (ay 2)
+- Premium + acil + sigorta: ₺13.9K/ay (ay 3-5)
+- **Ay 3:** ₺27.45K | **Ay 6:** ₺44.9K/ay
+
+### Türkiye Pazar Uyumu
+Rakip zayıf (Ustam.com matching zayıf). Pazar 20M ev × 10% = ₺800M.
+
+### İlk Somut Adım
+8-12 teknisyen bul (Ustam, Instagram #tesisatçı), WhatsApp: "Marketplace — ₺149/ay, %25 commission, aynı gün kazanç." Cevap: ayda kaç iş, 24/7 yap? Sonuç: 2-3 teknisyen "start" = MVP.
+
+### Risk: ORTA-YÜKSEK (kalite, sigorta, bağlılık)
+
+---
+
+## FİKİR 3: Türkiye Mental Sağlık Wellness (Headspace)
+
+### Ne Bu?
+Türk kullanıcılar — meditasyon, stres/anksiyete, online terapist, uyku müziği, mood tracking.
+
+### Kanıt (Kaynaklar)
+- Headspace $3B+, Calm $2B+; Türkiye anksiyete %22, depresyon %18, terapist eksikliği
+- Google Trends "meditasyon" +210%, Twitter "terapist bulamıyorum" viral
+
+### Gelir Modeli
+- Freemium: 2000 × ₺99 = ₺198K/ay (ay 2)
+- Terapist: 300 × ₺199 = ₺59.7K/ay (ay 3)
+- Kurumsal + sleep: ₺84.47K/ay (ay 4-5)
+- **Ay 3:** ₺257.7K | **Ay 6:** ₺362.17K/ay
+
+### Türkiye Pazar Uyumu
+Rakip İngilizce (Headspace, Calm). Pazar 40M risk × 5% = ₺200M.
+
+### İlk Somut Adım
+5-8 psikolog bul (Derneği, LinkedIn), Email: "Platform — meditasyon, terapist chat. %30 commission." Cevap: online seans yapabilir misin, content? Sonuç: 2-3 psikolog "50 seans test" = green.
+
+### Risk: YÜKSEK (legal, KVKK, içerik maliyeti)
+
+---
+
+## FİKİR 4: Türkiye Online İç Tasarım (Havenly)
+
+### Ne Bu?
+Ev sahipleri × tasarımcı → online konsultasyon: foto yükle, 3-5 konsept, shopping list.
+
+### Kanıt (Kaynaklar)
+- Havenly 30K+ designer, $200M+ ARR; Türkiye ₺50B+, +15%, online +200%
+- Pinterest "ev dekoru" 2M+ pin/ay, Instagram #evtasarım 400K+ post
+
+### Gelir Modeli
+- Designer + affiliate: 30K + 25K = ₺55K/ay (ay 2-4)
+- Premium: ₺5.98K (ay 3), 3D: ₺19.9K (ay 5)
+- **Ay 3:** ₺35.98K | **Ay 6:** ₺80.88K/ay
+
+### Türkiye Pazar Uyumu
+Rakip global (Türkçe yok). Pazar 10M ev × 5% × ₺2-5K = ₺100M-250M.
+
+### İlk Somut Adım
+10-15 tasarımcı bul (Instagram #içtasarımcıturkey), Instagram DM: "Platform — foto, 3-5 konsept, shopping list. ₺1500 × %20." Cevap: kaç proje/ay, online yapabilir? Sonuç: 3-5 "start" = MVP.
+
+### Risk: ORTA (tasarımcı kalitesi, affiliate, bağlılık)
+
+---
+
+## FİKİR 5: Türkiye Spor Antrenörlük On-Demand
+
+### Ne Bu?
+Fitness × personal trainer/beslenme koçu/yoga → booking, workout plan, progress tracking.
+
+### Kanıt (Kaynaklar)
+- Trainerize 50K+, $1B+; Future 500K+, $70M; Türkiye ₺80B+, +18%, trainer +150%
+- Google Trends "online trainer" +220%, Instagram #fitnessturkey 300K+ post
+
+### Gelir Modeli
+- Trainer commission: 500 × 200 TL × %20 = ₺20K/ay (ay 2)
+- Beslenme + tracking + sponsor: ₺44.5K/ay (ay 3-5)
+- **Ay 3:** ₺39.8K | **Ay 6:** ₺74.5K/ay
+
+### Türkiye Pazar Uyumu
+Rakip global (İngilizce). Pazar 5M aktif × 20% × ₺2K = ₺200M.
+
+### İlk Somut Adım
+8-12 ISSF/ISSA trainer bul (Instagram #personaltrainer, gym), Instagram DM: "%20 commission, ₺99/ay." Cevap: kaç seans/ay, online açık? Sonuç: 3-5 "start" = greenlight.
+
+### Risk: ORTA-YÜKSEK (sertifika, yaralanma, churn)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkiye Ev Tamirat On-Demand (Handy)**
+
+**(1) Immediate market need:** Teknisyen şikayeti viral (musluğu patladı = urgent, high conversion).
+
+**(2) Koray network:** Sistem Global teknik/lojistik ağı, gayrimenkul müşteri → direkt B2B satış (property management). Mental health/iç tasarım Koray ağında zayıf.
+
+**(3) Operasyon:** MVP 3-4 hafta. Mental health (psikolog lisansuluğu, KVKK) + iç tasarım (3D maliyeti) kompleks.
+
+**(4) Cash flow:** Immediate booking = hızlı para. Pet sitter/mental/fitness churn vs. tamirat predictable.
+
+**(5) Risk:** Handy = pratik talep + network + hafif operasyon + hızlı cash + yönetilebilir risk. Mental health legal riski yüksek, iç tasarım subyektif kalite, fitness churn.
+
+**İlk 10 hafta:** Ay 1 (5 teknisyen, 50 tamirat, ₺15K), Ay 2+ (25 teknisyen, ₺60K/ay).
+
+---
+
 # Günlük Fikir Araştırması - 1 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
