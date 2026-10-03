@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import NavDepthTracker from "@/components/NavDepthTracker";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -109,6 +110,7 @@ export default function RootLayout({
         {children}
         <WhatsAppButton />
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );

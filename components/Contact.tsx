@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import { GROUP_DEFS } from "@/components/Services";
+import { trackEvent } from "@/lib/analytics";
 
 export const OPEN_CONTACT_FORM_EVENT = "open-contact-form";
 
@@ -143,6 +144,7 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
       form.reset();
       setSelectedServices([]);
       setSubmissionState("success");
+      trackEvent("generate_lead", { method: "contact_form" });
     } else {
       setSubmissionState("error");
     }

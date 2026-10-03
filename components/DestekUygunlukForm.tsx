@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
+import { trackEvent } from "@/lib/analytics";
 import { HIZMET_HEDEF_SECENEKLERI, programaBagliHizmetleriBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
 
 type Girdi = Record<string, string>;
@@ -563,6 +564,7 @@ export default function DestekUygunlukForm() {
     const yeniSonuclar = await calistirAnaliz();
     if (yeniSonuclar) {
       if (ilkKezMi) {
+        trackEvent("generate_lead", { method: "destek_uygunluk" });
         setAcikSonuclar(new Set(yeniSonuclar.slice(0, 1).map((s) => s.programId)));
       }
       setDuzenleModuAcik(false);
