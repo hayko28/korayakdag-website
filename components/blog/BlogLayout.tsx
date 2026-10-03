@@ -76,7 +76,17 @@ export default function BlogLayout({
   // EN tarafında henüz çevrilmiş yazı listesi olmadığı için (TR statik
   // yazıların İngilizce karşılığı yok), "Diğer Blog Yazıları" bölümü EN
   // sayfalarda gösterilmiyor. TR davranışı değişmiyor.
-  const otherPosts = lang === "en" ? [] : BLOG_POSTS.filter((p) => p.slug !== slug);
+  const categoryTags = (value: string) =>
+    value.split("•").map((part) => part.trim()).filter((part) => part && !/^\d{4}$/.test(part));
+  const currentTags = categoryTags(category);
+  const relatedScore = (postCategory: string) =>
+    categoryTags(postCategory).filter((tag) => currentTags.includes(tag)).length;
+  const otherPosts =
+    lang === "en"
+      ? []
+      : BLOG_POSTS.filter((p) => p.slug !== slug).sort(
+          (a, b) => relatedScore(b.category) - relatedScore(a.category)
+        );
   const t = STRINGS[lang];
   const homeHref = lang === "en" ? "/en" : "/";
   const blogHref = lang === "en" ? "/en#blog" : "/#blog";
