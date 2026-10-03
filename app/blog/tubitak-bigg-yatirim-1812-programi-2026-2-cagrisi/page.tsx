@@ -26,12 +26,12 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="TÜBİTAK BiGG Yatırım (1812) Programı 2026-2 Çağrısı: 1.350.000 TL Yatırımı Hangi Şartlarla Alırsınız?"
-      description="Mükemmeliyet Mührü alan girişimcilere TÜBİTAK BiGG Fonu'ndan %3 hisse karşılığında 1.350.000 TL yatırım sağlayan BiGG Yatırım (1812) programının 2026-2 çağrısında kimler başvurabilir, şirket ne zaman kurulmalı, süreç nasıl işler? 30 Eylül 2026 son başvuru tarihiyle güncel rehber."
+      description="Mükemmeliyet Mührü alan girişimcilere TÜBİTAK BiGG Fonu'ndan %3 hisse karşılığında 1.350.000 TL yatırım sağlayan BiGG Yatırım (1812) programının 2026-2 çağrısında kimler başvurabilir, şirket ne zaman kurulmalı, süreç nasıl işler? 2026-2 çağrısı 30 Eylül 2026'da kapandı, sonraki çağrıya hazırlık için rehber."
       category="TÜBİTAK • BiGG YATIRIM • 2026"
       date="2026"
       readTime="12 Dakika"
       slug="tubitak-bigg-yatirim-1812-programi-2026-2-cagrisi"
-      programDurumu="acik"
+      programDurumu="kapali"
       sonBasvuruTarihi="30 Eylül 2026"
       coverImage="https://images.unsplash.com/photo-1712342109846-a8fcb1c883ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
@@ -45,7 +45,7 @@ export default function BlogPage() {
           <li>✔ Başvuru, hızlandırma programını (Aşama 1) tamamlayıp <strong>Mükemmeliyet Mührü</strong> alan girişimcilere açıktır.</li>
           <li>✔ Kazananlara <strong>%3 hisse karşılığında 1.350.000 TL</strong> yatırım yapılır (temiz teknolojilerde en yüksek 3 girişime %5 karşılığında 2.250.000 TL).</li>
           <li>✔ Şirket, Mükemmeliyet Mührü <strong>alındıktan sonra</strong> kurulur; erken kuruluş başvuruyu geçersiz kılabilir.</li>
-          <li>✔ 2026-2 çağrısında son başvuru <strong>30 Eylül 2026</strong>, değerlendirme 12 Ekim-20 Kasım 2026, destek başlangıcı 1 Ocak 2027 olarak planlanıyor.</li>
+          <li>✔ 2026-2 çağrısı <strong>30 Eylül 2026&apos;da kapandı</strong> (uzatma duyurusu yok); değerlendirme 12 Ekim-20 Kasım 2026, destek başlangıcı 1 Ocak 2027 olarak planlanıyor. Sonraki çağrıyı TÜBİTAK duyurularından takip edin.</li>
           <li>✔ Program, ayrıca yeni girişimcilerin fikir aşamasında başvurduğu klasik BiGG (1512) ile karıştırılmamalıdır.</li>
         </ul>
       </div>
@@ -112,13 +112,13 @@ export default function BlogPage() {
           </h3>
           <ul className="space-y-4 text-lg text-gray-700">
             <li><strong>Aşama 1: Hızlandırma/Kuluçka.</strong> TÜBİTAK tarafından yetkilendirilmiş uygulayıcı kuruluşlar (üniversite kuluçka merkezleri, teknopark hızlandırıcıları, özel hızlandırıcı kuruluşlar) üzerinden yürütülür; girişimci eğitim, mentorluk ve iş planı geliştirme desteği alır.</li>
-            <li><strong>Aşama 2: Tohum Öncesi Yatırım.</strong> Aşama 1&apos;i başarıyla tamamlayıp Mükemmeliyet Mührü alan girişimciler, kuracakları şirket üzerinden TÜBİTAK BiGG Fonu&apos;ndan hisse karşılığı yatırım alır. 2026-2 çağrısı bu aşama için açıldı.</li>
+            <li><strong>Aşama 2: Tohum Öncesi Yatırım.</strong> Aşama 1&apos;i başarıyla tamamlayıp Mükemmeliyet Mührü alan girişimciler, kuracakları şirket üzerinden TÜBİTAK BiGG Fonu&apos;ndan hisse karşılığı yatırım alır. 2026-2 çağrısı bu aşama için açılmıştı (30 Eylül 2026&apos;da kapandı).</li>
             <li><strong>Aşama 3: Tohum Yatırımı.</strong> Aşama 2&apos;de yatırım almış ve büyüme gösteren şirketlere, ek olarak %10&apos;a kadar hisse karşılığında büyüme yatırımı sağlanır.</li>
           </ul>
         </div>
         <p className="leading-8 text-gray-700">
           2026-2 çağrısı yalnızca <strong>Aşama 2 (Tohum Öncesi Yatırım)</strong>{" "}
-          için açık. Yani bu çağrıya başvurabilmek için girişimcinin daha
+          için açılmıştı (şu an kapalı). Yani bu çağrıya başvurabilmek için girişimcinin daha
           önce bir uygulayıcı kuruluşun hızlandırma programına katılmış ve
           bu süreci tamamlamış olması gerekiyor; sıfırdan, hiç hızlandırma
           sürecinden geçmeden doğrudan bu çağrıya başvurulamıyor.
@@ -301,7 +301,7 @@ export default function BlogPage() {
             <tbody>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold text-red-600">Son Başvuru Tarihi</td>
-                <td className="p-5 font-semibold text-red-600">30 Eylül 2026</td>
+                <td className="p-5 font-semibold text-red-600">30 Eylül 2026 (kapandı)</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Değerlendirme Süreci</td>
@@ -532,8 +532,8 @@ export default function BlogPage() {
           TÜBİTAK BiGG Yatırım (1812), Türkiye&apos;deki erken aşama
           teknoloji girişimleri için klasik hibe programlarından farklı,
           hisse karşılığı bir sermaye yatırımı sunuyor. Mükemmeliyet
-          Mührü almış girişimciler için 2026-2 çağrısında 30 Eylül 2026&apos;ya
-          kadar zaman var; ancak sürecin en kritik noktası, şirketin doğru
+          Mührü almış girişimciler için 2026-2 çağrısı 30 Eylül 2026&apos;da
+          kapandı; bir sonraki çağrıya hazırlanırken sürecin en kritik noktası, şirketin doğru
           zamanda, Mükemmeliyet Mührü alındıktan sonra kurulmasıdır. Henüz
           hızlandırma sürecine girmemiş girişimciler için ise bir sonraki
           döneme hazırlanmak üzere şimdiden bir uygulayıcı kuruluşla

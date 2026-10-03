@@ -192,7 +192,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026",
     title: "KOSGEB Küresel Rekabetçiliğin Geliştirilmesi Projesi: Kimler Başvurabilir, Destek Tutarları Nedir?",
-    excerpt: "2026 yılı 1. başvuru dönemi 7-30 Eylül 2026 arasında açık: hızlı büyüyen işletme şartı, 30-75 milyon TL kredi limiti, 20 puan geri ödemesiz faiz/kâr payı desteği, desteklenen giderler ve KBS üzerinden adım adım başvuru süreciyle güncel rehber.",
+    excerpt: "2026 yılı 1. başvuru dönemi 7-30 Eylül 2026 arasında yürütüldü ve kapandı (yeni dönem bekleniyor): hızlı büyüyen işletme şartı, 30-75 milyon TL kredi limiti, 20 puan geri ödemesiz faiz/kâr payı desteği, desteklenen giderler ve KBS üzerinden adım adım başvuru süreciyle güncel rehber.",
     category: "KOSGEB • İHRACAT VE REKABETÇİLİK • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -759,7 +759,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-bigg-yatirim-1812-programi-2026-2-cagrisi",
     title: "TÜBİTAK BiGG Yatırım (1812) Programı 2026-2 Çağrısı: 1.350.000 TL Yatırımı Hangi Şartlarla Alırsınız?",
-    excerpt: "Türkiye'nin ilk hisse karşılığı yatırım esaslı kamu destek programı BiGG Yatırım'ın (1812) 2026-2 çağrısı 30 Eylül 2026'ya kadar açık. Mükemmeliyet Mührü alan girişimcilere %3 hisse karşılığında 1.350.000 TL yatırım, şirketin ne zaman kurulması gerektiği ve 1512'den farkıyla güncel rehber.",
+    excerpt: "Türkiye'nin ilk hisse karşılığı yatırım esaslı kamu destek programı BiGG Yatırım'ın (1812) 2026-2 çağrısı 30 Eylül 2026'da kapandı. Mükemmeliyet Mührü alan girişimcilere %3 hisse karşılığında 1.350.000 TL yatırım, şirketin ne zaman kurulması gerektiği ve 1512'den farkıyla güncel rehber.",
     category: "TÜBİTAK • BiGG YATIRIM • 2026",
     date: "2026",
     readTime: "12 Dakika",

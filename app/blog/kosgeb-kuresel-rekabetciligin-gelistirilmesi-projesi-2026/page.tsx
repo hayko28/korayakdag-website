@@ -5,7 +5,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 export const metadata: Metadata = {
   title: "KOSGEB Küresel Rekabetçilik Destek Programı 2026 Rehberi | Koray Akdağ",
   description:
-    "KOSGEB Küresel Rekabetçiliğin Geliştirilmesi Projesi'nde 30-75 milyon TL kredi, 20 puan geri ödemesiz faiz desteği, başvuru şartları ve 2026 1. dönem takvimiyle güncel rehber.",
+    "KOSGEB Küresel Rekabetçiliğin Geliştirilmesi Projesi'nde 30-75 milyon TL kredi, 20 puan geri ödemesiz faiz desteği, başvuru şartları ve 2026 1. dönem takvimiyle (30 Eylül'de kapandı) rehber.",
   keywords: [
     "küresel rekabetçiliğin geliştirilmesi projesi",
     "kosgeb küresel rekabetçilik destek programı",
@@ -30,15 +30,16 @@ export default function BlogPage() {
       date="2026"
       readTime="13 Dakika"
       slug="kosgeb-kuresel-rekabetciligin-gelistirilmesi-projesi-2026"
-      programDurumu="acik"
+      programDurumu="kapali"
       sonBasvuruTarihi="30 Eylül 2026"
     >
-      <div className="rounded-2xl border border-green-200 bg-green-50 p-8">
-        <p className="text-lg font-semibold text-green-800">
-          🟢 Güncel: KOSGEB Küresel Rekabetçilik Destek Programı&apos;nın 2026
-          yılı 1. başvuru dönemi 7 Eylül 2026 tarihi itibarıyla başladı, son
-          başvuru tarihi 30 Eylül 2026. Bu yazıdaki tüm oran ve limitler
-          KOSGEB&apos;in resmî destek sayfası ve başvuru kılavuzu esas
+      <div className="rounded-2xl border border-amber-200 bg-amber-50 p-8">
+        <p className="text-lg font-semibold text-amber-800">
+          🟠 Güncel durum: KOSGEB Küresel Rekabetçilik Destek Programı&apos;nın
+          2026 yılı 1. başvuru dönemi 7-30 Eylül 2026 arasında yürütüldü ve
+          kapandı. Yeni bir dönem ilan edilene kadar başvuru alınmıyor. Bu
+          yazıdaki oran ve limitler 1. dönem çağrısına göredir ve
+          KOSGEB&apos;in resmî destek sayfası ile başvuru kılavuzu esas
           alınarak hazırlanmıştır.
         </p>
       </div>
@@ -57,7 +58,7 @@ export default function BlogPage() {
           20 puanlık geri ödemesiz faiz/kâr payı desteği sağlıyor. Bugüne
           kadar sadece 2025 yılında işletmelere toplam 3 milyar TL&apos;lik
           finansmana erişim sağlayan program, 2026&apos;nın ilk döneminde
-          yeniden başvurulara açıldı.
+          yeniden başvurulara açıldı (dönem 30 Eylül 2026&apos;da kapandı).
         </p>
         <ul className="space-y-4 text-lg text-gray-700">
           <li>✔ Program tam olarak nedir, hibe mi kredi mi?</li>
@@ -440,7 +441,7 @@ export default function BlogPage() {
             toplam 3 milyar TL&apos;lik finansmana erişim sağladı. 2026
             yılının ilk başvuru dönemi <strong>7 Eylül 2026</strong>{" "}
             tarihinde başladı ve başvurular <strong>30 Eylül
-            2026</strong> tarihine kadar alınacak. KOSGEB, dönemsel çağrı
+            2026</strong> tarihinde sona erdi. KOSGEB, dönemsel çağrı
             usulüyle çalıştığından yıl içinde ek dönemler açılması mümkündür;
             güncel takvim ve olası yeni dönemler için başvuru öncesinde{" "}
             <a
@@ -608,7 +609,7 @@ export default function BlogPage() {
             </h3>
             <p className="leading-8 text-gray-700">
               KOSGEB program açıklamasında dönemsel çağrı usulünü
-              kullanıyor; 1. dönem 30 Eylül 2026&apos;da kapanacak. Yıl
+              kullanıyor; 1. dönem 30 Eylül 2026&apos;da kapandı. Yıl
               içinde yeni dönem açılıp açılmayacağı KOSGEB&apos;in resmî
               duyurularından takip edilmelidir.
             </p>
@@ -678,7 +679,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Küresel Rekabetçiliğin Geliştirilmesi Projesi ile Küresel Rekabetçilik Destek Programı aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, iç içe geçmiş iki isim söz konusu. KOSGEB'in resmî destek programının adı \"Küresel Rekabetçilik Destek Programı\"dır; işletmelerin bu program kapsamında KBS üzerinden sunduğu başvuru ise \"Küresel Rekabetçiliğin Geliştirilmesi Projesi\" olarak adlandırılır."}},{"@type":"Question","name":"Program hibe mi, geri ödemesi olan bir destek mi?","acceptedAnswer":{"@type":"Answer","text":"Kredinin anaparası bankaya geri ödenir; KOSGEB yalnızca kredinin faiz/kâr payı giderinin 20 puanlık kısmını geri ödemesiz olarak karşılar. Dolayısıyla program tam bir hibe değil, sübvansiyonlu kredi modeliyle çalışır."}},{"@type":"Question","name":"Her KOBİ başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Genel KOSGEB kayıt şartlarının yanında, işletmenin hızlı büyüyen + yüksek/orta-yüksek teknoloji, hızlı büyüyen + ihracat/Ar-Ge artışı, öncelikli ürün üreten orta ölçekli işletme, Turcorn 100 kapsamı veya ilan edilen çağrı şartları kriterlerinden en az birini sağlaması gerekir."}},{"@type":"Question","name":"Kredi hangi bankalardan kullanılabilir?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB ile protokol imzalamış Ziraat Bankası, Halkbank, VakıfBank ve Ziraat Katılım Bankası üzerinden kredi kullanılabilir."}},{"@type":"Question","name":"2026'da başka başvuru dönemi olacak mı?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB program açıklamasında dönemsel çağrı usulünü kullanıyor; 1. dönem 30 Eylül 2026'da kapanacak. Yıl içinde yeni dönem açılıp açılmayacağı KOSGEB'in resmî duyurularından takip edilmelidir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Küresel Rekabetçiliğin Geliştirilmesi Projesi ile Küresel Rekabetçilik Destek Programı aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, iç içe geçmiş iki isim söz konusu. KOSGEB'in resmî destek programının adı \"Küresel Rekabetçilik Destek Programı\"dır; işletmelerin bu program kapsamında KBS üzerinden sunduğu başvuru ise \"Küresel Rekabetçiliğin Geliştirilmesi Projesi\" olarak adlandırılır."}},{"@type":"Question","name":"Program hibe mi, geri ödemesi olan bir destek mi?","acceptedAnswer":{"@type":"Answer","text":"Kredinin anaparası bankaya geri ödenir; KOSGEB yalnızca kredinin faiz/kâr payı giderinin 20 puanlık kısmını geri ödemesiz olarak karşılar. Dolayısıyla program tam bir hibe değil, sübvansiyonlu kredi modeliyle çalışır."}},{"@type":"Question","name":"Her KOBİ başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Genel KOSGEB kayıt şartlarının yanında, işletmenin hızlı büyüyen + yüksek/orta-yüksek teknoloji, hızlı büyüyen + ihracat/Ar-Ge artışı, öncelikli ürün üreten orta ölçekli işletme, Turcorn 100 kapsamı veya ilan edilen çağrı şartları kriterlerinden en az birini sağlaması gerekir."}},{"@type":"Question","name":"Kredi hangi bankalardan kullanılabilir?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB ile protokol imzalamış Ziraat Bankası, Halkbank, VakıfBank ve Ziraat Katılım Bankası üzerinden kredi kullanılabilir."}},{"@type":"Question","name":"2026'da başka başvuru dönemi olacak mı?","acceptedAnswer":{"@type":"Answer","text":"KOSGEB program açıklamasında dönemsel çağrı usulünü kullanıyor; 1. dönem 30 Eylül 2026'da kapandı. Yıl içinde yeni dönem açılıp açılmayacağı KOSGEB'in resmî duyurularından takip edilmelidir."}}]}) }}
       />
     </BlogLayout>
   );
