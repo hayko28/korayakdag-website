@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "pazara-giris-projesi-hazirlama-destegi-983843-tl",
+    title:
+      "Pazara Giriş Projesi Hazırlama Desteği: 983.843 TL'nin Arkasındaki Üç Şart",
+    excerpt:
+      "Ticaret Bakanlığı'nın 26 Eylül 2026'da güncellediği Pazara Giriş Projesi Hazırlama Desteği, danışmanlık ve rapor giderlerinin yüzde 50'sini, proje başına 983.843 TL'ye kadar karşılıyor. Rakam cazip görünse de üç ayrıntı, çoğu başvuruyu baştan yanlış kurguluyor.",
+    tag: "Devlet Destekleri",
+    date: "3 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "teklif-sonrasi-takip-sureci",
     title: "Teklif Sonrası Sessizlik: Satış Sürecinin Yönetilmeyen Kısmı",
     excerpt:
