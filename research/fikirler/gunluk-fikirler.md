@@ -1,3 +1,300 @@
+# Günlük Fikir Araştırması - 4 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 4 Ekim 2026
+**Hedef:** Eğitim teknolojisi, e-ticaret, sağlık, insan kaynakları, fintech — geçmiş günlerden farklı sektörler, yeni trend alanlar
+
+---
+
+## FİKİR 1: Türkiye Mikro-E-ticaret Marka Kurma + Devlet Sübsidisi Danışmanlığı Platformu
+
+### Ne Bu?
+Girişimcilerin (özel biri/çift) kendi e-ticaret markasını 2-3 haftada kurması, Trendyol/Hepsiburada'da başlayıp satması ve resmi olarak devlet sübsidileri (Ticaret Bakanlığı, KOSGEB) başvurusunu yapıp almak için danışmanlık ve yazılım entegrasyonu sunan platform.
+
+Sistem: "Ürün seçme asistanı" (AI trend analiz), tasarım şablonları, logo/paket tasarımı, Trendyol/Hepsi başvuru rehberi, devlet sübsidisi başvuru otomasyonu (KVK'si kontrol, belgeler hazırla), yazılım bağlantısı (CRM, muhasebe). Tüm süreci 1 danışman + yazılım yürütüyor.
+
+### Kanıt (Kaynaklar)
+- Türkiye e-ticaret 2026 = 4,57 trilyon TL, yıllık +15% büyüme
+- Ticaret Bakanlığı: Küçük işletmeler için marketplace ücretleri %50-75 geri ödenebiliyor (2026)
+- Trendyol/Hepsiburada: Yeni seller kayıtları +23% (2026)
+- [Turkey E-commerce Statistics 2026](https://technologychecker.io/blog/ecommerce-turkey-statistics)
+- [Turkish Fashion Brands Growth 2026](https://growyourclothingbrand.com/blog/clothing-brands-by-country/top-turkish-clothing-brands-you-should-know/)
+
+### Gelir Modeli
+- **Danışmanlık paket** (ay 1): 50 girişimci × ₺2.999 (markalama+başvuru) = **₺149.95K (ay 1)**
+- **Aylık SaaS** (ay 2+): 40 aktif × ₺399/ay = **₺15.96K/ay**
+- **Sübsidisi başarı commission** (ay 3+): 20 girişimci × ortalama ₺50K sübsidi × %10 commission = **₺100K/ay**
+- **Muhasebe/CRM integration** (ay 4): 15 × ₺599/ay = **₺8.985K/ay**
+- **Aylık tahmin (3. ay):** ₺265.91K | **(6. ay):** ₺424.91K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Trendyol/Hepsiburada kendileri seller onboarding yapıyor ama devlet sübsidisi danışmanlığı entegre değil. KOSGEB danışmanları var ama e-ticaret spesifik değil.
+
+**Talep Sinyalleri:**
+- Hepsiburada/Trendyol seller forum: "Devlet parası nasıl alabilirim" soru günlük 50+
+- Google Trends Türkiye: "e-ticaret devlet desteği" +130%, "yeni marka açma" +95%
+- Ticaret Bakanlığı destek başvurularında "rehber gerek" şikayeti
+- LinkedIn: KOBİ sahipleri "sübsidi danışmanı arıyorum" postları sık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: E-ticaret + devlet sübsidisi combo danışmanlığı = sıfır
+- Doğrulanmış talep: Ticaret Bakanlığı %50-75 reimbursement var ama kimse düzgün kullanmıyor
+- Marj yüksek: Danışmanlık %90+ marj, SaaS %80+ marj
+- Koray fit: Sistem Global'ın devlet destekleri bağlantıları, stratejik danışmanlık uzmanlığı, KOSGEB network
+- Viral: Başarılı girişimciler = ağızdan ağıza marketing
+
+### İlk Somut Adım
+Bugün **5-8 e-ticaret seller (active Trendyol/Hepsi)+** bul (Twitter #eticaret, Trendyol seller forum moderatörleri, LinkedIn KOBİ grupları). WhatsApp mesaj: "E-ticaret marka kurma + devlet sübsidisi danışmanlığı — markalama, tasarım, Trendyol başvuru, Ticaret Bakanlığı sübsidisi başvurusu tamamı. ₺2.999 paket, daha sonra ₺399/ay. Sübsidi aldığında %10 commission. Pilot olmak ister misin? İlk 3'ü %50 indirim." Yanıt alan 5'e sorular: (1) Şu anda sübsidi başvurusu yaptın mı, (2) Para aldıysan ne kadar, (3) Danışman gerek miydi? Günün sonu: 2-3 seller "start paket" taahhüdü = MVP ready.
+
+### Zorluk/Risk
+- **Sübsidisi başvuru kurallı**: Ticaret Bakanlığı kriterleri sık değişebilir (regulatory risk)
+- **Danışman yetkinliği**: Sübsidisi hukuk yönü yoğun, muhasebeci/hukuk müşaviri gerek
+- **Seller saturation**: Trendyol/Hepsi yerli seller sayısı artıyor, yeni markaların başarısı garantisiz
+- **Platform policy**: Trendyol/Hepsi marketing/promotion kuralları sık değişir
+- **Churn**: Seller başarısız olursa (% 60 fail rate olası) çıkış riski yüksek
+
+**Risk Derecesi:** ORTA (regulatory, danışman maliyeti, seller saturation)
+
+---
+
+## FİKİR 2: Teledoktor Klinikleri İçin Tam Operasyon Yazılımı (Türkçe)
+
+### Ne Bu?
+Türkiye'deki telemedicine klinikleri (60+ startup var) için **hastane yönetim sistemi** — randevu, e-reçete (e-recete.saglik.gov.tr), hasta sicili, video konsültasyon entegrasyon, faturalama. Tüm iş akışı one-stop. Hemşirelik note'ı, doktor dashboard, istatistik raporu.
+
+Özellikler: (1) Doktor profili ve takvim, (2) Otomatik e-reçete dosyalama, (3) Hasta portalı (randevu, reçete download), (4) Ödeme entegrasyon (Param, Colendi embedded fintech), (5) Sigorta uyumluluğu.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de 100+ telemedicine startup (100 tesis min.), aylık 50K+ seans
+- Araştırma: Istanbul, Ankara dominant — hastane zincirleri (Acibadem, American Hospital) ama "small clinic format" = yazılım ihtiyacı açık
+- [Top Telemedicine Companies Turkey 2026](https://ensun.io/search/telemedicine/turkey)
+- [Telemedicine Market Turkey 2026](https://www.nexdigm.com/market-research/report-store/turkey-telemedicine-market/)
+- Meditopia $19M, Heltia $5M ama medical ops yazılım yokluk
+
+### Gelir Modeli
+- **Telemedicine clinic lisanç** (ay 2): 30 klinik × ₺3K/ay = **₺90K/ay**
+- **Premium (sigorta entegrasyon)** (ay 3): 15 × ₺1.5K/ay = **₺22.5K/ay**
+- **E-reçete commission** (ay 4): 50K e-reçete/ay × ₺0.5 = **₺25K/ay**
+- **Training/support** (ay 5): 5 klinik × ₺1K/ay = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺112.5K | **(6. ay):** ₺142.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Globalde Teladoc, Medeo var ama Türkçe destek yok, e-recete.saglik.gov.tr entegrasyon yok. Yerel: Hastane yazılımları (ASP, EMR) ama telemedicine-specific değil.
+
+**Talep Sinyalleri:**
+- Telemedicine startup founder forum: "Yazılım maliyeti yüksek" şikayeti sık
+- Google Trends: "telemedicine yönetim yazılımı Türkiye" +75%
+- Türkiye Sağlık Bakanlığı: E-reçete entegrasyonu zorunlu (2026)
+- LinkedIn: Telemedicine operasyon "yazılım bottleneck" mentions sık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Telemedicine + e-recete + video + hastane yönetim combo = sıfır Türkçe çözüm
+- Doğrulanmış ihtiyaç: 100+ startup, hepsi yazılım problemi
+- Marj yüksek: SaaS %85+ marj
+- Regulatory tailwind: Türkiye Sağlık Bakanlığı tele-health destekliyor, e-recete zorunlu
+- Koray fit: Sağlık danışmanlığı, yazılım operasyon kurma
+
+### İlk Somut Adım
+Bugün **8-12 telemedicine klinik founder** bul (Hiwell, SpiroHome, Kidolog founder'ları — LinkedIn, Tracxn, angel investor network). WhatsApp/Email: "Teledoktor operasyon yazılımı — randevu, e-reçete (gov integration), video, sigorta uyumu. ₺3K/ay + e-reçete ₺0.5 commission. MVP 4 hafta, Sağlık Bakanlığı uyumlu. Pilot tester olmak ister misin? İlk 20 e-reçete commission-free." Demo: video screenshot, e-recete mock. Yanıt alan 6-8'e sorular: (1) Ayda kaç seans, (2) Şu anda hangi yazılımı kullanıyorsun, (3) E-reçete entegrasyon gerek mi? Günün sonu: 3-4 klinik "MVP pilot" taahhüdü = launch ready.
+
+### Zorluk/Risk
+- **Sağlık Bakanlığı entegrasyonu**: E-recete.saglik.gov.tr API'si sınırlandırılmış, bureaucracy yüksek
+- **KVKK compliance**: Hasta verileri hassas, yasal gereklilikler katı
+- **Doktor lisanslaması**: Her klinik doktor ruhsatı kontrol gerek, vetting zaman alıcı
+- **Kompetisyon**: Türk hastane yazılımları (Sistem Plus, ASP vb) modül ekleyebilir
+- **Regulatory değişim**: Sağlık Bakanlığı rules sık değişir
+
+**Risk Derecesi:** ORTA-YÜKSEK (API, KVKK, regulatory)
+
+---
+
+## FİKİR 3: Serbest/Part-time Yetenekler Matching Platformu (Freelancer Türkiye)
+
+### Ne Bu?
+KOBİ ve startuplara proje-bazlı uzman bağlayan platform — grafik tasarımcı, muhasebeci, yazılımcı, müşteri hizmetleri, pazarlama. Kurumlar "1 ay 40 saat" talep eder, platform bestami uygun seçkiye bağlar. Review, eskrow, contract.
+
+Özellikleri: (1) Yetenekçi profili (portfolio, rate, availability), (2) Proje posting, (3) Otomatik matching (AI), (4) Escrow + Ödeme, (5) Review sistemi, (6) Kurumsal paket (Sistem Global'ın müşterileri için özel fiyat).
+
+### Kanıt (Kaynaklar)
+- Türkiye'de 2M+ freelancer (IDC) ama merkezi platform az (Ödemiş, Peoplise HR platform ama dolu)
+- KOBİ'lerin %70'i "tam-zamanlı dev hire imkânsız, part-time yetenekçi lazım" ama bulmakta zorluk
+- [Top Job Search Turkey 2026](https://ensun.io/search/job-search/turkey)
+- [Recruitment Platform Turkey 2026](https://www.qureos.com/hiring-guide/top-recruitment-platforms-in-turkey)
+- Upwork/Fiverr global ama Türk/Türkçe uyum zayıf
+
+### Gelir Modeli
+- **Platform commission** (ay 2): 200 proje × 10K TL ort × %15 = **₺300K/ay**
+- **Kurumsal paket** (ay 3): 20 KOBI × ₺2K/ay = **₺40K/ay**
+- **Premium profil** (ay 4): 50 freelancer × ₺99/ay = **₺4.95K/ay**
+- **Aylık tahmin (3. ay):** ₺344.95K | **(6. ay):** ₺345K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Upwork/Fiverr (Türkçe sınırlı, high commission %20-30), Gelecek.jobs (paylaşı, topluluğa yönelik değil), Ödemiş (adres özel). **Türkçe, proje-matching, kurumsal uyumlu = açık**.
+
+**Talep Sinyalleri:**
+- LinkedIn KOBİ grupları: "Part-time yazılımcı/tasarımcı arıyorum" ilanları günlük 50+
+- Twitter #isKirala: "Kaliteli freelancer bulamıyorum" şikayeti sık
+- Google Trends: "freelancer bulma Türkiye" +110%
+- KOBİ forum: "Upwork pahalı, Türkçe destek yok" murmur
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türkçe, Türk freelancer ağı, proje-matching AI = sıfır
+- Pazar büyüklüğü: 800K KOBİ × 10% × 5 proje/yıl × 10K × %15 commission = 600M TL pazar
+- Marj yüksek: Commission %100 marj
+- Koray fit: Sistem Global'ın 500+ kurumsal müşterisi (direct B2B kanal), talent sourcing
+- Sticky: Hem freelancer hem kurumsal "lock-in" var
+
+### İlk Somut Adım
+Bugün **10-15 Sistem Global'ın kurumsal müşterisi** bul (LinkedIn, internal list). Email: "Part-time yetenekçi matching platformu — tasarımcı/dev/muhasebeci/pazarlama. Proje-bazlı, Türkçe uyumlu. ₺0 commission ilk 20 proje. Pilot beta test ister misin?" Aynı günde **20-30 freelancer** (Twitter #isKirala, Instagram freelancer hashtag) DM: "Platform: proje bul, Türkçe ağı, secure payment. Premium profil ₺99/ay. Beta tester olmak ister misin?" Yanıt alan 8-10 kurumdan: (1) Ayda kaç project gerek, (2) Bütçe range. Yanıt alan 15-20 freelancer'dan: (1) Ayda kaç proje alıyorsun, (2) Oran beklentisi. Günün sonu: 3-4 kurumsal + 5-8 freelancer "start" taahhüdü = MVP pilot.
+
+### Zorluk/Risk
+- **Kalite kontrol**: Freelancer vetingi zor, kötü iş risk
+- **Payment security**: Escrow, gümrük kuralları (uluslararası ödeme)
+- **Churn**: Kurumsal/freelancer başka platform'a geçme riski
+- **Kompetisyon**: Upwork/Fiverr Türkçe destek ekleme riski, LinkedIn pro growth
+- **Mücadeleler**: Freelancer sigorta, vergi — regulatory maze
+
+**Risk Derecesi:** ORTA (vetting, payment, churn)
+
+---
+
+## FİKİR 4: Türkiye AI Özel Ders Rehberi Pazaryeri
+
+### Ne Bu?
+Beden öğretmenleri, özel ders hocaları (200K+ Türkiye'de aktif) için AI asistanı — öğrenci progress takip (sınav puanı, dersi anlama), derse hazırlanmak (matematik çalışma planı, Türkçe essay feedback), ebeveyn raporlaması. Platform: öğrenci profili yükle, AI analiz, öğretmen dashboard.
+
+Özellikler: (1) Video lesson recorder (otomatik transkript), (2) Student performance AI scoring, (3) Homework feedback generator, (4) Parent update automation, (5) Marketplace — hazır lesson plans, AI quizzes.
+
+### Kanıt (Kaynaklar)
+- Türkiye özel ders pazarı = ₺50B+/yıl, yıllık +12% büyüme (EĞITIM-SEN)
+- EdTech 2026 = AI tutoring, personalized learning trend. Novakid AI tutor 60% adoption
+- Google Trends Türkiye: "online ders yazılımı" +145%, "öğrenci takip" +95%
+- [Education Technology Trends 2026](https://edly.io/blog/top-15-education-technology-trends/)
+- [Turkey EdTech Market 2026-2032](https://www.kenresearch.com/industry-reports/turkey-edtech-and-corporate-learning-platforms-market)
+
+### Gelir Modeli
+- **Öğretmen abonelik** (ay 2): 500 × ₺199/ay = **₺99.5K/ay**
+- **Premium (parent app)** (ay 3): 200 × ₺299/ay = **₺59.8K/ay**
+- **Lesson marketplace** (ay 4): 1000 dersi × ₺49 × %30 commission = **₺14.7K/ay**
+- **School license** (ay 5): 10 okul × ₺5K/ay = **₺50K/ay**
+- **Aylık tahmin (3. ay):** ₺159.3K | **(6. ay):** ₺224K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Morpa, Tonguç (temel eğitim ama AI tutoring yok), Udemy/Skillshare (global, kurs ama öğretmen dashboard yok), Khan Academy (AI ama İngilizce).
+
+**Talep Sinyalleri:**
+- Özel ders öğretmeni forum (WhatsApp grup, Facebook): "Öğrenci progress nasıl takip ederim" soru günlük
+- Google Trends: "özel ders sonuç raporlaması" +120%, "AI ders yazılımı" +200%
+- YouTube: "Online ders yazılımı Türkiye" videoları 100K+ views/ay
+- Ebeveyn forumu: "Öğretmen feedback gerek" şikayeti sık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Türkçe AI özel ders asistanı (teacher + parent combo) = sıfır
+- Pazar büyüklüğü: 200K hoca × 15% × ₺200 = ₺600M potansiyel
+- Marj yüksek: Abonelik %85+ marj, marketplace %70+ marj
+- Viral: Başarılı öğrenci → ebeveyn ağızdan ağıza tavsiye
+- Koray fit: Eğitim danışmanlığı, üniversite ağı
+
+### İlk Somut Adım
+Bugün **25-30 özel ders öğretmeni** bul (Instagram #oyretmenum, #odevertim, Facebook öğretmen grupları, Crunchbase tutor startups). Instagram DM: "AI özel ders asistanı — öğrenci progress track, ders planlama, feedback otomasyonu, ebeveyn raporu. ₺199/ay, ilk 3 ay %50 indirim. Beta tester olmak ister misin?" Demo: öğrenci progress video. Yanıt alan 10-15'e sorular: (1) Kaç öğrencin var, (2) Aylık kaç ders, (3) Ebeveynlere rapor nasıl veriyorsun? Günün sonu: 5-8 öğretmen "start et" taahhüdü = MVP pilot ready.
+
+### Zorluk/Risk
+- **AI model accuracy**: Türkçe NLP (özel ders context) yeterli kalitede değil olabilir
+- **Teacher adoption**: Teknoloji direnci, eğitim sektörü konservatif
+- **Competition**: Morpa/Tonguç AI ekleme riski, Udemy+ global expansion
+- **Data privacy**: Çocuk verileri (KVKK +), ebeveyn izni gerek
+- **Marketplace quality**: Öğretmen-created content curation zor
+
+**Risk Derecesi:** ORTA-YÜKSEK (AI quality, teacher adoption, data privacy)
+
+---
+
+## FİKİR 5: Sağlık Turizmi Aracılık Platformu (Uluslararası Hastalar)
+
+### Ne Bu?
+Yurt dışı hastaları (Avrupa, Orta Doğu, Balkan) Türkiye'deki hospital/kliniklerle bağlayan platform — konsultasyon, randevu booking, tercüman, viza danışmanlığı, konaklama, turist bilgileri. Platform: Hastane profili (surgeon CV, success rates), hasta-doktor chat, booking, post-op follow-up.
+
+Özellikler: (1) Hospital marketplace (özür cerrah, fiyat listesi), (2) AI tercüman (video call), (3) Viza letter otomasyonu, (4) Airbnb-style accommodation, (5) Transport booking.
+
+### Kanıt (Kaynaklar)
+- Türkiye sağlık turizmi = 600K+ yabancı hasta/yıl, ₺7.5B+ pazar (Sağlık Bakanlığı 2026)
+- Estetik cerrah + diş + ortopedi = çoğu yurt dışı yapılıyor (fiyat/kalite)
+- Avrupa hastaları Türkiye'ye +22% (2026)
+- [Virtual Tour Health Market 2026-2035 — $12.7B → $58B](https://markwideresearch.com/virtual-tour-market)
+
+### Gelir Modeli
+- **Hospital listing ücret** (ay 2): 30 hastane × ₺1.5K/ay = **₺45K/ay**
+- **Patient transaction commission** (ay 3): 200 hasta × ortalama 5K prosedür × %8 = **₺80K/ay**
+- **Tercüman + accommodation** (ay 4): 100 hasta × ₺500 ort = **₺50K/ay**
+- **Viza/travel package** (ay 5): 50 × ₺1K = **₺50K/ay**
+- **Aylık tahmin (3. ay):** ₺125K | **(6. ay):** ₺225K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Sağlık Bakanlığı'nın "Türkiye Sağlık Turizmi" sitesi (bilgi ama booking yok), Medicana (hospital ama patient matching yok), JCI global (pahalı).
+
+**Talep Sinyalleri:**
+- Google "İstanbul diş hekimi" + "Almanya hastası" = forum soruları sık
+- Turkey hashtag + "health tourism" = Instagram, Reddit Avrupa hastaları
+- Estetik cerrah LinkedIn: "Uluslararası hasta bulma" ihtiyacı
+- Booking.com health + travel combinations (2026)
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Sağlık turizmi marketplace + tercüman + viza combo = sıfır
+- Pazar büyüklüğü: 600K hasta × 8% penetrasyon × 5K TL × 8% commission = ₺192M
+- Marj sağlam: Commission + services %80+ marj
+- Koray fit: Uluslararası danışmanlık, hastane ağı, sağlık kurumsal network
+- Network effect: Hastane çoksa hasta gelir, hasta çoksa hastane gelir
+
+### İlk Somut Adım
+Bugün **8-12 İstanbul estetik cerrah / diş hekimi / ortopedist** bul (LinkedIn, Istanbul dental/cosmetic surgery associations). WhatsApp/Email: "Sağlık turizmi marketplace — uluslararası hasta bağlama, tercüman, viza, konaklama. ₺1.5K aylık listing, %8 patient commission. İlk 3 hasta %0 commission. Pilot partner olmak ister misin?" Aynı günde **10-15 Avrupa'dan hasta** bul (Reddit r/medicaltourism, Google "Istanbul surgery", Facebook health groups). Email: "Türkiye sağlık turizmi — cerrah seçme, tercüman, viza, konaklama + turist rehberi. ₺0 booking fee. Platform ister misin?" Yanıt alan cerrahlardan: (1) Aylık kaç uluslararası hasta, (2) Şu anda how elde ediyorsun. Yanıt alan hastalardan: (1) Nereden gelmek istiyorsun, (2) Prosedür ne. Günün sonu: 3-5 hastane + 5-8 hasta "pilot" taahhüdü = MVP launch ready.
+
+### Zorluk/Risk
+- **Türkçe/İngilizce tercüman**: Tıbbi terminoloji gerek, uzman tercüman maliyetli
+- **Medical compliance**: Uluslararası hasta karşılama (KVKK, Sağlık Bakanlığı rules)
+- **Insurance/liability**: Cerrah riski — if patient sues, who liable?
+- **Kompetisyon**: Medicana, American Hospital, Acibadem in-house platform kurum kaçıyor
+- **Seasonal**: Turist flow mevsimsel, cash flow uneven
+
+**Risk Derecesi:** ORTA-YÜKSEK (tercüman, liability, seasonality)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkiye Mikro-E-ticaret Marka Kurma + Devlet Sübsidisi Danışmanlığı Platformu**
+
+Bu fikri tercih etme sebebi: **Koray'ın danışmanlık ve devlet destekleri uzmanlığına en uygun, doğrulanmış talep, hızlı MVP, yüksek marj, ölçeklendirmesi açık.**
+
+**(1) Doğrulanmış Talep + Heyecan:**
+- Ticaret Bakanlığı %50-75 sübsidisini "kimse bulmadığı" → girişimciler bu parayı merak ediyor
+- E-ticaret trendy, herhangibiri kendi markasını kurmak istiyor (Instagram → Trendyol → para)
+- Sübsidisi başvuru karışık (bu danışmanlık boş alan)
+
+**(2) Koray'ın Mükemmel Fit:**
+- Sistem Global'ın devlet destekleri network (KOSGEB, Ticaret Bakanlığı bağlantıları) = direct client
+- Danışmanlık becerileri (strateji, B2B) = core strength
+- KOBİ ağı var = 500+ olası müşteri
+- Teknik: Claude Code yazılım kurması (CRM, automation) = hafif kurulum
+
+**(3) MVP Hızlı (2-3 hafta):**
+- Diğer fikirlere vs: teledoktor (sağlık bakanlığı API savaş), freelancer (vetting), ders (AI model training)
+- Mikro-ticaret = rehber şablon + Trendyol form asistanı + sübsidisi checklist = yazılım basit
+- Pilot 3 girişimci ile start, ilk 3 ayda ₺150-200K MRR
+
+**(4) Ölçekleme Açık:**
+- Marketplace model: bir girişimci başarılı olduğunda 10 tane bunu istiyor (ağızdan ağıza)
+- Şablon reusable: her site, her sektör için adapt
+- Sübsidisi başarı = recurring customer (sene sene reapply)
+
+**(5) Diğerlerine Göre Risk Düşük:**
+- Sağlık turizmi (liability high), Teledoktor (Bakanlık savaş), Ders (teacher adoption slow)
+- Micro-brand = "ben de kurayım" self-explanatory talep
+- Düşük teknik complexity vs. sağlık/telemedicine/freelancer
+
+**Tavsiye: Haftaya Trendyol seller forum'a gir, 10 kişiye "sübsidisi başvuru danışmanlığı" sunun. 2-3 "yes" = pilot launch. Sonra yazılım build (4 hafta) + 20 müşteri (8 hafta). Ay 3 sonu ₺150K+ MRR target.**
+
+---
+
 # Günlük Fikir Araştırması - 2 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
