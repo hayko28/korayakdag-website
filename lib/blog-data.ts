@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "uretim-kazancinda-kurumlar-vergisi-12-5-indirimi-sanayi-sicil-belgesi-2027",
+    title: "Üretim Yapan Şirketlerde Kurumlar Vergisi %12,5'e İniyor: Sanayi Sicil Belgesi Şartı ve 2027 Geçişi",
+    excerpt: "7582 sayılı Kanun ile Kurumlar Vergisi Kanunu'nun 32. maddesinde yapılan değişiklik, sanayi sicil belgesine sahip ve fiilen üretim yapan kurumların üretim kazançlarına 2027'den itibaren %12,5 oranında kurumlar vergisi uygulanmasını öngörüyor. Şartlar, 2026 geçiş dönemi, karma faaliyetli şirketlerde hesaplama ve ihracat indirimiyle ilişkisiyle güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • KURUMLAR VERGİSİ İNDİRİMİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1613970351372-9804e380bd09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "arge-merkezi-tasarim-merkezi-teknopark-tesvik-hesaplama-personel-ornekleri",
     title: "Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle",
     excerpt: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",

@@ -672,12 +672,18 @@ export default function BlogPage() {
           <p className="mt-6 text-sm text-gray-500">
             Not: Vergi indirimi hesaplamalarında güncel genel kurumlar
             vergisi oranı olan %25 esas alınmıştır. 7582 sayılı Kanun ile
-            2026&apos;dan itibaren sanayi/tarımsal üretim kazançlarına
-            yönelik ayrı bir %12,5&apos;lik indirimli oran da yürürlüğe
-            girmiştir; bu genel indirim, yatırım teşvik belgesi kapsamındaki
-            indirimli kurumlar vergisi uygulamasından bağımsız bir
-            düzenlemedir ve iki teşvikin bir arada nasıl uygulanacağı
-            projenize özel olarak değerlendirilmelidir.
+            2027 yılı ve sonraki vergilendirme dönemlerinde elde edilecek
+            sanayi/tarımsal üretim kazançlarına yönelik ayrı bir
+            %12,5&apos;lik indirimli oran da kabul edilmiştir (2026 kazançları
+            bu yeni oranın kapsamında değildir, bu dönem için eski ve çok
+            daha küçük bir indirim geçerlidir). Bu genel indirimi{" "}
+            <Link href="/blog/uretim-kazancinda-kurumlar-vergisi-12-5-indirimi-sanayi-sicil-belgesi-2027" className="text-orange-600 underline">
+              ayrı yazımızda ayrıntılı inceledik
+            </Link>
+            ; yatırım teşvik belgesi kapsamındaki indirimli kurumlar vergisi
+            uygulamasından bağımsız bir düzenlemedir ve iki teşvikin bir
+            arada nasıl uygulanacağı projenize özel olarak
+            değerlendirilmelidir.
           </p>
         </section>
 
