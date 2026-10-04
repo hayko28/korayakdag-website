@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "fon-krizinin-likidite-dersi",
+    title: "Fon Piyasasındaki Güven Krizi Şirketlere Ne Anlatıyor?",
+    excerpt:
+      "Fon piyasasından 400 milyar TL'yi aşan bir çıkış yaşandı, yedi portföy yönetim şirketinden beşinin fonu halen kapalı. Krizin asıl dersi getiriyle ilgili değil: işletmelerin 'nakit benzeri' dediği her enstrümanın aslında farklı bir likidite riski taşıması.",
+    tag: "Strateji",
+    date: "4 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "pazara-giris-projesi-hazirlama-destegi-983843-tl",
     title:
       "Pazara Giriş Projesi Hazırlama Desteği: 983.843 TL'nin Arkasındaki Üç Şart",
