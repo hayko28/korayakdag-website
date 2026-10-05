@@ -19,13 +19,13 @@
       "ad": "Teknoloji Merkezi (TEKMER) Destek Programı",
       "kurum": "KOSGEB",
       "durum": "acik",
-      "sonBasvuruTarihi": "2026-10-07",
+      "sonBasvuruTarihi": null,
       "kaynakUrl": "https://kosgeb.gov.tr/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi",
       "ilkTespitTarihi": "2026-08-25",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": "2026-10-07",
-      "not": "3 yaşın altındaki TEKMER işletici kuruluşları 1 yıl içinde başvuru yapabilir - Son başvuru 07 Ekim 2026"
+      "not": "2026-10-05 düzeltildi (UE-41 birincil kaynağından): 7 Ekim 2026 genel bir son başvuru tarihi DEĞİL. Yalnızca 07.10.2025'te desteklenmesine karar verilmiş ve 3 yılını doldurmamış mevcut TEKMER'lerin yeni Kuruluş Desteği'ne başvurması için tanınan 1 yıllık geçiş süresinin bitişi. Program genel olarak çağrı takvimine bağlı değil, üç destek unsurundan Hızlandırma Desteği çağrı esaslı. Bu kayıt için '3 gün kala' bildirimi gönderme."
     },
     {
       "id": "kosgeb-cop31-hizlandirma-2026",

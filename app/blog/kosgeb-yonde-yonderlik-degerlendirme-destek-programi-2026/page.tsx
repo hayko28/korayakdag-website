@@ -58,10 +58,13 @@ export default function BlogPage() {
         </h2>
         <ul className="space-y-4 text-lg text-gray-700">
           <li>
-            ✔ YÖNDE, yalnızca <strong>NACE Rev. 2 Kısım C - İmalat
+            ✔ Dijital dönüşüm, sürdürülebilirlik raporlaması ve YODA
+            hizmetleri yalnızca <strong>NACE Rev. 2 Kısım C - İmalat
             sektöründe</strong> faaliyet gösteren küçük ve orta ölçekli
             işletmelere (KOBİ) açık; mikro ölçekli işletmeler ve imalat
-            dışındaki sektörler yararlanamıyor.
+            dışındaki sektörler bu üç hizmetten yararlanamıyor. Bağımsız
+            Değerlendirme Hizmeti ise KOSGEB tarafından desteklenen
+            sektörlerdeki mikro, küçük ve orta işletmelere açık.
           </li>
           <li>
             ✔ Program dört hizmeti destekliyor: Dijital Dönüşüm
@@ -77,9 +80,11 @@ export default function BlogPage() {
           </li>
           <li>
             ✔ Program süresi 36 ay ve işletme bu programdan (bir bütün
-            olarak) <strong>ömür boyu yalnızca 1 defa</strong>
+            olarak) <strong>yalnızca 1 defa</strong>
             yararlanabiliyor; ama program içindeki bazı hizmetler kendi
-            içinde birden fazla kez kullanılabiliyor.
+            içinde birden fazla kez kullanılabiliyor. Bağımsız Değerlendirme
+            Hizmeti alan işletmeler, program tamamlandıktan sonra yeniden
+            başvurarak programdan tekrar yararlanabiliyor.
           </li>
           <li>
             ✔ Başvuru için özel bir çağrı takvimi yok; KOSGEB sistemi
@@ -154,10 +159,11 @@ export default function BlogPage() {
           yayımlanan KOSGEB Destek Programları Yönetmeliği ile 31 Ocak
           2024 tarihli ve 2024-03 sayılı KOSGEB İcra Komitesi Kararı
           kapsamında yürürlüğe girdi. İlk uygulama esaslarında (30 Temmuz
-          2024 tarihli, UE-36/00) yalnızca üç hizmet ve 280.000 TL üst
-          limit vardı; KOSGEB&apos;in güncel resmî destek sayfasında ise
-          programa dördüncü bir hizmet daha eklenmiş ve destek oranı
-          %100&apos;e yükseltilmiş durumda. Yani program hâlâ görece yeni
+          2024 tarihli, UE-36/00) yalnızca üç hizmet, %80 destek oranı ve
+          280.000 TL üst limit vardı; 20 Ağustos 2026 tarihli güncel
+          Yönergede (Rev. No: 4) ise programa dördüncü bir hizmet daha
+          eklenmiş, destek oranı %100&apos;e ve program üst limiti 700.000
+          TL&apos;ye yükseltilmiş durumda. Yani program hâlâ görece yeni
           ve güncelleniyor; başvuru öncesi güncel rakamları mutlaka
           KOSGEB&apos;in kendi sayfasından teyit etmek gerekiyor.
         </p>
@@ -191,8 +197,8 @@ export default function BlogPage() {
             </h3>
             <ul className="space-y-4 text-gray-700">
               <li>✔ Türk Ticaret Kanunu&apos;nda tanımlı gerçek veya tüzel kişi statüsünde olmak</li>
-              <li>✔ NACE Rev. 2&apos;ye göre <strong>Kısım C - İmalat</strong> sektöründe faaliyet göstermek</li>
-              <li>✔ Küçük veya orta ölçekli işletme (KOBİ) olmak</li>
+              <li>✔ Dijital dönüşüm, sürdürülebilirlik ve YODA hizmetleri için NACE Rev. 2&apos;ye göre <strong>Kısım C - İmalat</strong> sektöründe faaliyet göstermek</li>
+              <li>✔ Küçük veya orta ölçekli işletme (KOBİ) olmak (Bağımsız Değerlendirme Hizmeti için mikro işletmeler de başvurabilir)</li>
               <li>✔ KOSGEB Veri Tabanında kayıtlı, aktif durumda olmak</li>
               <li>✔ İşletme Beyanının güncel olması</li>
             </ul>
@@ -202,11 +208,11 @@ export default function BlogPage() {
               ❌ Başvuramayacak Yapılar
             </h3>
             <ul className="space-y-4 text-gray-700">
-              <li>❌ Mikro ölçekli işletmeler (program özel olarak hariç tutuyor)</li>
-              <li>❌ İmalat (Kısım C) dışındaki sektörlerde faaliyet gösteren işletmeler</li>
+              <li>❌ Mikro ölçekli işletmeler (dijital dönüşüm, sürdürülebilirlik ve YODA hizmetlerinde özel olarak hariç tutuluyor)</li>
+              <li>❌ İmalat (Kısım C) dışındaki sektörlerde faaliyet gösteren işletmeler (bu üç hizmet için)</li>
               <li>❌ Büyük ölçekli işletmeler</li>
               <li>❌ İşletme Beyanı güncel olmayan veya KOSGEB sisteminde pasif görünen işletmeler</li>
-              <li>❌ Programdan daha önce 1 kez yararlanmış işletmeler (tekrar başvuramıyor)</li>
+              <li>❌ Programdan daha önce 1 kez yararlanmış işletmeler (Bağımsız Değerlendirme Hizmeti alanlar, program tamamlandıktan sonra yeniden başvurabilir)</li>
             </ul>
           </div>
         </div>
@@ -242,15 +248,17 @@ export default function BlogPage() {
           </h3>
           <p className="leading-8 text-gray-700">
             Başvuru sürecinde en sık gözden kaçan nokta, programın kendisinin
-            işletme başına ömür boyu yalnızca 1 kez kullanılabilmesine
+            işletme başına yalnızca 1 kez kullanılabilmesine
             rağmen, içindeki üç ana hizmetin (dijital dönüşüm, sürdürülebilirlik
             raporlaması, YODA) her birinin ayrı ayrı en fazla 2 defa
             kullanılabilmesidir. Bu ayrımı gözden kaçıran işletmeler bütçe
             planlamasını genellikle tek seferlik bir hizmet bedeline göre
             yapıyor ve 36 aylık program süresi içinde elindeki toplam
             kapasitenin önemli bir kısmını kullanmadan bırakıyor. İki kez
-            kullanım için tek şart, aynı hizmetin ikinci kullanımının
-            birincinin bitiş tarihinden en az 1 yıl sonra olması.
+            kullanımda dijital dönüşüm ve sürdürülebilirlik hizmetlerinde ikinci
+            hizmetin başlangıcı birincinin bitişinden en az 1 yıl sonra
+            olmalı; YODA&apos;da ise ilk raporda önerilen model fabrika
+            hizmetlerinin tamamlanmış olması gerekir.
           </p>
         </div>
       </section>
@@ -298,19 +306,23 @@ export default function BlogPage() {
           </table>
         </div>
         <p className="mt-6 text-sm text-gray-500">
-          Kaynak: KOSGEB resmî YÖNDE destek sayfası. Programın toplam üst
-          limiti KOSGEB tarafından ayrıca &quot;700.000 TL&quot; olarak da
-          belirtiliyor; başvuru öncesi güncel toplamı ve hizmet başına
-          limitleri kosgeb.gov.tr üzerinden teyit edin.
+          Kaynak: KOSGEB resmî YÖNDE destek sayfası ve 20.08.2026 tarihli
+          YÖNDE Yönergesi (madde 5-9). Programın toplam üst limiti 700.000
+          TL&apos;dir; yani dört kalemin tek tek üst limitlerinin toplamı
+          (730.000 TL) program toplamını aşıyor ve toplamda 700.000 TL ile
+          sınırlısınız. Hizmet başına limitler: dijital dönüşüm 20.000 TL,
+          sürdürülebilirlik 100.000 TL, YODA 20.000 TL, bağımsız
+          değerlendirme 150.000 TL. Başvuru öncesi güncel rakamları
+          kosgeb.gov.tr üzerinden teyit edin.
         </p>
         <div className="mt-10 rounded-2xl border-l-4 border-yellow-400 bg-yellow-50 p-6">
           <p className="leading-8 text-gray-700">
-            ⚠️ <strong>Dikkat:</strong> Program 30 Temmuz 2024&apos;te
-            yürürlüğe girdiğinde yalnızca üç hizmet (dijital dönüşüm,
-            sürdürülebilirlik, YODA) vardı, toplam üst limit 280.000 TL,
-            destek oranı ise %80&apos;di. KOSGEB daha sonra bağımsız
-            değerlendirme hizmetini programa ekledi ve oranı %100&apos;e
-            yükseltti. İnternette hâlâ eski oran/limitle yazılmış içerikler
+            ⚠️ <strong>Dikkat:</strong> Program 30 Temmuz 2024 tarihli
+            uygulama esaslarıyla başladığında yalnızca üç hizmet (dijital
+            dönüşüm, sürdürülebilirlik, YODA) vardı, toplam üst limit
+            280.000 TL, destek oranı ise %80&apos;di. KOSGEB daha sonra
+            bağımsız değerlendirme hizmetini programa ekledi, oranı
+            %100&apos;e ve toplam üst limiti 700.000 TL&apos;ye yükseltti. İnternette hâlâ eski oran/limitle yazılmış içerikler
             dolaşabilir; başvuru öncesi mutlaka güncel sayfayı kontrol edin.
           </p>
         </div>
@@ -322,7 +334,7 @@ export default function BlogPage() {
           4. Her Hizmetin Kendi Şartları
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
-          Dört hizmetin de kendine özgü kuralları var; birini seçerken
+          Dört hizmetin de kendine özgü kuralları var (Yönerge madde 6-9); birini seçerken
           bunları bilmek başvuru sürecinde sürpriz yaşamamanız için önemli.
         </p>
         <div className="grid gap-6 md:grid-cols-2">
@@ -353,7 +365,8 @@ export default function BlogPage() {
           <div className="rounded-2xl border p-7 shadow-sm">
             <h3 className="mb-3 text-xl font-bold text-[#071A2F]">Bağımsız Değerlendirme Hizmeti</h3>
             <ul className="space-y-2 text-gray-700">
-              <li>• Yalnızca Teknoloji Odaklı Sanayi Hamlesi (HAMLE) Programı çağrı planında yer alan bir ürünü üretmek üzere proje başvurusu yapan işletmeler için geçerli</li>
+              <li>• Yalnızca Teknoloji Hamlesi Programı çağrı planlarındaki öncelikli ürün listesinde yer alan bir ürünü üretmek üzere proje başvurusu yapan işletmeler için geçerli</li>
+              <li>• KOSGEB tarafından desteklenen sektörlerdeki mikro, küçük ve orta işletmeler yararlanabiliyor (Kısım C şartı bu kalemde aranmıyor)</li>
               <li>• Rapor, Bakanlık tarafından ilan edilen bağımsız danışmanlık firmaları tarafından hazırlanıyor</li>
               <li>• Hizmet başına üst limit 150.000 TL, toplam üst limit 450.000 TL</li>
             </ul>
@@ -440,8 +453,10 @@ export default function BlogPage() {
           6. Program Şu An Açık mı?
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
-          Evet. YÖNDE, belirli bir çağrı dönemi veya son başvuru tarihi
-          olan bir program değil; KOSGEB&apos;in Ar-Ge, Ür-Ge ve İnovasyon
+          Evet. KOSGEB&apos;in resmî destek sayfasında program aktif olarak
+          yer alıyor ve Yönergesi 20 Ağustos 2026 tarihinde güncellendi.
+          YÖNDE, belirli bir çağrı dönemi veya son başvuru tarihi olan bir
+          program değil; KOSGEB&apos;in Ar-Ge, Ür-Ge ve İnovasyon
           Destek Programı gibi &quot;evergreen&quot; (sürekli açık) destek
           programlarından biri. Şartları sağlayan bir imalatçı KOBİ, yılın
           herhangi bir gününde başvurabiliyor; özel bir çağrı takvimini
@@ -468,8 +483,9 @@ export default function BlogPage() {
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Program yalnızca imalat (NACE Kısım C) sektöründeki
-            küçük/orta ölçekli işletmelere açık, mikro ölçek hariç
+            ✅ Dijital dönüşüm, sürdürülebilirlik ve YODA yalnızca imalat
+            (NACE Kısım C) sektöründeki küçük/orta ölçekli işletmelere açık,
+            mikro ölçek hariç; bağımsız değerlendirmede mikro de dahil
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Hizmet sağlayıcı serbestçe seçilemiyor; TÜSSİDE veya
@@ -477,8 +493,8 @@ export default function BlogPage() {
             şart
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Programın kendisi ömür boyu 1 kez, ama içindeki üç ana
-            hizmet ayrı ayrı en fazla 2&apos;şer kez kullanılabiliyor
+            ✅ Programın kendisinden 1 kez yararlanılabiliyor, ama içindeki
+            üç ana hizmet ayrı ayrı en fazla 2&apos;şer kez kullanılabiliyor
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ İaşe, ulaşım, konaklama gibi yan giderler destek kapsamı
@@ -566,10 +582,14 @@ export default function BlogPage() {
               YÖNDE destek programına hizmet sektöründeki bir KOBİ olarak başvurabilir miyim?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır. Program yalnızca NACE Rev. 2&apos;ye göre Kısım C -
-              İmalat sektöründe faaliyet gösteren küçük ve orta ölçekli
-              işletmelere açık. Hizmet, ticaret veya diğer sektörlerdeki
-              işletmeler bu destekten yararlanamıyor.
+              Hayır. Dijital dönüşüm, sürdürülebilirlik raporlaması ve YODA
+              hizmetleri yalnızca NACE Rev. 2&apos;ye göre Kısım C - İmalat
+              sektöründe faaliyet gösteren küçük ve orta ölçekli işletmelere
+              açık. Hizmet, ticaret veya diğer sektörlerdeki işletmeler bu
+              üç destekten yararlanamıyor. Bağımsız Değerlendirme Hizmeti ise
+              KOSGEB tarafından desteklenen sektörlerdeki işletmelere açık;
+              ancak yalnızca Teknoloji Hamlesi Programı kapsamında proje
+              başvurusu yapanlar için geçerli.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -577,9 +597,11 @@ export default function BlogPage() {
               Mikro ölçekli bir imalatçıyım, YÖNDE&apos;den yararlanabilir miyim?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır. KOSGEB&apos;in resmî uygulama esasları, mikro ölçekli
-              işletmeleri bu destek programından açıkça hariç tutuyor.
-              Program yalnızca küçük ve orta ölçekli işletmelere açık.
+              Dijital dönüşüm, sürdürülebilirlik ve YODA hizmetleri için hayır:
+              KOSGEB&apos;in resmî Yönergesi mikro ölçekli işletmeleri bu
+              desteklerden açıkça hariç tutuyor. Yalnızca Bağımsız
+              Değerlendirme Hizmeti Desteği mikro, küçük ve orta işletmelere
+              açık.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -612,11 +634,13 @@ export default function BlogPage() {
               Programdan bir kez yararlandıktan sonra tekrar başvurabilir miyim?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır, işletmeler YÖNDE Destek Programı&apos;nın kendisinden
-              yalnızca 1 defa yararlanabiliyor. Ancak bu, programa dahil
-              olduğunuz 36 aylık süre içinde dijital dönüşüm, sürdürülebilirlik
-              ve YODA hizmetlerinin her birini ayrı ayrı 2&apos;şer kez
-              kullanmanıza engel değil.
+              Genel kural olarak hayır, işletmeler YÖNDE Destek Programı&apos;nın
+              kendisinden yalnızca 1 defa yararlanabiliyor. Ancak bu, programa
+              dahil olduğunuz 36 aylık süre içinde dijital dönüşüm,
+              sürdürülebilirlik ve YODA hizmetlerinin her birini ayrı ayrı
+              2&apos;şer kez kullanmanıza engel değil. Bağımsız Değerlendirme
+              Hizmeti alan işletmeler ise program tamamlandıktan sonra yeniden
+              başvurarak programdan tekrar yararlanabiliyor.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -692,7 +716,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"YÖNDE destek programına hizmet sektöründeki bir KOBİ olarak başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca NACE Rev. 2'ye göre Kısım C - İmalat sektöründe faaliyet gösteren küçük ve orta ölçekli işletmelere açık. Hizmet, ticaret veya diğer sektörlerdeki işletmeler bu destekten yararlanamıyor."}},{"@type":"Question","name":"Mikro ölçekli bir imalatçıyım, YÖNDE'den yararlanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. KOSGEB'in resmî uygulama esasları, mikro ölçekli işletmeleri bu destek programından açıkça hariç tutuyor. Program yalnızca küçük ve orta ölçekli işletmelere açık."}},{"@type":"Question","name":"Dört hizmetin tamamından aynı anda yararlanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, dört hizmet birbirinden bağımsız ayrı destek unsurları; şartlarını sağlıyorsanız hepsinden aynı program süresi (36 ay) içinde yararlanabilirsiniz. Ancak Bağımsız Değerlendirme Hizmeti yalnızca HAMLE çağrı planında yer alan bir ürünü üretmek üzere başvuru yapan işletmeler için geçerli."}},{"@type":"Question","name":"Sürdürülebilirlik raporumu istediğim danışmanlık firmasına hazırlatabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Rapor hazırlığını istediğiniz kuruluşa yaptırabilirsiniz, ama destekten yararlanmak için raporun TSRS'ye uygun olması ve güvence denetiminin Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu (KGK) tarafından yetkilendirilmiş bir bağımsız denetim kuruluşu tarafından yapılmış olması gerekiyor."}},{"@type":"Question","name":"Programdan bir kez yararlandıktan sonra tekrar başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır, işletmeler YÖNDE Destek Programı'nın kendisinden yalnızca 1 defa yararlanabiliyor. Ancak bu, programa dahil olduğunuz 36 aylık süre içinde dijital dönüşüm, sürdürülebilirlik ve YODA hizmetlerinin her birini ayrı ayrı 2'şer kez kullanmanıza engel değil."}},{"@type":"Question","name":"Başvuru için belirli bir son tarih var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, dijital dönüşüm, sürdürülebilirlik raporlaması ve YODA hizmetleri için özel bir çağrı dönemi yok; başvurular yıl boyunca KOSGEB sistemi üzerinden yapılabiliyor. Yalnızca Bağımsız Değerlendirme Hizmeti, HAMLE Programı'nın kendi çağrı takvimine bağlı."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"YÖNDE destek programına hizmet sektöründeki bir KOBİ olarak başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Dijital dönüşüm, sürdürülebilirlik raporlaması ve YODA hizmetleri yalnızca NACE Rev. 2'ye göre Kısım C - İmalat sektöründe faaliyet gösteren küçük ve orta ölçekli işletmelere açık. Hizmet, ticaret veya diğer sektörlerdeki işletmeler bu üç destekten yararlanamıyor. Bağımsız Değerlendirme Hizmeti ise KOSGEB tarafından desteklenen sektörlerdeki işletmelere açık; ancak yalnızca Teknoloji Hamlesi Programı kapsamında proje başvurusu yapanlar için geçerli."}},{"@type":"Question","name":"Mikro ölçekli bir imalatçıyım, YÖNDE'den yararlanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Dijital dönüşüm, sürdürülebilirlik ve YODA hizmetleri için hayır: KOSGEB'in resmî Yönergesi mikro ölçekli işletmeleri bu desteklerden açıkça hariç tutuyor. Yalnızca Bağımsız Değerlendirme Hizmeti Desteği mikro, küçük ve orta işletmelere açık."}},{"@type":"Question","name":"Dört hizmetin tamamından aynı anda yararlanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, dört hizmet birbirinden bağımsız ayrı destek unsurları; şartlarını sağlıyorsanız hepsinden aynı program süresi (36 ay) içinde yararlanabilirsiniz. Ancak Bağımsız Değerlendirme Hizmeti yalnızca HAMLE çağrı planında yer alan bir ürünü üretmek üzere başvuru yapan işletmeler için geçerli."}},{"@type":"Question","name":"Sürdürülebilirlik raporumu istediğim danışmanlık firmasına hazırlatabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Rapor hazırlığını istediğiniz kuruluşa yaptırabilirsiniz, ama destekten yararlanmak için raporun TSRS'ye uygun olması ve güvence denetiminin Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu (KGK) tarafından yetkilendirilmiş bir bağımsız denetim kuruluşu tarafından yapılmış olması gerekiyor."}},{"@type":"Question","name":"Programdan bir kez yararlandıktan sonra tekrar başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak hayır, işletmeler YÖNDE Destek Programı'nın kendisinden yalnızca 1 defa yararlanabiliyor. Ancak bu, programa dahil olduğunuz 36 aylık süre içinde dijital dönüşüm, sürdürülebilirlik ve YODA hizmetlerinin her birini ayrı ayrı 2'şer kez kullanmanıza engel değil. Bağımsız Değerlendirme Hizmeti alan işletmeler ise program tamamlandıktan sonra yeniden başvurarak programdan tekrar yararlanabiliyor."}},{"@type":"Question","name":"Başvuru için belirli bir son tarih var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, dijital dönüşüm, sürdürülebilirlik raporlaması ve YODA hizmetleri için özel bir çağrı dönemi yok; başvurular yıl boyunca KOSGEB sistemi üzerinden yapılabiliyor. Yalnızca Bağımsız Değerlendirme Hizmeti, HAMLE Programı'nın kendi çağrı takvimine bağlı."}}]}) }}
       />
     </BlogLayout>
   );

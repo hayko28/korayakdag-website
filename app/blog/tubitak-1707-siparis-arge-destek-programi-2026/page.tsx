@@ -136,10 +136,14 @@ export default function Tubitak1707Page() {
           teknoloji alanlarından, ticarileşme potansiyeli yüksek Ar-Ge
           projeleri desteklenebilir. Ancak proje önerisinde hem teknik
           yapılabilirlik incelemesinin hem de pazar araştırmasının Ekonomik
-          Fizibilite Raporu üzerinden sunulması gerekir. Yeşil Mutabakata
-          Uyum Kapsamındaki Öncelikli Ar-Ge ve Yenilik Konuları arasında yer
-          alan projelere değerlendirmede ek puan verildiğini de belirtmek
-          gerekir.
+          Fizibilite Raporu üzerinden sunulması gerekir. 2026-3 çağrısında,
+          önerisi TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konu
+          Başlıklarından &quot;Endüstride Teknolojik Sıçrama&quot; veya
+          &quot;Dijital Liderlik&quot; konularından birinde yer alan projelere
+          5 puan ek puan verilir (&quot;Yeşil Dönüşüm&quot; başlıkları bu ek
+          puan kapsamı dışındadır). Geçmişte desteklenen TÜBİTAK projelerinin
+          ticarileşme performansı da -5 ile +5 arasında ek puana dönüşür;
+          kurul değerlendirme eşik değeri 100 üzerinden 55&apos;tir.
         </p>
         <div className="my-10 rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
@@ -390,6 +394,10 @@ export default function Tubitak1707Page() {
                 <td className="p-4 font-semibold">2026-3 Çağrı Açılışı</td>
                 <td className="p-4">1 Eylül 2026</td>
               </tr>
+              <tr className="border-b">
+                <td className="p-4 font-semibold">Kuruluş Bazlı Ön Kayıt Son Tarihi</td>
+                <td className="p-4">11 Kasım 2026</td>
+              </tr>
               <tr>
                 <td className="p-4 font-semibold text-red-600">Son Başvuru (Çağrı Kapanışı)</td>
                 <td className="p-4 font-semibold text-red-600">13 Kasım 2026, 23:59 (TSİ)</td>
@@ -445,7 +453,7 @@ export default function Tubitak1707Page() {
                   </Link>
                 </td>
                 <td className="p-4">Yok, şirket tek başına başvurur</td>
-                <td className="p-4">Ölçeğe göre değişken hibe</td>
+                <td className="p-4">1501: ilk 5 proje %75, 6. proje ve sonrası %60; 1507: %75</td>
                 <td className="p-4">20.000.000 TL / 3.500.000 TL</td>
               </tr>
               <tr>

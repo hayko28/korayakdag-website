@@ -120,7 +120,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-yonde-yonderlik-degerlendirme-destek-programi-2026",
     title: "KOSGEB YÖNDE Destek Programı Nedir? Dijital Dönüşüm, Sürdürülebilirlik Raporu ve Yalın Üretim Analizinize Ne Kadar Destek Alırsınız?",
-    excerpt: "İmalat sektöründeki küçük ve orta ölçekli işletmelere özel YÖNDE - Yönderlik ve Değerlendirme Destek Programı'nda dört ayrı hizmet kalemi (Dijital Dönüşüm, Sürdürülebilirlik Raporlaması, YODA, Bağımsız Değerlendirme) %100 geri ödemesiz destekleniyor. Kimler başvurabilir, hangi hizmet ne kadar destekleniyor ve süreç nasıl işliyor; güncel kaynaklarla derledik.",
+    excerpt: "YÖNDE - Yönderlik ve Değerlendirme Destek Programı'nda dört ayrı hizmet kalemi (Dijital Dönüşüm, Sürdürülebilirlik Raporlaması, YODA, Bağımsız Değerlendirme) %100 geri ödemesiz, toplam 700.000 TL'ye kadar destekleniyor. Kimler başvurabilir, hangi hizmet ne kadar destekleniyor ve süreç nasıl işliyor; güncel Yönerge ile derledik.",
     category: "KOSGEB • YÖNDE DESTEK PROGRAMI • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -138,7 +138,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-yesil-sanayi-destek-programi-2026",
     title: "KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi Yatırımınıza Ne Kadar Destek Alırsınız?",
-    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, imalatçı KOBİ'lere çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sunuyor. Şartları, oranları ve başvuru süreci.",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, 2023 çağrılarıyla çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sundu. Şartları, oranları, geri ödeme yapısı ve çağrıların güncel durumu (başvuru dönemi 30 Kasım 2024'te sona erdi).",
     category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -183,7 +183,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1707-siparis-arge-destek-programi-2026",
     title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
-    excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber.",
+    excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle rehber (ön kayıt son tarihi 11 Kasım).",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -201,7 +201,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tekmer-nedir-basvuru-sureci-destekleri-2026",
     title: "TEKMER Nedir? Teknoloji Geliştirme Merkezlerine Nasıl Başvurulur?",
-    excerpt: "KOSGEB'in 3624 sayılı Kanun kapsamında yürüttüğü TEKMER programında Teknopark'tan farkı, ön kuluçka-kuluçka-hızlandırma süreci, kimlerin başvurabileceği, işletici kuruluşa sağlanan destek tutarları ve adım adım başvuru süreciyle 2026 güncel rehber.",
+    excerpt: "KOSGEB'in TEKMER programında Teknopark'tan farkı, ön kuluçka-kuluçka-hızlandırma süreci, kimlerin işletici kuruluş olabileceği, Kuruluş, Performans ve Hızlandırma Desteği tutarları (2026 yıllık üst limit 6.506.000 TL) ve başvuru süreciyle rehber. Mevcut TEKMER'ler için yeni Kuruluş Desteği geçiş süresi 7 Ekim 2026'da bitiyor.",
     category: "TEKMER • KOSGEB • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -372,7 +372,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-yapay-zeka-kredi-programi-2026",
     title: "KOSGEB Yapay Zeka Kredi Programı 2026: 5 Milyon TL'ye Kadar Faizsiz Krediye Kimler Başvurabilir?",
-    excerpt: "Teknogirişim Rozeti sahibi girişimlere GPU/bulut ve yapay zeka altyapı hizmetleri için 500 bin - 5 milyon TL arasında faizsiz kredi sunan yeni KOSGEB programının şartları, GO Dijital Cüzdan mekanizması, teminat koşulları ve 2026 başvuru süreci.",
+    excerpt: "Teknogirişim Rozeti sahibi girişimlere GPU/bulut ve yapay zeka altyapı hizmetleri için 500 bin - 5 milyon TL arasında faizsiz kredi sunan yeni KOSGEB programının şartları, GO Dijital Cüzdan mekanizması, teminat koşulları ve 9 Temmuz - 31 Aralık 2026 başvuru takvimi.",
     category: "KOSGEB • YAPAY ZEKA • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -543,7 +543,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1501-1507-ar-ge-destekleri-2026",
     title: "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026",
-    excerpt: "Güncelleme: 2026 yılı 2. çağrısı 20 Temmuz'da açıldı, son başvuru 1501 için 26 Ekim, 1507 için 11 Kasım 2026. Başvuru şartları, destek oranları (1501'de 20 milyon TL katkı tavanı), desteklenen giderler ve güncel çağrı takvimiyle kapsamlı rehber.",
+    excerpt: "2026 yılı 2. çağrısı 20 Temmuz'da açıldı: 1501 için son başvuru 26 Ekim (ön kayıt 22 Ekim), 1507 için 11 Kasım 2026 (ön kayıt 9 Kasım). Bu dönem yalnızca KOBİ'ler başvurabiliyor, kuruluş başına en fazla 2 öneri sınırı var. Başvuru şartları, destek oranları (1501'de 20 milyon TL katkı tavanı), desteklenen giderler ve çağrı takvimiyle rehber.",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
     readTime: "12 Dakika",

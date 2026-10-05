@@ -5,7 +5,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 export const metadata: Metadata = {
   title: "KOSGEB Yeşil Sanayi Destek Programı 2026 | Koray Akdağ",
   description:
-    "Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamında KOSGEB'in imalatçı KOBİ'lere sunduğu güneş enerjisi (14 milyon TL) ve döngüsel ekonomi (4 milyon TL) desteğinin şartları, oranları, geri ödeme yapısı ve başvuru süreci.",
+    "Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi kapsamında KOSGEB'in KOBİ'lere sunduğu güneş enerjisi (14 milyon TL) ve döngüsel ekonomi (4 milyon TL) geri ödemeli desteğinin şartları, oranları, geri ödeme yapısı ve çağrıların güncel başvuru durumu.",
   keywords: [
     "KOSGEB Yeşil Sanayi Destek Programı",
     "KOSGEB güneş enerjisi desteği",
@@ -25,12 +25,13 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi Yatırımınıza Ne Kadar Destek Alırsınız?"
-      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, imalatçı KOBİ'lere çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sunuyor. Şartları, destek oranlarını, geri ödeme yapısını ve başvuru sürecini güncel kaynaklarla derledik."
+      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, 2023 çağrılarında KOBİ'lere çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sundu. Şartları, destek oranlarını, geri ödeme yapısını ve çağrıların güncel başvuru durumunu resmî kaynaklarla derledik."
       category="KOSGEB • YEŞİL DÖNÜŞÜM • 2026"
       date="2026"
       readTime="13 Dakika"
       slug="kosgeb-yesil-sanayi-destek-programi-2026"
-      programDurumu="acik"
+      programDurumu="kapali"
+      sonBasvuruTarihi="30 Kasım 2024"
       coverImage="https://images.unsplash.com/photo-1775317628391-a0429fe3be1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       ctaHeading="İşletmenizin Yeşil Sanayi Destek Programı'na Uygunluğunu Birlikte Değerlendirelim"
       ctaText="NACE kodunuzdan Findeks kredi notunuza, proje bütçenizden gerekli form ve raporlara kadar başvuru öncesi tüm uygunluk kriterlerini birlikte gözden geçirir, KBS üzerindeki başvuru sürecinizi baştan sona yürütürüz."
@@ -46,8 +47,9 @@ export default function BlogPage() {
         bilinmiyor ya da kurumun dijital dönüşüme yönelik ayrı programıyla
         karıştırılıyor. Bu yazıda, Dünya Bankası finansmanlı Türkiye Yeşil
         Sanayi Projesi kapsamında KOSGEB&apos;in yürüttüğü Yeşil Sanayi
-        Destek Programı&apos;nı, kapsamından geri ödeme yapısına kadar
-        güncel kaynaklarla ele alıyoruz.
+        Destek Programı&apos;nı, kapsamından geri ödeme yapısına ve
+        çağrıların güncel başvuru durumuna kadar resmî kaynaklarla ele
+        alıyoruz.
       </p>
 
       {/* KISA CEVAP KUTUSU */}
@@ -68,8 +70,10 @@ export default function BlogPage() {
             oranı).
           </li>
           <li>
-            ✔ Deprem bölgesi illerinde (Adıyaman, Hatay, Kahramanmaraş gibi)
-            destek oranı <strong>%80-90&apos;a</strong> kadar çıkabiliyor.
+            ✔ 2023 çağrılarında, işyeri depremde hasar gören ve bunu belgeleyen
+            işletmeler için destek oranı il bazında <strong>%80 veya %90</strong>
+            (Adıyaman, Hatay, Kahramanmaraş, Malatya ile Nurdağı ve İslahiye
+            ilçelerinde %90) olarak uygulanıyor.
           </li>
           <li>
             ✔ Destek bir hibe değil, <strong>geri ödemeli finansman</strong>;
@@ -84,12 +88,14 @@ export default function BlogPage() {
           <li>
             ✔ KOSGEB verilerine göre 2026&apos;nın ilk 6 ayında (Ocak-Haziran)
             program kapsamında <strong>466 işletmeye 480,7 milyon TL</strong>
-            {" "}destek kullandırıldı, program fiilen aktif işliyor.
+            {" "}destek kullandırıldı; bu rakam, daha önce kabul edilen projelerin
+            ödemelerini yansıtıyor.
           </li>
           <li>
-            ✔ Başvuru, KOBİ Bilgi Sistemi (KBS) üzerinden yapılıyor; kesin
-            dönem tarihlerinin başvuru öncesi KOSGEB&apos;in resmi
-            duyurularından teyit edilmesi gerekiyor.
+            ✔ Başvuru KOBİ Bilgi Sistemi (KBS) üzerinden yapılıyor. Ancak 2023-01
+            ve 2023-02 çağrılarının resmî başvuru dönemi <strong>30 Kasım
+            2024&apos;te sona erdi</strong>; Ekim 2026 itibarıyla KOSGEB
+            kaynaklarında yeni bir çağrı dönemi tespit edemedik.
           </li>
         </ul>
       </div>
@@ -172,7 +178,8 @@ export default function BlogPage() {
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Program, birbirinden bağımsız değerlendirilen iki ayrı proje
-          teklif çağrısı üzerinden işliyor:
+          teklif çağrısı üzerinden işledi (aşağıdaki tablo 2023-01 ve 2023-02
+          çağrılarının koşullarını gösteriyor):
         </p>
         <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-left">
@@ -189,25 +196,40 @@ export default function BlogPage() {
                 <td className="p-5 font-semibold">Güneş Enerjisi Yatırımları</td>
                 <td className="p-5">Çatı tipi GES ve tesis içi kombine GES için makine-teçhizat giderleri</td>
                 <td className="p-5">14.000.000 TL</td>
-                <td className="p-5">%60 (afet bölgesi illerinde %80-90)</td>
+                <td className="p-5">%60 (işyeri hasar gören afet bölgesi işletmelerinde %80-90)</td>
               </tr>
               <tr className="hover:bg-gray-50">
                 <td className="p-5 font-semibold">Temiz ve Döngüsel Ekonomi</td>
                 <td className="p-5">Enerji/su/hammadde verimliliği, atık geri dönüşümü, endüstriyel simbiyoz; personel, makine-teçhizat, yazılım ve hizmet alım giderleri</td>
                 <td className="p-5">4.000.000 TL</td>
-                <td className="p-5">%70 (afet bölgesi illerinde %80-90)</td>
+                <td className="p-5">%70 (işyeri hasar gören afet bölgesi işletmelerinde %80-90)</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="mt-8 leading-8 text-gray-700">
-          Her iki bileşende de proje süresi en az 8, en fazla 12 ay olarak
-          belirleniyor. Güneş enerjisi bileşeni doğrudan makine-teçhizat
-          yatırımına odaklanırken, döngüsel ekonomi bileşeni personel
+          Her iki çağrıda da proje süresi en az 8, en fazla 12 ay olarak
+          belirlenmişti. Güneş enerjisi çağrısı doğrudan makine-teçhizat
+          yatırımına odaklanırken, döngüsel ekonomi çağrısı personel
           giderinden yazılıma kadar daha geniş bir gider kalemi yelpazesini
-          kapsıyor.
-
+          kapsıyor. Destekten yararlanacak işletmeden, destek ödemesi öncesinde
+          destek tutarı kadar teminat mektubu (banka teminatı veya KGF
+          kefaleti) isteniyor.
         </p>
+        <div className="mt-8 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+          <p className="leading-8 text-gray-700">
+            Ağustos 2026 tarihli güncel Yeşil Sanayi Destek Programı
+            Yönergesi (Rev.No:04) ise programı iki alt bileşen üzerinden
+            tanımlıyor: Alt Bileşen 1.1 (enerji sistemlerinin
+            karbonsuzlaştırılması, %60 destek oranı, işletme başına üst limit
+            500.000 ABD Doları karşılığı TL) ve Alt Bileşen 1.2 (iklim eylemi
+            ve kaynak verimliliği, %70 destek oranı, 150.000 ABD Doları
+            karşılığı TL). Proje süresi 8 ile 24 ay arasında, 4 ayın katları
+            olarak belirlenebiliyor; ancak çağrıda ilan edilen limit, oran ve
+            süre geçerli olduğundan her yeni çağrının metni ayrıca
+            incelenmelidir.
+          </p>
+        </div>
 
         <div className="mt-10 rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
           <h3 className="mb-4 text-2xl font-bold text-red-700">
@@ -255,14 +277,16 @@ export default function BlogPage() {
           3. Kimler Başvurabilir?
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
-          Program, sanayi sektöründe faaliyet gösteren imalatçı
-          KOBİ&apos;leri hedefliyor. Başvuru için aranan temel şartlar şöyle:
+          Program, çağrıda ilan edilen sanayi sektörlerinde (2023 çağrılarında
+          imalat sektörünün tamamı ile belirli hizmet sektörleri)
+          faaliyet gösteren KOBİ&apos;leri hedefliyor. Başvuru için aranan
+          temel şartlar şöyle:
         </p>
         <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-orange-500">
           <li>
-            Sanayi sektöründe, imalat esaslı faaliyet gösteren küçük ve orta
-            ölçekli işletme olmak (mikro ölçekli işletmeler bu programın
-            kapsamı dışında tutuluyor).
+            Küçük veya orta ölçekli işletme olmak (mikro ölçekli işletmeler bu
+            programın kapsamı dışında tutuluyor) ve KOSGEB Veri Tabanı&apos;nda
+            kayıtlı, işletme beyanı güncel olmak.
           </li>
           <li>
             İlgili proje teklif çağrısının ilan tarihi itibarıyla{" "}
@@ -275,7 +299,20 @@ export default function BlogPage() {
           </li>
           <li>
             Toplam proje bütçesinin <strong>en az 1.000.000 TL</strong>{" "}
-            olması.
+            olması ve işletmenin onaylı son mali yıl bilançosunun veya net
+            satış hasılatının proje bütçesinden büyük olması.
+          </li>
+          <li>
+            Güneş enerjisi çağrısında ayrıca son 12 aylık toplam enerji
+            tüketiminin en az 20 TEP (ton eşdeğeri petrol) olması ve
+            başvuru tarihinde geçerli bir &quot;Bağlantı Anlaşmasına Çağrı
+            Mektubu&quot;na sahip olunması.
+          </li>
+          <li>
+            Çevresel ve Sosyal Yönetim Sistemi izleme kriterlerine göre
+            &quot;düşük&quot; veya &quot;orta&quot; riskli olmak; sermayenin en
+            az %75&apos;i ile en büyük hissedarın özel sektöre ait olması ve
+            çoğunluk temsilinin kamuda bulunmaması (Yönerge madde 8).
           </li>
           <li>
             İşletmenin KOBİ Bilgi Sistemi&apos;nde (KBS) kayıtlı, onaylı bir
@@ -319,10 +356,13 @@ export default function BlogPage() {
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Burada dikkat edilmesi gereken önemli bir nokta var: Yeşil Sanayi
           Destek Programı bir hibe değil, <strong>geri ödemeli
-          finansman</strong> şeklinde işliyor. Güneş enerjisi bileşiminde
-          geri ödeme, proje bitiş tarihinden sonra başlıyor: ilk 12 ay
+          finansman</strong> şeklinde işliyor. Her iki çağrıda da geri ödeme,
+          proje süresinin bitiş tarihinden sonra başlıyor: ilk 12 ay
           ödemesiz dönem, ardından 4&apos;er aylık dönemler halinde 6 eşit
-          taksitte tamamlanıyor.
+          taksitte tamamlanıyor. Zamanında ödenen taksitlere faiz ve komisyon
+          uygulanmıyor; vadesinde ödenmeyen taksit için 7 günlük süre
+          verildikten sonra borcun tamamı muaccel hale gelebiliyor ve
+          teminat nakde çevrilebiliyor.
         </p>
         <p className="mb-8 leading-8 text-gray-700">
           Uygulama süreci de &quot;harca-belgele-ödeme al&quot; mantığıyla
@@ -423,18 +463,25 @@ export default function BlogPage() {
           KOBİ&apos;lerinin Güneş Enerjisi Yatırımlarının Desteklenmesi
           Proje Teklif Çağrısı&quot; ve &quot;2023-02 Sanayide Temiz ve
           Döngüsel Ekonomi Proje Teklif Çağrısı&quot; hâlâ &quot;Yürürlükte
-          Olan Çağrılar&quot; başlığı altında listeleniyor. Daha da
-          önemlisi, KOSGEB&apos;in açıkladığı verilere göre 2026 yılının
-          ilk altı ayında (Ocak-Haziran döneminde) Yeşil Sanayi Destek
-          Programı kapsamında <strong>466 işletmeye 480 milyon 752 bin 684
-          TL</strong> destek kullandırıldı. Bu rakam, programın kâğıt
-          üzerinde değil fiilen aktif şekilde işlediğini gösteriyor.
+          Olan Çağrılar&quot; başlığı altında listeleniyor. Ancak çağrı
+          metinlerindeki başvuru dönemi, GES çağrısı için 8 Aralık 2023,
+          döngüsel ekonomi çağrısı için 1 Aralık 2023 ile <strong>30 Kasım
+          2024 (saat 23:59)</strong> arasındaydı ve başvuru sistemi bu tarihte
+          kapandı. Ekim 2026 itibarıyla KOSGEB kaynaklarında bu çağrılar için
+          bir süre uzatımı veya yeni bir çağrı dönemi tespit edemedik; bu
+          nedenle yazıyı &quot;program kapalı&quot; olarak işaretledik.
+          Programın kendisi ise sona ermiş değil: KOSGEB&apos;in açıkladığı
+          verilere göre 2026 yılının ilk altı ayında (Ocak-Haziran
+          döneminde) Yeşil Sanayi Destek Programı kapsamında <strong>466
+          işletmeye 480 milyon 752 bin 684 TL</strong> destek kullandırıldı.
+          Bu rakam, daha önce kabul edilen projelerin ödemelerini yansıtıyor;
+          yeni başvuru alındığı anlamına gelmiyor.
         </p>
         <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
           <p className="leading-8 text-gray-700">
-            Yine de dikkatli olun: proje teklif çağrılarının başvuru
-            dönemleri zaman zaman güncelleniyor veya yeni dönemlerle
-            yenileniyor. Başvurudan önce kesin dönem tarihlerini
+            Yeni bir çağrı ilan edilirse limit, oran, süre ve sektör kapsamı
+            çağrı metninde yeniden belirlenebilir. Başvurudan önce güncel
+            durumu
             kosgeb.gov.tr üzerindeki güncel çağrı duyurusundan veya KBS
             üzerinden, ya da 444 1 567 numaralı KOSGEB Çağrı Merkezi&apos;nden
             mutlaka teyit edin.
@@ -449,8 +496,8 @@ export default function BlogPage() {
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Başvuru öncesi güncel çağrı tarihlerini kosgeb.gov.tr üzerinden
-            teyit edin
+            ✅ 2023 çağrılarının başvuru dönemi 30 Kasım 2024&apos;te kapandı;
+            yeni çağrıyı kosgeb.gov.tr üzerinden takip edin
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Destek hibe değil geri ödemeli finansmandır, nakit akışı
@@ -600,10 +647,14 @@ export default function BlogPage() {
               Deprem bölgesindeki işletmeler için özel bir avantaj var mı?
             </h3>
             <p className="leading-8 text-gray-700">
-              Evet. Adıyaman, Hatay, Kahramanmaraş gibi afet bölgesi
-              illerinde faaliyet gösteren işletmeler için destek oranı,
-              standart %60-%70 seviyesinden %80-90&apos;a kadar
-              yükseltiliyor.
+              Evet, ancak koşula bağlı. 2023 çağrılarında, afet bölgesi
+              illerinde faaliyet gösteren ve işyeri depremde hasar gören
+              (hasarı belgeleyen) işletmeler için destek oranı, standart
+              %60-%70 seviyesinden %80&apos;e (Adana, Diyarbakır, Elazığ,
+              Gaziantep, Kilis, Osmaniye, Şanlıurfa) veya %90&apos;a
+              (Adıyaman, Hatay, Kahramanmaraş, Malatya, Nurdağı ve İslahiye)
+              yükseltiliyor. Güncel Yönerge de deprem bölgesindeki KOBİ&apos;ler
+              için hasar derecesine bağlı olarak azami %90 oranı öngörüyor.
             </p>
           </div>
         </div>
@@ -616,15 +667,16 @@ export default function BlogPage() {
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Yeşil Sanayi Destek Programı, sanayide &quot;yeşil dönüşüm&quot;
-          başlığı altında konuşulan pek çok gündemin aksine, somut rakamları,
-          net başvuru şartları ve fiilen işleyen bir bütçesi olan bir KOSGEB
-          desteği. Çatı tipi güneş enerjisi yatırımı planlayan veya üretim
-          sürecinde kaynak verimliliğine yönelmek isteyen imalatçı
-          KOBİ&apos;ler için 14 milyon TL&apos;ye ve 4 milyon TL&apos;ye
-          kadar geri ödemeli finansman anlamına geliyor. Ancak destek hibe
-          değil, geri ödeme yükümlülüğü olan bir finansman modeli olduğu
-          için başvurudan önce hem uygunluk kriterlerinin hem de nakit akışı
-          planının dikkatle değerlendirilmesi gerekiyor.
+          başlığı altında konuşulan pek çok gündemin aksine, somut rakamları
+          ve net başvuru şartları olan bir KOSGEB desteği. 2023 çağrılarında
+          çatı tipi güneş enerjisi yatırımı planlayan veya üretim sürecinde
+          kaynak verimliliğine yönelmek isteyen KOBİ&apos;ler için 14 milyon
+          TL&apos;ye ve 4 milyon TL&apos;ye kadar geri ödemeli finansman
+          sağlandı. Bu çağrıların başvuru dönemi 30 Kasım 2024&apos;te
+          kapandığı için yeni çağrı duyurusunu takip etmek gerekiyor. Destek
+          hibe değil, geri ödeme yükümlülüğü olan bir finansman modeli
+          olduğundan, yeni bir çağrıda hem uygunluk kriterleri hem de nakit
+          akışı planı dikkatle değerlendirilmelidir.
         </p>
       </section>
 
@@ -659,7 +711,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"KOSGEB Yeşil Sanayi Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Ne tam hibe ne de klasik banka kredisi: geri ödemeli bir KOSGEB finansmanı. Proje bitiminden sonra 12 ay ödemesiz dönemin ardından 4'er aylık dönemler halinde 6 eşit taksitte geri ödeniyor."}},{"@type":"Question","name":"Mikro işletmeler bu programdan yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca küçük ve orta ölçekli sanayi KOBİ'lerini kapsıyor; mikro ölçekli işletmeler kapsam dışında tutuluyor."}},{"@type":"Question","name":"Güneş enerjisi ve döngüsel ekonomi bileşenlerine aynı anda başvurulabilir mi?","acceptedAnswer":{"@type":"Answer","text":"İki bileşen ayrı proje teklif çağrıları olarak yürütülüyor ve ayrı ayrı değerlendiriliyor. Uygun görülen işletmeler her iki çağrıya da başvurabilir, ancak her başvurunun kendi kapsamına ve gider kalemlerine uygun ayrı bir proje olarak hazırlanması gerekiyor."}},{"@type":"Question","name":"Destek başvurusu için asgari proje bütçesi ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Toplam proje bütçesinin en az 1.000.000 TL olması gerekiyor. Bu tutarın altında kalan projeler başvuru şartını sağlamıyor."}},{"@type":"Question","name":"Program, KOSGEB'in dijital dönüşüm destek programıyla aynı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, ikisi tamamen ayrı programlar. Yeşil Sanayi Destek Programı güneş enerjisi ve döngüsel ekonomi yatırımlarına, KOBİ Dijital Dönüşüm Destek Programı ise ERP, robotik, yapay zekâ gibi dijital yatırımlara yönelik ayrı bir yönergeyle işliyor."}},{"@type":"Question","name":"Deprem bölgesindeki işletmeler için özel bir avantaj var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet. Adıyaman, Hatay, Kahramanmaraş gibi afet bölgesi illerinde faaliyet gösteren işletmeler için destek oranı, standart %60-%70 seviyesinden %80-90'a kadar yükseltiliyor."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"KOSGEB Yeşil Sanayi Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Ne tam hibe ne de klasik banka kredisi: geri ödemeli bir KOSGEB finansmanı. Proje bitiminden sonra 12 ay ödemesiz dönemin ardından 4'er aylık dönemler halinde 6 eşit taksitte geri ödeniyor."}},{"@type":"Question","name":"Mikro işletmeler bu programdan yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca küçük ve orta ölçekli sanayi KOBİ'lerini kapsıyor; mikro ölçekli işletmeler kapsam dışında tutuluyor."}},{"@type":"Question","name":"Güneş enerjisi ve döngüsel ekonomi bileşenlerine aynı anda başvurulabilir mi?","acceptedAnswer":{"@type":"Answer","text":"İki bileşen ayrı proje teklif çağrıları olarak yürütülüyor ve ayrı ayrı değerlendiriliyor. Uygun görülen işletmeler her iki çağrıya da başvurabilir, ancak her başvurunun kendi kapsamına ve gider kalemlerine uygun ayrı bir proje olarak hazırlanması gerekiyor."}},{"@type":"Question","name":"Destek başvurusu için asgari proje bütçesi ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Toplam proje bütçesinin en az 1.000.000 TL olması gerekiyor. Bu tutarın altında kalan projeler başvuru şartını sağlamıyor."}},{"@type":"Question","name":"Program, KOSGEB'in dijital dönüşüm destek programıyla aynı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, ikisi tamamen ayrı programlar. Yeşil Sanayi Destek Programı güneş enerjisi ve döngüsel ekonomi yatırımlarına, KOBİ Dijital Dönüşüm Destek Programı ise ERP, robotik, yapay zekâ gibi dijital yatırımlara yönelik ayrı bir yönergeyle işliyor."}},{"@type":"Question","name":"Deprem bölgesindeki işletmeler için özel bir avantaj var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, ancak koşula bağlı. 2023 çağrılarında, afet bölgesi illerinde faaliyet gösteren ve işyeri depremde hasar gören (hasarı belgeleyen) işletmeler için destek oranı, standart %60-%70 seviyesinden %80'e (Adana, Diyarbakır, Elazığ, Gaziantep, Kilis, Osmaniye, Şanlıurfa) veya %90'a (Adıyaman, Hatay, Kahramanmaraş, Malatya, Nurdağı ve İslahiye) yükseltiliyor. Güncel Yönerge de deprem bölgesindeki KOBİ'ler için hasar derecesine bağlı olarak azami %90 oranı öngörüyor."}}]}) }}
       />
     </BlogLayout>
   );

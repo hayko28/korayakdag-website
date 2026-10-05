@@ -236,7 +236,7 @@ export default function BlogPage() {
               </tr>
               <tr className="border-b bg-white">
                 <td className="p-5 font-semibold">Vergi/KDV İstisnası</td>
-                <td className="p-5">Doğrudan vergi istisnası sağlamaz</td>
+                <td className="p-5">Teknopark gibi genel bir vergi/KDV istisnası sağlamaz; Proje Değerlendirme Kurulu'nca onaylanan Ar-Ge ve inovasyon projeleri için 5746 sayılı Kanun'daki muafiyet ve istisnalardan yararlanılabilir</td>
                 <td className="p-5">Gelir/kurumlar vergisi ve KDV istisnaları mevcuttur</td>
               </tr>
               <tr className="border-b bg-white">
@@ -276,7 +276,9 @@ export default function BlogPage() {
           TEKMER'ler tek başına KOSGEB tarafından açılmaz; KOSGEB'in
           program kapsamında yetkilendirdiği bir "işletici kuruluş"
           tarafından kurulur ve işletilir. KOSGEB'in güncel uygulama
-          esaslarına göre işletici kuruluş olabilecek kurumlar şunlardır:
+          esaslarına göre TEKMER kurucusu olabilecek kurumlar şunlardır
+          (işletici kuruluş ise Türk Ticaret Kanunu'na göre anonim şirket
+          statüsünde olmalıdır):
         </p>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
@@ -465,22 +467,37 @@ export default function BlogPage() {
           </table>
         </div>
         <p className="mt-6 text-sm text-gray-500">
-          * Hızlandırma Desteği kapsamındaki geri ödemeler, program
-          tamamlandıktan 36 ay sonra 4 eşit taksitte başlar. Kuruluş Desteği
-          üst sınırının %50'sine kadar teminat karşılığında erken ödeme
-          talep edilebilir. Yıllık üst limitler her takvim yılı başında
-          (TÜFE + Yurt İçi ÜFE)/2 oranında güncellenir; toplam program
-          süresi 10 yılı aşamaz.
+          * Hızlandırma Desteği geri ödemelidir; geri ödemeler, hızlandırma
+          programının tamamlandığına ilişkin kurul kararından itibaren 12
+          ay ödemesiz dönemin ardından, 3'er aylık dönemler hâlinde 4 eşit
+          taksitle yapılır. Hızlandırma Desteği çağrı esaslıdır ve
+          başvuru için bir fon, melek yatırımcı ağı veya potansiyel müşteri
+          ile iş birliği gerekir. Performans Desteğinde ödeme yapılabilmesi
+          için performans gerçekleşme oranının en az %50 olması gerekir ve
+          yıllık destek tutarı bu oranla çarpılarak belirlenir. Kuruluş
+          Desteği için belirlenen tahmini destek tutarının %20'sine kadar
+          teminat karşılığında erken ödeme yapılabilir. Yıllık üst limitler
+          her takvim yılı başında (TÜFE + Yurt İçi ÜFE)/2 oranında
+          güncellenir; Kuruluş ve Performans Desteğinin toplam süresi 10
+          yıldır.
         </p>
         <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
             Program Sürekli Başvuruya Açık
           </h3>
           <p className="leading-8">
-            Teknoloji Merkezi Destek Programı, dönemsel bir çağrı takvimine
-            bağlı olmaksızın kuruluş süresince başvuruya açık tutulmaktadır.
-            Bunun yanında KOSGEB, zaman zaman belirli bir tema etrafında özel
-            çağrılar da açabilmektedir; örneğin{" "}
+            Teknoloji Merkezi Destek Programı (Uygulama Esasları 7 Ekim 2025
+            tarihinde yürürlüğe girmiştir) Kuruluş ve Performans Desteği
+            bakımından dönemsel bir çağrı takvimine bağlı değildir; Hızlandırma
+            Desteği ise KOSGEB'in ilan ettiği çağrılar üzerinden alınır.
+            Programın yürürlüğe girdiği tarihte desteklenmesine karar verilmiş
+            ve program süresinin üç yılını doldurmamış mevcut TEKMER'lerin
+            yeni Kuruluş Desteğine başvurabilmesi için tanınan 1 yıllık geçiş
+            süresi <strong>7 Ekim 2026</strong> tarihinde sona ermektedir; bu
+            tarihten sonra söz konusu TEKMER'ler yalnızca Performans ve
+            Hızlandırma Desteğinden yararlanabilir. Bunun yanında KOSGEB, zaman
+            zaman belirli bir tema etrafında özel çağrılar da açabilmektedir;
+            örneğin{" "}
             <Link
               href="/blog/kosgeb-cop31-odakli-hizlandirma-destegi-cagrisi-2026"
               className="text-orange-600 underline"
@@ -695,9 +712,13 @@ export default function BlogPage() {
             <p className="leading-8">
               TEKMER, 3624 sayılı KOSGEB Kanunu kapsamında çalışan ve iş
               fikri/erken aşama girişimlere ofis, mentorluk ve kuluçka
-              hizmeti sunan bir yapıdır; vergi istisnası sağlamaz. Teknopark
-              ise 4691 sayılı Kanun kapsamında, kurulu şirketlere gelir/
-              kurumlar vergisi ve KDV istisnaları sunan farklı bir yapıdır.
+              hizmeti sunan bir yapıdır; Teknopark gibi genel bir vergi
+              istisnası sağlamaz, yalnızca Proje Değerlendirme Kurulu'nca
+              onaylanan Ar-Ge ve inovasyon projeleri için 5746 sayılı
+              Kanun'daki muafiyet ve istisnalardan yararlanma imkanı tanır.
+              Teknopark ise 4691 sayılı Kanun kapsamında, kurulu şirketlere
+              gelir/kurumlar vergisi ve KDV istisnaları sunan farklı bir
+              yapıdır.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -752,11 +773,12 @@ export default function BlogPage() {
               6. TEKMER'i kimler kurabilir?
             </h3>
             <p className="leading-8">
-              Üniversiteler, Teknoloji Geliştirme Bölgesi yönetici şirketleri
-              ve teknoloji transfer ofisleri doğrudan başvurabilirken; OSB
-              yönetimleri, odalar, borsalar, dernekler ve bireysel
-              yatırımcılar gibi diğer kurumların en az bir üniversite veya
-              TGB ile iş birliği yapması gerekir.
+              Üniversiteler ve Teknoloji Geliştirme Bölgesi yönetici şirketleri
+              doğrudan başvurabilirken; teknoloji transfer ofisleri, OSB
+              yönetimleri, kamu kurumları, odalar, borsalar, dernekler ve
+              bireysel yatırımcılar gibi diğer kurucuların en az bir
+              üniversite ve/veya TGB yönetici şirketi ile iş birliği içinde
+              başvurması gerekir.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -863,7 +885,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1. TEKMER ile Teknopark arasındaki temel fark nedir?","acceptedAnswer":{"@type":"Answer","text":"TEKMER, 3624 sayılı KOSGEB Kanunu kapsamında çalışan ve iş fikri/erken aşama girişimlere ofis, mentorluk ve kuluçka hizmeti sunan bir yapıdır; vergi istisnası sağlamaz. Teknopark ise 4691 sayılı Kanun kapsamında, kurulu şirketlere gelir/ kurumlar vergisi ve KDV istisnaları sunan farklı bir yapıdır."}},{"@type":"Question","name":"2. TEKMER'e başvurmak için şirket kurmuş olmam gerekir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Ön kuluçka aşaması, henüz şirketleşmemiş, elinde yalnızca teknoloji veya yenilik tabanlı bir iş fikri olan bireylere de açıktır. Şirketleşme genellikle kuluçka aşamasında gerçekleşir."}},{"@type":"Question","name":"3. KOSGEB'in TEKMER'e verdiği destek doğrudan bana mı ödenir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuruluş, performans ve hızlandırma desteği tutarları TEKMER'i kuran/işleten kuruluşa (üniversite, OSB, TGB yönetici şirketi vb.) ödenir. Girişimciye yansıyan fayda; bu kaynakla finanse edilen ofis, ekipman, eğitim ve mentorluk hizmetleri şeklindedir."}},{"@type":"Question","name":"4. TEKMER'de kalış süresinin bir sınırı var mı?","acceptedAnswer":{"@type":"Answer","text":"Program kapsamında TEKMER'e sağlanan toplam destek süresi en fazla 10 yıldır (3 yıl kuruluş + 7 yıl performans desteği, hızlandırma desteği bu süreyle birlikte değerlendirilir). Girişimcinin TEKMER bünyesinde kalabileceği süre ise ilgili merkezin kendi kuralları ve girişimin gelişim aşamasına göre belirlenir."}},{"@type":"Question","name":"5. Her sektörden girişimci TEKMER'e başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"TEKMER'ler genellikle belirli sektörlerde (yazılım, biyoteknoloji, tıbbi cihaz, tarım teknolojileri vb.) uzmanlaşmıştır. Başvuru öncesinde iş fikrinize en uygun odağa sahip TEKMER'in belirlenmesi önemlidir."}},{"@type":"Question","name":"6. TEKMER'i kimler kurabilir?","acceptedAnswer":{"@type":"Answer","text":"Üniversiteler, Teknoloji Geliştirme Bölgesi yönetici şirketleri ve teknoloji transfer ofisleri doğrudan başvurabilirken; OSB yönetimleri, odalar, borsalar, dernekler ve bireysel yatırımcılar gibi diğer kurumların en az bir üniversite veya TGB ile iş birliği yapması gerekir."}},{"@type":"Question","name":"7. TEKMER'den mezun olan bir girişim ne yapar?","acceptedAnswer":{"@type":"Answer","text":"Hızlandırma sürecini tamamlayan ve büyüyen bir girişim, genellikle Teknopark'a geçerek vergi/KDV istisnalarından yararlanmayı veya KOSGEB'in Ar-Ge Merkezi ile Ar-Ge/Ür-Ge İnovasyon Destek Programı gibi bir sonraki aşama programlarına başvurmayı değerlendirir."}},{"@type":"Question","name":"8. TEKMER'e başvuru ücretli midir?","acceptedAnswer":{"@type":"Answer","text":"Başvurunun kendisi ücretsizdir. Ofis/çalışma alanı kullanımına ilişkin şartlar (ücretsiz süre, sembolik kira vb.) ise TEKMER'den TEKMER'e farklılık gösterebilir; bu nedenle ilgili merkezin güncel şartlarının teyit edilmesi gerekir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1. TEKMER ile Teknopark arasındaki temel fark nedir?","acceptedAnswer":{"@type":"Answer","text":"TEKMER, 3624 sayılı KOSGEB Kanunu kapsamında çalışan ve iş fikri/erken aşama girişimlere ofis, mentorluk ve kuluçka hizmeti sunan bir yapıdır; Teknopark gibi genel bir vergi istisnası sağlamaz, yalnızca Proje Değerlendirme Kurulu'nca onaylanan Ar-Ge ve inovasyon projeleri için 5746 sayılı Kanun'daki muafiyet ve istisnalardan yararlanma imkanı tanır. Teknopark ise 4691 sayılı Kanun kapsamında, kurulu şirketlere gelir/kurumlar vergisi ve KDV istisnaları sunan farklı bir yapıdır."}},{"@type":"Question","name":"2. TEKMER'e başvurmak için şirket kurmuş olmam gerekir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Ön kuluçka aşaması, henüz şirketleşmemiş, elinde yalnızca teknoloji veya yenilik tabanlı bir iş fikri olan bireylere de açıktır. Şirketleşme genellikle kuluçka aşamasında gerçekleşir."}},{"@type":"Question","name":"3. KOSGEB'in TEKMER'e verdiği destek doğrudan bana mı ödenir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuruluş, performans ve hızlandırma desteği tutarları TEKMER'i kuran/işleten kuruluşa (üniversite, OSB, TGB yönetici şirketi vb.) ödenir. Girişimciye yansıyan fayda; bu kaynakla finanse edilen ofis, ekipman, eğitim ve mentorluk hizmetleri şeklindedir."}},{"@type":"Question","name":"4. TEKMER'de kalış süresinin bir sınırı var mı?","acceptedAnswer":{"@type":"Answer","text":"Program kapsamında TEKMER'e sağlanan toplam destek süresi en fazla 10 yıldır (3 yıl kuruluş + 7 yıl performans desteği, hızlandırma desteği bu süreyle birlikte değerlendirilir). Girişimcinin TEKMER bünyesinde kalabileceği süre ise ilgili merkezin kendi kuralları ve girişimin gelişim aşamasına göre belirlenir."}},{"@type":"Question","name":"5. Her sektörden girişimci TEKMER'e başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"TEKMER'ler genellikle belirli sektörlerde (yazılım, biyoteknoloji, tıbbi cihaz, tarım teknolojileri vb.) uzmanlaşmıştır. Başvuru öncesinde iş fikrinize en uygun odağa sahip TEKMER'in belirlenmesi önemlidir."}},{"@type":"Question","name":"6. TEKMER'i kimler kurabilir?","acceptedAnswer":{"@type":"Answer","text":"Üniversiteler ve Teknoloji Geliştirme Bölgesi yönetici şirketleri doğrudan başvurabilirken; teknoloji transfer ofisleri, OSB yönetimleri, kamu kurumları, odalar, borsalar, dernekler ve bireysel yatırımcılar gibi diğer kurucuların en az bir üniversite ve/veya TGB yönetici şirketi ile iş birliği içinde başvurması gerekir."}},{"@type":"Question","name":"7. TEKMER'den mezun olan bir girişim ne yapar?","acceptedAnswer":{"@type":"Answer","text":"Hızlandırma sürecini tamamlayan ve büyüyen bir girişim, genellikle Teknopark'a geçerek vergi/KDV istisnalarından yararlanmayı veya KOSGEB'in Ar-Ge Merkezi ile Ar-Ge/Ür-Ge İnovasyon Destek Programı gibi bir sonraki aşama programlarına başvurmayı değerlendirir."}},{"@type":"Question","name":"8. TEKMER'e başvuru ücretli midir?","acceptedAnswer":{"@type":"Answer","text":"Başvurunun kendisi ücretsizdir. Ofis/çalışma alanı kullanımına ilişkin şartlar (ücretsiz süre, sembolik kira vb.) ise TEKMER'den TEKMER'e farklılık gösterebilir; bu nedenle ilgili merkezin güncel şartlarının teyit edilmesi gerekir."}}]}) }}
       />
     </BlogLayout>
   );

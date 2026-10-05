@@ -783,6 +783,7 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
     "Bu destek HİBE DEĞİLDİR, GERİ ÖDEMELİDİR: 12 ay ödemesiz dönemin ardından 6 eşit taksitte geri ödenir; zamanında ödenirse faizsizdir, gecikirse yasal faiz işler ve teminat nakde çevrilebilir.",
     "Destek oranı Alt Bileşen 1.1'de (enerji sistemlerinin karbonsuzlaştırılması) %60, Alt Bileşen 1.2'de (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) %70'tir; deprem bölgesindeki (11 il) illerde hasar derecesine göre azami %90'a çıkabilir. Proje süresi 8-24 ay (4 ay katları).",
     "Kodda henüz sorulmayan ek ön koşullar da var: şirket sermayesinin en az %75'inin özel sektöre ait olması ve kamu çoğunluk kontrolü bulunmaması, asgari bir kredi skoru, Çevresel-Sosyal Yönetim Sistemi riskinin düşük/orta olması, kuruluşun en az 2 yıldır faaliyette olması, Alt Bileşen 1.1 için yıllık enerji tüketiminin en az 20 TEP olması, Dünya Bankası'nın \"uygun bulunmayan faaliyet\" listesinde olmama ve aynı anda yalnızca 1 çağrıya/toplamda en fazla 2 projeye başvurabilme sınırı. Bunlar başvuru öncesi KOSGEB ile mutlaka teyit edilmelidir.",
+    "Şu an açık bir çağrı bulunmuyor: 2023-01 (güneş enerjisi) ve 2023-02 (temiz ve döngüsel ekonomi) çağrılarının başvuru dönemi 30 Kasım 2024'te sona erdi, yeni çağrı tespit edilemedi; yeni çağrı için kosgeb.gov.tr takip edilmelidir.",
     "Sektör kapsamı genel Yönerge'de sabitlenmemiş, ilan edilen çağrıya göre belirleniyor — güncel çağrı kapsamı kosgeb.gov.tr üzerinden teyit edilmelidir.",
   ];
 
@@ -810,7 +811,9 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
       meta.programId, meta.programAdi, meta.kurum, "belirsiz",
       "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
-      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`]
+      [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
+      true,
+      "30 Kasım 2024 (2023-01 ve 2023-02 çağrıları, kapandı)"
     );
   }
 
@@ -818,7 +821,9 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
     "Girilen bilgilere göre ölçek ve tema kriterleri sağlanıyor; yukarıdaki ek ön koşullar ve nihai onay KOSGEB Kurulu'nun değerlendirmesine tabidir.",
     gerekceler,
-    uyarilar
+    uyarilar,
+    true,
+    "30 Kasım 2024 (2023-01 ve 2023-02 çağrıları, kapandı)"
   );
 }
 

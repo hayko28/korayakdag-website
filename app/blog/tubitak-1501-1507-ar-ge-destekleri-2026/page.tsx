@@ -38,7 +38,7 @@ export default function BlogPage() {
     >
         <div className="rounded-2xl border-l-4 border-green-500 bg-green-50 p-8">
           <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
-            🟢 Güncelleme (14 Ağustos 2026): 2026 Yılı 2. Çağrısı Açık
+            🟢 Güncelleme (5 Ekim 2026): 2026 Yılı 2. Çağrısı Açık
           </h2>
           <p className="mb-6 leading-8 text-gray-700">
             TÜBİTAK, 1501 Sanayi Ar-Ge Destek Programı ve 1507 KOBİ Ar-Ge
@@ -74,8 +74,9 @@ export default function BlogPage() {
           </div>
           <p className="mt-6 leading-8 text-gray-700">
             Kuruluş bazlı ön kayıt işlemi PRODİS üzerinden yapılır ve çağrı
-            açılışının beklenmesine gerek yoktur; zaman kaybetmemek için ön
-            kaydın erken tamamlanması önerilir. Ayrıca bu çağrı döneminde
+            açılışının beklenmesine gerek yoktur; ön kayıt evraklarının çağrı
+            kapanış tarihinden en az bir iş günü önce TÜBİTAK&apos;a ulaşması
+            gerekir, bu nedenle ön kaydın erken tamamlanması önerilir. Ayrıca bu çağrı döneminde
             1501 Programı&apos;na yalnızca <strong>KOBİ ölçeğindeki</strong>{" "}
             sermaye şirketleri başvurabilmektedir; büyük ölçekli firmalar bu
             dönem 1501 çağrısına başvuru yapamaz.
@@ -218,7 +219,7 @@ export default function BlogPage() {
                 <li>✔ 3,5 Milyon TL bütçe üst limiti</li>
                 <li>✔ 18 aya kadar proje süresi</li>
                 <li>✔ %75 sabit hibe desteği</li>
-                <li>✔ Bir firma ömrü boyunca en fazla 5 proje sunabilir</li>
+                <li>✔ Firmanın desteklenen ilk 5 projesi bu kapsamda değerlendirilir</li>
               </ul>
             </div>
           </div>
@@ -355,8 +356,10 @@ export default function BlogPage() {
             </h3>
             <p className="mb-6 leading-8 text-gray-700">
               Daha önce desteklenen projelerin gerçekten ticari başarıya
-              dönüşüp dönüşmediği değerlendirme puanını kritik düzeyde
-              etkilemektedir.
+              dönüşüp dönüşmediği değerlendirme puanını etkilemektedir:
+              firmanın ticarileşme performansı, 2026/2 çağrılarında -5 ile +5
+              arasında ek puana dönüştürülür. Kurul değerlendirme eşik değeri
+              60 puandır.
             </p>
             <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-orange-500">
               <li>Ürünleşip ticari satış oluşturdu mu?</li>
@@ -375,16 +378,12 @@ export default function BlogPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-5">Endüstride Teknolojik Sıçrama & Derin Teknoloji</td>
-                  <td className="p-5 font-bold text-green-600">+ Öncelikli Puan / Ayrıcalık</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-5">Dijital Dönüşüm ve Yapay Zekâ Teknolojileri</td>
-                  <td className="p-5 font-bold text-green-600">+ Öncelikli Puan / Ayrıcalık</td>
+                  <td className="p-5">Endüstride Teknolojik Sıçrama (TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları)</td>
+                  <td className="p-5 font-bold text-green-600">+5 puan</td>
                 </tr>
                 <tr>
-                  <td className="p-5">Yeşil Mutabakat ve Sürdürülebilirlik Odaklı Projeler</td>
-                  <td className="p-5 font-bold text-green-600">+ Öncelikli Puan / Ayrıcalık</td>
+                  <td className="p-5">Dijital Liderlik (TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları)</td>
+                  <td className="p-5 font-bold text-green-600">+5 puan</td>
                 </tr>
               </tbody>
             </table>
@@ -394,10 +393,15 @@ export default function BlogPage() {
               ⚠️ Yeni Çağrı ve Başvuru Sınırı
             </h3>
             <p className="leading-8 text-gray-700">
-              Aynı çağrı döneminde bir şirket, TÜBİTAK 1501 ve 1507
-              programlarının toplamında kural olarak en fazla iki başvuru
-              yapabilir. Ancak çok ortaklı ve siparişe dayalı Ar-Ge projeleri bu
-              sınırlandırmaların istisnası kapsamında tutulabilmektedir.
+              2026/2 çağrı döneminde bir kuruluş, TÜBİTAK 1501 ve 1507
+              çağrılarının toplamında en fazla 2 proje önerisi ile başvuru
+              yapabilir. Örneğin 1507&apos;ye 1, 1501&apos;e 1 başvuru yapılabilir;
+              ancak 1507&apos;ye 1, 1501&apos;e 2 başvuru yapılamaz. Öncelikli konu
+              ek puanı yalnızca Kurul eşik değerinin üzerinde puan alan
+              projelere verilir ve önerinin &quot;Endüstride Teknolojik
+              Sıçrama&quot; veya &quot;Dijital Liderlik&quot; başlıklarından
+              birinde yer alması gerekir (&quot;Yeşil Dönüşüm&quot; başlıkları
+              bu ek puanın dışındadır).
             </p>
           </div>
         </section>

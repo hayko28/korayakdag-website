@@ -104,7 +104,7 @@ export default function BlogPage() {
             Girişimcilere Yönelik Yapay Zeka Araçlarına Erişim Amaçlı
             Finansman Desteğine İlişkin İş Birliği Protokolü&quot; çerçevesinde
             hayata geçirildi. Programın işleyişini düzenleyen Yapay Zeka
-            Kredi Yönergesi 13 Haziran 2026&apos;da yürürlüğe girdi ve
+            Kredi Yönergesi 13 Haziran 2026 tarihlidir ve
             başvurular <strong>9 Temmuz 2026&apos;dan itibaren</strong> fiilen
             başladı.
           </p>
@@ -169,7 +169,7 @@ export default function BlogPage() {
               <ul className="space-y-4 text-gray-700">
                 <li>❌ Teknogirişim Rozeti bulunmayan veya süresi dolmuş işletmeler</li>
                 <li>❌ KOSGEB Veri Tabanı&apos;nda kaydı güncel/aktif olmayan işletmeler</li>
-                <li>❌ 9903 sayılı Karar kapsamındaki sektörel/bölgesel kısıtlara takılan işletmeler</li>
+                <li>❌ 9497 sayılı Cumhurbaşkanı Kararı&apos;nda (KOSGEB desteklerinden yararlanacak işletmelere ilişkin sektörel ve bölgesel öncelikler) yer alan kapsam dışında kalan sektörlerde faaliyet gösteren işletmeler</li>
                 <li>❌ KOBİ sınıfı dışında kalan büyük ölçekli şirketler</li>
               </ul>
             </div>
@@ -180,14 +180,14 @@ export default function BlogPage() {
             </h3>
             <p className="mb-6 leading-8 text-gray-700">
               Teknogirişim Rozeti, Sanayi ve Teknoloji Bakanlığı tarafından;
-              Türkiye&apos;de kurulu, teknoloji ve yenilik odaklı,
+              Türkiye&apos;de kurulu, KOBİ niteliğinde ve bağımsız, en fazla
+              15 yıl önce kurulmuş, teknoloji ve yenilik odaklı,
               ölçeklenebilir bir iş modeline sahip girişimlere verilen ve
               verildiği tarihten itibaren 3 yıl geçerli olan bir belgedir.
               Başvurular <strong>teknogirisim.sanayi.gov.tr</strong> portalı
               üzerinden yapılır. Son üç yıl içinde bir teknoloji geliştirme
-              bölgesinden (teknopark) kabul almış, KOSGEB TEKMER tarafından
-              desteklenmiş ya da TÜBİTAK BiGG/BiGG Yatırım programlarından
-              faydalanmış girişimler için değerlendirme süreci hızlandırılmış
+              bölgesinden (teknopark) ya da TEKMER&apos;den kabul almış veya
+              TÜBİTAK BiGG programından destek almış girişimler için değerlendirme süreci hızlandırılmış
               şekilde işler; bu kriterleri sağlamayan girişimler ise
               Bakanlık bünyesindeki değerlendirici kuruluşlar aracılığıyla
               incelenir.
@@ -395,9 +395,9 @@ export default function BlogPage() {
             <p className="leading-8 text-gray-700">
               Yapay Zeka Kredi Programı başvuruları <strong>9 Temmuz 2026 –
               31 Aralık 2026</strong> tarihleri arasında KOSGEB KOBİ Bilgi
-              Sistemi üzerinden alınmaktadır. Bu yazının yayımlandığı Ağustos
-              2026 itibarıyla program hâlâ açık ve başvuruya kapalı değildir.
-              Bütçe tükenmesi veya erken kapanış ihtimaline karşı,
+              Sistemi üzerinden alınmaktadır. Ekim 2026 itibarıyla KOSGEB&apos;in resmî destek sayfasında program yürürlükte görünüyor ve
+              başvuru dönemi devam ediyor.
+              Erken kapanış veya değişiklik ihtimaline karşı,
               Teknogirişim Rozeti sürecini tamamlamış işletmelerin başvuruyu
               geciktirmemesi önerilir.
             </p>
@@ -514,7 +514,8 @@ export default function BlogPage() {
               <li>Kredi <strong>nakit olarak</strong> işletmeye geçmez; yalnızca protokollü hizmet sağlayıcılara yapılan ödemelerde kullanılabilir.</li>
               <li>Teminat mektubunda yönergede belirtilen ifadelerin (&quot;GO Dijital Yapay Zeka Kredisi&quot; ibaresi dahil) birebir yer alması zorunludur; uygun olmayan teminat kabul edilmez.</li>
               <li>Teminat vadesi süresiz olmalı veya son geri ödeme tarihinden en az 6 ay sonrasını kapsamalıdır; bu mümkün değilse asgari 1 yıllık teminat sunulabilir.</li>
-              <li>Taksitlerden biri vadesinde ödenmezse, 7 günlük ek süre sonunda ödeme yapılmazsa borcun tamamı muaccel hale gelir ve teminat nakde çevrilir.</li>
+              <li>Taksitlerden biri vadesinde ödenmezse, yazılı bildirimin tebliğinden itibaren 7 gün içinde ödeme yapılmadığı takdirde ödenmeyen taksit ve kalan taksitlerin tamamı muaccel hale gelir ve teminat nakde çevrilir.</li>
+              <li>Teminat mektubu, ticaret sicil gazetesindeki ad/unvanla birebir aynı olmalı; mektuptaki rakam ve yazı tutarları uyumlu olmalıdır. Sunulan teminat tanımlanan limitten düşükse en fazla teminat tutarı kadar kredi tanımlanabilir.</li>
               <li>Uyuşmazlıklarda Ankara Mahkemeleri ve İcra Daireleri yetkilidir.</li>
               <li>Teknogirişim Rozeti&apos;nin geçerlilik süresi 3 yıldır; süresi dolan işletmeler kredi başvurusundan önce rozeti yenilemelidir.</li>
             </ul>
@@ -576,12 +577,12 @@ export default function BlogPage() {
             </div>
             <div className="rounded-2xl border p-8">
               <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-                Başvuru şu an (Ağustos 2026) açık mı?
+                Başvuru şu an (Ekim 2026) açık mı?
               </h3>
               <p className="leading-8 text-gray-700">
                 Evet, program 9 Temmuz 2026&apos;da başladı ve mevcut takvime
                 göre 31 Aralık 2026&apos;ya kadar başvuruya açık.
-                Uygulamada bütçe ve kontenjana bağlı erken kapanış
+                Olası erken kapanış veya değişiklik
                 ihtimaline karşı güncel durumun KOSGEB&apos;in resmî
                 duyurularından teyit edilmesi önerilir.
               </p>
@@ -669,7 +670,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Teknogirişim Rozetim yok, önce onu mu almalıyım?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yapay Zeka Kredisi'ne başvurabilmenin ön şartı, başvuru tarihi itibarıyla geçerli bir Teknogirişim Rozeti'ne sahip olmaktır. Rozetiniz yoksa süreç teknogirisim.sanayi.gov.tr üzerinden başlatılmalı ve rozet onaylandıktan sonra kredi başvurusu yapılmalıdır."}},{"@type":"Question","name":"Kredi gerçekten faizsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, yönergeye göre kullandırılan kredi için herhangi bir faiz veya komisyon uygulanmıyor. İşletme yalnızca kullandığı anaparayı, 12 aylık ödemesiz dönemin ardından 4 eşit taksitte geri ödüyor."}},{"@type":"Question","name":"Krediyi işletme sermayesi veya başka bir gider için kullanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kredi yalnızca protokol kapsamındaki yapay zeka veri merkezi ve hizmet sağlayıcılarından alınan GPU/CPU/RAM, veri depolama ve AI araç/platform hizmetlerinin ödemesinde kullanılabilir; nakit çekim veya başka amaçlı harcama söz konusu değildir."}},{"@type":"Question","name":"Teminat şart mı, teminatsız başvuru yapılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Teminat zorunludur. Onaylanan kredi tutarı GO Dijital Cüzdan hesabına önce blokeli olarak aktarılır; blokenin kaldırılıp kullanılabilir hale gelmesi için yönergedeki şartlara uygun bir banka Kesin Teminat Mektubu sunulması gerekir."}},{"@type":"Question","name":"Başvuru şu an (Ağustos 2026) açık mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, program 9 Temmuz 2026'da başladı ve mevcut takvime göre 31 Aralık 2026'ya kadar başvuruya açık. Uygulamada bütçe ve kontenjana bağlı erken kapanış ihtimaline karşı güncel durumun KOSGEB'in resmî duyurularından teyit edilmesi önerilir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Teknogirişim Rozetim yok, önce onu mu almalıyım?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yapay Zeka Kredisi'ne başvurabilmenin ön şartı, başvuru tarihi itibarıyla geçerli bir Teknogirişim Rozeti'ne sahip olmaktır. Rozetiniz yoksa süreç teknogirisim.sanayi.gov.tr üzerinden başlatılmalı ve rozet onaylandıktan sonra kredi başvurusu yapılmalıdır."}},{"@type":"Question","name":"Kredi gerçekten faizsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, yönergeye göre kullandırılan kredi için herhangi bir faiz veya komisyon uygulanmıyor. İşletme yalnızca kullandığı anaparayı, 12 aylık ödemesiz dönemin ardından 4 eşit taksitte geri ödüyor."}},{"@type":"Question","name":"Krediyi işletme sermayesi veya başka bir gider için kullanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kredi yalnızca protokol kapsamındaki yapay zeka veri merkezi ve hizmet sağlayıcılarından alınan GPU/CPU/RAM, veri depolama ve AI araç/platform hizmetlerinin ödemesinde kullanılabilir; nakit çekim veya başka amaçlı harcama söz konusu değildir."}},{"@type":"Question","name":"Teminat şart mı, teminatsız başvuru yapılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Teminat zorunludur. Onaylanan kredi tutarı GO Dijital Cüzdan hesabına önce blokeli olarak aktarılır; blokenin kaldırılıp kullanılabilir hale gelmesi için yönergedeki şartlara uygun bir banka Kesin Teminat Mektubu sunulması gerekir."}},{"@type":"Question","name":"Başvuru şu an (Ekim 2026) açık mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, program 9 Temmuz 2026'da başladı ve mevcut takvime göre 31 Aralık 2026'ya kadar başvuruya açık. Olası erken kapanış veya değişiklik ihtimaline karşı güncel durumun KOSGEB'in resmî duyurularından teyit edilmesi önerilir."}}]}) }}
       />
     </BlogLayout>
   );
