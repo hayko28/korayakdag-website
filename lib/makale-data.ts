@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "eylul-enflasyonu-ovp-hedefi-farki",
+    title:
+      "Eylül Enflasyonu Yüzde 29,73'e Geriledi: OVP Hedefiyle Arada Kalan 1,33 Puan Neyi Değiştiriyor?",
+    excerpt:
+      "TÜİK'in 5 Ekim'de açıkladığı verilere göre yıllık enflasyon Eylül'de yüzde 29,73'e geriledi, aylık artış yüzde 1,84 oldu. Orta Vadeli Program'ın güncellenmiş yüzde 28,4 hedefiyle arasındaki fark ve üretici-tüketici fiyatları arasındaki ayrışma, Q4 bütçe varsayımlarının gözden geçirilmesi gerektiğini gösteriyor.",
+    tag: "Strateji",
+    date: "5 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "fon-krizinin-likidite-dersi",
     title: "Fon Piyasasındaki Güven Krizi Şirketlere Ne Anlatıyor?",
     excerpt:
