@@ -610,9 +610,9 @@ export default function BlogPage() {
               KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı
             </h3>
             <p className="leading-7 text-sm text-gray-700">
-              Herhangi bir tarihte başvurulabilen, 900.000 TL'ye varan destek
-              üst limitiyle Ar-Ge ve inovasyon faaliyetlerini finanse eden
-              program.
+              15 Nisan 2024'te başvuruya kapatılan, son uygulama esaslarında
+              1.100.000 TL'ye varan destek üst limitiyle Ar-Ge ve inovasyon
+              faaliyetlerini finanse eden program.
             </p>
           </Link>
           <Link

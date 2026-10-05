@@ -4,15 +4,15 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "KOSGEB Ar-Ge, Ür-Ge, İnovasyon Destek Programı | Koray Akdağ",
-  description: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'na her tarihte başvurulabilir. 900.000 TL'ye varan destek üst limiti ve şartlar.",
+  description: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı 15 Nisan 2024 itibarıyla başvuruya kapatıldı. Son uygulama esaslarındaki 1.100.000 TL destek üst limiti, şartlar ve güncel alternatifler.",
   keywords: [
     "kosgeb ar-ge destek programı",
     "kosgeb ür-ge inovasyon desteği",
     "kosgeb ar-ge desteği nasıl alınır",
     "kosgeb girişimci ar-ge desteği",
-    "kosgeb 900.000 tl destek",
+    "kosgeb 1.100.000 tl destek",
     "kosgeb kobi bilgi sistemi başvuru",
-    "kosgeb ar-ge desteği şartları 2026",
+    "kosgeb ar-ge programı kapandı mı",
     "kosgeb ür-ge projesi nedir",
   ],
   alternates: {
@@ -24,12 +24,13 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı: Kimler Başvurabilir, Destek Tutarları Nedir?"
-      description="Girişimcilerin ve KOBİ'lerin herhangi bir tarihte başvurabildiği KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'nda 900.000 TL'ye varan destek üst limiti, gider kalemleri, başvuru şartları ve KBS üzerinden adım adım süreçle 2026 güncel rehber."
+      description="KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı, KOSGEB'in resmî sitesinde 15 Nisan 2024 tarihinde başvuruya kapatılmış programlar arasında yer alıyor. Bu rehber, programın son uygulama esaslarındaki 1.100.000 TL destek üst limitini, gider kalemlerini, şartlarını ve güncel alternatifleri anlatıyor."
       category="KOSGEB • AR-GE DESTEĞİ • 2026"
       date="2026"
       readTime="13 Dakika"
       slug="kosgeb-arge-urge-inovasyon-destek-programi-2026"
-      programDurumu="acik"
+      programDurumu="kapali"
+      sonBasvuruTarihi="15 Nisan 2024 (program başvuruya kapatıldı)"
     >
       <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
@@ -40,9 +41,14 @@ export default function BlogPage() {
           personel sayısı gibi ön koşullar aramadan; yeni bir iş fikrine
           sahip girişimcilerin ve her ölçekten KOBİ&apos;nin doğrudan
           başvurabildiği <strong>Ar-Ge, Ür-Ge ve İnovasyon Destek
-          Programı</strong>, KOSGEB&apos;in en kapsamlı ve en çok başvurulan
-          Ar-Ge destek mekanizmasıdır. Programa yılın herhangi bir gününde
-          başvuru yapılabilir.
+          Programı</strong>, KOSGEB&apos;in en kapsamlı Ar-Ge destek
+          mekanizmalarından biriydi. KOSGEB&apos;in resmî internet sitesinde
+          program &quot;Yürürlükten Kaldırılan Destekler&quot; bölümünde yer
+          alıyor ve <strong>15 Nisan 2024 tarihinde başvuruya kapatıldığı</strong>{" "}
+          belirtiliyor. Bu nedenle şu anda yeni başvuru yapılamıyor. Aşağıdaki
+          bilgiler, programın son uygulama esaslarına (Rev. 20/01/2025)
+          dayanıyor ve geçmiş uygulamayı anlamak ile benzer destekleri
+          değerlendirmek için referans niteliğindedir.
         </p>
         <ul className="space-y-4 text-lg text-gray-700">
           <li>✔ Ar-Ge/İnovasyon projesi ile Ür-Ge projesi arasındaki fark</li>
@@ -50,7 +56,7 @@ export default function BlogPage() {
           <li>✔ Gider kalemi bazında destek tutarları ve oranları</li>
           <li>✔ KBS üzerinden adım adım başvuru ve değerlendirme süreci</li>
           <li>✔ Proje süresi, izleme ve geri ödeme koşulları</li>
-          <li>✔ Dikkat edilmesi gereken kritik noktalar</li>
+          <li>✔ Programın güncel durumu ve alternatif destekler</li>
         </ul>
       </div>
 
@@ -188,8 +194,10 @@ export default function BlogPage() {
                 <td className="p-5 font-semibold">Ar-Ge ve İnovasyon Projesi</td>
                 <td className="p-5">Yeni Girişimciler ve KOBİ&apos;ler</td>
                 <td className="p-5">
-                  Girişimci olarak en fazla 1 defa; KOBİ&apos;ler için sınırsız
-                  (aynı anda yalnızca 1 proje desteklenir)
+                  Girişimci olarak en fazla 1 defa; KOBİ&apos;ler için sayı
+                  sınırı yok (aynı anda 1 proje desteklenir; mikro işletme
+                  dışındaki küçük ve orta işletmelerde başarılı tamamlamanın
+                  ardından aynı anda 2 proje desteklenebilir)
                 </td>
               </tr>
               <tr className="hover:bg-gray-50">
@@ -211,23 +219,26 @@ export default function BlogPage() {
               işletmesini kurup KOSGEB Veri Tabanına kaydolması gerekir.
             </li>
             <li>
-              <strong>KOBİ tanımı:</strong> Anonim, limited veya sermayesi
-              paylara bölünmüş komandit şirket statüsünde, KOSGEB veri
-              tabanında kayıtlı ve güncel işletme beyanına sahip küçük/orta
+              <strong>KOBİ tanımı:</strong> KOBİ Tanımı Yönetmeliği
+              kapsamında yer alan ve KOSGEB&apos;in desteklediği sektörlerde
+              faaliyet gösteren, KOSGEB veri tabanında kayıtlı küçük ve orta
               ölçekli işletmeler.
             </li>
             <li>
               <strong>Personel giderleri desteğinde ek şart:</strong> Ar-Ge ve
               İnovasyon Projesi kapsamında işletmesini sermaye şirketi olarak
-              kuran girişimcinin kendisi ve/veya projede görevli ortağı, başka
-              bir işletmede %30 ve üzeri ortaklığı bulunmaması ve başka bir
-              işveren nezdinde SGK&apos;ya tabi çalışmaması şartıyla nitelikli
-              personel desteğinden yararlanabilir.
+              kuran girişimcinin kendisi ve/veya projede görevli ortağı;
+              başka bir gerçek kişi işletmesinin bulunmaması, başka bir
+              tüzel kişi firmada %30 ve üzeri ortaklığının olmaması veya başka
+              bir işletme/kurumda SGK&apos;ya tabi çalışmaması koşulunu
+              sağlayarak nitelikli personel desteğinden yararlanabilir.
             </li>
             <li>
               <strong>Tek proje kuralı:</strong> Bir yararlanıcının aynı anda
-              yalnızca bir Ar-Ge, Ür-Ge veya İnovasyon projesi desteklenir;
-              projenin tamamlanmasının ardından yeni bir proje sunulabilir.
+              yalnızca bir projesi desteklenir; projenin tamamlanmasının
+              ardından yeni bir proje sunulabilir. Başarılı tamamlama sonrasında
+              mikro işletme dışındaki küçük ve orta işletmelerin aynı anda iki
+              yeni projesi desteklenebilir.
             </li>
           </ul>
         </div>
@@ -240,10 +251,11 @@ export default function BlogPage() {
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Program kapsamında hem girişimciler hem de KOBİ&apos;ler için{" "}
-          <strong>toplam destek tutarı üst limiti 900.000 TL</strong>&apos;dir.
-          Bu tutar; makine-teçhizat, nitelikli personel, sınai mülkiyet
-          hakları, test-analiz ve diğer giderler olmak üzere dört ana gider
-          grubuna dağılır.
+          <strong>toplam destek tutarı üst limiti 1.100.000 TL</strong>&apos;dir.
+          Bu tutar; makine-teçhizat (geri ödemesiz ve geri ödemeli),
+          nitelikli personel, sınai mülkiyet hakları, test-analiz ve diğer
+          giderler olmak üzere gider gruplarına dağılır. Üst limitler proje
+          bazlıdır; her yeni projede yeniden başlar.
         </p>
         <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-left text-sm md:text-base">
@@ -260,13 +272,13 @@ export default function BlogPage() {
                   Makine-Teçhizat, Donanım, Yazılım ve Hizmet Alımı
                 </td>
                 <td className="p-4">
-                  150.000 TL hibe (+ 300.000 TL&apos;ye kadar geri ödemeli)
+                  200.000 TL hibe (+ 300.000 TL geri ödemeli)
                 </td>
                 <td className="p-4">%75 (yerli malı belgesi ile +%15)</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-4 font-semibold">Nitelikli Personel Gideri</td>
-                <td className="p-4">200.000 TL</td>
+                <td className="p-4">300.000 TL</td>
                 <td className="p-4">%100</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
@@ -283,7 +295,7 @@ export default function BlogPage() {
                 <td className="p-4 font-semibold">
                   Diğer Giderler (danışmanlık, eğitim, tanıtım, kongre/fuar ziyareti, işletme kuruluş gideri)
                 </td>
-                <td className="p-4">50.000 TL</td>
+                <td className="p-4">100.000 TL toplam (eğitim 25.000, tanıtım 15.000, danışmanlık 25.000, kongre/fuar ziyareti 25.000 TL)</td>
                 <td className="p-4">%75</td>
               </tr>
             </tbody>
@@ -291,13 +303,16 @@ export default function BlogPage() {
         </div>
         <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <p className="leading-8 text-gray-700">
-            <strong>Ek destek oranları:</strong> Projede açık kaynak kodlu
-            yazılım kullanılması halinde nitelikli personel dışındaki geri
-            ödemesiz destek oranlarına +%15; işletmenin son 3 yılda KOSGEB
-            KOBİ ve Girişimcilik Ödülleri&apos;nde kategori birincisi olması
-            halinde +%10 ilave edilebilir (toplam ilave oran %15&apos;i
-            geçemez). Girişimcilere ayrıca bir defaya mahsus <strong>işletme
-            kuruluş gideri desteği</strong> de sağlanır (gerçek kişi
+            <strong>Ek destek oranları:</strong> Satın alınan makine, teçhizat
+            ve yazılımın Yerli Malı Belgesi ile belgelendirilmesi halinde destek
+            oranına %15 ilave edilir; nitelikli personel dışındaki geri
+            ödemesiz destek oranlarına eklenecek toplam oran %15&apos;i geçemez.
+            (Açık kaynak kodlu yazılım ve KOBİ ve Girişimcilik Ödülleri için
+            öngörülen ilave oranlar, uygulama esaslarından 2021&apos;de
+            kaldırılmıştır.) Başkanlık, belirli bölge, sektör veya hedef
+            gruplar için çağrı esaslı olarak destek üst limitini 6.000.000
+            TL&apos;ye kadar artırabilir. Girişimcilere ayrıca <strong>işletme
+            kuruluş gideri desteği</strong> sağlanır (gerçek kişi
             işletmesi için 5.000 TL, sermaye şirketi için 10.000 TL, oran
             uygulanmaksızın). Makine-teçhizat için geri ödemeli destek
             kullanılırsa, ödeme öncesi banka teminat mektubu veya KGF kefalet
@@ -306,12 +321,12 @@ export default function BlogPage() {
         </div>
         <div className="mt-6 rounded-2xl border border-yellow-200 bg-yellow-50 p-6">
           <p className="text-gray-700">
-            ⚠️ Yukarıdaki tutarlar KOSGEB&apos;in resmî uygulama esaslarına
-            dayanmaktadır ve programın kuruluşundan bu yana güncellendiği
-            görülmemiştir; yine de destek üst limitleri ve oranları zaman
-            zaman revize edilebildiğinden, başvuru öncesinde kosgeb.gov.tr
-            üzerinden veya KOBİ Bilgi Sistemi&apos;nden güncel tutarları
-            teyit etmenizi öneririz.
+            ⚠️ Yukarıdaki tutarlar, KOSGEB&apos;in Ar-Ge, Ür-Ge ve İnovasyon
+            Destek Programı Uygulama Esasları&apos;nın son halindeki (Rev.
+            20/01/2025) limitlerdir. Program başvuruya kapalı olduğundan bu
+            tutarlar şu anda uygulanmamaktadır; benzer bir destek yeniden
+            açılırsa limitler ve oranlar farklı olabilir. Güncel durumu
+            kosgeb.gov.tr üzerinden teyit etmenizi öneririz.
           </p>
         </div>
       </section>
@@ -324,7 +339,9 @@ export default function BlogPage() {
         <p className="mb-10 text-lg leading-9 text-gray-700">
           Başvurular, KOSGEB&apos;in internet sitesi ve e-Devlet üzerinden
           erişilen <strong>KOBİ Bilgi Sistemi (KBS)</strong> üzerinden
-          yürütülür ve yılın herhangi bir tarihinde yapılabilir.
+          yürütülürdü. Program açıkken, çağrı esaslı olmayan başvurular yılın
+          her döneminde yapılabiliyordu; ancak program 15 Nisan 2024&apos;te
+          başvuruya kapatılmıştır.
         </p>
 
         <div className="grid gap-5 md:grid-cols-3">
@@ -359,7 +376,7 @@ export default function BlogPage() {
             4.2. Başvurunun Kontrolü
           </h3>
           <p className="leading-8 text-gray-700">
-            Başvuru, en geç 1 ay içinde KBS üzerinden kontrol edilir.
+            Başvuru, en geç 7 gün içinde KBS üzerinden kontrol edilir.
             Eksik veya hatalı bulunan başvurular düzeltmeye açılır; uygun
             bulunan başvurular değerlendirilmek üzere Kurula sevk edilir.
           </p>
@@ -387,9 +404,11 @@ export default function BlogPage() {
             KOBİ başvurularında programın başlangıç tarihi, destekleme
             kararının evrak kaydına alındığı tarihtir. Girişimci
             başvurularında ise Kurul kararının bildiriminden itibaren 6 ay
-            içinde (gerekirse ek süre ile birlikte en fazla 30 gün daha)
-            işletmenin kurulup Taahhütname&apos;nin KBS üzerinden onaylanması
-            gerekir; onay tarihi programın başlangıcı sayılır.
+            içinde işletmenin kurulup Taahhütname&apos;nin KBS üzerinden
+            onaylanması gerekir (kuruluş için en fazla 15 gün, taahhütname
+            onayı için bir kereye mahsus 30 gün ek süre talep edilebilir);
+            onay tarihi programın başlangıcı sayılır. Süresinde onaylanmazsa
+            başvuru reddedilmiş sayılır.
           </p>
         </div>
 
@@ -482,12 +501,13 @@ export default function BlogPage() {
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Destekle alınan makine-teçhizatın mülkiyeti işletmeye aittir;
-            program sonrası izlemeye kadar satılamaz veya devredilemez
+            program sonrası izleme yapılana kadar satılamaz, kiralanamaz,
+            devredilemez veya rehin gösterilemez
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Proje başvurusu, teknik inceleme ve bütçeleme aşamalarını
-            profesyonel destekle hazırlamak, ret ve düzeltme risklerini
-            azaltır
+            ✅ Program 15 Nisan 2024&apos;te başvuruya kapandığı için yeni
+            başvuru yapılamaz; alternatifler için TÜBİTAK 1507 ve KOSGEB&apos;in
+            güncel programlarını kosgeb.gov.tr üzerinden takip edin
           </div>
         </div>
       </section>
@@ -526,8 +546,8 @@ export default function BlogPage() {
               Ar-Ge Merkezi teşviklerinden farkı nedir?
             </h3>
             <p className="leading-8 text-gray-700">
-              Ar-Ge Merkezi statüsü (5746 sayılı Kanun), en az 15 tam zaman
-              eşdeğer Ar-Ge personeli çalıştıran büyük ölçekli yapılar için
+              Ar-Ge Merkezi statüsü (5746 sayılı Kanun), en az 15 (bazı sektörlerde 30)
+              tam zaman eşdeğer Ar-Ge personeli çalıştıran kurumsal yapılar için
               tasarlanmış, gelir vergisi stopajı ve SGK primi gibi ayrı bir
               teşvik paketidir. KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek
               Programı ise personel sayısı şartı aramaz; tek kişilik
@@ -537,13 +557,14 @@ export default function BlogPage() {
           </div>
           <div className="rounded-2xl border p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              Başvuru için belirli bir dönem veya çağrı takvimi var mı?
+              Program şu anda başvuruya açık mı?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır, program sürekli açıktır ve başvurular yılın herhangi
-              bir tarihinde KBS üzerinden yapılabilir. KOSGEB, bu program
-              kapsamında ayrıca dönemsel çağrılar da açabilir; ancak temel
-              başvuru yolu her zaman kullanılabilir durumdadır.
+              Program artık başvuruya açık değil. KOSGEB&apos;in resmî
+              sitesinde program &quot;Yürürlükten Kaldırılan Destekler&quot;
+              arasında yer alıyor ve 15 Nisan 2024 tarihinde başvuruya
+              kapatıldığı belirtiliyor. Açıkken çağrı esaslı olmayan
+              başvurular yıl boyunca KBS üzerinden yapılabiliyordu.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -592,12 +613,13 @@ export default function BlogPage() {
         <p className="mb-8 text-lg leading-9 text-gray-700">
           KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı, personel sayısı
           veya teknopark şartı aramadan; iş fikri olan girişimciden köklü
-          bir KOBİ&apos;ye kadar geniş bir kesime 900.000 TL&apos;ye varan
+          bir KOBİ&apos;ye kadar geniş bir kesime 1.100.000 TL&apos;ye varan
           destek üst limitiyle ürün geliştirme ve inovasyon yolculuğunu
-          finanse eden, herhangi bir tarihte başvurulabilen kritik bir
-          destek mekanizmasıdır. Doğru proje kurgusu ve eksiksiz bir başvuru
-          dosyası, hem onay sürecini hızlandırır hem de proje süresince
-          yaşanabilecek revizyon ve düzeltme taleplerini en aza indirir.
+          finanse eden bir mekanizmaydı. Program 15 Nisan 2024&apos;te
+          başvuruya kapandı. Ar-Ge ve inovasyon projeniz için güncel
+          seçenekleri (ör. TÜBİTAK 1507 KOBİ Ar-Ge Başlangıç Destek
+          Programı ve KOSGEB&apos;in aktif programları) birlikte
+          değerlendirmek isterseniz bizimle iletişime geçebilirsiniz.
         </p>
       </section>
 
@@ -632,7 +654,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Şirketim yok, sadece bir iş fikrim var. Yine de başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet. Program \"Yeni Girişimci\" kategorisiyle henüz şirketi olmayan, bir iş fikrine dayalı olarak kendi işini kurmak isteyen gerçek kişilerin de başvurmasına imkân tanır. Proje kabul edilirse, Kurul kararının bildiriminden itibaren belirlenen süre içinde şirketinizi kurmanız gerekir."}},{"@type":"Question","name":"Destek tutarının tamamı hibe midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Nitelikli personel, sınai mülkiyet, test-analiz ve diğer giderler geri ödemesiz (hibe) niteliktedir; makine-teçhizat, donanım ve yazılım gideri kaleminde ise hem hibe hem de (üst limiti aşan kısım için) geri ödemeli seçenek bulunur."}},{"@type":"Question","name":"Ar-Ge Merkezi teşviklerinden farkı nedir?","acceptedAnswer":{"@type":"Answer","text":"Ar-Ge Merkezi statüsü (5746 sayılı Kanun), en az 15 tam zaman eşdeğer Ar-Ge personeli çalıştıran büyük ölçekli yapılar için tasarlanmış, gelir vergisi stopajı ve SGK primi gibi ayrı bir teşvik paketidir. KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı ise personel sayısı şartı aramaz; tek kişilik girişimcilerden büyük KOBİ'lere kadar geniş bir kitleye proje bazlı hibe/kredi desteği sağlar."}},{"@type":"Question","name":"Başvuru için belirli bir dönem veya çağrı takvimi var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, program sürekli açıktır ve başvurular yılın herhangi bir tarihinde KBS üzerinden yapılabilir. KOSGEB, bu program kapsamında ayrıca dönemsel çağrılar da açabilir; ancak temel başvuru yolu her zaman kullanılabilir durumdadır."}},{"@type":"Question","name":"Proje reddedilirse tekrar başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Aynı proje için doğrudan tekrar başvuru yapılamaz; ret kararına 15 gün içinde bir defaya mahsus itiraz edilebilir. İtiraz da reddedilirse veya süresinde kullanılmazsa, farklı veya yeniden kurgulanmış bir proje ile ileride tekrar başvurulabilir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Şirketim yok, sadece bir iş fikrim var. Yine de başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet. Program \"Yeni Girişimci\" kategorisiyle henüz şirketi olmayan, bir iş fikrine dayalı olarak kendi işini kurmak isteyen gerçek kişilerin de başvurmasına imkân tanır. Proje kabul edilirse, Kurul kararının bildiriminden itibaren belirlenen süre içinde şirketinizi kurmanız gerekir."}},{"@type":"Question","name":"Destek tutarının tamamı hibe midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Nitelikli personel, sınai mülkiyet, test-analiz ve diğer giderler geri ödemesiz (hibe) niteliktedir; makine-teçhizat, donanım ve yazılım gideri kaleminde ise hem hibe hem de (üst limiti aşan kısım için) geri ödemeli seçenek bulunur."}},{"@type":"Question","name":"Ar-Ge Merkezi teşviklerinden farkı nedir?","acceptedAnswer":{"@type":"Answer","text":"Ar-Ge Merkezi statüsü (5746 sayılı Kanun), en az 15 (bazı sektörlerde 30) tam zaman eşdeğer Ar-Ge personeli çalıştıran kurumsal yapılar için tasarlanmış, gelir vergisi stopajı ve SGK primi gibi ayrı bir teşvik paketidir. KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı ise personel sayısı şartı aramaz; tek kişilik girişimcilerden büyük KOBİ'lere kadar geniş bir kitleye proje bazlı hibe/kredi desteği sağlar."}},{"@type":"Question","name":"Program şu anda başvuruya açık mı?","acceptedAnswer":{"@type":"Answer","text":"Program artık başvuruya açık değil. KOSGEB'in resmî sitesinde program Yürürlükten Kaldırılan Destekler arasında yer alıyor ve 15 Nisan 2024 tarihinde başvuruya kapatıldığı belirtiliyor. Açıkken çağrı esaslı olmayan başvurular yıl boyunca KBS üzerinden yapılabiliyordu."}},{"@type":"Question","name":"Proje reddedilirse tekrar başvurabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Aynı proje için doğrudan tekrar başvuru yapılamaz; ret kararına 15 gün içinde bir defaya mahsus itiraz edilebilir. İtiraz da reddedilirse veya süresinde kullanılmazsa, farklı veya yeniden kurgulanmış bir proje ile ileride tekrar başvurulabilir."}}]}) }}
       />
     </BlogLayout>
   );

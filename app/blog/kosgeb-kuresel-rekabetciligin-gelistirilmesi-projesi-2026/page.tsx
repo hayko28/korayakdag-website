@@ -498,8 +498,8 @@ export default function BlogPage() {
                     Ar-Ge, Ür-Ge ve İnovasyon Destek Programı
                   </Link>
                 </td>
-                <td className="p-5">Ar-Ge/inovasyon projesi olan girişimci ve KOBİ&apos;ler (herhangi bir tarihte başvuru)</td>
-                <td className="p-5">900.000 TL (destek üst limiti)</td>
+                <td className="p-5">Ar-Ge/inovasyon projesi olan girişimci ve KOBİ&apos;ler (15 Nisan 2024'te başvuruya kapatıldı)</td>
+                <td className="p-5">1.100.000 TL (son uygulama esaslarında destek üst limiti)</td>
               </tr>
             </tbody>
           </table>

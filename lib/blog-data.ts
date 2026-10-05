@@ -354,7 +354,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-arge-urge-inovasyon-destek-programi-2026",
     title: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı: Kimler Başvurabilir, Destek Tutarları Nedir?",
-    excerpt: "Girişimcilerin ve KOBİ'lerin herhangi bir tarihte başvurabildiği KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı'nda 900.000 TL'ye varan destek üst limiti, gider kalemleri, başvuru şartları ve KBS üzerinden adım adım süreçle 2026 güncel rehber.",
+    excerpt: "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı 15 Nisan 2024'te başvuruya kapatıldı. Programın son uygulama esaslarındaki 1.100.000 TL destek üst limiti, gider kalemleri, şartları ve güncel alternatifler (TÜBİTAK 1507 ve KOSGEB'in aktif programları).",
     category: "KOSGEB • AR-GE DESTEĞİ • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -660,7 +660,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-kobi-dijital-donusum-destek-programi-2026",
     title: "KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?",
-    excerpt: "EBRD iş birliğiyle yürütülen program kapsamında imalat sektöründeki KOBİ'ler, dijital olgunluk değerlendirme raporuna dayalı olarak 1-20 milyon TL yatırım kredisi ve geri ödemesiz faiz desteği kullanabiliyor. 11 Mayıs 2026 güncel yönergeye göre şartlar, gerekli belgeler ve başvuru süreci.",
+    excerpt: "EBRD iş birliğiyle yürütülen program kapsamında imalat sektöründeki KOBİ'ler, dijital olgunluk değerlendirme raporuna dayalı olarak 1-20 milyon TL yatırım kredisi ve geri ödemesiz faiz desteği kullanabiliyor. 5 Temmuz 2026 tarihli güncel yönergeye (Rev. 05) göre şartlar, gerekli belgeler ve başvuru süreci.",
     category: "KOSGEB • DİJİTAL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "13 Dakika",

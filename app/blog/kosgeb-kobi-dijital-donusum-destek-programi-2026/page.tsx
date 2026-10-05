@@ -24,7 +24,7 @@ export default function BlogPage() {
   return (
     <BlogLayout
       title="KOSGEB KOBİ Dijital Dönüşüm Destek Programı 2026: Kimler Başvurabilir, Destek Tutarları Nedir?"
-      description="İmalat sektöründe faaliyet gösteren KOBİ'lerin nesnelerin interneti, robotik, yapay zekâ ve ERP gibi dijital dönüşüm yatırımları için 1-20 milyon TL kredi ve geri ödemesiz faiz desteği sunan KOSGEB KOBİ Dijital Dönüşüm Destek Programı'nın 11 Mayıs 2026 tarihli güncel yönergeye göre şartları, gerekli belgeleri ve başvuru süreci."
+      description="İmalat sektöründe faaliyet gösteren KOBİ'lerin nesnelerin interneti, robotik, yapay zekâ ve ERP gibi dijital dönüşüm yatırımları için 1-20 milyon TL kredi ve geri ödemesiz faiz desteği sunan KOSGEB KOBİ Dijital Dönüşüm Destek Programı'nın 5 Temmuz 2026 tarihli (Rev. 05) güncel yönergeye göre şartları, gerekli belgeleri ve başvuru süreci."
       category="KOSGEB • DİJİTAL DÖNÜŞÜM • 2026"
       date="2026"
       readTime="13 Dakika"
@@ -41,8 +41,8 @@ export default function BlogPage() {
             uyguladığı KOBİ Dijital Dönüşüm Destek Programı, Avrupa İmar ve
             Kalkınma Bankası (EBRD) iş birliğiyle yürütülen ve klasik hibe
             desteklerinden farklı işleyen bir kredi + faiz desteği
-            mekanizmasıdır. Programın 11 Mayıs 2026 tarihinde revize edilen
-            güncel yönergesine göre işletmeler, dijital olgunluk değerlendirme
+            mekanizmasıdır. Programın 5 Temmuz 2026 tarihli (Rev. 05) güncel
+            yönergesine göre işletmeler, dijital olgunluk değerlendirme
             raporuna dayalı olarak 1-20 milyon TL arasında yatırım kredisi
             kullanabiliyor.
           </p>
@@ -173,7 +173,7 @@ export default function BlogPage() {
                 <li>❌ Mikro ölçekli işletmeler</li>
                 <li>❌ İmalat (NACE Kısım C) dışındaki sektörlerde faaliyet gösterenler</li>
                 <li>❌ EBRD&apos;nin &quot;Uygun Bulunmayan Sektör ve Faaliyetler Tablosu&quot;ndaki alanlarda faaliyet gösterenler</li>
-                <li>❌ Son 3 mali yılın tamamında faaliyet kârı ve öz kaynakları negatif olan işletmeler</li>
+                <li>❌ Son mali yıl öz kaynaklar toplamı negatif olan veya son 3 mali yılın hiçbirinde faaliyet kârı pozitif olmayan işletmeler</li>
                 <li>❌ Programdan daha önce bir kez yararlanmış işletmeler</li>
               </ul>
             </div>
@@ -278,7 +278,7 @@ export default function BlogPage() {
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Azami Kredi Vadesi</td>
-                  <td className="p-5">36 ay (bankaca uygun görülürse 6 aya kadar ödemesiz dönem)</td>
+                  <td className="p-5">36 ay (bankaca uygun görülürse 36 ayı aşmamak kaydıyla 6 aya kadar ödemesiz dönem)</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Destek Programı Süresi</td>
@@ -286,7 +286,7 @@ export default function BlogPage() {
                 </tr>
                 <tr>
                   <td className="p-5 font-semibold">Faiz Desteği</td>
-                  <td className="p-5">Geri ödemesiz, güncel uygulamada 20 puana kadar</td>
+                  <td className="p-5">Geri ödemesiz, KOSGEB sitesinde güncel destek puanı 20</td>
                 </tr>
               </tbody>
             </table>
@@ -435,7 +435,7 @@ export default function BlogPage() {
           <div className="rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
             <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-blue-500">
               <li>
-                İşletme, son kredi vadesinin bitiş tarihinden{" "}
+                İşletme, destek programı süresinin bitiş tarihinden{" "}
                 <strong>12 ay sonra, 3 ay içinde</strong> yeniden dijital
                 dönüşüm danışmanlığı hizmeti alarak güncel dijital olgunluk
                 seviyesini KOBİ Bilgi Sistemi&apos;ne yükler.
@@ -474,7 +474,8 @@ export default function BlogPage() {
               <li>Onaylı dijital olgunluk değerlendirme raporu olmadan başvuru yapılamaz; raporun süresi geçmişse önce rapor yenilenmelidir.</li>
               <li>Kredi kullandırımı, KOSGEB ile protokol imzalamış bankaların kendi kredi/bankacılık değerlendirme kriterlerine de tabidir.</li>
               <li>Aynı gider için vergi ve SGK primi gibi yasal yükümlülükler hariç, başka bir kurum/kuruluştan veya KOSGEB programından ayrıca destek alınamaz.</li>
-              <li>Vergi veya SGK borcu bulunan işletmelerde destek ödemesi öncelikle bu borçlara mahsup edilir.</li>
+              <li>İlgili mevzuattaki limitlerin üzerinde vergi veya SGK borcu bulunan işletmelerde destek ödemesi öncelikle bu borçlara mahsup edilir; KOSGEB&apos;e vadesi geçmiş borcu olan işletmeye destek ödemesi yapılmaz.</li>
+              <li>Destek ödeme talebi, son kredi vadesinin bitiş tarihinden itibaren en geç 4 ay içinde yapılmalıdır; destek programı süresi (24 ay) boyunca kredi kullanmayan işletme programdan yararlanmamış sayılır.</li>
               <li>Güncel destek puanı, kredi limitleri ve gider kalemleri için KOSGEB&apos;in yürürlükteki yönergesi ve başvuru kılavuzu esas alınmalıdır; parametreler yıl içinde Başkanlık Makamı Oluru ile güncellenebilir.</li>
             </ul>
           </div>

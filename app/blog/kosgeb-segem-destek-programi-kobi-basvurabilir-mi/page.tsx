@@ -66,7 +66,10 @@ export default function BlogPage() {
             ✔ Destek, tek tek KOBİ&apos;lere değil, <strong>&quot;işletici
             kuruluş&quot;</strong> adı verilen anonim şirket statüsündeki
             merkezlere veriliyor. Sıradan bir şahıs şirketi veya limited
-            şirket doğrudan başvuramaz.
+            şirket işletici kuruluş olarak yararlanamaz; ancak yeni kurulacak
+            bir SEGEM şirketinin kurucuları ön başvuruda anonim şirket olmak
+            zorunda değildir (tüzel kişi firmalar ve bireysel katılım
+            yatırımcıları da kurucu olabilir).
           </li>
           <li>
             ✔ Üç yapı başvurabilir: <strong>model fabrikalar</strong>,{" "}
@@ -92,8 +95,8 @@ export default function BlogPage() {
           </li>
           <li>
             ✔ KOBİ&apos;ler bu programdan <strong>dolaylı yararlanıcı</strong>{" "}
-            olarak, kurulan SEGEM&apos;lerin sunduğu ücretsiz eğitim ve
-            danışmanlık hizmetlerinden faydalanabiliyor.
+            olarak, kurulan SEGEM&apos;lerin sunduğu eğitim ve danışmanlık
+            hizmetlerinden faydalanabiliyor.
           </li>
         </ul>
       </div>
@@ -156,8 +159,7 @@ export default function BlogPage() {
           destek vermek yerine, bir sektördeki çok sayıda KOBİ&apos;ye
           birden hizmet verecek merkezlerin kurulmasını ve on yıl boyunca
           ayakta kalmasını finanse ediyor. Bu merkezler, sektörlerindeki
-          işletmelere ücretsiz veya sübvansiyonlu eğitim, danışmanlık ve
-          teknik destek sunuyor.
+          işletmelere eğitim, danışmanlık ve teknik destek sunuyor.
         </p>
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <p className="leading-8 text-gray-700">
@@ -214,9 +216,12 @@ export default function BlogPage() {
                 <td className="p-5 font-semibold">Sektörün Gelişimine Katkı Sunan İşletmeler</td>
                 <td className="p-5">
                   Kamu kurumu, üniversite, oda/borsa gibi kamu kurumu
-                  niteliğindeki meslek kuruluşları veya bunların kurduğu
-                  vakıf/şirketler; ya da dernek, birlik, vakıf, TTO gibi
-                  kuruluşların yeni kuracağı A.Ş.
+niteliğindeki meslek kuruluşları veya bunların kurduğu
+vakıf/şirketler; ya da üniversite, TGB yönetici şirketi, TTO, OSB
+yönetimi, TOBB ve bağlı odalar/borsalar, ihracatçı birlikleri,
+Ar-Ge merkezleri, vakıf, kooperatif, dernek, birlik, bireysel
+katılım yatırımcıları ve tüzel kişi firmaların kurucu olarak yeni
+kuracağı A.Ş.
                 </td>
                 <td className="p-5">Aşağıda detaylandırılan NACE kodu ve personel şartları</td>
               </tr>
@@ -253,7 +258,11 @@ export default function BlogPage() {
             İstatistik Sınıflandırması&apos;nın (BBS) Düzey-1 bölgelerinin
             en az 5&apos;inde faaliyet göstermesi, aynı NACE kodlarına sahip
             olması ve en az 30 kişi (aynı nitelikte personel) çalıştırması
-            gerekiyor.
+            gerekiyor. Jürinin kabul bildiriminden itibaren 6 ay içinde şirketin
+            kurulması gerekiyor (gerekçeli talep halinde en fazla 60 gün ek
+            süre istenebiliyor). Kurucular ön başvuruyu münferiden veya
+            müştereken yapabiliyor; bu aşamada kurucuların anonim şirket
+            olması aranmıyor.
           </li>
         </ul>
 
@@ -339,7 +348,9 @@ export default function BlogPage() {
           </table>
         </div>
         <p className="mt-8 leading-8 text-gray-700">
-          Destek süresi her işletici kuruluş için <strong>10 yıl</strong>.
+          Destek süresi her işletici kuruluş için <strong>10 yıl</strong>;
+          program 3 yıl, 4 yıl ve 3 yıllık üç dönem halinde uygulanıyor ve
+          her dönem için performans hedefleri belirleniyor.
           Yıllık destek üst limiti, uygulama esaslarının yürürlüğe girdiği
           2025 yılı için 5.000.000 TL olarak belirlenmişti; her takvim yılı
           başında Tüketici Fiyat Endeksi ile Yurt İçi Üretici Fiyat
@@ -365,8 +376,9 @@ export default function BlogPage() {
           konumunuz, kurulan bu merkezin hizmetlerinden faydalanan bir
           &quot;nihai yararlanıcı&quot; konumu: sektörünüzdeki bir SEGEM
           faaliyete geçtiğinde, o merkezin sunduğu eğitim, danışmanlık,
-          mentorluk ve teknik yardım hizmetlerinden genellikle ücretsiz
-          veya çok düşük bir bedelle yararlanabilirsiniz.
+          mentorluk ve teknik yardım hizmetlerinden yararlanabilirsiniz.
+          Hizmetlerin ücretlendirme koşulları uygulama esaslarında
+          düzenlenmediği için ilgili merkezden ayrıca teyit edilmelidir.
         </p>
 
         <div className="mt-6 rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
@@ -390,10 +402,11 @@ export default function BlogPage() {
                 <Link href="/blog/tekmer-nedir-basvuru-sureci-destekleri-2026" className="text-red-700 underline">
                   TEKMER
                 </Link>
-              </strong>: 3624 sayılı Kanun kapsamında yürütülen, girişimcilerin
-              fikir aşamasından şirketleşmeye kadar geçtiği ön kuluçka,
-              kuluçka ve hızlandırma süreçlerini destekliyor. Hedef kitle,
-              henüz kurulmamış veya yeni kurulmuş teknoloji girişimleri.
+              </strong>: KOSGEB&apos;in Teknoloji Merkezi Destek Programı
+              kapsamında TEKMER işletici kuruluşlarına ve TGB yönetici
+              şirketlerine kuruluş, performans ve hızlandırma desteği
+              sağlıyor. Hedef kitle, TEKMER&apos;lerdeki kuluçka hizmetinden
+              yararlanan girişimciler ve teknoloji girişimleri.
             </li>
           </ul>
           <p className="mt-4 leading-8 text-gray-700">
@@ -433,11 +446,11 @@ export default function BlogPage() {
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-3 text-3xl font-black text-orange-500">2</div>
-            <h3 className="text-lg font-bold">Kategoriye Uygun Başvuru Dosyasının Hazırlanması</h3>
+            <h3 className="text-lg font-bold">Ön Başvuru Formu (e-Devlet) ve Başvuru Formu</h3>
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-3 text-3xl font-black text-orange-500">3</div>
-            <h3 className="text-lg font-bold">Ön Değerlendirme</h3>
+            <h3 className="text-lg font-bold">Başvuru Kontrolü (en geç 15 gün)</h3>
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-3 text-3xl font-black text-orange-500">4</div>
@@ -450,9 +463,18 @@ export default function BlogPage() {
         </div>
 
         <div className="mt-14">
-          <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
-            5.1. Jüri Onayı Sonrası
+                    <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
+            5.1. Ön Başvuru ve Jüri Onayı Sonrası
           </h3>
+          <p className="mb-4 leading-8 text-gray-700">
+            Sorumlu kişi, önce e-Devlet üzerinden Ön Başvuru Formunu ekleriyle
+            sisteme girer; ön başvuru 15 gün içinde kontrol edilir. Ön
+            başvuru uygun bulunursa Başvuru Formu doldurulup ek belgelerle
+            en geç 30 gün içinde onaylanır, başvuru en geç 15 gün içinde
+            kontrol edilir ve jüri gündemine alınır. Jüri, gündem maddesi
+            olması halinde en geç 30 gün içinde toplanır; karar başvuru
+            sahibine 15 gün içinde bildirilir.
+          </p>
           <p className="leading-8 text-gray-700">
             Jüri tarafından uygun bulunan başvuru sahibi, KOSGEB ile bir
             kabul sözleşmesi imzalıyor ve idari, mali, hukuki taahhütleri
@@ -499,8 +521,9 @@ export default function BlogPage() {
           Evet. SEGEM Destek Programı, çağrı dönemli değil{" "}
           <strong>sürekli başvuru esasıyla</strong> işliyor; başvurular
           KOSGEB sistemine kayıtlı ve aktif her başvuru sahibi tarafından
-          yıl boyunca yapılabiliyor ve jüri tarafından dönemsel olarak
-          değerlendiriliyor. Uygulama esasları ayrıca KOSGEB Başkanı Oluru
+          yıl boyunca yapılabiliyor ve jüri tarafından değerlendiriliyor.
+KOSGEB&apos;in resmî program sayfası da programın sürekli olarak
+başvuruya açık olduğunu belirtiyor. Uygulama esasları ayrıca KOSGEB Başkanı Oluru
           ile özel bir çağrı dokümanına bağlı olarak &quot;çağrı esaslı
           başvuru&quot; alınabilmesine de imkân tanıyor; böyle bir çağrı
           açılırsa şartlar ayrıca duyurulan çağrı dokümanında belirtiliyor.
@@ -619,10 +642,12 @@ export default function BlogPage() {
               Limited şirket olarak SEGEM işletici kuruluş başvurusu yapabilir miyim?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır. Uygulama esasları, işletici kuruluşun anonim şirket
-              statüsünde olmasını ve bu statüyü destek süresi boyunca
-              korumasını şart koşuyor. Limited şirket veya şahıs işletmesi
-              statüsüyle doğrudan başvuru yapılamıyor.
+              Limited şirket, işletici kuruluş olamaz. Uygulama esasları,
+              işletici kuruluşun anonim şirket statüsünde olmasını ve bu
+              statüyü destek süresi boyunca korumasını şart koşuyor. Ancak
+              yeni bir SEGEM şirketi kurulacaksa kurucuların ön başvuruda
+              anonim şirket olması aranmıyor; tüzel kişi firmalar da kurucu
+              olabiliyor.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -655,8 +680,8 @@ export default function BlogPage() {
               Hayır. SEGEM mevcut sektörel KOBİ&apos;lere kurumsallaşma ve
               verimlilik odaklı hizmet verecek merkezleri, TEKMER ise yeni
               girişimlerin ön kuluçka/kuluçka/hızlandırma sürecini
-              destekliyor. İkisi de farklı yönetmeliklere dayanan ayrı
-              programlar.
+              destekliyor. İkisi de ayrı destek programlarıdır (SEGEM
+Destek Programı ve Teknoloji Merkezi Destek Programı).
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -737,7 +762,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Limited şirket olarak SEGEM işletici kuruluş başvurusu yapabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Uygulama esasları, işletici kuruluşun anonim şirket statüsünde olmasını ve bu statüyü destek süresi boyunca korumasını şart koşuyor. Limited şirket veya şahıs işletmesi statüsüyle doğrudan başvuru yapılamıyor."}},{"@type":"Question","name":"Bir imalat KOBİ'si olarak SEGEM'den nakit destek alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Parasal destek yalnızca işletici kuruluşa (SEGEM'e) ödeniyor. Siz, sektörünüzdeki bir SEGEM faaliyete geçtiğinde onun sunduğu eğitim ve danışmanlık hizmetlerinden nihai yararlanıcı olarak faydalanabilirsiniz."}},{"@type":"Question","name":"2026 yılı için yıllık destek üst limiti ne kadar?","acceptedAnswer":{"@type":"Answer","text":"6.506.000 TL. Bu tutar, programın yürürlüğe girdiği 2025 yılı için belirlenen 5.000.000 TL'lik limitin, TÜFE ve Yİ-ÜFE ortalamasına göre güncellenmiş hâli. Destek oranı %100 ve geri ödemesiz."}},{"@type":"Question","name":"SEGEM ile TEKMER aynı destek mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. SEGEM mevcut sektörel KOBİ'lere kurumsallaşma ve verimlilik odaklı hizmet verecek merkezleri, TEKMER ise yeni girişimlerin ön kuluçka/kuluçka/hızlandırma sürecini destekliyor. İkisi de farklı yönetmeliklere dayanan ayrı programlar."}},{"@type":"Question","name":"Bir dernek veya birlik olarak SEGEM kurabilir miyiz?","acceptedAnswer":{"@type":"Answer","text":"Doğrudan dernek veya birlik tüzel kişiliğiyle değil, ancak uygulama esaslarının 6. maddesinin yedinci fıkrası (b) bendi kapsamında jüri onayıyla yeni bir anonim şirket kurarak başvurabilirsiniz. Bu durumda kurulacak şirketin, en az 5 Düzey-1 bölgesinde faaliyet göstermesi ve belirlenen NACE kodu ile en az 30 kişilik personel şartını sağlaması gerekiyor."}},{"@type":"Question","name":"Başvuru için belirli bir dönem veya son tarih var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, program sürekli başvuru esasıyla işliyor. Sistemde kayıtlı ve aktif başvuru sahipleri yıl boyunca başvuru yapabiliyor; KOSGEB Başkanı Oluru ile ayrıca özel bir çağrı da açılabiliyor."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Limited şirket olarak SEGEM işletici kuruluş başvurusu yapabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Limited şirket, işletici kuruluş olamaz. Uygulama esasları, işletici kuruluşun anonim şirket statüsünde olmasını ve bu statüyü destek süresi boyunca korumasını şart koşuyor. Ancak yeni bir SEGEM şirketi kurulacaksa kurucuların ön başvuruda anonim şirket olması aranmıyor; tüzel kişi firmalar da kurucu olabiliyor."}},{"@type":"Question","name":"Bir imalat KOBİ'si olarak SEGEM'den nakit destek alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Parasal destek yalnızca işletici kuruluşa (SEGEM'e) ödeniyor. Siz, sektörünüzdeki bir SEGEM faaliyete geçtiğinde onun sunduğu eğitim ve danışmanlık hizmetlerinden nihai yararlanıcı olarak faydalanabilirsiniz."}},{"@type":"Question","name":"2026 yılı için yıllık destek üst limiti ne kadar?","acceptedAnswer":{"@type":"Answer","text":"6.506.000 TL. Bu tutar, programın yürürlüğe girdiği 2025 yılı için belirlenen 5.000.000 TL'lik limitin, TÜFE ve Yİ-ÜFE ortalamasına göre güncellenmiş hâli. Destek oranı %100 ve geri ödemesiz."}},{"@type":"Question","name":"SEGEM ile TEKMER aynı destek mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. SEGEM mevcut sektörel KOBİ'lere kurumsallaşma ve verimlilik odaklı hizmet verecek merkezleri, TEKMER ise yeni girişimlerin ön kuluçka/kuluçka/hızlandırma sürecini destekliyor. İkisi de ayrı destek programlarıdır (SEGEM Destek Programı ve Teknoloji Merkezi Destek Programı)."}},{"@type":"Question","name":"Bir dernek veya birlik olarak SEGEM kurabilir miyiz?","acceptedAnswer":{"@type":"Answer","text":"Doğrudan dernek veya birlik tüzel kişiliğiyle değil, ancak uygulama esaslarının 6. maddesinin yedinci fıkrası (b) bendi kapsamında jüri onayıyla yeni bir anonim şirket kurarak başvurabilirsiniz. Bu durumda kurulacak şirketin, en az 5 Düzey-1 bölgesinde faaliyet göstermesi ve belirlenen NACE kodu ile en az 30 kişilik personel şartını sağlaması gerekiyor."}},{"@type":"Question","name":"Başvuru için belirli bir dönem veya son tarih var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır, program sürekli başvuru esasıyla işliyor. Sistemde kayıtlı ve aktif başvuru sahipleri yıl boyunca başvuru yapabiliyor; KOSGEB Başkanı Oluru ile ayrıca özel bir çağrı da açılabiliyor."}}]}) }}
       />
     </BlogLayout>
   );
