@@ -33,10 +33,10 @@ export default function Tubitak1832Page() {
       readTime="13 Dakika"
       coverImage="https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1832-sanayide-yesil-donusum-cagrisi-2026"
-      programDurumu="acik"
+      programDurumu="kapali"
       sonBasvuruTarihi="28 Eylül 2026"
       ctaHeading="TÜBİTAK 1832 Başvuru Dosyanızı Birlikte Hazırlayalım"
-      ctaText="Yeşil Dönüşüm Göstergelerinden hangisini hedefleyebileceğinizden proje bütçenizin ölçeğinize göre doğru kalemlere dağıtılmasına kadar, 28 Eylül 2026 son başvuru tarihine yetişecek şekilde dosyanızı birlikte hazırlayabiliriz."
+      ctaText="Yeşil Dönüşüm Göstergelerinden hangisini hedefleyebileceğinizden proje bütçenizin ölçeğinize göre doğru kalemlere dağıtılmasına kadar, bir sonraki çağrıya hazır olacak şekilde dosyanızı birlikte hazırlayabiliriz (2026-2 çağrısı 28 Eylül 2026'da kapandı)."
     >
       {/* GİRİŞ */}
       <p className="mb-8 text-lg leading-9 text-gray-700">
@@ -47,7 +47,7 @@ export default function Tubitak1832Page() {
         kredi olarak kullandırılıyor, proje sonunda ölçülebilir bir çevresel
         kazanım elde edildiğinde bu tutarın önemli bir kısmı hibeye
         dönüşüyor. 2026-2 dönemi başvuruları 28 Eylül 2026&apos;da
-        kapanıyor; bu yazıda programın işleyişini, şartlarını ve başvuru
+        kapandı; bu yazıda programın işleyişini, şartlarını ve başvuru
         sürecini uçtan uca ele alıyoruz.
       </p>
 

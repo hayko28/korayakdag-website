@@ -32,13 +32,19 @@ export default function Tubitak1711Page() {
       readTime="12 Dakika"
       coverImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026"
-      programDurumu="acik"
+      programDurumu="kapali"
+      sonBasvuruTarihi="2 Ekim 2026"
     >
       {/* GİRİŞ / UYARI KUTUSU */}
-      <div className="rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-8">
+      <div className="rounded-2xl border-l-4 border-amber-500 bg-amber-50 p-8">
         <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
-          🟢 Güncelleme: Son Başvuru Tarihi 2 Ekim 2026&apos;ya Uzatıldı
+          🟠 Güncel Durum: Çağrı 2 Ekim 2026&apos;da Kapandı
         </h2>
+        <p className="mb-4 leading-8 text-gray-700">
+          2026 yılı çağrısının başvuru dönemi 2 Ekim 2026 saat 23:59&apos;da
+          sona erdi. Bir sonraki çağrı için TÜBİTAK duyurularını takip
+          edebilir, konsorsiyum hazırlığını şimdiden başlatabilirsiniz.
+        </p>
         <p className="leading-8 text-gray-700">
           TÜBİTAK, 2022&apos;den bu yana her yıl açtığı{" "}
           <strong>1711 Yapay Zeka Ekosistemi Çağrısı&apos;nın</strong> beşincisini

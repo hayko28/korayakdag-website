@@ -12,7 +12,7 @@ import {
 
 const ONE_CIKAN_PROGRAMLAR = [
   { ad: "KOSGEB KOBİ Gelişim Destek", kurum: "KOSGEB", durum: "Açık" as const },
-  { ad: "TÜBİTAK 1501 Sanayi Ar-Ge", kurum: "TÜBİTAK", durum: "Son 3 gün" as const },
+  { ad: "TÜBİTAK 1501 Sanayi Ar-Ge", kurum: "TÜBİTAK", durum: "Açık" as const },
   { ad: "İhracata Yönelik Destek", kurum: "Ticaret Bakanlığı", durum: "Açık" as const },
 ];
 
