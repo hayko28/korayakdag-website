@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı | Koray Akdağ",
-  description: "TÜBİTAK 1711'de şirket-üniversite konsorsiyum şartı, 10 milyon TL bütçe üst sınırı ve uzatılan 2 Ekim 2026 son başvuru tarihi rehberi.",
+  description: "TÜBİTAK 1711'de şirket-üniversite konsorsiyum şartı, 10 milyon TL bütçe üst sınırı ve 2 Ekim 2026'da kapanan 2026 çağrısının şartları rehberi.",
   keywords: [
     "TÜBİTAK 1711",
     "Yapay Zeka Ekosistemi Çağrısı",
@@ -26,7 +26,7 @@ export default function Tubitak1711Page() {
   return (
     <BlogLayout
       title="TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?"
-      description="Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve 2 Ekim 2026'ya uzatılan son başvuru tarihiyle güncel rehber."
+      description="Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve 2 Ekim 2026'da kapanan çağrının şartlarıyla rehber."
       category="TÜBİTAK • YAPAY ZEKA • 2026"
       date="2026"
       readTime="12 Dakika"
@@ -398,7 +398,7 @@ export default function Tubitak1711Page() {
                 <td className="p-4">28 Eylül 2026, 23:59</td>
               </tr>
               <tr>
-                <td className="p-4 font-semibold text-red-600">Nihai Başvuru (Çağrı Kapanışı, uzatıldı)</td>
+                <td className="p-4 font-semibold text-red-600">Nihai Başvuru (Çağrı Kapanışı, kapandı)</td>
                 <td className="p-4 font-semibold text-red-600">2 Ekim 2026, 23:59 (UTC+3)</td>
               </tr>
             </tbody>
@@ -486,7 +486,7 @@ export default function Tubitak1711Page() {
               ilişkilendirilmesi, değerlendirmede önemli bir avantaj sağlar.
             </li>
             <li>
-              Ön kayıt son tarihi (28 Eylül), uzatılan nihai başvuru
+              Ön kayıt son tarihi (28 Eylül), nihai başvuru
               tarihinden (2 Ekim) önce geldiği için bu iki tarih birbirine
               karıştırılmamalıdır; ön kayıt yapılmadan nihai başvuru
               yapılamaz.
@@ -562,8 +562,8 @@ export default function Tubitak1711Page() {
           </h3>
           <p className="leading-8 text-gray-700">
             Şirket-üniversite konsorsiyumu kurmak, projeyi 5 öncelikli
-            alandan birine uygun kurgulamak ve uzatılan 2 Ekim 2026 son
-            başvuru tarihine kadar PRODİS sürecini eksiksiz tamamlamak, 10
+            alandan birine uygun kurgulamak ve çağrı açıldığında PRODİS
+            sürecini eksiksiz tamamlamak, 10
             milyon TL&apos;lik bütçe üst sınırından yararlanma şansınızı
             artırır.{" "}
             <Link href="/#contact" className="text-orange-600 underline">

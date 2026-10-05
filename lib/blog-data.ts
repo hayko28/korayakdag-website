@@ -309,7 +309,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1711-yapay-zeka-ekosistemi-cagrisi-2026",
     title: "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı 2026: Kimler Başvurabilir, Destek Oranları Nedir?",
-    excerpt: "Güncelleme: TÜBİTAK son başvuru tarihini 2 Ekim 2026'ya uzattı (kuruluş bazlı ön kayıt son tarihi ise 28 Eylül 2026). Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve desteklenen giderlerle güncel rehber.",
+    excerpt: "2026 çağrısı 2 Ekim 2026'da kapandı (kuruluş bazlı ön kayıt son tarihi 28 Eylül 2026'ydı). Şirketlerin üniversite veya kamu araştırma kurumlarıyla konsorsiyum kurarak başvurduğu TÜBİTAK 1711 Yapay Zeka Ekosistemi Çağrısı'nda 5 öncelikli alan, 10 milyon TL bütçe üst sınırı, %60-%70 destek oranı ve desteklenen giderlerle güncel rehber.",
     category: "TÜBİTAK • YAPAY ZEKA • 2026",
     date: "2026",
     readTime: "12 Dakika",
@@ -606,7 +606,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
     title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?",
-    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'ya kadar açık. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla güncel rehber.",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla rehber.",
     category: "TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "13 Dakika",

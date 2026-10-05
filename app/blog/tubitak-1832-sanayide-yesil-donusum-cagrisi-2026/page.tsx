@@ -5,7 +5,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 export const metadata: Metadata = {
   title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür? | Koray Akdağ",
   description:
-    "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 döneminde 28 Eylül 2026'ya kadar açık. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri, hibeye dönüşme mekanizması ve başvuru sürecine dair güncel rehber.",
+    "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri, hibeye dönüşme mekanizması ve başvuru sürecine dair rehber.",
   keywords: [
     "TÜBİTAK 1832",
     "Sanayide Yeşil Dönüşüm Çağrısı",
@@ -27,7 +27,7 @@ export default function Tubitak1832Page() {
   return (
     <BlogLayout
       title="TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?"
-      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'ya kadar açık. Kimler başvurabilir, bütçe üst sınırları, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla güncel rehber."
+      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. Kimler başvurabilir, bütçe üst sınırları, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla rehber."
       category="TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026"
       date="2026"
       readTime="13 Dakika"
