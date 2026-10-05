@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-10-03",
+  "sonGuncelleme": "2026-10-05",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -23,8 +23,8 @@
       "kaynakUrl": "https://kosgeb.gov.tr/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi",
       "ilkTespitTarihi": "2026-08-25",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
-      "sonBildirilenTarih": null,
+      "ucGunKalaBildirildi": true,
+      "sonBildirilenTarih": "2026-10-07",
       "not": "3 yaşın altındaki TEKMER işletici kuruluşları 1 yıl içinde başvuru yapabilir - Son başvuru 07 Ekim 2026"
     },
     {
