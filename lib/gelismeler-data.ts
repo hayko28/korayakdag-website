@@ -1374,6 +1374,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Kapasite kullanımındaki artışa rağmen ihracat siparişi ve yatırım harcaması beklentilerinin zayıf kalması, imalatçı işletmelerin kısa vadeli üretim toparlanmasını henüz uzun vadeli bir yatırım kararına dönüştürmediğine işaret ediyor. Yatırım planlarını bu iki sinyali birlikte değerlendirerek gözden geçirmelerini öneririm.",
   },
+  {
+    kurum: "İSO",
+    tarih: "1 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-06",
+    baslik:
+      "İSO Türkiye İmalat PMI eylülde 47,9'a geriledi, daralma 2,5 yılı buldu",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global iş birliğiyle hazırladığı Türkiye İmalat PMI endeksi, ağustostaki 48,1 seviyesinden eylülde 47,9'a geriledi; endeks 50 eşiğinin altında kalarak sektördeki daralmanın ılımlı şekilde sürdüğüne işaret etti. Anket kapsamındaki 10 alt sektörden 9'unda üretim azalırken, yalnızca gıda ürünleri sektörü son 7 ayda ilk kez üretimini artırdı; girdi maliyeti enflasyonu son dört ayın en yüksek seviyesine çıktı.",
+    kaynakUrl:
+      "https://sanayigazetesi.com.tr/iso-turkiye-imalat-pmi-acikladi-eylulde-479a-geriledi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Dokuz sektörden dokuzunda birden görülen üretim düşüşü, tek bir sektöre özgü geçici bir durgunluktan çok genele yayılan bir talep yavaşlamasına işaret ediyor. İmalatçı işletmelere stok ve üretim planlarını talep toparlanmasını beklemek yerine mevcut sipariş görünümüne göre kurmalarını öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "5 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-06",
+    baslik:
+      "TÜİK Eylül 2026 enflasyonunu açıkladı: Yıllık TÜFE yüzde 29,73'e geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 5 Ekim 2026'da açıkladığı verilere göre tüketici fiyatları eylülde aylık yüzde 1,84, yıllık bazda yüzde 29,73 arttı; yıllık enflasyon Kasım 2021'den bu yana ilk kez yüzde 30'un altına indi. Eğitim grubu yüzde 48,62 ile en yüksek yıllık artışı gösterirken, konut-su-elektrik-gaz grubunda yüzde 39,99, ulaştırmada yüzde 35,10 artış kaydedildi; 174 alt kalemden 133'ünde fiyat artışı, 35'inde düşüş görüldü.",
+    kaynakUrl: "https://www.bloomberght.com/eylul-enflasyonu-belli-oldu-3790306",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yüzde 30'un altına inmek psikolojik olarak önemli bir eşik, ama eğitim ve barınma gibi kalemlerdeki artışın hâlâ genel ortalamanın oldukça üzerinde kalması dikkat çekici. İşletmelere yıl sonu fiyat ve ücret revizyonlarını genel TÜFE rakamı yerine kendi maliyet kalemlerindeki fiili artışa göre yapmalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "5 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-06",
+    baslik:
+      "Eylül 2026 dış ticaret açığı yüzde 24,8 azaldı, ihracat yıllık yüzde 15,4 arttı",
+    ozet:
+      "Ticaret Bakanlığı'nın 5 Ekim 2026'da açıkladığı geçici verilere göre Eylül 2026 ihracatı geçen yılın aynı ayına kıyasla yüzde 15,4 artışla 25 milyar 976 milyon dolara yükseldi; ithalat yüzde 5,9 artışla 31 milyar 208 milyon dolar oldu. Dış ticaret açığı bir önceki yılın aynı ayına göre yüzde 24,8 azalarak 5,2 milyar dolara geriledi. Ocak-Eylül döneminde toplam ihracat yüzde 5,2 artışla 211 milyar dolara, ithalat yüzde 5,4 artışla 282 milyar dolara ulaştı.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-eylul-ayi-gecici-dis-ticaret-verileri-aciklandi/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracattaki yüzde 15,4'lük artışın ithalattaki yüzde 5,9'luk artışın belirgin biçimde üzerinde kalması ve aylık açığın geçen yıla göre dörtte bir oranında küçülmesi olumlu bir ayrışma; ihracatçı KOBİ'lere bu momentumu kur ve girdi maliyeti planlamasında da dikkate almalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
