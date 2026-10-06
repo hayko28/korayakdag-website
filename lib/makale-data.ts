@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tcmb-kobi-kredi-buyume-sinirinin-gevsetilmesi",
+    title:
+      "TCMB KOBİ Kredi Sınırını Gevşetti: Bankanın \"Kotamız Doldu\" Cevabı Ne Zaman Değişir?",
+    excerpt:
+      "TCMB, 1 Ekim 2026'da zorunlu karşılık düzenlemesi üzerinden uyguladığı KOBİ kredisi büyüme sınırını yüzde 4,5'ten yüzde 5'e çıkardı. Aynı oran Mayıs'ta tam tersi yönde indirilmişti. Bu gidip gelen tavanın asıl önemi, bir kredi başvurusunun hangi ayda yapıldığında.",
+    tag: "Strateji",
+    date: "6 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "eylul-enflasyonu-ovp-hedefi-farki",
     title:
       "Eylül Enflasyonu Yüzde 29,73'e Geriledi: OVP Hedefiyle Arada Kalan 1,33 Puan Neyi Değiştiriyor?",
