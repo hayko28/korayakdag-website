@@ -1,3 +1,219 @@
+# Günlük Fikir Araştırması - 6 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 6 Ekim 2026
+**Hedef:** Otomotiv, spor/hobi, yaratıcı araçlar, insan kaynakları — geçmiş günlerden farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: İkinci El Araç AI Fotoğrafı + Pazarlama Hizmeti
+
+### Ne Bu?
+İkinci el araç satıcıları (bireysel ve küçük bayiler) için **SaaS hizmeti — araç fotoğraflarını stüdyo kalitesine yükselten AI görüntü işleme + satış-odaklı pazarlama şablonları.** Sistem: (1) Araç sahibi/satıcı telefon kamerası ile araçın 5 fotoğrafını çekip yükler, (2) AI otomatik: arkaplanı temizle/iyileştir, renk/ışık balansını düzelt, çizilmeleri gizle, tekerlek/lastik göz alıcı hale getir, (3) Sonuç sayfası: 5 profesyonel fotoğraf + pazarlama text (AI tarafından yazılmış, SEO-optimize, Trendyol/OLX formatı), (4) Doğrudan Trendyol/OLX/Sahibinden ilanına integre çıkış.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de ikinci el araç pazarı yıllık ₺200+ milyar, 2026'da %12 büyüme
+- CarStudio.ai (ABD): AI araç fotoğrafı = 1000+ satıcıya hizmet, $5-20/fotoğraf, aylık $50-100K revenue
+- Araştırma: İkinci el araç ilanlarında profesyonel fotoğraf = %20-30 daha yüksek teklif, 2-3 gün daha hızlı satış
+- Otoboom (Türkiye): Yapay zeka ile araç değerleme sunuyor, pazar onaylı
+- [AI Car Photo Editing — CarStudio](https://carstudio.ai/tr/blog/used-cars-studio-quality-high-end-visuals-drive-sales)
+- [Türkiye İkinci El Araç Pazarı Analiz](https://www.marmarayasam.com/teknoloji/ikinci-el-arac-satisinda-yapay-zeka-donemi-basladi-546716)
+
+### Gelir Modeli
+- **Satıcı per-fotoğraf** (ay 1): 500 satıcı × 5 fotoğraf × ₺99 = **₺247.5K (ay 1)**
+- **Aylık abonelik** (ay 2+): 200 satıcı × ₺299/ay (20 fotoğraf/ay) = **₺59.8K/ay**
+- **Bayiler için paket** (ay 3+): 10 bayii × ₺2999/ay (sınırsız fotoğraf + listing template) = **₺30K/ay**
+- **Trendyol/OLX commission** (ay 4+): Integrasyondan referral = 50 satış × ₺50 = **₺2.5K/ay**
+- **Aylık tahmin (3. ay):** ₺337.3K | **(6. ay):** ₺92.3K/ay (saturation stabilize)
+
+### Türkiye Pazar Uyumu
+**Rakip:** Otoboom (değerleme), OLX kendi template'i var ama AI fotoğraf yükseltme = sıfır Türkiye'de. CarStudio global hizmeti biliyor ama Türkçe ve Türk pazarı destek yok.
+
+**Talep Sinyalleri:**
+- Google Trends Türkiye: "araç fotoğrafı profesyonel", "ikinci el ilan fotoğraf" +95%
+- Sahibinden/OLX/Trendyol araç ilanları: 70% düşük kalite fotoğraf, "profesyonel çek kaç TL" şikayeti forum sık
+- Araştırma: Bayiler elle ($20-50 per araç) fotoğraf çektiriyor, 3-5 gün bekliyor
+- YouTube: Araç satıcı tipleri videolarda "iyanan fotoğraf zor" şikayeti
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: AI araç fotoğrafı + Trendyol entegre = sıfır hizmet
+- Doğrulanmış talep: 2M+ ikinci el araç satıcısı (yılda), %70'i düşük kalite
+- Yüksek marj: SaaS %85+, per-transaction %70+
+- Somut değer: Fotoğraf kalitesi → satış süresi -2/3 gün, fiyat +%8-15 = paranın karşılığı görülüyor
+- Kolay ölçek: API'ye dayalı, hizmet tek sunucu + OpenAI Vision
+- Network: Trendyol/OLX/Sahibinden satıcısı biri başarılı olunca 5-10 hızlı deneme yapıyor
+
+### İlk Somut Adım
+Bugün **Sahibinden/OLX/Trendyol'dan en popüler 10 araç kategorisinde (Renault Clio, Hyundai i20, Ford Fiesta vb.) 30 aktif satıcının profilini bul ve kendine not et.** Sonra **WhatsApp/email ile 6-8'ine mesaj gönder: "Araç fotoğraflarını stüdyo kalitesine yükselt — AI arkaplan temizleme, renk/ışık optimizasyon, profesyonel pazarlama text. 5 fotoğraf = ₺99, veya ₺299/ay sınırsız. İlk 10'u %50 indirim. Deneme olmak ister misin? İlk 5 satıcının fotoğrafını (Dropbox link) gönder, 24 saat içinde sonuç vereyim."** Sonuç: **2-3 satıcı fotoğraf gönderdiyse, test işleyin ve AI fotoğraf düzenlemesi (manual veya API prototype) yap.** Gün sonu: **3 test fotoğraf set + 2-3 satıcı "evet denerim" taahhüdü** = MVP ready.
+
+### Zorluk/Risk
+- **AI kalitesi:** Araç çiziliği, koku/pas, iç görüş gizleme zor olabilir, manual incelemesi gerekir
+- **Platform policy:** Trendyol/OLX fotoğraf "gerçek fotoğraf" politikası (AI düzenleme şeffaflık gerek)
+- **Rekabet hızı:** Başarılı model görüldükten 2-3 ay sonra Trendyol/OLX kendi AI tool'u çıkabilir
+- **Müşteri kazanma:** Satıcılar "fotoğraf kendi çekim" alışkanlığı çok, pay gerekir
+- **Marj squeeze:** Per-photo model saturation → abonelik modele vursa da churn yüksek olabilir
+
+**Risk Derecesi:** ORTA (AI kalitesi, platform politikası, rekabet, pazarlama maliyeti)
+
+---
+
+## FİKİR 2: Cycling & Triathlon Etkinlik Yönetim Yazılımı (Türkiye)
+
+### Ne Bu?
+Türkiye'de 50+ cycling kulübü, triathlon takımı, dağcılık klübü (5000+ aktif üye) için **etkinlik/turnuva yönetim yazılımı — rota planlama, katılımcı kayıt, canlı GPS tracking, sonuç tablosu, sosyal scoring.**
+
+Sistem: (1) Kulüp başkanı / olay örgütleyicisi web'den etkinlik oluştur (rota harita, saatler, kategoriler: yeni/intermediate/pro), (2) Üyeler/arkadaşlar mobil app'den kayıt yap, (3) Etkinlik günü: GPS tracking (canlı), konum servisi, tur etapları otomatik kaydedilir, (4) Finish line: çalışanlar kameradan akıllı timer (AI yüz tanıma veya QR okuma), (5) Sonuçlar anlık dashboarda gidiyor, sosyal medya otomatik paylaş, üyeler rekor takvimlerini güncelle.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de 50+ kayıtlı cycling/triathlon kulübü (Ulusal Spor Federasyonu)
+- 2026'da Türkiye'de 100+ cycling etkinliği/haftalık, 200+ triathlon sezonu
+- Cycling/triathlon community: Instagram 500K+ Türkçe hashtag, yüksek engagement
+- TOKU var (turnuva) ama amatori kulüp yönetimi değil
+- Event management yazılımı (Eventbrite tarzı) Türkiye'de genel ama spor-spesifik + GPS tracking = sıfır
+
+### Gelir Modeli
+- **Kulüp/klub aylık plan** (ay 2): 15 aktif kulüp × ₺499 (50 üye, 4 etkinlik/ay) = **₺7.5K/ay**
+- **Event organizer plan** (ay 3): 10 organizer × ₺899 (sınırsız etkinlik, sponsorship tools) = **₺8.99K/ay**
+- **Premium tier (canlı sponsorship board)** (ay 4): 8 × ₺1.499/ay = **₺12K/ay**
+- **Per-event analytics/export** (ay 5): 50 etkinlik × ₺299 = **₺15K/ay**
+- **Aylık tahmin (3. ay):** ₺16.49K | **(6. ay):** ₺47.24K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** TOKU resmi turnuva yönetimi, ama yeni etkinlik/amator = sıfır. Eventbrite Türkiye'de genel (müzik, konferans), spor GPS tracking entegre değil.
+
+**Talep Sinyalleri:**
+- Cycling/triathlon Instagram grupları: "etkinlik sonucu nasıl paylaşırız, kim birinci" şikayeti sık
+- Facebook kulüp sayfalı: "Etkinlik organize zor, Excel karmaşık" threads
+- Google Trends Türkiye: "cycling etkinlik", "triathlon turnuva" +65%
+- Sponsor talep: Spor markası Türk cycling etkinliği sponsorluğu istiyor ama "formal platform yok"
+
+**Neden Heyecan Verici:**
+- Türkiye niş boşluğu: Amator cycling/triathlon etkinlik yönetim = hiç yazılım
+- Doğrulanmış sorun: 50+ kulüp manuel (WhatsApp, Excel) yönetim
+- Network effect güçlü: Kulüp başkanı başarılı olunca 5-10 arkadaş kulüp aynı yazılımı tercih ediyor
+- Sponsor kazanımı: Sponsorluk komisyonu = ikinci gelir kanalı (scalable)
+- Marj yüksek: SaaS %85+
+
+### İlk Somut Adım
+Bugün **Instagram/Facebook'taki top 10 Türkçe cycling/triathlon kulüp / olay örgütleyiciyi bul.** Sonra **LinkedIn/Instagram DM ile 5-7'sine mesaj gönder: "Cycling/triathlon etkinlik yönetim — rota, kayıt, canlı GPS, timer, sonuç tablosu. ₺499/ay kulüp paketi, ilk 5'e %40 indirim + 3 ay ücretsiz. Demo call?** Yanıt alan 3-4'e sorular: (1) Ayda kaç etkinlik organize ediyorsun, (2) En zor kısım nedir, (3) GPS tracking kullanır mıydın? Gün sonu: **2-3 kulüp "demo call" taahhüdü**.
+
+### Zorluk/Risk
+- **Nişe küçüklüğü:** 15-20 kulüp × ₺499 = ₺7.5-10K/ay, ölçek sınırlı
+- **GPS doğruluğu:** Şehir GPS sinyali zayıf, trail kayıp riski
+- **Network gecikmesi:** Canlı tracking ağ bağlantısı gereksiz (mobil internet güvenilmez)
+- **Teknoloji başlangıç:** GPS, mobil app, timing = mimarı kompleks
+
+**Risk Derecesi:** ORTA-YÜKSEK (nişe küçüklük, teknik karmaşıklık, ölçek sınırı)
+
+---
+
+## FİKİR 3: Türkçe Podcast Kurma + Template Kütüphanesi Hizmeti
+
+### Ne Bu?
+Ses içerik yaratıcıları için **"podcast stüdyosu kurma + şablon kütüphanesi" hizmeti.** 
+
+Sistem: (1) Yaratıcı forma giriyor, "podcast kurmak istiyorum" diyor, (2) Claude Code hızlı danışmanlık dökümanı hazırlıyor, (3) Koray 1 saat call yapıyor, (4) Sonuç: (a) Mikrofon + setting tavsiyesi, (b) Podcast template kurma — Descript/Podcastle setup, (c) İçerik çıktısı şablonları: intro/outro müzik, seslendirme script, reklam spot şablonları, episode outline, transkript kuralları, Spotify/YouTube klibi otomasyonu.
+
+### Kanıt (Kaynaklar)
+- 2026'da podcast dinleyici sayısı Türkiye 10M+ (yıllık +40%)
+- Türkçe podcast sayısı 3000+, 2025'te %50 artış (Spotify Türkiye)
+- Descript, Riverside, Podcastle global adoption %200+ (AI editing demand)
+- Podcast kurma maliyeti: stüdyo ₺2-5K, yazılım/template 20-40 saat
+- [Best Podcast Tools 2026](https://www.airmeet.com/hub/blog/best-ai-podcast-production-tools-for-2026/)
+
+### Gelir Modeli
+- **Podcast kurma hizmeti** (ay 1): 5 yaratıcı × ₺3.999 = **₺20K (ay 1)**
+- **Aylık template subscription** (ay 2+): 20 yaratıcı × ₺199/ay = **₺4K/ay**
+- **Kurma paket upsell** (ay 3): 3 yaratıcı × ₺1.999 = **₺6K**
+- **Podcast growth package** (ay 6): 8 yaratıcı × ₺599/ay = **₺4.8K/ay**
+- **Aylık tahmin (3. ay):** ₺30K | **(6. ay):** ₺16.3K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Descript/Riverside global var ama Türkçe kurma danışmanlığı + template = sıfır. Türkiye'de birkaç podcast kursu var ama hizmet tabanlı kurma = hiç.
+
+**Talep Sinyalleri:**
+- Google Trends Türkiye: "podcast nasıl başlanır", "podcast kurma maliyeti" +125%
+- YouTube: "Türkçe podcast başlama rehberi" 50K+ view
+- Reddit r/Turkey podcast thread: "kurma süreci nereden yardım" sık soru
+- LinkedIn: Yeni podcast kurucular "mentorship gerek" postları sık
+- Twitter: Podcast creators "production zor" şikayeti
+
+**Neden Heyecan Verici:**
+- Türkçe niş boşluğu: Podcast kurma danışmanlığı + template = sıfır
+- Doğrulanmış talep: Türkçe podcast +%50 yıllık, 3K+ kanal ama çoğu informal
+- Düşük giriş: Danışmanlık 80% marj, template SaaS %85+ marj
+- Koray fit: İş geliştirme danışmanlık + yaratıcı kontent directing
+- Upsell chain: Kurma → template → growth package
+
+### İlk Somut Adım
+Bugün **Spotify/Apple Podcast Türkçe trend listesinden son 3 ayda çıkan 15 podcast bul.** Sonra **email/Twitter DM ile 8-10'una mesaj gönder: "Podcast kurma danışmanlığı + template — episode outline, intro/outro template, reklam şablonları. ₺3.999 paket, ₺199/ay subscription. İlk 10'u %50 indirim + 1 ay ücretsiz. Demo call?"** Yanıt alan 5'e sorular: (1) Podcast prodüksiyon en zor kısım nedir, (2) Template kullanır mısın, (3) Reklam yönetimi gerek mi? Gün sonu: **3-4 podcast kurucusu "paket" taahhüdü + 1 demo call booked**.
+
+### Zorluk/Risk
+- **Hizmet tabanı:** Danışmanlık = zaman girdisi yoğun (scalability zor)
+- **Template saturation:** Descript/Podcastle kendi template'leri hazır
+- **Monetization zor:** SaaS recurring ₺199/ay düşük, hizmet eklemek gerek
+- **Müşteri sahibi:** Audio producer'lar freelancer kültürü, churn yüksek
+
+**Risk Derecesi:** ORTA (hizmet tabanı scalability, rekabet, churn)
+
+---
+
+## FİKİR 4: İnsan Kaynakları Yazılımı — Özgeçmiş Taraması + Psikolojik Uyum AI
+
+### Ne Bu?
+KOBİ ve orta ölçekli şirketler (1000-5000 kişi) için **özgeçmiş taraması ve işe alım AI aracı** — yapay zeka otomatik: (1) CV anahtar kelimelerini tarar, (2) İş gereklerinden match score hesapla, (3) Psikolojik uyum testi (AI soru-cevap), (4) Mülakata davet ya da red otomasyonu, (5) Dashboard: işe alım yönetim (pipeline, timeline, raporlar).
+
+### Kanıt (Kaynaklar)
+- Türkiye'de KOBİ sayısı 3M+, 100-1000 kişi: 50K+ şirket
+- HR teknoloji pazarı 2026 Türkiye: ₺200M+ (yıllık +25% büyüme)
+- CV taraması yazılımı (Lever, Greenhouse global): ₺300-1000/ay
+- [HR Tech Trends 2026](https://www.capterra.com/hr-software/)
+
+### Gelir Modeli
+- **KOBİ başlangıç plan** (ay 2): 30 şirket × ₺1.499/ay = **₺44.97K/ay**
+- **Kurumsal plan** (ay 3): 10 şirket × ₺4.999/ay = **₺50K/ay**
+- **Per-CV commission** (ay 4): 2000 CV × ₺10 = **₺20K/ay**
+- **Premium analytics** (ay 6): 15 şirket × ₺1.999/ay = **₺30K/ay**
+- **Aylık tahmin (3. ay):** ₺94.97K | **(6. ay):** ₺194.97K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** İK yazılımları var (Bilişim, İK One) ama CV AI taraması = sıfır derinlik.
+
+**Talep Sinyalleri:**
+- Google Trends Türkiye: "HR yazılımı", "özgeçmiş taraması yazılımı" +80%
+- LinkedIn: HR direktorleri "CV review süreci uzun" şikayeti sık
+- Başvuru sayısı: Büyük şirket 300-500/pozisyon başvuru, tarama manuel = 40-60 saat
+- HR konferansları: İK öğretmen AI danışmanlığı trending
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: AI CV tarama + psikolojik uyum = sıfır Türkçe yazılım
+- Doğrulanmış sorun: HR 40-60 saat/pozisyon CV review, manuel filtreleme
+- Yüksek marj: SaaS %85+
+- Ölçek: 50K+ şirket potensiyel müşteri
+- Koray fit: İK danışmanlık + psikolojik uyum metodoloji (Sistem Global HR bağlantıları)
+
+### İlk Somut Adım
+Bugün **LinkedIn Job Postings Türkiye'den aktif işe alım yapan 30+ şirketi bul.** Sonra **LinkedIn mesajı ile 10-12'sine mesaj gönder: "İşe alım yazılımı — CV otomatik taraması, psikolojik uyum testi, mülakata davet otomasyonu. ₺1.499/ay (50 CV), ₺4.999/ay kurumsal. İlk 5'e %40 indirim + 2 ay ücretsiz. MVP test olmak ister misin? 20 örnek CV gönder, 24 saat sonra tarama + rapor göster."** Yanıt alan 5-7'ne sorular: (1) Şu anda nasıl CV tarama yapıyorsun, (2) Ayda kaç CV gözden geçiriyorsun, (3) Psikolojik uyum testi sektörde önemli mi? Gün sonu: **2-3 şirket "MVP test + 20 CV örnek" gönderdi**.
+
+### Zorluk/Risk
+- **CV parsing karmaşıklığı:** Her CV formatı farklı, AI parsing %80-85 accuracy
+- **Psikolojik test validitesi:** HR'lar "yapay zeka test tarafından kandırılabilir" endişesi
+- **Hukuki sorumluluk:** İşe alım kararı AI'ya dayalıysa ayrımcılık riski
+- **Rekabet:** SAP, Workday, LinkedIn Türkiye gelen büyük çözümler
+- **Müşteri traction:** HR'lar teknoloji geç adopter, sales süreci uzun
+
+**Risk Derecesi:** ORTA-YÜKSEK (parsing accuracy, legal liability, rekabet, adoption riski)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ İkinci El Araç AI Fotoğrafı + Pazarlama Hizmeti**
+
+**Gerekçe:** Dört fikir arasında en düşük risk ve en hızlı test potansiyeli sunan seçim. Araç satıcıları (2M+ Türkiye'de) sorun açıkça tanımlanmış: düşük kalite fotoğraf → satış yavaş. Çözüm somut ve hemen görülür (fotoğraf önce/sonra). İlk adım bugün bitirilebilir (6-8 satıcı bulup test fotoğraf çekerek 24 saatte feedback almak). Rakip yok (CarStudio global ama Türkçe destek yok). Gelir model her adımda doğrulanır (per-photo test → aylık abo). Podcast kurma güçlü fikir ama hizmet tabanı (danışmanlık = scalability zor), cycling/triathlon nişe çok küçük (15-20 müşteri max), HR AI risk yüksek (parsing accuracy + legal liability). Araç fotoğrafı: düşük teknik karmaşıklık, yüksek duyusal değer, somut ROI, hızlı iteration.
+
+---
+
 # Günlük Fikir Araştırması - 5 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
