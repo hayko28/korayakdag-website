@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "butce-toplantisinda-konusulmayan-soru",
+    title: "Bütçe Toplantısında Hiç Sorulmayan Tek Soru",
+    excerpt:
+      "Ekim ayı geldiğinde orta ölçekli pek çok şirkette aynı sahne tekrarlanır: gelecek yılın hedefi bir saatlik toplantıda belirlenir ama geçen yılki hedefe neden ulaşılamadığı hiç konuşulmaz. Bütçe dönemini her yıl aynı yorgunlukla geçiren şirketlerin asıl sorunu rakamda değil, bu konuşulmayan soruda.",
+    tag: "Strateji",
+    date: "7 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tcmb-kobi-kredi-buyume-sinirinin-gevsetilmesi",
     title:
       "TCMB KOBİ Kredi Sınırını Gevşetti: Bankanın \"Kotamız Doldu\" Cevabı Ne Zaman Değişir?",
