@@ -19,6 +19,24 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1650530415027-dc9199f473ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "turkiyede-sirket-kurma-maliyeti-2026",
+    title: "Türkiye'de Şirket Kurma Maliyeti 2026: Yabancı Yatırımcılar İçin Kalem Kalem Rehber",
+    excerpt: "Limited ve anonim şirket için 2026 asgari sermaye tutarları, noter, ticaret odası, gazete ilanı, defter tasdiki ve mali müşavir kalemleri ile çoğu rehberin atladığı ek maliyetler.",
+    category: "ŞİRKET KURULUŞU • TÜRKİYE • 2026",
+    date: "Ekim 2026",
+    readTime: "9 Dakika",
+    image: "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiye-2026-yatirim-vergi-paketi-yabanci-yatirimci",
+    title: "Türkiye'nin 2026 Yatırım Vergi Paketi: %12,5 Kurumlar Vergisi, Transit Ticaret ve 20 Yıllık Muafiyet",
+    excerpt: "İmalatçılara indirimli kurumlar vergisi, transit ticaret ve nitelikli hizmet merkezi indirimleri, hizmet ihracatı ve Türkiye'ye yerleşen kişilere özel 20 yıllık yurt dışı gelir muafiyeti.",
+    category: "VERGİ TEŞVİKLERİ • YABANCI YATIRIM • 2026",
+    date: "Ekim 2026",
+    readTime: "10 Dakika",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "arge-merkezi-tasarim-merkezi-teknopark-tesvik-hesaplama-personel-ornekleri",
     title: "Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle",
     excerpt: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",

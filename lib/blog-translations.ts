@@ -6,6 +6,14 @@ export interface BlogTranslationPair {
 // Statik TR blog yazılarının İngilizce çevirisi hazır olduğunda buraya eklenir.
 export const BLOG_TRANSLATIONS: BlogTranslationPair[] = [
   {
+    tr: "turkiyede-sirket-kurma-maliyeti-2026",
+    en: "company-formation-cost-in-turkey-2026-guide",
+  },
+  {
+    tr: "turkiye-2026-yatirim-vergi-paketi-yabanci-yatirimci",
+    en: "turkiye-2026-tax-incentive-package-foreign-investors",
+  },
+  {
     tr: "teknopark-nedir-avantajlari",
     en: "technopark-in-turkey-tax-incentives-guide",
   },
@@ -49,6 +57,24 @@ export interface EnStaticPost {
 // Statik EN çeviri sayfalarının listeleme (kart) bilgisi. Her yeni
 // app/en/blog/{slug}/page.tsx eklendiğinde buraya da bir girdi eklenir.
 export const EN_STATIC_POSTS: EnStaticPost[] = [
+  {
+    slug: "company-formation-cost-in-turkey-2026-guide",
+    title:
+      "Company Formation Cost in Turkey 2026: Line-by-Line Guide for Foreign Investors",
+    excerpt:
+      "Minimum capital, notary, chamber, gazette, ledger and accountant fees for an LLC or joint stock company in Turkey, plus the extra costs most guides leave out.",
+    image:
+      "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "turkiye-2026-tax-incentive-package-foreign-investors",
+    title:
+      "Turkey's 2026 Tax Package for Foreign Investors: 12.5% Corporate Tax, Transit Trade and the 20-Year Exemption",
+    excerpt:
+      "The reduced corporate tax rate for manufacturers, deductions for transit trade and qualified service centres, and the 20-year foreign income exemption for individuals relocating to Turkey.",
+    image:
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
   {
     slug: "technopark-in-turkey-tax-incentives-guide",
     title:
