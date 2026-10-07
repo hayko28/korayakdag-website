@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tur-belgesi-teknolojik-urun-deneyim-belgesi-nedir-nasil-alinir",
+    title: "TÜR Belgesi (Teknolojik Ürün Deneyim Belgesi) Nedir? Nasıl Alınır, Kamu İhalesinde Ne Avantaj Sağlar?",
+    excerpt: "18 Aralık 2025'te yürürlüğe giren yeni yönetmelikle TÜR Belgesi ve TÜR Deneyim Belgesi; başvuru şartları, yerli malı belgesi bağlantısı, TÜBİTAK değerlendirme süreci, turbelgesi.sanayi.gov.tr üzerinden adım adım süreç ve kamu ihalelerinde sağladığı fiyat avantajıyla 2026 güncel rehber.",
+    category: "AR-GE VE İNOVASYON • TÜR BELGESİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1650530415027-dc9199f473ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "arge-merkezi-tasarim-merkezi-teknopark-tesvik-hesaplama-personel-ornekleri",
     title: "Ar-Ge Merkezi, Tasarım Merkezi ve Teknopark Teşvik Hesaplaması: Personel Bazlı Örneklerle",
     excerpt: "15 personelli Ar-Ge Merkezi, 10 personelli Tasarım Merkezi ve Teknopark için gelir vergisi stopajı, SGK işveren primi desteği, damga vergisi istisnası ve Ar-Ge indiriminin somut personel tabloları üzerinden 2026 güncel oranlarla adım adım hesaplandığı rehber.",
