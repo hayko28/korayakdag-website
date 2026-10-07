@@ -6,6 +6,18 @@ export interface BlogTranslationPair {
 // Statik TR blog yazılarının İngilizce çevirisi hazır olduğunda buraya eklenir.
 export const BLOG_TRANSLATIONS: BlogTranslationPair[] = [
   {
+    tr: "yabanci-ortak-calisma-izni-sartlari-2026",
+    en: "work-permit-for-foreign-company-owners-turkey-2026",
+  },
+  {
+    tr: "turkiyede-serbest-bolgeler-2026-yabanci-yatirimci",
+    en: "free-zones-in-turkey-2026-guide-foreign-investors",
+  },
+  {
+    tr: "turkiye-jeostratejik-konum-yatirim-avantajlari-2026",
+    en: "why-invest-in-turkey-strategic-location-2026",
+  },
+  {
     tr: "turkiyede-sirket-kurma-maliyeti-2026",
     en: "company-formation-cost-in-turkey-2026-guide",
   },
@@ -57,6 +69,33 @@ export interface EnStaticPost {
 // Statik EN çeviri sayfalarının listeleme (kart) bilgisi. Her yeni
 // app/en/blog/{slug}/page.tsx eklendiğinde buraya da bir girdi eklenir.
 export const EN_STATIC_POSTS: EnStaticPost[] = [
+  {
+    slug: "work-permit-for-foreign-company-owners-turkey-2026",
+    title:
+      "Work Permit for Foreign Company Owners in Turkey 2026: Shareholder or Manager?",
+    excerpt:
+      "Why shareholding alone does not give the right to work in Turkey, which foreign partners need a work permit, the capital and Turkish-employee conditions, and how the application works.",
+    image:
+      "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "free-zones-in-turkey-2026-guide-foreign-investors",
+    title:
+      "Free Zones in Turkey 2026: Who Gets the Tax Exemption and Who Does Not",
+    excerpt:
+      "A clear look at Turkey's 19 free zones: the corporate tax exemption for manufacturers, the 2026 change under Law No. 7577, licence types, 2025 trade figures, and how to decide between a free zone and a mainland company.",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "why-invest-in-turkey-strategic-location-2026",
+    title:
+      "Why Invest in Turkey? How the Strategic Location Becomes a Business Advantage in 2026",
+    excerpt:
+      "Customs Union access to Europe, about two dozen free trade agreements, record exports, the Development Road and nearshoring: what Turkey's location actually gives an investor in 2026, and where the limits are.",
+    image:
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
   {
     slug: "company-formation-cost-in-turkey-2026-guide",
     title:

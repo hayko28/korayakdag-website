@@ -10,6 +10,33 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yabanci-ortak-calisma-izni-sartlari-2026",
+    title: "Yabancı Ortak Çalışma İzni Şartları 2026: Hissedar mı Yönetici mi?",
+    excerpt: "Hissedarlığın tek başına Türkiye'de çalışma hakkı vermemesi, hangi yabancı ortakların izin alması gerektiği, sermaye ve Türk çalışan şartları ve başvurunun işleyişi.",
+    category: "YABANCI YATIRIMCI • ÇALIŞMA İZNİ • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiyede-serbest-bolgeler-2026-yabanci-yatirimci",
+    title: "Türkiye'de Serbest Bölgeler 2026: Vergi İstisnasından Kim Yararlanır, Kim Yararlanamaz?",
+    excerpt: "Türkiye'nin 19 serbest bölgesine açık bir bakış: imalatçılar için kurumlar vergisi istisnası, 7577 sayılı Kanun'la 2026 değişikliği, ruhsat türleri, 2025 ticaret verileri ve serbest bölge ile anakara şirketi arasında karar verme.",
+    category: "SERBEST BÖLGELER • VERGİ TEŞVİKLERİ • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiye-jeostratejik-konum-yatirim-avantajlari-2026",
+    title: "Türkiye'de Neden Yatırım Yapılmalı? Jeostratejik Konum 2026'da İş Avantajına Nasıl Dönüşüyor?",
+    excerpt: "Avrupa'ya Gümrük Birliği erişimi, yaklaşık yirmi dört serbest ticaret anlaşması, rekor ihracat, Kalkınma Yolu ve nearshoring: Türkiye'nin konumu 2026'da yatırımcıya gerçekte ne sağlıyor ve sınırları nerede.",
+    category: "TÜRKİYE'DE YATIRIM • STRATEJİ • 2026",
+    date: "Ekim 2026",
+    readTime: "9 Dakika",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tur-belgesi-teknolojik-urun-deneyim-belgesi-nedir-nasil-alinir",
     title: "TÜR Belgesi (Teknolojik Ürün Deneyim Belgesi) Nedir? Nasıl Alınır, Kamu İhalesinde Ne Avantaj Sağlar?",
     excerpt: "18 Aralık 2025'te yürürlüğe giren yeni yönetmelikle TÜR Belgesi ve TÜR Deneyim Belgesi; başvuru şartları, yerli malı belgesi bağlantısı, TÜBİTAK değerlendirme süreci, turbelgesi.sanayi.gov.tr üzerinden adım adım süreç ve kamu ihalelerinde sağladığı fiyat avantajıyla 2026 güncel rehber.",
