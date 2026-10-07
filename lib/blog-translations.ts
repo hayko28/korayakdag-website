@@ -6,6 +6,18 @@ export interface BlogTranslationPair {
 // Statik TR blog yazılarının İngilizce çevirisi hazır olduğunda buraya eklenir.
 export const BLOG_TRANSLATIONS: BlogTranslationPair[] = [
   {
+    tr: "turkiyede-bolgesel-yonetim-merkezi-nitelikli-hizmet-merkezi-2026",
+    en: "regional-headquarters-turkey-qualified-service-centre-2026",
+  },
+  {
+    tr: "turkiyede-hangi-sektorlere-yatirim-yapilmali-2026",
+    en: "which-sectors-to-invest-in-turkey-2026",
+  },
+  {
+    tr: "yatirim-yoluyla-turk-vatandasligi-2026-resmi-sartlar",
+    en: "turkish-citizenship-by-investment-2026-official-requirements",
+  },
+  {
     tr: "yabanci-sermayeli-sirket-kurulus-sonrasi-yukumlulukler-2026",
     en: "foreign-owned-company-obligations-turkey-after-incorporation",
   },
@@ -81,6 +93,33 @@ export interface EnStaticPost {
 // Statik EN çeviri sayfalarının listeleme (kart) bilgisi. Her yeni
 // app/en/blog/{slug}/page.tsx eklendiğinde buraya da bir girdi eklenir.
 export const EN_STATIC_POSTS: EnStaticPost[] = [
+  {
+    slug: "regional-headquarters-turkey-qualified-service-centre-2026",
+    title:
+      "Regional Headquarters in Turkey: The 2026 Qualified Service Centre Regime Explained",
+    excerpt:
+      "Conditions for a Qualified Service Centre, the 95% and 100% corporate tax deductions on foreign income, personnel income tax relief, and what the Istanbul Finance Centre adds for multinational groups.",
+    image:
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "which-sectors-to-invest-in-turkey-2026",
+    title:
+      "Which Sectors to Invest in Turkey in 2026? What the Data and Policy Say",
+    excerpt:
+      "FDI flows by sector and source country, the government's priority areas, and export strengths, with the caveats that matter when choosing a sector.",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "turkish-citizenship-by-investment-2026-official-requirements",
+    title:
+      "Turkish Citizenship by Investment in 2026: What the Official Rules Require",
+    excerpt:
+      "The real estate and business routes to Turkish citizenship, official amounts and holding periods, what changed for land in 2023, and what the process does not guarantee.",
+    image:
+      "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
   {
     slug: "foreign-owned-company-obligations-turkey-after-incorporation",
     title:

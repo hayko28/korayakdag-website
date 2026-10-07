@@ -10,6 +10,33 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "turkiyede-bolgesel-yonetim-merkezi-nitelikli-hizmet-merkezi-2026",
+    title: "Türkiye'de Bölgesel Yönetim Merkezi: 2026 Nitelikli Hizmet Merkezi Rejimi Açıklaması",
+    excerpt: "Nitelikli Hizmet Merkezi şartları, yurt dışı kazançta %95 ve %100 kurumlar vergisi indirimi, personel gelir vergisi desteği ve İstanbul Finans Merkezi'nin çok uluslu gruplara eklediği avantajlar.",
+    category: "BÖLGESEL MERKEZ • VERGİ TEŞVİKLERİ • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiyede-hangi-sektorlere-yatirim-yapilmali-2026",
+    title: "Türkiye'de 2026'da Hangi Sektörlere Yatırım Yapılmalı? Veriler ve Politika Ne Diyor?",
+    excerpt: "Sektör ve ülke bazında doğrudan yabancı yatırım akımları, hükümetin öncelikli alanları ve ihracat güçleri; sektör seçerken önemli olan çekincelerle birlikte.",
+    category: "TÜRKİYE'DE YATIRIM • SEKTÖRLER • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "yatirim-yoluyla-turk-vatandasligi-2026-resmi-sartlar",
+    title: "Yatırım Yoluyla Türk Vatandaşlığı 2026: Resmî Kurallar Ne İstiyor?",
+    excerpt: "Türk vatandaşlığına giden gayrimenkul ve iş yolları, resmî tutarlar ve elde tutma süreleri, 2023'te arsa için neyin değiştiği ve sürecin neyi garanti etmediği.",
+    category: "VATANDAŞLIK • YATIRIMCI • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yabanci-sermayeli-sirket-kurulus-sonrasi-yukumlulukler-2026",
     title: "Yabancı Sermayeli Şirketin Kuruluş Sonrası Yükümlülükleri: 2026 Kontrol Listesi",
     excerpt: "Tescilden sonra yabancı sermayeli şirketin devam etmesi gerekenler: E-TUYS üzerinden yabancı sermaye bildirimi, olağan vergi ve muhasebe görevleri, kâr transferi ve %15 kâr payı stopajı.",
