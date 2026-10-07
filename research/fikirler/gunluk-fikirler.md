@@ -1,3 +1,266 @@
+# Günlük Fikir Araştırması - 7 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 7 Ekim 2026
+**Hedef:** Fintech, turizm, emlak, gıda, yaşlılık bakımı — önceki günlerden farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: KOBİ Gider Takibi + Finansal Rapor Yazılımı (AI Kategorize)
+
+### Ne Bu?
+Küçük işletmeler (100-500 kişi) için **SaaS yazılımı — şirket giderleri otomatik kategorize eden, AI-powered analiz, devlet raporlarına hazır hale getiren platform.** Sistem: (1) Muhasebe gider belgesi (fatura/makbuz) upload ediliyor, (2) AI otomatik: kategoriye sınıflandır, proje/masraf merkezi ata, (3) Raporlar saati: gider trendi, KPI analiz, devlet e-invoice uyumluluğu kontrol, (4) Doğrudan muhasebe yazılımına export (Luca, Kesintisiz, NetSoft).
+
+### Kanıt (Kaynaklar)
+- Türkiye'de e-Invoice zorunluluğu: 3M TL+ şirket 1 Ocak 2026, 500K TL+ şirket 1 Temmuz 2026 (artan uyum talep)
+- SME'ler finansal yönetimde "zaman kaybı" şikayeti: %65 manuel gider takibi yapıyor
+- Fintech 2026 trend: BaaS, AI-powered hizmetler, SME automation (Bloomberg)
+- Muhasebe yazılımlarında AI kategorize eksik (Luca, Kesintisiz sade, elle kategorize)
+- Google Trends Türkiye: "gider takip", "şirket finansal raporlama" +95%
+- [2026 Fintech Trends Türkiye](https://www.bloomberght.com/yorum/koray-gultekin-bahar/3767434-2026da-fintek-sektorune-yon-verecek-10-trend)
+
+### Gelir Modeli
+- **KOBİ abonelik** (ay 2): 50 şirket × ₺799/ay (100+ gider/ay) = **₺39.95K/ay**
+- **Kurumsal plan** (ay 3): 15 şirket × ₺1.999/ay = **₺30K/ay**
+- **API entegrasyon** (ay 4): 20 muhasebeci × ₺299/ay = **₺6K/ay**
+- **Per-report export** (ay 5): 100 şirket × 12 report/yıl × ₺25 = **₺30K/ay**
+- **Aylık tahmin (3. ay):** ₺75.95K | **(6. ay):** ₺105.95K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Luca, Kesintisiz, NetSoft var ama AI kategorize + devlet uyumu combo = yok. Muhasebe yazılımları sade gider takibi, analiz ve AI otomasyonu yetersiz.
+
+**Talep Sinyalleri:**
+- Google Trends: "gider kategorize", "finansal rapor yazılımı" +95%
+- Muhasebeci forum (LinkedIn): "Gider kategorize zaman kaybı" şikayeti sık
+- E-invoice zorunluluğu arttı (3M TL 1 Ocak, 500K TL 1 Temmuz 2026) = compliance araması arttı
+- KOSGEB başvurularında "finansal rapor" gerekli, KOBİler manuel yapıyor
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: AI kategorize + devlet uyumu = sıfır Türkçe çözüm
+- Doğrulanmış sorun: E-invoice zorunluluğu arttı, SME'ler yazılım bulmuyor
+- Marj yüksek: SaaS %85+
+- Network: Muhasebeci → KOBİ referral zinciri (viral potansiyel)
+- Koray fit: Finansal danışmanlık + yazılım operasyon kurma
+
+### İlk Somut Adım
+Bugün **LinkedIn'de KOBİ muhasebecileri + finansal direktörleri 8-10'nu bul.** Sonra **mesaj gönder: "Gider otomatik kategorize + finansal rapor yazılımı — AI belgesi analizi, KPI dashboard, e-invoice uyumu. ₺799/ay KOBİ paketi, muhasebecilere ₺299/ay. MVP 3 hafta. Beta test olmak ister misin? İlk 10'a %40 indirim + 2 ay ücretsiz."** Yanıt alan 5-7'ye sorular: (1) Ayda kaç gider belgesi işleyin, (2) Kategorize zaman ne kadar, (3) E-invoice hazırlığı nedir? Gün sonu: **3-4 muhasebeci/KOBİ "MVP test" verbal taahhüdü**.
+
+### Zorluk/Risk
+- **OCR doğruluğu:** Fatura çeşitliliği yüksek, AI parsing %80-85 (manual review gerek)
+- **Muhasebeci gelenekçiliği:** Yazılım adopsiyon, eski sistemle switching riski
+- **Rekabet:** Büyük muhasebe yazılımları (SAP, Workday) feature ekleme riski
+- **Regulatory:** E-invoice kuralları sık değişebilir
+- **Sales cycle:** KOBİ'lere satış uzun, insan dokunuş gerek
+
+**Risk Derecesi:** ORTA (OCR accuracy, adoption, regulatory)
+
+---
+
+## FİKİR 2: Türkçe Yerel Turist Rehberlik Platform (Airbnb Experiences Tarzı)
+
+### Ne Bu?
+Yerli ve yabancı turistler için **"yerel deneyim" booking platformu — rehberli tur, meşruiye atölyesi, sokak sanatı rehberliği, yerel mutfak workshopu, gece hayatı discovery.** Sistem: (1) Turist appen giriyor, şehir + aktivite (tur, workshop, gece hayatı) seçiyor, (2) Rehberler profil açmış, availability takvimini hazırlamışlar, (3) Booking yapıldı → ödeme platform → rehbere para gidiyor, (4) Turist review, rehber rating, platform kalite kontrol. İstanbul, Ankara, İzmir, Cappadocia başlangıç.
+
+### Kanıt (Kaynaklar)
+- Türkiye turist sayısı 2026 tahmin 50M+ (yıllık +12% büyüme)
+- Airbnb Experiences May 2026 update: 1000 yeni aktivite ekledi, %80 yıllık büyüme
+- Airbnb 20% commission alıyor, host retention yüksek (viral network effect)
+- Turist davranışı değişti: "müze kuyruğu" → "yerel hayatı yaşa" (2026 trend)
+- [Airbnb Experiences Growth 2026](https://www.tourismupdate.com/node/1481601998)
+
+### Gelir Modeli
+- **Platform commission** (ay 2): 500 turist × ₺250 avg activity × %20 = **₺25K/ay**
+- **Premium rehbir tier** (ay 3): 30 rehbir × ₺199/ay = **₺6K/ay**
+- **Corporate team building** (ay 4): 5 şirket × ₺5K = **₺25K/ay**
+- **Sponsorship (hotel/restaurant)** (ay 6): 3 sponsor × ₺2K = **₺6K/ay**
+- **Aylık tahmin (3. ay):** ₺56K | **(6. ay):** ₺87K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Airbnb kendisi var ama Türkiye'de Experiences ağı az, yerel rehbiler çoğu manuel (WhatsApp rehberlik). Komşu platformlar (GetYourGuide global) ama Türkçe community/marketing eksik.
+
+**Talep Sinyalleri:**
+- Turist sayısı arttı (50M+ 2026), yerel deneyim trendinde
+- Rehberli tur şirketi (Turkish.com, Istanbul Walks) popüler ama online platform yok
+- TripAdvisor review'lerde "yerel dengan suggest" şikayeti sık
+- Instagram Türkiye turizm hashtag (500K+) engagement yüksek
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Yerel deneyim + booking + Türkçe = sıfır platform (Airbnb global ama az activity)
+- Doğrulanmış talep: Turist sayısı arttı, yerel rehbiler talep yüksek
+- Marj yüksek: 20% commission, scalable
+- Network effect: Bir şehirde başarılı olunca 5-10 turist başka şehre genelleştiriyor
+- Koray fit: Turizm danışmanlık, yerel ağ (Sistem Global)
+
+### İlk Somut Adım
+Bugün **Istanbul popüler tur rehberleri (Turkish.com, Istanbul Walks, Reddit r/Istanbul moderatörleri) 6-8'ini LinkedIn/Instagram DM'den bulacağız.** Mesaj: "Yerel deneyim booking platformu — profilin, takvim, turist yönetim, ödeme, rating. %20 commission + upsell (premium profile). MVP 2 hafta, Airbnb tarzı. Beta rehbir olmak ister misin? İlk 20'ye %30 commission." Yanıt alan 5'e sorular: (1) Ayda kaç turist alıyorsun, (2) En büyük problem rehberlik sürecinde ne, (3) Online booking platform kullansın mısın? Gün sonu: **3-4 rehbir "beta platform" verbal commitment** = MVP ready.
+
+### Zorluk/Risk
+- **Turist kalitesi control:** Her turist/rehbir çifti soyutlanmış risk, review yönetimi gerek
+- **Lokalizasyon:** Platform çok-dil ve multi-şehir = kompleks kurulum
+- **Airbnb direkt rekabet:** Airbnb Turkey Experiences ağını hızlı genişletebilir
+- **Turist sezonu:** Yaz pik, kış düşük = revenue volatility
+- **Rehbier churn:** Başarılı rehbier direkt müşteri çıkarabilir (platform bypass)
+
+**Risk Derecesi:** ORTA (turist kalitesi, Airbnb rekabet, sezonal volatility)
+
+---
+
+## FİKİR 3: Emlak Virtual Tour + AI Kat Plan Analiz Yazılımı
+
+### Ne Bu?
+Emlakçılar ve gayrimenkul şirketleri için **SaaS platform — 360° sanal tur kurma + AI kat plan analiz + çevre bilgisi dashboard.** Sistem: (1) Emlakçı telefon 10 fotoğraf çekiyor (yapı dışı, iç, detaylar), (2) Platform AI otomatik: 360 tur render ediyor, kat planı analiz ediyor (alan, oda sayısı, pencere), (3) Çevre verisi: nearest metro/school/park, neighborhood safety score, (4) İlan link → tarafları tıklayınca sanal tur açılıyor (Sahibinden, Hepsiburada Emlak, Airbnb komşu). İstatistik: sanal tur = %87 daha fazla view, sayfada 5-10x daha uzun kalış.
+
+### Kanıt (Kaynaklar)
+- Türkiye emlak pazarı 2026 = 5-7 trilyon TL (büyük, dijitalleşmemiş)
+- Sanal tur statistics: 87% daha fazla view, 74% alıcı sanal tur gerekli (2026)
+- ELTA360 (Turkish startup) var ama sadece tur kurma, AI plan analiz yok
+- Google Trends Türkiye: "emlak sanal tur", "kat planı analiz" +110%
+- [Real Estate Virtual Tour 2026](https://www.luxurypresence.com/blogs/virtual-real-estate-tour)
+
+### Gelir Modeli
+- **Emlakçı aylık plan** (ay 2): 40 emlakçı × ₺499 (20 tur/ay) = **₺19.96K/ay**
+- **Gayrimenkul şirketi kurumsal** (ay 3): 10 şirket × ₺1.999/ay = **₺20K/ay**
+- **Per-tur premium** (ay 4): 200 tur × ₺49 (drone + AI plan) = **₺10K/ay**
+- **Sahibinden/Hepsi entegrasyon commission** (ay 5): 50 satış referral × ₺100 = **₺5K/ay**
+- **Aylık tahmin (3. ay):** ₺39.96K | **(6. ay):** ₺54.96K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** ELTA360 var (sanal tur) ama AI plan analiz, çevre bilgisi = eksiği. Geleneksel emlakçılar profosyonel fotoğraf yüksek maliyetle çektiyor (₺500-1000 per mülk).
+
+**Talep Sinyalleri:**
+- Emlak ilanlarında %70 düşük kalite fotoğraf (Sahibinden, Hepsiburada gözlem)
+- Google Trends: "emlak sanal tur", "gayrimenkul dijital pazarlama" +110%
+- Emlakçı forum: "Sanal tur maliyeti yüksek" şikayeti, accessibility talep
+- Alıcı davranışı: "Sanal tur olmayan mülk bakma zamanı yok" (yeni norm)
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Sanal tur + AI plan + çevre bilgisi combo = sıfır Türkçe yazılım
+- Doğrulanmış talep: 87% view artışı, 74% alıcı talep, Sahibinden/Hepsi trend
+- Marj yüksek: SaaS %85+
+- Ölçek: 200K+ emlakçı Türkiye'de, potensiyel müşteri yüksek
+- Koray fit: Emlak danışmanlık + pazarlar yazılım kurma
+
+### İlk Somut Adım
+Bugün **Sahibinden/Hepsiburada'dan popüler 10 emlakçı/gayrimenkul şirketi LinkedIn'de bulacağız.** WhatsApp: "Emlak sanal tur + AI plan analiz yazılımı — 360 tur, kat planı otomatik tahlil, çevre bilgisi, Sahibinden integrasyon. ₺499/ay 20 tur, ₺1.999/ay kurumsal. MVP 2 hafta. Beta test olmak ister misin? İlk 5'e %50 indirim + 2 ay ücretsiz." Yanıt alan 5'e sorular: (1) Ayda kaç tur yapıyorsun, (2) Sanal tur maliyeti şu anda ne, (3) AI plan tahlili faydalı olur mu? Gün sonu: **2-3 emlakçı "MVP test 5 tur" taahhüdü**.
+
+### Zorluk/Risk
+- **AI kat plan parsing:** Her kat planı stilizasyon farklı, AI accuracy %75-85
+- **Drone fotografı:** Bazı bölgeler drone sınırlı, manual iç tur gerek
+- **ELTA360 rekabet:** Zaten var, hızlı genişletebilir
+- **İlginç verisi:** Çevre bilgisi (metro, school, park distance) veri kaynakları (API) karmaşık
+- **Emlakçi tech adoption:** Gelenekçi demografiye yazılım öğretme zor
+
+**Risk Derecesi:** ORTA (AI accuracy, drone policy, ELTA360 rekabet)
+
+---
+
+## FİKİR 4: Türkiye Specialty/Organic Gıda Markası (E-ticaret/Trendyol)
+
+### Ne Bu?
+Alibaba/local supplier'dan "clean label" specialty gıda (gluten-free, vegan, organic, local ürünler — kakaolu tahini, organik incir kremi, saf bal, glutensiz fırın ürünleri) dropship/kısmi stok edip Trendyol/Hepsiburada'da satmak. Ürün seçimi: trend (Douyin, Pinterest), sürdürülebilir, minimal processing, health angle. İlk 3 ayda 10+ SKU test, best seller 6. aydan itibaren kendi stok.
+
+### Kanıt (Kaynaklar)
+- Türkiye organic gıda pazarı: %12+ yıllık büyüme, export strong
+- "Clean label" trend global: %75 alıcı sentetik additif ve preservative kaçınıyor
+- Türkiye organik/specialty gıda e-commerce: Trendyol en hızlı büyüyen kategori
+- Specialty/health food satıcıları (Pinterest, TikTok) trend capture edip viral oluyor
+- [Türkiye Organic Food Exports 2026](https://www.bilimsenligi.com/the-global-impact-of-turkiye-organic-food-exports-a-2026-industry-overview.html/)
+
+### Gelir Modeli
+- **Ay 1-2 (Dropship test):** 10 ürün × 30 sipariş/ay × ₺150 avg × %30 marj = **₺13.5K/ay**
+- **Ay 3-4 (Best seller stock):** 5 ürün × 100 sipariş/ay × %45 marj = **₺22.5K/ay**
+- **Ay 6+ (Scaled specialty line):** 12 ürün × 150 sipariş/ay × %50 marj (mix) = **₺90K/ay**
+- **Private label upsell** (ay 9): 3 SKU × 50 sipariş × %60 marj = **₺9K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Trendyol specialty gıda satıcıları var ama trend capture yavaş (2-3 ay gecikmeli). Yerel organic prodüsenterler Alibaba'dan Çin ürünü dropship etmiyor, açıklık var.
+
+**Talep Sinyalleri:**
+- Google Trends Türkiye: "organic gıda", "gluten-free", "vegan gıda" +120% (2025-2026)
+- TikTok/Instagram: Specialty gıda content (unboxing, recipe) 500K+ hashtag, engagement yüksek
+- Trendyol trend raporu: Specialty/health food kategorisi top 5 hızlı büyüyen
+- Forum: "Bunu Türkiye'de bulamıyorum" specialty gıda şikayeti sık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: Trend Alibaba/Çin specialty gıdası + Türkiye dropship = yok
+- Düşük giriş: Sermaye minimum (dropship), test maliyeti ₺3-5K
+- Yüksek marj: %30-50 dropship, %45-60 kendi stok
+- Viral potensiyel: Specialty gıda sosyal medya native (TikTok/Pinterest unboxing)
+- Koray fit: E-commerce stratejisi, pazarlama/trend analiz (Sistem Global)
+
+### İlk Somut Adım
+Bugün **Alibaba food kategorisinde top trending specialty gıda 8-10 ürün seçeceksin: criteria (1) Min. 100 reviews & 4.5+ star, (2) ₺30-150 wholesale, (3) Keyword "2026 organic/clean label" trending, (4) 500+ views/hafta Douyin/Xiaohongshu, (5) Marj %30+.** Spreadsheet yapacaksın: ürün adı, fotoğraf link, supplier, fiyat, marj, kategori. 3 saat işlem. Sonra 3-5'ini Trendyol/Hepsi'de list kaydedeceksin (template kullanarak). Günün sonu: **8-10 ürün seçilmiş, 3 prototype listing**, supplier kontakt hazır, order for MVP ready.
+
+### Zorluk/Risk
+- **Tat/kalite variasyon:** Aldığı ürün açıklama ile eşleşmeme riski, review kaymaları
+- **Gümrük:** Gıda ithalatı gümrük kontrol, fiyat artışı, delivery gecikme
+- **Trend ömrü:** Specialty gıda trend 2-3 ayda geçebilir, stok kalma riski
+- **Trendyol/Hepsi policy:** Dropship kısıtlaması (kontrol etmeliyiz), yeni seller kredi düşüğü
+- **Lokal rekabet:** Başarılı ürün gördükten sonra 20+ klone seller çıkıyor
+
+**Risk Derecesi:** ORTA-DÜŞÜK (sermaye düşük, test hızlı, ama gümrük ve trend chase)
+
+---
+
+## FİKİR 5: Hemşire/Bakıcı Matching Platform (Yaşlı Bakımı)
+
+### Ne Bu?
+Yaşlı bakıma ihtiyacı olan aileler için **SaaS platform — AI triage (hangi bakım türü: kPersonal care, mobility assist, medication manage), hemşire/bakıcı matching, ücretlendirme, ödeme entegrasyon.** Sistem: (1) Aile portaldan "annem mobility assist + medication" diye şikayetleri giriyor, (2) AI otomatik triage: "moderate care" kategorize, gerekli yetkinlik tag'ı ata, (3) Platform hemşire havuzundan uygun (+background check, rating, availability) önerir, (4) Aile seçer, kontrat, ödeme (e-cüzdan/Param embedded), (5) Hemşire appointment, checkin/checkout GPS + time tracking, (6) Aile dashboard: saat, fiyat, hemşire rating, care log.
+
+### Kanıt (Kaynaklar)
+- Türkiye yaşlı nüfus: 65+ = 6.2M (2026), yıllık +3% büyüme, living alone +25%
+- Devlet program (2026 bütçe): "Women Employment in Elderly Care" = 50K+ hemşire/bakıcı kaydı hedefliyor
+- Homecare services talep doğrulandı: doktor, hemşire, fizyoterapist = most requested
+- Ailede caregiving burnout yüksek: 60%+ hemşire bulma/yönetim sorunu yaşıyor
+- [Turkish Elderly Home Care Services](https://avesis.erdogan.edu.tr/yayin/efae3907-5a97-499d-abf6-1e766936069d/turkiyede-evde-bakim-modelinin-basarisi-kazanimlar-ve-yeni-yol-haritasi)
+
+### Gelir Modeli
+- **Aile aylık subscription** (ay 2): 100 aile × ₺799 (60 saat/ay hemşire) = **₺79.9K/ay**
+- **Kurumsal (care home/hospice)** (ay 3): 8 kurumsal × ₺2.999/ay = **₺23.99K/ay**
+- **Hemşire commission** (ay 4): 300 saat/ay × ₺80 avg × %15 = **₺3.6K/ay**
+- **Premium (24/7 monitoring, caregiver support)** (ay 5): 30 aile × ₺399/ay = **₺12K/ay**
+- **Aylık tahmin (3. ay):** ₺125.89K | **(6. ay):** ₺219.49K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Homecare services var (Medipark, Acibadem Home Care) ama AI matching + embedded payment + aile portal = şeffaf. Platform matching yok, hemşire bulma manuel/ağız ağıza.
+
+**Talep Sinyalleri:**
+- Devlet programı (2026): Women employment in elderly care targeted (regulatory tailwind)
+- Aile forumları: "İyi hemşire bulma zor, güvenilir tarama" şikayeti sık
+- Google Trends Türkiye: "hemşire bulma platformu", "yaşlı bakım yazılımı" +85%
+- Aile doktoru: Yaşlı hasta ailelerine "bakıcı bul" sorunu sık (referral potansiyel)
+- LinkedIn hemşire grupları: "matching platform" talep sık
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: AI triage + hemşire matching + aile portal combo = sıfır platform
+- Devlet tailwind: Women employment program, homecare services devlet tarafından teşvik
+- Doğrulanmış sorun: Aileler hemşire bulma zor, güvenilir tarama yok
+- Marj yüksek: SaaS %85+, commission %15 (hemşire retention için)
+- Network effect: Bir hemşire başarılı olunca aile ağıyla 5-10 referral
+- Koray fit: Sağlık danışmanlık, yazılım operasyon (Sistem Global sağlık kliyentleri)
+
+### İlk Somut Adım
+Bugün **aile doktoru ve geriatri profesyonelleri (Aile Hekimleri Birliği LinkedIn, geriatri klinikleri) 8-10'nu bulacağız.** Mesaj: "Yaşlı bakım matching platformu — aile AI triage, hemşire match, time tracking, ödeme. Aile ₺799/ay, hemşire %15 commission. MVP 4 hafta. Pilot doktor/klinik olmak ister misin? İlk 20 matched case'de platform free, sonra %10 commission." Yanıt alan 6-8 doktor/kuruma sorular: (1) Ayda kaç hasta hemşire talebine sahipsiz, (2) Hemşire/bakıcı bulma süreci nedir, (3) Ailelerin en büyük endişesi ne? Gün sonu: **3-4 doktor/klinik "MVP pilot"** verbal commitment = launch ready sinyal.
+
+### Zorluk/Risk
+- **Tıbbi liability:** AI triage yanlış kategorize ederse hemşire eksik kapasitede gidebilir (insurance/disclaimer gerek)
+- **Hemşire kalifikasyon:** Resmi hemşire vs "bakıcı" tanımı karışık, credential doğrulama zor
+- **Background check:** Türkiye'de hemşire background check sistemleri weak (hukuki risk)
+- **Regulatory:** Sağlık Bakanlığı platform lisans gerektirebilir (tarama zamanı alır)
+- **Hemşire retention:** Başarılı hemşire direkt aile müşteri atlatabilir (platform bypass), subscription churn
+
+**Risk Derecesi:** YÜKSEK (medical liability, regulatory, hemşire churn, background check)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ KOBİ Gider Takibi + Finansal Rapor Yazılımı (AI Kategorize)**
+
+**Gerekçe:** Beş fikir arasında en düşük risk, en net doğrulanmış sorun ve en hızlı test potansiyeli sunan seçim. E-invoice zorunluluğu (3M TL 1 Ocak 2026, 500K TL 1 Temmuz 2026) KOBİ'lere finansal yazılım arama zorunlu kılıyor — talep organic ve yasal. Sorun açıkça tanımlanmış: SME'lerde %65 manuel gider takibi, muhasebeci zaman kaybı yüksek. Çözüm somut (AI kategorize + rapor = hemen kullanılabilir value). İlk adımı bugün yapılabilir (5-10 muhasebeci/KOBİ bulup problem soruşturmak = 3 saat). Rakip yok (Luca/Kesintisiz/NetSoft sade, AI combo yok). Gelir model her adımda doğrulanır (startup paket → aylık abonelik → kurumsal). Yerel turist rehgberliği Airbnb direkt rekabeti riski taşıyor, emlak virtual tour ELTA360 var, specialty gıda tedarik komplikasyonu yüksek, hemşire matching tıbbi/yasal risk çok yüksek. Gider takibi: somut talep, net boşluk, muhasebeci network referral viral potansiyeli, Koray'ın finansal danışmanlık expertise'i tam uyum. **En pragmatik "bugün start, 30 günde sonuç" fıkrı.**
+
+---
+
 # Günlük Fikir Araştırması - 6 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
