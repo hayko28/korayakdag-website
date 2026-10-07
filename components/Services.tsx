@@ -25,6 +25,9 @@ const ITEM_LINKS: Record<string, string> = {
   "🇰🇿 Kazakistan": "/blog/kazakistanda-sirket-nasil-kurulur",
   "🇺🇿 Özbekistan": "/blog/ozbekistanda-sirket-nasil-kurulur",
   "🇧🇬 Bulgaristan": "/blog/bulgaristanda-sirket-nasil-kurulur",
+  "🇱🇻 Letonya": "/blog/letonyada-sirket-nasil-kurulur",
+  "🇱🇹 Litvanya": "/blog/litvanyada-sirket-nasil-kurulur",
+  "🇬🇷 Yunanistan": "/blog/yunanistanda-sirket-nasil-kurulur",
 };
 
 export const categoriesByLang = {
@@ -61,6 +64,9 @@ export const categoriesByLang = {
         "🇰🇿 Kazakistan",
         "🇺🇿 Özbekistan",
         "🇧🇬 Bulgaristan",
+        "🇱🇻 Letonya",
+        "🇱🇹 Litvanya",
+        "🇬🇷 Yunanistan",
       ],
     },
     {
@@ -256,6 +262,9 @@ export const categoriesByLang = {
         "🇰🇿 Kazakhstan",
         "🇺🇿 Uzbekistan",
         "🇧🇬 Bulgaria",
+        "🇱🇻 Latvia",
+        "🇱🇹 Lithuania",
+        "🇬🇷 Greece",
       ],
     },
     {

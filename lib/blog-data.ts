@@ -523,6 +523,33 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1594803294810-c860e5d29e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "letonyada-sirket-nasil-kurulur",
+    title: "Letonya'da Şirket Nasıl Kurulur? SIA Kuruluşu, Vergi Sistemi ve Süreç",
+    excerpt: "SIA şirket türü, 1 euro sermaye seçeneği, kâr dağıtılana kadar vergi doğmayan %20 kurumlar vergisi sistemi, KDV, oturum izni, banka hesabı, gerçek faydalı sahip bildirimi ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Letonya rehberi.",
+    category: "YURT DIŞI ŞİRKET • LETONYA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1522054541898-adc6abd570e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "litvanyada-sirket-nasil-kurulur",
+    title: "Litvanya'da Şirket Nasıl Kurulur? UAB, MB, Vergi Sistemi ve Süreç",
+    excerpt: "UAB ve MB şirket türleri, 1.000 euro asgari sermaye, %17 kurumlar vergisi, küçük işletmeler için %0 ve %7 oranları, KDV, temettü stopajı, oturum izni, banka hesabı, gerçek faydalı sahip bildirimi ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Litvanya rehberi.",
+    category: "YURT DIŞI ŞİRKET • LİTVANYA • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1750874871864-406cde51603a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "yunanistanda-sirket-nasil-kurulur",
+    title: "Yunanistan'da Şirket Nasıl Kurulur? IKE, Vergi Sistemi, Golden Visa ve Süreç",
+    excerpt: "IKE, EPE, AE ve ortaklık türleri, 1 euro asgari sermaye, GEMI tescili, AFM vergi numarası, %22 kurumlar vergisi, %5 temettü stopajı, KDV, myDATA e-fatura, Golden Visa eşikleri ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Yunanistan rehberi.",
+    category: "YURT DIŞI ŞİRKET • YUNANİSTAN • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1569770725012-58fac5eec229?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "polonyada-sirket-nasil-kurulur",
     title: "Polonya'da Şirket Nasıl Kurulur? Kuruluş Süreci ve Avantajları",
     excerpt: "Sp. z o.o. şirket türü, S24 online sistemi ile noter/vekâletname yolu arasındaki fark, adım adım kuruluş süreci, %9-%19 CIT ve %23 KDV oranları ve Türkiye tarafındaki yükümlülüklerle 2026 güncel Polonya rehberi.",
