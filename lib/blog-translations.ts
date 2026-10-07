@@ -6,6 +6,18 @@ export interface BlogTranslationPair {
 // Statik TR blog yazılarının İngilizce çevirisi hazır olduğunda buraya eklenir.
 export const BLOG_TRANSLATIONS: BlogTranslationPair[] = [
   {
+    tr: "yabanci-sermayeli-sirket-kurulus-sonrasi-yukumlulukler-2026",
+    en: "foreign-owned-company-obligations-turkey-after-incorporation",
+  },
+  {
+    tr: "turkiyede-sirket-satin-alma-yabanci-yatirimci-rehberi",
+    en: "how-to-acquire-a-company-in-turkey-foreign-investor-guide",
+  },
+  {
+    tr: "turkiyede-yatirim-yapmanin-avantajlari-2026",
+    en: "advantages-of-investing-in-turkey-2026",
+  },
+  {
     tr: "yabanci-ortak-calisma-izni-sartlari-2026",
     en: "work-permit-for-foreign-company-owners-turkey-2026",
   },
@@ -69,6 +81,33 @@ export interface EnStaticPost {
 // Statik EN çeviri sayfalarının listeleme (kart) bilgisi. Her yeni
 // app/en/blog/{slug}/page.tsx eklendiğinde buraya da bir girdi eklenir.
 export const EN_STATIC_POSTS: EnStaticPost[] = [
+  {
+    slug: "foreign-owned-company-obligations-turkey-after-incorporation",
+    title:
+      "Foreign-Owned Company Obligations in Turkey After Incorporation: 2026 Checklist",
+    excerpt:
+      "What a foreign-owned company must keep doing after registration: foreign capital reporting through E-TUYS, ordinary tax and accounting duties, profit repatriation and the 15% dividend withholding tax.",
+    image:
+      "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "how-to-acquire-a-company-in-turkey-foreign-investor-guide",
+    title:
+      "How to Acquire a Company in Turkey: A Foreign Investor's 2026 Guide",
+    excerpt:
+      "Share deal or asset deal, what due diligence should cover, how a share transfer is completed, when Competition Authority approval is needed after the February 2026 threshold change, and what to report afterwards.",
+    image:
+      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
+  {
+    slug: "advantages-of-investing-in-turkey-2026",
+    title:
+      "Advantages of Investing in Turkey in 2026: What Foreign Investors Actually Get",
+    excerpt:
+      "A fact-checked overview of what investing in Turkey offers in 2026: open ownership rules, free profit transfer, incentive certificates, the new tax package, free zones, trade agreements and export capacity, with links to the detailed guides.",
+    image:
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  },
   {
     slug: "work-permit-for-foreign-company-owners-turkey-2026",
     title:

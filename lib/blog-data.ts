@@ -10,6 +10,33 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yabanci-sermayeli-sirket-kurulus-sonrasi-yukumlulukler-2026",
+    title: "Yabancı Sermayeli Şirketin Kuruluş Sonrası Yükümlülükleri: 2026 Kontrol Listesi",
+    excerpt: "Tescilden sonra yabancı sermayeli şirketin devam etmesi gerekenler: E-TUYS üzerinden yabancı sermaye bildirimi, olağan vergi ve muhasebe görevleri, kâr transferi ve %15 kâr payı stopajı.",
+    category: "YABANCI YATIRIMCI • UYUM • 2026",
+    date: "Ekim 2026",
+    readTime: "8 Dakika",
+    image: "https://images.unsplash.com/photo-1763965367191-6455ef032c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiyede-sirket-satin-alma-yabanci-yatirimci-rehberi",
+    title: "Türkiye'de Şirket Satın Alma: Yabancı Yatırımcı İçin 2026 Rehberi",
+    excerpt: "Hisse devri mi varlık devri mi, durum tespiti neleri kapsamalı, pay devri nasıl tamamlanır, Şubat 2026 eşik değişikliğinden sonra Rekabet Kurumu izni ne zaman gerekir ve işlem sonrasında neler bildirilir.",
+    category: "BİRLEŞME VE DEVRALMA • YABANCI YATIRIMCI • 2026",
+    date: "Ekim 2026",
+    readTime: "10 Dakika",
+    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "turkiyede-yatirim-yapmanin-avantajlari-2026",
+    title: "Türkiye'de Yatırım Yapmanın Avantajları 2026: Yabancı Yatırımcı Gerçekte Ne Elde Ediyor?",
+    excerpt: "2026'da Türkiye'de yatırımın sunduklarına doğrulanmış genel bakış: açık sermaye kuralları, serbest kâr transferi, teşvik belgeleri, yeni vergi paketi, serbest bölgeler, ticaret anlaşmaları ve ihracat kapasitesi; ayrıntılı rehberlere bağlantılarla.",
+    category: "TÜRKİYE'DE YATIRIM • GENEL BAKIŞ • 2026",
+    date: "Ekim 2026",
+    readTime: "9 Dakika",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yabanci-ortak-calisma-izni-sartlari-2026",
     title: "Yabancı Ortak Çalışma İzni Şartları 2026: Hissedar mı Yönetici mi?",
     excerpt: "Hissedarlığın tek başına Türkiye'de çalışma hakkı vermemesi, hangi yabancı ortakların izin alması gerektiği, sermaye ve Türk çalışan şartları ve başvurunun işleyişi.",
