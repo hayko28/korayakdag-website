@@ -1415,6 +1415,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İhracattaki yüzde 15,4'lük artışın ithalattaki yüzde 5,9'luk artışın belirgin biçimde üzerinde kalması ve aylık açığın geçen yıla göre dörtte bir oranında küçülmesi olumlu bir ayrışma; ihracatçı KOBİ'lere bu momentumu kur ve girdi maliyeti planlamasında da dikkate almalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "30 Eylül 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-07",
+    baslik: "TÜİK: Ağustos 2026'da işsizlik oranı yüzde 7,8'e geriledi",
+    ozet:
+      "Türkiye Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı'nın 30 Eylül 2026'da açıkladığı TÜİK verilerine göre mevsimsellikten arındırılmış işsizlik oranı ağustosta 0,3 puan azalarak yüzde 7,8'e geriledi; işsiz sayısı bir önceki aya göre 106 bin kişi azalarak 2 milyon 740 bine indi. İstihdam edilenlerin sayısı 136 bin kişi artarak 32 milyon 507 bine, istihdam oranı yüzde 48,4'e yükseldi; genç nüfusta (15-24 yaş) işsizlik oranı 1,1 puan azalarak yüzde 13,0 olurken, geniş tanımlı atıl işgücü oranı 0,4 puan artarak yüzde 31'e çıktı.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-agustos-ayi-isgucu-piyasasi-gelismeleri-aciklandi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: İşsizlik oranındaki gerilemeye karşın atıl işgücü oranının aynı ay içinde artması, görünürdeki iyileşmenin istihdama tam olarak yansımadığını gösteriyor. İşe alım ve ücret planlarını yalnızca manşet rakama göre değil, kendi sektörünüzdeki fiili işe alım ve elde tutma zorluğuna göre kurmanızı öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "7 Eylül 2026",
+    eklendiTarihi: "2026-10-07",
+    baslik:
+      "Ticaret Bakanlığı, kadın kooperatiflerini büyük e-ticaret platformlarında ücretsiz görünürlükle destekleyecek protokolü imzaladı",
+    ozet:
+      "Ticaret Bakanlığı, 2025-2029 Türkiye Kooperatifçilik Stratejisi ve Eylem Planı kapsamında Hepsiburada, N11, PTTAVM, Pazarama ve Trendyol ile 'Kadın Kooperatiflerini E-Ticaret Yoluyla Destekleme Protokolü'nü imzaladı. Protokol kapsamında kadın kooperatifleri bu platformlara ücretsiz kayıt olabilecek, ilk 6 ay komisyonsuz, sonraki 4,5 yıl ise yüzde 1 komisyonla satış yapabilecek; ayrıca 'Kooperatif Ürünleri' etiketiyle ana sayfa banner'ı ve özel kategori alanlarında tanıtım imkânı sunulacak.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/07/kadin-kooperatiflerine-e-ticarette-bes-yillik-destek/",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Protokol doğrudan kadın kooperatiflerini kapsıyor olsa da, büyük pazaryerlerinin yeni satıcı gruplarını düşük veya sıfır komisyonla ve özel vitrin alanıyla desteklemesi dikkat çekici. E-ticarete yeni başlayacak küçük işletmelere, platformlarla görüşürken benzer lansman veya kategori bazlı kampanyaların olup olmadığını sormalarını öneririm.",
+  },
+  {
+    kurum: "İSO",
+    tarih: "8 Eylül 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-07",
+    baslik:
+      "İSO Türkiye İhracat Pazarları İklim Endeksi ağustosta 52,7'ye yükseldi, son 27 ayın en yükseği",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global iş birliğiyle hazırladığı Türkiye İhracat Pazarları İklim Endeksi, ağustosta üst üste dördüncü ay artarak 52,2'den 52,7'ye yükseldi; bu değer son 27 ayın en yüksek seviyesi ve endeks Ocak 2024'ten bu yana 50 eşik değerinin üzerinde seyrediyor. Türk imalat sektörünün önemli ihracat pazarı olan ABD'de üretim son 52 ayın en yüksek hızına ulaşırken, BAE'de son 6 ayın, Suudi Arabistan'da son 7 ayın zirvesi görüldü; İtalya'da ise Kasım 2025'ten bu yana en güçlü genişleme kaydedildi.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/iso-turkiye-ihracat-pazarlari-iklim-endeksi-agustosta-527ye-yukseldi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Endeksin dört aydır üst üste yükselmesi, ihracat yaptığımız başlıca pazarlardaki talep ortamının kademeli olarak iyileştiğine işaret ediyor. İhracatçı KOBİ'lere özellikle ABD ve Körfez pazarlarındaki bu olumlu ivmeyi sipariş ve stok planlamasında dikkate almalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
