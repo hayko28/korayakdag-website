@@ -620,6 +620,8 @@ export default function DestekUygunlukForm() {
       next.delete(programId);
       return next;
     });
+    // Kart kapanınca sayfa kısalır; ekran güncellenen kartta kalsın.
+    setTimeout(() => document.getElementById(`kart-${programId}`)?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
   };
 
   if (sonuclar && !duzenleModuAcik) {
@@ -667,7 +669,7 @@ export default function DestekUygunlukForm() {
           const acik = acikSonuclar.has(s.programId);
           const stil = kartStili(s);
           return (
-            <div key={s.programId} className={`rounded-2xl border shadow-sm transition ${stil.renk}`}>
+            <div key={s.programId} id={`kart-${s.programId}`} className={`scroll-mt-24 rounded-2xl border shadow-sm transition ${stil.renk}`}>
               <button
                 type="button"
                 onClick={() => sonucAcKapa(s.programId)}
