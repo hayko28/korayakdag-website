@@ -1997,3 +1997,64 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
     "31 Ekim 2026"
   );
 }
+
+// --- KOSGEB Yapay Zeka Kredi Programı ---
+// Kaynak: kosgeb.gov.tr/site/tr/genel/destekdetay/9414 ve Yapay Zeka Kredi Yönergesi (13/06/2026);
+// başvuru 9 Temmuz - 31 Aralık 2026, KOBİ Bilgi Sistemi. Mikro dahil tüm KOBİ'ler başvurabilir.
+export function kosgebYapayZekaKrediDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  const meta = { programId: "kosgeb-yapay-zeka-kredi", programAdi: "KOSGEB Yapay Zeka Kredi Programı", kurum: "KOSGEB" };
+  const gerekceler: string[] = [];
+  const eksikAlanlar: string[] = [];
+  const SON = "31 Aralık 2026";
+
+  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
+  if (olcek === "kobi_disi") {
+    gerekceler.push("Program yalnızca KOBİ ölçeğindeki işletmelere açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ ölçek şartı sağlanmıyor.", gerekceler, undefined, undefined, SON);
+  }
+  if (olcek === null) {
+    if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
+    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
+  }
+
+  if (g.kosgebVeriTabaniKayitliMi === false) {
+    gerekceler.push("İşletmenin KOSGEB Veri Tabanı'nda kayıtlı ve aktif olması gerekir — kaydınız yok.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOSGEB veri tabanı kaydı yok.", gerekceler, undefined, undefined, SON);
+  }
+  if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB veri tabanı kaydının aktif olup olmadığı");
+
+  if (g.kobiBilgiSistemiKayitGuncelMi === false) {
+    gerekceler.push("İşletme Beyanı'nın güncel ve aktif olması gerekir — beyannameniz güncel değil.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İşletme Beyanı güncel değil.", gerekceler, undefined, undefined, SON);
+  }
+  if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("İşletme Beyanı'nın güncel olup olmadığı");
+
+  if (g.teknogirisimRozetiGecerliMi === false) {
+    gerekceler.push("Başvuru tarihi itibarıyla geçerli bir Teknogirişim Rozeti şarttır; rozeti olmayan ya da süresi dolan işletmeler diğer şartları sağlasa da başvuramaz. Rozet, Sanayi ve Teknoloji Bakanlığı'nın teknogirisim.sanayi.gov.tr portalından alınır (3 yıl geçerli).");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Geçerli Teknogirişim Rozeti yok.", gerekceler, undefined, undefined, SON);
+  }
+  if (g.teknogirisimRozetiGecerliMi === undefined) eksikAlanlar.push("geçerli Teknogirişim Rozeti olup olmadığı");
+
+  gerekceler.push("KOBİ ölçeği, KOSGEB kaydı, İşletme Beyanı ve Teknogirişim Rozeti şartları sağlanıyor.");
+
+  const uyarilar = [
+    "Kredi nakit olarak hesaba yatmaz; yalnızca KOSGEB protokollü yapay zeka hizmet sağlayıcılarından (GPU/CPU/RAM, bulut, veri depolama, AI platformları) alınacak hizmetlerin ödemesinde GO Dijital Cüzdan üzerinden kullanılır.",
+    "Tutar 500.000 TL - 5.000.000 TL, faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz, sonra 4 eşit taksit). 12 ay içinde kullanılmayan tutar iptal edilir.",
+    "GO Dijital Cüzdan hesabı gerekir (yoksa başvuru sürecinde açılabilir) ve kredinin kullanılabilmesi için bankadan Kesin Teminat Mektubu sunulmalıdır; bunlar başvuru sonrası hazırlanacak belgelerdir.",
+    "Başvurular 9 Temmuz - 31 Aralık 2026 arasında KOBİ Bilgi Sistemi üzerinden alınıyor; Kararname 9497 kapsamındaki sektör şartı ayrıca teyit edilmelidir.",
+  ];
+
+  if (eksikAlanlar.length > 0) {
+    return sonuc(
+      meta.programId, meta.programAdi, meta.kurum, "belirsiz",
+      "Somut bir ret sebebi görünmüyor ama başvuru şartlarını tam değerlendirmek için eksik bilgi var.",
+      gerekceler, [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`], undefined, SON
+    );
+  }
+  return sonuc(
+    meta.programId, meta.programAdi, meta.kurum, "uygun",
+    "Başvuru şartlarının tamamını (KOBİ, KOSGEB kaydı, İşletme Beyanı, Teknogirişim Rozeti) sağlıyorsunuz.",
+    gerekceler, uyarilar, undefined, SON
+  );
+}

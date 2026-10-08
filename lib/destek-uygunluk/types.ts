@@ -282,6 +282,8 @@ export interface DestekBasvuruGirdisi {
   istihdamiKorumaTaahhutEdebilirMi?: boolean;
   referansDonemSigortaliCalisaniVarMi?: boolean;
   kobiBilgiSistemiKayitGuncelMi?: boolean;
+  // KOSGEB Yapay Zeka Kredi Yönergesi (13/06/2026): başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti şart.
+  teknogirisimRozetiGecerliMi?: boolean;
   kosgebVadesiGecmisBorcuVarMi?: boolean;
   // Duyuru (28/08/2026): 2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannameleri mevcut olmalı.
   ocakHaziranBeyannameleriVarMi?: boolean;

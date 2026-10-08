@@ -7,6 +7,7 @@ import {
   kosgebStratejikUrunDegerlendir,
   kosgebKureselRekabetcilikDegerlendir,
   kosgebYondeDegerlendir,
+  kosgebYapayZekaKrediDegerlendir,
   argeMerkeziStatusuDegerlendir,
   tasarimMerkeziStatusuDegerlendir,
   yatirimTesvikBelgesiDegerlendir,
@@ -82,6 +83,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(tubitak1832Degerlendir(girdi));
     taslaklar.push(tubitak1831Degerlendir(girdi));
   }
+  taslaklar.push(kosgebYapayZekaKrediDegerlendir(girdi));
   if (girdi.yatirimPlanlaniyorMu !== false) {
     taslaklar.push(yatirimTesvikBelgesiDegerlendir(girdi));
     taslaklar.push(kosgebStratejikUrunDegerlendir(girdi));

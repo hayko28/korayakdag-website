@@ -65,3 +65,5 @@ için dokunulmadı, yeni çağrı açılınca tamamlanmalı.
 - **Dijital Dönüşüm:** Madde 7 şartlarının tamamı zorunlu; mali şart Madde 7/6 (öz kaynak pozitif VE son 3 yılda en az bir yıl faaliyet kârı pozitif), 1.000.000 TL tutar şartı 7/7. Kodda atıf 7/6 olarak düzeltildi.
 - **Turquality:** son 3 yıl ortalama ihracat ≥ 3.000.000 $ (veya son yıl 10M$ istisnası) formda sorulup kodda uygulanıyor, doğru.
 - **IPARD III M7:** çağrı AÇILMADI; TKDK ilanı erteledi (30 Eylül 2026 duyurusu: yeni tarih, bütçe, destek oranı belli değil). TKDK notu güncellendi.
+
+- **KOSGEB Yapay Zeka Kredi Programı eklendi** (9 Temmuz - 31 Aralık 2026): KOBİ (mikro dahil), KOSGEB kaydı, güncel İşletme Beyanı, geçerli Teknogirişim Rozeti zorunlu; GO Dijital Cüzdan ve Kesin Teminat Mektubu başvuru sonrası hazırlanan belge olarak uyarıda. Kaynak: kosgeb.gov.tr destekdetay/9414.

@@ -89,7 +89,7 @@ const ARGE_DURUMU_SECENEKLERI = [
 ];
 
 const SONUC_GRUPLARI: { ad: string; idler: string[] }[] = [
-  { ad: "KOSGEB Destekleri", idler: ["kosgeb-is-gelistirme", "kosgeb-kapasite-gelistirme", "kosgeb-kuresel-rekabetcilik", "kosgeb-dijital-donusum", "kosgeb-yesil-sanayi", "kosgeb-yonde", "kosgeb-stratejik-urun", "kosgeb-tekmer", "istihdami-koruma-destek-programi"] },
+  { ad: "KOSGEB Destekleri", idler: ["kosgeb-is-gelistirme", "kosgeb-kapasite-gelistirme", "kosgeb-kuresel-rekabetcilik", "kosgeb-dijital-donusum", "kosgeb-yesil-sanayi", "kosgeb-yonde", "kosgeb-yapay-zeka-kredi", "kosgeb-stratejik-urun", "kosgeb-tekmer", "istihdami-koruma-destek-programi"] },
   { ad: "TÜBİTAK Destekleri", idler: ["tubitak-1501", "tubitak-1507", "tubitak-1707", "tubitak-1812", "tubitak-1831", "tubitak-1832"] },
   { ad: "Sanayi ve Teknoloji Bakanlığı", idler: ["yatirim-tesvik-belgesi", "arge-merkezi-statusu", "tasarim-merkezi-statusu", "teknopark-statusu"] },
   { ad: "Ticaret Bakanlığı Destekleri", idler: ["ticaret-bakanligi-ihracat-destekleri", "turquality-marka-destek"] },
@@ -450,6 +450,7 @@ export default function DestekUygunlukForm() {
       istihdamiKorumaTaahhutEdebilirMi: bool("istihdamiKorumaTaahhutEdebilirMi"),
       referansDonemSigortaliCalisaniVarMi: bool("referansDonemSigortaliCalisaniVarMi"),
       kobiBilgiSistemiKayitGuncelMi: bool("kobiBilgiSistemiKayitGuncelMi"),
+      teknogirisimRozetiGecerliMi: bool("teknogirisimRozetiGecerliMi"),
       kosgebVadesiGecmisBorcuVarMi: bool("kosgebVadesiGecmisBorcuVarMi"),
       ocakHaziranBeyannameleriVarMi: bool("ocakHaziranBeyannameleriVarMi"),
 
@@ -1528,6 +1529,19 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <Secim etiket="Girişim aşamanız nedir?" deger={g.girisimciSirketDurumu} onChange={(v) => set("girisimciSirketDurumu", v)} secenekler={GIRISIMCI_SIRKET_DURUMU_SECENEKLERI} />
           <EvetHayir etiket="Bir kuluçka merkezinin Faz 1 hızlandırma programını tamamladınız mı?" deger={g.kuluckaFaz1TamamlandiMi} onChange={(v) => set("kuluckaFaz1TamamlandiMi", v)} />
           <EvetHayir etiket="Hisse karşılığı (equity) yatırımı kabul ediyor musunuz?" deger={g.hisseKarsiligiYatirimKabulEdiyorMu} onChange={(v) => set("hisseKarsiligiYatirimKabulEdiyorMu", v)} />
+        </div>
+      );
+    case "kosgeb-yapay-zeka-kredi":
+      return (
+        <div>
+          <p className="mb-4 rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-800">
+            ℹ️ Mikro, küçük ve orta ölçekli tüm KOBİ'ler başvurabilir; ölçeğiniz üstteki çalışan sayısı ve ciro/bilanço bilgilerinden hesaplanır.
+          </p>
+          <div className="grid gap-5 sm:grid-cols-2">
+            <EvetHayir etiket="KOSGEB sisteminde (veri tabanında) kayıtlı ve aktif misiniz?" deger={g.kosgebVeriTabaniKayitliMi} onChange={(v) => set("kosgebVeriTabaniKayitliMi", v)} />
+            <EvetHayir etiket="KOBİ Bilgi Sistemi'ndeki İşletme Beyanınız güncel mi?" deger={g.kobiBilgiSistemiKayitGuncelMi} onChange={(v) => set("kobiBilgiSistemiKayitGuncelMi", v)} />
+            <EvetHayir etiket="Başvuru tarihinde geçerli bir Teknogirişim Rozetiniz var mı? (Sanayi ve Teknoloji Bakanlığı, 3 yıl geçerli)" deger={g.teknogirisimRozetiGecerliMi} onChange={(v) => set("teknogirisimRozetiGecerliMi", v)} />
+          </div>
         </div>
       );
     case "tubitak-1707":
