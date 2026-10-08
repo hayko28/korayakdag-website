@@ -555,10 +555,16 @@ export default function DestekUygunlukForm() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Analiz tamamlanamadı.");
-      setSonuclar(data.sonuclar);
+      // Güncellemede kartlar yerinde kalsın: önceki sıra korunur (yalnızca ilk analizde API sırası).
+      let yeni = data.sonuclar as ProgramSonucu[];
+      if (sonuclar) {
+        const sira = new Map(sonuclar.map((x, i) => [x.programId, i]));
+        yeni = [...yeni].sort((a, b) => (sira.get(a.programId) ?? 999) - (sira.get(b.programId) ?? 999));
+      }
+      setSonuclar(yeni);
       setKatalogOnerileri(data.katalogOnerileri ?? []);
       setHizmetOnerileri(data.hizmetOnerileri ?? []);
-      return data.sonuclar as ProgramSonucu[];
+      return yeni;
     } catch (err) {
       setHata(err instanceof Error ? err.message : "Bir hata oluştu.");
       return null;
@@ -596,8 +602,16 @@ export default function DestekUygunlukForm() {
   // Bir sonuç kartındaki "Analizi Güncelle" butonu: aynı analizi tekrar çalıştırır,
   // yalnızca o kartı (ve varsa daha önce açık olanları) açık tutar.
   const kartGuncelle = async (programId: string) => {
-    await calistirAnaliz();
-    setAcikSonuclar((prev) => new Set(prev).add(programId));
+    const yeni = await calistirAnaliz();
+    const durum = yeni?.find((x) => x.programId === programId)?.durum;
+    // Sonuç netleştiyse (uygun / uygun değil) kart kapanır, sayfa kalabalık görünmez; ok ile açılır.
+    const netlesti = durum === "uygun" || durum === "uygun_degil";
+    setAcikSonuclar((prev) => {
+      const next = new Set(prev);
+      if (netlesti) next.delete(programId);
+      else next.add(programId);
+      return next;
+    });
     // Güncelleme bitince düzenleme alanı otomatik kapanır — kart temiz görünür,
     // tekrar düzeltmek isterse aşağıdaki "Cevapları Düzenle" ile yine açabilir.
     setDuzenleAcik((prev) => {
