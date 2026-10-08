@@ -1457,7 +1457,7 @@ export function argeMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): ProgramS
   if (g.argeMerkeziStatusuVarMi === undefined) eksikAlanlar.push("Ar-Ge Merkezi statüsünün zaten olup olmadığı");
 
   if (g.tamZamanEsdegerArgePersoneliSayisi !== undefined && g.tamZamanEsdegerArgePersoneliSayisi < 15) {
-    gerekceler.push(`Tam zaman eşdeğer Ar-Ge personeli sayınız (${g.tamZamanEsdegerArgePersoneliSayisi}) asgari eşiğin (15, bazı sektörlerde 30) altında.`);
+    gerekceler.push(`Tam zaman eşdeğer Ar-Ge personeli sayınız (${g.tamZamanEsdegerArgePersoneliSayisi}) asgari eşiğin (15, bazı sektörlerde 30) altında. Ar-Ge merkezi eşiğine ulaşana kadar Teknopark (Teknoloji Geliştirme Bölgesi) statüsü alternatif olarak değerlendirilebilir; Teknoparkta asgari personel eşiği aranmaz.`);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Asgari Ar-Ge personeli şartı sağlanmıyor.", gerekceler, uyarilar4);
   }
   if (g.tamZamanEsdegerArgePersoneliSayisi === undefined) eksikAlanlar.push("tam zaman eşdeğer Ar-Ge personeli sayısı");
@@ -1511,7 +1511,7 @@ export function tasarimMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): Progr
   if (g.tasarimMerkeziStatusuVarMi === undefined) eksikAlanlar.push("Tasarım Merkezi statüsünün zaten olup olmadığı");
 
   if (g.tasarimPersoneliSayisiTze !== undefined && g.tasarimPersoneliSayisiTze < 10) {
-    gerekceler.push(`Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız (${g.tasarimPersoneliSayisiTze}) asgari eşiğin (10) altında.`);
+    gerekceler.push(`Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız (${g.tasarimPersoneliSayisiTze}) asgari eşiğin (10) altında. Tasarım merkezi eşiğine ulaşana kadar Teknopark (Teknoloji Geliştirme Bölgesi) statüsü alternatif olarak değerlendirilebilir.`);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Asgari tasarım personeli şartı sağlanmıyor.", gerekceler, uyarilar5);
   }
   if (g.tasarimPersoneliSayisiTze === undefined) eksikAlanlar.push("münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayısı");

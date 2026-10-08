@@ -1488,7 +1488,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Ar-Ge Merkezi statünüz zaten var mı?" deger={g.argeMerkeziStatusuVarMi} onChange={(v) => set("argeMerkeziStatusuVarMi", v)} />
           {g.argeMerkeziStatusuVarMi !== "evet" && (
             <>
-              <Sayi etiket="Tam zaman eşdeğer Ar-Ge personeli sayınız" deger={g.tamZamanEsdegerArgePersoneliSayisi} onChange={(v) => set("tamZamanEsdegerArgePersoneliSayisi", v)} />
+              <Sayi etiket="Tam zaman eşdeğer Ar-Ge personeli sayınız (zorunlu, sonucu belirler: 15 ve üstü gerekir)" deger={g.tamZamanEsdegerArgePersoneliSayisi} onChange={(v) => set("tamZamanEsdegerArgePersoneliSayisi", v)} />
               <EvetHayir etiket="Ar-Ge faaliyetleriniz fiziksel olarak ayrı bir birimde mi yürütülüyor?" deger={g.argeFaaliyetleriAyriBirimdeMi} onChange={(v) => set("argeFaaliyetleriAyriBirimdeMi", v)} />
             </>
           )}
@@ -1500,7 +1500,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Tasarım Merkezi statünüz zaten var mı?" deger={g.tasarimMerkeziStatusuVarMi} onChange={(v) => set("tasarimMerkeziStatusuVarMi", v)} />
           {g.tasarimMerkeziStatusuVarMi !== "evet" && (
             <>
-              <Sayi etiket="Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız" deger={g.tasarimPersoneliSayisiTze} onChange={(v) => set("tasarimPersoneliSayisiTze", v)} />
+              <Sayi etiket="Münhasıran tasarım faaliyetinde çalışan tam zaman eşdeğer personel sayınız (zorunlu, sonucu belirler: 10 ve üstü gerekir)" deger={g.tasarimPersoneliSayisiTze} onChange={(v) => set("tasarimPersoneliSayisiTze", v)} />
               <EvetHayir etiket="Tasarım faaliyetiniz fiziksel olarak ayrı, izlenebilir bir birim/alan olarak mı örgütlü?" deger={g.tasarimBirimiAyriOrganizeMi} onChange={(v) => set("tasarimBirimiAyriOrganizeMi", v)} />
             </>
           )}
