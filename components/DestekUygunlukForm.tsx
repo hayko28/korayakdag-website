@@ -2,11 +2,11 @@
 
 import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
-import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
+import type { DestekBasvuruGirdisi, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
 import { naceAciklamaBul } from "@/lib/destek-uygunluk/nace-lookup";
 import { trackEvent } from "@/lib/analytics";
-import { HIZMET_HEDEF_SECENEKLERI, programaBagliHizmetleriBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
+import { HIZMET_HEDEF_SECENEKLERI, grubaBagliHizmet, programaBagliHizmetleriBul, type HizmetOnerisi } from "@/lib/destek-uygunluk/hizmet-onerileri";
 
 type Girdi = Record<string, string>;
 
@@ -314,7 +314,6 @@ export default function DestekUygunlukForm() {
   const siraRef = useRef<Map<string, number>>(new Map());
   const grupSiraRef = useRef<string[]>([]);
   const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
-  const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hizmetOnerileri, setHizmetOnerileri] = useState<HizmetOnerisi[]>([]);
   const [hata, setHata] = useState("");
   const [seciliPersonalar, setSeciliPersonalar] = useState<Set<number>>(new Set());
@@ -590,7 +589,6 @@ export default function DestekUygunlukForm() {
           .map(([ad]) => ad);
       }
       setSonuclar(yeni);
-      setKatalogOnerileri(data.katalogOnerileri ?? []);
       setHizmetOnerileri(data.hizmetOnerileri ?? []);
       return yeni;
     } catch (err) {
@@ -709,6 +707,14 @@ export default function DestekUygunlukForm() {
                 ].filter(([n]) => (n as number) > 0).map(([n, e]) => `${n} ${e}`).join(" · ")}
               </span>
             </div>
+            {(() => {
+              const h = grubaBagliHizmet(grup.items.filter((x) => x.durum !== "uygun_degil").map((x) => x.programId));
+              return h ? (
+                <Link href={h.href} className="-mt-1 block text-xs font-semibold text-orange-600 hover:underline">
+                  💼 Bu programlarda başvuruyu birlikte hazırlayalım: {h.baslik} →
+                </Link>
+              ) : null;
+            })()}
         {(grup.items).map((s) => {
           const acik = acikSonuclar.has(s.programId);
           const stil = kartStili(s);
@@ -882,11 +888,11 @@ export default function DestekUygunlukForm() {
         {hizmetOnerileri.length > 0 && (
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
             <p className="mb-1 text-xs font-bold uppercase tracking-wide text-orange-500">💼 Hizmetler</p>
-            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Şirketiniz İçin Değerlendirilebilecek Hizmetler</h3>
+            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Şirket Bilgilerinize Göre Diğer Hizmetlerimiz</h3>
             <p className="mb-4 text-sm text-gray-600">
-              Verdiğiniz bilgiler ve belirttiğiniz hedefler doğrultusunda aşağıdaki hizmet alanları sizin için
-              değerlendirilebilir. Bunlar destek/teşvik programı değil, danışmanlık hizmetidir; bu yüzden
-              yukarıdaki gibi bir uygunluk skoru taşımaz.
+              Girdiğiniz şirket bilgileri ve hedefler doğrultusunda, yukarıdaki destek programlarının dışında
+              size faydalı olabilecek danışmanlık hizmetleri. Bunlar destek programı değildir, bu yüzden
+              uygunluk skoru taşımaz.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {hizmetOnerileri.map((h) => (
@@ -901,29 +907,6 @@ export default function DestekUygunlukForm() {
                 </Link>
               ))}
             </div>
-          </div>
-        )}
-        {katalogOnerileri.length > 0 && (
-          <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6">
-            <h3 className="mb-1 text-lg font-bold text-[#071A2F]">Ayrıca İlginizi Çekebilir</h3>
-            <p className="mb-4 text-sm text-gray-600">
-              Verdiğiniz cevaplara göre, yukarıdaki detaylı analiz dışında kalan genel destek kataloğundan öne
-              çıkan diğer programlar — bunlar için ayrı bir uygunluk hesabı yapılmadı, sadece ön tarama sonucu
-              önerilir.
-            </p>
-            <ul className="space-y-2">
-              {katalogOnerileri.map((k, i) => (
-                <li key={i} className="rounded-xl border border-orange-100 bg-white p-3 text-sm">
-                  <a href={k.kaynakUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#071A2F] hover:text-orange-600 hover:underline">
-                    {k.ad}
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    {k.kurum}
-                    {k.sonBasvuruTarihi ? ` — Son başvuru: ${k.sonBasvuruTarihi}` : ""}
-                  </span>
-                </li>
-              ))}
-            </ul>
           </div>
         )}
 

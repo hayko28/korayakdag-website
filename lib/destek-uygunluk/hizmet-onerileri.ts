@@ -145,7 +145,10 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     href: "/blog/yurt-disinda-sirket-nasil-kurulur-avantajlari",
     ikon: "🌐",
     aktif: true,
-    tetikle: (g) => (hedefSecili(g, "yurtdisi_sirket") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    tetikle: (g) =>
+      hedefSecili(g, "yurtdisi_sirket") ? "Belirttiğiniz hedefiniz nedeniyle"
+      : g.ihracatDurumu === "yapiyorum" ? "Yurt dışı pazarda faaliyetiniz nedeniyle"
+      : null,
     // İhracat destekleri/Turquality'ye uygun çıkan işletmeler genelde yurt dışı
     // pazara açılma/yapılanma ihtiyacına da yaklaşıyor — hedef ayrıca seçilmese de
     // bu iki program sonucunun altında ek fırsat olarak gösterilir.
@@ -158,7 +161,11 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     href: "/blog/marka-tescili-ve-patent-basvurusu-kobiler-icin-onemi",
     ikon: "🛡️",
     aktif: true,
-    tetikle: (g) => (hedefSecili(g, "marka_patent") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    tetikle: (g) =>
+      hedefSecili(g, "marka_patent") ? "Belirttiğiniz hedefiniz nedeniyle"
+      : g.argeDurumu === "var_kucuk" || g.argeDurumu === "var_kurumsal" ? "Ar-Ge/yenilik faaliyetiniz nedeniyle"
+      : g.ihracatDurumu === "yapiyorum" ? "İhracat faaliyetiniz nedeniyle"
+      : null,
     // Turquality/Marka Destek Programı'nın kendisi yurt içi/yurt dışı marka tescili
     // şart koşuyor — bu eksikse (sonuç "belirsiz" dönse bile) tam ihtiyaç anı budur.
     // Ticaret Bakanlığı'nın Yurt Dışı Marka Tescil Desteği (5973 Md.4) de aynı şekilde
@@ -172,7 +179,11 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     href: "/blog/kdv-iadesi-nasil-alinir-2026-sartlari-sureci",
     ikon: "💶",
     aktif: true,
-    tetikle: (g) => (hedefSecili(g, "kdv_iade") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    tetikle: (g) =>
+      hedefSecili(g, "kdv_iade") ? "Belirttiğiniz hedefiniz nedeniyle"
+      : g.ihracatDurumu === "yapiyorum" ? "İhracat yaptığınız için (ihracat KDV iadesi)"
+      : g.yatirimPlanlaniyorMu === true ? "Yatırım planınız nedeniyle (yatırım KDV'si)"
+      : null,
   },
   {
     id: "vergi-danismanligi",
@@ -217,7 +228,10 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     href: "/blog/uluslararasi-fon-ve-kredi-danismanligi-kobi-finansman-kaynaklari",
     ikon: "💰",
     aktif: true,
-    tetikle: (g) => (hedefSecili(g, "finansman") ? "Belirttiğiniz hedefiniz nedeniyle" : null),
+    tetikle: (g) =>
+      hedefSecili(g, "finansman") ? "Belirttiğiniz hedefiniz nedeniyle"
+      : g.yatirimPlanlaniyorMu === true ? "Yatırım planınız nedeniyle"
+      : null,
   },
 
   // TODO: Tasarım Merkezi Danışmanlığı — dedike sayfa/blog yazısı oluşturulunca
@@ -228,13 +242,24 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
 
 const MAKS_HIZMET = 6;
 
+// Bu hizmetler zaten yukarıdaki program kartlarının/grup başlıklarının altında sunuluyor;
+// alttaki "diğer hizmetler" listesinde tekrar gösterilmez.
+const PROGRAMLA_GOSTERILEN_HIZMETLER = new Set([
+  "ihracat-turquality-danismanligi",
+  "kosgeb-danismanlik",
+  "tubitak-danismanlik",
+  "yatirim-tesvik-danismanligi",
+  "teknopark-danismanligi",
+  "arge-merkezi-danismanligi",
+]);
+
 // Şirket profili + hedeflere göre eşleşen, gerçek sayfası olan hizmetleri döner.
 // Sıralama yalnızca katalogdaki tanım sırasına göredir — "en iyi/en doğru hizmet"
 // gibi bir öncelik iddiası taşımaz, ilk MAKS_HIZMET eşleşme gösterilir.
 export function onerilenHizmetleriBul(g: DestekBasvuruGirdisi): HizmetOnerisi[] {
   const eslesenler: HizmetOnerisi[] = [];
   for (const h of HIZMET_KATALOGU) {
-    if (!h.aktif) continue;
+    if (!h.aktif || PROGRAMLA_GOSTERILEN_HIZMETLER.has(h.id)) continue;
     const neden = h.tetikle(g);
     if (neden) {
       eslesenler.push({ id: h.id, baslik: h.baslik, aciklama: h.aciklama, href: h.href, ikon: h.ikon, neden });
@@ -268,3 +293,14 @@ export const HIZMET_HEDEF_SECENEKLERI = [
   { value: "bagimsiz_denetim", label: "Bağımsız denetim yaptırmak" },
   { value: "finansman", label: "Finansman veya kredi bulmak" },
 ];
+
+// Bir kurum grubunun altında tek satırlık danışmanlık çağrısı için: verilen programlardan
+// ilk eşleşen (tanım sırasına göre) hizmeti döner.
+export function grubaBagliHizmet(programIdler: string[]): HizmetOnerisi | null {
+  for (const h of HIZMET_KATALOGU) {
+    if (h.aktif && PROGRAMLA_GOSTERILEN_HIZMETLER.has(h.id) && h.ilgiliProgramIdler?.some((id) => programIdler.includes(id))) {
+      return { id: h.id, baslik: h.baslik, aciklama: h.aciklama, href: h.href, ikon: h.ikon, neden: "" };
+    }
+  }
+  return null;
+}
