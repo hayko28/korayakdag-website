@@ -2029,23 +2029,18 @@ export function kosgebYapayZekaKrediDegerlendir(g: DestekBasvuruGirdisi): Progra
     if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
-  if (g.kosgebVeriTabaniKayitliMi === false) {
-    gerekceler.push("İşletmenin KOSGEB Veri Tabanı'nda kayıtlı ve aktif olması gerekir — kaydınız yok.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOSGEB veri tabanı kaydı yok.", gerekceler, undefined, undefined, SON);
-  }
+  // Tamamlanabilir ön hazırlık adımları: eleme değil, başvuru öncesi yapılacaklar.
+  const hazirlik: string[] = [];
+  if (g.kosgebVeriTabaniKayitliMi === false) hazirlik.push("KOSGEB Veri Tabanı'na kayıt");
   if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB veri tabanı kaydının aktif olup olmadığı");
-
-  if (g.kobiBilgiSistemiKayitGuncelMi === false) {
-    gerekceler.push("İşletme Beyanı'nın güncel ve aktif olması gerekir — beyannameniz güncel değil.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İşletme Beyanı güncel değil.", gerekceler, undefined, undefined, SON);
-  }
+  if (g.kobiBilgiSistemiKayitGuncelMi === false) hazirlik.push("İşletme Beyanı'nın güncellenmesi");
   if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("İşletme Beyanı'nın güncel olup olmadığı");
-
-  if (g.teknogirisimRozetiGecerliMi === false) {
-    gerekceler.push("Başvuru tarihi itibarıyla geçerli bir Teknogirişim Rozeti şarttır; rozeti olmayan ya da süresi dolan işletmeler diğer şartları sağlasa da başvuramaz. Rozet, Sanayi ve Teknoloji Bakanlığı'nın teknogirisim.sanayi.gov.tr portalından alınır (3 yıl geçerli).");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Geçerli Teknogirişim Rozeti yok.", gerekceler, undefined, undefined, SON);
-  }
+  if (g.teknogirisimRozetiGecerliMi === false) hazirlik.push("geçerli Teknogirişim Rozeti alınması (Sanayi ve Teknoloji Bakanlığı, teknogirisim.sanayi.gov.tr, 3 yıl geçerli)");
   if (g.teknogirisimRozetiGecerliMi === undefined) eksikAlanlar.push("geçerli Teknogirişim Rozeti olup olmadığı");
+  if (hazirlik.length > 0) {
+    gerekceler.push(`Başvuru öncesi tamamlanması gerekenler: ${hazirlik.join("; ")}. Bunlar eleme sebebi değil, tamamlanabilir adımlardır; hepsi bittiğinde başvuru yapabilirsiniz.`);
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön hazırlık gerekli: " + hazirlik.map((h) => h.replace(/ \(.*\)$/, "")).join(", ") + ". Tamamladığınızda başvuru yapabilirsiniz.", gerekceler, undefined, undefined, SON);
+  }
 
   gerekceler.push("KOBİ ölçeği, KOSGEB kaydı, İşletme Beyanı ve Teknogirişim Rozeti şartları sağlanıyor.");
 

@@ -214,8 +214,9 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
 const CAGRI_KAPALI_STIL = { renk: "border-orange-300 bg-orange-50 text-orange-800", etiket: "🟠 Kriterler Uygun — Çağrı Şu An Kapalı" };
 // Kriterler tam sağlanmıyorsa (bilgi eksik / ek şart doğrulanamadı) "Kriterler Uygun" denmez, yalnızca çağrının kapalı olduğu belirtilir.
 const CAGRI_KAPALI_DIGER_STIL = { renk: CAGRI_KAPALI_STIL.renk, etiket: "🟠 Çağrı Şu An Kapalı" };
+const ON_HAZIRLIK_STIL = { renk: DURUM_STIL.belirsiz.renk, etiket: "🟡 Ön Hazırlık Gerekli — Tamamlayınca Başvurabilirsiniz" };
 const kartStili = (s: ProgramSonucu) =>
-  s.cagriKapali ? (s.durum === "uygun" ? CAGRI_KAPALI_STIL : CAGRI_KAPALI_DIGER_STIL) : DURUM_STIL[s.durum];
+  s.onHazirlikGerekli && !s.cagriKapali ? ON_HAZIRLIK_STIL : s.cagriKapali ? (s.durum === "uygun" ? CAGRI_KAPALI_STIL : CAGRI_KAPALI_DIGER_STIL) : DURUM_STIL[s.durum];
 
 const PUAN_RENK = (puan: number) =>
   puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";

@@ -28,6 +28,8 @@ export type ProgramSonucuTaslak = {
   // örn. "30 Eylül 2026") — doluysa arayüzde kart başlığında ayrı, görünür bir tarih
   // rozetiyle gösterilir; sadece uyarılar metninin içine gömülmez.
   sonBasvuruTarihi?: string;
+  // true: kart "belirsiz" gösterilir; eksik olan şart başvuru öncesi tamamlanabilir (kayıt, rapor, rozet vb.), eleme değildir.
+  onHazirlikGerekli?: boolean;
 };
 
 // index.ts'te taslağa puan eklenerek üretilen, arayüze giden nihai sonuç.

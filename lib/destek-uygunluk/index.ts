@@ -47,6 +47,26 @@ function puanHesapla(durum: SonucDurumu, gerekceSayisi: number): number {
   }
 }
 
+// Başvuru öncesi tamamlanabilen şartlar (KOSGEB kaydı, İşletme Beyanı, rozet, danışman raporu):
+// bunlar eksikse kart kırmızı "uygun değil" değil, sarı "ön hazırlık gerekli" olur.
+const ON_HAZIRLIK_OZETLERI = new Set([
+  "KOSGEB veri tabanı kaydı yok.",
+  "KBS kaydı aktif/güncel değil.",
+  "İşletme Beyanı güncel değil.",
+  "KOBİ Bilgi Sistemi kaydı güncel değil.",
+  "Geçerli Teknogirişim Rozeti yok.",
+  "Dijital dönüşüm/olgunluk değerlendirme raporu eksik.",
+  "Dönüşüm raporu eksik.",
+]);
+
+function onHazirlikUygula(t: ProgramSonucuTaslak): ProgramSonucuTaslak {
+  if (t.durum !== "uygun_degil") return t;
+  const hazirlik = t.ozet.startsWith("Ön hazırlık gerekli");
+  if (!hazirlik && !ON_HAZIRLIK_OZETLERI.has(t.ozet)) return t;
+  const ozet = hazirlik ? t.ozet : `Ön hazırlık gerekli: ${t.ozet.replace(/\.$/, "")}. Bu adımı tamamladığınızda başvuru yapabilirsiniz.`;
+  return { ...t, durum: "belirsiz", ozet, onHazirlikGerekli: true };
+}
+
 function puanEkle(taslak: ProgramSonucuTaslak): ProgramSonucu {
   return { ...taslak, puan: puanHesapla(taslak.durum, taslak.gerekceler.length) };
 }
@@ -106,6 +126,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
 
   const DURUM_SIRASI: Record<SonucDurumu, number> = { uygun: 0, kismen_uygun: 1, belirsiz: 2, uygun_degil: 3 };
   return taslaklar
+    .map(onHazirlikUygula)
     .map(puanEkle)
     .sort((a, b) => DURUM_SIRASI[a.durum] - DURUM_SIRASI[b.durum] || b.puan - a.puan);
 }
