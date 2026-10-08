@@ -57,3 +57,11 @@ için dokunulmadı, yeni çağrı açılınca tamamlanmalı.
 - TÜBİTAK duyuruları: 1501/1507 2026-2 çağrıları (20 Temmuz 2026), 1707 2026-3 (2 Eylül 2026), 1501 "yalnızca KOBİ" (16/04/2019)
 - KOSGEB İstihdamı Koruma 2026-2 duyurusu (kosgeb.gov.tr/site/tr/genel/detay/9471)
 - TKDK IPARD III 2026 çağrı takvimi ve 12. çağrı ilanı (alomaliye.com, milliyet.com.tr, tkdk.gov.tr)
+
+## Ek doğrulamalar (8 Ekim 2026, ikinci tur)
+
+- **1501 KOBİ şartı VAR:** 1501-2026-2 çağrı metni "KOBİ ölçeğindeki kuruluşların desteklenen projeleri"; rehber notu: "1501 ve 1507 destek programlarına sadece KOBİ niteliğindeki sermaye şirketleri başvuru yapabilmektedir." Kod doğru.
+- **Öncelikli Ar-Ge konuları şart değil, avantaj:** 2026-2 (1501/1507) çağrısında yalnızca "Endüstride Teknolojik Sıçrama" ve "Dijital Liderlik" başlıkları +5 puan alır, "Yeşil Dönüşüm" almaz. 1707 2026-3'te öncelik kapsamı aynı iki başlıkla sınırlı. Katalog: 3 ana hedef, 17 teknoloji alanı, 47 alt grup, 414 konu. Form sorusu (argeOncelikliAlanKategorisi) 1501/1507/1832 ve 1707'de; eleme kuralı değil, bilgi notu.
+- **Dijital Dönüşüm:** Madde 7 şartlarının tamamı zorunlu; mali şart Madde 7/6 (öz kaynak pozitif VE son 3 yılda en az bir yıl faaliyet kârı pozitif), 1.000.000 TL tutar şartı 7/7. Kodda atıf 7/6 olarak düzeltildi.
+- **Turquality:** son 3 yıl ortalama ihracat ≥ 3.000.000 $ (veya son yıl 10M$ istisnası) formda sorulup kodda uygulanıyor, doğru.
+- **IPARD III M7:** çağrı AÇILMADI; TKDK ilanı erteledi (30 Eylül 2026 duyurusu: yeni tarih, bütçe, destek oranı belli değil). TKDK notu güncellendi.

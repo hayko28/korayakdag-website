@@ -304,7 +304,7 @@ export interface DestekBasvuruGirdisi {
   // başvurucudan istenen böyle bir belge yok (finansal yeterlilik bankalar üzerinden Kurul'ca
   // değerlendirilir). Artık değerlendirmede kullanılmıyor, eski kayıtlarla uyum için tutuluyor.
   maliKarneVarMi?: boolean;
-  // Yönerge Rev.05 MADDE 7/7 (birincil kaynaktan doğrulandı, 2026-09-18): son mali yıl
+  // Yönerge MADDE 7/6 (Rev.05 birincil kaynaktan doğrulandı, 2026-09-18): son mali yıl
   // Öz Kaynaklar Toplamı pozitif VE son 3 mali yıldan en az birinde Faaliyet Kârı pozitif
   // olmalı — sert bir ön koşul, önceden yalnızca uyarı metninde geçip hiç sorulmuyordu.
   maliYeterlilikSaglaniyorMu?: boolean;

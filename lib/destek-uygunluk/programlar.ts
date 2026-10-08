@@ -353,7 +353,11 @@ function oncelikliAlanGerekcesi(kategori: DestekBasvuruGirdisi["argeOncelikliAla
     dijital_liderlik: "Dijital Liderlik",
     yesil_donusum: "Yeşil Dönüşüm",
   };
-  return `Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun "${ETIKET[kategori]}" ana hedef kategorisiyle uyumlu işaretlenmiş — güncel öncelikli alanlarla örtüşme, değerlendirmede olumlu bir sinyal olarak görülür.`;
+  // 2026-2 (1501/1507) ve 2026-3 (1707) çağrılarında yalnızca ilk iki başlık +5 puan / öncelik alıyor.
+  if (kategori === "yesil_donusum") {
+    return `Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun "${ETIKET[kategori]}" ana hedefiyle uyumlu. Katalog açısından öncelikli bir alan; ancak 2026-2 (1501/1507) ve 2026-3 (1707) çağrılarında ek puan/öncelik yalnızca "Endüstride Teknolojik Sıçrama" ve "Dijital Liderlik" başlıklarına tanınıyor. Başvuru şartı değildir, Yeşil Dönüşüm projeleri de normal değerlendirmeye girer.`;
+  }
+  return `Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğunun "${ETIKET[kategori]}" ana hedefiyle uyumlu. Bu başlık, 2026-2 (1501/1507) çağrısında 5 ek puan, 2026-3 (1707) çağrısında öncelik sağlıyor. Başvuru şartı değildir; öncelik/puan avantajıdır. Projenizin tam olarak hangi Ar-Ge konusuna girdiğini TÜBİTAK'ın konu listesinden teyit edin.`;
 }
 
 // 1501/1507/1832 ortak: proje ekibi/kaynak yetersizliği sinyalleri (üretim yatırımı
@@ -869,7 +873,7 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
   if (g.dijitalGiderlerRaporlaUyumluMu === undefined) eksikAlanlar.push("gider kalemlerinin yeni olması ve rapordaki önerilerle uyumlu olması");
 
   if (g.maliYeterlilikSaglaniyorMu === false) {
-    gerekceler.push("MADDE 7/7: son mali yıl Öz Kaynaklar Toplamı'nın pozitif olması VE son 3 mali yıldan en az birinde Faaliyet Kârı'nın pozitif olması gerekiyor — bu sağlanmıyor.");
+    gerekceler.push("MADDE 7/6: son mali yıl Öz Kaynaklar Toplamı'nın pozitif olması VE son 3 mali yıldan en az birinde Faaliyet Kârı'nın pozitif olması gerekiyor — bu sağlanmıyor.");
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Mali yeterlilik şartı sağlanmıyor.", gerekceler);
   }
   if (g.maliYeterlilikSaglaniyorMu === undefined) eksikAlanlar.push("son mali yıl Öz Kaynaklar Toplamı ve son 3 mali yıl Faaliyet Kârı durumu");
@@ -1011,7 +1015,7 @@ export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
       gerekceler,
       [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
       true,
-      "2026 çağrıları kapandı (son: 7 Eylül 2026)"
+      "2026 çağrıları kapandı (son: 7 Eylül 2026). M7 çağrı ilanı ertelendi, henüz açılmadı; TKDK duyurusu takip edilmeli"
     );
   }
 
@@ -1023,7 +1027,7 @@ export function tkdkDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
     gerekceler,
     uyarilar,
     true,
-    "2026 çağrıları kapandı (son: 7 Eylül 2026)"
+    "2026 çağrıları kapandı (son: 7 Eylül 2026). M7 çağrı ilanı ertelendi, henüz açılmadı; TKDK duyurusu takip edilmeli"
   );
 }
 
@@ -1653,6 +1657,8 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     gerekceler.push(`Proje bütçesi (${g.siparisArGeProjeButcesiTl.toLocaleString("tr-TR")} TL), programın azami proje bütçesi olan 10.000.000 TL'yi aşıyor — bütçenin bu limite çekilmesi gerekir.`);
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Proje bütçesi azami limiti aşıyor.", gerekceler);
   }
+  const oncelikliAlanNotu1707 = oncelikliAlanGerekcesi(g.argeOncelikliAlanKategorisi);
+  if (oncelikliAlanNotu1707) gerekceler.push(oncelikliAlanNotu1707);
   if (g.siparisArGeProjeButcesiTl === undefined) eksikAlanlar.push("proje bütçesi (azami 10.000.000 TL)");
   else gerekceler.push(`Proje bütçesi (${g.siparisArGeProjeButcesiTl.toLocaleString("tr-TR")} TL) 10.000.000 TL limiti içinde.`);
 

@@ -59,9 +59,9 @@ const ARGE_KAYNAGI_SECENEKLERI = [
 
 const ARGE_ONCELIKLI_ALAN_SECENEKLERI = [
   { value: "emin_degil", label: "Emin değilim / atla" },
-  { value: "endustride_teknolojik_sicrama", label: "Endüstride Teknolojik Sıçrama (batarya, ileri malzeme, robotik, yarı iletken, medikal teknolojiler vb.)" },
-  { value: "dijital_liderlik", label: "Dijital Liderlik (yapay zeka, siber güvenlik, kuantum, yeni nesil haberleşme vb.)" },
-  { value: "yesil_donusum", label: "Yeşil Dönüşüm (temiz enerji, yeşil hidrojen, karbon yakalama, sektörel yeşil teknolojiler vb.)" },
+  { value: "endustride_teknolojik_sicrama", label: "Endüstride Teknolojik Sıçrama (batarya, ileri malzeme, katmanlı imalat, kritik hammadde ve mineraller, medikal teknolojiler, motor/tahrik/itki sistemleri, robotik-mekatronik ve otomasyon, yarı iletken ve çip)" },
+  { value: "dijital_liderlik", label: "Dijital Liderlik (kuantum teknolojileri, siber güvenlik ve güvenli dijital altyapılar, yapay zeka ve veri bilimi, yeni nesil haberleşme)" },
+  { value: "yesil_donusum", label: "Yeşil Dönüşüm (karbon yakalama-kullanma-depolama, sektörel yeşil teknolojiler, tarım teknolojileri, temiz enerji, yeşil hidrojen)" },
   { value: "kapsam_disi", label: "Bu kategorilerin hiçbirine girmiyor" },
 ];
 
@@ -1303,7 +1303,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
             <EvetHayir etiket="Proje ekibinde ilgili alanda lisans mezunu var mı?" deger={g.projeEkibindeLisansMezunuVarMi} onChange={(v) => set("projeEkibindeLisansMezunuVarMi", v)} />
             <Secim etiket="Ar-Ge faaliyeti nasıl yürütülüyor?" deger={g.argeFaaliyetiKaynagi} onChange={(v) => set("argeFaaliyetiKaynagi", v)} secenekler={ARGE_KAYNAGI_SECENEKLERI} />
             <Tutar etiket="Talep edilecek proje bütçesi (opsiyonel)" deger={g.talepEdilenProjeButcesiTl} onChange={(v) => set("talepEdilenProjeButcesiTl", v)} />
-            <Secim etiket="Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğuyla uyumlu mu?" deger={g.argeOncelikliAlanKategorisi} onChange={(v) => set("argeOncelikliAlanKategorisi", v)} secenekler={ARGE_ONCELIKLI_ALAN_SECENEKLERI} />
+            <Secim etiket="Ne tür bir Ar-Ge yapıyorsunuz? TÜBİTAK 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğundaki hangi ana hedef/teknoloji alanına giriyor? (öncelikli konu başvuru şartı değil, 1501/1507 2026-2 çağrısında Endüstride Teknolojik Sıçrama ve Dijital Liderlik için +5 puan)" deger={g.argeOncelikliAlanKategorisi} onChange={(v) => set("argeOncelikliAlanKategorisi", v)} secenekler={ARGE_ONCELIKLI_ALAN_SECENEKLERI} />
           </div>
           {programId === "tubitak-1507" && (
             <>
@@ -1475,6 +1475,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Müşteri Kuruluş ile aranızda ortaklık/sermaye/yönetim ilişkisi veya akrabalık var mı?" deger={g.musteriKurulusIliskiliTarafMi} onChange={(v) => set("musteriKurulusIliskiliTarafMi", v)} />
           <EvetHayir etiket="Müşteri Kuruluş, proje giderlerinin en az %40'ını karşılamayı taahhüt ediyor mu?" deger={g.musteriKurulusFinansmanTaahhuduVarMi} onChange={(v) => set("musteriKurulusFinansmanTaahhuduVarMi", v)} />
           <Tutar etiket="Proje bütçesi" deger={g.siparisArGeProjeButcesiTl} onChange={(v) => set("siparisArGeProjeButcesiTl", v)} />
+          <Secim etiket="Proje, TÜBİTAK'ın 2026-2028 Öncelikli Ar-Ge ve Yenilik Konuları kataloğuyla uyumlu mu? (2026-3 çağrısında yalnızca ilk iki başlık öncelikli)" deger={g.argeOncelikliAlanKategorisi} onChange={(v) => set("argeOncelikliAlanKategorisi", v)} secenekler={ARGE_ONCELIKLI_ALAN_SECENEKLERI} />
         </div>
       );
     case "tubitak-1831":
