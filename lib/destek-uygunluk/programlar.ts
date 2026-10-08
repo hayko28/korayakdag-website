@@ -300,6 +300,17 @@ export function yatirimTesvikBelgesiDegerlendir(g: DestekBasvuruGirdisi): Progra
     }
   }
 
+  // Bölgenin asgari tutarındaki yatırım, belge süresi (3 yıl, ek süreyle uzatılabilir) içinde fiilen yapılabilmeli.
+  if (bolge !== null) {
+    const asgariKapasite = yatirimAsgariTutarTl(bolge);
+    if (g.yatirimiBelgeSuresindeYapabilirMi === false) {
+      gerekceler.push(`Belge süresi içinde (3 yıl, ek süreyle uzatılabilir) en az ${asgariKapasite.toLocaleString("tr-TR")} TL'lik sabit yatırımı gerçekleştiremeyeceğiniz belirtilmiş — asgari yatırım tutarı tamamlanmazsa belge kapsamındaki teşviklerden yararlanılamaz.`);
+      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Asgari yatırım tutarı belge süresinde gerçekleştirilemiyor.", gerekceler, uyarilar);
+    }
+    if (g.yatirimiBelgeSuresindeYapabilirMi === undefined) eksikAlanlar.push("asgari yatırım tutarını belge süresi içinde gerçekleştirip gerçekleştiremeyeceğiniz");
+    else gerekceler.push(`Asgari ${asgariKapasite.toLocaleString("tr-TR")} TL'lik yatırım belge süresi içinde gerçekleştirilebilir.`);
+  }
+
   if (g.planlananSabitYatirimTutariTl !== undefined && g.planlananSabitYatirimTutariTl >= 1_000_000_000) {
     uyarilar.push("Planlanan yatırım tutarı 1 milyar TL ve üzerinde — başvuru ekinde 2016/9495 sayılı Karar EK-1 formatında hazırlanmış bir fizibilite raporu zorunludur.");
   }

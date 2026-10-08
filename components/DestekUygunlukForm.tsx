@@ -414,6 +414,7 @@ export default function DestekUygunlukForm() {
       yatirimTuru: (g.yatirimTuru as DestekBasvuruGirdisi["yatirimTuru"]) || undefined,
       dijitalVeyaYesilDonusumMu: bool("dijitalVeyaYesilDonusumMu"),
       mevcutTesisVarMi: bool("mevcutTesisVarMi"),
+      yatirimiBelgeSuresindeYapabilirMi: bool("yatirimiBelgeSuresindeYapabilirMi"),
 
       projeKonusu: g.projeKonusu || undefined,
       projeNiteligi: (g.projeNiteligi as DestekBasvuruGirdisi["projeNiteligi"]) || undefined,
@@ -1293,6 +1294,13 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
               <p className="mt-1.5 text-xs text-gray-500">Önce yukarıdan ili seçerseniz o bölgenin asgari tutarını burada gösteririm.</p>
             )}
           </div>
+          {asgari && (
+            <EvetHayir
+              etiket={`${g.yatirimIli} (${bolge}. bölge) için en az ${asgari.toLocaleString("tr-TR")} TL'lik sabit yatırımı belge süresi içinde (3 yıl, ek süreyle uzatılabilir) gerçekleştirebilecek misiniz?`}
+              deger={g.yatirimiBelgeSuresindeYapabilirMi}
+              onChange={(v) => set("yatirimiBelgeSuresindeYapabilirMi", v)}
+            />
+          )}
           <div>
             <Secim etiket="Yatırım Türü" deger={g.yatirimTuru} onChange={(v) => set("yatirimTuru", v)} secenekler={YATIRIM_TURU_SECENEKLERI} />
             <p className="mt-1.5 text-xs text-gray-500">

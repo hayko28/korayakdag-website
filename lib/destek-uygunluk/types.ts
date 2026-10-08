@@ -227,6 +227,8 @@ export interface DestekBasvuruGirdisi {
   yatirimTuru?: YatirimTuru;
   dijitalVeyaYesilDonusumMu?: boolean;
   mevcutTesisVarMi?: boolean;
+  // Bölgenin asgari sabit yatırım tutarındaki yatırımı belge süresi içinde (3 yıl, ek süreyle uzatılabilir) gerçekleştirebilir mi?
+  yatirimiBelgeSuresindeYapabilirMi?: boolean;
 
   // TÜBİTAK 1501 ve 1507 (ortak Ar-Ge şartları)
   projeKonusu?: string;
