@@ -50,6 +50,19 @@ const HIZMET_KATALOGU: HizmetTanimi[] = [
     ilgiliProgramIdler: ["ticaret-bakanligi-ihracat-destekleri", "turquality-marka-destek"],
   },
   {
+    id: "pazar-arastirmasi",
+    baslik: "İhracat Pazar Araştırması",
+    aciklama: "Hedef ülke ve pazar seçimi, rakip ve alıcı analizi: ihracata başlarken veya yeni pazara açılırken veriye dayalı pazar araştırması.",
+    href: "/#contact",
+    ikon: "🔎",
+    aktif: true,
+    tetikle: (g) => {
+      if (g.ihracatDurumu === "yapiyorum") return "İhracat faaliyetiniz nedeniyle (yeni pazar araştırması)";
+      if (g.ihracatDurumu === "planliyorum") return "İhracata başlama hedefiniz nedeniyle";
+      return null;
+    },
+  },
+  {
     id: "kosgeb-danismanlik",
     baslik: "KOSGEB Danışmanlığı",
     aciklama: "Hangi KOSGEB programına uygun olduğunuzdan başvuru dosyanıza kadar uçtan uca destek; dijital dönüşüm/olgunluk değerlendirme (DDX) raporu hazırlama dahil.",
