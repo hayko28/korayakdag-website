@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Yunanistan'dan Türkiye'ye temettü gönderirken stopaj kesilir mi?",
-    a: "Yerleşik olmayan ortaklara ödenen temettüde iç mevzuattaki stopaj oranı %5'tir. PwC'nin anlaşma tablosunda Türkiye için temettü oranı %15 olarak listelenir. Anlaşma oranı iç mevzuat oranından yüksek olduğu için fiilen %5'in uygulanması beklenir, ancak ortaklık yapınıza göre uygulamanın AADE'den veya bir uzmandan teyit edilmesi gerekir.",
+    a: "Yerleşik olmayan ortaklara ödenen temettüde iç mevzuattaki stopaj oranı %5'tir. Türkiye-Yunanistan çifte vergilendirmeyi önleme anlaşmasının 10. maddesi kaynak devlette vergiyi brüt temettünün %15'i ile sınırlar. İç mevzuattaki %5 oranı bu tavanın altında kaldığı için %5 uygulanır.",
   },
   {
     q: "Yunanistan'da şirket kurmak ne kadar sürer?",
@@ -393,7 +393,7 @@ export default function BlogPage() {
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Temettü stopajı (yerleşik olmayan)</td>
                 <td className="p-5">%5</td>
-                <td className="p-5">İç mevzuat oranı. PwC tablosunda Türkiye anlaşma oranı %15 listelenir, iç mevzuat oranı düşük olduğu için uygulamanın teyit edilmesi gerekir</td>
+                <td className="p-5">İç mevzuat oranı. Türkiye anlaşma tavanı %15 olduğundan daha düşük olan %5 uygulanır</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Faiz / telif stopajı</td>
@@ -480,9 +480,7 @@ export default function BlogPage() {
               Diğer kategoriler (en az 500.000 euro vadeli mevduat, belirli
               vadeli devlet tahvili, şirket hisseleri ve fon yatırımları) ve
               girişim (startup) yatırımı için öngörülen 250.000 euro rotası
-              ikincil kaynaklarda farklı tutar ve şartlarla aktarılmaktadır.
-              Bu kategoriler için güncel tutarı ve uygulama durumunu Göç
-              Bakanlığı&apos;ndan doğrulayın.
+              ikincil kaynaklara göre şöyle aktarılmaktadır: Elevate Greece kaydındaki girişimin sermayesine veya tahvillerine en az 250.000 euro yatırım, yatırımcının pay veya oy hakkının üçte birini aşmaması ve girişimin ilk yıl en az iki kişi istihdam edip bunu beş yıl sürdürmesi. 2026 tarihli 5275 sayılı Kanun ile Elevate Greece kayıtlı girişimlerde çalışan nitelikli üçüncü ülke vatandaşları için ayrıca Tech Visa rotası getirildiği aktarılır. Uygulama yönetmelikleri Göç Bakanlığı&apos;ndan doğrulanmalıdır.
             </li>
             <li>
               Oturum 5 yıl geçerlidir ve yatırım korunduğu sürece 5 yıllık

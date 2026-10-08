@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Litvanya'dan Türkiye'ye temettü gönderirken stopaj kesilir mi?",
-    a: "Litvanya'da yerleşik olmayanlara ödenen temettüde 2026'dan itibaren standart stopaj oranı %17 olarak aktarılmaktadır. Türkiye ile Litvanya arasındaki çifte vergilendirmeyi önleme anlaşması dikkate alındığında temettü için 0/10 oranları listelenmektedir; %0 oranı, yeterli pay sahipliği ve süre şartlarının sağlanmasına bağlıdır. Gerçek kişi ortak için hangi oranın uygulanacağı ortak yapıya göre ayrıca belirlenmelidir.",
+    a: "Litvanya'da yerleşik olmayanlara ödenen temettüde 2026'dan itibaren standart stopaj oranı %17 olarak aktarılmaktadır. Türkiye ile Litvanya arasındaki çifte vergilendirmeyi önleme anlaşması dikkate alındığında anlaşmanın 10. maddesi uyarınca kaynak devlette alınacak vergi brüt temettünün %10'unu aşamaz. Gerçek kişi ortak için hangi oranın uygulanacağı ortak yapıya göre ayrıca belirlenmelidir.",
   },
   {
     q: "Litvanya'da KDV'ye ne zaman kaydolmak gerekir?",
@@ -144,7 +144,7 @@ export default function BlogPage() {
             </h3>
             <p className="text-gray-700">
               Yıllık geliri 300.000 euroyu aşmayan küçük şirketlerde %7, yeni
-              kurulanlarda ilk iki dönem %0 oranı uygulanabilir (koşullu).
+              kurulanlarda ilk iki dönem %0 oranı uygulanabilir. İkincil kaynaklara göre 2026'dan itibaren çalışan sayısı sınırı kaldırılmış, koşul esas olarak gelir sınırına bağlanmıştır.
             </p>
           </div>
           <div className="rounded-2xl border bg-white p-8 shadow-sm">
@@ -377,7 +377,7 @@ export default function BlogPage() {
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Temettü stopajı (yerleşik olmayan)</td>
                 <td className="p-5">%17</td>
-                <td className="p-5">Standart oran; ÇVÖA ve pay sahipliği koşullarıyla düşebilir (Türkiye anlaşmasında 0/10 listelenir)</td>
+                <td className="p-5">Standart oran; Türkiye-Litvanya ÇVÖA'sı (Madde 10) kaynak vergisini %10 ile sınırlar</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">KDV</td>
@@ -440,7 +440,7 @@ export default function BlogPage() {
               alabilir.
             </li>
             <li>
-              Yenilikçi girişimler için Startup Visa programı bulunur. Başvuruda
+              Yenilikçi girişimler için Startup Visa programı bulunur. İkincil kaynaklara göre geçici oturum 2+3 yıl verilir, devlet harcı standart başvuruda 160 euro, acil başvuruda 320 euro olarak aktarılır, başvuruda 30.000 euro teminatlı sağlık sigortası ve asgari ücrete bağlı geçim güvencesi (2026 için yaklaşık 1.153 euro/ay) aranır; güncel tutarlar Göç Departmanı'ndan doğrulanmalıdır. Başvuruda
               Innovation Agency&apos;nin faaliyetin girişim niteliğini ve
               gerekli yeterlilik, finansman ve iş planının varlığını
               onaylaması aranır.
@@ -542,7 +542,7 @@ export default function BlogPage() {
             <h3 className="mb-6 text-2xl font-bold text-red-700">⚠️ Dezavantajlar</h3>
             <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-red-600">
               <li>2026&apos;da oranların artması ve kâr ertelemesinin olmaması</li>
-              <li>Temettüde %17 stopaj ihtimali (ÇVÖA ile düşebilir)</li>
+              <li>Temettüde stopaj (Türkiye ÇVÖA'sı ile en fazla %10)</li>
               <li>Sıkı banka KYC süreci ve hesap açılış süresi</li>
               <li>JANGIS bildirim yükümlülüğü ve yaptırım riski</li>
               <li>Göç mevzuatındaki değişiklikler</li>

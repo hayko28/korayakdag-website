@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Letonya'dan Türkiye'ye temettü gönderirken stopaj kesilir mi?",
-    a: "Letonya'da yerleşik olmayanlara ödenen temettüde, vergi cenneti listesindeki ülkeler hariç, kaynakta stopaj uygulanmaz. Vergi, şirket seviyesinde dağıtım anında kurumlar vergisi olarak ödenir. Türkiye'deki beyan ve ÇVÖA kapsamında mahsup imkânı, ortağın durumuna göre ayrıca değerlendirilmelidir.",
+    a: "Letonya'da yerleşik olmayanlara ödenen temettüde, vergi cenneti listesindeki ülkeler hariç, kaynakta stopaj uygulanmaz. Vergi, şirket seviyesinde dağıtım anında kurumlar vergisi olarak ödenir. Türkiye-Letonya çifte vergilendirmeyi önleme anlaşmasında (Madde 10) kaynak devlette temettü vergisi brüt tutarın %10'unu aşamaz; Letonya iç mevzuatında stopaj olmadığı için pratikte kaynakta vergi çıkmaz. Türkiye'deki beyan ve mahsup imkânı ise ortağın durumuna göre ayrıca değerlendirilmelidir.",
   },
   {
     q: "Letonya'da şirket kurmak ne kadar sürer ve ne kadar tutar?",
