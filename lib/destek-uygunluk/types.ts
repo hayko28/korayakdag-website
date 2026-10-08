@@ -329,7 +329,7 @@ export interface DestekBasvuruGirdisi {
   turqualitySon1YilIhracatUsd?: number; // 10M USD istisnası için
   markaYurtIciTescilVarMi?: boolean; // en az 1 yıl önce alınmış
   markaYurtDisiTescilVarMi?: boolean; // Madrid Protokolü ülkesinde
-  markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // MADDE 14/1-c: yurt dışı BAŞVURU tarihi, yurt içi BAŞVURU tarihinden önce ise true — aynı tarih diskalifiye ETMEZ
+  markaYurtIciBasvuruOnceVeyaAyniGunMu?: boolean; // MADDE 14/1-c: yurt içi tescil BAŞVURU tarihi, yurt dışı tescil başvuru tarihinden önce veya aynı tarihteyse true
   // Genelge (26/06/2026 yürürlük) MADDE 14 — önceden sorulmayan kalan şartlar:
   turqualityHerYilIhracatYapildiMi?: boolean; // 14/1-a: son 3 takvim yılının her birinde ihracat yapılmış olmalı
   markaTescilleriEnAzBirYilOnceMi?: boolean; // 14/1-b: yurt içi VE yurt dışı tescil, başvuru tarihinden en az 1 yıl önce alınmış (10M$ istisnasında aranmaz)

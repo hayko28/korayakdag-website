@@ -1088,11 +1088,11 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
     eksikAlanlar.push("son 3 yıl ortalama ihracat tutarı (veya son 1 yıl ihracat istisnası)");
   }
 
-  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === true) {
+  if (g.markaYurtIciBasvuruOnceVeyaAyniGunMu === false) {
     gerekceler.push("Yurt dışı marka tescili BAŞVURU tarihi, yurt içi tescil başvuru tarihinden önce yapılmış (MADDE 14/1-c) — bu sıra diskalifiye eden bir durum; yurt içi başvuru, yurt dışı başvurudan önce veya aynı tarihte yapılmış olmalı.");
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil başvuru sırası uygun değil.", gerekceler, uyarilar);
   }
-  if (g.markaYurtDisiTescilYurtIciTescildenOnceMi === undefined) eksikAlanlar.push("yurt dışı tescil başvurusunun yurt içi tescil başvurusundan önce mi yapıldığı (aynı tarih sorun değil)");
+  if (g.markaYurtIciBasvuruOnceVeyaAyniGunMu === undefined) eksikAlanlar.push("yurt içi tescil başvurusunun yurt dışı tescil başvurusundan önce (veya aynı gün) yapılıp yapılmadığı");
 
   if (g.markaYurtIciTescilVarMi === false) {
     gerekceler.push("Başvurulan markanın Türkiye'de tescili bulunmuyor (MADDE 14/1-b).");

@@ -471,7 +471,7 @@ export default function DestekUygunlukForm() {
       turqualitySon1YilIhracatUsd: num("turqualitySon1YilIhracatUsd"),
       markaYurtIciTescilVarMi: bool("markaYurtIciTescilVarMi"),
       markaYurtDisiTescilVarMi: bool("markaYurtDisiTescilVarMi"),
-      markaYurtDisiTescilYurtIciTescildenOnceMi: bool("markaYurtDisiTescilYurtIciTescildenOnceMi"),
+      markaYurtIciBasvuruOnceVeyaAyniGunMu: bool("markaYurtIciBasvuruOnceVeyaAyniGunMu"),
       turqualityHerYilIhracatYapildiMi: bool("turqualityHerYilIhracatYapildiMi"),
       markaTescilleriEnAzBirYilOnceMi: bool("markaTescilleriEnAzBirYilOnceMi"),
       markaTescilOrganikBagliSirketAdinaMi: bool("markaTescilOrganikBagliSirketAdinaMi"),
@@ -1414,7 +1414,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Markanın Türkiye'de tescili var mı?" deger={g.markaYurtIciTescilVarMi} onChange={(v) => set("markaYurtIciTescilVarMi", v)} />
           <EvetHayir etiket="Markanın Madrid Protokolü'ne taraf bir ülkede yurt dışı tescili var mı?" deger={g.markaYurtDisiTescilVarMi} onChange={(v) => set("markaYurtDisiTescilVarMi", v)} />
           <EvetHayir etiket="Yurt içi ve yurt dışı tescillerin ikisi de başvuru tarihinden en az 1 yıl önce mi alındı? (son 1 yılda 10M$ ihracat istisnasında aranmaz)" deger={g.markaTescilleriEnAzBirYilOnceMi} onChange={(v) => set("markaTescilleriEnAzBirYilOnceMi", v)} />
-          <EvetHayir etiket="Yurt dışı tescil başvurusu, yurt içi tescil başvurusundan önce mi yapıldı? (aynı gün sorun değil)" deger={g.markaYurtDisiTescilYurtIciTescildenOnceMi} onChange={(v) => set("markaYurtDisiTescilYurtIciTescildenOnceMi", v)} />
+          <EvetHayir etiket="Yurt içi tescil başvurusu, yurt dışı tescil başvurusundan önce mi yapıldı? (aynı gün de olur)" deger={g.markaYurtIciBasvuruOnceVeyaAyniGunMu} onChange={(v) => set("markaYurtIciBasvuruOnceVeyaAyniGunMu", v)} />
           <EvetHayir etiket="Her iki tescil de şirketiniz, organik bağlı bir yurt içi şirketiniz veya aynı holding/şirketler topluluğu (ya da holding şirketi) adına mı?" deger={g.markaTescilOrganikBagliSirketAdinaMi} onChange={(v) => set("markaTescilOrganikBagliSirketAdinaMi", v)} />
           <EvetHayir etiket="Markada Türk malı imajına aykırı bir ifade/sembol veya bir ülke, şehir, bölge ismi var mı?" deger={g.markadaImajaAykiriUnsurVarMi} onChange={(v) => set("markadaImajaAykiriUnsurVarMi", v)} />
         </div>
