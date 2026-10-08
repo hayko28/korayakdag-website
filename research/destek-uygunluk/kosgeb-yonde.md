@@ -1,3 +1,9 @@
+# DÜZELTME (2026-10-08): YÖNDE yönergesi (Rev.3, 05.07.2026) tam metin okundu
+
+Başvurular Kurul/Jüri'ye değil, mevzuata uygunluk ve şekil yönünden personel kontrolüne tabidir (MADDE 11); bu yüzden sonuç 'uygun' olabilir. Şartlar: sistemde kayıtlı/aktif (9/1), NACE C ve mikro hariç KOBİ (9/2), İşletme Beyanı güncel (9/4), programdan 1 kez yararlanma (9/5); hizmet bazlı: TÜSSDE belgeli dijital dönüşüm danışmanı (6/2), Bakanlıkça bildirilen yalın dönüşüm danışmanı (8/2), TSRS'ye uygun sürdürülebilirlik raporu + KGK yetkili bağımsız denetim güvencesi + raporlama yılı ≤1 yıl (7/2-5). Limitler: dijital 40.000, sürdürülebilirlik 200.000, YODA 40.000, toplam 280.000 TL, destek %80. Kod buna göre güncellendi.
+
+---
+
 # KOSGEB YÖNDE - Yönderlik ve Değerlendirme Destek Programı (evaluator kaynağı)
 
 ## Durum — ORTA-YÜKSEK GÜVEN, ikincil kaynakla çapraz doğrulandı (2026-09-18)

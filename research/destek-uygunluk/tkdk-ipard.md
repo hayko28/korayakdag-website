@@ -1,3 +1,9 @@
+# DÜZELTME (2026-10-08): TKDK çağrıları kapalı, il sınırı yok
+
+2026 çağrı takvimindeki çağrıların (Nisan M7, Mayıs M3, Haziran M1, Temmuz altyapı) tamamı kapandı; 12. çağrının (M1) teslim tarihi 7 Eylül 2026'ydı. Ekim-Aralık için yeni çağrı tespit edilemedi. Çağrılar 81 ilden başvuru aldı (eski '42 il' bilgisi geçersiz). Kodda `cagriKapali` işaretlendi, il sorusu kaldırıldı.
+
+---
+
 # TKDK IPARD III Kırsal Kalkınma Destekleri (evaluator kaynağı)
 
 ## DÜZELTME (2026-09-17) — kısmen birincil kaynakla teyit edildi

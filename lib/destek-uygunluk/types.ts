@@ -241,6 +241,10 @@ export interface DestekBasvuruGirdisi {
   teydebOnayliProjeSayisi?: number;
   ortakliBasvuruMu?: boolean;
   teknogirisimSermayeSirketiMi?: boolean;
+  // 1507 MADDE 14(5): teknogirişim sermaye şirketleri 1507'den yalnızca bir kez destek alabilir ve
+  // başvuruyu teknogirişim desteğinin tamamlandığı tarihten sonraki 24 ay içinde yapmalıdır.
+  teknogirisimDahaOnce1507KullandiMi?: boolean;
+  teknogirisim24AyIcindeMi?: boolean;
 
   // TÜBİTAK 1501/1507/1832 ortak — Öncelikli Ar-Ge ve Yenilik Konuları uyumu
   argeOncelikliAlanKategorisi?: TubitakOncelikliAlanKategorisi;
@@ -255,6 +259,8 @@ export interface DestekBasvuruGirdisi {
 
   // Yatırım Teşvik Belgesi — ek kriterler
   yuksekVeyaOrtaYuksekTeknolojiUrunMu?: boolean;
+  // EK-3'teki satır bazlı özel şartlar (asgari kapasite, m², oda sayısı vb.) yatırım konusu için sağlanıyor mu.
+  ek3OzelSartlarSaglaniyorMu?: boolean;
 
   // Ticaret Bakanlığı İhracat Destekleri (5973 / 10962 sayılı Kararlar)
   ihracatTuru?: IhracatTuru;
@@ -277,9 +283,26 @@ export interface DestekBasvuruGirdisi {
   referansDonemSigortaliCalisaniVarMi?: boolean;
   kobiBilgiSistemiKayitGuncelMi?: boolean;
   kosgebVadesiGecmisBorcuVarMi?: boolean;
+  // Duyuru (28/08/2026): 2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannameleri mevcut olmalı.
+  ocakHaziranBeyannameleriVarMi?: boolean;
 
   // KOBİ Dijital Dönüşüm Destek Programı
   ddxRaporuVarMi?: boolean;
+  // Yönerge Rev.05 MADDE 7/5: rapor geçerlilik tarihi/yol haritası süresi içinde (yoksa onay
+  // tarihinden itibaren 1 yıl içinde) başvurulmalı — Başvuru Kontrol Tablosu madde 4 (ret sebebi).
+  ddxRaporuGecerliMi?: boolean;
+  // MADDE 7/6 + Kontrol Tablosu madde 6: ana faaliyet EBRD "Uygun Bulunmayan Sektör ve
+  // Faaliyetler Tablosu"nda ise başvuru reddedilir.
+  ebrdUygunBulunmayanFaaliyetMi?: boolean;
+  // MADDE 5/3: işletme bu programdan yalnızca bir kez yararlanabilir.
+  dijitalDonusumDahaOnceKullanildiMi?: boolean;
+  // MADDE 7/8: Kurul kararındaki desteklemeye esas tutar 1.000.000 TL'nin altında olamaz.
+  planlananDijitalYatirimTutariTl?: number;
+  // MADDE 5/2 + 12/7: yeni makine/teçhizat/yazılım/donanım; gider kalemleri raporun önerileriyle uyumlu.
+  dijitalGiderlerRaporlaUyumluMu?: boolean;
+  // Eski sürümde gate olarak kullanılıyordu; Rev.05 Yönerge ve Başvuru Kontrol Tablosu'nda
+  // başvurucudan istenen böyle bir belge yok (finansal yeterlilik bankalar üzerinden Kurul'ca
+  // değerlendirilir). Artık değerlendirmede kullanılmıyor, eski kayıtlarla uyum için tutuluyor.
   maliKarneVarMi?: boolean;
   // Yönerge Rev.05 MADDE 7/7 (birincil kaynaktan doğrulandı, 2026-09-18): son mali yıl
   // Öz Kaynaklar Toplamı pozitif VE son 3 mali yıldan en az birinde Faaliyet Kârı pozitif
@@ -301,6 +324,12 @@ export interface DestekBasvuruGirdisi {
   markaYurtIciTescilVarMi?: boolean; // en az 1 yıl önce alınmış
   markaYurtDisiTescilVarMi?: boolean; // Madrid Protokolü ülkesinde
   markaYurtDisiTescilYurtIciTescildenOnceMi?: boolean; // MADDE 14/1-c: yurt dışı BAŞVURU tarihi, yurt içi BAŞVURU tarihinden önce ise true — aynı tarih diskalifiye ETMEZ
+  // Genelge (26/06/2026 yürürlük) MADDE 14 — önceden sorulmayan kalan şartlar:
+  turqualityHerYilIhracatYapildiMi?: boolean; // 14/1-a: son 3 takvim yılının her birinde ihracat yapılmış olmalı
+  markaTescilleriEnAzBirYilOnceMi?: boolean; // 14/1-b: yurt içi VE yurt dışı tescil, başvuru tarihinden en az 1 yıl önce alınmış (10M$ istisnasında aranmaz)
+  markaTescilOrganikBagliSirketAdinaMi?: boolean; // 14/1-ç: tescil başvurucu/organik bağlı/aynı holding şirketi adına
+  markadaImajaAykiriUnsurVarMi?: boolean; // 14/1-d: Türk malı imajına aykırı ifade, sembol veya ülke/şehir/bölge ismi varsa true (ret)
+  fasil87AkilliCihazUreticisiMi?: boolean; // 14/3: 87. fasılda akıllı cihaz üreticileri için ihracat tutarı eşiği aranmaz
 
   // KOSGEB Stratejik Ürün Destek Programı (UE-13/08, Rev. 24/03/2026, birincil kaynak) —
   // iki aşamalı: Bakanlık ön başvuru (Teknoloji Odaklı Sanayi Hamlesi) → KOSGEB.
@@ -319,6 +348,13 @@ export interface DestekBasvuruGirdisi {
   // (dijital dönüşüm yol haritası, sürdürülebilirlik raporlaması, YODA), yatırım değil.
   yondeDahaOnceYararlanildiMi?: boolean;
   yondeHizmetTuru?: YondeHizmetTuru;
+  // Yönerge Rev.3 (05/07/2026) MADDE 6/2, 8/2: dijital dönüşüm hizmeti TÜSSDE belgeli danışmandan,
+  // YODA hizmeti Bakanlıkça bildirilen yalın dönüşüm danışmanından alınmalı.
+  yondeDanismanYetkiliMi?: boolean;
+  // MADDE 7/3, 7/5: sürdürülebilirlik raporu TSRS'ye uygun ve güvence denetimi KGK yetkili
+  // bağımsız denetim kuruluşunca yapılmış olmalı; raporlama yılı program başlangıcından en fazla 1 yıl önce.
+  yondeGuvenceDenetimiVarMi?: boolean;
+  yondeRaporlamaYiliUygunMu?: boolean;
 
   // Ar-Ge Merkezi statüsü (5746 sayılı Kanun) — hem "statüsü zaten var, teşvikleri
   // netleştir" hem "statüye aday mıyım" senaryosunu kapsar.

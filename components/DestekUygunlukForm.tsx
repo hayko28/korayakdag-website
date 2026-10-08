@@ -187,11 +187,12 @@ const ADIMLAR = ["Şirket Bilgileri", "Şirket Hedefleri", "Ön Analiz", "Detayl
 // Yalnızca UI etiketleri — motorun ürettiği gerçek durum değerleri
 // (uygun / kismen_uygun / belirsiz / uygun_degil) değişmedi.
 const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
-  uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "🟢 Ön Uygun" },
-  // kismen_uygun: nesnel kriterler bu araçla kontrol edilebildiği kadarıyla
-  // karşılanıyor, ama nihai karar sizin girdiğiniz bilgiden değil dış bir
-  // değerlendirmeden çıkıyor (danışmanlık puanlaması, E-TUYS incelemesi vb.).
-  kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "🔵 Koşullu Uygun — Resmi Değerlendirmeye Tabi" },
+  // uygun: programın başvuru şartları, kriterleri ve belgeleri (sorulabilenlerin tamamı) sağlanıyor.
+  // Kurum değerlendirmesi/puanlama başvuru sonrası ayrı bir aşamadır ve bu duruma etki etmez.
+  uygun: { renk: "border-green-300 bg-green-50 text-green-800", etiket: "🟢 Uygun — Başvuru Şartlarını Sağlıyor" },
+  // kismen_uygun: yalnızca programın bazı başvuru şartları bu araçla doğrulanamadığında
+  // (kaynak belge okunamadı vb.) kullanılan istisnai durum — normal akışta üretilmez.
+  kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "🔵 Ek Şartlar Doğrulanamadı" },
   // belirsiz: eksikAlanlar dolu — karar sizin daha fazla bilgi girmenize bağlı.
   belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Bilgi Eksik — Tamamlayın" },
   uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "🔴 İlk Elemede Uygun Değil" },
@@ -201,7 +202,10 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
 // sağlansa bile programın GÜNCEL çağrı/başvuru dönemi kapalıyken "Ön Uygun"/"Koşullu
 // Uygun" gösterip "hemen başvurabilirsiniz" izlenimi vermemek için ayrı bir rozet.
 const CAGRI_KAPALI_STIL = { renk: "border-orange-300 bg-orange-50 text-orange-800", etiket: "🟠 Kriterler Uygun — Çağrı Şu An Kapalı" };
-const kartStili = (s: ProgramSonucu) => (s.cagriKapali ? CAGRI_KAPALI_STIL : DURUM_STIL[s.durum]);
+// Kriterler tam sağlanmıyorsa (bilgi eksik / ek şart doğrulanamadı) "Kriterler Uygun" denmez, yalnızca çağrının kapalı olduğu belirtilir.
+const CAGRI_KAPALI_DIGER_STIL = { renk: CAGRI_KAPALI_STIL.renk, etiket: "🟠 Çağrı Şu An Kapalı" };
+const kartStili = (s: ProgramSonucu) =>
+  s.cagriKapali ? (s.durum === "uygun" ? CAGRI_KAPALI_STIL : CAGRI_KAPALI_DIGER_STIL) : DURUM_STIL[s.durum];
 
 const PUAN_RENK = (puan: number) =>
   puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";
@@ -226,9 +230,9 @@ function DurumGostergesi({ durum, puan }: { durum: SonucDurumu; puan: number }) 
   }
   if (durum === "kismen_uygun") {
     return (
-      <div className="text-center" title="Girdiğiniz bilgilerle nesnel ön kriterlerin tamamı sağlanıyor; nihai karar resmi başvuru veya danışmanlık değerlendirmesine bağlıdır, bu yüzden bir yüzde ile gösterilmiyor.">
+      <div className="text-center" title="Girdiğiniz bilgilerle doğrulanabilen şartlar sağlanıyor; ancak programın bazı başvuru şartları bu araçla doğrulanamadı, bu yüzden net sonuç ve yüzde verilmiyor.">
         <div className="text-2xl leading-none text-blue-600">✓</div>
-        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Kriterler<br />Sağlanıyor</div>
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Kısmen<br />Doğrulandı</div>
       </div>
     );
   }
@@ -411,11 +415,14 @@ export default function DestekUygunlukForm() {
       teydebOnayliProjeSayisi: num("teydebOnayliProjeSayisi"),
       ortakliBasvuruMu: bool("ortakliBasvuruMu"),
       teknogirisimSermayeSirketiMi: bool("teknogirisimSermayeSirketiMi"),
+      teknogirisimDahaOnce1507KullandiMi: bool("teknogirisimDahaOnce1507KullandiMi"),
+      teknogirisim24AyIcindeMi: bool("teknogirisim24AyIcindeMi"),
       argeOncelikliAlanKategorisi: (g.argeOncelikliAlanKategorisi as DestekBasvuruGirdisi["argeOncelikliAlanKategorisi"]) || undefined,
       projeYesilDonusumHedefliMi: bool("projeYesilDonusumHedefliMi"),
       projeEndustriyelOlcekYatirimMi: bool("projeEndustriyelOlcekYatirimMi"),
 
       yuksekVeyaOrtaYuksekTeknolojiUrunMu: bool("yuksekVeyaOrtaYuksekTeknolojiUrunMu"),
+      ek3OzelSartlarSaglaniyorMu: bool("ek3OzelSartlarSaglaniyorMu"),
 
       ihracatTuru: (g.ihracatTuru as DestekBasvuruGirdisi["ihracatTuru"]) || undefined,
       ihracatciBirligiUyesiMi: bool("ihracatciBirligiUyesiMi"),
@@ -425,19 +432,25 @@ export default function DestekUygunlukForm() {
       yurtDisindaReklamTanitimVarMi: bool("yurtDisindaReklamTanitimVarMi"),
       pazaraGirisBelgesiIhtiyaciVarMi: bool("pazaraGirisBelgesiIhtiyaciVarMi"),
       markaTesciliVarMi: bool("markaTesciliVarMi"),
+      kureselTedarikZinciriVarMi: bool("kureselTedarikZinciriVarMi"),
+      eIhracatVarMi: bool("eIhracatVarMi"),
 
       istihdamiKorumaTaahhutEdebilirMi: bool("istihdamiKorumaTaahhutEdebilirMi"),
       referansDonemSigortaliCalisaniVarMi: bool("referansDonemSigortaliCalisaniVarMi"),
       kobiBilgiSistemiKayitGuncelMi: bool("kobiBilgiSistemiKayitGuncelMi"),
       kosgebVadesiGecmisBorcuVarMi: bool("kosgebVadesiGecmisBorcuVarMi"),
+      ocakHaziranBeyannameleriVarMi: bool("ocakHaziranBeyannameleriVarMi"),
 
       ddxRaporuVarMi: bool("ddxRaporuVarMi"),
-      maliKarneVarMi: bool("maliKarneVarMi"),
+      ddxRaporuGecerliMi: bool("ddxRaporuGecerliMi"),
+      ebrdUygunBulunmayanFaaliyetMi: bool("ebrdUygunBulunmayanFaaliyetMi"),
+      dijitalDonusumDahaOnceKullanildiMi: bool("dijitalDonusumDahaOnceKullanildiMi"),
+      planlananDijitalYatirimTutariTl: num("planlananDijitalYatirimTutariTl"),
+      dijitalGiderlerRaporlaUyumluMu: bool("dijitalGiderlerRaporlaUyumluMu"),
       maliYeterlilikSaglaniyorMu: bool("maliYeterlilikSaglaniyorMu"),
       yesilSanayiProjeTemasi: (g.yesilSanayiProjeTemasi as DestekBasvuruGirdisi["yesilSanayiProjeTemasi"]) || undefined,
 
       basvuranYasi: num("basvuranYasi"),
-      tkdkDesteklenenIldeMi: bool("tkdkDesteklenenIldeMi"),
       tkdkSektoru: (g.tkdkSektoru as DestekBasvuruGirdisi["tkdkSektoru"]) || undefined,
       planlananProjeButcesiEuro: num("planlananProjeButcesiEuro"),
 
@@ -446,6 +459,11 @@ export default function DestekUygunlukForm() {
       markaYurtIciTescilVarMi: bool("markaYurtIciTescilVarMi"),
       markaYurtDisiTescilVarMi: bool("markaYurtDisiTescilVarMi"),
       markaYurtDisiTescilYurtIciTescildenOnceMi: bool("markaYurtDisiTescilYurtIciTescildenOnceMi"),
+      turqualityHerYilIhracatYapildiMi: bool("turqualityHerYilIhracatYapildiMi"),
+      markaTescilleriEnAzBirYilOnceMi: bool("markaTescilleriEnAzBirYilOnceMi"),
+      markaTescilOrganikBagliSirketAdinaMi: bool("markaTescilOrganikBagliSirketAdinaMi"),
+      markadaImajaAykiriUnsurVarMi: bool("markadaImajaAykiriUnsurVarMi"),
+      fasil87AkilliCihazUreticisiMi: bool("fasil87AkilliCihazUreticisiMi"),
 
       stratejikUrunBakanlikBasvuruDurumu: (g.stratejikUrunBakanlikBasvuruDurumu as DestekBasvuruGirdisi["stratejikUrunBakanlikBasvuruDurumu"]) || undefined,
       stratejikUrunOncelikliListede: bool("stratejikUrunOncelikliListede"),
@@ -458,6 +476,9 @@ export default function DestekUygunlukForm() {
 
       yondeDahaOnceYararlanildiMi: bool("yondeDahaOnceYararlanildiMi"),
       yondeHizmetTuru: (g.yondeHizmetTuru as DestekBasvuruGirdisi["yondeHizmetTuru"]) || undefined,
+      yondeDanismanYetkiliMi: bool("yondeDanismanYetkiliMi"),
+      yondeGuvenceDenetimiVarMi: bool("yondeGuvenceDenetimiVarMi"),
+      yondeRaporlamaYiliUygunMu: bool("yondeRaporlamaYiliUygunMu"),
 
       argeMerkeziStatusuVarMi: bool("argeMerkeziStatusuVarMi"),
       tamZamanEsdegerArgePersoneliSayisi: num("tamZamanEsdegerArgePersoneliSayisi"),
@@ -605,11 +626,13 @@ export default function DestekUygunlukForm() {
           </h2>
           <div className="mt-3 flex flex-wrap gap-4 text-sm">
             <span className="flex items-center gap-1.5">
-              🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun" && !s.cagriKapali).length}</strong> ön uygun
+              🟢 <strong>{sonuclar.filter((s) => s.durum === "uygun" && !s.cagriKapali).length}</strong> uygun
             </span>
-            <span className="flex items-center gap-1.5">
-              🔵 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun" && !s.cagriKapali).length}</strong> koşullu uygun
-            </span>
+            {sonuclar.some((s) => s.durum === "kismen_uygun" && !s.cagriKapali) && (
+              <span className="flex items-center gap-1.5">
+                🔵 <strong>{sonuclar.filter((s) => s.durum === "kismen_uygun" && !s.cagriKapali).length}</strong> ek şart doğrulanamadı
+              </span>
+            )}
             {sonuclar.some((s) => s.cagriKapali) && (
               <span className="flex items-center gap-1.5">
                 🟠 <strong>{sonuclar.filter((s) => s.cagriKapali).length}</strong> çağrısı şu an kapalı
@@ -748,13 +771,15 @@ export default function DestekUygunlukForm() {
                     <div className="rounded-xl bg-gray-50 p-4 text-sm text-gray-700">
                       <span className="font-bold text-[#071A2F]">Bundan sonra ne yapmalıyım? </span>
                       {s.cagriKapali
-                        ? "Kriterleri sağlıyorsunuz ama programın güncel çağrı/başvuru dönemi şu an kapalı — hemen başvuru yapılamaz. Yeni dönem açıldığında hazır olmak için süreci şimdiden birlikte planlayabiliriz, bizimle görüşün."
+                        ? s.durum === "uygun"
+                          ? "Başvuru şartlarını sağlıyorsunuz ama programın güncel çağrı/başvuru dönemi şu an kapalı — hemen başvuru yapılamaz. Yeni dönem açıldığında hazır olmak için süreci şimdiden birlikte planlayabiliriz, bizimle görüşün."
+                          : "Programın güncel çağrı/başvuru dönemi şu an kapalı — hemen başvuru yapılamaz. Yeni dönem açıldığında hazır olmak ve eksik şartları netleştirmek için bizimle görüşün."
                         : s.durum === "uygun"
-                        ? "Bu program için başvuru sürecini birlikte planlayalım — aşağıdaki İletişime Geç'e tıklayın."
+                        ? "Başvuru şartlarını sağlıyorsunuz. Başvurunun sonucu ilgili kurumun kendi değerlendirmesine bağlıdır; başvuru sürecini ve dosyayı birlikte hazırlamak için aşağıdaki İletişime Geç'e tıklayın."
                         : s.durum === "belirsiz"
                         ? "Yukarıdaki eksik bilgileri tamamlayıp \"Analizi Güncelle\"ye basın; net değilseniz bizimle görüşün."
                         : s.durum === "kismen_uygun"
-                        ? "Girdiğiniz bilgilere göre nesnel ön şartları sağlıyorsunuz; nihai karar resmi başvuru/danışmanlık değerlendirmesiyle netleşir. Süreci birlikte planlamak için bizimle görüşün."
+                        ? "Doğrulanabilen şartları sağlıyorsunuz, ancak bu programın bazı başvuru şartları bu araçla doğrulanamadı (kartta belirtildi). Kalan şartları birlikte netleştirmek için bizimle görüşün."
                         : olumsuz &&
                           "Bu program şu an için uygun görünmüyor; yukarıdaki cevaplardan biri değiştiyse (örn. şimdi bir belgeniz varsa) güncelleyip \"Analizi Güncelle\"ye basabilirsiniz. Diğer sonuçlarınıza ve aşağıdaki danışmanlık alanlarına da göz atabilirsiniz."}
                     </div>
@@ -951,11 +976,6 @@ export default function DestekUygunlukForm() {
                 </p>
               </div>
               <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
-              <EvetHayir
-                etiket="Kırsal kalkınma yatırımı planlıyorsanız: yatırım ili, TKDK'nın desteklenen illeri arasında mı?"
-                deger={g.tkdkDesteklenenIldeMi}
-                onChange={(v) => set("tkdkDesteklenenIldeMi", v)}
-              />
             </div>
           </Bolum>
         </>
@@ -1181,9 +1201,17 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
         <div>
           <KobiOlcegiAlanlari g={g} set={set} />
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
-            <EvetHayir etiket="Dijital dönüşüm/olgunluk değerlendirme raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
-            <EvetHayir etiket="Güncel mali yeterlilik bilginiz (bankaların paylaştığı finansal veri) var mı?" deger={g.maliKarneVarMi} onChange={(v) => set("maliKarneVarMi", v)} />
-            <EvetHayir etiket="Son mali yıl Öz Kaynaklar Toplamınız pozitif mi VE son 3 mali yıldan en az birinde Faaliyet Kârınız pozitif mi?" deger={g.maliYeterlilikSaglaniyorMu} onChange={(v) => set("maliYeterlilikSaglaniyorMu", v)} />
+            <EvetHayir etiket="KOSGEB sisteminde (veri tabanında) kayıtlı ve aktif misiniz?" deger={g.kosgebVeriTabaniKayitliMi} onChange={(v) => set("kosgebVeriTabaniKayitliMi", v)} />
+            <EvetHayir etiket="KOBİ Bilgi Sistemi'ndeki İşletme Beyanınız güncel mi?" deger={g.kobiBilgiSistemiKayitGuncelMi} onChange={(v) => set("kobiBilgiSistemiKayitGuncelMi", v)} />
+            <EvetHayir etiket="Bakanlık Makamı Olur'u ile belirlenen kurumlarca yetkilendirilmiş bir danışmandan alınmış, onaylı dijital dönüşüm/olgunluk değerlendirme raporunuz var mı?" deger={g.ddxRaporuVarMi} onChange={(v) => set("ddxRaporuVarMi", v)} />
+            {g.ddxRaporuVarMi === "evet" && (
+              <EvetHayir etiket="Raporun geçerlilik tarihi/yol haritası süresi içindesiniz mi? (süre belirtilmemişse onay tarihinden itibaren 1 yıl içinde başvurmalısınız)" deger={g.ddxRaporuGecerliMi} onChange={(v) => set("ddxRaporuGecerliMi", v)} />
+            )}
+            <EvetHayir etiket="Son mali yıl Öz Kaynaklar Toplamınız pozitif mi VE son 3 mali yıldan en az birinde Faaliyet Kârınız pozitif mi? (son 3 yılda kurulduysanız onaylı Faaliyet Kârı veya Öz Kaynaklar Toplamı pozitif olmalı)" deger={g.maliYeterlilikSaglaniyorMu} onChange={(v) => set("maliYeterlilikSaglaniyorMu", v)} />
+            <EvetHayir etiket="Ana faaliyetiniz EBRD'nin 'Uygun Bulunmayan Sektör ve Faaliyetler Tablosu'nda yer alıyor mu veya tabloda yasaklanan bir faaliyette bulunuyor musunuz? (örn. silah/mühimmat, tütün, sert alkollü içki, kumar)" deger={g.ebrdUygunBulunmayanFaaliyetMi} onChange={(v) => set("ebrdUygunBulunmayanFaaliyetMi", v)} />
+            <EvetHayir etiket="Bu destek programından (KOBİ Dijital Dönüşüm) daha önce yararlandınız mı? (yalnızca bir kez yararlanılabilir)" deger={g.dijitalDonusumDahaOnceKullanildiMi} onChange={(v) => set("dijitalDonusumDahaOnceKullanildiMi", v)} />
+            <Tutar etiket="Planlanan makine/teçhizat/yazılım/donanım yatırım tutarı (en az 1.000.000 TL, en fazla 20.000.000 TL kredi limiti)" deger={g.planlananDijitalYatirimTutariTl} onChange={(v) => set("planlananDijitalYatirimTutariTl", v)} />
+            <EvetHayir etiket="Alacağınız makine/teçhizat/yazılım/donanım yeni mi ve gider kalemleriniz dijital dönüşüm raporundaki önerilerle uyumlu mu?" deger={g.dijitalGiderlerRaporlaUyumluMu} onChange={(v) => set("dijitalGiderlerRaporlaUyumluMu", v)} />
           </div>
         </div>
       );
@@ -1230,6 +1258,12 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Dijital veya Yeşil Dönüşüm Programı kapsamında mı?" deger={g.dijitalVeyaYesilDonusumMu} onChange={(v) => set("dijitalVeyaYesilDonusumMu", v)} />
           <EvetHayir etiket="Mevcut bir tesisiniz var mı?" deger={g.mevcutTesisVarMi} onChange={(v) => set("mevcutTesisVarMi", v)} />
           <EvetHayir etiket="Yüksek veya orta-yüksek teknolojili ürün üretimi mi?" deger={g.yuksekVeyaOrtaYuksekTeknolojiUrunMu} onChange={(v) => set("yuksekVeyaOrtaYuksekTeknolojiUrunMu", v)} />
+          <div>
+            <EvetHayir etiket="Yatırım konunuz için EK-3'teki özel şartları (asgari kapasite, m², oda sayısı vb.) sağlıyor musunuz?" deger={g.ek3OzelSartlarSaglaniyorMu} onChange={(v) => set("ek3OzelSartlarSaglaniyorMu", v)} />
+            <p className="mt-1.5 text-xs text-gray-500">
+              Bilmiyorsanız boş bırakın; sonuç &quot;bilgi eksik&quot; kalır ve bir teşvik danışmanıyla netleştirilir.
+            </p>
+          </div>
         </div>
       );
     }
@@ -1242,6 +1276,14 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
             ℹ️ Aşağıdaki sorular (üretim yatırımı sorusu hariç) aynı Ar-Ge projenizle ilgili olduğu için TÜBİTAK
             1501, 1507 ve 1832 kartları arasında ortaktır — birinde verdiğiniz cevap diğerlerinde de görünür.
           </p>
+          {programId === "tubitak-1501" && (
+            <div className="mb-5">
+              <p className="mb-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-900">
+                ⚠️ 1501 genel çağrıları yalnızca KOBİ ölçeğindeki sermaye şirketlerine açıktır; ölçeğiniz aşağıdaki bilgilerle hesaplanır.
+              </p>
+              <KobiOlcegiAlanlari g={g} set={set} />
+            </div>
+          )}
           <div className="grid gap-5 sm:grid-cols-2">
             <Secim etiket="Proje niteliği" deger={g.projeNiteligi} onChange={(v) => set("projeNiteligi", v)} secenekler={PROJE_NITELIGI_SECENEKLERI} />
             {programId === "tubitak-1832" ? (
@@ -1271,6 +1313,12 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
                 <Sayi etiket="TEYDEB'de destek kararı verilmiş (onaylı) proje sayısı" deger={g.teydebOnayliProjeSayisi} onChange={(v) => set("teydebOnayliProjeSayisi", v)} />
                 <EvetHayir etiket="Ortaklı bir başvuru mu?" deger={g.ortakliBasvuruMu} onChange={(v) => set("ortakliBasvuruMu", v)} />
                 <EvetHayir etiket="Teknogirişim sermaye şirketi mi?" deger={g.teknogirisimSermayeSirketiMi} onChange={(v) => set("teknogirisimSermayeSirketiMi", v)} />
+                {g.teknogirisimSermayeSirketiMi === "evet" && (
+                  <>
+                    <EvetHayir etiket="Teknogirişim şirketi olarak 1507'den daha önce destek aldınız mı? (yalnızca bir kez alınabilir)" deger={g.teknogirisimDahaOnce1507KullandiMi} onChange={(v) => set("teknogirisimDahaOnce1507KullandiMi", v)} />
+                    <EvetHayir etiket="Teknogirişim desteğinizin tamamlandığı tarihten bu yana 24 ay geçmedi mi? (başvuru bu süre içinde yapılmalı)" deger={g.teknogirisim24AyIcindeMi} onChange={(v) => set("teknogirisim24AyIcindeMi", v)} />
+                  </>
+                )}
               </div>
             </>
           )}
@@ -1311,11 +1359,16 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
     case "turquality-marka-destek":
       return (
         <div className="grid gap-5 sm:grid-cols-2">
-          <Tutar etiket="Son 3 yıl ortalama ihracat" deger={g.turqualitySon3YilOrtalamaIhracatUsd} onChange={(v) => set("turqualitySon3YilOrtalamaIhracatUsd", v)} birim="$" />
+          <Tutar etiket="Son 3 takvim yılı ortalama ihracat (en az 3.000.000 $)" deger={g.turqualitySon3YilOrtalamaIhracatUsd} onChange={(v) => set("turqualitySon3YilOrtalamaIhracatUsd", v)} birim="$" />
           <Tutar etiket="Son 1 yıl ihracat (10M$ istisnası için, opsiyonel)" deger={g.turqualitySon1YilIhracatUsd} onChange={(v) => set("turqualitySon1YilIhracatUsd", v)} birim="$" />
-          <EvetHayir etiket="Markanın yurt içi tescili var mı? (en az 1 yıl önce)" deger={g.markaYurtIciTescilVarMi} onChange={(v) => set("markaYurtIciTescilVarMi", v)} />
-          <EvetHayir etiket="Markanın Madrid Protokolü ülkesinde yurt dışı tescili var mı?" deger={g.markaYurtDisiTescilVarMi} onChange={(v) => set("markaYurtDisiTescilVarMi", v)} />
-          <EvetHayir etiket="Yurt dışı tescil, yurt içi tescilden önce mi yapıldı?" deger={g.markaYurtDisiTescilYurtIciTescildenOnceMi} onChange={(v) => set("markaYurtDisiTescilYurtIciTescildenOnceMi", v)} />
+          <EvetHayir etiket="Son 3 takvim yılının her birinde ihracat yaptınız mı?" deger={g.turqualityHerYilIhracatYapildiMi} onChange={(v) => set("turqualityHerYilIhracatYapildiMi", v)} />
+          <EvetHayir etiket="87. fasılda bağlantılı/otonom/paylaşımlı/elektrikli akıllı cihaz üretimi yapıyor musunuz? (ihracat tutarı eşiğini kaldıran istisna)" deger={g.fasil87AkilliCihazUreticisiMi} onChange={(v) => set("fasil87AkilliCihazUreticisiMi", v)} />
+          <EvetHayir etiket="Markanın Türkiye'de tescili var mı?" deger={g.markaYurtIciTescilVarMi} onChange={(v) => set("markaYurtIciTescilVarMi", v)} />
+          <EvetHayir etiket="Markanın Madrid Protokolü'ne taraf bir ülkede yurt dışı tescili var mı?" deger={g.markaYurtDisiTescilVarMi} onChange={(v) => set("markaYurtDisiTescilVarMi", v)} />
+          <EvetHayir etiket="Yurt içi ve yurt dışı tescillerin ikisi de başvuru tarihinden en az 1 yıl önce mi alındı? (son 1 yılda 10M$ ihracat istisnasında aranmaz)" deger={g.markaTescilleriEnAzBirYilOnceMi} onChange={(v) => set("markaTescilleriEnAzBirYilOnceMi", v)} />
+          <EvetHayir etiket="Yurt dışı tescil başvurusu, yurt içi tescil başvurusundan önce mi yapıldı? (aynı gün sorun değil)" deger={g.markaYurtDisiTescilYurtIciTescildenOnceMi} onChange={(v) => set("markaYurtDisiTescilYurtIciTescildenOnceMi", v)} />
+          <EvetHayir etiket="Her iki tescil de şirketiniz, organik bağlı bir yurt içi şirketiniz veya aynı holding/şirketler topluluğu (ya da holding şirketi) adına mı?" deger={g.markaTescilOrganikBagliSirketAdinaMi} onChange={(v) => set("markaTescilOrganikBagliSirketAdinaMi", v)} />
+          <EvetHayir etiket="Markada Türk malı imajına aykırı bir ifade/sembol veya bir ülke, şehir, bölge ismi var mı?" deger={g.markadaImajaAykiriUnsurVarMi} onChange={(v) => set("markadaImajaAykiriUnsurVarMi", v)} />
         </div>
       );
     case "tkdk-ipard":
@@ -1350,8 +1403,27 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
     case "kosgeb-yonde":
       return (
         <div className="grid gap-5 sm:grid-cols-2">
+          <div className="sm:col-span-2">
+            <KobiOlcegiAlanlari g={g} set={set} />
+          </div>
+          <EvetHayir etiket="KOSGEB sisteminde (veri tabanında) kayıtlı ve aktif misiniz?" deger={g.kosgebVeriTabaniKayitliMi} onChange={(v) => set("kosgebVeriTabaniKayitliMi", v)} />
+          <EvetHayir etiket="KOBİ Bilgi Sistemi'ndeki İşletme Beyanınız güncel mi?" deger={g.kobiBilgiSistemiKayitGuncelMi} onChange={(v) => set("kobiBilgiSistemiKayitGuncelMi", v)} />
           <Secim etiket="Hangi YÖNDE hizmetinden yararlanmak istiyorsunuz?" deger={g.yondeHizmetTuru} onChange={(v) => set("yondeHizmetTuru", v)} secenekler={YONDE_HIZMET_SECENEKLERI} />
-          <EvetHayir etiket="Bu programdan daha önce yararlandınız mı?" deger={g.yondeDahaOnceYararlanildiMi} onChange={(v) => set("yondeDahaOnceYararlanildiMi", v)} />
+          <EvetHayir etiket="Bu programdan daha önce yararlandınız mı? (işletme programdan yalnızca bir kez yararlanabilir)" deger={g.yondeDahaOnceYararlanildiMi} onChange={(v) => set("yondeDahaOnceYararlanildiMi", v)} />
+          {(g.yondeHizmetTuru === "dijital_donusum_yol_haritasi" || g.yondeHizmetTuru === "birden_fazla") && (
+            <EvetHayir etiket="Dijital dönüşüm danışmanınız TÜSSDE tarafından belgelendirilmiş mi?" deger={g.yondeDanismanYetkiliMi} onChange={(v) => set("yondeDanismanYetkiliMi", v)} />
+          )}
+          {g.yondeHizmetTuru === "yoda_analizi" && (
+            <EvetHayir etiket="YODA danışmanınız Bakanlıkça bildirilen yalın dönüşüm danışmanlarından biri mi?" deger={g.yondeDanismanYetkiliMi} onChange={(v) => set("yondeDanismanYetkiliMi", v)} />
+          )}
+          {(g.yondeHizmetTuru === "surdurulebilirlik_raporlamasi" || g.yondeHizmetTuru === "birden_fazla") && (
+            <>
+              <EvetHayir etiket="Sürdürülebilirlik raporunuz TSRS'ye uygun mu ve güvence denetimini KGK yetkili bir bağımsız denetim kuruluşu yaptı/yapacak mı?" deger={g.yondeGuvenceDenetimiVarMi} onChange={(v) => set("yondeGuvenceDenetimiVarMi", v)} />
+              {g.yondeHizmetTuru === "surdurulebilirlik_raporlamasi" && (
+                <EvetHayir etiket="Raporlamaya esas yıl, program başlangıcından en fazla 1 yıl öncesine mi ait?" deger={g.yondeRaporlamaYiliUygunMu} onChange={(v) => set("yondeRaporlamaYiliUygunMu", v)} />
+              )}
+            </>
+          )}
         </div>
       );
     case "istihdami-koruma-destek-programi":
@@ -1361,6 +1433,7 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Ocak-Haziran 2026 ortalama prim gün sayınızı Temmuz-Aralık 2026'da (en az 6 ay) koruyabilir misiniz?" deger={g.istihdamiKorumaTaahhutEdebilirMi} onChange={(v) => set("istihdamiKorumaTaahhutEdebilirMi", v)} />
           <EvetHayir etiket="KOBİ Bilgi Sistemi kaydınız ve beyannameniz güncel mi?" deger={g.kobiBilgiSistemiKayitGuncelMi} onChange={(v) => set("kobiBilgiSistemiKayitGuncelMi", v)} />
           <EvetHayir etiket="KOSGEB'e vadesi geçmiş (yapılandırılmamış) bir borcunuz var mı?" deger={g.kosgebVadesiGecmisBorcuVarMi} onChange={(v) => set("kosgebVadesiGecmisBorcuVarMi", v)} />
+          <EvetHayir etiket="2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannameleriniz mevcut mu?" deger={g.ocakHaziranBeyannameleriVarMi} onChange={(v) => set("ocakHaziranBeyannameleriVarMi", v)} />
         </div>
       );
     case "arge-merkezi-statusu":

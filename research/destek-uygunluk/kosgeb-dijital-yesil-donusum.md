@@ -1,3 +1,9 @@
+# DÜZELTME (2026-10-08): KOBİ Dijital Dönüşüm Yönergesi Rev.05 ve Başvuru Kontrol Tablosu
+
+Başvuru sürekli açık (çağrı yok). Kontrol Tablosu ret sebepleri: ölçek (mikro hariç), NACE C, rapor geçerlilik süresi, öz kaynak/faaliyet kârı, EBRD uygun bulunmayan faaliyet. Başvurucudan 'mali karne' belgesi istenmiyor (finansal yeterlilik bankalar üzerinden Kurul'ca değerlendirilir); koddaki mali karne gate'i kaldırıldı. Ek şartlar: sistemde kayıtlı/aktif ve güncel İşletme Beyanı (7/1-2), bir kez yararlanma (5/3), desteklemeye esas tutar ≥1.000.000 TL (7/8), yeni ekipman ve rapor önerileriyle uyumlu gider kalemleri (5/2, 12/7). Ayrıntı: kriter-denetimi-2026-10-08.md
+
+---
+
 # KOSGEB Dijital Dönüşüm Destek Programı (evaluator kaynağı)
 
 ## DÜZELTME (2026-09-18) — Rev.05 Yönerge ile birincil kaynaktan tam teyit edildi

@@ -1,3 +1,9 @@
+# DÜZELTME (2026-10-08): 1501 genel çağrıları yalnızca KOBİ'lere açık
+
+Aşağıdaki "KOBİ zorunluluğu YOKTUR" ifadesi güncel çağrıyla çelişiyor. TÜBİTAK 2026-2 çağrı duyurusu (20 Temmuz 2026) "KOBİ ölçeğindeki kuruluşların başvuru yapabilecekleri" diyor; TÜBİTAK'ın 16/04/2019 duyurusu da 1 Temmuz 2019'dan itibaren büyük ölçekli kuruluşları genel 1501 çağrılarından çıkarmıştı (öncelikli alan çağrılarına yönlendirildi). Destek oranı: ilk 5 projede %75, 6. projeden itibaren %60; proje başına TÜBİTAK katkısı 20 milyon TL. Kod buna göre güncellendi. Ayrıntı: kriter-denetimi-2026-10-08.md
+
+---
+
 # TÜBİTAK 1501 - Sanayi Ar-Ge Projeleri Destekleme Programı
 
 ## DÜZELTME (2026-09-17) — üretim/tesis yatırımı kriteri, birincil kaynakla teyit edildi
