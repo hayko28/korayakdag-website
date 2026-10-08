@@ -69,14 +69,12 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(kosgebKureselRekabetcilikDegerlendir(girdi));
   }
   if (girdi.argeDurumu !== "yok") {
+    taslaklar.push(tubitak1501Degerlendir(girdi));
     taslaklar.push(tubitak1507Degerlendir(girdi));
     taslaklar.push(tubitak1707Degerlendir(girdi));
     taslaklar.push(argeMerkeziStatusuDegerlendir(girdi));
     taslaklar.push(tasarimMerkeziStatusuDegerlendir(girdi));
     taslaklar.push(teknoparkStatusuDegerlendir(girdi));
-  }
-  if (girdi.argeDurumu === "var_kucuk" || girdi.argeDurumu === "var_kurumsal") {
-    taslaklar.push(tubitak1501Degerlendir(girdi));
   }
   if (girdi.donusumDurumu !== "yok") {
     taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
