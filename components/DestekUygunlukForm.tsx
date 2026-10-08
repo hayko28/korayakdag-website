@@ -88,6 +88,16 @@ const ARGE_DURUMU_SECENEKLERI = [
   { value: "var_kurumsal", label: "Var, kurumsallaşmış (Ar-Ge Merkezi vb.)" },
 ];
 
+const SONUC_GRUPLARI: { ad: string; idler: string[] }[] = [
+  { ad: "KOSGEB Destekleri", idler: ["kosgeb-is-gelistirme", "kosgeb-kapasite-gelistirme", "kosgeb-kuresel-rekabetcilik", "kosgeb-dijital-donusum", "kosgeb-yesil-sanayi", "kosgeb-yonde", "kosgeb-stratejik-urun", "kosgeb-tekmer", "istihdami-koruma-destek-programi"] },
+  { ad: "TÜBİTAK Destekleri", idler: ["tubitak-1501", "tubitak-1507", "tubitak-1707", "tubitak-1812", "tubitak-1831", "tubitak-1832"] },
+  { ad: "Sanayi ve Teknoloji Bakanlığı", idler: ["yatirim-tesvik-belgesi", "arge-merkezi-statusu", "tasarim-merkezi-statusu", "teknopark-statusu"] },
+  { ad: "Ticaret Bakanlığı Destekleri", idler: ["ticaret-bakanligi-ihracat-destekleri", "turquality-marka-destek"] },
+  { ad: "Tarım ve Orman Bakanlığı (TKDK)", idler: ["tkdk-ipard"] },
+];
+const DIGER_GRUP = "Diğer Destekler";
+const grupAdiBul = (programId: string) => SONUC_GRUPLARI.find((g) => g.idler.includes(programId))?.ad ?? DIGER_GRUP;
+
 const IHRACAT_DURUMU_SECENEKLERI = [
   { value: "yok", label: "Yok" },
   { value: "planliyorum", label: "Yok ama planlıyorum" },
@@ -302,6 +312,7 @@ export default function DestekUygunlukForm() {
   const [submitting, setSubmitting] = useState(false);
   const [sonuclar, setSonuclar] = useState<ProgramSonucu[] | null>(null);
   const siraRef = useRef<Map<string, number>>(new Map());
+  const grupSiraRef = useRef<string[]>([]);
   const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hizmetOnerileri, setHizmetOnerileri] = useState<HizmetOnerisi[]>([]);
@@ -562,6 +573,21 @@ export default function DestekUygunlukForm() {
       const sira = siraRef.current;
       yeni.forEach((x) => { if (!sira.has(x.programId)) sira.set(x.programId, sira.size); });
       yeni = [...yeni].sort((a, b) => (sira.get(a.programId) ?? 0) - (sira.get(b.programId) ?? 0));
+      // Grup sırası yalnızca ilk analizde belirlenir: "uygun değil" ağırlıklı gruplar altta, sonra sabit kalır.
+      if (grupSiraRef.current.length === 0) {
+        const ozet = new Map<string, { n: number; red: number; ok: number }>();
+        yeni.forEach((x) => {
+          const a = grupAdiBul(x.programId);
+          const o = ozet.get(a) ?? { n: 0, red: 0, ok: 0 };
+          o.n++;
+          if (x.durum === "uygun_degil") o.red++;
+          if (x.durum === "uygun" && !x.cagriKapali) o.ok++;
+          ozet.set(a, o);
+        });
+        grupSiraRef.current = [...ozet.entries()]
+          .sort((a, b) => a[1].red / a[1].n - b[1].red / b[1].n || b[1].ok - a[1].ok)
+          .map(([ad]) => ad);
+      }
       setSonuclar(yeni);
       setKatalogOnerileri(data.katalogOnerileri ?? []);
       setHizmetOnerileri(data.hizmetOnerileri ?? []);
@@ -593,7 +619,8 @@ export default function DestekUygunlukForm() {
     if (yeniSonuclar) {
       if (ilkKezMi) {
         trackEvent("generate_lead", { method: "destek_uygunluk" });
-        setAcikSonuclar(new Set(yeniSonuclar.slice(0, 1).map((s) => s.programId)));
+        const ilk = yeniSonuclar.find((x) => grupAdiBul(x.programId) === grupSiraRef.current[0]) ?? yeniSonuclar[0];
+        setAcikSonuclar(new Set(ilk ? [ilk.programId] : []));
       }
       setDuzenleModuAcik(false);
       window.scrollTo({ top: document.getElementById("sonuclar")?.offsetTop ?? 0, behavior: "smooth" });
@@ -625,8 +652,11 @@ export default function DestekUygunlukForm() {
   };
 
   if (sonuclar && !duzenleModuAcik) {
+    const gruplar = [...new Set([...grupSiraRef.current, ...sonuclar.map((x) => grupAdiBul(x.programId))])]
+      .map((ad) => ({ ad, items: sonuclar.filter((x) => grupAdiBul(x.programId) === ad) }))
+      .filter((x) => x.items.length > 0);
     return (
-      <div id="sonuclar" className="space-y-6">
+      <div id="sonuclar" className="space-y-5">
         <AdimGostergesi aktifAdim={aktifAdim} />
         <div className="rounded-2xl border border-amber-300 bg-amber-50 p-5 text-sm text-amber-900">
           Bu sonuçlar, girdiğiniz bilgilere dayalı bir <strong>ön değerlendirmedir</strong>, başvurunuzun kabul
@@ -662,10 +692,23 @@ export default function DestekUygunlukForm() {
               🔴 <strong>{sonuclar.filter((s) => s.durum === "uygun_degil").length}</strong> ilk elemede uygun değil
             </span>
           </div>
-          <p className="mt-3 text-sm text-gray-500">Eşleşmeye göre sıralandı — detay kriterleri görmek için bir karta tıklayın.</p>
+          <p className="mt-3 text-sm text-gray-500">Kurumlara göre gruplandı — detay kriterleri görmek için bir karta tıklayın.</p>
         </div>
 
-        {sonuclar.map((s) => {
+        {gruplar.map((grup) => (
+          <section key={grup.ad} className="space-y-3">
+            <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-gray-200 pb-1.5">
+              <h2 className="text-base font-bold text-[#071A2F]">{grup.ad}</h2>
+              <span className="text-xs text-gray-500">
+                {[
+                  [grup.items.filter((x) => x.durum === "uygun" && !x.cagriKapali).length, "uygun"],
+                  [grup.items.filter((x) => x.durum === "belirsiz" || x.durum === "kismen_uygun").length, "bilgi eksik"],
+                  [grup.items.filter((x) => x.cagriKapali).length, "çağrı kapalı"],
+                  [grup.items.filter((x) => x.durum === "uygun_degil").length, "uygun değil"],
+                ].filter(([n]) => (n as number) > 0).map(([n, e]) => `${n} ${e}`).join(" · ")}
+              </span>
+            </div>
+        {(grup.items).map((s) => {
           const acik = acikSonuclar.has(s.programId);
           const stil = kartStili(s);
           return (
@@ -673,13 +716,13 @@ export default function DestekUygunlukForm() {
               <button
                 type="button"
                 onClick={() => sonucAcKapa(s.programId)}
-                className="flex w-full flex-wrap items-center justify-between gap-3 p-6 text-left"
+                className="flex w-full flex-wrap items-center justify-between gap-2 p-4 text-left"
                 aria-expanded={acik}
               >
                 <div className="min-w-0">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
-                    <h3 className="text-lg font-bold text-[#071A2F]">{s.programAdi}</h3>
-                    <span className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide ${stil.renk}`}>
+                    <h3 className="text-base font-bold text-[#071A2F]">{s.programAdi}</h3>
+                    <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide ${stil.renk}`}>
                       {stil.etiket}
                     </span>
                     {s.sonBasvuruTarihi && (
@@ -688,7 +731,7 @@ export default function DestekUygunlukForm() {
                       </span>
                     )}
                   </div>
-                  <p className="text-sm text-gray-600">{s.kurum} — {s.ozet}</p>
+                  <p className="text-xs text-gray-600">{s.kurum} — {s.ozet}</p>
                 </div>
                 <div className="flex flex-shrink-0 items-center gap-3">
                   <DurumGostergesi durum={s.durum} puan={s.puan} />
@@ -833,6 +876,8 @@ export default function DestekUygunlukForm() {
             </div>
           );
         })}
+          </section>
+        ))}
         {hizmetOnerileri.length > 0 && (
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
             <p className="mb-1 text-xs font-bold uppercase tracking-wide text-orange-500">💼 Hizmetler</p>
