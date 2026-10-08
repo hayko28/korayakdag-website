@@ -435,7 +435,6 @@ export default function DestekUygunlukForm() {
       projeEndustriyelOlcekYatirimMi: bool("projeEndustriyelOlcekYatirimMi"),
 
       yuksekVeyaOrtaYuksekTeknolojiUrunMu: bool("yuksekVeyaOrtaYuksekTeknolojiUrunMu"),
-      ek3OzelSartlarSaglaniyorMu: bool("ek3OzelSartlarSaglaniyorMu"),
 
       ihracatTuru: (g.ihracatTuru as DestekBasvuruGirdisi["ihracatTuru"]) || undefined,
       ihracatciBirligiUyesiMi: bool("ihracatciBirligiUyesiMi"),
@@ -1313,12 +1312,6 @@ function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; s
           <EvetHayir etiket="Dijital veya Yeşil Dönüşüm Programı kapsamında mı?" deger={g.dijitalVeyaYesilDonusumMu} onChange={(v) => set("dijitalVeyaYesilDonusumMu", v)} />
           <EvetHayir etiket="Mevcut bir tesisiniz var mı?" deger={g.mevcutTesisVarMi} onChange={(v) => set("mevcutTesisVarMi", v)} />
           <EvetHayir etiket="Yüksek veya orta-yüksek teknolojili ürün üretimi mi?" deger={g.yuksekVeyaOrtaYuksekTeknolojiUrunMu} onChange={(v) => set("yuksekVeyaOrtaYuksekTeknolojiUrunMu", v)} />
-          <div>
-            <EvetHayir etiket="Yatırım konunuz için EK-3'teki özel şartları (asgari kapasite, m², oda sayısı vb.) sağlıyor musunuz?" deger={g.ek3OzelSartlarSaglaniyorMu} onChange={(v) => set("ek3OzelSartlarSaglaniyorMu", v)} />
-            <p className="mt-1.5 text-xs text-gray-500">
-              Bilmiyorsanız boş bırakın; sonuç &quot;bilgi eksik&quot; kalır ve bir teşvik danışmanıyla netleştirilir.
-            </p>
-          </div>
         </div>
       );
     }

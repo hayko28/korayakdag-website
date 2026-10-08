@@ -326,12 +326,9 @@ export function yatirimTesvikBelgesiDegerlendir(g: DestekBasvuruGirdisi): Progra
 
   // EK-3'teki satır bazlı özel şartlar (asgari kapasite, m², oda sayısı vb.) yatırım konusuna
   // göre değişir; bu bir başvuru şartıdır, sağlanmıyorsa belge verilmez.
-  if (g.ek3OzelSartlarSaglaniyorMu === false) {
-    gerekceler.push("Yatırım konusu için EK-3'te belirtilen özel şartlar (asgari kapasite, m², oda sayısı vb.) sağlanmıyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "EK-3 özel şartları sağlanmıyor.", gerekceler, uyarilar);
-  }
-  if (g.ek3OzelSartlarSaglaniyorMu === undefined) eksikAlanlar.push("yatırım konusu için EK-3'teki özel şartların (asgari kapasite vb.) sağlanıp sağlanmadığı");
-  else gerekceler.push("Yatırım konusu için EK-3'teki özel şartların sağlandığı belirtilmiş.");
+  // EK-3 özel şartları (asgari kapasite, m², oda sayısı vb.) yatırım konusuna göre değişir ve müşteri
+  // tarafından cevaplanamaz; soru yerine başvuru öncesi danışmanla teyit edilecek uyarı olarak tutulur.
+  uyarilar.push("Yatırım konunuz için EK-3'te asgari kapasite, metrekare, oda sayısı gibi özel şartlar olabilir; sağlanmıyorsa belge verilmez. Bu şartlar yatırım konusuna göre değiştiği için başvuru öncesi danışmanla teyit edilmelidir.");
 
   if (eksikAlanlar.length > 0) {
     return sonuc(
