@@ -65,7 +65,9 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(tubitak1812Degerlendir(girdi));
     taslaklar.push(kosgebTekmerDegerlendir(girdi));
   }
-  if (girdi.yeniGirisimciMi !== true) {
+  // İmalat dışı işletmeler için Kapasite Geliştirme (NACE C), Küresel Rekabetçilik (orta-yüksek/yüksek
+  // teknoloji ürün + Sanayi Sicil) ve Dijital Dönüşüm (NACE C) listeye hiç girmez; kırmızı kart olarak gösterilmez.
+  if (girdi.yeniGirisimciMi !== true && girdi.imalatciMi !== false) {
     taslaklar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
     taslaklar.push(kosgebKureselRekabetcilikDegerlendir(girdi));
   }
@@ -78,7 +80,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
     taslaklar.push(teknoparkStatusuDegerlendir(girdi));
   }
   if (girdi.donusumDurumu !== "yok") {
-    taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
+    if (girdi.imalatciMi !== false) taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
     taslaklar.push(kosgebYesilSanayiDegerlendir(girdi));
     taslaklar.push(tubitak1832Degerlendir(girdi));
     taslaklar.push(tubitak1831Degerlendir(girdi));
@@ -86,7 +88,7 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
   taslaklar.push(kosgebYapayZekaKrediDegerlendir(girdi));
   if (girdi.yatirimPlanlaniyorMu !== false) {
     taslaklar.push(yatirimTesvikBelgesiDegerlendir(girdi));
-    taslaklar.push(kosgebStratejikUrunDegerlendir(girdi));
+    if (girdi.imalatciMi !== false) taslaklar.push(kosgebStratejikUrunDegerlendir(girdi));
   }
   if (girdi.imalatciMi !== false) {
     taslaklar.push(kosgebYondeDegerlendir(girdi));
