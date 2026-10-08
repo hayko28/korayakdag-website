@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
 import type { DestekBasvuruGirdisi, KatalogEslesme, ProgramSonucu, SonucDurumu } from "@/lib/destek-uygunluk/types";
 import { YATIRIM_TESVIK_ILLER, ilinBolgesi, yatirimAsgariTutarTl } from "@/lib/destek-uygunluk/yardimcilar";
@@ -301,6 +301,7 @@ export default function DestekUygunlukForm() {
   const [g, setG] = useState<Girdi>({});
   const [submitting, setSubmitting] = useState(false);
   const [sonuclar, setSonuclar] = useState<ProgramSonucu[] | null>(null);
+  const siraRef = useRef<Map<string, number>>(new Map());
   const [duzenleModuAcik, setDuzenleModuAcik] = useState(false);
   const [katalogOnerileri, setKatalogOnerileri] = useState<KatalogEslesme[]>([]);
   const [hizmetOnerileri, setHizmetOnerileri] = useState<HizmetOnerisi[]>([]);
@@ -557,10 +558,10 @@ export default function DestekUygunlukForm() {
       if (!res.ok) throw new Error(data.error || "Analiz tamamlanamadı.");
       // Güncellemede kartlar yerinde kalsın: önceki sıra korunur (yalnızca ilk analizde API sırası).
       let yeni = data.sonuclar as ProgramSonucu[];
-      if (sonuclar) {
-        const sira = new Map(sonuclar.map((x, i) => [x.programId, i]));
-        yeni = [...yeni].sort((a, b) => (sira.get(a.programId) ?? 999) - (sira.get(b.programId) ?? 999));
-      }
+      // Gördüğümüz her programın ilk sırası ref'te tutulur; program bir süre listeden çıkıp geri gelse bile yerinde kalır.
+      const sira = siraRef.current;
+      yeni.forEach((x) => { if (!sira.has(x.programId)) sira.set(x.programId, sira.size); });
+      yeni = [...yeni].sort((a, b) => (sira.get(a.programId) ?? 0) - (sira.get(b.programId) ?? 0));
       setSonuclar(yeni);
       setKatalogOnerileri(data.katalogOnerileri ?? []);
       setHizmetOnerileri(data.hizmetOnerileri ?? []);
