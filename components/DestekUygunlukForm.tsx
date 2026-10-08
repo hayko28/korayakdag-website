@@ -1193,7 +1193,28 @@ function KobiOlcegiAlanlari({ g, set }: { g: Girdi; set: (k: string, v: string) 
   );
 }
 
+// Kartın kuralları şirket türü / KOBİ ölçeğine bakıyor ama kendi sorularında bu alanlar yoksa
+// (ilk adımda boş geçildiyse) eksik kalıp kartı sonsuza kadar sarı bırakıyordu; burada tamamlatılır.
+const SIRKET_TURU_ISTEYEN_PROGRAMLAR = ["kosgeb-kapasite-gelistirme", "kosgeb-kuresel-rekabetcilik", "kosgeb-stratejik-urun", "tubitak-1501", "tubitak-1507", "tubitak-1707", "tubitak-1831", "tubitak-1832"];
+const OLCEK_ISTEYEN_PROGRAMLAR = ["istihdami-koruma-destek-programi", "kosgeb-stratejik-urun", "kosgeb-yapay-zeka-kredi", "kosgeb-kuresel-rekabetcilik", "tubitak-1507", "tubitak-1707", "tubitak-1831"];
+
 function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; set: (k: string, v: string) => void }) {
+  const turEksik = !g.sirketTuru && SIRKET_TURU_ISTEYEN_PROGRAMLAR.includes(programId);
+  const olcekEksik = (!g.calisanSayisi || !(g.yillikNetSatisHasilatiTl || g.maliBilancoTl)) && OLCEK_ISTEYEN_PROGRAMLAR.includes(programId);
+  return (
+    <>
+      {(turEksik || olcekEksik) && (
+        <div className="mb-5 space-y-5">
+          {turEksik && <Secim etiket="Şirket Türü" deger={g.sirketTuru} onChange={(v) => set("sirketTuru", v)} secenekler={SIRKET_TURU_SECENEKLERI} />}
+          {olcekEksik && <KobiOlcegiAlanlari g={g} set={set} />}
+        </div>
+      )}
+      <ProgramSorulariIc programId={programId} g={g} set={set} />
+    </>
+  );
+}
+
+function ProgramSorulariIc({ programId, g, set }: { programId: string; g: Girdi; set: (k: string, v: string) => void }) {
   switch (programId) {
     case "kosgeb-is-gelistirme":
       return (
