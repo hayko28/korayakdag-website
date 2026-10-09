@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-isletme-karnesi-banka-gorusmesi",
+    title: "Bankaya Gitmeden Önce Şirketinizin Karnesini Siz Görün",
+    excerpt:
+      "KOSGEB, Gelir İdaresi, SGK, Ticaret Bakanlığı ve TÜRKPATENT kayıtlarından ürettiği İşletme Değerlendirme Raporu'nu 2021-2025 verileriyle güncelledi. Bir şirketin satış, istihdam, Ar-Ge ve ihracat başlıklarında sektör ortalamasına göre nerede durduğunu gösteren bu resmi karne, banka ya da yatırımcı masasına oturmadan önce 120 TL'ye görülebiliyor.",
+    tag: "Kurumsal Gelişim",
+    date: "9 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "butce-toplantisinda-konusulmayan-soru",
     title: "Bütçe Toplantısında Hiç Sorulmayan Tek Soru",
     excerpt:
