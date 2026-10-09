@@ -204,16 +204,16 @@ const DURUM_STIL: Record<SonucDurumu, { renk: string; etiket: string }> = {
   // (kaynak belge okunamadı vb.) kullanılan istisnai durum — normal akışta üretilmez.
   kismen_uygun: { renk: "border-blue-300 bg-blue-50 text-blue-800", etiket: "🔵 Ek Şartlar Doğrulanamadı" },
   // belirsiz: eksikAlanlar dolu — karar sizin daha fazla bilgi girmenize bağlı.
-  belirsiz: { renk: "border-amber-300 bg-amber-50 text-amber-800", etiket: "🟡 Bilgi Eksik — Tamamlayın" },
+  belirsiz: { renk: "border-yellow-400 bg-yellow-100 text-yellow-900", etiket: "🟡 Bilgi Eksik — Tamamlayın" },
   uygun_degil: { renk: "border-red-300 bg-red-50 text-red-800", etiket: "🔴 İlk Elemede Uygun Değil" },
 };
 
 // cagriKapali === true olan programlar için durum rengini/etiketini ezer — kriterler
 // sağlansa bile programın GÜNCEL çağrı/başvuru dönemi kapalıyken "Ön Uygun"/"Koşullu
 // Uygun" gösterip "hemen başvurabilirsiniz" izlenimi vermemek için ayrı bir rozet.
-const CAGRI_KAPALI_STIL = { renk: "border-orange-300 bg-orange-50 text-orange-800", etiket: "🟠 Kriterler Uygun — Çağrı Şu An Kapalı" };
+const CAGRI_KAPALI_STIL = { renk: "border-gray-300 bg-gray-100 text-gray-600", etiket: "🔒 Kriterler Uygun — Çağrı Şu An Kapalı" };
 // Kriterler tam sağlanmıyorsa (bilgi eksik / ek şart doğrulanamadı) "Kriterler Uygun" denmez, yalnızca çağrının kapalı olduğu belirtilir.
-const CAGRI_KAPALI_DIGER_STIL = { renk: CAGRI_KAPALI_STIL.renk, etiket: "🟠 Çağrı Şu An Kapalı" };
+const CAGRI_KAPALI_DIGER_STIL = { renk: CAGRI_KAPALI_STIL.renk, etiket: "🔒 Çağrı Şu An Kapalı" };
 const ON_HAZIRLIK_STIL = { renk: DURUM_STIL.belirsiz.renk, etiket: "🟡 Ön Hazırlık Gerekli — Tamamlayınca Başvurabilirsiniz" };
 const UYGUN_TAMAMLANACAK_STIL = { renk: DURUM_STIL.uygun.renk, etiket: "🟢 Uygun — Başvuru Öncesi Tamamlanacaklar Var" };
 const kartStili = (s: ProgramSonucu) =>
@@ -685,14 +685,14 @@ export default function DestekUygunlukForm() {
             )}
             {sonuclar.some((s) => s.cagriKapali) && (
               <span className="flex items-center gap-1.5">
-                🟠 <strong>{sonuclar.filter((s) => s.cagriKapali).length}</strong> çağrısı şu an kapalı
+                <span className="text-gray-500">🔒 <strong>{sonuclar.filter((s) => s.cagriKapali).length}</strong> çağrısı şu an kapalı</span>
               </span>
             )}
             <span className="flex items-center gap-1.5">
-              🟡 <strong>{sonuclar.filter((s) => s.durum === "belirsiz").length}</strong> bilgi eksik
+              🟡 <strong>{sonuclar.filter((s) => s.durum === "belirsiz" && !s.cagriKapali).length}</strong> bilgi eksik
             </span>
             <span className="flex items-center gap-1.5">
-              🔴 <strong>{sonuclar.filter((s) => s.durum === "uygun_degil").length}</strong> ilk elemede uygun değil
+              🔴 <strong>{sonuclar.filter((s) => s.durum === "uygun_degil" && !s.cagriKapali).length}</strong> ilk elemede uygun değil
             </span>
           </div>
           <p className="mt-3 text-sm text-gray-500">Kurumlara göre gruplandı — detay kriterleri görmek için bir karta tıklayın.</p>
@@ -702,13 +702,13 @@ export default function DestekUygunlukForm() {
           <section key={grup.ad} className="space-y-3">
             <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-gray-200 pb-1.5">
               <h2 className="text-base font-bold text-[#071A2F]">{grup.ad}</h2>
-              <span className="text-xs text-gray-500">
+              <span className="flex flex-wrap gap-x-3 text-xs font-semibold">
                 {[
-                  [grup.items.filter((x) => x.durum === "uygun" && !x.cagriKapali).length, "uygun"],
-                  [grup.items.filter((x) => x.durum === "belirsiz" || x.durum === "kismen_uygun").length, "bilgi eksik"],
-                  [grup.items.filter((x) => x.cagriKapali).length, "çağrı kapalı"],
-                  [grup.items.filter((x) => x.durum === "uygun_degil").length, "uygun değil"],
-                ].filter(([n]) => (n as number) > 0).map(([n, e]) => `${n} ${e}`).join(" · ")}
+                  [grup.items.filter((x) => x.durum === "uygun" && !x.cagriKapali).length, "uygun", "text-green-700"],
+                  [grup.items.filter((x) => (x.durum === "belirsiz" || x.durum === "kismen_uygun") && !x.cagriKapali).length, "bilgi eksik", "text-yellow-700"],
+                  [grup.items.filter((x) => x.durum === "uygun_degil" && !x.cagriKapali).length, "uygun değil", "text-red-600"],
+                  [grup.items.filter((x) => x.cagriKapali).length, "çağrı kapalı", "text-gray-500"],
+                ].filter(([n]) => (n as number) > 0).map(([n, e, c]) => <span key={e as string} className={c as string}>{n} {e}</span>)}
               </span>
             </div>
             {(() => {
