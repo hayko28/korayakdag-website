@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi-2026",
+    title: "TÜBİTAK 1831 Yeşil İnovasyon Teknoloji Mentörlük Çağrısı: KOBİ'ler Danışmanlığın %90'ını Nasıl Hibe Alır?",
+    excerpt: "Türkiye Yeşil Sanayi Projesi kapsamında sürekli açık olan TÜBİTAK 1831 Yeşil İnovasyon Teknoloji Mentörlük Çağrısı, KOBİ'lerin yeşil dönüşüm danışmanlığı maliyetinin %90'ını hibe olarak karşılıyor. Çözüm Ortağı mekanizması, ödeme şekli, başvuru şartları ve PRODİS üzerinden adım adım süreçle 2026 güncel rehber.",
+    category: "TÜBİTAK • YEŞİL İNOVASYON MENTÖRLÜK • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "turkiyede-bolgesel-yonetim-merkezi-nitelikli-hizmet-merkezi-2026",
     title: "Türkiye'de Bölgesel Yönetim Merkezi: 2026 Nitelikli Hizmet Merkezi Rejimi Açıklaması",
     excerpt: "Nitelikli Hizmet Merkezi şartları, yurt dışı kazançta %95 ve %100 kurumlar vergisi indirimi, personel gelir vergisi desteği ve İstanbul Finans Merkezi'nin çok uluslu gruplara eklediği avantajlar.",
