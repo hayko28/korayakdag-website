@@ -88,12 +88,23 @@ export function yatirimTesvikPozitifListedeMi(naceKodu?: string): boolean | null
   if (!naceKodu) return null;
   const bolum = parseInt(naceKodu.slice(0, 2), 10);
   if (Number.isNaN(bolum)) return null;
+  // H grubu (ulaştırma ve depolama) bölüm bazında değil alt kod bazında listelenir (Karar EK-3, 9903 sayılı Karar,
+  // birincil kaynak 2026-10-09): karayolu taşımacılığı (49.3, 49.4), genel depolama (52.10.01) ve taşımacılık
+  // yardımcı faaliyetleri (52.29, aracılık/forwarding) listede YOK. Alt kod verilmemişse (yalnızca 2 hane) kapsamda sayılır.
+  const kod = (naceKodu ?? "").replace(/[^0-9]/g, "");
+  if (bolum === 49) return kod.length <= 2 || ["1", "2", "5"].includes(kod.slice(2, 3));
+  if (bolum === 50) return !(kod.startsWith("502022") || kod.startsWith("504007"));
+  if (bolum === 51) return !(kod.startsWith("511002") || kod.startsWith("511003"));
+  if (bolum === 52) {
+    if (kod.length <= 2) return true;
+    const izinli = ["521002", "521003", "521004", "522206", "522208", "522303", "522304", "5224"];
+    return izinli.some((on) => kod.startsWith(on) || (kod.length < on.length && on.startsWith(kod)));
+  }
   const KAPSAMDAKI_BOLUMLER = new Set([
     1, 2, 3, // A - tarım, ormancılık, balıkçılık
     5, 6, 7, 8, 9, // B - madencilik
     ...Array.from({ length: 33 - 10 + 1 }, (_, i) => 10 + i), // C - İmalat
     35, 38, // D/E - enerji, atık
-    49, 50, 51, 52, // H - ulaştırma/depolama
     55, // I - konaklama (turizm)
     62, 63, // K - yazılım/bilişim (telekom/61 EK-3'te yok)
     72, // N - Ar-Ge
