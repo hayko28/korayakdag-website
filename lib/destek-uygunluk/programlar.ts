@@ -1286,11 +1286,8 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
     gerekceler.push(`Uygunluk kriterlerinden biri sağlanıyor: ${KRESEL_KRITER_ETIKET[g.kureselRekabetcilikKriteri]}.`);
   }
 
-  if (g.kureselRekabetcilikKrediTutariTl !== undefined && (g.kureselRekabetcilikKrediTutariTl < 30_000_000 || g.kureselRekabetcilikKrediTutariTl > 75_000_000)) {
-    gerekceler.push(`Talep edilen kredi tutarı (${g.kureselRekabetcilikKrediTutariTl.toLocaleString("tr-TR")} TL), 2026 Yılı 1. Başvuru Dönemi çağrısının kredi aralığının (30.000.000-75.000.000 TL) dışında kalıyor.`);
-  }
-
   const uyarilar2 = [
+    "Kredi tutarı aralığı çağrıya göre belirlenir; ilan edilen güncel çağrıdaki alt/üst limit başvuru öncesi kosgeb.gov.tr üzerinden teyit edilmelidir.",
     "Bu bir hibe değil, bankadan kullanılan ticari krediye faiz/kâr payı desteğidir (geri ödemesiz destek kısmı, anapara işletmeye geri ödemelidir); azami vade 36 ay, proje süresi 24 ay (+6 ay uzatılabilir).",
     "Kredinin faiz/kâr payı oranının en fazla 20 puanlık kısmı KOSGEB tarafından geri ödemesiz karşılanır (sabit bir TL üst limiti değil, puan bazlı bir mekanizmadır); anlaşmalı bankanın uyguladığı oran 20 puanın üzerindeyse aşan kısmı işletmeye aittir. (Kaynak: KOSGEB 2026 Yılı 1. Başvuru Dönemi duyurusu, kosgeb.gov.tr, 2026-09-23 doğrulandı.)",
     "Değerlendirme iki aşamalı: Kurul 100 üzerinden puanlar (ortalama en az 50 olmalı), nihai kararı Jüri verir ve bu karara itiraz edilemez.",

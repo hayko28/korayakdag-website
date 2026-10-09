@@ -1465,7 +1465,6 @@ function ProgramSorulariIc({ programId, g, set }: { programId: string; g: Girdi;
           {g.kureselRekabetcilikKriteri === "yuksek_teknoloji_oncelikli_urun" && (
             <EvetHayir etiket="Geçerli bir Sanayi Sicil Belgeniz var mı?" deger={g.sanayiSicilBelgesiVarMi} onChange={(v) => set("sanayiSicilBelgesiVarMi", v)} />
           )}
-          <Tutar etiket="Talep etmeyi planladığınız kredi tutarı" deger={g.kureselRekabetcilikKrediTutariTl} onChange={(v) => set("kureselRekabetcilikKrediTutariTl", v)} />
           <EvetHayir etiket="Bu programdan daha önce yararlandınız mı?" deger={g.kureselRekabetcilikDahaOnceKullanildiMi} onChange={(v) => set("kureselRekabetcilikDahaOnceKullanildiMi", v)} />
         </div>
       );
