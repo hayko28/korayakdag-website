@@ -1456,6 +1456,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Endeksin dört aydır üst üste yükselmesi, ihracat yaptığımız başlıca pazarlardaki talep ortamının kademeli olarak iyileştiğine işaret ediyor. İhracatçı KOBİ'lere özellikle ABD ve Körfez pazarlarındaki bu olumlu ivmeyi sipariş ve stok planlamasında dikkate almalarını öneririm.",
   },
+  {
+    kurum: "KOSGEB",
+    tarih: "4 Eylül 2026",
+    eklendiTarihi: "2026-10-09",
+    baslik:
+      "KOSGEB İşletme Değerlendirme Raporu (İDR) 2021-2025 dönemi verileriyle güncellendi",
+    ozet:
+      "KOSGEB, işletmelerin kendi durumlarını resmi idari kayıtlara dayanarak görebilmesini sağlayan İşletme Değerlendirme Raporu'nu (İDR) 2021-2025 dönemi verileriyle güncelledi. Rapor; Gelir İdaresi Başkanlığı, SGK, Ticaret Bakanlığı ve Türk Patent ve Marka Kurumu gibi kurumların idari kayıtlarını kullanarak işletmenin satış, istihdam, Ar-Ge/marka, verimlilik, ihracat ve finansal yapı başlıklarında sektör ve bölge ortalamasına göre nerede durduğunu gösteriyor. Rapora Findeks platformu üzerinden erişiliyor; işletmenin kendi raporu 120 TL, üçüncü bir tarafın işletmenin onayıyla talep ettiği rapor ise 240 TL.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: İDR, banka kredi görüşmesi veya yeni bir tedarikçi/yatırımcı görüşmesi öncesinde işletmenin sektör ortalamasına kıyasla nerede durduğunu tek bir belgeyle göstermenin pratik bir yolu. Kurumsallaşma sürecindeki şirketlere bu raporu erken aşamada çıkarıp özellikle Ar-Ge ve ihracat gibi zayıf görünen kalemleri önceden gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "21 Eylül 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-09",
+    baslik:
+      "TCMB: İmalat sanayinde kapasite kullanım oranı eylülde yüzde 74,1'e yükseldi",
+    ozet:
+      "TCMB'nin 21 Eylül 2026'da açıkladığı verilere göre mevsimsellikten arındırılmış kapasite kullanım oranı (KKO-MA) ağustosa göre 0,6 puan artışla yüzde 74,1'e, mevsimsellikten arındırılmamış KKO ise 0,7 puan artışla yüzde 74,2'ye yükseldi. Artışın ana kaynağı, ağustosta bakım ve yeni model düzenlemeleri nedeniyle sert daralan motorlu kara taşıtları imalatındaki 10 puanı aşan toparlanma oldu; buna karşılık makine ve ekipman imalatında oran geriledi. Mal gruplarında ara mallar yüzde 74,5, yatırım malları yüzde 73,1, tüketim malları ise yüzde 71,4 olarak ölçüldü.",
+    kaynakUrl: "https://www.alomaliye.com/2026/09/21/sanayide-kapasite-kullanimi-yukseldi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Artışın tek bir sektördeki (otomotiv) baz etkisinden kaynaklanması, genel tabloyu tek başına yorumlamayı zorlaştırıyor. İmalatçı işletmelere kendi alt sektörlerindeki kapasite kullanımını genel ortalamayla karıştırmadan ayrıca takip etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
