@@ -215,8 +215,11 @@ const CAGRI_KAPALI_STIL = { renk: "border-orange-300 bg-orange-50 text-orange-80
 // Kriterler tam sağlanmıyorsa (bilgi eksik / ek şart doğrulanamadı) "Kriterler Uygun" denmez, yalnızca çağrının kapalı olduğu belirtilir.
 const CAGRI_KAPALI_DIGER_STIL = { renk: CAGRI_KAPALI_STIL.renk, etiket: "🟠 Çağrı Şu An Kapalı" };
 const ON_HAZIRLIK_STIL = { renk: DURUM_STIL.belirsiz.renk, etiket: "🟡 Ön Hazırlık Gerekli — Tamamlayınca Başvurabilirsiniz" };
+const UYGUN_TAMAMLANACAK_STIL = { renk: DURUM_STIL.uygun.renk, etiket: "🟢 Uygun — Başvuru Öncesi Tamamlanacaklar Var" };
 const kartStili = (s: ProgramSonucu) =>
-  s.onHazirlikGerekli && !s.cagriKapali ? ON_HAZIRLIK_STIL : s.cagriKapali ? (s.durum === "uygun" ? CAGRI_KAPALI_STIL : CAGRI_KAPALI_DIGER_STIL) : DURUM_STIL[s.durum];
+  s.onHazirlikGerekli && !s.cagriKapali ? ON_HAZIRLIK_STIL
+  : s.durum === "uygun" && s.tamamlanacaklar?.length && !s.cagriKapali ? UYGUN_TAMAMLANACAK_STIL
+  : s.cagriKapali ? (s.durum === "uygun" ? CAGRI_KAPALI_STIL : CAGRI_KAPALI_DIGER_STIL) : DURUM_STIL[s.durum];
 
 const PUAN_RENK = (puan: number) =>
   puan >= 8 ? "text-green-600" : puan >= 5 ? "text-blue-600" : puan >= 3 ? "text-amber-600" : "text-red-600";
@@ -794,6 +797,16 @@ export default function DestekUygunlukForm() {
                         <ul className="space-y-1 text-xs text-gray-600">
                           {digerUyarilar.map((uyari, i) => <li key={i}>ⓘ {uyari}</li>)}
                         </ul>
+                      </div>
+                    )}
+
+                    {s.tamamlanacaklar && s.tamamlanacaklar.length > 0 && (
+                      <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+                        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-amber-800">📝 Başvuru öncesi tamamlanması gerekenler</p>
+                        <ul className="space-y-1 text-sm text-amber-900">
+                          {s.tamamlanacaklar.map((t, i) => <li key={i}>• {t}</li>)}
+                        </ul>
+                        <p className="mt-2 text-xs text-amber-800">Bunlar eleme sebebi değil, tamamlanabilir adımlardır. İsterseniz süreci birlikte yürütebiliriz.</p>
                       </div>
                     )}
 

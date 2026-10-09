@@ -1,3 +1,4 @@
+import { hazirlikKaydet } from "./hazirlik";
 import { DestekBasvuruGirdisi, ProgramSonucuTaslak, SonucDurumu, UretimYatirimNiteligi } from "./types";
 import {
   ilinBolgesi,
@@ -50,7 +51,7 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
 
   if (g.ileriGirisimciEgitimiTamamlandiMi === false) {
     gerekceler.push("İş Geliştirme Desteği'ne başvurmadan önce 'ileri girişimci eğitimi' tamamlanmış olmalı (İş Kurma Desteği'nin eğitiminden ayrı, ek bir zorunluluk).");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İleri girişimci eğitimi eksik.", gerekceler);
+    hazirlikKaydet("hizli", "İleri Girişimcilik Eğitimi'nin alınması", gerekceler);
   }
   if (g.ileriGirisimciEgitimiTamamlandiMi === undefined) eksikAlanlar.push("ileri girişimci eğitimi durumu");
 
@@ -75,7 +76,7 @@ export function kosgebIsGelistirmeDegerlendir(g: DestekBasvuruGirdisi): ProgramS
   }
   if (g.isGelistirmeDestegiDahaOnceKullanildiMi === undefined) eksikAlanlar.push("İş Geliştirme Desteği'nin (veya Faiz/Kâr Payı Desteği'nin) daha önce kullanılıp kullanılmadığı");
 
-  if (g.kosgebVeriTabaniKayitliMi === false) eksikAlanlar.push("KOSGEB Veri Tabanı kaydı henüz yok (başvuru öncesi tamamlanmalı)");
+  if (g.kosgebVeriTabaniKayitliMi === false) hazirlikKaydet("hizli", "KOSGEB Veri Tabanı'na kayıt (KOBİ Bilgi Sistemi üzerinden kısa sürede yapılır)");
 
   gerekceler.push("İşletme yaşı, NACE sektörü, ileri girişimci eğitimi, ortaklık payı ve tekrar başvuru şartlarının hepsi sağlanıyor.");
 
@@ -143,11 +144,11 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
   } else if (imalatSektoruMu(g.naceKodu)) {
     if (g.sanayiSicilBelgesiVarMi === false) {
       gerekceler.push("İmalat sektöründeki işletmeler için geçerli Sanayi Sicil Belgesi zorunlu.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sanayi Sicil Belgesi eksik.", gerekceler);
+      hazirlikKaydet("hizli", "Geçerli Sanayi Sicil Belgesi alınması", gerekceler);
     }
     if (g.yodaRaporuVarMi === false) {
       gerekceler.push("İmalat sektöründeki işletmeler için YODA (Yalın Olgunluk Değerlendirme Analizi) raporu zorunlu.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "YODA raporu eksik.", gerekceler);
+      hazirlikKaydet("hizli", "YODA (Yalın Olgunluk Değerlendirme) raporunun yaptırılması", gerekceler);
     }
     if (g.sanayiSicilBelgesiVarMi === undefined) eksikAlanlar.push("Sanayi Sicil Belgesi durumu");
     if (g.yodaRaporuVarMi === undefined) eksikAlanlar.push("YODA raporu durumu");
@@ -165,7 +166,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
   if (g.kapasiteDijitalDonusumTrackiMi === true) {
     if (g.ddxRaporuVarMi === false) {
       gerekceler.push("Dijital dönüşüm yatırımı track'inde başvuru için dijital dönüşüm/olgunluk değerlendirme raporu zorunlu — henüz alınmamış.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Dijital dönüşüm/olgunluk değerlendirme raporu eksik.", gerekceler);
+      hazirlikKaydet("hizli", "Dijital dönüşüm / olgunluk değerlendirme raporunun alınması", gerekceler);
     }
     if (g.ddxRaporuVarMi === undefined) {
       eksikAlanlar.push("dijital dönüşüm/olgunluk değerlendirme raporu durumu (dijital dönüşüm track'i için zorunlu)");
@@ -372,7 +373,7 @@ function oncelikliAlanGerekcesi(kategori: DestekBasvuruGirdisi["argeOncelikliAla
 // kontrolü HARİÇ — o, 1832 için ayrı ve daha dar tanımlı, bkz. tubitak1832Degerlendir).
 function argeEkipRetSinyaliVarMi(g: DestekBasvuruGirdisi): string | null {
   if (g.projeEkibindeLisansMezunuVarMi === false) {
-    return "Proje ekibinde konuyla ilgili en az lisans derecesine sahip personel bulunmadığı belirtilmiş — bu, ön değerlendirmede doğrudan ret sebebi olabilir.";
+    hazirlikKaydet("sari", "Proje ekibine konuyla ilgili en az lisans mezunu bir personelin dahil edilmesi (aksi hâlde ön değerlendirmede ret sebebidir)");
   }
   if (g.argeFaaliyetiKaynagi === "buyuk_olcude_disaridan") {
     return "Ar-Ge faaliyetinin büyük ölçüde dışarıdan hizmet alımıyla yapıldığı belirtilmiş — kuruluşun kendi Ar-Ge katkısının yetersiz görülme riski var.";
@@ -828,24 +829,24 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
   // Yönerge Rev.05 MADDE 7/1-2: KOSGEB veri tabanında kayıtlı ve aktif olmak, İşletme Beyanı güncel olmak.
   if (g.kosgebVeriTabaniKayitliMi === false) {
     gerekceler.push("Destek programından yararlanmak için işletmenin KOSGEB sisteminde kayıtlı ve aktif olması gerekir (MADDE 7/1) — kaydınız yok.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOSGEB veri tabanı kaydı yok.", gerekceler);
+    hazirlikKaydet("hizli", "KOSGEB Veri Tabanı'na kayıt (KOBİ Bilgi Sistemi üzerinden kısa sürede yapılır)", gerekceler);
   }
   if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB veri tabanı kaydının aktif olup olmadığı");
   if (g.kobiBilgiSistemiKayitGuncelMi === false) {
     gerekceler.push("İşletme Beyanı'nın güncel olması gerekir (MADDE 7/2) — beyannameniz güncel değil.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İşletme Beyanı güncel değil.", gerekceler);
+    hazirlikKaydet("hizli", "İşletme Beyanı'nın güncellenmesi", gerekceler);
   }
   if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("İşletme Beyanı'nın güncel olup olmadığı");
 
   // MADDE 7/5 + Başvuru Kontrol Tablosu madde 4 (ret sebebi): onaylı rapor ve geçerlilik süresi içinde başvuru.
   if (g.ddxRaporuVarMi === false) {
     gerekceler.push("Başvurunun ön şartı olan, Bakanlık Makamı Olur'u ile belirlenen kurumlarca yetkilendirilmiş danışmandan alınmış onaylı dijital dönüşüm/olgunluk değerlendirme raporu henüz alınmamış.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Dönüşüm raporu eksik.", gerekceler);
+    hazirlikKaydet("hizli", "Onaylı dijital dönüşüm / olgunluk raporunun yetkili danışmandan alınması", gerekceler);
   }
   if (g.ddxRaporuVarMi === undefined) eksikAlanlar.push("dijital dönüşüm/olgunluk değerlendirme raporu durumu");
   else if (g.ddxRaporuGecerliMi === false) {
     gerekceler.push("Raporun geçerlilik tarihi/yol haritası süresi (belirtilmemişse onay tarihinden itibaren 1 yıl) geçmiş — başvuru bu süre içinde yapılmalı (MADDE 7/5).");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Rapor geçerlilik süresi dolmuş.", gerekceler);
+    hazirlikKaydet("hizli", "Dönüşüm raporunun yenilenmesi", gerekceler);
   } else if (g.ddxRaporuGecerliMi === undefined) eksikAlanlar.push("raporun geçerlilik süresi içinde olup olmadığı");
 
   // MADDE 7/6 + Kontrol Tablosu madde 6 (ret sebebi): EBRD Uygun Bulunmayan Sektör ve Faaliyetler Tablosu.
@@ -1096,27 +1097,27 @@ export function turqualityDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTas
 
   if (g.markaYurtIciTescilVarMi === false) {
     gerekceler.push("Başvurulan markanın Türkiye'de tescili bulunmuyor (MADDE 14/1-b).");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt içi marka tescili eksik.", gerekceler, uyarilar);
+    hazirlikKaydet("sari", "Markanın Türkiye'de tescil ettirilmesi (süreç aylar sürer)", gerekceler);
   }
   if (g.markaYurtIciTescilVarMi === undefined) eksikAlanlar.push("markanın yurt içi (Türkiye) tescili");
 
   if (g.markaYurtDisiTescilVarMi === false) {
     gerekceler.push("Aynı markanın Madrid Protokolü'ne taraf en az bir ülkede yurt dışı tescili bulunmuyor (MADDE 14/1-b); tescil süreci başlatılsa bile çoğu durumda tescilin başvurudan en az 1 yıl önce alınmış olması gerekir.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yurt dışı marka tescili yok.", gerekceler, uyarilar);
+    hazirlikKaydet("sari", "Markanın Madrid Protokolü'ne taraf bir ülkede tescili (süreç uzun sürer, tescilin başvurudan en az 1 yıl önce alınmış olması gerekir)", gerekceler);
   }
   if (g.markaYurtDisiTescilVarMi === undefined) eksikAlanlar.push("yurt dışı (Madrid Protokolü ülkesi) marka tescili");
 
   if (!onMilyonIstisnasi && g.markaYurtIciTescilVarMi === true && g.markaYurtDisiTescilVarMi === true) {
     if (g.markaTescilleriEnAzBirYilOnceMi === false) {
       gerekceler.push("Yurt içi ve yurt dışı tescillerin başvuru tarihinden en az 1 yıl önce alınmış olması gerekir (MADDE 14/1-b) — bu sağlanmıyor.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescillerin 1 yıl önce alınmış olma şartı sağlanmıyor.", gerekceler, uyarilar);
+      hazirlikKaydet("sari", "Tescillerin 1 yıllık süreyi doldurması", gerekceler);
     }
     if (g.markaTescilleriEnAzBirYilOnceMi === undefined) eksikAlanlar.push("yurt içi ve yurt dışı tescillerin başvurudan en az 1 yıl önce alınıp alınmadığı");
   }
 
   if (g.markaTescilOrganikBagliSirketAdinaMi === false) {
     gerekceler.push("Yurt içi ve yurt dışı tescillerin aynı şirket adına; şirket, organik bağlı bir yurt içi şirket veya aynı holding/şirketler topluluğu ya da holding şirketi adına kayıtlı olması gerekir (MADDE 14/1-ç) — bu sağlanmıyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Tescil sahibi şirket şartı sağlanmıyor.", gerekceler, uyarilar);
+    hazirlikKaydet("sari", "Tescillerin başvuran, organik bağlı veya aynı holding şirketi adına devri", gerekceler);
   }
   if (g.markaTescilOrganikBagliSirketAdinaMi === undefined) eksikAlanlar.push("tescillerin başvurucu veya organik bağlı/aynı holding şirketi adına olup olmadığı");
 
@@ -1200,7 +1201,7 @@ export function kosgebStratejikUrunDegerlendir(g: DestekBasvuruGirdisi): Program
 
   if (g.kosgebVeriTabaniKayitliMi === false) {
     gerekceler.push("KOSGEB Bilgi Sistemi (KBS) kaydınız aktif ve güncel değil — KOSGEB aşamasına geçebilmek için kaydın aktif olması gerekir.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KBS kaydı aktif/güncel değil.", gerekceler);
+    hazirlikKaydet("hizli", "KOSGEB Bilgi Sistemi (KBS) kaydının aktifleştirilmesi/güncellenmesi", gerekceler);
   }
   if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB Bilgi Sistemi (KBS) kaydının aktif ve güncel olup olmadığı");
 
@@ -1281,7 +1282,7 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Uygunluk kriterlerinden hiçbiri sağlanmıyor.", gerekceler);
   } else if (g.kureselRekabetcilikKriteri === "yuksek_teknoloji_oncelikli_urun" && g.sanayiSicilBelgesiVarMi === false) {
     gerekceler.push("Bu kriter (yüksek teknoloji + öncelikli ürün) geçerli bir Sanayi Sicil Belgesi'ni şart koşuyor — bu belge yok.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sanayi Sicil Belgesi eksik.", gerekceler);
+    hazirlikKaydet("hizli", "Geçerli Sanayi Sicil Belgesi alınması", gerekceler);
   } else {
     gerekceler.push(`Uygunluk kriterlerinden biri sağlanıyor: ${KRESEL_KRITER_ETIKET[g.kureselRekabetcilikKriteri]}.`);
   }
@@ -1357,12 +1358,12 @@ export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   // Yönerge Rev.3 (05/07/2026) MADDE 9/1, 9/4: sistemde kayıtlı ve aktif olmak, İşletme Beyanı güncel olmak.
   if (g.kosgebVeriTabaniKayitliMi === false) {
     gerekceler.push("Destek programından yararlanmak için işletmenin KOSGEB sisteminde kayıtlı ve aktif olması gerekir (MADDE 9/1) — kaydınız yok.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOSGEB veri tabanı kaydı yok.", gerekceler);
+    hazirlikKaydet("hizli", "KOSGEB Veri Tabanı'na kayıt (KOBİ Bilgi Sistemi üzerinden kısa sürede yapılır)", gerekceler);
   }
   if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB veri tabanı kaydının aktif olup olmadığı");
   if (g.kobiBilgiSistemiKayitGuncelMi === false) {
     gerekceler.push("İşletme Beyanı'nın güncel olması gerekir (MADDE 9/4) — beyannameniz güncel değil.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "İşletme Beyanı güncel değil.", gerekceler);
+    hazirlikKaydet("hizli", "İşletme Beyanı'nın güncellenmesi", gerekceler);
   }
   if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("İşletme Beyanı'nın güncel olup olmadığı");
 
@@ -1381,19 +1382,19 @@ export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
         gerekceler.push(dijitalMi
           ? "Dijital dönüşüm danışmanlığı yalnızca TÜSSDE tarafından belgelendirilmiş dijital dönüşüm danışmanlarından alınabilir (MADDE 6/2) — danışmanınız bu niteliğe sahip değil."
           : "YODA hizmeti yalnızca Bakanlıkça bildirilen yalın dönüşüm danışmanlarından alınabilir (MADDE 8/2) — danışmanınız bu niteliğe sahip değil.");
-        return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Danışman yetki şartı sağlanmıyor.", gerekceler);
+        hazirlikKaydet("hizli", "Yetkili danışman seçilmesi (TÜSSDE belgeli dijital dönüşüm / Bakanlıkça bildirilen yalın dönüşüm danışmanı)", gerekceler);
       }
       if (g.yondeDanismanYetkiliMi === undefined) eksikAlanlar.push(dijitalMi ? "danışmanın TÜSSDE belgeli dijital dönüşüm danışmanı olup olmadığı" : "danışmanın Bakanlıkça bildirilen yalın dönüşüm danışmanı olup olmadığı");
     }
     if (surdurulebilirlikMi) {
       if (g.yondeGuvenceDenetimiVarMi === false) {
         gerekceler.push("Sürdürülebilirlik raporu TSRS'ye uygun hazırlanmalı ve güvence denetimi KGK tarafından yetkilendirilmiş bağımsız denetim kuruluşunca yapılmış olmalı (MADDE 7/2-3) — bu sağlanmıyor.");
-        return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Güvence denetimi şartı sağlanmıyor.", gerekceler);
+        hazirlikKaydet("hizli", "Sürdürülebilirlik raporunun TSRS'ye uygun hazırlanıp bağımsız denetim kuruluşunca güvence denetiminden geçirilmesi", gerekceler);
       }
       if (g.yondeGuvenceDenetimiVarMi === undefined) eksikAlanlar.push("sürdürülebilirlik raporunun TSRS'ye uygunluğu ve bağımsız denetim kuruluşunca güvence denetimi");
       if (g.yondeRaporlamaYiliUygunMu === false) {
         gerekceler.push("Raporlamaya esas yıl, program başlangıç tarihinden en fazla 1 yıl öncesine ait olmalı (MADDE 7/5) — bu sağlanmıyor.");
-        return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Raporlama yılı şartı sağlanmıyor.", gerekceler);
+        hazirlikKaydet("hizli", "Raporlamanın program başlangıcından en fazla 1 yıl öncesine ait güncel yıla yapılması", gerekceler);
       }
       if (g.yondeRaporlamaYiliUygunMu === undefined) eksikAlanlar.push("raporlama yılının program başlangıcından en fazla 1 yıl öncesine ait olup olmadığı");
     }
@@ -1470,7 +1471,7 @@ export function argeMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): ProgramS
 
   if (g.argeFaaliyetleriAyriBirimdeMi === false) {
     gerekceler.push("Ar-Ge faaliyetlerinin şirketin diğer birimlerinden fiziksel olarak ayrılmış bir alanda yürütülmesi zorunlu şartı sağlanmıyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ayrı Ar-Ge birimi şartı sağlanmıyor.", gerekceler, uyarilar4);
+    hazirlikKaydet("sari", "Ar-Ge faaliyetlerinin ayrı bir birimde yürütülecek şekilde örgütlenmesi", gerekceler);
   }
   if (g.argeFaaliyetleriAyriBirimdeMi === undefined) eksikAlanlar.push("Ar-Ge faaliyetlerinin ayrı/bağımsız bir birimde yürütülüp yürütülmediği");
 
@@ -1524,7 +1525,7 @@ export function tasarimMerkeziStatusuDegerlendir(g: DestekBasvuruGirdisi): Progr
 
   if (g.tasarimBirimiAyriOrganizeMi === false) {
     gerekceler.push("Tasarım faaliyetinin fiziksel olarak ayrılmış, giriş-çıkışı izlenebilir ayrı bir birim/alan olarak örgütlenmesi zorunlu şartı sağlanmıyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ayrı tasarım birimi şartı sağlanmıyor.", gerekceler, uyarilar5);
+    hazirlikKaydet("sari", "Tasarım faaliyetinin ayrı, izlenebilir bir birim olarak örgütlenmesi", gerekceler);
   }
   if (g.tasarimBirimiAyriOrganizeMi === undefined) eksikAlanlar.push("tasarım biriminin ayrı/bağımsız organize edilip edilmediği");
 
@@ -1633,7 +1634,7 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
 
   if (g.musteriKurulusVarMi === false) {
     gerekceler.push("Bu program, büyük bir firmanın veya kamu kurumunun (Müşteri Kuruluş) siparişi/talebi üzerine Ar-Ge projesi geliştiren KOBİ'lere yönelik — böyle bir Müşteri Kuruluş belirtilmemiş. Kendi projenizi geliştiriyorsanız TÜBİTAK 1501/1507 daha uygun olabilir.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Müşteri Kuruluş yok — 1501/1507'ye bakılabilir.", gerekceler);
+    hazirlikKaydet("sari", "Siparişi veren bir Müşteri Kuruluş bulunması (yoksa 1501/1507 değerlendirilebilir)", gerekceler);
   }
   if (g.musteriKurulusVarMi === undefined) eksikAlanlar.push("projenin bir Müşteri Kuruluşun (büyük firma/kamu kurumu) siparişi üzerine olup olmadığı");
 
@@ -1737,7 +1738,7 @@ export function tubitak1831Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
 
   if (g.cozumOrtagiListedeMi === false) {
     gerekceler.push("MADDE 5.5 uyarınca hizmet alınacak danışmanlık kuruluşunun TÜBİTAK'ın 'Çözüm Ortakları' listesinde yer alması gerekiyor — listede değilse başvuru değerlendirmeye alınmıyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Çözüm ortağı listede değil.", gerekceler);
+    hazirlikKaydet("hizli", "TÜBİTAK Çözüm Ortakları listesinden bir danışmanlık kuruluşu seçilmesi", gerekceler);
   }
   if (g.cozumOrtagiListedeMi === undefined) eksikAlanlar.push("hizmet alınacak danışmanlık kuruluşunun TÜBİTAK Çözüm Ortakları listesinde olup olmadığı");
 
@@ -1948,7 +1949,7 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
     gerekceler.push(`İşletme ölçeği "${olcek}" — KOBİ ölçeğinde, başvuru KOSGEB üzerinden yapılır.`);
     if (g.kobiBilgiSistemiKayitGuncelMi === false) {
       gerekceler.push("KOBİ Bilgi Sistemi kaydı/beyannamesi güncel değil — bu, KOBİ ölçeğindeki işletmeler için zorunlu bir ön koşul.");
-      return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "KOBİ Bilgi Sistemi kaydı güncel değil.", gerekceler);
+      hazirlikKaydet("hizli", "KOBİ Bilgi Sistemi kaydı/İşletme Beyanı'nın güncellenmesi", gerekceler);
     }
     if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("KOBİ Bilgi Sistemi kaydı/beyannamesinin güncel olup olmadığı");
   }
@@ -1971,14 +1972,14 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
 
   if (g.kosgebVadesiGecmisBorcuVarMi === true) {
     gerekceler.push("KOSGEB'e yapılandırılmamış, vadesi geçmiş bir borç bulunuyor — bu, başvuru için engel teşkil ediyor (yapılandırma yapılırsa başvurulabilir).");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Yapılandırılmamış KOSGEB borcu var.", gerekceler);
+    hazirlikKaydet("hizli", "Vadesi geçmiş KOSGEB borcunun yapılandırılması", gerekceler);
   }
   if (g.kosgebVadesiGecmisBorcuVarMi === undefined) eksikAlanlar.push("KOSGEB'e vadesi geçmiş (yapılandırılmamış) borç olup olmadığı");
 
   // KOSGEB duyurusu (28/08/2026): 2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannameleri mevcut olmalı.
   if (g.ocakHaziranBeyannameleriVarMi === false) {
     gerekceler.push("2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannameleri mevcut olmalı — bu beyannameler bulunmuyor.");
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ocak-Haziran 2026 beyannameleri yok.", gerekceler);
+    hazirlikKaydet("hizli", "2026 Ocak-Haziran muhtasar ve prim hizmet beyannamelerinin verilmesi", gerekceler);
   }
   if (g.ocakHaziranBeyannameleriVarMi === undefined) eksikAlanlar.push("2026 Ocak-Haziran dönemine ait muhtasar ve prim hizmet beyannamelerinin mevcut olup olmadığı");
 
@@ -2023,18 +2024,12 @@ export function kosgebYapayZekaKrediDegerlendir(g: DestekBasvuruGirdisi): Progra
     if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
-  // Tamamlanabilir ön hazırlık adımları: eleme değil, başvuru öncesi yapılacaklar.
-  const hazirlik: string[] = [];
-  if (g.kosgebVeriTabaniKayitliMi === false) hazirlik.push("KOSGEB Veri Tabanı'na kayıt");
+  if (g.kosgebVeriTabaniKayitliMi === false) hazirlikKaydet("hizli", "KOSGEB Veri Tabanı'na kayıt (KOBİ Bilgi Sistemi üzerinden kısa sürede yapılır)");
   if (g.kosgebVeriTabaniKayitliMi === undefined) eksikAlanlar.push("KOSGEB veri tabanı kaydının aktif olup olmadığı");
-  if (g.kobiBilgiSistemiKayitGuncelMi === false) hazirlik.push("İşletme Beyanı'nın güncellenmesi");
+  if (g.kobiBilgiSistemiKayitGuncelMi === false) hazirlikKaydet("hizli", "İşletme Beyanı'nın güncellenmesi");
   if (g.kobiBilgiSistemiKayitGuncelMi === undefined) eksikAlanlar.push("İşletme Beyanı'nın güncel olup olmadığı");
-  if (g.teknogirisimRozetiGecerliMi === false) hazirlik.push("geçerli Teknogirişim Rozeti alınması (Sanayi ve Teknoloji Bakanlığı, teknogirisim.sanayi.gov.tr, 3 yıl geçerli)");
+  if (g.teknogirisimRozetiGecerliMi === false) hazirlikKaydet("sari", "Geçerli Teknogirişim Rozeti alınması (Sanayi ve Teknoloji Bakanlığı, teknogirisim.sanayi.gov.tr, 3 yıl geçerli; değerlendirme süreci vardır)");
   if (g.teknogirisimRozetiGecerliMi === undefined) eksikAlanlar.push("geçerli Teknogirişim Rozeti olup olmadığı");
-  if (hazirlik.length > 0) {
-    gerekceler.push(`Başvuru öncesi tamamlanması gerekenler: ${hazirlik.join("; ")}. Bunlar eleme sebebi değil, tamamlanabilir adımlardır; hepsi bittiğinde başvuru yapabilirsiniz.`);
-    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Ön hazırlık gerekli: " + hazirlik.map((h) => h.replace(/ \(.*\)$/, "")).join(", ") + ". Tamamladığınızda başvuru yapabilirsiniz.", gerekceler, undefined, undefined, SON);
-  }
 
   gerekceler.push("KOBİ ölçeği, KOSGEB kaydı, İşletme Beyanı ve Teknogirişim Rozeti şartları sağlanıyor.");
 

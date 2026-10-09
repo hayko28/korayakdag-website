@@ -30,6 +30,8 @@ export type ProgramSonucuTaslak = {
   sonBasvuruTarihi?: string;
   // true: kart "belirsiz" gösterilir; eksik olan şart başvuru öncesi tamamlanabilir (kayıt, rapor, rozet vb.), eleme değildir.
   onHazirlikGerekli?: boolean;
+  // Başvuru öncesi tamamlanması gereken (kayıt/belge/rapor/rozet) ama programı elemeyen adımlar.
+  tamamlanacaklar?: string[];
 };
 
 // index.ts'te taslağa puan eklenerek üretilen, arayüze giden nihai sonuç.

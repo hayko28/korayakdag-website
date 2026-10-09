@@ -1,3 +1,4 @@
+import { hazirlikBaslat, hazirlikUygula } from "./hazirlik";
 import { DestekBasvuruGirdisi, ProgramSonucu, ProgramSonucuTaslak, SonucDurumu } from "./types";
 import {
   kosgebIsGelistirmeDegerlendir,
@@ -47,24 +48,11 @@ function puanHesapla(durum: SonucDurumu, gerekceSayisi: number): number {
   }
 }
 
-// Başvuru öncesi tamamlanabilen şartlar (KOSGEB kaydı, İşletme Beyanı, rozet, danışman raporu):
-// bunlar eksikse kart kırmızı "uygun değil" değil, sarı "ön hazırlık gerekli" olur.
-const ON_HAZIRLIK_OZETLERI = new Set([
-  "KOSGEB veri tabanı kaydı yok.",
-  "KBS kaydı aktif/güncel değil.",
-  "İşletme Beyanı güncel değil.",
-  "KOBİ Bilgi Sistemi kaydı güncel değil.",
-  "Geçerli Teknogirişim Rozeti yok.",
-  "Dijital dönüşüm/olgunluk değerlendirme raporu eksik.",
-  "Dönüşüm raporu eksik.",
-]);
-
-function onHazirlikUygula(t: ProgramSonucuTaslak): ProgramSonucuTaslak {
-  if (t.durum !== "uygun_degil") return t;
-  const hazirlik = t.ozet.startsWith("Ön hazırlık gerekli");
-  if (!hazirlik && !ON_HAZIRLIK_OZETLERI.has(t.ozet)) return t;
-  const ozet = hazirlik ? t.ozet : `Ön hazırlık gerekli: ${t.ozet.replace(/\.$/, "")}. Bu adımı tamamladığınızda başvuru yapabilirsiniz.`;
-  return { ...t, durum: "belirsiz", ozet, onHazirlikGerekli: true };
+// Her programı çalıştırmadan önce "ön hazırlık" toplayıcısını sıfırlar, sonra eksik kayıt/belge/rapor
+// bilgilerini sonuca uygular (bkz. hazirlik.ts).
+function calistir(fn: (g: DestekBasvuruGirdisi) => ProgramSonucuTaslak, g: DestekBasvuruGirdisi): ProgramSonucuTaslak {
+  hazirlikBaslat();
+  return hazirlikUygula(fn(g));
 }
 
 function puanEkle(taslak: ProgramSonucuTaslak): ProgramSonucu {
@@ -81,52 +69,51 @@ export function tumProgramlariDegerlendir(girdi: DestekBasvuruGirdisi): ProgramS
   const taslaklar: ProgramSonucuTaslak[] = [];
 
   if (girdi.yeniGirisimciMi !== false) {
-    taslaklar.push(kosgebIsGelistirmeDegerlendir(girdi));
-    taslaklar.push(tubitak1812Degerlendir(girdi));
-    taslaklar.push(kosgebTekmerDegerlendir(girdi));
+    taslaklar.push(calistir(kosgebIsGelistirmeDegerlendir, girdi));
+    taslaklar.push(calistir(tubitak1812Degerlendir, girdi));
+    taslaklar.push(calistir(kosgebTekmerDegerlendir, girdi));
   }
   // İmalat dışı işletmeler için Kapasite Geliştirme (NACE C), Küresel Rekabetçilik (orta-yüksek/yüksek
   // teknoloji ürün + Sanayi Sicil) ve Dijital Dönüşüm (NACE C) listeye hiç girmez; kırmızı kart olarak gösterilmez.
   if (girdi.yeniGirisimciMi !== true && girdi.imalatciMi !== false) {
-    taslaklar.push(kosgebKapasiteGelistirmeDegerlendir(girdi));
-    taslaklar.push(kosgebKureselRekabetcilikDegerlendir(girdi));
+    taslaklar.push(calistir(kosgebKapasiteGelistirmeDegerlendir, girdi));
+    taslaklar.push(calistir(kosgebKureselRekabetcilikDegerlendir, girdi));
   }
   if (girdi.argeDurumu !== "yok") {
-    taslaklar.push(tubitak1501Degerlendir(girdi));
-    taslaklar.push(tubitak1507Degerlendir(girdi));
-    taslaklar.push(tubitak1707Degerlendir(girdi));
-    taslaklar.push(argeMerkeziStatusuDegerlendir(girdi));
-    taslaklar.push(tasarimMerkeziStatusuDegerlendir(girdi));
-    taslaklar.push(teknoparkStatusuDegerlendir(girdi));
+    taslaklar.push(calistir(tubitak1501Degerlendir, girdi));
+    taslaklar.push(calistir(tubitak1507Degerlendir, girdi));
+    taslaklar.push(calistir(tubitak1707Degerlendir, girdi));
+    taslaklar.push(calistir(argeMerkeziStatusuDegerlendir, girdi));
+    taslaklar.push(calistir(tasarimMerkeziStatusuDegerlendir, girdi));
+    taslaklar.push(calistir(teknoparkStatusuDegerlendir, girdi));
   }
   if (girdi.donusumDurumu !== "yok") {
-    if (girdi.imalatciMi !== false) taslaklar.push(kosgebDijitalDonusumDegerlendir(girdi));
-    taslaklar.push(kosgebYesilSanayiDegerlendir(girdi));
-    taslaklar.push(tubitak1832Degerlendir(girdi));
-    taslaklar.push(tubitak1831Degerlendir(girdi));
+    if (girdi.imalatciMi !== false) taslaklar.push(calistir(kosgebDijitalDonusumDegerlendir, girdi));
+    taslaklar.push(calistir(kosgebYesilSanayiDegerlendir, girdi));
+    taslaklar.push(calistir(tubitak1832Degerlendir, girdi));
+    taslaklar.push(calistir(tubitak1831Degerlendir, girdi));
   }
-  taslaklar.push(kosgebYapayZekaKrediDegerlendir(girdi));
+  taslaklar.push(calistir(kosgebYapayZekaKrediDegerlendir, girdi));
   if (girdi.yatirimPlanlaniyorMu !== false) {
-    taslaklar.push(yatirimTesvikBelgesiDegerlendir(girdi));
-    if (girdi.imalatciMi !== false) taslaklar.push(kosgebStratejikUrunDegerlendir(girdi));
+    taslaklar.push(calistir(yatirimTesvikBelgesiDegerlendir, girdi));
+    if (girdi.imalatciMi !== false) taslaklar.push(calistir(kosgebStratejikUrunDegerlendir, girdi));
   }
   if (girdi.imalatciMi !== false) {
-    taslaklar.push(kosgebYondeDegerlendir(girdi));
-    taslaklar.push(istihdamiKorumaDegerlendir(girdi));
+    taslaklar.push(calistir(kosgebYondeDegerlendir, girdi));
+    taslaklar.push(calistir(istihdamiKorumaDegerlendir, girdi));
   }
   if (girdi.ihracatDurumu !== "yok") {
-    taslaklar.push(ticaretBakanligiIhracatDesteklerDegerlendir(girdi));
+    taslaklar.push(calistir(ticaretBakanligiIhracatDesteklerDegerlendir, girdi));
   }
   if (girdi.ihracatDurumu === "yapiyorum") {
-    taslaklar.push(turqualityDegerlendir(girdi));
+    taslaklar.push(calistir(turqualityDegerlendir, girdi));
   }
   if (girdi.kirsalYatirimDurumu !== "yok") {
-    taslaklar.push(tkdkDegerlendir(girdi));
+    taslaklar.push(calistir(tkdkDegerlendir, girdi));
   }
 
   const DURUM_SIRASI: Record<SonucDurumu, number> = { uygun: 0, kismen_uygun: 1, belirsiz: 2, uygun_degil: 3 };
   return taslaklar
-    .map(onHazirlikUygula)
     .map(puanEkle)
     .sort((a, b) => DURUM_SIRASI[a.durum] - DURUM_SIRASI[b.durum] || b.puan - a.puan);
 }
