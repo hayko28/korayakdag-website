@@ -764,12 +764,16 @@ export default function DestekUygunlukForm() {
                         Neden bu sonucu aldınız?
                       </p>
                       <ul className="space-y-1.5 text-sm text-gray-800">
-                        {s.gerekceler.map((gerekce, i) => (
+                        {s.gerekceler.map((gerekce, i) => {
+                          // Elemeyle biten kartlarda motor ilk sağlanmayan şartta durur: önceki satırlar sağlanan şartlar (✓), son satır sağlanmayan şart (✗).
+                          const olumsuzSatir = olumsuz && i === s.gerekceler.length - 1;
+                          return (
                           <li key={i} className="flex gap-2">
-                            <span className={olumsuz ? "text-red-500" : "text-green-600"}>{olumsuz ? "✗" : "✓"}</span>
+                            <span className={olumsuzSatir ? "text-red-500" : "text-green-600"}>{olumsuzSatir ? "✗" : "✓"}</span>
                             <span>{gerekce}</span>
                           </li>
-                        ))}
+                          );
+                        })}
                       </ul>
                     </div>
 
