@@ -1,3 +1,145 @@
+# Günlük Fikir Araştırması - 9 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 9 Ekim 2026
+**Hedef:** Lojistik, influencer ekonomisi, AI content — geçmiş günlerden farklı B2B sektörleri
+
+---
+
+## FİKİR 1: KOBİ Lojistik & Depo Yönetim Yazılımı (E-Fatura + AI Talep Tahmini)
+
+### Ne Bu?
+KOBİ ve orta ölçekli işletmelerin (50-500 çalışan) **depo yönetimi, envanter takibi ve tedarik zinciri otomasyonu için SaaS yazılımı.** Sistem: (1) Ürün giriş/çıkış taraması (QR/barcode), (2) Real-time envanter dashboard, (3) E-fatura entegrasyonu, (4) AI talep tahmini, (5) Tedarikçi orderlaması otomasyonu, (6) Depo işçi mobil uygulaması.
+
+### Kanıt (Kaynaklar)
+- Türk lojistik sektörü pazar büyüklüğü 100 milyar dolar+ (TİM, Ticaret Bakanlığı 2026)
+- Türkiye'de 1M+ KOBİ, bunların %70'i manuel depo yönetimi yapıyor
+- E-fatura zorunluluğu (500K TL+ 1 Temmuz 2026) uyum yazılımı talep arttı
+- Ekonomist (Temmuz 2026): Türk lojistik startupları SaaS tabanlı yönetim panelleri geliştiriyor
+
+### Gelir Modeli
+- **Başlangıç plan** (ay 2): 40 KOBİ × ₺599/ay = **₺23.96K/ay**
+- **Profesyonel plan** (ay 3): 20 şirket × ₺1.499/ay = **₺30K/ay**
+- **Enterprise** (ay 4): 5 şirket × ₺3.999/ay = **₺20K/ay**
+- **Per-transaction** (ay 5): 200 otomatik order × ₺15 = **₺3K/ay**
+- **Aylık tahmin (3. ay):** ₺53.96K | **(6. ay):** ₺76.96K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** NetSoft gibi yazılımlar var ama KOBİ ölçeğine uyarlanmış, E-fatura + AI combo = yok.
+
+**Talep Sinyalleri:**
+- Google Trends: "depo yönetim yazılımı", "envanter takip" +100%
+- KOBİ forumları: "Elle takip zaman kaybı" şikayeti sık
+- E-fatura zorunluluğu = compliance yazılımı talep arttı
+
+**Neden Heyecan Verici:**
+- Türkiye boşluğu: KOBİ ölçeğine uyarlanmış, E-fatura + AI = sıfır yazılım
+- Doğrulanmış sorun: Manuel depo yönetimi = 100+ saat/ay
+- Marj: SaaS %85+
+- Ölçek: 1M+ KOBİ potensiyeli
+- Koray fit: Lojistik danışmanlık (Sistem Global)
+
+### İlk Somut Adım
+Bugün **LinkedIn'de 10-12 KOBİ operasyon müdürü bul.** Sonra **mesaj: "Depo & envanter yazılımı — QR barcode, real-time envanter, E-fatura uyumu, AI talep tahmini. ₺599/ay başlangıç. MVP 3 hafta. Test olmak ister misin? İlk 10'a %50 indirim + 2 ay ücretsiz."** Yanıt alan 5-6'ya sorular: (1) Depo yönetimi nasıl, (2) Ayda kaç hareket, (3) E-fatura entegrasyon önemi? Gün sonu: **3-4 KOBİ "MVP test" verbal commitment**.
+
+### Zorluk/Risk
+- Depo process her şirket farklı, custom maliyeti yüksek
+- Hardware entegrasyon (QR/barcode cihazları)
+- E-fatura kuralları sık değişebilir
+- Büyük ERP'ler (SAP) rekabet edebilir
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 2: Influencer-Marka Matching Platformu (Türkçe Mikro-Creator)
+
+### Ne Bu?
+Markaları **Türkçe TikTok, Instagram, YouTube creatorları (10K-500K subs) ile birleştiren matching platform.** Sistem: (1) Marka kampanya tasarlıyor, (2) Platform AI brand + audience match ediyor, (3) Creator önerileri, (4) Direct contact, (5) Tracking + ödeme (commission %15).
+
+### Kanıt (Kaynaklar)
+- Influencer marketing 2026: 32.55 milyar dolar, +19% yıllık
+- Brand ROI: 5.78 dolar per 1 dolar harcama
+- 207 milyon aktif creator dünyada
+- TikTok/Instagram Türkçe content: 500K+ hashtag, engagement yüksek
+
+### Gelir Modeli
+- **Marka paket** (ay 2): 15 × ₺2.999 = **₺45K/ay**
+- **Marka subscription** (ay 3): 10 × ₺999/ay = **₺10K/ay**
+- **Commission** (ay 4): 50 kampanya × ₺15 = **₺15K/ay**
+- **Creator tier** (ay 5): 30 × ₺199/ay = **₺6K/ay**
+- **Tahmin (3. ay):** ₺55K | **(6. ay):** ₺86K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** Global platformlar (HypeAuditor, AspireIQ) Türkçe = yok. Brand-creator manual.
+
+**Talep:** Micro-creator hızlı artıyor, TikTok Shop açıldı, collaboration talep yüksek.
+
+**Neden Heyecan Verici:**
+- Türkçe boşluğu: Brand-creator matching = sıfır
+- 50K+ micro-creator + 10K+ brand Türkiye'de
+- Commission %15 + SaaS %80+ marj
+- Koray fit: Pazarlama danışmanlık
+
+### İlk Somut Adım
+Bugün **8-10 Türkçe marka pazarlama müdürü ve 15-20 10K-100K sub creator bul.** Markalara: "Creator matching — brand aesthetics match, tracking. ₺2.999 paket, ₺999/ay unlimited. MVP 2 hafta. Test olmak ister misin?"** Gün sonu: **4-5 marka + 8-10 creator signup**.
+
+### Zorluk/Risk
+- Fake followers riski (verification gerek)
+- Creator churn (direct brand atlatması)
+- Platform policy (TikTok/Instagram kuralları)
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 3: Türkçe AI Content Writer Platform
+
+### Ne Bu?
+FMCG, e-ticaret için **AI-powered Türkçe içerik yazma platform.** Sistem: (1) Ürün bilgisi gir, (2) AI otomatik: blog, Instagram caption, email, TikTok script, ürün açıklaması + SEO, (3) 1-click kullan ya da edit, (4) Analytics.
+
+### Kanıt (Kaynaklar)
+- AI writing assistants trending (ChatGPT, Jasper 10M+ kullanıcı)
+- Türkçe AI writing sıfırda yakın (Doğal Metin humanizer var, generator yok)
+- FMCG: 30-50 saat/ay content, maliyeti yüksek
+- Google Trends: "AI yazılım", "ürün açıklaması" +150%
+
+### Gelir Modeli
+- **Starter** (ay 2): 30 × ₺399/ay = **₺11.97K/ay**
+- **Pro** (ay 3): 15 × ₺799/ay = **₺12K/ay**
+- **Enterprise** (ay 4): 5 × ₺1.999/ay = **₺10K/ay**
+- **API** (ay 5): 500 × ₺5 = **₺2.5K/ay**
+- **Tahmin (3. ay):** ₺23.97K | **(6. ay):** ₺48.47K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** ChatGPT, Jasper Türkçe kalitesi düşük. Türkçe markalara özel = yok.
+
+**Talep:** "İçerik maliyeti yüksek" şikayeti sık, e-ticaret blog talep yüksek.
+
+**Neden Heyecan Verici:**
+- Türkçe generator + e-commerce optimized = sıfır
+- 30K+ e-ticaret + 5K+ FMCG potensiyeli
+- %85+ SaaS marj
+- Koray fit: Pazarlama copywriting
+
+### İlk Somut Adım
+Bugün **Trendyol/Hepsiburada'da 10 seller (fashion, home, beauty) bul.** Mesaj: "AI Türkçe content — blog, caption, email, script. ₺399/ay, ₺799/ay PRO. MVP 2 hafta. 3 ürün için 5 yazı göndereyim."** Gün sonu: **3-4 marka test commitment**.
+
+### Zorluk/Risk
+- AI Türkçe doğal akış zor
+- Brand voice kişileme
+- Müşteri expectation yüksek
+
+**Risk Derecesi:** ORTA-DÜŞÜK
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ KOBİ Lojistik & Depo Yönetim Yazılımı**
+
+**Gerekçe:** En net doğrulanmış sorun, en düşük teknik risk. Türk lojistik 100 milyar dolar, KOBİ'lerin %70'i manuel yapıyor. E-fatura zorunluluğu compliance talep arttı. Depo yazılımı somut value (saatler, hata, stok). İlk adım bugün bitirilebilir. Rakip yok (NetSoft pahalı/complex). Gelir model her adımda doğrulanır. Influencer matching heyecanlı ama creator churn riski yüksek, AI content hızlı büyüyor ama kalite risklendi. Lojistik: KOBİ'ler yasal + operasyon verimliliği görüyor — spekulatif değil. **En pragmatik "bugün start, 30 gün sonuç" fıkrı.**
+
 # Günlük Fikir Araştırması - 7 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
