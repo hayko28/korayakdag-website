@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yazilimin-telif-hakki-tescili-zorunlu-mu-2026",
+    title: "Yazılımın Telif Hakkı Tescili Zorunlu mu? Yazılım Şirketleri İçin 2026 Rehberi",
+    excerpt: "Yazılımın telif hakkı oluşturulduğu anda kendiliğinden doğar ve tescile tabi değildir; ama bu hak bir uyuşmazlıkta ispat edilmek zorundadır. Zorunlu mu isteğe bağlı mı kayıt-tescil, 2026 güncel 1.970 TL işlem ücreti, başvuru süreci, Bern Sözleşmesi ile yurt dışı koruma ve yazılımın neden patentle değil telifle korunduğuyla kapsamlı rehber.",
+    category: "FİKRİ MÜLKİYET • TELİF HAKKI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi-2026",
     title: "TÜBİTAK 1831 Yeşil İnovasyon Teknoloji Mentörlük Çağrısı: KOBİ'ler Danışmanlığın %90'ını Nasıl Hibe Alır?",
     excerpt: "Türkiye Yeşil Sanayi Projesi kapsamında sürekli açık olan TÜBİTAK 1831 Yeşil İnovasyon Teknoloji Mentörlük Çağrısı, KOBİ'lerin yeşil dönüşüm danışmanlığı maliyetinin %90'ını hibe olarak karşılıyor. Çözüm Ortağı mekanizması, ödeme şekli, başvuru şartları ve PRODİS üzerinden adım adım süreçle 2026 güncel rehber.",
