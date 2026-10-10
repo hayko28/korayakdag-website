@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "franchise-vermeden-once-atlanan-sart",
+    title: "Franchise Vermeye Hazır Mısınız? Genelde Atlanan Tek Şart",
+    excerpt:
+      "Danışmanlık sürecine gelen marka sahiplerinin çoğu, franchise vermenin üç ön şartından ikisini (kanıtlanmış kârlılık ve tescilli marka) kendiliğinden tamamlamış oluyor. Sistemin asıl omurgası olan operasyon el kitabı ise genelde en sona bırakılıyor; sonuç, aynı tabela altında birbirinden farklı çalışan şubeler.",
+    tag: "Strateji",
+    date: "10 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-isletme-karnesi-banka-gorusmesi",
     title: "Bankaya Gitmeden Önce Şirketinizin Karnesini Siz Görün",
     excerpt:
