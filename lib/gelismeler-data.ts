@@ -1483,6 +1483,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Artışın tek bir sektördeki (otomotiv) baz etkisinden kaynaklanması, genel tabloyu tek başına yorumlamayı zorlaştırıyor. İmalatçı işletmelere kendi alt sektörlerindeki kapasite kullanımını genel ortalamayla karıştırmadan ayrıca takip etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Ekim 2026 (5 Ekim 2026'da resmi veri olarak yayımlandı)",
+    eklendiTarihi: "2026-10-10",
+    baslik:
+      "Eylül ihracatı Cumhuriyet tarihinin en yüksek ikinci aylık rakamına ulaştı, dış ticaret açığı yüzde 24,8 azaldı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat'ın açıklamasına ve Strateji ve Bütçe Başkanlığı'nın yayımladığı geçici verilere göre Eylül 2026'da ihracat yıllık bazda yüzde 15,4 artışla 25,98 milyar dolara, ithalat ise yüzde 5,9 artışla 31,21 milyar dolara ulaştı. Dış ticaret açığı bir önceki yılın aynı ayına göre yüzde 24,8 azalarak 5,2 milyar dolara geriledi; Ocak-Eylül döneminde ihracat yüzde 5,2 artışla 211 milyar dolara, ithalat yüzde 5,4 artışla 282 milyar dolara çıktı.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-eylul-ayi-gecici-dis-ticaret-verileri-aciklandi/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracattaki yüzde 15,4'lük artışın ithalat artışının (yüzde 5,9) iki katından fazla olması ve açığın belirgin şekilde daralması, dış talebin iç talepten daha güçlü seyrettiğine işaret ediyor. İhracatçı KOBİ'lere yıl sonu bütçe çalışmalarında bu momentumu dikkate almalarını, ithalat yoğun üreten işletmelere ise maliyet tarafını ayrıca izlemelerini öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "11 Eylül 2026 (Eylül 2026 Piyasa Katılımcıları Anketi)",
+    eklendiTarihi: "2026-10-10",
+    baslik:
+      "TCMB anketinde yıl sonu enflasyon beklentisi yüzde 29,61'e yükseldi, büyüme beklentisi geriledi",
+    ozet:
+      "TCMB'nin 7-9 Eylül 2026 tarihleri arasında 67 katılımcıyla (52 finans, 15 reel sektör) yaptığı Piyasa Katılımcıları Anketi'ne göre cari yıl sonu TÜFE beklentisi önceki anketteki yüzde 29,43'ten yüzde 29,61'e yükseldi; 12 ay sonrası enflasyon beklentisi ise yüzde 23,70 oldu. Aynı ankette yıl sonu dolar/TL beklentisi 51,57 TL'ye gerilerken 12 ay sonrası kur beklentisi 58,60 TL'ye çıktı; 2026 büyüme beklentisi yüzde 3,1'den yüzde 3,0'a düşürüldü.",
+    kaynakUrl:
+      "https://dunya.com/ekonomik-veriler/tcmb-anketinde-enflasyon-beklentisi-yukseldi-dolar-ve-faiz-tahmini-de-belli-oldu-haberi-839608",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yıl sonu enflasyon beklentisinin yukarı, büyüme beklentisinin aşağı revize edilmesi, bütçe ve fiyatlama planlarını son çeyrekte daha temkinli varsayımlarla kurmanın gerekliliğine işaret ediyor. Finansman maliyeti yüksek kalan işletmelere, yıl sonu nakit akışı projeksiyonlarını bu güncel beklentilerle yeniden kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
