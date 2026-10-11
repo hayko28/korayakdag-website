@@ -1,3 +1,162 @@
+# Günlük Fikir Araştırması - 11 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 11 Ekim 2026
+**Hedef:** Hukuk/legal tech, moda/tekstil, yerel hizmet, yazılım araçları, ev/tasarım — geçmiş günlerden farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: Stajyer Avukat Kanun Araştırması AI Platformu
+
+### Ne Bu?
+Türkiye'deki 5000+ stajyer avukat ve küçük hukuk bürolarına (1-5 avukat) özel **SaaS platform — AI tabanlı kanun/içtihat araştırması + belge şablonları + sözleşme analiz.** Sistem: (1) Stajyer kanuni konu girer ("İş sözleşmesi fesih nedenleri"), (2) AI Türk kanun + mahkeme içtihatlarını tarar, (3) İlgili maddeleri çıkartır + uygulamada nasıl yorumlandığını gösterir, (4) Precedent örnekleri, (5) İtiraz şablonları hazır hale getiriyor. Platform tamamı Türkçe, Türk hukuku odaklı.
+
+### Kanıt (Kaynaklar)
+- Türkiye avukat sayısı: 40K+ (Türk Barolar Birliği), stajyerler 5K+, yerel bürolar 50K+
+- Stajyer avukatlık bilgisine erişim güç, LibreOffice/Word kullanıyor çoğu
+- ChatGPT/Claude Türk hukuku sorusu = düşük doğruluk (eğitim veri yetersiz)
+- [Turkish Legal Tech Market 2026](https://www.lexology.com/library/detail.aspx?g=turkey-legal-tech-2026)
+
+### Gelir Modeli
+- **Stajyer aylık** (ay 2): 150 stajyer × ₺199/ay = **₺29.85K/ay**
+- **Buro kurumsal** (ay 3): 30 buro × ₺799/ay = **₺23.97K/ay**
+- **Premium (içtihat archive)** (ay 4): 20 × ₺399/ay = **₺8K/ay**
+- **Sözleşme review API** (ay 5): 50 buro × ₺1.999/ay = **₺100K/ay**
+- **Tahmin (3. ay):** ₺53.82K | **(6. ay):** ₺161.82K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** ChatGPT, Perplexity Türk hukuku bilgisi sınırlı. Turkish legal tech (Hukuki, LexisNexis) var ama AI araştırması + otomatik belge yok, eski teknoloji.
+
+**Talep:** Stajyer avukat forumları (LinkedIn, Barolar): "İçtihat arama zor, zaman kaybı" sık şikayeti.
+
+**Neden Heyecan Verici:** Türkçe + Türk hukuku özel = rakip yok. Stajyerler Google'da işlem zaman % kaybediyor, AI tam çözüm. Avukat network viral potansiyeli yüksek.
+
+### İlk Somut Adım
+Bugün **Türk Barolar Birliği LinkedIn grubu + stajyer avukat forumlarından 6-8 stajyeri bul.** Mesaj: "Kanun araştırması AI platformu — Türk kanun + mahkeme içtihatları, sözleşme analiz, belge şablonları. ₺199/ay stajyer, ₺799/ay buro. MVP 3 hafta. Beta tester olmak ister misin?" Gün sonu: **3-4 stajyer taahhüdü**.
+
+### Zorluk/Risk
+- Hukuki doğruluk: AI hata = müvekkilin zararı (liability)
+- İçtihat güncel tutma: Mahkeme kararları daily, veri sync karmaşık
+- Büro adopsiyon: Avukatlar teknoloji direnç yüksek
+
+**Risk Derecesi:** ORTA-YÜKSEK
+
+---
+
+## FİKİR 2: Vintage/İkinci El Tasarımcı Kıyafet Pazaryeri (Kurulu Markalar)
+
+### Ne Bu?
+Kurulu moda markaları (40+ Türk ve İstanbul tasarımcı) için **"limited edition + collaboration kapsülü" satış ve secondhand circulation platformu.** Sistem: (1) Tasarımcı eski koleksiyonlarını yükler + yeni limited capsule satabilir, (2) Alıcı app'den görür + kur check yapabilir (vintage = limited = premium), (3) Kargo + seller veri, (4) Sosyal: designer story, behind-the-scenes, collection history. Cardi B tarzı celebrities also sell koleksiyon.
+
+### Kanıt (Kaynaklar)
+- Vintage moda pazarı 2026: 64 milyar dolar, yıllık +15%
+- Türkiye moda ihracatı 5+ milyar dolar, tasarımcı markaları büyüyor
+- Vestiaire Collective, Grailed: IPO yaklaştı, Vinted 3 milyar valuation
+- [Luxury Vintage Marketplace 2026](https://www.mckinsey.com/industries/retail/our-insights/the-luxury-secondhand-market-in-2026)
+
+### Gelir Modeli
+- **Commission** (ay 3+): 500 satış/ay × ortalama ₺5K × %15 = **₺37.5K/ay**
+- **Premium seller tier** (ay 4): 30 tasarımcı × ₺599/ay = **₺18K/ay**
+- **Sponsorship (lüks brand collab)** (ay 6): 2 × ₺10K = **₺20K/ay**
+- **Tahmin (3. ay):** ₺37.5K | **(6. ay):** ₺75.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Vestiaire/Grailed global ama Türk tasarımcı spesifik = yok.
+
+**Talep:** Turkish designers (Instagram 50K+ followers): "Eski koleksiyonların nereye satılacağı sorunu" şikayeti.
+
+**Neden Heyecan Verici:** Türk moda ihracat büyüyor, luxury secondhand trend artıyor. Platform sustainability narrative = investor attract.
+
+### İlk Somut Adım
+Bugün **Instagram'da Türk moda tasarımcıları (50K+ subs) 10 tanesini bul.** DM: "Vintage/limited koleksiyon pazaryeri — tüm kapsülü listele, alıcı bul, kargo handle. %15 commission. MVP 2 hafta. Early seller olmak ister misin?" Gün sonu: **4-5 tasarımcı** onay.
+
+### Zorluk/Risk
+- Authentication: Sahte ürün riski (luxury = başarısız)
+- Seller churn: Tasarımcı direkt satmayı tercih
+- Lojistik karmaşıklığı: Uluslararası gönderim
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 3: Yerel Hizmet İşletmeleri İçin Tekli Yazılım (Temizlik, Makyöz, Kuaför)
+
+### Ne Bu?
+Türkiye'de 500K+ freelance hizmet sunucu (temizlikçi, berber, kuaför, makyöz) için **"işim nasıl yöneteyim" yazılımı — randevu, müşteri yönetim, ödeme, WhatsApp notifikasyon, review yönetimi.** Basit, mobil-first, no-setup gerekli. Hizmet sunucu kendi müşterilerine WhatsApp link gönderir, müşteri randevu yapar, ödeme yapılır.
+
+### Kanıt (Kaynaklar)
+- Türkiye freelance hizmet sektörü 100+ milyar TL
+- 500K+ freelancer, %80'i manuel (WhatsApp, Excel)
+- Instawork, Shipt global modeli başarılı
+- [Turkish Freelance Market 2026](https://www.internations.org/turkey)
+
+### Gelir Modeli
+- **Freelancer aylık** (ay 2): 300 × ₺99/ay = **₺29.7K/ay**
+- **Premium** (ay 3): 50 × ₺299/ay = **₺15K/ay**
+- **Commission** (ay 4): 2000 işlem/ay × %8 = **₺32K/ay**
+- **Tahmin (3. ay):** ₺44.7K | **(6. ay):** ₺76.7K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Manuel sistem (WhatsApp, Excel). Global (Instawork) ama Türkçe destek yok.
+
+**Talep:** Facebook freelancer grupları (1M+ üye): "İş yönetimi zor" sık şikayeti.
+
+**Neden Heyecan Verici:** Büyük pazar, açık boşluk, düşük teknoloji gerekli, viral potansiyel (freelancer ağızdan ağıza).
+
+### İlk Somut Adım
+Bugün **Facebook'taki temizlikçi, makyöz, berber gruplarından 10 freelancer seç.** Mesaj: "İş yönetim yazılımı — randevu, ödeme, SMS bilgilendir. ₺99/ay. MVP 1 hafta. Test etmek ister misin?" Gün sonu: **5-6 freelancer** onay.
+
+### Zorluk/Risk
+- Tech adoption düşük (yaş ortalama 40-50)
+- Ödeme entegrasyonu: Credit card alışkanlığı yok
+- Rekabet: Global software Türkiye gelebilir
+
+**Risk Derecesi:** ORTA-DÜŞÜK
+
+---
+
+## FİKİR 4: AI İç Tasarım Danışmanlığı + Augmented Reality (AR Görselleştirme)
+
+### Ne Bu?
+Ev sahibi / kiralayan müşteriler için **"Odam nasıl dönsün" danışmanlığı — AI görüntü analizi + AR görselleştirme.** Sistem: (1) Müşteri oda fotoğrafını çeker, (2) AI renkler, boyut analiz eder, (3) AR app'te duvar rengi değişiklikleri, mobilya kombinasyonları canlı görür, (4) Tasarımcı online danışmanlık yapıp sonuç listesini (furniture + renk + budget) PDF gönderir.
+
+### Kanıt (Kaynaklar)
+- Home decor & renovasyon Türkiye pazarı: 50+ milyar TL
+- AR home design adoption: 2026'de %25 growth
+- Ikea Place, Pinterest AR: milyonlar indirdi
+- [AR Home Design Trends 2026](https://www.statista.com/outlook/emo/digital-media/ar-vr/turkey)
+
+### Gelir Modeli
+- **Konsültasyon paket** (ay 2): 20 × ₺1.999 = **₺40K**
+- **Aylık subscription** (ay 3): 30 × ₺299/ay = **₺9K/ay**
+- **Commission (furniture referral)** (ay 4): 100 satın × 5% = **₺10K/ay**
+- **Tahmin (3. ay):** ₺49K | **(6. ay):** ₺59K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Tasarımcı danışmanlığı manuel, pahalı (5K+ TL). AR home design yok (Türkçe).
+
+**Talep:** Instagram ev dekorasyon (500K+ hashtag), "nasıl yapılır" sorgusu yüksek.
+
+**Neden Heyecan Verici:** Visual talebi yüksek, Türkiye boşluğu, mobile-first, danışmanlık marjı yüksek.
+
+### İlk Somut Adım
+Bugün **Instagram'da ev dekorasyon eğitmenleri (20K+ subs) 6 tanesini bul.** DM: "AR iç tasarım danışmanlığı — müşteri oda fotoğrafı, AI analiz, AR görselleştirme, danışmanlık. ₺1.999 paket, ₺299/ay. MVP 3 hafta. Partner olmak ister misin?" Gün sonu: **3-4 danışman** onay.
+
+### Zorluk/Risk
+- AR teknoloji kompleksi (geliştirme zamanı)
+- Tasarım kalitesi: Müşteri expectation yüksek
+- Ölçek küçük (ev başına 1 danışmanlık)
+
+**Risk Derecesi:** ORTA
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Yerel Hizmet İşletmeleri İçin Tekli Yazılım**
+
+**Gerekçe:** Dört fikir arasında en hızlı implementation, en düşük risk, en geniş pazar. Freelancer yazılım ihtiyacı kanıtlanmış (500K+ müşteri, %80 manuel). İlk adım bugün bitirilebilir (10 freelancer bulup mesaj atıp taahhüd almak). Teknoloji basit (randevu + ödeme + SMS = MVP 1-2 hafta). Churn düşük (network effect: freelancer → ağızdan ağıza). Stajyer avukat platform güçlü ama liability riski yüksek, vintage moda pazaryeri authentication karmaşık, AR tasarım teknoloji kompleks ve ölçek küçük. Freelancer yazılım: pratik talep, somut boşluk, hızlı test, yüksek marj, viral potansiyel. **En pragmatik "haftasonunda prototipi, ay sonunda 50 müşteri" fıkrı.**
+
 # Günlük Fikir Araştırması - 9 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
