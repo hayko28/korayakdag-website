@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ihracat-rekoru-gorunmeyen-ikinci-tablo",
+    title: "Eylül İhracat Rekorunun Göstermediği İkinci Tablo",
+    excerpt:
+      "Eylül ihracatı 25,98 milyar dolarla Cumhuriyet tarihinin en yüksek ikinci aylık rakamına ulaştı, dış ticaret açığı yüzde 24,8 daraldı. Ama aynı hafta birçok ihracatçının masasında konuşulan konu bu rakam değil, kısa vadeli finansmanın maliyetiydi.",
+    tag: "Görüş",
+    date: "11 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "franchise-vermeden-once-atlanan-sart",
     title: "Franchise Vermeye Hazır Mısınız? Genelde Atlanan Tek Şart",
     excerpt:
