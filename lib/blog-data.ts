@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "isveren-calisan-e-postasini-denetleyebilir-mi-kvkk-ilke-karari-2026",
+    title: "İşveren Çalışanın Kurumsal E-Postasını Denetleyebilir mi? KVKK'nın 2026 İlke Kararı Ne Diyor?",
+    excerpt: "Kişisel Verileri Koruma Kurulu'nun 16.09.2026 tarihli ve 2026/2035 sayılı ilke kararı (RG 8 Ekim 2026/33394), kurumsal e-posta ve diğer iş iletişim kanallarının denetlenmesine sınır çiziyor. Aydınlatma yükümlülüğü, açık rızanın neden yeterli sayılmadığı, kademeli (trafik/içerik) denetim ilkesi, işten ayrılan çalışanın hesabı ve 2026 idari para cezalarıyla işverenler için güncel rehber.",
+    category: "KVKK • İŞ HUKUKU • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1761489798133-acc5e4decb30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yazilimin-telif-hakki-tescili-zorunlu-mu-2026",
     title: "Yazılımın Telif Hakkı Tescili Zorunlu mu? Yazılım Şirketleri İçin 2026 Rehberi",
     excerpt: "Yazılımın telif hakkı oluşturulduğu anda kendiliğinden doğar ve tescile tabi değildir; ama bu hak bir uyuşmazlıkta ispat edilmek zorundadır. Zorunlu mu isteğe bağlı mı kayıt-tescil, 2026 güncel 1.970 TL işlem ücreti, başvuru süreci, Bern Sözleşmesi ile yurt dışı koruma ve yazılımın neden patentle değil telifle korunduğuyla kapsamlı rehber.",
