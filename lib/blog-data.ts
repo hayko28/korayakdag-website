@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "genc-girisimci-bag-kur-destegi-kalkti-mi-2026",
+    title: "Genç Girişimcilerde Bağ-Kur Prim Desteği 2026'da Kalktı mı? Gelir Vergisi İstisnasıyla Karıştırmayın",
+    excerpt: "7566 sayılı Kanun'un 23. maddesiyle, 29 yaşını doldurmamış girişimcilere sağlanan 1 yıllık Bağ-Kur prim desteği 1 Ocak 2026 itibarıyla yürürlükten kaldırıldı. Gelir vergisi istisnası ise 2026'da 400.000 TL'lik tutarıyla sürüyor. İki ayrı teşviğin farkı, geçiş dönemindeki tartışma ve şartlarıyla güncel rehber.",
+    category: "VERGİ VE SGK • GENÇ GİRİŞİMCİ • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1753351052617-62818ffc9173?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "isveren-calisan-e-postasini-denetleyebilir-mi-kvkk-ilke-karari-2026",
     title: "İşveren Çalışanın Kurumsal E-Postasını Denetleyebilir mi? KVKK'nın 2026 İlke Kararı Ne Diyor?",
     excerpt: "Kişisel Verileri Koruma Kurulu'nun 16.09.2026 tarihli ve 2026/2035 sayılı ilke kararı (RG 8 Ekim 2026/33394), kurumsal e-posta ve diğer iş iletişim kanallarının denetlenmesine sınır çiziyor. Aydınlatma yükümlülüğü, açık rızanın neden yeterli sayılmadığı, kademeli (trafik/içerik) denetim ilkesi, işten ayrılan çalışanın hesabı ve 2026 idari para cezalarıyla işverenler için güncel rehber.",
