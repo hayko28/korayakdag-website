@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "asgari-ucret-senaryolari-butceye-maliyeti",
+    title: "2027 Asgari Ücret Senaryoları Arasındaki Fark Bütçeye Ne Kadar Yansıyor",
+    excerpt:
+      "2027 asgari ücreti için masada üç senaryo var: yüzde 20, 25 ve 30 artış. En düşük ve en yüksek senaryo arasındaki fark çalışan başına aylık 2.807 TL, elli kişilik bir ekipte yıllık 1,6 milyon TL'yi aşıyor. Komisyon kararı Aralık sonunda açıklanacak, ama bütçeler şimdiden kuruluyor.",
+    tag: "Strateji",
+    date: "12 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ihracat-rekoru-gorunmeyen-ikinci-tablo",
     title: "Eylül İhracat Rekorunun Göstermediği İkinci Tablo",
     excerpt:
