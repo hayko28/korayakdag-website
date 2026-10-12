@@ -1511,6 +1511,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıl sonu enflasyon beklentisinin yukarı, büyüme beklentisinin aşağı revize edilmesi, bütçe ve fiyatlama planlarını son çeyrekte daha temkinli varsayımlarla kurmanın gerekliliğine işaret ediyor. Finansman maliyeti yüksek kalan işletmelere, yıl sonu nakit akışı projeksiyonlarını bu güncel beklentilerle yeniden kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "9 Ekim 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-12",
+    baslik:
+      "TÜİK: Sanayi üretimi Ağustos'ta yıllık yüzde 1,9, aylık yüzde 1 geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 9 Ekim 2026'da açıkladığı verilere göre takvim etkisinden arındırılmış sanayi üretimi ağustosta geçen yılın aynı ayına kıyasla yüzde 1,9, mevsim ve takvim etkisinden arındırılmış üretim ise temmuza göre yüzde 1 azaldı; bu da düşüş serisinin dördüncü aya taşındığı anlamına geliyor. İmalat sanayi alt kaleminde yıllık yüzde 2,5 ve aylık yüzde 1,6 gerileme görülürken, madencilik-taş ocakçılığı ile elektrik-gaz-buhar üretimi her iki dönemde de artış kaydetti.",
+    kaynakUrl: "https://www.bloomberght.com/sanayi-uretimi-agustos-ta-sert-geriledi-3790906",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Düşüşün dördüncü aya taşıdığı ve ağırlıklı olarak imalat sanayisinden kaynaklandığı görülüyor. İmalatçı işletmelere stok ve üretim planlarını talep toparlanması beklentisiyle değil, güncel sipariş görünümüne göre kurmalarını öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "12 Ekim 2026",
+    eklendiTarihi: "2026-10-12",
+    baslik:
+      "KOSGEB Girişimci Destek Programı yenilendi: iş kurma, iş geliştirme ve faiz/kâr payı desteği olmak üzere üç ayrı mekanizma getirildi",
+    ozet:
+      "KOSGEB, yeni kurulan işletmelerin büyümesini ve sürdürülebilirliğini desteklemek amacıyla Girişimci Destek Programı'nı üç ayrı mekanizmayla yeniden yapılandırdı: geri ödemesiz İş Kurma Desteği, personel/makine-teçhizat/yazılım gibi giderler için 2,25 milyon TL'ye kadar (genç, kadın, engelli, gazi veya şehit yakını girişimcilere ek 250 bin TL) geri ödemeli ve faizsiz İş Geliştirme Desteği, kadın ve genç girişimciler için 1 milyon TL'ye kadar işletme sermayesinde kredi finansman maliyetinin yüzde 50'sinin karşılandığı Faiz/Kâr Payı Desteği. Programın 2026 yılı 3. başvuru dönemi 12-31 Ekim 2026 tarihleri arasında KOBİ Bilgi Sistemi üzerinden alınıyor; 2024'ten bu yana İş Geliştirme Desteği kapsamında 4.476 projeye toplam 6,4 milyar TL destek kararı verildi.",
+    kaynakUrl:
+      "https://kosgeb.gov.tr/site/tr/genel/detay/9499/girisimci-destek-programi-yenilendi-girisimcilere-yeni-destek-modeli",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Başvuru penceresi sadece 12-31 Ekim arasında açık ve değerlendirme iki aşamalı (komite ve jüri); yazılım, danışmanlık, test ve belgelendirme gibi hizmet alımlarını da kapsaması özellikle erken aşama teknoloji girişimleri için önemli bir ayrıntı. Başvuru öncesi iş geliştirme desteği ile faiz/kâr payı desteğinden hangisinin kendi profillerine uyduğunu netleştirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
