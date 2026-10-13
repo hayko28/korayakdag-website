@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-girisimci-destegi-neden-bir-yaris",
+    title: "KOSGEB Girişimci Destek Programı Aslında Bir Yarış",
+    excerpt:
+      "KOSGEB'in yeniden yapılandırdığı Girişimci Destek Programı'nda iş geliştirme desteği başvuranın hakkı değil, sıralamanın ödülü. Başvurular arasından önce ülke genelinde ilk 1.000, sonra ilk 500 proje seçiliyor; iyi bir iş planı bile o dönem kimlerle yarıştığına göre desteksiz kalabiliyor.",
+    tag: "Devlet Destekleri",
+    date: "13 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "asgari-ucret-senaryolari-butceye-maliyeti",
     title: "2027 Asgari Ücret Senaryoları Arasındaki Fark Bütçeye Ne Kadar Yansıyor",
     excerpt:
