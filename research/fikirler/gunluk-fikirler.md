@@ -1,3 +1,213 @@
+# Günlük Fikir Araştırması - 13 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 13 Ekim 2026
+**Hedef:** Sağlık (veteriner), eğitim (kurumsal), video/AI, gıda hizmetleri, fitness — geçmiş günlerden farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: Veteriner Klinik Yönetim + AI Teşhis Danışmanı
+
+### Ne Bu?
+Türkiye'deki 8000+ veteriner kliniği için **SaaS platform — (1) Muhasebe, randevu, ilaç/depo yönetimi, (2) AI veteriner asistanı: sahip tarafından hayvan belirtileri girilir, AI olası hastalıkları listeleyip, veterinerin checklist'ini hazırlar, (3) Telemedisin: video konsultasyon, hayvan fotoğrafı/video upload ile uzaktan tanı. Sistem: klinik → randevu portal, owner → belirti gir, AI danış, veteriner yapılandırılmış not yaz. DoldurKabı var ama AI özelliği yok.
+
+### Kanıt (Kaynaklar)
+- Türkiye veteriner kliniği sayısı 8000+, hayvan popülasyonu 45M+ (evcil + çiftlik)
+- Pet ownership Türkiye'de %15-20 (%60 Amerika), büyüyor
+- DoldurKabı (Türk yazılımı) var ama basit (randevu + depo), AI yok, telemedisin yok
+- Uluslararası: VetTriage (ABD) AI teşhis 2M+ kullanıcı, VetXML sistem benzer ama Türkçe yok
+
+### Gelir Modeli
+- **Klinik aylık paketi** (ay 2): 100 klinik × ₺699 (5-10 hayvan/gün) = **₺69.9K/ay**
+- **Premium (AI danışman)** (ay 3): 30 klinik × ₺399/ay = **₺12K/ay**
+- **Pet owner telemedisin** (ay 4): 200 konsultasyon × ₺199 = **₺40K/ay**
+- **API (eczane/lab integrasyonu)** (ay 5): 15 partner × ₺499/ay = **₺7.5K/ay**
+- **Tahmin (3. ay):** ₺121.9K | **(6. ay):** ₺129.4K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** DoldurKabı var ama minimalist. E-vet, SmartIVET sadece mobile companion (desktop'e bağımlı). AI teşhis + telemedisin combo = sıfır Türkçe çözüm.
+
+**Talep:** Pet ownership artıyor, veteriner hekimleri manuel sistem (Excel, WhatsApp), telemedisin COVID sonrası talep yüksek.
+
+**Neden Heyecan Verici:** Ülkesel monopol yok, 8000 kliniğe satılabilir, owner ödemesi var (pet insurance / ödeme gücü), muhasebeci referral netleri kurulabilir.
+
+### İlk Somut Adım
+Bugün **İstanbul, Ankara, İzmir'deki veteriner kliniklerinden 8-10 tanesi bul.** LinkedIn/WhatsApp: "Veteriner klinik yönetim + AI danışmanı yazılımı — randevu, ilaç depo, AI belirti analizi, telemedisin. ₺699/ay klinik, ₺199 owner konsültasyon. MVP 3 hafta. Beta olmak ister misin? İlk 5'e %50 indirim + 3 ay ücretsiz." Gün sonu: **3-4 veteriner kliniği "MVP test"** verbal taahhüdü.
+
+### Zorluk/Risk
+- **Tıbbi doğruluk:** AI teşhis hatalı sonuç = veteriner sorumluluğu, liability aydınlatma gerek
+- **Regulatory:** Sağlık Bakanlığı + Veteriner Odası lisans taşıyabilir
+- **Telemedisin entegrasyonu:** Veteriner mesleki etik, muayene sanal ≠ in-person
+- **Rekabet:** DoldurKabı hızlı feature ekleyebilir
+
+**Risk Derecesi:** ORTA-YÜKSEK (medical liability, regulatory)
+
+---
+
+## FİKİR 2: Kurumsal Mesleki Eğitim Platform (Sertifikalı Online Kurslar)
+
+### Ne Bu?
+KOSGEB/Ticaret Bakanlığı tarafından tanınan **"çalışan eğitim + sertifika" platformu.** Sistem: (1) KOBİ yöneticisi kurs satın alır (insan kaynakları, satış, teknik meslekler), (2) Çalışan e-learning modülü tamamlar, (3) Sınav girebilir, (4) Platform devlet sertifikası (Ticaret Bakanlığı onaylı) çıkarır, (5) KOBİ insan kaynakları dashboarda ilerleme, sertifika geçerliliği, compliance takip edebilir. Devlet destekli kurumsal eğitim.
+
+### Kanıt (Kaynaklar)
+- KOSGEB/Ticaret Bakanlığı 2026'da "Kurumsal İnsan Kaynakları Geliştirme" fonlarını genişledi
+- Türkiye KOBİ'lerin %60+ "çalışan eğitim" bütçesi var ama sertifika yönetimi manuel
+- Udemy/Coursera Türkiye'de genel kurs var ama devlet sertifikası yok
+- LMS pazarı Türkiye 2026 +25% (eğitim bütçeleri artan)
+- E-learning adoption (pandemi sonrası) Türkiye'de %45 kurum
+
+### Gelir Modeli
+- **KOBİ kurumsal paket** (ay 2): 30 KOBİ × ₺1.999 (unlimited workers, 12 kurs) = **₺60K**
+- **Kurs satış (yeniden satış)** (ay 3): 100 worker × 8 kurs × ₺199 = **₺160K**
+- **Sertifika API** (ay 4): 20 kurum × ₺799/ay = **₺16K/ay**
+- **Compliance reporting** (ay 5): 15 kurum × ₺399/ay = **₺6K/ay**
+- **Tahmin (3. ay):** ₺226K | **(6. ay):** ₺242K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** MEB e-learning var ama kurum odaklı değil. Udemy Türkçe ama sertifika yönetimi KOBİ için basit değil. Devlet sertifikalı platform = sıfır
+
+**Talep:** KOSGEB destekler (danışmanlık + eğitim), şirketler sertifika takip etmek istiyor
+
+**Neden Heyecan Verici:** Devlet tailwind (KOSGEB/Ticaret Bakanlığı), KOBİ'ler compliance göstermek istiyor, sertifika = müşteri bağlılığı
+
+### İlk Somut Adım
+Bugün **KOSGEB danışmanları + İnsan Kaynakları müdürleri (LinkedIn) 10 tanesini bul.** Mesaj: "Kurumsal eğitim + sertifika platformu — online kurslar, sınav, devlet sertifikası, compliance dashboard. ₺1.999/ay KOBİ paketi, KOSGEB destekli işletmeler %50 indirim. MVP 2 hafta. Pilot olmak ister misin?" Gün sonu: **3-4 KOSGEB müdürü / HR müdürü** "MVP pilot" taahhüdü.
+
+### Zorluk/Risk
+- **Sertifika düzenlemesi:** Devlet onayı uzun, yasal süreç karmaşık
+- **Kurs kalitesi:** Mühendis/muhasebe kursları güvenilir kaynaklardan gerek
+- **Adoption zaman:** KOBİ'ler devlet yapısı nedeni yavaş karar alır
+- **Rekabet:** MEB ileriye yürüyebilir, özel eğitim kurumları çok
+
+**Risk Derecesi:** ORTA (regulatory, adoption, rekabet)
+
+---
+
+## FİKİR 3: Faceless AI Video Generator Platform (Türkçe Yaratıcılar)
+
+### Ne Bu?
+Türkçe içerik yaratıcıları, markalar ve kurslar için **"script'ten video'ya" AI platform.** Sistem: (1) Yaratıcı metin/script girer ("blockchain nedir" 3 dakika), (2) Platform: AI ses (Türkçe, kişileme), AI görsel (3D animasyon/vector), subtitle otomasyonu, (3) Çıktı: 9:16 (TikTok/Reels) + 16:9 (YouTube) + 1:1 (Instagram) otomatik, (4) Music library (Türkçe müzik), royalty-free, (5) Paylaş: direkten TikTok/YouTube/Instagram'a upload, analytics dashboard.
+
+### Kanıt (Kaynaklar)
+- Türkçe TikTok/Instagram creators 500K+ sırasında, 90% video çekimi zahmetli
+- AI video generation 2026'de %87 creative professionals tarafından kullanılıyor
+- Faceless kanal (AI): YouTube trending, 10M+ abonelere ulaşan kanallar (hindi/Arapça/Türkçe)
+- Vertical video trend 2026: 43.7% AI video order'ı
+- Global AI video market 2026: $18.6 milyar (büyüme kesin)
+
+### Gelir Modeli
+- **Creator aylık plan** (ay 2): 50 creator × ₺399/ay = **₺20K/ay**
+- **Brand paket** (ay 3): 15 marka × ₺999/ay = **₺15K/ay**
+- **Pro (sınırsız video + AI voice custom)** (ay 4): 20 × ₺799/ay = **₺16K/ay**
+- **Music/asset marketplace commission** (ay 5): 100 video × ₺50 = **₺5K/ay**
+- **Tahmin (3. ay):** ₺51K | **(6. ay):** ₺56K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Runway, Synthesia global var ama Türkçe voice + vertical otomasyonu = sıfır. Descript Türkçe değil.
+
+**Talep:** Türkçe creators "video çekim zaman ve maliyeti yüksek" şikayeti sık. Kurular video ihtiyaçları yüksek ama prodüksiyon zor.
+
+**Neden Heyecan Verici:** Türkçe AI sesli, faceless channel patlama, markalar short-form video talep yüksek, 500K+ potential creators.
+
+### İlk Somut Adım
+Bugün **Türkçe YouTube faceless kanallar (10K+ subs) ve Instagram creators (50K+ subs) 8-10 tanesini bul.** Mesaj: "AI video generator — script'ten Türkçe sesli video. 9:16 (Reels/TikTok) + 16:9 (YouTube) otomatik. ₺399/ay starter, ₺799/ay PRO. MVP 2 hafta. Beta creator olmak ister misin? İlk 10 video ücretsiz." Gün sonu: **4-5 creator** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **AI ses kalitesi:** Türkçe sesli anlatım doğal olmayabilir, manual editing gerek
+- **Copyright/müzik:** Müzik lisanslama, sanat eseri hakları karmaşık
+- **Rekabet:** Runway, Synthesia hızlı Türkçe ekleyebilir
+- **Kurumluk:** Platform TOS, creator'ların deep fake kaygısı (yasal risk)
+
+**Risk Derecesi:** ORTA (AI kalitesi, copyright, rekabet hızı)
+
+---
+
+## FİKİR 4: Restoran/Kafe Maliyetlendirme + Gıda İsrafı Takibi Yazılımı
+
+### Ne Bu?
+Türkiye'deki 100K+ restoran, kafe, tatlı dükkanı için **SaaS — depo yönetimi + reçete maliyeti + gıda israfı tracking + profitabilite analiz.** Sistem: (1) Müşteri reçete girer (1 pide = un 200g, yazı 150g, vb.), (2) Sistem maliyeti hesaplar (ayık-ayık ürün maliyeti), (3) Günlük depo (girdi-çıktı) taranır (opsiyonel: ağırlık sensörü), (4) Israf takip: "pide reddedildi = 50g malzeme israf = ₺2.50", (5) Dashboard: günlük marj, ürün kârlılığı, israf trendleri.
+
+### Kanıt (Kaynaklar)
+- Türkiye gıda hizmetleri sektörü 200+ milyar TL, 100K+ işletme
+- Restoran marjı ortalama %25-30, israf %8-15 alaşağı yapıyor (%10-15 çoğu kafe)
+- Global foodservice software trend 2026: IoT sensörleri + AI predictive order
+- Gıda israfı sorun Türkiye'de (belediye raporları): hizmetler %15-25 oranında israf
+- POS yazılımı Türkiye'de var (PayPos vb) ama gıda maliyetlendirme + israf tracking = yok
+
+### Gelir Modeli
+- **Kafe/tatlı aylık** (ay 2): 100 işletme × ₺299 = **₺30K/ay**
+- **Restoran premium** (ay 3): 30 × ₺699/ay = **₺21K/ay**
+- **IoT sensör (opsiyonel)** (ay 4): 20 × ₺199 (sensor) + ₺99/ay = **₺4K setup + 2K/ay**
+- **Predictive ordering AI** (ay 5): 15 × ₺399/ay = **₺6K/ay**
+- **Tahmin (3. ay):** ₺53K | **(6. ay):** ₺63K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** PayPos/Toast global var ama Türkçe maliyetlendirme + israf eksik. Restoran yazılımı Türkiye'de kısıtlı (POS ağırlıklı).
+
+**Talep:** İşletmeciler "marj hesabı neden düşük" şikayeti sık. Gıda israfı Türkiye'de önemli sorun (belediye raporları).
+
+**Neden Heyecan Verici:** Tanınmış sorun (israf), somut çözüm (tracking), Türkiye boşluğu, viral potansiyel (kafe/restoran ağlarına satılabilir).
+
+### İlk Somut Adım
+Bugün **Instagram/Google Maps'ten İstanbul çevresinde popüler 10-12 kafe/restoran bul.** WhatsApp: "Restoran maliyetlendirme yazılımı — reçete maliyeti, depo tracking, israf takibi, profitabilite dashboard. ₺299/ay kafe, ₺699/ay restoran. MVP 1 hafta (demo reçete 5 set). Beta olmak ister misin? İlk 5'e %40 indirim + 2 ay ücretsiz." Gün sonu: **3-4 kafe/restoran** "MVP demo" taahhüdü.
+
+### Zorluk/Risk
+- **Adoption:** İşletmeciler ek yazılım eklemesinden kaçınıyor (POS entegrasyonu gerek)
+- **Sensör maliyeti:** IoT sensörler opsiyonel ama kurulum zahmetli
+- **Veri doğruluğu:** Depo saydığını elle taraması zor, hata yüksek
+- **POS entegrasyonu:** PayPos, Toast gibi mevcut sistemlerle uyum zorunlu (technical burden)
+
+**Risk Derecesi:** ORTA (adoption, entegrasyon)
+
+---
+
+## FİKİR 5: AI Fitness Coaching Platform (Kişiye Özel Training)
+
+### Ne Bu?
+Türkiye'deki 5M+ fitness fanatiği, sporcu ve hobi üyelerine **"kişiye özel AI antrenör" platform.** Sistem: (1) Kullanıcı hedef girer (kilo/kas/maraton), fitness seviyesi tayin edilir, (2) AI antrenman planı yazılır (opsiyonel: wearable connection — Fitbit/Apple Watch), (3) Günlük: antrenman, beslenme tavsiyesi, canlı form geri bildirim (kamera → AI pose detection), (4) Dashboard: ilerleme, kalori, kas kazanımı, uyku kalitesi, motivasyon skor. Garmin/Apple Health/Strava integrasyonu.
+
+### Kanıt (Kaynaklar)
+- Türkiye fitness pazarı 5M+ üye, +%8 yıllık (2026)
+- Wearable adoption: 45% ABD yetişkinleri, Türkiye %15-20 (büyüyor)
+- AI coaching 2026 fitness trend #1
+- Global AI fitness market 2024: $9.8 milyar → 2034: $46 milyar (projection)
+- Türkiye'de Apple Watch, Garmin kullanıcı sayısı +40% (2024-2026)
+
+### Gelir Modeli
+- **Temel plan** (ay 2): 200 kullanıcı × ₺99/ay = **₺20K/ay**
+- **Pro (form geri bildirim kamerası)** (ay 3): 50 × ₺299/ay = **₺15K/ay**
+- **Premium (diyetisyen + koç chat)** (ay 4): 20 × ₺599/ay = **₺12K/ay**
+- **Wearable sync** (ay 5): 80 × ₺49/ay = **₺4K/ay**
+- **Tahmin (3. ay):** ₺47K | **(6. ay):** ₺51K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Apple Fitness+, Google Fitbit Coaching global var ama Türkçe + kişileme = sıfır. Türkiye'de fitness app'ler manuel (BePresent vb) ama AI personalizasyon yok.
+
+**Talep:** Fitness severler "form hatalı yapma" şikayeti sık, kişiye özel koç pahalı (₺500-1000/ay).
+
+**Neden Heyecan Verici:** Wearable adoption artıyor, fitness market büyüyor, AI coaching trend kesin, kişiye özel koç yerine AI = marj yüksek.
+
+### İlk Somut Adım
+Bugün **Instagram fitness creators (100K+ subs), CrossFit boxes (10+ İstanbul) ve gym zincirlerini (Gold's Gym, Aerofit) bul (10 tanesini).** Mesaj: "AI fitness coaching — antrenman planı, form geri bildirim, beslenme, wearable sync. ₺99/ay temel, ₺299/ay PRO. MVP 2 hafta. Beta member olmak ister misin? İlk 20'ye %50 indirim + 1 ay ücretsiz." Gün sonu: **4-5 gym/creator** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **AI pose detection doğruluğu:** Kamera video kalitesi düşük yerler (gym'ler), hata riski
+- **Wearable entegrasyonu:** Apple/Google API değişimleri, entegrasyon karmaşık
+- **Rekabet:** Apple/Google fitness coaching hızlı Türkiye'ye gelir
+- **İnsan koç churn:** Premium tier'de canlı koç gerek, zaman yoğun
+
+**Risk Derecesi:** ORTA (teknik karmaşıklık, rekabet, human resources)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Restoran/Kafe Maliyetlendirme + Gıda İsrafı Takibi Yazılımı**
+
+**Gerekçe:** Beş fikir arasında en düşük teknik risk, en açık talep kanıtı ve en hızlı MVP potansiyeli. Gıda israfı Türkiye'de tanınmış sorun (belediye raporları, %15-25 hizmet sektöründe), işletmeciler "marj kaybı" çaresizliği yaşıyor, çözüm somut (maliyetlendirme + takip = ölçülebilir kazanç). İlk adım bugün bitirilebilir (10 kafe bulup MVP demo). MVP 1 hafta (5 reçete maliyeti), rakip yok (POS yazılımları maliyetlendirme eksik), ölçek geniş (100K+ işletme). Veteriner yazılımı tıbbi liability yüksek, mesleki eğitim devlet onayı uzun, video AI ses kalitesi sorusu büyük, fitness coaching rekabet Apple/Google'dan gelebilir. Restoran maliyetlendirme: pragmatik sorun, Türk işletmeci ağına satılabilir (kafe zincirler, danışmanlar), finansal sonuç net ("israf ₺50K/ay azaltılabilir"), adoption bariyeri düşük (POS entegrasyonu başlangıçta opsiyonel). **En "hafta sonu prototype, ay sonunda 10 müşteri" fıkrı.**
+
+---
+
 # Günlük Fikir Araştırması - 11 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
