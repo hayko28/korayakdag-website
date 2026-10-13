@@ -1538,6 +1538,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Başvuru penceresi sadece 12-31 Ekim arasında açık ve değerlendirme iki aşamalı (komite ve jüri); yazılım, danışmanlık, test ve belgelendirme gibi hizmet alımlarını da kapsaması özellikle erken aşama teknoloji girişimleri için önemli bir ayrıntı. Başvuru öncesi iş geliştirme desteği ile faiz/kâr payı desteğinden hangisinin kendi profillerine uyduğunu netleştirmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "10 Ekim 2026",
+    eklendiTarihi: "2026-10-13",
+    baslik:
+      "Şirketlerde sermaye kaybı ve borca batıklık hesaplamasındaki muafiyetin süresi 1 Ocak 2028'e uzatıldı",
+    ozet:
+      "10 Ekim 2026 tarihli ve 33396 sayılı Resmî Gazete'de yayımlanan tebliğ değişikliğiyle, Türk Ticaret Kanunu'nun 376. maddesi kapsamında şirketlerin sermaye kaybı veya borca batık olma durumunun hesaplanmasında; henüz ödenmemiş yabancı para cinsi borçlara ilişkin kur farkı zararlarının tamamının ve 2020-2021 yıllarında tahakkuk eden kira, amortisman ve personel giderlerinin toplamının yarısının hesaplamaya dahil edilmemesi uygulamasının süresi 1 Ocak 2028'e kadar uzatıldı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/sirketlerin-sermaye-yapilarini-korumalarina-ve-finansal-sureclerini-daha-saglikli-yonetmelerine-katki-saglayan-duzenlemenin-suresi-1-ocak-2028-tarihine-uzatildi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Sermaye kaybı veya borca batıklık sınırına yakın şirketlere, bu uzatmayı bir rahatlama değil bilançoyu güçlendirmek için ek bir süre olarak görmelerini öneririm; muafiyet kalıcı değil, 2028 itibarıyla gerçek rakamlarla yeniden karşılaşılacak.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "6 Ekim 2026 (2026 yılı Ocak-Eylül dönemi)",
+    eklendiTarihi: "2026-10-13",
+    baslik:
+      "Ticaret Bakanlığı 2026'nın ilk 9 ayında piyasa denetiminde 2,6 milyar TL idari para cezası uyguladı",
+    ozet:
+      "Ticaret Bakanlığı'nın 6 Ekim 2026'da açıkladığı verilere göre 2026 yılının Ocak-Eylül döneminde yaklaşık 360.578 firma ve 44 milyon ürün denetlendi, toplam 2,6 milyar TL idari para cezası uygulandı. Tüketicinin Korunması ve Piyasa Gözetimi Genel Müdürlüğü denetimlerinde reklam ve haksız ticari uygulamalara ilişkin cezalar 232,1 milyon TL'ye, tüketici sözleşmelerine (ön ödemeli konut, abonelik, mesafeli/taksitli satış, paket tur gibi) ilişkin cezalar ise 735,3 milyon TL'ye ulaştı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanliginin-2026-yili-eylul-ayi-itibariyle-piyasa-denetim-bilancosu-belli-oldu",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Reklam ve haksız ticari uygulama cezalarının bu denli yüksek bir tutara ulaşması, dijital pazarlama ve kampanya metinlerini yayına almadan önce hukuki açıdan gözden geçirmenin artık ihtiyari değil zorunlu bir adım olduğunu gösteriyor. Mesafeli satış ve abonelik sözleşmesi kullanan işletmelere, sözleşme metinlerini bu denetim kalemlerine göre yeniden kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
