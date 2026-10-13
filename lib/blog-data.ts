@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "turkiye-yapay-zeka-eylem-plani-2026-2030-sirketlere-etkisi",
+    title: "Türkiye Yapay Zeka Eylem Planı (2026-2030) Nedir? Şirketler ve KOBİ'ler İçin Ne Değişiyor?",
+    excerpt: "18 Ağustos 2026 tarihli ve 33344 sayılı Resmî Gazete'de yayımlanan 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe giren Türkiye Yapay Zeka Eylem Planı, dört eksen ve 16 eylemle 2030'a kadar 1 trilyon TL'yi aşan katma değer hedefliyor. GPU kredisi, yapay zeka kuponu, Büyüme Fonu gibi KOBİ'leri ilgilendiren unsurlar ve şimdiden başvurulabilir mevcut programlarla bağlantısı.",
+    category: "YAPAY ZEKÂ • EYLEM PLANI • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "genc-girisimci-bag-kur-destegi-kalkti-mi-2026",
     title: "Genç Girişimcilerde Bağ-Kur Prim Desteği 2026'da Kalktı mı? Gelir Vergisi İstisnasıyla Karıştırmayın",
     excerpt: "7566 sayılı Kanun'un 23. maddesiyle, 29 yaşını doldurmamış girişimcilere sağlanan 1 yıllık Bağ-Kur prim desteği 1 Ocak 2026 itibarıyla yürürlükten kaldırıldı. Gelir vergisi istisnası ise 2026'da 400.000 TL'lik tutarıyla sürüyor. İki ayrı teşviğin farkı, geçiş dönemindeki tartışma ve şartlarıyla güncel rehber.",
