@@ -12,7 +12,7 @@
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": "2026-10-31",
-      "not": "GÜNCELLEME (2026-09-17): Genişletilen kapsamdaki finansman desteği için başvurular resmen açıldı, 1 Eylül - 31 Ekim 2026 tarihleri arasında alınıyor (daha önce açılış tarihi ilan edilmemişti). 28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 12'ye çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor. Çalışan başına 3.500 TL/ay destek (tekstil/giyim/deri/mobilya/düğme-fermuar); kredi üst limiti KOBİ'ler için 50 milyon TL, büyük işletmeler için 150 milyon TL'ye yükseltildi (önceki limit 50 milyon TL idi). Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
+      "not": "GÜNCELLEME (2026-09-17): Genişletilen kapsamdaki finansman desteği için başvurular resmen açıldı, 1 Eylül - 31 Ekim 2026 tarihleri arasında alınıyor (daha önce açılış tarihi ilan edilmemişti). 28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 12'ye çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor. 2026-2 döneminde yalnızca finansman desteği var; çalışan başına 3.500 TL performans desteği sadece eski 2026-1 döneminde uygulanmıştı (KOSGEB resmi program sayfasında güncel dönem için böyle bir destek yazmıyor); kredi üst limiti KOBİ'ler için 50 milyon TL, büyük işletmeler için 150 milyon TL'ye yükseltildi (önceki limit 50 milyon TL idi). Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
     },
     {
       "id": "kosgeb-tekmer-destek-2025",
@@ -343,14 +343,14 @@
       "id": "yad-kosgeb-girisimci-destek-programi",
       "ad": "Girişimci Destek Programı",
       "kurum": "KOSGEB",
-      "durum": "kapali",
-      "sonBasvuruTarihi": "2026-05-08",
-      "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9440/girisimci-destek-programi",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-10-31",
+      "kaynakUrl": "https://kosgeb.gov.tr/site/tr/genel/detay/9499/girisimci-destek-programi-yenilendi-girisimcilere-yeni-destek-modeli",
       "ilkTespitTarihi": "2026-08-26",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "2026-09-23'te düzeltildi: yatirimadestek.gov.tr aggregator kaydı bu programı hatalı şekilde 'sürekli açık' gösteriyordu. KOSGEB'in kendi duyuru sayfasına göre son bilinen dönem 'İş Geliştirme Çağrısı 2026 Yılı 2. Dönem' (başlangıç 20 Nisan 2026, son başvuru 8 Mayıs 2026) kapandı, yeni bir dönem henüz ilan edilmedi. Girişimcinin kadın, genç, engelli, gazi veya birinci derece şehit yakını olması halinde destek üst limiti 150.000 TL artırılıyor; kadın ve genç girişimcilere ayrıca Kredi Finansman Desteği kapsamında 1 milyon TL'ye kadar işletme sermayesi desteği sağlanıyor (bkz. kosgeb.gov.tr/site/tr/genel/detay/6878/kosgebden-kadinlara-pozitif-ayrimcilik)."
+      "not": "GÜNCELLEME (2026-10-14): KOSGEB programı 12 Ekim 2026'da yeniden yapılandırdı (İş Kurma, İş Geliştirme ve İş Geliştirme Faiz/Kâr Payı Desteği). İş Geliştirme Çağrısı 3. Dönem başvuruları 12-31 Ekim 2026 arasında açık; İş Kurma Desteği başvuruları sürekli alınıyor (16.12.2024 ve sonrası kurulan işletmeler için bir yıl şartı aranmadan 31.12.2026'ya kadar). Önceki not: 2. dönem (20 Nisan-8 Mayıs 2026) kapandı. Kadın, genç, engelli, gazi veya birinci derece şehit yakını girişimcilerde destek üst limiti 150.000 TL artırılıyor."
     },
     {
       "id": "yad-ticaret-bakanligi-ihracat-konsorsiyumu-destegi",
