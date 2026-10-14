@@ -194,6 +194,12 @@ function Tey({ s }: { s: string }) {
   );
 }
 
+const AYLAR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+function tarihYaz(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${AYLAR[m - 1]} ${y}`;
+}
+
 function Liste({ t, a, full }: { t: string; a?: string[]; full?: boolean }) {
   if (!a || !a.length) return null;
   return (
@@ -377,6 +383,7 @@ export default function DestekRehberi() {
   const [filtre, setFiltre] = useState<Filtre>("all");
   const [sekme, setSekme] = useState<"a" | "b" | "c">("b");
   const D = data as unknown as {
+    sonKontrol: string;
     kosgeb: Program[];
     tubitak: Program[];
     ticaret: Program[];
@@ -545,7 +552,7 @@ export default function DestekRehberi() {
       <Grup baslik="Ar-Ge Merkezi, Teknopark ve TEKMER" aciklama="Üçü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
 
       <p className="note" style={{ marginTop: 36 }}>
-        Devlet destek bilgileri 14 Ekim 2026 itibarıyla resmi kurum sayfalarından derlenmiştir. Başvuru şartları, tutarlar
+        Devlet destek bilgileri {tarihYaz(D.sonKontrol)} itibarıyla resmi kurum sayfalarından derlenmiştir. Başvuru şartları, tutarlar
         ve tarihler çağrıya göre değişir; başvurudan önce güncel duyuru kontrol edilmelidir. &quot;Teyit edilemedi&quot;
         işaretli bilgiler resmi kaynakta doğrulanamamıştır.
       </p>

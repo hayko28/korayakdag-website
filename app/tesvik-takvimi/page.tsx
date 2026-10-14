@@ -6,14 +6,31 @@ import Contact from "@/components/Contact";
 import DestekRehberi from "@/components/DestekRehberi";
 import rehber from "@/lib/destek-rehberi-data.json";
 
-const SON_KONTROL = "14 Ekim 2026";
 const KURUM_SAYISI = 5;
+const AYLAR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
 
-const ONE_CIKAN_PROGRAMLAR = [
-  { ad: "KOSGEB Girişimci Destek", kurum: "KOSGEB", durum: "31 Ekim" },
-  { ad: "TÜBİTAK 1501 Sanayi Ar-Ge", kurum: "TÜBİTAK", durum: "26 Ekim" },
-  { ad: "TÜBİTAK 1507 KOBİ Ar-Ge", kurum: "TÜBİTAK", durum: "11 Kasım" },
-];
+function tarihYaz(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${AYLAR[m - 1]} ${y}`;
+}
+
+// Açık KOSGEB ve TÜBİTAK çağrıları arasından, son tarihi en yakın olan üçü
+function yaklasanSonTarihler() {
+  const bugun = new Date();
+  const adaylar: { ad: string; kurum: string; durum: string; t: number }[] = [];
+  for (const [kurum, liste] of [["KOSGEB", rehber.kosgeb], ["TÜBİTAK", rehber.tubitak]] as const) {
+    for (const p of liste) {
+      if (p.durum !== "acik") continue;
+      const m = p.kapak.match(/(d{1,2}) (Ocak|Şubat|Mart|Nisan|Mayıs|Haziran|Temmuz|Ağustos|Eylül|Ekim|Kasım|Aralık) (d{4})/);
+      if (!m) continue;
+      const t = new Date(Number(m[3]), AYLAR.indexOf(m[2]), Number(m[1]), 23, 59).getTime();
+      if (t < bugun.getTime()) continue;
+      adaylar.push({ ad: p.ad.split(" (")[0].replace(/ (Destekleme )?Programı$/, ""), kurum, durum: `${m[1]} ${m[2]}`, t });
+    }
+  }
+  return adaylar.sort((a, b) => a.t - b.t).slice(0, 3);
+}
+
 
 export const metadata: Metadata = {
   title: "Güncel Destek ve Teşvik Programları Takvimi 2026 | Koray Akdağ",
@@ -37,7 +54,7 @@ export default function TesvikTakvimiPage() {
           <div>
             <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-300">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              Son kontrol: {SON_KONTROL}
+              Son kontrol: {tarihYaz(rehber.sonKontrol)}
             </span>
 
             <h1 className="max-w-3xl text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
@@ -62,7 +79,7 @@ export default function TesvikTakvimiPage() {
               </div>
               <div className="bg-[#0A1E36] px-5 py-4">
                 <p className="text-lg font-black leading-tight text-white">
-                  {SON_KONTROL}
+                  {tarihYaz(rehber.sonKontrol)}
                 </p>
                 <p className="text-[11px] text-gray-400">son kontrol</p>
               </div>
@@ -81,7 +98,7 @@ export default function TesvikTakvimiPage() {
                   </span>
                 </div>
                 <div className="space-y-2.5">
-                  {ONE_CIKAN_PROGRAMLAR.map((item) => (
+                  {yaklasanSonTarihler().map((item) => (
                     <div
                       key={item.ad}
                       className="flex items-center justify-between gap-3 rounded-xl bg-white/5 px-3 py-2.5"

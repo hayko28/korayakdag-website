@@ -86,6 +86,18 @@ Her program kaydı şu alanları taşır:
 
 Değişiklik olsun olmasın dosyayı `sonGuncelleme` alanıyla güncelleyip commit+push et (bkz. madde 7).
 
+### 3b. Sitedeki "Güncel Destek ve Teşvik Programları Takvimi" sayfası — `lib/destek-rehberi-data.json`
+
+`/tesvik-takvimi` sayfası artık `programlar.json`'dan değil, `lib/destek-rehberi-data.json` dosyasından beslenir (KOSGEB, TÜBİTAK, Ticaret Bakanlığı, TKDK ve Yatırım Teşvik için detaylı kartlar). `programlar.json` ile birlikte bu dosyayı da güncel tut:
+
+- Dosya yapısı: `{ sonKontrol: "YYYY-MM-DD", kosgeb: [...], tubitak: [...], ticaret: [...], tkdk: [...], yatirim: {...} }`. Program kayıtları: `ad`, `durum` (`acik` | `surekli` | `kapali`), `kapak` (kartın kapak etiketi: örn. "31 Ekim 2026", "Sürekli açık", "Yeni dönem bekleniyor", "20 Temmuz 2026'da kapandı"), `sonTarih` (uzun açıklama), `ozet`, `amac`, `kimler`, `sartlar`, `destekOrani`, `odemeSekli`, `kalemler`, `faydalar`, `basvuru`, `kaynaklar`, `dogrulama`.
+- Her çalışmada, bu dosyadaki programlardan durumu veya tarihi değişenleri güncelle: son başvuru tarihi geçtiyse `durum: "kapali"` ve `kapak`'ı "[tarih]'de kapandı" yap; tarih uzatıldıysa `kapak` ve `sonTarih`'i yeni tarihle güncelle; yeni çağrı dönemi açıldıysa `durum: "acik"` ve tarihleri yaz. `kapak` içindeki tarih "31 Ekim 2026" biçiminde (gün Ay yıl, Türkçe ay adı) yazılmalı, çünkü sayfanın "Öne Çıkan Son Tarihler" kutusu bu biçimi okur.
+- Bir program resmen kaldırıldıysa/sonlandırıldıysa (tekrar açılma ihtimali yoksa) kaydı dosyadan SİL; kartlarda yalnızca açık veya yeniden açılma ihtimali olan programlar bulunur.
+- Dosyada olmayan yeni bir program bulursan ve tüm alanlarını (amaç, şartlar, oran, ödeme, kalemler, faydalar) resmî kaynaktan eksiksiz doldurabiliyorsan kaydı ekle; dolduramıyorsan ekleme, `research/tesvik-takip/rehber-guncelleme-gerekli.md` dosyasına adını, kaynağını ve eksik bilgiyi not düş.
+- Rakam uydurma. Doğrulayamadığın alanı "teyit edilemedi" yazarak bırak (sayfa bunları sarı işaretler).
+- Kayıtlarda em dash (—) kullanma.
+- Dosyayı değiştirdiysen veya kontrol ettiysen `sonKontrol` alanını bugünün tarihiyle (`YYYY-MM-DD`) güncelle. Ardından JSON'un bozulmadığını doğrula: `node -e "JSON.parse(require('fs').readFileSync('lib/destek-rehberi-data.json','utf8'))"`. Hata verirse değişikliğini geri al.
+
 ---
 
 ## 4. E-POSTA GÖNDERİMİ — TEKNİK YÖNTEM
@@ -165,7 +177,7 @@ Bu dosyayı düzenlemekten öte `lib/destek-uygunluk/` klasöründeki hiçbir do
 
 ## 7. TEKNİK UYGULAMA (git)
 
-- `research/tesvik-takip/programlar.json` ve (varsa) `research/tesvik-takip/blog-guncelleme-gerekli.md` / `research/tesvik-takip/uygunluk-motoru-guncelleme-gerekli.md` dışında başka dosyaya dokunma.
+- `research/tesvik-takip/programlar.json`, `lib/destek-rehberi-data.json` (bkz. madde 3b) ve (varsa) `research/tesvik-takip/blog-guncelleme-gerekli.md` / `research/tesvik-takip/uygunluk-motoru-guncelleme-gerekli.md` / `research/tesvik-takip/rehber-guncelleme-gerekli.md` dışında başka dosyaya dokunma.
 - Değişiklik varsa commit et (mesaj: "Teşvik Takip: [TARİH] — [kısa özet]") ve `git pull --rebase origin main` sonrası `main` branch'ine push et.
 - Değişiklik yoksa commit atma.
 - **GİT PUSH GÜVENLİĞİ — asla `--force` / `--force-with-lease` kullanma.** `git push` reddedilirse veya rebase "diverged" / "refusing to merge unrelated histories" gibi bir çakışma verirse: rebase'i `--abort` ile geri al, commit'ini LOKALDE bırak, push'u YAPMA ve durumu özetleyen bir raporla bitir. Böyle bir çakışma uzak repoda beklenmedik bir geçmiş olduğunun işaretidir — gözetimsiz bir çalıştırmada bunu force push ile "çözmek" gerçek commit geçmişini silebilir.
