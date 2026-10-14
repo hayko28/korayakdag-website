@@ -292,11 +292,11 @@ export default function BlogPage() {
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">4. Bölge</td>
-                  <td className="p-4">Afyonkarahisar, Aksaray, Amasya, Artvin, Çorum, Elazığ, Erzincan, Kastamonu, Kırşehir, Malatya, Niğde, Ordu, Sivas, Sinop, Tokat, Tunceli, Yozgat</td>
+                  <td className="p-4">Afyonkarahisar, Aksaray, Amasya, Artvin, Çorum, Elazığ, Erzincan, Kastamonu, Kırşehir, Malatya, Sivas</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">5. Bölge</td>
-                  <td className="p-4">Bartın, Bayburt, Çankırı, Erzurum, Giresun, Hatay, Kahramanmaraş, Kilis, Osmaniye</td>
+                  <td className="p-4">Bartın, Bayburt, Çankırı, Erzurum, Giresun, Hatay, Kahramanmaraş, Kilis, Niğde, Ordu, Osmaniye, Sinop, Tokat, Tunceli, Yozgat</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold">6. Bölge</td>
@@ -340,8 +340,8 @@ export default function BlogPage() {
                   <td className="p-4">%60 (İstanbul hariç)</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Yok</td>
-                  <td className="p-4">Yok</td>
-                  <td className="p-4">Genellikle yok</td>
+                  <td className="p-4">Yalnızca Öncelikli yatırımlarda</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">2</td>
@@ -351,8 +351,8 @@ export default function BlogPage() {
                   <td className="p-4">%60</td>
                   <td className="p-4">1 yıl</td>
                   <td className="p-4">Yok</td>
-                  <td className="p-4">Yok</td>
-                  <td className="p-4">Genellikle yok</td>
+                  <td className="p-4">Yalnızca Öncelikli yatırımlarda</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">3</td>
@@ -362,8 +362,8 @@ export default function BlogPage() {
                   <td className="p-4">%60</td>
                   <td className="p-4">2 yıl</td>
                   <td className="p-4">Yok</td>
-                  <td className="p-4">Yok</td>
-                  <td className="p-4">Sınırlı imkan</td>
+                  <td className="p-4">Yalnızca Öncelikli yatırımlarda</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">4</td>
@@ -374,7 +374,7 @@ export default function BlogPage() {
                   <td className="p-4">4 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Var</td>
-                  <td className="p-4">Var</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-4 font-semibold">5</td>
@@ -385,7 +385,7 @@ export default function BlogPage() {
                   <td className="p-4">8 yıl</td>
                   <td className="p-4">Yok</td>
                   <td className="p-4">Var</td>
-                  <td className="p-4">Var</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold">6</td>
@@ -396,7 +396,7 @@ export default function BlogPage() {
                   <td className="p-4">12 yıl (OSB dışı) / 14 yıl (OSB içi)</td>
                   <td className="p-4">10 yıl</td>
                   <td className="p-4">Var (en yüksek üst sınır)</td>
-                  <td className="p-4">Var</td>
+                  <td className="p-4">Bölge ayrımı yok</td>
                 </tr>
               </tbody>
             </table>
@@ -529,7 +529,7 @@ export default function BlogPage() {
                 (15.100.000 TL) karşılandığı ve imalat sanayii EK-3
                 listesinde geniş kapsamlı yer aldığı için başvurabilir. 1.
                 bölgede SGK işveren primi desteği, SGK işçi hissesi desteği,
-                faiz/kâr payı desteği ve yatırım yeri tahsisi{" "}
+                faiz/kâr payı desteği (yalnızca Öncelikli yatırımlarda verilir, bu örnekte Hedef Yatırım olduğu için verilmez) ve vergi indirimi öngörülmeyen yatırımlarda yatırım yeri tahsisi{" "}
                 <strong>uygulanmaz</strong>; bu bölgede belge esas olarak
                 KDV istisnası, gümrük vergisi muafiyeti ve indirimli
                 kurumlar vergisinden ibarettir (İstanbul&apos;da yapılan
@@ -563,9 +563,7 @@ export default function BlogPage() {
                 proje geliştiriyor. Seracılık EK-3&apos;te açıkça listelenen
                 bir faaliyet olduğundan Hedef Yatırımlar kapsamına girer; KDV
                 istisnası, gümrük muafiyeti, indirimli kurumlar vergisi ve
-                1 yıllık SGK işveren primi desteğinden yararlanır; 2. bölgede
-                faiz/kâr payı desteği ve yatırım yeri tahsisi genellikle
-                uygulanmaz. <strong>Sonuç:</strong> 15.100.000 TL yatırım ×
+                1 yıllık SGK işveren primi desteğinden yararlanır; 2. bölgede Hedef Yatırımlar için faiz/kâr payı desteği verilmez; yatırım yeri tahsisinde ise bölge ayrımı yoktur. <strong>Sonuç:</strong> 15.100.000 TL yatırım ×
                 %20 yatırıma katkı oranı ={" "}
                 <strong>3.020.000 TL&apos;ye kadar</strong> vergi avantajı;
                 işletme bu tutara ulaşana kadar kurumlar vergisini %10
@@ -646,8 +644,9 @@ export default function BlogPage() {
                 desteği ve yatırım yeri tahsisi aynı anda devreye girebilir.
                 6. bölgenin &quot;en yoğun destek paketi&quot; olarak
                 anılmasının nedeni budur. <strong>Sonuç:</strong> 7.500.000
-                TL yatırım × %20 yatırıma katkı oranı ={" "}
-                <strong>1.500.000 TL&apos;ye kadar</strong> vergi avantajı;
+                TL yatırım × %30 yatırıma katkı oranı (6. bölgedeki yatırımlar
+                Öncelikli Yatırım sayıldığı için) ={" "}
+                <strong>2.250.000 TL&apos;ye kadar</strong> vergi avantajı;
                 yatırımcı bu tutara ulaşana kadar kurumlar vergisini %10
                 oranında (%60 indirimli) öder; üstelik bu tutara 12-14
                 yıllık SGK primi desteği, faiz/kâr payı desteği ve yatırım
@@ -1076,9 +1075,10 @@ export default function BlogPage() {
                 Genel kural olarak bölge numarası yükseldikçe (6. bölgeye
                 doğru gidildikçe, yani gelişmişlik azaldıkça) destek
                 yoğunluğu artar: SGK işveren primi desteği süresi uzar,
-                4. bölgeden itibaren faiz/kâr payı desteği ve yatırım yeri
-                tahsisi imkanı devreye girer, 6. bölgede ayrıca 10 yıllık
-                SGK işçi hissesi desteği eklenir. Ancak asgari yatırım tutarı
+                faiz/kâr payı desteği Hedef Yatırımlarda 4. bölgeden itibaren,
+                Öncelikli Yatırımlarda ise bölgeye bakılmaksızın verilir, 6.
+                bölgede ayrıca 10 yıllık SGK işçi hissesi desteği eklenir.
+                Yatırım yeri tahsisinde bölge ayrımı yoktur. Ancak asgari yatırım tutarı
                 1. ve 2. bölgede daha yüksektir (15,1 milyon TL), 3-6.
                 bölgelerde ise daha düşüktür (7,5 milyon TL). Hangi ilin
                 hangi bölgede olduğu ve size özel destek unsurları için bu
@@ -1239,7 +1239,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yatırım Teşvik Belgesi bir hibe midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Belge, yapacağınız yatırım harcamaları üzerindeki vergi, gümrük ve sigorta prim yükünü azaltan; ayrıca kredi faizinin/kâr payının bir kısmını karşılayan bir destek paketidir. Doğrudan nakit hibe ödemesi yapılmaz."}},{"@type":"Question","name":"Şahıs işletmesi Yatırım Teşvik Belgesi alabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, Türkiye'de faaliyet gösteren yerli veya yabancı gerçek ve tüzel kişiler başvurabilir. Şahıs işletmeleri, limited ve anonim şirketler bu kapsamdadır; önemli olan yatırımın asgari tutarı ve sektör şartlarını karşılamasıdır."}},{"@type":"Question","name":"Yatırım hangi bölgede yapılırsa daha fazla destek alınır?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak bölge numarası yükseldikçe (6. bölgeye doğru gidildikçe, yani gelişmişlik azaldıkça) destek yoğunluğu artar: SGK işveren primi desteği süresi uzar, 4. bölgeden itibaren faiz/kâr payı desteği ve yatırım yeri tahsisi imkanı devreye girer, 6. bölgede ayrıca 10 yıllık SGK işçi hissesi desteği eklenir. Ancak asgari yatırım tutarı 1. ve 2. bölgede daha yüksektir (15,1 milyon TL), 3-6. bölgelerde ise daha düşüktür (7,5 milyon TL). Hangi ilin hangi bölgede olduğu ve size özel destek unsurları için bu yazıdaki bölge tablosunu ve E-TUYS'u kontrol edin."}},{"@type":"Question","name":"NACE kodum EK-3 listesinde varsa teşvik belgesi almam garanti mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. NACE kodunun Hedef Yatırımlar Teşvik Sistemi'nin EK-3 listesinde yer alması, başvurunun değerlendirmeye alınabilmesi için gerekli ama tek başına yeterli bir şart değildir. Ürün detayı, yatırım cinsi (yeni/tevsi/ modernizasyon), kapasite, yatırım yeri, gerekli çevresel izinler, makine listesi ve finansman yapısı birlikte değerlendirilir; bazı sektörler belirli bölgelerde (özellikle 1. ve 2. bölgede) desteklenmeyebilir. Kesin uygunluğu, başvuru öncesinde E-TUYS üzerinden veya danışmanınız aracılığıyla teyit etmeniz gerekir."}},{"@type":"Question","name":"Yatırıma başladıktan sonra teşvik belgesi başvurusu yapılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Prensip olarak hayır. Destek unsurlarından yararlanmak için başvurunun yatırım harcamaları başlamadan tamamlanmış olması gerekir. Bu nedenle proje planlaması aşamasında, ilk harcama yapılmadan önce başvuru sürecinin başlatılması kritik önem taşır."}},{"@type":"Question","name":"Genel Teşvik Uygulaması tamamen mi kaldırıldı?","acceptedAnswer":{"@type":"Answer","text":"Evet, 9903 sayılı Karar ile bölge/sektör ayırt etmeksizin yalnızca asgari tutarı karşılayan yatırımlara KDV istisnası ve gümrük muafiyeti sağlayan eski \"Genel Teşvik Uygulaması\" kaldırılmıştır. Bugün her yatırımın hangi programa (Kalkınma Hamlesi veya Sektörel Teşvik Sistemi) gireceğinin belirlenmesi gerekmektedir."}},{"@type":"Question","name":"Yabancı yatırımcılar Türkiye'de kurdukları şirketle bu belgeyi alabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yabancı sermayeli şirketler, Türkiye'deki yerli şirketlerle aynı şartlara tabi olarak Yatırım Teşvik Belgesi başvurusunda bulunabilir; bu belge Türkiye'de yeni şirket kuruluşuyla birlikte planlanan yatırımlar için de değerlendirilebilir."}},{"@type":"Question","name":"Başvuru sürecini danışmanlık almadan tek başıma yürütebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Teknik olarak mümkündür; ancak doğru programın seçilmesi, fizibilite raporunun ve makine listesinin uygun kurgulanması, destek unsurlarının eksiksiz talep edilmesi ve sonradan gelecek denetimlere hazırlıklı olunması, sürecin başından itibaren doğru yönetilmesini gerektirir. Küçük bir hata, hem belge onay süresini uzatabilir hem de alınabilecek destek tutarını azaltabilir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yatırım Teşvik Belgesi bir hibe midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Belge, yapacağınız yatırım harcamaları üzerindeki vergi, gümrük ve sigorta prim yükünü azaltan; ayrıca kredi faizinin/kâr payının bir kısmını karşılayan bir destek paketidir. Doğrudan nakit hibe ödemesi yapılmaz."}},{"@type":"Question","name":"Şahıs işletmesi Yatırım Teşvik Belgesi alabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, Türkiye'de faaliyet gösteren yerli veya yabancı gerçek ve tüzel kişiler başvurabilir. Şahıs işletmeleri, limited ve anonim şirketler bu kapsamdadır; önemli olan yatırımın asgari tutarı ve sektör şartlarını karşılamasıdır."}},{"@type":"Question","name":"Yatırım hangi bölgede yapılırsa daha fazla destek alınır?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak bölge numarası yükseldikçe (6. bölgeye doğru gidildikçe, yani gelişmişlik azaldıkça) destek yoğunluğu artar: SGK işveren primi desteği süresi uzar, faiz/kâr payı desteği Hedef Yatırımlarda 4. bölgeden itibaren, Öncelikli Yatırımlarda ise bölgeye bakılmaksızın verilir, 6. bölgede ayrıca 10 yıllık SGK işçi hissesi desteği eklenir. Yatırım yeri tahsisinde bölge ayrımı yoktur. Ancak asgari yatırım tutarı 1. ve 2. bölgede daha yüksektir (15,1 milyon TL), 3-6. bölgelerde ise daha düşüktür (7,5 milyon TL). Hangi ilin hangi bölgede olduğu ve size özel destek unsurları için bu yazıdaki bölge tablosunu ve E-TUYS'u kontrol edin."}},{"@type":"Question","name":"NACE kodum EK-3 listesinde varsa teşvik belgesi almam garanti mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. NACE kodunun Hedef Yatırımlar Teşvik Sistemi'nin EK-3 listesinde yer alması, başvurunun değerlendirmeye alınabilmesi için gerekli ama tek başına yeterli bir şart değildir. Ürün detayı, yatırım cinsi (yeni/tevsi/ modernizasyon), kapasite, yatırım yeri, gerekli çevresel izinler, makine listesi ve finansman yapısı birlikte değerlendirilir; bazı sektörler belirli bölgelerde (özellikle 1. ve 2. bölgede) desteklenmeyebilir. Kesin uygunluğu, başvuru öncesinde E-TUYS üzerinden veya danışmanınız aracılığıyla teyit etmeniz gerekir."}},{"@type":"Question","name":"Yatırıma başladıktan sonra teşvik belgesi başvurusu yapılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Prensip olarak hayır. Destek unsurlarından yararlanmak için başvurunun yatırım harcamaları başlamadan tamamlanmış olması gerekir. Bu nedenle proje planlaması aşamasında, ilk harcama yapılmadan önce başvuru sürecinin başlatılması kritik önem taşır."}},{"@type":"Question","name":"Genel Teşvik Uygulaması tamamen mi kaldırıldı?","acceptedAnswer":{"@type":"Answer","text":"Evet, 9903 sayılı Karar ile bölge/sektör ayırt etmeksizin yalnızca asgari tutarı karşılayan yatırımlara KDV istisnası ve gümrük muafiyeti sağlayan eski \"Genel Teşvik Uygulaması\" kaldırılmıştır. Bugün her yatırımın hangi programa (Kalkınma Hamlesi veya Sektörel Teşvik Sistemi) gireceğinin belirlenmesi gerekmektedir."}},{"@type":"Question","name":"Yabancı yatırımcılar Türkiye'de kurdukları şirketle bu belgeyi alabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yabancı sermayeli şirketler, Türkiye'deki yerli şirketlerle aynı şartlara tabi olarak Yatırım Teşvik Belgesi başvurusunda bulunabilir; bu belge Türkiye'de yeni şirket kuruluşuyla birlikte planlanan yatırımlar için de değerlendirilebilir."}},{"@type":"Question","name":"Başvuru sürecini danışmanlık almadan tek başıma yürütebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Teknik olarak mümkündür; ancak doğru programın seçilmesi, fizibilite raporunun ve makine listesinin uygun kurgulanması, destek unsurlarının eksiksiz talep edilmesi ve sonradan gelecek denetimlere hazırlıklı olunması, sürecin başından itibaren doğru yönetilmesini gerektirir. Küçük bir hata, hem belge onay süresini uzatabilir hem de alınabilecek destek tutarını azaltabilir."}}]}) }}
       />
     </BlogLayout>
   );
