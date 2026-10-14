@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tubitak-1501-altinci-proje-destek-orani",
+    title: "TÜBİTAK 1501'de Altıncı Proje Eşiği: Destek Oranı Ne Zaman Düşüyor?",
+    excerpt:
+      "TÜBİTAK'ın 1501 Sanayi Ar-Ge Destekleme Programı'nda ilk 5 desteklenen proje %75 oranla destekleniyor, ama 1 Ocak 2020'den sonraki sözleşmeler sayılınca 6. projeden itibaren oran %60'a düşüyor. Düzenli başvuru yapan firmalar bu eşiği genelde bütçe planlamasına yansıtmıyor.",
+    tag: "Devlet Destekleri",
+    date: "14 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-girisimci-destegi-neden-bir-yaris",
     title: "KOSGEB Girişimci Destek Programı Aslında Bir Yarış",
     excerpt:
