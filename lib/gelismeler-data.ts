@@ -1566,6 +1566,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Reklam ve haksız ticari uygulama cezalarının bu denli yüksek bir tutara ulaşması, dijital pazarlama ve kampanya metinlerini yayına almadan önce hukuki açıdan gözden geçirmenin artık ihtiyari değil zorunlu bir adım olduğunu gösteriyor. Mesafeli satış ve abonelik sözleşmesi kullanan işletmelere, sözleşme metinlerini bu denetim kalemlerine göre yeniden kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "30 Eylül 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-14",
+    baslik:
+      "TÜİK: İşsizlik oranı Ağustos'ta yüzde 7,8'e geriledi, atıl işgücü oranı yüzde 31'e yükseldi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 30 Eylül 2026'da açıkladığı verilere göre mevsim etkisinden arındırılmış işsizlik oranı Ağustos'ta bir önceki aya göre 0,3 puan azalarak yüzde 7,8'e geriledi; işsiz sayısı 106 bin kişi azalarak 2 milyon 740 bin kişi oldu. İstihdam edilenlerin sayısı 136 bin kişi artarak 32 milyon 507 bin kişiye, istihdam oranı ise yüzde 48,4'e çıktı. Buna karşılık zamana bağlı eksik istihdam, potansiyel işgücü ve işsizlerden oluşan atıl işgücü oranı 0,4 puan artışla yüzde 31,0'a yükseldi.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-agustos-ayi-isgucu-piyasasi-gelismeleri-aciklandi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Baş gösterge gerilerken atıl işgücü oranının yükselmesi, istihdam piyasasının göründüğünden daha gevşek olduğuna işaret ediyor. İşe alım planlayan işletmelere, sadece işsizlik oranındaki iyileşmeye değil bu daha geniş tanımlı orana da bakarak ücret ve işe alım beklentilerini kurmalarını öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "Temmuz 2026 (25 Eylül 2026'da yayımlandı)",
+    eklendiTarihi: "2026-10-14",
+    baslik:
+      "Temmuz 2026'da 480 yatırım teşvik belgesi düzenlendi, imalat sektörü yine ilk sırada",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı'nın Temmuz 2026 Yatırım Teşvik Bülteni'ne göre bu dönemde 9903 sayılı Karar kapsamında 480 yatırım teşvik belgesi düzenlendi; belgelerde toplam 74,2 milyar TL sabit yatırım ve 11.031 kişilik istihdam öngörüldü. Sektörel dağılımda imalat 353 belge ve 32,2 milyar TL yatırımla ilk sırada yer aldı, onu enerji (24,4 milyar TL) ve madencilik (8,7 milyar TL) izledi; belgelerin 462'si yerli, 18'i yabancı sermayeli firmalara düzenlendi.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/09/25/temmuzda-74-milyar-liralik-yatirima-tesvik/",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: İmalat sektörünün belge sayısı ve yatırım tutarında art arda ilk sırada çıkması, teşvik sisteminin hâlâ üretim yatırımlarına yönelik işlediğini gösteriyor; yeni bir yatırım planlayan imalatçı KOBİ'lere bölgesel teşvik unsurlarını da hesaba katarak başvuru zamanlamasını mali müşavirleriyle birlikte planlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
