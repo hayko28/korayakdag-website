@@ -149,15 +149,15 @@ export default function BlogPage() {
             <tbody>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Gelir Ölçütü</td>
-                <td className="p-5 font-bold text-green-600">Yıllık brüt geliri en az 2.509.800 TL</td>
+                <td className="p-5 font-bold text-green-600">Son mali yıldaki yıllık gelir unsurları toplamı veya son 12 aydaki brüt ücret geliri en az 2.509.800 TL</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Servet Ölçütü</td>
-                <td className="p-5 font-bold text-green-600">Toplam varlığı (gayrimenkul, banka mevduatı, menkul kıymet) en az 12.549.000 TL</td>
+                <td className="p-5 font-bold text-green-600">Toplam varlığı (gayrimenkul, banka mevduatı, menkul kıymet) en az 12.549.000 TL. İkamet edilen konut ile ipotekli kredi, sigorta ve emeklilik hakları hesaba katılmaz</td>
               </tr>
               <tr>
                 <td className="p-5 font-semibold">Deneyim Ölçütü</td>
-                <td className="p-5">Üst düzey bankacılık/finans veya girişim sermayesi alanında en az 2 yıl tecrübe ya da nitelikli yönetim tecrübesi</td>
+                <td className="p-5">Banka, finansal kuruluş veya girişim sermayesi şirketlerinde yönetici pozisyonunda en az 2 yıl tecrübe; ya da başvurudan önceki son 5 yılda, cirosu en az küçük işletme tanımındaki tutar (100 milyon TL) olan bir şirkette en az 2 yıl genel müdür yardımcısı veya üstü pozisyonda çalışmış olmak; ya da kuluçka merkezi, teknoloji geliştirme merkezi/bölgesi veya BKY ağında en az 2 yıl tecrübe ile en az bir şirkete 250.980 TL (2026) yatırım yapmış olmak</td>
               </tr>
             </tbody>
           </table>
@@ -176,7 +176,8 @@ export default function BlogPage() {
           <ul className="space-y-4 text-lg text-gray-700">
             <li><strong>Lisans süresi 5 yıl</strong> geçerli olup süre sonunda yenilenebilir.</li>
             <li>2026&apos;da lisans kapsamında tek bir girişime yapılacak asgari yatırım tutarı <strong>250.980 TL</strong>&apos;dir.</li>
-            <li>Yatırımın yapılacağı şirket, halka açık olmayan, tam mükellef bir anonim şirket olmalı ve yönetmelikte tanımlanan büyüklük ölçütlerinin (çalışan sayısı, ciro) altında kalmalıdır.</li>
+            <li>Yatırımın yapılacağı şirket, halka açık olmayan, başka bir şirketin kontrolünde bulunmayan, tam mükellef bir anonim şirket olmalı; en fazla 50 çalışanı bulunmalı, son 2 yıldaki net satışları küçük işletme tanımındaki tutarı (100 milyon TL) aşmamalı, en fazla 10 yıldır faaliyette olmalı ve Hazine ve Maliye Bakanlığı&apos;nın belirlediği desteklenen sektörlerde faaliyet göstermelidir.</li>
+            <li>Yatırım bedeli, girişim şirketi adına açılan banka hesabına nakden yatırılmalı ve hesaba giriş tarihinden itibaren en geç 24 ay içinde iş planındaki faaliyetlerin finansmanında kullanılmalıdır.</li>
             <li>Dar mükellef gerçek kişiler ile dar mükellef kurumlara iştirak eden tam mükellef gerçek kişiler bu indirimden yararlanamaz.</li>
           </ul>
         </div>
@@ -236,9 +237,9 @@ export default function BlogPage() {
             </h3>
             <p className="leading-8 text-gray-700">
               GVK geçici 82. madde, başlangıçta 31 Aralık 2017&apos;ye
-              kadar geçerliydi. 7420 sayılı Kanun ile bu tarih önce 31
-              Aralık 2022&apos;ye, sonra <strong>31 Aralık 2027&apos;ye</strong>{" "}
-              kadar uzatıldı. Yani bugün itibarıyla yapılacak melek
+              kadar geçerliydi. Sonraki kanun değişiklikleriyle uzatılan bu
+              süre, 7420 sayılı Kanun ile <strong>31 Aralık 2027&apos;ye</strong>{" "}
+              kadar çıkarıldı. Yani bugün itibarıyla yapılacak melek
               yatırımcı yatırımları bu tarihe kadar vergi desteğinden
               yararlanabiliyor; süre daha önce de kanunla uzatılmış bir
               geçmişe sahip.

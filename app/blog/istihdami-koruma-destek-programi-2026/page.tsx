@@ -114,7 +114,7 @@ export default function BlogPage() {
               5. Hangi Sektörler Hangi Destekten Yararlanıyor?
             </Link>
             <Link href="#takvim" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-              6. Başvuru Süreci ve Ağustos 2026 İtibarıyla Durum
+              6. Başvuru Süreci ve Eylül 2026 İtibarıyla Durum
             </Link>
             <Link href="#surec" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
               7. Adım Adım Süreç ve Ödeme Mekanizması
@@ -141,13 +141,12 @@ export default function BlogPage() {
             sürekliliğini korumak, işverenlerin personel maliyetlerini
             hafifletmek ve işletmelerin finansmana erişimini
             kolaylaştırmak amacıyla 2026 yılında hayata geçirilen yeni
-            bir destek mekanizmasıdır. Program, tek bir kurumun değil;
-            Sanayi ve Teknoloji Bakanlığı, Çalışma ve Sosyal Güvenlik
-            Bakanlığı, KOSGEB ve İŞKUR&apos;un ortaklaşa yürüttüğü geniş
-            kapsamlı bir yapıya sahiptir. KOBİ ölçeğindeki işletmeler
-            başvurularını KOSGEB üzerinden yaparken, büyük ölçekli
-            işletmeler doğrudan Sanayi ve Teknoloji Bakanlığı&apos;na
-            başvuruda bulunmaktadır.
+            bir destek mekanizmasıdır. Program, 4447 sayılı Kanun&apos;un
+            geçici 35. maddesi uyarınca İşsizlik Sigortası Fonu
+            kaynaklarıyla, Sanayi ve Teknoloji Bakanlığı ile KOSGEB
+            tarafından uygulanıyor. KOSGEB&apos;in duyurusuna göre 2026-2
+            döneminde hem KOBİ&apos;ler hem de büyük işletmeler finansman
+            desteği başvurusunu KOSGEB e-hizmetleri üzerinden yapıyor.
           </p>
           <div className="my-10 rounded-2xl border border-blue-200 bg-blue-50 p-8">
             <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
@@ -190,7 +189,8 @@ export default function BlogPage() {
               <li>Kredi limiti KOBİ&apos;ler için <strong>50 milyon TL</strong>, büyük işletmeler için <strong>150 milyon TL</strong>&apos;ye kadar.</li>
               <li>Kapsam ilk kez <strong>büyük işletmeleri</strong> de içerecek şekilde genişletildi (önceki dönemde sadece KOBİ&apos;ler başvurabiliyordu).</li>
               <li>Referans dönem <strong>Ocak-Haziran 2026</strong>, koruma dönemi <strong>Temmuz-Aralık 2026</strong> olarak belirlendi (önceki dönemden farklı).</li>
-              <li>Kredi vadesi yine azami 36 ay, ilk 6 ayı anapara ödemesiz.</li>
+              <li>Kredi vadesi yine azami 36 ay, anapara ödemesiz dönem azami 6 ay. Faiz sabit en fazla %37 veya TLREF+1, komisyon kredinin %1&apos;ini geçemez.</li>
+              <li>Geri ödemesiz destek tutarı yalnızca vergi dairesi ve SGK prim borcu ödemesinde kullanılabiliyor.</li>
             </ul>
           </div>
         </section>
@@ -235,7 +235,7 @@ export default function BlogPage() {
                 <li>✔ İstihdam koruma döneminin en az 6 ay olması</li>
                 <li>✔ Referans dönemde ortalama prim gün sayısının sıfırdan büyük olması (sigortalı çalıştırmayan işyerleri kapsam dışıdır)</li>
                 <li>✔ 2026-2 döneminde artık büyük işletmeler de başvurabiliyor (önceki dönemde sadece KOBİ&apos;ler kapsamdaydı)</li>
-                <li>✔ KOSGEB&apos;e vadesi geçmiş herhangi bir borcunun bulunmaması (veya yapılandırılmış olması)</li>
+                <li>✔ KOSGEB&apos;e vadesi geçmiş borcunun bulunmaması (ödeme talebi aşamasında sistem tarafından kontrol edilir)</li>
                 <li>✔ Programın öngördüğü taahhütname ve başvuru formunun eksiksiz sunulması</li>
               </ul>
             </div>
@@ -248,8 +248,8 @@ export default function BlogPage() {
                 <li>❌ Referans döneminde ortalama prim gün sayısı sıfır olan veya sigortalı çalıştırmadığı için beyanname vermeyen işyerleri</li>
                 <li>❌ Referans dönem ortalamasını koruma dönemi boyunca sağlayamayan işletmeler</li>
                 <li>❌ KOBİ Bilgi Sistemi kaydı veya beyannamesi güncel olmayan KOBİ&apos;ler</li>
-                <li>❌ Yapılandırılmamış, vadesi geçmiş KOSGEB borcu bulunan işletmeler</li>
-                <li>❌ Büyük ölçekli işletmeler için KOSGEB yerine Sanayi ve Teknoloji Bakanlığı kanalı geçerlidir</li>
+                <li>❌ Vadesi geçmiş KOSGEB borcu bulunan işletmeler (ödeme talepleri sistem tarafından engellenir)</li>
+                <li>❌ Finansman desteği kapsamında kullandığı krediye ilişkin ödenmemiş taksidi bulunan işletmeler (ödeme talebi yapamaz)</li>
               </ul>
             </div>
           </div>
@@ -269,9 +269,10 @@ export default function BlogPage() {
               <li>Koruma dönemi başından ödeme talep edilen aya kadarki ortalamanın, referans dönem ortalamasına eşit veya fazla olması</li>
             </ol>
             <p className="mt-4 leading-8 text-gray-700">
-              Prim gün hesaplamasında küsuratlar dikkate alınmıyor; 30
-              günden az prim günü olan aylarda destek tutarı orantılı
-              olarak hesaplanıyor (bkz. Bölüm 3).
+              Prim gün ortalamasında küsuratlar dikkate alınmıyor. Performans
+              desteği, istihdamın korunduğu her ay için sistem tarafından
+              (referans dönemi ortalama prim gün sayısı ÷ 30) × 3.500 TL
+              formülüyle hesaplanıyor (bkz. Bölüm 3 ve Örnek 1).
             </p>
           </div>
           <div className="mt-12 rounded-2xl border border-blue-200 bg-blue-50 p-8">
@@ -279,21 +280,23 @@ export default function BlogPage() {
               🏭 İşletme Ölçeğine Göre Başvuru Kanalı
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
-              Program, işletme büyüklüğüne göre iki ayrı başvuru
-              kanalına sahiptir:
+              KOSGEB&apos;in 28 Ağustos 2026 tarihli duyurusuna göre
+              2026-2 döneminde finansman desteği başvurusu KOSGEB
+              e-hizmetleri üzerinden alınıyor:
             </p>
             <div className="rounded-xl border-l-4 border-orange-500 bg-white p-6">
               <ul className="ml-6 list-disc space-y-3 text-gray-700 marker:text-orange-500">
-                <li><strong>KOBİ ölçeğindeki işletmeler</strong>: başvurularını KOSGEB üzerinden yapar.</li>
-                <li><strong>Büyük ölçekli işletmeler</strong>: başvurularını doğrudan Sanayi ve Teknoloji Bakanlığı&apos;na yapar.</li>
+                <li><strong>KOBİ ölçeğindeki işletmeler</strong>: kredi limiti üst sınırı 50 milyon TL.</li>
+                <li><strong>Büyük işletmeler</strong>: ilk kez bu dönemde kapsama alındı, kredi limiti üst sınırı 150 milyon TL.</li>
               </ul>
             </div>
             <p className="mt-6 leading-8 text-gray-700">
-              İşletmenin KOBİ ya da büyük ölçekli sınıfında
-              değerlendirilmesi, güncel KOBİ Bilgi Sistemi kayıtları
-              esas alınarak belirlenir. Bu nedenle başvuru öncesinde
-              işletme beyannamesinin güncel olduğundan emin olunması
-              kritik önem taşır.
+              Aynı destek unsuru için KOSGEB ile Sanayi ve Teknoloji
+              Bakanlığı&apos;ndan birlikte destek alınamaz. İşletmenin KOBİ
+              niteliği, başvuru formunun sistem üzerinden ilk onaylandığı
+              tarihteki güncel İşletme Beyanı bilgilerine göre belirlenir.
+              Bu nedenle başvuru öncesinde İşletme Beyanı&apos;nın güncel
+              olduğundan emin olunması kritik önem taşır.
             </p>
           </div>
         </section>
@@ -382,7 +385,10 @@ export default function BlogPage() {
               kuruluşundan kredi kullanır; anaparayı kendisi öderken
               faiz/kâr payı yükünün <strong>12 puana kadar olan
               kısmı</strong> KOSGEB tarafından geri ödemesiz olarak
-              karşılanır. Bu dönemde nakdi/performans desteği talep
+              karşılanır; ödeme SGK&apos;nın banka hesabına veya
+              işletmenin Go Dijital Cüzdan hesabına aktarılır ve bu tutar
+              yalnızca vergi dairesi ile SGK prim borçlarının ödenmesinde
+              kullanılabilir. Bu dönemde nakdi/performans desteği talep
               edilemez. (2026-1 döneminde katılmış olan işletmeler,
               kendi koruma dönemleri boyunca eski kurala göre
               (performans desteğinde çalışan başına aylık 3.500 TL,
@@ -407,22 +413,25 @@ export default function BlogPage() {
                   2026 Ocak-Haziran dönemine ait muhtasar ve prim
                   hizmet beyannamelerinde beyan edilen, destek
                   kapsamındaki işyerleri bazında prime esas kazanç
-                  toplamının aylık ortalaması. Finansal veya Ar-Ge
-                  yetkinliği olan işletmelerde bu tutar bir kat
+                  toplamının aylık ortalaması, koruma dönemindeki ay
+                  sayısının altıda biriyle çarpılır (6 aylık Temmuz-Aralık
+                  2026 koruma döneminde çarpan 1). Bakanlığın belirlediği
+                  teknik kriterlere uyan işletmelerde bu tutar bir kat
                   artırımlı (2 katı) uygulanabilir. KOBİ&apos;lerde üst
                   limit 50.000.000 TL, büyük işletmelerde 150.000.000
-                  TL&apos;dir.
+                  TL&apos;dir. Kredi kullanımı tek seferde yapılmalıdır.
                 </p>
               </div>
               <div className="rounded-xl border bg-white p-6">
-                <h4 className="mb-3 text-lg font-bold text-[#071A2F]">Yatırım Teşvik Belgeli İşletmeler (2026-1, kapanan dönem)</h4>
+                <h4 className="mb-3 text-lg font-bold text-[#071A2F]">Yatırım Teşvik Belgeli İşletmeler (2026-2)</h4>
                 <p className="text-gray-700">
-                  2026-1 döneminde katılmış yatırım teşvik belgeli
-                  işletmeler için: teşvik belgesinde öngörülen ilave
-                  istihdam sayısı × Ocak ayı asgari ücreti × 6. Bu,
-                  yalnızca o dönemde başvurmuş işletmeler için geçerli
-                  eski bir kural: Bölüm 4, Örnek 3&apos;te ayrıca
-                  gösterilmiştir.
+                  9903 sayılı Cumhurbaşkanı Kararı&apos;nın 18. maddesinin
+                  beşinci fıkrası uyarınca düzenlenen teşvik belgesine
+                  sahip işletmeler için: teşvik belgesinde öngörülen ilave
+                  istihdam sayısı × başvuru yılının Ocak ayı brüt asgari
+                  ücreti × 6. Bu kural 1 Eylül 2026 tarihli güncel
+                  Yönerge&apos;de yer alıyor, 2026-1 Yönergesi&apos;nde yoktu:
+                  Bölüm 4, Örnek 3&apos;te ayrıca gösterilmiştir.
                 </p>
               </div>
             </div>
@@ -445,7 +454,7 @@ export default function BlogPage() {
             <strong>kapanmış 2026-1 dönemine</strong> ait (yeni
             başvuru yapacaklar için artık geçerli değil, sadece o
             dönemde katılmış işletmeler için referans niteliğinde);
-            dördüncü örnek <strong>şu an açık olan 2026-2 dönemine</strong>{" "}
+            üçüncü ve dördüncü örnek <strong>şu an açık olan 2026-2 dönemine</strong>{" "}
             göre hazırlandı. Kendi işletmeniz için kesin tutar, SGK
             kayıtlarınız ve KOSGEB değerlendirmesiyle netleşir.
           </p>
@@ -463,42 +472,48 @@ export default function BlogPage() {
               </p>
               <div className="rounded-xl border-l-4 border-orange-500 bg-orange-50 p-6">
                 <p className="text-gray-700">
-                  Ağustos ayında da 40 çalışanın 30&apos;u tam ay (30
-                  gün), kalan 10&apos;u ise işe giriş/çıkış nedeniyle
-                  ortalama 20 gün prim ödemiş olsun:
+                  Referans dönem ortalaması 40 × 30 = 1.200 prim günü.
+                  Ödeme talep edilen ayda (örneğin Ağustos) toplam prim
+                  günü bu ortalamaya eşit veya fazlaysa (ya da koruma
+                  döneminin başından itibarenki ortalama referansa eşit
+                  veya fazlaysa) istihdam korunmuş sayılır. Destek, o
+                  ayın fiilî prim gününe değil, referans dönem
+                  ortalamasına göre hesaplanır:
                 </p>
                 <ul className="ml-6 mt-3 list-disc space-y-2 text-gray-700 marker:text-orange-600">
-                  <li>30 çalışan × 3.500 TL = <strong>105.000 TL</strong></li>
-                  <li>10 çalışan × (20/30 × 3.500 TL) ≈ 10 × 2.333 TL = <strong>23.330 TL</strong></li>
-                  <li>Toplam aylık destek ≈ <strong>128.330 TL</strong></li>
+                  <li>(1.200 ÷ 30) × 3.500 TL = <strong>140.000 TL</strong></li>
+                  <li>İstihdam korunamayan aylar için ödeme talebi sistem tarafından engellenir</li>
+                  <li>Performans desteği toplam üst limiti 249 çalışan üzerinden 360 prim gün karşılığı olarak 10.458.000 TL&apos;dir</li>
                 </ul>
               </div>
             </div>
 
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🪑 Örnek 2: Mobilya İmalatçısı KOBİ (2026-1 Dönemi, Eski Finansman Formülü: kapandı)
+                ⚙️ Örnek 2: Makine İmalatçısı KOBİ (2026-1 Dönemi, Eski Finansman Formülü: kapandı)
               </h3>
               <p className="mb-4 leading-8 text-gray-700">
-                <strong>Ege Mobilya San. Tic. A.Ş.</strong>, NACE 31
-                kapsamında 25 çalışanlı bir mobilya üreticisi. 2025
-                Kasım-Aralık referans döneminde tüm çalışanların aylık
-                ortalama prime esas kazanç toplamı 750.000 TL.
-                İşletme, 12 aylık bir koruma dönemi taahhüt ediyor.
+                <strong>Ege Makine San. Tic. A.Ş.</strong>, NACE 28
+                kapsamında 25 çalışanlı bir makine üreticisi (performans
+                desteği kapsamındaki beş sektörün dışında olduğu için
+                2026-1&apos;de finansman desteğine başvurabilen bir
+                işletme). 2025 Kasım-Aralık referans döneminde tüm
+                çalışanların aylık ortalama prime esas kazanç toplamı
+                750.000 TL.
               </p>
               <div className="rounded-xl border-l-4 border-orange-500 bg-orange-50 p-6">
                 <p className="text-gray-700">Kredi limiti hesaplaması:</p>
                 <ul className="ml-6 mt-3 list-disc space-y-2 text-gray-700 marker:text-orange-600">
-                  <li>750.000 TL × (12 ay ÷ 6) = 750.000 TL × 2 = <strong>1.500.000 TL</strong></li>
-                  <li>Teknik kriterleri karşılıyorsa bir kat artırımla ≈ <strong>3.000.000 TL</strong></li>
-                  <li>Bu tutar üzerinden kullanılan kredinin faiz/kâr payının (2026-1 döneminde geçerli olan) 10 puana kadarlık kısmı geri ödemesiz karşılanır</li>
+                  <li>2026-1 Yönergesi&apos;ne göre kredi tutarı, referans dönemi aylık ortalama prime esas kazanç tutarını geçemez: en fazla <strong>750.000 TL</strong></li>
+                  <li>İşletme başına üst limit 50.000.000 TL, kredi kullanımının 2026 Haziran ayı sonuna kadar yapılması gerekiyordu</li>
+                  <li>Bu tutar üzerinden kullanılan kredinin faiz/kâr payının 10 puana kadarlık kısmı geri ödemesiz karşılanır</li>
                 </ul>
               </div>
             </div>
 
             <div className="rounded-2xl border bg-white p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-                🏭 Örnek 3: Yatırım Teşvik Belgeli Büyük Ölçekli İşletme
+                🏭 Örnek 3: Yatırım Teşvik Belgeli İşletme (2026-2 Dönemi Kuralı)
               </h3>
               <p className="mb-4 leading-8 text-gray-700">
                 <strong>Marmara Otomotiv Yan Sanayi A.Ş.</strong>,
@@ -688,7 +703,7 @@ export default function BlogPage() {
               <div className="mb-4 text-5xl">💸</div>
               <h3 className="text-xl font-bold">6. Desteğin Aktarılması</h3>
               <p className="mt-3 text-sm text-gray-600">
-                Onaylanan destek/faiz tutarı, talebi takip eden ayın sonuna kadar SGK hesabına veya Go Dijital Cüzdan&apos;a aktarılır.
+                Onaylanan destek SGK&apos;nın banka hesabına veya Go Dijital Cüzdan&apos;a aktarılır; yalnızca vergi dairesi ve SGK prim borcu ödemesinde kullanılabilir.
               </p>
             </div>
           </div>
@@ -754,10 +769,14 @@ export default function BlogPage() {
                 30 günden az prim günüm varsa destek nasıl hesaplanır?
               </h3>
               <p className="leading-8 text-gray-700">
-                Orantılı hesaplanır. Örneğin bir çalışan ayın yalnızca
-                20 günü prim ödemişse, o çalışan için (20/30) × 3.500 TL
-                ≈ 2.333 TL destek talep edilebilir. Örnek 1&apos;deki
-                Anadolu Tekstil hesaplamasında bu mantık uygulanmıştır.
+                Performans desteği, fiilî prim gününe göre değil referans
+                dönemi ortalama prim gün sayısına göre hesaplanır:
+                istihdamın korunduğu her ay için (referans dönemi
+                ortalama prim gün sayısı ÷ 30) × 3.500 TL. Önemli olan,
+                ödeme talep edilen ayın (veya koruma döneminin başından
+                itibarenki ortalamanın) prim gününün referans ortalamanın
+                altına düşmemesidir. Örnek 1&apos;deki Anadolu Tekstil
+                hesaplamasında bu mantık uygulanmıştır.
               </p>
             </div>
             <div className="rounded-2xl border p-8">
@@ -790,15 +809,14 @@ export default function BlogPage() {
               <p className="leading-8 text-gray-700">
                 <strong>2026-2 döneminde (şu an açık):</strong> 2026
                 Ocak-Haziran dönemine ait prime esas kazanç toplamının
-                aylık ortalaması esas alınır, 150.000.000 TL üst
-                limitini aşamaz (bkz. Örnek 4). <strong>2026-1
-                döneminde (kapandı), yatırım teşvik belgeli işletmeler
-                için</strong> farklı bir formül geçerliydi: teşvik
-                belgesinde öngörülen ilave istihdam sayısı × Ocak ayı
-                asgari ücreti × 6 (bkz. Örnek 3), ama bu yalnızca o
-                dönemde başvurmuş işletmeleri ilgilendiriyor, kredi
-                limitini belirler; desteği fiilen hak etmek ayrı bir
-                şarttır.
+                aylık ortalaması esas alınır (6 aylık koruma döneminde
+                çarpan 1, teknik kriterlere uyanlarda 2 kat), 150.000.000
+                TL üst limitini aşamaz (bkz. Örnek 4). <strong>Yatırım
+                teşvik belgeli işletmeler için</strong> ise farklı bir
+                formül var: teşvik belgesinde öngörülen ilave istihdam
+                sayısı × başvuru yılının Ocak ayı brüt asgari ücreti × 6
+                (bkz. Örnek 3). Bu yalnızca kredi limitini belirler;
+                desteği fiilen hak etmek ayrı bir şarttır.
               </p>
             </div>
             <div className="rounded-2xl border p-8">
@@ -827,9 +845,12 @@ export default function BlogPage() {
               <p className="leading-8 text-gray-700">
                 Hayır. İşletmenin her ay istihdamını koruduğunu SGK
                 kayıtlarıyla göstermesi ve ödeme talep formunu
-                doldurması gerekir. Onaylanan tutar, talebi takip eden
-                ayın sonuna kadar SGK hesabına veya Go Dijital
-                Cüzdan&apos;a aktarılır.
+                sistem üzerinden doldurması gerekir; ödeme talepleri son
+                ay dışında her ayın beşinci günü sonuna kadar yapılabilir.
+                Onaylanan tutar SGK&apos;nın banka hesabına veya
+                işletmenin Go Dijital Cüzdan hesabına aktarılır ve yalnızca
+                vergi dairesi ile SGK prim borcu ödemesinde
+                kullanılabilir.
               </p>
             </div>
             <div className="rounded-2xl border p-8">
@@ -926,7 +947,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"İstihdamı Koruma Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Duruma göre değişir. Şu an açık olan 2026-2 döneminde sadece kredi + faiz desteği modeli var: işletme bankadan kredi kullanır, anaparayı öder; KOSGEB faiz/kâr payının 12 puana kadarlık kısmını geri ödemesiz karşılar. Geçmiş 2026-1 döneminde ise tekstil, giyim, deri, mobilya ve düğme/fermuar sektörlerinde çalışan başına aylık 3.500 TL doğrudan geri ödemesiz (hibe niteliğinde) destek de vardı, ama bu, yeni başvurular için artık geçerli değil."}},{"@type":"Question","name":"30 günden az prim günüm varsa destek nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Orantılı hesaplanır. Örneğin bir çalışan ayın yalnızca 20 günü prim ödemişse, o çalışan için (20/30) × 3.500 TL ≈ 2.333 TL destek talep edilebilir. Örnek 1'deki Anadolu Tekstil hesaplamasında bu mantık uygulanmıştır."}},{"@type":"Question","name":"Hizmet veya ticaret sektöründeki bir şirket başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca imalat sanayinde faaliyet gösteren işletmeleri kapsamaktadır."}},{"@type":"Question","name":"2026-2 döneminde başvurmak için şimdi ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Başvurular 1 Eylül - 31 Ekim 2026 arasında açık. İşletmenizin Ocak-Haziran 2026 dönemine ait prime esas kazanç/prim gün verilerini, KOBİ Bilgi Sistemi kayıtlarınızı güncel tutup KOSGEB üzerinden başvurunuzu 31 Ekim 2026'ya kadar tamamlamanız gerekiyor; bu tarihten sonra bu dönem için başvuru alınmaz."}},{"@type":"Question","name":"Büyük işletmeler kredi limitini nasıl hesaplar?","acceptedAnswer":{"@type":"Answer","text":"2026-2 döneminde (şu an açık): 2026 Ocak-Haziran dönemine ait prime esas kazanç toplamının aylık ortalaması esas alınır, 150.000.000 TL üst limitini aşamaz (bkz. Örnek 4). 2026-1 döneminde (kapandı), yatırım teşvik belgeli işletmeler için farklı bir formül geçerliydi: teşvik belgesinde öngörülen ilave istihdam sayısı × Ocak ayı asgari ücreti × 6 (bkz. Örnek 3), ama bu yalnızca o dönemde başvurmuş işletmeleri ilgilendiriyor, kredi limitini belirler; desteği fiilen hak etmek ayrı bir şarttır."}},{"@type":"Question","name":"Bu programda mevcut çalışanlarım mı korunuyor, yoksa yeni personel mi almalıyım?","acceptedAnswer":{"@type":"Answer","text":"KOBİ'ler ve genel imalat işletmeleri için: mevcut çalışanlarınız korunuyor; somut bir kişi sayısı şartı yok, yalnızca referans dönem ortalama prim gün sayınızı koruma döneminde (en az 6 ay) koruyor olmanız yeterli. Yatırım teşvik belgeli büyük ölçekli işletmeler için ise durum farklı: bu işletmelerin teşvik belgesinde zaten taahhüt ettiği \"ilave istihdam\" sayısının en az yarısını, tamamlama vizesini takip eden 6 aylık dönemde (yarısı × 180 gün prim eşdeğeri) fiilen istihdam etmiş olması gerekiyor; bu grup için gerçekten yeni personel alıp sürdürme şartı var."}},{"@type":"Question","name":"Destek tutarı her ay otomatik mi yatıyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İşletmenin her ay istihdamını koruduğunu SGK kayıtlarıyla göstermesi ve ödeme talep formunu doldurması gerekir. Onaylanan tutar, talebi takip eden ayın sonuna kadar SGK hesabına veya Go Dijital Cüzdan'a aktarılır."}},{"@type":"Question","name":"Danışmanlık desteği almak zorunlu mu?","acceptedAnswer":{"@type":"Answer","text":"Zorunlu değildir, ancak işletmenin hangi destek kanalına (performans mı finansman mı) uygun olduğunun doğru tespit edilmesi, kredi limiti formülünün doğru uygulanması, prim gün hesaplamalarının titizlikle takip edilmesi ve başvuru/ödeme talep süreçlerinin zamanında yürütülmesi alınacak destek tutarını doğrudan etkilemektedir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"İstihdamı Koruma Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Duruma göre değişir. Şu an açık olan 2026-2 döneminde sadece kredi + faiz desteği modeli var: işletme bankadan kredi kullanır, anaparayı öder; KOSGEB faiz/kâr payının 12 puana kadarlık kısmını geri ödemesiz karşılar. Geçmiş 2026-1 döneminde ise tekstil, giyim, deri, mobilya ve düğme/fermuar sektörlerinde çalışan başına aylık 3.500 TL doğrudan geri ödemesiz (hibe niteliğinde) destek de vardı, ama bu, yeni başvurular için artık geçerli değil."}},{"@type":"Question","name":"30 günden az prim günüm varsa destek nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Performans desteği, fiilî prim gününe göre değil referans dönemi ortalama prim gün sayısına göre hesaplanır: istihdamın korunduğu her ay için (referans dönemi ortalama prim gün sayısı ÷ 30) × 3.500 TL. Önemli olan, ödeme talep edilen ayın (veya koruma döneminin başından itibarenki ortalamanın) prim gününün referans ortalamanın altına düşmemesidir. Örnek 1'deki Anadolu Tekstil hesaplamasında bu mantık uygulanmıştır."}},{"@type":"Question","name":"Hizmet veya ticaret sektöründeki bir şirket başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca imalat sanayinde faaliyet gösteren işletmeleri kapsamaktadır."}},{"@type":"Question","name":"2026-2 döneminde başvurmak için şimdi ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Başvurular 1 Eylül - 31 Ekim 2026 arasında açık. İşletmenizin Ocak-Haziran 2026 dönemine ait prime esas kazanç/prim gün verilerini, KOBİ Bilgi Sistemi kayıtlarınızı güncel tutup KOSGEB üzerinden başvurunuzu 31 Ekim 2026'ya kadar tamamlamanız gerekiyor; bu tarihten sonra bu dönem için başvuru alınmaz."}},{"@type":"Question","name":"Büyük işletmeler kredi limitini nasıl hesaplar?","acceptedAnswer":{"@type":"Answer","text":"2026-2 döneminde (şu an açık): 2026 Ocak-Haziran dönemine ait prime esas kazanç toplamının aylık ortalaması esas alınır (6 aylık koruma döneminde çarpan 1, teknik kriterlere uyanlarda 2 kat), 150.000.000 TL üst limitini aşamaz (bkz. Örnek 4). Yatırım teşvik belgeli işletmeler için ise farklı bir formül var: teşvik belgesinde öngörülen ilave istihdam sayısı × başvuru yılının Ocak ayı brüt asgari ücreti × 6 (bkz. Örnek 3). Bu yalnızca kredi limitini belirler; desteği fiilen hak etmek ayrı bir şarttır."}},{"@type":"Question","name":"Bu programda mevcut çalışanlarım mı korunuyor, yoksa yeni personel mi almalıyım?","acceptedAnswer":{"@type":"Answer","text":"KOBİ'ler ve genel imalat işletmeleri için: mevcut çalışanlarınız korunuyor; somut bir kişi sayısı şartı yok, yalnızca referans dönem ortalama prim gün sayınızı koruma döneminde (en az 6 ay) koruyor olmanız yeterli. Yatırım teşvik belgeli büyük ölçekli işletmeler için ise durum farklı: bu işletmelerin teşvik belgesinde zaten taahhüt ettiği \"ilave istihdam\" sayısının en az yarısını, tamamlama vizesini takip eden 6 aylık dönemde (yarısı × 180 gün prim eşdeğeri) fiilen istihdam etmiş olması gerekiyor; bu grup için gerçekten yeni personel alıp sürdürme şartı var."}},{"@type":"Question","name":"Destek tutarı her ay otomatik mi yatıyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İşletmenin her ay istihdamını koruduğunu SGK kayıtlarıyla göstermesi ve ödeme talep formunu sistem üzerinden doldurması gerekir; ödeme talepleri son ay dışında her ayın beşinci günü sonuna kadar yapılabilir. Onaylanan tutar SGK'nın banka hesabına veya işletmenin Go Dijital Cüzdan hesabına aktarılır ve yalnızca vergi dairesi ile SGK prim borcu ödemesinde kullanılabilir."}},{"@type":"Question","name":"Danışmanlık desteği almak zorunlu mu?","acceptedAnswer":{"@type":"Answer","text":"Zorunlu değildir, ancak işletmenin hangi destek kanalına (performans mı finansman mı) uygun olduğunun doğru tespit edilmesi, kredi limiti formülünün doğru uygulanması, prim gün hesaplamalarının titizlikle takip edilmesi ve başvuru/ödeme talep süreçlerinin zamanında yürütülmesi alınacak destek tutarını doğrudan etkilemektedir."}}]}) }}
       />
     </BlogLayout>
   );

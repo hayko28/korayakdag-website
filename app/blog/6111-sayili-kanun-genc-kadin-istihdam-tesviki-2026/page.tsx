@@ -105,21 +105,23 @@ export default function BlogPage() {
           sahibi olmayı teşvik etmek ve kayıtlı istihdamı genişletmektir.
         </p>
         <p className="mb-8 leading-8 text-gray-700">
-          Teşvik 2011&apos;den bu yana yürürlükte olup her yıl sonunda
-          çıkarılan bir Cumhurbaşkanı Kararı ile kapsama yeni işe alım
-          yapılabilecek son tarih bir yıl daha ileri alınıyor. Son uzatma,{" "}
-          <strong>25 Aralık 2025</strong> tarihli ve <strong>33118 sayılı
-          Resmî Gazete</strong>&apos;de yayımlanan{" "}
-          <strong>10769 sayılı Cumhurbaşkanı Kararı</strong> ile yapıldı; bu
+          Teşvik 2011&apos;den bu yana yürürlükte. 4447 sayılı Kanun&apos;un
+          Geçici 10. maddesi uygulama süresini 31 Aralık 2025 olarak
+          belirliyor, Cumhurbaşkanı&apos;na ise bu süreyi en fazla{" "}
+          <strong>31 Aralık 2026</strong>&apos;ya kadar uzatma yetkisi veriyor.
+          Bu yetki, <strong>25 Aralık 2025</strong> tarihli ve{" "}
+          <strong>33118 sayılı Resmî Gazete</strong>&apos;de yayımlanan{" "}
+          <strong>10769 sayılı Cumhurbaşkanı Kararı</strong> ile kullanıldı; bu
           karar uyarınca <strong>1 Mart 2011 – 31 Aralık 2026</strong> tarihleri
           arasında işe alınan uygun sigortalılar için teşvikten yararlanılabiliyor.
         </p>
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <p className="leading-8 text-gray-700">
-            Kısaca: teşvik kalıcı değil, her yıl yeniden uzatılan bir
-            uygulama. Şu anki geçerli son tarih <strong>31 Aralık 2026</strong>.
-            Bu tarihe kadar işe alınmayan personel için (yeni bir uzatma
-            kararı çıkmadığı sürece) teşvik hakkı doğmuyor.
+            Kısaca: teşvik kalıcı değil, süreye bağlı bir uygulama. Şu anki
+            geçerli son tarih <strong>31 Aralık 2026</strong>. Cumhurbaşkanı&apos;nın
+            kanunla tanınan uzatma yetkisi bu tarihle sınırlı olduğundan, bu
+            tarihten sonra işe alınan personel için teşvik hakkının doğması
+            kanunda yeni bir düzenleme yapılmasına bağlı.
           </p>
         </div>
       </section>
@@ -152,9 +154,17 @@ export default function BlogPage() {
               sahibiyse ve sınırlı sürelerle teşvikten faydalanabilir.
             </li>
             <li>
-              Mesleki yeterlilik belgesi, mesleki/teknik eğitim diploması
-              veya ustalık belgesi sahibi olunması hâlinde teşvik süresi
-              belirgin şekilde uzuyor.
+              Mesleki yeterlilik belgesi sahibi olunması veya mesleki ve
+              teknik eğitim veren orta/yüksek öğretim kurumunu ya da İŞKUR
+              işgücü yetiştirme kursunu bitirmiş olunması hâlinde teşvik
+              süresi belirgin şekilde uzuyor. Bu durumda sigortalının,
+              belgede belirtilen meslek veya alanda işe alınmış ve çalışıyor
+              olması gerekir.
+            </li>
+            <li>
+              Teşvikten aynı sigortalı için yalnızca bir kez yararlanılabilir;
+              sigortalı destek süresini tamamlamadan işsiz kalırsa kalan
+              süreden yeniden yararlanılamaz.
             </li>
             <li>
               Fiilen çalışılmış veya kanunen çalışılmış sayılan sürelerin
@@ -183,7 +193,7 @@ export default function BlogPage() {
                 <td className="p-5">54 ay</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
-                <td className="p-5 font-semibold">Mesleki/teknik eğitim diploması veya ustalık belgesi sahibi</td>
+                <td className="p-5 font-semibold">Mesleki ve teknik eğitim veren orta/yüksek öğretim mezunu veya İŞKUR işgücü yetiştirme kursunu bitirmiş</td>
                 <td className="p-5">36 ay</td>
                 <td className="p-5">42 ay</td>
               </tr>
@@ -196,6 +206,10 @@ export default function BlogPage() {
                 <td className="p-5 font-semibold">29 yaş üzeri erkek, belge/diploma sahibi</td>
                 <td className="p-5">24 ay</td>
                 <td className="p-5">30 ay</td>
+              </tr>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-5 font-semibold">Çalışırken (5510 sayılı Kanun 4/a kapsamında) mesleki yeterlik belgesi alan veya mesleki ve teknik eğitim veren okulu bitirenler</td>
+                <td className="p-5" colSpan={2}>12 ay</td>
               </tr>
               <tr className="hover:bg-gray-50">
                 <td className="p-5 font-semibold">29 yaş üzeri erkek, belgesi yok</td>
@@ -211,7 +225,7 @@ export default function BlogPage() {
             kadar gerçekleştiği sürece doğuyor. Yani 2026&apos;nın son
             aylarında işe alınan ve mesleki yeterlilik belgesi bulunan bir
             çalışan için işveren, hakkı kazandıktan sonra 2027, 2028, hatta
-            2030&apos;a kadar (54 ay boyunca) bu teşvikten faydalanmaya devam
+            2031&apos;e kadar (54 ay boyunca) bu teşvikten faydalanmaya devam
             edebilir.
           </p>
         </div>
@@ -230,13 +244,14 @@ export default function BlogPage() {
           öder; kendi payına düşen kısmı fiilen ödemez.
         </p>
         <p className="mb-8 leading-8 text-gray-700">
-          Uygulamada bu, prime esas kazancın yaklaşık <strong>%19,75&apos;i</strong>{" "}
-          (imalat sanayiinde ilave puan indirimiyle birlikte yaklaşık{" "}
-          <strong>%16,75&apos;i</strong>) oranında aylık bir tasarrufa denk
-          gelir. 2026 yılı için Çalışma ve Sosyal Güvenlik Bakanlığı
-          tarafından açıklanan <strong>brüt asgari ücret (33.030 TL)</strong>{" "}
-          ve <strong>SGK prim tavanı (297.270 TL)</strong> üzerinden örnek
-          rakamlar şöyle:
+          SGK&apos;nın 2026 teşvik tablosuna göre bu, prime esas kazancın{" "}
+          <strong>%21,75&apos;ine</strong> denk gelen bir aylık tasarruf demektir:
+          genel sektörlerde %2 Hazine desteği ile %19,75 İşsizlik Sigortası
+          Fonu payı, imalat sanayiinde ise %5 Hazine desteği ile %16,75
+          İşsizlik Sigortası Fonu payı toplamda yine %21,75 eder. 2026 yılı
+          için geçerli <strong>brüt asgari ücret (33.030 TL)</strong>{" "}
+          ve <strong>SGK prime esas kazanç tavanı (297.270 TL)</strong> üzerinden
+          örnek rakamlar şöyle:
         </p>
         <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-left">
@@ -397,7 +412,8 @@ export default function BlogPage() {
           Teşvikin en çok gözden kaçırılan yönü, kalıcı değil{" "}
           <strong>süreye bağlı bir uygulama</strong> olmasıdır. 10769 sayılı
           Cumhurbaşkanı Kararı, kapsama yeni işe alım yapılabilecek son
-          tarihi 31 Aralık 2026 olarak belirledi. Bu, iki yönlü bir anlam
+          tarihi 31 Aralık 2026 olarak belirledi (kanun, Cumhurbaşkanı&apos;na bu
+          tarihten öteye uzatma yetkisi tanımıyor). Bu, iki yönlü bir anlam
           taşıyor:
         </p>
         <div className="grid gap-8 md:grid-cols-2">
@@ -407,7 +423,7 @@ export default function BlogPage() {
             </h3>
             <p className="text-gray-700">
               Teşvik hakkı doğar ve süre tablosuna göre (24-54 ay) hak,
-              işe alım tarihinden itibaren 2027, 2028, hatta 2030&apos;a
+              işe alım tarihinden itibaren 2027, 2028, hatta 2031&apos;e
               kadar kullanılmaya devam edebilir.
             </p>
           </div>
@@ -416,9 +432,9 @@ export default function BlogPage() {
               ⚠️ 31 Aralık 2026&apos;dan sonra işe alım yapılırsa
             </h3>
             <p className="text-gray-700">
-              Yeni bir uzatma kararı Resmî Gazete&apos;de yayımlanmadığı
-              sürece, bu tarihten sonra işe alınan personel için 06111
-              teşvikinden yararlanma imkânı kalmaz.
+              Kanunda yeni bir düzenleme yapılmadığı sürece, bu tarihten
+              sonra işe alınan personel için 06111 teşvikinden yararlanma
+              imkânı kalmaz.
             </p>
           </div>
         </div>
@@ -447,7 +463,7 @@ export default function BlogPage() {
             ✅ Ortalama sigortalı sayısı şartı her ay yeniden kontrol edilir; personel azaltımı yapan işyerlerinde teşvik durabilir
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Kayıt dışı istihdam veya muvazaalı işlem tespiti hâlinde teşvik geriye dönük iptal edilip gecikme cezasıyla geri alınabilir
+            ✅ Çalıştırdığı kişileri sigortalı olarak bildirmediği denetimle tespit edilen işveren, bir yıl süreyle bu teşvikten yararlanamaz; kayıt dışı istihdam veya muvazaalı işlem tespiti hâlinde teşvik geriye dönük iptal edilip gecikme cezasıyla geri alınabilir
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Beyanname ve ödemelerin süresinde yapılmaması, ilgili ay için teşvik hakkının kaybedilmesine yol açar
@@ -530,10 +546,11 @@ export default function BlogPage() {
               31 Aralık 2026&apos;dan sonra teşvik tamamen kalkacak mı?
             </h3>
             <p className="leading-8 text-gray-700">
-              Bugün itibarıyla geçerli son tarih bu şekilde belirlenmiş
-              olmakla birlikte, uygulama 2011&apos;den bu yana her yıl
-              yeniden uzatılıyor. Yeni bir uzatma kararı çıkıp çıkmayacağı
-              yıl sonuna doğru Resmî Gazete&apos;den takip edilmelidir; ancak
+              Bugün itibarıyla geçerli son tarih 31 Aralık 2026. Cumhurbaşkanı&apos;nın
+              kanunla tanınan uzatma yetkisi bu tarihle sınırlı olduğundan,
+              2027 ve sonrası için uygulamanın sürmesi kanunda yeni bir
+              düzenleme yapılmasına bağlı. Bunun çıkıp çıkmayacağı yıl
+              sonuna doğru Resmî Gazete&apos;den takip edilmelidir; ancak
               belirsizliğe güvenmek yerine mevcut kesin son tarihe göre
               planlama yapmak daha güvenlidir.
             </p>
@@ -596,7 +613,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"6111 sayılı Kanun teşviki ile 06111 teşvik kodu aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Halk arasında ve mevzuat yazışmalarında \"6111 sayılı Kanun teşviki\" olarak anılan uygulama, teknik olarak 4447 sayılı Kanun'un Geçici 10. maddesine dayanır ve SGK sisteminde 06111 kanun numarasıyla bildirilir."}},{"@type":"Question","name":"Teşvik süresi doldu, çalışan hâlâ işyerinde çalışıyor. Ne olur?","acceptedAnswer":{"@type":"Answer","text":"Süre tablosunda belirtilen ay sayısı (24-54 ay) dolduğunda teşvik kendiliğinden sona erer; çalışan işyerinde çalışmaya devam etse dahi o tarihten sonraki primler normal oranlar üzerinden bildirilir."}},{"@type":"Question","name":"Şu an çalışan personelim için geriye dönük başvuru yapabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"1 Mayıs 2021 sonrası dönemler için ilk kez geriye dönük yararlanma mümkün değildir. Teşvik, uygunluk şartlarının oluştuğu ayda zamanında beyan edilmelidir; bu nedenle mevcut personelinizin teşvike uygunluğunun önceden kontrol edilmesi önemlidir."}},{"@type":"Question","name":"31 Aralık 2026'dan sonra teşvik tamamen kalkacak mı?","acceptedAnswer":{"@type":"Answer","text":"Bugün itibarıyla geçerli son tarih bu şekilde belirlenmiş olmakla birlikte, uygulama 2011'den bu yana her yıl yeniden uzatılıyor. Yeni bir uzatma kararı çıkıp çıkmayacağı yıl sonuna doğru Resmî Gazete'den takip edilmelidir; ancak belirsizliğe güvenmek yerine mevcut kesin son tarihe göre planlama yapmak daha güvenlidir."}},{"@type":"Question","name":"Küçük bir işletme için bu teşvik gerçekten anlamlı bir tasarruf sağlar mı?","acceptedAnswer":{"@type":"Answer","text":"Asgari ücretli bir çalışan için aylık yaklaşık 7.000 TL civarında bir işveren primi tasarrufu, 24-54 aylık süre boyunca tek bir personel için dahi yüz binlerce TL'ye ulaşabilir. Birden fazla uygun profilde personel istihdam eden işletmelerde bu tutar katlanarak artar."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"6111 sayılı Kanun teşviki ile 06111 teşvik kodu aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Halk arasında ve mevzuat yazışmalarında \"6111 sayılı Kanun teşviki\" olarak anılan uygulama, teknik olarak 4447 sayılı Kanun'un Geçici 10. maddesine dayanır ve SGK sisteminde 06111 kanun numarasıyla bildirilir."}},{"@type":"Question","name":"Teşvik süresi doldu, çalışan hâlâ işyerinde çalışıyor. Ne olur?","acceptedAnswer":{"@type":"Answer","text":"Süre tablosunda belirtilen ay sayısı (24-54 ay) dolduğunda teşvik kendiliğinden sona erer; çalışan işyerinde çalışmaya devam etse dahi o tarihten sonraki primler normal oranlar üzerinden bildirilir."}},{"@type":"Question","name":"Şu an çalışan personelim için geriye dönük başvuru yapabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"1 Mayıs 2021 sonrası dönemler için ilk kez geriye dönük yararlanma mümkün değildir. Teşvik, uygunluk şartlarının oluştuğu ayda zamanında beyan edilmelidir; bu nedenle mevcut personelinizin teşvike uygunluğunun önceden kontrol edilmesi önemlidir."}},{"@type":"Question","name":"31 Aralık 2026'dan sonra teşvik tamamen kalkacak mı?","acceptedAnswer":{"@type":"Answer","text":"Bugün itibarıyla geçerli son tarih 31 Aralık 2026. Cumhurbaşkanı'nın kanunla tanınan uzatma yetkisi bu tarihle sınırlı olduğundan, 2027 ve sonrası için uygulamanın sürmesi kanunda yeni bir düzenleme yapılmasına bağlı. Bunun çıkıp çıkmayacağı yıl sonuna doğru Resmî Gazete'den takip edilmelidir; ancak belirsizliğe güvenmek yerine mevcut kesin son tarihe göre planlama yapmak daha güvenlidir."}},{"@type":"Question","name":"Küçük bir işletme için bu teşvik gerçekten anlamlı bir tasarruf sağlar mı?","acceptedAnswer":{"@type":"Answer","text":"Asgari ücretli bir çalışan için aylık yaklaşık 7.000 TL civarında bir işveren primi tasarrufu, 24-54 aylık süre boyunca tek bir personel için dahi yüz binlerce TL'ye ulaşabilir. Birden fazla uygun profilde personel istihdam eden işletmelerde bu tutar katlanarak artar."}}]}) }}
       />
     </BlogLayout>
   );
