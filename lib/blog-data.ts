@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-girisim-sermayesi-yatirim-fonu-gsyf-girisimcilere-etkisi",
+    title: "KOSGEB Girişim Sermayesi Yatırım Fonlarına (GSYF) Ortak Oluyor: Girişimciler İçin Ne Anlama Geliyor?",
+    excerpt: "KOSGEB, 30 Haziran 2026 tarihli Girişim Sermayesi Yatırım Fonları Yatırımlarına İlişkin Yönerge ile GSYF'lere yatırımcı (LP) olarak katılmaya başladı. Doğrudan başvuran taraf portföy yönetim şirketleri olsa da, asgari 50 milyon TL'lik yatırım turu şartı, taahhüt tutarları ve girişimciler için dolaylı etkileriyle güncel rehber.",
+    category: "KOSGEB • GİRİŞİM SERMAYESİ • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "turkiye-yapay-zeka-eylem-plani-2026-2030-sirketlere-etkisi",
     title: "Türkiye Yapay Zeka Eylem Planı (2026-2030) Nedir? Şirketler ve KOBİ'ler İçin Ne Değişiyor?",
     excerpt: "18 Ağustos 2026 tarihli ve 33344 sayılı Resmî Gazete'de yayımlanan 2026/9 sayılı Cumhurbaşkanlığı Genelgesi ile yürürlüğe giren Türkiye Yapay Zeka Eylem Planı, dört eksen ve 16 eylemle 2030'a kadar 1 trilyon TL'yi aşan katma değer hedefliyor. GPU kredisi, yapay zeka kuponu, Büyüme Fonu gibi KOBİ'leri ilgilendiren unsurlar ve şimdiden başvurulabilir mevcut programlarla bağlantısı.",
