@@ -1,3 +1,214 @@
+# Günlük Fikir Araştırması - 14 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 14 Ekim 2026
+**Hedef:** Podcast/ses medyası, tarım, eğitim (AI tutor), insan kaynakları (yazılımcı), wellness — geçmiş günlerden farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: Türkçe Podcast Prodüksiyon & Editör Platformu
+
+### Ne Bu?
+Türkiye'deki 20.000+ podcast kanalı ve bireysel içerik yaratıcıları için **"kayıt'tan yayın'a" SaaS platform.** Sistem: (1) Yaratıcı tarayıcıdan doğrudan podcast kaydediyor (multi-track: host + konuklar), (2) AI otomatik: transkripsiyon (Türkçe), bölüm özetlemesi, SEO başlığı & açıklaması üretme, (3) Ses düzenleme: ses iyileştirme (background noise removal), music library (Türkçe müzik + royalty-free), (4) Çıktı: podcast dosyası + sosyal medya klipleri (TikTok/Instagram), (5) Yayın: Spotify, Apple Podcasts, YouTube, RSS otomasyonu. Dashboard: dinleyici istatistikleri, reklam yönetimi.
+
+### Kanıt (Kaynaklar)
+- Türkiye podcast pazarı: 20.000+ kanal, 400.000+ bölüm (Listen Notes/Podcast Index 2026)
+- Türkçe 15. en çok podcast üretilen dil dünyada (500K+ hashtag sosyal medyada)
+- Podcast reklamcılığı büyüyor: Poddict gibi çözümler Türkiye'de yeni kuruluyor
+- Global podcast prodüksiyon pazarı 2026: $2.3 milyar, +15% yıllık (Statista)
+- Uluslararası araçlar (Riverside, Anchor) Türkçe destek az, yerel çözüm yok
+
+### Gelir Modeli
+- **Temel paket** (ay 2): 100 podcast creator × ₺199/ay = **₺20K/ay**
+- **Pro (AI özetleme + sosyal klipleri)** (ay 3): 30 × ₺499/ay = **₺15K/ay**
+- **Premium (kurumsal + reklam yönetimi)** (ay 4): 10 × ₺999/ay = **₺10K/ay**
+- **Podcast monetizasyon komission** (ay 5): 20 podcast × ₺100/ay reklam = **₺2K/ay**
+- **Tahmin (3. ay):** ₺45K | **(6. ay):** ₺57K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Anchor (Google), Riverside global var ama Türkçe transkripsiyon + Spotify entegrasyon = sıfır. Türkçe podcasters manuel yapıyor (Audacity/OBS).
+
+**Talep:** Podcast creators (500K+ hashtag, LinkedIn grupları) "ses editlemesi zaman kaybı, AI özet çok faydalı olurdu" şikayeti sık.
+
+**Neden Heyecan Verici:** Türkçe AI transkripsiyon + Spotify otomasyonu = sıfır Türkçe çözüm. 20K kanal potensiyeli. Podcast advertising Türkiye'de yeni büyüyor.
+
+### İlk Somut Adım
+Bugün **Türkçe YouTube/Spotify popüler podcast kanalları (100K+ listener) 8-10 tanesini bul.** (Arama: "podcast Türkçe" site:youtube.com, "best podcasts Turkey" subreddits, LinkedIn podcast creators). Mesaj: "Podcast prodüksiyon platformu — kayıt, AI transkripsiyon + özet, Spotify/Apple yayın. ₺199/ay temel, ₺499/ay PRO. MVP 2 hafta. Beta creator olmak ister misin? İlk 10'a 50% indirim + 1 ay ücretsiz." Gün sonu: **4-5 podcast creator** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Türkçe AI transkripsiyon doğruluğu:** Lehçe, teknik terimler, müzik hata yaratabilir
+- **Spotify/Apple API:** Entegrasyon karmaşık, hız limitleri var
+- **Rekabet:** Google Anchor hızlı Türkçe ekleyebilir
+- **Monetizasyon:** Podcast reklam pazarı Türkiye'de hâlâ küçük
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 2: Çiftçi Ürün Pazarlama + AI Talep Tahmini Platformu
+
+### Ne Bu?
+Türkiye'deki 4M+ çiftçi ve tarım işletmelerine **"ürün doğrudan sat ve pazarını anla" SaaS platform.** Sistem: (1) Çiftçi ürün girer (domates, tarım, et vb.), (2) Platform pazaryeri: perakende, restaurant, toptan alıcılarına göster, (3) AI talep tahmini: hava, mevsim, tuz bazında ürün fiyatı + satış miktarı tahmin, (4) Lojistik: platform kolektif kargo arrange (soğuk zincir opsiyonel), (5) Finansman: KOSGEB/tarım kredisi komission.
+
+### Kanıt (Kaynaklar)
+- Türkiye tarımsal üretim: 50+ milyon ton/yıl, 4M+ çiftçi
+- Tarımda değer zinciri sorun: çiftçi → toptancı → perakende (marj %60-80 perakendede)
+- Devlet tarım bütçesi 2026: 939 milyar TL (artan yatırım)
+- Agricultural technology adoption: Türkiye'de GPS/veri yavaş, çiftçi pazarlama manuel
+- FAO Agritech Observatory: Türkiye tarım pazarlama platformları (TÜVAP, Agrotech) var ancak AI tahmini + finansman combo = yok
+
+### Gelir Modeli
+- **Çiftçi temel paket** (ay 2): 200 çiftçi × ₺99/ay = **₺20K/ay**
+- **Premium (AI talep tahmini)** (ay 3): 50 × ₺299/ay = **₺15K/ay**
+- **Lojistik komission** (ay 4): 500 sipariş × ₺50 × %5 = **₺1.2K/ay**
+- **Finansman komission** (ay 5): 20 kredi × ₺5K × %3 = **₺3K/ay**
+- **Tahmin (3. ay):** ₺36K | **(6. ay):** ₺49K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Tarımsal pazarlama platformları (TÜVAP, Borsacoo.com) var ancak B2B ağırlıklı, talep tahmini = yok. Çiftçi pazarlama çoğu manuel/aracılı.
+
+**Talep:** Çiftçi forumları (Facebook grupları, LinkedIn): "hasat zamanı fiyat düşüyor" şikayeti sık. AI fiyat tahmini = doğrulanmış talep.
+
+**Neden Heyecan Verici:** Devlet destek (939 milyar TL), çiftçi sayısı (4M), talep kanıtı (marj kaybı), AI pazarında sıfır.
+
+### İlk Somut Adım
+Bugün **Türkiye Ziraat Mühendisleri Odası LinkedIn grubu + çiftçi forum moderatörleri (Tarımsal Harita, Ziraat Haberleri sayfaları) 6-8'ini bul.** Mesaj: "Çiftçi pazarlama + AI talep tahmini platformu — perakende/restoran alıcısı bul, fiyat + satış öngör, lojistik arrange. ₺99/ay temel, ₺299/ay PRO. MVP 2 hafta. Beta çiftçi olmak ister misin? İlk 5'e %40 indirim + 2 ay ücretsiz." Gün sonu: **3-4 çiftçi/tarım kooperatifi** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Çiftçi tech adoption:** Yaş ortalama 50+, dijitalleşme zavaş
+- **Lojistik soğuk zincir:** Sebze/meyve kargo karmaşık, maliyeti yüksek
+- **Pazaryeri likidite:** Alıcı vs. satıcı dengesini kurması zaman alabilir
+- **Fiyat volatilite:** Tarım fiyatları mevsim/hava ile şiddetle değişir, tahmin zor
+
+**Risk Derecesi:** ORTA-YÜKSEK
+
+---
+
+## FİKİR 3: AI Matematik & İngilizce Özel Ders Platformu (1-1 Tutoring)
+
+### Ne Bu?
+Türkiye'deki lise ve öğrenci ailelerine **"bire bir AI tutoring" platform.** Sistem: (1) Öğrenci konu giriyor (calculus, trigonometri, IELTS writing), (2) AI tutor sokratik (sorgulamaya dayalı) yöntemle anlatiyor: soru → ipucu → çözüme doğru rehberlik, (3) Takip: öğrenci ilerlemesi, zayıf konular AI tespit eder, (4) İnsan tutor opsiyonel (premium): live sınav hazırlığı veya uzun konular, (5) MEB müfredat uyumlu + IELTS/SAT hazırlığı.
+
+### Kanıt (Kaynaklar)
+- Türkiye özel ders pazarı: 2+ milyon öğrenci, 50+ milyar TL/yıl (danışman raporları)
+- AI tutoring trend 2026: %87 eğitim profesyoneli kullanıyor (global)
+- Khanmigo, Carnegie Learning gibi küresel platformlar milyonlarca öğrenci
+- Türkçe AI tutoring: Genel AI tutoring var ama MEB müfredat uyum = yok
+- Öğrenci tarafından talep: "pahalı tutoring alternatif" + "24/7 yardım"
+
+### Gelir Modeli
+- **Temel paket** (ay 2): 150 öğrenci × ₺199/ay = **₺30K/ay**
+- **Premium (live tutor + sınav hazırlığı)** (ay 3): 40 × ₺499/ay = **₺20K/ay**
+- **Kurumsal (okul lisansı)** (ay 4): 5 okul × ₺2.999/ay = **₺15K/ay**
+- **Sertifika (IELTS hazırlık verified)** (ay 5): 50 × ₺99 = **₺5K/ay**
+- **Tahmin (3. ay):** ₺50K | **(6. ay):** ₺70K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** ChatGPT, Claude yapabilir ama MEB müfredat + sokratik yöntem = özel. Türkçe özel ders (online) manual/insan tutor ağırlıklı.
+
+**Talep:** Öğrenci forum (Reddit Türkiye, Instagram eğitim): "pahalı tutoring + zaman sınırı" şikayeti sık.
+
+**Neden Heyecan Verici:** 2+ milyon öğrenci pazar. Tutoring pahalı (₺500-1000/ay per öğrenci). AI tutoring yapılabilir ama Türkçe = boşluk.
+
+### İlk Somut Adım
+Bugün **özel ders platformları (Özel Ders.com, tutoring.com Türkiye), lise rehber öğretmenleri ve öğrenci forumlarından 10-12 öğrenci/veli bul.** Mesaj: "AI matematik & İngilizce tutoring — 24/7 yardım, MEB müfredat, IELTS hazırlık. ₺199/ay temel, ₺499/ay live tutor. MVP 1 hafta (demo: 3 konu). Test almak ister misin? İlk 20'ye 50% indirim." Gün sonu: **5-6 öğrenci** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Doğruluk ve akdenunabilirlik:** Yanlış matematik cevap = öğrenci sınavda başarısız
+- **İnsan tutor scaling:** Premium tier'de insan yardım gerekli, zaman yoğun
+- **Ebeveyn expectation:** MEB uyumu/sertifika talep yüksek
+- **Rekabet:** OpenAI, Google eğitim pazarına agresif girebilir
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 4: Developer Pazaryeri — Yazılımcı Teklifçi Modeli
+
+### Ne Bu?
+Türkiye'deki yazılımcılara ve mühendislere **"fiyatı sen belirle, şirket teklif yapsın" pazaryeri.** Sistem: (1) Yazılımcı profil açıyor (yetkinlikler: Python, React, DevOps vb.), (2) Maaş beklentisi + kontrat türü (remote, hybrid, on-site) yazıyor, (3) Şirketler yazılımcı bulduğunda profil görüyor, (4) Yazılımcı görüşme maliyeti tarafından işe alınırsa, platform %20 komission alıyor, (5) Yazılımcı veto hakkı var (teklif reddetme özgür).
+
+### Kanıt (Kaynaklar)
+- Türkiye yazılımcı pazarı: 50K+ mühendis, işsizlik %0.5 (çok az), işe alım zor
+- Hired, Angel List modeli başarılı (yazılımcı fiyat belirler, işvereni şirketler bulur)
+- Türkiye'de yazılımcı işe alım manual (LinkedIn recruiter, referral) — platform = sıfır
+- Global tech hiring trend: yazılımcı tarafı arayüzü artan talep (otonom çalışan tercihler)
+- Dev hiring challenge (Türk startup raporu): "iyi yazılımcı bulmak aylar alıyor"
+
+### Gelir Modeli
+- **Komission (ay 2):** 10 işe alım × ₺3K maaş × %20 = **₺6K/ay**
+- **Yazılımcı premium profil** (ay 3): 30 dev × ₺99/ay = **₺3K/ay**
+- **Kurumsal recruiting** (ay 4): 5 şirket × ₺999/ay = **₺5K/ay**
+- **Assessment/sertifika** (ay 5): 20 dev × ₺199 = **₺4K/ay**
+- **Tahmin (3. ay):** ₺14K | **(6. ay):** ₺24K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** LinkedIn Recruiter, Angel List global var. Türkiye'de yazılımcı-first platform = yok.
+
+**Talep:** Developer komuniteleri (Reddit r/turkeydeveloper, Twitter, Startup meetups): "şirketler benim maaş tahayyüldeki ilanı görmüyor" şikayeti sık.
+
+**Neden Heyecan Verici:** Türkiye yazılımcı pazarı tight (talep > arz). Yazılımcı-first modeli sıfır. Komission %20 + premium tier = marj yüksek.
+
+### İlk Somut Adım
+Bugün **Türkiye developer komuniteleri (r/turkeydeveloper, Python Türkiye meetup, Startup grupleri) ve talent acquisition companiesteinden 8-10 yazılımcı ve 4-5 HR manager bul.** Dev mesajı: "Yazılımcı pazaryeri — fiyatı sen belirle, şirket teklif yapsın. ₺99/ay premium profil. MVP 1 hafta. Beta dev olmak ister misin? İlk 30'a ücretsiz." HR mesajı: "Developer recruiting platform — pre-vetted, active, salary-transparent. ₺999/ay. Beta recruiter olmak ister misin?" Gün sonu: **5-6 dev + 2-3 HR** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **İki taraf pazarı (two-sided marketplace):** Yazılımcı olmadan işverenci ilgi yok, reverse de aynı
+- **Kalite kontrol:** Yazılımcı yetkinlik doğrulama gerekli (assessment/referral yönetimi)
+- **Maaş beklentisi:** Türkiye'de maaş dengesizliği yüksek, kesintili pazarlık riski
+- **Churn:** Başarılı yazılımcı direkt recruiter ile devam edebilir
+
+**Risk Derecesi:** ORTA-YÜKSEK (İki taraf pazarı startup maliyeti)
+
+---
+
+## FİKİR 5: Türkçe Spa & Güzellik Randevu Yazılımı (Yerel Entegrasyon)
+
+### Ne Bu?
+Türkiye'deki 50K+ kücük güzellik, spa ve masaj işletmesine (bağımsız, salon zinciri) **"randevu + CRM + yerel ödeme" yazılımı.** Sistem: (1) İşletmeci açılış saatleri + hizmetler + fiyat giriyor, (2) Müşteri mobil app/web'ten randevu yapıyor (Türkçe, simple), (3) Otomatik SMS (Türk Telekom vb), (4) Ödeme: iyzico/PayTR, nakit/ATM, (5) CRM: müşteri geçmişi, tercih, nota, (6) KVKK uyumlu veri yönetimi, (7) Dashboard: gelir, doldurma oranı, müşteri retention.
+
+### Kanıt (Kaynaklar)
+- Türkiye spa/güzellik sektörü: 50K+ işletme, 200+ milyar TL/yıl
+- Güzellik işletmeleri büyük çoğunluğu manuel (WhatsApp, defter)
+- ZunaPro (Türk): web sitesi hizmetleri var ama API ödeme/SMS = sınırlı
+- Wellness/spa booking yazılımları (Jotform, Zenoti, Mindbody) global var ama KVKK, Türkçe SMS, iyzico = eksik
+- İşletmeci talep: "WhatsApp bombardımanından kurtul" + "gelir takibi"
+
+### Gelir Modeli
+- **Temel paket** (ay 2): 100 salon × ₺199/ay = **₺20K/ay**
+- **Pro (SMS + CRM)** (ay 3): 40 × ₺399/ay = **₺16K/ay**
+- **Kurumsal (salon zinciri)** (ay 4): 5 × ₺999/ay = **₺5K/ay**
+- **Per-transaction** (ay 5): 1000 randevu × ₺10 = **₺10K/ay**
+- **Tahmin (3. ay):** ₺41K | **(6. ay):** ₺61K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** ZunaPro (web sitesi), Jotform (generic randevu) var. Ama KVKK + Türkçe SMS + iyzico + CRM = Türkçe boşluk.
+
+**Talep:** İşletmeciler (beauty forum, Facebook salon grupları): "WhatsApp çok, müşteri bilgileri yönetim zor" şikayeti sık.
+
+**Neden Heyecan Verici:** 50K+ işletme, Türk ödeme + SMS + KVKK combo = boşluk. MVP hızlı (randevu + SMS = 1 hafta).
+
+### İlk Somut Adım
+Bugün **Instagram/Google Maps'tan Ankara/İstanbul çevresinde popüler 10-12 spa/masaj/kuaför işletmesi bul.** WhatsApp: "Randevu yazılımı — müşteri app, SMS, iyzico/PayTR, CRM, KVKK. ₺199/ay. MVP 1 hafta. Beta olmak ister misin? İlk 5'e 50% indirim + 2 ay ücretsiz." Gün sonu: **3-4 işletme** "MVP demo" taahhüdü.
+
+### Zorluk/Risk
+- **Tech adoption:** İşletmeciler 40-60 yaş, app kullanımı zor
+- **Veri güvenliği/KVKK:** Müşteri verisi legal yükümlü, compliance gerekli
+- **SMS maliyet:** SMS gönderme maliyeti yüksek (sms.free.tr limit var)
+- **Rekabet:** Büyük yazılım şirketleri (Bilginet vb) Türkiye'ye gelebilir
+
+**Risk Derecesi:** ORTA-DÜŞÜK (Tech adoption barriyeri, ama somut pazar)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe Podcast Prodüksiyon & Editör Platformu**
+
+**Gerekçe:** Beş fikir arasında en net ve en düşük riski birleştiren seçim. Türkiye podcast pazarı (20K+ kanal, 400K+ bölüm) kanıtlanmış, büyüyor. Podcast monetizasyon (reklam) yeni kuruluyor (Poddict), yaratıcı talep dokümante edilmiş. İlk adım bugün bitirilebilir (8-10 podcast creator bul, mesaj at, taahhüd al). MVP hızlı: AI transkripsiyon (mevcut API), Spotify entegrasyon (public), ses düzenleme (audio libraries). Rakip yok (Anchor/Riverside Türkçe eksik). Tarım agritech talep geniş ama çiftçi tech adoption çok düşük (6-12 ay training), AI tutoring doğruluk riski yüksek, developer marketplace iki taraf pazarı startup maliyeti, spa yazılımı işletmeci tech adoption ve KVKK riski. Podcast: yapıcı heyecanlı, talep kanıtlı, ölçek geniş (20K+ potensiyel), MVP MVP'ler test edilebilir, finansal sonuç net (dinleyici = reklam). **En "2 hafta MVP, ay sonunda 5 podcast creator, 3. ay 50+ creator" fıkrı.**
+
+---
+
 # Günlük Fikir Araştırması - 13 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
