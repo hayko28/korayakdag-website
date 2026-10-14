@@ -1,0 +1,401 @@
+"use client";
+
+import { Fragment, useState, type ReactNode } from "react";
+import data from "@/lib/destek-rehberi-data.json";
+import "./DestekRehberi.css";
+
+type Durum = "acik" | "surekli" | "kapali" | "yok";
+
+interface Program {
+  ad: string;
+  durum: Durum;
+  kapak: string;
+  sonTarih?: string;
+  ozet?: string;
+  amac?: string;
+  kimler?: string[];
+  sartlar?: string[];
+  destekOrani?: string[];
+  odemeSekli?: string[];
+  kalemler?: string[];
+  faydalar?: string[];
+  basvuru?: string;
+  kaynaklar?: string[];
+  dogrulama?: string;
+  extra?: ReactNode;
+}
+
+interface Tablo {
+  basliklar: string[];
+  satirlar: string[][];
+}
+
+const kar = [
+  ["Nedir?", "Şirketin kendi bünyesinde kurduğu Ar-Ge birimine verilen resmi statü.", "Üniversite yakınındaki teknoloji bölgesinde ofis kiralayarak çalışmak.", "Yeni girişimler için kuluçka merkezi: ofis, mentorluk, eğitim."],
+  ["Kimlere uygun?", "Ar-Ge ekibi kalabalık orta ve büyük şirketler.", "Ar-Ge, yazılım veya tasarım yapan her ölçekte şirket.", "Yeni kurulan veya kurulacak teknoloji girişimleri."],
+  ["Asgari şart", "15 tam zamanlı Ar-Ge personeli (bazı sektörlerde 30). Ar-Ge alanı ayrı olmalı.", "Personel eşiği yok. Faaliyet Ar-Ge, yazılım veya tasarım olmalı.", "Yaş ve kuruluş şartı yok. Teknoloji veya yenilik odaklı fikir yeterli."],
+  ["Kim onaylar?", "Sanayi ve Teknoloji Bakanlığı (belge ve yerinde inceleme).", "Teknoparkın yönetici şirketi (proje değerlendirmesi).", "Seçilen TEKMER'in kendi kurulu."],
+  ["Başlıca avantajlar", "Kurumlar vergisi indirimi (Ar-Ge harcamalarının %100'ü kurum kazancından düşülür), personel gelir vergisi stopajı desteği, SGK işveren hissesinin yarısı, damga vergisi istisnası.", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
+  ["Başvuru", "Bakanlığa belge ile başvuru.", "Yönetici şirkete proje bazlı başvuru.", "Doğrudan KOSGEB'e değil, seçilen TEKMER'e. Kabul takvimi kontenjana bağlı."],
+  ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge Merkezi ile birlikte kullanılamaz.", "Diğer ikisini dışlamaz, tamamlayıcı olarak kullanılabilir."],
+];
+
+/** "teyit edilemedi" ifadelerini sarı işaretler. */
+function Tey({ s }: { s: string }) {
+  const parts = s.split(/(teyit edilemedi)/gi);
+  return (
+    <>
+      {parts.map((p, i) =>
+        /^teyit edilemedi$/i.test(p) ? (
+          <mark key={i} className="tey">
+            {p}
+          </mark>
+        ) : (
+          <Fragment key={i}>{p}</Fragment>
+        )
+      )}
+    </>
+  );
+}
+
+function Liste({ t, a, full }: { t: string; a?: string[]; full?: boolean }) {
+  if (!a || !a.length) return null;
+  return (
+    <div className={`blk${full ? " full" : ""}`}>
+      <h4>{t}</h4>
+      <ul>
+        {a.map((x, i) => (
+          <li key={i}>
+            <Tey s={x} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Para({ t, s }: { t: string; s?: string }) {
+  if (!s) return null;
+  return (
+    <div className="blk full">
+      <h4>{t}</h4>
+      <p>
+        <Tey s={s} />
+      </p>
+    </div>
+  );
+}
+
+function TabloGoster({ t }: { t: Tablo }) {
+  return (
+    <div className="tw">
+      <table>
+        <thead>
+          <tr>
+            {t.basliklar.map((b, i) => (
+              <th key={i}>{b}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {t.satirlar.map((r, i) => (
+            <tr key={i}>
+              {r.map((c, j) => (
+                <td key={j}>
+                  <Tey s={c} />
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function Kart({ o, gizli, id }: { o: Program; gizli: boolean; id: string }) {
+  const [acik, setAcik] = useState(false);
+  const isim = o.ad.split(" (")[0];
+  const kapali = o.durum === "kapali";
+  const lbl = kapali ? "Çağrı kapalı" : o.durum === "surekli" ? "Sürekli açık" : "Çağrı açık";
+  const chip = kapali ? "closed" : o.durum === "yok" ? "off" : "on";
+
+  return (
+    <article
+      className={`prog${acik ? " open" : ""}`}
+      hidden={gizli}
+      onClick={(e) => {
+        if ((e.target as HTMLElement).closest("a")) return;
+        if (typeof window !== "undefined" && window.getSelection()?.toString()) return;
+        setAcik((v) => !v);
+      }}
+    >
+      <button className="ph" type="button" aria-expanded={acik} aria-controls={id}>
+        {o.durum !== "yok" && (
+          <span className={`light ${kapali ? "r" : "g"}`} role="img" aria-label={lbl} title={lbl} />
+        )}
+        <span className="pt">{isim}</span>
+        <span className="pk">
+          <span className={`chip ${chip}`}>{o.kapak}</span>
+        </span>
+        <span className="chev" aria-hidden="true" />
+      </button>
+      <div className="pd" id={id} hidden={!acik}>
+        {o.ozet && (
+          <p className="ozet">
+            <Tey s={o.ozet} />
+          </p>
+        )}
+        {o.ad !== isim && <p className="tam">{o.ad}</p>}
+        <div className="blocks">
+          {o.durum !== "yok" && <Para t="Son başvuru tarihi / çağrı durumu" s={o.sonTarih} />}
+          <Para t="Projenin amacı" s={o.amac} />
+          <Liste t="Kimler başvurabilir" a={o.kimler} />
+          <Liste t="Başvuru şartları ve kriterler" a={o.sartlar} />
+          <Liste t="Destek oranı, limit ve vade" a={o.destekOrani} />
+          <Liste t="Ödeme nasıl yapılır" a={o.odemeSekli} />
+          <Liste t="Desteklenen kalemler" a={o.kalemler} />
+          <Liste t="Şirkete faydaları" a={o.faydalar} />
+          <Para t="Başvuru yolu" s={o.basvuru} />
+          {o.extra}
+          {o.kaynaklar && o.kaynaklar.length > 0 && (
+            <div className="blk full">
+              <h4>Kaynaklar</h4>
+              <ul className="src">
+                {o.kaynaklar.map((u, i) => (
+                  <li key={i}>
+                    {/^https?:\/\//.test(u) ? (
+                      <a href={u} target="_blank" rel="noopener noreferrer">
+                        {u}
+                      </a>
+                    ) : (
+                      u
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+        {o.dogrulama && (
+          <p className="ver">
+            <Tey s={o.dogrulama} />
+          </p>
+        )}
+      </div>
+    </article>
+  );
+}
+
+type Filtre = "all" | "acik" | "kapali";
+
+function gorunur(d: Durum, f: Filtre) {
+  return f === "all" || (f === "acik" && (d === "acik" || d === "surekli")) || (f === "kapali" && d === "kapali");
+}
+
+function Grup({
+  baslik,
+  aciklama,
+  rows,
+  filtre,
+  pfx,
+  sayac = true,
+}: {
+  baslik: string;
+  aciklama: string;
+  rows: Program[];
+  filtre: Filtre;
+  pfx: string;
+  sayac?: boolean;
+}) {
+  const acik = rows.filter((r) => r.durum !== "kapali" && r.durum !== "yok").length;
+  const kap = rows.filter((r) => r.durum === "kapali").length;
+  return (
+    <div>
+      <h2 className="g">
+        {baslik}
+        {sayac && (
+          <span className="gcount">
+            <span>
+              <i className="light g" />
+              {acik} açık
+            </span>
+            <span>
+              <i className="light r" />
+              {kap} kapalı
+            </span>
+          </span>
+        )}
+      </h2>
+      <p className="blurb">{aciklama}</p>
+      <div className="plist">
+        {rows.map((r, i) => (
+          <Kart key={i} o={r} id={`${pfx}-${i}`} gizli={!gorunur(r.durum, filtre)} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function DestekRehberi() {
+  const [filtre, setFiltre] = useState<Filtre>("all");
+  const D = data as unknown as {
+    kosgeb: Program[];
+    tubitak: Program[];
+    ticaret: Program[];
+    tkdk: Program[];
+    yatirim: {
+      sonTarih: string;
+      ozet: string;
+      nedir: string;
+      kimler: string[];
+      sartlar: string[];
+      basvuru: string;
+      destekUnsurlari: { ad: string; aciklama: string }[];
+      bolgeTablosu: Tablo;
+      asgariYatirimTablosu: Tablo;
+      sektorler: { uygun: string[]; kapsamDisi: string[]; notlar: string[] };
+      kaynaklar: string[];
+      dogrulama: string;
+    };
+  };
+  const Y = D.yatirim;
+
+  const yatirim: Program[] = [
+    {
+      ad: "Yatırım Teşvik Belgesi nedir?",
+      durum: "surekli",
+      kapak: "Sürekli açık",
+      ozet: Y.ozet,
+      sonTarih: Y.sonTarih,
+      amac: Y.nedir,
+      kimler: Y.kimler,
+      sartlar: Y.sartlar,
+      basvuru: Y.basvuru,
+      kaynaklar: Y.kaynaklar,
+      dogrulama: Y.dogrulama,
+      extra: (
+        <div className="blk full">
+          <h4>Destek unsurları</h4>
+          <ul>
+            {Y.destekUnsurlari.map((d, i) => (
+              <li key={i}>
+                <strong>{d.ad}.</strong> <Tey s={d.aciklama} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ),
+    },
+    {
+      ad: "Bölgelere göre destekler",
+      durum: "yok",
+      kapak: "Tablo",
+      ozet: "Altı bölgede uygulanan destek unsurları ve SGK işveren hissesi desteği süreleri.",
+      extra: (
+        <div className="blk full">
+          <TabloGoster t={Y.bolgeTablosu} />
+        </div>
+      ),
+    },
+    {
+      ad: "Asgari yatırım tutarları",
+      durum: "yok",
+      kapak: "Tablo",
+      ozet: "Belge için gereken asgari sabit yatırım tutarı bölgeye ve yatırım türüne göre değişir.",
+      extra: (
+        <div className="blk full">
+          <TabloGoster t={Y.asgariYatirimTablosu} />
+        </div>
+      ),
+    },
+    {
+      ad: "Hangi sektörlerde belge alınır?",
+      durum: "yok",
+      kapak: "Sektör listesi",
+      ozet: "Belge yalnızca Karar'ın EK-3 listesindeki faaliyetler için çıkar. Listede olmayan faaliyetler kapsam dışıdır.",
+      extra: (
+        <>
+          <Liste t="Belge alınabilen sektörler" a={Y.sektorler.uygun} full />
+          <Liste t="Kapsam dışı faaliyetler" a={Y.sektorler.kapsamDisi} full />
+          <Liste t="Notlar ve uyarılar" a={Y.sektorler.notlar} full />
+        </>
+      ),
+    },
+  ];
+
+  const karsilastirma: Program[] = [
+    {
+      ad: "Üçünün karşılaştırması",
+      durum: "yok",
+      kapak: "Karşılaştırma",
+      ozet: "Kimlere uygun, kim onaylar, başlıca avantajlar ve dikkat edilecekler.",
+      extra: (
+        <div className="blk full">
+          <div className="tw">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Ar-Ge Merkezi</th>
+                  <th>Teknopark</th>
+                  <th>TEKMER</th>
+                </tr>
+              </thead>
+              <tbody>
+                {kar.map((r, i) => (
+                  <tr key={i}>
+                    {r.map((c, j) => (
+                      <td key={j}>{c}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="note">
+            Kısa kural: Ekibi büyükse Ar-Ge Merkezi, ekip küçük veya orta ve üniversite çevresi isteniyorsa Teknopark, henüz
+            yeni bir girişimse TEKMER. Ar-Ge Merkezi ve Teknopark aynı faaliyet için birlikte alınamaz.
+          </p>
+        </div>
+      ),
+    },
+  ];
+
+  const filtreler: { f: Filtre; ad: string; isik?: "g" | "r" }[] = [
+    { f: "all", ad: "Tümü" },
+    { f: "acik", ad: "Çağrısı açık", isik: "g" },
+    { f: "kapali", ad: "Çağrısı kapalı", isik: "r" },
+  ];
+
+  return (
+    <div className="dr">
+      <p className="intro">
+        Kartlara tıklayınca program detayları açılır, tekrar tıklayınca kapanır. Yeşil ışık çağrının açık veya sürekli
+        açık olduğunu, kırmızı ışık çağrının şu an kapalı olduğunu gösterir.
+      </p>
+      <div className="filters" role="group" aria-label="Çağrı durumu filtresi">
+        <span>Göster:</span>
+        {filtreler.map((x) => (
+          <button key={x.f} type="button" aria-pressed={filtre === x.f} onClick={() => setFiltre(x.f)}>
+            {x.isik && <i className={`light ${x.isik}`} />}
+            {x.ad}
+          </button>
+        ))}
+      </div>
+
+      <Grup baslik="KOSGEB" aciklama="KOBİ'lere ve girişimcilere yönelik destekler. Bazı programlar yalnızca çağrı döneminde açılır." rows={D.kosgeb} filtre={filtre} pfx="kosgeb" />
+      <Grup baslik="TÜBİTAK" aciklama="Ar-Ge ve yenilik projelerine hibe. Ar-Ge ekibi olan veya kuracak şirketler için." rows={D.tubitak} filtre={filtre} pfx="tubitak" />
+      <Grup baslik="Ticaret Bakanlığı" aciklama="İhracat ve yurt dışı pazara açılma harcamalarına destek. Programların çoğu belirli bir son tarihe bağlı değildir, harcama sonrası başvuru süreleri geçerlidir." rows={D.ticaret} filtre={filtre} pfx="ticaret" />
+      <Grup baslik="TKDK, IPARD III" aciklama="Tarım ve kırsal kalkınma yatırımlarına AB destekli hibe. 14 Ekim 2026 itibarıyla açık bir IPARD III çağrısı yok. Resmi ilan PDF'leri okunamadığı için tarih, oran ve limitler ikincil kaynaklara dayanıyor." rows={D.tkdk} filtre={filtre} pfx="tkdk" />
+      <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Dört kartta: genel bilgi, bölge tablosu, asgari tutarlar ve sektörler." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} />
+      <Grup baslik="Ar-Ge Merkezi, Teknopark ve TEKMER" aciklama="Üçü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
+
+      <p className="note" style={{ marginTop: 36 }}>
+        Devlet destek bilgileri 14 Ekim 2026 itibarıyla resmi kurum sayfalarından derlenmiştir. Başvuru şartları, tutarlar
+        ve tarihler çağrıya göre değişir; başvurudan önce güncel duyuru kontrol edilmelidir. &quot;Teyit edilemedi&quot;
+        işaretli bilgiler resmi kaynakta doğrulanamamıştır.
+      </p>
+    </div>
+  );
+}
