@@ -40,6 +40,142 @@ const kar = [
   ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge Merkezi ile birlikte kullanılamaz.", "Diğer ikisini dışlamaz, tamamlayıcı olarak kullanılabilir."],
 ];
 
+const ALL = "Tüm sektörler";
+const hizmet: [string, string[][]][] = [
+ ["Hukuk",[
+  ["Dava, İcra ve İflas","Alacak tahsili, davalarda temsil, konkordato ve iflas süreçleri.","Alacağı olan veya dava riski taşıyan her şirket.","Ticaret, inşaat, üretim, lojistik"],
+  ["Arabuluculuk","Mahkemeye gitmeden anlaşma yolu. Ticari ve iş uyuşmazlıklarında dava öncesi zorunlu adım.","Ticari veya işçi uyuşmazlığı yaşayan şirketler.",ALL],
+  ["KVKK","Kişisel verilerin yasaya uygun tutulması: envanter, aydınlatma metni, VERBİS kaydı.","Müşteri veya çalışan verisi tutan tüm şirketler.","E-ticaret, sağlık, eğitim, yazılım, perakende"],
+  ["Sözleşme, İş ve Şirketler Hukuku","Sözleşme hazırlama, iş hukuku, şirket kuruluşu ve tür değişikliği, halka arz, aile anayasası.","Büyüyen, ortaklık yapısı değişen şirketler ve aile şirketleri.",ALL]
+ ]],
+ ["Vergi ve Mali Müşavirlik",[
+  ["Vergi Danışmanlığı","Yurt içi ve uluslararası vergi planlaması, vergi riski ve incelemelerde destek.","Karı büyüyen, yurt dışıyla iş yapan şirketler.",ALL],
+  ["Tam Tasdik","Yeminli Mali Müşavirin yıllık beyannamelerin doğruluğunu onaylaması. Vergi incelemesi riskini düşürür.","Düzenli ve güvenli vergi uyumu isteyen şirketler.",ALL],
+  ["KDV İade","Devreden KDV'nin nakit olarak geri alınması.","İhracat yapan, yatırım yapan, indirimli KDV oranı nedeniyle KDV'si birikenler.","İhracatçı imalat, tekstil, gıda, inşaat, enerji"],
+  ["Bağımsız Denetim","Finansal tabloların bağımsız denetçi tarafından doğrulanması. Belirli büyüklük eşiğini aşanlar için zorunlu, diğerlerinde güven yaratır.","Eşiği aşan şirketler, kredi veya yatırımcı arayanlar.","Üretim, holding, enerji, perakende"],
+  ["Bordro","Aylık maaş, SGK bildirimleri ve çalışan kayıtlarının yönetimi.","Çalışanı olan ama içeride bordro ekibi kurmak istemeyen şirketler.",ALL],
+  ["SGK Teşvikleri","İşe alımda SGK prim yükünü azaltan teşviklerin tespiti ve uygulanması.","Çalışan sayısı yüksek veya işe alım planlayan şirketler.","Üretim, tekstil, hizmet, inşaat, turizm"]
+ ]],
+ ["Uluslararası",[
+  ["Yurt Dışında Şirket Kurma","Hedef ülkede şirket kuruluşu: ülke seçimi, tescil, banka ve vergi kaydı. Kurduğumuz ülkeler tablonun altında.","Yurt dışı müşteri, ofis veya depo isteyen şirketler.","İhracatçılar, yazılım, e-ticaret, ticaret"],
+  ["Yurt Dışı Pazar Araştırması","Hedef ülkede talep, rakip, fiyat ve giriş yolu analizi.","İhracata yeni başlayan veya yeni pazara açılan şirketler.","Üretim, gıda, makine, tekstil, yazılım"],
+  ["Uluslararası Kredi ve Fon Danışmanlığı","Yurt dışı kaynaklı kredi, fon ve yatırım finansmanı bulma, başvuruyu hazırlama.","Büyük yatırımı veya finansman ihtiyacı olan şirketler.","Enerji, altyapı, üretim, tarım"]
+ ]],
+ ["Koruma ve Büyüme",[
+  ["Marka ve Patent","Marka, patent ve telif haklarının Türkiye'de ve yurt dışında tescili.","Kendi ürünü veya markası olan, ihracat yapan şirketler.","Gıda, tekstil, yazılım, kozmetik, makine"],
+  ["Sürdürülebilirlik","Karbon ve su ayak izi, TSRS raporu, güvence denetimi. AB'ye ihracatta karbon sınır vergisi hazırlığı.","AB'ye ihracat yapanlar ve rapor zorunluluğu olan şirketler.","Çelik, alüminyum, çimento, gübre, tekstil, otomotiv"],
+  ["GYF ve PYF","Gayrimenkul veya proje yatırımı için yatırımcıdan fon toplayan, SPK düzenlemeli yapı (Gayrimenkul Yatırım Fonu, Proje Yatırım Fonu).","Gayrimenkul veya proje geliştirip ortak yatırımcı arayanlar.","Gayrimenkul, inşaat, enerji projeleri"],
+  ["Kurumsallaşma Check-Up","Yönetim, süreç, finans ve hukuk açısından şirketin kısa muayenesi. Eksikler ve öncelikler raporlanır.","Büyüyen ve sahibine bağlı çalışan aile şirketleri.",ALL]
+ ]],
+ ["Değerleme ve Teknoloji",[
+  ["Şirket Değerleme","Şirketin gerçek piyasa değerinin hesaplanması. Satış, ortak alımı, birleşme (M&A), yatırımcı görüşmesi ve due diligence öncesi kullanılır.","Ortak alacak veya satacak, yatırım arayan, birleşme düşünen şirketler.",ALL],
+  ["RPA (Süreç Robotları)","Yazılım robotlarının tekrarlayan işleri insan yerine yapması: fatura girişi, rapor hazırlama, veri aktarımı gibi. Zaman kazandırır, hatayı azaltır.","Her gün tekrarlayan evrak ve veri işi yapan, ekibi bu işlere zaman harcayan şirketler.","Finans, muhasebe, lojistik, perakende, sigorta, üretim"]
+ ]]
+];
+const ulkeler: string[] = ["Polonya","İtalya","Almanya","İngiltere","Hollanda","Birleşik Arap Emirlikleri (Dubai)","Suudi Arabistan","ABD","Singapur","Azerbaycan","Kazakistan","Özbekistan","Bulgaristan","Letonya","Litvanya","Yunanistan"];
+const eslesme: [string, string][] = [
+ ["İhracat yapan imalatçı","KDV İade, Ticaret Bakanlığı destekleri, Yurt dışı marka tescili, Sürdürülebilirlik (AB karbon vergisi)"],
+ ["Yeni fabrika veya tesis yatırımı yapacak şirket","Yatırım Teşvik Belgesi, SGK Teşvikleri, Uluslararası kredi ve fon"],
+ ["Yazılım veya teknoloji girişimi","TÜBİTAK 1507 / 1501, Teknopark, KOSGEB TEKMER, Marka ve Patent"],
+ ["Çalışan sayısı yüksek KOBİ","SGK Teşvikleri, Bordro, İstihdamı Koruma, Kurumsallaşma Check-Up"],
+ ["Yurt dışına açılmak isteyen şirket","Pazar araştırması, Yurt dışında şirket kurma, Ticaret Bakanlığı destekleri, Uluslararası vergi"],
+ ["Büyüyen aile şirketi","Kurumsallaşma Check-Up, Tam Tasdik veya Bağımsız Denetim, Vergi, Aile anayasası"],
+ ["Gayrimenkul veya proje geliştirici","GYF ve PYF, Uluslararası kredi ve fon, Yatırım Teşvik, Hukuk"],
+ ["E-ticaret veya perakende","KVKK, Marka tescili, E-ihracat desteği, Bordro"],
+ ["Alacak veya uyuşmazlık sorunu olan şirket","Dava, İcra ve İflas, Arabuluculuk, Sözleşme hukuku"]
+];
+
+function Hizmetler() {
+  return (
+    <>
+      <p className="intro">Bu hizmetlerde devlet hibesi yoktur. Şirketin kendi ihtiyacına göre çalışırız.</p>
+      {hizmet.map(([baslik, rows]) => (
+        <div key={baslik}>
+          <h2>{baslik}</h2>
+          <div className="tw">
+            <table>
+              <thead>
+                <tr>
+                  <th>Hizmet</th>
+                  <th>Ne demek?</th>
+                  <th>Kimlere uygun?</th>
+                  <th>Sektörler</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={r[0]}>
+                    <td>{r[0]}</td>
+                    <td>{r[1]}</td>
+                    <td>{r[2]}</td>
+                    <td>
+                      {r[3] === ALL ? (
+                        <span className="chip on">{ALL}</span>
+                      ) : (
+                        r[3].split(",").map((x) => (
+                          <span key={x} className="chip">
+                            {x.trim()}
+                          </span>
+                        ))
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {baslik === "Uluslararası" && (
+            <>
+              <p className="blurb" style={{ marginTop: 14 }}>
+                Şirket kurduğumuz ülkeler ({ulkeler.length}):
+              </p>
+              <div>
+                {ulkeler.map((u) => (
+                  <span key={u} className="chip on">
+                    {u}
+                  </span>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      ))}
+    </>
+  );
+}
+
+function Eslesme() {
+  return (
+    <>
+      <p className="intro">Şirketinizin profiline bakın, yanındaki hizmet ve destekler size uygun olanlardır.</p>
+      <div className="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Şirket şunu yapıyorsa</th>
+              <th>Uygun hizmet ve destekler</th>
+            </tr>
+          </thead>
+          <tbody>
+            {eslesme.map(([a, b]) => (
+              <tr key={a}>
+                <td>{a}</td>
+                <td>
+                  {b.split(", ").map((x) => (
+                    <span key={x} className="chip on">
+                      {x}
+                    </span>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+}
+
 /** "teyit edilemedi" ifadelerini sarı işaretler. */
 function Tey({ s }: { s: string }) {
   const parts = s.split(/(teyit edilemedi)/gi);
@@ -239,6 +375,7 @@ function Grup({
 
 export default function DestekRehberi() {
   const [filtre, setFiltre] = useState<Filtre>("all");
+  const [sekme, setSekme] = useState<"a" | "b" | "c">("b");
   const D = data as unknown as {
     kosgeb: Program[];
     tubitak: Program[];
@@ -370,6 +507,22 @@ export default function DestekRehberi() {
 
   return (
     <div className="dr">
+      <div className="tabs" role="tablist" aria-label="Rehber bölümleri">
+        {(
+          [
+            ["a", "1. Danışmanlık Hizmetleri"],
+            ["b", "2. Devlet Destekleri"],
+            ["c", "3. Kime Ne Önerilir?"],
+          ] as const
+        ).map(([k, ad]) => (
+          <button key={k} type="button" role="tab" aria-selected={sekme === k} onClick={() => setSekme(k)}>
+            {ad}
+          </button>
+        ))}
+      </div>
+      {sekme === "a" && <Hizmetler />}
+      {sekme === "c" && <Eslesme />}
+      <div hidden={sekme !== "b"}>
       <p className="intro">
         Kartlara tıklayınca program detayları açılır, tekrar tıklayınca kapanır. Yeşil ışık çağrının açık veya sürekli
         açık olduğunu, kırmızı ışık çağrının şu an kapalı olduğunu gösterir.
@@ -396,6 +549,7 @@ export default function DestekRehberi() {
         ve tarihler çağrıya göre değişir; başvurudan önce güncel duyuru kontrol edilmelidir. &quot;Teyit edilemedi&quot;
         işaretli bilgiler resmi kaynakta doğrulanamamıştır.
       </p>
+      </div>
     </div>
   );
 }
