@@ -398,6 +398,7 @@ export default function DestekRehberi() {
       destekUnsurlari: { ad: string; aciklama: string }[];
       bolgeIller: Tablo;
       bolgeTablosu: Tablo;
+      destekKartlari: { ad: string; kapak: string; ozet: string; tablo: Tablo; notlar: string[] }[];
       asgariYatirimTablosu: Tablo;
       sektorler: { uygun: string[]; kapsamDisi: string[]; notlar: string[] };
       kaynaklar: string[];
@@ -443,17 +444,22 @@ export default function DestekRehberi() {
         </div>
       ),
     },
-    {
-      ad: "Bölgelere göre destekler",
-      durum: "yok",
-      kapak: "Tablo",
-      ozet: "Altı bölgede uygulanan destek unsurları ve SGK işveren hissesi desteği süreleri.",
-      extra: (
-        <div className="blk full">
-          <TabloGoster t={Y.bolgeTablosu} />
-        </div>
-      ),
-    },
+    ...Y.destekKartlari.map(
+      (k): Program => ({
+        ad: k.ad,
+        durum: "yok",
+        kapak: k.kapak,
+        ozet: k.ozet,
+        extra: (
+          <>
+            <div className="blk full">
+              <TabloGoster t={k.tablo} />
+            </div>
+            <Liste t="Notlar" a={k.notlar} full />
+          </>
+        ),
+      })
+    ),
     {
       ad: "Asgari yatırım tutarları",
       durum: "yok",
@@ -560,7 +566,7 @@ export default function DestekRehberi() {
       <Grup baslik="TÜBİTAK" aciklama="Ar-Ge ve yenilik projelerine hibe. Ar-Ge ekibi olan veya kuracak şirketler için." rows={D.tubitak} filtre={filtre} pfx="tubitak" />
       <Grup baslik="Ticaret Bakanlığı" aciklama="İhracat ve yurt dışı pazara açılma harcamalarına destek. Programların çoğu belirli bir son tarihe bağlı değildir, harcama sonrası başvuru süreleri geçerlidir." rows={D.ticaret} filtre={filtre} pfx="ticaret" />
       <Grup baslik="TKDK, IPARD III" aciklama="Tarım ve kırsal kalkınma yatırımlarına AB destekli hibe. 14 Ekim 2026 itibarıyla açık bir IPARD III çağrısı yok. Resmi ilan PDF'leri okunamadığı için tarih, oran ve limitler ikincil kaynaklara dayanıyor." rows={D.tkdk} filtre={filtre} pfx="tkdk" />
-      <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Beş kartta: genel bilgi, illerin bölgeleri, bölgelere göre destekler, asgari tutarlar ve sektörler." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} />
+      <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Kartlar: genel bilgi, illerin bölgeleri, sistemlerin karşılaştırması (Hedef, Öncelikli, Hamle), her sistemin destek tablosu, asgari tutarlar ve sektörler." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} />
       <Grup baslik="Ar-Ge Merkezi, Teknopark ve TEKMER" aciklama="Üçü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
 
       <p className="note" style={{ marginTop: 36 }}>
