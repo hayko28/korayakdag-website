@@ -234,8 +234,7 @@ export default function BlogPage() {
               ⛔ Ön Onaya Bağlı Destekler (Başvuru Önce)
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
-              Tanıtım/reklam faaliyetleri, birim kira, KTZ yetkinlik
-              projesi ve e-ihracat destekleri gibi{" "}
+              KTZ yetkinlik projesi ve e-ihracat destekleri gibi{" "}
               <strong>faaliyet bazlı</strong> kalemlerde,
               faaliyetten/harcamadan önce DYS üzerinden ön onay başvurusu
               yapılması zorunludur. Fuar kapsamında da yalnızca{" "}
@@ -265,8 +264,7 @@ export default function BlogPage() {
             (1) fuarın gerçekten o yılki resmî listede olup olmadığını
             katılımdan önce teyit etmek, (2) organizatör üzerinden
             yürütülen ayrıca tanıtım faaliyetlerine katılıyorsanız
-            bunların ön onay gerektirdiğini bilmek, (3) tanıtım, birim
-            kira, KTZ ve e-ihracat gibi gerçekten ön onaylı kalemlerde
+            bunların ön onay gerektirdiğini bilmek, (3) KTZ ve e-ihracat gibi gerçekten ön onaylı kalemlerde
             harcamayı onaydan önce başlatmamak.
           </p>
         </div>
@@ -405,8 +403,10 @@ export default function BlogPage() {
           5973 sayılı Karar&apos;ın 7&apos;nci maddesi kapsamındaki bu
           destek, ihracatçıların yurt dışındaki fuarlara katılımını
           (stant kirası, dekorasyon, nakliye, gümrükleme) karşılar. 8&apos;inci
-          madde yurt içi fuarları, 22 ve 23&apos;üncü maddeler ise sanal
-          fuar katılımı ve organizasyonunu kapsar.
+          madde yurt içi fuarları, 23&apos;üncü madde ise sanal fuar
+          organizasyonunu kapsar (sanal fuara katılım desteği olan 22&apos;nci
+          madde 7 Mart 2026 tarihli Cumhurbaşkanı Kararıyla yürürlükten
+          kaldırılmıştır).
         </p>
         <div className="mb-8 rounded-2xl border-l-4 border-gray-400 bg-gray-50 p-8">
           <h4 className="mb-3 text-lg font-bold text-[#071A2F]">
@@ -428,17 +428,17 @@ export default function BlogPage() {
           <table className="w-full text-left text-sm">
             <thead className="bg-[#071A2F] text-white">
               <tr>
-                <th className="p-4">Fuar Kategorisi</th>
+                <th className="p-4">Fuar Kategorisi (fuar başına)</th>
                 <th className="p-4">2026 Üst Limiti (TL)</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b hover:bg-gray-50">
-                <td className="p-4 font-semibold">Bakanlık listesi dışındaki fuarlar</td>
+                <td className="p-4 font-semibold">Organizatör tanıtım ve ikili iş görüşmesi desteği: diğer fuarlar (katılımcı limiti değildir)</td>
                 <td className="p-4">4.930.122</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
-                <td className="p-4 font-semibold">Bakanlıkça belirlenen fuarlar (genel)</td>
+                <td className="p-4 font-semibold">Organizatör tanıtım ve ikili iş görüşmesi desteği: Bakanlıkça belirlenen fuarlar (katılımcı limiti değildir)</td>
                 <td className="p-4">9.862.972</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
@@ -453,10 +453,7 @@ export default function BlogPage() {
                 <td className="p-4 font-semibold">Prestijli fuarlar</td>
                 <td className="p-4">3.698.274</td>
               </tr>
-              <tr className="border-b hover:bg-gray-50">
-                <td className="p-4 font-semibold">Sanal fuara katılım</td>
-                <td className="p-4">3.698.274</td>
-              </tr>
+              
               <tr>
                 <td className="p-4 font-semibold">Sanal fuar organizasyonu</td>
                 <td className="p-4">7.396.548</td>
@@ -539,9 +536,12 @@ export default function BlogPage() {
           <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
             <h3 className="mb-3 text-xl font-bold text-[#071A2F]">🔄 Süreç</h3>
             <p className="leading-8 text-gray-700">
-              Ön onay zorunludur. Kira sözleşmesi imzalanmadan/faaliyet
-              başlamadan önce başvuru yapılmalı; harcama belgeleri dönemsel
-              (genellikle çeyrek dönemler hâlinde) sunulur.
+              Genelgede ayrı bir ön onay şartı yoktur. Birim, Bakanlığın yurt
+              dışı temsilcisinin yerinde incelemesiyle destek kapsamına alınır;
+              temsilci kira tutarının rayice uygunluğunu ve birimin faal
+              olduğunu raporlar, inceleme her destek yılı sonunda tekrarlanır.
+              Ödeme başvurusu, kira ödeme belgesi tarihinden itibaren 6 ay
+              içinde yapılır.
             </p>
           </div>
         </div>
@@ -1101,9 +1101,9 @@ export default function BlogPage() {
                 <td className="p-4">490.559 TL</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
-                <td className="p-4 font-semibold">Yurt Dışı Fuar (Bakanlık listesi, genel)</td>
+                <td className="p-4 font-semibold">Yurt Dışı Fuar, katılımcı (genel / sektörel / prestijli fuar başına)</td>
                 <td className="p-4">Md.7</td>
-                <td className="p-4">9.862.972 TL</td>
+                <td className="p-4">738.563 / 1.231.848 / 3.698.274 TL</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-4 font-semibold">Küresel Tedarik Zinciri Yetkinlik Projesi</td>
@@ -1154,11 +1154,11 @@ export default function BlogPage() {
         <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
           <ul className="ml-6 list-disc space-y-4 text-gray-700 marker:text-red-500">
             <li><strong>İlişkili kişilerden alınan hizmetler:</strong> Harcamayı yapan şirket ile faturayı düzenleyen taraf (ortaklar, ortakların eşi/hısımları, aynı şirketler grubu) ilişkili kişi ise, bu harcama desteklenmez.</li>
-            <li><strong>Ön onaydan önceki harcamalar:</strong> Tanıtım, birim kira, KTZ, e-ihracat ve fuar organizatörünün tanıtım faaliyetleri gibi ön onay gerektiren kalemlerde, onay tarihinden önce yapılan harcamalar kapsam dışıdır. (Fuara bireysel katılımın standart stant desteği bu kurala tabi değildir; harcama fuar sırasında yapılır, başvuru fuar sonrasında 90 gün içinde yapılır.)</li>
+            <li><strong>Ön onaydan önceki harcamalar:</strong> KTZ, e-ihracat ve fuar organizatörünün tanıtım faaliyetleri gibi ön onay gerektiren kalemlerde, onay tarihinden önce yapılan harcamalar kapsam dışıdır. (Fuara bireysel katılımın standart stant desteği bu kurala tabi değildir; harcama fuar sırasında yapılır, başvuru fuar sonrasında 90 gün içinde yapılır.)</li>
             <li><strong>Elden veya çekle yapılan ödemeler:</strong> Ödemenin bankacılık sistemi üzerinden yapılmış olması zorunludur; elden ödeme, müşteri çeki veya cirolu çekle yapılan ödemeler desteklenmez.</li>
             <li><strong>Süresi geçmiş/eksik belgeler:</strong> Eksik bilgi/belgenin bildirimden itibaren 3 ay içinde (bir kereye mahsus 3 ay ek süreyle) tamamlanmaması hâlinde başvuru, mevcut belgelerle sınırlı sonuçlandırılır.</li>
             <li><strong>Yurt içi harcamalar:</strong> Programların büyük bölümü yurt dışına yönelik faaliyetleri hedefler; yurt içi pazara yönelik reklam, yurt içi fuar (ayrı ve daha düşük limitli bir kalemdir) gibi harcamalar farklı kurallara tabidir.</li>
-            <li><strong>Komisyon, üyelik ve dolaylı vergiler:</strong> Birçok kalemde (örn. dijital pazaryeri tanıtımı, sipariş karşılama) komisyon, üyelik ücreti ve KDV gibi dolaylı vergiler destek hesaplamasına dahil edilmez.</li>
+            
             <li><strong>Rayice aykırı faturalar:</strong> Piyasa rayicinin belirgin biçimde üzerinde faturalandırıldığı tespit edilen harcamalar, Bakanlık yurt dışı temsilcisinin değerlendirmesiyle reddedilebilir.</li>
             <li><strong>Vadesi geçmiş vergi/SGK borcu:</strong> Hazine ve Maliye Bakanlığı ile SGK&apos;ya vadesi geçmiş borcu bulunan şirketlerde, destek tutarı önce bu borçlara mahsup edilir.</li>
             <li><strong>Türk ürünü/ülke imajına zarar veren içerik:</strong> Tanıtım materyallerinde veya listelenen ürünlerde bu yönde bir zarar tespit edilirse ilgili harcama destek kapsamından çıkarılır.</li>
@@ -1402,12 +1402,13 @@ export default function BlogPage() {
               Harcamalar KDV dahil mi değerlendiriliyor?
             </h3>
             <p className="leading-8 text-gray-700">
-              Genel kural, harcamaların <strong>KDV hariç</strong>{" "}
-              değerlendirilmesidir; KDV&apos;nin konusuna girmeyen
-              hizmetler ve yurt dışına çıkışı yapılan tanıtım
-              malzemeleri de KDV hariç desteklenir. Tevkifata tabi
-              faturalarda ise tevkifat tutarı destek hesabına dahil
-              edilir.
+              Genel kural olarak destek, <strong>dolaylı vergiler (KDV, ÖTV
+              vb.) dahil</strong> hesaplanan tutar üzerinden ödenir.
+              KDV&apos;nin konusuna girmeyen, yurt dışında ifa edilen
+              hizmetlerde ve yurt dışına çıkışı yapılan tanıtım
+              malzemelerinde ise KDV zaten bulunmadığından fatura bedeli
+              esas alınır. Tevkifata tabi faturalarda tevkifat tutarı
+              destek hesabına dahil edilir.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -1528,7 +1529,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kaç yıl faaliyette olan şirketler başvurabilir?","acceptedAnswer":{"@type":"Answer","text":"Çoğu 5973 sayılı Karar kalemi için genel kural, ihracatçı birliğine üye olmak ve aktif ihracatçı olmaktır; belirli bir minimum faaliyet süresi aranmaz. Ancak e-ihracat destek programında perakende e-ticaret sitesi veya pazaryeri statüsü almak isteyenler için en az 2 yıl faaliyette bulunma şartı vardır."}},{"@type":"Question","name":"Başvuru ücretli mi?","acceptedAnswer":{"@type":"Answer","text":"Resmî başvurunun kendisi bir harca tabi değildir. Ancak danışmanlık, rapor, test/sertifikasyon gibi destek konusu harcamaların bizzat şirket tarafından önce karşılanması, sonra desteğin geri ödemesiz olarak devreye girmesi gerekir &mdash; yani destek, harcamayı yapmadan önce şirkete nakit olarak verilmez."}},{"@type":"Question","name":"Birden fazla destek programından aynı anda yararlanılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, farklı harcama kalemleri farklı destek programlarından paralel şekilde desteklenebilir. Kısıt, aynı harcamanın birden fazla programdan mükerrer ödenmesine yöneliktir; örneğin e-ihracat konsorsiyumu statüsü alan bir şirket, destek aldığı ülkeye yönelik olarak Yurt Dışı Lojistik Dağıtım Ağlarının Desteklenmesi Hakkında Karar kapsamındaki mükerrer kalemlerden yararlanamaz."}},{"@type":"Question","name":"Destek alan firma denetime tabi mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yurt dışında düzenlenen belgeler Bakanlık yurt dışı temsilcisi (ticaret müşaviri/ataşesi) tarafından onaylanabilir, harcamanın rayice uygunluğu sorgulanabilir ve destek konusu tüm belgelerin asıllarının en az 10 yıl saklanması zorunludur."}},{"@type":"Question","name":"Yanlış veya eksik belge ibraz edilirse ne olur?","acceptedAnswer":{"@type":"Answer","text":"Eksik bilgi/belgeler için bildirim tarihinden itibaren 3 ay tamamlama süresi tanınır; gerekirse bir kereye mahsus 3 ay daha ek süre verilebilir. Süresinde tamamlanmayan eksiklikler varsa başvuru, o ana kadar tekemmül etmiş harcama kalemleriyle sınırlı olarak sonuçlandırılır."}},{"@type":"Question","name":"Başvurum reddedilirse itiraz hakkım var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, ret kararına karşı ilgili İhracatçı Birlikleri Genel Sekreterliği ve İhracat Genel Müdürlüğü'ne yazılı itiraz/talep başvurusu yapılabilir. İtirazın güçlü olması için ret gerekçesinin (eksik belge, rayiç sorunu, ön onay eksikliği vb.) net biçimde tespit edilip giderilmesi gerekir."}},{"@type":"Question","name":"Şahıs şirketleri bu desteklerden yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Çoğu program tüzel kişilik/şirket yapısını esas alır. E-ihracat destek programında, esnaf vergi muafiyeti belgesine sahip veya esnaf/ticaret siciline kayıtlı şahıslar için ise yalnızca belirli koşullarda (genellikle bir e-ihracat konsorsiyumu aracılığıyla) sınırlı bir yararlanma imkânı tanınmıştır."}},{"@type":"Question","name":"Harcamalar KDV dahil mi değerlendiriliyor?","acceptedAnswer":{"@type":"Answer","text":"Genel kural, harcamaların KDV hariç değerlendirilmesidir; KDV'nin konusuna girmeyen hizmetler ve yurt dışına çıkışı yapılan tanıtım malzemeleri de KDV hariç desteklenir. Tevkifata tabi faturalarda ise tevkifat tutarı destek hesabına dahil edilir."}},{"@type":"Question","name":"Yazılım/SaaS ihracatı yapan bir şirket 5973 sayılı Karar'daki fuar/pazara giriş desteklerinden yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak hayır. 5973 sayılı Karar fiziksel mal/ürün ihracatına göre tasarlanmıştır; saf yazılım/SaaS ihracatı yapan bir şirket bunun yerine 10962 sayılı Hizmet İhracatı Karar'ına tabidir ve kendi destek programlarından (özellikle Hizmet Sektörleri Atılım Programı) yararlanır. Şirket hem yazılım lisansı hem fiziksel donanım satıyorsa, donanım kısmı için 5973'ün ilgili kalemleri ayrıca değerlendirilebilir."}},{"@type":"Question","name":"Sağlık turizmi şirketiyim; hem 10962 sayılı Karar'dan hem Sağlık Bakanlığı'ndan mı izin almam gerekiyor?","acceptedAnswer":{"@type":"Answer","text":"Evet, bu ikisi birbirinden bağımsız süreçlerdir. 10962 sayılı Karar, yurt dışı tanıtım/pazarlama gibi giderlerinizi destekleyen bir teşvik mekanizmasıdır; yurt dışından hasta kabul edebilmeniz ise Sağlık Bakanlığı'nın Uluslararası Sağlık Turizmi Yetki Belgesi (aracı kuruluşlar için USHAŞ yetkilendirmesi) şartına bağlıdır. Yetki belgesi olmadan faaliyetin kendisi mevzuata aykırı olacağından, destek başvurusundan önce bu belgenin alınmış olması gerekir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kaç yıl faaliyette olan şirketler başvurabilir?","acceptedAnswer":{"@type":"Answer","text":"Çoğu 5973 sayılı Karar kalemi için genel kural, ihracatçı birliğine üye olmak ve aktif ihracatçı olmaktır; belirli bir minimum faaliyet süresi aranmaz. Ancak e-ihracat destek programında perakende e-ticaret sitesi veya pazaryeri statüsü almak isteyenler için en az 2 yıl faaliyette bulunma şartı vardır."}},{"@type":"Question","name":"Başvuru ücretli mi?","acceptedAnswer":{"@type":"Answer","text":"Resmî başvurunun kendisi bir harca tabi değildir. Ancak danışmanlık, rapor, test/sertifikasyon gibi destek konusu harcamaların bizzat şirket tarafından önce karşılanması, sonra desteğin geri ödemesiz olarak devreye girmesi gerekir &mdash; yani destek, harcamayı yapmadan önce şirkete nakit olarak verilmez."}},{"@type":"Question","name":"Birden fazla destek programından aynı anda yararlanılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, farklı harcama kalemleri farklı destek programlarından paralel şekilde desteklenebilir. Kısıt, aynı harcamanın birden fazla programdan mükerrer ödenmesine yöneliktir; örneğin e-ihracat konsorsiyumu statüsü alan bir şirket, destek aldığı ülkeye yönelik olarak Yurt Dışı Lojistik Dağıtım Ağlarının Desteklenmesi Hakkında Karar kapsamındaki mükerrer kalemlerden yararlanamaz."}},{"@type":"Question","name":"Destek alan firma denetime tabi mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Yurt dışında düzenlenen belgeler Bakanlık yurt dışı temsilcisi (ticaret müşaviri/ataşesi) tarafından onaylanabilir, harcamanın rayice uygunluğu sorgulanabilir ve destek konusu tüm belgelerin asıllarının en az 10 yıl saklanması zorunludur."}},{"@type":"Question","name":"Yanlış veya eksik belge ibraz edilirse ne olur?","acceptedAnswer":{"@type":"Answer","text":"Eksik bilgi/belgeler için bildirim tarihinden itibaren 3 ay tamamlama süresi tanınır; gerekirse bir kereye mahsus 3 ay daha ek süre verilebilir. Süresinde tamamlanmayan eksiklikler varsa başvuru, o ana kadar tekemmül etmiş harcama kalemleriyle sınırlı olarak sonuçlandırılır."}},{"@type":"Question","name":"Başvurum reddedilirse itiraz hakkım var mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, ret kararına karşı ilgili İhracatçı Birlikleri Genel Sekreterliği ve İhracat Genel Müdürlüğü'ne yazılı itiraz/talep başvurusu yapılabilir. İtirazın güçlü olması için ret gerekçesinin (eksik belge, rayiç sorunu, ön onay eksikliği vb.) net biçimde tespit edilip giderilmesi gerekir."}},{"@type":"Question","name":"Şahıs şirketleri bu desteklerden yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Çoğu program tüzel kişilik/şirket yapısını esas alır. E-ihracat destek programında, esnaf vergi muafiyeti belgesine sahip veya esnaf/ticaret siciline kayıtlı şahıslar için ise yalnızca belirli koşullarda (genellikle bir e-ihracat konsorsiyumu aracılığıyla) sınırlı bir yararlanma imkânı tanınmıştır."}},{"@type":"Question","name":"Harcamalar KDV dahil mi değerlendiriliyor?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak destek, dolaylı vergiler (KDV, ÖTV vb.) dahil hesaplanan tutar üzerinden ödenir. KDV'nin konusuna girmeyen, yurt dışında ifa edilen hizmetlerde ve yurt dışına çıkışı yapılan tanıtım malzemeleri de KDV hariç desteklenir. Tevkifata tabi faturalarda ise tevkifat tutarı destek hesabına dahil edilir."}},{"@type":"Question","name":"Yazılım/SaaS ihracatı yapan bir şirket 5973 sayılı Karar'daki fuar/pazara giriş desteklerinden yararlanabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Genel kural olarak hayır. 5973 sayılı Karar fiziksel mal/ürün ihracatına göre tasarlanmıştır; saf yazılım/SaaS ihracatı yapan bir şirket bunun yerine 10962 sayılı Hizmet İhracatı Karar'ına tabidir ve kendi destek programlarından (özellikle Hizmet Sektörleri Atılım Programı) yararlanır. Şirket hem yazılım lisansı hem fiziksel donanım satıyorsa, donanım kısmı için 5973'ün ilgili kalemleri ayrıca değerlendirilebilir."}},{"@type":"Question","name":"Sağlık turizmi şirketiyim; hem 10962 sayılı Karar'dan hem Sağlık Bakanlığı'ndan mı izin almam gerekiyor?","acceptedAnswer":{"@type":"Answer","text":"Evet, bu ikisi birbirinden bağımsız süreçlerdir. 10962 sayılı Karar, yurt dışı tanıtım/pazarlama gibi giderlerinizi destekleyen bir teşvik mekanizmasıdır; yurt dışından hasta kabul edebilmeniz ise Sağlık Bakanlığı'nın Uluslararası Sağlık Turizmi Yetki Belgesi (aracı kuruluşlar için USHAŞ yetkilendirmesi) şartına bağlıdır. Yetki belgesi olmadan faaliyetin kendisi mevzuata aykırı olacağından, destek başvurusundan önce bu belgenin alınmış olması gerekir."}}]}) }}
       />
     </BlogLayout>
   );
