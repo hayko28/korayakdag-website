@@ -1594,6 +1594,46 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İmalat sektörünün belge sayısı ve yatırım tutarında art arda ilk sırada çıkması, teşvik sisteminin hâlâ üretim yatırımlarına yönelik işlediğini gösteriyor; yeni bir yatırım planlayan imalatçı KOBİ'lere bölgesel teşvik unsurlarını da hesaba katarak başvuru zamanlamasını mali müşavirleriyle birlikte planlamalarını öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "7 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-15",
+    baslik:
+      "Hazine nakit dengesi eylülde 467,2 milyar TL açık verdi, Ocak-Eylül açığı 1,87 trilyon TL'ye çıktı",
+    ozet:
+      "Hazine ve Maliye Bakanlığı'nın 7 Ekim 2026'da açıkladığı verilere göre eylülde nakit giderler 1 trilyon 798,3 milyar TL, nakit gelirler 1 trilyon 331,2 milyar TL olarak gerçekleşti; bu da 467,2 milyar TL'lik nakit açığına işaret etti. Faiz dışı nakit denge eylülde 193,3 milyar TL açık verirken, Ocak-Eylül döneminde toplam nakit açığı 1 trilyon 871,3 milyar TL'ye, bu dönemdeki faiz dışı nakit fazlası ise 312,5 milyar TL'ye ulaştı; eylüldeki 302,9 milyar TL'lik net borçlanmanın 237,5 milyar TL'si iç, 65,4 milyar TL'si dış kaynaklı oldu.",
+    kaynakUrl:
+      "https://www.bloomberght.com/hazine-nakit-dengesi-eylul-de-467-2-milyar-tl-acik-verdi-3790684",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Faiz dışı dengenin yılın ilk dokuz ayında hâlâ fazla vermesi olumlu bir ayrıntı, ama eylül ayının kendisinde bu dengenin açığa dönmesi dikkat çekici. Finansman maliyeti yüksek kalan işletmelere, kamu borçlanma ihtiyacındaki bu dalgalanmayı yıl sonu faiz ve likidite beklentilerini değerlendirirken göz önünde bulundurmalarını öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "13 Ekim 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-15",
+    baslik:
+      "TÜİK: Dış ticaret haddi ağustosta 90,0'a geriledi, ithalat fiyatları ihracattan daha hızlı arttı",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 13 Ekim 2026'da açıkladığı dış ticaret endekslerine göre ihracat birim değer endeksi ağustosta yıllık yüzde 8,5, ithalat birim değer endeksi ise yüzde 13,7 arttı; bu ayrışmayla dış ticaret haddi ağustos 2025'teki 94,3 seviyesinden 4,3 puan azalarak 90,0'a geriledi. Takvim etkisinden arındırılmış ihracat miktar endeksi yıllık yüzde 0,4 azalırken, ithalat miktar endeksi yüzde 2,8 geriledi; ihracatta yakıt grubu yüzde 47,1 ile en yüksek fiyat artışını gösterdi.",
+    kaynakUrl: "https://www.bloomberght.com/dis-ticaret-haddi-agustos-3791173",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Dış ticaret haddinin gerilemesi, aynı miktarda malı satan bir ihracatçının elde ettiği gelirle giderek daha az ithalat yapabildiği anlamına geliyor. İthal girdi kullanan ihracatçı işletmelere maliyet ve fiyatlama planlarını yalnızca ihracat gelirine değil, bu makas farkına göre de gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "12 Ekim 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-15",
+    baslik:
+      "TÜİK: Perakende satış hacmi ağustosta yıllık yüzde 10,1 arttı, otomotiv ticareti geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 12 Ekim 2026'da açıkladığı verilere göre perakende ticaret satış hacmi ağustosta geçen yılın aynı ayına kıyasla yüzde 10,1, önceki aya göre ise yüzde 1,4 arttı. Toplam ticaret satış hacmi yıllık yüzde 0,6 artışla sınırlı kalırken, motorlu kara taşıtları ve motosikletlerin toptan ve perakende ticareti ile bakım-onarımı yıllık yüzde 11,2, toptan ticaret hacmi ise yüzde 1,9 geriledi.",
+    kaynakUrl: "https://www.bloomberght.com/perakande-satislar-agustos-3791052",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Perakende hacmindeki güçlü artışın toptan ticaret ve otomotivdeki gerilemeyle birlikte görülmesi, büyümenin daha çok tüketiciye yakın satış kanallarında yoğunlaştığını gösteriyor. Perakende satış yapan işletmelere bu ayrışmayı stok ve kampanya planlamasında dikkate almalarını, toptan tedarik zincirinde çalışan işletmelere ise talep yavaşlamasına karşı temkinli bütçe kurmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
