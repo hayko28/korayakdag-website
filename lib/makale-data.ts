@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "calisanin-e-postasini-acmadan-once-sorulmasi-gereken-uc-soru",
+    title: "Çalışanın E-Postasını Açmadan Önce Sorulması Gereken Üç Soru",
+    excerpt:
+      "Kişisel Verileri Koruma Kurulu'nun Ekim ayında yürürlüğe giren ilke kararı, 'hesap şirkete ait, istediğimiz zaman bakarız' alışkanlığına son veriyor. Denetim öncesinde sorulması gereken üç soru, birçok şirketin personel el kitabındaki tek cümlelik ifadenin neden yetmediğini gösteriyor.",
+    tag: "Hukuk ve Vergi",
+    date: "15 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tubitak-1501-altinci-proje-destek-orani",
     title: "TÜBİTAK 1501'de Altıncı Proje Eşiği: Destek Oranı Ne Zaman Düşüyor?",
     excerpt:
