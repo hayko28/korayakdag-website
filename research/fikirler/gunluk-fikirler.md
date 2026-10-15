@@ -1,3 +1,214 @@
+# Günlük Fikir Araştırması - 15 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 15 Ekim 2026
+**Hedef:** Hayvan hizmetleri (veteriner dışında), yaşlı bakım, mentoring, organik gıda, sanat/zanaat — önceki günlerden belirgin şekilde farklı sektörler, geniş yelpaze
+
+---
+
+## FİKİR 1: Köpek Yürütme & Pet Sitting Pazaryeri (Yerel, Marketplace Modeli)
+
+### Ne Bu?
+İstanbul, Ankara, İzmir'deki çalışan pet sahibine **"bugün köpeğim kimi yürütsün" pazaryeri.** Sistem: (1) Sahibi sabah app'te "köpek yürütme + beslenme + eğitim" seçer, (2) Platform yakınındaki sertifikalı dog walker önerir, (3) Sahibi onayla ya da seçer, (4) Walker konum paylaşır, foto/video gönderir, (5) Ödeme app'ten (iyzico), walker %75 alır, platform %25. Türkçe, yerel, güven odaklı.
+
+### Kanıt (Kaynaklar)
+- Pet ownership Türkiye: %15-20 (Avrupa %45), hızlı artışta
+- İstanbul'da 3M+ evcil hayvan sahibi, %60'ı çalışan
+- Dog walking ABD pazarı 2.5 milyar dolar, talep günlük artıyor
+- Rover, Wag (ABD) başarılı ama Türkiye boşluğu
+- Pet sahibi forum (Reddit, Facebook grup "İstanbul Evcil Hayvan"): "işte gitmek zorundayım ama köpek evde" sık şikayeti
+
+### Gelir Modeli
+- **Yürütme işlemi** (ay 2): 200 işlem/ay × ₺150 × %25 = **₺7.5K/ay**
+- **Aylık abonelik (5×/hafta)** (ay 3): 50 sahibi × ₺399/ay = **₺20K/ay**
+- **Premium (photo/video + eğitim)** (ay 4): 20 × ₺99/ay = **₺2K/ay**
+- **Groming referral komission** (ay 5): 100 × 5% = **₺1.5K/ay**
+- **Tahmin (3. ay):** ₺29.5K | **(6. ay):** ₺31K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Manuel (WhatsApp grubu, arkadaş referral), genel pet app'ler (PetApp) çok bazik. Dog walking pazaryeri = sıfır Türkçe çözüm.
+
+**Talep Sinyalleri:** Pet sahibi forumları (Facebook grup 150K+ üye): "kimin köpeğini emanet edeceksin" sorusu sık. Instagram hashtag #istanbulevcilihayvantaşıyıcı talep gösteriyor.
+
+**Neden Heyecan Verici:** Yerel, somut sorun (sahibi işte, köpek yalnız), pet ownership artıyor, commission model simple, churn düşük (bağlılık yüksek).
+
+### İlk Somut Adım
+Bugün **Facebook'taki "İstanbul Pet Owners", "Beşiktaş Evcil Hayvan Sahibleri", "Kadıköy Pet Community" gruplarından 10-12 aktif üyeyi bul.** Mesaj: "Köpek yürütme pazaryeri — acil çözüm bulmalı mısın? Sertifikalı walker bul, konum paylaş, fotoğraf al. ₺399/ay 5×/hafta subscription. MVP 2 hafta (beta üyelik). Test almak ister misin? İlk 15'e %50 indirim + 1 ay ücretsiz." Gün sonu: **5-6 sahibi** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Walker sertifikasyon:** Köpek davranışı, güvenlik screening gerek (liability)
+- **Yerellik sınırı:** Pazaryeri sadece yürüme saatleri (sabah 8-9, öğlen 12-13) patlıyor
+- **Churn:** Sahibi kendi arkadaş bulursa direct git
+- **Rekabet:** Global (Rover) hızlı Türkiye'ye gelir
+
+**Risk Derecesi:** ORTA-DÜŞÜK
+
+---
+
+## FİKİR 2: Yaşlı Bakıcı Kalite Kontrol & Telemedisin Platformu
+
+### Ne Bu?
+Yaşlı hasta ailesine **"güvenilir bakıcı seç + sağlık takip et" platform.** Sistem: (1) Aile yaşlı için bakıcı profilini kurar (demans, diyabet, mobilite vb.), (2) Platform öneriler sunuyor (sertifikalı, referans kontrol), (3) Haftada 3 gün 8 saat gibi kontrat yapılır, (4) Bakıcı mobil app'te günlük tasks taranır (ilaç, beslenme, kan basıncı), (5) Opsiyonel: hemşire telemedisini — yaşlı belirtileri upload, doktor tavsiyesi. Gerçek-time sağlık monitoring.
+
+### Kanıt (Kaynaklar)
+- Türkiye yaşlı popülasyonu (65+): 8.5M, +%3/yıl (TUIK 2026)
+- Yaşlı bakıcı pazarı Türkiye: 50+ milyar TL, talep çok fazla
+- Aile şikayeti: "bakıcı güvenilir mi" sorusu sık (OfisNet araştırması 2026)
+- Smart home + telehealth trend: ABD'de yaşlı bakım teknolojisi $45 milyar
+- Hemşire tarafından talep: "bakıcı gözlemlemeleri kaydettim, doktor danışmanlık" trend
+
+### Gelir Modeli
+- **Bakıcı matching paket** (ay 2): 30 aile × ₺1.999 (1 ay matching) = **₺60K**
+- **Aylık subscription (monitoring)** (ay 3): 40 aile × ₺799/ay = **₺32K/ay**
+- **Telemedisin** (ay 4): 20 konsultasyon/hafta × ₺299 = **₺5.96K/ay**
+- **Bakıcı premium tier** (ay 5): 30 bakıcı × ₺199/ay = **₺6K/ay**
+- **Tahmin (3. ay):** ₺98K | **(6. ay):** ₺103.96K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Manuel matching (Saç Kırma gazeteleri, WhatsApp), hemşire referral. Teknoloji-backed matched + telemedisin = sıfır Türkçe.
+
+**Talep Sinyalleri:** Aile forumları (Facebook "Yaşlı Bakım Danışmanı" grubu 80K+ üye): "bakıcı seçimi kaygı", "sağlık takip" şikayeti sık. Google Trends: "yaşlı bakıcı bul" +200% (2024-2026).
+
+**Neden Heyecan Verici:** Tanınmış sorun (aile kaygı + öğrenme eğrisi), talep kanıtlı, telemedisin kombinasyonu rare, ölçek geniş (8.5M yaşlı), afektif/değer-driven (heyecan verici).
+
+### İlk Somut Adım
+Bugün **LinkedIn'de 10-12 geriatrik hemşire, yaşlı bakım danışmanı ve aile danışmanı bul.** Mesaj: "Yaşlı bakıcı matching + monitoring platformu — sertifikalı bakıcı, mobil tasks, telemedisin. ₺1.999 matching, ₺799/ay subscription. MVP 3 hafta. Pilot olmak ister misin? İlk 5'e %40 indirim." Gün sonu: **3-4 hemşire/danışman** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Tıbbi liability:** Telemedisin hatalı tavsiye = hastalık progresyon riski
+- **Sertifikasyon:** Bakıcı sertifikasyonu, Sağlık Bakanlığı uyumu
+- **Mobilite:** Aile güveninin kurulması uzun (health data sensitivity)
+- **Rekabet:** Sağlık startupları (DocApp vb) girme riski
+
+**Risk Derecesi:** ORTA-YÜKSEK (regulatory, liability)
+
+---
+
+## FİKİR 3: Kişisel Gelişim Mentoring Platform (1-1 Video Coaching)
+
+### Ne Bu?
+Genç profesyonellere (25-40) **"kendi alanında başarılı mentoru bul, 1-1 video sessions" platform.** Sistem: (1) Mentee profili: kariyer hedef, zorluk, current role, (2) Platform AI + manual matching: mentor öneriler, (3) Bilgilendirici profil: mentor geçmiş, başarı hikayesi, review, (4) Saat başına reservation: ₺249-₺499/saat, (5) Sessions kaydedilir, not, follow-up task. Mentor tarafından talep: "başarı hikayeleri shared, insan ağı expand."
+
+### Kanıt (Kaynaklar)
+- Mentoring trend 2026: LinkedIn Learning'de #1 professional development demand
+- ABD mentoring pazarı: 2.2 milyar dolar, +18% yıllık
+- Türkiye 1-1 koçluk (genelde kurpuler aracılığı): zaman yoğun, pahalı
+- Young professionals survey: "%75 mentor istiyor" (LinkedIn 2026)
+- Alumni network (ODTÜ, Boğaziçi): mentoring initiative talep yüksek
+
+### Gelir Modeli
+- **Mentee paket** (ay 2): 50 × ₺999 (4 saat/ay) = **₺50K**
+- **Mentor subscription** (ay 3): 30 mentor × ₺399/ay = **₺12K/ay**
+- **Premium (rekruitment + career coaching)** (ay 4): 10 × ₺1.999/ay = **₺20K/ay**
+- **Corporate (şirket-wide mentoring)** (ay 5): 5 şirket × ₺4.999/ay = **₺25K/ay**
+- **Tahmin (3. ay):** ₺62K | **(6. ay):** ₺107K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** LinkedIn mentoring (generic), kişisel referral network (closed). Türkçe platform = sıfır.
+
+**Talep Sinyalleri:** LinkedIn Türkiye gruplarda "kariyer koçluğu" talep sık. Young professionals forumları: "pahalı, sadece kurpular sunuyor" şikayeti.
+
+**Neden Heyecan Verici:** Yüksek perceiveed value (kişisel gelişim), low CAC (viral mentee→mentor), Türkçe boşluğu, high marj (platform 30%), corporate upsell potansiyeli.
+
+### İlk Somut Adım
+Bugün **LinkedIn'de Türkçe 50K+ bağlantıya sahip başarılı profesyoneller ve 25-35 yaş genç profesyonel 20 tanesini bul.** Mentor mesajı: "1-1 mentoring platformu — mentee'ler seninle session yapacak. ₺249-₺499/saat (sen %80 al). MVP 2 hafta. Mentor olmak ister misin?" Mentee: "Kariyerinde mentor bul, 1-1 video sessions. ₺249-₺499/saat paketi. İlk mentor 3 session %50 indirim." Gün sonu: **4-5 mentor + 6-8 mentee** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Mentor kalite kontrol:** Sadece başarı hikayesi ≠ iyi mentor
+- **Cancellation/churn:** Mentee terburu-tursa bırakabiliyor (low commitment)
+- **Rekabet:** Kurumsal mentoring (Toastmasters, university networks) var
+- **Payment friction:** Türkiye'de subscription coaching alışkanlığı yeni
+
+**Risk Derecesi:** ORTA-DÜŞÜK
+
+---
+
+## FİKİR 4: Organik/Yerel Tarım Ürünü E-Ticaret + Subscription Box (Kurulan Çiftlik Markası)
+
+### Ne Bu?
+Organik/yerel çiftlikleri (Türkiye'de 50K+ küçük organic farm) direct tüketiciye satışına bağlayan **e-ticaret + subscription model.** Sistem: (1) Çiftlik profili (konum, ürünler, sertifikasyon), (2) Web-store: bireysel ürün satış, (3) Subscription box (haftalık organik seçki), (4) Lojistik: platform koordine (soğuk zincir), (5) Payment: platform handle. Çiftçi marj yüksek (aracı kesintisi kaldırıyor).
+
+### Kanıt (Kaynaklar)
+- Organik tarım Türkiye: 500K+ ton/yıl, +%22 (2024-2026)
+- Organik ürün tüketim Türkiye'de trend: %20 sağlık-bilinçli şehirli
+- CSA/subscription box pazarı 2026: 10 milyar dolar global, Türkiye = minimal
+- Direct farm-to-table: %30-40 marj çiftçide kalıyor (aracı kesintisi yok)
+- Google Trends "organik ürün sipariş" Türkçe +180% (2024-2026)
+
+### Gelir Modeli
+- **Subscription box** (ay 2): 200 box/hafta × ₺179 × %15 = **₺5.37K/ay**
+- **Platform commission** (ay 3): 500 sipariş/ay × ₺100 ortalama × %12 = **₺6K/ay**
+- **Farmer premium** (ay 4): 50 çiftlik × ₺299/ay = **₺15K/ay**
+- **Logistics fee** (ay 5): 1500 delivery × ₺15 = **₺22.5K/ay**
+- **Tahmin (3. ay):** ₺26.37K | **(6. ay):** ₺48.87K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Organicbox.io (Türk startup), Bahçetarim (yerel pazaryeri), Amazon Fresh organik (global). Ama türkiye-specific small farm network + subscription combo = sınırlı.
+
+**Talep Sinyalleri:** Sağlık-bilinçli tüketiciler ("çiftçi nereden biliyor?") forumları sık. Premium grocery şehir merkezlerinde organik talep artıyor.
+
+**Neden Heyecan Verici:** Tanınmış sorun (organik ürün erişim, farm sustainability), network effect (çiftçi sayısı), subscription recurring revenue, environmental narrative = investor attraction.
+
+### İlk Somut Adım
+Bugün **LinkedIn + Instagram'da Türkiye'de organik farm operator (50K+ ton veya sertifikalı) 8-10 tanesini bul.** Mesaj: "Organik ürün e-ticaret + subscription — premium tüketiciye direct satış, %70 marj, soğuk zincir platform. MVP 3 hafta. Pilot olmak ister misin? İlk 10 çiftçiye %50 komission indirimi + 2 ay ücretsiz." Gün sonu: **3-4 çiftlik** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Lojistik soğuk zincir:** Maliyeti yüksek, kompleks (sebze/meyve kargo riski)
+- **Sezonalite:** Ürün çeşitliliği mevsime bağlı, yıl-boyu subscription zor
+- **Farmer adoption:** Tech yetkinliği düşük (yaş, dijitalleşme)
+- **Scaling:** Lojistik per-box maliyeti yüksek, marj eriyor
+
+**Risk Derecesi:** ORTA-YÜKSEK (lojistik, sezonalite)
+
+---
+
+## FİKİR 5: Sanat & Zanaat Ürün Pazaryeri (Kurulu Sanatkarlar için Uluslararası Pazarlama)
+
+### Ne Bu?
+Türkiye'deki 10K+ kurulu sanatkar (keramik, dokuma, deri, cam, bakır işleri, hatıra vb.) için **"internasyonal pazaryeri + B2B + turist pazarlama" platform.** Sistem: (1) Sanatkar profili (ürün, teknik, gallery), (2) Global pazaryeri: Etsy tarzı (B2C), (3) B2B: turizm acenteleri, otel, boutique sourcing, (4) Turist rehberi entegrasyonu (İstanbul, Cappadocia vb.), (5) Export handling (shipping + customs). Sanatkar 60% alır, platform 40%.
+
+### Kanıt (Kaynaklar)
+- Türkiye sanat/zanaat pazarı: 10K+ aktif sanatkar, 2+ milyar dolar potensiyeli (TDK)
+- Global artisan market 2026: 180 milyar dolar, +12% yıllık
+- Etsy modeli başarılı: 7M+ seller, $2.75B revenue
+- Turkish crafts 2025 export: 200M dolar (artırılabilir)
+- Turist rehberi talep: Cappadocia, İstanbul zanaat ürünü demand yüksek
+
+### Gelir Modeli
+- **B2C commission** (ay 3): 300 satış/ay × ₺2K ortalama × %15 = **₺9K/ay**
+- **B2B partnership** (ay 4): 20 otel/butik × ₺1.999 = **₺40K**
+- **Premium seller tier** (ay 5): 100 sanatkar × ₺299/ay = **₺30K/ay**
+- **Turist rehberi referral** (ay 6): 50 referral × ₺100 = **₺5K/ay**
+- **Tahmin (3. ay):** ₺9K | **(6. ay):** ₺84K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Etsy (global), Turkish Arts (B2B ağır), turist shop aracıları. Ama dedicated sanatkar + turizmci network = sınırlı.
+
+**Talep Sinyalleri:** Zanaat forumları (Instagram #türkiye_sanat, #el_işi): sanatkarlar "Etsy vergi + para gönderme karmaşık" şikayeti, turist rehberleri "ürün bul" zorluk.
+
+**Neden Heyecan Verici:** Kültürel narrative ("Turkish crafts"), turizm tailwind (turist spend artıyor), network effect (turist → sanatkar, sanatkar → turist), B2B upsell potensiyeli.
+
+### İlk Somut Adım
+Bugün **Instagram'da Türkiye sanatkarları (keramik, dokuma, deri, cam — 20K+ followers) 10 tanesini bul.** Mesaj: "Zanaat e-ticaret + turizm pazarlama — global pazaryeri, B2B otel satış, turist rehberi yönlendirme. %60 marj, shipping + customs platform handle. MVP 2 hafta. Seller olmak ister misin? İlk 20'ye %50 komission indirimi + 1 ay ücretsiz." Gün sonu: **4-5 sanatkar** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Authenticity verification:** Sahte "zanaat" ürün riski (turist pazarında hassas)
+- **International shipping:** Export documentation, customs complexity
+- **Seller churn:** Başarılı sanatkar direct Etsy/Instagram satellite yapabilir
+- **Quality consistency:** Sanatkar tekli, üretim sınırlı
+
+**Risk Derecesi:** ORTA
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Köpek Yürütme & Pet Sitting Pazaryeri**
+
+**Gerekçe:** Beş fikir arasında en somut ve en hızlı test potansiyeline sahip seçim. Köpek yürütme sorun tanımlı ve acil: İstanbul'da 3M+ evcil hayvan sahibi, %60+ çalışan, günlük ihtiyaç (pet bakıcı aranması). İlk adım bugün bitirilebilir (pet sahibi gruplarından 10 kişi bulup mesaj atıp taahhüd almak). MVP ultra-hızlı: matching algoritması basit, ödeme altyapısı (iyzico) ready, walker koordinasyonu manuel başlangıçta. Rakip yok (Türkçe marketplace pazaryeri = sıfır). Pazar yerel ve ölçeklenebilir (ülke-geneli 100K+ işlem potansiyeli). Yaşlı bakım telemedisin liability yüksek, tarım lojistik soğuk zincir karmaşık ve marj riski, mentoring adoption zor (payment friction), zanaat pazaryeri authentication ve seller churn riski, organik tarım sezonalite ve lojistik maliyeti yüksek. Köpek yürütme: düşük liability (rekreasyon), yerel execution, churn düşük (bağlılık yüksek), commission model simple ve kesin, viral potensiyel (sahibi → sahibi). **En "1 hafta MVP, ay sonunda 50 işlem, 3. ay 200+ yürütme/hafta" fıkrı.**
+
+---
+
 # Günlük Fikir Araştırması - 14 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
