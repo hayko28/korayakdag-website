@@ -335,10 +335,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: "kosgeb-girisimci-destek-programi-2026",
-    title: "KOSGEB Girişimci Destek Programı Nedir? Kimler Başvurabilir, Ne Kadar Destek Alınır?",
-    excerpt: "Geleneksel ve İleri Girişimci Destek Programı arasındaki fark, kuruluş/performans/sertifika desteği tutarları, %75 oranlı makine-teçhizat-yazılım desteği, genç/kadın/engelli ek desteği ve adım adım başvuru süreciyle 2026 güncel KOSGEB Girişimci Destek Programı rehberi.",
+    title: "KOSGEB Girişimci Destek Programı Yeniden Yapılandırıldı: 2026'da Üç Destek Modeli Nasıl İşliyor?",
+    excerpt: "KOSGEB, 12 Ekim 2026'da Girişimci Destek Programı'nı tamamen yeniden yapılandırdı. Geleneksel ve İleri Girişimci Destek Programı ayrımı kalktı; yerine İş Kurma Desteği, 2.250.000 TL'ye kadar geri ödemeli İş Geliştirme Desteği ve kadın/genç girişimciye özel Faiz/Kâr Payı Desteği geldi. Güncel şartlar ve 2026 3. dönem (12-31 Ekim) başvuru takvimiyle rehber.",
     category: "KOSGEB • GİRİŞİMCİLİK DESTEĞİ • 2026",
-    date: "2026",
+    date: "Ekim 2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1752051548874-7d2176a84007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
