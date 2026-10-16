@@ -18,6 +18,7 @@ interface Program {
   destekOrani?: string[];
   odemeSekli?: string[];
   kalemler?: string[];
+  ornekler?: string[];
   faydalar?: string[];
   basvuru?: string;
   kaynaklar?: string[];
@@ -297,6 +298,7 @@ function Kart({ o, gizli, id }: { o: Program; gizli: boolean; id: string }) {
           <Liste t="Destek oranı, limit ve vade" a={o.destekOrani} />
           <Liste t="Ödeme nasıl yapılır" a={o.odemeSekli} />
           <Liste t="Desteklenen kalemler" a={o.kalemler} />
+          <Liste t="Örnek yatırım senaryoları" a={o.ornekler} full />
           <Liste t="Şirkete faydaları" a={o.faydalar} />
           <Para t="Başvuru yolu" s={o.basvuru} />
           {o.extra}
