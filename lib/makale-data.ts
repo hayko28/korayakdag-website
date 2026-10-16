@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sozlesmede-fiyat-artis-maddesi-olmayinca-enflasyonu-kim-oder",
+    title: "Sözleşmede Fiyat Artış Maddesi Yoksa Enflasyonu Kim Öder?",
+    excerpt:
+      "İki yıllık bakım ya da tedarik sözleşmesi sabit fiyatla imzalandığında, enflasyon dönemlerinde zararı genelde hizmeti veren taraf üstleniyor. Eskalasyon klozunun atladığı üç nokta: hangi endekse bağlanacağı, hangi eşikte devreye gireceği ve kim talep etmek zorunda olduğu.",
+    tag: "Hukuk ve Vergi",
+    date: "16 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "calisanin-e-postasini-acmadan-once-sorulmasi-gereken-uc-soru",
     title: "Çalışanın E-Postasını Açmadan Önce Sorulması Gereken Üç Soru",
     excerpt:
