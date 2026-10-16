@@ -1634,6 +1634,35 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Perakende hacmindeki güçlü artışın toptan ticaret ve otomotivdeki gerilemeyle birlikte görülmesi, büyümenin daha çok tüketiciye yakın satış kanallarında yoğunlaştığını gösteriyor. Perakende satış yapan işletmelere bu ayrışmayı stok ve kampanya planlamasında dikkate almalarını, toptan tedarik zincirinde çalışan işletmelere ise talep yavaşlamasına karşı temkinli bütçe kurmalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih:
+      "2 Ekim 2026 (2026 yılı Girişimlerde Bilişim Teknolojileri Kullanımı Araştırması)",
+    eklendiTarihi: "2026-10-16",
+    baslik:
+      "TÜİK: Girişimlerde yapay zeka kullanım oranı bir yılda ikiye katlanarak yüzde 14'e çıktı",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 2026 yılı Girişimlerde Bilişim Teknolojileri Kullanımı Araştırması'na göre 10 ve daha fazla çalışanı olan girişimlerde yapay zeka kullanım oranı 2025'teki yüzde 7,5'ten 2026'da yüzde 14'e yükseldi; bu oran 2021'de yüzde 2,7 idi. Kullanım oranı işletme büyüklüğüyle birlikte artıyor: 10-49 çalışanlı girişimlerde yüzde 12,8, 50-249 çalışanlılarda yüzde 17,0, 250 ve üzeri çalışanlılarda yüzde 37,1. Yapay zeka kullanan girişimlerin yüzde 51'i bu teknolojiyi pazarlama veya satış amacıyla kullanırken, henüz kullanmayan girişimler arasında en sık belirtilen engeller uzmanlık eksikliği (yüzde 72,3) ve hukuki belirsizlikler (yüzde 66,4) oldu.",
+    kaynakUrl:
+      "https://www.bloomberght.com/turkiye-de-yapay-zeka-kullanimi-yaklasik-iki-kat-artti-3790100",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Kullanmama nedenlerinin başında uzmanlık eksikliğinin gelmesi, küçük ve orta ölçekli işletmelerin yapay zekaya geçişte asıl ihtiyacının araç seçimi değil doğru bir yol haritası ve danışmanlık desteği olduğunu gösteriyor. Rakiplerinin önemli bir kısmının bu teknolojiyi kullanmaya başladığı bir dönemde, işletmelere önce pazarlama veya satış gibi görece düşük riskli bir alanda küçük bir pilot uygulamayla başlamalarını öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "3 Eylül 2026 (haftalık bülten)",
+    eklendiTarihi: "2026-10-16",
+    baslik:
+      "SPK, Net Global Endüstriyel Yatırımlar A.Ş.'nin halka arzına onay verdi",
+    ozet:
+      "Sermaye Piyasası Kurulu, 3 Eylül 2026 tarihli haftalık bülteninde Net Global Endüstriyel Yatırımlar A.Ş.'nin ilk halka arz başvurusunu onayladı. Halka arzda pay başına fiyat 25,52 TL olarak belirlenirken, toplam halka arz büyüklüğünün yaklaşık 2,23 milyar TL olması bekleniyor.",
+    kaynakUrl:
+      "https://www.cnbce.com/halka-arz/spkdan-milyarlik-halka-arz-onayi-bir-sirket-daha-borsaya-geliyor-h36479",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Halka arz onaylarının bu hızla sürmesi, kurumsallaşma sürecini ilerletmiş şirketler için sermaye piyasasının güncel bir finansman alternatifi olmaya devam ettiğini gösteriyor. Halka arzı bir seçenek olarak değerlendiren büyüme aşamasındaki şirketlere, bağımsız denetim ve kurumsal yönetim hazırlıklarını erken başlatmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
