@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yurt-disinda-marka-sirket-alim-destegi-2026",
+    title: "Yurt Dışında Marka Satın Alırsam Devlet Desteği Alabilir miyim? 2026 Şirket ve Marka Alım Desteği Rehberi",
+    excerpt: "Ticaret Bakanlığı'nın 5973 sayılı Karar madde 9 kapsamındaki Şirket ve Marka Alım Desteği, 7 Mart 2026 tarihli 11007 sayılı Kararla kökten değişti. Sade marka alımında danışmanlık ve kredi faiz desteğinin neden kalktığı, kira/tanıtım desteğinin güncel oranları ve ileri teknoloji şirket alımındaki ayrı (çok daha yüksek limitli) destek paketiyle güncel rehber.",
+    category: "TİCARET BAKANLIĞI • ŞİRKET VE MARKA ALIM DESTEĞİ • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1768076644388-b42d2e7aea16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-girisim-sermayesi-yatirim-fonu-gsyf-girisimcilere-etkisi",
     title: "KOSGEB Girişim Sermayesi Yatırım Fonlarına (GSYF) Ortak Oluyor: Girişimciler İçin Ne Anlama Geliyor?",
     excerpt: "KOSGEB, 30 Haziran 2026 tarihli Girişim Sermayesi Yatırım Fonları Yatırımlarına İlişkin Yönerge ile GSYF'lere yatırımcı (LP) olarak katılmaya başladı. Doğrudan başvuran taraf portföy yönetim şirketleri olsa da, asgari 50 milyon TL'lik yatırım turu şartı, taahhüt tutarları ve girişimciler için dolaylı etkileriyle güncel rehber.",
