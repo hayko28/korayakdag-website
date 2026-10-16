@@ -19,6 +19,8 @@ interface Program {
   odemeSekli?: string[];
   kalemler?: string[];
   ornekler?: string[];
+  uygunOlmayanlar?: string[];
+  ornekNotlari?: string[];
   faydalar?: string[];
   basvuru?: string;
   kaynaklar?: string[];
@@ -298,7 +300,9 @@ function Kart({ o, gizli, id }: { o: Program; gizli: boolean; id: string }) {
           <Liste t="Destek oranı, limit ve vade" a={o.destekOrani} />
           <Liste t="Ödeme nasıl yapılır" a={o.odemeSekli} />
           <Liste t="Desteklenen kalemler" a={o.kalemler} />
-          <Liste t="Örnek yatırım senaryoları" a={o.ornekler} full />
+          <Liste t="Örnek senaryolar: uygun" a={o.ornekler} full />
+          <Liste t="Örnek senaryolar: uygun olmayan" a={o.uygunOlmayanlar} full />
+          <Liste t="Örneklerle ilgili notlar" a={o.ornekNotlari} full />
           <Liste t="Şirkete faydaları" a={o.faydalar} />
           <Para t="Başvuru yolu" s={o.basvuru} />
           {o.extra}
@@ -400,6 +404,9 @@ export default function DestekRehberi() {
       destekUnsurlari: { ad: string; aciklama: string }[];
       bolgeIller: Tablo;
       bolgeTablosu: Tablo;
+      ornekler?: string[];
+      uygunOlmayanlar?: string[];
+      ornekNotlari?: string[];
       destekKartlari: { ad: string; kapak: string; ozet: string; tablo: Tablo; notlar: string[] }[];
       asgariYatirimTablosu: Tablo;
       sektorler: { uygun: string[]; kapsamDisi: string[]; notlar: string[] };
@@ -420,6 +427,9 @@ export default function DestekRehberi() {
       kimler: Y.kimler,
       sartlar: Y.sartlar,
       basvuru: Y.basvuru,
+      ornekler: Y.ornekler,
+      uygunOlmayanlar: Y.uygunOlmayanlar,
+      ornekNotlari: Y.ornekNotlari,
       kaynaklar: Y.kaynaklar,
       dogrulama: Y.dogrulama,
       extra: (
