@@ -1663,6 +1663,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Halka arz onaylarının bu hızla sürmesi, kurumsallaşma sürecini ilerletmiş şirketler için sermaye piyasasının güncel bir finansman alternatifi olmaya devam ettiğini gösteriyor. Halka arzı bir seçenek olarak değerlendiren büyüme aşamasındaki şirketlere, bağımsız denetim ve kurumsal yönetim hazırlıklarını erken başlatmalarını öneririm.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "16 Eylül 2026",
+    eklendiTarihi: "2026-10-17",
+    baslik:
+      "TÜBİTAK 1711 Yapay Zekâ Ekosistem Çağrısı'nda başvuru süresi 2 Ekim 2026'ya uzatıldı",
+    ozet:
+      "TÜBİTAK, yapay zeka çözümüne ihtiyaç duyan şirketleri teknoloji sağlayıcı firmalar, deneyimli üniversite veya kamu araştırma merkezleri ve TÜBİTAK Yapay Zeka Enstitüsü ile konsorsiyum halinde buluşturan 1711 Yapay Zekâ Ekosistem Çağrısı'nın 2026 yılı başvuru son tarihini, sektörden gelen konsorsiyum oluşturma süreçlerinin uzaması talepleri doğrultusunda 2 Ekim 2026 saat 23.59'a kadar uzattı. Çağrıya başvuru yalnızca konsorsiyum yapısıyla yapılabiliyor; konsorsiyumda en az bir teknoloji sağlayıcı firma ve bir araştırma kurumunun yer alması gerekiyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/1711-yapay-zeka-ekosistem-2026-yili-cagrisi-basvuru-suresi-guncellendi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Konsorsiyum şartı, programın asıl zorluğunu çoğu zaman teknik içerikten çok doğru ortaklık yapısını kurmaya taşıyor. Yapay zeka çözümü arayan şirketlere, bir sonraki çağrı döneminde hazır olabilmek için teknoloji sağlayıcı ve araştırma kurumu görüşmelerine şimdiden başlamalarını öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "29 Eylül 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-17",
+    baslik:
+      "TÜİK: Perakende ticaret ve hizmet sektörü güven endeksleri eylülde yükselmeyi sürdürdü",
+    ozet:
+      "TÜİK'in 29 Eylül 2026'da açıkladığı verilere göre ekonomik güven endeksi ağustostaki 100,6'dan eylülde yüzde 0,7 artışla 101,3'e çıkarak 2023 yılı Haziran ayından bu yana en yüksek seviyeye ulaştı. Alt endekslerde perakende ticaret sektörü güven endeksi yüzde 1,1 artışla 111,3'e, hizmet sektörü güven endeksi ise 111,9 ile değişmeden eşik değerin oldukça üzerinde kaldı; tüketici güven endeksi yüzde 1,3 artışla 91,9'a yükselirken reel kesim (imalat sanayi) güven endeksi yüzde 0,1 artışla 102,5 oldu.",
+    kaynakUrl:
+      "https://www.cnbce.com/veriler/tuik-duyurdu-ekonomik-guven-endeksi-son-3-yilin-zirvesine-ulasti-h38265",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Perakende ve hizmet sektöründeki güven endekslerinin eşik değerin oldukça üzerinde seyretmesi, tüketici güveninin kendisi hâlâ zayıf kalsa da (91,9) satış kanalındaki işletmelerin kısa vadeli beklentisinin olumlu olduğunu gösteriyor. Perakende ve hizmet işletmelerine yıl sonu kampanya ve stok planlamasını bu ayrışmayı göz önünde bulundurarak yapmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
