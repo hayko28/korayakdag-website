@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "taksitli-satislarda-sure-sinirlamasi-kalkti-mi-2026",
+    title: "Taşıt, Kuyum ve Elektronikte Taksit Süresi Sınırı Kalktı mı? 15 Ekim 2026 Yönetmelik Değişikliği",
+    excerpt: "15 Ekim 2026 tarihli ve 33401 sayılı Resmî Gazete'de yayımlanan değişiklikle Perakende Ticaret Yönetmeliği'nin 12/B maddesindeki taşıt (48-36-24-12 ay kademeli), kuyum (3 ay) ve elektronik/mobilya/seyahat gibi ürün bazlı sabit taksit süreleri kaldırıldı. Yetki Ticaret Bakanlığı'na geçti. Eski sınırlar, geçiş dönemi ve şirketler için anlamıyla güncel rehber.",
+    category: "TİCARET HUKUKU • PERAKENDE MEVZUATI • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1783408355139-7c9390d3f26f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yurt-disinda-marka-sirket-alim-destegi-2026",
     title: "Yurt Dışında Marka Satın Alırsam Devlet Desteği Alabilir miyim? 2026 Şirket ve Marka Alım Desteği Rehberi",
     excerpt: "Ticaret Bakanlığı'nın 5973 sayılı Karar madde 9 kapsamındaki Şirket ve Marka Alım Desteği, 7 Mart 2026 tarihli 11007 sayılı Kararla kökten değişti. Sade marka alımında danışmanlık ve kredi faiz desteğinin neden kalktığı, kira/tanıtım desteğinin güncel oranları ve ileri teknoloji şirket alımındaki ayrı (çok daha yüksek limitli) destek paketiyle güncel rehber.",
