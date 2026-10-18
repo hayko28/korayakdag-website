@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "varlik-barisi-2026-erken-bildirim-farki",
+    title: "Varlık Barışı 2026: Aynı Taahhüt, Bildirim Takvimine Göre Neden Farklı Vergi?",
+    excerpt:
+      "7582 sayılı Varlık Barışı düzenlemesinde yurt dışı varlığını beş yıllık bir araca bağlayıp 2026 içinde bildiren sıfır vergi öderken, aynı taahhüdü 2027'nin ilk yedi ayında yapan yüzde 0,5 ödüyor. Küçük görünen bu fark, büyük varlıklarda ciddi bir maliyete dönüşüyor.",
+    tag: "Hukuk ve Vergi",
+    date: "18 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sozlesmede-fiyat-artis-maddesi-olmayinca-enflasyonu-kim-oder",
     title: "Sözleşmede Fiyat Artış Maddesi Yoksa Enflasyonu Kim Öder?",
     excerpt:
