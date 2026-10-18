@@ -3,12 +3,13 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title: "Asgari Sermaye Artırımında 2026 Son Tarih | Koray Akdağ",
-  description: "Anonim (250.000 TL) ve limited (50.000 TL) şirketlerde asgari sermaye artırımı zorunluluğu, infisah riski ve son tarih rehberi.",
+  title: "Sermaye Artırımında Son Tarih 2027'ye Uzatıldı | Koray Akdağ",
+  description: "Anonim (250.000 TL) ve limited (50.000 TL) şirketlerde asgari sermaye artırımı için son tarih, 17 Ekim 2026 tarihli Tebliğ ile 31 Aralık 2027'ye uzatıldı. Kapsam, süreç ve infisah riskiyle güncel rehber.",
   keywords: [
     "anonim şirket asgari sermaye 2026",
     "limited şirket asgari sermaye 2026",
-    "sermaye artırımı zorunluluğu 31 aralık 2026",
+    "sermaye artırımı süresi uzatıldı mı",
+    "sermaye artırımı son tarih 31 aralık 2027",
     "7511 sayılı kanun sermaye artırımı",
     "türk ticaret kanunu geçici madde 15",
     "şirket infisah sermaye artırımı",
@@ -23,15 +24,25 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <BlogLayout
-      title="Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: 31 Aralık 2026 Son Tarih"
-      description="7511 sayılı Kanun'la Türk Ticaret Kanunu'na eklenen Geçici Madde 15 uyarınca, sermayesi yeni asgari tutarların altında kalan anonim ve limited şirketlerin 31 Aralık 2026'ya kadar sermaye artırımını tamamlaması gerekiyor. Kapsam, tutarlar, süreç ve artırmama halinde karşılaşılabilecek infisah riskiyle güncel rehber."
+      title="Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: Son Tarih 31 Aralık 2027'ye Uzatıldı"
+      description="7511 sayılı Kanun'la Türk Ticaret Kanunu'na eklenen Geçici Madde 15 uyarınca başlayan sermaye artırımı yükümlülüğünde son tarih, 17 Ekim 2026 tarihli Tebliğ ile 31 Aralık 2027'ye uzatıldı. Kapsam, tutarlar, süreç ve artırmama halinde karşılaşılabilecek infisah riskiyle güncel rehber."
       category="ŞİRKETLER HUKUKU • ASGARİ SERMAYE • 2026"
-      date="2026"
-      readTime="12 Dakika"
+      date="Ekim 2026"
+      readTime="13 Dakika"
       slug="anonim-limited-sirket-asgari-sermaye-artirimi-2026"
       coverImage="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
-      <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
+      <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-6">
+        <p className="text-lg font-semibold text-red-800">
+          🔴 Güncelleme (17 Ekim 2026): 33403 sayılı Resmî Gazete&apos;de
+          yayımlanan Tebliğ ile anonim ve limited şirketlerde sermaye
+          artırımı için son tarih <strong>31 Aralık 2026&apos;dan 31 Aralık
+          2027&apos;ye</strong> uzatıldı. Aşağıdaki rehber bu güncel tarihe
+          göre hazırlanmıştır.
+        </p>
+      </div>
+
+      <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-8">
         <h2 className="mb-6 text-3xl font-bold text-[#071A2F]">
           📌 Bu Rehberde Neler Bulacaksınız?
         </h2>
@@ -40,13 +51,15 @@ export default function BlogPage() {
           &quot;Türk Ticaret Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına
           Dair Kanun&quot;, 6102 sayılı Türk Ticaret Kanunu&apos;na eklenen
           Geçici Madde 15 ile 2024 öncesinde kurulmuş olup sermayesi yeni
-          asgari tutarların altında kalan anonim ve limited şirketlere{" "}
-          <strong>31 Aralık 2026&apos;ya kadar</strong> sermaye artırımı
-          yükümlülüğü getirdi. Takvim daralıyor; artırımı zamanında
-          tamamlamayan şirketler için kanun, infisah (şirketin kendiliğinden
-          sona ermesi) riskinden söz ediyor.
+          asgari tutarların altında kalan anonim ve limited şirketlere
+          sermaye artırımı yükümlülüğü getirdi. Ticaret Bakanlığı, kanunun
+          kendisine tanıdığı yetkiyi kullanarak 17 Ekim 2026&apos;da bu
+          süreyi <strong>31 Aralık 2027&apos;ye</strong> uzattı. Yeni tarihe
+          kadar artırımı tamamlamayan şirketler için kanun, infisah
+          (şirketin kendiliğinden sona ermesi) riskinden söz ediyor.
         </p>
         <ul className="space-y-4 text-lg text-gray-700">
+          <li>✔ Süre neden ve ne kadar uzatıldı?</li>
           <li>✔ Bu düzenleme hangi kanuna ve hangi maddeye dayanıyor?</li>
           <li>✔ Yeni asgari sermaye tutarları ne kadar?</li>
           <li>✔ Hangi şirketler bu yükümlülük kapsamında?</li>
@@ -87,11 +100,14 @@ export default function BlogPage() {
           <Link href="#biz" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
             8. Süreci Sizin Yerinize Biz Yürütelim
           </Link>
+          <Link href="#kaynaklar-resmi" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
+            9. Resmî Kaynaklar
+          </Link>
           <Link href="#sss" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-            9. Sık Sorulan Sorular
+            10. Sık Sorulan Sorular
           </Link>
           <Link href="#sonuc" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-            10. Sonuç
+            11. Sonuç
           </Link>
         </div>
       </div>
@@ -116,21 +132,32 @@ export default function BlogPage() {
           Kanun&quot;, TTK&apos;ya bir <strong>Geçici Madde 15</strong> ekledi.
           Bu madde, 1 Ocak 2024&apos;ten önce kurulmuş olup sermayesi yeni
           asgari tutarların altında kalan mevcut anonim ve limited
-          şirketlere, sermayelerini bu tutarlara yükseltmeleri için{" "}
-          <strong>31 Aralık 2026&apos;ya kadar</strong> bir geçiş süresi
-          tanıdı. Yani düzenleme yalnızca yeni kurulacak şirketleri değil,
-          halihazırda faaliyette olan ve sermayesi düşük kalmış binlerce
-          şirketi de kapsıyor.
+          şirketlere, sermayelerini bu tutarlara yükseltmeleri için bir
+          geçiş süresi tanıdı. Yani düzenleme yalnızca yeni kurulacak
+          şirketleri değil, halihazırda faaliyette olan ve sermayesi düşük
+          kalmış binlerce şirketi de kapsıyor.
+        </p>
+        <p className="mb-6 text-lg leading-9 text-gray-700">
+          Geçici Madde 15&apos;in birinci fıkrası, bu süreyi uzatma
+          konusunda Ticaret Bakanlığı&apos;na <strong>birer yıl olarak en
+          fazla iki defa</strong> uzatma yetkisi veriyor. Bakanlık bu
+          yetkiyi ilk kez kullandı: 17 Ekim 2026 tarihli ve 33403 sayılı
+          Resmî Gazete&apos;de yayımlanan &quot;Anonim ve Limited
+          Şirketlerin Sermayelerini Yeni Asgari Tutarlara Yükseltme
+          Süresinin Uzatılmasına İlişkin Tebliğ&quot; ile orijinal 31 Aralık
+          2026 tarihi, <strong>31 Aralık 2027&apos;ye</strong> çekildi.
+          Tebliğ, yayım tarihinde (17 Ekim 2026) yürürlüğe girdi ve Ticaret
+          Bakanı tarafından yürütülüyor.
         </p>
         <div className="my-10 rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
             📌 Neden Bu Kadar Önemli?
           </h3>
           <ul className="space-y-4 text-lg text-gray-700">
-            <li>✔ Süre 2026 yılı sonunda doluyor; genel kurul, tescil ve ilan süreçleri zaman alıyor</li>
+            <li>✔ Süre bir yıl uzadı, ama kanundaki yükümlülük ve infisah riski aynen duruyor</li>
             <li>✔ Kanun, artırımı yapmayan şirketler için infisahtan söz ediyor</li>
             <li>✔ Banka, ihale ve kamu işlemlerinde şirketin hukuki statüsü sorgulanabilir</li>
-            <li>✔ Yıl sonuna doğru noterlerde ve ticaret sicillerinde yoğunluk beklenmesi, erken hareket etmeyi önemli kılıyor</li>
+            <li>✔ Bakanlığın elinde teorik olarak bir yıllık ek uzatma hakkı (31 Aralık 2028) daha var, ama bu konuda şu an resmî bir açıklama yok; sürecinizi mevcut 31 Aralık 2027 tarihine göre planlamanız gerekiyor</li>
           </ul>
         </div>
       </section>
@@ -177,9 +204,9 @@ export default function BlogPage() {
             Bu tutarlar, 1 Ocak 2024&apos;ten sonra kurulan şirketler için
             zaten kuruluş anından itibaren geçerli. Asıl geçiş süreci, 2024
             öncesinde kurulmuş ve sermayesi bu yeni tutarların altında kalan
-            şirketleri ilgilendiriyor; bu şirketlerin 31 Aralık 2026&apos;ya
-            kadar sermayelerini tabloda yer alan seviyelere yükseltmesi
-            gerekiyor.
+            şirketleri ilgilendiriyor; bu şirketlerin (17 Ekim 2026&apos;da
+            uzatılan) <strong>31 Aralık 2027</strong> tarihine kadar
+            sermayelerini tabloda yer alan seviyelere yükseltmesi gerekiyor.
           </p>
         </div>
       </section>
@@ -369,27 +396,59 @@ export default function BlogPage() {
         </h2>
         <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
           <p className="mb-6 leading-8 text-gray-700">
-            Geçici Madde 15, 31 Aralık 2026&apos;ya kadar sermayesini
-            gerekli asgari tutara yükseltmeyen anonim ve limited
-            şirketlerin, <strong>infisah etmiş sayılacağını</strong>{" "}
-            öngörüyor. İnfisah, şirketin ek bir mahkeme kararına gerek
-            kalmaksızın kanun gereği münfesih hale gelmesi ve tasfiye
-            sürecine girmesi anlamına gelir. Bu durum ticari faaliyetleri,
-            banka ilişkilerini, ihale ve kamu işlemlerini doğrudan
-            etkileyebilir.
+            Geçici Madde 15, uzatılmış son tarihe (<strong>31 Aralık
+            2027</strong>) kadar sermayesini gerekli asgari tutara
+            yükseltmeyen anonim ve limited şirketlerin,{" "}
+            <strong>infisah etmiş sayılacağını</strong> öngörüyor. İnfisah,
+            şirketin ek bir mahkeme kararına gerek kalmaksızın kanun gereği
+            münfesih hale gelmesi ve tasfiye sürecine girmesi anlamına
+            gelir. Bu durum ticari faaliyetleri, banka ilişkilerini, ihale
+            ve kamu işlemlerini doğrudan etkileyebilir.
           </p>
           <p className="leading-8 text-gray-700">
-            Kanun, Ticaret Bakanlığı&apos;na bu 31 Aralık 2026 tarihini{" "}
-            <strong>birer yıl olarak en fazla iki defa uzatma</strong>{" "}
-            yetkisi de tanıyor. Ancak böyle bir uzatma kararı henüz
-            gerçekleşmemişse, bugünkü mevzuat çerçevesinde şirketlerin
-            süreci 2026 yılı sonuna kadar tamamlamış olması gerektiği
-            varsayımıyla hareket etmesi en güvenli yaklaşımdır. Olası bir
-            uzatma resmi olarak ilan edilene kadar sürecin ertelenmesi
-            riskli bir tercih olur.
+            Kanun, Ticaret Bakanlığı&apos;na bu süreyi birer yıl olarak en
+            fazla iki defa uzatma yetkisi tanıyordu. Bakanlık, 17 Ekim 2026
+            tarihli Tebliğ ile bu hakkı <strong>ilk kez</strong> kullanarak
+            süreyi bir yıl uzattı. Teorik olarak elinde bir yıllık ek bir
+            uzatma hakkı (31 Aralık 2028&apos;e kadar) daha bulunuyor; ancak
+            bu konuda şu an için resmî bir açıklama yok. İkinci bir uzatma
+            kararı resmen ilan edilmedikçe, şirketlerin süreci{" "}
+            <strong>31 Aralık 2027</strong> tarihine göre planlaması en
+            güvenli yaklaşımdır.
           </p>
         </div>
       </section>
+
+      <div className="mt-10 rounded-2xl border-l-4 border-amber-500 bg-amber-50 p-8">
+        <h3 className="mb-4 text-xl font-bold text-amber-800">
+          ⚠️ Karıştırmayın: &quot;Süre Uzadı&quot; ≠ &quot;Yükümlülük Kalktı&quot;
+        </h3>
+        <p className="leading-8 text-gray-700">
+          17 Ekim 2026 tebliği şirketleri sermaye artırımından muaf tutmuyor,
+          sadece takvimi bir yıl öteliyor. Pratikte sık yapılan hata, bu
+          haberi &quot;konu kapandı&quot; diye yorumlayıp süreci tamamen
+          rafa kaldırmak. Oysa yükümlülük ve infisah riski aynen geçerli;
+          değişen tek şey son tarihin 31 Aralık 2026&apos;dan 31 Aralık
+          2027&apos;ye kaymış olması.
+        </p>
+      </div>
+
+      <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+        <h3 className="mb-4 text-xl font-bold text-[#071A2F]">
+          💡 Uzman Notu
+        </h3>
+        <p className="leading-8 text-gray-700">
+          Uygulamada en sık gözden kaçan nokta, uzamış bir sürenin şirketin
+          diğer yıllık yükümlülükleriyle (örneğin genel kurul toplantısı,
+          bilanço onayı, kâr dağıtımı kararı) aynı takvime denk gelmesi.
+          Sermaye artırımı kararını, şirketin olağan genel kurulu veya başka
+          bir esas sözleşme değişikliği gündeme geldiğinde birlikte almak,
+          ayrı bir toplantı ve ayrı bir tescil maliyetinden tasarruf
+          ettiriyor. Ayrıca iç kaynaklardan artırım planlanıyorsa, yedek
+          akçe ve geçmiş yıl kârı tutarının güncel bilançoyla teyit edilmesi
+          gerektiği de genellikle son haftalara kadar ihmal ediliyor.
+        </p>
+      </div>
 
       {/* 7. DİKKAT */}
       <section id="dikkat" className="mt-24 scroll-mt-24">
@@ -401,7 +460,7 @@ export default function BlogPage() {
             ✅ Esas sözleşmenizdeki güncel sermaye tutarını bugünden kontrol edin
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Yıl sonu yoğunluğunu beklemeden süreci erken başlatın
+            ✅ Yeni son tarih 31 Aralık 2027, ama yıl sonu yoğunluğunu beklemeden süreci erken başlatın
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ İç kaynak kullanmayı planlıyorsanız yedek akçe/kâr tutarını mali tablolarla teyit edin
@@ -416,7 +475,7 @@ export default function BlogPage() {
             ✅ Kayıtlı sermaye sistemindeki halka kapalı A.Ş.&apos;lerde 500.000 TL eşiğini gözden kaçırmayın
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Ticaret Bakanlığı&apos;nın olası uzatma açıklamalarını resmî kaynaklardan takip edin
+            ✅ Bakanlığın ikinci bir uzatma açıklaması yapıp yapmadığını resmî kaynaklardan takip edin
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ Artırım kararının Türkiye Ticaret Sicili Gazetesi&apos;nde ilan edildiğinden emin olun
@@ -449,10 +508,52 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* 9. SSS */}
+      {/* 9. RESMİ KAYNAKLAR */}
+      <section id="kaynaklar-resmi" className="mt-24 scroll-mt-24">
+        <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
+          9. Resmî Kaynaklar
+        </h2>
+        <ul className="ml-6 list-disc space-y-3 text-lg leading-8 text-gray-700 marker:text-orange-500">
+          <li>
+            <a
+              href="https://www.resmigazete.gov.tr/eskiler/2026/10/20261017-12.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-600 underline"
+            >
+              Anonim ve Limited Şirketlerin Sermayelerini Yeni Asgari
+              Tutarlara Yükseltme Süresinin Uzatılmasına İlişkin Tebliğ
+            </a>{" "}
+            (17 Ekim 2026 tarihli ve 33403 sayılı Resmî Gazete)
+          </li>
+          <li>
+            <a
+              href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6102&MevzuatTur=1&MevzuatTertip=5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-600 underline"
+            >
+              6102 sayılı Türk Ticaret Kanunu (madde 332, 580 ve Geçici Madde 15)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.ticaret.gov.tr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-600 underline"
+            >
+              T.C. Ticaret Bakanlığı
+            </a>{" "}
+            (asgari sermaye artırımı sürecinin yürütülmesinden sorumlu kurum)
+          </li>
+        </ul>
+      </section>
+
+      {/* 10. SSS */}
       <section id="sss" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-          9. Sık Sorulan Sorular
+          10. Sık Sorulan Sorular
         </h2>
         <div className="space-y-6">
           <div className="rounded-2xl border p-8">
@@ -491,14 +592,27 @@ export default function BlogPage() {
           </div>
           <div className="rounded-2xl border p-8">
             <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
-              31 Aralık 2026 tarihi kesin mi, uzatılma ihtimali var mı?
+              Sermaye artırımı süresi uzatıldı mı? Yeni son tarih nedir?
             </h3>
             <p className="leading-8 text-gray-700">
-              Kanun, Ticaret Bakanlığı&apos;na bu süreyi birer yıl olarak en
-              fazla iki kez uzatma yetkisi tanımıştır. Ancak resmî bir
-              uzatma kararı yayımlanana kadar mevcut son tarih olan 31
-              Aralık 2026 esas alınmalı; sürecin bu tarihe göre planlanması
-              en güvenli yaklaşımdır.
+              Evet. 17 Ekim 2026 tarihli ve 33403 sayılı Resmî Gazete&apos;de
+              yayımlanan Tebliğ ile Ticaret Bakanlığı, kanunun kendisine
+              tanıdığı yetkiyi kullanarak süreyi 31 Aralık 2026&apos;dan 31
+              Aralık 2027&apos;ye uzattı. Kanun bakanlığa bu süreyi en fazla
+              iki kez birer yıl uzatma hakkı veriyor; bu, hakkın ilk
+              kullanımı. İkinci bir uzatma şu an için resmen açıklanmadı.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-8">
+            <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+              Bu uzatmadan yararlanmak için şirketimin bir başvuru yapması gerekiyor mu?
+            </h3>
+            <p className="leading-8 text-gray-700">
+              Hayır. Uzatma, Tebliğ ile kapsamdaki tüm anonim ve limited
+              şirketler için otomatik olarak uygulanıyor; ayrıca bir
+              başvuru veya bildirim yapılmasına gerek yok. Şirketin tek
+              yapması gereken, sermaye artırımı sürecini yeni son tarih
+              olan 31 Aralık 2027&apos;ye göre planlamak.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -509,28 +623,32 @@ export default function BlogPage() {
               Kararın alınmasından ticaret siciline tescile kadar olan
               süreç, şirketin hazırlık durumuna ve seçilen artırım
               yöntemine göre değişmekle birlikte genellikle birkaç hafta
-              içinde tamamlanabilir. Ancak yıl sonuna doğru noter ve
-              ticaret sicili yoğunluğu artabileceğinden, sürecin son
-              haftalara bırakılmaması önerilir.
+              içinde tamamlanabilir. Ancak son tarihe (31 Aralık 2027)
+              yaklaşıldıkça noter ve ticaret sicili yoğunluğu
+              artabileceğinden, sürecin son haftalara bırakılmaması
+              önerilir.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 10. SONUÇ */}
+      {/* 11. SONUÇ */}
       <section id="sonuc" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-          10. Sonuç
+          11. Sonuç
         </h2>
         <p className="mb-8 text-lg leading-9 text-gray-700">
           7511 sayılı Kanun ile getirilen sermaye artırımı yükümlülüğü,
           özellikle uzun süredir sermayesini güncellememiş anonim ve
-          limited şirketler için 2026&apos;nın en somut ve tarihi kesin
-          uyum gündemlerinden biri. 31 Aralık 2026 son tarihine kadar
-          sermayesini yeni asgari tutarlara yükseltmeyen şirketler için
-          kanun infisah riskinden söz ediyor; bu nedenle sürecin erkenden,
-          şirketin mevcut mali durumuna en uygun yöntemle planlanması
-          büyük önem taşıyor.
+          limited şirketler için en somut ve tarihi kesin uyum
+          gündemlerinden biri olmayı sürdürüyor. 17 Ekim 2026&apos;da
+          yayımlanan Tebliğ ile son tarih bir yıl ötelendi, ancak bu
+          sadece bir takvim değişikliği; yükümlülüğün kendisi ve infisah
+          riski aynen geçerli. 31 Aralık 2027&apos;ye kadar sermayesini
+          yeni asgari tutarlara yükseltmeyen şirketler için kanun infisah
+          riskinden söz ediyor; bu nedenle sürecin erkenden, şirketin
+          mevcut mali durumuna en uygun yöntemle planlanması büyük önem
+          taşıyor.
         </p>
         <p className="mb-8 text-lg leading-9 text-gray-700">
           Şirketinizin mevcut sermaye durumunun kontrolünden artırım
@@ -573,7 +691,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Sermayesi zaten 250.000 TL'nin (veya 50.000 TL'nin) üzerinde olan şirketler bu düzenlemeden etkilenir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Mevcut sermayesi yeni asgari tutarların üzerinde veya eşit olan anonim ve limited şirketler için ek bir artırım yükümlülüğü bulunmuyor. Yükümlülük yalnızca sermayesi bu tutarların altında kalan şirketleri kapsıyor."}},{"@type":"Question","name":"2024 yılından sonra kurulan bir şirketin de sermayesini artırması gerekir mi?","acceptedAnswer":{"@type":"Answer","text":"1 Ocak 2024 ve sonrasında kurulan anonim ve limited şirketler zaten yeni asgari tutarlarla (250.000 TL / 50.000 TL) kurulmak zorunda olduğundan, kuruluş anında bu yükümlülüğü yerine getirmiş sayılırlar. Geçiş süresi, esas olarak 2024 öncesi kurulmuş şirketler için geçerlidir."}},{"@type":"Question","name":"Sermaye artırımını sadece nakit olarak mı yapmak gerekiyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Nakdi artırımın yanı sıra yedek akçe ve geçmiş yıl kârları gibi iç kaynaklardan artırım, ortak alacaklarının sermayeye dönüştürülmesi veya ayni sermaye konulması gibi yöntemler de mevzuata uygun şekilde kullanılabilir."}},{"@type":"Question","name":"31 Aralık 2026 tarihi kesin mi, uzatılma ihtimali var mı?","acceptedAnswer":{"@type":"Answer","text":"Kanun, Ticaret Bakanlığı'na bu süreyi birer yıl olarak en fazla iki kez uzatma yetkisi tanımıştır. Ancak resmî bir uzatma kararı yayımlanana kadar mevcut son tarih olan 31 Aralık 2026 esas alınmalı; sürecin bu tarihe göre planlanması en güvenli yaklaşımdır."}},{"@type":"Question","name":"Sermaye artırımı ne kadar sürede tamamlanır?","acceptedAnswer":{"@type":"Answer","text":"Kararın alınmasından ticaret siciline tescile kadar olan süreç, şirketin hazırlık durumuna ve seçilen artırım yöntemine göre değişmekle birlikte genellikle birkaç hafta içinde tamamlanabilir. Ancak yıl sonuna doğru noter ve ticaret sicili yoğunluğu artabileceğinden, sürecin son haftalara bırakılmaması önerilir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Sermayesi zaten 250.000 TL'nin (veya 50.000 TL'nin) üzerinde olan şirketler bu düzenlemeden etkilenir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Mevcut sermayesi yeni asgari tutarların üzerinde veya eşit olan anonim ve limited şirketler için ek bir artırım yükümlülüğü bulunmuyor. Yükümlülük yalnızca sermayesi bu tutarların altında kalan şirketleri kapsıyor."}},{"@type":"Question","name":"2024 yılından sonra kurulan bir şirketin de sermayesini artırması gerekir mi?","acceptedAnswer":{"@type":"Answer","text":"1 Ocak 2024 ve sonrasında kurulan anonim ve limited şirketler zaten yeni asgari tutarlarla (250.000 TL / 50.000 TL) kurulmak zorunda olduğundan, kuruluş anında bu yükümlülüğü yerine getirmiş sayılırlar. Geçiş süresi, esas olarak 2024 öncesi kurulmuş şirketler için geçerlidir."}},{"@type":"Question","name":"Sermaye artırımını sadece nakit olarak mı yapmak gerekiyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Nakdi artırımın yanı sıra yedek akçe ve geçmiş yıl kârları gibi iç kaynaklardan artırım, ortak alacaklarının sermayeye dönüştürülmesi veya ayni sermaye konulması gibi yöntemler de mevzuata uygun şekilde kullanılabilir."}},{"@type":"Question","name":"Sermaye artırımı süresi uzatıldı mı? Yeni son tarih nedir?","acceptedAnswer":{"@type":"Answer","text":"Evet. 17 Ekim 2026 tarihli ve 33403 sayılı Resmî Gazete'de yayımlanan Tebliğ ile Ticaret Bakanlığı, kanunun kendisine tanıdığı yetkiyi kullanarak süreyi 31 Aralık 2026'dan 31 Aralık 2027'ye uzattı. Kanun bakanlığa bu süreyi en fazla iki kez birer yıl uzatma hakkı veriyor; bu, hakkın ilk kullanımı. İkinci bir uzatma şu an için resmen açıklanmadı."}},{"@type":"Question","name":"Bu uzatmadan yararlanmak için şirketimin bir başvuru yapması gerekiyor mu?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Uzatma, Tebliğ ile kapsamdaki tüm anonim ve limited şirketler için otomatik olarak uygulanıyor; ayrıca bir başvuru veya bildirim yapılmasına gerek yok. Şirketin tek yapması gereken, sermaye artırımı sürecini yeni son tarih olan 31 Aralık 2027'ye göre planlamak."}},{"@type":"Question","name":"Sermaye artırımı ne kadar sürede tamamlanır?","acceptedAnswer":{"@type":"Answer","text":"Kararın alınmasından ticaret siciline tescile kadar olan süreç, şirketin hazırlık durumuna ve seçilen artırım yöntemine göre değişmekle birlikte genellikle birkaç hafta içinde tamamlanabilir. Ancak son tarihe (31 Aralık 2027) yaklaşıldıkça noter ve ticaret sicili yoğunluğu artabileceğinden, sürecin son haftalara bırakılmaması önerilir."}}]}) }}
       />
     </BlogLayout>
   );

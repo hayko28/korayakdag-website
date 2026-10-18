@@ -875,11 +875,11 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: "anonim-limited-sirket-asgari-sermaye-artirimi-2026",
-    title: "Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: 31 Aralık 2026 Son Tarih",
-    excerpt: "7511 sayılı Kanun'la Türk Ticaret Kanunu'na eklenen Geçici Madde 15 uyarınca, sermayesi asgari tutarın altında kalan anonim şirketler (250.000 TL) ve limited şirketler (50.000 TL) 31 Aralık 2026'ya kadar sermaye artırımı yapmak zorunda. Kapsam, adım adım süreç, artırım kaynakları ve artırmama halinde infisah riskiyle güncel rehber.",
+    title: "Anonim ve Limited Şirketlerde Asgari Sermaye Artırımı: Son Tarih 31 Aralık 2027'ye Uzatıldı",
+    excerpt: "Güncelleme (17 Ekim 2026): 33403 sayılı Resmî Gazete'de yayımlanan Tebliğ ile Ticaret Bakanlığı, 7511 sayılı Kanun'la TTK'ya eklenen Geçici Madde 15 kapsamındaki sermaye artırımı son tarihini 31 Aralık 2026'dan 31 Aralık 2027'ye uzattı. Sermayesi asgari tutarın altında kalan anonim şirketler (250.000 TL) ve limited şirketler (50.000 TL) için kapsam, adım adım süreç, artırım kaynakları ve infisah riskiyle güncel rehber.",
     category: "ŞİRKETLER HUKUKU • ASGARİ SERMAYE • 2026",
-    date: "2026",
-    readTime: "12 Dakika",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
