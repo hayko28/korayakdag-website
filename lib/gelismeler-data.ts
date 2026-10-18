@@ -1691,6 +1691,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Perakende ve hizmet sektöründeki güven endekslerinin eşik değerin oldukça üzerinde seyretmesi, tüketici güveninin kendisi hâlâ zayıf kalsa da (91,9) satış kanalındaki işletmelerin kısa vadeli beklentisinin olumlu olduğunu gösteriyor. Perakende ve hizmet işletmelerine yıl sonu kampanya ve stok planlamasını bu ayrışmayı göz önünde bulundurarak yapmalarını öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Ekim 2026",
+    eklendiTarihi: "2026-10-18",
+    baslik:
+      "Eylül ihracatı Cumhuriyet tarihinin en yüksek ikinci aylık rakamına ulaştı, yıllık ihracat OVP hedefini aştı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat'ın 3 Ekim 2026'da açıkladığı verilere göre eylül ayı ihracatı geçen yılın aynı ayına kıyasla yüzde 15,4 artışla 26 milyar dolara ulaştı; bu rakam Cumhuriyet tarihinin en yüksek ikinci aylık ihracat değeri oldu. Son 12 aylık ihracat 283,7 milyar dolara çıkarak Orta Vadeli Program'ın 2026 yılı için belirlediği 282 milyar dolarlık hedefi yılın bitmesine üç ay kala aştı; Ocak-Eylül dönemi ihracatı ise yüzde 5,2 artışla 211 milyar dolara ulaştı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/2026-yili-eylul-ayinda-ihracatimiz-15-4-oraninda-artarak-26-milyar-dolar-oldu-4-ilimizde-uc-haneli-39-ilimizde-cift-haneli-ihracat-artislari-gerceklesti",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: 12 aylık ihracatın yıl bitmeden OVP hedefini aşması olumlu bir sinyal, ama aynı dönemde ithalatın da arttığını ve çeyreklik dış ticaret açığının sürdüğünü unutmamak gerekiyor. İhracatçı işletmelere büyüme rakamını ithalat ve girdi maliyetleriyle birlikte okumalarını öneririm.",
+  },
+  {
+    kurum: "İSO",
+    tarih: "1 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-18",
+    baslik:
+      "İSO Türkiye İmalat PMI eylülde 47,9'a geriledi, üretim dördüncü ay üst üste azaldı",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global iş birliğiyle hazırladığı Türkiye İmalat PMI endeksi, ağustostaki 48,1 seviyesinden eylülde 47,9'a geriledi; endeks 50 eşik değerinin altında kalarak sektördeki daralmanın sürdüğüne işaret etti. Üretim dördüncü ay üst üste azalırken yeni ihracat siparişleri de geriledi, girdi maliyetleri enflasyonu ise son dört ayın en yüksek seviyesine çıktı.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6abe05dd95016b5817e63393/PICNEWS/tr/iso-imalat-pmi-eylulde-47-9-a-geriledi-01-10-26/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Endeksin art arda dördüncü ay üretim düşüşüne işaret etmesi, imalatçı işletmelerin stok ve yatırım kararlarını temkinli almasını gerektiriyor. Girdi maliyeti artışının sürdüğü bu dönemde fiyatlama kararlarını yalnızca genel enflasyon rakamına değil kendi sektörlerindeki maliyet seyrine göre gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "8 Ekim 2026 (16 Ekim 2026'da duyuruldu)",
+    eklendiTarihi: "2026-10-18",
+    baslik:
+      "Reklam Kurulu 374. toplantısında yanıltıcı indirim ve sosyal medya tanıtımlarına 17,2 milyon TL ceza",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 8 Ekim 2026 tarihli 374'üncü toplantısında 161 dosyayı görüştü; 136 dosyada mevzuata aykırılık tespit ederek durdurma cezasıyla birlikte toplam 17 milyon 176 bin 744 TL idari para cezası uygulanmasına karar verdi. İncelemelerde gerçeği yansıtmayan yüksek oranlı indirim vaatleri, reklam niteliği belirtilmeden paylaşım yapan 32 sosyal medya hesabı ve kuyumculuk sektöründeki indirim reklamları öne çıktı; Bakanlık, 2026'nın ilk dokuz ayında 33 binin üzerinde dosyayı değerlendirerek 249 milyon TL'yi aşan idari para cezası uyguladığını açıkladı.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/16/aldatici-reklamlara-17-2-milyon-tl-ceza/",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Sosyal medya hesaplarının reklam niteliğini belirtmeden paylaşım yapması nedeniyle resen incelemeye alınması dikkat çekici; influencer iş birliği yapan veya kendi hesabından tanıtım paylaşan işletmelere her paylaşımda 'reklamdır' ya da benzer bir ibareyi net şekilde kullanmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
