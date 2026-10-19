@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sosyal-medyada-reklamdir-ibaresi-eksikse-ne-oluyor",
+    title: "Sosyal Medyada \"Reklamdır\" İbaresi Eksikse Ne Oluyor?",
+    excerpt:
+      "Ticaret Bakanlığı Reklam Kurulu'nun ekim toplantısında reklam niteliği belirtilmeden paylaşım yapan 32 sosyal medya hesabı resen incelemeye alındı. Sorumluluk yalnızca içerik üreticisinde kalmıyor; markanın kampanya onay sürecindeki tek eksik kalem, dosyanın kurula gitmesine yetebiliyor.",
+    tag: "Pazarlama ve Satış Geliştirme",
+    date: "19 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "varlik-barisi-2026-erken-bildirim-farki",
     title: "Varlık Barışı 2026: Aynı Taahhüt, Bildirim Takvimine Göre Neden Farklı Vergi?",
     excerpt:
