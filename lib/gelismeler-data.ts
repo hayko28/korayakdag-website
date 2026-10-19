@@ -1734,20 +1734,6 @@ export const GELISMELER: GelismeItem[] = [
       "Koray'ın notu: Sosyal medya hesaplarının reklam niteliğini belirtmeden paylaşım yapması nedeniyle resen incelemeye alınması dikkat çekici; influencer iş birliği yapan veya kendi hesabından tanıtım paylaşan işletmelere her paylaşımda 'reklamdır' ya da benzer bir ibareyi net şekilde kullanmalarını öneririm.",
   },
   {
-    kurum: "TÜİK",
-    tarih: "9 Ekim 2026 (2026 yılı Ağustos verileri)",
-    eklendiTarihi: "2026-10-19",
-    baslik:
-      "TÜİK: Sanayi üretimi ağustosta yıllık yüzde 1,9 azaldı, düşüş dördüncü aya taşındı",
-    ozet:
-      "Türkiye İstatistik Kurumu'nun 9 Ekim 2026'da açıkladığı verilere göre takvim etkisinden arındırılmış sanayi üretimi ağustosta yıllık yüzde 1,9 azalarak düşüş serisini dördüncü aya taşıdı; bu, son yedi ayın en sert yıllık daralması oldu. Mevsim ve takvim etkisinden arındırılmış üretim aylık bazda yüzde 1,0 geriledi; imalat sanayi yıllık yüzde 2,5 ve aylık yüzde 1,6 küçülürken madencilik ile elektrik-gaz-buhar üretimi hem yıllık hem aylık bazda arttı.",
-    kaynakUrl:
-      "https://www.bloomberght.com/sanayi-uretimi-agustos-ta-sert-geriledi-3790906",
-    konu: "Hukuk, Vergi ve Mali Danışmanlık",
-    expertNote:
-      "Koray'ın notu: Düşüşün dört ay üst üste sürmesi ve ağırlıklı olarak imalat sanayinden gelmesi, aynı dönemdeki PMI daralma sinyaliyle örtüşüyor. İmalatçı işletmelere stok ve yatırım kararlarını yıl sonuna kadar temkinli bir senaryoyla planlamalarını öneririm.",
-  },
-  {
     kurum: "TCMB",
     tarih: "16 Ekim 2026",
     eklendiTarihi: "2026-10-19",
