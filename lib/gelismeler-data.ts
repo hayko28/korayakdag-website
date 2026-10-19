@@ -1733,6 +1733,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Sosyal medya hesaplarının reklam niteliğini belirtmeden paylaşım yapması nedeniyle resen incelemeye alınması dikkat çekici; influencer iş birliği yapan veya kendi hesabından tanıtım paylaşan işletmelere her paylaşımda 'reklamdır' ya da benzer bir ibareyi net şekilde kullanmalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "9 Ekim 2026 (2026 yılı Ağustos verileri)",
+    eklendiTarihi: "2026-10-19",
+    baslik:
+      "TÜİK: Sanayi üretimi ağustosta yıllık yüzde 1,9 azaldı, düşüş dördüncü aya taşındı",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 9 Ekim 2026'da açıkladığı verilere göre takvim etkisinden arındırılmış sanayi üretimi ağustosta yıllık yüzde 1,9 azalarak düşüş serisini dördüncü aya taşıdı; bu, son yedi ayın en sert yıllık daralması oldu. Mevsim ve takvim etkisinden arındırılmış üretim aylık bazda yüzde 1,0 geriledi; imalat sanayi yıllık yüzde 2,5 ve aylık yüzde 1,6 küçülürken madencilik ile elektrik-gaz-buhar üretimi hem yıllık hem aylık bazda arttı.",
+    kaynakUrl:
+      "https://www.bloomberght.com/sanayi-uretimi-agustos-ta-sert-geriledi-3790906",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Düşüşün dört ay üst üste sürmesi ve ağırlıklı olarak imalat sanayinden gelmesi, aynı dönemdeki PMI daralma sinyaliyle örtüşüyor. İmalatçı işletmelere stok ve yatırım kararlarını yıl sonuna kadar temkinli bir senaryoyla planlamalarını öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "16 Ekim 2026",
+    eklendiTarihi: "2026-10-19",
+    baslik:
+      "TCMB Ekim 2026 Piyasa Katılımcıları Anketi: yıl sonu enflasyon beklentisi yüzde 29,63'e yükseldi, büyüme beklentisi yüzde 2,9'a geriledi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın Ekim 2026'da gerçekleştirdiği Piyasa Katılımcıları Anketi'ne göre cari yıl sonu TÜFE beklentisi önceki anketteki yüzde 29,61'den yüzde 29,63'e yükseldi; 12 ay sonrası enflasyon beklentisi yüzde 23,89'a çıkarken 24 ay sonrası beklenti yüzde 17,94'e geriledi. Katılımcıların 2026 büyüme beklentisi yüzde 3,0'dan yüzde 2,9'a düşerken, Ekim ayı Para Politikası Kurulu toplantısına ilişkin politika faizi beklentisi yüzde 36 olarak kaydedildi.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yıl sonu enflasyon beklentisinin bir kez daha yukarı, büyüme beklentisinin aşağı revize edilmesi önceki ankette de görülen bir eğilimin sürdüğünü gösteriyor. İşletmelere yıl sonu bütçe ve fiyatlama senaryolarını bu güncellenmiş beklentilerle yeniden kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
