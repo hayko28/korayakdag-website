@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-tubitak-yatirim-tesvik-belgesi-ayni-anda-kullanilir-mi",
+    title: "KOSGEB, TÜBİTAK ve Yatırım Teşvik Belgesi Aynı Yatırımda Birlikte Kullanılabilir mi? Mükerrer Destek Yasağının Üç Farklı Kuralı",
+    excerpt: "Tek bir mükerrer destek yasağı yok; her programın kendi kuralı var. KOSGEB Destek Programları Yönetmeliği m.6/3, TÜBİTAK 1501 Uygulama Esasları m.9 ve 9903 sayılı Karar m.33 maddeleriyle hangi kombinasyonun mümkün, hangisinin yasak olduğunu netleştiren 2026 güncel rehber.",
+    category: "DEVLET DESTEKLERİ • MÜKERRER DESTEK • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "taksitli-satislarda-sure-sinirlamasi-kalkti-mi-2026",
     title: "Taşıt, Kuyum ve Elektronikte Taksit Süresi Sınırı Kalktı mı? 15 Ekim 2026 Yönetmelik Değişikliği",
     excerpt: "15 Ekim 2026 tarihli ve 33401 sayılı Resmî Gazete'de yayımlanan değişiklikle Perakende Ticaret Yönetmeliği'nin 12/B maddesindeki taşıt (48-36-24-12 ay kademeli), kuyum (3 ay) ve elektronik/mobilya/seyahat gibi ürün bazlı sabit taksit süreleri kaldırıldı. Yetki Ticaret Bakanlığı'na geçti. Eski sınırlar, geçiş dönemi ve şirketler için anlamıyla güncel rehber.",
