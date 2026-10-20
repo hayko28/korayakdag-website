@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kobi-tanimi-2026-siniflandirma-ve-destek-uygunlugu",
+    title: "İşletmeniz Hâlâ KOBİ Sayılıyor mu? 2026 Güncel KOBİ Tanımı, Sınıflandırma ve Destek Bağlantısı",
+    excerpt: "Yıllık çalışan sayısı 250'den az ve ciro veya bilançosu 1 milyar TL'yi aşmayan işletmeler KOBİ sayılıyor (10182 sayılı Karar, 7 Ağustos 2025). Mikro, küçük ve orta ölçekli işletme sınırları, bağlı/ortak işletme hesabının gözden kaçan etkisi, KOBİ niteliğinin ne zaman kaybedildiği ve sınıfınızın KOSGEB/TÜBİTAK destek uygunluğuna etkisiyle 2026 güncel rehber.",
+    category: "KOBİ TANIMI • DEVLET DESTEKLERİ • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1767739791243-af1facf4b87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-tubitak-yatirim-tesvik-belgesi-ayni-anda-kullanilir-mi",
     title: "KOSGEB, TÜBİTAK ve Yatırım Teşvik Belgesi Aynı Yatırımda Birlikte Kullanılabilir mi? Mükerrer Destek Yasağının Üç Farklı Kuralı",
     excerpt: "Tek bir mükerrer destek yasağı yok; her programın kendi kuralı var. KOSGEB Destek Programları Yönetmeliği m.6/3, TÜBİTAK 1501 Uygulama Esasları m.9 ve 9903 sayılı Karar m.33 maddeleriyle hangi kombinasyonun mümkün, hangisinin yasak olduğunu netleştiren 2026 güncel rehber.",
