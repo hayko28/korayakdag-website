@@ -1,3 +1,215 @@
+# Günlük Fikir Araştırması - 20 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 20 Ekim 2026
+**Hedef:** Sağlık (veteriner), medya/sanat (fotoğrafçı), spor, e-ticaret fiziksel ürün, B2B siber güvenlik — geçmiş günlerden farklı sektör yelpazesi
+
+---
+
+## FİKİR 1: Veteriner Hekimler İçin "Muayene + AI Tanı + Yönetim" Platform
+
+### Ne Bu?
+Türkiye'deki 15K+ veteriner hekim ve hayvan klinikleri için **"dijital muayene dosyası + AI X-ray/ultrasound analiz + klinik yönetimi" entegre platform.** Sistem: (1) Hayvan sahibi randevu yapıyor (mobil app/web), (2) Veteriner muayene kaydı ve reçete yazıyor (dijital), (3) X-ray/ultrasound görseli yükleniyor, AI otomatik analiz ve rapor önerisi sunuyor, (4) Tıbbi geçmiş otomatik tutuluyor, (5) Faturalandırma + çevrimiçi ödeme (iyzico/PayTR), (6) KVKK uyumlu, (7) Diasponma/ilaç takibi.
+
+### Kanıt (Kaynaklar)
+- Türkiye veteriner pazarı: 15K+ hekim, 50K+ evcil hayvan sahibi (şehir), %70 manuel işlem yapıyor
+- Küresel veteriner AI diagnostics pazarı 2026: 936M$ (2025: 798M$), +17% yıllık büyüme
+- Digitail (Singapur): 10K+ veteriner, 3M+ evcil hayvan sahibi kullanıcı, $23M Kasım 2025'te yatırım
+- Türkiye evcil hayvan bakım harcaması: 3+ milyar TL/yıl, %25 yıllık artış
+- Veteriner forumları: "muayene dosyası yönetimi zaman alıyor", "X-ray yorumlama aşaması manuel" şikayeti sık
+
+### Gelir Modeli
+- **Temel klinik paket** (ay 2): 50 klinik × ₺799/ay (100 hayvana kadar) = **₺40K/ay**
+- **Pro (AI tanı + diasponma)** (ay 3): 20 × ₺1.999/ay = **₺40K/ay**
+- **Premium veteriner ağı** (ay 4): 100 veteriner solo × ₺199/ay = **₺20K/ay**
+- **Hayvan sahibi mobil app (optional telemedicine)** (ay 5): 500 × ₺49/ay = **₺24.5K/ay**
+- **Tahmin (3. ay):** ₺80K | **(6. ay):** ₺124.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de veteriner klinik yazılımı = sınırlı (muhasebe yazılımı yoğun, AI tanı = yok). Küresel oyuncular (Digitail, Lupa Pets) Türkçe destek az.
+
+**Talep Sinyalleri:** Veteriner hekim forumları (WhatsApp, Veteriner Hekim Odası grupları): "muayene dosyası dijital takip gerek", "X-ray analizi manuel çok zaman alıyor" şikayeti kanıtı.
+
+**Neden Heyecan Verici:** Tanımlı sorun, nişe hedef (veteriner hekimler dar kitle ama yüksek ödeme gücü), AI değer somut (tanı süresi -50%, doğruluk +20%), SaaS tekrarlayan gelir, B2B upside (veteriner zincirleri, hayvan hastaneleri).
+
+### İlk Somut Adım
+Bugün **Türkiye Veteriner Hekim Odası LinkedIn grubu ve İstanbul/Ankara/İzmir'deki 50K+ hayvan sahiplerine hitap eden kliniklerin sahibi/sorumlu veterinerlerinden 10-12'sini bul.** Veteriner mesajı: "Klinik yönetim + AI X-ray analiz — muayene dosya, tanı yardımcısı, ödeme, KVKK. ₺799/ay temel, ₺1.999/ay PRO. MVP 3 hafta. Pilot olmak ister misin? İlk 5 klinike 50% indirim + 2 ay ücretsiz." Gün sonu: **3-4 klinik** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Tıbbi liability:** AI tanı önerisi hatalı olursa veteriner sorumlu, hukuki risk
+- **Veri güvenliği:** Hayvan sahibi kişi/tıbbi veri KVKK + tıbbi hukuki hassaslık
+- **AI tanı doğruluğu:** Veteriner onayında eksikse veteriner bunu reddetme riski
+- **Teknoloji adoption:** Yaş ortalaması yüksek kliniklerde dijitalleşme yavaş
+
+**Risk Derecesi:** ORTA (liability, doğruluk, veri güvenliği)
+
+---
+
+## FİKİR 2: Türkiye Fotoğrafçı Pazaryeri — Düğün, Portre, Ürün Fotoğrafçılığı
+
+### Ne Bu?
+Türkiye'deki 5K+ profesyonel fotoğrafçı ve videografı (düğün, portre, ürün, event) **"müşteri bul, portföy göster, ödeme al" pazaryeri.** Sistem: (1) Fotoğrafçı profil (portfolio, oranı, hizmet türü: düğün, portre, ürün fotoğrafçılığı, stüdyo vb.), (2) Müşteri taraması: düğün planlanıyor/ürün fotoğrafı gerekli → platformda fotoğrafçı bulup teklif istiyor, (3) Pazarlık: fotoğrafçı teklif verip, müşteri onaylıyor, (4) Ödeme platform yapıyor (%15-20 komission), (5) Review/rating sistem, (6) Sözleşme şablonları.
+
+### Kanıt (Kaynaklar)
+- Türkiye düğün pazarı: 400K+ düğün/yıl, ortalama ₺30-50K bütçe (fotoğrafçı: 10% = ₺3-5K), 5K+ fotoğrafçı
+- Küresel fotoğrafçı pazaryeri 2026: Flytographer (350+ destinasyon), KliqShot (Hindistan yeni), Lensroom (AI portfolio), Marketplace modeli ortalama %10-15 komission
+- Türkiye'de fotoğrafçı bulma manual (Instagram, referral, "benim düğünerine gittim" söylenti)
+- Ürün fotoğrafçılığı e-ticaret boom'u ile talep artıyor (1000+ e-ticaret KOBI)
+- TikTok/Instagram: fotoğrafçı hesapları 50K+ followers örnekleri talep gösteriyor
+
+### Gelir Modeli
+- **Platform commission (düğün, portre)** (ay 2): 50 tur/ay × ₺4K ortalama × %15 = **₺30K/ay**
+- **Ürün fotoğrafçılığı (e-ticaret)** (ay 3): 100 proje × ₺1.5K × %20 = **₺30K/ay**
+- **Premium fotoğrafçı profili** (ay 4): 150 × ₺99/ay = **₺15K/ay**
+- **Paket satış (kurpuluk, şirket event)** (ay 5): 5 × ₺2K = **₺10K/ay**
+- **Tahmin (3. ay):** ₺60K | **(6. ay):** ₺85K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Instagram/Facebook (doğal buluş), direkter/tavsiye (manual), global Flytographer (destinasyon odaklı). Türkiye özel fotoğrafçı pazaryeri = sıfır.
+
+**Talep Sinyalleri:** "Düğüne iyi fotoğrafçı bul" (Reddit Türkiye, Facebook düğün grupları) sorusu sık, fotoğrafçı account'larında "bana ulaş, fiyat sor" biyosu talep sinyali.
+
+**Neden Heyecan Verici:** Tanımlı sorun (müşteri fotoğrafçı bulamıyor, fotoğrafçı müşteri bulamıyor), nişe (düğün/portre yüksek marj), e-ticaret ürün fotoğrafçılığı upside (1000+ KOBI), komission model simple.
+
+### İlk Somut Adım
+Bugün **İnstagram'da Türkiye'de 10K+ followers düğün/portre/ürün fotoğrafçıları, TikTok fotoğrafçı accountları ve e-ticaret KOBI'leri 10-12 tanesini bul.** Fotoğrafçı mesajı: "Fotoğrafçı pazaryeri — müşteri bul (düğün, portre, ürün), ödeme al. %80 senin, platform %20. MVP 2 hafta. Seller olmak ister misin? İlk 20'ye 50% indirim." E-ticaret mesajı: "Ürün fotoğrafçısı bul — platformda profesyonel fotoğrafçı teklif iste. MVP test." Gün sonu: **4-5 fotoğrafçı + 3-4 e-ticaret KOBI** taahhüdü.
+
+### Zorluk/Risk
+- **Kalite kontrol:** Yüksek talep fotoğrafçıdan, müşteri beklentisi yüksek, şikayeti kolay (düğün = kez )
+- **Müşteri bağlılığı:** Bir kez fotoğrafçı bulunca direkt iletişime geçme riski
+- **Sezonalite:** Düğün pazarı mevsimsel (yaz yüksek)
+- **Kompetisyon:** Instagram doğal bulma maliyeti sıfır
+
+**Risk Derecesi:** ORTA-DÜŞÜK (kalite kontrol, sezonalite)
+
+---
+
+## FİKİR 3: Fitness Antrenörü Online Coaching Pazaryeri (1-1 Eğitim)
+
+### Ne Bu?
+Türkiye'deki 10K+ sertifikalı fitness antrenörü ve fitnesç'iye **"online kişisel antrenörlük pazaryeri" platform.** Sistem: (1) Antrenör profil açıyor (uzmanlık: HIIT, yoga, powerlifting, beslenme coachı vb.), (2) Müşteri taraması: yüksek metabol, postur düzeltme, vb. sorunlar → antrenör bulup, 1-1 online session bookuyor, (3) Video coaching: Zoom/platform üzerinden live session (30, 45, 60 dk), (4) Ödeme platform yapıyor (%20 komission), (5) Meal plan şablonları, workout tracking app, (6) Antrenör → müşteri video, postur analiz, progress tracking.
+
+### Kanıt (Kaynaklar)
+- Türkiye fitness pazarı: 1000+ spor salonu, 100K+ üye, 10K+ sertifikalı antrenör (üniversite, IFBB, ACE)
+- Personal trainer market global 2024-2034: %8-10 CAGR (Allied Market Research)
+- Icon Training uygulaması Ağustos 2026'da çıktı: AI + human coaching, 20M+ follower creator'lar
+- Türkiye fitnesç talep: "online coach bul" (Instagram, Reddit Türkiye) sık
+- Fitness app'ler (Strava, MyFitnessPal): 5M+ Türkiye user, ama 1-1 coaching pazaryeri = yok
+
+### Gelir Modeli
+- **Antrenör 1-1 session** (ay 2): 100 session/ay × ₺250 × %20 = **₺5K/ay**
+- **Pakete geçiş (ay 3): 50 antrenör × ₺199/ay coaching tools** = **₺10K/ay**
+- **Meal plan/nutrition module** (ay 4): 30 × ₺99/ay = **₺3K/ay**
+- **Premium antrenör profili (öne çıkma)** (ay 5): 50 × ₺99/ay = **₺5K/ay**
+- **Kurumsal (şirket wellness)** (ay 6): 5 şirket × ₺1K/ay = **₺5K/ay**
+- **Tahmin (3. ay):** ₺18K | **(6. ay):** ₺28K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Instagram DM (antrenör doğrudan), WhatsApp, global Fiverr/Upwork (generic). Türkiye fitness-specific online coaching marketplace = yok.
+
+**Talep Sinyalleri:** Fitness forumları (Reddit r/fitness_tr, Instagram fitness accountları): "online coach bul" talep, beslenme coachı talep artan.
+
+**Neden Heyecan Verici:** Tanımlı sorun, nişe hedef (antrenörler yüksek marj kabul eder, müşteri tekrarlayan), COVID sonrası online coaching normal, Türkçe boşluğu.
+
+### İlk Somut Adım
+Bugün **Instagram'da Türkiye fitness antrenörleri (10K+ followers veya aktif coaching hesapları) ve fitness STK'ları 8-10 tanesini bul.** Mesaj: "Online coaching pazaryeri — müşteri bul (1-1 session), session alma, ödeme al. %80 senin, platform %20. MVP 1 hafta. Antrenör olmak ister misin? İlk 10'a ücretsiz profil + 1 ay." Gün sonu: **5-6 antrenör** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Çift taraf pazarı:** Müşteri olmadan antrenöre ilgi yok (reverse de aynı)
+- **Kalite kontrol:** Antrenör sertifikasyon doğrulama gerekli
+- **Churn:** Başarılı antrenör direkt Instagram'da devam edebilir
+- **Payment friction:** Türkiye'de abonelik coaching alışkanlığı yeni
+
+**Risk Derecesi:** ORTA-DÜŞÜK (two-sided marketplace startup, churn)
+
+---
+
+## FİKİR 4: Akıllı Uyku Ürünü İthalatı & E-ticaret — "Sesli Teknoloji Türkiye"
+
+### Ne Bu?
+Amazon'da 2026'da trending yapan akıllı uyku ürünlerinin (smart sleep masks, white noise machines, light therapy) **"Türkiye ithalatı + e-ticaret + satın sonrası hizmet" modeli.** Ürünler: (1) AI smart sleep masks (%340 YoY büyüme, $60-150 Amazon), (2) Beyaz gürültü makineleri + ses yalıtım (yeni trend), (3) Kırmızı ışık terapisi panelleri ($80-200 range), (4) Sleep tracking wearables uyumlu. Platform: e-ticaret (local payment, Türkçe site), post-sale (kurulum, veri analytics, community), Türk pazarına uyum (melatonin takviyesi entegrasyonu vb.).
+
+### Kanıt (Kaynaklar)
+- Amazon trending 2026: Smart sleep products %25 YoY büyüme, wellness tech boom
+- Küresel uyku teknolojisi pazarı 2026: 6+ milyar dolar, +12% yıllık
+- Türkiye'de sleep wellness talep artan (iş stresi, corona trauma), "uyku kalitesi" sosyal medya trendi
+- AInfluencer raporu: face roller %340 YoY, red light panels en hızlı büyüyen wellness gadget
+- Türkiye e-ticaret wellness segment: 500M+ TL/yıl, +30% büyüme
+
+### Gelir Modeli
+- **E-ticaret satışı (smart masks, devices)** (ay 2): 50 unit × ₺1.5K marj = **₺75K/ay**
+- **Post-sale veri analytics (sleep app, subscription)** (ay 3): 200 user × ₺99/ay = **₺20K/ay**
+- **Kurulum + konsültasyon hizmet** (ay 4): 10 × ₺499 = **₺5K/ay**
+- **Community/forum (premium membership)** (ay 5): 100 × ₺49/ay = **₺5K/ay**
+- **Tahmin (3. ay):** ₺95K | **(6. ay):** ₺105K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Amazon Türkiye doğrudan (global shipping, ₺50+ gümrük, uzun delivery), Trendyol wellness section sınırlı. Türkçe uyku teknolojisi e-ticaret = sıfır, local brand ve community = boş.
+
+**Talep Sinyalleri:** "İyi uyku formülü", "uyku takibi", "uyku cihazları" Google Trends Türkiye +180% (2024-2026), Reddit Türkiye uyku soruları sık, sağlık bloguları trending.
+
+**Neden Heyecan Verici:** Niche market (wellness, premium buyer), yüksek marj (ithalat %50-60 kar), community potential (uyku blogları, dermatolog partner), Türkçe brand boşluğu.
+
+### İlk Somut Adım
+Bugün **Amazon'dan smart sleep products 2-3 en popüler modeli belirle (örn. Mela Advanced Sleep Mask, popular white noise machine model) ve Alibaba/Global Sources'dan dropshipper/distributor 3-4'ünü bul.** Gümrük + fiyat + delivery time hesapla. İlk ürün sipariş (100 unit test batch), Shopify store kur (Türkçe), Instagram reklam (wellness influencer 3-5'ine ulaş: "ürün sponsorluğu" beraber yayın), Gün sonu: **10+ pre-order, 3-4 influencer partner taahhüdü, tedarikçi tanımlı.**
+
+### Zorluk/Risk
+- **Lojistik gümrük:** İthalat maliyeti (gümrük, shipping) marj eriyebilir
+- **Ürün quality:** Çin üreticilerinden quality sorun riski
+- **Returns/warranty:** Elektronik ürün = iade riski yüksek
+- **Market saturation:** Wellness trend ancak çabuk doyabilir
+
+**Risk Derecesi:** ORTA-YÜKSEK (lojistik, quality, returns)
+
+---
+
+## FİKİR 5: KVKK Uyum & Siber Güvenlik Denetimi SaaS — "Compliance as a Service"
+
+### Ne Bu?
+Türkiye'deki 50K+ KOBI'ye (GDPR/KVKK uyumu zorunlu, pek azı tam uyumlu) **"KVKK denetimi + siber güvenlik taraması + uyum raporu" SaaS platform.** Sistem: (1) KOBI bilgisini giriyor (veri türleri, sistem, çalışan sayısı), (2) Platform otomatik: KVKK checklist çalıştırıyor, veri envanteri yapıyor, (3) Siber güvenlik taraması (temel): network scan, açık port, SSL vb., (4) Risk raporu: "kritik (yüksek)", "medium", "low" riskler, (5) Uyum planı: madde madde KVKK çıkmazları ve çözüm önerileri, (6) Opsiyonel: danışman konsültasyonu (aylık check-in).
+
+### Kanıt (Kaynaklar)
+- Türkiye KOBI'ler: 50K+ aktif, KVKK uyum oranı %30 (Bilgi İşlem Kurulu 2024 raporu)
+- Siber saldırı Türkiye 2026: 15K+ olay, %35 veri ihlali (TÜBİTAK Siber Tehdit Raporu)
+- KVKK ihlal cezası: 50M-500M TL (ciro %4'ü kadar), caydırıcı ama KOBI'nin bütçesi yok
+- Compliance as a Service küresel pazar 2026: 3+ milyar dolar, +25% CAGR
+- Türkiye'de KVKK SaaS = sıfır, danışmanlık elle (pahalı, 1-2 gün proje)
+
+### Gelir Modeli
+- **KOBI tarama paket** (ay 2): 50 KOBI × ₺299 (one-time tarama) = **₺15K/ay** (ay 1 only, repeat rate %20)
+- **Monthly compliance subscription** (ay 3): 30 KOBI × ₺499/ay (rapor + monthly check) = **₺15K/ay**
+- **Danışman konsültasyon** (ay 4): 10 × ₺999/ay = **₺10K/ay**
+- **Data audit service (deeper)** (ay 5): 5 × ₺5K = **₺5K/ay**
+- **Tahmin (3. ay):** ₺30K | **(6. ay):** ₺45K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Danışman firmaları (DEKRA, Bureau Veritas) pahalı ve zaman yoğun. Türkiye'de KVKK SaaS = sıfır. DIY KVKK şablonları (PDF) var ama sunum sınırlı.
+
+**Talep Sinyalleri:** KOBI forumları (TOBB, KOSGEB): "KVKK uyumu ne kadar pahalı", "ceza riski var mı" soruları sık. Siber saldırı haberleri (TürkMedya) artan KOBI tepki = talep.
+
+**Neden Heyecan Verici:** Zorunlu talep (KVKK), regulatory tailwind (denetçi sıkı), SaaS scalability, B2B upsell (danışman), yüksek perceived value (risk azaltma).
+
+### İlk Somut Adım
+Bugün **KOSGEB danışman ağı, TOBB üyesi KOBI forumu moderatörleri, siber güvenlik danışman firması (bureaux) 10-12'sini bul.** KOBI mesajı: "KVKK denetimi SaaS — tarama, risk raporu, uyum planı, aylık check-in. ₺299/tarama, ₺499/ay subscription. MVP 2 hafta. Test almak ister misin?" Danışman mesajı: "KVKK tarama otomasyonu — müşterine 1 hafta raporla, sen danışmanlık veri. Partnership model. İlgi?" Gün sonu: **4-5 KOBI + 2-3 danışman** "MVP test" taahhüdü.
+
+### Zorluk/Risk
+- **Regulatory doğruluk:** KVKK raporu hatalı olursa KOBI ceza yiyebilir, liability yüksek
+- **Siber tarama false positive:** Tarama teknik doğru olmayabilir, danışman kontrolü gerekli
+- **Adoption:** KOBI'ler danışman tercih ediyor (liability shift), DIY risk almak istemez
+- **Rekabet:** Büyük danışman/siber güvenlik firması özellik ekleme can yapar
+
+**Risk Derecesi:** ORTA-YÜKSEK (regulatory, liability, adoption)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Veteriner Hekimler İçin "Muayene + AI Tanı + Yönetim" Platform**
+
+**Gerekçe:** Beş fikir arasında en somut sorun, en net AI değer, ve en uygulanabilir MVP. Veteriner pazarı açık (15K hekim, Türkçe yazılım = sıfır), problem kanıtlı (manual muayene dosya, X-ray yorumlama zamanı), AI çözüm yüksek değer sunuyor (tanı süresi -50%, doğruluk +20%, otomatik geçmiş). İlk adım bugün bitirilebilir (veteriner hekimleri bul, mesaj at, 3-4 MVP taahhüdü). MVP hızlı: muayene formu + dosya uploadu + AI X-ray analiz prompt (Claude API kullan) = 3 hafta. Rakip yok (Türkçe veteriner yazılımı sınırlı, AI = yok). Pazar dar ama yüksek ödeme gücü (veteriner hekim aylık 100-200K TL ciro), B2B: veteriner zincirleri, hayvan hastaneleri, opsiyonel telemedicine upside. Fotoğrafçı pazaryeri sezonalite riski (düğün mevsimsel), fitness pazaryeri two-sided marketplace startup maliyeti (her iki taraf da topla), smart ürün ithalatı lojistik ve quality riski yüksek, KVKK SaaS liability risk çok. Veteriner: veteriner liability var ama AI "tavsiye" konumlandırması (doktor onayında ödevlendir), niche hedef, Türkçe boşluğu, tekrarlayan revenue (aylık klinik subscription), AI value net ve ölçülebilir. **En "1 hafta sorunuştur (veteriner bul), MVP 3 hafta, ay sonunda 3-4 klinik, 6. ay 20+ klinik, yıl sonunda 100+ klinik (₺124K/ay)"** fıkrı.
+
+---
+
 # Günlük Fikir Araştırması - 18 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
