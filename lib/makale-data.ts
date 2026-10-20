@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "teknoloji-sirketi-satisinda-rekabet-kurulu-esigi-250-milyon-tl",
+    title:
+      "Teknoloji Şirketi Satışında Rekabet Kurulu Eşiği Neden Hâlâ 250 Milyon Lira?",
+    excerpt:
+      "Şubat 2026'da yürürlüğe giren tebliğ değişikliğiyle Rekabet Kurulu'nun genel bildirim eşiği dört kata çıktı, ama dijital platform, yazılım, fintek ve sağlık teknolojisi şirketleri için eşik 250 milyon TL'de sabit kaldı. Benzer büyüklükte iki şirketten biri izinsiz satılırken diğeri kurul onayı bekliyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "20 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sosyal-medyada-reklamdir-ibaresi-eksikse-ne-oluyor",
     title: "Sosyal Medyada \"Reklamdır\" İbaresi Eksikse Ne Oluyor?",
     excerpt:
