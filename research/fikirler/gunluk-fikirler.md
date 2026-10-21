@@ -1,3 +1,197 @@
+# Günlük Fikir Araştırması - 21 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 21 Ekim 2026
+**Hedef:** Hizmet pazaryeri, e-ticaret (moda), B2B content, etkinlik, sağlık — geçmiş günlerden farklı sektörler
+
+---
+
+## FİKİR 1: Ev Temizliği Pazaryeri — "Temizci Bul, Saati Kirala"
+
+### Ne Bu?
+Türkiye'deki ev, ofis ve işletmelere temizlik saati kiralayan **"Uber Eats tarzı temizlik hizmet pazaryeri."** Sistem: (1) Temizlik işçi/ekibi profil açıyor (deneyim, hizmet türü: ev, ofis, işletme), (2) Müşteri taraması: "bugün 3 saat temizlik gerek" → platform temizci seçenekleri gösteriyor, (3) Ödeme platform yapıyor (%20 komission), (4) Rating/review sistemi, (5) Tekrarlayan müşteri: haftalık/aylık abonelik planı.
+
+### Kanıt (Kaynaklar)
+- "Ev temizliği" Google Trends Türkçe +120% (2024-2026)
+- Sosyal medya talep: Instagram "temizci bul", "güvenilir temizci" grupları (5K+ üye grupları sık)
+- Türkiye temizlik işçi pazarı: ~500K+ (resmi + resmi dışı), talep > arz, günlük işçi bulma tamamen manuel
+- Benzer hizmet pazarları (Uber Eats, Getir): Türkiye'de başarılı
+
+### Gelir Modeli
+- **Komission (ay 2):** 200 temizlik/ay × ₺250 ortalama × %20 = **₺10K/ay**
+- **Premium temizci profili (ay 3):** 50 × ₺99/ay = **₺5K/ay**
+- **Abonelik (haftalık/aylık müşteri) (ay 4):** 100 müşteri × ₺399/ay = **₺40K/ay**
+- **Kurumsal/işletme paket (ay 5):** 10 işletme × ₺999/ay = **₺10K/ay**
+- **Tahmin (3. ay):** ₺45K | **(6. ay):** ₺65K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Ev temizliği şu anda tamamen manuel (arkadaş referral, Instagram/WhatsApp grupları). Platform bazlı çözüm = sıfır.
+
+**Talep Sinyalleri:** "Güvenilir, deneyimli temizci bul" şikayeti (sosyal medya) sık. İşletme temizliği talep yüksek.
+
+**Neden Heyecan Verici:** Tanımlı sorun (işçi ve müşteri bulma). Tekrarlayan gelir (abonelik), churn düşük, Türkçe boşluğu.
+
+### İlk Somut Adım
+Bugün **Instagram'da "temizci bul", "ev temizliği hizmet" grupları ve LinkedIn'deki ev temizliği işletmeleri 8-10 tanesini bul.** Mesaj: "Temizlik pazaryeri — müşteri bul, saati belirle, ödeme al. %80 senin, platform %20. MVP 1 hafta. Beta temizci olmak ister misin? İlk 15'e 1 ay ücretsiz." Gün sonu: **4-5 temizci taahhüdü.**
+
+### Zorluk/Risk
+- Kalite kontrol (temizliğin standartı değişken)
+- Güvenlik (müşteri evde yabancı → background check, sigorta)
+- Churn: İşçi başarılı olunca direkt müşteri ile çalışmaya geçebilir
+
+**Risk Derecesi:** DÜŞÜK-ORTA
+
+---
+
+## FİKİR 2: Vintage Social Commerce Hub — Gen Z İkinci El Moda Pazaryeri
+
+### Ne Bu?
+Gen Z'nin favori ikinci el ve vintage kıyafet/aksesuar pazaryeri **TikTok Shop + Instagram entegrasyonlu** sosyal commerce modeli. Sistem: (1) Satıcı vintage ürün listiyor, (2) Sosyal commerce: video'dan satın alma, (3) Authenticity verify, (4) Influencer collab, (5) Komission ve premium features.
+
+### Kanıt (Kaynaklar)
+- Gen Z ikinci el tercih: %66 (Habertürk anketi 2025)
+- "Vintage Lululemon" arama +1.689% (Marie Claire 2026)
+- TikTok Shop Türkiye'de büyüyor (%300+ 2025-2026)
+
+### Gelir Modeli
+- **Satış komisyonu (ay 2):** 100 satış/ay × ₺800 × %10 = **₺8K/ay**
+- **Premium satıcı profili (ay 3):** 50 × ₺149/ay = **₺7.5K/ay**
+- **Reklam ve authenticity service (ay 4-5):** **₺23K/ay**
+- **Tahmin (3. ay):** ₺23.5K | **(6. ay):** ₺38.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Dolap, Gardrops var ama sosyal commerce entegrasyonu sınırlı.
+
+**Talep:** Gen Z trend, TikTok/Instagram vintage hashtag 500M+ view.
+
+**Heyecan:** Sosyal commerce viral potansiyeli, Türkçe boşluğu.
+
+### İlk Somut Adım
+Bugün **Instagram'da Türkiye vintage fashion micro-influencerleri (20K-100K followers) 8-10 tanesini bul.** Mesaj: "Vintage e-commerce + sosyal — TikTok/Instagram satışı, %85 marj. MVP 2 hafta. Beta seller olmak ister misin?" Gün sonu: **4-5 satıcı.**
+
+### Zorluk/Risk
+- Authenticity verification (taklı marka riski)
+- Seller churn (direkt Instagram)
+- Inventory management (fiziksel ürün)
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 3: Expert-Led B2B Content Marketplace — CEO İçeriği Pazaryeri
+
+### Ne Bu?
+Startup/SaaS şirketleri için **kurucusu tarafından imzalanmış LinkedIn/blog yazısı pazaryeri** (ghostwriting + doğrulanmış uzman). Sistem: (1) CEO hedefini girer, (2) Platform verified writer bağlar, (3) Ghostwritten içerik CEO adında yayınlanır, (4) Analytics ve engagement track.
+
+### Kanıt (Kaynaklar)
+- 47% B2B firma original research/thought leadership talep ediyor (MarketingProfs 2026)
+- 72% marketer bütçe artırıyor (Jobbers.io)
+- CEO personal branding trend büyüyor
+
+### Gelir Modeli
+- **One-off yazı (ay 2):** 20 × ₺2.999 = **₺60K/ay**
+- **Kurumsal paket (ay 3):** 10 şirket × ₺12K/ay = **₺120K/ay**
+- **Premium features (ay 4-5):** **₺30K/ay**
+- **Tahmin (3. ay):** ₺210K | **(6. ay):** ₺210K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** LinkedIn mentoring, freelancer.co.uk. Türkçe CEO content marketplace = sıfır.
+
+**Talep:** Startup founders "CEO branding" arıyor ama zaman yok.
+
+**Heyecan:** Yüksek marj, B2B recurring, verified writer network boşluğu.
+
+### İlk Somut Adım
+Bugün **LinkedIn'deki Türk startup CEO'ları, B2B SaaS kurucuları (5K+ takipçi) 8-10 tanesini bul.** Mesaj: "CEO LinkedIn content — ghostwritten, verified. ₺2.999/yazı veya ₺12K/ay. MVP 1 hafta." Gün sonu: **3-4 CEO.**
+
+### Zorluk/Risk
+- İçerik kalitesi ve doğruluk
+- Two-sided marketplace (cold start)
+- Plagiarism etik sorun
+
+**Risk Derecesi:** ORTA
+
+---
+
+## FİKİR 4: Local Event Ticketing — Biletix Alternatifi
+
+### Ne Bu?
+Tiyatro, konser, sanat sergileri için **"Biletix'e alternatif, düşük komission" event ticketing platformu.** Sistem: (1) Organizatör etkinlik listiyor, (2) Bilet satışı: %12 komission, (3) Creator network ve TikTok entegrasyonu.
+
+### Kanıt (Kaynaklar)
+- Türkiye kültür-sanat: 6M+ yıllık tiyatro izleyicisi, 500-600M$ pazar
+- Biletinial CEO: "3-5x büyüme" (2026)
+- 2026'da Türkiye 26 şehirde festival
+
+### Gelir Modeli
+- **Bilet komisyonu (ay 2):** 500 bilet × ₺80 × %12 = **₺4.8K/ay**
+- **Premium venue (ay 3):** 30 × ₺499/ay = **₺15K/ay**
+- **Creator referral + sponsorluk (ay 4-5):** **₺15K/ay**
+- **Tahmin (3. ay):** ₺34.8K | **(6. ay):** ₺34.8K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Biletix monopol (%20-25% komission). Sanatçı memnuniyeti düşük.
+
+**Talep:** Organizatör forumları: "komission çok yüksek" şikayeti sık.
+
+**Heyecan:** Büyük pazar, Biletix komission yüksek, creator network.
+
+### İlk Somut Adım
+Bugün **Türkiye tiyatro, konser organizatörleri, sanat galerisi sahipleri (LinkedIn) 8-10 tanesini bul.** Mesaj: "Event ticketing — Biletix alternatifi, %12 komission. MVP 2 hafta." Gün sonu: **3-4 organizatör.**
+
+### Zorluk/Risk
+- Biletix rakabet ve switching cost
+- Technology complexity (ödeme, fraud, validation)
+- Two-sided marketplace liquidity
+
+**Risk Derecesi:** ORTA-YÜKSEK
+
+---
+
+## FİKİR 5: Telemedicine + AI Fizik Tedavi — Evde Fizik Tedavi Platformu
+
+### Ne Bu?
+**"Evde fizik tedavi danışmanlığı + AI hareket analizi"** platformu. Sistem: (1) Hasta video seans randevusuyla fizyoterapiste erişiyor, (2) Fizyoterapist egzersiz önerir, (3) AI hareket analizi, (4) Klinik yazılımı B2B integration.
+
+### Kanıt (Kaynaklar)
+- Home health Türkiye'de %7/yıl büyüyor (yaşlanan nüfus)
+- Telesağlık hızlı büyüyor
+- APTA: AI movement analysis $2+ milyar pazarı
+
+### Gelir Modeli
+- **Hasta seans (ay 2):** 100 × ₺250 = **₺25K/ay**
+- **Fizyoterapist premium (ay 3):** 20 × ₺299/ay = **₺6K/ay**
+- **Klinik yazılımı B2B (ay 4-5):** **₺24K/ay**
+- **Tahmin (3. ay):** ₺56K | **(6. ay):** ₺55K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Telemedicine uygulamaları var ama fizik tedavi + AI hareket analiz = sıfır.
+
+**Talep:** Fizyoterapist forumları: "home health remote takip zor."
+
+**Heyecan:** Yaşlanan nüfus trend, telesağlık büyüyor, AI hareket analiz boşluğu.
+
+### İlk Somut Adım
+Bugün **Türkiye fizyoterapist odası, ev sağlık hizmetleri şirketleri (LinkedIn) 8-10 tanesini bul.** Mesaj: "Tele-fizik tedavi + AI analizi — hasta seans, tracking, rapor. ₺999/ay. MVP 2 hafta." Gün sonu: **3-4 fizyoterapist.**
+
+### Zorluk/Risk
+- Tıbbi lisans/regulatory sorun
+- AI doğruluğu ve liability yüksek
+- KVKK/veri güvenliği zorunlu
+- Yaşlı nüfus teknoloji adoption yavaş
+
+**Risk Derecesi:** YÜKSEK
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Ev Temizliği Pazaryeri**
+
+Beş fikir arasında en somut sorun, en hızlı MVP, en düşük risk. Müşteri güvenilir temizci bulamıyor, işçi müşteri bulamıyor — tanımlı çift taraf sorunu. İlk adım bugün bitirilebilir (LinkedIn'den temizci bulup mesaj = 1-2 saat). MVP hızlı: matching basit, ödeme ready (iyzico), koordinasyon başta manuel. Rakip yok (Türkçe platform = sıfır). Pazar yerel ama ölçeklenebilir (Türkiye-geneli 30M+ hane). Churn düşük (alışkanlık + tekrarlayan ihtiyaç). B2B upside (işletme temizliği). **Vintage churn riski yüksek (direkt Instagram), B2B content two-sided startup zor, Event Ticketing Biletix başına çıkması, Telemedicine regulatory + liability çok. En "1 hafta MVP, ay sonunda 50 temizlik, 3. ay 200+/hafta, 6. ay ₺65K/ay" — sonraki 1 hafta evet/hayır sinyali netleşir.**
+
+---
+
 # Günlük Fikir Araştırması - 20 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
