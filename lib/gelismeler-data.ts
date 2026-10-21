@@ -1747,6 +1747,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıl sonu enflasyon beklentisinin bir kez daha yukarı, büyüme beklentisinin aşağı revize edilmesi önceki ankette de görülen bir eğilimin sürdüğünü gösteriyor. İşletmelere yıl sonu bütçe ve fiyatlama senaryolarını bu güncellenmiş beklentilerle yeniden kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "15 Ekim 2026",
+    eklendiTarihi: "2026-10-21",
+    baslik:
+      "Perakende Ticarette Taksitli Satış Yönetmeliği değişti: Bakanlığa taksit sürelerini sınırlama yetkisi verildi",
+    ozet:
+      "Ticaret Bakanlığı, 15 Ekim 2026 tarihli duyurusuyla Perakende Ticarette Uygulanacak İlke ve Kurallar Hakkında Yönetmelik'te değişiklik yaptığını bildirdi. Konut satışları hariç olmak üzere, perakende işletmelerin tüketicilere yönelik taksitli mal ve hizmet satışlarında taksit sürelerini belirleme ve bu konuda ilave sınırlama getirme yetkisi Bakanlığa verildi; amaç BDDK'nın kredi kartı, alışveriş kredisi ve tüketici finansmanıyla yapılan satışlara ilişkin taksit süresi kararlarıyla perakendedeki diğer taksit yöntemleri arasında uyum sağlamak. Bakanlığın alacağı süre ve sınırlama kararları resmi internet sitesinde ilan edilecek ve ilgili üst meslek kuruluşlarına bildirilecek.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/perakende-ticarette-uygulanacak-ilke-ve-kurallar-hakkinda-yonetmelikte-degisiklik-gerceklestirildi-15-10-2026",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Yönetmelik değişikliği taksit sınırlarını şu an için değiştirmiyor, Bakanlığa bu konuda karar alma yetkisi tanıyor. Taksitli satış veya kampanya planlayan perakende işletmelere, Bakanlığın ilan edeceği süre ve sınırlama kararlarını kampanya takvimini kurmadan önce takip etmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Ekim 2026",
+    eklendiTarihi: "2026-10-21",
+    baslik:
+      "Türkiye-AB arasında Yetkilendirilmiş Yükümlü (YYS) statülerinin karşılıklı tanınmasında teknik çalışmalar son aşamaya geldi",
+    ozet:
+      "Ticaret Bakanlığı'nın 19 Ekim 2026 tarihli duyurusuna göre, Türkiye ile AB arasındaki Yetkilendirilmiş Yükümlü Statülerinin Karşılıklı Tanınması Anlaşması çerçevesinde, firmaların sertifika ve statü bilgilerinin taraf gümrük idareleri arasında elektronik ortamda paylaşılmasına yönelik teknik çalışmalar son aşamaya geldi. Yetkilendirilmiş yükümlü statüsüne sahip firmaların, bu anlaşmadan ve ileride imzalanacak benzer anlaşmalardan doğacak kolaylıklardan yararlanabilmesi için sertifika bilgilerinin paylaşılmasına YYS E-Başvuru Sistemi (uygulama.gtb.gov.tr/YYSEBasvuru) üzerinden onay vermesi gerekiyor; verilen onay aynı sistemden değiştirilebiliyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/yyslerimiz-icin-gumruklerde-ab-ile-karsilikli-tanima-donemi-basliyor",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: AB'ye düzenli ihracat yapan ve Yetkilendirilmiş Yükümlü statüsüne sahip işletmelere, onay metnini YYS E-Başvuru Sistemi üzerinden vakit kaybetmeden doldurmalarını öneririm; onay verilmediği sürece karşılıklı tanıma anlaşmasının sağlayacağı gümrük kolaylıklarından yararlanılamıyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
