@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "halka-arz-esigi-2026-yuzde-50-artti",
+    title: "Halka Arz Eşiği 2026'da Neden Yüzde 50 Arttı?",
+    excerpt:
+      "Sermaye Piyasası Kurulu, 31 Aralık 2025 tarihli kararıyla halka arz başvurusu için istenen asgari aktif büyüklüğü 2,4 milyar TL'den 3,6 milyar TL'ye, ciro eşiğini de 1,2 milyar TL'den 1,8 milyar TL'ye çıkardı. Üç yıl önce bu rakamlara göre kurulan bir büyüme planı, bugün aynı çizgide değil.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "21 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "teknoloji-sirketi-satisinda-rekabet-kurulu-esigi-250-milyon-tl",
     title:
       "Teknoloji Şirketi Satışında Rekabet Kurulu Eşiği Neden Hâlâ 250 Milyon Lira?",
