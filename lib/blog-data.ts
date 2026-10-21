@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "arge-indirimi-teknokent-istisnasi-girisim-sermayesi-fonu-zorunlulugu-2026",
+    title: "Ar-Ge İndirimi ve Teknokent İstisnasında Girişim Sermayesi Fonu Zorunluluğu: 2026'da Eşik 5 Milyon TL'ye Yükseldi",
+    excerpt: "5746 sayılı Kanun madde 3/14 ve 4691 sayılı Kanun Ek madde 3 uyarınca, Ar-Ge indirimi, tasarım indirimi veya teknokent kazanç istisnasından yararlanan şirketler bu tutarın bir kısmını girişim sermayesi fonuna yatırmak zorunda. 31 Aralık 2025 tarihli 10803 sayılı Cumhurbaşkanı Kararı ile eşik 2026'da 5 milyon TL'ye yükseldi; yatırım son tarihi 31 Aralık 2026.",
+    category: "AR-GE VE İNOVASYON • VERGİ TEŞVİKLERİ • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kobi-tanimi-2026-siniflandirma-ve-destek-uygunlugu",
     title: "İşletmeniz Hâlâ KOBİ Sayılıyor mu? 2026 Güncel KOBİ Tanımı, Sınıflandırma ve Destek Bağlantısı",
     excerpt: "Yıllık çalışan sayısı 250'den az ve ciro veya bilançosu 1 milyar TL'yi aşmayan işletmeler KOBİ sayılıyor (10182 sayılı Karar, 7 Ağustos 2025). Mikro, küçük ve orta ölçekli işletme sınırları, bağlı/ortak işletme hesabının gözden kaçan etkisi, KOBİ niteliğinin ne zaman kaybedildiği ve sınıfınızın KOSGEB/TÜBİTAK destek uygunluğuna etkisiyle 2026 güncel rehber.",
