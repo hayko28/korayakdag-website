@@ -74,6 +74,12 @@ const hizmet: [string, string[][]][] = [
  ["Değerleme ve Teknoloji",[
   ["Şirket Değerleme","Şirketin gerçek piyasa değerinin hesaplanması. Satış, ortak alımı, birleşme (M&A), yatırımcı görüşmesi ve due diligence öncesi kullanılır.","Ortak alacak veya satacak, yatırım arayan, birleşme düşünen şirketler.",ALL],
   ["RPA (Süreç Robotları)","Yazılım robotlarının tekrarlayan işleri insan yerine yapması: fatura girişi, rapor hazırlama, veri aktarımı gibi. Zaman kazandırır, hatayı azaltır.","Her gün tekrarlayan evrak ve veri işi yapan, ekibi bu işlere zaman harcayan şirketler.","Finans, muhasebe, lojistik, perakende, sigorta, üretim"]
+ ]],
+ ["Danışman ve Eğitim",[
+  ["Uzmanla Birebir Görüşme","eDanışman Akademi üzerinden alanında uzman bir danışmanla birebir görüşme. Kısa bir hızlı çözüm oturumu (30 dakika) veya konuya özel görüşme paketi seçilebilir.","Sorusuna hızlı ve doğru cevap arayan, hangi destek veya yola gideceğini netleştirmek isteyen şirketler.",ALL],
+  ["Teşvik ve Destek Eğitimleri","Yatırım teşvik sistemi, KOSGEB Girişimci Programı, TÜBİTAK 1501 ve 1507 proje hazırlama, Teknopark proje hazırlama ve bordo hesaplama, Ar-Ge ve Tasarım Merkezi faaliyet raporu.","Destek başvurusunu kendi ekibiyle hazırlamak isteyen şirketler.","Yazılım, imalat, Ar-Ge, teknoloji"],
+  ["İhracat Eğitimleri","Hedef pazar analizi, ihracatta müşteri bulma, e-ihracat destekleri, Dahilde İşleme Rejimi, yapay zekâ ile ihracat.","İhracata yeni başlayan veya yeni pazara açılmak isteyen şirketler.","İmalat, e-ticaret, tekstil, gıda, makine"],
+  ["Finans, Hukuk ve Kurumsal Eğitimler","Finansal tabloları okuma, şirket değerleme ve yatırımcıya hazırlık, e-defter, İngiltere'de şirket kurulumu, iş sözleşmesi ve fesih, yazılım haklarının korunması. SEGEM programlarıyla finansmana erişim, risk yönetimi, sürdürülebilirlik ve yapay zekâ da kapsanır.","Yönetici ve ekibini bu konularda eğitmek isteyen şirketler.",ALL]
  ]]
 ];
 const ulkeler: string[] = ["Polonya","İtalya","Almanya","İngiltere","Hollanda","Birleşik Arap Emirlikleri (Dubai)","Suudi Arabistan","ABD","Singapur","Azerbaycan","Kazakistan","Özbekistan","Bulgaristan","Letonya","Litvanya","Yunanistan"];
@@ -128,6 +134,14 @@ function Hizmetler() {
               </tbody>
             </table>
           </div>
+          {baslik === "Danışman ve Eğitim" && (
+            <p className="blurb" style={{ marginTop: 14 }}>
+              Eğitim ve görüşme programlarının güncel listesi için:{" "}
+              <a href="https://akademi.edanisman.com/" target="_blank" rel="noopener noreferrer">
+                eDanışman Akademi
+              </a>
+            </p>
+          )}
           {baslik === "Uluslararası" && (
             <>
               <p className="blurb" style={{ marginTop: 14 }}>
