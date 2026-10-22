@@ -94,7 +94,7 @@ type Urun = [string, string, string, string, string];
 const urunler: [string, string, Urun[]][] = [
  ["Online Danışmanlık ve Eğitim Platformu","Danışman ve eğitimi tek platformda toplayan çözüm.",[
   ["eDanışman","https://www.edanisman.com/","Şirket kuruluşundan işin korunmasına kadar süreçleri tek platformdan takip ettiren iş yönetimi platformu. Bir servis seçildiğinde süreç adımları ve gerekli belgeler netleşir, işlem uzmanların desteğiyle yürür. Kısa bir birebir görüşmeyle hedef netleştirilebilir ve hukuk, muhasebe gibi alanlarda uzmanla randevu alınabilir.","Süreç ve belge takibi. Uzmanla birebir görüşme (30 dakikalık hızlı çözüm oturumu dahil). Rehber, şablon ve kontrol listesi kütüphanesi. Danışmanlarla mesajlaşma ve bildirimler. Şirket kuruluşu (Türkiye, ABD, İngiltere), KOSGEB destekleri, yatırım teşvik belgesi, teknopark, marka tescili ve muhasebe servisleri.","Şirket kuracak veya işini büyütmek isteyen girişimciler, işletme sahipleri ve ekipler."],
-  ["eDanışman Akademi","https://akademi.edanisman.com/","eDanışman'ın online eğitim kolu. İhracat desteği, yatırım teşviki, Ar-Ge, vergi ve finans gibi alanlarda uzman eğitmenlerden online eğitim alınır. Her eğitimin birebir uzman görüşmesi paketi de vardır.","Teşvik ve destek: Yatırım Teşvik Sistemi, KOSGEB Girişimci Programı, TÜBİTAK 1501 ve 1507, Teknopark, Ar-Ge Merkezi raporu. İhracat: hedef pazar analizi, müşteri bulma, e-ihracat, Dahilde İşleme Rejimi, yapay zekâ ile ihracat. Finans ve kurumsal: finansal tablo okuma, şirket değerleme, e-defter, İngiltere'de şirket kurulumu. Ayrıca finansmana erişim, risk yönetimi, sürdürülebilirlik ve yapay zekâ konularında SEGEM programları.","Destek başvurusunu ve dış ticaret işlerini kendi ekibiyle yürütmek isteyen şirketler ve yöneticiler."]
+  ["eDanışman Akademi","https://akademi.edanisman.com/","eDanışman'ın online eğitim kolu. İhracat desteği, yatırım teşviki, Ar-Ge, vergi ve finans gibi alanlarda uzman eğitmenlerden online eğitim alınır. Her eğitimin birebir uzman görüşmesi paketi de vardır.","Eğitimler konu kategorilerine ayrılır. Her eğitim için birebir uzman görüşmesi paketi alınabilir. Kategoriler ve paketler tablonun altında.","Destek başvurusunu ve dış ticaret işlerini kendi ekibiyle yürütmek isteyen şirketler ve yöneticiler."]
  ]],
  ["Ar-Ge ve Fikri Mülkiyet","Teknoloji yönetimi ve fikri mülkiyet çözümleri.",[
   ["Argesa","https://www.sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/argesa","TÜBİTAK Ar-Ge proje raporlarını yapay zekâ ile analiz eden değerlendirme yazılımı. Rapor başvurudan önce incelenir, başarı potansiyeli ve eksik alanlar saptanır.","TÜBİTAK kriterlerine göre analiz. Güçlü ve zayıf yönlerin gösterilmesi. Başvuru diline uygun öneriler. Saatler süren manuel incelemenin dakikalara inmesi. İsteğe bağlı olarak Sistem Global uzmanlarıyla birebir gözden geçirme.","TÜBİTAK Ar-Ge desteğine başvuracak girişimciler ve proje sahipleri, çok sayıda proje yöneten kurumlar."],
@@ -114,6 +114,84 @@ const urunler: [string, string, Urun[]][] = [
   ["Harmonity","https://www.harmonity.ai/tr?utm_source=sistemglobal","Hukuk için geliştirilmiş, yapay zekâ ve agent destekli platform. Hukuki araştırma, belge hazırlama ve inceleme ile ekip içi iş birliğini tek yerde toplar.","Kaynaklı yanıt veren agent. Kurum standartlarına uygun ilk taslak. Riskli ve eksik hükümlerin maddeleriyle birlikte tespiti. Çoklu belge incelemesi. İçtihat araştırması. Veriler AB sınırları içinde barındırılır ve model eğitiminde kullanılmaz.","Hukuk ekipleri, hukuk büroları, startup ve KOBİ'ler."]
  ]]
 ];
+
+const edServisler: [string, string][] = [
+ ["İşini kur","Türkiye'de şirket kuruluşu, ABD'de şirket kuruluşu, İngiltere'de şirket kuruluşu"],
+ ["İşini yönet","FinBind finansal analiz ve skorlama servisi, muhasebe servisi"],
+ ["İşini büyüt","KOSGEB destekleri danışmanlık servisleri, Argesa (TÜBİTAK proje raporu analizi), Teknopark danışmanlık servisleri, yatırım teşvik belgesi danışmanlık servisi"],
+ ["İşini koru","Sözleşme ve risk yönetim servisi, marka tescili"]
+];
+const edEgitimler: [string, string][] = [
+ ["Ar-Ge","TÜBİTAK 1501 ve 1507 proje hazırlama, Teknopark proje hazırlama, Teknopark teşvikli bordo hesaplama, Ar-Ge ve Tasarım Merkezi faaliyet raporu hazırlama, 5447 sayılı Bilişim Sektörü Destek Programı, akademik yayın ve bildiri yazma, Ar-Ge destekleri ve teşvikleri, Ar-Ge projelerinde proje ve risk yönetimi"],
+ ["E-ticaret ve e-ihracat","E-ihracat destekleri, ihracatta müşteri bulma, ihracatta hedef pazar analizi"],
+ ["Finans ve muhasebe","Finansal tabloları okuma ve yorumlama, e-defter, finansal sağlık check-up, karlılık yönetimi, finansmana erişim, kredi ve finansman yapıları, yatırım fizibilitesi"],
+ ["Girişimcilik","KOSGEB Girişimci Programı, şirket değerleme ve yatırımcıya hazırlık, büyüme ve ölçeklenme stratejileri"],
+ ["Hukuk","İş sözleşmesi ve fesih"],
+ ["İhracat ve yatırım","Yatırım teşvik sistemi, Dahilde İşleme Rejimi, yapay zekâ ile ihracat, İngiltere'de şirket kurulumu, ihracata hazırlık, yurt dışı şirket kuruluşları, TURQUALITY, uluslararası vergi ve mevzuat"],
+ ["İş yönetimi ve liderlik","Proje yönetimi, problem çözme teknikleri, proje yönetimine giriş ve temel yaklaşımlar"],
+ ["Marka ve patent","Yazılım haklarının korunması, patent ve fikri mülkiyet stratejileri"],
+ ["Sürdürülebilirlik","SKDM (CBAM) kapsamı ve yükümlülükleri, karbon ayak izi hesaplama, TSRS 1 ve TSRS 2 uygulamaları, sürdürülebilirlik raporlaması, ESG farkındalığı, su verimliliği ve su ayak izi, döngüsel ekonomi, iklim riskleri, emisyon ticaret sistemi"],
+ ["Teknoloji ve veri","Yapay zekâ okuryazarlığı, yönetici için yapay zekâ, generative AI ile verimlilik, AI agent'lar ve işletmeler, süreç otomasyonu (RPA), veri yönetimi, veri analitiği, siber riskler ve bilgi güvenliği, dijital olgunluk analizi"]
+];
+const edPaketler: string[] = [
+ "Yatırım teşvik sistemi uzmanla görüşme","Teknopark proje hazırlama uzmanla görüşme","Teknopark teşvikli bordo hesaplama uzmanla görüşme","TÜBİTAK 1501 ve 1507 proje hazırlama uzmanla görüşme","Ar-Ge ve Tasarım Merkezi faaliyet raporu uzmanla görüşme","KOSGEB Girişimci Programı uzmanla görüşme","E-ihracat destekleri uzmanla görüşme","İhracatta hedef pazar analizi uzmanla görüşme","İhracatta müşteri bulma uzmanla görüşme","Yapay zekâ ile ihracat uzmanla görüşme","Dahilde İşleme Rejimi uzmanla görüşme","E-defter uzmanla görüşme","İngiltere'de şirket kurulumu uzmanla görüşme","İş sözleşmesi ve fesih uzmanla görüşme","Yazılım haklarının korunması uzmanla görüşme","Proje yönetimi uzmanla görüşme","Problem çözme teknikleri uzmanla görüşme","Akademik yayın ve bildiri yazma uzmanla görüşme"
+];
+
+function EdanismanKapsam() {
+  return (
+    <>
+      <h2>eDanışman Kapsamı</h2>
+      <p className="blurb">eDanışman bilgileri üç grupta toplanır: Servisler, Eğitimler ve Paketler.</p>
+      <h3>Servisler</h3>
+      <div className="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Aşama</th>
+              <th>Servisler</th>
+            </tr>
+          </thead>
+          <tbody>
+            {edServisler.map(([a, s]) => (
+              <tr key={a}>
+                <td>{a}</td>
+                <td>{s}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3>Eğitimler (eDanışman Akademi)</h3>
+      <div className="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Kategori</th>
+              <th>Eğitimler</th>
+            </tr>
+          </thead>
+          <tbody>
+            {edEgitimler.map(([k, e]) => (
+              <tr key={k}>
+                <td>{k}</td>
+                <td>{e}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h3>Paketler</h3>
+      <p className="blurb">Her paket, ilgili konuda uzmanla birebir görüşmedir. Ayrıca 30 dakikalık hızlı çözüm oturumu da alınabilir.</p>
+      <div>
+        {edPaketler.map((p) => (
+          <span key={p} className="chip">
+            {p}
+          </span>
+        ))}
+      </div>
+    </>
+  );
+}
 
 function DijitalUrunler() {
   return (
@@ -151,6 +229,7 @@ function DijitalUrunler() {
               </tbody>
             </table>
           </div>
+          {baslik === "Online Danışmanlık ve Eğitim Platformu" && <EdanismanKapsam />}
         </div>
       ))}
     </>
