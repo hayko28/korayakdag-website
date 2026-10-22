@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-yonetmeligi-kaldirildi-haberi-ne-anlama-geliyor",
+    title:
+      "KOSGEB'de \"Yönetmelik Kaldırıldı\" Haberi Neden Çoğu İşletmeyi Boşuna Korkuttu?",
+    excerpt:
+      "16 Ekim 2026'da Resmî Gazete'de yayımlanan üç maddelik düzenleme, 2003'ten kalma KOSGEB Destekleyiciler Yönetmeliği'ni kaldırdı. Haber hızla yayılırken kaldırılan metnin işletme hibeleriyle hiç ilgisi olmadığı gözden kaçtı; başlığın kendisi, altındaki metinden daha hızlı dolaşınca ortaya çıkan gerçek risk bu.",
+    tag: "Devlet Destekleri",
+    date: "22 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "halka-arz-esigi-2026-yuzde-50-artti",
     title: "Halka Arz Eşiği 2026'da Neden Yüzde 50 Arttı?",
     excerpt:
