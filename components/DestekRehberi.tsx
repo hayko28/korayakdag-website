@@ -74,12 +74,6 @@ const hizmet: [string, string[][]][] = [
  ["Değerleme ve Teknoloji",[
   ["Şirket Değerleme","Şirketin gerçek piyasa değerinin hesaplanması. Satış, ortak alımı, birleşme (M&A), yatırımcı görüşmesi ve due diligence öncesi kullanılır.","Ortak alacak veya satacak, yatırım arayan, birleşme düşünen şirketler.",ALL],
   ["RPA (Süreç Robotları)","Yazılım robotlarının tekrarlayan işleri insan yerine yapması: fatura girişi, rapor hazırlama, veri aktarımı gibi. Zaman kazandırır, hatayı azaltır.","Her gün tekrarlayan evrak ve veri işi yapan, ekibi bu işlere zaman harcayan şirketler.","Finans, muhasebe, lojistik, perakende, sigorta, üretim"]
- ]],
- ["Danışman ve Eğitim",[
-  ["Uzmanla Birebir Görüşme","eDanışman Akademi üzerinden alanında uzman bir danışmanla birebir görüşme. Kısa bir hızlı çözüm oturumu (30 dakika) veya konuya özel görüşme paketi seçilebilir.","Sorusuna hızlı ve doğru cevap arayan, hangi destek veya yola gideceğini netleştirmek isteyen şirketler.",ALL],
-  ["Teşvik ve Destek Eğitimleri","Yatırım teşvik sistemi, KOSGEB Girişimci Programı, TÜBİTAK 1501 ve 1507 proje hazırlama, Teknopark proje hazırlama ve bordo hesaplama, Ar-Ge ve Tasarım Merkezi faaliyet raporu.","Destek başvurusunu kendi ekibiyle hazırlamak isteyen şirketler.","Yazılım, imalat, Ar-Ge, teknoloji"],
-  ["İhracat Eğitimleri","Hedef pazar analizi, ihracatta müşteri bulma, e-ihracat destekleri, Dahilde İşleme Rejimi, yapay zekâ ile ihracat.","İhracata yeni başlayan veya yeni pazara açılmak isteyen şirketler.","İmalat, e-ticaret, tekstil, gıda, makine"],
-  ["Finans, Hukuk ve Kurumsal Eğitimler","Finansal tabloları okuma, şirket değerleme ve yatırımcıya hazırlık, e-defter, İngiltere'de şirket kurulumu, iş sözleşmesi ve fesih, yazılım haklarının korunması. SEGEM programlarıyla finansmana erişim, risk yönetimi, sürdürülebilirlik ve yapay zekâ da kapsanır.","Yönetici ve ekibini bu konularda eğitmek isteyen şirketler.",ALL]
  ]]
 ];
 const ulkeler: string[] = ["Polonya","İtalya","Almanya","İngiltere","Hollanda","Birleşik Arap Emirlikleri (Dubai)","Suudi Arabistan","ABD","Singapur","Azerbaycan","Kazakistan","Özbekistan","Bulgaristan","Letonya","Litvanya","Yunanistan"];
@@ -94,6 +88,74 @@ const eslesme: [string, string][] = [
  ["E-ticaret veya perakende","KVKK, Marka tescili, E-ihracat desteği, Bordro"],
  ["Alacak veya uyuşmazlık sorunu olan şirket","Dava, İcra ve İflas, Arabuluculuk, Sözleşme hukuku"]
 ];
+
+// [ürün, link, ne işe yarar, öne çıkanlar, kimlere uygun]
+type Urun = [string, string, string, string, string];
+const urunler: [string, string, Urun[]][] = [
+ ["Online Danışmanlık ve Eğitim Platformu","Danışman ve eğitimi tek platformda toplayan çözüm.",[
+  ["eDanışman","https://www.edanisman.com/","Şirket kuruluşundan işin korunmasına kadar süreçleri tek platformdan takip ettiren iş yönetimi platformu. Bir servis seçildiğinde süreç adımları ve gerekli belgeler netleşir, işlem uzmanların desteğiyle yürür. Kısa bir birebir görüşmeyle hedef netleştirilebilir ve hukuk, muhasebe gibi alanlarda uzmanla randevu alınabilir.","Süreç ve belge takibi. Uzmanla birebir görüşme (30 dakikalık hızlı çözüm oturumu dahil). Rehber, şablon ve kontrol listesi kütüphanesi. Danışmanlarla mesajlaşma ve bildirimler. Şirket kuruluşu (Türkiye, ABD, İngiltere), KOSGEB destekleri, yatırım teşvik belgesi, teknopark, marka tescili ve muhasebe servisleri.","Şirket kuracak veya işini büyütmek isteyen girişimciler, işletme sahipleri ve ekipler."],
+  ["eDanışman Akademi","https://akademi.edanisman.com/","eDanışman'ın online eğitim kolu. İhracat desteği, yatırım teşviki, Ar-Ge, vergi ve finans gibi alanlarda uzman eğitmenlerden online eğitim alınır. Her eğitimin birebir uzman görüşmesi paketi de vardır.","Teşvik ve destek: Yatırım Teşvik Sistemi, KOSGEB Girişimci Programı, TÜBİTAK 1501 ve 1507, Teknopark, Ar-Ge Merkezi raporu. İhracat: hedef pazar analizi, müşteri bulma, e-ihracat, Dahilde İşleme Rejimi, yapay zekâ ile ihracat. Finans ve kurumsal: finansal tablo okuma, şirket değerleme, e-defter, İngiltere'de şirket kurulumu. Ayrıca finansmana erişim, risk yönetimi, sürdürülebilirlik ve yapay zekâ konularında SEGEM programları.","Destek başvurusunu ve dış ticaret işlerini kendi ekibiyle yürütmek isteyen şirketler ve yöneticiler."]
+ ]],
+ ["Ar-Ge ve Fikri Mülkiyet","Teknoloji yönetimi ve fikri mülkiyet çözümleri.",[
+  ["Argesa","https://www.sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/argesa","TÜBİTAK Ar-Ge proje raporlarını yapay zekâ ile analiz eden değerlendirme yazılımı. Rapor başvurudan önce incelenir, başarı potansiyeli ve eksik alanlar saptanır.","TÜBİTAK kriterlerine göre analiz. Güçlü ve zayıf yönlerin gösterilmesi. Başvuru diline uygun öneriler. Saatler süren manuel incelemenin dakikalara inmesi. İsteğe bağlı olarak Sistem Global uzmanlarıyla birebir gözden geçirme.","TÜBİTAK Ar-Ge desteğine başvuracak girişimciler ve proje sahipleri, çok sayıda proje yöneten kurumlar."],
+  ["HaaS","https://haas-portal.com/?utm_source=sistemglobal","Hibe ve teşvik başvurularını tek panelden yönetmeye yarayan platform. Doğru programa hızlı ulaşmayı, evrak akışını standartlaştırmayı ve süreci ölçülebilir takip etmeyi sağlar.","Program eşleştirme. Başvuru türüne göre belge kontrol listesi ve eksik belge takibi. Mevzuat ve çağrı değişikliği takibi. Yüklenen belgelerin uzman tarafından incelenmesi. Yapay zekâ destekli chatbot ve teşvik mühendisi desteği. Basic, Standart ve Premium paketler.","Küçük işletmelerden kurumsal şirketlere kadar hibe ve teşvik başvurusu yöneten operasyon ekipleri ve yöneticiler."],
+  ["Sparks","https://www.sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/sparks","Çok şubeli ve kalabalık personelli işletmelerin SGK işlemlerini tek ekrandan yönettiği, yapay zekâ destekli kurumsal koordinasyon yazılımı.","Toplu işe giriş ve işten ayrılış bildirgesi. İşe alım öncesi teşvik sorgulama. E-Vizite entegrasyonu ile rapor onayı. Excel ve MUHSGK üzerinden teşvik senaryoları. Toplu hizmet ve tahakkuk listesi. Mevzuat değişikliğine uyum takibi.","Çok sayıda sigortalısı olan şirketler, mali müşavirler ve İK yöneticileri."],
+  ["Argera","https://www.sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/argera","Ar-Ge ve Tasarım Merkezlerinin proje, iş gücü ve bordro süreçlerini tek platformda yöneten yazılım. Faaliyet raporu hazırlamayı hızlandırmayı hedefler.","Bakanlık portalıyla uyumlu veri aktarımı. Proje ve personel zaman takibi. Ar-Ge teşvikine uygun bordro ve mali analiz. Dokümantasyon merkezi. Dashboard ile anlık raporlama. Güncel yönetmeliğe uyum.","Türkiye'deki Ar-Ge ve Tasarım Merkezleri ile bu merkezlerin proje, personel, bordro ve raporlama ekipleri."],
+  ["Marqby","https://marqby.com/tr/","Marka, patent, faydalı model, tasarım, telif ve alan adlarını tek yerden yöneten fikri mülkiyet platformu. Başvuru öncesi araştırmadan portföy yönetimine kadar tüm süreci kapsar.","Başvuru öncesi benzer hak araması. Yurt içi ve yurt dışı tescil, uzman desteğiyle. Hak süresi ve yenileme takibi. Varlık, belge, maliyet ve sözleşme için merkezi kayıt. Rakip ve pazar izleme. Çok ülkeli koruma.","Fikri varlıklarını düzenlemek isteyen girişimler, çok ülkeli portföyü olan ölçeklenen ve kurumsal şirketler."]
+ ]],
+ ["Vergi ve Finans","Finansal süreçler ve vergi yönetimi araçları.",[
+  ["FinBind","https://www.finbind.com/?utm_source=sistemglobal","Finansal verileri analiz eden, finansal sağlığı ölçen ve işletmeye uygun finansal çözümleri bulmaya yardım eden, yapay zekâ destekli finansal analiz ve skorlama platformu. Bankaların kredi değerlendirme bakışını analize katar.","Mizan, e-defter, e-fatura ve beyanname yükleme. Nakit akışı, kârlılık ve büyüme tahmini. Trend, oran ve Dupont gibi analizler. Rating ve skor. Skora göre uygun bankacılık ürünlerinin eşleştirilmesi.","Finansal durumunu bir banka gözüyle görmek, kredi ve finansman başvurusuna hazırlanmak isteyen işletmeler."]
+ ]],
+ ["Muhasebe ve Bordro","Muhasebe, bordro ve insan kaynakları dijital çözümleri.",[
+  ["Idenfit","https://www.sistemglobal.com.tr/dijital-urunler/muhasebe-bordro/idenfit","Sistem Global'in yatırımcısı olduğu İK teknolojileri şirketinin, bulut tabanlı insan kaynakları ve iş gücü yönetimi çözümü. İK süreçlerini dijitalleştirir.","Idenfit SMART: dijital özlük, izin, harcama ve avans, zimmet, doküman yönetimi ve bordro görüntüleme. İK Outsource ve Bordro Outsource ile süreçlerin uzman ekiplerce yönetilmesi. Hedef kitle ve paket, süreç analizinden sonra birlikte belirlenir.","İK ve bordro süreçlerini dijitalleştirmek veya dışarıdan yönettirmek isteyen işletmeler."]
+ ]],
+ ["Mevzuat ve Uyum","Hukuki ve mevzuat uyum teknolojileri.",[
+  ["Legalmatic","https://legalmatic.net/?utm_source=sistemglobal","Türk hukukuna odaklı, yapay zekâ destekli hukuk platformu. Hukuki danışmanlık hizmeti vermez, avukat danışmanlığının yerine geçmez.","Yapay zekâ ile sözleşme türünü bulma, form doldurma ve düzenleme. Mevzuat ve içtihat atıflı hukuki sohbet asistanı. Yüklenen sözleşmede risk analizi.","Bireyler, KOBİ'ler ve avukatlar."],
+  ["Harmonity","https://www.harmonity.ai/tr?utm_source=sistemglobal","Hukuk için geliştirilmiş, yapay zekâ ve agent destekli platform. Hukuki araştırma, belge hazırlama ve inceleme ile ekip içi iş birliğini tek yerde toplar.","Kaynaklı yanıt veren agent. Kurum standartlarına uygun ilk taslak. Riskli ve eksik hükümlerin maddeleriyle birlikte tespiti. Çoklu belge incelemesi. İçtihat araştırması. Veriler AB sınırları içinde barındırılır ve model eğitiminde kullanılmaz.","Hukuk ekipleri, hukuk büroları, startup ve KOBİ'ler."]
+ ]]
+];
+
+function DijitalUrunler() {
+  return (
+    <>
+      <p className="intro">
+        Sistem Global ekosisteminin dijital ürünleri. Danışmanlık ihtiyacını yazılım ve platformla destekler. Devlet hibesi içermez.
+      </p>
+      {urunler.map(([baslik, aciklama, rows]) => (
+        <div key={baslik}>
+          <h2>{baslik}</h2>
+          <p className="blurb">{aciklama}</p>
+          <div className="tw">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ürün</th>
+                  <th>Ne işe yarar?</th>
+                  <th>Öne çıkanlar</th>
+                  <th>Kimlere uygun?</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={r[0]}>
+                    <td>
+                      <a href={r[1]} target="_blank" rel="noopener noreferrer">
+                        {r[0]}
+                      </a>
+                    </td>
+                    <td>{r[2]}</td>
+                    <td>{r[3]}</td>
+                    <td>{r[4]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+}
 
 function Hizmetler() {
   return (
@@ -134,14 +196,6 @@ function Hizmetler() {
               </tbody>
             </table>
           </div>
-          {baslik === "Danışman ve Eğitim" && (
-            <p className="blurb" style={{ marginTop: 14 }}>
-              Eğitim ve görüşme programlarının güncel listesi için:{" "}
-              <a href="https://akademi.edanisman.com/" target="_blank" rel="noopener noreferrer">
-                eDanışman Akademi
-              </a>
-            </p>
-          )}
           {baslik === "Uluslararası" && (
             <>
               <p className="blurb" style={{ marginTop: 14 }}>
@@ -403,7 +457,7 @@ function Grup({
 
 export default function DestekRehberi() {
   const [filtre, setFiltre] = useState<Filtre>("all");
-  const [sekme, setSekme] = useState<"a" | "b" | "c">("b");
+  const [sekme, setSekme] = useState<"a" | "b" | "c" | "d">("b");
   const D = data as unknown as {
     sonKontrol: string;
     kosgeb: Program[];
@@ -564,8 +618,9 @@ export default function DestekRehberi() {
         {(
           [
             ["a", "1. Danışmanlık Hizmetleri"],
-            ["b", "2. Devlet Destekleri"],
-            ["c", "3. Kime Ne Önerilir?"],
+            ["d", "2. Dijital Ürünler"],
+            ["b", "3. Devlet Destekleri"],
+            ["c", "4. Kime Ne Önerilir?"],
           ] as const
         ).map(([k, ad]) => (
           <button key={k} type="button" role="tab" aria-selected={sekme === k} onClick={() => setSekme(k)}>
@@ -574,6 +629,7 @@ export default function DestekRehberi() {
         ))}
       </div>
       {sekme === "a" && <Hizmetler />}
+      {sekme === "d" && <DijitalUrunler />}
       {sekme === "c" && <Eslesme />}
       <div hidden={sekme !== "b"}>
       <p className="intro">
