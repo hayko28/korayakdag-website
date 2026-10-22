@@ -535,6 +535,22 @@ export default function BlogPage() {
         </ul>
       </section>
 
+      {/* CTA */}
+      <section className="mt-24">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+          <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🤝 Destekleri Birlikte Kullanmanın Doğru Planını Birlikte Yapalım
+          </h3>
+          <p className="leading-8 text-gray-700">
+            Aynı harcamaya birden fazla destek alınamaması gibi kurallar vardır. Şirketiniz için doğru kombinasyonu başvurudan önce birlikte planlayabiliriz.{" "}
+            <Link href="/#contact" className="text-orange-600 underline">
+              Bizimle iletişime geçebilirsiniz.
+            </Link>{" "}
+            Ayrıca <Link href="/yatirim-tesvik-belgesi-danismanligi" className="text-orange-600 underline">yatırım teşvik belgesi danışmanlık hizmetimizi inceleyebilirsiniz</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* 11. SSS */}
       <section id="sss" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

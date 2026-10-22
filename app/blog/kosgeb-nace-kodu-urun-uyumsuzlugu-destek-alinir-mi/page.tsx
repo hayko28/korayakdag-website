@@ -536,6 +536,22 @@ export default function BlogPage() {
         </ul>
       </section>
 
+      {/* CTA */}
+      <section className="mt-24">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+          <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🤝 NACE Kodu ve Ürün Uyumsuzluğunda Desteği Riske Atmayın
+          </h3>
+          <p className="leading-8 text-gray-700">
+            NACE kodu ile fiili faaliyet arasındaki uyumsuzluk, başvurunun reddine yol açabilir. Başvurudan önce kayıtlarınızı kontrol edip doğru yolu birlikte belirleyebiliriz.{" "}
+            <Link href="/#contact" className="text-orange-600 underline">
+              Bizimle iletişime geçebilirsiniz.
+            </Link>{" "}
+            Ayrıca <Link href="/kosgeb-danismanlik" className="text-orange-600 underline">KOSGEB danışmanlık hizmetimizi inceleyebilirsiniz</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* 9. SSS */}
       <section id="sss" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

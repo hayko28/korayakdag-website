@@ -483,6 +483,22 @@ export default function BlogPage() {
         </ul>
       </section>
 
+      {/* CTA */}
+      <section className="mt-24">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
+          <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
+            🤝 Şirketiniz Hangi Ölçekte, Hangi Desteklere Uygun?
+          </h3>
+          <p className="leading-8 text-gray-700">
+            KOBİ sınıfınız; başvurabileceğiniz KOSGEB, TÜBİTAK ve diğer destek programlarını doğrudan belirler. Çalışan sayısı ve mali tablo verilerinizle ölçeğinizi ve size uygun programları birlikte netleştirebiliriz.{" "}
+            <Link href="/#contact" className="text-orange-600 underline">
+              Bizimle iletişime geçebilirsiniz.
+            </Link>{" "}
+            Ayrıca <Link href="/kosgeb-danismanlik" className="text-orange-600 underline">KOSGEB danışmanlık hizmetimizi inceleyebilirsiniz</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* 9. SSS */}
       <section id="sss" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">

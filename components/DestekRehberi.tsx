@@ -2,6 +2,7 @@
 
 import { Fragment, useState, type ReactNode } from "react";
 import data from "@/lib/destek-rehberi-data.json";
+import ContactCtaButton from "@/components/ContactCtaButton";
 import "./DestekRehberi.css";
 
 type Durum = "acik" | "surekli" | "kapali" | "yok";
@@ -736,6 +737,13 @@ export default function DestekRehberi() {
         ve tarihler çağrıya göre değişir; başvurudan önce güncel duyuru kontrol edilmelidir. &quot;Teyit edilemedi&quot;
         işaretli bilgiler resmi kaynakta doğrulanamamıştır.
       </p>
+      </div>
+      <div className="cta">
+        <div>
+          <strong>Şirketiniz için hangi hizmet ve destek uygun?</strong>
+          <span>Kısa bir görüşmeyle şirketinize uygun hizmet ve destekleri birlikte belirleyelim.</span>
+        </div>
+        <ContactCtaButton>Bizimle iletişime geçin</ContactCtaButton>
       </div>
     </div>
   );
