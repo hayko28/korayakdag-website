@@ -197,7 +197,7 @@ function DijitalUrunler() {
   return (
     <>
       <p className="intro">
-        Sistem Global ekosisteminin dijital ürünleri. Danışmanlık ihtiyacını yazılım ve platformla destekler. Devlet hibesi içermez.
+        Sistem Global ekosisteminin dijital ürünleri. Danışmanlık ihtiyacını yazılım ve platformla destekler.
       </p>
       {urunler.map(([baslik, aciklama, rows]) => (
         <div key={baslik}>
