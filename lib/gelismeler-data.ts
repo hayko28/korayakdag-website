@@ -1775,6 +1775,20 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: AB'ye düzenli ihracat yapan ve Yetkilendirilmiş Yükümlü statüsüne sahip işletmelere, onay metnini YYS E-Başvuru Sistemi üzerinden vakit kaybetmeden doldurmalarını öneririm; onay verilmediği sürece karşılıklı tanıma anlaşmasının sağlayacağı gümrük kolaylıklarından yararlanılamıyor.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "14 Ekim 2026",
+    eklendiTarihi: "2026-10-22",
+    baslik:
+      "Türkiye-AB Gümrük Birliği güncellemesinde e-ticaret, kamu alımları, yatırım ve tarım başlıklarında ilerleme sağlandı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat, 14 Ekim 2026'da Brüksel'de yaptığı açıklamada Gümrük Birliği'nin güncellenmesi kapsamındaki dört temel başlıkta (e-ticaret, kamu alımları, yatırımlar ve tarım ürünleri) ilerleme kaydedildiğini bildirdi. Kamu alımlarında temmuzda TBMM'den geçen kanunun ardından ikili anlaşma için analiz sürecinin tamamlandığı ve teknik görüşmelerin başladığı belirtilirken, dijital ticarette Türkiye'nin AB'nin 1 Temmuz 2026'da uygulamaya koyduğu paket başına 3 avroluk tahsilattan muaf tutulduğu açıklandı. Bolat, resmi müzakereler için AB Konseyi'nin Avrupa Komisyonu'na henüz yetki vermediğini, ancak ilgili başlıklarda Komisyon'un yetkili birimleriyle görüşmelerin sürdüğünü aktardı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakani-omer-bolat-gumruk-birliginin-guncellenmesinde-bazi-alanlarda-ilerleme-kaydedildigini-soyledi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Resmi müzakere süreci AB Konseyi'nin yetkilendirmesine bağlı olduğundan süreç hâlâ teknik görüşme aşamasında; ancak e-ticarette paket başı tahsilat muafiyetinin sürmesi, AB'ye düşük değerli e-ihracat gönderisi yapan işletmeler için şimdiden somut bir avantaj. İhracatçı müşterilerimize bu dört başlıktaki gelişmeleri önümüzdeki aylarda yakından takip etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
