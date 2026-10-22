@@ -239,7 +239,6 @@ function DijitalUrunler() {
 function Hizmetler() {
   return (
     <>
-      <p className="intro">Bu hizmetlerde devlet hibesi yoktur. Şirketin kendi ihtiyacına göre çalışırız.</p>
       {hizmet.map(([baslik, rows]) => (
         <div key={baslik}>
           <h2>{baslik}</h2>
