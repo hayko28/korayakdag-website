@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-destekleyiciler-yonetmeligi-kaldirildi-hibeler-bitiyor-mu",
+    title: "KOSGEB'de 23 Yıllık Yönetmelik Kaldırıldı: Hibe ve Kredi Destekleri Sona Eriyor mu?",
+    excerpt: "16 Ekim 2026 tarihli 33402 sayılı Resmî Gazete'de KOSGEB Destekleyiciler Yönetmeliği yürürlükten kaldırıldı. Haber başlıkları endişe yaratsa da, kaldırılan 2003 tarihli yönetmelik yalnızca üçüncü kişilerin KOSGEB'e sponsorluk yapmasını düzenliyordu. İşletmelere hibe veren KOSGEB Destek Programları Yönetmeliği etkilenmedi; resmî metne dayanan güncel açıklama.",
+    category: "KOSGEB • MEVZUAT GÜNDEMİ • 2026",
+    date: "Ekim 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1768158989131-64cbff67f292?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "arge-indirimi-teknokent-istisnasi-girisim-sermayesi-fonu-zorunlulugu-2026",
     title: "Ar-Ge İndirimi ve Teknokent İstisnasında Girişim Sermayesi Fonu Zorunluluğu: 2026'da Eşik 5 Milyon TL'ye Yükseldi",
     excerpt: "5746 sayılı Kanun madde 3/14 ve 4691 sayılı Kanun Ek madde 3 uyarınca, Ar-Ge indirimi, tasarım indirimi veya teknokent kazanç istisnasından yararlanan şirketler bu tutarın bir kısmını girişim sermayesi fonuna yatırmak zorunda. 31 Aralık 2025 tarihli 10803 sayılı Cumhurbaşkanı Kararı ile eşik 2026'da 5 milyon TL'ye yükseldi; yatırım son tarihi 31 Aralık 2026.",
