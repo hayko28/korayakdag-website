@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-bigg-tohum-yatirim-asama-3-cagrisi-2026",
+    title: "TÜBİTAK BiGG+ Tohum Yatırım Çağrısı (1812-BİGG+2026-1): Aşama 2'yi Tamamlayan Girişimler 8 Milyon TL'ye Kadar Yatırımı Nasıl Alır?",
+    excerpt: "TÜBİTAK, 5 Ekim 2026'da 1812 Yatırım Tabanlı Girişimcilik Destek Programı'nın Aşama 3'ü için yeni bir çağrı açtı. Aşama 2'de yatırım alıp projesini tamamlamış veya 1512 projesini bitirmiş şirketlere 8 milyon TL'ye kadar, en fazla %10 hisse karşılığında tohum yatırımı sağlanıyor. Şartlar, değerlendirme kriterleri ve 20 Kasım 2026 başvuru takvimiyle güncel rehber.",
+    category: "TÜBİTAK • BİGG+ TOHUM YATIRIM • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-destekleyiciler-yonetmeligi-kaldirildi-hibeler-bitiyor-mu",
     title: "KOSGEB'de 23 Yıllık Yönetmelik Kaldırıldı: Hibe ve Kredi Destekleri Sona Eriyor mu?",
     excerpt: "16 Ekim 2026 tarihli 33402 sayılı Resmî Gazete'de KOSGEB Destekleyiciler Yönetmeliği yürürlükten kaldırıldı. Haber başlıkları endişe yaratsa da, kaldırılan 2003 tarihli yönetmelik yalnızca üçüncü kişilerin KOSGEB'e sponsorluk yapmasını düzenliyordu. İşletmelere hibe veren KOSGEB Destek Programları Yönetmeliği etkilenmedi; resmî metne dayanan güncel açıklama.",
