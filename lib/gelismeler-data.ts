@@ -1789,6 +1789,32 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Resmi müzakere süreci AB Konseyi'nin yetkilendirmesine bağlı olduğundan süreç hâlâ teknik görüşme aşamasında; ancak e-ticarette paket başı tahsilat muafiyetinin sürmesi, AB'ye düşük değerli e-ihracat gönderisi yapan işletmeler için şimdiden somut bir avantaj. İhracatçı müşterilerimize bu dört başlıktaki gelişmeleri önümüzdeki aylarda yakından takip etmelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "21 Ekim 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-10-23",
+    baslik:
+      "TCMB verileri: Reel kesim güveni ekimde geriledi, kapasite kullanım oranı hafif yükseldi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası'nın 21 Ekim 2026'da açıkladığı İktisadi Yönelim İstatistikleri ve Reel Kesim Güven Endeksi çalışmasına göre, mevsimsellikten arındırılmış Reel Kesim Güven Endeksi ekim ayında 1,4 puan düşüşle 101,1'e geriledi; arındırılmamış endeks ise 102'den 99,8'e indi. Aynı dönemde imalat sanayinde kapasite kullanım oranı mevsimsellikten arındırılmış bazda 0,2 puan artışla yüzde 74,3'e çıktı. Anket, imalat sanayinde faaliyet gösteren 1.965 iş yerinin yanıtlarına dayanıyor; toplam yeni sipariş ve önümüzdeki üç aya dair üretim beklentisi kalemleri zayıflarken, mamul mal stoku, sabit sermaye yatırımı ile istihdam ve ihracat beklentisi kalemleri iyileşti.",
+    kaynakUrl: "https://bloomberght.com/reel-kesim-guveni-ekim-de-geriledi-3792066",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Reel kesim güveninde görülen gerileme ile kapasite kullanım oranındaki hafif artışın birlikte gelmesi, imalatçı işletmelerin mevcut siparişi karşılamakta şu an zorlanmadığını ama önümüzdeki üç aya dair beklentisinin zayıfladığını gösteriyor. İmalatçı işletmelere yıl sonu üretim ve stok planlamasını bu ayrışmayı dikkate alarak yapmalarını öneririm.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-10-23",
+    baslik: "TCMB politika faizini 1 puan indirerek yüzde 36'ya çekti",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası, 22 Ekim 2026 tarihli Para Politikası Kurulu toplantısının ardından yayımladığı 2026-45 sayılı basın duyurusuyla bir hafta vadeli repo ihale faiz oranını yüzde 37'den yüzde 36'ya indirdi. Karar, Eylül ayı toplantısında faizin yüzde 37'de sabit tutulmasının ardından geldi.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-45",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek puanlık bu indirim kredi maliyetlerinde hemen büyük bir rahatlama yaratmayabilir. İşletmelere yatırım ve kredi kararlarını tek bir PPK kararına göre değil, önümüzdeki aylardaki indirim eğiliminin sürüp sürmediğine göre planlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
