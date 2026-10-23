@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tcmb-faiz-indirdi-reel-kesim-guveni-dustu",
+    title:
+      "TCMB Faizi İndirdi, Reel Kesim Güveni Düştü: Hangisine Göre Plan Yapılır?",
+    excerpt:
+      "21 Ekim 2026'da Reel Kesim Güven Endeksi 1,4 puan gerilerken, ertesi gün TCMB politika faizini yüzde 37'den yüzde 36'ya indirdi. Aynı hafta yayımlanan bu iki haber, bir yatırım veya işe alım kararını tek bir göstergeye göre vermenin neden eksik bir okuma olduğunu gösteriyor.",
+    tag: "Strateji",
+    date: "23 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-yonetmeligi-kaldirildi-haberi-ne-anlama-geliyor",
     title:
       "KOSGEB'de \"Yönetmelik Kaldırıldı\" Haberi Neden Çoğu İşletmeyi Boşuna Korkuttu?",
