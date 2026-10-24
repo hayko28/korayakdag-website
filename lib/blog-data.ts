@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "madrid-protokolu-yurt-disinda-marka-tescili-nasil-yapilir",
+    title: "Madrid Protokolü ile Yurt Dışında Marka Tescili Nasıl Yapılır? Süreç, Maliyet ve Devlet Desteği",
+    excerpt: "TÜRKPATENT'teki mevcut marka başvurunuzu esas alarak tek bir uluslararası başvuruyla Madrid Sistemi'ne üye 132 ülkede koruma talep etme süreci, WIPO ücret kalemleri, merkezi saldırı riski ve Ticaret Bakanlığı'nın %50 oranında, yıllık 750.000 TL'ye kadar yurt dışı marka tescil desteğiyle kapsamlı rehber.",
+    category: "MARKA VE FİKRİ MÜLKİYET • YURT DIŞI TESCİL • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1728985381714-8660eebcf9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-bigg-tohum-yatirim-asama-3-cagrisi-2026",
     title: "TÜBİTAK BiGG+ Tohum Yatırım Çağrısı (1812-BİGG+2026-1): Aşama 2'yi Tamamlayan Girişimler 8 Milyon TL'ye Kadar Yatırımı Nasıl Alır?",
     excerpt: "TÜBİTAK, 5 Ekim 2026'da 1812 Yatırım Tabanlı Girişimcilik Destek Programı'nın Aşama 3'ü için yeni bir çağrı açtı. Aşama 2'de yatırım alıp projesini tamamlamış veya 1512 projesini bitirmiş şirketlere 8 milyon TL'ye kadar, en fazla %10 hisse karşılığında tohum yatırımı sağlanıyor. Şartlar, değerlendirme kriterleri ve 20 Kasım 2026 başvuru takvimiyle güncel rehber.",
