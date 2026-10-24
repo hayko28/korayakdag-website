@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "enflasyon-duzeltmesi-2026-2027-sart-aramiyor",
+    title: "Enflasyon Düzeltmesi 2026'da Neden Artık Şart Aramıyor?",
+    excerpt:
+      "7571 sayılı Kanun'un VUK'a eklediği geçici 37. madde, 25 Aralık 2025'te yürürlüğe girdi ve 2025, 2026, 2027 hesap dönemlerinde enflasyon düzeltmesi şartları oluşsa da oluşmasa da uygulanmayacağını hükme bağladı. Şartların oluşup oluşmadığını bekleyen bir finans ekibi için artık sorulması gereken soru değişti.",
+    tag: "Hukuk ve Vergi",
+    date: "24 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tcmb-faiz-indirdi-reel-kesim-guveni-dustu",
     title:
       "TCMB Faizi İndirdi, Reel Kesim Güveni Düştü: Hangisine Göre Plan Yapılır?",
