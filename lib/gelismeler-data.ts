@@ -1815,6 +1815,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Tek puanlık bu indirim kredi maliyetlerinde hemen büyük bir rahatlama yaratmayabilir. İşletmelere yatırım ve kredi kararlarını tek bir PPK kararına göre değil, önümüzdeki aylardaki indirim eğiliminin sürüp sürmediğine göre planlamalarını öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Ekim 2026",
+    eklendiTarihi: "2026-10-24",
+    baslik:
+      "Ticaret Bakanlığı, İstanbul'da selden etkilenen esnafa 80 milyon TL nakdi destek sağlayacağını açıkladı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat, 14-15 Ekim 2026'daki şiddetli yağışlar nedeniyle selden etkilenen İstanbul esnafına 80 milyon TL'lik nakdi destek sağlanacağını duyurdu. Destek, TESKOMB aracılığıyla 19 Ekim Pazartesi günü İstanbul Valiliği emrine gönderilecek; etkilenen esnafın belirlenmesi ve ödemelerin yapılması Valilik koordinasyonunda yürütülecek.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakani-omer-bolat-istanbulda-selden-etkilenen-esnafa-80-milyon-lira-nakdi-destek-saglanacagini-acikladi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Açıklamada esnaf başına ödenecek tutar, başvuru şartı veya ödeme tarihi gibi ayrıntılar henüz netleşmedi. Selden etkilenen işletmelere, süreci kendi ilçe esnaf odası veya TESKOMB'a bağlı kooperatifleri üzerinden takip etmelerini öneririm.",
+  },
+  {
+    kurum: "Türk Eximbank",
+    tarih: "23 Ekim 2026",
+    eklendiTarihi: "2026-10-24",
+    baslik:
+      "Türk Eximbank, Kanada'nın ihracat destek kuruluşu EDC ile mutabakat zaptı imzaladı",
+    ozet:
+      "Türk Eximbank ile Kanada'nın resmi ihracat destek kuruluşu Export Development Canada (EDC) arasında, iki ülke arasındaki ihracat kredisi iş birliğini güçlendirmeyi amaçlayan bir mutabakat zaptı imzalandı. Anlaşma, Türk ve Kanadalı firmaların Afrika, Orta Doğu-Kuzey Afrika (MENA) ve Orta Asya gibi öncelikli bölgelerdeki üçüncü ülke pazarlarında ortak proje geliştirmesini destekliyor; imza, Türkiye-Kanada Serbest Ticaret Anlaşması müzakerelerinin 30 Kasım haftasında başlayacağının duyurulduğu görüşmeyle aynı güne denk geldi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/turk-eximbank-ile-kanadanin-ihracat-destek-kurulusu-edc-arasinda-mutabakat-zapti-imzalandi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Mutabakat zaptı henüz somut bir kredi veya sigorta ürünü vaat etmiyor, çerçeve iş birliği niteliğinde. Afrika, MENA veya Orta Asya'da ortak proje geliştirmeyi planlayan ihracatçı ve yatırımcı firmalara, bu iş birliğin hangi somut finansman araçlarına dönüştüğünü Türk Eximbank'tan takip etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
