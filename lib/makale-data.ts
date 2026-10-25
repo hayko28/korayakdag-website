@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tuketici-sozlesmesi-cezasi-fahis-fiyati-gecti",
+    title:
+      "Ticaret Bakanlığı'nın Eylül Bilançosunda En Büyük Ceza Kalemi Fahiş Fiyat Değil",
+    excerpt:
+      "Ticaret Bakanlığı'nın 6 Ekim 2026'da açıkladığı dokuz aylık piyasa denetim bilançosunda fahiş fiyat cezası 399,5 milyon TL'de kalırken, tüketici sözleşmelerinden kesilen ceza 735,3 milyon TL'ye ulaştı. Fiyat etiketi her gün kontrol ediliyor, sözleşme metni ise genelde bir şikayet gelene kadar kimse tarafından yeniden okunmuyor.",
+    tag: "Hukuk ve Vergi",
+    date: "25 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "enflasyon-duzeltmesi-2026-2027-sart-aramiyor",
     title: "Enflasyon Düzeltmesi 2026'da Neden Artık Şart Aramıyor?",
     excerpt:
