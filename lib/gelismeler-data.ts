@@ -1843,6 +1843,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Mutabakat zaptı henüz somut bir kredi veya sigorta ürünü vaat etmiyor, çerçeve iş birliği niteliğinde. Afrika, MENA veya Orta Asya'da ortak proje geliştirmeyi planlayan ihracatçı ve yatırımcı firmalara, bu iş birliğin hangi somut finansman araçlarına dönüştüğünü Türk Eximbank'tan takip etmelerini öneririm.",
   },
+  {
+    kurum: "KVKK",
+    tarih: "16 Eylül 2026 (8 Ekim 2026'da Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-10-25",
+    baslik:
+      "KVKK, kurumsal e-posta ve iş iletişim kanallarının işveren tarafından denetlenmesine ilişkin ilke kararı yayımladı",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu'nun 16 Eylül 2026 tarihli ve 2026/2035 sayılı ilke kararı, 8 Ekim 2026 tarihli ve 33394 sayılı Resmî Gazete'de yayımlandı. Karar, kurumsal e-posta hesaplarının yanı sıra kurum içi mesajlaşma uygulamaları, CRM/talep yönetim sistemleri ve toplantı platformlarındaki sohbet/kayıt alanlarını da somut olaya göre kapsıyor; iletişim aracının işverene ait olmasının çalışanın tüm yazışmalarına sınırsız erişim hakkı vermediğini, trafik/log kaydı incelemesinin de kişisel veri işleme sayıldığını belirtiyor. İçeriğe erişim, yalnızca trafik verisi denetiminin yetersiz kaldığı istisnai hallerde mümkün; çalışanın önceden somut şekilde bilgilendirilmesi şartı aranıyor ve gizli izleme yöntemleri hukuka aykırı sayılıyor.",
+    kaynakUrl:
+      "https://www.kvkk.gov.tr/Icerik/6625/Kisisel-Verileri-Koruma-Kurulu-nun-Yeni-Yayinlanan-Karar-Ozetleri",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Çalışanlara kurumsal e-posta veya iletişim aracı tahsis eden işletmelere, denetim yetkisini personel el kitabında tek bir genel cümleyle değil; hangi aracın, hangi kapsamda ve hangi şartlarda denetleneceğini somut şekilde açıklayan bir aydınlatma metniyle desteklemelerini öneririm. Mevcut IT/BT denetim uygulamalarını bu kararla kıyaslamak faydalı olur.",
+  },
+  {
+    kurum: "TCMB",
+    tarih: "19 Ekim 2026 (Ağustos 2026 verileri)",
+    eklendiTarihi: "2026-10-25",
+    baslik:
+      "Ağustos 2026 cari işlemler hesabı 4 milyar 53 milyon dolar fazla verdi",
+    ozet:
+      "Strateji ve Bütçe Başkanlığı'nın 19 Ekim 2026'da yayımladığı Ödemeler Dengesi verilerine göre, Türkiye'nin cari işlemler hesabı ağustos ayında 4 milyar 53 milyon dolar fazla verdi; piyasa beklentisi bu fazlanın 3-3,8 milyar dolar aralığında olacağı yönündeydi. Altın ve enerji hariç cari işlemler hesabı ağustosta 8 milyar 205 milyon dolar fazla kaydederken, 12 aylık kümülatif cari açık 42,1 milyar dolara, Ocak-Ağustos dönemi açığı ise 31,5 milyar dolara ulaştı. Aynı dönemde doğrudan yatırımlarda 141 milyon dolar net giriş, portföy yatırımlarında 1 milyar 34 milyon dolar net çıkış görüldü.",
+    kaynakUrl: "https://www.sbb.gov.tr/?p=65334",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek aylık fazlanın beklentilerin üzerinde gelmesi olumlu, ama 12 aylık kümülatif açığın hâlâ 42 milyar dolar seviyesinde kalması tabloyu dengeliyor. İşletmelere döviz ve finansman planlamasını yıllıklandırılmış trende bakarak yapmalarını, tek bir aylık veriye göre karar almamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
