@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "hizmet-ihracati-kazanc-indirimi-yuzde-100-2026",
+    title: "Hizmet İhracatında Kazanç İndirimi %100 Oldu: Yazılım, Mühendislik ve Danışmanlık Şirketleri İçin 2026 Rehberi",
+    excerpt: "30 Nisan 2026 tarihli 11257 sayılı Karar ile yurt dışına verilen yazılım, mühendislik, mimarlık, tasarım, eğitim ve sağlık hizmetlerinde kazanç indirimi %80'den %100'e çıktı. Kapsam, para transferi ve YMM raporu şartları, asgari kurumlar vergisiyle etkileşimi ve Ticaret Bakanlığı'nın 10962 sayılı Karar'la topladığı yeni destek paketiyle güncel rehber.",
+    category: "VERGİ TEŞVİKLERİ • HİZMET İHRACATI • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1634176866089-b633f4aec882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "madrid-protokolu-yurt-disinda-marka-tescili-nasil-yapilir",
     title: "Madrid Protokolü ile Yurt Dışında Marka Tescili Nasıl Yapılır? Süreç, Maliyet ve Devlet Desteği",
     excerpt: "TÜRKPATENT'teki mevcut marka başvurunuzu esas alarak tek bir uluslararası başvuruyla Madrid Sistemi'ne üye 132 ülkede koruma talep etme süreci, WIPO ücret kalemleri, merkezi saldırı riski ve Ticaret Bakanlığı'nın %50 oranında, yıllık 750.000 TL'ye kadar yurt dışı marka tescil desteğiyle kapsamlı rehber.",
