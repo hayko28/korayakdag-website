@@ -35,16 +35,17 @@ export default function BlogPage() {
       readTime="12 Dakika"
       slug="tubitak-1501-1507-ar-ge-destekleri-2026"
       programDurumu="acik"
+      sonBasvuruTarihi="1507: 11 Kasım 2026"
     >
-        <div className="rounded-2xl border-l-4 border-green-500 bg-green-50 p-8">
+        <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
-            🟢 Güncelleme (5 Ekim 2026): 2026 Yılı 2. Çağrısı Açık
+            🟠 Güncelleme (26 Ekim 2026): 1501 İkinci Çağrısı Kapandı, 1507 Başvuruları Sürüyor
           </h2>
           <p className="mb-6 leading-8 text-gray-700">
-            TÜBİTAK, 1501 Sanayi Ar-Ge Destek Programı ve 1507 KOBİ Ar-Ge
-            Başlangıç Destek Programı&apos;nın 2026 yılı 2. çağrılarını 20
-            Temmuz 2026 tarihinde başvuruya açtı. Başvurular hâlâ devam
-            ediyor; aşağıdaki tabloda güncel çağrı takvimini bulabilirsiniz.
+            TÜBİTAK 1501 Sanayi Ar-Ge Destek Programı&apos;nın 2026 yılı 2. çağrısı
+            26 Ekim 2026 saat 23:59 itibarıyla kapandı. 1507 KOBİ Ar-Ge Başlangıç
+            Destek Programı&apos;nın 2. çağrısı ise hâlâ açık ve son başvuru tarihi
+            11 Kasım 2026. Aşağıdaki tabloda güncel çağrı takvimini bulabilirsiniz.
           </p>
           <div className="overflow-x-auto rounded-xl border bg-white">
             <table className="w-full text-left text-sm md:text-base">
@@ -54,6 +55,7 @@ export default function BlogPage() {
                   <th className="p-4">Çağrı Açılışı</th>
                   <th className="p-4">Ön Kayıt Son Tarihi</th>
                   <th className="p-4">Çağrı Kapanışı (Son Başvuru)</th>
+                  <th className="p-4">Durum</th>
                 </tr>
               </thead>
               <tbody>
@@ -61,25 +63,26 @@ export default function BlogPage() {
                   <td className="p-4 font-semibold">1501</td>
                   <td className="p-4">20.07.2026</td>
                   <td className="p-4">22.10.2026, 23:59</td>
-                  <td className="p-4 font-semibold text-red-600">26.10.2026, 23:59</td>
+                  <td className="p-4 font-semibold">26.10.2026, 23:59</td>
+                  <td className="p-4 font-semibold text-red-600">Kapandı</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold">1507</td>
                   <td className="p-4">20.07.2026</td>
                   <td className="p-4">09.11.2026, 23:59</td>
-                  <td className="p-4 font-semibold text-red-600">11.11.2026, 23:59</td>
+                  <td className="p-4 font-semibold">11.11.2026, 23:59</td>
+                  <td className="p-4 font-semibold text-emerald-600">Açık</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="mt-6 leading-8 text-gray-700">
-            Kuruluş bazlı ön kayıt işlemi PRODİS üzerinden yapılır ve çağrı
-            açılışının beklenmesine gerek yoktur; ön kayıt evraklarının çağrı
-            kapanış tarihinden en az bir iş günü önce TÜBİTAK&apos;a ulaşması
-            gerekir, bu nedenle ön kaydın erken tamamlanması önerilir. Ayrıca bu çağrı döneminde
-            1501 Programı&apos;na yalnızca <strong>KOBİ ölçeğindeki</strong>{" "}
-            sermaye şirketleri başvurabilmektedir; büyük ölçekli firmalar bu
-            dönem 1501 çağrısına başvuru yapamaz.
+            1501 çağrısını bu dönem için kaçıran firmalar için en yakın alternatif
+            1507 Programı&apos;dır; ön kayıt işlemi PRODİS üzerinden yapılır ve ön
+            kayıt evraklarının çağrı kapanış tarihinden en az bir iş günü önce
+            TÜBİTAK&apos;a ulaşması gerektiğinden erken başvuru önerilir. 1501
+            Programı&apos;nın 3. çağrısı için TÜBİTAK&apos;ın resmi duyuru sayfası
+            takip edilmelidir; bu yazı yeni çağrı açıldığında güncellenecektir.
           </p>
         </div>
 
@@ -571,15 +574,17 @@ export default function BlogPage() {
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
               TÜBİTAK 1501 ve 1507 programları genellikle yılda 2 kez çağrıya
-              çıkmaktadır. 2026 yılı 2. çağrısı 20 Temmuz 2026&apos;da açıldı
-              ve son başvuru tarihleri 1501 için <strong>26 Ekim 2026</strong>,
-              1507 için <strong>11 Kasım 2026</strong> olarak belirlendi.
-              Kuruluş bazlı ön kayıt zorunlu olduğundan ve ön kayıt son
-              tarihleri (1501 için 22 Ekim, 1507 için 9 Kasım) çağrı
-              kapanışından önce geldiğinden, PRODİS üzerindeki ön kayıt
-              işleminin erken tamamlanması gerekir. Proje hazırlık süreci en
-              az 1-2 ay sürdüğünden teknik kurgunun vakit kaybetmeden
-              başlatılması önerilir.
+              çıkmaktadır. 2026 yılı 2. çağrısı 20 Temmuz 2026&apos;da açıldı.
+              1501 Programı&apos;nın son başvuru tarihi olan{" "}
+              <strong>26 Ekim 2026</strong> itibarıyla bu çağrı kapanmıştır.
+              1507 Programı&apos;nda ise son başvuru tarihi{" "}
+              <strong>11 Kasım 2026</strong> olup başvurular devam etmektedir.
+              Kuruluş bazlı ön kayıt zorunlu olduğundan ve 1507 için ön kayıt
+              son tarihinin (9 Kasım) çağrı kapanışından önce geldiğinden,
+              PRODİS üzerindeki ön kayıt işleminin erken tamamlanması gerekir.
+              Proje hazırlık süreci en az 1-2 ay sürdüğünden teknik kurgunun
+              vakit kaybetmeden başlatılması önerilir. 1501&apos;in 3. çağrısı
+              açıldığında bu rehber güncellenecektir.
             </p>
           </div>
         </section>

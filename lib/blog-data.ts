@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-1602-patent-destek-programi-ulusal-mi-uluslararasi-mi",
+    title: "TÜBİTAK Patent Desteği Hâlâ Var mı? 1602 Programında Ulusal Başvuru Neden Kapalı, Uluslararası Destek Nasıl Alınır?",
+    excerpt: "TÜBİTAK 1602 Patent Destek Programı'nda yalnızca Türkiye'de geçerli ulusal patent başvurularına yönelik destek, 03.01.2019 tarihli Yönetim Kurulu kararıyla kapatıldı. Hâlâ açık olan tek kapsam, PCT yoluyla yapılan uluslararası başvurulara sağlanan PD-200, PD-201 ve PD-202 destekleri; 240.000 TL inceleme raporu tavanı ve 55.000 TL tescil ödülüyle 2026 güncel rehber.",
+    category: "TÜBİTAK • PATENT DESTEĞİ • 2026",
+    date: "Ekim 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1769147339214-076740872485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "hizmet-ihracati-kazanc-indirimi-yuzde-100-2026",
     title: "Hizmet İhracatında Kazanç İndirimi %100 Oldu: Yazılım, Mühendislik ve Danışmanlık Şirketleri İçin 2026 Rehberi",
     excerpt: "30 Nisan 2026 tarihli 11257 sayılı Karar ile yurt dışına verilen yazılım, mühendislik, mimarlık, tasarım, eğitim ve sağlık hizmetlerinde kazanç indirimi %80'den %100'e çıktı. Kapsam, para transferi ve YMM raporu şartları, asgari kurumlar vergisiyle etkileşimi ve Ticaret Bakanlığı'nın 10962 sayılı Karar'la topladığı yeni destek paketiyle güncel rehber.",
