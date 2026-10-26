@@ -1870,6 +1870,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Tek aylık fazlanın beklentilerin üzerinde gelmesi olumlu, ama 12 aylık kümülatif açığın hâlâ 42 milyar dolar seviyesinde kalması tabloyu dengeliyor. İşletmelere döviz ve finansman planlamasını yıllıklandırılmış trende bakarak yapmalarını, tek bir aylık veriye göre karar almamalarını öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "15 Ekim 2026",
+    eklendiTarihi: "2026-10-26",
+    baslik:
+      "Merkezi yönetim bütçesi eylülde 532,2 milyar TL açık verdi, dokuz aylık açık 1,84 trilyon TL'ye çıktı",
+    ozet:
+      "Hazine ve Maliye Bakanlığı'nın 15 Ekim 2026'da yayımladığı Eylül 2026 Aylık Bütçe Gerçekleşme Raporu'na göre, merkezi yönetim bütçesi eylül ayında 532,2 milyar TL açık verdi; bütçe giderleri 1 trilyon 785,4 milyar TL'ye, bütçe gelirleri ise 1 trilyon 253,1 milyar TL'ye ulaştı. Faiz dışı denge aynı ay 269,2 milyar TL açık kaydederken, Ocak-Eylül dönemi toplam bütçe açığı 1 trilyon 840,3 milyar TL'ye, faiz dışı fazla ise 410,8 milyar TL'ye ulaştı.",
+    kaynakUrl: "https://kmyd.hmb.gov.tr/2026-eylul-ayi-butce-gerceklesme-sonuclari",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Eylül ayındaki açığın yılın en yüksek aylık açığı olması, kamu harcamalarının gelirlerden daha hızlı arttığı bir döneme işaret ediyor. İşletmelere yıl sonu bütçe ve nakit akışı planlarını yalnızca enflasyon ve faiz beklentisine göre değil, kamu maliyesindeki bu seyri de dikkate alarak gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "7 Ekim 2026",
+    eklendiTarihi: "2026-10-26",
+    baslik:
+      "TÜBİTAK 2209-A ve 2209-B Üniversite Öğrencileri Araştırma Projeleri Destekleme Programları'nın 2026 yılı çağrıları açıldı",
+    ozet:
+      "TÜBİTAK, ön lisans ve lisans öğrencilerine araştırma ve proje yönetimi deneyimi kazandırmayı hedefleyen 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı ile öğrenci projelerini sanayinin ihtiyaçlarına yönlendiren 2209-B Üniversite Öğrencileri Sanayiye Yönelik Araştırma Projeleri Desteği Programı'nın 2026 yılı çağrılarını açtı. Başvurular 7 Ekim-11 Kasım 2026 (saat 17.30) arasında TÜBİTAK Yönetim Bilgi Sistemi üzerinden alınıyor; kuruluş yetkilisi e-imza işlemlerinin 23 Kasım 2026'ya kadar tamamlanması gerekiyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi-ve-2209-b-universite-ogrencileri-sanayiye-yonelik-arastirma-projeleri-destegi-programi-2026-yili-cagrilari-acildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: 2209-B özellikle sanayi kuruluşlarıyla iş birliği içinde yürütülen öğrenci projelerini destekliyor. Ar-Ge departmanı küçük olan KOBİ'lere, üniversiteyle somut bir sanayi sorununu bu program çerçevesinde bir öğrenci projesine dönüştürmeyi değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
