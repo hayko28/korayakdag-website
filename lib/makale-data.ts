@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sermaye-artirimi-suresi-2027ye-uzadi",
+    title: "Sermaye Artırımında Son Tarih 2027'ye Uzadı: Rahatlamak mı, Ertelemek mi?",
+    excerpt:
+      "17 Ekim 2026'da Resmi Gazete'de yayımlanan tebliğle, Türk Ticaret Kanunu'nun geçici 15. maddesi kapsamındaki asgari sermaye artırımı süresi 31 Aralık 2026'dan 31 Aralık 2027'ye uzatıldı. Danışmanlık pratiğinde böyle süre uzatmalarının ortak bir sonucu var: ertelenen dosyalar genelde bir yıl sonra aynı telaşla masaya geri dönüyor.",
+    tag: "Hukuk ve Vergi",
+    date: "26 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tuketici-sozlesmesi-cezasi-fahis-fiyati-gecti",
     title:
       "Ticaret Bakanlığı'nın Eylül Bilançosunda En Büyük Ceza Kalemi Fahiş Fiyat Değil",
