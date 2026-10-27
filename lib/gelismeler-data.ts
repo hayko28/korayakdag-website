@@ -1897,6 +1897,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: 2209-B özellikle sanayi kuruluşlarıyla iş birliği içinde yürütülen öğrenci projelerini destekliyor. Ar-Ge departmanı küçük olan KOBİ'lere, üniversiteyle somut bir sanayi sorununu bu program çerçevesinde bir öğrenci projesine dönüştürmeyi değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "8 Ekim 2026 (16 Ekim 2026'da duyuruldu)",
+    eklendiTarihi: "2026-10-27",
+    baslik:
+      "Reklam Kurulu 374. toplantısında sosyal medya hesaplarına reklam etiketi ihlali nedeniyle durdurma cezası",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 8 Ekim 2026 tarihli 374. toplantısında 161 dosyayı görüştü; 136 dosya hakkında durdurma cezası uygulanmasına, toplamda 17 milyon 176 bin 744 TL idari para cezası kesilmesine karar verdi. Kurul, resen incelemeye aldığı 32 sosyal medya hesabının paylaşımlarında reklam veya iş birliği olduğunu belirtme yükümlülüğüne uymadığını tespit ederek bu hesaplara durdurma cezası uyguladı. Bakanlığın açıklamasına göre 2026'nın ilk dokuz ayında değerlendirilen 33 binin üzerinde başvuru sonucunda toplam 249 milyon TL'yi aşan idari para cezası kesildi.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-aldatici-reklamlara-karsi-denetimlerini-kararlilikla-surduruyor",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Kurul artık yalnızca marka hesaplarını değil, içerik üreticisi hesaplarını da resen inceleyip reklam etiketi eksikliğini doğrudan cezalandırıyor. Sosyal medyada içerik üreticisiyle iş birliği yapan işletmelere, paylaşımlarda 'reklamdır' veya 'iş birliğidir' ibaresinin net şekilde yer aldığını düzenli olarak kontrol etmelerini öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "19 Ekim 2026",
+    eklendiTarihi: "2026-10-27",
+    baslik:
+      "Ankara Temelli'de Rönesans Holding ve Digital Realty iş birliğiyle 4,1 milyar dolarlık veri merkezi yatırımının temeli atıldı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, Ankara'nın Temelli bölgesindeki Başkent Organize Sanayi Bölgesi'nde kurulacak veri merkezinin temel atma törenine katıldı. İlk etapta 22 megavat kapasiteli tesise 450 milyon dolar altyapı ve bina yatırımı yapılacak; sonraki aşamada 900 milyon dolarlık gelişmiş soğutma sistemi ve bilişim altyapısı eklenecek. Tüm etaplar tamamlandığında bölgedeki toplam sabit sermaye yatırımı 4,1 milyar dolara ulaşacak. Bakan Kacır, bu yatırım ile İstanbul'daki benzer bir yatırımla hedeflenen toplam 200 megavatlık kapasitenin, Türkiye'nin 2030 için belirlediği 1 gigavatlık veri merkezi hedefinin beşte birine denk geldiğini belirtti.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6ad6183686baa614dfece4db/AA/tr/bakan-kacir-ankara-temelli-veri-merkezi-temel-atma-toreni-nde-konustu-19-10-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Yatırımın kapasitesi etaplar halinde büyüyecek, bu da bölgedeki bulut ve veri merkezi hizmet arzının önümüzdeki yıllarda kademeli artacağı anlamına geliyor. Veri merkezi veya bulut altyapısına bağımlı büyüme planı yapan teknoloji şirketlerine, bu tür yatırımların bölgesel enerji ve hizmet maliyetlerine olası etkisini zaman içinde takip etmelerini öneririm.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "18 Eylül 2026 (Ocak-Ağustos 2026 verileri)",
+    eklendiTarihi: "2026-10-27",
+    baslik:
+      "TOBB verileri: Yılın ilk 8 ayında kurulan şirket sayısı yüzde 6,4 artışla 75.814'e çıktı",
+    ozet:
+      "Türkiye Odalar ve Borsalar Birliği'nin (TOBB) açıkladığı verilere göre, 2026 yılının Ocak-Ağustos döneminde kurulan şirket sayısı bir önceki yılın aynı dönemine göre yüzde 6,4 artışla 71.224'ten 75.814'e yükseldi; kooperatiflerle birlikte toplam kuruluş sayısı 76.793'e ulaştı. Kurulan şirketlerin 68.253'ü limited, 7.559'u anonim şirket oldu; limited şirketler toplam sermayenin yüzde 70,1'ini oluşturdu. Aynı dönemde kapanan şirket sayısı yüzde 1,1 azalışla 18.284'te kaldı.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomik-veriler/tobb-acikladi-8-ayda-75-bin-814-sirket-kuruldu-haberi-840514",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Yeni kurulan şirket sayısındaki artışa karşın kapanan şirket sayısının aynı oranda gerilememesi, pazara girişin kolaylaştığı ama sürdürülebilirliğin hâlâ zorlu olduğu bir dönemi işaret ediyor. Yeni kurulan şirketlere, büyüme hedeflerini ilk yıldan itibaren somut bir iş planına ve nakit akışı projeksiyonuna bağlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
