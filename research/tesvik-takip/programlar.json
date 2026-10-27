@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-10-25",
+  "sonGuncelleme": "2026-10-27",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -10,7 +10,7 @@
       "kaynakUrl": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
       "ilkTespitTarihi": "2026-08-29",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
+      "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": "2026-10-31",
       "not": "GÜNCELLEME (2026-09-17): Genişletilen kapsamdaki finansman desteği için başvurular resmen açıldı, 1 Eylül - 31 Ekim 2026 tarihleri arasında alınıyor (daha önce açılış tarihi ilan edilmemişti). 28 Ağustos 2026'da Resmî Gazete'de yayımlanan Uygulama Yönetmeliği değişikliğiyle program 4447 sayılı Kanun geçici 35. madde kapsamında 2028'e uzatıldı; kredi destek puanı 10'dan 12'ye çıkarıldı, kredi limiti formülle (referans dönem ortalama prime esas kazanç x koruma dönemi ay sayısı/6; yatırım teşvik belgelilerde ilave istihdam x Ocak asgari ücreti x 6) hesaplanıyor. 2026-2 döneminde yalnızca finansman desteği var; çalışan başına 3.500 TL performans desteği sadece eski 2026-1 döneminde uygulanmıştı (KOSGEB resmi program sayfasında güncel dönem için böyle bir destek yazmıyor); kredi üst limiti KOBİ'ler için 50 milyon TL, büyük işletmeler için 150 milyon TL'ye yükseltildi (önceki limit 50 milyon TL idi). Blog yazısı güncellendi: /blog/istihdami-koruma-destek-programi-2026"
     },
@@ -96,7 +96,7 @@
       "id": "tubitak-1501-sanayi-arge-2-cagri",
       "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (2. Çağrı)",
       "kurum": "TÜBİTAK",
-      "durum": "acik",
+      "durum": "kapali",
       "sonBasvuruTarihi": "2026-10-26",
       "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
       "ilkTespitTarihi": "2026-08-21",
