@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kurulan-sirket-sayisi-artti-kapanis-orani-sabit-kaldi",
+    title:
+      "75.814 Yeni Şirket, Ama Kapanış Oranı Neden Aynı Hızla Düşmedi?",
+    excerpt:
+      "TOBB'un verilerine göre 2026'nın Ocak-Ağustos döneminde kurulan şirket sayısı yüzde 6,4 artışla 75.814'e çıktı, kapanan şirket sayısı ise yalnızca yüzde 1,1 azalarak 18.284'te kaldı. Kuruluş hızı ile hayatta kalma becerisi arasındaki bu makas, girişimcilik sürecinde gözden kaçan asıl riski gösteriyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "27 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sermaye-artirimi-suresi-2027ye-uzadi",
     title: "Sermaye Artırımında Son Tarih 2027'ye Uzadı: Rahatlamak mı, Ertelemek mi?",
     excerpt:
