@@ -1106,5 +1106,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1733190232275-be739ca2629d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "ur-ge-destegine-nasil-basvurulur-2026",
+    title: "UR-GE Desteğine Nasıl Başvurulur? Şirketler Doğrudan Başvuramıyor, 2026 Güncel Rehber",
+    excerpt: "UR-GE (Uluslararası Rekabetçiliğin Geliştirilmesi) projelerinde başvuru sahibi şirket değil, TİM/TOBB/oda/sektör derneği gibi bir işbirliği kuruluşudur. Eski 2010/8 sayılı Genelge mülga olsa da UR-GE, 5973 sayılı Karar'a dayanan yeni Genelge ile hâlâ aktif: işbirliği kuruluşu kimdir, şirket projeye nasıl dahil olur, %75 destek oranı hangi faaliyetlere uygulanıyor ve adım adım süreç.",
+    category: "UR-GE • İHRACAT DESTEKLERİ • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1741437136281-c66625b1a3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
