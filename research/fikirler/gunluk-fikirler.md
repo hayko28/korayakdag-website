@@ -1,3 +1,214 @@
+# Günlük Fikir Araştırması - 27 Ekim 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 27 Ekim 2026
+**Hedef:** Fintech B2B, fitness teknolojisi, otomotiv servis, diş hekimliği, turizm — geçmiş günlerden tamamen farklı sektörler
+
+---
+
+## FİKİR 1: B2B Fintech Pazaryeri — "İş Ortağı Ödeme Yönetimi Platformu"
+
+### Ne Bu?
+Türkiye'deki 5K+ POS işletmecisine, franchise operatörlerine, marketplace satıcılarına ve hizmet sağlayıcılarına **"yer satıcı/ortağı ödeme otomasyonu + muhasebe entegrasyonu + tedarikçi finansmanı" platformu.** Sistem: (1) İş ortağı (yer satıcı, hizmet sağlayıcı) gelir kaydediliyor, (2) Platform otomatik ödemeyi hesaplayıp yapmak, KDV kesintisi, stopaj otomasyonu (bordroda manuel işlem = çok zaman alıyor), (3) Her ortağın muhasebe dashboard'u (aylık rapor, gelir-gider), (4) Opsiyonel: kısa vadeli finansmanı ("sen 100K kazandın, 30K ihtiyacın var mı kredisi bana al"), (5) Batch settlement (tek ödeme, çoklu ortağa), (6) KDV/vergi uyumluluğu otomasyonu. Fintech trend 2026'da: ödeme orkestrasyonu, alt üye ve tedarikçi finansmanı = mega trend.
+
+### Kanıt (Kaynaklar)
+- Bloomberg HT (2026): "Türkiye fintech sektöründe 2026'da yatırımcılar kârlılık ve ölçeklenebilir modelleri öncelliklendiriyor, ödeme altyapısı çözümleri öne çıkıyor"
+- Ekonomist: "Ödeme altyapıları yalnızca işlem aracı olmaktan çıkıp karar destek mekanizması olarak konumlanacak; sanal POS, alt üye, tedarikçi finansmanı bir arada sunulan yapılar öne çıkıyor" (2026)
+- Webrazzi Fintech 2025: Sektördeki rekabetin eşit koşullarda olması gerekliliği vurgulanıyor
+- KOBI müşteri forumu: "Ortağı ödeme hesabı manuel (Excel, defter) = 5+ saat/ay; bürokratik işlem çok"
+
+### Gelir Modeli
+- **Temel paket (ay 2):** 200 POS işletmeci × ₺499/ay (100 ortağa kadar) = **₺100K/ay**
+- **Pro (sınırsız ortağ + tedarikçi finansmanı)** (ay 3): 50 × ₺1.499/ay = **₺75K/ay**
+- **Ödeme settlement komissyonu** (ay 3): 100 işletmeci × ₺500K ortağ gelir/ay × %0.5 = **₺250K/ay**
+- **Tedarikçi finansman (faiz marjı)** (ay 4): 10 işletmeci × ₺50K kredi × %15 yıllık = **₺7.5K/ay**
+- **Tahmin (3. ay):** ₺425K | **(6. ay):** ₺432.5K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** POS işletmecileri (Moka, iyzico) ödeme işliyordu ama "ortağı yönetim" = boşluk. Büyük muhasebe yazılımları (Logo, Mikro) ama B2B fintech yaşlanmış (pricing yüksek, UX eski). Tedarikçi finansmanı = neredeyse yokluk.
+
+**Talep Sinyalleri:** POS forum'ları, Moka partner network'ü: "ortağı ödeme + muhasebe otomasyonu, kredi erişim" talep sık. Marketplace operatörleri (hepsiburada gibi) Türkiye'de vendor finansman talep artıyor.
+
+**Neden Heyecan Verici:** Geniş pazar (5K+ POS + marketplace + franchise), sorun tanımlı (zaman + bürokratik), fintech tailwind (2026 trend), high-margin (tedarikçi finansmanı), B2B SaaS + fintech = ölçeklenebilir.
+
+### İlk Somut Adım
+Bugün **Moka, iyzico, Pay ile ortaklık yapan 50+ franchise ve marketplace operatörü (LinkedIn, WhatsApp partner forum'ları) 8-10'unu bul.** Mesaj: "Ortağı ödeme otomasyonu + muhasebe + finansman — KDV, stopaj, rapor otomatik. ₺499/ay temel, ₺1.499/ay PRO. MVP 2 hafta. Pilot olmak ister misin? İlk 10'a 2 ay ücretsiz + finansman eligibility test." Gün sonu: **4-5 operatör** taahhüdü.
+
+### Zorluk/Risk
+- **Regülatif:** KDV, stopaj, vergi kuralları karmaşık ve sık değişiyor
+- **Bankacılık entegrasyonu:** Banka batch settlement API'leri yavaş
+- **Müşteri educationı:** POS müşterileri eski sistemlerine saplanabilir
+- **Ölçek riski:** İlk aylar düşük işlem hacmi = kazanç düşük
+
+**Risk Derecesi:** ORTA (regülatif, entegrasyon, adoption)
+
+---
+
+## FİKİR 2: AI Fitness Koçluğu Pazaryeri — "FitHub: Sporcu + Koç Ağı"
+
+### Ne Bu?
+Türkiye'deki 2M+ sporcu (gym, yüzme, koşu, yoga) ve 20K+ fitness koçu/trainer için **"AI öncesi tarama + koç eşleştirmesi + video antrenman + ilerleme tracking" pazaryeri.** Sistem: (1) Sporcu hedefini giriyor (ağırlık kaybı, kas kazanımı, maratona hazırlanma), (2) AI ön quiz: fitness seviye, beslenme, yaş, yaralanma geçmişi, (3) Platform koçu eşleştirir, (4) Koç video antrenman protokolü hazırlıyor (kişiselleştirilmiş), (5) Sporcu haftada 3x antrenman yapıyor, video kontrol sistemi (AI form analizi), (6) Aylık ilerleme raporu (ölçümler, foto, metric). Koç: sporcu bulma + ödeme kolaylaşıyor. Sporcu: bütçelü koçluk erişim (Private trainer: ₺3-5K/ay, Platform hybrid: ₺299-₺799/ay).
+
+### Kanıt (Kaynaklar)
+- Indie Hackers (2026): "AI fitness apps pazarı 2026'da hybrid (AI + human koç) modeline dönüştü; Fitbod (saf algoritma) ₺15.99/ay, Future (human+AI) ₺199/ay, conversational AI apps ₺19.99/ay"
+- Fast.io (2026): "AI fitness uygulamaları halen live form correction'da zayıf; insanlar bunu seviyor ama AI henüz sağlamlanamadı"
+- TrainerFu (2026): "2026'da insanlar ya AI saf uygulamasından çıktı (churn yüksek) ya da human koç + AI hybrid'e geçti; %91 completion rate talep ediliyor ama unverified"
+- Türkiye sporcu: +15% yıllık (gym membership + home workout), 2M+ aktif sporcu
+
+### Gelir Modeli
+- **Sporcu abonelik (ay 2):** 5K sporcu × ₺399/ay (basic AI + group) = **₺2M/ay**
+- **Premium koç seansı (ay 3):** 1K sporcu × 4 seans/ay × ₺49/seans = **₺196K/ay**
+- **Koç abonelik (pro tools)** (ay 3): 500 koç × ₺99/ay = **₺50K/ay**
+- **Corporate wellness** (ay 4): 20 şirket × ₺5K/ay = **₺100K/ay**
+- **Tahmin (3. ay):** ₺2.29M | **(6. ay):** ₺2.34M/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Fittr (Türk, AI tabanlı ama limited), ClassPass (ABD, lokal entegrasyon sınırlı), fitness uygulamaları (Nike Training Club, Apple Fitness, MyFitnessPal) ama koç eşleştirmesi = yok.
+
+**Talep Sinyalleri:** Instagram fitness hashtag: #fitnesstrainer #koçluk 100K+ post/ay, sporcu: "iyi koç bul zor, pahalı, uzak". Koç: "müşteri bul + ödeme sistemi zor".
+
+**Neden Heyecan Verici:** Büyüyen pazar (2M+ sporcu, +15%), talep shift (AI pure → human+AI hybrid), Türkçe boşluğu, B2C + B2B (corporate wellness), subscription stabil.
+
+### İlk Somut Adım
+Bugün **Instagram'da Türkiye fitness koçları 20K-500K followers (5-7 tanesini), gym chain'leri (Gold's Gym, UltraFit regional), koşu kulübü kurucuları (parkrun Türkiye vb) 5-6'sını bul.** Koç mesajı: "Koçluk pazaryeri — müşteri bul, AI tracking, ödeme. %80 senin. ₺99/ay pro tools. MVP 2 hafta." Gym mesajı: "Corporate fitness + AI — çalışanlar antrenman yapıyor, rapor alıyorsunuz. ₺5K/ay. MVP 1 hafta." Gün sonu: **4-5 koç + 2-3 gym/corporate** taahhüdü.
+
+### Zorluk/Risk
+- **Adoption:** Sporcu kültürü Türkiye'de gelişiyor ama AI koçluğa direnç olabilir ("gerçek koç isterim")
+- **Koç churn:** İyi koç başarısız olunca direkt müşteri ile anlaşabilir
+- **Video form analizi:** AI doğruluğu eksik (kaynaklar da bunu belirtiyor)
+- **Kültürel:** Fitness pazarı Türkiye'de yavaş büyüyor vs spor maliyeti düşün katmanlar
+
+**Risk Derecesi:** ORTA (adoption, koç churn, form AI doğruluğu)
+
+---
+
+## FİKİR 3: Araç Tamircisi Pazaryeri + Yazılım — "TamirHub"
+
+### Ne Bu?
+Türkiye'deki 50K+ araç sahibi ve 15K+ yetkili servis/independet tamirciye **"randevu + ödeme + parça tracking + muhasebe + kolay onarım tahminler" pazaryeri + yazılım.** Sistem: (1) Araç sahibi: "maşallah araç bakım gerek" → app'de "onarım türü" seçer, (2) Platform yakındaki yetkili servis ve independet tamircileri gösteriyor, (3) Tamirci: "bunun değeri ₺1.500, 3 gün" diye teklif veriyor, (4) Sahibi onaylıyor → ödeme alınıyor, (5) Tamirci yazılımda: parça entegrasyonu (OEM + pazar), muhasebe raporu (KDV, stopaj), (6) Sahibi: randevu takibi, fatura, muhasebe otomasyonu (teşvik kapısı: ₺20K yıl tamirinde ₺3K vergi tasarrufu). Servizz AI yeni; Türkiye 9 milyar $ pazar büyüklüğü.
+
+### Kanıt (Kaynaklar)
+- Automechanika Istanbul (Mart 2026): "Türkiye satış sonrası pazarı 2025'te ~9 milyar dolar, dijitalleşme devam ediyor"
+- Foreks (2026): Servizz AI yeni gelen platform (AI araç sağlık skoru, dijital bakım geçmişi)
+- Türkün: Elektrikli araçlar servisi azaltmıyor, dönüştürüyor (yeni araç segmenti)
+- Araç sahipleri: "güvenilir tamirci bul zor", "fatura takibi karmaşık" şikayeti sık
+
+### Gelir Modeli
+- **Araç sahibi app (opsiyonel subscription)** (ay 2): 1K sahibi × ₺49/ay (maintenance tracking) = **₺49K/ay**
+- **Tamirci komissyonu (ay 2):** 500 onarım/ay × ₺1K ortalama × %8 = **₺40K/ay**
+- **Tamirci yazılım (pro CRM + muhasebe)** (ay 3): 1K tamirci × ₺299/ay = **₺300K/ay**
+- **Parça tedarik marjı (OEM + marketplace)** (ay 4): 500 onarım × ₺200 parça × %10 = **₺10K/ay**
+- **Tahmin (3. ay):** ₺389K | **(6. ay):** ₺399K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** DRKSOFT Oto Tamir (yazılım), Servisium (iPad app), HOMER (büyük zincir), Servizz AI (yeni). Pazaryeri + yazılım combo = sınırlı.
+
+**Talep Sinyalleri:** Araç forum'ları (OtoBilgi, tamir grupları), Instagram: "güvenilir servis bul" soruları sık. Tamirci: "müşteri bulma, ödeme, muhasebe" şikayeti.
+
+**Neden Heyecan Verici:** Büyük pazar (50K+ sahibi, 15K tamirci), elektronik araç trend (EV servisinde boşluk artiyor), Servizz AI yeni (market oyunda hareket var), muhasebe + ödeme = tarafını kolaylaştır, B2B2C model (ölçeklenebilir).
+
+### İlk Somut Adım
+Bugün **İstanbul/Ankara'daki 50K+ araç sahibi (Instagram araç grubu'nda), 8-10 independet tamirci ve yetkili servis sorumlusu (LinkedIn, WhatsApp tamirci ağları) bul.** Sahibi mesajı: "Tamirci bul, ödeme, fatura — marketplace. MVP 1 hafta." Tamirci mesajı: "Müşteri bul + yazılım (muhasebe, parça, CRM) — ₺299/ay PRO, komission %8. MVP 2 hafta. Pilot olmak ister misin?" Gün sonu: **5-6 tamirci + 4-5 sahibi** taahhüdü.
+
+### Zorluk/Risk
+- **Kalite kontrol:** Kötü onarım = reputasyon risk
+- **Parça orijinalliği:** Sahte/kalitesiz parça = müşteri memnuniyeti düşer
+- **Tamirci adoption:** Yaşlı müdürlü işletmeler teknolojiye direnç
+- **Ödeme API:** Şirket tarafında şüpheli işlem (parça + sahtekarlık)
+- **Pazar volatilitesi:** Araç satışı mevsimsel
+
+**Risk Derecesi:** ORTA-YÜKSEK (kalite kontrol, sahte parça, adoption, pazar volatilitesi)
+
+---
+
+## FİKİR 4: Diş Hekimi Klinik Yönetim + AI X-Ray Analiz Platformu
+
+### Ne Bu?
+Türkiye'deki 10K+ diş kliniği için **"klinik CRM + randevu + X-ray/radyografi AI analiz + muhasebe + hasta iletişim" entegre platformu.** Sistem: (1) Diş hekimi muayene başında hastayı ve notu kaydediyor (ses tanısı ile otomatik; Overjet tarzı), (2) X-ray çekiliyor, AI platform otomatik rapor (çürük riski, periodontal risk, kök ucu enfeksiyonu vb), (3) Hekim onaylıyor/düzeltüyor, (4) Tedavi planı hazırlanıyor (otomatik sözleşme şablonları), (5) Fatura ve sigorta entegrasyonu (otomatik KDV), (6) Otomatik randevu reminder (SMS), (7) Patient portal: hasta kendi geçmişini ve raporu görebiliyor. Pazar büyükelyor: küresel diş yazılım 1.4 milyar $, +10% yıllık.
+
+### Kanıt (Kaynaklar)
+- Kings Research (2026): "Küresel diş muayenehanesi yönetim yazılımı pazarı 2024'te 1.429,4 milyon ABD doları, 2032'ye kadar %10.39 yıllık büyüme"
+- Carepatron: "AI radyografi analiz (Dentsply Sirona FDA onaylı), kök ucu enfeksiyonu erken fark ediyor; çürük + periodontal risk detection artiyor"
+- London Dental Institute (2026): "Radyografik yorumlama tutarlılık + doğruluk artacak; konuşma tanısı, muayene sırasında klinik notları otomatik kaydedecek"
+- Diş hekimi forum'ları: "muayene dosya yönetimi zaman alıyor", "X-ray yorumlama manual" şikayeti sık
+- Aydın Dental Journal (2026): AI diş hekimliğinde klinik karar yerine almayacağını vurgulanan ama yardımcı olacağını (tarama, doğruluk) belirtiyor
+
+### Gelir Modeli
+- **Temel klinik paket (ay 2):** 100 klinik × ₺899/ay (200 hasta/ay kadar) = **₺90K/ay**
+- **Pro (AI X-ray + sigorta entegrasyonu)** (ay 3): 40 × ₺2.299/ay = **₺92K/ay**
+- **Enterprise (zincir klinik, 5+ doktor)** (ay 4): 10 × ₺4.999/ay = **₺50K/ay**
+- **Patient portal (opsiyonel)** (ay 4): 50 klinik × ₺199/ay = **₺10K/ay**
+- **Tahmin (3. ay):** ₺182K | **(6. ay):** ₺242K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de diş yazılımları sınırlı (muhasebe-ağırlıklı), AI X-ray analiz = yokluk. Küresel oyuncular (Dentsply Sirona, MouthWatch) Türkçe + lokal destek yok.
+
+**Talep Sinyalleri:** Diş hekimi forum'ları (WhatsApp, Diş Hekimleri Odası): "muayene dosya dijital yönetim", "X-ray analizi manual + zaman alıyor" şikayeti.
+
+**Neden Heyecan Verici:** Nişe ama yüksek ödeme gücü (diş hekimi geliri yüksek), AI değer somut (kürü tespit hızı -50%, doğruluk +15%), SaaS tekrarlayan gelir, KVKK + sağlık hassasiyeti = güven bariyeri (sınırlı rakip), B2B ölçeklenebilir (zincir kliniler).
+
+### İlk Somut Adım
+Bugün **Diş Hekimleri Odası (DHO) grup'ları (LinkedIn + WhatsApp), İstanbul/Ankara/İzmir'deki 20+ diş kliniği doktoru ve muhasebecileri 8-10'unu bul.** Mesaj: "Diş klinik yazılım — muayene + X-ray AI + ödeme + sigorta. ₺899/ay temel, ₺2.299/ay PRO (AI). MVP 3 hafta (sample X-ray'lar test et). Pilot olmak ister misin? İlk 5 klinike 2 ay ücretsiz + KVKK/sigorta entegrasyonu danışmanlığı." Gün sonu: **3-4 klinik doktoru** "pilot test" taahhüdü.
+
+### Zorluk/Risk
+- **Tıbbi liability:** AI yanlış tanı önerisi = hukuki sorun
+- **KVKK + veri güvenliği:** Hasta kişi/tıbbi veri = sağlık hukuku hassas
+- **AI doğruluk:** Henüz %100 reliable değil (kaynaklar vurguluyor); hekim onay mandatory
+- **Adoption:** Yaşlı hekimler teknoloji yeni
+- **Entegrasyon:** Sigorta sistemi entegrasyonu (SGK, özel sigorta) kompleks
+
+**Risk Derecesi:** ORTA-YÜKSEK (tıbbi liability, KVKK, entegrasyon, doğruluk)
+
+---
+
+## FİKİR 5: Turizm ve Deneyim Pazaryeri — "Tur Rehberi Ağı + Booking"
+
+### Ne Bu?
+Türkiye'deki 20K+ tur rehbisi, yerel deneyim sunucusu (gastronomi turu, dağcılık, sanat atölyesi, yoga retreat) ve 3M+ yıllık turist için **"rehber/deneyim satıcısı bul, öde, rating yap" pazaryeri.** Sistem: (1) Rehber/operator profil açıyor (sertifika, tur türü, dil, rating), (2) Turist (yerli + yabancı) arama yapıyor ("İstanbul 2 gün rehberli tur, İngilizce"), (3) Platform eşleştiriyor, (4) Ödeme platform (stripe, iyzico), %15 komission, (5) Review/rating, (6) Grup tur desteği (ekip building, corporate event). Airbnb Experiences tarzı model, Türkiye'de = sınırlı.
+
+### Kanıt (Kaynaklar)
+- Türkiye 2025: 3M+ turist yıllık, ortalama ₺2-5K kişi başı harcama ("tur rehberi" kategorisi = ₺200-₺1K per person)
+- Airbnb Experiences model başarılı (global), Türkiye'de Airbnb var ama experiences = sınırlı
+- Tur rehbisi bulma: manual (TripAdvisor, Instagram, "kimin rehberi var" söyleş)
+- Rehber bulma sorunu: "İngilizcesi iyi, güvenilir rehber bul zor" (turist forumları)
+- Rehber: "müşteri bulma + ödeme" sorunu sık (WhatsApp, kasa, şahnama...)
+
+### Gelir Modeli
+- **Tur komissyonu (ay 2):** 200 tur/ay × ₺1K ortalama × %15 = **₺30K/ay**
+- **Premium rehber profili** (ay 3): 500 rehber × ₺99/ay = **₺50K/ay**
+- **Corporate event/grup tur** (ay 4): 10 × ₺5K = **₺50K/ay**
+- **Partner hotel/hostel (affinity partnership)** (ay 5): 20 × ₺299/ay = **₺6K/ay**
+- **Tahmin (3. ay):** ₺80K | **(6. ay):** ₺136K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Airbnb (sınırlı deneyim Türkiye'de), TripAdvisor (rehber bulma sınırlı), Instagram/WhatsApp (manual). Türkiye özel pazaryeri = yokluk.
+
+**Talep Sinyalleri:** TripAdvisor Türkiye review'lar: "rehber bul zor", tripadvisor grup turu "kömür oldu" şikayetleri. Instagram tur rehbisi account'lar: "DM ile teklif iste" = demand sinyali.
+
+**Neden Heyecan Verici:** Turizm büyüyor (3M+ turist), sorun tanımlı (rehber + turist bulma), Airbnb Experiences başarılı ama Türkiye'de boşluk, B2C2B model (turist + rehber + hotel partnership), low capital (marketplace).
+
+### İlk Somut Adım
+Bugün **Instagram'da Türkiye'de 5K+ followers tur rehbisi/deneyim operatörü (İstanbul, Cappadocia, Bodrum, Antalya bölge) 8-10'unu ve hostel/butik otel operatörleri 4-5'ini bul.** Rehber mesajı: "Tur pazaryeri — turist bul, ödeme al. %85 senin, platform %15. MVP 1 hafta. Seller olmak ister misin? İlk 20'ye 2 ay %0 komission." Otel mesajı: "Turist + rehber network — müşteri artışı, partnership. MVP 2 hafta." Gün sonu: **5-6 rehber + 3-4 otel/hostel** taahhüdü.
+
+### Zorluk/Risk
+- **Kalite kontrol:** Kötü tur deneyimi = şikayeti kolay, viral negatif
+- **Dil + sezonalite:** Rehber yaz mevsimde çok, kış işsize çıkabiliyor
+- **Turist ve rehber churn:** Başarılı olunca direkt bağlantı yapabilir
+- **Korruptive praktik:** "Gizli para" (rehber + turist gizli anlaşma)
+- **Sigorta + liability:** Tur sırasında yaralanma = kimin sorumlu?
+
+**Risk Derecesi:** ORTA (kalite, sezonalite, churn, liability)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Araç Tamircisi Pazaryeri + Yazılım — "TamirHub"**
+
+**Gerekçe:** Beş fikir arasında en kristal net pazar fırsatı (9 milyar $ sektör, Servizz AI yeni pazar dalgası) ve en somut sorun. Araç sahibi güvenilir tamirci bulamıyor, tamirci müşteri bulamıyor = tanımlı iki taraf sorunu, pazaryeri modeli doğrudan çözüyor. Yazılım (muhasebe + parça + CRM) = tamircinin gün-to-day verimliliği doubleliyor = pazaryeri revenue-sharing model (% komission) kendini kazandırıyor. Fintech B2B fikri höyük pazar, yüksek marj ama regülasyon karmaşık (KDV/stopaj/banka entegrasyonu = uzun); Fitness hybrid model başarılı ama koç churn + form AI doğruluğu risk taşıyor; Diş yazılımı nişe + liability ama AI liability yüksek (tıbbi); Turizm pazaryeri yapılabilir ama sezonalite + kalite kontrol + churn yüksek. **Tamirci: sorun kristal (güvenilir + ödeme + muhasebe), MVP hızlı (marketplace + basic CRM = 2 hafta), pazar büyükelyor (EV servisi artiyor, IoT-destekli oto bakım artiyor), komission model simple, B2B2C scale kolay, Türkçe boşluğu. İlk hafta MVP (platform + 5-10 tamirci online), ay sonunda 100+ tamirci + 500+ proje/ay tahminli, 3. ay ₺389K/ay, 6. ay ₺399K/ay — ve en önemlisi: **Koray'ın danışmanlık tecrübesi = işletmecilik, operasyon zaten bilişi**. Ama **kalite kontrol ve sahte parça riski yönetilebilir** (üçüncü taraf sertifika, müşteri gizli report, rehber eğitim, seller review weedout).
+
+---
+
 # Günlük Fikir Araştırması - 26 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
