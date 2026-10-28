@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "hizli-checkin-toplanti-neden-15-dakika-surmuyor",
+    title:
+      "\"15 Dakikalık Hızlı Check-in\" Neden Hiçbir Zaman 15 Dakika Sürmüyor?",
+    excerpt:
+      "Takvime düşülen 'hızlı check-in, 15 dakika' davetleri neredeyse hiçbir zaman 15 dakikada kapanmıyor. LSE'nin bir raporuna göre kurumsal toplantıların yüzde 35'i verimsiz geçiyor ve bu tek başına ABD'de yılda 259 milyar dolarlık kayba denk geliyor. Sorun süre değil, gündemin ve karar noktasının belirsizliği.",
+    tag: "Strateji",
+    date: "28 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kurulan-sirket-sayisi-artti-kapanis-orani-sabit-kaldi",
     title:
       "75.814 Yeni Şirket, Ama Kapanış Oranı Neden Aynı Hızla Düşmedi?",
