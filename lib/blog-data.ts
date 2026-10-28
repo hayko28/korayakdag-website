@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "pazara-giris-belgesi-destegi-sertifika-ruhsat-giderleri-2026",
+    title: "Pazara Giriş Belgesi Desteği: CE, Helal, ISO Sertifika ve Ruhsat Giderlerinizin Yarısını Devlet Karşılıyor mu?",
+    excerpt: "5973 sayılı İhracat Destekleri Hakkında Karar madde 3 kapsamında, ihracat için zorunlu kalite/çevre sertifikaları, laboratuvar test raporları ve yurt dışı ruhsatlandırma/kayıt giderleri %50 oranında, şirket başına yıllık 4.000.000 TL'ye kadar destekleniyor. Kapsamdaki belgeler, desteklenen/desteklenmeyen giderler ve DYS üzerinden başvuru süreciyle 2026 güncel rehber.",
+    category: "TİCARET BAKANLIĞI • PAZARA GİRİŞ BELGESİ DESTEĞİ • 2026",
+    date: "Ekim 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1532187643603-ba119ca4109e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-1602-patent-destek-programi-ulusal-mi-uluslararasi-mi",
     title: "TÜBİTAK Patent Desteği Hâlâ Var mı? 1602 Programında Ulusal Başvuru Neden Kapalı, Uluslararası Destek Nasıl Alınır?",
     excerpt: "TÜBİTAK 1602 Patent Destek Programı'nda yalnızca Türkiye'de geçerli ulusal patent başvurularına yönelik destek, 03.01.2019 tarihli Yönetim Kurulu kararıyla kapatıldı. Hâlâ açık olan tek kapsam, PCT yoluyla yapılan uluslararası başvurulara sağlanan PD-200, PD-201 ve PD-202 destekleri; 240.000 TL inceleme raporu tavanı ve 55.000 TL tescil ödülüyle 2026 güncel rehber.",
