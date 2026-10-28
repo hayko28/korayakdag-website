@@ -1939,6 +1939,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yeni kurulan şirket sayısındaki artışa karşın kapanan şirket sayısının aynı oranda gerilememesi, pazara girişin kolaylaştığı ama sürdürülebilirliğin hâlâ zorlu olduğu bir dönemi işaret ediyor. Yeni kurulan şirketlere, büyüme hedeflerini ilk yıldan itibaren somut bir iş planına ve nakit akışı projeksiyonuna bağlamalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-10-28",
+    baslik:
+      "TÜİK Tüketici Güven Endeksi ekimde son 38 ayın en sert düşüşüyle 84,8'e geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu ile TCMB'nin birlikte yürüttüğü Tüketici Eğilim Anketi'ne göre, mevsimsellikten arındırılmış Tüketici Güven Endeksi eylülde 91,9 iken ekimde aylık bazda yüzde 7,7 azalarak 84,8'e geriledi. Hanenin mevcut maddi durumu alt endeksi yüzde 9,3, gelecek 12 aya ilişkin genel ekonomik durum beklentisi yüzde 9, dayanıklı tüketim malı harcama düşüncesi ise yüzde 5,6 düştü; anketin dört alt kaleminin tamamında gerileme görüldü.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/22/tuketici-guven-endeksi-84-8-oldu/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tüketici güveninde bu kadar geniş tabanlı bir düşüş, özellikle dayanıklı tüketim malı ve yüksek bilinçli alışveriş kararlarına bağlı sektörlerde talebi yakından etkileyebilir. İşletmelere yıl sonu satış ve stok planlamasını bu beklenti daralmasını da hesaba katarak gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "23 Ekim 2026 (Ocak-Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-28",
+    baslik:
+      "TOBB verileri: Eylül'de yeni şirket kuruluşu yıllık bazda geriledi, 9 aylık artış yüzde 5,4'e yavaşladı",
+    ozet:
+      "Türkiye Odalar ve Borsalar Birliği'nin açıkladığı verilere göre, 2026'nın Ocak-Eylül döneminde kurulan şirket sayısı bir önceki yılın aynı dönemine göre yüzde 5,4 artışla 80.983'ten 85.320'ye yükseldi; bu oran Ocak-Ağustos dönemindeki yüzde 6,4'lük artışa göre bir yavaşlamaya işaret ediyor. Eylül ayında kurulan şirket sayısı 9.506 olup geçen yılın aynı ayına kıyasla yüzde 2,6 azaldı; aynı ay kapanan şirket sayısı ise yıllık bazda yüzde 5,3 geriledi. Kurulan şirketlerin toplam sermayesi eylülde 52,1 milyar TL'ye ulaşarak ağustosa göre yüzde 58,2 arttı.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/23/kurulan-sirket-sayisi-9-ayda-yuzde-5-4-artti/",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Yıllık bazda görülen bu aylık gerileme, kuruluş hızındaki ivmenin önceki aylara göre zayıfladığına işaret ediyor. Yeni şirket kurma kararını önümüzdeki çeyreğe bırakan girişimcilere, sermaye yapısı ve nakit akışı planlarını bu yavaşlamayı da göz önünde bulundurarak hazırlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
