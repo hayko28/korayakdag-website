@@ -1124,5 +1124,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "Ekim 2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1741437136281-c66625b1a3c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "yesil-mutabakata-uyum-projesi-destegi-responsible-programi-2026",
+    title: "Yeşil Mutabakata Uyum Projesi Desteği (Responsible® Programı): İhracatçı Şirketler Sürdürülebilirlik Danışmanlığının Yarısını Nasıl Devletten Alır?",
+    excerpt: "5973 sayılı İhracat Destekleri Hakkında Karar madde 14 kapsamındaki Responsible® Programı, ihracatçı şirketlerin sürdürülebilirlik yol haritası, uygulama ve doğrulama danışmanlığı giderlerini %50 oranında destekliyor. 10 Ağustos 2026'da güncellenen Genelge'ye göre üç faz, destek tutarları, 300.000 dolarlık ihracat şartı ve DYS üzerinden adım adım başvuru süreciyle 2026 güncel rehber.",
+    category: "TİCARET BAKANLIĞI • YEŞİL MUTABAKAT UYUM DESTEĞİ • 2026",
+    date: "Ekim 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
