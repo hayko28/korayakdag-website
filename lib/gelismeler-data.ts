@@ -1967,6 +1967,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıllık bazda görülen bu aylık gerileme, kuruluş hızındaki ivmenin önceki aylara göre zayıfladığına işaret ediyor. Yeni şirket kurma kararını önümüzdeki çeyreğe bırakan girişimcilere, sermaye yapısı ve nakit akışı planlarını bu yavaşlamayı da göz önünde bulundurarak hazırlamalarını öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-10-29",
+    baslik:
+      "TCMB, beş toplantı sonrasında politika faizini yüzde 37'den yüzde 36'ya indirdi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 22 Ekim 2026 toplantısında bir hafta vadeli repo ihale faiz oranını (politika faizi) yüzde 37'den yüzde 36'ya düşürdü; gecelik borç verme faizi yüzde 40'tan yüzde 39'a, borçlanma faizi ise yüzde 35,5'ten yüzde 34,5'e çekildi. Karar, Eylül toplantısında faizin sabit tutulmasının ardından geldi; Kurul, enflasyondaki yukarı yönlü risklere karşı ihtiyatlı duruşunu sürdüreceğini, gelecek adımların büyüklük ve zamanlamasının veri setine bağlı kalacağını belirtti.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/merkez-bankasinin-ekim-2026-faiz-karari-belli-oldu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: İndirimin büyüklüğü sınırlı olsa da yönün değişmesi, kredi kullanmayı planlayan KOBİ'ler için olumlu bir sinyal. Kurul'un ihtiyatlı dil kullanımı art arda hızlı indirimler gelmeyebileceğini gösteriyor; finansman kararlarını tek bir toplantıya göre değil birkaç aylık eğilime göre planlamalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "Eylül 2026 (5 Ekim 2026'da açıklandı)",
+    eklendiTarihi: "2026-10-29",
+    baslik:
+      "Eylül ihracatı yıllık bazda yüzde 15,4 artışla Cumhuriyet tarihinin en yüksek ikinci aylık rakamına ulaştı",
+    ozet:
+      "Ticaret Bakanlığı'nın geçici dış ticaret verilerine göre, Eylül 2026 ihracatı bir önceki yılın aynı ayına göre yüzde 15,4 artışla 25,98 milyar dolara çıkarak Cumhuriyet tarihinin en yüksek ikinci aylık ihracat rakamına ulaştı. Aynı ayda ithalat yüzde 5,9 artışla 31,21 milyar dolar olurken, dış ticaret açığı yüzde 24,8 azalışla 5,2 milyar dolara geriledi. Ocak-Eylül dönemi toplam ihracat yüzde 5,2 artışla 211 milyar dolara ulaştı.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-eylul-ayi-gecici-dis-ticaret-verileri-aciklandi/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracattaki bu sıçrama sevindirici, ama ithalatın da artış göstermesi dış ticaret açığındaki iyileşmeyi tek bir aya bakarak kalıcı bir eğilim gibi okumamak gerektiğini gösteriyor. İhracatçı KOBİ'lere bu momentumu yeni pazar ve ürün çeşitlendirme planlarına yansıtmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
