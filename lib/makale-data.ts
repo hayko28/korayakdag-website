@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ihracat-beklenti-endeksi-100-altina-indi",
+    title:
+      "İhracat Beklenti Endeksi 100'ün Altına İndi, İthalat Beklentisi Yükseldi: Çeyrek Bütçesi Hangi Veriye Göre Kurulmalı?",
+    excerpt:
+      "Ticaret Bakanlığı'nın 8 Ekim 2026'da açıkladığı Dış Ticaret Beklenti Anketi'nde İhracat Beklenti Endeksi 4,6 puan düşüşle 96,9'a inip kötümser bölgeye geçerken, İthalat Beklenti Endeksi 12,7 puan artışla 115,4'e çıktı. 1.228 firmanın verdiği bu çelişkili cevap, dördüncü çeyrek bütçesini yalnızca geçmiş ayın ihracat rakamına bakarak kuran şirketler için gözden kaçan bir sinyal taşıyor.",
+    tag: "Strateji",
+    date: "29 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "hizli-checkin-toplanti-neden-15-dakika-surmuyor",
     title:
       "\"15 Dakikalık Hızlı Check-in\" Neden Hiçbir Zaman 15 Dakika Sürmüyor?",
