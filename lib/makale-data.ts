@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ortak-girisimde-fikri-mulkiyet-kime-ait",
+    title: "Ortak Girişimde Birlikte Geliştirilen Fikri Mülkiyet Kime Ait?",
+    excerpt:
+      "İki şirket ortak bir girişim kurarken en çok kâr paylaşımı maddesi müzakere ediliyor, ama proje sırasında birlikte geliştirilen ürün, tasarım veya algoritmanın kime ait olacağı sözleşmede çoğu zaman hiç yazılmıyor. Türk hukukunda bu boşluğu dolduran ayrı bir kanun olmadığı için, konuşulmayan her madde kanunun tamamlayıcı hükümleriyle, taraflardan hiçbirinin planlamadığı bir sonuca bağlanıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "30 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ihracat-beklenti-endeksi-100-altina-indi",
     title:
       "İhracat Beklenti Endeksi 100'ün Altına İndi, İthalat Beklentisi Yükseldi: Çeyrek Bütçesi Hangi Veriye Göre Kurulmalı?",
