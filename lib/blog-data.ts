@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "finansman-gider-kisitlamasi-hesaplama-2026",
+    title: "Finansman Gider Kısıtlaması Nedir? Borcu Özkaynağını Aşan Şirketler İçin 2026 Hesaplama Rehberi",
+    excerpt: "Yabancı kaynağı özkaynağını aşan şirketlerde, aşan kısma isabet eden faiz, komisyon ve kur farkı giderlerinin %10'u vergi matrahından indirilemiyor. KVK 11/1-i kapsamı, kimlerin muaf olduğu, örtülü sermayeden farkı ve 25 Eylül 2025 tarihli özelgeyle netleşen hesaplama yöntemiyle 2026 güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • FİNANSMAN GİDER KISITLAMASI • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1587740896339-96a76170508d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "pazara-giris-belgesi-destegi-sertifika-ruhsat-giderleri-2026",
     title: "Pazara Giriş Belgesi Desteği: CE, Helal, ISO Sertifika ve Ruhsat Giderlerinizin Yarısını Devlet Karşılıyor mu?",
     excerpt: "5973 sayılı İhracat Destekleri Hakkında Karar madde 3 kapsamında, ihracat için zorunlu kalite/çevre sertifikaları, laboratuvar test raporları ve yurt dışı ruhsatlandırma/kayıt giderleri %50 oranında, şirket başına yıllık 4.000.000 TL'ye kadar destekleniyor. Kapsamdaki belgeler, desteklenen/desteklenmeyen giderler ve DYS üzerinden başvuru süreciyle 2026 güncel rehber.",
