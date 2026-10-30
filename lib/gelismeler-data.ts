@@ -1995,6 +1995,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İhracattaki bu sıçrama sevindirici, ama ithalatın da artış göstermesi dış ticaret açığındaki iyileşmeyi tek bir aya bakarak kalıcı bir eğilim gibi okumamak gerektiğini gösteriyor. İhracatçı KOBİ'lere bu momentumu yeni pazar ve ürün çeşitlendirme planlarına yansıtmalarını öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "15 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-30",
+    baslik:
+      "Merkezi yönetim bütçe açığı Eylül'de geçen yıla göre yüzde 72 artarak 532,2 milyar TL'ye çıktı",
+    ozet:
+      "Hazine ve Maliye Bakanlığı'nın 15 Ekim 2026'da yayımladığı Eylül 2026 Aylık Bütçe Gerçekleşme Raporu'na göre, Eylül'de merkezi yönetim bütçe giderleri 1 trilyon 785,4 milyar TL, bütçe gelirleri 1 trilyon 253,1 milyar TL olarak gerçekleşti ve bütçe açığı 532,2 milyar TL'ye ulaştı; bu tutar geçen yılın aynı ayındaki 309,6 milyar TL'lik açığa göre yüzde 72 artışa işaret ediyor. Faiz dışı denge Eylül'de 269,2 milyar TL açık verirken, Ocak-Eylül döneminde toplam bütçe açığı 1 trilyon 840,3 milyar TL'ye ulaştı.",
+    kaynakUrl:
+      "https://ms.hmb.gov.tr/uploads/sites/23/2026/10/Eylul-2026-Aylik-Butce-Gerceklesme-Raporu-ce3064fa26249b7e.pdf",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Bütçe açığındaki bu sıçrama, kamu harcamalarının gelirlerden daha hızlı büyüdüğünü gösteriyor ve orta vadede vergi mevzuatında yeni düzenleme ihtimalini gündemde tutuyor. İşletmelere yıl sonu ve 2027 bütçe planlamasını yaparken bu eğilimi de hesaba katmalarını öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "16 Eylül 2026 (son başvuru tarihi 2 Ekim 2026'ya uzatıldı)",
+    eklendiTarihi: "2026-10-30",
+    baslik:
+      "TÜBİTAK 1711 Yapay Zeka Ekosistem Çağrısı'nda başvuru süresi konsorsiyum talepleri üzerine uzatıldı",
+    ozet:
+      "TÜBİTAK, Teknoloji ve Yenilik Destek Programları Başkanlığı (TEYDEB) yürütümündeki 1711 Yapay Zeka Ekosistem 2026 Yılı Çağrısı'nın başvuru süresini, sektörden gelen ve konsorsiyum oluşturma süreçlerinin devam ettiğine ilişkin talepler üzerine 16 Eylül 2026 tarihli duyuruyla 2 Ekim 2026 saat 23:59'a kadar uzattı. Çağrı kapsamında yapay zeka çözümüne ihtiyaç duyan bir müşteri kuruluş, en az bir teknoloji sağlayıcı şirket, bir üniversite veya kamu araştırma merkezi ve TÜBİTAK Yapay Zeka Enstitüsü'nden oluşan bir konsorsiyumun başvurusu bekleniyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/1711-yapay-zeka-ekosistem-2026-yili-cagrisi-basvuru-suresi-guncellendi",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Bu dönemin başvurusu kapanmış olsa da, konsorsiyum şartının her yıl aynı hazırlık süresini gerektirdiğini görüyorum. Yapay zeka çözümüne ihtiyaç duyan ve bir teknoloji sağlayıcıyla iş birliği kurabilecek firmalara, bir sonraki çağrı dönemine konsorsiyum ortaklarını şimdiden belirleyerek hazırlanmalarını öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "3 Ekim 2026 (30 Ekim 2026 seans sonuna kadar geçerli)",
+    eklendiTarihi: "2026-10-30",
+    baslik:
+      "SPK, kredili işlemlerde esnetilmiş özkaynak oranı tedbirini 30 Ekim'e kadar uzattı",
+    ozet:
+      "Sermaye Piyasası Kurulu, Borsa İstanbul'da 17 Eylül 2026'da yaşanan fon piyasası dalgalanmasının ardından getirdiği, kredili sermaye piyasası işlemlerinde özkaynak oranının esnetilerek uygulanmasına ilişkin tedbirin süresini 3 Ekim 2026 tarihli kurul kararıyla 30 Ekim 2026 seans sonuna kadar uzattı. Tedbir, ilk kez Eylül ayındaki fon krizinin ardından devreye alınmış ve o tarihten bu yana kademeli olarak uzatılmıştı.",
+    kaynakUrl:
+      "https://www.dunya.com/ekonomi/spkdan-kredili-islemler-icin-yeni-karar-sure-30-ekime-uzatildi-haberi-842452",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Tedbirin art arda uzatılması, piyasadaki kırılganlığın henüz tam geçmediğine işaret ediyor. Kredili işlem kullanan veya halka arza hazırlanan şirketlere, bu tür geçici tedbirlerin süresini düzenli takip etmelerini ve finansman planlarını tek bir tedbirin kalıcı olacağı varsayımıyla kurmamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
