@@ -2037,6 +2037,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Tedbirin art arda uzatılması, piyasadaki kırılganlığın henüz tam geçmediğine işaret ediyor. Kredili işlem kullanan veya halka arza hazırlanan şirketlere, bu tür geçici tedbirlerin süresini düzenli takip etmelerini ve finansman planlarını tek bir tedbirin kalıcı olacağı varsayımıyla kurmamalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "27 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-10-31",
+    baslik:
+      "TÜİK: Eylül 2026'da işsizlik oranı 0,5 puan artışla yüzde 8,4'e yükseldi",
+    ozet:
+      "Türkiye Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı'nın 27 Ekim 2026'da açıkladığı TÜİK verilerine göre mevsim etkisinden arındırılmış işsizlik oranı Eylül'de bir önceki aya göre 0,5 puan artarak yüzde 8,4'e yükseldi; işsiz sayısı 198 bin kişi artışla 2 milyon 967 bine çıktı. İstihdam edilenlerin sayısı 49 bin kişi azalarak 32 milyon 445 bine, istihdam oranı yüzde 48,3'e geriledi; 15-24 yaş grubunda işsizlik oranı 1,6 puan artışla yüzde 14,8'e yükselirken geniş tanımlı atıl işgücü oranı yüzde 31,2 oldu.",
+    kaynakUrl: "https://www.sbb.gov.tr/?p=65538",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Ağustos'taki gerilemenin ardından işsizliğin tekrar yükselmesi, istihdam piyasasının dalgalı bir seyir izlediğini gösteriyor. İşe alım ve ücret planlarını tek bir aylık veriye göre değil, birkaç aylık eğilime bakarak kurmalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "8 Ekim 2026",
+    eklendiTarihi: "2026-10-31",
+    baslik:
+      "Dış Ticaret Beklenti Anketi: 2026 son çeyrek için ihracat beklentisi 100'ün altına indi, ithalat beklentisi yükseldi",
+    ozet:
+      "Ticaret Bakanlığı'nın 1-16 Eylül 2026 döneminde 1.228 firmayla gerçekleştirdiği Dış Ticaret Beklenti Anketi'nin 2026 yılı 4. çeyrek sonuçlarına göre İhracat Beklenti Endeksi önceki çeyreğe kıyasla 4,6 puan düşüşle 96,9'a inerek 100 referans değerinin altına geçti. İthalat Beklenti Endeksi ise 12,7 puan artışla 115,4'e çıktı; ankete göre firmaların ihracatta en çok hedeflediği ülkeler ABD, Avustralya ve Almanya oldu.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-dis-ticaret-beklenti-anketini-yayimladi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracat beklentisinin kötümser bölgeye geçerken ithalat beklentisinin yükselmesi, dördüncü çeyrek bütçesini yalnızca son ay rakamlarına göre kuran ihracatçı işletmeler için ayrı bir sinyal. Sipariş ve nakit akışı planlarını bu anket sonuçlarıyla birlikte gözden geçirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
