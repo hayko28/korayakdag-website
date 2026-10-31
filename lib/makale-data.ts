@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "issizlik-artarken-ise-alim-neden-kolaylasmiyor",
+    title: "İşsizlik Yüzde 8,4'e Çıkarken İşe Alım Neden Kolaylaşmıyor?",
+    excerpt:
+      "TÜİK'in 27 Ekim 2026'da açıkladığı Eylül verilerine göre işsizlik oranı 0,5 puan artışla yüzde 8,4'e, geniş tanımlı atıl işgücü oranı ise yüzde 31,2'ye çıktı. İşsizlik yükselirken İK departmanlarının 'doğru adayı bulamıyoruz' şikayetinin aynı hızda artması tesadüf değil; rakamın kendisi değil bileşimi değişiyor.",
+    tag: "Strateji",
+    date: "31 Ekim 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ortak-girisimde-fikri-mulkiyet-kime-ait",
     title: "Ortak Girişimde Birlikte Geliştirilen Fikri Mülkiyet Kime Ait?",
     excerpt:
