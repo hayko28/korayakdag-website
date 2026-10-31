@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "dahilde-isleme-rejimi-diib-yurt-ici-kdvsiz-alim-2030",
+    title: "Dahilde İşleme Rejimi (DİİB) Nedir? Yurt İçinden KDV'siz Alım Hakkı 2030'a Kadar Nasıl Güvence Altına Alındı?",
+    excerpt: "Dahilde İşleme İzin Belgesi (DİİB) ile ihracat için kullanılacak girdiyi gümrük vergisi ve KDV ödemeden ithal etme veya yurt içinden tecil-terkin ile KDV'siz temin etme hakkı. DİİB ile Dahilde İşleme İzni (Dİİ) farkı, başvuru süreci, teminat, taahhüt kapatma ve KDV Kanunu Geçici 17. maddenin 7573 sayılı Kanun'la 2030'a uzatılmasıyla 2026 güncel rehber.",
+    category: "İHRACAT DESTEKLERİ • DAHİLDE İŞLEME REJİMİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1765206810565-63f26023e1c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "finansman-gider-kisitlamasi-hesaplama-2026",
     title: "Finansman Gider Kısıtlaması Nedir? Borcu Özkaynağını Aşan Şirketler İçin 2026 Hesaplama Rehberi",
     excerpt: "Yabancı kaynağı özkaynağını aşan şirketlerde, aşan kısma isabet eden faiz, komisyon ve kur farkı giderlerinin %10'u vergi matrahından indirilemiyor. KVK 11/1-i kapsamı, kimlerin muaf olduğu, örtülü sermayeden farkı ve 25 Eylül 2025 tarihli özelgeyle netleşen hesaplama yöntemiyle 2026 güncel rehber.",
