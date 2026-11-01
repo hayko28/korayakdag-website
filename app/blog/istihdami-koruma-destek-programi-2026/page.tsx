@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "İstihdamı Koruma Destek Programı 2026-2 Dönemi | Koray Akdağ",
-  description: "1 Eylül-31 Ekim 2026 başvuru döneminde sadece finansman desteği (12 puan) açık; KOBİ 50M TL/büyük işletme 150M TL kredi limiti, Ocak-Haziran 2026 referans dönemiyle güncel rehber.",
+  description: "1 Eylül-30 Kasım 2026 başvuru döneminde sadece finansman desteği (12 puan) açık; KOBİ 50M TL/büyük işletme 150M TL kredi limiti, Ocak-Haziran 2026 referans dönemiyle güncel rehber.",
   keywords: [
     "İstihdamı Koruma Destek Programı",
     "İstihdamı Koruma Destek Programı 2026-2 dönemi",
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <BlogLayout
-      title="İstihdamı Koruma Destek Programı 2026-2 Dönemi: Sadece Finansman Desteği Açık (1 Eylül-31 Ekim 2026)"
-      description="KOSGEB'in 2026-2 başvuru döneminde (1 Eylül-31 Ekim 2026) sadece finansman desteği (12 puan) sunuluyor; 3.500 TL'lik performans desteği bu dönemde yok. Ocak-Haziran 2026 referans dönemi, Temmuz-Aralık 2026 koruma dönemi, KOBİ/büyük işletme kredi limitleri ve örnek hesaplamalarla güncel rehber."
+      title="İstihdamı Koruma Destek Programı 2026-2 Dönemi: Sadece Finansman Desteği Açık (1 Eylül-30 Kasım 2026)"
+      description="KOSGEB'in 2026-2 başvuru döneminde (1 Eylül-30 Kasım 2026) sadece finansman desteği (12 puan) sunuluyor; 3.500 TL'lik performans desteği bu dönemde yok. Ocak-Haziran 2026 referans dönemi, Temmuz-Aralık 2026 koruma dönemi, KOBİ/büyük işletme kredi limitleri ve örnek hesaplamalarla güncel rehber."
       category="KOSGEB • İSTİHDAM DESTEĞİ • 2026"
       date="2026"
       readTime="13 Dakika"
       slug="istihdami-koruma-destek-programi-2026"
       programDurumu="acik"
-      sonBasvuruTarihi="31 Ekim 2026"
+      sonBasvuruTarihi="30 Kasım 2026"
       coverImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     >
         <div className="rounded-2xl border border-blue-200 bg-blue-50 p-8">
@@ -49,7 +49,7 @@ export default function BlogPage() {
             başvuru) hem 3.500 TL&apos;lik performans desteği hem de
             10 puanlık finansman desteği birlikte sunulmuştu.{" "}
             <strong>Şu an açık olan 2026-2 döneminde</strong> (1
-            Eylül-31 Ekim 2026 başvuru) ise kurallar değişti:
+            Eylül-30 Kasım 2026 başvuru) ise kurallar değişti:
             performans desteği bu dönemde YOK, yalnızca finansman
             desteği (12 puana çıkarıldı) uygulanıyor ve kapsam artık
             büyük işletmeleri de kapsayacak şekilde genişletildi. Bu
@@ -75,7 +75,7 @@ export default function BlogPage() {
           </h2>
           <p className="text-xl leading-9 text-gray-800">
             <strong>Şu an açık olan 2026-2 döneminde</strong> (başvuru:
-            1 Eylül-31 Ekim 2026), <strong>2026 yılı Ocak-Haziran
+            1 Eylül-30 Kasım 2026), <strong>2026 yılı Ocak-Haziran
             ayları ortalama SGK prim gün sayısını Temmuz-Aralık 2026
             döneminde koruyan imalat sanayi işletmelerine</strong>{" "}
             kredi faizinin/kâr payının bir kısmını karşılayan{" "}
@@ -175,7 +175,7 @@ export default function BlogPage() {
           </p>
           <div className="mt-10 rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-8">
             <h3 className="mb-5 text-2xl font-bold text-[#071A2F]">
-              🆕 2026-2 Dönemi (1 Eylül-31 Ekim 2026): Ne Değişti?
+              🆕 2026-2 Dönemi (1 Eylül-30 Kasım 2026): Ne Değişti?
             </h3>
             <p className="mb-4 leading-8 text-gray-700">
               28 Ağustos 2026&apos;da KOSGEB &quot;İstihdamı Koruma
@@ -313,7 +313,7 @@ export default function BlogPage() {
             yönelik <strong>kredi + faiz/kâr payı desteği</strong>
             (finansman desteği). Ancak bu iki unsur her dönemde birlikte
             sunulmuyor: <strong>şu an açık olan 2026-2 döneminde
-            (1 Eylül-31 Ekim 2026) sadece finansman desteği var,
+            (1 Eylül-30 Kasım 2026) sadece finansman desteği var,
             performans desteği bu dönemde uygulanmıyor.</strong> Aşağıdaki
             tablo her iki dönemi ayrı ayrı gösteriyor.
           </p>
@@ -330,7 +330,7 @@ export default function BlogPage() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Başvuru Tarihleri</td>
                   <td className="p-5">3 Mart - 30 Nisan 2026</td>
-                  <td className="p-5">1 Eylül - 31 Ekim 2026</td>
+                  <td className="p-5">1 Eylül - 30 Kasım 2026</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-5 font-semibold">Referans Dönem</td>
@@ -613,8 +613,17 @@ export default function BlogPage() {
         {/* 5. TAKVİM */}
         <section id="takvim" className="mt-24 scroll-mt-24">
           <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-            6. Başvuru Süreci ve Eylül 2026 İtibarıyla Durum
+            6. Başvuru Süreci ve Kasım 2026 İtibarıyla Durum
           </h2>
+          <div className="mb-8 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-6">
+            <p className="leading-8 text-gray-700">
+              <strong>Güncelleme (1 Kasım 2026):</strong> KOSGEB, 2026-2
+              dönemi için başlangıçta ilan edilen 31 Ekim 2026 son başvuru
+              tarihini, 30 Ekim 2026 tarihli duyurusuyla <strong>30 Kasım
+              2026&apos;ya</strong> uzattı. Aşağıdaki bilgiler bu yeni
+              tarihe göre güncellenmiştir.
+            </p>
+          </div>
           <p className="mb-8 text-lg leading-9 text-gray-700">
             Program dönemsel olarak yürütülüyor; her dönemin kendi
             başvuru tarih aralığı var. 2026-2 dönemi başvuruları{" "}
@@ -623,7 +632,7 @@ export default function BlogPage() {
           <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-6 shadow-sm">
               <h3 className="mb-3 text-xl font-bold text-[#071A2F]">2026-2 Dönemi Başvuru Tarihi</h3>
-              <p className="text-gray-700 font-semibold">1 Eylül - 31 Ekim 2026 (açık)</p>
+              <p className="text-gray-700 font-semibold">1 Eylül - 30 Kasım 2026 (açık)</p>
             </div>
             <div className="rounded-xl border p-6 shadow-sm">
               <h3 className="mb-3 text-xl font-bold text-[#071A2F]">2026-1 Dönemi Başvuru Tarihi</h3>
@@ -637,7 +646,7 @@ export default function BlogPage() {
             <p className="leading-8 text-gray-700">
               28 Ağustos 2026&apos;da KOSGEB&apos;in yaptığı duyuruyla
               2026-2 dönemi başvuruları <strong>1 Eylül 2026&apos;da
-              açıldı ve 31 Ekim 2026&apos;a kadar</strong> devam ediyor.
+              açıldı ve 30 Kasım 2026&apos;a kadar</strong> devam ediyor.
               Bu dönemde sadece finansman desteği başvurusu alınıyor;
               performans desteği (3.500 TL) için yeni başvuru
               yapılamıyor. 2026-1 döneminde (Mart-Nisan 2026) başvurup
@@ -646,7 +655,7 @@ export default function BlogPage() {
               talebinde bulunmaya devam edebiliyor. Bu iki grup
               birbirinden bağımsız işliyor. Henüz başvurmamış ve şu an
               açık olan finansman desteğinden yararlanmak isteyen
-              işletmelerin, 31 Ekim 2026 son tarihine kadar KOSGEB
+              işletmelerin, 30 Kasım 2026 son tarihine kadar KOSGEB
               üzerinden başvurusunu tamamlaması gerekiyor. Güncel
               duyurular KOSGEB&apos;in resmî internet sitesi ve KOBİ
               Bilgi Sistemi üzerinden yayımlanmaktadır.
@@ -793,11 +802,11 @@ export default function BlogPage() {
                 2026-2 döneminde başvurmak için şimdi ne yapmalıyım?
               </h3>
               <p className="leading-8 text-gray-700">
-                Başvurular <strong>1 Eylül - 31 Ekim 2026</strong>{" "}
+                Başvurular <strong>1 Eylül - 30 Kasım 2026</strong>{" "}
                 arasında açık. İşletmenizin Ocak-Haziran 2026 dönemine
                 ait prime esas kazanç/prim gün verilerini, KOBİ Bilgi
                 Sistemi kayıtlarınızı güncel tutup KOSGEB üzerinden
-                başvurunuzu 31 Ekim 2026&apos;ya kadar tamamlamanız
+                başvurunuzu 30 Kasım 2026&apos;ya kadar tamamlamanız
                 gerekiyor; bu tarihten sonra bu dönem için başvuru
                 alınmaz.
               </p>
@@ -897,7 +906,7 @@ export default function BlogPage() {
           <p className="mb-8 text-lg leading-9 text-gray-700">
             İstihdamı Koruma Destek Programı dönemsel olarak işliyor ve
             her dönemin kuralları farklı olabiliyor. <strong>Şu an açık
-            olan 2026-2 döneminde (1 Eylül-31 Ekim 2026 başvuru)</strong>{" "}
+            olan 2026-2 döneminde (1 Eylül-30 Kasım 2026 başvuru)</strong>{" "}
             sadece finansman desteği var; performans desteği (3.500
             TL) bu dönemde uygulanmıyor, ama karşılığında finansman
             puanı 12&apos;ye çıkarıldı, kredi limiti büyük işletmelerde
@@ -905,7 +914,7 @@ export default function BlogPage() {
             büyük işletmeleri de içerecek şekilde genişledi. İmalat
             sanayinde faaliyet gösteren KOBİ ve büyük işletmeler için
             2026&apos;nın en kapsamlı istihdam odaklı finansman
-            mekanizmalarından biri olmaya devam ediyor. 31 Ekim 2026
+            mekanizmalarından biri olmaya devam ediyor. 30 Kasım 2026
             son başvuru tarihine kadar zaman var, ama referans dönem
             (Ocak-Haziran 2026) verilerinizi ve KOBİ Bilgi Sistemi
             kayıtlarınızı şimdiden hazırlamanız başvuruyu hızlandırır.
@@ -947,7 +956,7 @@ export default function BlogPage() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"İstihdamı Koruma Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Duruma göre değişir. Şu an açık olan 2026-2 döneminde sadece kredi + faiz desteği modeli var: işletme bankadan kredi kullanır, anaparayı öder; KOSGEB faiz/kâr payının 12 puana kadarlık kısmını geri ödemesiz karşılar. Geçmiş 2026-1 döneminde ise tekstil, giyim, deri, mobilya ve düğme/fermuar sektörlerinde çalışan başına aylık 3.500 TL doğrudan geri ödemesiz (hibe niteliğinde) destek de vardı, ama bu, yeni başvurular için artık geçerli değil."}},{"@type":"Question","name":"30 günden az prim günüm varsa destek nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Performans desteği, fiilî prim gününe göre değil referans dönemi ortalama prim gün sayısına göre hesaplanır: istihdamın korunduğu her ay için (referans dönemi ortalama prim gün sayısı ÷ 30) × 3.500 TL. Önemli olan, ödeme talep edilen ayın (veya koruma döneminin başından itibarenki ortalamanın) prim gününün referans ortalamanın altına düşmemesidir. Örnek 1'deki Anadolu Tekstil hesaplamasında bu mantık uygulanmıştır."}},{"@type":"Question","name":"Hizmet veya ticaret sektöründeki bir şirket başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca imalat sanayinde faaliyet gösteren işletmeleri kapsamaktadır."}},{"@type":"Question","name":"2026-2 döneminde başvurmak için şimdi ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Başvurular 1 Eylül - 31 Ekim 2026 arasında açık. İşletmenizin Ocak-Haziran 2026 dönemine ait prime esas kazanç/prim gün verilerini, KOBİ Bilgi Sistemi kayıtlarınızı güncel tutup KOSGEB üzerinden başvurunuzu 31 Ekim 2026'ya kadar tamamlamanız gerekiyor; bu tarihten sonra bu dönem için başvuru alınmaz."}},{"@type":"Question","name":"Büyük işletmeler kredi limitini nasıl hesaplar?","acceptedAnswer":{"@type":"Answer","text":"2026-2 döneminde (şu an açık): 2026 Ocak-Haziran dönemine ait prime esas kazanç toplamının aylık ortalaması esas alınır (6 aylık koruma döneminde çarpan 1, teknik kriterlere uyanlarda 2 kat), 150.000.000 TL üst limitini aşamaz (bkz. Örnek 4). Yatırım teşvik belgeli işletmeler için ise farklı bir formül var: teşvik belgesinde öngörülen ilave istihdam sayısı × başvuru yılının Ocak ayı brüt asgari ücreti × 6 (bkz. Örnek 3). Bu yalnızca kredi limitini belirler; desteği fiilen hak etmek ayrı bir şarttır."}},{"@type":"Question","name":"Bu programda mevcut çalışanlarım mı korunuyor, yoksa yeni personel mi almalıyım?","acceptedAnswer":{"@type":"Answer","text":"KOBİ'ler ve genel imalat işletmeleri için: mevcut çalışanlarınız korunuyor; somut bir kişi sayısı şartı yok, yalnızca referans dönem ortalama prim gün sayınızı koruma döneminde (en az 6 ay) koruyor olmanız yeterli. Yatırım teşvik belgeli büyük ölçekli işletmeler için ise durum farklı: bu işletmelerin teşvik belgesinde zaten taahhüt ettiği \"ilave istihdam\" sayısının en az yarısını, tamamlama vizesini takip eden 6 aylık dönemde (yarısı × 180 gün prim eşdeğeri) fiilen istihdam etmiş olması gerekiyor; bu grup için gerçekten yeni personel alıp sürdürme şartı var."}},{"@type":"Question","name":"Destek tutarı her ay otomatik mi yatıyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İşletmenin her ay istihdamını koruduğunu SGK kayıtlarıyla göstermesi ve ödeme talep formunu sistem üzerinden doldurması gerekir; ödeme talepleri son ay dışında her ayın beşinci günü sonuna kadar yapılabilir. Onaylanan tutar SGK'nın banka hesabına veya işletmenin Go Dijital Cüzdan hesabına aktarılır ve yalnızca vergi dairesi ile SGK prim borcu ödemesinde kullanılabilir."}},{"@type":"Question","name":"Danışmanlık desteği almak zorunlu mu?","acceptedAnswer":{"@type":"Answer","text":"Zorunlu değildir, ancak işletmenin hangi destek kanalına (performans mı finansman mı) uygun olduğunun doğru tespit edilmesi, kredi limiti formülünün doğru uygulanması, prim gün hesaplamalarının titizlikle takip edilmesi ve başvuru/ödeme talep süreçlerinin zamanında yürütülmesi alınacak destek tutarını doğrudan etkilemektedir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"İstihdamı Koruma Destek Programı hibe mi, kredi mi?","acceptedAnswer":{"@type":"Answer","text":"Duruma göre değişir. Şu an açık olan 2026-2 döneminde sadece kredi + faiz desteği modeli var: işletme bankadan kredi kullanır, anaparayı öder; KOSGEB faiz/kâr payının 12 puana kadarlık kısmını geri ödemesiz karşılar. Geçmiş 2026-1 döneminde ise tekstil, giyim, deri, mobilya ve düğme/fermuar sektörlerinde çalışan başına aylık 3.500 TL doğrudan geri ödemesiz (hibe niteliğinde) destek de vardı, ama bu, yeni başvurular için artık geçerli değil."}},{"@type":"Question","name":"30 günden az prim günüm varsa destek nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Performans desteği, fiilî prim gününe göre değil referans dönemi ortalama prim gün sayısına göre hesaplanır: istihdamın korunduğu her ay için (referans dönemi ortalama prim gün sayısı ÷ 30) × 3.500 TL. Önemli olan, ödeme talep edilen ayın (veya koruma döneminin başından itibarenki ortalamanın) prim gününün referans ortalamanın altına düşmemesidir. Örnek 1'deki Anadolu Tekstil hesaplamasında bu mantık uygulanmıştır."}},{"@type":"Question","name":"Hizmet veya ticaret sektöründeki bir şirket başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Program yalnızca imalat sanayinde faaliyet gösteren işletmeleri kapsamaktadır."}},{"@type":"Question","name":"2026-2 döneminde başvurmak için şimdi ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Başvurular 1 Eylül - 30 Kasım 2026 arasında açık. İşletmenizin Ocak-Haziran 2026 dönemine ait prime esas kazanç/prim gün verilerini, KOBİ Bilgi Sistemi kayıtlarınızı güncel tutup KOSGEB üzerinden başvurunuzu 30 Kasım 2026'ya kadar tamamlamanız gerekiyor; bu tarihten sonra bu dönem için başvuru alınmaz."}},{"@type":"Question","name":"Büyük işletmeler kredi limitini nasıl hesaplar?","acceptedAnswer":{"@type":"Answer","text":"2026-2 döneminde (şu an açık): 2026 Ocak-Haziran dönemine ait prime esas kazanç toplamının aylık ortalaması esas alınır (6 aylık koruma döneminde çarpan 1, teknik kriterlere uyanlarda 2 kat), 150.000.000 TL üst limitini aşamaz (bkz. Örnek 4). Yatırım teşvik belgeli işletmeler için ise farklı bir formül var: teşvik belgesinde öngörülen ilave istihdam sayısı × başvuru yılının Ocak ayı brüt asgari ücreti × 6 (bkz. Örnek 3). Bu yalnızca kredi limitini belirler; desteği fiilen hak etmek ayrı bir şarttır."}},{"@type":"Question","name":"Bu programda mevcut çalışanlarım mı korunuyor, yoksa yeni personel mi almalıyım?","acceptedAnswer":{"@type":"Answer","text":"KOBİ'ler ve genel imalat işletmeleri için: mevcut çalışanlarınız korunuyor; somut bir kişi sayısı şartı yok, yalnızca referans dönem ortalama prim gün sayınızı koruma döneminde (en az 6 ay) koruyor olmanız yeterli. Yatırım teşvik belgeli büyük ölçekli işletmeler için ise durum farklı: bu işletmelerin teşvik belgesinde zaten taahhüt ettiği \"ilave istihdam\" sayısının en az yarısını, tamamlama vizesini takip eden 6 aylık dönemde (yarısı × 180 gün prim eşdeğeri) fiilen istihdam etmiş olması gerekiyor; bu grup için gerçekten yeni personel alıp sürdürme şartı var."}},{"@type":"Question","name":"Destek tutarı her ay otomatik mi yatıyor?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İşletmenin her ay istihdamını koruduğunu SGK kayıtlarıyla göstermesi ve ödeme talep formunu sistem üzerinden doldurması gerekir; ödeme talepleri son ay dışında her ayın beşinci günü sonuna kadar yapılabilir. Onaylanan tutar SGK'nın banka hesabına veya işletmenin Go Dijital Cüzdan hesabına aktarılır ve yalnızca vergi dairesi ile SGK prim borcu ödemesinde kullanılabilir."}},{"@type":"Question","name":"Danışmanlık desteği almak zorunlu mu?","acceptedAnswer":{"@type":"Answer","text":"Zorunlu değildir, ancak işletmenin hangi destek kanalına (performans mı finansman mı) uygun olduğunun doğru tespit edilmesi, kredi limiti formülünün doğru uygulanması, prim gün hesaplamalarının titizlikle takip edilmesi ve başvuru/ödeme talep süreçlerinin zamanında yürütülmesi alınacak destek tutarını doğrudan etkilemektedir."}}]}) }}
       />
     </BlogLayout>
   );

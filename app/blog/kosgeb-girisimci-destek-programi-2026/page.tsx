@@ -30,7 +30,7 @@ export default function BlogPage() {
       readTime="13 Dakika"
       slug="kosgeb-girisimci-destek-programi-2026"
       programDurumu="acik"
-      sonBasvuruTarihi="İş Geliştirme Desteği 2026 3. dönem: 31 Ekim 2026 (İş Kurma Desteği başvuruları sürekli açık)"
+      sonBasvuruTarihi="İş Kurma Desteği sürekli açık (16 Aralık 2024 sonrası kurulanlar için 31 Aralık 2026'ya kadar yaş şartsız); İş Geliştirme Desteği 2026 3. dönem başvuruları 31 Ekim 2026'da kapandı, yeni dönem tarihi henüz açıklanmadı"
       coverImage="https://images.unsplash.com/photo-1752051548874-7d2176a84007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       ctaHeading="Yeni Modelde Hangi Destek Size Uygun, Birlikte Belirleyelim"
       ctaText="İş Kurma Desteğinden İş Geliştirme Desteğine, Faiz/Kâr Payı Desteğinden başvuru evrakına kadar yeniden yapılandırılan KOSGEB Girişimci Destek Programı sürecinin tamamında yanınızdayız. İşletmenizin hangi destekten ve ne kadar yararlanabileceğini birlikte değerlendirelim."
@@ -53,6 +53,25 @@ export default function BlogPage() {
           <li>✔ İş Kurma Desteği (performans + platform giderleri desteği) başvuruları yıl boyunca sürekli alınıyor.</li>
           <li>✔ Kadın ve genç girişimciler, ayrıca 1.000.000 TL&apos;ye kadar işletme sermayesi sağlayan ve maliyetinin yarısı KOSGEB tarafından karşılanan Faiz/Kâr Payı Desteğinden yararlanabiliyor.</li>
         </ul>
+      </div>
+
+      {/* GÜNCELLEME NOTU */}
+      <div className="mt-10 rounded-2xl border-l-4 border-blue-500 bg-blue-50 p-8">
+        <p className="leading-8 text-gray-700">
+          <strong>Güncelleme (1 Kasım 2026):</strong> 2026 yılı 3. dönem
+          İş Geliştirme Desteği çağrısı <strong>31 Ekim 2026&apos;da
+          kapandı</strong>; bu yazıda anlatılan 12-31 Ekim 2026 başvuru
+          takvimi artık geçmiş bir dönemi ifade ediyor ve yeni bir 4.
+          dönem çağrı tarihi KOSGEB tarafından henüz ilan edilmedi. Buna
+          karşılık <strong>İş Kurma Desteği başvuruları KOSGEB&apos;in
+          yönergesi uyarınca kesintisiz devam ediyor</strong>: 16 Aralık
+          2024 ve sonrasında kurulan işletmeler, diğer şartları
+          taşımaları kaydıyla, işletme yaşı sınırlaması aranmaksızın 31
+          Aralık 2026&apos;ya kadar bu destek için başvurabiliyor. İş
+          Geliştirme Desteği&apos;nin yeni dönem tarihini, yazının
+          yayımlandığı tarihteki takvim yerine KOSGEB&apos;in resmî
+          sitesinden teyit etmenizi öneririz.
+        </p>
       </div>
 
       {/* İÇİNDEKİLER */}
