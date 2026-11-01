@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "reeskont-kredisinde-net-ihracatci-sarti-kalkti-mi-2026",
+    title: "Reeskont Kredisinde Net İhracatçı Şartı Kalktı mı? İhracatçı Skoru Sistemi ve 2026 Güncel Limitler",
+    excerpt: "TCMB kaynaklı ihracat reeskont kredisinde uzun süre aranan 'net ihracatçı' şartı, katma değer odaklı 'ihracatçı skoru' sistemiyle değiştirildi. 5 Eylül 2026 tarihli 33361 sayılı Resmî Gazete'deki 11723 sayılı Karar'la gelen BSMV istisnası, döviz zorunluluklarının kalkması, 5 milyar TL günlük limit ve 60 milyon TL firma limitiyle 2026 güncel rehber.",
+    category: "İHRACAT FİNANSMANI • REESKONT KREDİSİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "dahilde-isleme-rejimi-diib-yurt-ici-kdvsiz-alim-2030",
     title: "Dahilde İşleme Rejimi (DİİB) Nedir? Yurt İçinden KDV'siz Alım Hakkı 2030'a Kadar Nasıl Güvence Altına Alındı?",
     excerpt: "Dahilde İşleme İzin Belgesi (DİİB) ile ihracat için kullanılacak girdiyi gümrük vergisi ve KDV ödemeden ithal etme veya yurt içinden tecil-terkin ile KDV'siz temin etme hakkı. DİİB ile Dahilde İşleme İzni (Dİİ) farkı, başvuru süreci, teminat, taahhüt kapatma ve KDV Kanunu Geçici 17. maddenin 7573 sayılı Kanun'la 2030'a uzatılmasıyla 2026 güncel rehber.",
