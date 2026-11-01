@@ -1,3 +1,198 @@
+# Günlük Fikir Araştırması - 1 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 1 Kasım 2026
+**Hedef:** İnsan Kaynakları, ruh sağlığı, lüks ikinci el, moda AI, coworking — geçmiş günlerden tamamen farklı sektörler
+
+---
+
+## FİKİR 1: AI Fashion Styling ve Kişisel Gardırop Yönetimi — "StyleBox"
+
+### Ne Bu?
+Türkiye'deki 500K+ şehirli, orta/yüksek gelirli tüketiciye **"AI stilist + kişisel gardırop dijitalizasyonu + trend önerisi" platformu.** (1) Kullanıcı mevcut kıyafetlerini fotoğrafla, (2) AI beden tipi/renk/stil analiz ediyor, (3) Kombinasyon önerileri, (4) Satın alma danışmanı (eksik parçalar), (5) Trend takip, (6) E-ticaret linkler (Trendyol, %5 komission). Küresel pazar: McKinsey (2026) "AI fashion recommendation 20M$ pazarı, %25 yıllık büyüme". Türkiye: Moda e-ticaret 20M$, styling danışmanlığı = boşluk.
+
+### Kanıt (Kaynaklar)
+- McKinsey 2026: AI fashion pazarı 20 milyar dolar, %25 CAGR
+- Marie Claire Korea 2026: Tüketiciler AI outfit önerisi istiyorlar
+- Rankmyai.com (Nisan 2026): Stylista.ai, Zelig başarılı
+- Türkiye: Moda e-ticaret 20M$, manuel stilist ağı yok
+
+### Gelir Modeli
+- Abonelik (ay 2): 5K × ₺99/ay = ₺495K/ay
+- E-ticaret komissyon (ay 3): 2K × ₺500 × %5 = ₺50K/ay
+- Tahmin (3. ay): ₺545K | (6. ay): ₺595K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** AI-native styling = boşluk. Instagram stylist'ler var ama sertifika yok.
+**Talep:** Moda hashtag 100K+ post/ay, kadın grupları styling önerisi arıyor.
+**Heyecan:** Lüks tüketim artiyor, AI pazarı 20M$, Türkçe boşluğu.
+
+### İlk Somut Adım
+Bugün Instagram fashion influencer'ları (20K-500K followers) 8-10'unu bul. Mesaj: "AI styling platform — kişisel gardırop + trend. Komisyon %50. MVP 2 hafta. Beta?" Gün sonu: **5-6 influencer.**
+
+### Zorluk/Risk
+- AI doğruluğu (kültürel subjektivite)
+- Veri gizliliği (foto/KVKK hassas)
+- Influencer churn
+- Moda volatilitesi
+
+**Risk:** ORTA
+
+---
+
+## FİKİR 2: Coworking Yönetim Yazılımı — "WorkspaceOS"
+
+### Ne Bu?
+Türkiye'deki 200+ coworking operatörüne **"üye yönetim + oda reservasyon + ödeme + analytics" yazılımı.** (1) Operatör paneli, (2) Üye app (giriş + reservasyon), (3) Dashboard (occupancy, revenue, churn), (4) Entegrasyon (kart, CRM, ödeme), (5) KOSGEB partnership upsell. Global market 2026: coworking yazılım 5+ milyar $ (The Business Research Company). Türkiye: Coworking büyüyor ama yazılım manual (Excel).
+
+### Kanıt (Kaynaklar)
+- Business Research Company 2026: Coworking yazılım pazarı 5+ milyar $, %20+ CAGR
+- OfficeRnD 2026: ABD coworking 7.776'dan 8.973'e çıktı (+13%)
+- Türkiye: Workin.space, eOfis var, çoğu manual işletim
+
+### Gelir Modeli
+- Temel paket (ay 2): 50 × ₺499/ay = ₺25K/ay
+- Premium (ay 3): 20 × ₺1.299/ay = ₺26K/ay
+- Per-seat fee (ay 3): 50 × 100 × ₺5 = ₺25K/ay
+- Tahmin (3. ay): ₺76K | (6. ay): ₺91K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Offisim var, global oyuncu Türkçe yok. Yazılım = boşluk.
+**Talep:** Operatörler üye yönetim/ödeme/IoT integrasyondan şikayet.
+**Heyecan:** Coworking pazar büyüyor, global yazılım pazarı 5M$, Türkçe boşluğu.
+
+### İlk Somut Adım
+Bugün İstanbul/Ankara coworking operatörü 10+ ve KOSGEB danışman bul. Mesaj: "Coworking yazılımı — üye, oda, ödeme, analytics. ₺499/ay, ₺1.299/ay PRO. MVP 2 hafta. Pilot?" Gün sonu: **4-5 operatör.**
+
+### Zorluk/Risk
+- Adoption (operatör tech-savvy yok)
+- IoT entegrasyonu (her sistem farklı)
+- Rakip hızlı response
+
+**Risk:** ORTA
+
+---
+
+## FİKİR 3: Ruh Sağlığı Psikolojist Matching — "TherapistMatch"
+
+### Ne Bu?
+Türkiye'deki 5M+ danışan arayan kişiye **"psikolojist eşleştirmesi + video/metin danışma + progress tracking" platformu.** (1) Danışan quiz (sorun, bütçe, dil, lokasyon), (2) AI + manuel psikolojist önerisi, (3) İlk seans video/metin, (4) Abonelik (4 seans/ay), (5) Progress tracking, (6) Kurumsal wellness upsell. Küresel: BetterHelp, Talkspace 5M$ valuation. Türkiye: Müthiş Psikoloji 100K$ yatırım almış ama fragmented.
+
+### Kanıt (Kaynaklar)
+- Yeni Birlik Gazetesi 2026: Müthiş Psikoloji 100K$ yatırım, 300 terapist planlıyor
+- DoktorTakvimi 2025: Psikoloji en çok randevu alan branş (dijital sağlık)
+- BetterHelp/Talkspace global 5M$ valuation, 3M+ danışan
+- Türkiye: Müthiş Psikoloji, TerapistimBurada var ama başlangıç aşaması
+
+### Gelir Modeli
+- Danışan abonelik (ay 2): 2K × ₺300/hafta = ₺2.4M/ay
+- Terapist komissyon (ay 3): 500 × 100 saat × ₺50 × %30 = ₺750K/ay
+- Premium features (ay 3): 500 × ₺49/ay = ₺25K/ay
+- Kurumsal (ay 4): 10 × ₺5K = ₺50K/ay
+- Tahmin (3. ay): ₺3.175M | (6. ay): ₺3.225M/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Müthiş Psikoloji startup aşaması. Global oyuncu (BetterHelp) Türkiye minimal.
+**Talep:** Danışan "uygun terapist bulma zor", terapist "müşteri bul, ödeme" sorunlu.
+**Heyecan:** Stigma azalıyor, dijital sağlık boom (psikoloji #1), matching proven, kurumsal wellness trend, KVKK = güven bariyeri.
+
+### İlk Somut Adım
+Bugün psikoloji derneği, İstanbul'daki klinik kurucusu 8-10'unu, HR müdürleri 5-6'sını bul. Terapist mesajı: "Danışan bulma platformu — video seans, ödeme. %80 senin. MVP 2 hafta. Platform olmak ister misin? İlk 20'ye 2 ay %0 komission." Gün sonu: **4-5 terapist + 2-3 şirket.**
+
+### Zorluk/Risk
+- Tıbbi liability (yanlış eşleştirme)
+- KVKK + veri güvenliği hassas
+- Terapist adoption (yaşlı/teknoloji yeni)
+- Churn (iyi terapist bulunca direkt anlaşma)
+
+**Risk:** ORTA-YÜKSEK
+
+---
+
+## FİKİR 4: Lüks Sertifikeli İkinci El Pazaryeri — "LuxReborn"
+
+### Ne Bu?
+Türkiye'deki 500K+ yüksek gelirli tüketiciye **"sertifikasyon + doğrulama + pazaryeri" lüks ikinci el platformu.** (1) Satıcı: lüks ürün listeliyor, (2) Doğrulama: fiziksel muayene + sertifika, (3) AI: fotoğraf analiz, (4) Pazaryeri: sertifikasız ürün, güvenli ödeme, (5) Kargo güvenli, (6) Opsiyonel: marka partnership. Pazar: EY 2026 Lüks Endeksi — %62 tüketici sertifikasyon lüks ikinci el almaya açık (+8 puan), 1.63M$ pazarı (+15% yıllık).
+
+### Kanıt (Kaynaklar)
+- EY 2026 Lüks Endeksi: %62 sertifikasyon istiyorsa, +8 puan yıllık
+- Research & Markets 2024: Türkiye ikinci el e-ticaret 1.63M$
+- Ticaret Bakanlığı 2024: 9.8M TL işlem, 17.5M işlem
+- Vestiaire Collective, Depop global başarılı
+- Türkiye: Beymen Reborn, Trendyol Dolap var ama sertifikasyon = boşluk
+
+### Gelir Modeli
+- Pazaryeri komissyon (ay 2): 500 × ₺2K × %25 = ₺250K/ay
+- Sertifikasyon (ay 2): 500 × ₺99 = ₺50K/ay
+- Premium seller (ay 3): 100 × ₺199 = ₺20K/ay
+- Marka partnership (ay 4): 5 × ₺5K = ₺25K/ay
+- Tahmin (3. ay): ₺340K | (6. ay): ₺345K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Beymen Reborn niş, Trendyol Dolap genel, sertifikasyon combo = boşluk.
+**Talep:** Lüks tüketici "sahte riski" korkusu, satıcı "fiyat + dolandırılma" riski.
+**Heyecan:** EY %62 talep gösteriyor, 1.63M$ + 15% yıllık, Beymen Reborn başarılı ama niş, sertifikasyon boşluğu.
+
+### İlk Somut Adım
+Bugün Instagram lüks moda grup moderatörleri, Beymen Reborn satıcı, vintage dükkan sahibi 8-10'unu bul. Satıcı mesajı: "Lüks pazaryeri — sertifikasyon + doğrulama + kargo. %75 senin. MVP 2 hafta. Satıcı olmak ister misin? İlk 10'a kurulum + 3 ay %0 komission." Gün sonu: **5-6 satıcı + 1-2 marka.**
+
+### Zorluk/Risk
+- Doğrulama hassasiyeti (sahte tespit hatası = lawsuit)
+- Satıcı churn (direkt kanal tercih)
+- Vergi karmaşıklığı (e-ticaret KDV)
+- Pazar volatilitesi (moda trendine bağlı)
+
+**Risk:** ORTA
+
+---
+
+## FİKİR 5: İnsan Kaynakları Yazılımı — "HRFlow"
+
+### Ne Bu?
+Türkiye'deki 10K+ KOBI'ye **"işe alım + maaş yönetim + KOSGEB uyumu" yazılımı.** (1) İş ilanı, (2) AI CV parsing (otomatik profil), (3) Matching (fit skoru), (4) Özlük dosyası, (5) Performans tracking, (6) KOSGEB raporlama (otomatik belge), (7) Bordro (KDV, stopaj, sigorta otomasyonu). Pazar: EY Girişimcilik Barometresi 2026 — tam zamanlı işe alım %44'ten %34'e düştü, verimli işe alım kritik. KOBI yazılım pazarı 500+ milyar TL, %12 büyüme.
+
+### Kanıt (Kaynaklar)
+- EY Barometresi 2026 (1.009 KOBI): tam zamanlı %44'ten %34'e, verimlilik artiyor
+- SHRM 2026: %46 organizasyon 2026'da İK'da AI kullanacak
+- Türkiye KOBI yazılım pazarı 5-7M TL, %12+ CAGR
+- Global ATS (BambooHR, Workday) başarılı ama Türkiye KOBI'ye = overcomplicated
+
+### Gelir Modeli
+- Temel paket (ay 2): 500 × ₺199/ay = ₺100K/ay
+- Growth (ay 3): 100 × ₺699/ay = ₺70K/ay
+- KOSGEB danışmanlık (ay 4): 50 × ₺499 = ₺25K/ay
+- Bordro service (ay 3): 200 × ₺5 × 100 avg = ₺100K/ay
+- Tahmin (3. ay): ₺295K | (6. ay): ₺295K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Paycool, Logo var, fragmented. Global (BambooHR, Workday) = pahalı/genel.
+**Talep:** KOBI forum'ları "CV eşleştirme zor", "bordro işlemi zaman", "KOSGEB belge toplama" şikayeti.
+**Heyecan:** EY barometresi talep gösteriyor, AI parsing proven, KOSGEB channel, SaaS + service = stabil revenue, Türkçe + KOBI-specific = boşluk.
+
+### İlk Somut Adım
+Bugün KOSGEB danışman ağları, TOBB, KOBI forum'ları 8-10'unu, patron grupları bul. Danışman mesajı: "KOBI İK yazılımı — CV parse, bordro, KOSGEB rapor. ₺199/ay temel, ₺699/ay growth. MVP 2 hafta. Partner danışman olmak ister misin? Müşterilerinize ₺99, siz %20 rev share." Gün sonu: **4-5 danışman + 6-8 KOBI.**
+
+### Zorluk/Risk
+- Müşteri eğitimi (KOBI adoption uzun)
+- Bordro kompleksliği (vergi sık değişiyor)
+- Çalışan verileri (KVKK hassas)
+- Rakip pazar kontrolü (Logo, Paycool)
+- KOSGEB entegrasyonu (API karmaşık)
+
+**Risk:** ORTA
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Ruh Sağlığı Psikolojist/Terapist Matching Platformu — "TherapistMatch"**
+
+Beş fikir arasında en doğrulanmış talep (DoktorTakvimi psikoloji #1), en proven model (BetterHelp 5M valuation), Türkiye'deki ürün boşluğu (Müthiş Psikoloji yatırım almış ama small-stage) ve en güçlü güven bariyeri (KVKK/tıbbi = rekabet sınırlı).
+
+Diğerleri: **StyleBox** — Global 20M$ başarılı ama Türkiye moda fragmented (Trendyol dominant), influencer zaten hizmet veriyor, AI doğruluğu kültürel risk. **WorkspaceOS** — Pazarı büyüyor ama Türkiye niş (200 vs global 9K+), adoption (operatör tech yok), IoT kompleks. **LuxReborn** — Pazar doğrulanmış (%62, 1.63M$) ama Beymen Reborn zaten büyüyor, doğrulama hassasiyeti, satıcı churn. **HRFlow** — Talep gösterilmiş ama rakip (Logo, Paycool) pazar tutuyorsa, adoption uzun, bordro kompleks.
+
+**TherapistMatch:** (1) Pazar doğrulanmış (psikoloji #1 dijital sağlık, Müthiş 100K$), (2) Trend kesit (+50% yıllık danışan), (3) Matching proven + B2B (wellness), (4) KVKK güven bariyeri, (5) MVP hızlı (3 hafta), (6) Tekrarlayan revenue, (7) Ölçeklenebilir, (8) Global success (BetterHelp 5M), (9) Türkçe boşluğu. **Hedef:** Hafta MVP (10 terapist, 50 danışan), ay sonunda 100 terapist + 500 danışan (₺2.4M/ay), 6. ay ₺3.225M/ay. **Riskler yönetilebilir:** Tıbbi liability/KVKK (legal danışman önemli), matching doğruluğu (2 deneme seans + AI refine), churn (platform features ile lock-in: progress, corporate wellness).
+
 # Günlük Fikir Araştırması - 31 Ekim 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
