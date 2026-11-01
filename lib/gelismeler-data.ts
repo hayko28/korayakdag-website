@@ -2064,6 +2064,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İhracat beklentisinin kötümser bölgeye geçerken ithalat beklentisinin yükselmesi, dördüncü çeyrek bütçesini yalnızca son ay rakamlarına göre kuran ihracatçı işletmeler için ayrı bir sinyal. Sipariş ve nakit akışı planlarını bu anket sonuçlarıyla birlikte gözden geçirmelerini öneririm.",
   },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "13 Ekim 2026",
+    eklendiTarihi: "2026-11-01",
+    baslik:
+      "BiGG Yatırım Programı 2026 yılı 1. çağrısında 91 girişimciye Mükemmeliyet Mührü verildi",
+    ozet:
+      "TÜBİTAK, Türkiye'nin ilk yatırım tabanlı girişimcilik destek programı olan BiGG Yatırım Programı'nın 2026 yılı birinci çağrısının sonuçlarını 13 Ekim 2026'da açıkladı. Çağrıya 2.844 girişimci iş fikriyle başvurdu; 104 uygulayıcı kuruluştan hızlandırma desteği alan 1.291 adaydan 436'sının iş planı olgunlaştırılarak değerlendirildi ve toplam 91 girişimci Mükemmeliyet Mührü almaya hak kazandı. Mührü alan girişimciler TÜBİTAK BiGG Fonu ile sözleşme imzalayıp şirketlerini kurarak teknoloji odaklı iş planlarını yürütecek; program kapsamında kurulan şirket sayısı bu turla birlikte 2.770'e ulaştı.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/bigg-yatirim-2026-yili-1-cagrisinin-sonuclari-belli-oldu",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Mükemmeliyet Mührü almak yatırımın kendisi değil, TÜBİTAK BiGG Fonu'nun detaylı incelemesine giden bir ön onay. Mührü alan girişimcilere şirket kuruluşunu TÜBİTAK'ın yönlendirmesini bekleyerek, TOBB'un sağladığı kolaylıklardan yararlanacak şekilde planlamalarını öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "21 Ekim 2026 (26 Ekim 2026'da duyuruldu)",
+    eklendiTarihi: "2026-11-01",
+    baslik:
+      "TÜBİTAK 1509 kapsamında Eureka Network Türkiye-İspanya 2026 çağrısı açıldı",
+    ozet:
+      "TÜBİTAK, Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı (1509) kapsamında Eureka Network Türkiye-İspanya 2026 yılı çağrısını 21 Ekim 2026'da açtı. Sermaye şirketi statüsündeki Türk firmalarının İspanya'dan en az bir şirketle birlikte başvurabildiği çağrıda, akıllı üretim ve endüstriyel dijitalleşme, enerji ve akıllı altyapı, akıllı hareketlilik, drone ve lojistik ile tarım-gıda öncelikli alanlar arasında sayılıyor; ancak tüm tematik alanlara açık. Başvuru süreci iki aşamalı: önce ortakların birlikte sunduğu uluslararası EUREKA başvurusu, ardından TÜBİTAK 1509'a ulusal başvuru yapılıyor. Uluslararası çağrı 3 Mart 2027'de kapanacak.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/eureka-network-turkiye-ispanya-2026-yili-cagrisi-acildi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: İspanya'dan bir sanayi ortağı bulabilen firmalara, başvuru süresi uzun görünse de önce EUREKA'nın uluslararası aşamasını ortaklarıyla birlikte zamanında tamamlamalarını öneririm; ulusal 1509 başvurusu bu aşamayı geçen projeler için açılıyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
