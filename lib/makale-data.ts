@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ihracat-hedefi-3-ay-once-asildi",
+    title: "İhracatta 282 Milyar Dolarlık Hedef 3 Ay Önce Aşıldı: Peki Şimdi Ne Olur?",
+    excerpt:
+      "Ticaret Bakanı Ömer Bolat'ın açıklamasına göre Eylül'de ihracat yüzde 15,4 artışla 26 milyar dolara çıkarak Cumhuriyet tarihinin en yüksek eylül rakamını kırdı ve yıllıklandırılmış toplam 283,7 milyar dolara ulaşarak 282 milyar dolarlık yıllık hedefi üç ay erken geçti. Bir ekibin yıllık kotasını vaktinden önce doldurması aslında bir kutlama değil, kalan dönemin nasıl kullanılacağına dair daha zor bir karar anlamına geliyor.",
+    tag: "Strateji",
+    date: "1 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "issizlik-artarken-ise-alim-neden-kolaylasmiyor",
     title: "İşsizlik Yüzde 8,4'e Çıkarken İşe Alım Neden Kolaylaşmıyor?",
     excerpt:
