@@ -2092,6 +2092,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İspanya'dan bir sanayi ortağı bulabilen firmalara, başvuru süresi uzun görünse de önce EUREKA'nın uluslararası aşamasını ortaklarıyla birlikte zamanında tamamlamalarını öneririm; ulusal 1509 başvurusu bu aşamayı geçen projeler için açılıyor.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-11-02",
+    baslik:
+      "TCMB, Ocak 2026'dan sonra ilk kez faiz indirdi: Politika faizi yüzde 36'ya çekildi",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 22 Ekim 2026 tarihli toplantısında bir hafta vadeli repo ihale faiz oranını 100 baz puan indirerek yüzde 37'den yüzde 36'ya düşürdü. Kurul ayrıca gecelik borç verme faizini yüzde 40'tan yüzde 39'a, gecelik borçlanma faizini yüzde 35,5'ten yüzde 34,5'e çekti; bu karar, Ocak 2026'daki indirimden sonra beş toplantı boyunca sabit kalan faizde ilk değişiklik oldu.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-45",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek bir indirim henüz kalıcı bir eğilim anlamına gelmiyor. Yıl başından beri sabit faize göre bütçe yapan işletmelere, finansman ve yatırım kararlarını bu yeni seviyeyle, aralık toplantısını da bekleyerek yeniden değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "30 Ekim 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-02",
+    baslik:
+      "TÜİK: Ekonomik Güven Endeksi Ekim'de yüzde 3,9 düşüşle yeniden 100 eşiğinin altına indi",
+    ozet:
+      "TÜİK'in 30 Ekim 2026'da açıkladığı verilere göre Ekonomik Güven Endeksi, Eylül'deki 101,3 seviyesinden yüzde 3,9 düşüşle 97,3'e geriledi ve yeniden 100 referans değerinin altına indi. Beş alt endeksten üçü geriledi; en sert düşüş yüzde 7,7 ile tüketici güveninde yaşanırken (91,9'dan 84,8'e), reel kesim (imalat sanayi) güveni yüzde 1,4 düşüşle 101,1'e, hizmet sektörü güveni yüzde 2,4 düşüşle 109,2'ye indi; perakende ticaret ve inşaat sektörlerinde ise sınırlı artış görüldü.",
+    kaynakUrl:
+      "https://www.forbes.com.tr/haberler/ekonomik-guven-endeksi-ekim-ayinda-97-3-seviyesine-geriledi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Endeksin yeniden eşiğin altına inmesi, özellikle tüketici güvenindeki sert düşüş nedeniyle iç talebe dayalı işletmelerin yıl sonu satış öngörülerini temkinli güncellemesi gerektiğine işaret ediyor; tek bir ayın verisine değil birkaç aylık eğilime göre karar vermelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
