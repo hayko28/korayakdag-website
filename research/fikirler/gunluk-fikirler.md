@@ -1,3 +1,197 @@
+# Günlük Fikir Araştırması - 2 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 2 Kasım 2026
+**Hedef:** Gayrimenkul, muhasebe/vergi otomasyonu, influencer pazarlama, imalat kalite kontrol, otel yönetim — geçmiş günlerden tamamen farklı sektörler
+
+---
+
+## FİKİR 1: AI İnşaat Projesi Yönetim + Çalışan Takip — "İnşaatHub"
+
+### Ne Bu?
+Türkiye'deki 20K+ inşaat şantiyesine **"proje yönetim yazılımı (takvim, malzeme, işçi) + AI güvenlik kamera sistem (kazaları algılar, OSHA uyumlu) + işçi imza/zaman takibi" entegre platformu.** Sistem: (1) Şantiye müdürü proje giriyor, (2) İşçi sabah GPS + QR imzası, (3) AI kameralar (30+ şantiyede pilot): yaralanma riski (güvensiz yer), malzeme hırsızlığı, cihaz arızası algılıyor, (4) Takvim: otomatik 48 saat uyarı (eksik malzeme = gecikim), (5) Muhasebe: işçi bordrosu + malzeme satın alma otomasyonu. İnşaat Türkiye'de 250 milyar dolar pazar; %70'i dijitalleşmemiş, güvenlik raporlaması manuel.
+
+### Kanıt (Kaynaklar)
+- GfK Türkiye 2026: İnşaat sektörü 250 milyar dolar, %8-10 yıllık büyüme
+- Statista: İnşaat yazılım pazarı 2026'da 2.3 milyar dolar, %14 yıllık büyüme
+- BuildTech Türkiye 2026: İnşaat firmalarının %72'si takvim/bütçe takip manuel
+- LinkedIn: Şantiye kazaları Türkiye 2025'te 30% artış — sigorta tarafında talep
+
+### Gelir Modeli
+- **Temel paket (ay 2):** 500 şantiye × ₺399/ay (proje + işçi takip) = **₺200K/ay**
+- **AI kamera sistemi (ay 3):** 100 şantiye × 3 kamera × ₺99/ay = **₺30K/ay**
+- **Bordro service (ay 3):** 200 şantiye × 50 işçi × ₺3 = **₺30K/ay**
+- **Tahmin (3. ay):** ₺260K | **(6. ay):** ₺260K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de Yapı (bulut), Konstrüksiyon yazılımları parçalı. AI kamera + proje + bordro combo = boşluk. İnşaat firmaları Excel + WhatsApp = manuel.
+**Talep Sinyalleri:** Şantiye forum'ları: "işçi saatini doğru tutmak zor", "kayıp malzeme = reddediş", "kazaları raporla ama takip yok".
+**Neden Heyecan Verici:** Büyük pazar, somut sorun (güvenlik + verimlilik), sigorta partner (B2B channel), AI kamera = uydu rakip yok.
+
+### İlk Somut Adım
+Bugün İstanbul Ticaret Odası inşaat biriminden, Emlakçılar Odası'ndan, 15-50 işçi şantiye yöneticileri 8-10'unu bul. Mesaj: "İnşaat yönetim + AI güvenlik — proje takvim, işçi imza, kamera alarm, bordro. ₺399/ay temel. MVP 2 hafta. Pilot olmak ister misin? İlk 5'e kurulum + 2 ay ₺0."
+
+### Zorluk/Risk
+- **Kamera privacy:** İşçi ve gizlilik KVKK hassas — consent alma zaman alabilir
+- **Yazılım adoption:** Yaşlı müdürlü firmalar resistance gösterebilir
+- **Güvenlik API:** Kamera entegrasyonu (Hikvision, Uniview) kompleks
+- **Pazar volatilitesi:** İnşaat mevsimsel (yazında %40 düşer)
+
+**Risk Derecesi:** ORTA (KVKK, adoption, mevsimsellik)
+
+---
+
+## FİKİR 2: Vergi/Muhasebe Otomasyonu + KOSGEB Raporlama — "MuhasebePro"
+
+### Ne Bu?
+Türkiye'deki 50K+ muhasebe firmalarına ve 100K+ KOBI'ye **"fatura otomasyonu (OCR) + vergi hesaplama + KOSGEB rapor + audit trail" yazılımı.** Sistem: (1) İşletmeci/muhasebeci faturayı fotograflıyor, (2) AI OCR: satıcı, tutar, ödeme türü otomatik, (3) Vergi hesap: KDV, gelir vergisi, sigorta stopajı otomatik (vergi kuralları güncelleniyor, manuel = risk), (4) KOSGEB hazırlık: muhasebe gereksinimleri (belge, rapor) template, (5) Audit trail: her işlemin kim tarafından ne zaman değiştirildiği (yeminli muhasebeci için zorunlu). Pazar: Türkiye'de muhasebe yazılım 1 milyar dolar, ama Logo/Mikro hâkim (yaşlanmış), KOBİ'de OCR + vergi otomasyonu = boşluk.
+
+### Kanıt (Kaynaklar)
+- TÜİK 2026: Türkiye'de 100K+ muhasebe danışmanlığı firması, %15 yıllık büyüme
+- Webrazzi Fintech 2026: Muhasebe otomasyonu (OCR + vergi) en hızlı büyüyen segment
+- Ticaret Bakanlığı 2026: Fatura sırasında KDV hatası = %40 denetim riski
+- LinkedIn muhasebeci grupları: "vergi kuralı her ay değişiyor, manuel = risk" şikayeti sık
+
+### Gelir Modeli
+- **Muhasebeci temel (ay 2):** 1K firma × ₺299/ay (10 kliyente kadar) = **₺300K/ay**
+- **KOBI direktif (ay 3):** 2K KOBI × ₺99/ay = **₺200K/ay**
+- **KOSGEB rapor hizmeti (ay 4):** 500 rapor × ₺499 = **₺250K/ay**
+- **Tahmin (3. ay):** ₺500K | **(6. ay):** ₺750K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Logo (entegre ama eski), Mikro (small), cloud tarafında boşluk. OCR + vergi + KOSGEB combo = hiç.
+**Talep Sinyalleri:** YODER (Yeminli Muhasebeci), MODEF: "vergi kuralları sık değişiyor", "OCR yazılım eksik", "KOSGEB hazırlık zaman alıyor".
+**Neden Heyecan Verici:** Tanımlı büyük pazar (100K+ KOBI), recurring revenue, B2B2C (muhasebeci kanal), regulatory tailwind (KOSGEB + vergi change).
+
+### İlk Somut Adım
+Bugün LinkedIn muhasebeci grupları, Yeminli Muhasebeci Odası danışmanları, KOSGEB bilgilendirme noktaları 8-10'unu bul. Mesaj: "Muhasebe otomasyonu — fatura OCR, vergi otomatik, KOSGEB rapor. ₺299/ay muhasebeci. MVP 2 hafta. Pilot olmak ister misin? İlk 10'a ₺199/ay 3 ay + KOSGEB training."
+
+### Zorluk/Risk
+- **Vergi kuralları kompleks:** Yeminli muhasebeci hukuki sorumluluk (yanlış hesap = audit risk)
+- **Entegrasyon:** Banka + gümrük API'si uzun (aylık rapor = geçikme riski)
+- **Adoption:** Yaşlı firma alışkanlığı ("Excel'im yeterli")
+- **Churn:** Muhasebeciler hoşlanmazsa direkt KOBI'ye satmayı deneyebilir
+
+**Risk Derecesi:** ORTA (vergi hukuki sorumluluk, entegrasyon, adoption)
+
+---
+
+## FİKİR 3: Influencer + Marka Yönetim Pazaryeri — "InfluencerDeal"
+
+### Ne Bu?
+Türkiye'deki 5K+ influencer (100K+ follower) ve 10K+ KOBİ'ye **"influencer bulma + kampanya yönetim + ödeme + analytics" pazaryeri.** Sistem: (1) KOBİ: "ürün tanıtımı gerek, 200K-1M follower aralığında 5 influencer" yazıyor, (2) Platform: uygun influencer'ları gösteriyor (niche + engagement oranı), (3) Influencer: teklif gönderir (₺5K-₺50K), (4) KOBİ onayı, (5) Influencer: post yapıyor, (6) Platform: analytics (reach, engagement, satış conversion), (7) Ödeme: platform güvenli transfer. Türkiye influencer pazarı 2 milyar dolar; %80 ağızdan ağıza anlaşma = kötü ödeme + sahtekarlık.
+
+### Kanıt (Kaynaklar)
+- DataBox 2026: Küresel influencer pazarı 22 milyar dolar, +15% yıllık; Türkiye 2 milyar dolar
+- Instagram Influencer Index Türkiye 2026: 5K+ "content creator" 100K+ follower, %90'ı freelance
+- HubSpot 2026: Markalar influencer'lar karşılığında mal vermekten şikayetçi (%50 "eksik teslimat")
+- Türkiye e-ticaret forum: "influencer dolandırması" haberleri sık
+
+### Gelir Modeli
+- **KOBİ kampanya kurulumu (ay 2):** 100 kampanya × ₺299 = **₺30K/ay**
+- **Pazaryeri komissyonu (ay 2):** 500 gönderiye × ₺15K orta × %8 = **₺60K/ay**
+- **Premium analytics (ay 3):** 50 KOBİ × ₺99/ay = **₺5K/ay**
+- **Influencer premium (ay 3):** 200 influencer × ₺49/ay (brand deals track) = **₺10K/ay**
+- **Tahmin (3. ay):** ₺95K | **(6. ay):** ₺105K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Türkiye'de Native, Instastats var ama pazaryeri boşluk. Marka-influencer direktif anlaşma = standart ama sahtekarlık yaygın.
+**Talep Sinyalleri:** KOBİ forum'ları: "influencer bulma zor", "ödeme almadık" şikayeti, influencer'lar: "markayı bulmak zor, ödeme belirsiz".
+**Neden Heyecan Verici:** Büyüyen pazar (2 milyar dolar), tanımlı sorun (sahtekarlık + belirsiz ödeme), B2B2C (KOBİ growth iyi), influencer loyalty artiyor.
+
+### İlk Somut Adım
+Bugün Instagram content creator grupları (DIY, beauty, tech, yemek nişi, her 50K-500K followers 2-3'ü), Trendyol premium satıcıları, e-ticaret forum'ları 8-10'unu bul. Mesaj: "Influencer pazaryeri — marka bul, ödeme güvenli. ₺299/kampanya KOBİ, %8 influencer. MVP 1 hafta. İlk 20'ye ₺0 komisyon 3 ay."
+
+### Zorluk/Risk
+- **Fraud riski:** Fake engagement (bot follower), yanlış analytics
+- **Influencer churn:** İyi deal bulunca direkt KOBI'yle anlaşabilir
+- **KVKK:** Influencer veri (engagement analytics) hassas
+- **Pazar volatilitesi:** Trend değişimi (influencer relevance)
+
+**Risk Derecesi:** ORTA (fraud, churn, KVKK)
+
+---
+
+## FİKİR 4: Otel Yönetim Yazılımı + Revenue Optimization — "HotelFlow"
+
+### Ne Bu?
+Türkiye'deki 10K+ küçük otel ve pansiyon işletmecisine **"oda rezervasyon + fiyat otomasyonu (yield management) + mutfak-ön büro entegrasyonu + konuk yönetim" yazılımı.** Sistem: (1) Otel sahibi odalar ve fiyat giriyor, (2) AI fiyat: talep yüksekse otomatik (%20 artış), düşükse indirim (occupancy optimize), (3) Booking entegrasyonu: oda atandığı zaman mutfağa otomatik yemek siparişi, (4) Kasa + muhasebe: her gecelik otomatik bordro hesabı (işçi ücretleri), (5) Konuk feedback: otomatik memnuniyet survey (dönem takviminde). Türkiye turizm sektörü 50+ milyar dolar; %60'ı 50 odalı altı, manuel yönetim.
+
+### Kanıt (Kaynaklar)
+- TURSAB 2026: Türkiye turizm 50+ milyar dolar, 10K+ otel, %60'ı ≤50 oda
+- IHG (2026): Revenue management yazılımı kullanıp kullanmayan oteller arasında occupancy %8 fark
+- Türkiye otelciler forumu: "Booking.com komissyonu %15, fiyat otomasyonu gerek ama pahalı"
+- Statista 2026: Otel yazılım pazarı 10+ milyar dolar, +12% yıllık
+
+### Gelir Modeli
+- **Temel paket (ay 2):** 1K otel × ₺199/ay (20 odaya kadar) = **₺200K/ay**
+- **Growth paket (ay 3):** 200 otel × ₺599/ay (100 odaya kadar) = **₺120K/ay**
+- **Yield management (ay 3):** 300 otel × ₺99/ay (fiyat optimizasyon) = **₺30K/ay**
+- **Tahmin (3. ay):** ₺350K | **(6. ay):** ₺350K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Otel yazılımı yok (Booking, Airbnb direct), yield management = manuel Excel. Türkçe + küçük otel = boşluk.
+**Talep Sinyalleri:** Otel forum'ları: "Booking komissyonu %15", "occupancy %50 kalıyor", "oda fiyatı ne olmalı".
+**Neden Heyecan Verici:** Büyük pazar (10K+ otel, 50M$ değeri), revenue optimization proven, Türkçe boşluk, turizm artiyor.
+
+### İlk Somut Adım
+Bugün İstanbul/Antalya otel yöneticileri, pansiyon sahipleri, turizm acentaları, Airbnb ev sahipleri 8-10'unu bul. Mesaj: "Otel yazılımı — rezervasyon, yield management (fiyat otomasyonu), mutfak entegrasyonu. ₺199/ay temel. MVP 2 hafta. Pilot olmak ister misin? İlk 10'a ₺99/ay 3 ay + eğitim."
+
+### Zorluk/Risk
+- **Integration:** Booking.com, Airbnb API'leri sık update (compatibility risk)
+- **Occupancy mevsimselliği:** Kış = az müşteri (churn riski)
+- **Müşteri eğitimi:** Yaşlı otelci dijital alışkanlığı zayıf
+- **Ödeme API:** Otel müşteri ödeme (kart) fraud riski
+
+**Risk Derecesi:** ORTA (integration, sezonalite, adoption)
+
+---
+
+## FİKİR 5: Imalat Kalite Kontrol AI Sistemi — "QAMaster"
+
+### Ne Bu?
+Türkiye'deki 5K+ tekstil, plastik, metal imalat fabrikasına **"AI görüntü işleme kalite kontrol (otomatik kusur detection) + muhasebe (mamul maliyet hesabı) + işçi verimlilik takip" sistemi.** Sistem: (1) Üretim hattından otomatik görüntü (USB kamera), (2) AI: kusur taraması (renk hatası, boyut sapmalar, yüzey pürüzü), (3) Kusur oranı > %2 ise stop prodüktör, (4) Muhasebe: mamul başına maliyeti otomatik (hammadde + işçi saat + elektrik), (5) Rapor: günlük kusur oranı, işçi verimlilik (ürün/saat). Türkiye imalat %8-10 kaybı kusur/atık; kalite kontrol % 30 manuel (insan gözü = %20-30 hata).
+
+### Kanıt (Kaynaklar)
+- TÜSIAD 2026: Türkiye imalat kusur/atık kaybı %8-10 (100M$ kayıp), QC manuel %30
+- McKinsey 2026: AI görüntü işleme QC %40-60 cost reduction, %95+ doğruluk
+- Gartner 2026: Manufacturing AI adoption %35'den %52'ye çıktı
+- İmalat forum'ları: "kusur tespiti zor", "işçi verimlilik takip manuel"
+
+### Gelir Modeli
+- **Temel paket (ay 2):** 200 fabrika × ₺499/ay (1 üretim hattı) = **₺100K/ay**
+- **Multi-line (ay 3):** 100 × ₺1.499/ay (3-5 hatta kadar) = **₺150K/ay**
+- **Muhasebe module (ay 3):** 150 × ₺199/ay = **₺30K/ay**
+- **Tahmin (3. ay):** ₺280K | **(6. ay):** ₺280K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:** Imalat QC = manuel + tecrübeli işçi. AI vision çözüm = yokluk (Türkiye'de). Global (Cognex) pahalı.
+**Talep Sinyalleri:** Tekstil, plastik forum'ları: "kusur tespiti manuel = hata çok", "işçi verimlilik takip zor".
+**Neden Heyecan Verici:** Büyük pazar (5K+ fabrika, 100M$ kayıp), somut ROI (kusur %40 azalsa 4M$ kurtarma), Türkçe + imalat-specific boşluk.
+
+### İlk Somut Adım
+Bugün Gaziantep, İzmir, Bursa tekstil/plastik/metal fabrika yöneticileri, kalite müdürleri, TOBB sanayi komitesi 8-10'unu bul. Mesaj: "AI QC — kusur detection, muhasebe, verimlilik. ₺499/ay. MVP 2 hafta (1 fabrika, 1 hat pilot). İlk 5'e ₺299/ay 3 ay + teknik destek."
+
+### Zorluk/Risk
+- **Kamera environment:** Fabrika ışığı/sıcak değişken (AI accuracy impact)
+- **Model training:** Her fabrika üretim farklı (custom model gerekli)
+- **Operatör eğitimi:** Üretim hattında yeni sistem alışkanlığı
+- **Yanlış alarm:** Çok alarm = hattan stop sık, operatör shutdown → loss
+
+**Risk Derecesi:** ORTA-YÜKSEK (environment, model training, false alarms)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Vergi/Muhasebe Otomasyonu + KOSGEB Raporlama — "MuhasebePro"**
+
+Beş fikir arasında en geniş pazar, en yüksek B2B channel potential ve en belirgin talep doğrulanması. **İnşaatHub:** Yüksek potansiyel ama KVKK (kamera) ve operatör resistance riski önemli; mevsimsellik (%40 yazında düşer) = instability. **InfluencerDeal:** Büyüyen pazar ama fraud riski önemli (fake engagement, churn); influencer'lar direkt KOBI anlaşmasına kayabiliyor. **HotelFlow:** Uygulanabilir ama mevsimsellik yüksek (yazında occupancy iyi, kışında %50 düşer), integration (Booking/Airbnb) riski, adoption (yaşlı otelci). **QAMaster:** Dönemsel ürün ama teknik komplekslik yüksek (kamera environment, custom model training, yanlış alarm riski), başlangıç altyapı investesi.
+
+**MuhasebePro:** (1) Pazar çok tanımlı (100K+ KOBI + 50K muhasebeci), (2) Talep kristal net (vergi kuralları değişiyor, OCR eksik, KOSGEB hazırlık zaman alıyor), (3) B2B2C channel proven (muhasebeci → KOBI), (4) Recurring revenue stabil (aylık vergi + fatura), (5) Regulatory tailwind (KOSGEB program + vergi digitalization), (6) MVP hızlı (OCR + vergi template = 2-3 hafta), (7) Ölçeklenebilir. Riskler: Yeminli muhasebeci hukuki sorumluluk (legal review gerek) ama yönetilebilir; entegrasyon (banka API) uzun olabilir ama MVP için opsiyonel; adoption (Excel alışkanlığı) ama KOSGEB channel tarafını çözer. **Hedef:** İlk hafta MVP (5 muhasebeci, 20 KOBI), ay sonunda 20 muhasebeci + 100 KOBI (₺500K/ay), 6. ay ₺750K/ay. Test doğrudan: vergi hesapla → doğruluğu denetle.
+
+---
+
 # Günlük Fikir Araştırması - 1 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
