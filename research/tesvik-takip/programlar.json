@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-11-01",
+  "sonGuncelleme": "2026-11-02",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -127,7 +127,7 @@
       "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
       "ilkTespitTarihi": "2026-08-21",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
+      "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
       "not": "2. çağrı 20 Temmuz 2026'da açıldı - son başvuru 11 Kasım 2026 - e-posta gönderildi"
     },
@@ -2155,7 +2155,7 @@
       "kaynakUrl": "https://tubitak.gov.tr/tr/duyuru/1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi",
       "ilkTespitTarihi": "2026-09-17",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": false,
+      "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
       "not": "Müşteri kuruluşun gereksinimlerini karşılamak üzere KOBİ'lerin geliştirdiği çözüm önerilerinin Ar-Ge faaliyetine dönüştürülüp ticarileştirilmesini destekliyor (TÜBİTAK + müşteri kuruluş ortak finansmanı). Başvurular PRODİS üzerinden 1 Eylül - 13 Kasım 2026 (23:59) arası alınıyor; bu dönemde sadece \"Sanayide Teknolojik Sıçrama\" ve \"Dijital Liderlik\" konu başlıklı projeler değerlendirmede öncelikli."
     },
