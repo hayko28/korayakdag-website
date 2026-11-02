@@ -103,6 +103,7 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
       "https://formsubmit.co/ajax/koray.akdag@sistemglobal.com.tr",
       {
         method: "POST",
+        signal: AbortSignal.timeout(30000),
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -138,7 +139,10 @@ export default function Contact({ lang = "tr" }: { lang?: "tr" | "en" }) {
       .then((response) => response.ok)
       .catch(() => false);
 
-    const [mailOk, dbOk] = await Promise.all([mailPromise, dbPromise]);
+    // formsubmit.co zaman zaman 15 sn+ yanit veriyor; veritabanina kayit
+    // basariliysa kullaniciyi bekletmeyiz (e-posta arka planda devam eder).
+    const dbOk = await dbPromise;
+    const mailOk = dbOk ? true : await mailPromise;
 
     if (mailOk || dbOk) {
       form.reset();
