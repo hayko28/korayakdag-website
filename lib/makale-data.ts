@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "markanin-degeri-bilancoda-neden-gorunmez",
+    title: "Markanızın Gerçek Değeri, Şirketi Satana Kadar Bilançonuzda Hiç Görünmüyor",
+    excerpt:
+      "Türkiye Muhasebe Standardı TMS 38'e göre bir işletmenin kendi içinde yıllarca büyüttüğü marka, bilançoya maddi olmayan duran varlık olarak yazılamıyor; bu değer resmi kayıtlarda ancak şirket satıldığında işlem fiyatının bir parçası olarak ortaya çıkıyor. Kurucunun hissettiği değer ile alıcının bilançoda gördüğü rakam arasındaki bu fark, müzakere masasında garip bir asimetri yaratıyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "2 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ihracat-hedefi-3-ay-once-asildi",
     title: "İhracatta 282 Milyar Dolarlık Hedef 3 Ay Önce Aşıldı: Peki Şimdi Ne Olur?",
     excerpt:
