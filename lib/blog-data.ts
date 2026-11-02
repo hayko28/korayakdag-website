@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "ihracatci-birligine-uye-olmak-zorunlu-mu-2026",
+    title: "İhracatçı Birliğine Üye Olmak Zorunlu mu? Kayıt, Aidat ve Gümrük Onayı Rehberi",
+    excerpt: "5910 sayılı Kanun'un 4. maddesine göre ihracat yapan her gerçek/tüzel kişi ilgili ihracatçı birliğine üye olmak zorunda; üye olmadan gümrük beyannamesi onaylanmıyor. Hangi birliğe üye olunur, üyelik nasıl başvurulur, giriş/yıllık aidat ile nispi ödeme ne kadar (2026'da azami 16.515 TL) ve Eximbank, UR-GE, TURQUALITY gibi hangi işlemlerde şart koşuluyor; 2026 güncel rehber.",
+    category: "İHRACAT DESTEKLERİ • İHRACATÇI BİRLİĞİ ÜYELİĞİ • 2026",
+    date: "2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "reeskont-kredisinde-net-ihracatci-sarti-kalkti-mi-2026",
     title: "Reeskont Kredisinde Net İhracatçı Şartı Kalktı mı? İhracatçı Skoru Sistemi ve 2026 Güncel Limitler",
     excerpt: "TCMB kaynaklı ihracat reeskont kredisinde uzun süre aranan 'net ihracatçı' şartı, katma değer odaklı 'ihracatçı skoru' sistemiyle değiştirildi. 5 Eylül 2026 tarihli 33361 sayılı Resmî Gazete'deki 11723 sayılı Karar'la gelen BSMV istisnası, döviz zorunluluklarının kalkması, 5 milyar TL günlük limit ve 60 milyon TL firma limitiyle 2026 güncel rehber.",
