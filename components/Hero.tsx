@@ -14,7 +14,9 @@ const STRINGS = {
     ),
     lead: "Güçlü kurumsal ilişkiler ve derin saha deneyimiyle işinizi büyütüyoruz. Devlet destekleri, yatırım teşvikleri ve yurt dışı büyümede uçtan uca danışmanlık sunuyoruz.",
     ctaPrimary: "Ücretsiz Ön Görüşme Talep Et",
-    ctaSecondary: "Hizmetleri İncele",
+    ctaSecondary: "Ücretsiz Uygunluk Testi",
+    ctaSecondaryHref: "/destek-uygunluk-analizi",
+    ctaNote: "2 dakikada, hangi devlet desteğine uygun olduğunuzu görün.",
     stats: [
       { value: "15+", label: "Yıllık Deneyim" },
       { value: "13", label: "Ülkede Kuruluş Desteği" },
@@ -35,6 +37,8 @@ const STRINGS = {
     lead: "With global vision and a strategic approach, we take your business to the next level — end-to-end consulting on government incentives, investment support, and international growth.",
     ctaPrimary: "Request a Free Consultation",
     ctaSecondary: "Explore Services",
+    ctaSecondaryHref: "#services",
+    ctaNote: "",
     stats: [
       { value: "15+", label: "Years of Experience" },
       { value: "13", label: "Countries Supported" },
@@ -89,7 +93,7 @@ export default function Hero({ lang = "tr" }: { lang?: "tr" | "en" }) {
             {t.lead}
           </p>
 
-          <div className="mb-10 flex flex-wrap gap-3">
+          <div className={t.ctaNote ? "mb-3 flex flex-wrap gap-3" : "mb-10 flex flex-wrap gap-3"}>
             <button
               type="button"
               onClick={() => window.dispatchEvent(new Event(OPEN_CONTACT_FORM_EVENT))}
@@ -98,12 +102,17 @@ export default function Hero({ lang = "tr" }: { lang?: "tr" | "en" }) {
               {t.ctaPrimary} →
             </button>
             <a
-              href="#services"
-              className="inline-flex items-center rounded-xl border border-white/25 px-5 py-3.5 text-sm font-semibold text-[#E7ECF2] transition hover:bg-white/10"
+              href={t.ctaSecondaryHref}
+              className={
+                t.ctaNote
+                  ? "inline-flex items-center rounded-xl border border-orange-400/70 px-5 py-3.5 text-sm font-semibold text-orange-300 transition hover:bg-orange-500/10"
+                  : "inline-flex items-center rounded-xl border border-white/25 px-5 py-3.5 text-sm font-semibold text-[#E7ECF2] transition hover:bg-white/10"
+              }
             >
               {t.ctaSecondary}
             </a>
           </div>
+          {t.ctaNote && <p className="mb-10 text-xs text-[#8FA0B5]">{t.ctaNote}</p>}
 
           <div className="flex flex-wrap gap-8">
             {t.stats.map((stat) => (

@@ -120,7 +120,7 @@ export default function IhracatDestekleriDanismanligiPage() {
                 Şirketiniz için hangi ihracat desteğinin uygun olduğu net
                 değilse{" "}
                 <Link href="/destek-uygunluk-analizi" className="font-semibold text-orange-600 hover:underline">
-                  ücretsiz Destek Uygunluk Analizi
+                  ücretsiz Uygunluk Testi
                 </Link>{" "}
                 ile başlayabilirsiniz.
               </p>

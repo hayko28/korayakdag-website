@@ -124,7 +124,7 @@ export default function KosgebDanismanlikPage() {
               <p className="mt-4 text-xs text-gray-500">
                 Şirketinizin uygun olduğu programı henüz bilmiyorsanız önce{" "}
                 <Link href="/destek-uygunluk-analizi" className="font-semibold text-orange-600 hover:underline">
-                  ücretsiz Destek Uygunluk Analizi
+                  ücretsiz Uygunluk Testi
                 </Link>{" "}
                 ile başlayabilirsiniz.
               </p>

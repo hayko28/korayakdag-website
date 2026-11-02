@@ -6,7 +6,7 @@ export default function DestekUygunlukTanitim() {
       <div className="flex flex-col items-start gap-6 rounded-3xl border border-orange-200 bg-orange-50 p-8 sm:p-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-2xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-[2px] text-orange-600">
-            Ücretsiz Ön Analiz
+            Ücretsiz Uygunluk Testi
           </p>
           <h3 className="mb-4 text-2xl font-bold text-[#071A2F] sm:text-3xl">
             Şirketiniz Hangi Desteğe Uygun?
@@ -22,7 +22,7 @@ export default function DestekUygunlukTanitim() {
           href="/destek-uygunluk-analizi"
           className="w-full shrink-0 rounded-xl bg-orange-500 px-8 py-4 text-center font-semibold text-white shadow-lg transition hover:bg-orange-600 sm:w-auto"
         >
-          Ücretsiz Analiz Yap
+          Ücretsiz Uygunluk Testini Başlat
         </Link>
       </div>
     </section>

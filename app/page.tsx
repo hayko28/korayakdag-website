@@ -37,8 +37,6 @@ export default function Home() {
 
       <Contact />
 
-      <DestekUygunlukTanitim />
-
       <Footer />
     </main>
   );

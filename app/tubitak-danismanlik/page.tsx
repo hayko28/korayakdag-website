@@ -118,7 +118,7 @@ export default function TubitakDanismanlikPage() {
                 Ar-Ge projeniz için TÜBİTAK mı, KOSGEB mi daha uygun emin
                 değilseniz{" "}
                 <Link href="/destek-uygunluk-analizi" className="font-semibold text-orange-600 hover:underline">
-                  ücretsiz Destek Uygunluk Analizi
+                  ücretsiz Uygunluk Testi
                 </Link>{" "}
                 ile başlayabilirsiniz.
               </p>

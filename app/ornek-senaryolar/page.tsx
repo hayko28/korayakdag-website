@@ -176,7 +176,7 @@ export default function OrnekSenaryolarPage() {
             Yukarıdaki senaryolardan biri size tanıdık geldiyse, şirketinizin güncel durumunu birlikte
             değerlendirelim. Devlet desteği uygunluğunuzu{" "}
             <Link href="/destek-uygunluk-analizi" className="font-semibold text-orange-600 underline">
-              Destek Uygunluk Analizi
+              Ücretsiz Uygunluk Testi
             </Link>{" "}
             aracıyla ücretsiz kontrol edebilir, diğer konularda doğrudan iletişime geçebilirsiniz.
           </p>

@@ -70,7 +70,7 @@ export default function Navbar() {
         { name: "Uzmanlık Alanları", href: `${homePath}#expertise` },
         { name: "Hizmetler", href: `${homePath}#services` },
         { name: "Güncel Gelişmeler", href: "/guncel-gelismeler" },
-        { name: "Destek Uygunluk Analizi", href: "/destek-uygunluk-analizi" },
+        { name: "Ücretsiz Uygunluk Testi", href: "/destek-uygunluk-analizi" },
         { name: "Şirket Değerleme Hesaplama", href: "/sirket-degerleme-hesaplama" },
         { name: "Teşvik Takvimi", href: "/tesvik-takvimi" },
         { name: "Blog", href: `${homePath}#blog` },
@@ -79,7 +79,7 @@ export default function Navbar() {
 
   // Geniş masaüstü menüsünde tek satıra sığdırmak için bu iki araç
   // "Araçlar" başlığı altında gruplanır (diğer menülerde ayrı ayrı görünür).
-  const toolLinkNames = ["Destek Uygunluk Analizi", "Şirket Değerleme Hesaplama"];
+  const toolLinkNames = ["Ücretsiz Uygunluk Testi", "Şirket Değerleme Hesaplama"];
   const toolLinks = links.filter((link) => toolLinkNames.includes(link.name));
 
   const LanguageSwitch = ({ className = "" }: { className?: string }) => (
