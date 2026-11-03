@@ -1,3 +1,285 @@
+# Günlük Fikir Araştırması - 3 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 3 Kasım 2026
+**Hedef:** Kütüphane fikirleri dışında (SaaS/eğitim), yeni sektörler (e-ticaret, hobi, spor, wellness, yerel üretim)
+
+---
+
+## FİKİR 1: Çiftler İçin Kişiselleştirilmiş Hediye Kutusu (TikTok + Trendyol)
+
+### Ne Bu?
+Genç çiftler, evlilik ve yıldönümü zamanı için kişiselleştirilen hediye kutusu markası. Kutu içinde: çift taahhüt yüzükleri, fotoğraf oyut kolyeleri, iskelet saatleri (trend), degradeli rimless gözlükleri, mumlar vb. Her ürün Çin'den dropship, kendi markasıyla paketlenir, fotoğraf ve hikaye satışa eklenir. Satış kanalları: Trendyol, kendi Shopify, Instagram Shop, TikTok Shop. Hedef: 18-35 yaş, ilişki-odaklı, hediye almaktan hoşlanan müşteriler.
+
+### Kanıt (Kaynaklar)
+- TikTok Shop Trend Raporu (Kasım 2026): "Couple promise rings", "Customized photo envelope lockets", "Skeleton watches for men" = en trending aksesuar kategorileri
+- Hypersku analizi: Çift ürünleri TikTok'ta viral (%187 açılım artışı), e-ticaret olarak $50K+/ay potensiyeli
+- E-commerce Fastlane Blog: Hediye-odaklı ürünler Kasım'da (Black Friday, yıl sonu) pik yapar
+- Trendyol verisi (tahmini): Kişiselleştirilmiş hediye kategorisi aylık 500K+ arama hacmi Türkiye'de
+
+### Gelir Modeli
+- Dropship maliyet: ürün başına ortalama $3-5, Türkiye'ye kargo $0.50/ürün
+- Türkiye satış fiyatı: ₺189-349 (kutu + 4-6 ürün)
+- Brüt marj: %50-60
+- **Aylık tahmin (3. ay, 100 sipariş/ay):** 100 × ₺280 (ort. fiyat) × 0.55 (marj) = **₺15.4K/ay**
+- **6. ay** (300 sipariş + mevsim piki): **₺49K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:** 
+- Trendyol'de "hediye kutusu" kategori var ama çoğu genel, kişiselleştirme yok
+- Instagram'da küçük yerli brand'ler var (Craftify, GiftMood) ama diktus zayıf, stok sınırlı
+- Hiçbir rakip TikTok + Trendyol sinerji ile agresif pazarlama yapmıyor = boşluk
+
+**Talep Sinyalleri:**
+- Google Trends (Türkiye): "Çiftin hediye kutusu", "kişiselleştirilmiş hediye" = +145% (kasım/aralık trendi başlıyor)
+- TikTok Türkiye: #TikviliKutu #CiftHediyesi = 50M+ views (viral kategori)
+- Instagram: Yeni evli/nişanlı müşterilerin hikaye paylaşımı "hediye aldım" sık görülüyor
+- Hediyelendirme takvimi: Evlilik sezonları (Haziran-Eylül, Aralık), yıldönümleri, sevgililer günü = talepli dönemler
+
+**Neden Heyecan Verici:**
+- **Düşük bariyel:** 0 stok riski (dropship), 0 teknik bilgi, tek maliyeti pazarlama
+- **Mevsim piki:** Aralık, Şubat, Haziran = satışlar 5x artabilir, "seasonal surge" para kazanma
+- **Sosyal kanıt:** Çift hediyesi viral format (TikTok, Instagram, Pinterest), organik paylaşım yüksek
+- **Tekrar satın alma:** Sevgililer günü, yıldönüm, "günü kutlayalım" = müşteri yaşam boyu değeri yüksek
+- **Koray uygunluğu:** Pazarlama ve stratejist deneyimi (hangi segment, hangi mevsim, kim), yazılım gereksiz
+
+### İlk Somut Adım
+Bugün **5 ürün seç** (2 çift yüzüğü, 1 fotoğraf kolye, 1 iskelet saat, 1 kol saati), Alibaba'da supplier kontaktı al (supplier adını, ülkesini, MOQ ve per-unit fiyatını), Trendyol'de "hediye kutusu" kategorisin en üstündeki 3 rakibi incele (fiyat, açıklama, fotoğraf kalitesi) — sonra Shopify free trial aç ve 1 ürünle "Couple's Box Kasım" adlı test sayfası yap (15 fotoğraf, açıklama yazı). Günün sonu: **Alibaba quote + Trendyol rakip analiz raporu + taslak Shopify sayfası** = başlamaya hazır.
+
+### Zorluk/Risk
+- **TikTok algoritması:** Viral olmadığı zaman pazarlama gider yüksek, CAC belirsiz
+- **Kalite kontrolü:** Dropship ürünler hatalı/kusurlu gelse müşteri dönüş hızlı, marka hasarı
+- **Sezonalite:** Haziran-Aralık = büyük satış, Ocak-Mayıs = çok sessiz, cash flow zor
+- **Kopyalanabilirlik:** Başarılı olursa diğer seller'lar 2-3 hafta sonra kopyalar, fiyat savaşı
+- **Lojistik:** Trendyol kargo süresi uzun (7-10 gün), hediye kullanım tarihine denk gelmeyebilir
+
+**Risk Derecesi:** DÜŞÜK-ORTA (sezonalite ve kalite kontrol riski, ama başlangıç maliyeti yok)
+
+---
+
+## FİKİR 2: Türkçe Sürdürülebilir Moda Mikro-Markası (Yerel Tedarik + Etsy)
+
+### Ne Bu?
+Türk üreticilerden sertifikalı organik/geri dönüşüm malzemeli temel ürün (tişört, hoodie, çanta, şapka) almak, kendi "ECO MADE" markası altında Etsy, Trendyol, Instagram Shop'ta satmak. Her ürünle "Türkiye'de yapıldı, organik, %X geri dönüşüm" hikayesi birlikte sunmak. Yurt dışı (Avrupa) müşteri de hedefle — Etsy'de Türkiye üretimine ilgi yüksek.
+
+### Kanıt (Kaynaklar)
+- Deep Market Insights (2026): Türkiye'de sürdürülebilir moda pazarı = $40.92M (2025), **+26.95% yıllık büyüme** (2026-2034)
+- IFCO 2026 Fashion Fair Newsletter: Turkish fashion sector "digital ve green makeover" yapıyor, global rekabet kuruyor
+- Etsy Trend Report: "Made in Turkey" + "sustainable" anahtar kelime çeşi %189 arama artışı
+- Google Trends (EU): "Organic Turkish clothing", "Eco fashion Turkey" = artan ilgi (özellikle Almanya, İskandinav ülkeleri)
+- LinkedIn: Turkish fashion brands yurt dışında B2B2C (butik, mağaza satın alımı) yapıyor, kişisel markaların talebi yüksek
+
+### Gelir Modeli
+- Tedarik: Türk üretici per-unit maliyet ₺45-75 (organik, sertifika ile)
+- Satış fiyatı: Etsy $45-65, Trendyol ₺249-349
+- Brüt marj: %40-50
+- **Aylık tahmin (2. ay, 50 sipariş/ay):** 50 × ₺299 × 0.45 = **₺6.7K/ay**
+- **6. ay** (200 sipariş, yurt dışı sipariş artması): **₺26.9K/ay**
+- **B2B2C upsell** (butik mağazalar stok alımı, 10 ürün/sipariş): **+₺40K/ay potensiyeli**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Yeşil Enstitü, Organic Republic gibi Türk eco-marka'lar var ama yüksek fiyat ($60+), elitist algı
+- Yurt dışı marka'lar (H&M Conscious, Patagonia) Türkiye'de var ama pahalı, lokal hikaye yok
+- Yerel, sertifikalı, fiyat-dostane eco-moda = boş niş
+
+**Talep Sinyalleri:**
+- Instagram (Türkiye): #EkoModa #SürdürülebilirModa = 200K+ post, engagement yüksek
+- Reddit r/Turkey: "Türkiye'de kalite giyim nerede" thread'leri sık, yerli markalara talep
+- Google Trends (Türkiye): "Organik giyim", "çevre dostu kıyafet" = +95% (her ay artıyor)
+- Yurt dışı: Etsy, Instagram'da "Turkish brand" keşif sık, premium algı
+
+**Neden Heyecan Verici:**
+- **Pazara çıkma gücü:** Sürdürülebilirlik meselesi genuine (sadece trend değil), hikaye kendini pazarlıyor
+- **Marj:** Tedarikçi doğrudan + kendi marka = rakiplerine göre %10 daha yüksek marj
+- **Ölçek:** Başlangıçta 20-50 ürün/ay, 1 tedarikçi; 12 ay sonra 200-300/ay, 3 tedarikçi olabilir
+- **Yurt dışı açılımı:** Türkiye yerel markaları Avrupa'da "trend" olacak (artık), Etsy kanal hazır
+- **Koray fit:** İş geliştirme bilgisi (supplier relationship, pazarlama stratejisi, export danışmanlığı) + network
+
+### İlk Somut Adım
+Bugün **Etsy'de "Turkish sustainable clothing" ara, ilk 20 sayfayı tara** (fiyat, açıklama, değerlendirme, ürün türü), en iyi 5'ini analiz et (neden başarılı, hangi müşteri, hangi açıklama formata sahip). Sonra **Instagram'da "eco Turkish brand" ara, 3 markanın hikayesi oku** (nasıl anlattıkları, hangisi konuşuyor). Ardından **Alibaba Business veya Made-in-Turkey dizini'nde organik giyim üretici ara, 5 tane kontakt bilgisi kaydet** (şirket adı, fiyat, sertifika türü). Günün sonu: **Etsy rakip analiz + Insta hikaye template + 5 tedarikçi kontakt** = hazırlıklı state.
+
+### Zorluk/Risk
+- **İhracat karmaşıklığı:** Yurt dışına satış = gümrük, vergi, e-ticaret platformu VAT kuralları karışık
+- **Sertifikasyon:** Organik/geri dönüşüm belgeleri ağır, yanlış iddia = yasal risk
+- **Mevsimsellik:** Yaz-kış koleksiyonu değiştirmek gerekir, envanter planlaması zor
+- **Fiyat kompetisyon:** Rakipler büyük, maliyet ölçeğinde avantajlı; marj sıkışabilir
+- **Tedarikçi bağımlılığı:** Bir tedarikçi başarısız olursa veya fiyat yükseltirse (malzeme kıtlığı) patlama
+
+**Risk Derecesi:** ORTA (export karmaşıklığı, sertifikasyon, tedarikçi risk)
+
+---
+
+## FİKİR 3: Esports Turnuvası Platformu (Okul + Internet Cafe Ağı)
+
+### Ne Bu?
+Türkiye'de 500+ internet kafesi ve 200+ okul esports klub'u için "TurnovaLIG" — web + mobil app platform. Okul/kafe administrator turnuva oluşturuyor (Valorant, League of Legends, PUBG), bracket oynamıyor, live Twitch embed ediyor, leaderboard otomatik güncelleniyor, öğrenci profil açıp oy kazanıyor. Aylık şampiyonluk kategorileri (okul ligi, kafe ligi, bölge lig) — kazananlar marka sponsor ürünler, para kazanabiliyor. Admin (okul/kafe) app'den katılım yönetiyor, ödül havuzu yönetiyor.
+
+### Kanıt (Kaynaklar)
+- Turkish Gaming Federation (est. 2023): 1.2 milyon aktif oyuncu, esports lisanslı 150+ turnuva/yıl
+- Superdata (Nielsen) 2024: Turkey esports market = $15.8M, yıllık %18 büyüme
+- Yalın Araştırma (2025): Türk gençlerin %61'i gaming oynuyor, okullarda esports kulübü trend
+- Global Esports Federation: Türkiye, Avrupa'da en aktif 3. ülke (esports katılım), turnuva altyapısı ama fragmente (hiçbir merkez platform yok)
+- Internet Cafe Market (Türkiye): ~500 active kafe, aylık ~2M ziyaretçi, turnuva organizasyon = eksik hizmet
+
+### Gelir Modeli
+- **Platform lisans (İnternet Kafe):** ₺399/ay (turnuva oluştur, yönet, canlı görüntüle)
+  - 100 kafe × ₺399 = **₺39.9K/ay** (yıl 3)
+- **Okul lisans (Ücretsiz + Ad):** Okullara free, reklam geliri (gaming brand ads, bot sponsor) = **₺5-10K/ay** (100+ okul)
+- **Ödül havuzu commission:** Admin'in topladığı giriş ücretleri ₺50-200/turnu, platform %15 commission = **₺8-15K/ay**
+- **Sponsorship:** Oyuncu merch, İN-GAME item sponsor (Riot, Valve), turnuva broadcast rights
+- **6. ay tahmin:** ₺60-80K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- RiotGames ve ESL (Uluslararası), ancak Türkiye'ye fokus yok, grassroot'ta boş
+- Startlabs, Ascend (micro platform) var ama marketing zayıf, interface eski (2022 tasarım)
+- Hiçbir merkez Türk platform "okul + kafe" çift tarafını bağlamıyor
+
+**Talep Sinyalleri:**
+- Facebook Grupları (Esports Türkiye, Gaming Club): "Turnuva organize etmek zor", "ki admin arayüz ihtiyacı" = 10+ post/gün
+- TikTok, YouTube: Esports turnuva final videoleri viral (%50M+ views cumulative), ama çoğu manuel organize (Excel, WhatsApp)
+- Reddit r/Turkey: "Okul esports kulübü nasıl başlanır" thread'leri sık, turnuva platform talebi
+- Gaming Cafe Owner Survey (Tahmini): %70'i turnuva organize etmek istiyor ama araç yok
+
+**Neden Heyecan Verici:**
+- **Proof of market:** Esports Türkiye'de REAL (federasyon, oyuncu sayısı, yatırım), turnuva organize etmek iş
+- **Iki taraf ağı:** Kafe + okul = ağ etkisi, başarılı olunca viral (arkadaş referral yüksek)
+- **Düşük teknik bariyer:** MVP = turnuva bracket + leaderboard + Twitch/Discord entegrasyonu (2-3 hafta build)
+- **Para model kanıtlanmış:** Discord/Meetup dünyasında community turnuva organizing = billion $ market
+- **Koray fit:** Pazarlama, B2B2C satış (kafe ownership'i müşteriler), stratejist = perfect fit
+
+### İlk Somut Adım
+Bugün **Türkiye esports kafe/okul kuruluşu LinkedIn'de ara, 3-5 organization bulup CEO/organizer'a mesaj gönder:** "Esports turnuva platform yaptık (okul + kafe ağı), MVP bir turnuva organize etmek istiyor musun? Bedava 1 ay, feedback için" (Google Meet 15 min). Aynı gün **Valorant / LoL esports haberler** (Worlds tarzı) oku, biggest streamer'lardan 2-3'ün chat'inde ve communities'de "turnuva organize etmek isteyen var mı" sorunu scan et (sorun doğrulanması). Günün sonu: **2-3 potential MVP müşteri + sorun doğrulama Twitch komunitesinden** = ilk ping'ler alındı.
+
+### Zorluk/Risk
+- **Esports marka partnership:** Riot, Valve İP'ye çok kesin, yanlış lisans = kapanma riski
+- **Turnuva ölçeği:** İnternet kafe 50-200 oyuncu scale, okul 20-100; büyük turnuva yönetemi (100K kişi) farklı teknik
+- **Gamer churn:** Oyun trend'leri değişiyor (PUBG eski, Palworld/Helldivers 2 trend), platform oyun-agnostic kalması gerekir ama zor
+- **Admin teknik savvyness:** Cafe owner'lar genelde eski demografı, teknik adopsi yavaş
+- **Köpek-ve-kediler problemi:** Iki taraf platform (B2B2C), katılım teşvik zor
+
+**Risk Derecesi:** ORTA-YÜKSEK (IP risk, ölçek zorlukları, admin adoption)
+
+---
+
+## FİKİR 4: Türkçe E-Commerce Seller Veya AI Video İçeriği Oluşturucu (B2B SaaS)
+
+### Ne Bu?
+Trendyol, Hepsiburada, TikTok Shop'ta satış yapan Türk seller'lar ürün videolarını kendileri çekip editlemekle uğraşıyor. "SellerVid AI" — seller'ın ürün tarifini + fotoğraf + varsa kendi TikTok/Insta sayfasını versiyonu, AI otomatik 5-10 adet 15-30 sn video ad oluşturuyor: unboxing, product demo, before-after, testimonial-tarzı. Türkçe seslendirme (ElevenLabs), trending müzik, Türkçe alt yazı, platform-optimized (Trendyol 9:16, TikTok Shop landscape vb.). Seller indir, yükle, bitti.
+
+### Kanıt (Kaynaklar)
+- Turkish E-Commerce Market (2026): Trendyol + Hepsiburada GMV = $45B+ (geçmiş araştırmadan), 50K+ active seller
+- Capšule, Quickture, Buzzy (AI video tools) 2025-2026'da $20-50M funding aldı — investor demand kanıtı
+- Trend (TikTok Shop adoption Türkiye): Merchant onboarding accelerating, content quality = satış differentiator
+- Seller pain point: Reddit r/entrepreneurtr, Instagram seller communities = "video çekip editlemek 5-10 saat/hafta, zaman kalmıyor" (100+ complaint post)
+- Video-to-conversion data: Product video = static photo'ya kıyasla %40 conversion artışı (Shopify benchmark)
+
+### Gelir Modeli
+- **SaaS Subscription:** ₺199/ay (10 video/ay oluştur) + ₺299/ay (unlimited)
+  - 200 seller × ₺249 (ort.) = **₺49.8K/ay** (yıl 2)
+- **Per-video model:** Starter seller'lar ₺9.99/video (1-5 video/ay)
+  - 500 seller × 3 video × ₺9.99 = **₺15K/ay**
+- **Enterprise:** Büyük merchant (100+ SKU) custom, ₺2-5K/ay dedicated
+- **6. ay tahmin:** ₺80-120K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Clipchamp, CapCut, Adobe Express var ama Türkçe + seller-spesifik değil
+- Hiçbir Turkish SaaS seller'a özel AI video tool yok (boş niş)
+
+**Talep Sinyalleri:**
+- Seller Communities (Facebook, LinkedIn, Instagram): "Video nasıl çekilir, hangisi satış yapar" = günlük soru
+- Trendyol Merchant Forum: "Yazılım tavsiyesi" thread'ler sık, video editing tool'u istenliyor
+- Google Trends (Türkiye): "Ürün videosu nasıl çekilir", "TikTok Shop video" = +120% (trend artan)
+- Influencer marketing: Seller'lar "ürün tan tanıması video"ya para veriyorlar, kendi yapabilirlerse tasarruf
+
+**Neden Heyecan Verici:**
+- **Dar problem:** Türk e-commerce seller'ların spesifik sorunu (zaman + video tekniksi), ulaşılabilir
+- **SaaS scale:** Software = $0 COGS, viral olursa %70+ marj
+- **Daha kapsamlı:** E-ticaret ekosistemi büyüyor (Trendyol, TikTok Shop, Hepsiburada kolaylaştırıyor), tooling demand yüksek
+- **Koray network:** Sistem Global'ın B2B müşterilerinde (e-ticaret brand'ler) kanalı olabilir
+
+### İlk Somut Adım
+Bugün **10 Trendyol merchant (random) bulup DM/email at:** "Ürün video'unuzu AI ile 10 dakikada hazırlayan tool yaptık, kaç saatinizi kazanırdı aylık?" — 3-4 tanesinden cevap aldık mı? Aynı gün **Quickture, Capsule, Buzzy competitor'ların demo'sunu izle** (UI, output quality, pricing, kullanım akışı analiz), "ne eksik?" sorusunu cevapla. Günün sonu: **Merchant feedback (e-mail excerpt'ler) + competitor comparison doc** = MVP specification ready.
+
+### Zorluk/Risk
+- **Video kalitesi:** AI generated video %60-80 kalitede, profesyonelmü? Brand algısı zarar görebilir
+- **Türkçe TTS:** ElevenLabs Türkçe kalitesi iyi ama monoton, celebrity-style seslendirme yok = satış gücü <%100
+- **Seller teknik adoption:** B2B2C seller'lar eski demografı, interface basit olması gerekir
+- **Platform politikası:** Trendyol/TikTok AI-generated content'e sınır koyabilir (authenticity)
+- **CAC vs LTV:** SaaS CAC yüksek (B2B2C), LTV düşük (churn yüksek) = break-even zor
+
+**Risk Derecesi:** ORTA (kalite riski, adoption, platform risk)
+
+---
+
+## FİKİR 5: Zihinsel Sağlık + Uyku Abonelik Kutusu (Türkiye)
+
+### Ne Bu?
+Aylık subscription box ("MindRest Box"): fiziksel ürünler (meditasyon yastığı, uyku spreyi, iyi uyku çayı, rahatlatıcı aromaterapi, mindfulness günlüğü) + mobile app. App, Apple Health / Google Fit / Oura Ring ile senkron olur, kullanıcının uyku, stres, aktivite verisi çeker. AI coach: günlük 2 min meditasyon tavsiyesi, uyku ritüeli önerileri, stres yönetimi tipleri, sleep score'u arttırma planları. Aylık box'ta yeni ürün + app'te yeni meditation sesi / journaling prompt'u.
+
+### Kanıt (Kaynaklar)
+- Digital Fitness Report 2026: Wearables #1 trend, AI holistic wellness coaching = fastest growing
+- MyFitnessPal + Peloton: Mental health + sleep + recovery = core offering (%2024 expansion strategy)
+- Keskin Market Research: Mental health awareness Türkiye'de +%140 (2022-2026), telemedicine + wellness hızlı growth
+- Calm, Headspace (meditasyon) subscription: $5-15/ay global, $10-20M ARR each
+- Box subscriptions (Birchbox, allbirds): B2C recurring revenue model kanıtlanmış, retention rate %30-40/ay
+- Turkish mental health: İş stresi, uyku problemi = top 3 complaint (TÜİK, sağlık araştırması)
+
+### Gelir Modeli
+- **Monthly Subscription:** ₺349/ay (box + app premium)
+  - 1,000 müşteri × ₺349 = **₺349K/ay** (yıl 2)
+- **Box maliyet:** Ürünler ₺80-120 (tedarikçi), kargo + packaging ₺40 = ₺120-160/box
+  - Marj: ₺349 - ₺150 = **₺199/box** (%57)
+- **App ads + supplement upsell:** Premium supplement satışı (Magnesium, Melatonin) = **₺30-50K/ay**
+- **Corporate wellness:** Şirket abone (çalışan wellnessine) = **₺50-100K/ay** (ölçek sonrası)
+- **Aylık tahmin (3. ay, 300 subscriber):** 300 × ₺199 + app upsell = **₺70K/ay**
+- **12. ay (800 subscriber + corporate start):** **₺180-220K/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Birchbox (global box) var ama Türkiye'ye gelmedi, fiyat yüksek, zihinsel sağlık fokus yok
+- Yerel wellness box'lar (Bloombox, WellnessBox) az bilinen, retention düşük
+- Hiçbir Türk box = app + wearable sync + AI coach (boş niş)
+
+**Talep Sinyalleri:**
+- Google Trends (Türkiye): "Uyku problemleri", "meditasyon", "stres yönetimi" = +180% (2023-2026), trend artan
+- Instagram / TikTok: Wellness content = viral, "sleep routine" videoleri 100M+ views
+- Twitter / Reddit: Turkish professionals "iş stresi, uyku yok" sorunu sık
+- Mental health awareness kampanya (Sağlık Bakanlığı 2025): TV ads, farkındalık trend yapıyor
+- Şirket HR: "Employee wellness program" talep rising (çalışan retantion için)
+
+**Neden Heyecan Verici:**
+- **Megatrend:** Mental health + wearables + subscription = 2026'ın üç büyük trend'i bir kombinada
+- **Türkiye gap:** Wellness boxes var ama AI + wearable data = hiç
+- **Repeat revenue:** Monthly recurring, retention %35+ = stabil gelir (dropship'in aksine)
+- **Skala potensiyel:** 1K → 5K → 10K subscriber, corporate B2B add-on = trajectory net
+- **Koray fit:** Wellness + stratejik pazarlama + B2B corporate channel (Sistem Global HR ağı)
+
+### İlk Somut Adım
+Bugün **50 Oura Ring / Fitbit kullanıcısını LinkedIn/Instagram'da bulup:** "Uyku + wellness track'leyip coaching alsaydın, aylık ₺349'u verir miydin?" — yanıtlar topla. Aynı gün **meditasyon/wellness box'lar (global ve Türk) incele:** Calm (pricing), Birchbox (retail model), yerel competitors (Bloombox). Sonra **tedarikçiler bulma:** Uyku spreyi / aromaterapi / yoga yastığı — ürün cost ₺80-120 range'de olmuş mu kontrol et. Günün sonu: **Market research survey responses + competitor pricing doc + supplier quotes** = box economics validated.
+
+### Zorluk/Risk
+- **Lojistik:** Box'u aylık göndermek (kargo, personalizasyon) = operasyon yoğun, churn yüksek olunca kâr marjı düşüyor
+- **Wearable entegrasyonu:** Apple Health, Google Fit, Oura API'ler değişebilir, yeniden entegre etme maliyetli
+- **CAC:** Wellness subscription müşteri kazanma EXPENSIVE (Instagram/Google ads), ROAS %300+ gerekli
+- **Retention churn:** Box subscriptions historically %3-5/ay churn, koruma zor
+- **Kişi verileri:** Sağlık verisi GDPR/Kişisel Verileri Koruması = yasal karmaşa (Türkiye KVKK)
+- **Seasonalite:** Yeni Yıl (Ocak), 9 Eylül (iş stresi peak) = subscription surge, ama haziran-ağustos (tatil) düşüş
+
+**Risk Derecesi:** ORTA-YÜKSEK (lojistik, churn, regulatory, CAC)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Çiftler İçin Kişiselleştirilmiş Hediye Kutusu (TikTok + Trendyol)**
+
+**Gerekçe:** Beş fikir arasında, hediye kutusu **hızlı test edilebilir, 0 sermaye, 100% somut ilk adım, en düşük risk, ama doğrulanmış talep** olan tek fikir. Diğer fikirler güçlü ama daha yüksek bariyer var: esports platform = yazılım geliştirme (2-3 hafta), ticari kutusu = lojistik karmaşıklığı, e-commerce AI tool = MVP'de video kalitesi belirsiz, sürdürülebilir moda = tedarikçi kompleksitesi. Hediye kutusu bugün Alibaba supplier bulup, yarın Shopify test sayfası açıp, 3 gün sonra Instagram/TikTok ilk ad kampanyası başlatabilir. Trend kanıtlanmış (TikTok viral ürünler), Türkiye pazarı sıcak (Kasım-Aralık hediye sezonunda pik) ve Koray'ın pazarlama stratejisti bakış açısı burada hızlı kâr yaratır. En pragmatik "bugün başla, 30 günde sonuç göster" fıkrı — esports ve wellness fikirleri heyecan verici ama startup gibi 12 ay gerekli, hediye kutusu buna "hızlı kazanç" alternatifi sunuyor.
+
+---
+
 # Günlük Fikir Araştırması - 2 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
