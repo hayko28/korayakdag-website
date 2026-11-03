@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "asgari-kurumlar-vergisi-nedir-2026-hesaplama-rehberi",
+    title: "Asgari Kurumlar Vergisi Nedir? Zarar Eden Şirket Bile Neden Vergi Ödeyebilir?",
+    excerpt: "2025'ten beri yürürlükte olan yurt içi asgari kurumlar vergisi (KVK 32/C), indirim ve istisnalar düşülmeden önceki kurum kazancının en az %10'u kadar vergi ödenmesini zorunlu kılıyor. Kimlerin muaf olduğu, GİB'in resmî örnekleriyle hesaplama, geçmiş yıl zararının neden matrahtan düşülmediği ve küresel asgari vergiyle karıştırılmaması gereken noktalarla 2026 güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • ASGARİ KURUMLAR VERGİSİ • 2026",
+    date: "2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1744662415515-61318504fad7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "ihracatci-birligine-uye-olmak-zorunlu-mu-2026",
     title: "İhracatçı Birliğine Üye Olmak Zorunlu mu? Kayıt, Aidat ve Gümrük Onayı Rehberi",
     excerpt: "5910 sayılı Kanun'un 4. maddesine göre ihracat yapan her gerçek/tüzel kişi ilgili ihracatçı birliğine üye olmak zorunda; üye olmadan gümrük beyannamesi onaylanmıyor. Hangi birliğe üye olunur, üyelik nasıl başvurulur, giriş/yıllık aidat ile nispi ödeme ne kadar (2026'da azami 16.515 TL) ve Eximbank, UR-GE, TURQUALITY gibi hangi işlemlerde şart koşuluyor; 2026 güncel rehber.",
