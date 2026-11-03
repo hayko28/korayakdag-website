@@ -2120,6 +2120,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Endeksin yeniden eşiğin altına inmesi, özellikle tüketici güvenindeki sert düşüş nedeniyle iç talebe dayalı işletmelerin yıl sonu satış öngörülerini temkinli güncellemesi gerektiğine işaret ediyor; tek bir ayın verisine değil birkaç aylık eğilime göre karar vermelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-03",
+    baslik:
+      "TÜİK Ekim 2026 enflasyon verilerini açıkladı: Yıllık TÜFE yüzde 29,77'ye geriledi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 3 Kasım 2026'da açıkladığı verilere göre tüketici fiyatları ekimde aylık yüzde 2,58, yıllık bazda yüzde 29,77 arttı; aylık artış, piyasa beklentisi olan yüzde 2,20'nin üzerinde gerçekleşti. Aynı dönemde üretici fiyatları (Yİ-ÜFE) aylık yüzde 1,65, yıllık yüzde 27,41 arttı.",
+    kaynakUrl:
+      "https://www.gzt.com/ekonomi/2026-ekim-enflasyonu-yuzde-kac-oldu-tuik-aylik-ve-yillik-enflasyon-verileri-aciklandi-4275027",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Aylık artışın piyasa beklentisinin üzerinde kalması, yıl sonu enflasyon hedefine ulaşmanın göründüğünden daha zor olabileceğine işaret ediyor. İşletmelere kasım ve aralık ayı fiyat ve bütçe revizyonlarını tek bir aylık rakama değil, son üç ayın eğilimine göre yapmalarını öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "12 Ekim 2026 (son başvuru 31 Ekim 2026)",
+    eklendiTarihi: "2026-11-03",
+    baslik:
+      "KOSGEB Girişimci Destek Programı İş Geliştirme Desteği'nde 2026 yılı 3. dönem başvuruları 31 Ekim'de kapandı",
+    ozet:
+      "KOSGEB, Girişimci Destek Programı kapsamındaki İş Geliştirme Desteği'nin 2026 yılı üçüncü dönem başvurularını 12-31 Ekim 2026 tarihleri arasında aldı. Program, kuruluşu üzerinden en fazla 3 yıl geçmiş; imalat, bilgisayar programlama, bilişim altyapısı, veri işleme ve Ar-Ge alanlarında faaliyet gösteren işletmelere harcamalarının yüzde 80'i oranında, faizsiz ve 2.250.000 TL'ye kadar geri ödemeli destek sağladı; genç, kadın, engelli, gazi veya şehit yakını girişimcilerde bu tutar 2,5 milyon TL'ye çıktı. Teknogirişim rozeti olan işletmelerde 3 yıllık kuruluş şartı aranmadı.",
+    kaynakUrl:
+      "https://www.yatirimx.com.tr/ekonomi/kosgebden-girisimcilere-25-milyon-tllik-destek-son-tarih-31-ekim/26530",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Bu dönemi kaçıran veya henüz 3 yılını doldurmamış girişimcilere, KOSGEB'in bu desteği yılda üç dönem halinde açtığını hatırlatıp bir sonraki döneme Teknogirişim rozeti veya girişimcilik eğitimi sertifikası gibi ön şartları şimdiden tamamlayarak hazırlanmalarını öneririm.",
+  },
+  {
+    kurum: "KVKK",
+    tarih: "10 Eylül 2026'da kamuoyuna duyuruldu",
+    eklendiTarihi: "2026-11-03",
+    baslik:
+      "KVKK, müşteri bilgilerini internet sitesinde herkesin erişimine açık bırakan bir giyim mağazasına 200 bin TL idari para cezası verdi",
+    ozet:
+      "Kişisel Verileri Koruma Kurulu, bir müşterinin vermediği bir siparişe ait bildirim alması üzerine yaptığı şikayeti değerlendirdi ve ilgili giyim mağazasının internet sitesinde müşterilerin ad, soyad, üyelik ve telefon bilgilerinin sınırsız bir kitlenin erişimine açık şekilde yer aldığını tespit etti. Kurul, veri sorumlusunun kişisel verilerin güvenliğini sağlayacak uygun teknik ve idari tedbirleri almadığına karar vererek 200 bin TL idari para cezası uyguladı.",
+    kaynakUrl:
+      "https://www.ekonomist.com.tr/gundem/vermedigi-siparisin-mesaji-geldi-giyim-magazasina-200-bin-tl-ceza-78576",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Online satış yapan işletmelere, üyelik ve sipariş bilgilerinin yer aldığı panel veya sayfaların dışarıdan erişime tamamen kapalı olduğunu düzenli aralıklarla test etmelerini öneririm; bu tür ihlaller çoğunlukla kötü niyetten değil, basit bir yetkilendirme veya erişim ayarı hatasından kaynaklanıyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
