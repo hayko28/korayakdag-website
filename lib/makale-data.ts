@@ -1018,4 +1018,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "21 Ağustos 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "turquality-genelge-degisikligi-kullanilmayan-yillar",
+    title: "TURQUALITY Genelgesinde Değişiklik: Kullanılmayan Yıllar Artık Kaybolmayacak mı?",
+    excerpt:
+      "Ticaret Bakanlığı Marka ve TURQUALITY Desteği Genelgesi'nde Ekim 2026'da yaptığı değişiklikte fuar desteği %75'e çıkıyor, kullanılmayan yıllar süre sonuna ekleniyor. Yürürlük tarihi netleşmeden plan yapmanın riski ne?",
+    tag: "Görüş",
+    date: "3 Kasım 2026",
+    readTime: "2 Dakika",
+  },
 ];
