@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-11-02",
+  "sonGuncelleme": "2026-11-03",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -2197,6 +2197,19 @@
       "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
       "not": "2026 yılı 1. başvuru dönemi 7 Eylül 2026'da başladı, başvurular 30 Eylül 2026'ya kadar alınıyor. KOBİ'lere yenilikçi ürün geliştirme/ticarileştirme, üretim verimliliği, tedarik zinciri ve uluslararası pazarlara açılma amaçlı 30-75 milyon TL'ye kadar kredi finansmanı sağlanıyor, finansman maliyetinin 20 puanlık kısmı geri ödemesiz. Genel program (yad-kosgeb-kuresel-rekabetcilik-destek-programi) süresiz/dönemsiz olarak ayrıca takip ediliyor; bu kayıt somut son başvuru tarihi olan güncel dönem çağrısını izliyor."
+    },
+    {
+      "id": "icmpd-enhancer-pro-hizlandirma-hibe-2026",
+      "ad": "ENHANCER PRO Hızlandırma Hibe Programı",
+      "kurum": "ICMPD / Sanayi ve Teknoloji Bakanlığı (AB finansmanlı)",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-12-22",
+      "kaynakUrl": "https://enhancerpro.com.tr/hizlandirma-hibe-programi",
+      "ilkTespitTarihi": "2026-11-03",
+      "yeniIlanBildirildi": false,
+      "ucGunKalaBildirildi": false,
+      "sonBildirilenTarih": null,
+      "not": "Çağrı 23 Ekim 2026'da ilan edildi, başvurular ICMPD Elektronik Başvuru Platformu üzerinden 22 Aralık 2026'ya kadar alınıyor (resmi program sayfası). Proje süresi 8-12 ay, hedef kitle yüksek mülteci nüfuslu illerdeki mevcut mikro ölçekli ve büyüme odaklı işletmeler. Hibe tutarı (40.000-60.000 €) ve oranı (%75-90) yalnızca danışmanlık firması afişlerinde geçiyor, resmi Başvuru Rehberi'nden doğrulanmalı."
     }
   ]
 }
