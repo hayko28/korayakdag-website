@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kagit-fatura-donemi-1-ocak-2027de-kapaniyor",
+    title: "1 Ocak 2027: Esnaf ve KOBİ İçin Kağıt Fatura Döneminin Sonu",
+    excerpt:
+      "Basit usul ve işletme hesabı esasına göre defter tutan mükellefler şu an vergiler dahil 3.000 TL'ye kadar olan satışlarda hâlâ kağıt fatura kesebiliyor; bu imkan 31 Aralık 2026'da bitiyor. 1 Ocak 2027'den itibaren tutar ne olursa olsun her fatura Gelir İdaresi'nin e-Arşiv sistemi üzerinden elektronik kesilmek zorunda, ve bu geçişi son haftaya bırakan işletmeler yılın ilk günlerini kesintiyle karşılıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "3 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "markanin-degeri-bilancoda-neden-gorunmez",
     title: "Markanızın Gerçek Değeri, Şirketi Satana Kadar Bilançonuzda Hiç Görünmüyor",
     excerpt:
