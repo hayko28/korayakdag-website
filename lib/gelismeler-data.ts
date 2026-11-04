@@ -2162,6 +2162,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Online satış yapan işletmelere, üyelik ve sipariş bilgilerinin yer aldığı panel veya sayfaların dışarıdan erişime tamamen kapalı olduğunu düzenli aralıklarla test etmelerini öneririm; bu tür ihlaller çoğunlukla kötü niyetten değil, basit bir yetkilendirme veya erişim ayarı hatasından kaynaklanıyor.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "30 Ekim 2026",
+    eklendiTarihi: "2026-11-04",
+    baslik:
+      "Hazine, Kasım 2026-Ocak 2027 döneminde 912,4 milyar TL iç borçlanma planladığını açıkladı",
+    ozet:
+      "Hazine ve Maliye Bakanlığı, 30 Ekim 2026'da açıkladığı üç aylık iç borçlanma stratejisine göre Kasım 2026-Ocak 2027 döneminde 946,9 milyar TL'lik iç borç servisine karşılık 912,4 milyar TL iç borçlanma yapmayı planlıyor. Aylık dağılımda Kasım için 123,4 milyar TL, Aralık için 117,5 milyar TL borçlanma öngörülürken, Ocak 2027 706,9 milyar TL'lik borç servisiyle dönemin en yoğun ayı olacak; bu tutarın 456,5 milyar TL'si piyasadan, 165 milyar TL'si doğrudan satışlardan, 50 milyar TL'si kamuya satışlardan karşılanacak.",
+    kaynakUrl:
+      "https://www.bloomberght.com/hazine-912-4-milyar-liralik-ic-borclanmaya-gidecek-3792951",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Ocak ayındaki borçlanma yoğunluğu, yıl başında kamu kağıtlarına olan talebi ve faiz ortamını etkileyebilir. Kredi veya tahvil bazlı finansman planlayan işletmelere, yıl başı faiz beklentilerini bu takvimle birlikte değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "Türk Patent",
+    tarih: "31 Ekim 2026 (33416 sayılı Resmî Gazete)",
+    eklendiTarihi: "2026-11-04",
+    baslik:
+      "TÜRKPATENT, KOBİ'lerin ilk patent başvurularına %75, yapay zeka alanındaki başvurulara %50 ücret indirimi getirdi",
+    ozet:
+      "Türk Patent ve Marka Kurumu'nun 2026 yılı ücret tarifesinde yaptığı ve 31 Ekim 2026 tarihli, 33416 sayılı Resmî Gazete'de yayımlanan değişiklikle, ilk kez patent başvurusunda bulunan ve KOBİ vasfı belgesine sahip işletmelerin başvuru, araştırma ve inceleme raporu ücretlerinde %75 indirim uygulanacak. Yapay zeka alanındaki (G06N IPC sınıfı) patent başvurularında ise acil araştırma raporu düzenleme ücretinde %50 indirim getirildi; işlemler TÜRKPATENT Elektronik Başvuru Sistemi (EPATS) üzerinden yürütülüyor.",
+    kaynakUrl:
+      "https://www.turkpatent.gov.tr/haberler/kobilerin-ilk-patent-basvurularina-ve-yapay-zeka-alanindaki-acil-arastirma-raporlarina-indirim",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: İlk patent başvurusunu erteleyen KOBİ'lere, bu yüzde 75'lik ücret indirimi nedeniyle başvuruyu şimdi değerlendirmelerini öneririm. Yapay zeka alanında ürün geliştiren girişimler için acil araştırma raporu indirimi de tescil sürecini hızlandırmak isteyenlere bir fırsat olabilir.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-04",
+    baslik:
+      "KOSGEB, sel ve taşkın felaketinden etkilenen KOBİ'lere faiz/kâr payı desteği duyurdu",
+    ozet:
+      "KOSGEB, 2026 yılında sel veya taşkından etkilenip valiliklerce hasar tespiti yapılan mikro ve küçük ölçekli işletmelere yönelik Acil Durumlar Desteği kapsamında düşük faizli kredi imkanı açıkladı. Küçük işletmeler 1 milyon TL'ye, mikro işletmeler 500 bin TL'ye kadar işletme sermayesi kredisi kullanabiliyor; 24 ay vadeli, 6 ay ödemesiz bu kredinin faiz/kâr payının tamamı KOSGEB tarafından karşılanıyor ve harcama belgesi aranmıyor. Başvurular, resmi hasar tespitine dayanılarak 31 Aralık 2026'ya kadar anlaşmalı bankalar üzerinden alınacak.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9505/kosgebden-sel-ve-taskin-felaketlerinden-etkilenen-kobilere-faizkr-payi-destegi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Sel veya taşkından zarar gören mikro ve küçük işletmelere, hasar tespiti belgelerini valilik ve ilgili kurumlardan vakit kaybetmeden tamamlamalarını öneririm; anlaşmalı banka protokolleri henüz netleşmediği için belgeleri hazır bulundurmak süreci hızlandırabilir.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
