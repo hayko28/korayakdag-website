@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "e-kip-e-kolay-ihracat-platformu-nedir-nasil-kullanilir",
+    title: "E-KİP (e-Kolay İhracat Platformu) Nedir? KOBİ'ler Ücretsiz Devlet Danışmanlığıyla E-İhracata Nasıl Başlar?",
+    excerpt: "Ticaret Bakanlığı'nın kolayihracat.gov.tr adresinde sunduğu E-KİP, e-ihracata başlamak veya büyütmek isteyen şirketlere ücretsiz pazar/sektör analizi, mevzuat rehberliği ve yapay zekâ destekli danışmanlık sağlıyor. Platformun modülleri, e-Devlet/MERSİS ile kayıt süreci ve nakdi E-İhracat Destek Programı'ndan farkıyla 2026 güncel rehber.",
+    category: "TİCARET BAKANLIĞI • E-İHRACAT PLATFORMU • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "asgari-kurumlar-vergisi-nedir-2026-hesaplama-rehberi",
     title: "Asgari Kurumlar Vergisi Nedir? Zarar Eden Şirket Bile Neden Vergi Ödeyebilir?",
     excerpt: "2025'ten beri yürürlükte olan yurt içi asgari kurumlar vergisi (KVK 32/C), indirim ve istisnalar düşülmeden önceki kurum kazancının en az %10'u kadar vergi ödenmesini zorunlu kılıyor. Kimlerin muaf olduğu, GİB'in resmî örnekleriyle hesaplama, geçmiş yıl zararının neden matrahtan düşülmediği ve küresel asgari vergiyle karıştırılmaması gereken noktalarla 2026 güncel rehber.",
