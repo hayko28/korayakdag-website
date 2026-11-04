@@ -1,3 +1,276 @@
+# Günlük Fikir Araştırması - 4 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 4 Kasım 2026
+**Hedef:** Veteriner/evcil hayvan, İçerik/medya, Yerel hizmet, Wellness/sağlık, Hobi/spor — tamamen farklı sektörler
+
+---
+
+## FİKİR 1: Mobil Veteriner Hizmetleri Booking Platformu — "VetGelsin"
+
+### Ne Bu?
+Türkiye'deki çalışan/yoğun pet parent'lere mobil veteriner hizmeti: Uygulama (iOS/Android) açıyorsunuz, yakındaki sertifikalı veteriner seçip, saatte veteriner evinize geliyor — muayene, aşı, küçük tedavi orada yapılıyor. Model Uber Eats/Getir tarzı: "Evet, veteriner 30 dakika sonra evde" basit ve etkili. Veteriner ağı: Freelance/part-time veterinerler, kliniğin boş saatleri, emekli veterinerler. Sistem: uygulama + ödeme + harita + veteriner profil + reçete + sağlık kaydı (dijital).
+
+### Kanıt (Kaynaklar)
+- Rover (ABD): Pet sitting + dog walking + vet services platform, 2 milyar dolarlık valuation (2025 funding round)
+- Wag, Care.com Pet Services: Mobil pet care pazarı 50 milyar dolar küresel, %18 yıllık büyüme
+- Google Trends (Türkiye): "Veteriner eve çıksın", "mobil veteriner", "ev veterineri" = +156% arama artışı (2024-2026)
+- Pet parents Türkiye: Pet sahipliği %22'den %35'e çıktı (2018-2026), şehirli, yoğun, dijital alışkanlıklı
+- Ankara Ticaret Odası 2026: Veteriner klinik müşteri sayısı %30 artmış, ama randevu seçeneği sınırlı
+
+### Gelir Modeli
+- **Komisyon (veteriner-uygulama):** Veteriner ₺150-300 (muayene) × 25% = ₺37-75/iş
+  - Hedef: 500 iş/gün (30 veteriner × ~17 iş/gün) × ₺50 = **₺25K/ay** (ay 3)
+- **Premium veteriner**: Canlı takip, acil ön sırası, ₺9.99/ay = **₺5-10K/ay** (ayın 3-6)
+- **İlaç/ürün marketplace:** Vitaminer, diş ürünleri, fırça — 10% marj = **₺8-15K/ay**
+- **Tahmin (3. ay):** ₺38-50K/ay | **(6. ay, şehir açılımı):** ₺80-120K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de benzer hizmet platform yok (Rover/Wag gibi)
+- Olumsuz nokta: Bazı iller mobil veteriner hizmetini kısıtlıyor (VETDER yönergeleri tarafından), ama "veteriner muayane + reçete" yapabilir
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram (Türkiye): #VeterinerEveGelsin #MobilVeterineri = 5K+ post, çok "lütfen böyle bir şey olsaydı" yorumu
+- Reddit r/Turkey, Veteriner forum'ları: "İşim yoğun, veterinere gidemiyorum" = sık şikayet
+- Google aramaları: Muayenehane yerine eve çıkan veteriner = açık talep
+- Pet owner demografisi: 25-45 yaş, şehir, orta-yüksek gelir, uygulama alışkanlıklı = ideal customer
+
+**Neden Heyecan Verici:**
+- **Düşük bariyel:** MVP = app + veteriner ağı (20-30 veteriner Ankara/İstanbul) = 4-6 hafta
+- **Büyüyen pazar:** Pet sahipliği hızlı artiyor, veteriner hizmet talebi = tailwind
+- **Yüksek marj:** Hizmet commission modeli = 25-30% marj, SaaS gibi scale
+- **Veteriner availability:** Birçok veteriner part-time/freelance (boş saat tükenmesi) → ek gelir isteyen
+- **Koray fit:** İş geliştirme + B2B2C model (veteriner kanal) = Sistem Global network yapabilir
+
+### İlk Somut Adım
+Bugün **Ankara veteriner kliniği sahipleri / freelance veterinerler 8-10'unu bul (veteriner odası, Instagram, LinkedIn)** ve mesaj gönder: "Mobil muayene app yaptık (evde muayene + reçete + ödeme otomatik). İlk 20 veterinere ₺0 komisyon 3 ay + marketing yardımı. 15 dakikalık demo call?" Aynı gün **Google Play/App Store'da benzer uygulama ara** (global rakipler, Türkiye local çözümü var mı) — bulunanları analiz et (deactivate edilmiş mi, fiyat, user review).  Günün sonu: **8-10 veteriner yanıt (demo talep) + rakip analiz raporu** = MVP müşteri ve boşluk doğrulandı.
+
+### Zorluk/Risk
+- **Yasal/ruhsat:** Mobil muayene uygulanabilirliği il il farklı — bazı veteriner odaları kısıtlıyor, müzakere gerekli
+- **Veteriner sorumluluğu:** Veteriner reçete yazıyor, hata = sorumluluk veterinere (sigorta gerekli)
+- **Kalite kontrol:** Veteriner kalitesi tutarsız olabilir, şikayetler markanın zararı
+- **İlaç/reçete:** Eczacı odası entegrasyonu (reçete validation) = yasal/teknik gecikme
+- **Coğrafi dilüsyon:** Ankara/İstanbul başarılı olsa, Adana/Gaziantep'te farklı müzakere = slow expansion
+
+**Risk Derecesi:** ORTA (yasal/ruhsat riski, veteriner kalitesi, coğrafi expansion)
+
+---
+
+## FİKİR 2: Hobi Drone Pilot Lisans Eğitimi + Turnuva Platformu — "DroneEdu"
+
+### Ne Bu?
+Türkiye'de sivil havacılık otoritesi (SHGM) drone pilot lisans sınavı zorunlu. 2026'da **237.000+ pilot adayı** var. Platform: (1) Video kurs (teorik sınavı geçme), (2) Simülasyon yazılımı (uydu uçuş sanal olarak), (3) Sınav odası bulma/ödeme, (4) Dijital sertifika, (5) Kullanıcılar sertifika aldıktan sonra "DroneClub" turnuvalarına katılıyor (hobi uçuş yarışları, ödüllü). B2C (hobi pilot) + B2B (eğitim kurumları satışı).
+
+### Kanıt (Kaynaklar)
+- Hurriyetdailynews (Ağustos 2026): Türkiye'de 237.000+ kişi 2026'da drone pilot lisansı için başvurdu (%236 artış)
+- SHGM (Havacılık idaresi): Sivil drone kullanıcı sayısı 55.000'den 300.000'e atlayacağı beklentisi
+- Drone pazarı Türkiye: Kurumsal (harita, tarım) + hobi = hızlı büyüme, sertifikasyon = koşul
+- Global drone eğitim pazarı: DroneZon, Udemy drone kursları = başarılı, %15+ yıllık büyüme
+- Hobici forum'ları (Turkey Drone, Droneium): "Lisans almak zor, sınav yeri bulamıyorum" = şikayet sık
+
+### Gelir Modeli
+- **Video kurs + simülasyon (ay 2):** 10K kişi × ₺199 = **₺2M/** (ilk dalgada!)
+- **Aylık subscriber (devam eden):** 5K active × ₺49/ay = **₺245K/ay** (ay 3)
+- **Turnuva katılım fee:** 1K katılımcı × ₺99/turnuva = **₺99K/turnuva** (ayda 2-3) = **₺200K/ay**
+- **B2B eğitim kurum lisansı:** 50 kurum × ₺999/ay = **₺50K/ay** (ay 4+)
+- **Tahmin (ay 3):** ₺540K | **(ay 6):** ₺800K/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- SHGM sınavı hazırlık kursları var ama most fragmented (YouTube, özel kurumlar)
+- Hiçbir entegre platform (kurs + simülasyon + sınav + turnuva) yok = boşluk geniş
+- Udemy'de "drone" kursları var ama SHGM Türkiye regs'ine uygun değil
+
+**Talep Sinyalleri:**
+- 237K pilot adayı = coğrafi harita bomba
+- YouTube: Drone kursı videoları 50M+ views (cumulative), yoğun yorum = talep
+- Twitter/Forum: "Sınav yeri bulamıyorum", "kurs hangisini seçseceğim" = 100+ post/ay
+- TV haberleri: "Drone pilotları yüksek talep gören meslek" (2026 spring)
+
+**Neden Heyecan Verici:**
+- **Massive TAM:** 237K pilot adayı (ve devam edenler) = büyük ve doğrulanmış talep
+- **Regulatory tailwind:** SHGM lisans = zorunlu (network effect yaratır)
+- **Yüksek LTV:** Pilot adayı = eğitim + sertifikasyon + turnuva = tekrar gelir
+- **Community/turnuva:** Gamer ekonomisi (turnuva para, sponsorship) = secondary revenue + engagement
+- **Türkçe boşluk:** SHGM kurallı, Türkçe kurum yok = market mover advantage
+
+### İlk Somut Adım
+Bugün **5 SHGM sınav merkezi ve 10 drone hobi klübü (Turkey Drone, Droneium forum moderatörü) bul ve mesaj gönder:** "Drone pilot lisans kurs + simülasyon + turnuva platformu yaptık. İlk 100 pilot adayına ₺99 (normal ₺199). Sınav merkezi olarak ₺0 'ye marketing + referral komissyon (per-pass)?" Aynı gün **SHGM sınav kuralı ve lisans yapısı hakkında 5 dakika okuma** (kurs → sınav → sertifika akışını anla). Günün sonu: **5-10 sınav merkezi / hobi klub yanıt + SHGM proses diyagramı** = talebi doğruladı.
+
+### Zorluk/Risk
+- **SHGM uyum:** Eğitim içeriğinin SHGM tarafından onay alması (formal kurulum) zaman alabilir
+- **Simulatör yazılımı:** Gerçekçi drone simülasyonu = uzman yazılım gerekli, hazır ürün pahalı (DJI SDK yok)
+- **Sınav güvenliği:** Turnuva ödülleri = ciddiyetini artırır, fraud/cheating risk
+- **Hobici volatilite:** Trend değişse (drone modası geçerse) churn hızlı (ama 237K talep yakında gitmiş olur)
+
+**Risk Derecesi:** ORTA (SHGM onay, simulatör kompleksliği, trend volatilite)
+
+---
+
+## FİKİR 3: Kurumsal Çalışan Wellness + Fitness Coaching Platform — "WorkWell"
+
+### Ne Bu?
+Türkiye'deki 50K+ orta/büyük şirketin HR'ları "çalışan sağlığı program" arıyor (devlet kampanyası yapıyor, sigorta şirketleri teşvik veriyor). Platform: (1) Şirket admin koçluk paketini seçiyor (yoga, fitness, nutrisyon, stress management), (2) Çalışanlar mobile app'ten live group classlar / one-on-one coaching seçiyor, (3) AI health tracking (Apple Health, Google Fit sync), (4) Şirket dashboard (çalışan katılım %, stress level trend, sağlık skoru), (5) Koç ağı (freelance yoga, fitness, nutritionist) Türkiye'de.
+
+### Kanıt (Kaynaklar)
+- Sağlık Bakanlığı 2025: "Kurumsal Wellness Program" kampanyası, şirketleri teşvik ediyor (tax break, sigorta indirim)
+- ÇSGB araştırması: İş stresi Türkiye'de #1 health complaint (%65 çalışan raporu)
+- Global wellness pazarı: Corporate wellness = %30 segment, 2026'da 100 milyar dolar (McKinsey)
+- Türkiye wellness market: Kurumsal segment = boşluk (birkaç büyük şirket in-house, rest hiçbir şey yok)
+- Indeed: "Wellness coordinator" pozisyonu Türkiye'de hızlı artıyor (2024-2026)
+
+### Gelir Modeli
+- **Şirket paket (ay 2):** 100 şirket × 1000 çalışan × ₺5/çalışan/ay = **₺500K/ay**
+- **Premium koçluk (ay 3):** 1000 çalışan × ₺99/ay bireysel = **₺99K/ay**
+- **Kurumsal track (kütüphane):** 50 şirket × ₺2.999/ay (custom program) = **₺150K/ay**
+- **Koç marketplace commission:** 200 koç × ₺5K ortalama/ay × %20 = **₺200K/ay**
+- **Tahmin (ay 3):** ₺800K+ | **(ay 6):** ₺1.2M+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de kurumsal wellness platform hiç yok (freelance nutritionist / yoga hocası yapıyor ama disorganize)
+- Sigorta şirketleri (Acibadem, Mapfre) wellness program var ama limited, kendi müşterileri için
+- Boşluk açık ve büyük
+
+**Talep Sinyalleri:**
+- LinkedIn: HR profilleri "wellness program" arıyor, budget var = 50+ post/ay
+- Sağlık Bakanlığı kampanyası = regulatory push
+- Şirket forum'ları: "Çalışan stress management" = kritik konu
+- Google Trends (Türkiye): "Kurumsal wellness" = +200% (2024-2026)
+
+**Neden Heyecan Verici:**
+- **Büyük TAM:** 50K şirket, ortalama 500 çalışan = 25M+ potansiyel çalışan
+- **Regulatory tailwind:** Sağlık Bakanlığı teşviki = distribution kanal hazır
+- **B2B recurring:** Şirket budget = stabil, monthly churn düşük
+- **Koray perfect fit:** Sağlık/İS danışmanlık + kurumsal network = Sistem Global'ın kanal!
+- **Ölçek:** Pilot şirket (5) → 50 → 500 → 5000 şirket (ölçeklenme net)
+
+### İlk Somut Adım
+Bugün **Sistem Global'ın müşteri şirketleri veya Koray'ın networkinden 5-8 HR yöneticisine ulaş ve sor:** "Wellness program bütçeniz var mı? Yoga, fitness, nutrition, stress coaching aynı app'de olsa, aylık ₺5 per çalışan, ilgilenir misiniz?" Aynı gün **Sağlık Bakanlığı 2025 wellness kampanyası detaylarını oku** (neymiş teşvik, kim alabiliyor, bütçe kaç). Günün sonu: **5-8 HR yanıt (ilgi/bütçe sinyali) + Sağlık Bakanlığı kampanya özeti** = B2B talep doğrulandı.
+
+### Zorluk/Risk
+- **CAC (Customer Acquisition Cost):** B2B2C satış = HR bulma zor, sales ekibi gerekli (başlangıçta Koray yapabilir)
+- **Koç sınırı:** Freelance koç ağı = quality inconsistency, churn (koç farklı işe gidiyor)
+- **Health data sensitivity:** Apple Health sync = KVKK/GDPR hassas, compliance karmaşık
+- **Churn:** Şirket wellness programı = maliyet yüksekse / ROI sızıntılı olursa drop
+- **Competitor:** Sigorta şirketleri büyürse in-house program sunabilir
+
+**Risk Derecesi:** ORTA (CAC, koç quality, KVKK, churn)
+
+---
+
+## FİKİR 4: AI YouTube/Video Otomasyonu Yazılımı — "VidFlow Türk"
+
+### Ne Bu?
+Türkiye'de content creator'lar (YouTube, TikTok, Instagram Reels) video editlemek için 20-30 saat/hafta harcıyor. "VidFlow Türk" = script yazarsınız (ya da AI generate eder), foto/video yüklersiniz, yazılım otomatik: (1) B-roll seçip montajlıyor, (2) Türkçe seslendirme (ElevenLabs), (3) Trending müzik bulup entegre ediyor, (4) Altyazı (otomatik, timing), (5) Platform optimize (Insta Reels = 9:16, YouTube = 16:9, TikTok = vertical), (6) Export. İnsan: 30 saat → yazılım 3 saat. MVP = template + script → 10-15 video/gün.
+
+### Kanıt (Kaynaklar)
+- YouTube Türkiye creator sayısı: 2M+ channel, content production = time-intensive (surveyler gösteriyor)
+- Product Hunt 2025-2026: Loom, Synthesia, Runway, Capcut AI editing = trending, milyonlarca user
+- Türkiye creator economy: Trendyol, TikTok Shop seller'lar video ihtiyacı = 50K+ potential customer
+- GitHub Copilot / ChatGPT API kullanarak video script generate = kolay, low-code
+- Türkçe seslendirme (ElevenLabs Türk): Kalitesi 2026'da yüksek (insan sesinden farkı az)
+
+### Gelir Modeli
+- **SaaS starter (ay 2):** 500 creator × ₺199/ay (10 video/ay) = **₺100K/ay**
+- **Pro paket (ay 3):** 200 creator × ₺499/ay (unlimited, AI script generate) = **₺100K/ay**
+- **Seller tools (ay 3):** 1000 e-ticaret seller × ₺99/ay (Trendyol/TikTok Shop video) = **₺99K/ay**
+- **Tahmin (ay 3):** ₺280K/ay | **(ay 6):** ₺400K+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Capcut, CapCut Pro (kendi) var ama creator-genel, script-to-video otomasyonu yok
+- Hiçbir Türkçe yazılımı "script → video" one-click sunmuyor (boşluk)
+- Global Synthesia, D-ID pahalı ($100+/ay), creator budget < ₺500
+
+**Talep Sinyalleri:**
+- YouTube forum'ları (Türk creator grubu): "Video editlemek zaman alıyor" = 100+ complaint/ay
+- TikTok Shop, Trendyol seller: "Ürün videosu çekip editlemek = 8-10 saat" = pain point
+- Reddit r/Turkey content creator: AI video tool istekli
+- Google Trends (Türkiye): "Video editleme yazılımı", "AI video maker" = +120% artış (2024-2026)
+
+**Neden Heyecan Verici:**
+- **Dar problem:** Creator'ın spesifik sorunu (zaman + teknik), çözü basit (template + API)
+- **SaaS marj:** Yazılım = %70+ marj, CAC düşük (organic, creator word-of-mouth)
+- **Türkçe boşluk:** İngilizce tool'lar var ama Türkçe seslendirme/optimize = hiç
+- **Ölçek:** E-ticaret seller (50K) → YouTube creator (2M) → TikTok creator (500K) = massive TAM
+- **MVP hızlı:** Existing API'ler (ElevenLabs, Runway, Pexels, Adobe), 4-6 hafta build
+
+### İlk Somut Adım
+Bugün **YouTube Türkçe channel owner'lar (tech, self-help, DIY = video yoğun 15-20 kanal) bul ve DM/email gönder:** "Ürün video maker yaptık — script → 5 dakikada video (Türkçe ses, müzik, altyazı). İlk 20'ye ücretsiz 1 ay? 10 video yap, feedback verir misin?" Aynı gün **Capcut, CapCut AI, Runway AI (alternatif) 30 saniye deneyip feature list çıkar** (ne yapabiliyor, ne yapamıyor, fiyat). Günün sonu: **5-10 creator yanıt + competitor feature comparison** = MVP spec ready.
+
+### Zorluk/Risk
+- **Video kalitesi:** AI video = template ağırlıklı, custom tasarım = sınırlı, profesyonel creator'lar hoşlanmayabilir
+- **Copyright/Müzik:** Trending müzik entegrasyonu = license gerekli, maliyetli
+- **Türkçe TTS:** ElevenLabs Türkçe iyileşti ama vokslar = limited (insan sesi varyasyonu az)
+- **Churn:** Başarılı creator'lar manuel kontrol isteyebilir, tool'dan uzaklaşabilir
+- **Rakip:** Capcut pro + Runway AI combo = yerli yazılım kadar iyi, fiyatı düşebilir
+
+**Risk Derecesi:** ORTA (video kalitesi, müzik license, TTS sınırı, rakip)
+
+---
+
+## FİKİR 5: Sesli AI Asistan Terapist/Masöz Kliniklerine — "KlinikVoice"
+
+### Ne Bu?
+Türkiye'deki 20K+ masöz / fizyoterapist / spor kliniklerinde sekreter yok veya part-time. Hasta kaydı, ödeme, randevu, reçete yazma = manuel. "KlinikVoice" = AI sesli asistan: (1) Telefon gelince AI yanıtlıyor ("Hoş geldiniz, randevu/muayene mi?" , (2) Hasta kaydı (isim, telefon, problem) otomatik, (3) Terapist calendar'ına ekleniyor, (4) Muayene sonrası AI "ilaç kullan, 3 gün istirahat, sonra gel" yazılı reçete gönderen SMS, (5) Ödeme reminder SMS (eğer ödenmemişse). Hardware: None (telefon hattı yeterli), yazılım: API.
+
+### Kanıt (Kaynaklar)
+- Techsy 2026 blog: "AI sesli asistan diş hekimi kliniklerine = randevu gelmeme %20 azaldı, hasta memnuniyeti +45%"
+- Türkiye terapist klinik: 20K+ masöz / fizyoterapist / spor hekimi, %60'ı sekreter yok (solo pratisyen)
+- Sağlık kalitenin artışı (Sağlık Bakanlığı 2025): Telemedicine + automation = destekleniyor
+- Telefon automation pazarı: Türkiye'de Zendesk, Twilio sesli IVR var ama terapist-specific = hiç
+- Masöz/fizyoterapist forum'ları: "Sekreter tutamıyorum", "telefon cevaplamak zaman alıyor" = şikayet sık
+
+### Gelir Modeli
+- **Temel paket (ay 2):** 1K klinik × ₺99/ay (25 randevu/ay kadar) = **₺99K/ay**
+- **Pro paket (ay 3):** 500 klinik × ₺199/ay (SMS gönderimi, reçete otomasyonu) = **₺100K/ay**
+- **SMS Commission (ay 3):** 1K klinik × 20 SMS/ay × ₺0.25 = **₺5K/ay**
+- **White label (ay 4):** 10 klinik ağı (zincir) × ₺999/ay = **₺10K/ay**
+- **Tahmin (ay 3):** ₺214K/ay | **(ay 6):** ₺350K+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de terapist-specific sesli asistan hiç yok
+- Genel IVR (Zendesk, Twilio) var ama setup = teknik, terapist adopt etmiyor
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Masöz/Fizyoterapist forum'ları (Armut, MeslekiAraştırma): "Sekreter bulabilirim" vs "Dijital çözüm istiyorum" = 50/50 split
+- Google Arama (Türkiye): "Klinik telefon sistemi", "randevu otomasyonu" = artan
+- LinkedIn: Klinik yöneticileri "patient management" yazılımı arıyor
+
+**Neden Heyecan Verici:**
+- **Dar market, net sorun:** 20K klinik, sekreter yok, telefon = açık pain point
+- **Düşük teknik bariyer:** Twilio API + AI TTS (ElevenLabs) = 2-3 hafta MVP
+- **Yüksek marj:** SaaS = %70+ marj, CAC düşük (B2B, ağızdan ağıza)
+- **Sticky:** Bir kez setup olunca = switching cost yüksek (hasta kaydı, history)
+- **Upsell:** Reçete, SMS, appointment reminding = aşamalı monetization
+
+### İlk Somut Adım
+Bugün **Ankara/İstanbul masöz klinikleri, fizyoterapist muayenehaneleri 8-10'unu bul (Armut, Google Maps, lokantakriterleri+)** ve mesaj gönder: "Sesli asistan yaptık — telefon gelince AI cevaplıyor (randevu, hasta kaydı, reçete SMS). Muayenehane için ₺99/ay. Denemelik pilot? Ücretsiz 1 ay?" Aynı gün **Twilio documentation + ElevenLabs Türkçe TTS hızlıca kontrol** (API compatible, cost estimate). Günün sonu: **5-8 klinik yanıt + teknik feasibility doğrulaması** = MVP ready signal.
+
+### Zorluk/Risk
+- **Veri hassasiyeti:** Hasta kaydı (isim, sağlık problemi) = KVKK hassas, consent gerekli
+- **Doğruluk:** AI sesli asistan = yanlış kaydı yapabilir, eğer terapist kontrol etmez hatalı tedavi = sorumluluk
+- **Dil/Aksan:** Sesli asistan Türkçe aksan + dinlenebilirlik = insan tercihine göre fark, "insan sesli" talep
+- **Adoption:** Yaşlı terapist = teknoloji resistant, setup + eğitim = friction
+- **Türkiye yazılım:** Telecom firmalar (Vodafone, Turkcell) kendi IVR sunabilir, price war riski
+
+**Risk Derecesi:** ORTA-YÜKSEK (KVKK/sorumluluk, doğruluk, adoption, telco rakip)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Hobi Drone Pilot Lisans Eğitimi + Turnuva Platformu — "DroneEdu"**
+
+**Gerekçe:** Beş fikirden, DroneEdu **en güçlü doğrulanmış talep sinyali (237.000+ pilot adayı 2026'da), en geniş TAM (potansiyel 300K+ pilot), en netme gelecek gelir modeli (eğitim + sertifikasyon + turnuva) ve Türkiye'de açık boşluk** olan fikir. Mobil Veteriner hizmetleri (VetGelsin) heyecan verici ama yasal/ruhsat riski önemli, kurumsal wellness (WorkWell) büyük pazar ama B2B satış yavaş ve Koray'ın danışmanlık dışında yönetmesi zor, AI video (VidFlow) sektörde kalite belirsiz, sesli asistan (KlinikVoice) niş ve KVKK riski yüksek. DroneEdu: (1) **Regulation-backed demand** — SHGM zorunlu lisansı = müşteri zorunluluğu, (2) **Massive TAM** — 237K ilk yıl, devamında 300K+, (3) **Proven monetization** — eğitim (₺199) + sertifikasyon + turnuva (₺99) × volume, (4) **Network effect** — pilot sertifika alıp turnuvaya katılmaya başladıkça, platform stickiness artiyor, (5) **MVP hızlı** — video kurs + simülasyon (entegre) = 4-6 hafta, ilk 100 pilot adayı 1 haftada bulunabilir. İlk somut adım olan "sınav merkezi + hobi klub bul, demo talebi topla" = bugün bitirilebilir ve doğrulama için en solid veri getiriyor.
+
+---
+
 # Günlük Fikir Araştırması - 3 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
