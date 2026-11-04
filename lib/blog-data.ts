@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "teknogirisim-rozeti-nedir-kimler-alabilir-nasil-alinir-2026",
+    title: "Teknogirişim Rozeti Nedir, Kimler Alabilir, Nasıl Alınır? (2026 Rehberi)",
+    excerpt: "Sanayi ve Teknoloji Bakanlığı'nın teknoloji ve yenilik odaklı girişimleri belgelendirdiği Teknogirişim Rozeti için başvuru şartları, 15 yıl kuralı, TGB/TEKMER/BiGG ile doğrudan belgelendirme, komite yolu, 15 iş günü itiraz ve 3 yıllık geçerlilik. KOSGEB Yapay Zeka Kredisi'nin ön şartı olan rozetin 2026 güncel rehberi.",
+    category: "SANAYİ VE TEKNOLOJİ BAKANLIĞI • TEKNOGİRİŞİM ROZETİ • 2026",
+    date: "Kasım 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "e-kip-e-kolay-ihracat-platformu-nedir-nasil-kullanilir",
     title: "E-KİP (e-Kolay İhracat Platformu) Nedir? KOBİ'ler Ücretsiz Devlet Danışmanlığıyla E-İhracata Nasıl Başlar?",
     excerpt: "Ticaret Bakanlığı'nın kolayihracat.gov.tr adresinde sunduğu E-KİP, e-ihracata başlamak veya büyütmek isteyen şirketlere ücretsiz pazar/sektör analizi, mevzuat rehberliği ve yapay zekâ destekli danışmanlık sağlıyor. Platformun modülleri, e-Devlet/MERSİS ile kayıt süreci ve nakdi E-İhracat Destek Programı'ndan farkıyla 2026 güncel rehber.",

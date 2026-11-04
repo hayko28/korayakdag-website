@@ -2204,6 +2204,19 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Sel veya taşkından zarar gören mikro ve küçük işletmelere, hasar tespiti belgelerini valilik ve ilgili kurumlardan vakit kaybetmeden tamamlamalarını öneririm; anlaşmalı banka protokolleri henüz netleşmediği için belgeleri hazır bulundurmak süreci hızlandırabilir.",
   },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "3 Temmuz 2025 (Resmi Gazete)",
+    eklendiTarihi: "2026-11-04",
+    baslik:
+      "Teknogirişim Rozeti: Teknoloji ve yenilik odaklı girişimlerin belgelendirilmesi yönetmeliği",
+    ozet:
+      "Sanayi ve Teknoloji Bakanlığı'nın Teknoloji ve Yenilik Odaklı Girişimlerin Belirlenmesi ve Belgelendirilmesine Dair Yönetmeliği 3 Temmuz 2025 tarihli Resmi Gazete'de yayımlandı. Başvurular teknogirisim.sanayi.gov.tr portalı üzerinden alınıyor. Girişimin kuruluşundan itibaren en fazla 15 yıl geçmiş olması gerekiyor, rozet verildiği tarihten itibaren 3 yıl geçerli ve olumsuz karara karşı bildirimden itibaren 15 iş günü içinde itiraz edilebiliyor. Rozet, KOSGEB Yapay Zeka Kredisi başvurusunun şartları arasında yer alıyor.",
+    kaynakUrl: "https://teknogirisim.sanayi.gov.tr",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: KOSGEB Yapay Zeka Kredisi'ne başvurmayı düşünen girişimler için rozet, sürecin ilk adımı haline geldi; bu nedenle kuruluş yılınızı ve yenilik odağınızı baştan değerlendirmenizi öneririm. Başvuru adımlarını ve kimlerin uygun olabileceğini hazırladığım rehberde anlattım: /blog/teknogirisim-rozeti-nedir-kimler-alabilir-nasil-alinir-2026",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
