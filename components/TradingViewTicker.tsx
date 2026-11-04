@@ -39,6 +39,7 @@ export default function TradingViewTicker() {
         { proName: "TVC:GOLD", title: "Altın (Ons/USD)" },
         { proName: "FX_IDC:XAUTRYG", title: "Gram Altın/TL" },
         { proName: "FX_IDC:XAGTRYG", title: "Gram Gümüş/TL" },
+        { proName: "TVC:SILVER", title: "Gümüş (Ons/USD)" },
         { proName: "BITSTAMP:BTCUSD", title: "Bitcoin/USD" },
       ],
       showSymbolLogo: true,
