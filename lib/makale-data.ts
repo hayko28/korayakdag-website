@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "bayilik-feshinde-tazminat-talep-edilemez-maddesi",
+    title: "\"Fesih Halinde Tazminat Talep Edilemez\" Maddesi Neden Bazen İşe Yaramıyor?",
+    excerpt:
+      "Bir üretici, performans hedeflerini tutturamayan bölge bayisiyle sözleşmedeki 'fesih halinde tazminat talep edilemez' maddesine güvenerek yollarını ayırdı. Üç ay sonra karşısına, Türk Ticaret Kanunu'nun acenteye tanıdığı denkleştirme hakkının bayilik ilişkisine kıyasen uygulandığı bir dava çıktı; çünkü bu hak kanunun emredici saydığı bir koruma ve tek bir sözleşme cümlesiyle otomatik olarak ortadan kalkmıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "4 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kagit-fatura-donemi-1-ocak-2027de-kapaniyor",
     title: "1 Ocak 2027: Esnaf ve KOBİ İçin Kağıt Fatura Döneminin Sonu",
     excerpt:
