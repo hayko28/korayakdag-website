@@ -15,7 +15,10 @@ const STRINGS = {
   en: { heading: "Other Articles", more: "Show more", less: "Show less" },
 };
 
-const VISIBLE_COUNT = 2;
+const VISIBLE_COUNT = 4;
+// Kapalıyken de ilk RENDER_COUNT link HTML'de bulunur (gizli); aksi halde arama
+// motoru yeni yazıları iç linklerden keşfedemiyor.
+const RENDER_COUNT = 30;
 
 export default function OtherPosts({
   posts,
@@ -29,19 +32,21 @@ export default function OtherPosts({
 
   if (posts.length === 0) return null;
 
-  const visiblePosts = expanded ? posts : posts.slice(0, VISIBLE_COUNT);
-  const canToggle = posts.length > VISIBLE_COUNT;
+  const renderedPosts = posts.slice(0, RENDER_COUNT);
+  const canToggle = renderedPosts.length > VISIBLE_COUNT;
 
   return (
     <div className="mt-10 border-t border-white/10 pt-8">
       <h4 className="mb-4 text-xl font-bold text-orange-400">{t.heading}</h4>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {visiblePosts.map((post) => (
+        {renderedPosts.map((post, index) => (
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="block rounded-2xl border border-white/15 bg-white/5 p-5 transition hover:bg-white/10"
+            className={`${
+              !expanded && index >= VISIBLE_COUNT ? "hidden" : "block"
+            } rounded-2xl border border-white/15 bg-white/5 p-5 transition hover:bg-white/10`}
           >
             <p className="text-xs font-semibold text-orange-400">
               {post.category}
