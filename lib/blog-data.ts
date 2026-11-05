@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-sel-taskin-isletme-destegi-2026",
+    title: "İşyerim Sel ve Taşkından Zarar Gördü: KOSGEB'den Faizsiz Kredi Nasıl Alırım?",
+    excerpt: "KOSGEB, 3 Kasım 2026'da yaptığı duyuruyla sel ve taşkından etkilenen mikro ve küçük işletmelere faiz/kâr payı tamamen karşılanan işletme sermayesi kredisi sağlıyor. Mikro işletmede 500.000 TL, küçük işletmede 1.000.000 TL'ye kadar destek, 24 ay vade, 6 ay ödemesiz dönem, hasar tespiti şartı ve 31 Aralık 2026 son başvuru tarihiyle 2026 güncel rehber.",
+    category: "KOSGEB • ACİL DURUM DESTEĞİ • 2026",
+    date: "Kasım 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1657069344312-a500de53b566?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "teknogirisim-rozeti-nedir-kimler-alabilir-nasil-alinir-2026",
     title: "Teknogirişim Rozeti Nedir, Kimler Alabilir, Nasıl Alınır? (2026 Rehberi)",
     excerpt: "Sanayi ve Teknoloji Bakanlığı'nın teknoloji ve yenilik odaklı girişimleri belgelendirdiği Teknogirişim Rozeti için başvuru şartları, 15 yıl kuralı, TGB/TEKMER/BiGG ile doğrudan belgelendirme, komite yolu, 15 iş günü itiraz ve 3 yıllık geçerlilik. KOSGEB Yapay Zeka Kredisi'nin ön şartı olan rozetin 2026 güncel rehberi.",
