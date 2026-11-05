@@ -51,30 +51,52 @@ const hizmet: [string, string[][]][] = [
   ["Dava, İcra ve İflas","Alacak tahsili, davalarda temsil, konkordato ve iflas süreçleri.","Alacağı olan veya dava riski taşıyan her şirket.","Ticaret, inşaat, üretim, lojistik"],
   ["Arabuluculuk","Mahkemeye gitmeden anlaşma yolu. Ticari ve iş uyuşmazlıklarında dava öncesi zorunlu adım.","Ticari veya işçi uyuşmazlığı yaşayan şirketler.",ALL],
   ["KVKK","Kişisel verilerin yasaya uygun tutulması: envanter, aydınlatma metni, VERBİS kaydı.","Müşteri veya çalışan verisi tutan tüm şirketler.","E-ticaret, sağlık, eğitim, yazılım, perakende"],
-  ["Sözleşme, İş ve Şirketler Hukuku","Sözleşme hazırlama, iş hukuku, şirket kuruluşu ve tür değişikliği, halka arz, aile anayasası.","Büyüyen, ortaklık yapısı değişen şirketler ve aile şirketleri.",ALL]
+  ["Sözleşme, İş ve Şirketler Hukuku","Sözleşme hazırlama ve inceleme, iş hukuku, şirket kuruluşu ve tür değişikliği (limitedden anonime geçiş gibi).","Büyüyen, ortaklık yapısı değişen veya çalışanı olan şirketler.",ALL],
+  ["Aile Anayasası","Aile şirketinde kimin hangi rolü üstleneceğini, karar alma, kâr dağıtımı, pay devri ve ailenin şirketteki çalışma kurallarını yazılı hale getiren düzen. Kuşak geçişi ve miras sırasında çıkabilecek anlaşmazlıkları önceden önler.","Birden fazla aile ortağı olan, yönetimi sonraki kuşağa devretmeyi planlayan aile şirketleri.",ALL],
+  ["Halka Arz","Şirket paylarının Borsa İstanbul'da yatırımcıya satışa açılması. Büyüme için sermaye sağlar, şirkete görünürlük ve kurumsal itibar kazandırır. Hazırlıkta şirket yapısı, finansal tablolar, bağımsız denetim ve izin süreci birlikte yönetilir.","Büyüme finansmanı arayan, kurumsal yapısı oturmuş orta ve büyük ölçekli şirketler.","Üretim, enerji, perakende, teknoloji, holding"],
+  ["M&A (Birleşme ve Bölünme)","İki veya daha fazla şirketin tek çatı altında birleşmesi ya da bir şirketin faaliyetlerine göre birden fazla şirkete bölünmesi. Büyümek, pazar payı kazanmak, maliyetleri düşürmek, grup yapısını sadeleştirmek veya farklı işleri ayırmak için yapılır. Hukuki, mali ve vergisel planlamayı birlikte gerektirir.","Başka bir şirketi satın almayı, birleşmeyi veya grup yapısını yeniden düzenlemeyi planlayan şirketler.",ALL],
+  ["Due Diligence","Alıcının veya yatırımcının, satın alma ya da yatırım kararından önce şirketi hukuki, mali ve vergisel açıdan incelemesi. Gizli borç, dava, sözleşme ve vergi riskleri işlemden önce ortaya çıkar, fiyat ve şartlar buna göre belirlenir. Satan taraf için de eksiklerin önceden görülmesini sağlar.","Şirket satın alacak veya satacak, yatırım alacak veya verecek taraflar.",ALL]
  ]],
- ["Vergi ve Mali Müşavirlik",[
-  ["Vergi Danışmanlığı","Yurt içi ve uluslararası vergi planlaması, vergi riski ve incelemelerde destek.","Karı büyüyen, yurt dışıyla iş yapan şirketler.",ALL],
+ ["Vergi, Denetim ve YMM Hizmetleri",[
+  ["Vergi İnceleme ve Süreç Danışmanlığı","Vergi incelemesi sırasında şirketin temsil edilmesi, istenen belge ve bilgilerin hazırlanması, tarhiyat sonrasında uzlaşma, itiraz ve dava süreçlerinin yönetilmesi. İnceleme gelmeden riskin tespiti ile yurt içi ve uluslararası vergi planlamasını da kapsar.","Vergi incelemesine alınan, ceza ihbarnamesi alan veya inceleme riski taşıyan şirketler.",ALL],
   ["Tam Tasdik","Yeminli Mali Müşavirin yıllık beyannamelerin doğruluğunu onaylaması. Vergi incelemesi riskini düşürür.","Düzenli ve güvenli vergi uyumu isteyen şirketler.",ALL],
   ["KDV İade","Devreden KDV'nin nakit olarak geri alınması.","İhracat yapan, yatırım yapan, indirimli KDV oranı nedeniyle KDV'si birikenler.","İhracatçı imalat, tekstil, gıda, inşaat, enerji"],
-  ["Bağımsız Denetim","Finansal tabloların bağımsız denetçi tarafından doğrulanması. Belirli büyüklük eşiğini aşanlar için zorunlu, diğerlerinde güven yaratır.","Eşiği aşan şirketler, kredi veya yatırımcı arayanlar.","Üretim, holding, enerji, perakende"],
-  ["Bordro","Aylık maaş, SGK bildirimleri ve çalışan kayıtlarının yönetimi.","Çalışanı olan ama içeride bordro ekibi kurmak istemeyen şirketler.",ALL],
-  ["SGK Teşvikleri","İşe alımda SGK prim yükünü azaltan teşviklerin tespiti ve uygulanması.","Çalışan sayısı yüksek veya işe alım planlayan şirketler.","Üretim, tekstil, hizmet, inşaat, turizm"]
+  ["Bağımsız Denetim","Finansal tabloların bağımsız denetçi tarafından doğrulanması. Belirli büyüklük eşiğini aşanlar için zorunlu, diğerlerinde güven yaratır.","Eşiği aşan şirketler, kredi veya yatırımcı arayanlar.","Üretim, holding, enerji, perakende"]
  ]],
- ["Uluslararası",[
+ ["Uluslararası Büyüme ve Kalkınma",[
   ["Yurt Dışında Şirket Kurma","Hedef ülkede şirket kuruluşu: ülke seçimi, tescil, banka ve vergi kaydı. Kurduğumuz ülkeler tablonun altında.","Yurt dışı müşteri, ofis veya depo isteyen şirketler.","İhracatçılar, yazılım, e-ticaret, ticaret"],
   ["Yurt Dışı Pazar Araştırması","Hedef ülkede talep, rakip, fiyat ve giriş yolu analizi.","İhracata yeni başlayan veya yeni pazara açılan şirketler.","Üretim, gıda, makine, tekstil, yazılım"],
   ["Uluslararası Kredi ve Fon Danışmanlığı","Yurt dışı kaynaklı kredi, fon ve yatırım finansmanı bulma, başvuruyu hazırlama.","Büyük yatırımı veya finansman ihtiyacı olan şirketler.","Enerji, altyapı, üretim, tarım"]
  ]],
- ["Koruma ve Büyüme",[
-  ["Marka ve Patent","Marka, patent ve telif haklarının Türkiye'de ve yurt dışında tescili.","Kendi ürünü veya markası olan, ihracat yapan şirketler.","Gıda, tekstil, yazılım, kozmetik, makine"],
-  ["Sürdürülebilirlik","Karbon ve su ayak izi, TSRS raporu, güvence denetimi. AB'ye ihracatta karbon sınır vergisi hazırlığı.","AB'ye ihracat yapanlar ve rapor zorunluluğu olan şirketler.","Çelik, alüminyum, çimento, gübre, tekstil, otomotiv"],
-  ["GYF ve PYF","Gayrimenkul veya proje yatırımı için yatırımcıdan fon toplayan, SPK düzenlemeli yapı (Gayrimenkul Yatırım Fonu, Proje Yatırım Fonu).","Gayrimenkul veya proje geliştirip ortak yatırımcı arayanlar.","Gayrimenkul, inşaat, enerji projeleri"],
+ ["Marka ve Patent",[
+  ["Marka","Ticari adın, logonun ve ürün isminin Türkiye'de ve yurt dışında tescil ettirilmesi. Yurt dışı başvuru, tek başvuruyla birden fazla ülkeyi kapsayan uluslararası sistemle (Madrid Protokolü) ya da ülke ülke yapılabilir. Tescil, markanın başkaları tarafından kullanılmasını engeller.","Kendi markası olan, yeni marka çıkaran, ihracat yapan veya franchise vermeyi planlayan şirketler.","Gıda, tekstil, kozmetik, yazılım, e-ticaret, perakende"],
+  ["Patent ve Faydalı Model","Yeni ve sanayiye uygulanabilir bir buluşun koruma altına alınması. Patent daha kapsamlı ve uzun süreli korumadır (20 yıl). Faydalı model daha basit teknik yenilikler için daha hızlı ve düşük maliyetli bir yoldur (10 yıl).","Kendi ürününü, yöntemini veya makinesini geliştiren, Ar-Ge yapan şirketler ve girişimciler.","Makine, otomotiv, savunma, medikal, kimya, yazılım"],
+  ["Tasarım","Bir ürünün şekli, çizgisi, rengi, dokusu veya ambalajı gibi dış görünümünün tescil edilmesi. Ürünün görünüşünün kopyalanmasını engeller.","Özgün görünümlü ürün, mobilya, ambalaj, aksesuar veya moda ürünü üreten şirketler.","Tekstil, mobilya, ev eşyası, ambalaj, kozmetik, otomotiv yan sanayi"],
+  ["Telif Hakları","Yazılım, yazı, müzik, fotoğraf, video, grafik gibi özgün eserlerin hak sahipliğinin belgelenmesi ve korunması. Hak eser yaratıldığı anda doğar, kayıt hak sahipliğini ispatı kolaylaştırır. Eser devri ve lisans sözleşmeleri de bu kapsamdadır.","Yazılım, içerik, tasarım veya yayın üreten şirketler ve girişimciler.","Yazılım, medya, reklam, eğitim, oyun, moda"]
+ ]],
+ ["Kurumsal Finans ve Değerleme",[
+  ["Şirket Değerleme","Şirketin gerçek piyasa değerinin hesaplanması. Satış, ortak alımı, birleşme (M&A), yatırımcı görüşmesi ve due diligence öncesi kullanılır.","Ortak alacak veya satacak, yatırım arayan, birleşme düşünen şirketler.",ALL],
+  ["Marka Değerleme","Markanın parasal değerinin hesaplanması. Marka satışı, lisans verme, franchise, ortaklık ve yatırımcı görüşmelerinde ve markanın bilançoya yansıtılmasında kullanılır.","Güçlü markası olan, marka devri, lisanslama veya yatırım planlayan şirketler.","Perakende, gıda, tekstil, yazılım, franchise"],
+  ["M&A Yatırımcı Hazırlığı","Şirketi satışa veya yatırıma hazırlama çalışması. Finansal tabloların düzenlenmesi, şirket tanıtım dosyası, değerleme ve veri odası hazırlığı yapılır. Yatırımcının sorularına ve due diligence incelemesine önceden hazır olunur, daha iyi fiyat ve hızlı kapanış sağlar.","Şirketini satmak, ortak almak veya yatırım turu yapmak isteyen sahipler.",ALL],
+  ["GSYF ve GSYO Değerleme","Girişim Sermayesi Yatırım Fonu (GSYF) ve Girişim Sermayesi Yatırım Ortaklığı (GSYO) kapsamında yatırım yapılacak girişimin ve fon portföyündeki payların değerinin belirlenmesi. Yatırım kararı, giriş fiyatı ve çıkış değeri bu hesaba dayanır.","Girişim sermayesi fonundan yatırım almayı veya fon kurmayı düşünen girişimler ve yatırımcılar.","Teknoloji, yazılım, sağlık, enerji, e-ticaret"]
+ ]],
+ ["Süreç ve RPA Çözümleri",[
+  ["RPA (Süreç Robotları)","Yazılım robotlarının tekrarlayan işleri insan yerine yapması: fatura girişi, rapor hazırlama, veri aktarımı gibi. Zaman kazandırır, hatayı azaltır.","Her gün tekrarlayan evrak ve veri işi yapan, ekibi bu işlere zaman harcayan şirketler.","Finans, muhasebe, lojistik, perakende, sigorta, üretim"],
   ["Kurumsallaşma Check-Up","Yönetim, süreç, finans ve hukuk açısından şirketin kısa muayenesi. Eksikler ve öncelikler raporlanır.","Büyüyen ve sahibine bağlı çalışan aile şirketleri.",ALL]
  ]],
- ["Değerleme ve Teknoloji",[
-  ["Şirket Değerleme","Şirketin gerçek piyasa değerinin hesaplanması. Satış, ortak alımı, birleşme (M&A), yatırımcı görüşmesi ve due diligence öncesi kullanılır.","Ortak alacak veya satacak, yatırım arayan, birleşme düşünen şirketler.",ALL],
-  ["RPA (Süreç Robotları)","Yazılım robotlarının tekrarlayan işleri insan yerine yapması: fatura girişi, rapor hazırlama, veri aktarımı gibi. Zaman kazandırır, hatayı azaltır.","Her gün tekrarlayan evrak ve veri işi yapan, ekibi bu işlere zaman harcayan şirketler.","Finans, muhasebe, lojistik, perakende, sigorta, üretim"]
+ ["Sürdürülebilirlik",[
+  ["Sürdürülebilirlik Raporu","Şirketin çevresel, sosyal ve yönetişim performansının ilgili standartlara (TSRS gibi) göre raporlanması. Zorunlu şirketler için uyum sağlar, diğerleri için banka, yatırımcı ve büyük müşteriler nezdinde güven yaratır.","Raporlama kapsamındaki şirketler ve büyük müşterilere veya AB'ye tedarik yapanlar.","Üretim, holding, enerji, gıda, tekstil, otomotiv"],
+  ["Ölçüm Hizmetleri","Karbon ayak izi (faaliyetlerden doğan emisyon), su ayak izi (toplam su tüketimi) ve sera gazı emisyonlarının ölçülmesi. Ölçüm, azaltım hedefi koymanın ve AB karbon sınır düzenlemesine hazırlanmanın ilk adımıdır.","AB'ye ihracat yapan, enerji ve su yoğun üretim yapan şirketler.","Çelik, alüminyum, çimento, gübre, tekstil, otomotiv"],
+  ["Sürdürülebilirlik Eğitim Hizmeti","Yönetici ve çalışanlara sürdürülebilirlik, iklim riski, karbon yönetimi ve raporlama konularında verilen eğitim. Şirket içinde bilgi oluşturur ve raporlama sürecini kolaylaştırır.","Raporlamaya hazırlanan veya ekibini bu alanda yetiştirmek isteyen şirketler.",ALL]
+ ]],
+ ["SGK ve Bordro",[
+  ["SGK Teşvikleri","İşe alımda SGK prim yükünü azaltan teşviklerin tespiti ve uygulanması.","Çalışan sayısı yüksek veya işe alım planlayan şirketler.","Üretim, tekstil, hizmet, inşaat, turizm"],
+  ["Bordro Hizmeti","Aylık maaş, SGK bildirimleri ve çalışan kayıtlarının yönetimi.","Çalışanı olan ama içeride bordro ekibi kurmak istemeyen şirketler.",ALL],
+  ["Fesih, İhbar ve Kıdem Mevzuatı","İş sözleşmesi sona ererken ihbar ve kıdem tazminatı gibi işçilik alacaklarının doğru hesaplanması, fesih sürecinin mevzuata uygun yönetilmesi ve işçi alacağı uyuşmazlıklarında riskin azaltılması.","Çalışan çıkışı yapacak, toplu işten çıkarma planlayan veya işçi alacağı riski taşıyan şirketler.",ALL]
+ ]],
+ ["Gayrimenkul ve Proje Yatırım Fonları",[
+  ["GYF (Gayrimenkul Yatırım Fonu)","Gayrimenkul ve gayrimenkule dayalı projelere yatırım yapmak üzere yatırımcılardan fon toplayan, SPK düzenlemesine tabi yapı. Portföy yönetim şirketi tarafından yönetilir. Gayrimenkul sahibine büyüme, yatırımcıya doğrudan gayrimenkul almadan yatırım imkânı verir.","Gayrimenkul portföyünü büyütmek veya finanse etmek isteyen şirketler ve yatırımcılar.","Gayrimenkul, inşaat, turizm, lojistik"],
+  ["PYF (Proje Yatırım Fonu)","Belirli bir projenin finansmanı için kurulan fon. Toplanan para yalnızca o projede kullanılır, proje bitince fon sona erer. Büyük projelerde bankaya bağımlılığı azaltır ve projeyi çok sayıda yatırımcıyla finanse etmeyi sağlar.","Gayrimenkul, enerji veya altyapı projesi geliştirip ortak yatırımcı arayanlar.","Gayrimenkul, inşaat, enerji, altyapı"]
  ]]
 ];
 const ulkeler: string[] = ["Polonya","İtalya","Almanya","İngiltere","Hollanda","Birleşik Arap Emirlikleri (Dubai)","Suudi Arabistan","ABD","Singapur","Azerbaycan","Kazakistan","Özbekistan","Bulgaristan","Letonya","Litvanya","Yunanistan"];
@@ -276,7 +298,7 @@ function Hizmetler() {
               </tbody>
             </table>
           </div>
-          {baslik === "Uluslararası" && (
+          {baslik === "Uluslararası Büyüme ve Kalkınma" && (
             <>
               <p className="blurb" style={{ marginTop: 14 }}>
                 Şirket kurduğumuz ülkeler ({ulkeler.length}):
