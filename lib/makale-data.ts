@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ucuncu-donem-gecici-vergi-yil-sonu-fotografi",
+    title: "17 Kasım'daki Geçici Vergi Beyanı, Yıl Sonu Kârınızı Mart Ayından Önce Gösteriyor",
+    excerpt:
+      "2026'nın üçüncü dönem kurum geçici vergisi, Ocak-Eylül arasının gerçekleşmiş rakamlarıyla 17 Kasım'da beyan ediliyor. Çoğu işletmede bu evrak sadece muhasebeciye bırakılan bir rutin işlemine dönüşüyor; oysa içinde dördüncü çeyrek bütçe kararları için gereken en güncel finansal fotoğraf saklı.",
+    tag: "Hukuk ve Vergi",
+    date: "5 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "bayilik-feshinde-tazminat-talep-edilemez-maddesi",
     title: "\"Fesih Halinde Tazminat Talep Edilemez\" Maddesi Neden Bazen İşe Yaramıyor?",
     excerpt:
