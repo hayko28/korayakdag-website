@@ -2217,6 +2217,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: KOSGEB Yapay Zeka Kredisi'ne başvurmayı düşünen girişimler için rozet, sürecin ilk adımı haline geldi; bu nedenle kuruluş yılınızı ve yenilik odağınızı baştan değerlendirmenizi öneririm. Başvuru adımlarını ve kimlerin uygun olabileceğini hazırladığım rehberde anlattım: /blog/teknogirisim-rozeti-nedir-kimler-alabilir-nasil-alinir-2026",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-11-05",
+    baslik:
+      "TÜİK: Tüketici Güven Endeksi Ekim'de son 38 ayın en sert düşüşüyle 84,8'e geriledi",
+    ozet:
+      "TÜİK ve TCMB'nin birlikte yürüttüğü Tüketici Eğilim Anketi'ne göre Tüketici Güven Endeksi, Eylül'deki 91,9 puandan Ekim'de 84,8'e inerek aylık bazda yüzde 7,7 geriledi; bu düşüş son 38 ayın en sert aylık gerilemesi olarak kaydedildi. Endeksi oluşturan dört alt göstergenin tamamında azalış görüldü: hanenin mevcut maddi durumu yüzde 9,3 düşüşle 68,3'e, gelecek 12 aya ilişkin genel ekonomik durum beklentisi ise yüzde 9 düşüşle 81,7'ye indi.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/tuketici-guven-endeksi-ekimde-aylik-bazda-yuzde-77-azalarak-848-oldu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tüketici güvenindeki bu sert düşüş, özellikle iç pazara satış yapan işletmelerin dördüncü çeyrek talep tahminlerini yeniden gözden geçirmesini gerektirebilir. Bütçe ve stok planlarını yalnızca geçmiş ayların satış trendine değil, bu güven kaybına da bakarak kurmalarını öneririm.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "2 Kasım 2026",
+    eklendiTarihi: "2026-11-05",
+    baslik:
+      "KGK, 2026-2030 Stratejik Planı'nı yayımladı: risk temelli denetim gözetimi ve yapay zekâ destekli dijital dönüşüm hedefleniyor",
+    ozet:
+      "Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu (KGK), 660 sayılı KHK'nın 9/1-j maddesi kapsamında hazırladığı 2026-2030 Stratejik Planı'nı 2 Kasım 2026'da kurumsal internet sitesine ekleyerek yayımladı. Plan, beş temel amaç ve 18 hedef altında raporlama standartlarının güncellenmesini, risk temelli denetim gözetimini, mesleki yetkinliğin artırılmasını ve yapay zekâ destekli risk analiziyle dijital dönüşümü kapsıyor. Denetim raporlarının 60 gün içinde zaman damgalı elektronik ortamda saklanması şimdilik bir hedef olarak yer alıyor, planın kendisi bu uygulamayı henüz zorunlu kılmıyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/11/02/kgk-2026-2030-stratejik-planinin-yayimlandi/",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bağımsız denetime tabi şirketlere, planın işaret ettiği risk temelli gözetim ve dijital raporlama yönündeki eğilimi şimdiden takip etmelerini öneririm. XBRL tabanlı raporlama ve elektronik saklama gibi hedefler zamanla zorunluluğa dönüşebilir; bu konuyu denetim firmasıyla erken konuşmak faydalı olabilir.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
