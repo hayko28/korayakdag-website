@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "e-arsiv-fatura-zorunlulugu-sirketler-sahis-isletmeleri-2027",
+    title: "e-Arşiv Fatura Zorunluluğu: Şirketler İçin 2026'da Başladı, Şahıs İşletmeleri İçin Neden 2027'ye Ertelendi?",
+    excerpt: "31 Aralık 2025 tarihli 589 Sıra No'lu VUK Genel Tebliği, e-Arşiv Fatura'da tutar sınırını kaldıran kuralı iki tarihe böldü: bilanço esasına göre defter tutan şirketler için 1 Ocak 2026'da zaten yürürlüğe girdi, basit usul ve işletme hesabı esasına göre defter tutan şahıs işletmeleri için ise 1 Ocak 2027'ye ertelendi. Kimin hangi tarihe tabi olduğunu ve şimdi ne yapılması gerektiğini resmî kaynaklarla anlatan güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • E-ARŞİV FATURA • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-sel-taskin-isletme-destegi-2026",
     title: "İşyerim Sel ve Taşkından Zarar Gördü: KOSGEB'den Faizsiz Kredi Nasıl Alırım?",
     excerpt: "KOSGEB, 3 Kasım 2026'da yaptığı duyuruyla sel ve taşkından etkilenen mikro ve küçük işletmelere faiz/kâr payı tamamen karşılanan işletme sermayesi kredisi sağlıyor. Mikro işletmede 500.000 TL, küçük işletmede 1.000.000 TL'ye kadar destek, 24 ay vade, 6 ay ödemesiz dönem, hasar tespiti şartı ve 31 Aralık 2026 son başvuru tarihiyle 2026 güncel rehber.",
