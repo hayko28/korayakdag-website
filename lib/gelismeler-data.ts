@@ -2245,6 +2245,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Bağımsız denetime tabi şirketlere, planın işaret ettiği risk temelli gözetim ve dijital raporlama yönündeki eğilimi şimdiden takip etmelerini öneririm. XBRL tabanlı raporlama ve elektronik saklama gibi hedefler zamanla zorunluluğa dönüşebilir; bu konuyu denetim firmasıyla erken konuşmak faydalı olabilir.",
   },
+  {
+    kurum: "İSO",
+    tarih: "2 Kasım 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-06",
+    baslik:
+      "İSO Türkiye İmalat PMI Ekim'de 47,3'e geriledi, endeks 31 aydır 50 eşiğinin altında",
+    ozet:
+      "İstanbul Sanayi Odası'nın S&P Global ile birlikte yayımladığı Türkiye İmalat PMI, Ekim 2026'da Eylül'deki 47,9 seviyesinden 47,3'e geriledi; endeks böylece 31 aydır 50 referans eşiğinin altında kalmaya devam etti. Takip edilen 10 sektörden sadece biri Ekim'de üretimini artırabildi, girdi maliyetlerindeki artış ise birçok sektörde hızlandı.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/iso-turkiye-imalat-pmi-ekimde-473e-geriledi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Endeksin aylardır 50 eşiğinin altında seyretmesi, imalat tarafında talep daralmasının süregen bir sorun haline geldiğini gösteriyor. Üretim ve stok planlarını yalnızca kendi sipariş defterinize göre değil, bu tür sektör genelindeki eğilimlere bakarak da gözden geçirmenizi öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "28 Ekim 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-11-06",
+    baslik:
+      "Eylül 2026 dış ticaret açığı yıllık %25,8 daraldı, ihracat ithalatın önüne geçti",
+    ozet:
+      "TÜİK ve Ticaret Bakanlığı verilerine göre Eylül 2026'da ihracat yıllık %15,3 artışla 25,97 milyar dolara, ithalat %5,6 artışla 31,13 milyar dolara ulaştı. Dış ticaret açığı bir önceki yılın aynı ayına göre %25,8 azalarak 5,16 milyar dolara geriledi; ihracatın ithalatı karşılama oranı da %76,4'ten %83,4'e yükseldi.",
+    kaynakUrl:
+      "https://www.sbb.gov.tr/2026-yili-eylul-ayi-dis-ticaret-verileri-aciklandi/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Karşılama oranındaki iyileşme olumlu bir sinyal, ancak dokuz aylık toplam açığın hâlâ geçen yıla göre yüksek seyrettiğini de göz önünde bulundurmak gerekiyor. İhracatçı firmalara tek bir aylık rakama değil, yıl başından bu yana olan eğilime göre karar vermelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "8 Ekim 2026",
+    eklendiTarihi: "2026-11-06",
+    baslik:
+      "Reklam Kurulu 374. toplantısında 136 dosyaya durdurma, toplam 17,2 milyon TL idari para cezası",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 8 Ekim 2026 tarihli 374. toplantısında 161 dosyayı görüştü; 136 dosyanın mevzuata aykırı olduğunu tespit ederek reklam durdurma kararı aldı ve toplam 17 milyon 176 bin 744 TL idari para cezası uyguladı. İncelemelerde gerçeğe aykırı indirim kampanyaları, sosyal medya fenomenlerinin gizli reklamları ve kuyumculuk sektöründeki tanıtımlar öne çıktı.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/16/aldatici-reklamlara-17-2-milyon-tl-ceza/",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Gizli reklam ve gerçeğe aykırı indirim başlıklarının art arda gelen toplantılarda tekrar etmesi, bu konuların artık rastgele değil sistematik olarak denetlendiğini gösteriyor. Sosyal medya fenomenleriyle çalışan veya kampanya dönemlerinde indirim ilanı yayınlayan işletmelere, onay sürecini bu iki başlığa göre bir kez daha kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
