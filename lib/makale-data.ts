@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ortak-vefat-edince-sirketin-uc-aylik-karari",
+    title: "Bir Ortak Vefat Ettiğinde, Şirketin Mirasçıyı Reddetmek İçin Sadece 3 Ayı Var",
+    excerpt:
+      "Bir şirket ortağı vefat ettiğinde hissesi, hiçbir işlem veya onay gerekmeden kanunun halefiyet ilkesi gereği doğrudan mirasçılarına geçiyor. Türk Ticaret Kanunu'nun limited şirketlere tanıdığı reddetme hakkı ise ancak payın gerçek değeri üzerinden satın alınması önerilerek ve üç ay içinde kullanılabiliyor; bu süre boyunca elde güncel bir değerleme yoksa karar fiilen hareketsizlikle verilmiş oluyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "6 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ucuncu-donem-gecici-vergi-yil-sonu-fotografi",
     title: "17 Kasım'daki Geçici Vergi Beyanı, Yıl Sonu Kârınızı Mart Ayından Önce Gösteriyor",
     excerpt:
