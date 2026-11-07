@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "turizm-ucret-destegi-3500-tl-sgk-prim-destegi-2026",
+    title: "Turizm Ücret Desteği Nedir? Çalışan Başına 3.500 TL SGK Prim Desteği İçin Başvuru Gerekir mi?",
+    excerpt: "7590 sayılı Kanun'un 4447 sayılı Kanun'a eklediği geçici 36. madde ile turizm işletmesi belgeli özel sektör konaklama tesislerine, 2026 Mayıs-Aralık döneminde sigortalı başına aylık yaklaşık 3.500 TL'ye kadar sigorta prim desteği sağlanıyor. Destek otomatik mi geliyor, hangi işletmeler kapsam dışı, imalat sanayi istihdam desteğinden farkı ve dikkat edilmesi gereken noktalarla güncel rehber.",
+    category: "SGK TEŞVİKLERİ • TURİZM ÜCRET DESTEĞİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1741375003259-91460664b739?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "e-arsiv-fatura-zorunlulugu-sirketler-sahis-isletmeleri-2027",
     title: "e-Arşiv Fatura Zorunluluğu: Şirketler İçin 2026'da Başladı, Şahıs İşletmeleri İçin Neden 2027'ye Ertelendi?",
     excerpt: "31 Aralık 2025 tarihli 589 Sıra No'lu VUK Genel Tebliği, e-Arşiv Fatura'da tutar sınırını kaldıran kuralı iki tarihe böldü: bilanço esasına göre defter tutan şirketler için 1 Ocak 2026'da zaten yürürlüğe girdi, basit usul ve işletme hesabı esasına göre defter tutan şahıs işletmeleri için ise 1 Ocak 2027'ye ertelendi. Kimin hangi tarihe tabi olduğunu ve şimdi ne yapılması gerektiğini resmî kaynaklarla anlatan güncel rehber.",
