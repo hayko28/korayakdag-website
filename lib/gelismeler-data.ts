@@ -2287,6 +2287,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Gizli reklam ve gerçeğe aykırı indirim başlıklarının art arda gelen toplantılarda tekrar etmesi, bu konuların artık rastgele değil sistematik olarak denetlendiğini gösteriyor. Sosyal medya fenomenleriyle çalışan veya kampanya dönemlerinde indirim ilanı yayınlayan işletmelere, onay sürecini bu iki başlığa göre bir kez daha kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "22 Ekim 2026",
+    eklendiTarihi: "2026-11-07",
+    baslik:
+      "TCMB politika faizini beş toplantı sonra ilk kez indirdi: %37'den %36'ya",
+    ozet:
+      "Türkiye Cumhuriyet Merkez Bankası Para Politikası Kurulu, 22 Ekim 2026 tarihli toplantısında bir hafta vadeli repo ihale faizini 100 baz puan indirerek %37'den %36'ya çekti; gecelik borç verme faizi %40'tan %39'a, borçlanma faizi ise %35,5'ten %34,5'e indirildi. Kurul, kararı son dönem enflasyon verileri ve öncü göstergelerin ana eğilimdeki gerilemeyi teyit etmesine dayandırdı; enflasyon görünümünde kalıcı bir bozulma olması halinde adımların geri çevrilebileceğini de vurguladı.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/merkez-bankasinin-ekim-2026-faiz-karari-belli-oldu",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Beş toplantı sonra gelen bu ilk indirim kademeli bir gevşeme sürecinin başlangıcı olabilir, ancak Kurul'un 'toplantı bazlı ve ihtiyatlı' vurgusu önümüzdeki aylarda hızlı bir düşüş beklenmemesi gerektiğini gösteriyor. Finansman kararlarını tek bir toplantıya değil, bu kademeli sürece göre planlamanızı öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-07",
+    baslik:
+      "Ekim 2026 enflasyonu yıllık %29,77'ye çıktı, dört aylık düşüş serisi sona erdi",
+    ozet:
+      "TÜİK'in 3 Kasım 2026'da açıkladığı verilere göre tüketici fiyat endeksi Ekim'de aylık %2,58, yıllık %29,77 arttı; böylece eylül ayındaki %29,73 seviyesinin ardından dört aylık gerileme eğilimi kesintiye uğradı. Yıllık artışa en çok ulaştırma (%36,39) ile konut, su, elektrik ve gaz grubu (%40,24) katkı yaparken, yurt içi üretici fiyatlarında yıllık artış %27,41 olarak kaydedildi.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/tuik-2026-yili-ekim-ayi-enflasyon-rakamlarini-acikladi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Dört aylık düşüş serisinin kesilmesi tek başına trendin tersine döndüğü anlamına gelmiyor, ama özellikle ulaştırma ve konut/enerji kalemlerindeki yüksek artış, fiyatlama ve bütçe kararlarında bu iki grubu ayrıca izlemeyi gerektiriyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
