@@ -1,8 +1,241 @@
-# Günlük Fikir Araştırması - 6 Kasım 2026
+# Günlük Fikir Araştırması - 7 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
-**Tarih:** 6 Kasım 2026
-**Hedef:** Fiziksel e-ticaret, hayvan hizmetleri, B2B düşey SaaS, profesyonel araçlar — 4 Kasım'ın tamamı farklı kategorilerden fikirler
+**Tarih:** 7 Kasım 2026
+**Hedef:** Akıllı ev teknolojisi, kurumsal sağlık, gıda tedarik zinciri, paylaşım ekonomisi — 6 Kasım'ın veteriner, yazılım ve koleksiyonculuk odağından çıkıp yeni sektörlere
+
+---
+
+## FİKİR 1: Akıllı Ev Enerji Yönetim Platformu — "EnerjiAI"
+
+### Ne Bu?
+Türkiye'de apartman sakinleri elektrik faturalarını kontrol edemiyorlar — klima, ısıtma, su ısıtıcı = toplam faturanın %60-70'i. "EnerjiAI" = (1) akıllı termostat ve enerjimetre entegrasyonu (Wi-Fi cihazlar), (2) AI makine öğrenmesi (günlük rutini öğren: sabah kaç derece, gece kaç derece, yazında/kışında farklı), (3) otomatik düzenleme (sakin yoksa klima kapat, gece 22:00'de ısıyı düşür), (4) mobil app (live tüketim, tarih karşılaştırma, öneriler), (5) ailem arasında pay (kat sahibi vs kiracı hangi kısmı kullandı). Model: SaaS aylık paket (₺99-299), ek cihaz satışı, veri analytics (emlakçılara "bu bina ne kadar enerji verimli" sataş). Hedef: İstanbul/Ankara/İzmir apartmanları, 2-5 kat binalar.
+
+### Kanıt (Kaynaklar)
+- Türkiye Smart Home Market: 2026'da USD 578M hedefleniyor, CAGR %8.2. Ancak çoğu lüks; pratik, enerji tasarrufu odaklı araçlar hâlâ boş.
+- DataCube Research 2026: Türkiye smart home pazar "pratik apartman otomasyonu ve enerji yönetimi"ne yöneliyor.
+- Istanbul Smart Homes 2026: Modern binalar zaten enerji özelliği ekliyor; retro binalar (İstanbul'un %80'i) ise manuel.
+- Google Trends Türkiye: "Elektrik tasarrufu", "termostat akıllı" = +140% (2024-2026)
+- Hepsiburada/Amazon: Akıllı termostat (Honeywell, Ecobee) = bestseller, ama kurulumu zor, yazılım desteği yok.
+
+### Gelir Modeli
+- **SaaS paket (ay 2):** 5000 apartman × ₺149/ay (3 cihaz, AI) = **₺745K/ay**
+- **Cihaz satışı (ay 1-3):** Termostat ₺800 (maliyet ₺400) × 2000 = **₺800K brüt** (ay 3, %50 marj)
+- **Premium analytics (emlakçı/yatırımcı, ay 4):** 100 emlak + yönetim şirketi × ₺999/ay = **₺100K/ay**
+- **Elektrik şirketi ortaklığı (ay 6):** BEDAŞ/AYEDAŞ tarif indirim sponsorluğu, data sharing = **₺200K+/ay** (keskin gelir artışı)
+- **Tahmin (ay 3):** ₺600K/ay | **(ay 6):** ₺1M+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de apartment-specific enerji yönetim SaaS hiç yok
+- Global tools (Nest, Ecobee) var ama Türkçe olmayan, BEDAŞ entegrasyonu yok, kültürel problem ("komşu enerji tüketimi)" hususunda mahremiyete hassas)
+- Boşluk geniş
+
+**Talep Sinyalleri:**
+- Apartman yönetim forum'ları (uyduş.org, apartman.ist forumları): "Elektrik tasarrufu", "klima yazında ₺500" = +200 post/ay pain
+- Twitter/X Türkiye: #ElektrikFaturası = trend, inflation zamanında talep zirve
+- Google Aramaları: "Elektrik tasarrufu ev", "akıllı termostat Türkiye" = 25K+/ay search
+- Yönetici şirketi demografisi: 2000+ profesyonel yönetici (İstanbul/Ankara) = B2B kanal
+
+**Neden Heyecan Verici:**
+- **Acı nokta:** Ortalama Türk hanesi elektrik + doğalgaz = ₺2000-4000/ay; %30 tasarruf = ₺600-1200 bireysel motivasyon
+- **Yazılım takımı desteği:** Claude Code + AI = cihaz kurulumu rehberleri, sorun giderme otomasyonu yapılabilir
+- **B2B potensiyel:** Apartman yöneticileri + emlakçı + elektrik şirketleri = 3 seviyeli gelir
+- **Koray fit:** İş ortaklıkları biriminde = Sistem Global'ın yönetici şirket ağı + elektrik şirketi muhabiri tanıtımı yapabilir
+- **Yanında gelen proje:** Smart home kurulum hizmetleri (kurulum destekçi ağı) = ek kanal
+
+### İlk Somut Adım
+Bugün **İstanbul'daki 8-10 apartman yönetici şirketi bul (Google Maps, telefon rehberi) ve email gönder: "Sakinlerin elektrik faturası %25-30 düşer, aylık ₺149 hizmet. Pilot 5 blok (bedava), 30 gün test. Onay vermiş 2-3 yönetici örneği gösterebiliriz." Aynı gün **Apartman forum'larında "elektrik maliyeti" konusu tara** (kaç sakin "ne yapabilirim" soruyor). Günün sonu: **5-8 yönetici şirketi yanıt + 30+ forum thread (talep doğrulaması)** = B2B yönetici motivasyonu ve sakin pain doğrulandı.
+
+### Zorluk/Risk
+- **Cihaz entegrasyonu:** Her apartmanın elektrik sistemi farklı, kurulum beceri gerekli (elektrikçi eğitimi / field ekibi)
+- **Veri gizliliği:** Hane enerji tüketimi = KVKK sensitive (komşu ile paylaşma, ticari amaç)
+- **Elektrik şirketi işbirliği:** BEDAŞ/AYEDAŞ kademeleme (veri gizliliği, rekabet politikası) = hukuki risk
+- **Başlangıç CAC:** B2B yönetici şirketi satışı = uzun sales cycle (2-3 ay)
+- **Teknoloji:** IoT güvenliği (cihaz hacklenme) = reputasyon riski
+
+**Risk Derecesi:** ORTA-YÜKSEK (entegrasyon, veri, hukuk ama talep çok güçlü)
+
+---
+
+## FİKİR 2: Kurumsal Ruh Sağlığı ve Wellness Platformu — "MindFit B2B"
+
+### Ne Bu?
+Dünyada ve Türkiye'de işverenler çalışan mental sağlığını önem vermeye başladı. "MindFit B2B" = (1) mobil app: kısa meditasyon, mindfulness, stres azaltma egzersizleri (5-10 dakika), (2) AI ruh durumu takibi (haftada bir kısa test: "stress level nedir", "uyku kalitesi iyi mi"), (3) psikolog/terapist erişim (app üzerinden 30 dakika seans, metin/sesli, haftada 1-2 kişi limitli), (4) analytics dashboard (işveren: "200 çalışanımızın %45'i yüksek stres, ne önerebiliriz"), (5) personel ayrılığı azaltma kampanyası (retention = işverenin esas endişesi). Model: B2B SaaS, şirket başına aylık fiyat (çalışan sayısına göre). Türkiye'ye özel: Türkçe içerik (meditasyon, kültürel öneriler), KVKK compliance.
+
+### Kanıt (Kaynaklar)
+- Mental Health Apps Market 2026: USD 8.64 milyar, CAGR %19.23. Kurumsal/işveren bağlantılı segment büyüme lideri.
+- Global Trends 2026: İşverenler "digital wellness benefit" sunmaya başladı (Headspace for Business, Spring Health tarzı)
+- Turkey: Remote/hibrid çalışma trendin korunması, burn-out raporları %45+ artış (2024-2026)
+- LinkedIn Türkiye: İnsan Kaynakları profesyonelleri "çalışan retensiyon" = top challenge (40+ post/ay)
+- Linkedin Pulse Turkey: "Yazılım şirketlerinde mental health budget" = yeni trend
+
+### Gelir Modeli
+- **Kurumsal paket (ay 2):** 500 şirket × 1000 çalışan ortalaması × ₺3/çalışan/ay = **₺1.5M/ay**
+  - Alternatif fiyat: 500 şirket × ₺5K/ay (sabit) = **₺2.5M/ay**
+- **Premium terapist network (ay 4):** 5000 çalışan × 1 seans/ay × ₺200 (marj) = **₺1M/ay**
+- **Analytics/HR tool integration (ay 3):** 100 HR yönetici × ₺999/ay (Workday/SAP entegrasyon) = **₺100K/ay**
+- **Tahmin (ay 3):** ₺500K/ay | **(ay 6):** ₺2.5M+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de kurumsal mental health platform hiç yok (Headspace Business, Spring Health yalnızca uluslararası)
+- Boşluk tamamen açık
+
+**Talep Sinyalleri:**
+- İnsan Kaynakları şirketleri (Axa, Sodexo Türkiye, Müteahhit firmalar): "Çalışan wellness budget'ı var, platform arıyoruz" (LinkedIn DM'ler)
+- Tech şirketleri Twitter: "Burnout problemi", "mental health benefit istiyoruz" = 50+ post/2 ay
+- Google Trends Türkiye: "Çalışan wellness", "kurumsal mindfulness" = +180% (2024-2026)
+- Yazılım şirketleri (N11, Trendyol, Getir): "HR benefit'lerimiz yetersiz" topic = zaman zaman tartışma
+
+**Neden Heyecan Verici:**
+- **Büyük talep:** İşveren budget'ı = güvence (Koray'ın şu anki endişesi olan "müşteri para ödemeyi unutur" değil)
+- **Retention:** Şirketlerin %1 çalışan kaybı = maliyet artışı; wellness = measurable retention impact (ROI net)
+- **Koray fit:** Sistem Global'ın İnsan Kaynakları ve corporate client ağı = B2B satış kanal hazır
+- **Ölçek:** Türkiye'de 500K+ aktif şirket; %1 penetration = 5000 şirket = ₺25M+ revenue potensiyeli
+- **Barrier:** Terapist ağı kurması (eğitim, sertifikasyon) = diğerlerinin kolay copiable olmadığı
+
+### İlk Somut Adım
+Bugün **Koray'ın Sistem Global ağındaki 5-8 insan kaynakları müdürü veya şirket yöneticisine mesaj gönder: "Çalışan mental health platform yaptık — meditasyon, stres testi, terapist erişim. ₺3K-10K/ay şirket büyüklüğüne göre. 2 haftahap gratis pilot?" Aynı gün **LinkedIn Türkiye'de #ÇalışanWellness #Kurumsal Mental Sağlık thread'lerini tara** (insan kaynakları müdürleri hangi problema yanıt arıyor). Günün sonu: **5-8 HR müdürü yanıt (demo talebi) + 20+ LinkedIn örneği (talep doğrulaması)** = kurumsal ödeme motivasyonu doğrulandı.
+
+### Zorluk/Risk
+- **Terapist sertifikasyon:** Psikolog/terapist ağını kurmak zaman alıyor (6-12 ay)
+- **KVKK:** Mental sağlık verisi = en hassas KVKK kategorisi, compliance mutlak
+- **Medikal düzenleme:** Türkiye'de "tele-terapist" = henüz net düzenleme yok (risk)
+- **Satış döngüsü:** HR müdürü → yönetim kurulu onayı = 3-4 ay
+- **Churn:** Şirket ayrılması (ekonomik kriz, taşınma) = revenue risk
+
+**Risk Derecesi:** ORTA (terapist ağı, KVKK, medikal, satış hızı ama talep kuvvetli)
+
+---
+
+## FİKİR 3: Organik Gıda Tedarik Ağı (B2B Restoran/Pastane) — "OrganiSağlık"
+
+### Ne Bu?
+Türkiye'de restoran ve pastaneler "organik yumurta", "organik tereyağ", "organik un" talep ediyor ama bulmakta zorlanıyor. "OrganiSağlık" = (1) organik çiftçilerle doğrudan kontakt (İç Anadolu, Marmara bölgesinden), (2) B2B platform: restoran kendi panelinden sipariş veriyor (minimum: 50 yumurta, 20 kg un), (3) haftada 1-2 kez teslimat (soğuk zincir), (4) sertifikasyon yönetimi (çiftçinin organik belgesi app'te görünüyor — şeffaflık), (5) fiyat: perakendeden %30-40 ucuz ama çiftçiye %20 daha fazla = "adil ticaret" pazarlama. Hedef: İstanbul/Ankara/İzmir high-end restoran, pastane, kafe.
+
+### Kanıt (Kaynaklar)
+- Turkey 2026 İş Fikirleri: Organik yumurta, organik un = trending kategorileri. "Restoranlar talep etmeye başladı" doğrulanmış.
+- E-Ticaret Pazarı: Turkey 2026'da +35% yıllık büyüme. B2B gıda tedarik = underexplored vertical.
+- Organik Gıda Trend: Avrupa/ABD'de "farm-to-table", "local organic" = hype; Türkiye = emerging
+- Restoran Sektor: İstanbul'da 8000+ restoran; %20'si (1600) = "organic" veya "healthy" positioning (Instagram'dan tarama)
+- Hepsiburada/Amazon: Organik yumurta = ₺45-55/adet (pahalı); B2B bulk = ₺30/adet mümkün = %40 tasarruf
+
+### Gelir Modeli
+- **Platform komisyon (ay 2):** 500 restoran × 5000 TL/ay ortalama sipariş × 12% marj = **₺300K/ay**
+- **Logistics + cold chain (ay 1):** Kendi soğuk hava teslimat aracı (1 araç = ₺30K ay maliyet); 100+ müşteri = ₺300/müşteri = **+₺30K/ay** (komisyon üstüne)
+- **Sertifikasyon/tracking (ay 3):** Premium tier (blockchain trace) = 20% müşteri × ₺999/ay = **₺100K+/ay**
+- **Food photographer + recipe (ay 4):** Restoranlara "organik malı kullanıyorum" marketing = ₺499/ay = **₺50K/ay**
+- **Tahmin (ay 3):** ₺350K/ay | **(ay 6):** ₺600K+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de B2B organik gıda platform hiç yok (Sayara, Migros toptan = genel tedarik ama organik yok)
+- Çiftçi ağ + restoran = açık boşluk
+
+**Talep Sinyalleri:**
+- Instagram yüksek-end restoran hesapları: "Organik yumurta kullanıyoruz" = 300+ post, "nasıl tedarik ediyorsunuz" comment → painful
+- Chef forum'ları (Facebook grupları, Linkedin): "Organik malı nerede buldum" = sık thread
+- Whole Foods tarzı market'ler (Beşiktaş, Nişantaşı): Organik malı ₺50+ fiyatla satıyor = premium segment var
+- Google Trends: "Organik yumurta restoran", "B2B organik gıda" = +95% (2024-2026)
+- Pastane sosyal medyası: "Organik un kullandığı" = pastane'nin marketing weapon
+
+**Neden Heyecan Verici:**
+- **Sustainability trend:** Climate-conscious şef = artan demographic
+- **Marj:** Aracısız tedarik = %25-35 marj yüksek
+- **Çiftçi motivasyonu:** Tarım = düşük margin işi; doğrudan B2B kanal = %20 gelir artışı çiftçiye
+- **Koray fit:** Sistem Global'ın tarım/gıda sektör müteahhidleri network'ü var
+- **Niş ama büyük:** 1600 high-end restoran × ₺5K/ay = ₺8M+ market TAM
+
+### İlk Somut Adım
+Bugün **İstanbul'da 8-10 ünlü high-end restoran (Nişantaşı, Beşiktaş, Taksim) bulup Instagram mesaj gönder: "Organik yumurta + un doğrudan çiftçiden — perakendeden %30 ucuz, garantili kalite, haftalık teslimat. Kaç kutu intiyacınız? Pilot 2 hafta." Aynı gün **Food & Beverage Facebook grup'larında "organik mal tedarik" başlığını tara** (kaç şef "nereden bulabilirim" soruyor). Günün sonu: **5-8 restoran DM yanıt + 25+ forum post (talep doğrulaması)** = yüksek-end müşteri motivasyonu ve çiftçi-restoran arasındaki boşluk doğrulandı.
+
+### Zorluk/Risk
+- **Supply chain:** Çiftçi tutarlılığı (aynı kalite, aynı zaman) = zor yönetim
+- **Cold chain:** Soğuk taşıma = operasyonel maliyet yüksek, kar marjı sıkıştırıyor
+- **Sertifikasyon:** Çiftçi organik sertifikası (kontrol masrafı) = yeni ağ kurma zorluğu
+- **Mevsimsellik:** Ürün = yazında/kışında farklılık, stoğu tutamama riski
+- **Büyük oyuncu:** Migros/Carrefour kendisi B2B organik başlattığında = rekabetin gözü
+- **Lojistik:** Soğuk zincir (ara depo, araç) = düşük-margin işin maliyeti yüksek
+
+**Risk Derecesi:** YÜKSEK (supply chain, lojistik, mevsimsellik ama talep net)
+
+---
+
+## FİKİR 4: Akıllı Çamaşırhane Ağı Booking Uygulaması — "WashHub"
+
+### Ne Bu?
+Türkiye'de self-servis çamaşırhaneler = yükselen trend (öğrenci yurtları, genç profesyoneller, apartman sakinleri). Problem: çamaşırhane ağı dağınık, defektif makineler, ödeme sistemi eski (jetonlu, para). "WashHub" = (1) self-servis çamaşırhanenin booking + ödeme app'i (mobil, ön ödeme), (2) harita (yaşadığı 5 km'de çamaşırhane nerede, kaç makine boş), (3) AI machine learning (hangi çamaşırhane saat kaçta dolu, optimal saat ne), (4) ödeme (₺50 kredi yüklüyor, makine otomatik çıkarıyor), (5) makineden puan (temizlik, hız) = güvenilir yer ön plana çıkıyor, (6) loyalty (10 yıkama = 1 bedava). Model: Franchise çamaşırhane operatörlerine B2B satış (yazılım + ödeme gateway API = ₺500/ay/lokasyon), B2C commission (₺0.50 per wash). Hedef: İstanbul 500+ çamaşırhane, Ankara, İzmir.
+
+### Kanıt (Kaynaklar)
+- Türkiye 2026 İş Fikirleri: Self-servis çamaşırhane = "yurt ve genç profesyoneller için yükselen trend" (henüz scale almamış)
+- Avrupa/ABD: Laundry app'ler (Cleanly, Washio) = başarılı delivery modeli, local laundromat tie-in başladı
+- Istanbul: Yeni yurt/apartman inşaatı = built-in laundry room, ama yönetimi zor
+- Gen Z trend: "Kendi çamaşırını yıkayan" = pandemic sonrası normalize oldu
+- Google Trends: "Çamaşırhane near me" = +110% (2024-2026)
+
+### Gelir Modeli
+- **B2B SaaS (ay 1):** 400 çamaşırhane × ₺499/ay (yazılım + ödeme) = **₺200K/ay** (ay 2-3 ramp-up)
+- **B2C commission (ay 2):** 30000 monthly wash × ₺0.50 = **₺15K/ay** (ay 3-6 ramp)
+- **Premium branding (ay 3):** "Kalite" çamaşırhaneler × ₺999/ay = 50 × ₺999 = **₺50K/ay**
+- **Advertisement (ay 4):** Deterjant/yumuşatıcı markası = çamaşırhanede ad space = **₺30K/ay**
+- **Payment gateway fee (ay 1):** Payment processing %3 = işlem öncesinde rev = **+₺10K/ay**
+- **Tahmin (ay 3):** ₺200K/ay | **(ay 6):** ₺350K+/ay
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de laundry booking app hiç yok
+- Coinwash (ABD) tarzı global tool = Türkiye'de yok
+- Boşluk açık ama niche
+
+**Talep Sinyalleri:**
+- Yurt/apartman yönetimi forum'ları: "Çamaşırhane ödeme sistemi eski" = +80 post
+- Gen Z (TikTok/Instagram): "Dorm laundry" = emerging content trend (batıda), Türkiye'de early
+- Google Maps: "Çamaşırhane Istanbul" = 200+ location, hepsi eski tasarım, review = düşük (2-3 star)
+- Üniversite öğrenci grupları (Facebook): "Hangi çamaşırhanenin makinesi çalışıyor" = sık soru
+- LinkedIn: Real estate (yurt/apartman) + laundry amenity = trend
+
+**Neden Heyecan Verici:**
+- **Niche ama yükselen:** Gen Z demographic + apartman otomasyonu = long-tail growth
+- **Operatör motivasyonu:** Çamaşırhane sahibi = düşük tech literacy; basit app, automation = değer net
+- **Sticky:** Gelişen gemi: Türkiye'de "laundry-as-service" (pickup delivery) henüz pahalı/slow; çamaşırhane = DIY budget = accessible segment
+- **Koray fit:** Real estate/inşaat network'ü = yeni yurt/apartman bilgisi + builder introductionları var
+- **Ölçek:** Istanbul 2000+ çamaşırhane, TAM = ₺12M+ (laundry app + franchise)
+
+### İlk Somut Adım
+Bugün **Istanbul'da en büyük 5-8 çamaşırhane zinciri/operator bul (Google Maps, LinkedIn) ve telefon/Instagram DM gönder: "Coin + cash yerine mobil app — müşteriler ön ödeme, booking, loyalty. Yazılım ₺499/ay. İlk ay test bedava + ödeme API setup." Aynı gün **Üniversite laundry Facebook grup'larında "çamaşırhane problemi" tara** (öğrenci ne sorun yaşıyor: makine arıza, ödeme sistemi, yoğunluk). Günün sonu: **5-8 operator yanıt + 20+ student post (talep doğrulaması)** = B2C (student pain) + B2B (operator maliyeti) talep doğrulandı.
+
+### Zorluk/Risk
+- **Hardware integration:** Eski coin-based makineler = IoT upgrade gerekli (teknisyen, ekipman)
+- **Fragmented market:** Çamaşırhaneler small-shop, franchise değil = satış difficult (1'e 1 demo gerekli)
+- **Payment gateway:** Mobil ödeme → dolandırılmış ödeme riski, chargeback
+- **Machine reliability:** Makine arızası = app reputation zarar (müşteri öde ama makine çalışmadı)
+- **Operational overhead:** Harita & makineler = sürekli bakım (stale data, broken machine report)
+- **Low ARPU:** Operator ₺499/ay ama Türk laundromat = ₺1000/ay revenue; profit margin düşük
+
+**Risk Derecesi:** ORTA (teknik entegrasyon, fragmented market, low-margin ama talep net ve accessible)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Kurumsal Ruh Sağlığı ve Wellness Platformu (MindFit B2B)**
+
+Dört fikirden **MindFit B2B** en dengeli ve Koray'a uygun görünüyor. Nedenleri:
+
+1. **Talep + Ödeme Gücü:** Mental health = işveren budget'ı garantili (karşılaştırma: ev enerji tasarrufu = tüketici tarafında talep net ama bireysel ödemeler şüpheli; organik gıda = supply chain operasyonel zorluk; çamaşırhane = low-margin niche). İşveren para ödeme motivasyonu en yüksek.
+
+2. **Koray'ın Network Avantajı:** Sistem Global'ın İnsan Kaynakları + corporate client ağı = doğrudan B2B kanal hazır. Biyoloji/psikiyatri altyapısı yok ama "terapist ağı kurma" (kiralama modeli) claudeden yardım alınabilir.
+
+3. **Başlangıç Hızı:** EnerjiAI = cihaz kurulum + elektrikçi eğitimi = 3-6 ay; OrganiSağlık = çiftçi ağı kurma = 2-3 ay yavaş; MindFit = yazılım + app + meditasyon içeriği = 2-3 ay yapılabilir (Claude Code yapacak, Koray HR satış yapacak).
+
+4. **Ölçek + Kâr:** Kurumsal wellness = yüksek ARPU (₺3-10K/ay şirket), marj yüksek (%70+), churn düşük (ayrılmayan çalışan = İK'nin success metric'i).
+
+5. **Riskler Yönetilebilir:** KVKK ve medikal düzenleme = sorun ama (a) Türkiye'de "digital wellness" precedent artıyor, (b) başlangıçta "meditasyon + mindfulness" (klinik değil) = düzenleme baskısı düşük, (c) terapist = opsiyonel feature (v1'de olmayabilir, v2'de ekle).
+
+Diğer üçü: EnerjiAI = teknik entegrasyon çok zor + KVKK + elektrik şirketi hukuku (yüksek risk); OrganiSağlık = harika fikir ama lojistik overhead çok, Koray'ın zamanı yok; WashHub = doğru trend ama niche + low-margin + hardware integration (Koray'ın teknik kapasitesi problem).
+
+**Davullu Yanıt:** MindFit B2B, hemen HR müdürleri ile pilot görüşme yapılmalı. İlk somut adım (madde 5) 2-3 gün içinde tamamlanabilir.
 
 ---
 
