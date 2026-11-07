@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kobilere-ilk-patent-basvurusunda-yuzde-75-indirim",
+    title: "TÜRKPATENT'ten KOBİ'lere İlk Patent Başvurusunda Yüzde 75 İndirim",
+    excerpt:
+      "31 Ekim 2026'da Resmi Gazete'de yayımlanan yeni ücret tarifesiyle, daha önce hiç patent başvurusu yapmamış bir KOBİ'nin ilk başvurusunda başvuru, araştırma ve inceleme raporu ücretlerine yüzde 75 indirim uygulanıyor; yapay zekâ alanındaki başvurularda ise acil araştırma raporu ücretine ayrıca yüzde 50 indirim var. Şimdiye kadar patent başvurusunu hep maliyet yüzünden erteleyen şirketler için asıl soru artık bütçe değil, karar.",
+    tag: "Devlet Destekleri",
+    date: "7 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ortak-vefat-edince-sirketin-uc-aylik-karari",
     title: "Bir Ortak Vefat Ettiğinde, Şirketin Mirasçıyı Reddetmek İçin Sadece 3 Ayı Var",
     excerpt:
