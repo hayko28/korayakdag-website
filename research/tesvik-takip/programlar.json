@@ -1,5 +1,5 @@
 {
-  "sonGuncelleme": "2026-11-05",
+  "sonGuncelleme": "2026-11-07",
   "programlar": [
     {
       "id": "istihdami-koruma-destek-programi-2026",
@@ -122,14 +122,14 @@
       "id": "tubitak-1507-kobi-arge-baslangic-2-cagri",
       "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (2. Çağrı)",
       "kurum": "TÜBİTAK",
-      "durum": "acik",
-      "sonBasvuruTarihi": "2026-11-11",
+      "durum": "kapali",
+      "sonBasvuruTarihi": "2025-09-29",
       "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
       "ilkTespitTarihi": "2026-08-21",
       "yeniIlanBildirildi": true,
       "ucGunKalaBildirildi": true,
       "sonBildirilenTarih": null,
-      "not": "2. çağrı 20 Temmuz 2026'da açıldı - son başvuru 11 Kasım 2026 - e-posta gönderildi"
+      "not": "2. çağrı 2025-09-29'da sona erdi (Yatırım Ofisi portal doğrulaması)"
     },
     {
       "id": "yad-turkiye-kalkinma-ve-yatirim-bankasi-program-durumuna-gore-filtrele",
