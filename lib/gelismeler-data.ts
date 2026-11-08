@@ -2315,6 +2315,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Dört aylık düşüş serisinin kesilmesi tek başına trendin tersine döndüğü anlamına gelmiyor, ama özellikle ulaştırma ve konut/enerji kalemlerindeki yüksek artış, fiyatlama ve bütçe kararlarında bu iki grubu ayrıca izlemeyi gerektiriyor.",
   },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "11 Ekim 2026 (33397 sayılı Resmî Gazete)",
+    eklendiTarihi: "2026-11-08",
+    baslik:
+      "VUK 596 Sıra No'lu Genel Tebliğ: Zorunlu e-Tebligat'a geçiş için başvuru süresi 30 Kasım 2026'da doluyor",
+    ozet:
+      "Hazine ve Maliye Bakanlığı'nın 11 Ekim 2026 tarihli ve 33397 sayılı Resmî Gazete'de yayımladığı 596 Sıra No'lu Vergi Usul Kanunu Genel Tebliği, elektronik tebligat sisteminin usul ve esaslarını yeniden düzenledi ve 456 Sıra No'lu Tebliğ'i yürürlükten kaldırdı. Tebliğ öncesinde sisteme dahil olmamış, zorunluluk kapsamındaki kurumlar vergisi mükellefleri ile gerçek usulde vergilendirilen gelir vergisi mükelleflerinin başvurusu için son tarih 30 Kasım 2026 olarak belirlendi; elektronik tebligat, sisteme ulaştığı tarihi izleyen beşinci günün sonunda yapılmış sayılıyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/11/vergi-usul-kanunu-genel-tebligi-sira-no-596-vuk-596/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Henüz e-Tebligat sistemine kayıtlı olmayan kurumlar vergisi veya gerçek usul gelir vergisi mükellefi işletmelere, bu başvuruyu 30 Kasım'ı beklemeden şimdiden tamamlamalarını öneririm; son haftaya bırakmak mali müşavirlik ofislerinde yığılmaya neden olabilir.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-08",
+    baslik:
+      "Bakan Kacır: KOSGEB'in KOBİ'lere sağladığı finansman desteği 2026'da 69,3 milyar TL'ye çıktı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, TBMM Plan ve Bütçe Komisyonu'ndaki bakanlık bütçesi görüşmelerinde KOSGEB üzerinden KOBİ'lere sağlanan finansman desteğinin 2024'te 13,7 milyar TL, 2025'te 34,7 milyar TL iken 2026'da 69,3 milyar TL'ye yükseldiğini açıkladı. Kacır, son bir yılda 52.047 KOBİ'nin desteklendiğini, girişimcilik desteğinin ise 6.339 işletmeye 1,67 milyar TL ulaştığını belirtti.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6ae94f5c58b1b941c2096bb8/AA/tr/sanayi-ve-teknoloji-bakani-kacir-bakanliginin-butce-gorusmelerinde-milletvekillerinin-sorularini-yanitladi-03-11-26/",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Finansman desteğindeki bu hızlı artış KOSGEB kredi ve hibe başvurularının önümüzdeki dönemde daha yoğun değerlendirileceğine işaret ediyor; başvuru dosyasını eksiksiz ve erken hazırlamak, artan başvuru hacminde öne geçmek isteyen KOBİ'ler için daha da önemli hale geliyor.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-08",
+    baslik:
+      "Bakan Kacır: Yapay zekâ alanındaki patent başvuruları 2022'den 2026'ya 66'dan 607'ye çıktı",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, TBMM Plan ve Bütçe Komisyonu'ndaki bakanlık bütçesi görüşmelerinde Türkiye'de yapay zekâ alanındaki patent başvurularının 2022'de 66 iken 2026'da 607'ye yükseldiğini açıkladı. Kacır, TÜBİTAK'ın 2021'den bu yana 4.229 yapay zekâ projesine ve 7.951 araştırmacıya toplam 18 milyar TL destek sağladığını da belirtti.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6ae94f5c58b1b941c2096bb8/AA/tr/sanayi-ve-teknoloji-bakani-kacir-bakanliginin-butce-gorusmelerinde-milletvekillerinin-sorularini-yanitladi-03-11-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Patent başvurusu sayısındaki bu artış, yapay zekâ alanında çalışan girişimlerin artık ürün geliştirmeyi sınai mülkiyet koruması olmadan sürdürmenin riskli olduğunun daha fazla farkında olduğunu gösteriyor; TÜBİTAK destekli bir yapay zekâ projesi yürüten işletmelere, çıktıyı tescil etmeyi proje takvimine erken dahil etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
