@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "marka-turquality-genelgesi-degisikligi-fuar-destegi-2026",
+    title: "Marka ve TURQUALITY Genelgesi 30 Ekim 2026'da Değişti: Fuar Desteği Neden %75'e Çıktı?",
+    excerpt: "Ticaret Bakanlığı'nın Marka ve TURQUALITY® Desteğine İlişkin Genelgesi 30 Ekim 2026'da baştan yenilendi. Türk İhraç Ürünleri Fuarı katılımında destek oranının %75'e çıkması, kullanılmayan hedef pazar yıllarının eklenmesi, yabancı alıcı ağırlama ve teşhir alanı desteği ile danışmanlıkta yazılım alımına gelen TÜR Belgesi şartıyla güncel rehber.",
+    category: "TİCARET BAKANLIĞI • MARKA VE TURQUALITY DESTEĞİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1752155222944-675c2c3bfafd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "turizm-ucret-destegi-3500-tl-sgk-prim-destegi-2026",
     title: "Turizm Ücret Desteği Nedir? Çalışan Başına 3.500 TL SGK Prim Desteği İçin Başvuru Gerekir mi?",
     excerpt: "7590 sayılı Kanun'un 4447 sayılı Kanun'a eklediği geçici 36. madde ile turizm işletmesi belgeli özel sektör konaklama tesislerine, 2026 Mayıs-Aralık döneminde sigortalı başına aylık yaklaşık 3.500 TL'ye kadar sigorta prim desteği sağlanıyor. Destek otomatik mi geliyor, hangi işletmeler kapsam dışı, imalat sanayi istihdam desteğinden farkı ve dikkat edilmesi gereken noktalarla güncel rehber.",
