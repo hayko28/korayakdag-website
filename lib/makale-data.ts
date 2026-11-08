@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-finansmaninda-iki-yilda-5-kat-artis",
+    title: "KOSGEB Finansmanı İki Yılda 5 Kat Arttı: 69,3 Milyar TL'ye Çıktı",
+    excerpt:
+      "Sanayi ve Teknoloji Bakanı Kacır'ın TBMM'de açıkladığı rakamlara göre KOSGEB'in KOBİ'lere sağladığı finansman desteği 2024'te 13,7 milyar TL'den 2026'da 69,3 milyar TL'ye çıktı. Bütçe büyürken başvuran şirket sayısı da aynı hızda büyüyor; bu da başvuru dosyasının kalitesini bütçenin kendisinden daha belirleyici hale getiriyor.",
+    tag: "Devlet Destekleri",
+    date: "8 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kobilere-ilk-patent-basvurusunda-yuzde-75-indirim",
     title: "TÜRKPATENT'ten KOBİ'lere İlk Patent Başvurusunda Yüzde 75 İndirim",
     excerpt:
