@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "gecici-vergi-dorduncu-donem-geri-geldi-2026",
+    title: "Geçici Vergide Dördüncü Dönem Geri Geldi mi? Şirketler İçin 2026 Takvim Rehberi",
+    excerpt: "7566 sayılı Kanun'la (RG 19 Aralık 2025/33112) Gelir Vergisi Kanunu mükerrer 120. maddesinden 'ilk dokuz ayı için belirlenen' ibaresi çıkarıldı ve 2021'de kaldırılan dördüncü geçici vergi dönemi (Ekim-Aralık) yeniden yürürlüğe girdi. Kimler kapsamda, 2026 beyan takvimi, yıllık beyannameden farkı ve enflasyon düzeltmesi istisnasıyla güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • GEÇİCİ VERGİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "marka-turquality-genelgesi-degisikligi-fuar-destegi-2026",
     title: "Marka ve TURQUALITY Genelgesi 30 Ekim 2026'da Değişti: Fuar Desteği Neden %75'e Çıktı?",
     excerpt: "Ticaret Bakanlığı'nın Marka ve TURQUALITY® Desteğine İlişkin Genelgesi 30 Ekim 2026'da baştan yenilendi. Türk İhraç Ürünleri Fuarı katılımında destek oranının %75'e çıkması, kullanılmayan hedef pazar yıllarının eklenmesi, yabancı alıcı ağırlama ve teşhir alanı desteği ile danışmanlıkta yazılım alımına gelen TÜR Belgesi şartıyla güncel rehber.",
