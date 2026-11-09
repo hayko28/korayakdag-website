@@ -2357,6 +2357,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Patent başvurusu sayısındaki bu artış, yapay zekâ alanında çalışan girişimlerin artık ürün geliştirmeyi sınai mülkiyet koruması olmadan sürdürmenin riskli olduğunun daha fazla farkında olduğunu gösteriyor; TÜBİTAK destekli bir yapay zekâ projesi yürüten işletmelere, çıktıyı tescil etmeyi proje takvimine erken dahil etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-09",
+    baslik:
+      "Ekim 2026 ihracatı %8,1 arttı, dış ticaret açığı %11,4 azalarak 6,7 milyar dolara geriledi",
+    ozet:
+      "Ticaret Bakanlığı'nın 3 Kasım 2026'da açıkladığı geçici dış ticaret verilerine göre Ekim 2026'da ihracat yıllık %8,1 artışla 25,885 milyar dolara, ithalat %3,4 artışla 32,584 milyar dolara ulaştı; toplam dış ticaret hacmi %5,4 artarak 58,468 milyar dolara çıktı. Dış ticaret açığı bir önceki yılın aynı ayına göre %11,4 azalarak 6,7 milyar dolara gerilerken, ihracatın ithalatı karşılama oranı %79,4'e yükseldi.",
+    kaynakUrl: "https://ticaret.gov.tr/haberler/2026-yili-ekim-ayi-dis-ticaret-verileri",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: İhracatın ithalatı karşılama oranındaki artış olumlu bir sinyal, ama yılın ilk on ayında yıllıklandırılmış açığın hâlâ büyüdüğünü de hatırlatmak isterim; ihracatçı işletmelere tek bir aylık rakama göre değil, kendi döviz pozisyonlarına göre bütçe kurmalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "8 Ekim 2026 (16 Ekim 2026'da duyuruldu)",
+    eklendiTarihi: "2026-11-09",
+    baslik:
+      "Reklam Kurulu 374. toplantısında indirim reklamlarına 17,2 milyon TL ceza, 32 sosyal medya hesabı resen incelemeye alındı",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 8 Ekim 2026 tarihli 374. toplantısında 161 dosyayı görüştü; 136 dosya hakkında durdurma cezasıyla birlikte toplam 17.176.744 TL idari para cezası uygulanmasına karar verdi. Kurul, bazı kampanyalarda %75 gibi gerçeği yansıtmayan indirim oranları ile kampanya öncesi son 10 günün en düşük fiyatının esas alınmaması gibi ihlalleri tespit etti; reklam/tanıtım ibaresi kullanmayan 32 sosyal medya hesabı ile yüksek oranlı indirim vaat eden bazı kuyumcu reklamları da resen incelemeye alındı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanligi-aldatici-reklamlara-karsi-denetimlerini-kararlilikla-surduruyor",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Yıl sonu kampanya sezonuna giren e-ticaret ve perakende işletmelerine, indirim görsellerindeki üstü çizili fiyatın gerçekten kampanya öncesi son 10 günün en düşük fiyatı olup olmadığını ve sosyal medya paylaşımlarında 'reklamdır/tanıtımdır' ibaresinin yer alıp almadığını tekrar kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
