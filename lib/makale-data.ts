@@ -1072,4 +1072,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "3 Kasım 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "kira-artis-tavani-isyeri-kiracilari-icin-3-detay",
+    title: "Kira Artış Tavanı Yüzde 31,23'e Sabitlendi: İşyeri Kiracıları İçin 3 Gözden Kaçan Detay",
+    excerpt:
+      "TÜİK'in 3 Kasım'da açıkladığı verilerle Kasım ayı kira artış tavanı yüzde 31,23'e sabitlendi. Türk Borçlar Kanunu madde 344 bu sınırı konut kadar işyeri kiralarına da uyguluyor; ama beş yılı geçen kiracılar bu korumadan çıkıyor ve sözleşmedeki yazılı oran tavanın altındaysa o oran geçerli sayılıyor.",
+    tag: "Hukuk ve Vergi",
+    date: "9 Kasım 2026",
+    readTime: "2 Dakika",
+  },
 ];
