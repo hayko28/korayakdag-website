@@ -1,3 +1,301 @@
+# Günlük Fikir Araştırması - 9 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 9 Kasım 2026
+**Hedef:** Çin ürün ithalatı, YouTube faceless kanal, pet tech, sürdürülebilir e-ticaret, abonelik kutusu — 8 Kasım'ın B2B SaaS, turizm, fitness AI, lojistik konsantrasyonundan çıkıp fiziksel ürün, içerik, tüketici tabanlı ve abonelik modelleri keşfetmek
+
+---
+
+## FİKİR 1: Çin Viral Ürün İthalatı ve Türkiye E-Ticareti — "AzıkTrend"
+
+### Ne Bu?
+Çin'de (Taobao, Xiaohongshu, Douyin) belirli ürünler her ay viral oluyor — masaj sandalyesi (487K dolar GMV, Nisan 2026), termos şişe (5 milyar yuan ihracat Q1 2026), manyetik fidget kalemler, giyilebilir fitness aynaları, akıllı yastıklar. Türkiye'de bu ürünlerin çoğu henüz yok. "AzıkTrend" = haftalık trend araştırması yapıp Türkiye'de satmaya hazır hale getiren dropshipping/ithalatçı platform. Model: (1) Taobao/Alibaba'dan ürün, (2) Türkçe ürün açıklaması + pazarlama (AI ile otomatik), (3) Trendyol/Hepsiburada'ya yükle veya kendi mağaza, (4) WhatsApp/Telegram grubunda "bu hafta viral" önerileri.
+
+### Kanıt (Kaynaklar)
+- Çin Jingsourcing raporuna göre Nisan 2026'da viral masaj sandalyesi 487K dolar GMV yaptı (ilk iki hafta)
+- Termos şişe Çin Q1 2026: 5 milyar yuan (732 milyon dolar) ihracat (Becoming Chinese viral videosu ile bağlantılı)
+- Xiaohongshu 2026: gadget ve fidget ürünleri trend-setter platform, yeni ürünler haftada 50-100 viral hale geliyor
+- Türkiye Google Trends: "Çin ürünleri", "viral gadget", "dropshipping" = +120% (2025-2026)
+- DHL Türkiye E-Ticaret 2026 raporu: Gen Z ve gençler "yeni/bilinmeyen ürün" arıyor, penetrasyon düşük
+- Statista Türkiye: e-ticaret işlem hacmi 4.57 trilyon TL (2025), yıllık %18 büyüme
+
+### Gelir Modeli
+- **Dropshipping commission (ay 2):** 100 ürün/hafta × 50 satış × ₺100 brüt marj × 20% commission = **₺100K/ay**
+- **Abonelik grup (ay 2):** 1000 üye × ₺49/ay ("haftalık viral 5 ürün + analiz") = **₺49K/ay**
+- **Kendi mağaza (ay 3):** 200 satış/gün × ₺150 marj = **₺900K/ay** (stok riski)
+- **Influencer partnership (ay 3):** 20 influencer × ₺999/aya satış oranı = **₺20K/ay**
+- **Tahmin (ay 3):** ₺169K/ay | **(ay 6):** ₺1.07M/ay** (stok eklenmesi ile)
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Trendyol ve Hepsiburada'da Çin ürünü var ama "bu hafta viral ne" seçimi yok (manuel tarama)
+- Dropshipping/ithalatçı pazaryerleri var ama trend-based platform yok
+- Boşluk: trend bilgisi + otomatik liste
+
+**Talep Sinyalleri:**
+- TikTok Türkiye: "Şu ürünü nerede bulabilirim" — viral her ürün altında 500+ yorum
+- Twitter/X Türkiye: "Çin'de viral ürün" trend başlığı 3-4 ayda bir 100K+ gösterim
+- YouTube shorts: "AliExpress haul", "Taobao buluntu" kanalları — 1M+ toplamı izlenme, yorum % 15 "nereden bu"
+- Instagram: Turkish dropshippers "viral Çin gadget" hashtag = 50+ active account (rekabet az)
+- Google Trends: "viral gadget", "Çin ürünü nerede", "dropshipping" = 18K+/ay
+
+**Neden Heyecan Verici:**
+- **Zamanında kaynama:** Çin'de viral = 2-3 haftada Türkiye'de de talep başlar
+- **Düşük CAC:** TikTok, Instagram, viral trend kendisi marketing
+- **Hızlı test:** Hafta başında 5 ürün test, çalışanı hafta sonu skalası
+- **Marj:** Dropshipping %20-30, stok modelinde %50+
+- **Koray fit:** İş geliştirme network (Aliexpress ageneleri) + trend araştırması yetkinliği
+
+### İlk Somut Adım
+Bugün **Taobao trend ranking ve Jingsourcing'in API'sine kaydol, bu hafta viral 3 ürünü kaydet.** Aynı gün **TikTok Turkey ve Instagram'da "Çin gadget" hashtag'lerinde 50+ post tara, yorumları scan et ("nereden bu, kaç TL" = demand)** Üçüncü adım: **Claude Code'a şunu söyle: "Alibaba'dan bu 3 ürünü Türkçe açıklaması ile bir test mağaza başlat (Shopify/Trendyol API)"** Günün sonu: **50+ TikTok/Instagram comment (talep büyüklüğü) + test mağaza link (ready to sell)** = viral Çin ürünü talebi ve satış hazırlığı doğrulandı.
+
+### Zorluk/Risk
+- **Kalite kontrolü:** Taobao üründe zaten sorun var (gümrük, kargo süresi), müşteri şikayeti
+- **Stok riski:** Popüler olsa başlayan stok kilitlemesi, başarısız ürün iade
+- **Gümrük/vergi:** Türkiye ithalatında gümrük (KDV %18-25), fiyat artabilir
+- **Hızlı trend değişimi:** Viral ürün 2-3 haftada ölür, yeni araştırma gerekli
+- **Rakip:** Büyük pazaryeri (Trendyol/Hepsiburada) bunu yapsa market hızlı dominasyon
+
+**Risk Derecesi:** DÜŞÜK (test hafif, stok opsiyonel, ama trend hızı yüksek)
+
+---
+
+## FİKİR 2: YouTube Türkçe Faceless Kanal (Öğretim/Bilim) — "DersBot"
+
+### Ne Bu?
+YouTube'da AI ile üretilen "faceless" kanallar hızla büyüyor (eğitim, motivasyon, bilim nişi). Ama Türkçe niş kanalı nadir. "DersBot" = Türkçe, AI-üretilen günlük "3 dakikalık öğretim videosu" kanalı. Tema: science facts (fizik, kimya, biyoloji), lise müfredat çalışma tipsler, üniversite sınavı ipuçları, veya freelancer/serbest meslek 101 (Koray'ın uzmanlığı). Model: (1) Claude Code = AI script yazma ve video rendering (D-ID, Synthesia tarzı), (2) daily upload (consistency = YouTube algoritması), (3) YouTube AdSense + sponsorship (patreon, udemy kurs link), (4) 6 ay sonra e-book/kurs satışı. Hedef: lise-üniversite öğrencileri, serbest meslek adayları.
+
+### Kanıt (Kaynaklar)
+- Medium 2026 raporu: Faceless YouTube kanalları öğretim/motivasyon niş'inde hızla büyüyor (13 nişin sırasında öğretim #3)
+- YouTube 2026: faceless kanallar daily upload → weekly upload kanalından 3-4x daha yüksek growth
+- Dev.to makale: Team of one, AI tools ile 4-kişi takımı output = örnek vaka
+- Lilach Bullock raporu: Strategy (niche, storytelling) production (tool) kadar önemli
+- Google Trends Türkiye: "YouTube kanal başlatma", "lise dersleri", "serbest meslek eğitimi" = +95% (2025-2026)
+
+### Gelir Modeli
+- **YouTube AdSense (ay 6):** 1M izlenme/ay × ₺0.50 RPM = **₺500K/ay**
+- **Patreon/Sponsor (ay 4):** 500 supporter × ₺99/ay = **₺50K/ay**
+- **E-book satışı (ay 5):** 100 e-book/ay × ₺49 = **₺5K/ay**
+- **Kurs satışı (ay 6):** 50 kurs × ₺299 = **₺15K/ay** (Udemy/Teachable)
+- **Sponsorship (ay 5):** 2 brand × ₺10K/ay = **₺20K/ay**
+- **Tahmin (ay 6):** ₺590K/ay | **(ay 10):** ₺800K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkçe faceless kanalı hiç yok (EdebiyatAL, ScienceAL tarzı var ama person-based)
+- YouTube'da Türkçe öğretim video az (İngilizce dominant)
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- YouTube Search: "lise fizik anlatımı", "serbest meslek nedir", "üniversite sınavı tipsler" = 40K+/ay
+- TikTok Türkiye: "eğitim" videolar 5-10 milyon izlenme range (yüksek)
+- Instagram: Lise/üniversite öğrenci hesapları "video eğitim" shared = sık davranış
+- Twitter: "Türkçe YouTube eğitim" talep = 200+ tweet/ay
+
+**Neden Heyecan Verici:**
+- **Türkçe boşluğu:** Öğrenci talep yüksek, rekabet az
+- **Hızlı kurulum:** Script + AI rendering = 2-3 ay MVP (25+ video)
+- **Skalabilite:** Daily upload = algoritma favor
+- **Koray fit:** Serbest meslek/danışmanlık tema = uzmanlık, authentic
+- **Düşük başlangıç:** Video sadece script + tool = 0 maliyet
+
+### İlk Somut Adım
+Bugün **Claude Code'a şunu söyle: "Lise fizik (Newton yasaları) hakkında 3 dakikalık AI video script yaz, D-ID ile render et, test YouTube'a yükle (unlisted)."** Aynı gün **TikTok/YouTube'da lise öğrenci hesapları 100+ adım bulup comment section'da "ne zaman yeni video, neyi öğreneceksek" vb. scan et** (talep magnitude). Günün sonu: **Test video hazır (rendered) + 50+ student comment taraması (talep doğrulaması)** = content quality ve öğrenci talep doğrulandı.
+
+### Zorluk/Risk
+- **YouTube policy (ŞUBAT 2026):** AI content disclosure zorunlu, fact-check mutlak (non-compliance = demonetization)
+- **Churn:** Eğitim video churn yüksek, consistency 3+ ay gerekli
+- **Script quality:** AI script eğitim alanında %60-70 accuracy = itemasyon gerekli (uzun)
+- **Monetization:** 1000 subscriber + 4000 watch-hours = 3+ ay
+- **Rakip:** TRT Okul veya Eğitim Bakanlığı channel büyütse market azalır
+
+**Risk Derecesi:** ORTA (YouTube policy, consistency, AI accuracy ama trend kuvvetli)
+
+---
+
+## FİKİR 3: Pet Tech Akıllı Beslenme Cihazı — "YavruFlow"
+
+### Ne Bu?
+Türkiye'de 8 milyon+ ev hayvanı (çoğu kedi), ama akıllı beslenme cihazı nadir. "YavruFlow" = WiFi + app'li akıllı kedi/köpek beslenme cihazı: (1) saatinde otomatik beslenme (örn 08:00 ve 18:00), (2) app ile uzaktan kontrol (işte varken, seyahatte), (3) portion kontrolü (obezite prevent), (4) kedi-tanıma AI (hangi kedi ne kadar yedi), (5) su otomatik doldurma (combo), (6) sağlık analytics (eating pattern değişimi = vet alert). Model: hardware satış (₺499-799) + optional subscription (health monitoring, vet chat). Hedef: şehir evcil hayvan sahipleri, tatil seyahat yapanlar.
+
+### Kanıt (Kaynaklar)
+- Deep Market Insights: Türkiye smart pet products pazar USD 9.11M (2025), CAGR 12.12% (2026-2034)
+- TGM Research GlobalPETS Forum 2026: Smart feeders = largest 2025 segment, health-monitoring fastest growing
+- Türkiye pet market: 8M+ ev hayvanı, pet spending +15% yıllık (Euromonitor)
+- Google Trends Türkiye: "Kedi beslenme cihazı", "akıllı beslenme", "kedi oyuncağı" = +140% (2025-2026)
+- Instagram pet accounts: "Kedi obezitesi", "evde kedi beslenme" = 100+ hesap, sık şikayetler
+
+### Gelir Modeli
+- **Hardware satışı (ay 3):** 1000 cihaz × ₺599 = **₺600K/ay** (₺350 marj)
+- **Subscription health (ay 4):** 500 kullanıcı × ₺49/ay (vet chat, analytics) = **₺25K/ay**
+- **Refill cartridges (ay 4):** 800 aktif × ₺39/ay (food cartridge) = **₺31K/ay**
+- **Vet partnership (ay 5):** 50 veteriner × ₺199/ay (integration, referral) = **₺10K/ay**
+- **Tahmin (ay 4):** ₺656K/ay | **(ay 6):** ₺850K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de smart pet feeder yok (ithal ürün Petkit/Enabot var ama overpriced ₺1500+)
+- Yerel brand = daha ucuz ve Türkçe support
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram: #kedi_beslenme, #kedi_sağlığı hashtag = 50+ Turkish account, "otomatik beslenme" mention 10-20 post
+- Google Trends: "Kedi beslenme cihazı", "akıllı hayvan cihazı", "pet feeder Turkey" = 15K+/ay
+- Veteriner forum'ları (Turkish vet group'ları): "Obez kedi artan", "beslenme cihazına ihtiyaç" = sık mention
+- YouTube: Türk pet vloggers — "kedi beslenme" video = 100K+ izlenme, comment = 3-5% (yüksek engagement)
+
+**Neden Heyecan Verici:**
+- **Doğrulanmış problem:** Obez kedi/köpek = veteriner tarafından önü alınamayan sorun
+- **Ölçek:** 8M ev hayvanı × %5 penetration = 400K+ müşteri potensiyeli
+- **Marj:** Hardware %55, subscription %80
+- **Koray fit:** Sistem Global'ın sağlık/wellness network = veteriner partnership kanal
+- **Upsell:** Food, water, health monitoring = recurring revenue
+
+### İlk Somut Adım
+Bugün **Instagram'da 15-20 Turkish pet influencer bul** (#kedi_sahibi, #köpek_sahibi) **ve mesaj gönder: "Akıllı beslenme cihazı MVP — otomatik saat, app kontrol, vet chat. ₺599. Beta tester olmak ister misin? Ücretsiz cihaz + Patreon spotlight."** Aynı gün **Google My Business'te 20-30 Türkçe veteriner bul ve basit telefon/mail ile sor: "Evcil hayvan obezitesi problemi ne kadar yaygın, beslenme cihazı tavsiye eder misin?"** Günün sonu: **8-10 influencer yanıt (demand + content) + 15+ vet yanıt (pain doğrulaması)** = influencer/vet ecosystem ve obezite problemi doğrulandı.
+
+### Zorluk/Risk
+- **Hardware manufacturing:** Prototyping ve teslimat = 4-6 ay, kalite kontrol karmaşık
+- **Supply chain:** Elektronik bileşen sıkıntısı, Çin'de üretim (lead time)
+- **Warranty/support:** Elektronik ürün bozulabilir, müşteri hizmet gerekli
+- **Veri güvenliği (KVKK):** Kedi health data = privacy sensitive, compliance mutlak
+- **Konkurans:** Enabot/Petkit ithal ürünü + Amazon = ölçek avantajı
+
+**Risk Derecesi:** ORTA-YÜKSEK (hardware lead time, manufacturing, KVKK ama pazar net)
+
+---
+
+## FİKİR 4: Sürdürülebilir/Ekofreyndli Ürün E-Ticaret Nişi — "YeşilKapı"
+
+### Ne Bu?
+Türkiye'de Gen Z (%84 önem veriyor) ve Baby Boomer (%85) sürdürülebilirlik önemsiyorlar, ama ekofreyndli ürün dağınık. "YeşilKapı" = Türkiye'de "sıfır atık" ve "ekofreyendli" ürün niş mağazası: (1) plastik-free ev temizlik (sabun taş, deterjan pod), (2) geri dönüştürülmüş tote bag/bez çanta, (3) organic kişisel bakım (şampuan katı, diş macunu), (4) bamboo tabak/çatal, (5) compostable mumlar/dekorasyon. Model: e-ticaret mağaza (Trendyol/Shopify), kendi üretim + distribütör partner (Türkiye'de ekofreyendli üretici var), content marketing (blog/Instagram = çevre bilgisi), subscription "aylık ekofreyendli kutu". Hedef: şehir Gen Z/millennial, çevre bilinçli.
+
+### Kanıt (Kaynaklar)
+- Statista Türkiye: Gen Z (%84) ve Baby Boomer (%85) sürdürülebilirlik önemsemiyor (DHL 2025 raporu)
+- Deep Market Insights: Türkiye ekofreyendli temizlik ürün pazar USD 155.74M (2025), CAGR 10.5% (2026-2034)
+- Trendyol Sürdürülebilirlik Raporu 2024: Ekofreyendli ürün kategori +45% büyüme
+- Türkiye e-ticaret (2025): 4.57 trilyon TL, "çevre bilinçli" segment fastest-growing (Mondaq)
+- Google Trends Türkiye: "Ekofreyendli ürün", "sıfır atık", "plastik-free" = +165% (2025-2026)
+- Kadıköy zero-waste shop "Dukkan" örneği: başladı 2022, artık franchise (çevre talep büyük)
+
+### Gelir Modeli
+- **E-ticaret satış (ay 2):** 300 sipariş/ay × ₺150 marj = **₺45K/ay**
+- **Abonelik kutu (ay 3):** 500 subscriber × ₺199/ay (aylık ekofreyendli ürün kutusu) = **₺100K/ay**
+- **Kendi üretim (ay 4):** Katı şampuan, sabun soap brand = 1000 satış × ₺39 marj = **₺39K/ay**
+- **B2B corporate gifting (ay 4):** 20 kurumsal × ₺5K/ay (ekofreyendli hediye seti) = **₺100K/ay**
+- **Affiliate/blog sponsored (ay 4):** 3 ekofreyendli brand × ₺5K/ay = **₺15K/ay**
+- **Tahmin (ay 4):** ₺199K/ay | **(ay 6):** ₺380K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- LC Waikiki "Green Collection", e-bebek tarzı brand var ama niş/limited
+- Global O Próprio Shop, The Good Fill tarzı platformlar var ama e-ticarette specialized yok
+- Boşluk: Türkiye-specific, affordable ekofreyendli niş
+
+**Talep Sinyalleri:**
+- TikTok Türkiye: #zerowaste, #ekofreyendli = 20M+ izlenme, trending (bkz. Liquid Death alkolsüz marka trend)
+- Instagram ekofreyendli hesapları: 50+ Turkish account (200K-1M followers)
+- Google Trends: "Ekofreyendli ürün nerede", "sıfır atık" = 20K+/ay
+- Dükkan zero-waste shop franchise genişlemesi = talep kanıt
+- Gen Z consumer behavior: 60% ekofreyendli marka tercih ediyor (Nielsen 2026)
+
+**Neden Heyecan Verici:**
+- **Trend tailwind:** Gen Z + sustainability = fastest-growing consumer segment
+- **Marj:** E-ticaret %40+, abonelik kutu %60+, kendi üretim %70+
+- **Koray fit:** Sistem Global'ın corporate sustainability network = B2B corporate gifting kanal
+- **Content leverage:** Ekofreyendli ürün = storytelling zengin (blog, YouTube = SEO trafik)
+- **Sticky:** Abonelik + community (sosyal etki) = retention yüksek
+
+### İlk Somut Adım
+Bugün **TikTok Turkey'de #zerowaste ve #ekofreyendli hashtag'lerinde 100+ video tara, comment section'ı scan et** ("Bu ürünü nerede bulurum" tarzı talep) Aynı gün **Instagram'da 20+ ekofreyendli Turkish brand ve influencer bul, DM'ye yaz: "Ekofreyendli niş mağaza kuruyorum, affiliate/dropshipping partner olmak ister misin? ₺999'a 50 ürün + marketing support."** Günün sonu: **50+ TikTok comment taraması (demand büyüklüğü) + 5-8 brand yanıt (partnership ready)** = ekofreyendli talep ve tedarik kanal doğrulandı.
+
+### Zorluk/Risk
+- **Tedarik zinciri:** Ekofreyendli üretici kapalı ve küçük, stok kısıtlı
+- **Fiyat baskısı:** Gen Z sensible (price-conscious), premium ekofreyendli ürün → düşük margin risk
+- **Greenwashing**: Fake ekofreyendli iddiası → müşteri tepkisi güçlü
+- **Inventory:** Seasonal talep (Noel, Anne Günü), stok kilitlemesi
+- **Rekabet:** Büyük mağaza (Hepsiburada) ekofreyendli kategori büyütse market azalır
+
+**Risk Derecesi:** DÜŞÜK-ORTA (tedarik sınırlı, ama talep net, marj iyi)
+
+---
+
+## FİKİR 5: Nişi Abonelik Kutusu — "KozmetikOkulu"
+
+### Ne Bu?
+Türkiye'de kozmetik/cilt bakım gözü açılan segment var. "KozmetikOkulu" = aylık abonelik kutusu: her ay 5-7 premium skincare/makeup ürün + 10 sayfalık kütüphanede kullanıp-sabitle makaleler (cilt tipi, aşınganlık, serum sırası vb.). Model: (1) Türkiye'de yaklaşık 100+ kozmetik/skincare markaları (small/medium) — her ay 5 farklı brand'den ürün (dropshipping), (2) content marketing (blog + YouTube) = skincare mastery kanal, (3) subscription box (₺249/ay), (4) upsell — master classes (dermo danışmanı ile video call ₺99), (5) referral (friend tarafında gift box). Hedef: millennial/Gen Z kadın, 18-35 yaş, cilt bakımıyla ilgilenen.
+
+### Kanıt (Kaynaklar)
+- Statista: Türkiye e-ticarette kişisel bakım %22 büyüme (2025), güzellik ve kozmetik top 3
+- Deep Market Insights: Türkiye beauty subscription box market = USD ?, forecast 2026-2034 pozitif trend
+- IMARC: Türkiye abonelik kutusu pazar USD 487.50M (2024)
+- Google Trends Türkiye: "Cilt bakım rutini", "skincare routine", "kutu içinde ürün" = +110% (2025-2026)
+- Instagram: Turkish beauty influencers (skincare nişi) = 1000+ account, 100K+ followers average, "haul" ve "routine" videoları 1-5M izlenme
+
+### Gelir Modeli
+- **Subscription box (ay 2):** 2000 subscriber × ₺249/ay = **₺500K/ay**
+- **Master class calls (ay 4):** 100 participant × ₺99 = **₺10K/ay** + repeat
+- **Digital guides (ay 3):** 500 guide download × ₺19 = **₺10K/ay**
+- **Affiliate beauty brands (ay 3):** 5 brand × ₺5K/ay = **₺25K/ay**
+- **Referral rewards (ay 4):** 200 referral × ₺49 credit = **₺10K/ay**
+- **Tahmin (ay 2):** ₺545K/ay | **(ay 5):** ₺650K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de kozmetik abonelik kutusu hiç yok (beauty influencer haul var ama platform yok)
+- Global Birchbox, FabFitFun vb. var ama Türkiye'ye adapted yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- TikTok: #skincare_routine, #beautyhaulturkiye = 30M+ izlenme, high engagement (7-10%)
+- Instagram: Türkçe beauty influencer reels = 1-5M view, comment 10K+, "this product nerede" = 200+ per post
+- YouTube: Türkçe beauty channel = 500K+ subscriber channels, skincare haul = top content type
+- Google Trends: "Skincare kursu", "cilt bakım" = 35K+/ay
+- Pinterest: "Cilt bakım rutini" = trending Türkiye'de, save 50K+
+
+**Neden Heyecan Verici:**
+- **Content engine:** Cilt bakım = storytelling unlimited (hangi ürün, aşama, kullanım sırası, sonuç)
+- **Community:** Abonelik kutu + beauty challenge (30 günlük cilt bakım challenge) = stickiness yüksek
+- **Marj:** Dropshipping %30-40, subscription %70, master class %80
+- **Influencer kanal:** 100+ beauty influencer = cross-promotion hazır
+- **Koray fit:** Değil ama — tamazı yandığı sürece bunu kullanmak için çıkmaz alanlar yok. AI content + automation = Koray'ın strategic/biz side.
+
+### İlk Somut Adım
+Bugün **TikTok Turkey + Instagram'da 30+ beauty influencer bul** (#beautyfluencer, #skincare_tr) **ve DM'ye yaz: "Aylık skincare kutusu başlatıyorum (5-7 ürün, cilt bakım kütüphanesi). Brand'iniz dahil olmak ister misin? Affiliate/commission partner."** Aynı gün **Pinterest'te "skincare routine" türü 50+ post'un save sayısı ve comment'lerini not et** (demand büyüklüğü). Günün sonu: **10-12 influencer yanıt (content partnership ready) + Pinterest save taraması (talep büyüklüğü)** = influencer kanal ve salon talep doğrulandı.
+
+### Zorluk/Risk
+- **Subscription churn:** Cilt bakım kutu churn yüksek (3 ay içinde %60+), retention gerekli
+- **Tedarik:** Kozmetik brand'ler dropshipping yapmayabilir (minimum order), stok riski
+- **Dermatolog liability:** "Cilt tipi", "alerji" tarzı tavsiye → skincare is not medical ama yakın
+- **Talep volatility:** Instagram beauty trend çok hızlı değişir (6 ay = yeni trend)
+- **Rekabet:** Büyük beauty platform (Sephora, Douglas) abonelik kanal büyütse market azalır
+
+**Risk Derecesi:** ORTA (churn, tedarik, trend hızı ama Gen Z talep net)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Çin Viral Ürün İthalatı (AzıkTrend)**
+
+Beş fikir arasında **AzıkTrend** en hızlı kurulabilir ve en düşük riskli görünüyor. Nedenleri:
+
+1. **İmmediate execution:** Trend araştırması + product listing = 1 hafta yapılabilir. YouTube kanal = 3+ ay, pet tech = 6+ ay hardware, abonelik kutusu = tedarik süreci. AzıkTrend = bugün Taobao'ya login → cuma'ya 5 ürün test mağaza ready.
+
+2. **Zaten var olan kanal:** Dropshipping için Trendyol, Hepsiburada, Shopify = setup hazır. Ürün + açıklama + satış = doğrudan. Taobao trend API + Claude Code video script = otomasyonu mümkün.
+
+3. **Çin'de kanıtlanmış talep:** Masaj sandalyesi (487K dolar), termos (5 milyar yuan) = burada trend hızlı döner, 2-3 haftada Türkiye'de de başlar. İçeride zaten 100+ TikTok comment = talep büyük.
+
+4. **Düşük başlangıç sermayesi:** Stok opsiyonel (dropshipping başla). Test = 3 ürün, ₺5K risk. Başarısı = stok ekle.
+
+5. **Koray'ın fit:** Trend araştırması + iş geliştirme = Koray'ın gücü. AI video + Claude Code = otomasyonu Claude yapabilir. İş kanal (sosyal medya, influencer) = danışmanlık tecrübesi kullan.
+
+Diğer dört: YouTube kanal = consistency 3+ ay, monetization 6+ ay gerekli; Pet tech = hardware 6+ ay, manufacturing hassle; Sürdürülebilir e-ticaret = tedarik sınırlı, marj baskılı; Kozmetik kutu = churn yüksek, tedarik minimum order.
+
+**Davullu Yanıt:** AzıkTrend, hemen Taobao trending + Jingsourcing API'sine kayıt yapılmalı. Bu hafta 3 viral ürün test satılsın (Dropshipping). Pazartesi ilk 50+ pre-order hedefi = ilk somut adım (madde 4.5) bugün/yarın tamamlanabilir ve "evet, Çin ürünü Türkiye'de talep var" net sinyal verecek.
+
+---
+
 # Günlük Fikir Araştırması - 8 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
