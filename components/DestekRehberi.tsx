@@ -40,7 +40,7 @@ const kar = [
   ["Kimlere uygun?", "Ar-Ge ekibi kalabalık orta ve büyük şirketler.", "Ar-Ge, yazılım veya tasarım yapan her ölçekte şirket.", "Yeni kurulan veya kurulacak teknoloji girişimleri."],
   ["Asgari şart", "15 tam zamanlı Ar-Ge personeli (bazı sektörlerde 30). Ar-Ge alanı ayrı olmalı.", "Personel eşiği yok. Faaliyet Ar-Ge, yazılım veya tasarım olmalı.", "Yaş ve kuruluş şartı yok. Teknoloji veya yenilik odaklı fikir yeterli."],
   ["Kim onaylar?", "Sanayi ve Teknoloji Bakanlığı (belge ve yerinde inceleme).", "Teknoparkın yönetici şirketi (proje değerlendirmesi).", "Seçilen TEKMER'in kendi kurulu."],
-  ["Başlıca avantajlar", "Kurumlar vergisi indirimi (Ar-Ge harcamalarının %100'ü kurum kazancından düşülür), personel gelir vergisi stopajı desteği, SGK işveren hissesinin yarısı, damga vergisi istisnası.", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
+  ["Başlıca avantajlar", "Ar-Ge harcamalarının %100'ü kurum kazancından düşülür, gümrük vergisi istisnası, damga vergisi istisnası, personel gelir vergisi stopajı desteği, SGK işveren hissesinin %50'si, desteklenen program alanlarında lisans ve üzeri Ar-Ge personeli için 2 yıl brüt asgari ücret desteği (Ar-Ge personelinin %10'u sınırıyla).", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
   ["Başvuru", "Bakanlığa belge ile başvuru.", "Yönetici şirkete proje bazlı başvuru.", "Doğrudan KOSGEB'e değil, seçilen TEKMER'e. Kabul takvimi kontenjana bağlı."],
   ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge Merkezi ile birlikte kullanılamaz.", "Diğer ikisini dışlamaz, tamamlayıcı olarak kullanılabilir."],
 ];
@@ -701,7 +701,11 @@ export default function DestekRehberi() {
           </div>
           <p className="note">
             Kısa kural: Ekibi büyükse Ar-Ge Merkezi, ekip küçük veya orta ve üniversite çevresi isteniyorsa Teknopark, henüz
-            yeni bir girişimse TEKMER. Ar-Ge Merkezi ve Teknopark aynı faaliyet için birlikte alınamaz.
+            yeni bir girişimse TEKMER. Ar-Ge Merkezi ve Teknopark aynı faaliyet için birlikte alınamaz.{" "}
+            Ayrıntılar:{" "}
+            <a href="/blog/arge-merkezi-nedir-nasil-kurulur-sartlari-vergi-avantajlari-2026">Ar-Ge Merkezi rehberi</a>,{" "}
+            <a href="/blog/teknopark-nedir-avantajlari">Teknopark rehberi</a>,{" "}
+            <a href="/blog/tekmer-nedir-basvuru-sureci-destekleri-2026">TEKMER rehberi</a>.
           </p>
         </div>
       ),

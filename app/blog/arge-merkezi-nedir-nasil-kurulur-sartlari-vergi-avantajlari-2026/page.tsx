@@ -279,9 +279,11 @@ export default function ArgeMerkeziPage() {
               <tr className="border-b bg-white">
                 <td className="p-5 font-semibold">Ar-Ge/Tasarım İndirimi</td>
                 <td className="p-5">
-                  İlk madde-malzeme, amortisman, personel, genel gider ve
-                  dışarıdan sağlanan hizmet giderleri kurum/ticari kazancın
-                  tespitinde indirim konusu yapılır.
+                  Merkezde yapılan harcamaların <strong>%100&apos;ü</strong>{" "}
+                  (ilk madde-malzeme, amortisman, personel, genel gider ve
+                  dışarıdan sağlanan hizmet giderleri) kurum/ticari kazancın
+                  tespitinde indirim konusu yapılır, yani daha az vergi
+                  ödenir.
                 </td>
               </tr>
               <tr className="border-b bg-white">
@@ -310,12 +312,14 @@ export default function ArgeMerkeziPage() {
                 </td>
               </tr>
               <tr className="border-b bg-white">
-                <td className="p-5 font-semibold">Temel Bilimler Personel Desteği</td>
+                <td className="p-5 font-semibold">Desteklenecek Program Alanları İstihdam Desteği</td>
                 <td className="p-5">
-                  Matematik, fizik, kimya, biyoloji gibi temel bilim
-                  programlarından mezun Ar-Ge personeli için, 2 yıl boyunca
-                  kişi başı aylık asgari ücret (2026'da brüt 33.030 TL)
-                  tutarında Bakanlık desteği.
+                  Desteklenecek program alanlarında (matematik, fizik, kimya,
+                  biyoloji gibi temel bilimler dahil) en az lisans derecesine
+                  sahip Ar-Ge personeli istihdam eden merkezlere, her personel
+                  için 2 yıl boyunca brüt asgari ücret (2026'da brüt 33.030
+                  TL) tutarında Sanayi ve Teknoloji Bakanlığı desteği.
+                  Merkezdeki Ar-Ge personelinin %10&apos;u ile sınırlıdır.
                 </td>
               </tr>
               <tr className="border-b bg-white">
