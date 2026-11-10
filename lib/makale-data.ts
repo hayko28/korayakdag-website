@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "nefes-kredisinde-5-milyon-tl-tamamlama-hakki",
+    title: "Nefes Kredisi'nde Yeni 50 Milyar TL Dilim: Daha Önce Kullananlar Limiti Tamamlayabilir mi?",
+    excerpt:
+      "TOBB'un Kredi Garanti Fonu ve sekiz bankayla yürüttüğü Nefes Kredisi'nde 3 Kasım'da KOBİ'lere 50 milyar TL'lik yeni bir dilim açıldı; haziranda başlayan programda bugüne kadar 45 milyar TL kullandırılmıştı. Firma başına üst limit 5 milyon TL'de sabit kalıyor, ama ilk dilimde daha düşük tutarla başvuran işletmeler kalan farkı yeni dilimde tamamlayabiliyor; bu ayrıntı çoğu başvuruda hâlâ gözden kaçıyor.",
+    tag: "Devlet Destekleri",
+    date: "10 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-finansmaninda-iki-yilda-5-kat-artis",
     title: "KOSGEB Finansmanı İki Yılda 5 Kat Arttı: 69,3 Milyar TL'ye Çıktı",
     excerpt:
