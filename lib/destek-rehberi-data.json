@@ -51,7 +51,7 @@
         "https://www.kosgeb.gov.tr/site/tr/genel/detay/9499/girisimci-destek-programi-yenilendi-girisimcilere-yeni-destek-modeli"
       ],
       "dogrulama": "2026-10-14: program sayfası ve 12 Ekim 2026 (güncelleme 13 Ekim) duyurusu okundu. 3. dönem tarihleri duyurudan. Önceki 2. dönem 20 Nisan-8 Mayıs 2026'da kapanmıştı. Program sayfasında İş Kurma'ya ait ek bilgi: 4B girişimcinin SGK günleri de sayılabilir. Sektör kapsamı ve kapsam dışı sektörler çağrı metninde yeniden tanımlanıyor, başvurudan önce çağrı metni kontrol edilmeli. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
-      "kapak": "İş Geliştirme: 31 Ekim 2026",
+      "kapak": "İş Kurma sürekli, İş Geliştirme kapandı",
       "ornekler": [
         "İş Kurma (performans desteği): 28 yaşında bir girişimcinin tek ortak olarak iki ay önce kurduğu, mobilya imalatı (NACE C) yapan şahıs işletmesi. Girişimci müstakil temsil yetkisine sahip, geleneksel girişimci eğitimini tamamlamış ve işletme dışında üç yıldır kayıtlı başka bir şahıs firması ya da %25 ve üzeri ortaklığı yok. Üç aylık dönemlerde satışları en az bir brüt asgari ücret tutarında olur ve 4A kapsamındaki çalışanlarının toplam prim günü 90'a ulaşırsa, 24 aylık süre boyunca toplam 8 brüt asgari ücrete kadar geri ödemesiz destek hesaplanır. (Karşıladığı şartlar: kuruluştan itibaren 1 yıl içinde başvuru, genç girişimci, %50 ve üzeri ortaklık payı, müstakil temsil, geleneksel girişimci eğitimi, vergi mükellefiyetinin devamı, dönemsel satış ve 90 prim günü şartı. Not: İş Kurma desteği gider faturası karşılığı değildir, tadilat, makine veya kira gibi harcamalar bu destekten karşılanmaz.)",
         "İş Kurma (platform gideri desteği): Sanayi ve Teknoloji Bakanlığı'nın 'dijital şirket' tanımına uygun olarak kurulan ve platform kaydını yaptıran yeni bir işletme. Platform kayıt ücreti kadar, %100 oranında ve geri ödemesiz destek alır. Dijital şirket tanımına uygun işletmelerde İş Kurma için girişimcilik eğitimi şartı, %50 ortaklık payı şartı, müstakil temsil şartı ve önceki üç yıldaki başka firma sahipliği şartı aranmaz. (Karşıladığı şartlar: kuruluştan itibaren 1 yıl içinde başvuru, KOSGEB'de kayıtlı ve aktif işletme, güncel İşletme Beyanı, Bakanlığın dijital şirket tanımına uygunluk.)",
@@ -78,7 +78,7 @@
     {
       "ad": "İstihdamı Koruma Destek Programı (2026-2 dönemi, finansman desteği)",
       "durum": "acik",
-      "sonTarih": "31 Ekim 2026 (başvuru penceresi 1 Eylül - 31 Ekim 2026)",
+      "sonTarih": "30 Kasım 2026 (başvuru penceresi 1 Eylül - 30 Kasım 2026; 30 Ekim 2026 güncellemesiyle 31 Ekim'den uzatıldı)",
       "ozet": "İmalat sanayinde çalışan sayısını korumak için 12 puan geri ödemesiz faiz desteğiyle banka kredisi sağlayan, KOBİ ve büyük işletmelere açık program.",
       "amac": "İmalat sektöründe 5510 sayılı Kanun 4/1-(a) kapsamında sigortalı çalışanların istihdamını korumak ve artırmak.",
       "kimler": [
@@ -120,8 +120,8 @@
         "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi",
         "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi"
       ],
-      "dogrulama": "2026-10-14: program sayfası ve KOSGEB'in 28 Ağustos 2026 tarihli 'Kapsamı Genişletildi' duyurusu okundu (2026-2 dönemi 1 Eylül-31 Ekim 2026; önceki 2026-1 dönemi 3 Mart-30 Nisan 2026). Çalışan başına 3.500 TL performans desteği yalnızca 2026-1 döneminde uygulanmıştı, 2026-2'de yoktur. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
-      "kapak": "31 Ekim 2026",
+      "dogrulama": "2026-10-14: program sayfası ve KOSGEB'in 28 Ağustos 2026 tarihli 'Kapsamı Genişletildi' duyurusu okundu (2026-2 dönemi 1 Eylül-30 Kasım 2026, 30 Ekim 2026 güncellemesiyle 31 Ekim'den uzatıldı; önceki 2026-1 dönemi 3 Mart-30 Nisan 2026). Çalışan başına 3.500 TL performans desteği yalnızca 2026-1 döneminde uygulanmıştı, 2026-2'de yoktur. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
+      "kapak": "30 Kasım 2026",
       "ornekler": [
         "Temsili kredi limiti hesabı (yeterlilik yok): Plastik ürünleri imalatı yapan (NACE Kısım C, 31.12.2025 itibarıyla idari kayıtlarda imalat kodu var), 5510 sayılı Kanun 4/1-(a) kapsamında 120 sigortalı çalıştıran bir KOBİ. Ocak-Haziran 2026 muhtasar ve prim hizmet beyannamelerinde destek kapsamındaki iş yerleri için beyan edilen aylık ortalama prime esas kazanç (PEK) toplamı temsili olarak 14.000.000 TL olsun. Resmi formül: kredi limiti = aylık ortalama PEK x koruma dönemindeki ay sayısının altıda biri; koruma dönemi Temmuz-Aralık 2026 (6 ay) olduğundan çarpan 1'dir, yani kredi limiti 14.000.000 TL'dir ve KOBİ üst limiti olan 50.000.000 TL'nin altındadır. (Karşıladığı şartlar: NACE Kısım C, KOBİ, güncel İşletme Beyanı, referans döneminde sıfırdan büyük ortalama prim günü, protokol bankası kredisi. Rakamlar temsilidir.)",
         "Mali yeterlilikle iki katına çıkarma (temsili): Aylık ortalama PEK temsili olarak 18.000.000 TL olan bir imalat KOBİ'sinin 2025 faaliyet kârı sıfırın üzerinde ve toplam borç / faaliyet kârı oranı 3 veya altındadır. Mali yeterliliği sağladığı için kredi tutarı bir kat artırımlı uygulanır: 18.000.000 TL x 2 = 36.000.000 TL, KOBİ üst limiti olan 50.000.000 TL'nin altında olduğundan tamamı kullanılabilir. (Karşıladığı şartlar: mali yeterlilik ölçütleri, KOBİ, imalat NACE kodu. Rakamlar temsilidir.)",
@@ -138,7 +138,7 @@
         "Tüm rakamlar 'temsili'dir; formül ve limitler (aylık ortalama PEK x koruma dönemi ay sayısının altıda biri, KOBİ üst limiti 50.000.000 TL, büyük işletme üst limiti 150.000.000 TL, yeterlilikle bir kat artırım) Yönerge md. 8 ve KOSGEB'in 28 Ağustos 2026 duyurusuna dayanır. Gerçek kredi limitini bankanın uygulaması ve işletmenin sistemdeki PEK verisi belirler.",
         "Faiz desteği SGK'ya veya işletmenin GO Dijital Cüzdan hesabına aktarılır ve yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde kullanılabilir. Destek, istihdamın korunduğu ay sayısının koruma dönemindeki ay sayısına oranı kadar ödenir; kredinin erken kapatılması veya yeniden yapılandırılması halinde sonraki aylar için ödeme yapılmaz.",
         "Kredi limitini iki katına çıkaran 'teknik kriterler' Bakanlık tarafından belirlenmiş olup KOSGEB program sayfasında yayımlanan ölçütlerdir (mali yeterlilik: 2025 faaliyet kârı sıfırın üzerinde ve toplam borç / faaliyet kârı en fazla 3; Ar-Ge yeterliliği: Ar-Ge veya tasarım merkezi, teknoloji geliştirme bölgesinde şube, son 5 yılda tamamlanmış TÜBİTAK projesi veya tescilli patent). Artırımlı tutara KOBİ üst limitinin uygulanışı duyurudaki 'üst limit' ifadesinden çıkarılmıştır, artırımlı tutar için ayrı bir üst limit yazıp yazmadığı teyit edilemedi.",
-        "Başvuru süresi 1 Eylül - 31 Ekim 2026'dır. Başvuru reddedilen işletme programa tekrar başvuru yapamaz; KOSGEB'e vadesi geçmiş borcu olan işletmenin ödeme talebi sistem tarafından engellenir.",
+        "Başvuru süresi 1 Eylül - 30 Kasım 2026'dır (31 Ekim'den uzatıldı). Başvuru reddedilen işletme programa tekrar başvuru yapamaz; KOSGEB'e vadesi geçmiş borcu olan işletmenin ödeme talebi sistem tarafından engellenir.",
         "Bu senaryolar temsilidir ve resmî bir kalem listesi değildir; programın yönerge veya çağrı şartlarından hareketle hazırlanmıştır. Başvuru öncesinde güncel çağrı veya yönerge metni ile işletmenin kendi durumu kontrol edilmelidir."
       ],
       "hesaplamalar": [
@@ -556,8 +556,8 @@
   "tubitak": [
     {
       "ad": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (2026 yılı 2. Çağrı)",
-      "durum": "acik",
-      "sonTarih": "26 Ekim 2026, 23:59 (kuruluş bazlı ön kayıt son tarihi 22 Ekim 2026)",
+      "durum": "kapali",
+      "sonTarih": "26 Ekim 2026, 23:59 tarihinde kapandı (kuruluş bazlı ön kayıt 22 Ekim 2026); uzatma duyurusu yok, yeni çağrı için TÜBİTAK duyurusu beklenmeli",
       "ozet": "KOBİ ölçeğindeki sermaye şirketlerinin her sektörde yürüttüğü Ar-Ge projelerine geri ödemesiz hibe veren, yılda iki çağrılı ana program.",
       "amac": "KOBİ ölçeğindeki kuruluşların proje esaslı araştırma, teknoloji geliştirme ve yenilikçilik faaliyetlerini desteklemek. Destek hibe niteliğindedir, geri ödemesizdir.",
       "kimler": [
@@ -608,7 +608,7 @@
         "https://eteydeb.tubitak.gov.tr"
       ],
       "dogrulama": "2026-10-14: program ve çağrı sayfaları tubitak.gov.tr'den okundu. 1. çağrı Mart 2026'da kapanmıştı; 2. çağrı açık. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
-      "kapak": "26 Ekim 2026",
+      "kapak": "26 Ekim 2026'da kapandı",
       "ornekler": [
         "Orta ölçekli (KOBİ ölçeğinde) bir sermaye şirketi olan makine imalatçısı, mevcut hatlarında kullandığı CNC işleme süreci için gerçek zamanlı takım aşınması tahmini yapan, daha önce piyasada bulunmayan bir yapay zeka tabanlı izleme modülü geliştiriyor. Personel giderleri, prototip malzeme ve sarf giderleri, ölçüm cihazı ve yazılım alımı ile üniversite laboratuvarından alınan test hizmeti destek kapsamındadır. (Karşıladığı şartlar: KOBİ ölçeğinde sermaye şirketi, yenilikçi ürün ve teknolojik belirsizlik içeren Ar-Ge içeriği, proje başvurudan önce tamamlanmamış, süre 36 ayın altında, alet ve yazılım alımı Ar-Ge'ye yönelik, üretim altyapısına yönelik değil.)",
         "Küçük ölçekli bir yazılım ve elektronik firması, düşük güçlü sensörlerle çalışan, şebekeden bağımsız tarımsal sulama kontrol cihazının yeni bir haberleşme ve enerji yönetimi mimarisini geliştiriyor. Personel, yurt içi danışmanlık ve hizmet alımı, malzeme ve prototip gideri ile seyahat giderleri kapsama girer. (Karşıladığı şartlar: sermaye şirketi, yeni ürün ve teknik belirsizlik, sektör sınırı bulunmaması, ekonomik yarar ve ulusal kazanıma dönüşebilirlik boyutunun değerlendirmede aranması.)",

@@ -38,7 +38,7 @@ export default function MakalePage() {
         çıkarılırken, kredi üst limiti büyük işletmelerde 50 milyon
         TL&apos;den 150 milyon TL&apos;ye yükseltildi. Kredi azami 6 ay
         anapara ödemesiz, 36 ay vadeli. Yeni dönem başvuruları 1
-        Eylül-31 Ekim 2026 arasında NACE Kısım C-İmalat kodlu
+        Eylül-30 Kasım 2026 arasında NACE Kısım C-İmalat kodlu
         işletmelerden alınıyor.
       </p>
 

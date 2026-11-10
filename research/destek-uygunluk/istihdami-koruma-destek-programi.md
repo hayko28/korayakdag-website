@@ -17,7 +17,7 @@ yakalanıyordu ama sadece ön tarama/link öneri seviyesindeydi — kesin kriter
 Koray'ın talebiyle (prim gün sayısı/çalışan sayısına göre Ocak-Haziran 2026 ödenen primin
 Temmuz-Aralık 2026'da da korunması senaryosu) Katman 2 derinliğinde modellendi.
 
-## Temel bulgular (2026-2 dönemi, şu an açık: 1 Eylül - 31 Ekim 2026 başvuru)
+## Temel bulgular (2026-2 dönemi, şu an açık: 1 Eylül - 30 Kasım 2026 başvuru, 31 Ekim'den uzatıldı)
 
 - Kapsam: yalnızca NACE Kısım C (İmalat, 10-33).
 - Bu dönemde SADECE finansman desteği (kredi faiz/kâr payının 12 puana kadarki kısmı,

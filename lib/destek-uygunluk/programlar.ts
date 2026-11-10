@@ -469,8 +469,8 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
       "Somut bir ret sebebi görünmüyor ama başvuru şartlarını tam değerlendirmek için eksik bilgi var.",
       gerekceler,
       [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
-      undefined,
-      "26 Ekim 2026 (2026-2 çağrısı; ön kayıt 22 Ekim)"
+      true,
+      "26 Ekim 2026 (2026-2 çağrısı, kapandı; ön kayıt 22 Ekim)"
     );
   }
 
@@ -479,8 +479,8 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     "Kuruluş, başvuru şartlarının tamamını (tür, ölçek, yerleşiklik, ekip) sağlıyor ve somut bir ret sinyali yok. Hakem/GYK değerlendirmesi başvuru sonrası ayrı bir aşamadır.",
     gerekceler,
     uyarilar,
-    undefined,
-    "26 Ekim 2026 (2026-2 çağrısı; ön kayıt 22 Ekim)"
+    true,
+    "26 Ekim 2026 (2026-2 çağrısı, kapandı; ön kayıt 22 Ekim)"
   );
 }
 
@@ -1913,7 +1913,7 @@ export function kosgebTekmerDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuT
 // --- İstihdamı Koruma Destek Programı (2026-2 dönemi) ---
 // Kaynak: app/blog/istihdami-koruma-destek-programi-2026/page.tsx (KOSGEB'in 28/08/2026
 // tarihli "kapsamı genişletildi" duyurusu ve Uygulama Esasları'na dayalı, sourced içerik).
-// 2026-2 döneminde (1 Eylül-31 Ekim 2026 başvuru) sadece finansman desteği açık; performans
+// 2026-2 döneminde (1 Eylül-30 Kasım 2026 başvuru, 31 Ekim'den uzatıldı) sadece finansman desteği açık; performans
 // desteği (3.500 TL) bu dönemde yok. Büyük ölçekli + yatırım teşvik belgeli işletmeler için
 // ayrı bir "ilave istihdam" formülü var (Sanayi ve Teknoloji Bakanlığı kanalı) — bu ayrı ve
 // daha karmaşık senaryo burada tam modellenmiyor, yalnızca bilgilendirici not olarak geçiyor.
@@ -1926,7 +1926,7 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
   const uyarilar = [
-    "2026-2 dönemi başvuruları 1 Eylül - 31 Ekim 2026 tarihleri arasında açık; bu tarihten sonra bu dönem için yeni başvuru alınmaz.",
+    "2026-2 dönemi başvuruları 1 Eylül - 30 Kasım 2026 tarihleri arasında açık (31 Ekim'den uzatıldı); bu tarihten sonra bu dönem için yeni başvuru alınmaz.",
     "Program dönemsel yürütülüyor: 2026-2 dönemi kapandıktan sonra KOSGEB yeni bir dönem (2026-3 vb.) açabilir, farklı kurallarla (örn. performans desteğinin geri gelmesi/kaldırılması, farklı referans-koruma dönemi tarihleri) — bu analiz yalnızca 2026-2 dönemi kurallarını yansıtıyor, yeni dönem açıldığında güncel duyuru kontrol edilmelidir.",
     "Bu dönemde yalnızca finansman desteği (kredi faiz/kâr payının 12 puana kadarki kısmı, geri ödemesiz) var — performans desteği (çalışan başına aylık 3.500 TL) bu dönemde uygulanmıyor.",
     "Kredi limiti, Ocak-Haziran 2026 dönemine ait aylık ortalama prime esas kazanç toplamına göre hesaplanır; KOBİ'lerde üst limit 50.000.000 TL, büyük işletmelerde 150.000.000 TL.",
@@ -1990,7 +1990,7 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
       gerekceler,
       [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
       undefined,
-      "31 Ekim 2026"
+      "30 Kasım 2026 (2026-2 dönemi, 31 Ekim'den uzatıldı)"
     );
   }
 
@@ -2000,7 +2000,7 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
     gerekceler,
     uyarilar,
     undefined,
-    "31 Ekim 2026"
+    "30 Kasım 2026 (2026-2 dönemi, 31 Ekim'den uzatıldı)"
   );
 }
 

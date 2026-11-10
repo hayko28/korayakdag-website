@@ -282,7 +282,7 @@ export interface DestekBasvuruGirdisi {
   kureselTedarikZinciriVarMi?: boolean; // Küresel Tedarik Zinciri Yetkinlik Projesi Desteği (Md.10)
   eIhracatVarMi?: boolean; // E-İhracat Destek Programı — 5986 sayılı Karar (5973'ten ayrı mevzuat), pazaryeri/e-ticaret sitesi satışı
 
-  // İstihdamı Koruma Destek Programı — 2026-2 dönemi (1 Eylül-31 Ekim 2026 başvuru,
+  // İstihdamı Koruma Destek Programı — 2026-2 dönemi (1 Eylül-30 Kasım 2026 başvuru, 31 Ekim'den uzatıldı,
   // KOSGEB/Sanayi ve Teknoloji Bakanlığı ortak yürütür). Sadece finansman desteği açık;
   // referans dönem Ocak-Haziran 2026, koruma dönemi Temmuz-Aralık 2026 ortalama prim günü.
   istihdamiKorumaTaahhutEdebilirMi?: boolean;

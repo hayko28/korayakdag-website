@@ -984,7 +984,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "istihdami-koruma-destek-programi-2026",
     title: "İstihdamı Koruma Destek Programı 2026: Yeni Esaslar, Destek Tutarları ve Örnek Hesaplamalar",
-    excerpt: "Güncelleme (28 Ağustos 2026): 2026-2 döneminde (1 Eylül-31 Ekim 2026 başvuru) finansman desteği 10 puandan 12 puana çıkarıldı, kredi limiti KOBİ'lerde 50 milyon TL'de sabit kalırken büyük işletmelerde 150 milyon TL'ye yükseldi ve kapsam ilk kez büyük işletmeleri de içerecek şekilde genişledi. Kredi limiti formülü, yatırım teşvik belgeli büyük işletmeler için özel formül ve gerçekçi şirket örnekleriyle güncel rehber.",
+    excerpt: "Güncelleme (28 Ağustos 2026): 2026-2 döneminde (1 Eylül-30 Kasım 2026 başvuru, 31 Ekim'den uzatıldı) finansman desteği 10 puandan 12 puana çıkarıldı, kredi limiti KOBİ'lerde 50 milyon TL'de sabit kalırken büyük işletmelerde 150 milyon TL'ye yükseldi ve kapsam ilk kez büyük işletmeleri de içerecek şekilde genişledi. Kredi limiti formülü, yatırım teşvik belgeli büyük işletmeler için özel formül ve gerçekçi şirket örnekleriyle güncel rehber.",
     category: "KOSGEB • İSTİHDAM DESTEĞİ • 2026",
     date: "2026",
     readTime: "12 Dakika",

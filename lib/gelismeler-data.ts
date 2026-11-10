@@ -520,7 +520,7 @@ export const GELISMELER: GelismeItem[] = [
     baslik:
       "İstihdamı Koruma Destek Programı büyük işletmeleri de kapsayacak şekilde genişletildi",
     ozet:
-      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla İstihdamı Koruma Destek Programı'nın kapsamını 28 Ağustos 2026 itibarıyla genişletti. Program artık yalnızca KOBİ'leri değil büyük işletmeleri de kapsıyor; KOSGEB'in finansman katkısı 10 puandan 12 puana çıkarılırken kredi üst limiti KOBİ'lerde 50 milyon TL, büyük işletmelerde ise 50 milyon TL'den 150 milyon TL'ye yükseltildi. Yeni dönem başvuruları 1 Eylül-31 Ekim 2026 arasında NACE Kısım C-İmalat kodlu işletmelerden alınacak.",
+      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla İstihdamı Koruma Destek Programı'nın kapsamını 28 Ağustos 2026 itibarıyla genişletti. Program artık yalnızca KOBİ'leri değil büyük işletmeleri de kapsıyor; KOSGEB'in finansman katkısı 10 puandan 12 puana çıkarılırken kredi üst limiti KOBİ'lerde 50 milyon TL, büyük işletmelerde ise 50 milyon TL'den 150 milyon TL'ye yükseltildi. Yeni dönem başvuruları 1 Eylül-30 Kasım 2026 arasında (31 Ekim'den uzatıldı) NACE Kısım C-İmalat kodlu işletmelerden alınacak.",
     kaynakUrl:
       "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
     konu: "Devlet Destekleri ve Teşvikler",
@@ -1242,7 +1242,7 @@ export const GELISMELER: GelismeItem[] = [
     baslik:
       "KOSGEB İstihdamı Koruma Destek Programı'nın kapsamı büyük işletmeleri de içine alacak şekilde genişletildi",
     ozet:
-      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla yürüttüğü İstihdamı Koruma Destek Programı'nın kapsamını genişletti. Düzenlemeyle büyük işletmeler de programa dahil edildi; kredi üst limiti KOBİ'lerde 50 milyon TL'ye, büyük işletmelerde 150 milyon TL'ye çıkarıldı ve KOSGEB'in karşıladığı finansman desteği 10 puandan 12 puana yükseltildi. Başvurular 1 Eylül-31 Ekim 2026 tarihleri arasında KOBİ Bilgi Sistemi üzerinden alınıyor.",
+      "KOSGEB, imalat sanayinde üretim ve istihdamın sürekliliğini desteklemek amacıyla yürüttüğü İstihdamı Koruma Destek Programı'nın kapsamını genişletti. Düzenlemeyle büyük işletmeler de programa dahil edildi; kredi üst limiti KOBİ'lerde 50 milyon TL'ye, büyük işletmelerde 150 milyon TL'ye çıkarıldı ve KOSGEB'in karşıladığı finansman desteği 10 puandan 12 puana yükseltildi. Başvurular 1 Eylül-30 Kasım 2026 tarihleri arasında (31 Ekim'den uzatıldı) KOBİ Bilgi Sistemi üzerinden alınıyor.",
     kaynakUrl:
       "https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi",
     konu: "Devlet Destekleri ve Teşvikler",
