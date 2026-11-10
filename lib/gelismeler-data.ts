@@ -631,12 +631,12 @@ export const GELISMELER: GelismeItem[] = [
     baslik:
       "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nın 2026 yılı 3. çağrısı açıldı",
     ozet:
-      "TÜBİTAK, KOBİ'lerin bir müşteri kuruluşun somut ihtiyacına yönelik geliştirdiği Ar-Ge projelerini desteklediği 1707 Sipariş Ar-Ge Destek Programı'nın 2026 yılı üçüncü ve son çağrısını 1 Eylül 2026'da açtı. Başvurular 13 Kasım 2026'ya kadar TEYDEB Proje Değerlendirme İzleme Sistemi (PRODİS) üzerinden alınacak; değerlendirmede 2026-2028 öncelikli konu başlıklarından 'Endüstride Teknolojik Sıçrama' ve 'Dijital Liderlik' alanlarına giren projelere öncelik tanınıyor.",
+      "TÜBİTAK, KOBİ'lerin bir müşteri kuruluşun somut ihtiyacına yönelik geliştirdiği Ar-Ge projelerini desteklediği 1707 Sipariş Ar-Ge Destek Programı'nın 2026 yılı üçüncü ve son çağrısını 1 Eylül 2026'da açtı. Başvurular 27 Kasım 2026'ya kadar (13 Kasım'dan 9 Kasım 2026 duyurusuyla uzatıldı) TEYDEB Proje Değerlendirme İzleme Sistemi (PRODİS) üzerinden alınacak; değerlendirmede 2026-2028 öncelikli konu başlıklarından 'Endüstride Teknolojik Sıçrama' ve 'Dijital Liderlik' alanlarına giren projelere öncelik tanınıyor.",
     kaynakUrl:
       "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi",
     konu: "Devlet Destekleri ve Teşvikler",
     expertNote:
-      "Koray'ın notu: 1707'de destek, projeyi sipariş eden müşteri kuruluşla KOBİ tedarikçinin ortak finansmanına dayanıyor; somut bir çözüm ihtiyacı üzerinde anlaştığı bir müşteri kuruluşu olan KOBİ'lere, 13 Kasım'a kadar süren bu pencerede başvuru öncesi ortaklığı yazılı hale getirmelerini öneririm.",
+      "Koray'ın notu: 1707'de destek, projeyi sipariş eden müşteri kuruluşla KOBİ tedarikçinin ortak finansmanına dayanıyor; somut bir çözüm ihtiyacı üzerinde anlaştığı bir müşteri kuruluşu olan KOBİ'lere, 27 Kasım'a kadar uzayan bu pencerede başvuru öncesi ortaklığı yazılı hale getirmelerini öneririm.",
   },
   {
     kurum: "PwC",

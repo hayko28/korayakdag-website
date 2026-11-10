@@ -629,7 +629,7 @@
     {
       "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (2026 yılı 2. Çağrı)",
       "durum": "acik",
-      "sonTarih": "11 Kasım 2026, 23:59 (kuruluş bazlı ön kayıt son tarihi 9 Kasım 2026)",
+      "sonTarih": "25 Kasım 2026 (kuruluş bazlı ön kayıt son tarihi 23 Kasım 2026; süre 9 Kasım 2026 duyurusuyla uzatıldı, önceki tarih 11 Kasım)",
       "ozet": "Ar-Ge'ye yeni başlayan KOBİ'lere %75 hibe ile en fazla 3,5 milyon TL bütçeli, 18 aya kadar proje desteği sağlar.",
       "amac": "KOBİ ölçeğindeki kuruluşların teknoloji ve yenilik kapasitesini, rekabet gücünü, sistematik proje yürütme becerisini ve Ar-Ge kültürünü geliştirmek; ulusal ve uluslararası programlara daha etkin katılımı sağlamak.",
       "kimler": [
@@ -677,7 +677,7 @@
         "https://eteydeb.tubitak.gov.tr"
       ],
       "dogrulama": "2026-10-14: program ve çağrı sayfalarından teyit edildi. 3,5 milyon TL ve %75 değerleri program sayfasında 'çağrıda aksi belirtilmedikçe' notuyla yer alıyor; 2026/2 çağrı dokümanı (PDF) incelenmedi. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
-      "kapak": "11 Kasım 2026",
+      "kapak": "25 Kasım 2026",
       "ornekler": [
         "İlk kez TÜBİTAK desteği başvurusu yapan, KOBİ ölçeğinde bir sermaye şirketi olan gıda makineleri üreticisi, mevcut dilimleme makinesinin enerji tüketimini düşüren yeni bir tahrik ve kontrol sistemini geliştiriyor. Personel, malzeme ve sarf, ölçüm cihazı ve yazılım alımı, ayrıca AGY101 doküman hazırlatma gideri (kapsamda) destek kapsamındadır. (Karşıladığı şartlar: KOBİ ölçeği, mevcut ürünün iyileştirilmesi ve maliyet düşürücü teknoloji, bütçe 3.500.000 TL altında, süre 18 ayı aşmıyor, %75 destek oranı, firmanın ilk 5 projesi içinde.)",
         "Küçük ölçekli bir mobil yazılım firması, ilk Ar-Ge projesi olarak perakende zincirleri için talep tahmin yapan özgün bir yazılım motoru geliştiriyor. Personel giderleri, yurt içi danışmanlık, bulut ve yazılım lisansı ile üniversiteye yaptırılan veri modelleme hizmeti destek kapsamındadır. (Karşıladığı şartlar: yeni ürün geliştirme, Ar-Ge belirsizliği, hiçbir önceki 1507 veya TEYDEB projesi sayılmaması, süre ve bütçe sınırları içinde olması.)",
@@ -698,7 +698,7 @@
     {
       "ad": "1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (2026 yılı 3. Çağrı)",
       "durum": "acik",
-      "sonTarih": "13 Kasım 2026, 23:59 (TSİ)",
+      "sonTarih": "27 Kasım 2026 (kuruluş bazlı ön kayıt son tarihi 25 Kasım 2026; süre 9 Kasım 2026 duyurusuyla uzatıldı, önceki tarih 13 Kasım)",
       "ozet": "Bir müşteri şirketin ihtiyacına yönelik Ar-Ge'yi yapan KOBİ tedarikçiye, harcamanın %40'ı oranında hibe verir (en fazla 10 milyon TL bütçe).",
       "amac": "Hızla ürüne dönüşebilecek, ticarileşme potansiyeli yüksek Ar-Ge projelerini desteklemek; KOBİ'ler ve müşteri kuruluşlar arasındaki Ar-Ge işbirliğini artırmak.",
       "kimler": [
@@ -743,7 +743,7 @@
         "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi"
       ],
       "dogrulama": "2026-10-14: program ve çağrı sayfaları okundu. 2026-3 çağrısı için ayrı çağrı dokümanı incelenmedi; oranlar program sayfasından alındı. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
-      "kapak": "13 Kasım 2026",
+      "kapak": "27 Kasım 2026",
       "ornekler": [
         "Büyük ölçekli bir beyaz eşya üreticisi (Müşteri Kuruluş), kompresör sesini azaltan yeni bir akustik izolasyon bileşenine ihtiyaç duyuyor. Küçük ölçekli bir malzeme geliştirme firması (Tedarikçi Kuruluş) bileşeni geliştiriyor. Müşteri, tedarikçinin dönemsel proje giderlerinin en az %40'ını öder, TÜBİTAK kabul edilen harcamanın %40'ını tedarikçiye hibe verir, müşterinin test ve validasyon personeli en fazla 18 adam-ay kapsama girer. (Karşıladığı şartlar: müşteri ve KOBİ tedarikçi ortak başvurusu, işbirliği sözleşmesi, pazar araştırması ve fizibilite, ilişkili kişi olmama, 10 milyon TL ve 24 ay içinde.)",
         "Orta ölçekli bir otomotiv yan sanayi firması (Müşteri), hafif araç parçaları için özgün bir sensör modülüne ihtiyaç duyuyor. KOBİ ölçeğindeki bir gömülü sistem firması (Tedarikçi) donanım ve yazılımı geliştiriyor, Müşteri saha doğrulama testlerini yürütüyor. (Karşıladığı şartlar: Ar-Ge'yi tedarikçinin yürütmesi, müşterinin Ar-Ge'ye dayalı çözüm ihtiyacı, ürünün pazara sunularak ticarileştirilmesi, şehirlerarası seyahat giderlerinin kapsamda olması.)",

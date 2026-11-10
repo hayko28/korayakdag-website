@@ -122,14 +122,14 @@
       "id": "tubitak-1507-kobi-arge-baslangic-2-cagri",
       "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (2. Çağrı)",
       "kurum": "TÜBİTAK",
-      "durum": "kapali",
-      "sonBasvuruTarihi": "2025-09-29",
+      "durum": "acik",
+      "sonBasvuruTarihi": "2026-11-25",
       "kaynakUrl": "https://eteydeb.tubitak.gov.tr",
       "ilkTespitTarihi": "2026-08-21",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": true,
+      "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "2. çağrı 2025-09-29'da sona erdi (Yatırım Ofisi portal doğrulaması)"
+      "not": "2. çağrı 20 Temmuz 2026'da açıldı - son başvuru 11 Kasım 2026 iken 9 Kasım 2026 duyurusuyla 25 Kasım 2026'ya uzatıldı (ön kayıt 23 Kasım) - e-posta gönderildi"
     },
     {
       "id": "yad-turkiye-kalkinma-ve-yatirim-bankasi-program-durumuna-gore-filtrele",
@@ -2151,13 +2151,13 @@
       "ad": "1707 - Sipariş Ar-Ge Programı (2026 Yılı 3. Çağrısı)",
       "kurum": "TÜBİTAK",
       "durum": "acik",
-      "sonBasvuruTarihi": "2026-11-13",
+      "sonBasvuruTarihi": "2026-11-27",
       "kaynakUrl": "https://tubitak.gov.tr/tr/duyuru/1707-siparis-ar-ge-2026-yili-3-cagrisi-acildi",
       "ilkTespitTarihi": "2026-09-17",
       "yeniIlanBildirildi": true,
-      "ucGunKalaBildirildi": true,
+      "ucGunKalaBildirildi": false,
       "sonBildirilenTarih": null,
-      "not": "Müşteri kuruluşun gereksinimlerini karşılamak üzere KOBİ'lerin geliştirdiği çözüm önerilerinin Ar-Ge faaliyetine dönüştürülüp ticarileştirilmesini destekliyor (TÜBİTAK + müşteri kuruluş ortak finansmanı). Başvurular PRODİS üzerinden 1 Eylül - 13 Kasım 2026 (23:59) arası alınıyor; bu dönemde sadece \"Sanayide Teknolojik Sıçrama\" ve \"Dijital Liderlik\" konu başlıklı projeler değerlendirmede öncelikli."
+      "not": "Müşteri kuruluşun gereksinimlerini karşılamak üzere KOBİ'lerin geliştirdiği çözüm önerilerinin Ar-Ge faaliyetine dönüştürülüp ticarileştirilmesini destekliyor (TÜBİTAK + müşteri kuruluş ortak finansmanı). Başvurular PRODİS üzerinden 1 Eylül - 27 Kasım 2026 arası alınıyor (13 Kasım'dan 9 Kasım 2026 duyurusuyla uzatıldı; ön kayıt 25 Kasım); bu dönemde sadece \"Sanayide Teknolojik Sıçrama\" ve \"Dijital Liderlik\" konu başlıklı projeler değerlendirmede öncelikli."
     },
     {
       "id": "tubitak-1812-bigg-yatirim-2026-2",

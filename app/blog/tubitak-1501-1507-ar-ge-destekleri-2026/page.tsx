@@ -35,7 +35,7 @@ export default function BlogPage() {
       readTime="12 Dakika"
       slug="tubitak-1501-1507-ar-ge-destekleri-2026"
       programDurumu="acik"
-      sonBasvuruTarihi="1507: 11 Kasım 2026"
+      sonBasvuruTarihi="1507: 25 Kasım 2026"
     >
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
@@ -45,7 +45,7 @@ export default function BlogPage() {
             TÜBİTAK 1501 Sanayi Ar-Ge Destek Programı&apos;nın 2026 yılı 2. çağrısı
             26 Ekim 2026 saat 23:59 itibarıyla kapandı. 1507 KOBİ Ar-Ge Başlangıç
             Destek Programı&apos;nın 2. çağrısı ise hâlâ açık ve son başvuru tarihi
-            11 Kasım 2026. Aşağıdaki tabloda güncel çağrı takvimini bulabilirsiniz.
+            25 Kasım 2026 (9 Kasım 2026 duyurusuyla 11 Kasım&apos;dan uzatıldı). Aşağıdaki tabloda güncel çağrı takvimini bulabilirsiniz.
           </p>
           <div className="overflow-x-auto rounded-xl border bg-white">
             <table className="w-full text-left text-sm md:text-base">
@@ -578,9 +578,9 @@ export default function BlogPage() {
               1501 Programı&apos;nın son başvuru tarihi olan{" "}
               <strong>26 Ekim 2026</strong> itibarıyla bu çağrı kapanmıştır.
               1507 Programı&apos;nda ise son başvuru tarihi{" "}
-              <strong>11 Kasım 2026</strong> olup başvurular devam etmektedir.
+              <strong>25 Kasım 2026</strong> olup (9 Kasım 2026 duyurusuyla 11 Kasım&apos;dan uzatılmıştır) başvurular devam etmektedir.
               Kuruluş bazlı ön kayıt zorunlu olduğundan ve 1507 için ön kayıt
-              son tarihinin (9 Kasım) çağrı kapanışından önce geldiğinden,
+              son tarihinin (23 Kasım) çağrı kapanışından önce geldiğinden,
               PRODİS üzerindeki ön kayıt işleminin erken tamamlanması gerekir.
               Proje hazırlık süreci en az 1-2 ay sürdüğünden teknik kurgunun
               vakit kaybetmeden başlatılması önerilir. 1501&apos;in 3. çağrısı

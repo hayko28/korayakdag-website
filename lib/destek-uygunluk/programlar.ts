@@ -563,7 +563,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   const uyarilar = [
     "Ar-Ge/yenilik niteliği hakem ve Grup Yürütme Kurulu (GYK) tarafından proje bazında değerlendirilir; bu, başvuru sonrası ayrı bir aşamadır ve bu araç tarafından öngörülemez.",
     "Güncel çağrıda (2026/2) azami proje bütçesi 3.500.000 TL, destek oranı %75 olarak görülüyor (dönemsel olarak değişebilir).",
-    "Başvurudan önce PRODİS üzerinden kuruluş bazlı ön kayıt yapılmalıdır (2026-2 çağrısı için ön kayıt son tarihi 9 Kasım 2026); çağrıdaki kuruluş başına proje önerisi sınırı başvuru öncesi teyit edilmelidir.",
+    "Başvurudan önce PRODİS üzerinden kuruluş bazlı ön kayıt yapılmalıdır (2026-2 çağrısı için ön kayıt son tarihi 23 Kasım 2026; süre 9 Kasım 2026'da uzatıldı); çağrıdaki kuruluş başına proje önerisi sınırı başvuru öncesi teyit edilmelidir.",
     "Vergi ve SGK prim borcu başvuruyu engellemez, ancak destek ödemelerinin (transfer) yapılabilmesi için borcun bulunmaması gerekir.",
   ];
 
@@ -574,7 +574,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
       gerekceler,
       [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
       undefined,
-      "11 Kasım 2026 (2026-2 çağrısı; ön kayıt 9 Kasım)"
+      "25 Kasım 2026 (2026-2 çağrısı, uzatıldı; ön kayıt 23 Kasım)"
     );
   }
 
@@ -584,7 +584,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     gerekceler,
     uyarilar,
     undefined,
-    "11 Kasım 2026 (2026-2 çağrısı; ön kayıt 9 Kasım)"
+    "25 Kasım 2026 (2026-2 çağrısı, uzatıldı; ön kayıt 23 Kasım)"
   );
 }
 
@@ -1672,7 +1672,7 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     "TÜBİTAK kabul edilen giderin %40'ını hibe olarak karşılar, Müşteri Kuruluş en az %40'ını finanse eder (kalan kısım KOBİ'ye ait olabilir) — bu, 1501/1507'de olmayan üçlü bir finansman modelidir.",
     "Azami proje bütçesi 10.000.000 TL, azami süre 24 aydır.",
     "Başvuruda Müşteri Kuruluş ile yapılan İşbirliği Sözleşmesi (taslak), Ekonomik Fizibilite Raporu ve Taahhütname hazırlanmalıdır; Müşteri Kuruluş ortak başvuru sahibi olarak PRODİS'te yer alır.",
-    "2026-3 çağrısında (1 Eylül-13 Kasım 2026) TÜBİTAK'ın 2026-2028 öncelikli konularından 'Endüstride Teknolojik Sıçrama' ve 'Dijital Liderlik' konularındaki projeler değerlendirmede önceliklidir; konu kapsamı başvuru öncesi çağrı duyurusundan teyit edilmelidir.",
+    "2026-3 çağrısında (1 Eylül-27 Kasım 2026) TÜBİTAK'ın 2026-2028 öncelikli konularından 'Endüstride Teknolojik Sıçrama' ve 'Dijital Liderlik' konularındaki projeler değerlendirmede önceliklidir; konu kapsamı başvuru öncesi çağrı duyurusundan teyit edilmelidir.",
     "Ar-Ge/yenilik niteliği hakem ve Grup Yürütme Kurulu (GYK) tarafından proje bazında değerlendirilir; bu, başvuru sonrası ayrı bir aşamadır.",
   ];
 
@@ -1683,7 +1683,7 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
       gerekceler,
       [...uyarilar7, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
       undefined,
-      "13 Kasım 2026 (2026-3 çağrısı)"
+      "27 Kasım 2026 (2026-3 çağrısı, uzatıldı; ön kayıt 25 Kasım)"
     );
   }
 
@@ -1693,7 +1693,7 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     gerekceler,
     uyarilar7,
     undefined,
-    "13 Kasım 2026 (2026-3 çağrısı)"
+    "27 Kasım 2026 (2026-3 çağrısı, uzatıldı; ön kayıt 25 Kasım)"
   );
 }
 

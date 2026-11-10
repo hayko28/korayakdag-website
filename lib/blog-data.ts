@@ -561,7 +561,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1707-siparis-arge-destek-programi-2026",
     title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?",
-    excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle rehber (ön kayıt son tarihi 11 Kasım).",
+    excerpt: "Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 27 Kasım 2026 başvuru takvimiyle rehber (ön kayıt son tarihi 25 Kasım).",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
     readTime: "13 Dakika",
@@ -948,7 +948,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "tubitak-1501-1507-ar-ge-destekleri-2026",
     title: "TÜBİTAK 1501 ve 1507 Ar-Ge Destekleri 2026",
-    excerpt: "2026 yılı 2. çağrısı 20 Temmuz'da açıldı: 1501 için son başvuru 26 Ekim (ön kayıt 22 Ekim), 1507 için 11 Kasım 2026 (ön kayıt 9 Kasım). Bu dönem yalnızca KOBİ'ler başvurabiliyor, kuruluş başına en fazla 2 öneri sınırı var. Başvuru şartları, destek oranları (1501'de 20 milyon TL katkı tavanı), desteklenen giderler ve çağrı takvimiyle rehber.",
+    excerpt: "2026 yılı 2. çağrısı 20 Temmuz'da açıldı: 1501 için son başvuru 26 Ekim (ön kayıt 22 Ekim), 1507 için 25 Kasım 2026 (ön kayıt 23 Kasım, süre uzatıldı). Bu dönem yalnızca KOBİ'ler başvurabiliyor, kuruluş başına en fazla 2 öneri sınırı var. Başvuru şartları, destek oranları (1501'de 20 milyon TL katkı tavanı), desteklenen giderler ve çağrı takvimiyle rehber.",
     category: "TÜBİTAK • TEYDEB • 2026",
     date: "2026",
     readTime: "12 Dakika",

@@ -20,7 +20,7 @@ Kaynak: https://tubitak.gov.tr/en/funds/industrial/national-support-programs/170
 - Ar-Ge/teknolojik belirsizlik tanımı 1501/1507 ile ortak çerçeveye (TEYDEB Uygulama
   Esasları) dayanıyor — `argeEkipRetSinyaliVarMi` mantığı burada da geçerli.
 - Değerlendirme klasik TEYDEB hakem/panel + GYK onayı sürecine tabi.
-- 2026'da 3 dönemsel çağrı var; 2026-3 (1 Eylül-13 Kasım 2026) aktif.
+- 2026'da 3 dönemsel çağrı var; 2026-3 (1 Eylül-27 Kasım 2026, 9 Kasım 2026'da 13 Kasım'dan uzatıldı) aktif.
 
 ## Kalan açık nokta
 

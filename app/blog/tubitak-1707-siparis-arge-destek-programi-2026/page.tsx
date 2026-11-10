@@ -4,7 +4,7 @@ import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
   title: "TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı | Koray Akdağ",
-  description: "TÜBİTAK 1707 Sipariş Ar-Ge'de Müşteri Kuruluş - Tedarikçi KOBİ ortaklığı, 10 milyon TL bütçe üst sınırı, %40 hibe oranı ve 13 Kasım 2026 son başvuru tarihiyle güncel rehber.",
+  description: "TÜBİTAK 1707 Sipariş Ar-Ge'de Müşteri Kuruluş - Tedarikçi KOBİ ortaklığı, 10 milyon TL bütçe üst sınırı, %40 hibe oranı ve 27 Kasım 2026 son başvuru tarihiyle güncel rehber.",
   keywords: [
     "TÜBİTAK 1707",
     "Sipariş Ar-Ge Destek Programı",
@@ -26,7 +26,7 @@ export default function Tubitak1707Page() {
   return (
     <BlogLayout
       title="TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı 2026-3 Çağrısı: Kimler Başvurabilir, Destek Oranı Nedir?"
-      description="Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 13 Kasım 2026 başvuru takvimiyle güncel rehber."
+      description="Büyük ölçekli veya KOBİ bir Müşteri Kuruluş ile Tedarikçi KOBİ'nin ortak başvurduğu TÜBİTAK 1707 Sipariş Ar-Ge Destek Programı'nda 10 milyon TL bütçe üst sınırı, %40 hibe oranı, desteklenen giderler ve 1 Eylül - 27 Kasım 2026 başvuru takvimiyle güncel rehber."
       category="TÜBİTAK • TEYDEB • 2026"
       date="2026"
       readTime="13 Dakika"
@@ -37,7 +37,7 @@ export default function Tubitak1707Page() {
       {/* GİRİŞ / UYARI KUTUSU */}
       <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
         <h2 className="mb-4 text-2xl font-bold text-[#071A2F]">
-          🔴 2026-3 Çağrısı 1 Eylül&apos;de Açıldı, Son Başvuru 13 Kasım 2026
+          🔴 2026-3 Çağrısı 1 Eylül&apos;de Açıldı, Son Başvuru 27 Kasım 2026 (Süre Uzatıldı)
         </h2>
         <p className="leading-8 text-gray-700">
           TÜBİTAK, 2026 yılı için planladığı üç dönemlik{" "}
@@ -45,7 +45,7 @@ export default function Tubitak1707Page() {
           Çağrısı</strong>&apos;nın üçüncü ve bu yılki son dönemini{" "}
           <strong>1 Eylül 2026</strong> tarihinde başvuruya açtı. Proje
           önerileri, TEYDEB Proje Değerlendirme İzleme Sistemi (PRODİS)
-          üzerinden <strong>13 Kasım 2026 saat 23:59&apos;a</strong> kadar
+          üzerinden <strong>27 Kasım 2026&apos;ya</strong> kadar (9 Kasım 2026 duyurusuyla 13 Kasım&apos;dan uzatıldı)
           gönderilebiliyor. Programın en ayırt edici özelliği, başvurunun tek
           bir şirket tarafından değil, bir ihtiyaç sahibi Müşteri Kuruluş ile
           bu ihtiyacı Ar-Ge yoluyla karşılayacak bir Tedarikçi KOBİ&apos;nin
@@ -396,11 +396,11 @@ export default function Tubitak1707Page() {
               </tr>
               <tr className="border-b">
                 <td className="p-4 font-semibold">Kuruluş Bazlı Ön Kayıt Son Tarihi</td>
-                <td className="p-4">11 Kasım 2026</td>
+                <td className="p-4">25 Kasım 2026</td>
               </tr>
               <tr>
                 <td className="p-4 font-semibold text-red-600">Son Başvuru (Çağrı Kapanışı)</td>
-                <td className="p-4 font-semibold text-red-600">13 Kasım 2026, 23:59 (TSİ)</td>
+                <td className="p-4 font-semibold text-red-600">27 Kasım 2026</td>
               </tr>
             </tbody>
           </table>
@@ -586,7 +586,7 @@ export default function Tubitak1707Page() {
           <p className="leading-8 text-gray-700">
             Müşteri Kuruluş - Tedarikçi KOBİ işbirliğini doğru kurgulamak,
             Ekonomik Fizibilite Raporu&apos;nu ve İşbirliği Sözleşmesi&apos;ni
-            eksiksiz hazırlamak, 13 Kasım 2026 son başvuru tarihine kadar
+            eksiksiz hazırlamak, 27 Kasım 2026 son başvuru tarihine kadar
             PRODİS sürecini yönetmek projenizin desteklenme olasılığını
             doğrudan etkiler.{" "}
             <Link href="/#contact" className="text-orange-600 underline">
@@ -612,7 +612,7 @@ export default function Tubitak1707Page() {
           ilişkisine dayanan Ar-Ge projeleri için önemli bir fırsat sunuyor.
         </p>
         <p className="text-lg leading-9 text-gray-700">
-          13 Kasım 2026 son başvuru tarihine kadar kalan süre içinde uygun
+          27 Kasım 2026 son başvuru tarihine kadar kalan süre içinde uygun
           bir Müşteri Kuruluş veya Tedarikçi KOBİ ortağı belirleme, kuruluş
           bazlı ön kayıt işlemlerini tamamlama ve Ekonomik Fizibilite
           Raporu&apos;nu hazırlama adımlarına vakit kaybetmeden başlanması
