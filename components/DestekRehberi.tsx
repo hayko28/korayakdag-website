@@ -40,7 +40,7 @@ const kar = [
   ["Kimlere uygun?", "Ar-Ge ekibi kalabalık orta ve büyük şirketler.", "Ar-Ge, yazılım veya tasarım yapan her ölçekte şirket.", "Yeni kurulan veya kurulacak teknoloji girişimleri."],
   ["Asgari şart", "15 tam zamanlı Ar-Ge personeli (bazı sektörlerde 30). Ar-Ge alanı ayrı olmalı.", "Personel eşiği yok. Faaliyet Ar-Ge, yazılım veya tasarım olmalı.", "Yaş ve kuruluş şartı yok. Teknoloji veya yenilik odaklı fikir yeterli."],
   ["Kim onaylar?", "Sanayi ve Teknoloji Bakanlığı (belge ve yerinde inceleme).", "Teknoparkın yönetici şirketi (proje değerlendirmesi).", "Seçilen TEKMER'in kendi kurulu."],
-  ["Başlıca avantajlar", "Ar-Ge harcamalarının %100'ü kurum kazancından düşülür, gümrük vergisi istisnası, damga vergisi istisnası, personel gelir vergisi stopajı desteği, SGK işveren hissesinin %50'si, desteklenen program alanlarında lisans ve üzeri Ar-Ge personeli için 2 yıl brüt asgari ücret desteği (Ar-Ge personelinin %10'u sınırıyla).", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
+  ["Başlıca avantajlar", "%100 vergi indirimi: Merkezde yapılan harcamaların tamamını kurumlar vergisi matrahınızdan düşerek daha az vergi ödersiniz.\nGümrük vergisi: Projeleriniz kapsamında yurt dışından getireceğiniz ürün, makine veya yazılımlar için gümrük vergisi ödemekten muaf tutulursunuz.\nDamga vergisi: Merkezle ilgili düzenlenen kâğıtlar ve resmî işlemler için damga vergisi ödemezsiniz.\nMaaşlarda vergi indirimi: Personelinizin maaşı üzerinden kesilen gelir vergisinin büyük bir kısmı alınmaz, bu tutar işletmenize kalır.\nSGK işveren payı desteği: Çalışanlarınız için ödediğiniz SGK işveren hissesinin yarısını (%50) devlet karşılar.\nDesteklenecek program alanları istihdam desteği: Desteklenecek program alanlarında en az lisans derecesine sahip Ar-Ge personeli istihdam eden Ar-Ge merkezlerine, her personel için brüt asgari ücret tutarı 2 yıl süreyle Sanayi ve Teknoloji Bakanlığınca karşılanır (merkezdeki Ar-Ge personelinin %10'u sınırıyla).", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
   ["Başvuru", "Bakanlığa belge ile başvuru.", "Yönetici şirkete proje bazlı başvuru.", "Doğrudan KOSGEB'e değil, seçilen TEKMER'e. Kabul takvimi kontenjana bağlı."],
   ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge Merkezi ile birlikte kullanılamaz.", "Diğer ikisini dışlamaz, tamamlayıcı olarak kullanılabilir."],
 ];
@@ -692,7 +692,7 @@ export default function DestekRehberi() {
                 {kar.map((r, i) => (
                   <tr key={i}>
                     {r.map((c, j) => (
-                      <td key={j}>{c}</td>
+                      <td key={j}>{c.split("\n").map((l, k) => <div key={k} style={k ? { marginTop: 6 } : undefined}>{l}</div>)}</td>
                     ))}
                   </tr>
                 ))}
