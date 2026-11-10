@@ -1,5 +1,5 @@
 {
-  "sonKontrol": "2026-11-05",
+  "sonKontrol": "2026-11-10",
   "kosgeb": [
     {
       "ad": "Girişimci Destek Programı (İş Kurma Desteği, İş Geliştirme Desteği, İş Geliştirme Faiz/Kâr Payı Desteği)",
@@ -890,9 +890,9 @@
     },
     {
       "ad": "1601 - Yenilik ve Girişimcilik Alanlarında Kapasite Artırılması (Küresel Temiz Teknolojiler Girişimcilik Programı Teknoloji Ölçekleme ve Ticarileştirme Desteği, 2026-1)",
-      "durum": "acik",
-      "sonTarih": "Teyit edilemedi (sayfada belirtilmemiş, çağrı metnine veya 1601@tubitak.gov.tr'ye bakılmalı)",
-      "ozet": "Çağrıya göre değişen kapsamla sermaye şirketlerinin de başvurabildiği, %100'e kadar hibe verebilen çatı program; açık çağrı temiz teknoloji ölçekleme odaklıdır.",
+      "durum": "kapali",
+      "sonTarih": "8 Mayıs 2026, 23:59 tarihinde kapandı (kuruluş bazlı ön kayıt 4 Mayıs 2026); uzatma duyurusu yok",
+      "ozet": "Çağrıya göre değişen kapsamla sermaye şirketlerinin de başvurabildiği, %100'e kadar hibe verebilen çatı program; 2026-1 çağrısı (temiz teknoloji ölçekleme) 8 Mayıs 2026'da kapandı.",
       "amac": "Girişimcilik ve yenilik alanlarında kapasite artırmak; özel sektör Ar-Ge yatırımlarından verimli sonuç alınmasını, üniversite-sanayi işbirliğini ve teknolojik girişimlerin büyümesini desteklemek.",
       "kimler": [
         "Sermaye şirketleri, yükseköğretim kurumları, kamu araştırma kuruluşları, odalar, OSB'ler ve ihracatçı birlikleri (her çağrı kısıtlayabilir)"
@@ -918,8 +918,8 @@
       "kaynaklar": [
         "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
       ],
-      "dogrulama": "2026-10-14: yalnızca program ana sayfası okundu, 2026-1 çağrı dokümanı incelenmedi.",
-      "kapak": "Son tarih teyit edilemedi"
+      "dogrulama": "2026-11-10: tubitak.gov.tr duyurusundan (7 Nisan 2026 açılış) son başvuru 8 Mayıs 2026 doğrulandı, uzatma yok.",
+      "kapak": "8 Mayıs 2026'da kapandı"
     },
     {
       "ad": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
