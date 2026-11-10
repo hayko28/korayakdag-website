@@ -267,6 +267,34 @@ export default function ArgeMerkeziPage() {
           unsurlarını özetlemektedir.
         </p>
 
+        <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">Destek Kalemleri</h3>
+        <div className="mb-10 overflow-x-auto rounded-2xl border">
+          <table className="w-full min-w-[750px]">
+            <thead className="bg-[#071A2F] text-white">
+              <tr>
+                <th className="p-5 text-left">Destek kalemi</th>
+                <th className="p-5 text-left">Kapsam</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["01", "%100 vergi indirimi", "Merkezde yapılan harcamaların tamamını kurumlar vergisi matrahınızdan düşerek daha az vergi ödersiniz."],
+                ["02", "Gümrük vergisi", "Projeleriniz kapsamında yurt dışından getireceğiniz ürün, makine veya yazılımlar için gümrük vergisi ödemekten muaf tutulursunuz."],
+                ["03", "Damga vergisi", "Merkezle ilgili düzenlenen kâğıtlar ve resmî işlemler için damga vergisi ödemezsiniz."],
+                ["04", "Maaşlarda vergi indirimi", "Personelinizin maaşı üzerinden kesilen gelir vergisinin büyük bir kısmı alınmaz, bu tutar işletmenize kalır."],
+                ["05", "SGK işveren payı desteği", "Çalışanlarınız için ödediğiniz SGK işveren hissesinin yarısını (%50) devlet karşılar."],
+                ["06", "Desteklenecek program alanları istihdam desteği", "Desteklenecek program alanlarında en az lisans derecesine sahip Ar-Ge personeli istihdam eden Ar-Ge merkezlerine, her personel için brüt asgari ücret tutarı 2 yıl süreyle Sanayi ve Teknoloji Bakanlığınca karşılanır (merkezdeki Ar-Ge personelinin %10'u sınırıyla)."],
+              ].map(([no, baslik, kapsam]) => (
+                <tr key={no} className="border-b bg-white align-top">
+                  <td className="p-5 font-semibold"><span className="mr-3 text-orange-500">{no}</span>{baslik}</td>
+                  <td className="p-5">{kapsam}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">Teşvik Unsurlarının Ayrıntılı Özeti</h3>
         <div className="overflow-x-auto rounded-2xl border">
           <table className="w-full min-w-[750px]">
             <thead className="bg-[#071A2F] text-white">
