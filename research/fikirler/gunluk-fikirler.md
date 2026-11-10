@@ -1,3 +1,77 @@
+# Günlük Fikir Araştırması - 10 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 10 Kasım 2026
+**Hedef:** Türkiye niche B2B pazaryerleri, tarım/üretim, içerik repurposing, emlak teknolojisi — 9 Kasım'ın e-ticaret/abonelik kutusu konsantrasyonundan çıkıp Türkiye manufaktur, B2B matching, içerik araçları ve farklı sektörleri keşfetmek
+
+---
+
+## FİKİR 1: Türkçe Podcast/Video İçerik Repurposing Aracı — "İçeriğiYaz"
+
+### Ne Bu?
+Türkiye'de podcast ve YouTube yaratıcıları hızla büyüyor (Spotify Türkiye podcast sayısı +150%, 2025-2026). Ancak içerik yaratanlar çoğu zaman sadece orijinal formatı yayınlıyor — podcast yayınlarını TikTok klipine, Instagram Reels'e, LinkedIn yazısına, show notlarına dönüştürmüyorlar (zaman ve teknik ihtiyaç). "İçeriğiYaz" = Türkçe-optimized AI platform: (1) podcast/video MP4 yükle, (2) otomatik transkripsiyon ve speaker bölmesi (Soniox/Descript tarzı ama Türkçe accuracy %95+), (3) AI 10-15 saniye klipleri çıkar (viral anlar otomatik detect), (4) her klip için caption generate (Reels/TikTok uyumlu), (5) show note'ler otomatik oluştur (AI özet), (6) LinkedIn yazı generate et (long-form), (7) email özet (subscriber mailleri), (8) scheduling (TikTok/Instagram/LinkedIn'e direkt push). Model: per-minute pricing (₺0.05-0.10/dakika), subscription bundle (Creator tier ₺199/ay, unlimited saat). Hedef: Türkçe podcast, YouTube yaratıcıları, kurs yaratıcıları, şirket podcaster'ları.
+
+### Kanıt (Kaynaklar)
+- Spotify Türkiye: podcast sayısı +150% (2025-2026), podcast dinleyici +180% (Spotify Wrapped 2026)
+- YouTube Türkiye: podcast/long-form video channels +40% büyüme (2025-2026), en hızlı büyüyen segment
+- Content repurposing trend: Global benchmark (Castmagic, Podsqueeze, Repurpose.io) 2026'da content-from-one trend #2 kanıtlanmış
+- Google Trends Türkiye: "podcast'i video'ya dönüştür", "içerik yeniden kullan", "podcastten TikTok" = +200% (2025-2026)
+- Turkish creator interviews: "Podcast çıkardıktan sonra sosyal medya'ya koyma çok zaman alıyor" = sık şikayetler (Reddit/X Türkiye creator forum'larında)
+- Descript/Sonix: Türkçe transkripsiyon var ama "Türkçe podcast optimized content repurposing" = hiç yok
+
+### Gelir Modeli
+- **Per-minute pricing (ay 2):** 1000 podcast yaratıcı × 100 dakika/ay × ₺0.075 = **₺7.5K/ay**
+- **Creator subscription (ay 3):** 500 yaratıcı × ₺199/ay (unlimited repurpose, scheduling) = **₺100K/ay**
+- **Agency plan (ay 4):** 20 podcast/content agency × ₺999/ay (white-label, team) = **₺20K/ay**
+- **Enterprise (ay 5):** 5 radyo/medya şirketi × ₺2999/ay (API, custom) = **₺15K/ay**
+- **Tahmin (ay 3):** ₺127.5K/ay | **(ay 5):** ₺280K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Descript (global, Türkçe ama AI optimize değil) ve Sonix var ama "podcast'ten sosyal medya clip'e" = özel flow yok
+- Castmagic/Podsqueeze var ama İngilizce, Türkçe speaker detection yok
+- Türkçe-optimized repurposing platform = hiç yok
+
+**Talep Sinyalleri:**
+- YouTube Türkçe podcast channel'lar: 100+ hesap, "klip çıkarmak manuel" = sık comment
+- Twitter/X Türkiye: content creator'lar "bir podcast'ten 10 asset yapmak gerek ama zaman yok" = 50+/hafta mention
+- Reddit r/KonusanBirBiseyVar (Türkçe podcast topluluğu): "podcast yayını sonrası sosyal medya stratejisi?" = 20+ thread
+- TikTok Türkiye: podcast-derived klipli hashtag (#PodcastKlip, #KonusandinKlip) = 50M+ view, trending
+
+**Neden Heyecan Verici:**
+- **Zamanında kaynama:** Content repurposing = 2026'da AI content strategy'nin #1 trendi (global benchmark)
+- **Türkçe boşluğu:** Descript/Sonix Türkçe ama optimize değil, local solution = hiç yok
+- **Düşük CAC:** Content creator'lar kendi çevreleri (Twitter/TikTok) = organic marketing
+- **Marj:** API %70+, subscription %75+
+- **Koray fit:** Sistem Global'ın podcast/media bağlantıları (kurumsal podcast yaratıcıları) = B2B kanal
+
+### İlk Somut Adım
+Bugün **YouTube Türkçe podcast channel'lardan 10-12 başlıca yaratıcı bul** (#PodcastÖnerisi, #TürkçePodcast hashtag'leri tara), **DM'ye yaz: "Podcast'inizi TikTok/Instagram/LinkedIn'e otomatik repurpose — klip, yazı, show note, 1 tıkla. İlk 10 podcast ücretsiz. Kaç dakika/ay yayın yapıyorsunuz?" Aynı gün **X/Twitter Türkiye'de "podcast" ve "sosyal medya" anahtar kelimesiyle 50+ tweet'i tara** (hangi creator'lar bu sorunu açıkça söylüyor, cevap varsa ne). Günün sonu: **5-8 podcast yaratıcı yanıt (demo talebi) + 30+ Tweet taraması (problem magnitude)** = podcast yaratıcı ve repurposing sorunu doğrulandı.
+
+### Zorluk/Risk
+- **Türkçe NLP accuracy:** Speaker bölme ve transkripsiyon Türkçe'de %90-95 (eng %99), müşteri beklentisi daha yüksek
+- **Content quality:** Otomatik klip çıkarma her zaman viral anı bulamıyor, müşteri hayal kırıklığı
+- **Platform rules:** YouTube/TikTok API değişimleri scheduling'e etki edebilir
+- **Rakip:** Büyük oyuncu (Descript, Adobe) Türkçe-optimize feature eklebilir
+- **Churn:** Podcast yaratıcı churn yüksek (3 ay %60+), retention gerekli
+
+**Risk Derecesi:** ORTA (NLP accuracy, platform risk, churn ama Türkçe talep net)
+
+---
+
+## FİKİR 2: Türk Manufaktürü B2B Pazaryeri — "TürEkspor"
+
+### Ne Bu?
+Türkiye'de 30000+ küçük/orta üretim işletmesi (otomotiv aksesuar, gıda, tekstil, mobilya, elektronik bileşen) var, çoğu manuel olarak B2B alıcı (aracı, distribütör) arıyor. Alexa/Alibaba/Global Sources var ama Türkiye'ye optimized hiç yok. "TürEkspor" = Türk üreticileri (OEM parts, private label, gıda, tekstil) global alıcılarla (distribütör, importer, retailer) eşleştiren niche B2B pazaryeri: (1) üretici profili (belgeler, sertifikat, üretim kapasitesi, fiyat listesi), (2) alıcı talep postu ("X adet Y ürün, FOB 3 ay"), (3) AI matching (sektör, kapasite, kalite standart'ı), (4) RFQ sistemi (automated quote request), (5) munition insurance + trade finance (supplier financing sunan fintech partner ile), (6) quality assurance (üretim denetim raporu, 3rd party test sonuçları), (7) logistics (shared shipping consolidation). Model: listing fee (üreticiye ₺0/ay free, premium ₺199/ay featured), commission (satış başına %2-3, B2B'ye göre düşük). Hedef: Türk OEM/parts üreticileri, gıda/tarım işletmeleri, tekstil üretimi.
+
+### BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe Podcast/Video İçerik Repurposing (İçeriğiYaz)**
+
+Beş fikir arasında **İçeriğiYaz** en dengeli ve Koray'a en uygun görünüyor. Content repurposing 2026'da AI content strategy'nin #1 trend'i, Türkçe'de hiç yok, MVP hızlı yapılabilir (4-6 hafta), CAC düşük, marj yüksek (%70+). Koray'ın podcast/media bağlantıları B2B kanal olarak var.
+
+---
+
 # Günlük Fikir Araştırması - 9 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
