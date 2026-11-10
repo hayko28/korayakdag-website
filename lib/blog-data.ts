@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "tubitak-2244-sanayi-doktora-programi-2026",
+    title: "TÜBİTAK 2244 Sanayi Doktora Programı Nedir? Ar-Ge Merkeziniz Olmasa Bile Doktoralı Araştırmacı Yetiştirebilir misiniz?",
+    excerpt: "TÜBİTAK, 4 Kasım 2026'da 2244 Sanayi Doktora Programı'nın 2026 yılı çağrısını açtı. Programa hangi şirketler ortak olabilir, başvuruyu neden şirket değil üniversite yapar, burs/istihdam desteği tutarları ve süreler ne kadar; 22 Aralık 2026 son başvuru tarihiyle güncel rehber.",
+    category: "TÜBİTAK • SANAYİ DOKTORA PROGRAMI • 2026",
+    date: "Kasım 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "gecici-vergi-dorduncu-donem-geri-geldi-2026",
     title: "Geçici Vergide Dördüncü Dönem Geri Geldi mi? Şirketler İçin 2026 Takvim Rehberi",
     excerpt: "7566 sayılı Kanun'la (RG 19 Aralık 2025/33112) Gelir Vergisi Kanunu mükerrer 120. maddesinden 'ilk dokuz ayı için belirlenen' ibaresi çıkarıldı ve 2021'de kaldırılan dördüncü geçici vergi dönemi (Ekim-Aralık) yeniden yürürlüğe girdi. Kimler kapsamda, 2026 beyan takvimi, yıllık beyannameden farkı ve enflasyon düzeltmesi istisnasıyla güncel rehber.",
