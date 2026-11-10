@@ -2384,6 +2384,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Yıl sonu kampanya sezonuna giren e-ticaret ve perakende işletmelerine, indirim görsellerindeki üstü çizili fiyatın gerçekten kampanya öncesi son 10 günün en düşük fiyatı olup olmadığını ve sosyal medya paylaşımlarında 'reklamdır/tanıtımdır' ibaresinin yer alıp almadığını tekrar kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "19 Ekim 2026",
+    eklendiTarihi: "2026-11-10",
+    baslik:
+      "Türkiye-AB Yetkilendirilmiş Yükümlü statülerinin karşılıklı tanınması son aşamaya geldi",
+    ozet:
+      "Ticaret Bakanlığı'nın 19 Ekim 2026 tarihli duyurusuna göre, Türkiye ile Avrupa Birliği arasında Yetkilendirilmiş Yükümlü (YYS) statülerinin karşılıklı tanınmasına ilişkin teknik çalışmalar son aşamaya ulaştı. Düzenleme, YYS sahibi firmaların sertifika ve statü bilgilerinin taraf ülkelerin gümrük idareleri arasında elektronik ortamda paylaşılmasını kapsıyor; YYS sahibi firmaların bu paylaşıma onay vermesi YYS E-Başvuru Sistemi üzerinden yapılabiliyor.",
+    kaynakUrl: "https://www.alomaliye.com/2026/10/19/yysde-ab-ile-karsilikli-tanima-icin-son-asama/",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: AB'ye düzenli ihracat yapan ve YYS sertifikasına sahip firmalara, sertifika bilgilerinin paylaşımına ilişkin onayı E-Başvuru Sistemi üzerinden şimdiden vermelerini öneririm; karşılıklı tanıma yürürlüğe girdiğinde gümrük işlemlerinde hız kazanmak için bu onay bir ön koşul olacak.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "4 Kasım 2026",
+    eklendiTarihi: "2026-11-10",
+    baslik:
+      "TÜBİTAK 2244 Sanayi Doktora Programı 2026 yılı çağrısı açıldı",
+    ozet:
+      "TÜBİTAK, sanayide ihtiyaç duyulan doktoralı araştırmacı istihdamını teşvik eden 2244 Sanayi Doktora Programı'nın 2026 yılı çağrısını 4 Kasım 2026'da açtı. Başvurular TÜBİTAK Yönetim Bilgi Sistemi (TYBS) üzerinden 22 Aralık 2026 saat 17.30'a kadar alınıyor; tam zamanlı bursiyerlere aylık 35.000 TL, kısmi zamanlı bursiyerlere aylık 9.500 TL burs veriliyor ve mezuniyet sonrası özel sektör kuruluşuna en fazla 36 ay istihdam desteği sağlanıyor. Burs ve istihdam desteği dönemleri dahil proje süresi en fazla 72 ay.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/2244-sanayi-doktora-programi-2026-yili-cagrisi-acildi-0",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Üniversite ile ortak Ar-Ge yürüten veya doktoralı mühendis/araştırmacı istihdam etmeyi planlayan sanayi şirketlerine, 22 Aralık'a kadar süren bu başvuru penceresini kaçırmadan üniversite tarafındaki akademik danışmanla başvuru dosyasını birlikte hazırlamalarını öneririm; istihdam desteğinin 36 ay sürmesi bursiyerin mezuniyet sonrası şirkette kalmasını teşvik eden önemli bir unsur.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "30 Ekim 2026 (5 Kasım 2026'da, 33421 sayılı Resmî Gazete'de yayımlandı)",
+    eklendiTarihi: "2026-11-10",
+    baslik:
+      "KGK, sürdürülebilirlik denetim ekiplerinin yetkilendirilmesine ilişkin muafiyet süresini bir yıl uzattı",
+    ozet:
+      "Kamu Gözetimi Kurumu'nun (KGK) 30 Ekim 2026 tarihli Kurul Kararı, 5 Kasım 2026 tarihli ve 33421 sayılı Resmî Gazete'de yayımlanarak sürdürülebilirlik denetimlerinde ekip oluşturmaya ilişkin yetkilendirme muafiyetini bir yıl uzattı. Karara göre 1 Ocak 2028'den önce sona eren hesap dönemlerine ilişkin denetimlerde, sorumlu denetçi ile birlikte en az iki denetçinin sürdürülebilirlik alanında yetkili olması koşuluyla, ekipteki diğer üyeler için yetkilendirme şartı aranmayabiliyor.",
+    kaynakUrl:
+      "https://www.bloomberght.com/surdurulebilirlik-denetiminde-muafiyet-suresi-bir-yil-uzatildi-3793570",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: TSRS kapsamında sürdürülebilirlik raporlaması ve denetimi hazırlığı yapan şirketlere, bu ek sürenin denetim ekibi bulma baskısını hafiflettiğini ama ortadan kaldırmadığını hatırlatmak isterim; yetkili denetçi sayısının piyasada halen sınırlı olduğunu göz önünde bulundurup süreci son yıla bırakmamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
