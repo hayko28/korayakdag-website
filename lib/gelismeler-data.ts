@@ -2425,6 +2425,62 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: TSRS kapsamında sürdürülebilirlik raporlaması ve denetimi hazırlığı yapan şirketlere, bu ek sürenin denetim ekibi bulma baskısını hafiflettiğini ama ortadan kaldırmadığını hatırlatmak isterim; yetkili denetçi sayısının piyasada halen sınırlı olduğunu göz önünde bulundurup süreci son yıla bırakmamalarını öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "10 Kasım 2026",
+    eklendiTarihi: "2026-11-11",
+    baslik:
+      "Yeşil Mutabakat Eylem Planı (2026-2030) Resmî Gazete'de yayımlandı",
+    ozet:
+      "10 Kasım 2026 tarihli ve 33426 sayılı Resmî Gazete'de 2026/12 sayılı Cumhurbaşkanlığı Genelgesi ile yayımlanan Yeşil Mutabakat Eylem Planı (2026-2030), Ticaret Bakanlığı koordinasyonunda güncellendi ve Antalya'daki COP31 vesilesiyle açıklandı. Plan 11 ana başlık, 41 hedef ve 142 eylemden oluşuyor; karbon fiyatlandırması, sanayinin yeşil ve dijital dönüşümü, döngüsel ekonomi, sürdürülebilir enerji/ulaşım/tarım, yeşil finansman, iklim değişikliğine uyum ve uluslararası iş birlikleri gibi başlıkları kapsıyor. Gerekçe olarak Türkiye'nin en büyük ticaret ortağı AB'nin Avrupa Yeşil Mutabakatı ve ilgili mevzuat değişiklikleri gösteriliyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/yesil-mutabakat-eylem-plani-20262030-yayimlandi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: AB'ye ihracat yapan sanayi ve tarım firmalarına, planın karbon fiyatlandırması ve döngüsel ekonomi başlıklarını yakından takip etmelerini öneririm; AB'nin sınırda karbon düzenlemesi gibi uygulamalara uyum artık isteğe bağlı bir adım değil, ihracat sözleşmelerinin önkoşulu haline geliyor.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "22 Ekim 2026 (27 Ekim 2026'da duyuruldu)",
+    eklendiTarihi: "2026-11-11",
+    baslik:
+      "KGK, 2026 yılı sürdürülebilirlik raporlaması muafiyetlerini güncelledi; bankalar kapsam dışı istisnasını kaybetti",
+    ozet:
+      "Kamu Gözetimi Kurumu'nun 22 Ekim 2026 tarihli ve 33408 sayılı Resmî Gazete'de yayımlanan 46753 sayılı Kurul Kararı, 2026 yılı raporlama dönemine ilişkin sürdürülebilirlik raporlarının hazırlanmasında uygulanacak muafiyetleri yeniden düzenledi. Karar, Tasarruf Mevduatı Sigorta Fonu bünyesindekiler hariç bankaları daha önce tanınan istisnadan çıkararak 2026 için zorunlu raporlama kapsamına aldı. TSRS'yi ilk kez uygulayan işletmelere sürdürülebilirlik raporunu finansal rapordan daha sonra yayımlama ve iklim dışı risklere ilişkin karşılaştırmalı bilgileri 2027 raporlarına bırakma kolaylığı ise sürüyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/28/2026-yili-surdurulebilirlik-raporlamasi-muafiyetlerine-iliskin-kurul-kararlari-hakkinda-duyuru/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Daha önce istisna kapsamında olduğunu düşünen banka dışı mali kuruluşlara, kendi durumlarının bu kararla ayrıca değerlendirilmesi gerektiğini hatırlatmak isterim; TSRS raporlama takvimini yıl sonuna kadar beklemeden şimdiden netleştirmelerini öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-11",
+    baslik:
+      "KOSGEB'den sel ve taşkın felaketlerinden etkilenen mikro ve küçük işletmelere faiz/kâr payı desteği",
+    ozet:
+      "KOSGEB, sel ve taşkın felaketlerinden etkilenen mikro ve küçük ölçekli işletmelere yönelik Acil Durumlar Desteği kapsamında 1 milyon TL'ye kadar kredi imkanı sunduğunu 3 Kasım 2026'da duyurdu. Destek, bu işletmelerin kredi kullanımındaki faiz veya kâr payı yükünü hafifletmeyi amaçlıyor; başvuru koşulları ve kapsanan bölgeler için işletmelerin KOSGEB'in resmi duyurusunu incelemesi gerekiyor.",
+    kaynakUrl:
+      "https://www.kosgeb.gov.tr/site/tr/genel/detay/9505/kosgebden-sel-ve-taskin-felaketlerinden-etkilenen-kobilere-faizkr-payi-destegi",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Sel veya taşkından zarar gören işletmelere, başvurmadan önce zarar tespit tutanağı ve ilgili belgeleri eksiksiz hazırlamalarını öneririm; acil durum destekleri genellikle standart kredi başvurularından daha hızlı işliyor ama belge eksikliğine karşı daha az toleranslı.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "23 Ekim 2026 (2026 yılı ilk 9 ay verileri)",
+    eklendiTarihi: "2026-11-11",
+    baslik:
+      "TOBB verileri: 2026'nın ilk 9 ayında kurulan şirket sayısı %5,4 arttı, eylülde tasfiyeler hız kazandı",
+    ozet:
+      "TOBB'un Eylül 2026 Kurulan ve Kapanan Şirket İstatistikleri bültenine göre, 2026'nın Ocak-Eylül döneminde kurulan şirket sayısı bir önceki yılın aynı dönemine göre %5,4 artışla 85.320'ye, kurulan kooperatif sayısı ise %25,1 artışla 1.048'e çıktı; aynı dönemde kapanan şirket sayısı %1,5 azalışla 20.496'da kaldı. Eylül ayında tek başına kurulan şirket sayısı yıllık %2,6 azalışla 9.506'ya inerken, tasfiyeye giren şirket sayısı yıllık %19,6 artışla 3.696'ya yükseldi; kurulan şirketlerin %38,8'i İstanbul'da tescil edildi.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/10/23/kurulan-sirket-sayisi-9-ayda-yuzde-5-4-artti/",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Kuruluş sayısındaki artışın sürmesine karşın tasfiyeye giren şirket sayısının yıllık yaklaşık beşte bir artması, yeni kurulan şirketlerin ilk yıllarında finansal disiplin ve nakit yönetimine daha fazla önem vermesi gerektiğine işaret ediyor; büyüme hedefini sağlam bir bütçe ve değerleme çalışmasıyla desteklemelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
