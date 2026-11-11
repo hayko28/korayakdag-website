@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yesil-mutabakat-eylem-plani-2026-2030-guncellendi",
+    title: "Yeşil Mutabakat Eylem Planı 2026-2030'a Güncellendi: İhracatçı Şirketler İçin Ne Değişiyor?",
+    excerpt: "9 Kasım 2026'da imzalanan ve 10 Kasım 2026 tarihli, 33426 sayılı Resmî Gazete'de yayımlanan 2026/12 sayılı Cumhurbaşkanlığı Genelgesi ile 2021'den beri yürürlükte olan Yeşil Mutabakat Eylem Planı 2026-2030 dönemine güncellendi. Genelgede tam olarak ne değişti, Yeşil Mutabakat Çalışma Grubu kimlerden oluşuyor, detaylı eylem planı ne zaman yayımlanacak ve ihracatçı şirketler şimdiden ne yapmalı; birincil kaynaklarla güncel rehber.",
+    category: "SÜRDÜRÜLEBİLİRLİK • YEŞİL MUTABAKAT • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1766792852426-350350437f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "tubitak-2244-sanayi-doktora-programi-2026",
     title: "TÜBİTAK 2244 Sanayi Doktora Programı Nedir? Ar-Ge Merkeziniz Olmasa Bile Doktoralı Araştırmacı Yetiştirebilir misiniz?",
     excerpt: "TÜBİTAK, 4 Kasım 2026'da 2244 Sanayi Doktora Programı'nın 2026 yılı çağrısını açtı. Programa hangi şirketler ortak olabilir, başvuruyu neden şirket değil üniversite yapar, burs/istihdam desteği tutarları ve süreler ne kadar; 22 Aralık 2026 son başvuru tarihiyle güncel rehber.",
