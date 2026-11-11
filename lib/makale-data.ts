@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "cop31-destegine-kobiler-dogrudan-basvuramiyor",
+    title: "COP31 İçin Açılan 6,5 Milyon TL'lik Destek: Neden Hiçbir KOBİ Doğrudan Başvuramıyor?",
+    excerpt:
+      "KOSGEB'in Antalya'daki COP31 zirvesi için açtığı Hızlandırma Çağrısı'nda başvuru sahibi işletmenin kendisi değil, TEKMER işletici kuruluşları ve teknokent yönetici şirketleri. Girişimci için doğrudan bir başvuru yolu yok; tek seçenek, bölgesindeki kurumun kuracağı hızlandırma programına önceden görünür olmak.",
+    tag: "Devlet Destekleri",
+    date: "11 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "nefes-kredisinde-5-milyon-tl-tamamlama-hakki",
     title: "Nefes Kredisi'nde Yeni 50 Milyar TL Dilim: Daha Önce Kullananlar Limiti Tamamlayabilir mi?",
     excerpt:
