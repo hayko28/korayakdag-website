@@ -11,6 +11,15 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "asgari-kurumlar-vergisinde-zarar-eden-sirket-tuzagi",
+    title: "Bilançosu Zarar Gösteren Bir Şirket Neden Yine de Kurumlar Vergisi Ödeyebilir?",
+    excerpt:
+      "2025'ten beri yürürlükte olan asgari kurumlar vergisi, indirim ve istisnalar düşülmeden önceki kazancın en az yüzde 10'u kadar vergi ödenmesini zorunlu kılıyor. Ticari bilançosu zarar gösteren, hatta üst üste zarar eden bir şirket bile kanunen kabul edilmeyen gider kalemleri yüksekse elini cebine atmak zorunda kalabiliyor; yıl sonuna az kala bu kalemleri gözden geçirmek hâlâ mümkün.",
+    tag: "Hukuk ve Vergi",
+    date: "12 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "cop31-destegine-kobiler-dogrudan-basvuramiyor",
     title: "COP31 İçin Açılan 6,5 Milyon TL'lik Destek: Neden Hiçbir KOBİ Doğrudan Başvuramıyor?",
     excerpt:
