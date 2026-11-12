@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "vergi-borcu-aciklama-listesi-2026-kimler-kapsamda",
+    title: "Vergi Borcu Listesi 2026: Şirketiniz Aralık Ayında Açıklanacak Mükellefler Arasında mı?",
+    excerpt: "10 Kasım 2026 tarihli ve 33426 sayılı Resmî Gazete'de yayımlanan 597 sıra no'lu VUK Genel Tebliği ile her bir vergi dairesine 5 milyon TL ve üzeri borcu olan veya bu tutarda kesinleşmiş vergi/cezası bulunan mükellefler, 1-30 Aralık 2026 arasında kamuya açıklanacak. I-A/I-B liste ayrımı, hariç tutulan yapılandırma borçları, ilan takvimi ve şirketlerin şimdi yapabilecekleriyle güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • VERGİ BORCU İLANI • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1641477176034-1a3e10c343a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yesil-mutabakat-eylem-plani-2026-2030-guncellendi",
     title: "Yeşil Mutabakat Eylem Planı 2026-2030'a Güncellendi: İhracatçı Şirketler İçin Ne Değişiyor?",
     excerpt: "9 Kasım 2026'da imzalanan ve 10 Kasım 2026 tarihli, 33426 sayılı Resmî Gazete'de yayımlanan 2026/12 sayılı Cumhurbaşkanlığı Genelgesi ile 2021'den beri yürürlükte olan Yeşil Mutabakat Eylem Planı 2026-2030 dönemine güncellendi. Genelgede tam olarak ne değişti, Yeşil Mutabakat Çalışma Grubu kimlerden oluşuyor, detaylı eylem planı ne zaman yayımlanacak ve ihracatçı şirketler şimdiden ne yapmalı; birincil kaynaklarla güncel rehber.",
