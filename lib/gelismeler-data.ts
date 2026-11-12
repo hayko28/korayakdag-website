@@ -2481,6 +2481,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Kuruluş sayısındaki artışın sürmesine karşın tasfiyeye giren şirket sayısının yıllık yaklaşık beşte bir artması, yeni kurulan şirketlerin ilk yıllarında finansal disiplin ve nakit yönetimine daha fazla önem vermesi gerektiğine işaret ediyor; büyüme hedefini sağlam bir bütçe ve değerleme çalışmasıyla desteklemelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "28 Ekim 2026",
+    eklendiTarihi: "2026-11-12",
+    baslik:
+      "Ticaret Bakanlığı, Kasım indirim kampanyalarını yakın takibe aldı: ihlallerde ceza 39,9 milyon TL'ye kadar çıkabiliyor",
+    ozet:
+      "Ticaret Bakanlığı, 28 Ekim 2026 tarihli duyurusuyla Kasım ayında düzenlenen indirim kampanyalarını hem resen başlattığı incelemeler hem de tüketici şikayetleri üzerinden yakından takip ettiğini açıkladı. Bakanlık; var olmayan indirim iddiası, kampanya öncesi son 10 günün en düşük fiyatının referans alınmaması, kampanya başlangıç/bitiş tarihinin belirtilmemesi ve art arda indirim oranlarının (örneğin %70+%10+%5) gerçek indirimi yanıltıcı şekilde göstermesi gibi uygulamaları ihlal olarak sayıyor; mecraya ve ihlalin niteliğine göre 99.339 TL ile 39.916.524 TL arasında idari para cezası uygulanabileceğini duyurdu.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/kasim-ayi-indirim-kampanyalari-ticaret-bakanliginin-yakin-takibinde",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Kasım kampanya sezonuna giren e-ticaret ve perakende işletmelerine, üstü çizili fiyatın gerçekten kampanya öncesi son 10 günün en düşük fiyatı olup olmadığını ve art arda uygulanan indirim oranlarının nihai fiyatı net şekilde yansıtıp yansıtmadığını yayına almadan önce bir kez daha kontrol etmelerini öneririm; ceza aralığının üst sınırı hiç küçümsenecek bir tutar değil.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "29 Ekim 2026",
+    eklendiTarihi: "2026-11-12",
+    baslik:
+      "2027 Yıllık Programı'nda imalat sanayi için yeşil ve dijital 'ikiz dönüşüm' hedefleri: dijital dönüşüm desteklerinde güncel rakamlar paylaşıldı",
+    ozet:
+      "Anadolu Ajansı'nın 29 Ekim 2026 tarihli haberine göre, 2027 Yılı Cumhurbaşkanlığı Yıllık Programı kapsamında imalat sanayisinde yeşil ve dijital dönüşümün birlikte ele alınacağı, kimya, ilaç, makine, elektrikli teçhizat, otomotiv, elektronik ve raylı sistem araçları gibi öncelikli sektörlerde yapay zekâ, büyük veri ve ileri otomasyonun üretime entegrasyonunun teşvik edileceği, KOBİ'lere dijital olgunluk değerlendirmesi konusunda danışmanlık verileceği belirtildi. Haberde Eylül 2026 itibarıyla güncel rakamlar da paylaşıldı: KOBİ Dijital Dönüşüm Destek Programı'nda 284 başvuru (3,5 milyar TL) onaylandı, 139 işletme toplam 1,4 milyar TL kredi kullandı; Dijital Dönüşüm Programı'na ise 85 işletme toplam yaklaşık 21 milyar TL yatırımla başvurdu.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6ae320d4422c786f3f7ac697/AA/tr/sanayide-dijital-ve-yesil-donusume-yapay-zeka-destegi-29-10-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Haberde aktarılan tedbirlerin bir kısmı henüz yıllık program düzeyinde bir hedef, yürürlükte somut bir başvuru şartı değil; yine de üretimine yapay zekâ ve otomasyon entegre etmeyi planlayan imalatçı KOBİ'lere, mevcut KOBİ Dijital Dönüşüm Destek Programı'nı değerlendirmelerini ve Avrupa Dijital İnovasyon Merkezleri gibi danışmanlık kanallarını takip etmelerini öneririm.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "2 Kasım 2026",
+    eklendiTarihi: "2026-11-12",
+    baslik:
+      "KGK 2026-2030 Stratejik Planı yayımlandı: risk temelli gözetim ve yapay zekâ destekli denetime geçiş hedefleniyor",
+    ozet:
+      "Kamu Gözetimi Kurumu, 2 Kasım 2026'da yayımladığı 2026-2030 Stratejik Planı'yla beş temel amaç ve 18 hedef belirledi: uluslararası standartlarla uyum, mesleki yetkinlik ve yetkilendirme sisteminin güçlendirilmesi, risk temelli gözetimin yaygınlaştırılması, denetim ve raporlama süreçlerinin dijitalleştirilmesi ile kurumsal kapasitenin artırılması. Planda, finansal ve sürdürülebilirlik raporlarındaki tutarsızlıkların tespitinde yapay zekâ ve otomatik doğrulama araçlarının kullanılacağı, denetim sözleşme ve raporlarının XBRL tabanlı taksonomilerle dijital ortama taşınacağı belirtiliyor.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/11/02/kgk-2026-2030-stratejik-planinin-yayimlandi/",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Plandaki hedeflerin bir kısmı henüz yürürlüğe giren bir yükümlülük değil, yol haritası niteliğinde; bağımsız denetime tabi olan veya kurumsallaşma sürecindeki şirketlere, risk temelli gözetim ve dijitalleşme yönündeki bu eğilimi denetim firmalarıyla ilişkilerini planlarken şimdiden göz önünde bulundurmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
