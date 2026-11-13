@@ -772,34 +772,39 @@
         "Sermaye şirketi niteliğindeki tüm KOBİ'ler"
       ],
       "sartlar": [
-        "Hizmet TÜBİTAK'ın belirlediği çözüm ortaklarından alınır",
-        "Yeşil Dönüşüm Yol Haritası başvuru formu şablonu kullanılır",
-        "Süre en az 3, en fazla 6 ay",
-        "Sermaye şirketi olma dışında ek kriter program sayfasında belirtilmemiş; çağrı duyurusu ve kılavuza bakılmalı"
+        "Hizmet yalnızca TÜBİTAK'ın başvuru tarihinde listesinde yer alan çözüm ortaklarından alınır; başvuru tarihinde listede olmayan çözüm ortağıyla yapılan başvuru değerlendirmeye alınmaz",
+        "Türkiye'de yerleşik, KOBİ Yönetmeliği (RG 25.05.2023, 32201) kapsamındaki sermaye şirketleri başvurabilir; şahıs şirketi, adi ortaklık, vakıf, dernek, kooperatif ve yurt dışı merkezli işletmelerin şube/temsilcilikleri başvuramaz",
+        "Ortaklı başvuru kabul edilmez",
+        "Bir KOBİ en fazla 3 kez proje desteğinden yararlanabilir; aynı çözüm ortağıyla en fazla 2 kez başvuru yapabilir",
+        "Proje süresi en az 3, en fazla 6 ay; destek başlangıcı başvurudan en az 30 gün sonrası, bir ayın 1'i olarak belirlenir",
+        "Başvuru önce proje bazlı ön kayıt belgesiyle, ardından PRODİS üzerinden yapılır; Yeşil Dönüşüm Yol Haritası şablonu kullanılır"
       ],
       "destekOrani": [
-        "Hizmetin %90'ı TÜBİTAK hibesi",
-        "Bütçe üst sınırı: program sayfasında 310.000 TL, çağrı sayfasında 280.000 TL. Çelişki var, çağrı duyurusu (15.05.2025 güncellemeli) esas alınmalı, teyit edilemedi"
+        "Hizmet bedelinin %90'ı TÜBİTAK tarafından doğrudan çözüm ortağına ödenir (KOBİ'ye nakit hibe ödenmez)",
+        "KOBİ, fatura bedelinin KDV hariç %10'unu ve faturadaki KDV tutarını çözüm ortağına öder",
+        "Hizmet bedeli üst sınırı KDV hariç 7.000 ABD Doları olarak belirlenmiştir ve TL karşılığı dönemsel güncellenir. Çağrı duyurusundaki tabloda 01.01.2025-30.06.2025 dönemi için 250.000 TL yazar. TÜBİTAK sayfalarındaki 280.000 TL ve 310.000 TL değerleri sonraki dönemlerin güncel TL karşılıklarıdır. Başvuru tarihinde geçerli üst sınır esas alınır"
       ],
       "odemeSekli": [
-        "Sayfada ayrıntı yok, Mali Hususlar ve Ödeme sayfasına yönlendiriyor (teyit edilemedi)",
-        "Dönem raporu şablonu kullanılır"
+        "Çalışmalar bitince çözüm ortağı KOBİ'ye hizmet bedeli tutarında fatura keser; fatura tarihi proje destek süresi içinde olmalıdır",
+        "TÜBİTAK faturanın %90'ını çözüm ortağına öder; KOBİ %10'luk payı ve KDV'yi en geç Dönem Raporunu TÜBİTAK'a sunduğu tarihe kadar öder",
+        "Proje tek dönemde izlenir. Dönem Raporu, dönem bitiminden sonraki ikinci ayın sonuna kadar verilir; teknik rapor, çözüm ortağı faturası ve %10 ile KDV'nin ödendiğini gösteren banka dekontu istenir",
+        "Rapor, TÜBİTAK izleyicisi tarafından yerinde veya çevrimiçi ziyaretle değerlendirilir"
       ],
       "kalemler": [
-        "Çözüm ortaklarından alınan danışmanlık hizmeti (teknoloji danışmanlığı, kapasite/durum analizi, yol haritası)",
-        "Ayrıntılı kalem listesi yok (teyit edilemedi)"
+        "Tek destek kalemi: TÜBİTAK çözüm ortaklarından alınan hizmet bedeli (teknoloji danışmanlığı, kapasite/durum analizi, sorun tespiti, çözüm önerisi, yol haritası hazırlama)",
+        "Çağrı kapsamında yalnızca çözüm ortaklarından yapılan hizmet alımları desteklenir, başka gider kalemi yoktur"
       ],
       "faydalar": [
         "Yeşil dönüşüm ve mevzuat uyumu için %90 hibeli uzman desteği",
         "Sonrasında 1832 gibi yeşil dönüşüm Ar-Ge çağrılarına hazırlık",
         "1831 projeleri 1501 ve 1507 ilk 5 proje sayımına dahil edilmez"
       ],
-      "basvuru": "TEYDEB başvuru portalı (PRODİS) üzerinden. Sorular: yesilsanayi.mentor@tubitak.gov.tr.",
+      "basvuru": "Çağrı sürekli açıktır. Önce proje bazlı ön kayıt belgesi TÜBİTAK'a ulaştırılır, ardından PRODİS (eteydeb.tubitak.gov.tr) üzerinden proje önerisi gönderilir. Projeler aylık gruplanıp panelle değerlendirilir (uyum, yapılabilirlik, etki, ekip yetkinliği; her biri %25). Kadın yetkilisi, çoğunluk kadın sermayesi veya çoğunluk kadın çalışanı olan KOBİ'lere 3 ek puan verilir. Sorular: yesilsanayi.mentor@tubitak.gov.tr.",
       "kaynaklar": [
         "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi",
         "https://tubitak.gov.tr/tr/destekler/destek/sanayi/ulusal-destek-programlari/cagri-1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi"
       ],
-      "dogrulama": "2026-10-14: iki resmi sayfa okundu; bütçe üst sınırında çelişki var. Örnek senaryolar 2026-10-16'da yönerge ve çağrı metinleri esas alınarak hazırlandı.",
+      "dogrulama": "2026-11-13: TÜBİTAK program sayfası, çağrı sayfası ve 1831-2024-1 Çağrı Duyurusu (15.05.2025 güncellemeli) PDF'i okundu. Bütçe üst sınırı çelişkisi dönemsel TL güncellemesinden kaynaklanıyor (7.000 ABD Doları KDV hariç). Ödeme şekli, gider kalemi ve başvuru kriterleri çağrı duyurusundan doğrulandı.",
       "kapak": "1 Ocak 2030",
       "ornekler": [
         "Sermaye şirketi niteliğinde, orta ölçekli bir metal işleme KOBİ'si, üretimdeki enerji kullanımını ve karbon ayak izini azaltmak için TÜBİTAK'ın belirlediği çözüm ortaklarından teknoloji danışmanlığı ve durum analizi hizmeti alıyor. Hizmetin %90'ı hibeyle karşılanır. (Karşıladığı şartlar: sermaye şirketi KOBİ'si, hizmetin çözüm ortağından alınması, Yeşil Dönüşüm Yol Haritası şablonunun kullanılması, süre 3 ile 6 ay arasında.)",
@@ -807,14 +812,15 @@
         "KOBİ ölçeğinde bir tekstil boyahanesi, atık su geri kazanımı konusunda yeşil teknoloji seçenekleri ve yatırım öncelikleri için danışmanlık alıyor. (Karşıladığı şartlar: yeşil teknoloji alanında teknoloji danışmanlığı, yol haritası hazırlama, sermaye şirketi KOBİ'si.)"
       ],
       "uygunOlmayanlar": [
-        "Proje kapsamında geri dönüşüm tesisi veya ekipman satın alınması: program danışmanlık ve analiz hizmetini destekler, yatırım ve ekipman alımı kapsam dışıdır (kalem listesi teyit edilemedi, ancak program yalnızca danışmanlık hizmetini tanımlar).",
-        "Hizmetin TÜBİTAK çözüm ortağı olmayan bir danışmanlık firmasından alınması: hizmet yalnızca belirlenmiş çözüm ortaklarından alınabilir.",
-        "Şahıs işletmesi veya sermaye şirketi niteliği taşımayan bir yapının başvurusu, ya da büyük ölçekli bir firma: yalnızca sermaye şirketi niteliğindeki KOBİ'ler başvurabilir.",
-        "12 ay süren bir danışmanlık süreci: süre en az 3, en fazla 6 aydır."
+        "Proje kapsamında geri dönüşüm tesisi veya ekipman satın alınması: yalnızca çözüm ortaklarından hizmet alımı desteklenir, yatırım ve ekipman alımı kapsam dışıdır.",
+        "Hizmetin TÜBİTAK çözüm ortağı olmayan bir danışmanlık firmasından alınması: başvuru tarihinde listede yer almayan çözüm ortağıyla yapılan başvuru değerlendirmeye alınmaz.",
+        "Şahıs işletmesi veya sermaye şirketi niteliği taşımayan bir yapının başvurusu, ya da KOBİ olmayan büyük ölçekli bir firma: yalnızca sermaye şirketi niteliğindeki KOBİ'ler başvurabilir.",
+        "12 ay süren bir danışmanlık süreci: süre en az 3, en fazla 6 aydır.",
+        "Dördüncü kez başvuru: bir KOBİ bu çağrıdan en fazla 3 kez yararlanabilir."
       ],
       "ornekNotlari": [
         "Bu program Ar-Ge projesi değil, danışmanlık hizmeti desteğidir, bu nedenle Ar-Ge/THS şartı aranmaz.",
-        "Bu senaryolar temsilidir ve resmî bir kalem listesi değildir; programın yönerge veya çağrı şartlarından hareketle hazırlanmıştır. Başvuru öncesinde güncel çağrı veya yönerge metni ile işletmenin kendi durumu kontrol edilmelidir."
+        "Bu senaryolar temsilidir ve resmî bir kalem listesi değildir; çağrı duyurusu şartlarından hareketle hazırlanmıştır. Başvuru öncesinde güncel çağrı veya yönerge metni ile işletmenin kendi durumu kontrol edilmelidir."
       ]
     },
     {
