@@ -2523,6 +2523,47 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Plandaki hedeflerin bir kısmı henüz yürürlüğe giren bir yükümlülük değil, yol haritası niteliğinde; bağımsız denetime tabi olan veya kurumsallaşma sürecindeki şirketlere, risk temelli gözetim ve dijitalleşme yönündeki bu eğilimi denetim firmalarıyla ilişkilerini planlarken şimdiden göz önünde bulundurmalarını öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "10 Kasım 2026",
+    eklendiTarihi: "2026-11-13",
+    baslik:
+      "Sanayi üretimi eylülde yıllık %2,6 arttı, yüksek teknoloji ürünlerinde sıçrama görüldü",
+    ozet:
+      "TÜİK'in 10 Kasım 2026'da yayımladığı verilere göre takvim etkisinden arındırılmış sanayi üretimi eylülde yıllık %2,6, mevsim ve takvim etkisinden arındırılmış üretim ise aylık %2,1 arttı; bu, nisandan sonraki ilk yıllık artışa işaret etti. Alt sektörlerde yüksek teknoloji ürünleri yıllık %31,1 ve aylık %26,1'lik sıçramayla öne çıkarken, imalat sanayi yıllık %2,6, sermaye malı üretimi ise yıllık %7,2 arttı.",
+    kaynakUrl:
+      "https://www.forbes.com.tr/haberler/sanayi-uretimi-eylulde-yuzde-2-6-artis-gosterdi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yüksek teknoloji ürünlerindeki bu sıçramanın kalıcı bir eğilim mi yoksa tek aylık bir dalgalanma mı olduğunu önümüzdeki aylarda göreceğiz. Teknoloji ağırlıklı üretim yapan imalatçı firmalara, bu alt sektördeki talep artışını kapasite ve yatırım planlarına yansıtıp yansıtmayacaklarını değerlendirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "4 Kasım 2026",
+    eklendiTarihi: "2026-11-13",
+    baslik: "TÜBİTAK 2244 Sanayi Doktora Programı 2026 yılı çağrısı açıldı",
+    ozet:
+      "TÜBİTAK, sanayide doktoralı araştırmacı istihdamını ve üniversite-sanayi iş birliğini teşvik eden 2244 Sanayi Doktora Programı'nın 2026 yılı çağrısını 4 Kasım 2026'da açtı. Başvurular, TÜBİTAK Yönetim Bilgi Sistemi (TYBS) üzerinden 22 Aralık 2026 tarihine kadar çevrim içi olarak alınıyor.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/tr/duyuru/2244-sanayi-doktora-programi-2026-yili-cagrisi-acildi-0",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Ar-Ge yoğunluğu yüksek, doktoralı araştırmacı istihdam etmeyi planlayan imalat ve mühendislik firmalarına, programın üniversite iş birliği şartlarını başvuru takvimine göre erken netleştirmelerini öneririm; 22 Aralık son tarihi düşünüldüğünde hazırlık süresi sınırlı.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "26 Ekim 2026",
+    eklendiTarihi: "2026-11-13",
+    baslik:
+      "SPK, yatırım fonlarında portföy ve yatırım sınırlamalarına tam uyum süresini 31 Ocak 2027'ye uzattı",
+    ozet:
+      "Sermaye Piyasası Kurulu, 26 Ekim 2026 tarihli duyurusuyla Yatırım Fonlarına İlişkin Rehber'in 4.3. maddesindeki uyum takvimini değiştirdi. Önceki düzenlemede 31 Ekim ve 30 Kasım 2026'da kademeli, 31 Aralık 2026'da ise tam uyum öngörülüyordu; yeni düzenlemeyle kademeli uyum hükümleri kaldırılarak portföy ve yatırım sınırlamalarına tam uyum tarihi 31 Ocak 2027'ye taşındı. Kurul, değişikliği piyasalardaki son dönem gelişmelerini dikkate alarak yaptığını belirtti.",
+    kaynakUrl:
+      "https://bloomberght.com/spk-fon-rehberi-nde-uyum-takvimini-guncelledi-3792508",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Fon piyasasındaki güven kaybının ardından gelen bu ek sürenin asıl faydası fonu yöneten kurumlara; portföyünde bu fonlardan bulunduran şirket ve bireysel yatırımcıların da likidite planlamasını eski değil yeni takvime göre yapması gerekiyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
