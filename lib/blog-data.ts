@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "deprem-bolgesi-cazibe-merkezleri-yatirim-tesviki-basvuru-suresi-2026",
+    title: "Deprem Bölgesi ve Cazibe Merkezlerinde Yatırım Teşviki İçin Başvuru Süresi 31 Aralık 2026'da Doluyor",
+    excerpt: "9903 sayılı Karar, 2012'den beri uygulanan teşvik sistemini ve Cazibe Merkezleri Programı'nı yürürlükten kaldırdı. Ancak depremden etkilenen ilçelerde (Adıyaman, Hatay, Kahramanmaraş, Malatya) ve eski Cazibe Merkezleri illerindeki OSB'lerde, geçici 3. ve 4. maddeler kapsamında 6. bölge seviyesinde destek uygulaması sürüyor. Bu özel uygulamadan yararlanmak için yeni başvuru imkânı 31 Aralık 2026'da sona eriyor.",
+    category: "YATIRIM TEŞVİKLERİ • DEPREM BÖLGESİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1527335988388-b40ee248d80c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "vergi-borcu-aciklama-listesi-2026-kimler-kapsamda",
     title: "Vergi Borcu Listesi 2026: Şirketiniz Aralık Ayında Açıklanacak Mükellefler Arasında mı?",
     excerpt: "10 Kasım 2026 tarihli ve 33426 sayılı Resmî Gazete'de yayımlanan 597 sıra no'lu VUK Genel Tebliği ile her bir vergi dairesine 5 milyon TL ve üzeri borcu olan veya bu tutarda kesinleşmiş vergi/cezası bulunan mükellefler, 1-30 Aralık 2026 arasında kamuya açıklanacak. I-A/I-B liste ayrımı, hariç tutulan yapılandırma borçları, ilan takvimi ve şirketlerin şimdi yapabilecekleriyle güncel rehber.",
