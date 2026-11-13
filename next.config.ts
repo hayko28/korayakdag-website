@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/sirket-degerleme-hesaplama",
+        destination: "/blog/sirket-degerleme-nedir-yontemleri-nasil-yapilir-2026",
+        permanent: true,
+      },
+      {
         source: "/page",
         destination: "/",
         permanent: true,

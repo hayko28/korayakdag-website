@@ -71,7 +71,6 @@ export default function Navbar() {
         { name: "Hizmetler", href: `${homePath}#services` },
         { name: "Güncel Gelişmeler", href: "/guncel-gelismeler" },
         { name: "Ücretsiz Uygunluk Testi", href: "/destek-uygunluk-analizi" },
-        { name: "Şirket Değerleme Hesaplama", href: "/sirket-degerleme-hesaplama" },
         { name: "Teşvik Takvimi", href: "/tesvik-takvimi" },
         { name: "Blog", href: `${homePath}#blog` },
         { name: "İletişim", href: `${homePath}#contact` },

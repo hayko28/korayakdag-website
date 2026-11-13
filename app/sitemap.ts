@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/makaleler`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/tesvik-takvimi`, changeFrequency: "daily", priority: 0.8 },
     { url: `${BASE_URL}/destek-uygunluk-analizi`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/sirket-degerleme-hesaplama`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/kosgeb-danismanlik`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/yurt-disinda-sirket-kurulusu`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/yurt-disinda-sirket-kurulusu/dubai`, changeFrequency: "monthly", priority: 0.75 },
