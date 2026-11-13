@@ -652,11 +652,11 @@ export default function DestekRehberi() {
   };
 
   const hedefAnlatim: Program = {
-    ad: "Hedef Yatırımlar: müşteriye anlatım tablosu",
+    ad: "Hedef Yatırımlar detay",
     durum: "yok",
     kapak: "Başvuru şartları, sektörler, faydalar",
     acik0: true,
-    ozet: "Çoğu KOBİ ve orta ölçekli yatırım Hedef Yatırımlar sistemine girer (9903 sayılı Karar md. 10). Üç tablo sırasıyla: kim, hangi şartlarla, hangi sektörde, ne kazanır. Müşteriyle görüşürken yukarıdan aşağı okunabilir.",
+    ozet: "Çoğu KOBİ ve orta ölçekli yatırım Hedef Yatırımlar sistemine girer (9903 sayılı Karar md. 10). Üç tablo sırasıyla: başvuru şartları, hangi sektörlerde belge alınır, sağladığı faydalar ve örnek.",
     extra: (
       <>
         <div className="blk full">
