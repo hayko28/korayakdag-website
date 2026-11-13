@@ -1018,7 +1018,7 @@
       ],
       "destekOrani": [
         "Müşteri Kuruluş başvuru tarihinde KOBİ ölçeğindeyse destek kapsamına alınan proje bütçesinin %75'i TÜBİTAK, %25'i müşteri kuruluş tarafından karşılanır; büyük ölçekliyse %60 TÜBİTAK, %40 müşteri kuruluş (oran proje boyunca değişmez)",
-        "Proje bütçesinin TÜBİTAK tarafından karşılanacak kısmının üst sınırını Yönetim Kurulu belirler. TÜBİTAK'ın sayfadaki üst limit tablosunda bu tutar 2.300.000 TL olarak yazılıdır (PTİ ve kurum hissesi hariç, kalan kısım müşteri kuruluşça karşılanır); tablo dosyası Mart 2024 tarihli olduğundan güncelliği teyit edilemedi",
+        "Proje bütçesinin TÜBİTAK tarafından karşılanacak kısmının üst sınırını Yönetim Kurulu belirler. TÜBİTAK'ın sayfadaki üst limit tablosunda bu tutar 2.300.000 TL olarak yazılıdır (PTİ ve kurum hissesi hariç, kalan kısım müşteri kuruluşça karşılanır); tablo dosyası Mart 2024 tarihli olsa da aynı tutar Nisan 2026 tarihli bir üniversite TTO sunumunda 2026 için geçerli olarak veriliyor (ikincil kaynak, resmi güncelleme bulunamadı)",
         "Proje başına ödenebilecek toplam Proje Teşvik İkramiyesi (PTİ), Yönetim Kurulunun belirlediği aylık PTİ üst sınırının proje süresiyle çarpımının 2,5 katını geçemez",
         "Finansmana TÜBİTAK ile Müşteri Kuruluş birlikte katkı sağlar"
       ],
@@ -1051,7 +1051,7 @@
         "https://tubitak.gov.tr/sites/default/files/2024-03/teydeb_destek_programlari_ve_cagrilari_ust_limitleri%20%282%29.xlsx",
         "https://eteydeb.tubitak.gov.tr"
       ],
-      "dogrulama": "2026-11-13: 1505 program sayfası, 1505 Uygulama Esasları (29.12.2025 77. YK, 05.03.2026 Başkanlık Olur'lu işlenmiş hali; madde 5, 6, 12, 26) ve TÜBİTAK üst limit tablosu okundu. Destek süresi (en fazla 24 ay), KOBİ %75 / büyük %60 oran, PTİ sınırı, hizmet alımı sınırları ve ödenek aktarım akışı doğrulandı. TÜBİTAK katkı payının güncel TL üst sınırı Yönetim Kurulu kararına bağlıdır; sayfadaki tablo Mart 2024 tarihli olduğu için 2.300.000 TL'nin 2026 için geçerliliği teyit edilemedi.",
+      "dogrulama": "2026-11-13: 1505 program sayfası, 1505 Uygulama Esasları (29.12.2025 77. YK, 05.03.2026 Başkanlık Olur'lu işlenmiş hali; madde 5, 6, 12, 26) ve TÜBİTAK üst limit tablosu okundu. Destek süresi (en fazla 24 ay), KOBİ %75 / büyük %60 oran, PTİ sınırı, hizmet alımı sınırları ve ödenek aktarım akışı doğrulandı. TÜBİTAK katkı payının güncel TL üst sınırı Yönetim Kurulu kararına bağlıdır; sayfadaki tablo Mart 2024 tarihlidir. 2.300.000 TL, Nisan 2026 tarihli bir üniversite TTO sunumunda (ikincil kaynak) 2026 için de geçerli olarak verildiğinden büyük olasılıkla güncel, ancak TÜBİTAK'tan resmi güncelleme yayımlanmamıştır.",
       "kapak": "Sürekli açık",
       "ornekler": [
         "Orta ölçekli bir seramik üreticisi (Müşteri Kuruluş) ile bir üniversitenin malzeme mühendisliği bölümü (Yürütücü Kuruluş), düşük enerjili pişirme sağlayan yeni bir sır formülasyonu için ortak proje yürütüyor. Bursiyer, sözleşmeli personel, malzeme ve sarf, test hizmeti ve proje teşvik ikramiyesi gibi kalemler kapsamdadır. (Karşıladığı şartlar: müşteri kuruluşla yürütücü kuruluşun ortak başvurusu, başvuru öncesi imzalanmış işbirliği sözleşmesi, sonuçların Türkiye'de uygulanma taahhüdü, firma düzeyinde katma değer.)",
