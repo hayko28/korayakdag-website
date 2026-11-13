@@ -37,13 +37,13 @@ interface Tablo {
 }
 
 const kar = [
-  ["Nedir?", "Şirketin kendi bünyesinde kurduğu Ar-Ge birimine verilen resmi statü.", "Üniversite yakınındaki teknoloji bölgesinde ofis kiralayarak çalışmak.", "Yeni girişimler için kuluçka merkezi: ofis, mentorluk, eğitim."],
-  ["Kimlere uygun?", "Ar-Ge ekibi kalabalık orta ve büyük şirketler.", "Ar-Ge, yazılım veya tasarım yapan her ölçekte şirket.", "Yeni kurulan veya kurulacak teknoloji girişimleri."],
-  ["Asgari şart", "15 tam zamanlı Ar-Ge personeli (bazı sektörlerde 30). Ar-Ge alanı ayrı olmalı.", "Personel eşiği yok. Faaliyet Ar-Ge, yazılım veya tasarım olmalı.", "Yaş ve kuruluş şartı yok. Teknoloji veya yenilik odaklı fikir yeterli."],
-  ["Kim onaylar?", "Sanayi ve Teknoloji Bakanlığı (belge ve yerinde inceleme).", "Teknoparkın yönetici şirketi (proje değerlendirmesi).", "Seçilen TEKMER'in kendi kurulu."],
-  ["Başlıca avantajlar", "%100 vergi indirimi: Merkezde yapılan harcamaların tamamını kurumlar vergisi matrahınızdan düşerek daha az vergi ödersiniz.\nGümrük vergisi: Projeleriniz kapsamında yurt dışından getireceğiniz ürün, makine veya yazılımlar için gümrük vergisi ödemekten muaf tutulursunuz.\nDamga vergisi: Merkezle ilgili düzenlenen kâğıtlar ve resmî işlemler için damga vergisi ödemezsiniz.\nMaaşlarda vergi indirimi: Personelinizin maaşı üzerinden kesilen gelir vergisinin büyük bir kısmı alınmaz, bu tutar işletmenize kalır.\nSGK işveren payı desteği: Çalışanlarınız için ödediğiniz SGK işveren hissesinin yarısını (%50) devlet karşılar.\nDesteklenecek program alanları istihdam desteği: Desteklenecek program alanlarında en az lisans derecesine sahip Ar-Ge personeli istihdam eden Ar-Ge merkezlerine, her personel için brüt asgari ücret tutarı 2 yıl süreyle Sanayi ve Teknoloji Bakanlığınca karşılanır (merkezdeki Ar-Ge personelinin %10'u sınırıyla).", "Kurumlar / gelir vergisi istisnası (bölgedeki yazılım, Ar-Ge ve tasarım kazancı için), KDV istisnası, personel stopaj desteği, SGK işveren desteği. 2028 sonuna kadar.", "Ofis, mentorluk, yatırımcı bağlantısı. Kabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkün."],
-  ["Başvuru", "Bakanlığa belge ile başvuru.", "Yönetici şirkete proje bazlı başvuru.", "Doğrudan KOSGEB'e değil, seçilen TEKMER'e. Kabul takvimi kontenjana bağlı."],
-  ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge Merkezi ile birlikte kullanılamaz.", "Diğer ikisini dışlamaz, tamamlayıcı olarak kullanılabilir."],
+  ["Nedir?", "Şirketin kendi bünyesinde kurduğu Ar-Ge birimine verilen resmi statü (5746 sayılı Kanun).", "Şirketin kendi bünyesinde kurduğu ürün, endüstriyel ve grafik tasarım birimine verilen resmi statü (5746 sayılı Kanun). Ar-Ge Merkezi'nden ayrı bir belgedir.", "Üniversite yakınındaki teknoloji bölgesinde ofis kiralayarak çalışmak (4691 sayılı Kanun).", "Yeni girişimler için kuluçka merkezi: ofis, mentorluk, eğitim."],
+  ["Kimlere uygun?", "Ar-Ge ekibi kalabalık orta ve büyük şirketler.", "Tasarım ekibi olan şirketler: ürün, endüstriyel veya grafik tasarım yapanlar.", "Ar-Ge, yazılım veya tasarım yapan her ölçekte şirket.", "Yeni kurulan veya kurulacak teknoloji girişimleri."],
+  ["Başvuru şartları", "15 tam zamanlı eşdeğer Ar-Ge personeli (bazı sektörlerde 30). Ar-Ge alanı diğer birimlerden fiziksel olarak ayrılmış olmalı. Merkez içinde sınai bilgi birikimi ve Ar-Ge çalışması yapılmalı.", "10 tam zamanlı eşdeğer tasarım personeli. Tasarım alanı diğer birimlerden fiziksel olarak ayrılmış, bağımsız bir birim olmalı. Kartlı veya biyometrik giriş-çıkış izlemesi gerekir.", "Personel eşiği yok. Faaliyetin Ar-Ge, yazılım geliştirme, tasarım veya yenilik olması gerekir. Şirket ölçeği sınırı yok, büyük firmalar da girebilir.", "Yaş ve kuruluş şartı yok. Teknoloji veya yenilik odaklı fikir yeterli. Kabul, TEKMER'in kontenjanına ve kurulunun değerlendirmesine bağlı."],
+  ["Kim onaylar?", "Sanayi ve Teknoloji Bakanlığı (belge ve yerinde inceleme).", "Sanayi ve Teknoloji Bakanlığı (belge incelemesi).", "Teknoparkın yönetici şirketi (proje değerlendirme komisyonu).", "Seçilen TEKMER'in kendi kurulu."],
+  ["Başvuru", "Bakanlığa belge ile elektronik başvuru. Ardından yerinde inceleme heyeti merkezi görür.", "Bakanlığa elektronik başvuru, belge listesi ile birlikte.", "Yönetici şirkete proje bazlı başvuru. Kabul sonrası ofis tahsisi ve sözleşme.", "Doğrudan KOSGEB'e değil, seçilen TEKMER'e. Kabul takvimi kontenjana bağlı."],
+  ["Avantajlar ve şirkete somut faydası", "Vergi indirimi: Merkezde yapılan Ar-Ge harcamalarının tamamı (%100) kurumlar vergisi matrahından düşülür, şirket daha az vergi öder.\nSigorta primi desteği: Ar-Ge personelinin maaşından hesaplanan SGK işveren hissesinin %50'sini Hazine öder, personel maliyeti düşer.\nGelir vergisi stopajı teşviki: Doktora mezunlarında %95, yüksek lisans mezunlarında %90, temel bilimler yüksek lisans mezunlarında %95, temel bilimler lisans mezunlarında %90, diğer çalışanlarda %80 oranında stopaj alınmaz. Çalışanın eline geçen maaş artar, şirket aynı net maaş için daha az brüt öder.\nDamga vergisi istisnası: Merkez faaliyetleri için düzenlenen kâğıtlardan damga vergisi alınmaz.\nGümrük vergisi istisnası: Projelerde kullanılmak üzere ithal edilen eşyalardan gümrük vergisi, ilgili kâğıt ve işlemlerden damga vergisi ve harç alınmaz.\nNitelikli çalışan desteği (yalnızca Ar-Ge Merkezi): Desteklenecek program alanlarında en az lisans derecesine sahip Ar-Ge personeli için brüt asgari ücret tutarı 2 yıl boyunca Bakanlık bütçesinden karşılanır (merkezdeki Ar-Ge personelinin %10'u sınırıyla).\nKDV istisnası: Merkez faaliyetleri için alınan yeni makine ve teçhizat KDV'den muaftır, yatırım maliyeti %20 düşer.", "Ar-Ge Merkezi ile aynı teşvikler geçerlidir, tek fark nitelikli çalışan desteğinin olmamasıdır.\nVergi indirimi: Tasarım harcamalarının tamamı (%100) kurumlar vergisi matrahından düşülür, şirket daha az vergi öder.\nSigorta primi desteği: Tasarım personelinin SGK işveren hissesinin %50'sini Hazine öder, personel maliyeti düşer.\nGelir vergisi stopajı teşviki: Doktora %95, yüksek lisans %90, temel bilimler yüksek lisans %95, temel bilimler lisans %90, diğer çalışanlar %80 oranında. Çalışanın net maaşı artar veya şirketin brüt maliyeti düşer.\nDamga vergisi istisnası: Merkez faaliyetleri için düzenlenen kâğıtlardan damga vergisi alınmaz.\nGümrük vergisi istisnası: Projelerde kullanılmak üzere ithal edilen eşyalardan gümrük vergisi, ilgili kâğıt ve işlemlerden damga vergisi ve harç alınmaz.\nKDV istisnası: Merkez faaliyetleri için alınan yeni makine ve teçhizat KDV'den muaftır.", "Gelir ve kurumlar vergisi istisnası: Bölgedeki yazılım, Ar-Ge ve tasarım faaliyetinden elde edilen kazanç vergi dışı kalır, vergi yükü doğrudan düşer.\nKDV istisnası: Uygun yazılım ve Ar-Ge teslim ve hizmetlerinde KDV'siz fatura kesilir. Şirketin tüm cirosuna otomatik uygulanmaz, gelirin faaliyet türüne bakılır.\nGelir vergisi stopajı desteği: Ar-Ge, tasarım ve destek personelinin ücretinde stopaj terkin edilir (destek personeli sınırı: toplam personelin %10'u). Net maaş artar veya brüt maliyet düşer.\nSGK işveren desteği: Uygun personelin SGK işveren hissesi için destek sağlanır, personel maliyeti düşer.\nDamga vergisi istisnası: Bölgedeki faaliyet kâğıtlarından damga vergisi alınmaz.\nİstisnalar ve destekler 31.12.2028 tarihine kadar geçerlidir.", "Kuluçka desteği: Ofis, mentorluk, eğitim ve yatırımcı bağlantısı sağlanır. Erken aşamada sabit gideri düşürür ve ağ kurmayı hızlandırır.\nKabul edilen firma Ar-Ge kapsamına girerse kurumlar vergisi indirimi ve SGK avantajları da mümkündür."],
+  ["Dikkat", "Aynı faaliyet ve personel için Teknopark ile birlikte kullanılamaz. Stopaj ve damga vergisi istisnasının toplamı brüt asgari ücretin 40 katı ile sınırlıdır (01.08.2025'ten itibaren).", "Ar-Ge Merkezi ile birlikte kurulabilir ama personel çakıştırılamaz. Aynı faaliyet için Teknopark ile birlikte kullanılamaz.", "Aynı faaliyet ve personel için Ar-Ge veya Tasarım Merkezi ile birlikte kullanılamaz. Farklı birim ve faaliyetler için ayrı ayrı kullanılabilir.", "Diğerlerini dışlamaz, tamamlayıcı olarak kullanılabilir."],
 ];
 
 const ALL = "Tüm sektörler";
@@ -772,7 +772,7 @@ export default function DestekRehberi() {
 
   const karsilastirma: Program[] = [
     {
-      ad: "Üçünün karşılaştırması",
+      ad: "Dördünün karşılaştırması",
       durum: "yok",
       kapak: "Karşılaştırma",
       ozet: "Kimlere uygun, kim onaylar, başlıca avantajlar ve dikkat edilecekler.",
@@ -784,6 +784,7 @@ export default function DestekRehberi() {
                 <tr>
                   <th></th>
                   <th>Ar-Ge Merkezi</th>
+                  <th>Tasarım Merkezi</th>
                   <th>Teknopark</th>
                   <th>TEKMER</th>
                 </tr>
@@ -800,8 +801,8 @@ export default function DestekRehberi() {
             </table>
           </div>
           <p className="note">
-            Kısa kural: Ekibi büyükse Ar-Ge Merkezi, ekip küçük veya orta ve üniversite çevresi isteniyorsa Teknopark, henüz
-            yeni bir girişimse TEKMER. Ar-Ge Merkezi ve Teknopark aynı faaliyet için birlikte alınamaz.{" "}
+            Kısa kural: Ar-Ge ekibi büyükse Ar-Ge Merkezi, tasarım ekibi varsa Tasarım Merkezi, ekip küçük veya orta ve üniversite çevresi isteniyorsa Teknopark, henüz
+            yeni bir girişimse TEKMER. Ar-Ge veya Tasarım Merkezi ile Teknopark aynı faaliyet için birlikte alınamaz.{" "}
             Ayrıntılar:{" "}
             <a href="/blog/arge-merkezi-nedir-nasil-kurulur-sartlari-vergi-avantajlari-2026">Ar-Ge Merkezi rehberi</a>,{" "}
             <a href="/blog/teknopark-nedir-avantajlari">Teknopark rehberi</a>,{" "}
@@ -857,7 +858,7 @@ export default function DestekRehberi() {
       <Grup baslik="Ticaret Bakanlığı" aciklama="İhracat ve yurt dışı pazara açılma harcamalarına destek. Programların çoğu belirli bir son tarihe bağlı değildir, harcama sonrası başvuru süreleri geçerlidir." rows={D.ticaret} filtre={filtre} pfx="ticaret" />
       <Grup baslik="TKDK, IPARD III" aciklama="Tarım ve kırsal kalkınma yatırımlarına AB destekli hibe. 14 Ekim 2026 itibarıyla açık bir IPARD III çağrısı yok. Resmi ilan PDF'leri okunamadığı için tarih, oran ve limitler ikincil kaynaklara dayanıyor." rows={D.tkdk} filtre={filtre} pfx="tkdk" />
       <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Çoğu yatırımcı için geçerli olan Hedef Yatırımlar açık gösterilir. Öncelikli Yatırımlar ve Türkiye Yüzyılı Kalkınma Hamlesi altta kapalı bölümdedir." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} diger={yatirimDiger} digerBaslik="Diğer yatırım teşvik sistemleri: genel bilgi, sistem karşılaştırması, Öncelikli Yatırımlar, Kalkınma Hamlesi" />
-      <Grup baslik="Ar-Ge Merkezi, Teknopark ve TEKMER" aciklama="Üçü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
+      <Grup baslik="Ar-Ge Merkezi, Tasarım Merkezi, Teknopark ve TEKMER" aciklama="Dördü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
 
       <p className="note" style={{ marginTop: 36 }}>
         Devlet destek bilgileri {tarihYaz(D.sonKontrol)} itibarıyla resmi kurum sayfalarından derlenmiştir. Başvuru şartları, tutarlar
