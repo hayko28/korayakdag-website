@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kamu-borcu-ilan-listesi-5-milyon-tl-siniri",
+    title:
+      "5 Milyon TL Vergi Borcu Olan Şirketler Aralık'ta GİB'in Listesinde: Gözden Kaçan 3 Ayrıntı",
+    excerpt:
+      "10 Kasım 2026'da yayımlanan 597 sıra no'lu VUK Genel Tebliği'ne göre bir vergi dairesine 5 milyon TL ve üzeri borcu olan mükellefler Aralık ayında kamuya açıklanacak. Sınırın vergi dairesi bazında uygulanması, 20 Kasım'a kadar ödenen tutarların listeye hiç girmemesi ve yapılandırılmış borçların kapsam dışı kalması, bir şirketin isminin listeye girip girmeyeceğini toplam borçtan çok daha fazla belirliyor.",
+    tag: "Hukuk ve Vergi",
+    date: "13 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "asgari-kurumlar-vergisinde-zarar-eden-sirket-tuzagi",
     title: "Bilançosu Zarar Gösteren Bir Şirket Neden Yine de Kurumlar Vergisi Ödeyebilir?",
     excerpt:
