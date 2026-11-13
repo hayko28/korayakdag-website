@@ -28,6 +28,7 @@ interface Program {
   kaynaklar?: string[];
   dogrulama?: string;
   extra?: ReactNode;
+  acik0?: boolean;
 }
 
 interface Tablo {
@@ -430,7 +431,7 @@ function TabloGoster({ t }: { t: Tablo }) {
 }
 
 function Kart({ o, gizli, id }: { o: Program; gizli: boolean; id: string }) {
-  const [acik, setAcik] = useState(false);
+  const [acik, setAcik] = useState(!!o.acik0);
   const isim = o.ad.split(" (")[0];
   const kapali = o.durum === "kapali";
   const lbl = kapali ? "Çağrı kapalı" : o.durum === "surekli" ? "Sürekli açık" : "Çağrı açık";
@@ -520,6 +521,8 @@ function Grup({
   filtre,
   pfx,
   sayac = true,
+  diger,
+  digerBaslik,
 }: {
   baslik: string;
   aciklama: string;
@@ -527,6 +530,8 @@ function Grup({
   filtre: Filtre;
   pfx: string;
   sayac?: boolean;
+  diger?: Program[];
+  digerBaslik?: string;
 }) {
   const acik = rows.filter((r) => r.durum !== "kapali" && r.durum !== "yok").length;
   const kap = rows.filter((r) => r.durum === "kapali").length;
@@ -553,6 +558,16 @@ function Grup({
           <Kart key={i} o={r} id={`${pfx}-${i}`} gizli={!gorunur(r.durum, filtre)} />
         ))}
       </div>
+      {diger && diger.length > 0 && (
+        <details className="diger">
+          <summary>{digerBaslik}</summary>
+          <div className="plist">
+            {diger.map((r, i) => (
+              <Kart key={i} o={r} id={`${pfx}-d${i}`} gizli={false} />
+            ))}
+          </div>
+        </details>
+      )}
     </div>
   );
 }
@@ -588,7 +603,82 @@ export default function DestekRehberi() {
   };
   const Y = D.yatirim;
 
-  const yatirim: Program[] = [
+  const hedefSart: Tablo = {
+    basliklar: ["Şart", "Ne demek?", "Müşteriye nasıl söylenir?"],
+    satirlar: [
+      ["Yatırım konusu EK-3 listesinde olmalı", "Karar'ın EK-3 listesindeki faaliyetler (NACE koduyla) belge alabilir. Listede olmayan konu belge alamaz.", "\"Önce yapacağınız işin NACE koduna bakıyoruz. Listede varsa devam ederiz.\""],
+      ["Asgari sabit yatırım tutarı", "2026'da 1. ve 2. bölgede 15,1 milyon TL, 3.-6. bölgede 7,5 milyon TL. EK-3'te bazı konular için ayrı kapasite veya tutar şartı vardır.", "\"Yatırımınızın makine, bina ve tesis kısmı bu tutarın üstünde olmalı.\""],
+      ["Bölge", "İl 1-5. bölgeden biri olmalı. 6. bölge yatırımları otomatik Öncelikli sayılır, Hedef olmaz.", "\"Yatırımı hangi ilde yapacağınız destek miktarını belirler.\""],
+      ["Başvuru sahibi", "Şirket (sermaye şirketi, adi ortaklık, kooperatif), gerçek kişi veya yabancı şirketin Türkiye şubesi. Şirketin başvurudan önce kurulmuş olması gerekir.", "\"Şirketiniz kurulu değilse önce kuruluşu yapıp sonra başvuruyoruz.\""],
+      ["Başvurudan önce harcama yapılmamış olmalı", "Başvuru tarihinden önce alınan makine ve kesilen fatura belge kapsamına girmez. Yatırımın başlangıcı başvuru tarihidir.", "\"Makineyi sipariş etmeden ve fatura almadan önce bize gelin.\""],
+      ["Yeni makine", "Kullanılmış makine ve komple tesis vergi indirimi ve faiz desteğinden yararlanamaz.", "\"İkinci el makine için bu avantajlar geçerli değil.\""],
+      ["Resmi belgeler", "SGK'ya muaccel prim borcu olmaması, gerekiyorsa ÇED olumlu veya gerekli değildir kararı, işyeri açma ve çalışma ruhsatı.", "\"Prim borcunuz ve ruhsatlarınız hazır olmalı.\""],
+      ["Başvuru kanalı", "Sanayi ve Teknoloji Bakanlığı E-TUYS sistemi, e-imza ile. Fiziksel başvuru yok.", "\"Başvuruyu biz E-TUYS üzerinden yapıyoruz, e-imzanız yeterli.\""],
+      ["Başka destekle çakışma", "Aynı yatırım için KOSGEB, TÜBİTAK gibi diğer kamu desteklerinden yararlanılamaz. Yalnızca sübvansiyonlu kredi istisnadır.", "\"Aynı makineye hem teşvik belgesi hem KOSGEB hibesi alınamaz.\""],
+      ["Süre", "Yatırım en çok 3 yılda tamamlanır (gerekçeyle ek süre verilebilir). Bitişten sonra 3 ay içinde tamamlama vizesi alınır.", "\"3 yıl içinde yatırımı bitirip vize alıyoruz.\""],
+      ["Diğer", "Markalar, lisanslar, know-how toplam yatırımın en çok %25'i olabilir. Belge kapsamında yurt içi alımlar e-fatura ile yapılmalıdır. EK-3'te olmak belge garantisi değildir, Bakanlık projeyi ayrıca değerlendirir.", "\"Liste şart ama yetmez, proje Bakanlıkça da uygun bulunmalı.\""],
+    ],
+  };
+
+  const hedefSektor: Tablo = {
+    basliklar: ["Sektör", "Örnek yatırım", "Şart / dikkat"],
+    satirlar: [
+      ["İmalat (en yaygın)", "Gıda, tekstil, giyim, plastik, makine, metal, mobilya, otomotiv yan sanayi, ilaç, kimya, elektronik üretimi", "NACE 10-33. Bazı alt kodlarda istisna ve tutar şartı var (ör. plastik ürünlerde 100 milyon TL)"],
+      ["Tarım ve hayvancılık", "Sera, süt ve et sığırcılığı, kümes, su ürünleri", "Sera: 1.-2. bölge en az 20 dekar, 3. bölge 15, 4.-5. bölge 10, 6. bölge 5 dekar. Kümes hayvanı 200.000 adet/dönem"],
+      ["Madencilik", "Maden çıkarma, işleme, arama", "I. grup madenler, altın ve mıcır hariç. İstanbul'da desteklenmez"],
+      ["Enerji", "Yenilenebilir elektrik üretimi, şarj istasyonu, elektrik depolama", "Vergi indirimi ve faiz desteği verilmez. 240 kW altı GES ve doğalgaz/ithal kömür hariç"],
+      ["Atık yönetimi", "Atık toplama, geri kazanım, bertaraf", "NACE 38 (38.11.02 hariç)"],
+      ["Ulaştırma ve depolama", "Demiryolu, deniz ve hava taşımacılığı, liman, soğuk hava deposu, lisanslı depo, kargo elleçleme", "Soğuk hava deposu 1.000 m2 üzeri, kargo elleçleme 5.000 m2 ve Antrepo İzin Belgesi. Karayolu taşımacılığı (tır/kamyon) kapsam dışı"],
+      ["Turizm", "Otel, tatil köyü, butik otel, öğrenci yurdu", "En az 50 oda. Yurt en az 200 öğrenci. Restoran ve kafe kapsam dışı"],
+      ["Yazılım ve bilişim", "Bilgisayar programlama, veri merkezi", "Yazılımda (62.1) tutar şartı belirtilmemiş. Veri merkezinde en az 500 kW kurulu güç"],
+      ["Ar-Ge ve test", "Ar-Ge faaliyeti, test merkezi, hayvan hastanesi", "Test merkezi orta-yüksek ve yüksek teknolojili ürünlere yönelik olmalı"],
+      ["Eğitim", "Özel okul, kreş, özel eğitim kurumu", "Kamu kurumları ve bazı alt kodlar hariç. Özel okul, kreş ve lise yatırımları ayrıca Öncelikli sayılabilir"],
+      ["Sağlık ve bakım", "Özel hastane, yatılı bakım, kreş", "Muayenehane (86.2, 86.9) kapsam dışı. 100 kişilik yaşlı/engelli bakım Öncelikli sayılır"],
+      ["Çağrı merkezi", "Çağrı merkezi işletmeciliği", "Yalnızca 6. bölgede"],
+      ["Kapsam dışı (belge alamaz)", "Toptan/perakende ticaret, e-ticaret, restoran, gayrimenkul, finans, sigorta, danışmanlık, reklam, seyahat acentesi, temizlik, güvenlik", "Bu işler EK-3'te yok. Müşteri bu alanlardansa belge çıkmaz, başka destek bakılır"],
+    ],
+  };
+
+  const hedefFayda: Tablo = {
+    basliklar: ["Fayda", "Ne sağlar?", "Örnek (varsayımsal, Çorum - 4. bölge)"],
+    satirlar: [
+      ["KDV istisnası", "Belgeli makine alımında KDV ödenmez.", "30 milyon TL'lik makine alımında %20 KDV olan 6 milyon TL ödenmez."],
+      ["Gümrük vergisi muafiyeti", "Belgeli ithal makinede gümrük vergisi %0.", "Almanya'dan ithal edilen CNC tezgahta gümrük vergisi ödenmez."],
+      ["Vergi indirimi (yatırıma katkı oranı %20)", "Kurumlar vergisi %25 yerine %10 ödenir (%60 indirim). İndirim toplamı, yatırım tutarının %20'sine ulaşana kadar sürer.", "40 milyon TL yatırım için toplam 8 milyon TL'ye kadar vergi indirimi hakkı. Yıllık 10 milyon TL kâr varsa vergi 2,5 milyon yerine 1 milyon TL olur, yıllık 1,5 milyon TL kazanç."],
+      ["SGK işveren hissesi desteği", "Yatırımla sağlanan ilave istihdam için asgari ücrete tekabül eden işveren hissesinin %50'sini devlet öder. Süre bölgeye göre: 1. bölge yok, 2. bölge 1 yıl, 3. bölge 2 yıl, 4. bölge 4 yıl, 5. bölge 8 yıl.", "Çorum'da 20 yeni çalışan alınırsa 4 yıl boyunca her biri için asgari ücret üzerinden hesaplanan işveren hissesinin yarısı devletten gelir. OSB'de yapılırsa süre bir alt bölgeye göre 8 yıla çıkar."],
+      ["Faiz / kâr payı desteği", "Yalnızca 4., 5. ve 6. bölgede (6. bölge Öncelikli sayılır). En az 1 yıl vadeli TL yatırım kredisinde repo faizinin %25'ine denk gelen puan, en çok 12,5 puan, azami 5 yıl ödenir. Toplam destek yatırımın %10'unu geçemez.", "40 milyon TL yatırım için 28 milyon TL kredi (yatırımın %70'i) üzerinden faiz desteği alınır. Toplam destek 4 milyon TL ile sınırlıdır. 1.-3. bölgede bu destek yok."],
+      ["Yatırım yeri tahsisi", "Vergi indirimi öngörülen yatırımlar için kamu arazisi tahsisi mümkündür. Bölge ayrımı yok.", "Uygun bir arsa için Bakanlığa tahsis talebi yapılabilir."],
+    ],
+  };
+
+  const hedefAnlatim: Program = {
+    ad: "Hedef Yatırımlar: müşteriye anlatım tablosu",
+    durum: "yok",
+    kapak: "Başvuru şartları, sektörler, faydalar",
+    acik0: true,
+    ozet: "Çoğu KOBİ ve orta ölçekli yatırım Hedef Yatırımlar sistemine girer (9903 sayılı Karar md. 10). Üç tablo sırasıyla: kim, hangi şartlarla, hangi sektörde, ne kazanır. Müşteriyle görüşürken yukarıdan aşağı okunabilir.",
+    extra: (
+      <>
+        <div className="blk full">
+          <h4>1. Başvuru şartları</h4>
+          <TabloGoster t={hedefSart} />
+        </div>
+        <div className="blk full">
+          <h4>2. Hangi sektörlerde belge alınır?</h4>
+          <TabloGoster t={hedefSektor} />
+          <p className="note">EK-3'te olmak belge garantisi değildir. Kod bazlı şartlar ve Bakanlığın değerlendirmesi birlikte belirler. Kesin kontrol için güncel EK-3 ve E-TUYS NACE sorgusu esas alınır.</p>
+        </div>
+        <div className="blk full">
+          <h4>3. Sağladığı faydalar ve örnek</h4>
+          <p className="note">Örnek: Çorum'da (4. bölge) bir KOBİ, 40 milyon TL sabit yatırımla (30 milyon TL makine) yeni bir üretim hattı kuruyor. Rakamlar varsayımsal anlatım içindir, gerçek tutar projeye ve faiz oranlarına göre değişir.</p>
+          <TabloGoster t={hedefFayda} />
+          <p className="note">İstanbul'daki yatırımlar ile elektrik üretimi, dağıtımı, depolaması ve gaz dağıtımı yatırımları Hedef sistemde vergi indiriminden yararlanamaz. Projeniz Karar md. 9'daki Öncelikli konulardan birine giriyorsa vergi katkı oranı %20 yerine %30 olur, bu yüzden başvuru öncesi mutlaka kontrol edilir.</p>
+        </div>
+      </>
+    ),
+  };
+
+  const yatirimTum: Program[] = [
     {
       ad: "Yatırım Teşvik Belgesi nedir?",
       durum: "surekli",
@@ -669,6 +759,16 @@ export default function DestekRehberi() {
       ),
     },
   ];
+
+  // Sıra: 0 nedir, 1 bölge illeri, 2 hangi sistem, 3 Hedef bölge tablosu, 4 Öncelikli, 5 Hamle, 6 asgari tutar, 7 sektörler
+  const yatirim: Program[] = [
+    hedefAnlatim,
+    { ...yatirimTum[3], ad: "Hedef Yatırımlar: bölgelere göre destek tablosu", acik0: true },
+    yatirimTum[7],
+    yatirimTum[6],
+    yatirimTum[1],
+  ];
+  const yatirimDiger: Program[] = [yatirimTum[0], yatirimTum[2], yatirimTum[4], yatirimTum[5]];
 
   const karsilastirma: Program[] = [
     {
@@ -756,7 +856,7 @@ export default function DestekRehberi() {
       <Grup baslik="TÜBİTAK" aciklama="Ar-Ge ve yenilik projelerine hibe. Ar-Ge ekibi olan veya kuracak şirketler için." rows={D.tubitak} filtre={filtre} pfx="tubitak" />
       <Grup baslik="Ticaret Bakanlığı" aciklama="İhracat ve yurt dışı pazara açılma harcamalarına destek. Programların çoğu belirli bir son tarihe bağlı değildir, harcama sonrası başvuru süreleri geçerlidir." rows={D.ticaret} filtre={filtre} pfx="ticaret" />
       <Grup baslik="TKDK, IPARD III" aciklama="Tarım ve kırsal kalkınma yatırımlarına AB destekli hibe. 14 Ekim 2026 itibarıyla açık bir IPARD III çağrısı yok. Resmi ilan PDF'leri okunamadığı için tarih, oran ve limitler ikincil kaynaklara dayanıyor." rows={D.tkdk} filtre={filtre} pfx="tkdk" />
-      <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Kartlar: genel bilgi, illerin bölgeleri, sistemlerin karşılaştırması (Hedef, Öncelikli, Hamle), her sistemin destek tablosu, asgari tutarlar ve sektörler." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} />
+      <Grup baslik="Yatırım Teşvik Belgesi" aciklama="Yeni yatırım yapan şirketlere vergi, gümrük, SGK ve finansman avantajı. Çoğu yatırımcı için geçerli olan Hedef Yatırımlar açık gösterilir. Öncelikli Yatırımlar ve Türkiye Yüzyılı Kalkınma Hamlesi altta kapalı bölümdedir." rows={yatirim} filtre="all" pfx="yatirim" sayac={false} diger={yatirimDiger} digerBaslik="Diğer yatırım teşvik sistemleri: genel bilgi, sistem karşılaştırması, Öncelikli Yatırımlar, Kalkınma Hamlesi" />
       <Grup baslik="Ar-Ge Merkezi, Teknopark ve TEKMER" aciklama="Üçü sık karıştırılır. Müşterinin durumuna göre hangisinin uygun olduğu karşılaştırmada." rows={karsilastirma} filtre="all" pfx="arge" sayac={false} />
 
       <p className="note" style={{ marginTop: 36 }}>

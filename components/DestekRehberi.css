@@ -73,3 +73,7 @@
 .dr .tabs button{font:inherit;font-weight:600;font-size:14.5px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
 .dr .tabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .dr [hidden]{display:none}
+
+.dr details.diger{margin-top:16px;border:1px dashed var(--line, #cbd5e1);border-radius:10px;padding:10px 14px}
+.dr details.diger>summary{cursor:pointer;font-weight:600;font-size:14.5px;color:var(--muted)}
+.dr details.diger[open]>summary{margin-bottom:12px}
