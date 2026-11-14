@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "az-tehlikeli-ofislerde-isg-zorunlulugu",
+    title:
+      "On Dört Kişilik Bir Ofis, Hiç Fabrikası Olmadan Nasıl İSG Cezası Yedi?",
+    excerpt:
+      "6331 sayılı Kanun kapsamında 1 Ocak 2025'ten beri az tehlikeli sınıftaki işyerleri de, çalışan sayısı 50'nin altında olsa bile iş güvenliği uzmanı ve işyeri hekimi hizmeti almak zorunda. 'Bizi ilgilendirmez' diyen bir yazılım/danışmanlık ofisinin küçük bir kazadan sonra karşılaştığı idari para cezası, bu değişikliğin pratikte ne kadar az bilindiğini gösteriyor.",
+    tag: "Hukuk ve Vergi",
+    date: "14 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kamu-borcu-ilan-listesi-5-milyon-tl-siniri",
     title:
       "5 Milyon TL Vergi Borcu Olan Şirketler Aralık'ta GİB'in Listesinde: Gözden Kaçan 3 Ayrıntı",
