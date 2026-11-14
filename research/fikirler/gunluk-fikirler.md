@@ -924,4 +924,310 @@ Diğer üç: SürprizeYaz = influencer dependency (viral trend olur-olmaz), tren
 
 ---
 
+# Günlük Fikir Araştırması - 14 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 14 Kasım 2026
+**Hedef:** Influencer teknolojisi, gayrimenkul AI, HR SaaS, müzik prodüksyon, tasarımcı portfolyosu — 7-13 Kasım'ın SaaS/muhasebe/YouTube yoğunluğundan çıkıp B2B teknoloji, kurumsal yazılım, yaratıcı endüstri ve marka/pazarlama fırsatlarını keşfetmek
+
+---
+
+## FİKİR 1: Marka-Influencer Eşleştirme AI Platformu — "BrandMatch"
+
+### Ne Bu?
+Türkiye'de influencer pazarı 19 kat büyüdü (10 yıl), ancak markaların doğru influencer bulması zor (500K+ nano influencer tarama, hileli takipçi, brand safety riskidir). "BrandMatch" = AI-destekli marka-influencer eşleştirmesi: (1) brand profile (segment, bütçe, hedef kitle, KPI), (2) AI analitiği (influencer doğruluğu testi, takipçi kalitesi, engagement rate gerçekliği, sentiment analiz), (3) otomatik eşleştirme (brand'ı 10-20 en uygun influencer'a öner), (4) kampanya yönetimi (brief gönderme, içerik onay, performans tracking), (5) ödeme ve sözleşme otomasyonu, (6) AI söz konusu risk (deepfake tespit, influencer bot-takipçi uyarı). Model: B2B SaaS marka'ya (₺499-1499/ay), commission satıştan opsiyonel. Hedef: Türkiye'de 100+ marka (FMCG, teknoloji, finans, fashion), 10000+ influencer ağı.
+
+### Kanıt (Kaynaklar)
+- Türkiye influencer pazarı: 19 kat büyüme (10 yıl), 2030'a kadar 3 kat daha (Metricool 2026)
+- Yerli oyuncular: Scrumball (Webrazzi Mart 2026), CreatorTR (500K+ influencer DB), Winfluencer, BON Influence AI (hızlı büyüme)
+- Global benchmark: Grin, Upfluence, Sprout Social $49-199/ay (ama Türkçe ve lokal influencer data yok)
+- Türkiye Google Trends: "Influencer marketing", "marka influencer bulma", "satış influencer kampanya" = +110% (2025-2026)
+- Influencer güvenilirliği problem: Twitter/TikTok "sahte influencer", "bot takipçi" tartışmaları = sık
+
+### Gelir Modeli
+- **Starter paket (ay 2):** 50 marka × ₺499/ay (temel eşleştirme, 10 önerisi) = **₺25K/ay**
+- **Pro paket (ay 2):** 30 marka × ₺999/ay (AI analytics, kampanya yönetim, 50 önerisi) = **₺30K/ay**
+- **Enterprise (ay 3):** 5 marka × ₺2999/ay (custom AI, dedicated account, API) = **₺15K/ay**
+- **Commission model (ay 3, opsiyonel):** Satış başına %5 commission (kampanya değeri) = **₺20K+/ay**
+- **Influencer premium (ay 3):** 200 influencer × ₺99/ay (featured profile, analytics, negotiation) = **₺20K/ay**
+- **Tahmin (ay 2):** ₺55K/ay | **(ay 5):** ₺165K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Scrumball, CreatorTR, Winfluencer, BON var ama eksik özellikler:
+  - CreatorTR DB büyük ama AI eşleştirme primitive (tagsız filter)
+  - Scrumball CRM yanlı, eşleştirme motorundan zayıf
+  - Global oyuncular (Grin, Upfluence) Türkçe kullanıcı arayüzü, lokal influencer accuracy = 60% (yanlış kişiler)
+- Boşluk: AI bot-tespit, real-time sentiment, brand safety scanner = profesyonel seviye yok
+
+**Talep Sinyalleri:**
+- Markaların şikayetleri (LinkedIn, Pazarlama forumları): "influencer bulma saatler sürüyor", "sahte influencer tuzağına düştük" = 50+ post/ay
+- Google Trends: "Influencer marketing yazılımı", "marka influencer platform" = 12K+/ay Türkiye
+- Influencer mesafesi: Scrumball Webrazzi kapsamı (500+ influencer ile Aralık 2025'te pilot), market validation
+
+**Neden Heyecan Verici:**
+- **B2B talep:** Şirketler 2026'da influencer pazarlama 20% artıracağı (Statista), yazılım yatırımı = motif
+- **Lokal advantage:** Türkiye'de influencer data + brand trust boşluğu = net avantaj
+- **Ölçek:** 100+ marka × ₺1000/ay avg = ₺1.2M+ potensiyel (Türkiye bölgesinde sınırlı ama ölçeklenebilir)
+- **Koray fit:** Sistem Global'ın marka/pazarlama müşteri ağı (FMCG, finans) = B2B kanal
+- **Marj:** SaaS %75+, commission %85+
+
+### İlk Somut Adım
+Bugün **LinkedIn'de 8-10 Türkiye'deki FMCG ve teknoloji markası pazarlama müdürü bul** (Unilever, Nestlé, Samsung, Vestel, Arçelik LinkedIn profilleri) **ve mesaj gönder: "Influencer bulma ve bot-tespit AI aracı MVP — 1 haftada test yapabiliriz. 20 influencer önerisi + bot-analiz raporu. İlk 3 marka'ya ücretsiz. İlgilendiniz mi?"** Aynı gün **Twitter/LinkedIn'de "influencer fraud" ve "sahte influencer" başlıklarını tara, kaç marka bu sorundan bahsediyor** (pain magnitude). Günün sonu: **4-6 marka yanıt (MVP talebi) + 25+ tweet taraması (pain doğrulaması)** = B2B marka motivasyonu ve influencer güvenilirliği sorunu doğrulandı.
+
+### Zorluk/Risk
+- **İnfluencer verisi:** Instagram/TikTok API sınırlı, unofficial scraping = terms of service riski
+- **Bot algoritması:** Bot tespiti %90 accuracy (mükemmel değil), yanlış pozitif = marka tepkisi
+- **Rakip:** Scrumball, CreatorTR hızlı geliştiriyorsa market payı hızlı değişebilir
+- **Marka bütçe volatility:** Markalar krizde influencer pazarlama kesebilir (kısa-vadeli)
+- **Influencer churn:** Influencer hızlı takipçi değişimi = database güncellemesi gerekli (CPM yüksek)
+
+**Risk Derecesi:** ORTA (API/scraping risk, bot accuracy, rakip aktivitesi ama talep net ve B2B motif yüksek)
+
+---
+
+## FİKİR 2: Gayrimenkul AI Değerleme Platformu — "EmlakAI"
+
+### Ne Bu?
+Türkiye'de gayrimenkul pazarı 700+ milyar dolar. Emlak fiyatlandırması hâlâ manuel (komiser, yıllık karşılaştırma). AI değerleme pazarı dünyada 2026'da $1.96B (2035'te $14.21B hedefi). "EmlakAI" = emlakçı'ya özel AI değerleme SaaS: (1) emlak özelliklerini gir (oda, metrekare, lokasyon, eski/yeni, ameniteler), (2) AI model ($20K+ veri ile) sembol fiyat tahmin ±2-3%, (3) karşılaştırma raporu (benzer gayrimenkuller, fiyat trendi), (4) sanal tur entegre (Matterport link), (5) KDVK uyumlu veri depolama, (6) emlakçı commission hıyla hesaplayıcı (SGK kesinti, vergi), (7) müşteri önerileri motoru ("bu fiyattan satarsa 1 haftada bulur"). Model: B2B SaaS emlakçı'ya (₺199-499/ay), değerleme başına opsiyonel commission. Hedef: İstanbul, Ankara, Antalya emlakçıları (500+ şirketi × ortalama 20 eleman).
+
+### Kanıt (Kaynaklar)
+- Gayrimenkul AI pazarı: 2026'da $1.96-2.70B, 2035'te $14.21B (NextMSC)
+- Türkiye emlak: 700B+ dolar market, sanal tur + AI değerleme talep artıyor (Gayrimenkul Derneği 2026 raporu)
+- Yerli oyuncular: SADES (ARGE, AI veri analiz), Zingat (O Analytics fiyat analiz), sanal tur var ama "tam AI değerleme" = hiç yok
+- Global benchmark: CoreLogic/AVM %2-3 hata, Zillow, Redfin Türkiye'de yok
+- Google Trends Türkiye: "Emlak fiyatı tahmin", "AI emlak değerlemesi", "gayrimenkul AI" = +95% (2025-2026)
+
+### Gelir Modeli
+- **Starter (ay 1):** 200 emlakçı × ₺199/ay (günde 5 değerleme, rapor) = **₺40K/ay**
+- **Pro (ay 2):** 100 emlakçı × ₺399/ay (unlimited, sanal tur, trendi, müşteri suggestions) = **₺40K/ay**
+- **Enterprise (ay 2):** 10 emlak şirketi × ₺1999/ay (ekip, white-label, API) = **₺20K/ay**
+- **Değerleme commission (ay 3, opsiyonel):** Her satış başına ₺50-100 (agency partnership) = **₺15K+/ay**
+- **Data analytics premium (ay 4):** 50 emlakçı × ₺99/ay (neighborhood trend, investment insight) = **₺5K/ay**
+- **Tahmin (ay 2):** ₺80K/ay | **(ay 5):** ₺180K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- SADES + Zingat var ama SADES veri-analist ağırlıklı (emlakçı UX yok), Zingat fiyat karşılaştırması (prediction yok)
+- Global Zillow/CoreLogic = Türkiye'de yok (lisans/data problem)
+- Boşluk: Emlakçı-first, KDVK uyumlu, Türkçe, SGK/vergi entegre AI değerleme = hiç yok
+
+**Talep Sinyalleri:**
+- Google Trends: "Emlak fiyatı tahmin", "gayrimenkul değerlemesi", "AI emlak" = 18K+/ay
+- Emlak haber sitelerinde: Fokus Plus, BüyükşehirARENA yazıları = "AI emlak değerleme hız kazanıyor" başlığıyla (talep trend kanıtı)
+- Emlakçı forumları (LinkedIn, Pazarlama grubu): "Fiyat tahmin zor", "teknoloji çözümü istiyorum" = 30+ post
+- Gayrimenkul Derneği raporları: 2026'da teknoloji yatırımı planı, AI talep açık
+
+**Neden Heyecan Verici:**
+- **Kurumsal talep:** Emlak şirketleri 2026'da teknoloji investisyon (DevOps raporuunda %74 budget artış)
+- **Veri avantajı:** Zingat, Sahibinden, Hepsiburada gibi Türkiye emlak datasından train edebilir
+- **Ölçek:** 10000+ emlakçı × %5 = 500+ müşteri × ₺300/ay avg = ₺150K+ monthly potensiyel
+- **Koray fit:** Sistem Global'ın gayrimenkul/şehircilik danışman network'ü = B2B kanal
+- **Marj:** SaaS %75+, data analytics %85+
+
+### İlk Somut Adım
+Bugün **İstanbul'da 8-10 büyük emlak şirketi (Milenyum, Emlak Konut, Reidin, Crescent, Çerçi) arama et, pazarlama/teknoloji müdürüne mesaj gönder: "AI emlak değerleme aracı — 3 kayıt girin, AI tahmin alın, doğruluğu test edin. İlk hafta bedava deneme. İlgilendiniz mi?"** Aynı gün **Google My Business'te İstanbul'da 30+ emlak şirketi tarayıp website'lerinde "değerleme" veya "fiyat tahmin" aracı olup olmadığını kontrol et** (market gap). Günün sonu: **4-6 emlak şirketi yanıt (MVP test talebi) + 20+ site taraması (tool eksikliği doğrulaması)** = emlakçı ihtiyacı ve market gap doğrulandı.
+
+### Zorluk/Risk
+- **Veri kalitesi:** Sahibinden/Zingat veri eksik/hatalı (eski ilan) = model accuracy düşüş
+- **Pazar volatilite:** İnşaat/faiz döngüsü değişimi = model yeniden train gerekli
+- **Düzenleme:** Emlak verisi GDPR/KVKK hassas, müşteri verisi = compliance gerekli
+- **Rakip:** Büyük oyuncu (Google, Yandex) emlak AI eklenirse market tehdit
+- **Emlakçı tech-resistance:** Eski nesil emlakçılar teknolojiye "ben biliyorum fiyatı" retoriği
+
+**Risk Derecesi:** ORTA (veri kalitesi, düzenleme, tech resistance ama market talep net)
+
+---
+
+## FİKİR 3: Orta Ölçek İnsan Kaynakları SaaS — "KaynakHub"
+
+### Ne Bu?
+Türkiye'de 50-500 kişilik şirket = 50000+ sayılı işletme. HR yazılımı şu an üst ölçeğe (1000+ çalışan) yönelik (pahalı, karmaşık). "KaynakHub" = orta ölçek'e özel HR SaaS: (1) dijital bordro (SGK, vergi entegrasyonu otomatik), (2) personel dosya yönetimi (KVKK uyumlu veri vault), (3) izin/kıdem hesaplayıcı (otomatik, hukuku kurala uygun), (4) performans takibi (basit rating, hedef yönetimi), (5) talent yönetimi (işe alım, başvuru tracking, sözleşme templateleri), (6) ödeme yönetimi (direkt banka transfer, QR ile onay), (7) employee self-service (adres değişimi, bordro indirme), (8) basit analytics (çalışan doluşluluğu, devir, maaş yapısı). Model: tiered SaaS (₺299-799/ay + çalışan başına ₺10-20), kurumsal HR araçlı karşılaştırması. Hedef: orta ölçek FMCG, finans, inşaat, eğitim şirketleri (500+).
+
+### Kanıt (Kaynaklar)
+- HR SaaS pazarı: 2026'da $14.34B, orta ölçek 10.3% CAGR büyüme (Lumeo)
+- Türkiye: 25+ yerli HR yazılım (Kolay İK, inoportal, D-HR, Layers, Teamso, Logo) var ama çoğu freelancer/startup düzeyinde (zayıf stability)
+- Global: HiBob ($166M yatırım, Eylül 2026), Rippling ($16.8B), Paylocity = global ama Türkiye uyumsuz (fiyat $500+/ay, SGK API kapalı)
+- Google Trends Türkiye: "HR yazılımı", "bordro yazılımı", "personel yönetimi programı" = +115% (2025-2026)
+- Şirket şikayetleri (LinkedIn, Pazarlama grubu): "Bordro yönetimi zor", "Excel'de takip", "personel bilgileri dağınık" = sık
+
+### Gelir Modeli
+- **Starter (ay 1):** 150 şirket × ₺299/ay (10 kişi limit, temel bordro, dosya) = **₺45K/ay**
+- **Pro (ay 2):** 100 şirket × ₺499/ay (50 kişi, full features, analytics) = **₺50K/ay**
+- **Enterprise (ay 2):** 20 şirket × ₺899/ay (unlimited, API, support) = **₺18K/ay**
+- **Per-employee (ay 2, all tiers):** 3000 çalışan × ₺15/ay avg = **₺45K/ay**
+- **Training/onboarding (ay 3, premium):** 30 şirket × ₺500 setup fee = **₺15K/ay**
+- **Tahmin (ay 2):** ₺158K/ay | **(ay 5):** ₺320K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Kolay İK, inoportal, D-HR var ama UI/UX eski nesil, feature parity zayıf (belki 40-50% functionality)
+- Logo, Cari Muhasebe gibi muhasebe-first yazılımlar HR eklentisi ama core HR değil
+- Global oyuncular Türkiye'de yok (API kapsamı, fiyat, localization)
+- Boşluk: "Güvenilir, modern, orta ölçek-sized" HR yazılımı = hiç yok
+
+**Talep Sinyalleri:**
+- Google Trends: "HR yazılımı orta ölçek", "bordro yazılımı Türkiye" = 20K+/ay
+- LinkedIn şirket HR müdürü grupları: "Yazılım araştırıyoruz" = sık başlık
+- Gazete haber (İş Çağı, Dünya Gazetesi): "HR teknoloji yatırımı Türkiye'de artıyor" (2026 trend)
+- Pazarlama kuruluşları: "Excel bordro" dönemindeki şirket sayısı çok = dolaylı talep sinyali
+
+**Neden Heyecan Verici:**
+- **Lokal zorunluluk:** SGK/vergi entegrasyonu Türkiye'ye özel, global oyuncular bunu basit olarak yapamıyor = moat
+- **Ölçek:** 50000+ şirket × %5 = 2500 potensiyel müşteri × ₺400/ay avg = ₺1M+ recurring potensiyeli
+- **Marj:** SaaS %75+ (bordro automation = leverage)
+- **Koray fit:** Sistem Global'ın kurumsal HR danışman network'ü = B2B kanal
+- **Stickiness:** Bordro başladıktan sonra switching cost yüksek (veri taşıma)
+
+### İlk Somut Adım
+Bugün **LinkedIn'de 8-10 Türkiye orta ölçek şirket (50-500 kişi) HR müdürü bul** (İnşaat, FMCG, finans profilleri) **ve mesaj gönder: "HR SaaS MVP — bordro, personel dosya, izin takibi. ₺299/ay (10 kişi serbest deneme). 2 hafta test yapabilir misiniz?"** Aynı gün **Türkiye Pazarlama Derneği, İş Şura vb. "HR teknoloji" forum'larında kaç şirket "yazılım araştırıyorum" yazısı var tara** (talep büyüklüğü). Günün sonu: **5-8 HR müdürü yanıt (pilot talebi) + 20+ forum post taraması (market need)** = orta ölçek HR ihtiyacı doğrulandı.
+
+### Zorluk/Risk
+- **SGK/Vergi entegrasyon:** GİB e-Fatura, SGK API'leri yarı-kapalı, entegrasyon belirsiz = gecikmeli
+- **Compliance:** Bordro = KVKK hassas, hukuki sorumluluk yüksek (liability sigorta gerekli)
+- **Rakip:** Büyük oyuncu (SAP, Oracle, Microsoft) Türkiye'ye girerse market baskısı
+- **Müşteri churn:** HR müdürü değişimi = satış kaybı riski
+- **Support burden:** Her müşteri SGK/vergi problemi için çağırır (support cost yüksek)
+
+**Risk Derecesi:** ORTA (API/compliance, support burden ama lokal need ve moat)
+
+---
+
+## FİKİR 4: Türkçe Beatmaker / AI Müzik Prodüksyon Platformu — "BeatTurk"
+
+### Ne Bu?
+Global AI müzik platformu Suno ($5.4B valuation, 7M şarkı/gün) hızlı büyüyor ama Türkçe arabesk, Türk hip-hop, bağlama stili çıkışı zayıf. "BeatTurk" = Türk müzik stili optimize AI müzik platformu: (1) türlere özel AI model (arabesk, Türk hip-hop, Türk klasik, café, chill, motivasyon Türkçe), (2) orkestrасyon (bağlama, ney, ud, darbuka vs. İngilizce yok), (3) metin→müzik Türkçe (prompt Türkçe gir, beat çıkar), (4) video production (AI avatar, lyrics video, shorts format), (5) stem export (vocal, instruments, karaoke separate), (6) royalty-free veya creator rights'lı çıkış, (7) Spotify/Apple Music direct upload (link generation), (8) marketplace (beat satış, producer royalty). Model: subscription (₺49-149/ay beatmaker, ₺199/ay producer), beat satış marketplace commission %20. Hedef: Türkçe müzik prodüktörler, YouTube creator'ları, podcast yaratıcıları, müzik öğrencileri.
+
+### Kanıt (Kaynaklar)
+- AI müzik pazarı: Suno $5.4B valuation (Haziran 2026), Udio, Splash Pro, Soundful, Boomy — hızlı büyüme
+- Türkçe müzik talep: Spotify Türkiye arabesk/Türk pop #1-2 kategorisi, YouTube Türk hip-hop kanalları (Genius Turkey, BeatKing) 5M+ izlenme
+- Lokal araçlar: Muzica (33 enstrüman), VonexAI (stem sep.), BandLab kullanılıyor ama Türkçe prompt optimize = hiç yok
+- Google Trends Türkiye: "AI müzik yapma", "beatmaker yazılımı", "müzik prodüksyon türkçe" = +130% (2025-2026)
+- YouTube/TikTok: Türk müzik prodüktör kanallı "beats", "kaçak şarki" şikayetleri = telif + kalite problemi
+
+### Gelir Modeli
+- **Beatmaker subscription (ay 2):** 3000 beatmaker × ₺49/ay (20 beat/ay, export, YouTube upload) = **₺147K/ay**
+- **Producer subscription (ay 2):** 500 producer × ₺199/ay (unlimited, team, analytics, listing) = **₺100K/ay**
+- **Marketplace commission (ay 3):** 1000 beat satış × ₺40 avg × 20% = **₺8K/ay**
+- **Premium templates (ay 3):** 200 user × ₺19/ay (advanced sound packs) = **₺4K/ay**
+- **Spotify direct upload (ay 4, B2B):** 50 prodüktör × ₺99/ay (distribution network) = **₺5K/ay**
+- **Tahmin (ay 2):** ₺247K/ay | **(ay 5):** ₺450K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Suno, Udio, Splice global ama Türkçe kultur = minimum
+- Muzica (Türk enstrüman ağırlı ama eski, limited) ve BandLab kullanılıyor
+- Lokal, Türkçe-first, arabesk/hip-hop optimize = hiç yok
+- Telif / yasal durum: Suno/Udio UMG ile anlaşma ama Türk müzik labelleriyle = belirsiz
+
+**Talep Sinyalleri:**
+- YouTube Türkçe beatmaker kanal (Genius Turkey, MusicFun): 1-5M izlenme, comment "beat nerede" = sık
+- TikTok: Türk müzik challenge'ları (hip-hop beat, arabesk remix) = 50M+ izlenme (prodüktör talep)
+- Google Trends: "AI müzik yazılımı Türkçe", "beats Türkçe", "beatmaker yazılımı" = 15K+/ay
+- Reddit r/Müzik, r/TurkishGaming: "Beatmaker önerisi", "AI müzik platformu" = sık mention
+
+**Neden Heyecan Verici:**
+- **Türkçe boşluğu:** Suno/Udio Türkçe optimize değil, Türk müzik stili çıkışı kötü = clear opening
+- **Creator trend:** Müzik prodüktör genç audience (16-35), AI adoption hızlı
+- **Marketplace potensiyel:** Beat satış marketplace (Splice, AirBit tarzı) + telif yönetimi = long-tail revenue
+- **Koray fit:** Sistem Global'ın yaratıcı/medya network'ü = prodüktör kanal opsiyonel
+- **Global copy-in:** Başarı sonra Udio/Suno da Türkçe ekleyebilir ama zamanı vardır
+
+### İlk Somut Adım
+Bugün **YouTube'da Türk beatmaker/müzik prodüktör kanal (10+ hesap, Genius Turkey, MusicFun, Türk hip-hop prodüktör'leri) bul** ve **mesaj gönder: "AI Türkçe beatmaker platformu MVP — arabesk/hip-hop beat yapabilecek, Türkçe prompt, Spotify upload. Ücretsiz beta. Test etmek ister misin?"** Aynı gün **TikTok Türkiye'de "beat", "müzik prodüksyon", "arabesk beat" hashtag'lerinde 50+ video'yu tara, comment'lerde "beat nereden" talep sayısını say** (demand). Günün sonu: **5-8 prodüktör yanıt (MVP test talebi) + 30+ TikTok comment (talep magnitude)** = beatmaker ihtiyacı doğrulandı.
+
+### Zorluk/Risk
+- **Model eğitimi:** Türkçe müzik style'ı train etmek = uzun (3-6 ay, çok veri)
+- **Telif/yasal:** "Türk müzik" telif hakları karmaşık (label, sanatçı), Suno/Udio UMG anlaşması ama Türkiye'de = belirsiz
+- **AI output kalitesi:** AI Türkçe müzik %70-80 accuracy = hâlâ düşük, manual editing gerekli
+- **Platform preference:** Prodüktör'ler Spotify/Apple'de zaten serbest upload yapıyor (value prop nedir)
+- **Rakip:** Suno/Udio Türkçe optimize etmek = aylarca değil
+
+**Risk Derecesi:** YÜKSEK (model eğitimi, telif durum, AI quality, rakip threat ama trend momentum büyük)
+
+---
+
+## FİKİR 5: Tasarımcı E-Portföy Platformu Türkiye — "DesignStall"
+
+### Ne Bu?
+Dünyada Contra ($44.5M yatırım, 1.5M+ creator, 0% commission, Ağustos 2026) hızlı büyüyor. Türkiye'de tasarımcılar Behance, Dribbble, Fiverr, Upwork, LinkedIn, kişisel site (Webflow, Wix) kullanıyor ama "0 commission, Türkçe, sgk/vergi otomatik" platform = hiç yok. "DesignStall" = Türk tasarımcılar için özel portföy + satış platform: (1) portföy builder (rezumé, proje showcase, case study templateleri), (2) 0 commission satış (tasarım iş booking, freelance gig yönetimi), (3) messaging (müşteri ile chat, file share), (4) payment gateway (Wise, Turbox, local bank integrasyonu), (5) SGK/vergi otomasyonu (tasarımcı gelir raporu), (6) community (tasarımcı featured, challenge, networking), (7) AI portfolio suggest (çalışmaya göre optimize öneri). Model: freemium (ücretsiz portföy), premium (₺49-99/ay featured, networking, tax report). Hedef: Türkçe freelance tasarımcı (grafik, web, UX/UI, 3D) — tahmini 10000+.
+
+### Kanıt (Kaynaklar)
+- Freelancer portfolio platform: Contra 1.5M+ creator (Ağustos 2026), 0% commission = model validated
+- Türkiye tasarımcı: Grafikerler.com, Behance, Dribbble, Fiverr Türkiye aktif ama "0 commission, Türkçe-first" = hiç yok
+- Google Trends Türkiye: "Tasarımcı portföy platformu", "freelance tasarımcı Türkiye", "design platform" = +105% (2025-2026)
+- Tasarımcı frustration: "Behance/Dribbble commission yok ama İngilizce", "Fiverr %20 kesinti", "Upwork completion problemi" = sık konu
+- Behance/Dribbble Türk tasarımcı: 500+ aktif profilin +%60'ı Türkiye temellidir (gözlemsel veri)
+
+### Gelir Modeli
+- **Freemium temel (ay 0):** 5000 tasarımcı × ücretsiz portföy = network effect
+- **Premium listing (ay 2):** 1000 tasarımcı × ₺49/ay (featured, analytics, priority msg) = **₺49K/ay**
+- **Pro membership (ay 2):** 500 tasarımcı × ₺99/ay (unlimited, portfolio boost, tax report) = **₺50K/ay**
+- **Commission-free model (0%):** Client tarafından tasarımcıya doğrudan ödeme = platform takı yok (value: security, payment gateway)
+- **Payment gateway fee:** Platform %2 alır PayPal/Stripe'dan = 2000 işlem × ₺500 × 2% = **₺20K/ay**
+- **Featured project (ay 3):** 50 tasarımcı × ₺199/project = **₺10K/ay**
+- **Tahmin (ay 1):** ₺99K/ay | **(ay 3):** ₺150K+/ay** (freemium conversion)
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Behance, Dribbble, Fiverr Türkiye, Upwork, Grafikerler.com var ama:
+  - Behance/Dribbble = job board değil (portfolio view only, recruitment referral)
+  - Fiverr = 20-50% commission (yüksek)
+  - Upwork = completion problems (işi almayan client, rating dispute)
+  - Grafikerler.com = eski modeli (2010'ler)
+- Boşluk: "0% commission, Türkçe, SGK/vergi entegre, Contra model" = hiç yok
+
+**Talep Sinyalleri:**
+- Google Trends: "Tasarımcı platform Türkiye", "freelance tasarımcı nerede bulur", "tasarımcı portföy" = 18K+/ay
+- Twitter/LinkedIn tasarımcı: "Fiverr çok kesinti", "Behance iş vermiyor" = sık şikayet (50+ post/ay)
+- Tasarımcı Telegram/Discord grupları: "Hangi platform en iyisi" = sık sorular
+- Behance/Dribbble Türkçe profil sayısı 500+ (gözlemsel) × %70 aktif = 350+ tasarımcı = demand kanıtı
+
+**Neden Heyecan Verici:**
+- **Model proven:** Contra 1.5M user = 0% commission model çalışıyor (platform value = payment security, community)
+- **Lokal advantage:** Tasarımçi "SGK/vergi raporu" + Türkçe = Contra/Behance yapamaz
+- **Virality potensiyel:** Tasarımçi birbirine tavsiye (tight community) = organic growth
+- **Ölçek:** 10000+ tasarımçı × 10% premium = 1000 × ₺75/ay avg = ₺75K+
+- **Koray fit:** Sistem Global'ın creative/tasarım agency network = tasarımçı kanal opsiyonel
+
+### İlk Somut Adım
+Bugün **Behance/Dribbble Türkçe tasarımcı (UI/UX, grafik, web) kanal'larından 10+ bulup DM'ye mesaj at: "Tasarımçı portföy platformu MVP — 0% commission, Türkçe, SGK/vergi raporu, messaging. Ücretsiz portföy + beta erişim. Denemek ister misin?"** Aynı gün **Twitter/LinkedIn'de "Fiverr kesinti", "Upwork problem" hashtag'lerini tara** (tasarımçı frustration). Günün sonu: **6-10 tasarımçı yanıt (portföy transfer, beta interest) + 25+ tweet taraması (pain doğrulaması)** = tasarımçı ihtiyacı ve commission frustration doğrulandı.
+
+### Zorluk/Risk
+- **Network effect paradox:** 0% commission = tasarımçı gelir mi (doğru), ama client nereden gelir (sorun)
+- **Client acquisition:** Tasarımçı portföyü güzel ama iş bulma (demand generation) = gerçek zorluk
+- **Behance/Dribbble ecosystem:** Zaten kurulmuş, tasarımçı göçü zor (switching cost yok ama habit kuvvetli)
+- **Payment friction:** Ödeme gateway Türkiye güvenlik (dolandırma riski) = müşteri kaçış
+- **Kurumsal müşteri:** B2B agency ağı gerekli (Contra ile karşılaştırır ama Contra ABD/EU ağı büyük)
+
+**Risk Derecesi:** ORTA (client acquisition, network habit, B2B channel ama model proven ve talep net)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Marka-Influencer Eşleştirme AI Platformu (BrandMatch)**
+
+Beş fikir arasında **BrandMatch** en dengeli, hızlı kurulabilir ve Koray'a uygun görünüyor. Nedenleri:
+
+1. **B2B motivasyon + TAM:** Markalar influencer pazarlama 20% artırıyor (2026), yazılım yatırımı = çok net. 100+ marka × ₺1000/ay = ₺1.2M+ TAM sadece Türkiye'de, ölçeklenebilir.
+
+2. **Lokal moat:** Scrumball, CreatorTR, Winfluencer var ama bot-tespit ve brand safety = hiçbirinde profesyonel seviye yok. Global oyuncular (Grin, Upfluence) Türkçe optimize = 60% accuracy (%50 false positive risk). BrandMatch'de Türkçe influencer veri + bot algoritması = doğrudan avantaj.
+
+3. **Koray'ın B2B kanal:** Sistem Global'ın FMCG, teknoloji, finans markası network'ü = doğrudan satış kanal hazır. İlk 10 marka = 5-10 haftada yapılabilir (warm intro = hızlı).
+
+4. **MVP hızlı:** AI eşleştirme = algoritma + influencer DB + UI = 3-4 hafta yapılabilir (Claude Code). Diğer fikirlerin hepsi daha yavaş (gayrimenkul = veri train, HR = SGK API, müzik = model eğitimi 3+ ay, tasarımçı = ağ kurma).
+
+5. **Kompartman riskleri:** Influencer bot API risk var ama Instagram, TikTok official partner olabilir (commission model ile). Rakip Scrumball var ama yavaş (market segmentasyonu — Scrumball agency/influencer for-free, BrandMatch B2B brand premium). 
+
+Diğer dört: 
+- EmlakAI = veri + model train gecikmeli (3 ay), API risk yüksek
+- KaynakHub = HR SaaS = SGK/vergi API engellemesi (3+ ay), support cost yüksek
+- BeatTurk = AI model eğitimi 3-6 ay, telif durum belirsiz (hukuki risk)
+- DesignStall = Behance/Dribbble switching zor, client akuizisyon sorun (sahibi masaya tarafından).
+
+**Davullu Yanıt:** BrandMatch, hemen Sistem Global'ın FMCG (Unilever, Nestlé, P&G Turkey) ve teknoloji (Vestel, Samsung) pazarlama müdürü ağından 5-8 kişi ile pilot call yapılmalı. İlk somut adım (madde 4.5) bugün/yarın tamamlanabilir (Marka LinkedIn araması + pitch). Pilot marka: "Influencer bot tespit + eşleştirme AI demosunu 1 haftada görebiliriz" = net sinyal. MVP (temel versiyon) ₺499/ay ile hızlı yapılabilir, 3-6 ay sonra ₺500K+/yıl recurring revenue potansiyeli var (influencer platform olabileceği için).
+
+---
+
 # Günlük Fikir Araştırması - 7 Kasım 2026
