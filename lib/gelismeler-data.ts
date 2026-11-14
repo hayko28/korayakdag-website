@@ -2564,6 +2564,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Fon piyasasındaki güven kaybının ardından gelen bu ek sürenin asıl faydası fonu yöneten kurumlara; portföyünde bu fonlardan bulunduran şirket ve bireysel yatırımcıların da likidite planlamasını eski değil yeni takvime göre yapması gerekiyor.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-14",
+    baslik:
+      "TÜİK Ekim 2026 enflasyon verileri: yıllık TÜFE %29,77'ye çıktı, dört aylık düşüş serisi sona erdi",
+    ozet:
+      "TÜİK'in 3 Kasım 2026'da açıkladığı verilere göre tüketici fiyat endeksi (TÜFE) ekimde aylık %2,58, yıllık %29,77 arttı. Yıllık enflasyon mayısta %32,61 iken eylülde %29,73'e kadar gerilemişti; ekimdeki artışla bu dört aylık düşüş serisi sona erdi. Aynı dönemde yurt içi üretici fiyat endeksi (Yİ-ÜFE) yıllık %27,41, aylık %1,65 arttı.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/tuik-2026-yili-ekim-ayi-enflasyon-rakamlarini-acikladi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek bir aylık verideki artış başlı başına bir trend değişikliği anlamına gelmeyebilir. Yıl sonu bütçe ve fiyatlandırma kararlarını sadece ekim rakamına değil, son bir kaç aylık ortalamaya göre kurmalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-14",
+    baslik:
+      "Ekim 2026 ihracatı yıllık %8,1 arttı, dış ticaret açığı %11,4 daraldı",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat'ın 3 Kasım 2026'da açıkladığı geçici verilere göre Ekim 2026 ihracatı yıllık bazda %8,1 artışla 25,9 milyar dolara, ithalat %3,4 artışla 32,6 milyar dolara ulaştı. Dış ticaret açığı %11,4 azalarak 6,7 milyar dolara geriledi; ihracatın ithalatı karşılama oranı %79,4 ile geçen yılın aynı ayına göre 3,4 puan arttı. Ocak-Ekim döneminde toplam ihracat %5,5 artışla 236,8 milyar dolara ulaştı.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakani-omer-bolat-ekim-ayi-dis-ticaret-verilerini-acikladi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İthalattaki artışın ihracattan daha sınırlı kalması dış ticaret açığını küçültüyor, ama bazı sektörlerde girdi tedarikinin de yavaşladığına işaret edebilir. İhracatçı müşterilerimize kendi tedarik zincirlerindeki hareketliliği bu makro tabloyla birlikte değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
