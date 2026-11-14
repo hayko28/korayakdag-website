@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kamu-ihalelerinde-vergi-sgk-borcu-siniri-50000-tl-oldu-2026",
+    title: "Kamu İhalelerinde Vergi ve SGK Borcu Sınırı 50.000 TL'ye Yükseltildi: Şirketiniz İhaleye Girebilir mi?",
+    excerpt: "16 Ekim 2026 tarihli ve 33402 sayılı Resmî Gazete'de yayımlanan Kamu İhale Genel Tebliğinde Değişiklik Yapılmasına Dair Tebliğ ile, 4734 sayılı Kanun madde 10 kapsamında ihale dışı bırakılma sebebi sayılan kesinleşmiş vergi ve SGK prim borcu sınırı, 2018'den beri sabit kalan 5.000 TL'den 50.000 TL'ye çıkarıldı. Değişiklik 15 Kasım 2026'da yürürlüğe giriyor. Kapsam, geçiş hükmü ve şirketlerin şimdi kontrol etmesi gerekenlerle güncel rehber.",
+    category: "KAMU İHALELERİ • VERGİ VE SGK BORCU • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "deprem-bolgesi-cazibe-merkezleri-yatirim-tesviki-basvuru-suresi-2026",
     title: "Deprem Bölgesi ve Cazibe Merkezlerinde Yatırım Teşviki İçin Başvuru Süresi 31 Aralık 2026'da Doluyor",
     excerpt: "9903 sayılı Karar, 2012'den beri uygulanan teşvik sistemini ve Cazibe Merkezleri Programı'nı yürürlükten kaldırdı. Ancak depremden etkilenen ilçelerde (Adıyaman, Hatay, Kahramanmaraş, Malatya) ve eski Cazibe Merkezleri illerindeki OSB'lerde, geçici 3. ve 4. maddeler kapsamında 6. bölge seviyesinde destek uygulaması sürüyor. Bu özel uygulamadan yararlanmak için yeni başvuru imkânı 31 Aralık 2026'da sona eriyor.",
