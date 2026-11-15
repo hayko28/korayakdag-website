@@ -2592,6 +2592,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İthalattaki artışın ihracattan daha sınırlı kalması dış ticaret açığını küçültüyor, ama bazı sektörlerde girdi tedarikinin de yavaşladığına işaret edebilir. İhracatçı müşterilerimize kendi tedarik zincirlerindeki hareketliliği bu makro tabloyla birlikte değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "TOBB",
+    tarih: "3 Kasım 2026",
+    eklendiTarihi: "2026-11-15",
+    baslik:
+      "TOBB Nefes Kredisi'nde 50 milyar TL'lik yeni dilim: üst limit 5 milyon TL'ye çıktı",
+    ozet:
+      "TOBB'un Kredi Garanti Fonu ve sekiz bankayla yürüttüğü Nefes Kredisi'nde 50 milyar TL'lik yeni bir dilimin başvuruları 3 Kasım 2026'da başladı. KOBİ'ler firma başına 5 milyon TL'ye kadar, 6 ay anapara ödemesiz ve en fazla 48 ay vadeli kredi için başvurabiliyor; önceki dilimlerde daha düşük tutarla kredi kullanan işletmeler de toplam tutarı 5 milyon TL'ye tamamlayacak şekilde ek kredi kullanabiliyor. Haziran 2026'da başlayan programda bugüne kadar toplam yaklaşık 45 milyar TL kullandırılmıştı.",
+    kaynakUrl:
+      "https://www.cnbce.com/haberler/tobb-nefes-kredisi-basvurulari-3-kasimda-basliyor-kredi-limiti-5-milyon-lira-h40732",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: İlk dilimde daha düşük bir tutarla başvurup limitin tamamını kullanmayan işletmelere, bu yeni dilimde kalan farkı tamamlama hakkını bankalarıyla görüşürken hatırlatmalarını öneririm; bu ayrıntı başvuru sırasında çoğu zaman sorulmuyor.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "7 Kasım 2026",
+    eklendiTarihi: "2026-11-15",
+    baslik:
+      "Bakan Kacır: Türkçe büyük dil modeli BİLGE'nin ilk sürümü çok yakında geliştiricilere açılacak",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, 7 Kasım 2026'da TRT World Forum 2026'daki 'Yapay Zeka Çağında Sorumluluğu Yönetmek' oturumunda, yerli büyük dil modeli BİLGE'nin ilk sürümünün çok yakında geliştiricilerin kullanımına açılacağını açıkladı. Kacır, Türkiye Yapay Zeka Eylem Planı kapsamında 2030'a kadar 5 milyon vatandaşa yapay zeka okuryazarlığı kazandırılması, 10 bin ileri düzey uzman ve 100 bin profesyonel yetiştirilmesi ile en az 2 bin kamu veri setinin açılmasının hedeflendiğini; bugüne kadar 82 bin üniversite öğrencisine yapay zeka becerisi kazandırıldığını ve ulusal süper bilgisayar altyapısından 9 bin araştırmacının yararlandığını belirtti.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6aef2d554b1852391445e37d/AA/tr/sanayi-ve-teknoloji-bakani-kacir-trt-world-forum-2026-da-konustu-07-11-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: BİLGE henüz geliştiricilere açılmadığı için somut bir entegrasyon planı yapmak için biraz erken. Türkçe odaklı yerli bir dil modeli üzerine ürün geliştirmeyi düşünen yazılım şirketlerine, modelin ilk sürümünün erişime açılmasını yakından takip etmelerini öneririm; yerli dilde doğruluk ve maliyet açısından bir avantaj sunabilir.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "11 Kasım 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-11-15",
+    baslik:
+      "TÜİK: Perakende satış hacmi eylülde yavaşladı, toptan ticarette daralma sürdü",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 11 Kasım 2026'da yayımladığı Ticaret Satış Hacim Endeksi'ne göre eylül 2026'da perakende ticaret satış hacmi aylık yüzde 0,1, yıllık yüzde 7,7 arttı; bu artış ağustostaki yüzde 1,4'lük aylık orana göre belirgin şekilde yavaşladı. Toplam ticaret satış hacmi ise yıllık yüzde 5,6, aylık yüzde 0,7 geriledi; bu gerilemede toptan ticaretteki yüzde 10,9'luk yıllık daralma etkili oldu.",
+    kaynakUrl:
+      "https://www.cnbce.com/veriler/tuik-duyurdu-perakende-satis-hacmi-eylulde-yavasladi-h41530",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Perakende satışlardaki büyümenin hız kesmesi, yıl sonu kampanya ve stok planlaması yapan perakendecilerin talep tahminlerini aşırı iyimser kurmaması gerektiğine işaret ediyor. Toptan ticaretteki daralmanın tedarikçi ve dağıtıcı firmaları perakendecilerden daha fazla etkilediğini de göz önünde bulundurmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
