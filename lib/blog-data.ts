@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "e-tebligat-zorunlulugu-2026-30-kasim-son-tarih",
+    title: "e-Tebligat Zorunluluğu 2026: Şirketiniz Sisteme Kayıtlı Değilse 30 Kasım'a Kadar Ne Yapmalı?",
+    excerpt: "11 Ekim 2026 tarihli ve 33397 sayılı Resmî Gazete'de yayımlanan 596 sıra no'lu VUK Genel Tebliği, Anayasa Mahkemesi'nin iptal kararı sonrası e-Tebligat sisteminin usul ve esaslarını yeniden düzenledi. Kurumlar vergisi mükellefleri, gerçek usulde vergilendirilen gelir vergisi mükellefleri, kolektif ve adi komandit şirketler için sisteme kayıt son tarihi 30 Kasım 2026. Kapsam, muafiyetler, UETS/KEP ile farkı ve başvuru adımlarıyla güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • E-TEBLİGAT • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kamu-ihalelerinde-vergi-sgk-borcu-siniri-50000-tl-oldu-2026",
     title: "Kamu İhalelerinde Vergi ve SGK Borcu Sınırı 50.000 TL'ye Yükseltildi: Şirketiniz İhaleye Girebilir mi?",
     excerpt: "16 Ekim 2026 tarihli ve 33402 sayılı Resmî Gazete'de yayımlanan Kamu İhale Genel Tebliğinde Değişiklik Yapılmasına Dair Tebliğ ile, 4734 sayılı Kanun madde 10 kapsamında ihale dışı bırakılma sebebi sayılan kesinleşmiş vergi ve SGK prim borcu sınırı, 2018'den beri sabit kalan 5.000 TL'den 50.000 TL'ye çıkarıldı. Değişiklik 15 Kasım 2026'da yürürlüğe giriyor. Kapsam, geçiş hükmü ve şirketlerin şimdi kontrol etmesi gerekenlerle güncel rehber.",
