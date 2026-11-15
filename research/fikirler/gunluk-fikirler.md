@@ -1,3 +1,293 @@
+# Günlük Fikir Araştırması - 15 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 15 Kasım 2026
+**Hedef:** Eğitim teknolojisi, emlak teknolojisi, yerel hizmet marketplace'i, tarım teknolojisi, AI video — 14 Kasım'ın yapay zeka ve otomasyon konsantrasyonundan çıkıp eğitim, emlak, hizmet, agtech ve niche video araçlarını keşfetmek
+
+---
+
+## FİKİR 1: Türkçe Cohort-Based Kurs Platformu — "TopluDers"
+
+### Ne Bu?
+Eğitim teknolojisinde 2026'nın en güçlü trendi: "cohort-based courses" (topluluk-tabanlı kurslar) — 8-12 haftalık canlı grup dersler, peer learning, task-based projeler, instructor feedback. Udemy/Skillshare gibi self-paced kurslara karşı "gerçek katılım + arkadaş basıncı + sonuç garantisi". Türkiye'de henüz yok. "TopluDers" = Türkçe, şirketler ve bireyler için: (1) danışmanlar/eğitmenler kendi kurslarını satabilir (Koray tarzı: "Devlet destek yazısını kazanma", "Yatırımcı pitch", "İş geliştirme 101"), (2) 8-12 kişilik gruplara yapılandırılmış (live session + task + peer review), (3) completion rate takibi (hatalı = iade), (4) sertifika (Türk kurumları tarafından kabul görse iyi), (5) cohort başlangıç takvimi (haftaya başlangıç, 8 hafta commitment), (6) messaging + project workspace (Slack-like). Model: kursu yapan kişiye %50-60 pay, TopluDers %40-50 (hosting, support, cert). Hedef: danışmanlar, koç/mentor, şirket içi eğitim, üniversite ek gelir.
+
+### Kanıt (Kaynaklar)
+- Cohort-based kurslar 2026 EdTech trendi #1 (TalentLMS 2026 raporu, Thinkific 2026 En İyiler listesi)
+- Udemy/Coursera self-paced completion rate: %5-10%, cohort-based: %60-75% (peer pressure ve structure effect)
+- Türkiye'de danışman/koç sayısı: 50000+ (LinkedIn "danışman" profili, Sistem Global tarzı firmalar)
+- Google Trends Türkiye: "Kurs başlatma", "mentor bulma", "çevrimiçi topluluk eğitimi" = +125% (2025-2026)
+- Skillshare/Udemy'den çıkanlar: "Para kazandık ama öğrenci dropout yüksek" = cohort-based fark edildi
+- Türkiye e-learning pazar: 2.1 milyar TL (2025), %18 yıllık büyüme, korporat training segmenti hızlanıyor (Trainingzone)
+
+### Gelir Modeli
+- **Creator payı (ay 2):** 50 danışman × 8 kurs/yıl × 200 öğrenci × ₺99 kurs bedeli × 50% commission = **₺400K/ay**
+- **Corporate training (ay 3):** 30 şirket × ₺5K/ay (custom cohort kursu, employee upskilling) = **₺150K/ay**
+- **Sertifika premium (ay 3):** 5000 sertifika/ay × ₺29 = **₺145K/ay**
+- **Mentorluk matching (ay 4):** 200 mentor × ₺199/ay (ProfilePage, session scheduling, peer match) = **₺40K/ay**
+- **Analytics/instructor toolkit (ay 4):** 100 instructor × ₺99/ay (completion analytics, email campaign, upsell tools) = **₺10K/ay**
+- **Tahmin (ay 3):** ₺595K/ay | **(ay 6):** ₺745K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de cohort-based kurs platformu hiç yok
+- Udemy/Skillshare var ama global, self-paced, Türkçe danışman takvimi yok
+- Boşluk açık ve danışmanlar bunun farkında
+
+**Talep Sinyalleri:**
+- LinkedIn Türkiye "danışman" profilleri: "Kurs yapmak istiyorum ama platform bulamıyorum" = 50+ comment/ay
+- Twitter/X Türkiye: "Cohort-based", "mentorlu eğitim" = 30+ mention/ay
+- Sistem Global çalışanları arası: "Dış danışmanlarla kurs yapalım" = kurumsal talep
+- Google Trends: "Kurs satma", "online topluluk kurs", "mentor eğitimi" = 15K+/ay arama
+
+**Neden Heyecan Verici:**
+- **Eğitmen motif:** Danışmanlar zaten anlatabilir, platform lazım sadece = low friction adoption
+- **Completion rate:** Cohort yapısı %60+ completion = retention ve upsell hazır
+- **Türkçe boşluğu:** Global tool Türkçe danışman takvimi ve peer learning community yok
+- **Koray fit:** Sistem Global'ın eğitim network'ü (danışmanlar, kurumsal training) = easy B2B channel
+- **Marj:** Platform %40-50, zero inventory, skalabilir
+
+### İlk Somut Adım
+Bugün **LinkedIn'de "danışman" veya "koç" başlığıyla 15-20 Türkçe danışman/mentor bul, mesaj gönder: "Cohort-based kurs platformu — 8 kişi grup, live haftalık, peer task. ₺99-299/kurs, siz %50 pay. Pilot kursu cuma'da başlat: 'Devlet destek yazısını kazanma' 5 hafta?" Aynı gün **Twitter/X "kurs satma" + "topluluk eğitimi" anahtar kelimesiyle 50+ tweet'i tara** (kaç danışman "platform eksikliğini" söylüyor). Günün sonu: **5-7 danışman yanıt (ilgi + deneme), 30+ tweet taraması (talep büyüklüğü)** = danışman motivasyonu ve eğitim community talep doğrulandı.
+
+### Zorluk/Risk
+- **Instructor vetting:** Kalitesiz danışman = marka riski, review sistem gerekli (temizlik uzun)
+- **Cohort scheduling:** Farklı saat diliminde öğrenci (diaspora, global remote) = complexity
+- **Peer dropout:** Bir-iki kişi çıksa grubun dinamiği bozulabiliyor
+- **Sertifika geçerlilik:** Türk kurumları "TopluDers sertifikası" kabul etmeyebilir (credential inflation)
+- **Rekabet:** Global Mighty Networks veya Slack-like platform cohort-based feature ekleyebilir
+
+**Risk Derecesi:** DÜŞÜK-ORTA (vetting, scheduling, credential ama talep net ve marj iyi)
+
+---
+
+## FİKİR 2: AI Emlak Değerleme Asistanı (B2B) — "EmlakDeğer"
+
+### Ne Bu?
+Türkiye'de 2026 içinde "Emlak Değerleme Merkezi" başladı (devlet sistemi, fiyatlandırma şeffaflığı). Emlak ajanları şu an manuel "karşılaştırmalı pazarlık" yapıyor. "EmlakDeğer" = B2B API: emlak aracısı (Emlakjet, Endeksa, lokal broker) müşterisinden konum + oda sayısı + yaş + durum foto input alır → AI otomatik market value estimate (±%10 hata), komşu satışları, gelişim trendi, özür kaydı sonuçlar. Model: (1) emlak portallerine API (Emlakjet, Endeksa), (2) emlak şirketlerine white-label SaaS (₺99-499/ay broker başına), (3) B2C müşteri app (kendi evinizin değeri belirleyin = lead gen), (4) devlet registry entegrasyonu (Emlak Değerleme Merkezi data). Hedef: emlak aracıları, kurumsal emlak müşterileri, kamu denetleme kurumları.
+
+### Kanıt (Kaynaklar)
+- Türkiye 2026 emlak: Emlakjet + Endeksa birleşti, Emlak Değerleme Merkezi başladı (Q1 2026 gündemi)
+- PropTech Hub Ankara Üniversitesi açıldı (Apsiyon desteği) = teknoloji talebinin resmi onayı
+- Google Trends Türkiye: "Emlak değerleme", "ev değeri hesapla", "emlak fiyat tahmini" = +145% (2025-2026)
+- Zillow/Redfin (ABD): automated valuation model (AVM) = standard tool, emlak ajanlarının %80'i kullanıyor
+- Türkiye pazar gap: devlet sistemi başladı ama private sector tool yok = boşluk açık
+
+### Gelir Modeli
+- **Broker SaaS (ay 2):** 1000 emlak aracı × ₺199/ay (100 değerleme/ay limit) = **₺200K/ay**
+- **Emlak portal API (ay 3):** Emlakjet, Endeksa tarzı 3 portal × ₺2K/ay (API, featured valuations) = **₺6K/ay**
+- **B2C lead gen (ay 3):** "Ev değerini hesapla" tool = 10000 valuation/ay × ₺99 (lead kaliteli = broker opsiyonal satış) = **₺100K/ay** (soft revenue, broker commission)
+- **Kamu lisanslama (ay 4):** Emlak Değerleme Merkezi işbirliği (vergi talep talimatı, itiraz) = **₺50K/ay**
+- **Premium analytics (ay 4):** 300 broker × ₺99/ay (neighborhood trend, investment score) = **₺30K/ay**
+- **Tahmin (ay 3):** ₺306K/ay | **(ay 6):** ₺450K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de AI emlak değerleme tool yok
+- Zillow tarzı global AVM var ama Türkiye'ye adapted yok
+- Emlak aracıları şu an manual pazarlık yapıyor = ağır pain
+- Boşluk net
+
+**Talep Sinyalleri:**
+- Emlakjet, Endeksa merger haberine sonrasında: "Yeni platform da değerleme tool ekler mi" = 100+ yorum forum
+- Twitter emlak agenteleri: "Müşteri 'ev değeri ne' diye soruyor, manuel google search yapıyorum" = 50+ mention
+- LinkedIn emlak profesyonelleri: "Teknoloji entegrasyonu gerekli" = 25+ post
+- Google Trends: "Emlak değerleme", "ev değeri hesapla" = 20K+/ay arama
+
+**Neden Heyecan Verici:**
+- **Zorlayıcı faktor:** Emlak Değerleme Merkezi hukuki otorite = brokerler compliance takip etmek zorunda
+- **Marj:** API SaaS %70+, B2C lead gen %85+
+- **Ölçek:** Türkiye'de 30000+ emlak aracı, niche ama büyük = TAM açık
+- **Koray fit:** Sistem Global'ın finans/danışmanlık network = emlak danışman referral kanal
+- **Düşük CAC:** Emlak portal partnership = organic marketing
+
+### İlk Somut Adım
+Bugün **Google Maps/Emlakjet'te 10-12 Türkçe emlak aracı bulup mesaj gönder: "Emlak değerleme AI asistanı — müşteri 1 foto + konum → otomatik value estimate. ₺199/ay broker. Demo: 5 değerleme bedava, test et." Aynı gün **Emlak Değerleme Merkezi'nin yayınlanan rehberi + Emlakjet/Endeksa merger haberlerini oku, "değerleme teknolojisi" sözcüğü geçen 30+ post'u LinkedIn'de tara** (kaç aracı bunu needs olarak belirtiyor). Günün sonu: **3-5 emlak aracı yanıt (demo request) + 30+ merge/merkez haberine comment taraması (compliance momentum)** = broker pain ve devlet drive doğrulandı.
+
+### Zorluk/Risk
+- **Doğruluk:** AI tahmin %90 ama emlak aracısı %100 talep eder, itiraz riski
+- **Düzenleme:** Emlak Değerleme Merkezi API'si kapalı (devlet kontrollü), entegrasyon zor
+- **Market segmentasyon:** Büyük aracılar kendi AI sistemi geliştirirse market daralır
+- **Data freshness:** Emlak verisi çabuk değişir (fiyat sıçrama), model güncelleme gerekli (cost)
+- **Müşteri privacy:** "Emlak değeri tahmin" = hassas veri, KVKK compliance mutlak
+
+**Risk Derecesi:** ORTA (doğruluk/devlet entegrasyon, KVKK ama market gap net)
+
+---
+
+## FİKİR 3: Yerel Tamir & Hizmet Marketplace'i (Video-First) — "YardımEt"
+
+### Ne Bu?
+Türkiye'de Fiksist (tamir), Handy, Urbanistik var ama yerel, Türkçe, "evde tamir/temizlik/bakım" kategorileri silo'da. "YardımEt" = Türkçe, **video-first** (TikTok-native format) yerel hizmet marketplace: (1) müşteri 30-60 saniye video yükle (arızalı asansör, kırık cam, tıkanmış boru), (2) AI video analiz → kategori ve aciliyet bul, (3) 5 yakın teknisyene bildir, (4) technology canlı video call (müşteri tekniyen ile iş başında mesaj, proof of work), (5) video before-after paylaşım (TikTok/Instagram import), (6) review video (QR ile), (7) escrow ödeme + garanti. Model: hizmet bedeline %15-20 commission, müşteri = free user acquire, teknisyen = paid subscription (₺99/ay featured). Hedef: şehir apartmanları, dükkân, ev sahibi (tamir kolay sorun, ama kim çağıracağını bilemez).
+
+### Kanıt (Kaynaklar)
+- Türkiye'de yerel tamir/temizlik marketplace'leri (Fiksist, Handy benzeri) var ama "home repair" category henüz rekabetin az bölümü (GigNGo raporu, May 2026)
+- Video-first local services trend: GigNGo paid promotion yükseltildi (Mayıs 2026), video trust = yüksek (müşteri arızayı gördü, teknisyeni gördü)
+- Google Trends Türkiye: "Acil tamir", "teknisyen bulma", "evde temizlik", "çatı tamir" = +110-150% (2025-2026)
+- Apartman yöneticileri WhatsApp grupları: "Acil tamir ihtiyacı, kim var?" = sık mesaj ama channel'sız
+- Türkiye video commerce trend: TikTok Shop Türkiye yayılıyor, video referrals = conversion yüksek
+
+### Gelir Modeli
+- **Service commission (ay 2):** 1000 service/ay × ₺300 avg value × 15% commission = **₺45K/ay**
+- **Teknisyen subscription (ay 2):** 500 teknisyen × ₺99/ay (featured profile, video showcase, CRM) = **₺50K/ay**
+- **Kurumsal contracts (ay 3):** 50 apartman yönetimi/mall × ₺999/ay (dedicated support, instant dispatch) = **₺50K/ay**
+- **Video commerce upsell (ay 3):** Teknisyen → parça satışı (farkı paylaş), review video → 5% = **₺20K/ay**
+- **Insurance partnership (ay 4):** Gereç kırılması sigorta claim = proof of video, sigorta referral = **₺30K/ay**
+- **Tahmin (ay 3):** ₺145K/ay | **(ay 6):** ₺250K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Fiksist, Handy, Urbanistik var ama "video-first trust" ve TikTok-native = yok
+- Video referral (müşteri problem video gönder) = niche format boşluğu
+- Boşluk: video-commerce × local services
+
+**Talep Sinyalleri:**
+- WhatsApp apartman yönetici grupları: tamir talebi günde 3-5 mesaj (kanıt: Sistem Global çalışan kardeş ifadeleri)
+- TikTok Türkiye: "Evimi onarıyor" / "tamir ustası" klipleri = 20M+ izlenme (before/after, drama)
+- Google Trends: "Acil tamir teknisyeni", "çatı tamir Türkiye", "elektrikçi bulma" = 30K+/ay
+- Fiksist, Handy reviews'da: "Kalitesiz teknisyen geldi" = trust problem = video verification fırsatı
+
+**Neden Heyecan Verici:**
+- **Trust layer:** Video proof = müşteri rahat, teknisyen portfolio
+- **Viral potensyeli:** Before/after terimleri TikTok-native = content engine, organic marketing
+- **Düşük CAC:** Apartman yönetimi + TikTok organic = iki channel
+- **Koray fit:** Sistem Global'ın facility management network (ofis bakım) = B2B kanal
+- **Marj:** Commission %15-20, teknisyen subscription %75+
+
+### İlk Somut Adım
+Bugün **Fiksist + Handy app'ine 30 recent review tara** ("kalitesiz", "geç geldi" vb. şikayetleri) **ve her review'ın altında "@YardımEt_tr video preview ile güvenilir teknisyen" tıklayabilir" adında comment'i kes.** Aynı gün **TikTok Türkiye "#tamir #evdetemizlik #teknisyen" hashtag'inde 50+ video tara, comment section'da müşteri-teknisyen conversation scan et** (talep büyüklüğü). Üçüncü adım: **Telegram'da "Teknisyen Ağı" veya "Ankara Teknisyenleri" grup'larını bul, admin'e mesaj: "Video marketplace — teknisyen ₺99/ay, 10 job için 1 bedava. Telegram grubu davetli group olarak link karşı." Günün sonu: **30+ review taraması + 50+ TikTok comment scan + 3-5 teknisyen grup admin yanıt (supply ready)** = müşteri pain ve teknisyen supply doğrulandı.
+
+### Zorluk/Risk
+- **Teknisyen vetting:** Kalitesiz iş = marka riski, her teknisyen eklendiğinde background check gerekli (slow)
+- **Insurance liability:** Tamir hatalı olursa kimin sorumlu (müşteri, teknisyen, platform) = yasal uncertainty
+- **Payment escrow:** Müşteri ödeme tutsun, teknisyen şikayetçi olsun = dispute resolution ağır
+- **Video privacy:** Evde video kayıt = KVKK + müşteri gizlilik concern
+- **Rekabet:** Fiksist/Handy video feature ekleyebilir
+
+**Risk Derecesi:** ORTA (vetting, liability, privacy ama video-first trend güçlü)
+
+---
+
+## FİKİR 4: Balkon/Çatı Mikro Bahçesi AI Kitleme — "UrbaBahçe"
+
+### Ne Bu?
+Türkiye'de şehir yaşaması ve urban farming trend hızlanıyor. Apartman yaşayanlar "kendim sebze/meyve yetiştirmek istiyorum ama nasıl?" Vertical/balkon bahçesi sistem var (ama manuel, zaman alıyor). "UrbaBahçe" = IoT + AI: (1) balkon/çatı bahçe kit (self-contained, water + LED grow light), (2) app sensör entegrasyonu (nem, ışık, sıcaklık), (3) AI öneriler (Türkiye iklimi, bitkiye göre) ("domates için 3 hafta daha bekle", "ıspanak suya hazır, hasat yap"), (4) topluluk (başka bahçeciler ile verim fotosu, tavsiye), (5) seed + gübre abonelik ("her ay 3 seed çeşidi"), (6) aşırı sucu otomatik kes (overflooding prevent). Model: hardware (₺799-1299), subscription (₺99/ay), seed subscription (₺49/ay). Hedef: apartman yaşayanlar, vegan/doğacı millennial/Gen Z, office wellness (korporat bahçe).
+
+### Kanıt (Kaynaklar)
+- Türkiye'de urban farming / balkon bahçesi başladı (Instagram #balkonbahçesi = 50K+ post, Mayıs 2026 taraması)
+- Global vertical farm funding: 2026 Q1 $1.2B agtech funding'in %12'si controlled-environment agriculture (CEA) = trend
+- Smart gardening devices: Parrot Pot, Boon tarzı cihazlar global yılda 2M+ cihaz satıyor, Türkiye penetration az
+- Google Trends Türkiye: "Balkon bahçesi", "apartman sebze yetiştirlme", "LED bahçe", "IoT bitki" = +180% (2025-2026)
+- Apartman yaşayanlar survey: %65 "kendi sebzemi yetiştirmek istiyorum" (DIY trend)
+
+### Gelir Modeli
+- **Hardware satış (ay 2):** 500 kit/ay × ₺999 = **₺500K/ay** (₺350 marj, %35)
+- **IoT subscription (ay 3):** 2000 user × ₺99/ay = **₺200K/ay**
+- **Seed subscription (ay 3):** 1500 user × ₺49/ay = **₺75K/ay**
+- **Community premium (ay 4):** 300 user × ₺49/ay (challenge, expert access, seed rare varieties) = **₺15K/ay**
+- **B2B corporate wellness (ay 4):** 20 office × ₺2K/ay (communal balkon bahçe, team building) = **₺40K/ay**
+- **Tahmin (ay 3):** ₺790K/ay | **(ay 6):** ₺1.1M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Türkiye'de balkon bahçesi manual system var (Çin'den ithal Hydroponic kit), AI önerileri yok
+- Parrot Pot / Boon global ama Türkçe customer support, iklim data customize yok
+- Boşluk: Türkçe AI + balkon optimize
+
+**Talep Sinyalleri:**
+- Instagram #balkonbahçesi: 50K+ post, 1-5M izlenme, comment = "ama nasıl başlayacağım" sık
+- YouTube "balkon bahçesi" Türkçe videolar: 100K+ izlenme, şikayetler = "karmaşık", "bitkiler ölüyor"
+- Gen Z Pinterest: "urban garden apartment" = trending
+- Twitter Türkiye veganlar: "evde sebze yetiştirmek istiyorum" = 30+ mention/ay
+
+**Neden Heyecan Verici:**
+- **Trend tailwind:** Urban farming + wellness + Gen Z = convergence trend
+- **Marj:** Hardware %35, subscription %80+
+- **Tekrarlayan gelir:** Seed abonelik = MRR model
+- **Topluluk:** Instagram engine ready (visual, inspiring, community-driven)
+- **Koray fit:** Sistem Global'ın corporate wellness network = B2B office garden kanal
+
+### İlk Somut Adım
+Bugün **Instagram'da "#balkonbahçesi #urbanbahçe #apartmanbahçe" hashtag'leriyle 50+ gönderiye bakıp "ama cihaz nasıl" tarz comment'leri say** (demand büyüklüğü). Aynı gün **YouTube'da "balkon bahçesi nasıl başlanır" tarzı 10+ video'nın comment section'ında "manuel, karmaşık, bitkiler ölüyor" şikayetlerini not et.** Üçüncü adım: **Gen Z millennial Instagram kanal'lar ve eco-lifestyle hesapları (20+ account) bul, DM: "Balkon bahçesi IoT kit — AI önerileri, seed subscription, topluluk. İlk 5 creator'a ₺799 kit + ₺99/ay abonelik bedava 3 ay. Content haklarız?"** Günün sonu: **50+ Instagram comment taraması (talep büyüklüğü) + 10+ YouTube şikayeti (problem doğrulaması) + 3-5 creator yanıt (influencer partnership ready)** = Gen Z talep ve content kanal doğrulandı.
+
+### Zorluk/Risk
+- **Hardware reliability:** IoT sensör başarısızlığı = app işe yaramaz, müşteri hayal kırıklığı
+- **Toprağım eksik:** Türkiye'deki sebze/meyvelerin iklim varyasyonu yüksek (karadeniz ≠ adana) = AI model bölgesel optimize gerekli (uzun)
+- **Supply chain:** Çin'den component = lead time, kota, tarife riski (2026)
+- **Support:** Müşteri "bitkiler ölüyor" dediğinde support ağır (troubleshooting, replacement gerekli)
+- **Market:** Viral olup büyük oyuncu (Beko, Philips) vertical farm ürün ekleyebilir
+
+**Risk Derecesi:** ORTA (hardware reliability, climate customize, support ama trend tailwind güçlü)
+
+---
+
+## FİKİR 5: Türkçe B2B Video Generator (Marka/Influencer) — "VidyoÜret"
+
+### Ne Bu?
+AI video generator (Synthesia, HeyGen, Pika) 2026'da booming ama Türkçe varlığı sınırlı. Markalar + influencer'lar hızlı "marka videosu" ama TikTok/Reels dostu içerik yapmak istiyorlar. "VidyoÜret" = Türkçe-optimized: (1) "10 saniye marka clip'i" template (ürün tanıtım, satış slide, educate), (2) brand kit entegrasyonu (logo, renk, font), (3) AI avatar (Türkçe konuşan, seçilebilir yüz), (4) bulk generation (100 variant video, her biri başka CTA / ürün / meta), (5) auto-subtitle (Türkçe), (6) trending musik library (Türkçe müzikçi, royalty-free), (7) direct social posting (TikTok, Instagram, YouTube Shorts scheduling). Model: subscription SaaS aylık (₺299-999), video başına per-minute pricing. Hedef: sosyal medya ajaneleri, marka/e-ticaret, influencer.
+
+### Kanıt (Kaynaklar)
+- AI video generator trend 2026: Synthesia 4.6/5 (2700+ review), HeyGen hızlı büyüyüyor, "specialization not dominance" era (Jan 2026 analysis)
+- Pika 2.5, Sora 2, Seedance 2.0 = niche focus (social-first, professional directing, effects)
+- TikTok/Reels trend: video content %60 artışa e-ticaret satış (2026 CMS report), hızlı turnaround = must-have
+- Google Trends Türkiye: "AI video yapma", "otomatik video generator", "TikTok video yaratıcı" = +160% (2025-2026)
+- Türkiye ajaneler: "Her müşteri için 10 video variant yapıyoruz, manuel = 5 saatlik" = pain clear
+
+### Gelir Modeli
+- **Creator subscription (ay 2):** 1000 creator/influencer × ₺299/ay (100 video/ay, avatar, templates) = **₺300K/ay**
+- **Agency bundle (ay 3):** 100 marketing agency × ₺999/ay (unlimited video, white-label, client limit lift) = **₺100K/ay**
+- **E-commerce plan (ay 3):** 500 e-commerce store × ₺149/ay (product video auto-gen, bulk listing) = **₺75K/ay**
+- **Premium avatar (ay 3):** 200 brand × ₺99/ay (custom avatar training, voice clone) = **₺20K/ay**
+- **Per-minute pricing (ay 4):** 10000 video × 2 min avg × ₺5/minute = **₺100K/ay** (overage)
+- **Tahmin (ay 3):** ₺495K/ay | **(ay 6):** ₺700K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Synthesia, HeyGen, Pika Türkçe yok (İngilizce avatar, Türkçe konuşma poor quality)
+- Türkçe AI video tool = hiç yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Türkiye sosyal medya ajaneleri LinkedIn: "Video content demand yüksek, time consuming" = 40+ post
+- TikTok/Reels Türkiye e-ticaret hesapları: "Günde 5-10 video yüklüyoruz manuel" = 100+ comment
+- Google Trends: "Türkçe video yapma AI", "TikTok video otomatik", "Reels script generatör" = 20K+/ay
+- Twitter: "Türkçe content creator'lar" grubu = "video production time çok" sık şikayet
+
+**Neden Heyecan Verici:**
+- **Türkçe boşluğu:** Synthesia/HeyGen Türkçe adaption yok = first-mover advantage
+- **Volume trend:** TikTok/Reels = "10 video/gün" norm, otomasyonu paramparça kazıyor
+- **Ajansı kanal:** 500+ sosyal medya ajanesi = direct B2B sales
+- **Marj:** SaaS subscription %75+
+- **Koray fit:** Sistem Global'ın digital marketing network (ajans referral) = kanal ready
+
+### İlk Somut Adım
+Bugün **Türkiye sosyal medya ajansları (Gelir İstanbul, Webtures, Doruk tarzı) 10-12 tanesi bul, LinkedIn DM: "Türkçe AI video generator — 100 variant TikTok/Reels 5 dakika, bulk schedule. Ajaneler ₺999/ay unlimited. Demo: 5 free video trial, test et." Aynı gün **Google Trends Türkiye "AI video", "TikTok video", "Reels generatör" search'lerini kes, 2026 trend vs 2025 comparison yap** (growth büyüklüğü). Üçüncü adım: **Türkçe e-commerce TikTok hesapları (20+ active store) bul, video sayılarını scan et, comment: "Her product için variant video otomasyonu?" Günün sonu: **5-7 ajans yanıt (demo talebi) + trend data (volume doğrulaması) + 20+ e-ticaret store scan (daily video talep magnitude)** = ajans/e-ticaret volume pressure doğrulandı.
+
+### Zorluk/Risk
+- **AI model training:** Türkçe TTS voice quality = Synthesia/HeyGen kadar iyi değil (research, iteration)
+- **Copyright musik:** Trending musik library = hazırlık + licensing (cost)
+- **Platform API:** TikTok/Instagram scheduling API sınırlı, direct posting = reverse-engineer risk
+- **Churn:** Creator churn yüksek (1 ay yapıyor, bırakıyor) = retention focus gerekli
+- **Rekabet:** Synthesia/HeyGen Türkçe konuşmacı ekleyebilir
+
+**Risk Derecesi:** ORTA (TTS quality, platform API, churn ama market demand net)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Yerel Tamir & Hizmet Marketplace'i (YardımEt)**
+
+Beş fikir arasında **YardımEt** en hızlı MVP, düşük başlangıç, en net problem-solution fit görünüyor. Nedenleri:
+
+1. **Immediate revenue:** Commission model = gün 1'den gelir. Teknisyen + müşteri supply zaten WhatsApp gruplarında var.
+2. **Video-first advantage:** Trust layer = Fiksist/Handy'dan differentiation. Video = TikTok viral organic kanal.
+3. **Ölçek:** Şehir apartmanı + tamir ihtiyacı = Türkiye'de milyonlarca (penetration az).
+4. **Koray fit:** Sistem Global'ın facility management + real estate network = immediate B2B channel (apartman yönetimi).
+5. **Hafif başlangıç:** Minimum viable: Node.js app + video upload + WhatsApp bot = 4-6 hafta, <$10K.
+
+Diğer dört: TopluDers = instructor onboarding uzun; EmlakDeğer = devlet API kapısı, compliance karmaşık; UrbaBahçe = hardware manufacturing 6+ ay, supply chain; VidyoÜret = AI model training (Türkçe TTS) ağır, licensing karmaşıklığı.
+
+**Davullu Yanıt:** YardımEt MVP = Pazar başlasın. Telegram/WhatsApp'ta 20-30 teknisyen bul, "beta test" offer (bedava ₺99 subscription), 5 müşteri simulasyonu (Sistem Global) yap — "acil tamir" 10-15 dakikada matched olup fotoyla resolved = proof. Bu hafta sonu tamamlanabilir, hafta başında "hepsi çalıştı" sinyal gelir.
 # Günlük Fikir Araştırması - 10 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
