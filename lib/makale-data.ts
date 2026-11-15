@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "e-tebligat-kep-adresim-var-yeterli-mi",
+    title:
+      "KEP Adresi Olan Bir Şirket, e-Tebligat'tan Neden Muaf Değil?",
+    excerpt:
+      "11 Ekim 2026 tarihli 596 sıra no'lu VUK Genel Tebliği'yle e-Tebligat sistemine kayıt zorunluluğu kurumlar vergisi mükellefleri, gerçek usulde vergilendirilen gelir vergisi mükellefleri, kolektif ve adi komandit şirketleri kapsıyor; son başvuru tarihi 30 Kasım 2026. Yıllardır KEP sözleşmesi olduğu için bu zorunluluğun kendisini kapsamadığını düşünen bir ortaklığın üç hafta kala fark ettiği ayrım, KEP ile GİB'in e-Tebligat sisteminin iki farklı resmi muhatabiyet kanalı olduğu gerçeği.",
+    tag: "Hukuk ve Vergi",
+    date: "15 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "az-tehlikeli-ofislerde-isg-zorunlulugu",
     title:
       "On Dört Kişilik Bir Ofis, Hiç Fabrikası Olmadan Nasıl İSG Cezası Yedi?",
