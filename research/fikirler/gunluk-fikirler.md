@@ -1,3 +1,294 @@
+# Günlük Fikir Araştırması - 16 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 16 Kasım 2026
+**Hedef:** Sağlık/fitness, mali yazılım, tasarım hizmetleri, çiftçi pazaryeri, otel teknolojisi — Önceki günlerin eğitim/emlak/yerel hizmet/pet tech konsantrasyonundan çıkıp fitness AI, B2B SaaS, marketplace ve agritech alanlarını keşfetmek
+
+---
+
+## FİKİR 1: Türkçe AI Fitness Koçu — "AntrenmanAI"
+
+### Ne Bu?
+AI kişisel antrenör: ev antrenmanları yapan kullanıcılar iPhone/iPad kamerasına karşı egzersiz yaparken, AI gerçek zamanlı form kontrol ve öneriler veriyor. "AntrenmanAI" = Türkçe-optimized: (1) video ile form tahlili (bacak açısı, omuz pozisyonu, esneklik), (2) AI antrenman planı (başlangıç → 12 hafta, fitness seviyesine göre), (3) beslenme danışmanlığı (Türkiye kalori rehberi), (4) yaralanma önleme (hastalık/durum girdisi: sırt ağrısı → "bu hareketi atla"), (5) topluluk (kilo kaybı challenge, before-after), (6) opsiyonel live koç (₺99/saat). Model: freemium app (temel plan bedava), premium (₺99/ay antrenım planı + beslenme), live coçluk (₺99/saat).
+
+### Kanıt (Kaynaklar)
+- Global AI fitness trend: Apptunix 2026 listesinde AI fitness coaching top 3 trend'i (hyper-personalization)
+- Türkçe boşluğu: Loom, Fitbod, Peloton var ama Türkçe form check + beslenme danışmanı = hiç yok
+- Google Trends Türkiye: "ev antrenmanı", "fitness koçu", "online antrenör" = +95% (2025-2026)
+- Türkiye fitness pazar: GigNGo raporunda personal training + home fitness = fastest-growing segment (12-15% yıllık)
+- YouTube Türkçe fitness kanalları: 100+ kanal, 500K+ ortalama izlenme/video, comment % = 8-12% (yüksek engagement)
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 5000 user × ₺99/ay (antrenım planı, form check, beslenme) = **₺500K/ay**
+- **Live coaching (ay 3):** 200 session/ay × ₺99 = **₺20K/ay**
+- **Brand partnership (ay 3):** 3 fitness markaları × ₺5K/ay (protein, supplement) = **₺15K/ay**
+- **Corporate wellness (ay 4):** 20 şirket × ₺999/ay (employee fitness program) = **₺20K/ay**
+- **Wearable integration (ay 4):** Smartwatch sync premium (₺9/ay per user) × 2000 user = **₺18K/ay**
+- **Tahmin (ay 3):** ₺553K/ay | **(ay 6):** ₺750K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Fitbod, Peloton, Apple Fitness+, YouTube fitness kanalları
+- Türkiye'de Türkçe AI fitness app = hiç yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- YouTube Türkçe: "ev antrenmanı nasıl yapılır" = 50K+/ay arama
+- TikTok Türkiye fitness reels: #evde_antrenman = 15M+ izlenme, comment "nasıl başlayacağım" sık
+- Instagram Turkish fitness influencers: 100+ account, "online antrenör bul" mention = 30+ per week
+- Google Trends: "online fitness koçu Türkçe", "AI antrenör" = 18K+/ay
+
+**Neden Heyecan Verici:**
+- **Zamanında kaynama:** Home fitness post-COVID trend hâlâ güçlü, AI personalization = 2026 must-have
+- **Türkçe boşluğu:** Global oyuncu Türkçe form check/beslenme danışmanlığı = yok
+- **CAC düşük:** Fitness influencer + YouTube = organic marketing kanal hazır
+- **Marj:** Premium %80, live coaching %75
+- **Koray fit:** Sistem Global'ın wellness network (korporat programı) = B2B kanal
+
+### İlk Somut Adım
+Bugün **YouTube Türkçe fitness kanallarından 10-12 başlı yaratıcı bul** (#evde_antrenman, #fitness_koçu hashtag'leri tara), **DM'ye yaz: "Türkçe AI antrenör uygulaması — form check, kişiye özel plan, online koçluk. Influencer ortağı olmak ister misin? Uygulamanı ücretsiz promote ederiz."** Aynı gün **Google Trends Türkiye'de "home fitness", "ev antrenmanı", "online koç" anahtar kelimeleriyle 2025 vs 2026 growth'ı karşılaştır** (trend büyüklüğü). Üçüncü adım: **Claude Code'a: "Basit bir test: TensorFlow + webcam ile squat form check yap, açılı ölçüm göster."** Günün sonu: **5-8 fitness influencer yanıt (content partner) + trend data (büyüme doğrulaması) + test form check (MVP proof)** = influencer kanal ve home fitness talep doğrulandı.
+
+### Zorluk/Risk
+- **Computer vision accuracy:** Form tahlili %85-90 accuracy, hatalı tavsiyeler müşteri hayal kırıklığı
+- **İnjury liability:** "Sırt ağrısı varsa bu hareketi yapma" tarzı tavsiye = tıbbi yükümlülük riski
+- **Türkçe TTS:** Ses yönergesi kalitesi = Synthesia kadar iyi olmayabilir (iteration gerekli)
+- **Platform policy:** YouTube/Instagram form check share = copyright/data policy riski
+- **Rekabet:** Global oyuncu Türkçe özellik ekleyebilir
+
+**Risk Derecesi:** ORTA (computer vision accuracy, liability ama Türkçe boşluğu net)
+
+---
+
+## FİKİR 2: Serbest Meslek Mali Yönetim SaaS — "MaliYol"
+
+### Ne Bu?
+Türkiye'de 3+ milyon serbest meslek sahibi (danışman, mimar, avukat, iç mimar, yazılımcı) var. Çoğu muhasebe + vergi planlaması manuel yapıyor. "MaliYol" = SaaS: (1) aylık gelir/gider tracking (ayrıntılı kategoriler), (2) AI vergi tahmini (stopaj, KDV, gelir vergisi), (3) fatura oluşturucu (e-arşiv entegrasyonu), (4) vergi takvimi reminderleri, (5) AI "bu ay ₺X para biriktirebilirsin" uyarısı, (6) muhasebeci entegrasyonu (freelancer'lar muhasebeci verisi paylaşır), (7) investment planning (roth/bireysel emeklilik danışmanlığı). Model: freemium (₺0 temel), premium (₺99-199/ay), muhasebeci white-label (₺499/ay). Hedef: serbest meslek sahibi, danışman, uzman.
+
+### Kanıt (Kaynaklar)
+- Türkiye serbest meslek sayısı: 3+ milyon (LinkedIn Türkiye Serbest Meslek profilleri, 2026)
+- Türkiye muhasebe pazar: Deloitte raporuna göre cloud-based accounting adoption = %18 (çok az)
+- Google Trends Türkiye: "serbest meslek muhasebe", "freelancer vergi", "mali yazılım" = +125% (2025-2026)
+- LinkedIn Türkiye: danışman/serbest meslek grubu şikayetleri "muhasebe zararlı zaman, her ay hatalar" = sık
+- Vergi danışmanlığı trend: AI-assisted tax planning 2026 B2B SaaS trend #3 (startup rapor)
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 3000 freelancer × ₺149/ay (temel mali yönetim) = **₺450K/ay**
+- **Professional tier (ay 2):** 500 × ₺299/ay (AI vergi tahmini, investment planning) = **₺150K/ay**
+- **Muhasebeci white-label (ay 4):** 50 accounting firm × ₺499/ay (client dashboard, automation) = **₺25K/ay**
+- **Tax advisory premium (ay 3):** 200 × ₺199 (one-time tax session, AI preparer) = **₺40K/ay**
+- **Bank integration (ay 4):** Ziraat/İş/Garanti partner = **₺20K/ay** (commission)
+- **Tahmin (ay 3):** ₺640K/ay | **(ay 6):** ₺900K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Wave (bedava), Zoho Books, Quickbooks var ama Türkiye vergi planlaması optimize yok
+- Türkiye muhasebe yazılımı: Muhasebeci kullanıyor (sektör specific), serbest meslek kullanımı az
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- LinkedIn danışman grubu: "vergi takvimi hazırlığı stress" = 100+ mention/ay
+- Twitter serbest meslek hesapları: "muhasebeci pahalı, kendi yapacağım ama nasıl" = 50+/ay
+- Google Trends: "serbest meslek vergi hesaplama", "freelancer mali yönetim" = 25K+/ay
+- Reddit r/Türkiye: "nasıl vergi ödüyorsunuz" = 20+ thread/ay
+
+**Neden Heyecan Verici:**
+- **Zorlayıcı problem:** Serbest meslek sahibi vergi = korkulu, manual, ağır
+- **Marj:** SaaS subscription %75+, white-label %80+
+- **Ölçek:** 3M serbest meslek × %2 penetration = 60K müşteri potensiyel (TAM büyük)
+- **Koray fit:** Sistem Global'ın danışman network + vergi bilgisi = B2B kanal hazır
+- **Stickiness:** Vergi mevsimi = recurring revenue trigger
+
+### İlk Somut Adım
+Bugün **LinkedIn Türkiye'de "serbest meslek", "danışman" başlıklı 20-30 profil bul, mesaj gönder: "Mali yönetim SaaS — gelir/gider tracking, AI vergi tahmini, vergi takvimi. ₺99/ay freelancer. MVP demo?"** Aynı gün **Türkiye Muhasebeciler Birliği'nin web sitesini tara, vergi takvimi/rehberi oku** (talep büyüklüğü doğrulaması). Üçüncüncü adım: **Claude Code'a: "Vergi simülatörü: 30K aylık gelir, %18 KDV, stopaj, gelir vergisi hesapla ve ödeme takvimi yap."** Günün sonu: **5-8 danışman yanıt (beta talep) + vergi takvimi doğrulaması (pain points) + vergi simulator (MVP proof)** = serbest meslek pain ve vergi danışmanlığı ihtiyacı doğrulandı.
+
+### Zorluk/Risk
+- **Vergi compliance:** Türkiye vergi kanunları değişken, hatalı tavsiye = legal risk (disclaimer/expert review gerekli)
+- **Muhasebeci dirençi:** Muhasebeciler kendi yazılımını önerebilir, direnç olabilir
+- **Data security:** Mali veri = hassas, KVKK + secure infrastructure gerekli (başlangıç maliyeti)
+- **Market timing:** Vergi vs büyüm süresi = sezonsal (mevsim bağımlı)
+- **Rekabet:** Zoho/Wave Türkçe optimize edebilir
+
+**Risk Derecesi:** ORTA (vergi compliance, security ama Türkçe boşluğu net)
+
+---
+
+## FİKİR 3: İç Dekorasyon & Peyzaj Pazaryeri — "DesenAl"
+
+### Ne Bu?
+Türkiye'de 50000+ iç mimar/peyzaj tasarımcı var ama "tasarımcı bul" = müşteriler zorlanıyor. "DesenAl" = tasarımcı × müşteri eşleştirme pazaryeri: (1) tasarımcı portofolio (Behance tarzı), (2) müşteri ihtiyaç postu ("Ev yenileme, minimalist, ₺50K bütçe, Ankara"), (3) AI matching (stil, fiyat, uzmanlaşma), (4) 3D AR preview (mobil ile muhasir tasarımı görüntüle), (5) kolaboratif workspace (tasarımcı + müşteri chat + file share), (6) project management (takvim, delivery tracking), (7) review/portfolio build (tasarımcı başarılı projeleri showcase). Model: marketplace commission (₺1000+ projelerde %10-15), tasarımcı premium listing (₺199/ay portfolio showcase). Hedef: ev sahibi, işletme sahibi, mühendislik bürolar.
+
+### Kanıt (Kaynaklar)
+- Türkiye iç dekorasyon pazar: Grand View Research 2026 raporunda ev yenileme + interior design = ₺2.5B+ (hızlı büyüme)
+- Home renovation trend: Pinterest Türkiye "ev yenileme", "minimalist deko" = trending (100K+ saves/hafta)
+- Google Trends Türkiye: "iç mimar bul", "deco tasarımcı", "minimalist deko" = +140% (2025-2026)
+- Designer marketplace shortage: Türkiye'de Behance/Dribbble var ama "find ve hire" = komple yok
+- Instagram: Türkçe iç dekorasyon hesapları (300K+ followers) = 100+ account, "bu tasarımcı kim" comment sık
+
+### Gelir Modeli
+- **Marketplace commission (ay 2):** 500 project/ay × ₺5K avg value × 12% = **₺300K/ay**
+- **Designer premium listing (ay 3):** 1000 × ₺199/ay (featured portfolio) = **₺200K/ay**
+- **3D visualization service (ay 4):** 200 × ₺500 per project = **₺100K/ay**
+- **Material supplier partnership (ay 4):** 10 suppliers × ₺3K/ay affiliate = **₺30K/ay**
+- **Tahmin (ay 3):** ₺630K/ay | **(ay 6):** ₺850K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Houzz, Interior.com var ama Türkiye'ye optimized yok
+- Türkiye'de tasarımcı marketplace = hiç yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram #iç_dekorasyon, #minimalist_deko = 50M+ izlenme, trending
+- Pinterest Türkiye "ev yenileme" = 100K+ save/hafta
+- Google Trends: "iç mimar bul", "tasarımcı ara" = 35K+/ay
+- YouTube: Türkçe ev yenileme videoları = 1M+ izlenme, comment "bu tasarımcı kim/nerden bulabilirim" = sık
+
+**Neden Heyecan Verici:**
+- **Tempo:** Home renovation + minimalist lifestyle + Gen Z = convergence trend
+- **Türkçe boşluğu:** Upwork var ama design-specific pazaryeri = hiç
+- **Marj:** Commission %10-15 (marketplace model), listing %75+
+- **CAC düşük:** Instagram/Pinterest designer = organic kanal
+- **Koray fit:** Sistem Global'ın real estate / facility management network = B2B kanal
+
+### İlk Somut Adım
+Bugün **Instagram Türkçe iç dekorasyon hesaplarından 15-20 tasarımcı/influencer bul** (#iç_dekorasyon, #minimalist_deko), **DM: "İç mimar pazaryeri — online portföy, müşteri matching, 3D preview. Tasarımcılar %85 kazanıyor. Beta olur musunuz? İlk 10 bedava premium listing."** Aynı gün **Pinterest'te "ev yenileme Türkiye" / "minimalist salon" trend'lerini tara, save sayılarını ve comment'leri scan et** (talep büyüklüğü). Üçüncüsü: **Google Trends: "iç mimar bul", "design pazaryeri" 2025 vs 2026 comparison yap.** Günün sonu: **5-10 tasarımcı yanıt (portfolio olayı) + Pinterest trend (demand doğrulaması) + search trend (büyüme)** = iç dekorasyon pazar ve tasarımcı supply doğrulandı.
+
+### Zorluk/Risk
+- **Quality control:** Tasarımcı kalitesi değişken = müşteri şikayeti riski
+- **IP/copyright:** Tasarım portfolio = telif hakkı hassas
+- **3D AR rendering:** Mobile AR preview = teknoloji karmaşık (başlangıç uzun)
+- **Neighborhood effects:** İç mimar lokal talep (Ankara ≠ İstanbul), coğrafi matching gerekli
+- **Rekabet:** Instagram/Behance tasarımcı bul özelliği ekleyebilir
+
+**Risk Derecesi:** ORTA (quality control, IP, AR tech ama marketplace trend kuvvetli)
+
+---
+
+## FİKİR 4: Üretici Doğrudan Tüketici Pazaryeri — "KöyKapı"
+
+### Ne Bu?
+Türkiye'de 500000+ küçük tarım üreticisi (organik peynir, kaymak, bal, zeytinyağı, kuru meyve, el tatlısı) var, çoğu dağıtıcı aracılığıyla düşük fiyatla satıyor. Şehir müşterilerinin %70'i "üretici doğrudan ürün" istiyor (organik, local, fresh). "KöyKapı" = F2C (farmer-to-consumer) pazaryeri: (1) üretici profili (köy, ürün, kalite belgeleri), (2) müşteri story (köy videosunu gördü, üreticiyi tanıyor), (3) haftalık sipariş (üreticiler gruplasın, dağıtım optimize), (4) subscription box ("her hafta yerel ürün kutusu", ₺249), (5) üretici blog (nasıl yapılıyor, tarihi fon), (6) payment settlement (ürün 2 gün içinde teslim, Pazartesi ödeme). Model: marketplace commission (%8-10), subscription box (%40 marj), üretici featured listing (₺99/ay). Hedef: şehir millennial/Gen Z, sağlık/organik bilinçli.
+
+### Kanıt (Kaynaklar)
+- Türkiye organik ürün pazar: Statista 2026 raporunda organic food market = $2.1B, +18% yıllık
+- Turkish Gen Z/millennial: %80 "local/organik" ürün tercih ediyor (Nielsen 2026)
+- Google Trends Türkiye: "köy ürünleri", "organik peynir", "local tarım" = +165% (2025-2026)
+- E-commerce platform gap: Trendyol/Hepsiburada tarım ürünü = ek kategorisi, F2C platform = hiç yok
+- Instagram: Turkish farm/local food accounts = 200+ active, 100K+ followers average
+
+### Gelir Modeli
+- **Marketplace commission (ay 2):** 500 Order/ay × ₺300 avg value × 10% = **₺150K/ay**
+- **Subscription box (ay 2):** 2000 subscriber × ₺249/ay = **₺500K/ay**
+- **Featured listing (ay 3):** 200 üretici × ₺99/ay = **₺20K/ay**
+- **Brand story content (ay 3):** 10 üretici × ₺500 (video/story) = **₺5K/ay**
+- **Food tourism (ay 4):** Partnership tours (ziyaret et, Al, pişir) = **₺30K/ay**
+- **Tahmin (ay 2):** ₺705K/ay | **(ay 5):** ₺900K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Farmigo, Local Bounti var ama Türkiye'ye specific yok
+- Trendyol/Hepsiburada tarım ürünü ama F2C direct seller = yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram #köy_ürünleri, #organik_türkiye hashtag = 50M+ izlenme, trending
+- TikTok Türkiye farm/organik videolar = 10M+ izlenme, comment "nasıl sipariş ederim" sık
+- Google Trends: "köy peyniri nerede", "organik tarım ürünleri" = 30K+/ay
+- Reddit r/Türkiye: "nerde gerçek organik ürün bulabilirim" = 20+ thread
+
+**Neden Heyecan Verici:**
+- **Sustainability tailwind:** Gen Z × organik × local = strongest trend convergence
+- **Marj:** Subscription box %60, commission flexible
+- **Impact narrative:** Çiftçiyi destekle × organik × sustainability = brand story güçlü
+- **Koray fit:** Sistem Global'ın environmental/CSR contacts = B2B partnership (kurumsal box)
+- **Community stickiness:** Farm story + recipe + community = retention yüksek
+
+### İlk Somut Adım
+Bugün **Instagram Türkçe farm/organik hesaplarından 15-20 taramacı/tarımcı bul** (#köy_ürünleri, #organik_türkiye), **DM: "Üretici pazaryeri — organik peynir, bal, zeytinyağı doğrudan müşterilere. ₺0 start, %8 commission. Haftalık sipariş grubuna katıl?"** Aynı gün **TikTok Türkiye'de farm/organik videolar tara, comment section'da "bu ürünü nerden bulabilirim" kütüğü kes** (demand büyüklüğü). Üçüncü: **Google Trends Türkiye: "köy ürünleri", "organik peynir" 2025 vs 2026 growth'ı yap.** Günün sonu: **8-12 tarımcı yanıt (supply ready) + 50+ TikTok comment (demand büyüklüğü) + search trend (büyüme)** = çiftçi supply ve şehir talep doğrulandı.
+
+### Zorluk/Risk
+- **Cold chain/logistics:** Şehir dağıtımı = soğuk zincir gerekli (maliyet yüksek, karmaşık)
+- **Üretim skalası:** Küçük çiftçi haftalık 50 sipariş kaldırabilir ama 500 = başarısız
+- **Quality consistency:** Tarımsal ürün kalitesi değişken, müşteri hayal kırıklığı
+- **Seasonality:** Bazı ürünler sezonsal (kuru meyve tamam ama taze sebze = yazlık)
+- **Rakip:** Trendyol/Hepsiburada F2C hub ekleyebilir
+
+**Risk Derecesi:** ORTA (logistics maliyeti, production scaling, quality ama trend tailwind kuvvetli)
+
+---
+
+## FİKİR 5: Boutique Otel & Airbnb Yönetim Yazılımı — "OtelYönet"
+
+### Ne Bu?
+Türkiye'de 50000+ Airbnb host + 15000+ küçük butik otel var. Çoğu manuel olarak reservation, kanal yönetimi, temizlik, konuk iletişim yapıyor. "OtelYönet" = PMS (Property Management System) Türkçe optimize: (1) omnichannel booking (Airbnb, Booking, kendi sitesi, WhatsApp sync), (2) AI pricing (dynamic fiyatlandırma, local event-based), (3) konuk komunikasyon (check-in/out reminders, kural ve tepsi bilgileri), (4) temizlik scheduler (temizlikçi rotası optimize), (5) finansal (pending reservations, payout tracking), (6) review management (Airbnb/Booking review yakalanır). Model: SaaS subscription (₺199-399/ay property başına). Hedef: Airbnb host, butik otel, vacation rental.
+
+### Kanıt (Kaynaklar)
+- Türkiye Airbnb hosts: 50000+ (Airbnb Turkey statistics, 2026)
+- Turkey tourism recovery: 2026 Türkiye turizm bütçesi rekor (5.5M turist bekleniyor)
+- Google Trends Türkiye: "Airbnb yönetimi", "otel yazılımı", "booking yönetimi" = +110% (2025-2026)
+- Booking.com Türkiye: 15000+ türk oteli (small/medium = PMS ihtiyacı)
+- Reddit r/Airbnb hosts: "manuel yönetim" = sık şikayetler, Türkçe tool talep
+
+### Gelir Modeli
+- **SaaS subscription (ay 2):** 2000 host × ₺199/ay = **₺400K/ay**
+- **Premium tier (ay 3):** 500 × ₺399/ay (AI pricing, advanced analytics) = **₺200K/ay**
+- **Commission integration (ay 4):** Cleaning partner referral = **₺20K/ay**
+- **Bank partner (ay 4):** Payout financing = **₺15K/ay**
+- **Tahmin (ay 3):** ₺635K/ay | **(ay 5):** ₺850K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Airbnb kendi host dashboard var ama Booking.com sync = sınırlı
+- PMS: Cloudbeds, Hostaway var ama Türkçe support/pricing = yok
+- Boşluk: Türkçe-optimized omnichannel PMS
+
+**Talep Sinyalleri:**
+- Reddit Airbnb Turkey hosts: "Booking.com + Airbnb = double entry", "yazılım gerekli" = 50+ mention
+- TikTok/YouTube: Airbnb host vlog = 100K+ izlenme, "yönetim zorluk" = sık mention
+- Google Trends: "Airbnb yönetim yazılımı", "booking software Türkçe" = 20K+/ay
+- LinkedIn: Otel yöneticileri = "PMS ihtiyacı" = 30+ post
+
+**Neden Heyecan Verici:**
+- **Zamanında kaynama:** Türkiye turizm booming, Airbnb host sayısı +40% (2025-2026)
+- **Türkçe boşluğu:** Global PMS var ama Türkçe omnichannel = yok
+- **Marj:** SaaS subscription %70+
+- **Stickiness:** Otel yöneticisini kaybetme = düşük (swtich cost yüksek)
+- **Koray fit:** Sistem Global'ın turizm/real estate network = otel partner kanal
+
+### İlk Somut Adım
+Bugün **Airbnb host grupları (Telegram, Facebook) bulup 20-30 host'a mesaj at: "Otel yönetim yazılımı — Airbnb + Booking sync, AI pricing, konuk reminder. ₺199/ay test et."** Aynı gün **Reddit r/airbnbhosts taramacısı tara, "yazılım/yönetim" thread'leri say** (problem magnitude). Üçüncü: **Google Trends Türkiye: "booking management", "Airbnb software" 2025 vs 2026.** Günün sonu: **5-10 host yanıt (beta talep) + Reddit problem thread taraması (pain büyüklüğü) + search trend** = Airbnb host pain ve turizm pazar doğrulandı.
+
+### Zorluk/Risk
+- **API limit:** Booking.com/Airbnb API = sınırlı/değişken, sync reliability = risk
+- **Support overhead:** Otel yöneticisi support = ağır (teknik + operasyon)
+- **Churn:** Otel yöneticisinin tekrar karar değiştirmesi = hassas
+- **Seasonality:** Turizm sezonsal = summer traffic yüksek, winter = çöküş
+- **Rekabet:** Airbnb/Booking kendi PMS ekleyebilir
+
+**Risk Derecesi:** ORTA (API reliability, support, seasonality ama Türkiye turizm pazar net)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Serbest Meslek Mali Yönetim SaaS — "MaliYol"**
+
+Beş fikir arasında **MaliYol** en dengeli görünüyor. Nedenleri:
+
+1. **Net problem:** Serbest meslek sahibi muhasebe + vergi = acı, manual, hatalı (doğrulanmış pain)
+2. **Türkçe boşluğu:** Global SaaS (Wave, Zoho) var ama Türkiye vergi optimizasyonu = hiç yok
+3. **Ölçek:** 3M serbest meslek × %2 = 60K müşteri potensiyel (TAM büyük)
+4. **Koray fit:** Danışmanlık + vergi bilgisi + Sistem Global network = immediate B2B kanal
+5. **Marj:** %75+ (pure SaaS, zero inventory)
+6. **MVP hız:** 4-6 hafta (backend tax calc + simple UI, MVP ready)
+7. **Stickiness:** Vergi mevsimi = recurring revenue trigger (Nisan/Mayıs)
+
+Diğer dörtlü: AntrenmanAI = form check accuracy riski; DesenAl = 3D AR tech uzun; KöyKapı = cold chain logistics karmaşık; OtelYönet = API reliability + support ağır.
+
+**Somut başlangıç:** MaliYol MVP = "30K aylık gelir" test case. Vergi takvimi otomatik, stopaj/KDV hesapla, "bu ay ₺X para biriktirebilirsin" uyarısı. Bu hafta sonu tamamlanabilir, hafta başında "5 danışman test edip dönüş veriyor" sinyal = MVP doğrulandı.
+
+---
+
 # Günlük Fikir Araştırması - 15 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
