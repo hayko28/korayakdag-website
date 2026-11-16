@@ -2634,6 +2634,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Perakende satışlardaki büyümenin hız kesmesi, yıl sonu kampanya ve stok planlaması yapan perakendecilerin talep tahminlerini aşırı iyimser kurmaması gerektiğine işaret ediyor. Toptan ticaretteki daralmanın tedarikçi ve dağıtıcı firmaları perakendecilerden daha fazla etkilediğini de göz önünde bulundurmalarını öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "11 Kasım 2026",
+    eklendiTarihi: "2026-11-16",
+    baslik:
+      "Türkiye ile AB arasında elektronik imzaların karşılıklı tanınması için iş birliği süreci başladı",
+    ozet:
+      "Ticaret Bakanlığı'nın 11 Kasım 2026 tarihli duyurusuna göre, 9 Kasım 2026'da Moldova'nın Kişinev kentinde düzenlenen AB-Orta Asya Dijital Bağlantı Platformu toplantısında Avrupa Komisyonu ile elektronik imzaların karşılıklı tanınmasına yönelik bir niyet beyanı açıklandı. Süreç Ticaret Bakanlığı, Ulaştırma ve Altyapı Bakanlığı ile Bilgi Teknolojileri ve İletişim Kurumu (BTK) koordinasyonunda yürütülecek; ilgili kurumların katılımıyla bir Ulusal Çalışma Grubu oluşturularak hukuki, idari ve teknik gereklilikler değerlendirilecek. Amaç, Türk ihracatçıların AB'nin dijital ticaret ve mevzuat sistemlerine (ürün uygunluğu, sürdürülebilirlik, izlenebilirlik, gümrük süreçleri) erişimini kolaylaştırmak ve sınır ötesi dijital işlemleri (örneğin ticaret finansmanı) desteklemek.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/turkiye-ab-ticaretinde-dijital-entegrasyon-icin-onemli-adim-elektronik-imzalarin-karsilikli-taninmasina-yonelik-is-birligi-sureci-basliyor",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Süreç henüz niyet beyanı aşamasında, karşılıklı tanımanın hukuken ve teknik olarak ne zaman tamamlanacağı belli değil. Yine de AB'ye yönelik dijital ihracat veya kamu ihalelerine uzaktan katılım planlayan firmalara, Ulusal Çalışma Grubu'nun ilerleyen aylardaki açıklamalarını takip etmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "10 Kasım 2026",
+    eklendiTarihi: "2026-11-16",
+    baslik:
+      "Yeşil Mutabakat Eylem Planı (2026-2030) Resmî Gazete'de yayımlandı",
+    ozet:
+      "Cumhurbaşkanlığının 2026/12 sayılı genelgesiyle, 10 Kasım 2026 tarihli ve 33426 sayılı Resmî Gazete'de güncellenen Yeşil Mutabakat Eylem Planı (2026-2030) yayımlandı. Ticaret Bakanlığı koordinasyonunda hazırlanan plan; karbon fiyatlandırması, sanayide yeşil ve dijital dönüşüm, döngüsel ekonomi, sürdürülebilir enerji, ulaştırma, tarım, yeşil finansman, iklime uyum ve adil geçiş başlıkları altında 11 ana başlık, 41 hedef ve 142 eylem içeriyor. Plan, COP31 Antalya sürecine paralel olarak yayımlandı; kamu kurumlarının kendi sorumluluğundaki başlıklarda yıllık ilerleme raporu sunması öngörülüyor.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/yesil-mutabakat-eylem-plani-20262030-yayimlandi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Planın hedeflerinin büyük kısmı henüz somut bir başvuru şartı değil, orta vadeli bir yol haritası niteliğinde. AB'ye ihracat yapan veya sınırda karbon düzenlemesinden etkilenen imalatçı firmalara, planın sanayide yeşil dönüşüm başlığı altında açılacak destek ve uyum programlarını yakından izlemelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
