@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "uretimde-kurumlar-vergisi-12-5-sanayi-sicil-belgesi-fason-imalat-2027",
+    title: "Üretim Şirketlerinde Kurumlar Vergisi 2027'de %12,5'e İniyor: Sanayi Sicil Belgeniz ve Fason İmalat Sözleşmeniz Hazır mı?",
+    excerpt: "7582 sayılı Kanun'un Kurumlar Vergisi Kanunu'nun 32/8 maddesinde yaptığı değişiklikle, sanayi sicil belgesine sahip ve fiilen üretim yapan şirketlerin üretim kazancı 2027 vergilendirme döneminden itibaren %12,5 oranında vergilendirilecek. 26 Seri No'lu Tebliğ'e dayanan sanayi sicil belgesi ve fiilî üretim şartı, fason imalatta aranan altı koşul, karma faaliyette matrah hesaplama ve şirketlerin 2026 sonuna kadar yapması gerekenlerle güncel rehber.",
+    category: "VERGİ TEŞVİKLERİ • ÜRETİM KAZANCI İNDİRİMİ • 2026",
+    date: "Kasım 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "e-tebligat-zorunlulugu-2026-30-kasim-son-tarih",
     title: "e-Tebligat Zorunluluğu 2026: Şirketiniz Sisteme Kayıtlı Değilse 30 Kasım'a Kadar Ne Yapmalı?",
     excerpt: "11 Ekim 2026 tarihli ve 33397 sayılı Resmî Gazete'de yayımlanan 596 sıra no'lu VUK Genel Tebliği, Anayasa Mahkemesi'nin iptal kararı sonrası e-Tebligat sisteminin usul ve esaslarını yeniden düzenledi. Kurumlar vergisi mükellefleri, gerçek usulde vergilendirilen gelir vergisi mükellefleri, kolektif ve adi komandit şirketler için sisteme kayıt son tarihi 30 Kasım 2026. Kapsam, muafiyetler, UETS/KEP ile farkı ve başvuru adımlarıyla güncel rehber.",
