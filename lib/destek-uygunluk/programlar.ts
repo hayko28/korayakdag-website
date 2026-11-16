@@ -4,7 +4,6 @@ import {
   ilinBolgesi,
   imalatSektoruMu,
   isletmeYasiYil,
-  kobiMaliUstDeger,
   kobiOlceguHesapla,
   kosgebDesteklenenSektorMu,
   yatirimAsgariTutarTl,
@@ -124,7 +123,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
   // işletmeleri de artık başvurabiliyor. sirketTuru bu yüzden burada ARTIK gate değil.
   if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === "mikro" || olcek === "kobi_disi") {
     gerekceler.push(`İşletme ölçeği "${olcek}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
@@ -134,7 +133,6 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     // Hangisinin eksik olduğunu ayrı ayrı bildir — ikisi birden eksik değilse
     // "zaten girdim" hissi yaratan tek bir kombine mesaj yerine.
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
@@ -429,7 +427,7 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   // başvuru yapabilecekleri". TÜBİTAK 16/04/2019 duyurusuyla 1 Temmuz 2019'dan itibaren büyük
   // ölçekli kuruluşları genel 1501 çağrılarının dışına çıkardı (öncelikli alan çağrılarına
   // yönlendirildi). Eski sürümde "KOBİ zorunluluğu yoktur" deniyordu; güncel çağrıyla çelişiyordu.
-  const mali1501 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali1501 = g.yillikNetSatisHasilatiTl;
   const olcek1501 = kobiOlceguHesapla(g.calisanSayisi, mali1501);
   if (olcek1501 === "kobi_disi") {
     gerekceler.push("Genel 1501 çağrıları yalnızca KOBİ ölçeğindeki sermaye şirketlerine açık (TÜBİTAK 2026-2 çağrı duyurusu); girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor. Büyük ölçekli firmalar TÜBİTAK'ın öncelikli alanlarda açtığı ayrı çağrılara yönlendiriliyor.");
@@ -437,7 +435,6 @@ export function tubitak1501Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (olcek1501 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali1501 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   const retSinyali = argeRetSinyalleriVarMi(g);
@@ -497,7 +494,7 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === "kobi_disi") {
     gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki (mikro/küçük/orta) sermaye şirketlerine açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
@@ -505,7 +502,6 @@ export function tubitak1507Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   const bekleyen = g.teydebBekleyenProjeSayisi ?? 0;
@@ -809,7 +805,7 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === "mikro" || olcek === "kobi_disi") {
     gerekceler.push(`İşletme ölçeği "${olcek}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
@@ -817,7 +813,6 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
   }
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
@@ -931,7 +926,7 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
     "Sektör kapsamı genel Yönerge'de sabitlenmemiş, ilan edilen çağrıya göre belirleniyor — güncel çağrı kapsamı kosgeb.gov.tr üzerinden teyit edilmelidir.",
   ];
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === "mikro" || olcek === "kobi_disi") {
     gerekceler.push(`İşletme ölçeği "${olcek}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
@@ -939,7 +934,6 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
   }
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.yesilSanayiProjeTemasi === undefined || g.yesilSanayiProjeTemasi === "emin_degil") {
@@ -1165,7 +1159,7 @@ export function kosgebStratejikUrunDegerlendir(g: DestekBasvuruGirdisi): Program
   }
   if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
 
-  const mali1 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali1 = g.yillikNetSatisHasilatiTl;
   const olcek1 = kobiOlceguHesapla(g.calisanSayisi, mali1);
   if (olcek1 === "kobi_disi") {
     gerekceler.push("KOSGEB yasal olarak yalnızca KOBİ ölçeğindeki işletmeleri destekleyebiliyor — büyük ölçekli firmalar Bakanlığın Hamle Programı'ndan doğrudan yararlanır, bu KOSGEB ayağı kapsamına girmez.");
@@ -1173,7 +1167,6 @@ export function kosgebStratejikUrunDegerlendir(g: DestekBasvuruGirdisi): Program
   }
   if (olcek1 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali1 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.stratejikUrunBakanlikBasvuruDurumu === "reddedildim") {
@@ -1252,7 +1245,7 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
   }
   if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
 
-  const mali2 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali2 = g.yillikNetSatisHasilatiTl;
   const olcek2 = kobiOlceguHesapla(g.calisanSayisi, mali2);
   if (olcek2 === "kobi_disi") {
     gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık — büyük ölçekli firmalar kapsam dışı.");
@@ -1260,7 +1253,6 @@ export function kosgebKureselRekabetcilikDegerlendir(g: DestekBasvuruGirdisi): P
   }
   if (olcek2 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali2 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.kureselRekabetcilikDahaOnceKullanildiMi === true) {
@@ -1326,7 +1318,7 @@ export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
 
-  const mali3 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali3 = g.yillikNetSatisHasilatiTl;
   const olcek3 = kobiOlceguHesapla(g.calisanSayisi, mali3);
   if (olcek3 === "mikro" || olcek3 === "kobi_disi") {
     gerekceler.push(`İşletme ölçeği "${olcek3}" — bu program yalnızca küçük veya orta büyüklükteki işletmelere açık (mikro işletmeler ve büyük ölçekli firmalar başvuramaz).`);
@@ -1334,7 +1326,6 @@ export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (olcek3 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali3 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
@@ -1621,7 +1612,7 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (g.sirketTuru === undefined) eksikAlanlar.push("şirket türü");
 
-  const mali7 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali7 = g.yillikNetSatisHasilatiTl;
   const olcek7 = kobiOlceguHesapla(g.calisanSayisi, mali7);
   if (olcek7 === "kobi_disi") {
     gerekceler.push("Tedarikçi taraf yalnızca KOBİ ölçeğindeki işletmeler olabilir.");
@@ -1629,7 +1620,6 @@ export function tubitak1707Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (olcek7 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali7 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.musteriKurulusVarMi === false) {
@@ -1719,7 +1709,7 @@ export function tubitak1831Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Türkiye'de yerleşiklik şartı sağlanmıyor.", gerekceler);
   }
 
-  const mali8 = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali8 = g.yillikNetSatisHasilatiTl;
   const olcek8 = kobiOlceguHesapla(g.calisanSayisi, mali8);
   if (olcek8 === "kobi_disi") {
     gerekceler.push("Bu program yalnızca KOBİ ölçeğindeki işletmelere açık (MADDE 10.1).");
@@ -1727,7 +1717,6 @@ export function tubitak1831Degerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   }
   if (olcek8 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali8 === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.ortakliBasvuruMu1831 === true) {
@@ -1938,11 +1927,10 @@ export function istihdamiKorumaDegerlendir(g: DestekBasvuruGirdisi): ProgramSonu
     return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) kapsam dışı.", gerekceler);
   }
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   } else if (olcek === "kobi_disi") {
     gerekceler.push("Büyük ölçekli işletmeler 2026-2 döneminde kapsama dahil edildi, ANCAK başvuru KOSGEB yerine doğrudan Sanayi ve Teknoloji Bakanlığı'na yapılır ve yatırım teşvik belgeniz varsa kredi limiti/hak ediş için farklı bir formül (ilave istihdam taahhüdünüzün yarısı × 180 gün prim eşdeğeri) geçerlidir — bu ön analiz bu senaryoyu ayrıntılı hesaplamıyor.");
   } else {
@@ -2013,7 +2001,7 @@ export function kosgebYapayZekaKrediDegerlendir(g: DestekBasvuruGirdisi): Progra
   const eksikAlanlar: string[] = [];
   const SON = "31 Aralık 2026";
 
-  const mali = kobiMaliUstDeger(g.yillikNetSatisHasilatiTl, g.maliBilancoTl);
+  const mali = g.yillikNetSatisHasilatiTl;
   const olcek = kobiOlceguHesapla(g.calisanSayisi, mali);
   if (olcek === "kobi_disi") {
     gerekceler.push("Program yalnızca KOBİ ölçeğindeki işletmelere açık — girilen çalışan sayısı/ciro büyük ölçekli firma sınırını aşıyor.");
@@ -2021,7 +2009,6 @@ export function kosgebYapayZekaKrediDegerlendir(g: DestekBasvuruGirdisi): Progra
   }
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
-    if (mali === undefined) eksikAlanlar.push("yıllık net satış hasılatı veya mali bilanço");
   }
 
   if (g.kosgebVeriTabaniKayitliMi === false) hazirlikKaydet("hizli", "KOSGEB Veri Tabanı'na kayıt (KOBİ Bilgi Sistemi üzerinden kısa sürede yapılır)");

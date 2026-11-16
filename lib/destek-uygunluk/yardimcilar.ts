@@ -3,22 +3,19 @@ export type KobiOlcegi = "mikro" | "kucuk" | "orta" | "kobi_disi";
 // Küçük ve Orta Büyüklükteki İşletmeler Yönetmeliği (7297 sayılı CB Kararı,
 // RG 25/5/2023-32201) — KOSGEB ve TÜBİTAK'ın ortak referans aldığı KOBİ tanımı.
 // Kaynak: research/destek-uygunluk/kosgeb-kapasite-gelistirme.md
-export function kobiOlceguHesapla(calisanSayisi?: number, maliUst?: number): KobiOlcegi | null {
-  if (calisanSayisi === undefined || maliUst === undefined) return null;
-  if (calisanSayisi < 10 && maliUst <= 10_000_000) return "mikro";
-  if (calisanSayisi < 50 && maliUst <= 100_000_000) return "kucuk";
-  if (calisanSayisi < 250 && maliUst <= 500_000_000) return "orta";
+// Ciro isteğe bağlıdır: girilmediyse ölçek yalnızca çalışan sayısından tahmin edilir
+// ve işletmenin lehine "mikro" varsayılmaz (ciro mikro eşiğini aşıyor olabilir).
+export function kobiOlceguHesapla(calisanSayisi?: number, ciro?: number): KobiOlcegi | null {
+  if (calisanSayisi === undefined) return null;
+  if (ciro === undefined) {
+    if (calisanSayisi < 50) return "kucuk";
+    if (calisanSayisi < 250) return "orta";
+    return "kobi_disi";
+  }
+  if (calisanSayisi < 10 && ciro <= 10_000_000) return "mikro";
+  if (calisanSayisi < 50 && ciro <= 100_000_000) return "kucuk";
+  if (calisanSayisi < 250 && ciro <= 500_000_000) return "orta";
   return "kobi_disi";
-}
-
-// Yönetmelik MADDE 5: "yıllık net satış hasılatı veya mali bilançosundan HERHANGİ
-// BİRİ" eşiği aşmıyorsa KOBİ sayılır — bu bir VEYA testi. İkisi de biliniyorsa
-// işletmenin lehine olan (düşük) değer esas alınmalı; yalnızca biri biliniyorsa o
-// kullanılır. (Önceden yanlışlıkla büyük olan alınıyordu, bu bazı gerçek KOBİ'leri
-// haksız yere "KOBİ dışı" gösterebiliyordu.)
-export function kobiMaliUstDeger(ciro?: number, bilanco?: number): number | undefined {
-  if (ciro !== undefined && bilanco !== undefined) return Math.min(ciro, bilanco);
-  return ciro ?? bilanco;
 }
 
 export function isletmeYasiYil(kurulusTarihi?: string): number | null {

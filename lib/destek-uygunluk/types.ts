@@ -188,7 +188,6 @@ export interface DestekBasvuruGirdisi {
   naceKodu?: string; // örn. "62.01"
   calisanSayisi?: number;
   yillikNetSatisHasilatiTl?: number;
-  maliBilancoTl?: number;
   turkiyedeYerlesikMi?: boolean;
 
   // Katman 1 — huni (triyaj) soruları: hangi karmaşık program modüllerinin

@@ -385,7 +385,6 @@ export default function DestekUygunlukForm() {
       naceKodu: g.naceKodu || undefined,
       calisanSayisi: num("calisanSayisi"),
       yillikNetSatisHasilatiTl: num("yillikNetSatisHasilatiTl"),
-      maliBilancoTl: num("maliBilancoTl"),
       turkiyedeYerlesikMi: bool("turkiyedeYerlesikMi"),
 
       yeniGirisimciMi: bool("yeniGirisimciMi"),
@@ -1027,16 +1026,9 @@ export default function DestekUygunlukForm() {
               </div>
               <CalisanSayisiAlani deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
               <div>
-                <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+                <Tutar etiket="Yıllık Net Satış Hasılatı (opsiyonel)" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
                 <p className="mt-1.5 text-xs text-gray-500">
-                  Son kapanmış mali yılınızın rakamı; yıldan yıla değişiyorsa yaklaşık girmeniz yeterli.
-                </p>
-              </div>
-              <div>
-                <Tutar etiket="Mali Bilanço (opsiyonel)" deger={g.maliBilancoTl} onChange={(v) => set("maliBilancoTl", v)} />
-                <p className="mt-1.5 text-xs text-gray-500">
-                  Bilanço toplam aktifiniz. KOBİ ölçeğinde ciro veya bilançodan hangisi eşiğin altındaysa o esas
-                  alınır, ikisini de bilmiyorsanız sadece ciroyu girmeniz yeterli.
+                  Son kapanmış mali yılınızın rakamı; bilmiyorsanız boş bırakabilirsiniz, yaklaşık girmeniz de yeterli.
                 </p>
               </div>
               <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
@@ -1181,7 +1173,7 @@ export default function DestekUygunlukForm() {
 // Sonuç kartı "belirsiz" durumdaysa, o programa özel eksik soruları kartın
 // içinde gösterir. Şirket Bilgileri/huni soruları burada tekrar sorulmaz —
 // yalnızca o programa özgü Katman 2 alanları.
-// KOBİ ölçeği (çalışan sayısı + yıllık ciro/bilanço) birden fazla programda
+// KOBİ ölçeği (çalışan sayısı + yıllık ciro) birden fazla programda
 // kriter olarak kontrol ediliyor. Bu alanlar zaten Şirket Bilgileri'nde
 // sorulduğu için burada TEKRAR "eksik" gibi görünmesin diye: doluysa salt
 // okunur bir onay satırı, boşsa (kullanıcı Bölüm 1'de atlamışsa) aynı
@@ -1189,7 +1181,7 @@ export default function DestekUygunlukForm() {
 // dönmeye gerek kalmaz, buradan girilen değer oraya da yansır.
 function KobiOlcegiAlanlari({ g, set }: { g: Girdi; set: (k: string, v: string) => void }) {
   const calisanDolu = !!g.calisanSayisi;
-  const ciroDolu = !!(g.yillikNetSatisHasilatiTl || g.maliBilancoTl);
+  const ciroDolu = !!g.yillikNetSatisHasilatiTl;
   return (
     <div className="grid gap-5 sm:grid-cols-2">
       {calisanDolu ? (
@@ -1201,7 +1193,7 @@ function KobiOlcegiAlanlari({ g, set }: { g: Girdi; set: (k: string, v: string) 
       )}
       {ciroDolu ? (
         <div className="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
-          ✓ Yıllık ciro/bilanço bilginiz alındı — kriter açısından değerlendirildi.
+          ✓ Yıllık ciro bilginiz alındı — kriter açısından değerlendirildi.
         </div>
       ) : (
         <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
@@ -1217,7 +1209,7 @@ const OLCEK_ISTEYEN_PROGRAMLAR = ["istihdami-koruma-destek-programi", "kosgeb-st
 
 function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; set: (k: string, v: string) => void }) {
   const turEksik = !g.sirketTuru && SIRKET_TURU_ISTEYEN_PROGRAMLAR.includes(programId);
-  const olcekEksik = (!g.calisanSayisi || !(g.yillikNetSatisHasilatiTl || g.maliBilancoTl)) && OLCEK_ISTEYEN_PROGRAMLAR.includes(programId);
+  const olcekEksik = !g.calisanSayisi && OLCEK_ISTEYEN_PROGRAMLAR.includes(programId);
   return (
     <>
       {(turEksik || olcekEksik) && (
@@ -1557,7 +1549,7 @@ function ProgramSorulariIc({ programId, g, set }: { programId: string; g: Girdi;
       return (
         <div>
           <p className="mb-4 rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-800">
-            ℹ️ Mikro, küçük ve orta ölçekli tüm KOBİ'ler başvurabilir; ölçeğiniz üstteki çalışan sayısı ve ciro/bilanço bilgilerinden hesaplanır.
+            ℹ️ Mikro, küçük ve orta ölçekli tüm KOBİ'ler başvurabilir; ölçeğiniz üstteki çalışan sayısı ve ciro bilgilerinden hesaplanır.
           </p>
           <div className="grid gap-5 sm:grid-cols-2">
             <EvetHayir etiket="KOSGEB sisteminde (veri tabanında) kayıtlı ve aktif misiniz?" deger={g.kosgebVeriTabaniKayitliMi} onChange={(v) => set("kosgebVeriTabaniKayitliMi", v)} />
