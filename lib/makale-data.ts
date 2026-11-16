@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "sirket-satisinda-sozlu-anlasma-tuzagi",
+    title:
+      "Bir Şirket Satışında Fiyatta Anlaşmak, İşlemin Bittiği Anlamına Gelmiyor",
+    excerpt:
+      "Rekabet Kurumu'nun görünüm raporuna göre 2025, Türkiye'de hem TL hem dolar bazında son 13 yılın en yüksek birleşme ve devralma hacminin görüldüğü yıl oldu. Orta ölçekli bir şirket sözlü olarak fiyatta anlaştıktan sonra due diligence sürecinde karşılaşılan, tek bir müşteriye dayalı ve yazıya dökülmemiş bir ciro yapısı, masayı yeniden açabiliyor.",
+    tag: "Görüş",
+    date: "16 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "e-tebligat-kep-adresim-var-yeterli-mi",
     title:
       "KEP Adresi Olan Bir Şirket, e-Tebligat'tan Neden Muaf Değil?",
