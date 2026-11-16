@@ -4,7 +4,7 @@ export type KobiOlcegi = "mikro" | "kucuk" | "orta" | "kobi_disi";
 // RG 25/5/2023-32201) — KOSGEB ve TÜBİTAK'ın ortak referans aldığı KOBİ tanımı.
 // Kaynak: research/destek-uygunluk/kosgeb-kapasite-gelistirme.md
 // Ciro isteğe bağlıdır: girilmediyse ölçek yalnızca çalışan sayısından tahmin edilir
-// ve işletmenin lehine "mikro" varsayılmaz (ciro mikro eşiğini aşıyor olabilir).
+// ve "mikro" varsayılmaz (ciro mikro eşiğini aşıyor olabilir); 10'dan az çalışanda ciro ayrıca sorulur.
 export function kobiOlceguHesapla(calisanSayisi?: number, ciro?: number): KobiOlcegi | null {
   if (calisanSayisi === undefined) return null;
   if (ciro === undefined) {

@@ -134,6 +134,7 @@ export function kosgebKapasiteGelistirmeDegerlendir(g: DestekBasvuruGirdisi): Pr
     // "zaten girdim" hissi yaratan tek bir kombine mesaj yerine.
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
   }
+  if (g.calisanSayisi !== undefined && g.calisanSayisi < 10 && g.yillikNetSatisHasilatiTl === undefined) eksikAlanlar.push("yıllık net satış hasılatı (10'dan az çalışanda mikro/küçük ayrımı için)");
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
   else if (!kosgebDesteklenenSektorMu(g.naceKodu)) {
@@ -814,6 +815,7 @@ export function kosgebDijitalDonusumDegerlendir(g: DestekBasvuruGirdisi): Progra
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
   }
+  if (g.calisanSayisi !== undefined && g.calisanSayisi < 10 && g.yillikNetSatisHasilatiTl === undefined) eksikAlanlar.push("yıllık net satış hasılatı (10'dan az çalışanda mikro/küçük ayrımı için)");
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
   else if (!imalatSektoruMu(g.naceKodu)) {
@@ -935,6 +937,7 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
   if (olcek === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
   }
+  if (g.calisanSayisi !== undefined && g.calisanSayisi < 10 && g.yillikNetSatisHasilatiTl === undefined) eksikAlanlar.push("yıllık net satış hasılatı (10'dan az çalışanda mikro/küçük ayrımı için)");
 
   if (g.yesilSanayiProjeTemasi === undefined || g.yesilSanayiProjeTemasi === "emin_degil") {
     eksikAlanlar.push("projenin Alt Bileşen 1.1 (enerji sistemlerinin karbonsuzlaştırılması) mi yoksa Alt Bileşen 1.2 (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) mi kapsamına girdiği");
@@ -1327,6 +1330,7 @@ export function kosgebYondeDegerlendir(g: DestekBasvuruGirdisi): ProgramSonucuTa
   if (olcek3 === null) {
     if (g.calisanSayisi === undefined) eksikAlanlar.push("çalışan sayısı");
   }
+  if (g.calisanSayisi !== undefined && g.calisanSayisi < 10 && g.yillikNetSatisHasilatiTl === undefined) eksikAlanlar.push("yıllık net satış hasılatı (10'dan az çalışanda mikro/küçük ayrımı için)");
 
   if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu");
   else if (!imalatSektoruMu(g.naceKodu)) {

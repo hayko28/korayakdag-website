@@ -1026,9 +1026,9 @@ export default function DestekUygunlukForm() {
               </div>
               <CalisanSayisiAlani deger={g.calisanSayisi} onChange={(v) => set("calisanSayisi", v)} />
               <div>
-                <Tutar etiket="Yıllık Net Satış Hasılatı (opsiyonel)" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
+                <Tutar etiket="Yıllık Net Satış Hasılatı" deger={g.yillikNetSatisHasilatiTl} onChange={(v) => set("yillikNetSatisHasilatiTl", v)} />
                 <p className="mt-1.5 text-xs text-gray-500">
-                  Son kapanmış mali yılınızın rakamı; bilmiyorsanız boş bırakabilirsiniz, yaklaşık girmeniz de yeterli.
+                  Son kapanmış mali yılınızın rakamı; yaklaşık girmeniz yeterli. 10 ve üzeri çalışanınız varsa boş bırakabilirsiniz.
                 </p>
               </div>
               <EvetHayir etiket="Türkiye'de yerleşik mi?" deger={g.turkiyedeYerlesikMi} onChange={(v) => set("turkiyedeYerlesikMi", v)} />
@@ -1209,7 +1209,7 @@ const OLCEK_ISTEYEN_PROGRAMLAR = ["istihdami-koruma-destek-programi", "kosgeb-st
 
 function ProgramSorulari({ programId, g, set }: { programId: string; g: Girdi; set: (k: string, v: string) => void }) {
   const turEksik = !g.sirketTuru && SIRKET_TURU_ISTEYEN_PROGRAMLAR.includes(programId);
-  const olcekEksik = !g.calisanSayisi && OLCEK_ISTEYEN_PROGRAMLAR.includes(programId);
+  const olcekEksik = (!g.calisanSayisi || (Number(g.calisanSayisi) < 10 && !g.yillikNetSatisHasilatiTl)) && OLCEK_ISTEYEN_PROGRAMLAR.includes(programId);
   return (
     <>
       {(turEksik || olcekEksik) && (
