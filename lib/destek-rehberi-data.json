@@ -565,6 +565,64 @@
       ],
       "dogrulama": "2026-11-13: program sayfası, 8 Ağustos 2026 tarihli COP31 çağrı duyurusu (güncelleme 9 Ağustos) ve Teknoloji Merkezi Destek Programı Yönergesi Rev. 3 (03.11.2026, Bakanlık Olur'u 792180) okundu. Doğrulananlar: COP31 çağrısı 9-30 Ağustos 2026 tarihleri arasındaydı ve kapandı (önceki 'proje kayıtlarından' notu resmi duyuruyla teyit edildi); Kuruluş, Performans ve Hızlandırma desteklerinin oranları (Kuruluş ve Performans geri ödemesiz %100, Hızlandırma geri ödemeli %100); 2026 yıllık üst limit 6.506.000 TL; geçiş hükümleri. Düzeltilen bilgi: Kuruluş Desteği geçiş başvuru süresi önceki notta 07.10.2026'da bitmiş görünüyordu, oysa 20.10.2026 tarihli Olur ile 31.12.2026'ya uzatıldı ve hâlen açıktır. Program yürürlük tarihi 07.10.2025. Doğrulanamayan: yok. Program KOBİ'lere değil TEKMER işleticilerine ve TGB yönetici şirketlerine yöneliktir.",
       "kapak": "Kuruluş Desteği 31.12.2026'ya kadar, Hızlandırma çağrısı kapalı"
+    },
+    {
+      "ad": "Yeşil Sanayi Destek Programı: 2026-01 Sanayide Temiz ve Döngüsel Ekonomi Proje Teklif Çağrısı",
+      "durum": "acik",
+      "sonTarih": "Ön başvuru 16 Kasım 2026 - 9 Aralık 2026 (saat 23:59:59). Birinci aşama sonuçları 18 Aralık 2026'da ilan edilir. Birinci aşamayı geçenler 21 Aralık 2026 - 31 Ocak 2027 arasında proje başvurusu yapar. Desteklenecek işletmeler 31 Mart 2027'de ilan edilir, projeler 1 Nisan 2027'de başlar.",
+      "ozet": "KOSGEB'in 3 milyar TL bütçeli, yaklaşık 1.000 işletmeyi hedefleyen yeni çağrısıdır (16 Kasım 2026'da yayımlandı). İmalat sektöründeki küçük ve orta ölçekli işletmelerin enerji, su ve hammadde verimliliği, atık geri dönüşümü, endüstriyel simbiyoz ve döngüsel ekonomi projelerine %70 oranında, geri ödemeli destek verir. Önce ön başvuru yapılır, puanlamayı geçenler proje başvurusuna davet edilir.",
+      "amac": "Sanayideki KOBİ'lerin yeşil dönüşümünü, kaynak verimliliğini ve AB Yeşil Mutabakatı'na uyumunu hızlandırmak.",
+      "kimler": [
+        "NACE Rev. 2.1 Kısım C (İmalat) sektöründe faaliyet gösteren küçük ve orta ölçekli işletmeler; mikro işletmeler başvuramaz",
+        "KOSGEB Veri Tabanı'na kayıtlı, onaylı ve güncel İşletme Beyanı olan işletmeler",
+        "Ana faaliyeti Dünya Bankası finansmanlı projelerde uygun bulunmayan sektör ve faaliyetler tablosunda olanlar başvuramaz"
+      ],
+      "sartlar": [
+        "Çağrı ilan tarihi itibarıyla en az 2 yıl önce kurulmuş olmak",
+        "Ön başvuru tarihinde geçerli Sanayi Sicil Belgesi olmak",
+        "Onaylı son mali yılda bilanço esasına göre defter tutmak",
+        "Findeks kredi notu endeksinde 'orta riskli', 'az riskli', 'iyi' veya 'çok iyi' gruplardan birinde olmak",
+        "Son onaylı mali yıl bilançosu veya net satış hasılatı proje toplam bütçesinden büyük olmak; proje toplam bütçesi en az 1.000.000 TL olmak",
+        "Çevresel ve Sosyal Yönetim Sistemine göre izleme düzeyinin 'düşük' veya 'orta' olması",
+        "Proje süresi 12 ay, 4'er aylık 3 izleme dönemi",
+        "İşletme, programın 'Sanayide Temiz ve Döngüsel Ekonomi' çağrılarından yalnızca bir kez yararlanabilir",
+        "Yasal limitlerin üzerinde vadesi geçmiş ve tecil edilmemiş vergi veya SGK borcu olan işletmelere o dönem için destek ödemesi yapılmaz",
+        "Birinci aşama puanlaması: teknoloji düzeyi, belgeler, çalışan sayısı, karlılık, cari oran, finansal kaldıraç, verimlilik, Ar-Ge giderleri, ihracat payı gibi kriterler. Planlanan işletme sayısının 2 katına denk gelen en yüksek puanlı başvurular ikinci aşamaya geçer"
+      ],
+      "destekOrani": [
+        "Destek oranı %70; destek üst limiti toplam 7.000.000 TL ve geri ödemelidir (çağrı metni)",
+        "Çağrının tahmini toplam bütçesi 3.000.000.000 TL, desteklenecek tahmini işletme sayısı 1.000",
+        "Kadın girişimci işletmelere ilave puan verilir; geçerli TSE K 645 Kadın Girişimci Belgesi sunan ve aşamaları geçen işletmeler sıralamaya bakılmaksızın destek kapsamına alınır"
+      ],
+      "odemeSekli": [
+        "Destek geri ödemelidir: proje bitişinden sonra 12 ay ödemesiz, ardından üçer aylık dönemlerle 4 eşit taksitte geri ödenir",
+        "Destek ödeme aşamasında destek tutarı kadar teminat mektubu veya KGF kefalet mektubu verilir",
+        "Kurul kararındaki destek tutarının %50'sine kadar erken ödeme, program bütçesi imkanları dahilinde yapılabilir",
+        "Ödemeler 4 aylık izleme dönemleri sonunda talep edilir. Giderler KDV hariç desteklenir",
+        "Proje bitişinden sonra 30 Kasım 2028'e kadar 2027 yılı karbon emisyon ölçüm raporu sunulmazsa kalan taksitler tek seferde muaccel olur"
+      ],
+      "kalemler": [
+        "Personel: proje ile ilişkilendirilmiş, işletmede yeni istihdam edilecek en fazla 2 tam zamanlı personel (aylık üst limit brüt asgari ücretin 2 katı)",
+        "Makine ve teçhizat (yeni olmalı; bilişim donanımı dahil)",
+        "Yazılım lisansı veya bulut kullanım giderleri ve yazılıma ilişkin eğitim ve danışmanlık",
+        "Hizmet alımı: eğitim, test ve analiz, belgelendirme, danışmanlık",
+        "Desteklenmeyenler: gayrimenkul alımı, bina inşaatı, tefrişat, taşıt alım ve kiralama, projeyle ilişkilendirilmemiş personel, vergi, resim, harç ve SGK primleri",
+        "Proje konuları: enerji verimliliği, su verimliliği, hammadde verimliliği, sürdürülebilir ve iklime dayanıklı atık geri dönüşümü, endüstriyel simbiyoz, döngüsel ekonomi"
+      ],
+      "faydalar": [
+        "Uzun vadeli finansman: 12 ay ödemesiz dönem ve 4 taksit",
+        "Yeşil dönüşüm yatırımlarının maliyetini azaltır, AB'ye ihracat yapan işletmeler için karbon ve kaynak verimliliği avantajı sağlar",
+        "Ön başvuru süreci kısa: 9 Aralık'a kadar sistemden onaylanmayan başvurular değerlendirmeye alınmaz"
+      ],
+      "basvuru": "e-Devlet üzerinden KOSGEB başvuru sistemi (edevlet.kosgeb.gov.tr). Önce ön başvuru, sonra birinci aşamayı geçenler için proje başvurusu yapılır. Proje başvurusunda Proje Bilgi Dokümanı, YMM/Bağımsız Denetçi Bildirim Formu, Findeks raporu, Dünya Bankası Çevresel ve Sosyal Durum Tespiti Formu, İşletme Değerlendirme Raporu ve 2025 yılı için Kapsam 1, 2 ve 3 karbon emisyon ölçüm raporu istenir. Bildirimler sistem üzerinden yapılır, takip yükümlülüğü başvuru sahibindedir.",
+      "kaynaklar": [
+        "https://www.kosgeb.gov.tr/site/tr/genel/detay/9508/kosgebden-kobilerin-yesil-donusumune-3-milyar-tllik-destek",
+        "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9022/yesil-sanayi-destek-programi",
+        "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/2026.11.16/Sanayide_Temiz_ve_Do%CC%88ngu%CC%88sel_Ekonomi_Proje_Teklif_C%CC%A7ag%CC%86r%C4%B1s%C4%B1.pdf",
+        "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/2026.11.16/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi.pdf"
+      ],
+      "dogrulama": "2026-11-17. KOSGEB resmi duyurusu (16.11.2026), program sayfası ve 2026-01 Proje Teklif Çağrısı PDF'i tam metin okundu: tarihler, %70 oran, 7.000.000 TL geri ödemeli üst limit, başvuru ve ön başvuru koşulları, gider kalemleri, geri ödeme planı doğrulandı. Yönerge PDF'inin tamamı bu karta işlenmedi.",
+      "kapak": "9 Aralık 2026"
     }
   ],
   "tubitak": [

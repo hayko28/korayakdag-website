@@ -921,11 +921,11 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
   const gerekceler: string[] = [];
   const eksikAlanlar: string[] = [];
   const uyarilar = [
-    "Bu destek HİBE DEĞİLDİR, GERİ ÖDEMELİDİR: 12 ay ödemesiz dönemin ardından 6 eşit taksitte geri ödenir; zamanında ödenirse faizsizdir, gecikirse yasal faiz işler ve teminat nakde çevrilebilir.",
-    "Destek oranı Alt Bileşen 1.1'de (enerji sistemlerinin karbonsuzlaştırılması) %60, Alt Bileşen 1.2'de (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) %70'tir; deprem bölgesindeki (11 il) illerde hasar derecesine göre azami %90'a çıkabilir. Proje süresi 8-24 ay (4 ay katları).",
-    "Kodda henüz sorulmayan ek ön koşullar da var: şirket sermayesinin en az %75'inin özel sektöre ait olması ve kamu çoğunluk kontrolü bulunmaması, asgari bir kredi skoru, Çevresel-Sosyal Yönetim Sistemi riskinin düşük/orta olması, kuruluşun en az 2 yıldır faaliyette olması, Alt Bileşen 1.1 için yıllık enerji tüketiminin en az 20 TEP olması, Dünya Bankası'nın \"uygun bulunmayan faaliyet\" listesinde olmama ve aynı anda yalnızca 1 çağrıya/toplamda en fazla 2 projeye başvurabilme sınırı. Bunlar başvuru öncesi KOSGEB ile mutlaka teyit edilmelidir.",
-    "Şu an açık bir çağrı bulunmuyor: 2023-01 (güneş enerjisi) ve 2023-02 (temiz ve döngüsel ekonomi) çağrılarının başvuru dönemi 30 Kasım 2024'te sona erdi, yeni çağrı tespit edilemedi; yeni çağrı için kosgeb.gov.tr takip edilmelidir.",
-    "Sektör kapsamı genel Yönerge'de sabitlenmemiş, ilan edilen çağrıya göre belirleniyor — güncel çağrı kapsamı kosgeb.gov.tr üzerinden teyit edilmelidir.",
+    "Bu destek HİBE DEĞİLDİR, GERİ ÖDEMELİDİR: 2026-01 çağrısında proje bitişinden sonra 12 ay ödemesiz, ardından üçer aylık 4 eşit taksitle geri ödenir; ödeme aşamasında destek tutarı kadar teminat mektubu veya KGF kefalet mektubu gerekir.",
+    "2026-01 Sanayide Temiz ve Döngüsel Ekonomi çağrısı AÇIK: ön başvuru 16 Kasım - 9 Aralık 2026, birinci aşama sonuçları 18 Aralık 2026, proje başvurusu 21 Aralık 2026 - 31 Ocak 2027. Destek oranı %70, destek üst limiti 7.000.000 TL, proje süresi 12 ay, proje bütçesi en az 1.000.000 TL.",
+    "Çağrı konuları: enerji verimliliği, su verimliliği, hammadde verimliliği, sürdürülebilir atık geri dönüşümü, endüstriyel simbiyoz ve döngüsel ekonomi. Güneş enerjisi gibi enerji sistemlerinin karbonsuzlaştırılması (eski Alt Bileşen 1.1) bu çağrının konuları arasında sayılmıyor.",
+    "Çağrıdaki diğer şartlar: Findeks kredi notunun orta riskli veya daha iyi olması, onaylı son mali yılda bilanço esasına göre defter tutulması, son mali yıl bilançosu veya net satış hasılatının proje bütçesinden büyük olması, Çevresel ve Sosyal Yönetim Sistemi riskinin düşük/orta olması, Dünya Bankası'nın uygun bulunmayan faaliyet listesinde olmama ve çağrıdan yalnızca bir kez yararlanabilme. Bu şartlar başvuru öncesi KOSGEB ile teyit edilmelidir.",
+    "Birinci aşama puanlamasında teknoloji düzeyi, karlılık, cari oran, ihracat payı gibi kriterler kullanılır; yalnızca puanı yüksek başvurular proje başvurusuna davet edilir, başvuru hak doğurmaz.",
   ];
 
   const mali = g.yillikNetSatisHasilatiTl;
@@ -939,12 +939,29 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
   }
   if (g.calisanSayisi !== undefined && g.calisanSayisi < 10 && g.yillikNetSatisHasilatiTl === undefined) eksikAlanlar.push("yıllık net satış hasılatı (10'dan az çalışanda mikro/küçük ayrımı için)");
 
+  if (g.naceKodu === undefined) eksikAlanlar.push("NACE kodu (çağrı yalnızca İmalat, Kısım C için)");
+  else if (!imalatSektoruMu(g.naceKodu)) {
+    gerekceler.push("2026-01 çağrısı yalnızca NACE Rev. 2.1 Kısım C (İmalat) sektöründeki işletmelere açık; NACE kodunuz imalat dışında görünüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Sektör (NACE) çağrı kapsamı dışında.", gerekceler, uyarilar);
+  }
+  const yesilYas = isletmeYasiYil(g.kurulusTarihi);
+  if (yesilYas === null) eksikAlanlar.push("kuruluş tarihi (çağrı en az 2 yıl önce kurulmuş işletmelere açık)");
+  else if (yesilYas < 2) {
+    gerekceler.push("Çağrı ilan tarihi itibarıyla en az 2 yıl önce kurulmuş olma şartı aranıyor; işletme 2 yıldan genç görünüyor.");
+    return sonuc(meta.programId, meta.programAdi, meta.kurum, "uygun_degil", "Kuruluş süresi 2 yıldan kısa.", gerekceler, uyarilar);
+  }
+  if (g.sanayiSicilBelgesiVarMi === false) {
+    gerekceler.push("Ön başvuru tarihinde geçerli Sanayi Sicil Belgesi zorunlu.");
+    hazirlikKaydet("hizli", "Geçerli Sanayi Sicil Belgesi alınması (ön başvuru 9 Aralık 2026'da kapanıyor)", gerekceler);
+  }
+  if (g.sanayiSicilBelgesiVarMi === undefined) eksikAlanlar.push("Sanayi Sicil Belgesi durumu");
+
   if (g.yesilSanayiProjeTemasi === undefined || g.yesilSanayiProjeTemasi === "emin_degil") {
     eksikAlanlar.push("projenin Alt Bileşen 1.1 (enerji sistemlerinin karbonsuzlaştırılması) mi yoksa Alt Bileşen 1.2 (iklim eylemi/kaynak verimliliği/sürdürülebilirlik) mi kapsamına girdiği");
   } else if (g.yesilSanayiProjeTemasi === "alt_bilesen_1_1") {
-    gerekceler.push("Proje, Alt Bileşen 1.1 (enerji sistemlerinin karbonsuzlaştırılması, örn. GES) kapsamıyla örtüşüyor — destek oranı %60.");
+    gerekceler.push("Proje enerji sistemlerinin karbonsuzlaştırılması (örn. GES) kapsamında; bu tür projeler 2026-01 çağrısının konuları arasında sayılmıyor, çağrı konularına uygunluğu KOSGEB ile teyit edilmelidir.");
   } else {
-    gerekceler.push("Proje, Alt Bileşen 1.2 (iklim eylemi, kaynak verimliliği, sürdürülebilirlik) kapsamıyla örtüşüyor — destek oranı %70.");
+    gerekceler.push("Proje, iklim eylemi, kaynak verimliliği ve sürdürülebilirlik kapsamıyla örtüşüyor; 2026-01 çağrısında destek oranı %70.");
   }
 
   if (eksikAlanlar.length > 0) {
@@ -953,18 +970,18 @@ export function kosgebYesilSanayiDegerlendir(g: DestekBasvuruGirdisi): ProgramSo
       "Girilen bilgilerle ön koşulların bir kısmı sağlanıyor, ancak bazı alanlar eksik.",
       gerekceler,
       [...uyarilar, `Eksik bilgiler: ${eksikAlanlar.join(", ")}.`],
-      true,
-      "30 Kasım 2024 (2023-01 ve 2023-02 çağrıları, kapandı)"
+      false,
+      "9 Aralık 2026 (ön başvuru), 31 Ocak 2027 (proje başvurusu)"
     );
   }
 
   return sonuc(
     meta.programId, meta.programAdi, meta.kurum, "kismen_uygun",
-    "Girilen bilgilere göre ölçek ve tema kriterleri sağlanıyor; yukarıdaki ek ön koşullar ve nihai onay KOSGEB Kurulu'nun değerlendirmesine tabidir.",
+    "Girilen bilgilere göre ölçek, sektör, kuruluş süresi ve tema kriterleri sağlanıyor; yukarıdaki ek ön koşullar ve nihai onay KOSGEB Kurulu'nun değerlendirmesine tabidir.",
     gerekceler,
     uyarilar,
-    true,
-    "30 Kasım 2024 (2023-01 ve 2023-02 çağrıları, kapandı)"
+    false,
+    "9 Aralık 2026 (ön başvuru), 31 Ocak 2027 (proje başvurusu)"
   );
 }
 
