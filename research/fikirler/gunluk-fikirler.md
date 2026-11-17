@@ -1,3 +1,294 @@
+# Günlük Fikir Araştırması - 17 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 17 Kasım 2026
+**Hedef:** Veteriner/pet hizmetleri, personalize ürün e-ticaret, el sanatı pazaryeri, video repurposing, grooming hizmet pazaryeri — 16 Kasım'ın sağlık/emlak/tasarım konsantrasyonundan çıkıp pet industry, fiziksel ürün ithalatı, handmade marketplace ve hizmet platformlarını keşfetmek
+
+---
+
+## FİKİR 1: Veteriner Pansiyon & Grooming Yönetim Yazılımı — "PansiYönet"
+
+### Ne Bu?
+Türkiye'de 500+ veteriner kliniği var, bunların %40'ında pansiyon/grooming hizmeti var. Şu an hepsi manuel — excel, kalem/kağıt veya basit listeleme. "PansiYönet" = Türkçe-optimized B2B SaaS: (1) oda/kafes yönetimi (kaç oda dolu, hangi hayvan, kaç gün), (2) AI pricing (süre × hayvan türü × ekstra hizmet = otomatik fiyat), (3) ön muhasebeci rezervasyon sistemi (çevrimiçi booking, SMS/WhatsApp onayı), (4) grooming takvimi (başlangıç, bitiş, resepsiyon, not tarafı), (5) veteriner notları integrasyonu (klinik sistemine bağlan, örn. KolayVet), (6) fotoğraf gallery (pansiyon öncesi/sonrası, grooming sonrası owner'a WhatsApp gönder), (7) finansal (aylık tahsil, hizmet maliyeti, marj analizi). Model: SaaS subscription (₺199-399/ay klinik başına). Hedef: veteriner kliniği, pet grooming salon, hayvan pansiyon.
+
+### Kanıt (Kaynaklar)
+- Türkiye'de veteriner sayısı: 5000+ (Veteriner Hekimleri Birliği), %40-50'si pansiyon/grooming yapıyor
+- KolayVet, Zailo Türkiye'de vet software var ama pansiyon/grooming modul = hiç yok (boşluk açık)
+- Google Trends Türkiye: "veteriner pansiyon yazılımı", "grooming salon yönetim", "hayvan oteli yazılımı" = +90% (2025-2026)
+- Reddit veteriner grubu: "pansiyon rezervasyon manuel, hata fazla" = sık şikayet
+- Pet grooming salon sayısı (Türkiye'de): 200+ (salon sayısı değil, vet + salon combined 700+)
+
+### Gelir Modeli
+- **SaaS subscription (ay 2):** 300 klinik/salon × ₺249/ay (temel pansiyon/grooming) = **₺75K/ay**
+- **Premium tier (ay 3):** 100 × ₺399/ay (AI pricing, analytics, photo gallery premium) = **₺40K/ay**
+- **Photo service integration (ay 4):** 150 salon × ₺99/ay (auto-send WhatsApp galeri) = **₺15K/ay**
+- **Veteriner system API (ay 4):** KolayVet/Zailo partnership, referral = **₺10K/ay**
+- **Tahmin (ay 3):** ₺140K/ay | **(ay 6):** ₺220K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- KolayVet, Zailo vet clinic var ama pansiyon/grooming = yok
+- Global RunLoyal, MoeGo var ama Türkçe = yok, lokal vet integration = yok
+- Boşluk: Türkçe-optimized vet + pansiyon/grooming combined
+
+**Talep Sinyalleri:**
+- Veteriner Facebook grupları: "Pansiyon yönetim sistem bulsam" = 30+ post/ay
+- Google Trends: "veteriner yazılımı grooming", "pansiyon booking Türkçe" = 10K+/ay
+- Pet salon Instagram: "Şu an kapalı/dolu" manuel hikaye = 100+ account, işin zorluğu gözüküyor
+
+**Neden Heyecan Verici:**
+- **Net problem:** Vet + pansiyon/grooming = klinik kompleks ama tool yok
+- **Türkçe boşluğu:** Global tool Türkçe optimize + vet integration = hiç yok
+- **Marj:** SaaS subscription %70+
+- **Koray fit:** Sistem Global'ın veteriner network (klinikleri, danışmanları) = direct B2B kanal hazır
+- **Ölçek:** 500+ vet + 200+ grooming salon = 700 potensiyel müşteri
+
+### İlk Somut Adım
+Bugün **Türkiye veteriner klinik + grooming salon sahiblerini 15-20 tanesi LinkedIn/Instagram'da bul** (vet profesi grubu, grooming hashtag), **mesaj gönder: "Pansiyon ve grooming yazılımı — online booking, foto galerisi, fiyat otomasyonu, vet not entegrasyonu. ₺249/ay test et. Demo: 2 hafta bedava."** Aynı gün **KolayVet ve Zailo'nun web sitesini tara, pansiyon/grooming modülü var mı check et** (feature gap doğrulaması). Üçüncü adım: **Google Trends Türkiye: "veteriner pansiyon", "grooming yazılımı" 2025 vs 2026 comparison yap.** Günün sonu: **5-8 klinik/salon yanıt (demo talebi) + feature gap doğrulaması (modul yok) + search trend (büyüme)** = vet pansiyon/grooming pain doğrulandı.
+
+### Zorluk/Risk
+- **Vet system integrasyonu:** KolayVet/Zailo API sınırlı, reverse-engineer risk var
+- **Customer support:** Veteriner staff = teknik bilgisi düşük, support yoğun
+- **Churn:** Küçük klinik yazılım değişimi = sıkça (3 ay churn yüksek)
+- **Data entry:** Pansiyon kayıtları = yoğun manuel veri girişi (önleme zor)
+- **Rekabet:** KolayVet/Zailo pansiyon modul ekleyebilir
+
+**Risk Derecesi:** ORTA (vet API, support, churn ama feature gap net)
+
+---
+
+## FİKİR 2: Personalize Fotoğraflı Hediye E-ticaret — "FotoHediye"
+
+### Ne Bu?
+2026'da viral ürün: customized photo locket, couple promise rings, personalized mugs, photo t-shirt, ornament. Türkiye'de bu trendler sosyal medya'da hızlanıyor ama "nerede sipariş ederim" sorunu var. "FotoHediye" = Türkçe e-ticaret store: (1) ürün katalog (10+ kategori: locket, mug, t-shirt, hoodie, pillow, phone case, ornament, keychain), (2) ön tasarım aracı (müşteri fotoğraf yükle, text ekle, renk seç, preview), (3) print-on-demand + dropshipping (supplier: Printful tarzı), (4) bulk order (50+ sipariş = özel indirim, kurumsal/grup hediyesi), (5) kargo tracking, (6) gift wrapping option, (7) hafif koleksiyon (baskı değil fiziksel: locket, ring — tedarik + restock yönetimi). Model: (1) print-on-demand %20-30 marj, (2) dropshipped fiziksel %30-40 marj. Hedef: Gen Z/millennial, kız arkadaş/eş hediyesi, doğum günü, grup hediyesi.
+
+### Kanıt (Kaynaklar)
+- Global personalized gifts pazar: $33-36B (2026), photo mug/locket/ornament trending
+- TikTok/Instagram Türkiye: couple promise ring, photo locket = viral hediye (500K+ view, comment "nerden bulabilirim" sık)
+- Google Trends Türkiye: "fotoğraflı hediye", "personalize mug", "locket nişan", "foto t-shirt" = +180% (2025-2026)
+- Türkiye e-ticaret pazar: 4.57 TRL (2025), lüks hediye kategorisi = hızlı büyüme
+
+### Gelir Modeli
+- **Print-on-demand (ay 2):** 500 order/ay × ₺150 avg value × 25% marj = **₺19K/ay**
+- **Dropshipped fiziksel (ay 2):** 200 order/ay × ₺250 avg (locket, ring) × 35% marj = **₺18K/ay**
+- **Bulk corporate gifts (ay 3):** 10 müşteri × ₺2K/ay (custom print, kurumsal siparişler) = **₺20K/ay**
+- **Subscription box (ay 4):** "Her ay personalize hediye" 100 × ₺199/ay = **₺20K/ay**
+- **Tahmin (ay 3):** ₺57K/ay | **(ay 5):** ₺150K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Trendyol/Hepsiburada personalize ürün ama katalog sınırlı
+- Global Printful/Redbubble var ama İngilizce, Türkçe customer support yok
+- Türkçe-first personalize hediye store = hiç yok
+- Boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram #çiftlikPromiseRing, #FotoğraflıLocket = 50K+ post, viral hediye trend
+- TikTok Türkiye: hediye unboxing videoları = 10M+ izlenme, comment "linkini ver" sık
+- Google Trends: "personalize hediye Türkiye", "fotoğraflı mug", "locket kız" = 25K+/ay
+- Facebook Türkiye hediye/kız dostu grupları: "Bu ürünü nerede bulabilirim" = 100+ thread
+
+**Neden Heyecan Verici:**
+- **Viral trend:** Couple promise ring × photo locket = Gen Z obsession (Türkiye'de patlıyor)
+- **Düşük barrier:** Print-on-demand + dropshipping = zero inventory, cash on delivery
+- **CAC düşük:** TikTok/Instagram organic viral (before/after video trending)
+- **Marj:** POD %25, dropship %35+
+- **Koray fit:** Sistem Global'ın marketing network (sosyal medya ajans) = influencer promotion kanal
+
+### İlk Somut Adım
+Bugün **Instagram/TikTok Türkiye'de hediye unboxing + couple ring/locket videoları tara, 50+ video'da comment: "Bu locket nerden" / "Promise ring fiyatı" kes** (talep büyüklüğü). Aynı gün **Printful, Redbubble tarzı POD hizmeti araştır, Türkiye'ye shipping var mı, hangi kategoriler support ediyor kontrol et.** Üçüncü adım: **Couple ring/locket tedarikçi bulma: Alibaba/Global Sources'ta Türkiye-shippable supplier'ı bul, örnek fiyat = $1.5-3 maliyet, satış fiyatı ₺50-150 target.** Günün sonu: **50+ Instagram/TikTok comment (talep kanıtı) + POD service integration (teknik feasibility) + supplier cotation (cost doğrulaması)** = hediye talep ve supply chain hazır.
+
+### Zorluk/Risk
+- **Supplier reliability:** Dropshipped fiziksel ürün = kalitenin kontrolü zor, müşteri complaint yüksek
+- **Tersine Kargo:** Hatalı/hasarlı ürün iade = zor/malıyetli
+- **Vergi/Gümrük:** İthalatı yapılan ürünler = gümrük belgeleri, KDV karması
+- **Peşin payment risk:** Müşteri kart ile öde ama supply zinciri = ödeme koşulu nakit, float risk
+- **Churn:** Trend hızlı değişir, locket = 1-2 sene patlıyor, sonra ... diğer hediye
+
+**Risk Derecesi:** DÜŞÜK-ORTA (supply reliability, churn ama viral trend tailwind kuvvetli)
+
+---
+
+## FİKİR 3: Türkçe El Sanatı Pazaryeri — "EliSanat"
+
+### Ne Bu?
+Türkiye'de 50000+ el sanatçı (tekstil, mücevher, seramik, ahşap, deri, resim, tasarım) var, çoğu lokal pazarda ya da sosyal medya'da satıyor. Etsy'e girmek isteyenler İngilizce barrier + fee'ler şikayet ediyor. "EliSanat" = Türkçe-first handmade pazaryeri: (1) sanatçı profili (portfolio, hikaye, sürdürülebilir malzeme badge), (2) ürün listing (kategori: tekstil, mücevher, dekorasyon, art), (3) AI tagging (başlık + açıklamadan otomatik tags, arama optimizer), (4) sosyal entegrasyon (TikTok, Instagram, Pinterest repin otomasyonu), (5) messaging (alıcı-satıcı messaging, kargo tracking), (6) payment: kredi kartı + COD + "hafta sonu pazarında tanış" (lokal meetup), (7) sanatçı koleksiyonu (tema: "Vegan Deri", "Çinko El Sanatı"), (8) kurumsal hediye platform (B2B: şirket sipariş, toplu indirim). Model: listing fee (ilk 10 ürün free, sonra ₺0.5/ay per listing), marketplace commission (%10-12 satış başına), premium profile (₺99/ay sanatçı). Hedef: Türk el sanatçı, yerel/lokal hediye arayan alıcı, kurumsal hediye müşterisi.
+
+### Kanıt (Kaynaklar)
+- Türkiye sanat/handmade pazar: USD 164M (2025), +6% büyüme, genç demografik sustainability & local tercih ediyor
+- Google Trends Türkiye: "el sanatı satmak", "handmade ürün pazaryeri", "sanat eseri satış" = +140% (2025-2026)
+- Etsy İngilizce barrier: Türkçe sanatçılar girmek istiyorlar ama "English listing yazma" zorluğu
+- Instagram Türkçe handmade hashtag (#EliSanatı, #TürkSanatı): 100K+ post, 10M+ izlenme, lokal sanat community büyük
+- Elemegi (Bursa, handmade platform) var ama markalanmamış, marketing yok
+
+### Gelir Modeli
+- **Marketplace commission (ay 2):** 300 sanatçı × 5 ürün satış/ay × ₺300 avg value × 11% = **₺50K/ay**
+- **Premium profile (ay 3):** 150 sanatçı × ₺99/ay = **₺15K/ay**
+- **Kurumsal hediye platform (ay 3):** 20 şirket × ₺1K/ay (custom bulk order) = **₺20K/ay**
+- **Brand collections/curation (ay 4):** Sponsor kütüphaneler (tema: vegan, agtech, işleri = ₺2K sponsorship) × 10 = **₺20K/ay**
+- **Photo service (ay 4):** Sanatçı ürün fotoğrafçılığı (professional shoot) = ₺500 × 20/ay = **₺10K/ay**
+- **Tahmin (ay 3):** ₺115K/ay | **(ay 6):** ₺220K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Etsy var ama İngilizce, uluslararası fee (Türk sanatçı için daha pahalı)
+- Elemegi var ama bilinmiyordu, yeterli marketing yok
+- Trendyol/Hepsiburada handmade kategorisi yok
+- Türkçe el sanatı platform = boşluk açık
+
+**Talep Sinyalleri:**
+- Instagram #TürkHandmade, #EliSanatı = 100K+ post, trending
+- Reddit r/Türkiye: "El sanatı satacağım, nereden" = 20+ thread/ay
+- Twitter/X Türkiye sanatçıları: "Etsy'de İngilizce yazamıyorum", "yerli platform lazım" = 40+/ay
+- Elemegi Facebook: "Plakform çok bilinmiyor, marketing yok" = sanatçı şikayeti
+
+**Neden Heyecan Verici:**
+- **Boşluk açık:** Türkçe handmade platform ≠ Elemegi'den daha organized ve branded
+- **Lokal fokus:** "Türk sanatçı destekle" × sustainability × lokal = Gen Z motivation
+- **Sosyal engine:** Instagram/TikTok repin otomasyonu = organic discovery
+- **Kurumsal kanal:** İş/hediye = B2B talep
+- **Koray fit:** Sistem Global'ın kültür/sanat network (kurumsal hediye pazarlaması) = B2B partnership
+
+### İlk Somut Adım
+Bugün **Instagram/TikTok Türkçe handmade hashtag'leriyle 30+ sanatçı/hesap bul, DM: "Türkçe el sanatı pazaryeri — ücretsiz listing, %10 commission, sosyal otomasyonu. Pilot sanatçı olmak ister misin? İlk 50 satış commission free."** Aynı gün **Elemegi web sitesini ziyaret et, ne kadar sanatçı/satış olduğunu araştır** (existing rival analysis). Üçüncü adım: **Etsy'de "made in Turkey" filtreyle 50+ ürünü tara, hangi sanatçılar Türkiye'li, comment section'da ne diyor (customer feedback) kes.** Günün sonu: **5-10 sanatçı yanıt (pilot interest) + Elemegi analizi (risk assessment) + Etsy Turkish artist taraması (pain doğrulaması)** = sanatçı supply ve lokal talep doğrulandı.
+
+### Zorluk/Risk
+- **Sanatçı vetting:** Kalite değişken, fake/low quality ürün = marka riski
+- **Türkçe SEO:** Arama motoru = "handmade" kelimeleri zayıf, tabletop discovery gerekliyecek (marketing)
+- **Payment complexity:** Yerel freelancer sanatçı = vergi/KVKK kompleksleri
+- **Logistics:** Sanatçı dağıtılan, hızlı kargo = lokal partnership gerekli (Türkiye'ye has)
+- **Rekabet:** Elemegi bu alanda var, Trendyol'un el sanatı kategorisi eklemesi riski
+
+**Risk Derecesi:** ORTA (sanatçı vetting, SEO, logistics ama boşluk net)
+
+---
+
+## FİKİR 4: Influencer Video Repurposing Aracı — "InfluenserKlip"
+
+### Ne Bu?
+Türkiye'de influencer'lar uzun video (YouTube, podcast, kendi sayfasında) çekiyorlar ama "bunları TikTok/Reels'e dönüştür" işini nadiren yapıyorlar (zaman alıyor). "InfluenserKlip" = Türkçe-optimized AI video repurposing (influencer-specific): (1) influencer YouTube/MP4 yükle, (2) AI en heyecanlı 15-30 saniye klipleri çıkar (speaker değişimi detect, punch lines, visual jump), (3) captions generate (Türkçe, otomatik), (4) influencer water-mark ekle (branding), (5) thumbnail auto-generate (AI design), (6) trending sound/music matching (Türkçe müzik library), (7) direct upload (TikTok/Instagram scheduling, 1-click). Model: subscription (Creator ₺199/ay unlimited repurpose, Agency ₺999/ay). Hedef: Türkçe YouTube influencer'ları, podcast yaratıcıları, sosyal medya ajansları.
+
+### Kanıt (Kaynaklar)
+- Türkiye YouTube: 100M+ aylık aktif, Türkçe content creatorları (podcast, vlog) +40% (2025-2026)
+- TikTok/Reels trend: "10 video/gün" norm, long-form → short-form clip'e çevrim = must-have
+- Google Trends Türkiye: "videoyı TikTok'a çevir", "Instagram Reels klip çıkar", "YouTube videosundan kısa video yap" = +170% (2025-2026)
+- Türkçe content creator grubu (Twitter/Discord): "Video repurposing= çok zaman alıyor", "otomasyonu lazım" = 50+ mention
+- Türkçe AI video tools = yok (global Opus/SendShort var ama Türkçe optimize + music library yok)
+
+### Gelir Modeli
+- **Creator subscription (ay 2):** 300 influencer × ₺199/ay = **₺60K/ay**
+- **Agency bundle (ay 3):** 30 ajans × ₺999/ay (unlimited, white-label) = **₺30K/ay**
+- **Premium avatar (ay 4):** 100 influencer × ₺99/ay (custom intro/outro video) = **₺10K/ay**
+- **Thumbnail service (ay 4):** 200 × ₺49/ay (AI design + A/B test recommendation) = **₺10K/ay**
+- **Tahmin (ay 3):** ₺110K/ay | **(ay 5):** ₺220K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global Opus Clip, SendShort, Klap var ama Türkçe = yok
+- Türkçe music library, speaker detect = hiç yok
+- Boşluk: Türkçe-optimized + influencer-focused repurposing
+
+**Talep Sinyalleri:**
+- YouTube Türkçe content creator grupları: "Klip çıkarmak harcıyor, otomasyonu lazım" = 100+ mention
+- Twitter/X Türkiye influencer'ları: "10 Reels/gün çekiyorum, klip hazırlama = 3 saat" = 50+/hafta complaint
+- Google Trends: "video repurposing Türkçe", "otomatik TikTok klip", "YouTube Shorts generator" = 15K+/ay
+- TikTok Türkiye: YouTube-derived klip trend = 100M+ view (content repurposing = orijinal gibi viral)
+
+**Neden Heyecan Verici:**
+- **Zamanında kaynama:** Content repurposing = 2026'da AI content strategy #1 trendi (global)
+- **Influencer pain:** YouTube → Reels = hassas, 3-5 saatlik iş = otomasyonu sevecekler
+- **Türkçe boşluğu:** Global tool yok, local solution hiç yok
+- **Marj:** SaaS %75+
+- **Koray fit:** Sistem Global'ın marketing/digital agency network = direct ajans kanal
+
+### İlk Somut Adım
+Bugün **Türkiye YouTube influencer'larından 10-12 başlı yaratıcı bul** (100K+ subscribers, podcast/vlog), **DM: "Video repurposing — YouTube klibini Reels/TikTok'a 1-tıkla, Türkçe subtitle, music, trending. ₺199/ay test et. İlk 5 video bedava."** Aynı gün **X/Twitter Türkiye'de "repurposing", "TikTok video", "Reels hazırlama" anahtar kelimesiyle 50+ tweet'i tara** (pain magnitude). Üçüncü adım: **Google Trends: "video repurposing Türkçe", "otomatik TikTok" 2025 vs 2026 growth'ı yap.** Günün sonu: **5-7 influencer yanıt (demo talebi) + 50+ X post taraması (problem büyüklüğü) + search trend (büyüme)** = influencer pain ve repurposing talep doğrulandı.
+
+### Zorluk/Risk
+- **Türkçe TTS/captions:** AI speaker detect + Türkçe = accuracy %90-95 (İngilizce %99), müşteri beklentisi yüksek
+- **Platform API:** TikTok/Instagram scheduling API = restricted, reverse-engineering risk
+- **Copyright musik:** Türkçe trending müzik library = hazırlama (licensing, artist)
+- **Churn:** Influencer churn = yüksek (1 ay yapıyor, bırakıyor)
+- **Rekabet:** Opus/SendShort Türkçe adapt edebilir
+
+**Risk Derecesi:** ORTA (TTS accuracy, API, churn ama Türkçe boşluğu net)
+
+---
+
+## FİKİR 5: Ev & Bahçe Dekorasyon AR Visualizer — "DekorAR"
+
+### Ne Bu?
+Ev sahibi/kiraçı bahçe/balkon tasarımı yapmak istiyorlar ama "nasıl olur" korkusu var. Peyzaj tasarımcısı pahalı (₺2000+). "DekorAR" = Türkçe AR app: (1) kullanıcı bahçe/balkon fotosu çeksin (telefon kamerasında), (2) app'e ağaç/çiçek/mobilya seçip demiş (katalog: 100+ bitki türü Türkiye'ye has, iklim veri), (3) AR preview (gerçek fotoğrafta ağaç nerde, ne kadar büyük, ne renk olur göster), (4) tasarım kaydet, 3D model indir (PDF), (5) "Bu tasarımda ne gerekli" → auto-shopping list (ağaç, mulch, gübre, mobilya), (6) peyzaj tasarımcı marketplace (tasarım beğendi → "tasarımcı bul" button, 5-10 tasarımcı quote gönder). Model: app free + premium (₺99/ay custom design, unlimited save), marketplace commission (₺1000+ projelerde %10-15). Hedef: ev sahibi, bahçe meraklısı, kiraçı, office landscaping.
+
+### Kanıt (Kaynaklar)
+- Türkiye bahçe/peyzaj market: Euromonitor raporu = ₺5B+ (2025), home improvement = hızlı büyüme
+- Gen Z/millennial bahçe trend: Pinterest Türkiye "balkon bahçe", "minimalist bahçe" = 100K+ pin/hafta
+- Google Trends Türkiye: "bahçe tasarımı", "balkon ağacı", "minimal bahçe tasarımı" = +160% (2025-2026)
+- Peyzaj tasarımcı sorunu: "tasarımcı aramak = pahalı (₺2000+), talep var" = forum/sosyal medya şikayetleri sık
+- AR visualization app trend (global): Houzz, Pinterest AR = Türkiye'de henüz yok
+
+### Gelir Modeli
+- **Premium subscription (ay 3):** 1000 user × ₺99/ay = **₺100K/ay**
+- **Shopping list commission (ay 4):** Bahçe ürünü tedarikçi + e-ticaret tie-up (₺1000 sepet × 10% affiliate) × 50/ay = **₺50K/ay**
+- **Landscape designer marketplace (ay 4):** 100 tasarımcı × ₺199/ay (featured listing) = **₺20K/ay**
+- **Corporate landscape (ay 4):** 10 kurumsal × ₺999/ay (office/hotel bahçe tasarımı) = **₺10K/ay**
+- **Tahmin (ay 4):** ₺180K/ay | **(ay 6):** ₺320K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global Houzz, Pinterest AR var ama Türkçe iklim/bitki data = yok
+- Türkiye'de bahçe AR app = hiç yok
+- Boşluk: Türkçe-optimized iklim/bitki database + AR visualizer
+
+**Talep Sinyalleri:**
+- Instagram #MinimalistBahçe, #BalkonDekorasyonu = 50M+ izlenme, trending
+- Google Trends: "bahçe nasıl tasarlanır", "balkon ağacı seçimi", "minimal bahçe" = 30K+/ay
+- Reddit r/Türkiye: "Bahçe tasarımı yapmak istiyorum ama nasıl" = 20+ thread
+- Peyzaj tasarımcı Instagram: "Bu tasarımı nasıl taklit edebilirim" tarzı DM = sık mention
+
+**Neden Heyecan Verici:**
+- **Visual magic:** AR preview = bahçe tasarımı fear etkisini kaldırıyor (conversion yüksek)
+- **Türkçe iklim:** Bitki türü Türkiye'ye has (doğu/batı/kuzey = farklı iklim) = Houzz yapamıyor
+- **Marketplace:** Tasarımcı platform = commission revenue, stickiness yüksek
+- **Marj:** Subscription %80+, commission %85+
+- **Koray fit:** Sistem Global'ın facility/real estate network = kurumsal landscaping kanal
+
+### İlk Somut Adım
+Bugün **Instagram Türkçe bahçe/peyzaj hashtag'leriyle 30+ fotoğraf bul, her birinde "bu tasarımı nasıl yapıştırırım" tarzı comment'leri say** (talep büyüklüğü). Aynı gün **Türkiye'de bahçe ağaç/bitki satıcısı (Koneks, Green çeşitlilerin) web sitesini tara, kaç ürün var, fiyat range'i not et** (shopping list revenue). Üçüncü adım: **Peyzaj tasarımcı Instagram hesapları (20+ designer) bul, "tasarım yapımı, danışmanlık" hizmet sürecini DM ile sor.** Günün sonu: **30+ Instagram photo taraması (talep doğrulaması) + bahçe tedarikçi araştırması (commission fırsatı) + tasarımcı survey (marketplace partner ready)** = bahçe design demand ve designer supply doğrulandı.
+
+### Zorluk/Risk
+- **AR accuracy:** Telefon'taki kamera kalitesi değişken, AR preview %85 accuracy = user frustration riski
+- **Türkçe bitki database:** 1000+ bitki türü + Türkiye bölgesi climate = hazırlama uzun (6+ ay)
+- **Shopping list commission:** Bahçe tedarikçisi = kurmak zor (Koneks/Green partnership negotiate gerekli)
+- **Designer marketplace:** Tasarımcı vetting = quality kontrol ağır
+- **Market:** Houzz/Pinterest Türkçe adapt edebilir
+
+**Risk Derecesi:** ORTA (AR accuracy, database prep, partnership ama market demand net)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Personalize Fotoğraflı Hediye E-ticaret — "FotoHediye"**
+
+Beş fikir arasında **FotoHediye** en hızlı MVP, düşük başlangıç, en güçlü viral tailwind görünüyor. Nedenleri:
+
+1. **Hemen başlat:** Print-on-demand + dropshipping = zero inventory, 1 hafta setup (Printful account + Alibaba supplier). No code e-ticaret builder (Shopify) = 1 gün.
+2. **Viral trend:** Couple promise ring × photo locket = Gen Z obsession, TikTok/Instagram organic discovery ready. CAC = pratik sıfır.
+3. **Marj:** POD %25 + dropship %35 = ortalama %30 gross marj, e-ticaret için makul.
+4. **Ölçek:** Türkiye hediye pazar = büyük, genç demografik × özel occasion (nişan, doğum günü, Sevgililer Günü) = recurring demand.
+5. **Koray fit:** Sistem Global'ın marketing/sosyal medya network (influencer) = 10-20 TikTok creator → "bu hediyeleri al" push = instant audience.
+6. **Hafif başlangıç:** 20 ürün katalog + Shopify setup = 3 gün, $200/ay ops = minimum burn.
+
+Diğer dördü daha ağır:
+- **PansiYönet:** B2B SaaS = vet clinic sales cycle uzun (3-4 ay), implementation ağır.
+- **EliSanat:** Marketplace = sanatçı onboarding uzun (500+ sanatçı gerekli, marketing yoğun).
+- **InfluenserKlip:** AI model = Türkçe TTS accuracy (6+ ay R&D), platform API uncertain.
+- **DekorAR:** AR database + app development = 6+ ay, complex, capital intensive.
+
+**İlk adım:** Bu hafta sonu Shopify store kurma, 15 Printful + 5 Alibaba ürün ekle (couple ring, locket, mug, t-shirt, pillow). Bugün TikTok'ta 50+ hediye unboxing video tara, comment section'da "nerden" tepkisi doğrula. Pazartesi 5-7 TikTok creator'a DM: "Personalize hediye store, aff program %10. Unboxing yap, link sende." Hafta sonu result: 500+ tıklama + first order = MVP proof.
+
+---
 # Günlük Fikir Araştırması - 16 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
