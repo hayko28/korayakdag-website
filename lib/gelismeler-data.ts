@@ -2662,6 +2662,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Planın hedeflerinin büyük kısmı henüz somut bir başvuru şartı değil, orta vadeli bir yol haritası niteliğinde. AB'ye ihracat yapan veya sınırda karbon düzenlemesinden etkilenen imalatçı firmalara, planın sanayide yeşil dönüşüm başlığı altında açılacak destek ve uyum programlarını yakından izlemelerini öneririm.",
   },
+  {
+    kurum: "TCMB",
+    tarih: "12 Kasım 2026",
+    eklendiTarihi: "2026-11-17",
+    baslik:
+      "TCMB Enflasyon Raporu 2026-IV: Yıl sonu enflasyon tahmini %28'den %29,5'e yükseltildi",
+    ozet:
+      "TCMB Başkanı Fatih Karahan'ın 12 Kasım 2026'da İstanbul'da düzenlenen bilgilendirme toplantısında tanıttığı Enflasyon Raporu 2026-IV'e göre, 2026 yıl sonu enflasyon tahmini yüzde 28'den yüzde 29,5'e yükseltildi. 2027 yıl sonu tahmini yüzde 21'e, 2028 yıl sonu tahmini ise yüzde 13,5'e revize edildi; revizyonda ithalat fiyatları varsayımındaki artış ile ortalama petrol fiyatı tahmininin 87,8 dolardan 97,2 dolara çıkarılması belirleyici oldu. Karahan, enflasyonun ana eğilimindeki iyileşmenin belirginleştiğini, ancak arz yönlü şoklar nedeniyle düşüşün hız kaybettiğini belirtti.",
+    kaynakUrl:
+      "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Yayinlar/Raporlar/Enflasyon+Raporu/2026/Enflasyon+Raporu+2026+-+IV",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek bir raporun tahmin revizyonu kesin bir sonuç garantisi vermez, ama yıl sonu bütçe ve fiyatlandırma planı hazırlayan işletmelere, maliyet varsayımlarını yüzde 28 değil güncellenen yüzde 29,5 bandına göre yeniden gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "4 Kasım 2026",
+    eklendiTarihi: "2026-11-17",
+    baslik:
+      "Ticaret Bakanı Bolat: 2027'de ihracat desteklerine ayrılan kaynak 65 milyar TL'ye çıkacak",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat, TBMM Plan ve Bütçe Komisyonu'ndaki 2027 yılı bütçe sunumunda, mal ve hizmet ihracatına yönelik desteklere ayrılan kaynağın 2027'de 65 milyar TL'ye çıkacağını açıkladı; bu tutar 2026'daki mal ihracatı desteği olan 32,8 milyar TL'nin belirgin şekilde üzerinde. Bolat, Türk Eximbank'ın 2026'da 59 milyar doları aşan kredi ve sigorta desteği sağlamayı hedeflediğini, ihracatçılara yönelik günlük reeskont kredisi limitinin 5 milyar TL'ye çıkarıldığını ve 114 ülkede 167 merkezde 220 ticaret müşaviri ve ataşesiyle firmaların yanında olduklarını belirtti.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakanliginin-2027-yili-butcesi-tbmm-plan-ve-butce-komisyonunda",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Bütçe kalemindeki bu artış henüz somut bir başvuru şartına dönüşmüş değil, bir bütçe taahhüdü. Yine de ihracat destek ve finansman taleplerini 2027 planlamasına göre kuran firmalara, reeskont kredisi limitindeki yükselişi ve Eximbank kredi hedefini bankalarıyla şimdiden görüşmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
