@@ -3286,6 +3286,58 @@
       ],
       "dogrulama": "2026-11-13. Resmi kaynaklar okundu: 4. (M4 201-1), 6. (M5) ve 8. (M4 201-2) Başvuru Çağrı İlanı PDF'leri; Başvuru Çağrı Rehberleri 201 V4.0, 201 V8.0 ve 202 V6.0 (pdftotext ile metne çevrildi); TKDK duyuru akışı ve çağrı arşivi (13 Kasım 2026'da bu tedbirler için açık çağrı yok). M4 euro/TL ödeme tutarları rehberlerde gösterge niteliğindedir. M5'te YEG kategorisine göre yıllık azami tutarlar rehberdeki tablonun PDF sütun hizası bozuk olduğundan okunamadı ve yazılmadı.",
       "kapak": "Açık çağrı yok"
+    },
+    {
+      "ad": "Tarım ve Orman Bakanlığı Kırsal Kalkınma Yatırım Programı (KKYDP, Tebliğ 2026/9): tarımsal ürün işleme, depolama ve üretim yatırımlarına hibe",
+      "durum": "kapali",
+      "sonTarih": "17 Kasım 2026 itibarıyla açık başvuru dönemi yok. Başvuru zamanı Bakanlık sitesinde (tarimorman.gov.tr) ayrıca duyurulur; 2026 uygulama rehberi 18 Nisan 2026'da yayımlandı. 2026 17. etap sonuçları illerde ilan ediliyor, bazı illerde hibe sözleşmesi ve belge teslimi son günü 30 Kasım 2026'dır. Yeni dönemin tarihi açıklanmadı.",
+      "ozet": "Tarım ve Orman Bakanlığı'nın ulusal kaynaklı programıdır; TKDK/IPARD'dan ayrıdır. Bitkisel ve hayvansal ürünlerin işlenmesi, paketlenmesi ve depolanması, kapalı ortamda bitkisel üretim, hayvancılık, su ürünleri ve tarımsal dijitalleşme yatırımlarını destekler. Yatırım kırsal alanda olmalıdır; uygulama esasları organize sanayi bölgesi ve tarıma dayalı ihtisas OSB'yi de yatırım yeri olarak anar.",
+      "amac": "Kırsalda tarımsal üretim, işleme ve depolama yatırımlarını artırmak, katma değeri ve istihdamı yükseltmek.",
+      "kimler": [
+        "Gerçek kişiler (TC vatandaşı, TC kimlik numarasıyla başvurur) ve tüzel kişiler: kollektif, limited ve anonim şirketler ile tarımsal amaçlı örgütler (vergi numarasıyla başvurur)",
+        "Mikro işletme büyüklüğüne kadar, ailesel işgücüne dayalı tarımsal işletmeler aile işletmesi sayılır",
+        "Kamu kurumları, belediyeler ve özel idareler başvuramaz; ülke genelinde bir kişi yalnızca bir proje başvurusu yapabilir"
+      ],
+      "sartlar": [
+        "Proje kırsal alanda uygulanmalıdır: köy, belde, kırsal mahalle, kırsal yerleşik alan veya TÜİK'in 'kır' ya da 'orta yoğun kent' olarak tanımladığı yerleşim birimleri (Tebliğ Madde 4 ve 9/2)",
+        "Yatırım yeri OSB, tarıma dayalı ihtisas OSB veya ihtisas küçük sanayi sitesindeyse tesisin yatırım konusuyla uyumlu olduğunu gösteren belge ilgili yönetim kurulundan alınmalıdır (Uygulama Esasları 3.1)",
+        "Yatırım yeri kiralıksa kira süresi başvuru tarihinden itibaren en az 7 yılı kapsamalı ve sözleşme aşamasında noter onaylı kira sözleşmesi sunulmalıdır",
+        "Tarım arazisi üzerindeki yatırımlarda 5403 sayılı Kanun kapsamında izin veya izne tabi olmadığına dair il müdürlüğü yazısı gerekir; tapu kaydında tarımsal vasfı olmayan imarlı parsellerde gerekmez",
+        "Hibe sözleşmesi imzalanmadan yapılan harcamalar karşılanmaz; sözleşme öncesi yatırıma başlayan başvuru sahibiyle sözleşme imzalanmaz",
+        "Vadesi geçmiş vergi veya SGK prim borcu bulunmamalı; kamu finansmanı alanlar kapsam dışındadır",
+        "Aynı projede farklı ürün gruplarının işlenmesi ve paketlenmesine yönelik teklif yapılamaz (soğuk hava depoları hariç)",
+        "Nihai ödemeden sonra 5 yıl izleme süresi vardır"
+      ],
+      "destekOrani": [
+        "Hibe, KDV dahil hibeye esas proje tutarının %50 ile %70'i arasındadır (Tebliğ Madde 14/4). Genç, kadın, engelli veya aile işletmesi gibi gruplara göre artırımlı oranlar EK-2 tablosundadır; bu tablo doğrulanamadığı için burada yazılmadı",
+        "Hibeye esas proje tutarı alt limiti 100.000 TL, üst limiti 30.000.000 TL; aile işletmelerinde üst limit 8.000.000 TL (Tebliğ Madde 14)",
+        "Aile işletmeleri için il bütçesinin en az %30'u ayrılır (yeterli sayıda uygun başvuru varsa)"
+      ],
+      "odemeSekli": [
+        "Önce harcama, sonra hibe ödemesi. Avans yoktur; yalnızca bir kez ara ödeme yapılabilir, ara ödemeye esas tutar hibeye esas proje tutarının %50'sini aşamaz ve ödeme tutarı kadar süresiz banka teminat mektubu gerekir",
+        "Sözleşme öncesinde hibeye esas proje tutarının %3'ü kadar süresiz banka teminat mektubu veya nakit teminat verilir",
+        "Makine ve ekipman için ödeme talebi, yasal izin ve ruhsatlar tamamlandıktan sonra yapılabilir"
+      ],
+      "kalemler": [
+        "Tarımsal ürünlerin işlenmesi, paketlenmesi ve depolanması: bitkisel ürünlerde tüm yatırım nitelikleri (yeni tesis, kapasite artırımı, modernizasyon) kapsamdadır (Uygulama Esasları 14.1.1)",
+        "Hayvansal ürünler: kırmızı et ve kanatlı eti, süt ve süt ürünleri, su ürünleri, deri ve yapağı, arı ürünleri; çelik silo ve soğuk hava deposu",
+        "Tarımsal üretim: kapalı ortamda bitkisel üretim, büyükbaş, küçükbaş ve kanatlı hayvancılık, kültür mantarı",
+        "Su ürünleri yetiştiriciliği, gübre işleme ve depolama, tarımsal örgütler için ortak makine parkı, tarımsal dijitalleşme ve sulama için yenilenebilir enerji"
+      ],
+      "faydalar": [
+        "Çağrı beklemeden hazırlık yapılabilir: izin, ruhsat, arazi uygunluğu ve proje dosyası önceden tamamlanabilir",
+        "OSB içindeki tesisler de yatırım yeri olarak değerlendirilebilir",
+        "IPARD'dan ayrı bir program olduğu için TKDK çağrıları kapalıyken alternatif olabilir; aynı harcama için iki hibe alınamaz"
+      ],
+      "basvuru": "Bakanlığın tarimorman.gov.tr adresindeki 'KKYP Başvuru' veri giriş sistemi üzerinden elektronik başvuru. Son başvuru tarih ve saatinden sonra il müdürlüğüne elden getirilen dosyalar kabul edilmez. Başvuru dönemi Bakanlık sitesinde duyurulur; sonuç ve sözleşme süreci il müdürlüklerince yürütülür.",
+      "kaynaklar": [
+        "https://www.tarimorman.gov.tr/TRGM/Belgeler/0KIRSAL%20KALKINMA%20DA%C4%B0RE%20BA%C5%9EKANLI%C4%9EI/KKYDP%20TEBL%C4%B0%C4%9E/18.04.2026/Uygulama%20Esaslari.pdf",
+        "https://www.hukukihaber.net/kirsal-kalkinma-yatirim-programi-cercevesinde-yapilacak-desteklemeler-hakkinda-teblig-no-20269",
+        "https://www.alomaliye.com/2026/04/03/kirsal-kalkinma-yatirim-programi-cercevesinde-yapilacak-desteklemeler-hakkinda-teblig-no-2026-9/amp/",
+        "https://www.gidabulteni.com/tarim/tarim-yatirimlarina-hibe-listeleri-aciklandi-son-tarih-30-kasim/4334"
+      ],
+      "dogrulama": "2026-11-17. Uygulama Esasları (2026 Başvuru Dönemi, 18.04.2026) PDF'i metne çevrilerek okundu: yatırım yeri, OSB, başvuru şekli, bitkisel ürün işleme kapsamı, aile işletmesi. Tebliğ 2026/9 (RG 3 Nisan 2026, Sayı 33213) metninden oran, alt ve üst limit, kırsal alan tanımı, ödeme şekli ve teminat okundu; metnin son bölümü (EK-2 oran tablosu dahil) okunamadı. Yeni başvuru dönemi tarihi resmi kaynaklarda bulunamadı.",
+      "kapak": "Yeni dönem tarihi yok"
     }
   ],
   "yatirim": {
