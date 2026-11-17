@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kamu-ihalesinde-borc-siniri-on-kat-artti",
+    title:
+      "Kamu İhalesinde Borç Sınırı On Kat Arttı: Hangi Ayrıntı Hâlâ Gözden Kaçıyor?",
+    excerpt:
+      "16 Ekim 2026'da yayımlanan tebliğle, kesinleşmiş vergi ve SGK borcu nedeniyle kamu ihalesinden elenme sınırı 2018'den beri sabit kalan 5.000 TL'den 50.000 TL'ye çıktı. Değişiklik 15 Kasım'da yürürlüğe girdi, ama sadece kesinleşmiş borçların sayılması ve ilan tarihinden önce başlamış ihalelerde eski sınırın geçerli kalması, teklif hazırlayan şirketlerin çoğu zaman gözden kaçırdığı iki ayrıntı.",
+    tag: "Hukuk ve Vergi",
+    date: "17 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "sirket-satisinda-sozlu-anlasma-tuzagi",
     title:
       "Bir Şirket Satışında Fiyatta Anlaşmak, İşlemin Bittiği Anlamına Gelmiyor",
