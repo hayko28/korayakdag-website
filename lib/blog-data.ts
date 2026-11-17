@@ -579,7 +579,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "kosgeb-yesil-sanayi-destek-programi-2026",
     title: "KOSGEB Yeşil Sanayi Destek Programı: Güneş Enerjisi ve Döngüsel Ekonomi Yatırımınıza Ne Kadar Destek Alırsınız?",
-    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, 2023 çağrılarıyla çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sundu. Şartları, oranları, geri ödeme yapısı ve çağrıların güncel durumu (başvuru dönemi 30 Kasım 2024'te sona erdi).",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi'nin KOSGEB ayağı olan Yeşil Sanayi Destek Programı, 2023 çağrılarıyla çatı tipi güneş enerjisi yatırımlarında 14 milyon TL'ye, döngüsel ekonomi ve kaynak verimliliği projelerinde 4 milyon TL'ye kadar geri ödemeli destek sundu. 16 Kasım 2026'da açılan yeni 2026-01 çağrısı (3 milyar TL bütçe, %70 oran, 7 milyon TL'ye kadar geri ödemeli destek, ön başvuru 9 Aralık 2026'da bitiyor), şartlar, takvim ve geri ödeme yapısı.",
     category: "KOSGEB • YEŞİL DÖNÜŞÜM • 2026",
     date: "2026",
     readTime: "13 Dakika",
