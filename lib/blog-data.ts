@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "sanayi-sicil-belgesi-nasil-alinir-ssbs-basvuru-2026",
+    title: "Sanayi Sicil Belgesi Nasıl Alınır? SSBS Üzerinden Başvuru, Ücretler ve 2026 Güncel Rehber",
+    excerpt: "6948 sayılı Sanayi Sicili Kanunu kapsamında üretim yapan her işletmenin almak zorunda olduğu Sanayi Sicil Belgesi, 1 Nisan 2026 tarihli SGM 2026/4 Tebliği ile tamamen dijitalleşti: vize kaldırıldı, yerine yıllık işletme cetveli zorunluluğu geldi. SSBS üzerinden başvuru adımları, gerekli belgeler, mikro işletme kolaylığı, ücretler, süresinde kayıt yaptırmamanın cezası ve belgenin 2027'deki %12,5 kurumlar vergisi indirimiyle bağlantısıyla güncel rehber.",
+    category: "SANAYİ SİCİL BELGESİ • ÜRETİM ŞİRKETLERİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1758271941610-dbf5ce7d3c23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "uretimde-kurumlar-vergisi-12-5-sanayi-sicil-belgesi-fason-imalat-2027",
     title: "Üretim Şirketlerinde Kurumlar Vergisi 2027'de %12,5'e İniyor: Sanayi Sicil Belgeniz ve Fason İmalat Sözleşmeniz Hazır mı?",
     excerpt: "7582 sayılı Kanun'un Kurumlar Vergisi Kanunu'nun 32/8 maddesinde yaptığı değişiklikle, sanayi sicil belgesine sahip ve fiilen üretim yapan şirketlerin üretim kazancı 2027 vergilendirme döneminden itibaren %12,5 oranında vergilendirilecek. 26 Seri No'lu Tebliğ'e dayanan sanayi sicil belgesi ve fiilî üretim şartı, fason imalatta aranan altı koşul, karma faaliyette matrah hesaplama ve şirketlerin 2026 sonuna kadar yapması gerekenlerle güncel rehber.",
