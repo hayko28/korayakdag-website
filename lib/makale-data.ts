@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tcmb-2027-enflasyon-tahmini-alti-puan-artti",
+    title:
+      "TCMB 2027 Enflasyon Tahminini Altı Puan Artırdı: Bütçe Toplantısında Hangi Rakam Konuşulmuyor?",
+    excerpt:
+      "TCMB'nin 12 Kasım 2026'da yayımladığı yılın son Enflasyon Raporu'nda 2026 yıl sonu tahmini yüzde 28'den 29,5'e, 2027 tahmini ise yüzde 15'ten 21'e çıktı. Çoğu şirket 2027 bütçesini şu haftalarda kapatırken gözden kaçan, bir puanlık 2026 sürprizinden çok daha büyük olan bu altı puanlık 2027 revizyonu.",
+    tag: "Strateji",
+    date: "18 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kamu-ihalesinde-borc-siniri-on-kat-artti",
     title:
       "Kamu İhalesinde Borç Sınırı On Kat Arttı: Hangi Ayrıntı Hâlâ Gözden Kaçıyor?",
