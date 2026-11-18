@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "osb-hisse-devri-parsel-tahsis-iptali-2026-yonetmelik-degisikligi",
+    title: "OSB'de Şirket Hissesi Satarsanız Fabrika Tahsisiniz İptal Edilebilir: 2026 Yönetmelik Değişikliği Ne Diyor?",
+    excerpt: "6 Kasım 2026 tarihli ve 33422 sayılı Resmî Gazete'de yayımlanan değişiklikle Organize Sanayi Bölgeleri Uygulama Yönetmeliği'nde hisse devri, ön tahsis, yeniden tahsis ve yeni 'üst hakkı' kurumuna ilişkin önemli kurallar yürürlüğe girdi. Bakanlık onayı olmadan şirket paylarının %49'unu aşan değişiklik artık tahsis iptaline yol açabiliyor. Kapsam, yeni üst hakkı müessesesi ve OSB yatırımcılarının şimdi kontrol etmesi gerekenlerle güncel rehber.",
+    category: "ORGANİZE SANAYİ BÖLGESİ • YATIRIM MEVZUATI • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1769701000480-6c3d8ab912c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "sanayi-sicil-belgesi-nasil-alinir-ssbs-basvuru-2026",
     title: "Sanayi Sicil Belgesi Nasıl Alınır? SSBS Üzerinden Başvuru, Ücretler ve 2026 Güncel Rehber",
     excerpt: "6948 sayılı Sanayi Sicili Kanunu kapsamında üretim yapan her işletmenin almak zorunda olduğu Sanayi Sicil Belgesi, 1 Nisan 2026 tarihli SGM 2026/4 Tebliği ile tamamen dijitalleşti: vize kaldırıldı, yerine yıllık işletme cetveli zorunluluğu geldi. SSBS üzerinden başvuru adımları, gerekli belgeler, mikro işletme kolaylığı, ücretler, süresinde kayıt yaptırmamanın cezası ve belgenin 2027'deki %12,5 kurumlar vergisi indirimiyle bağlantısıyla güncel rehber.",
