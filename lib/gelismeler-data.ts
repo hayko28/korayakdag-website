@@ -2690,6 +2690,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Bütçe kalemindeki bu artış henüz somut bir başvuru şartına dönüşmüş değil, bir bütçe taahhüdü. Yine de ihracat destek ve finansman taleplerini 2027 planlamasına göre kuran firmalara, reeskont kredisi limitindeki yükselişi ve Eximbank kredi hedefini bankalarıyla şimdiden görüşmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "3 Kasım 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-18",
+    baslik:
+      "TÜİK: Yıllık enflasyon Ekim'de %29,77'ye yükseldi, dört aylık düşüş serisi sona erdi",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 3 Kasım 2026'da açıkladığı verilere göre tüketici fiyat endeksi (TÜFE) ekimde aylık %2,58, yıllık %29,77 arttı; böylece art arda dört aydır süren yıllık enflasyon düşüşü kesintiye uğradı. Aynı dönemde yurt içi üretici fiyat endeksi (Yİ-ÜFE) aylık %1,65, yıllık %27,41 artış gösterdi; gıda ve alkolsüz içecekler grubunda aylık artış %3,50 oldu.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/tuik-2026-yili-ekim-ayi-enflasyon-rakamlarini-acikladi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek aylık bir sapma trend değişikliği anlamına gelmez, ama dört aylık düşüş serisinin kesilmesi yıl sonu bütçesini düşük enflasyon varsayımıyla kuran işletmeler için bir uyarı niteliğinde. Maliyet ve fiyatlandırma planlarını bu güncel oranla yeniden kontrol etmelerini öneririm.",
+  },
+  {
+    kurum: "TÜİK",
+    tarih: "12 Kasım 2026 (Eylül 2026 verileri)",
+    eklendiTarihi: "2026-11-18",
+    baslik:
+      "TÜİK: İhracatta miktar artarken ithalat miktarı geriledi, dış ticaret haddi düştü",
+    ozet:
+      "TÜİK'in 12 Kasım 2026'da yayımladığı Dış Ticaret Endeksleri'ne göre eylül 2026'da ihracat miktar endeksi yıllık %7,8 artarken ithalat miktar endeksi %6,3 geriledi. İthalat birim değer endeksi yıllık %12,7, ihracat birim değer endeksi ise %7,0 yükseldi; bu farkın etkisiyle dış ticaret haddi geçen yılın aynı ayındaki 92,0 seviyesinden 88,0'e indi, yani Türkiye aynı miktarda ihracat karşılığında nispeten daha az ithalat yapabilir hale geldi.",
+    kaynakUrl:
+      "https://www.sabah.com.tr/ekonomi/ihracatta-yuzde-78lik-artis-turkiyenin-dis-ticaretinde-eylul-hareketliligi-7700119",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Dış ticaret haddindeki gerileme, ithal girdiye bağımlı ihracatçıların kâr marjını miktar artışına rağmen aşındırabileceğine işaret ediyor. İthal hammadde/ara malı kullanan ihracatçı firmalara, fiyatlandırma ve tedarik sözleşmelerini bu maliyet baskısına göre gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "TÜBİTAK",
+    tarih: "9 Kasım 2026",
+    eklendiTarihi: "2026-11-18",
+    baslik:
+      "TÜBİTAK 1507 ve 1707 KOBİ Ar-Ge destek çağrılarının başvuru süreleri uzatıldı",
+    ozet:
+      "TÜBİTAK, KOBİ Ar-Ge Başlangıç Destek Programı'nın (1507) 2026 yılı 2. çağrısı ile Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Programı'nın (1707) 2026 yılı 3. çağrısında başvuru takvimini uzattı. 1507'de kuruluş bazlı ön kayıt son tarihi 23 Kasım, proje önerisi gönderim son tarihi 25 Kasım 2026 oldu; 1707'de bu tarihler sırasıyla 25 ve 27 Kasım 2026'ya çekildi. Sistem hatası nedeniyle başvuru yapılamayan kuruluşlar için dilekçeyle başvuru son tarihi 1507'de 2 Aralık, 1707'de 4 Aralık 2026 olarak belirlendi.",
+    kaynakUrl:
+      "https://tubitak.gov.tr/en/announcement/1507-sme-rd-start-support-programme-and-1707-sme-support-programme-order-based-rd-projects-2026-application-periods-extended",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Süre uzatımı genellikle başvuru hazırlığını son haftaya bırakan işletmelere ikinci bir şans gibi görünse de, proje önerisinin e-imzayla gönderileceğini ve e-imza süresinin çağrı kapanışına kadar geçerli olup olmadığının önceden kontrol edilmesi gerektiğini hatırlatmak isterim; son günlerde bu küçük ayrıntı başvuruyu baştan aksatabiliyor.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
