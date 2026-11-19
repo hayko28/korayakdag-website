@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "yabanci-yatirimciya-ikamet-izni-150000-200000-dolar-2026",
+    title: "Yabancı Yatırımcıya İkamet İzni: 150.000 veya 200.000 Dolarlık Yatırımla Nasıl Alınır?",
+    excerpt: "18 Kasım 2026 tarihli Resmî Gazete'de yayımlanan 11994 sayılı Cumhurbaşkanı Kararı, Türkiye'de çalışmayan yabancı yatırımcılara banka mevduatı, devlet tahvili, fon katılma payı veya bireysel emeklilik yoluyla 150.000 dolarla 3 yıllık, 200.000 dolarla 5 yıllık ikamet izni yolu açtı. Kapsam, vatandaşlık şartlarından farkı, aile üyelerinin kapsamı ve dikkat edilmesi gerekenlerle güncel rehber.",
+    category: "YABANCI YATIRIMCI • İKAMET İZNİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1755001979854-11a2ac59cc92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "osb-hisse-devri-parsel-tahsis-iptali-2026-yonetmelik-degisikligi",
     title: "OSB'de Şirket Hissesi Satarsanız Fabrika Tahsisiniz İptal Edilebilir: 2026 Yönetmelik Değişikliği Ne Diyor?",
     excerpt: "6 Kasım 2026 tarihli ve 33422 sayılı Resmî Gazete'de yayımlanan değişiklikle Organize Sanayi Bölgeleri Uygulama Yönetmeliği'nde hisse devri, ön tahsis, yeniden tahsis ve yeni 'üst hakkı' kurumuna ilişkin önemli kurallar yürürlüğe girdi. Bakanlık onayı olmadan şirket paylarının %49'unu aşan değişiklik artık tahsis iptaline yol açabiliyor. Kapsam, yeni üst hakkı müessesesi ve OSB yatırımcılarının şimdi kontrol etmesi gerekenlerle güncel rehber.",
