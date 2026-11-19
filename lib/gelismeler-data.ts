@@ -2732,6 +2732,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Süre uzatımı genellikle başvuru hazırlığını son haftaya bırakan işletmelere ikinci bir şans gibi görünse de, proje önerisinin e-imzayla gönderileceğini ve e-imza süresinin çağrı kapanışına kadar geçerli olup olmadığının önceden kontrol edilmesi gerektiğini hatırlatmak isterim; son günlerde bu küçük ayrıntı başvuruyu baştan aksatabiliyor.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "3 Kasım 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-19",
+    baslik:
+      "Ekim ihracatı yıllık %8,1 arttı, dış ticaret açığı 6,7 milyar dolara geriledi",
+    ozet:
+      "Ticaret Bakanı Ömer Bolat'ın 3 Kasım 2026'da açıkladığı geçici verilere göre ekim ihracatı yıllık %8,1 artışla 25,9 milyar dolara çıkarak Cumhuriyet tarihinin en yüksek ekim ayı rakamına ulaştı; ithalat %3,4 artışla 32,6 milyar dolar oldu. Dış ticaret açığı bir önceki yılın aynı ayına göre %11,4 azalarak 6,7 milyar dolara geriledi, ihracatın ithalatı karşılama oranı %76'dan %79,4'e yükseldi. Ocak-Ekim döneminde ihracat %5,5 artışla 236,8 milyar dolara ulaştı ve son 12 aylık ihracat 282 milyar dolarlık yıllık hedefin üzerinde, 285,6 milyar dolar olarak gerçekleşti.",
+    kaynakUrl:
+      "https://ticaret.gov.tr/haberler/ticaret-bakani-omer-bolat-ekim-ayi-dis-ticaret-verilerini-acikladi",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: İhracat rakamının rekor kırması, her sektör ve her firma için aynı tabloyu göstermiyor; bakanlık da 26 sektörün ancak 13'ünde ekim artışı görüldüğünü belirtiyor. İhracatçı firmalara, kendi sektörlerinin bu ortalamanın üstünde mi altında mı kaldığını bakanlığın sektörel bültenleriyle karşılaştırmalarını öneririm.",
+  },
+  {
+    kurum: "Sanayi ve Teknoloji Bakanlığı",
+    tarih: "7 Kasım 2026",
+    eklendiTarihi: "2026-11-19",
+    baslik:
+      "Bakan Kacır: Yerli büyük dil modeli BİLGE'nin ilk sürümü yakında geliştiricilerin kullanımına açılacak",
+    ozet:
+      "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, 7 Kasım 2026'da İstanbul'da düzenlenen TRT World Forum'da yaptığı konuşmada, TÜBİTAK BİLGEM tarafından geliştirilen Türkçe büyük dil modeli BİLGE'nin ilk sürümünün çok yakında geliştiricilerin kullanımına sunulacağını açıkladı. Kacır, amacın girişimcilerin, araştırmacıların ve şirketlerin bu model üzerine kendi ürünlerini geliştirebilmesi olduğunu belirtti; erişim koşulları ve kesin tarih için duyuruların Bakanlık ve TÜBİTAK'ın resmi kanallarından yapılacağı bildirildi.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6aef2d554b1852391445e37d/AA/tr/sanayi-ve-teknoloji-bakani-kacir-trt-world-forum-2026-da-konustu-07-11-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Henüz kesin bir açılış tarihi ve erişim modeli duyurulmadı; yerli bir dil modeli üzerine ürün geliştirmeyi planlayan yazılım şirketlerine şimdiden Bakanlık ve TÜBİTAK'ın resmi duyuru kanallarını takibe almalarını öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "12 Kasım 2026",
+    eklendiTarihi: "2026-11-19",
+    baslik:
+      "Reklam Kurulu 375. toplantısında 119 dosyada durdurma cezası verdi, toplam ceza 35,9 milyon TL",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu'nun 12 Kasım 2026'da yaptığı 375. toplantısında ele alınan 141 dosyadan 119'unda mevzuata aykırılık tespit edilerek reklamların durdurulmasına ve toplam 35 milyon 866 bin 446 TL idari para cezası uygulanmasına karar verildi. Kararlarda özellikle kanıtlanamayan sürekli yüksek oranlı indirim iddiaları, taahhütlü mobil tarife reklamlarının tüketici beklentisini karşılamaması ve taksit koşullarının eksik belirtilmesi öne çıktı.",
+    kaynakUrl:
+      "https://www.sabah.com.tr/ekonomi/aldatici-reklama-gecit-yok-ticaret-bakanligindan-359-milyon-tl-idari-para-cezasi-7703448",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: İndirim ve taahhüt içeren kampanyalarda iddianın ispatlanabilir olması artık bir dizayn detayı değil, doğrudan idari para cezası riski. Kampanya metinlerini yayınlamadan önce hukuk/pazarlama ekiplerinin bu tür iddiaları kanıtlayacak belgeyi elinde bulundurup bulundurmadığını kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
