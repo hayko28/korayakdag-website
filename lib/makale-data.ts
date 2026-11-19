@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "kosgeb-yesil-sanayi-cagrisinda-7-milyon-tl-siniri",
+    title:
+      "KOSGEB'in 7 Milyon TL'lik Yeşil Çağrısında Herkes Aynı Tavana Çıkamıyor",
+    excerpt:
+      "KOSGEB'in 16 Kasım'da başvuruya açtığı 3 milyar TL bütçeli Sanayide Temiz ve Döngüsel Ekonomi çağrısında imalat KOBİ'lerine proje başına yüzde 70 oranında, 7 milyon TL'ye kadar destek vaat ediliyor. İşletmenin kendi bilançosu veya net satış hasılatının proje bütçesinden büyük olması şartı, başvuru hazırlığına başlayan çoğu KOBİ'nin ilk aşamada gözden kaçırdığı ayrıntı.",
+    tag: "Devlet Destekleri",
+    date: "19 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tcmb-2027-enflasyon-tahmini-alti-puan-artti",
     title:
       "TCMB 2027 Enflasyon Tahminini Altı Puan Artırdı: Bütçe Toplantısında Hangi Rakam Konuşulmuyor?",
