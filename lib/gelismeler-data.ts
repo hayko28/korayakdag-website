@@ -2774,6 +2774,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İndirim ve taahhüt içeren kampanyalarda iddianın ispatlanabilir olması artık bir dizayn detayı değil, doğrudan idari para cezası riski. Kampanya metinlerini yayınlamadan önce hukuk/pazarlama ekiplerinin bu tür iddiaları kanıtlayacak belgeyi elinde bulundurup bulundurmadığını kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "Gelir İdaresi Başkanlığı",
+    tarih: "10 Kasım 2026",
+    eklendiTarihi: "2026-11-20",
+    baslik:
+      "VUK Genel Tebliği (Sıra No: 597): Vergi dairesi başına 5 milyon TL ve üzeri borcu olanlar Aralık'ta ilan edilecek",
+    ozet:
+      "10 Kasım 2026 tarih ve 33426 sayılı Resmî Gazete'de yayımlanan 597 sıra no'lu Vergi Usul Kanunu Genel Tebliği'ne göre, bir vergi dairesine 5 milyon TL ve üzerinde kesinleşmiş vergi ve ceza borcu olan mükellefler kamuya açıklanacak. Kapsama 31 Aralık 2025 itibarıyla vadesi gelip 20 Kasım 2026'ya kadar ödenmeyen borçlar ile 1 Haziran 2025-31 Mayıs 2026 arasında kesinleşen tarhiyatlar giriyor; yapılandırılmış borçlar kapsam dışı. İlan, 1-15 Aralık 2026'da vergi dairelerinin ilan panolarında, 16-30 Aralık 2026'da ise GİB'in internet sitesinde yapılacak.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/11/10/vergi-usul-kanunu-genel-tebligi-sira-no-597/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: 5 milyon TL sınırının her vergi dairesi için ayrı ayrı uygulanması, birden fazla vergi dairesine kayıtlı borcu olan şirketlerin toplam borcu daha yüksek olsa bile listeye girmemesine yol açabiliyor; yine de her vergi dairesindeki bakiyeyi 20 Kasım'a kadar ayrı ayrı kontrol etmelerini öneririm.",
+  },
+  {
+    kurum: "KOSGEB",
+    tarih: "16 Kasım 2026",
+    eklendiTarihi: "2026-11-20",
+    baslik:
+      "KOSGEB'in Sanayide Temiz ve Döngüsel Ekonomi çağrısında imalat KOBİ'lerine 7 milyon TL'ye kadar destek",
+    ozet:
+      "KOSGEB, Yeşil Sanayi Destek Programı kapsamında imalat sektöründeki KOBİ'lere yönelik Sanayide Temiz ve Döngüsel Ekonomi Teklif Çağrısı'nı 16 Kasım 2026'da başvuruya açtı. Toplam 3 milyar TL bütçeli çağrıda enerji, su ve hammadde verimliliği, atık geri kazanımı ve döngüsel üretim konularındaki projelere, proje bütçesinin yüzde 70'i oranında ve proje başına 7 milyon TL'ye kadar destek sağlanacak; ön başvurular 9 Aralık 2026'ya kadar alınıyor, desteklenecek işletmeler 31 Mart 2027'de ilan edilecek.",
+    kaynakUrl: "https://www.alomaliye.com/?p=194411",
+    konu: "Devlet Destekleri ve Teşvikler",
+    expertNote:
+      "Koray'ın notu: Başvuru şartları arasında işletmenin bilanço veya net satış hasılatının proje toplam bütçesinden büyük olması gibi bir ön koşul da var; bu nedenle 7 milyon TL'lik üst tavan her başvuran için otomatik olarak geçerli değil. İmalat KOBİ'lerine ön başvuru öncesinde kendi bilanço büyüklüklerini planladıkları proje bütçesiyle karşılaştırmalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
