@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "performans-gorusmesinde-gelisime-acik-alan-cumlesi",
+    title:
+      "Performans Görüşmesinde \"Gelişime Açık Alanın Var\" Cümlesini Duyan Herkes Aynı Şeyi Hissediyor",
+    excerpt:
+      "Bir yazılım firmasının İK müdürü, yıl sonu performans görüşmelerinin notlarını gözden geçirdiğinde kırktan fazla görüşmenin en az yirmi sekizinde aynı cümleyi kullandığını fark etti: \"Genel olarak çok iyisin, sadece biraz daha proaktif olabilirsin.\" Soyut geri bildirim toplantı bitince unutuluyor, somut bir örnek ve tarih içeren geri bildirim aylarca akılda kalıyor.",
+    tag: "Kurumsal Gelişim",
+    date: "20 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "kosgeb-yesil-sanayi-cagrisinda-7-milyon-tl-siniri",
     title:
       "KOSGEB'in 7 Milyon TL'lik Yeşil Çağrısında Herkes Aynı Tavana Çıkamıyor",
