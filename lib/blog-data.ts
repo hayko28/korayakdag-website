@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "companies-house-kimlik-dogrulama-zorunlulugu-ingiltere-sirketi-2026",
+    title: "Companies House Kimlik Doğrulamasını Yaptırmadıysanız Ne Olur? İngiltere'deki Şirketiniz İçin Geçiş Süresi Sona Erdi",
+    excerpt: "İngiltere'de director, LLP üyesi ve PSC'lere yönelik Companies House kimlik doğrulama zorunluluğunda, 18 Kasım 2025'te başlayan 12 aylık geçiş süresi 18 Kasım 2026'da sona erdi. Mevcut yöneticiler için doğrulamanın confirmation statement tarihine bağlı olduğu takvim, GOV.UK One Login ve ACSP ile doğrulama yolları, doğrulama yapılmazsa ortaya çıkan sonuçlar ve Türkiye'den yönetilen İngiltere şirketleri için güncel rehber.",
+    category: "YURT DIŞI ŞİRKET • İNGİLTERE • 2026",
+    date: "Kasım 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1593781492912-bb538a002c02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "yabanci-yatirimciya-ikamet-izni-150000-200000-dolar-2026",
     title: "Yabancı Yatırımcıya İkamet İzni: 150.000 veya 200.000 Dolarlık Yatırımla Nasıl Alınır?",
     excerpt: "18 Kasım 2026 tarihli Resmî Gazete'de yayımlanan 11994 sayılı Cumhurbaşkanı Kararı, Türkiye'de çalışmayan yabancı yatırımcılara banka mevduatı, devlet tahvili, fon katılma payı veya bireysel emeklilik yoluyla 150.000 dolarla 3 yıllık, 200.000 dolarla 5 yıllık ikamet izni yolu açtı. Kapsam, vatandaşlık şartlarından farkı, aile üyelerinin kapsamı ve dikkat edilmesi gerekenlerle güncel rehber.",
