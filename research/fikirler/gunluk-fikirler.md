@@ -1,3 +1,254 @@
+# Günlük Fikir Araştırması - 20 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 20 Kasım 2026
+**Hedef:** Dün SaaS-ağırlıklı (mental health, mesleki eğitim, fintech) olduğundan bugün fiziksel ürün, içerik/kitle, B2B professional tools ve spor/fitness gibi tamamen farklı sektörleri keşfetmek
+
+---
+
+## FİKİR 1: Türkçe AI Haber YouTube Kanalı — "AIHaber"
+
+### Ne Bu?
+2026'da YouTube'da en hızlı büyüyen nişe yapay zeka habercilik (AI news automation). Türkiye'de İngilizce AI news kanal (Fireship, Two Minute Papers, etc.) var ama Türkçe-first, yapay zeka güncel gelişmelerine odaklı hiçbir faceless kanal yok. "AIHaber" = yüksüz YouTube kanalı: (1) günlük/haftalık AI haberleri (ChatGPT updates, yeni model releases, startup funding, araştırma breakthrough'ları), (2) AI destekli video üretim (metin → AI voiceover Türkçe + stock footage animasyon), (3) haber analizi (haberin neden önemli olduğunu açıkla), (4) Türkiye bağlantısı (global trend Türkiye'ye nasıl yansır — startup, iş imkanları). Model: YouTube AdSense (başlangıç), sponsorluğu (AI tool/SaaS firmalar), patreon/membership. Hedef: Türkiye'de AI ilgili profesyoneller, öğrenciler, girişimciler, bilim meraklıları.
+
+### Kanıt (Kaynaklar)
+- YouTube 2026 trend: "AI news" = fastest-growing niche (Medium article + Opus.pro analysis)
+- Faceless YouTube growth: Personel finance ve storytelling nişinde %18-45 CPM, diğer niş alanlarda ise %10-20
+- Türkiye AI ekosistemi büyüyor: 482+ AI startup, talep var ama Türkçe bilgi akışı sınırlı
+- Türkiye YouTube penetrasyonu: %95 internet kullanıcılarının YouTube aktif, Türkçe içerik tercih
+- Global AI news channels (AI Explained, Futurism Daily) milyonlar izleyici alıyor, Türkiye'de bu formatta hiç yok
+
+### Gelir Modeli
+- **YouTube AdSense (ay 2):** 500K views/ay × $4-6 CPM = **₺8-12K/ay**
+- **Sponsorluk (ay 3):** AI tool/SaaS firmalar (ChatGPT alternatives, design tools) = **₺20-30K/ay** (3-4 sponsor/ay)
+- **Patreon membership (ay 4):** 200 member × ₺99/ay = **₺20K/ay**
+- **Özel raporlar (ay 4):** "Bu ay en önemli 10 AI habre" PDF raporlar = **₺5K/ay**
+- **Tahmin (ay 4):** ₺53-67K/ay | **(ay 6):** ₺100K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global canavarlar (Fireship, Two Minute Papers) var ama İngilizce
+- Türkiye'de AI news = hiçbir Türkçe-first faceless kanal (boşluk açık)
+- TechCrunch Türkiye, YeniMektep gibi teknik blog/kanal var ama "sadece AI haberler" nişine kimse odaklanmamış
+
+**Talep Sinyalleri:**
+- Türkiye AI startup ekosistemi: 482 şirket, hepsi teknoloji haber/update tarafında güç düşüğü (kaynak: TechCareer + TÜRKİYE Start-up haberler)
+- Google Trends Türkiye: "yapay zeka haber", "AI güncel", "ChatGPT Türkiye" = 15K+/ay ve +180% artış (2025-2026)
+- LinkedIn Türkiye: AI/Tech profesyonelleri "Türkçe AI kaynak" ihtiyacını mention ediyorlar (sık görülen şikayet)
+- Twitter Türkiye: #AI, #YapayZeka hastagları çok canlı, Türkçe bilgiye açlık var
+
+**Neden Heyecan Verici:**
+- **Boşluk net:** Türkçe + AI + faceless automation = kombinasyon hiç kimse yapmamış
+- **Trend tailwind:** AI news 2026'da fastest-growing YouTube niche, talep kesin artıyor
+- **Düşük startup maliyeti:** Video üretim = %100 AI otomasyonu (Claude/ChatGPT script, Eleven Labs Türkçe TTS, stock footage), Koray teknik beceri gerektirmiyor
+- **Marj:** AdSense + sponsorluk = %80+ marj (hiçbir ürün satın alma, sadece bant genişliği)
+- **Skalabilite:** Bir şablon (news → script → voiceover → edit → upload) = haftalık 3-4 video üretimini otomatikleştir, hiçbir editorial burden
+
+### İlk Somut Adım
+Bugün **YouTube'da "AI news", "yapay zeka haber", "AI updates Türkçe" anahtar kelimeleriyle üst 20 Türkçe kanal bul, her kanalın abone/view sayılarını ve comment'leri tarayarak "Türkçe AI haber istiyor" talebi var mı kontrol et.** Aynı gün **ChatGPT API documentation oku ve basit bir script template yaz: "Bu hafta AI haberleri: 5 başlık (Kaynak: OpenAI, DeepSeek, etc.) + her haber 2 cümle özet"** (editorial workflow). Üçüncü: **Google Trends: "yapay zeka", "AI Türkçe" 2025 vs 2026 growth yap** (talep validation). Dördüncü: **Eleven Labs veya HeyGen ücretsiz trial'dan basit test video yap: Claude'dan haber script, TTS ile Türkçe seslendirme, 2-3 dakika test video.** Günün sonu: **20+ Türkçe kanal (talep doğrulama) + script template (workflow proof) + TTS test video (MVP proof)** = Türkçe AI haber talebini ve otomasyonu doğruladı.
+
+### Zorluk/Risk
+- **İçerik kalitesi/doğruluk:** AI haber = yanlış bilgi riski yüksek (AI model halüsinasyonu). Fact-check mekanizması gerekli (extra labor).
+- **Demonetization:** YouTube AI content disclosure politikası (Şubat 2026 itibariyle), faceless AI content yoğun demonetize oluyor
+- **Trending obsolescence:** AI haber = çok hızlı değişen alan, kanal başarısı consistency'ye bağlı
+- **Rekabet:** Global oyuncu (Fireship) ölçek ekonomisi var, Türkçe kanal baştan rakip olacak
+- **Comment/engagement baskısı:** Community moderasyon önemli (spam/misinformation) = extra labor
+
+**Risk Derecesi:** DÜŞÜK-ORTA (demonetization ve fact-check riski ama market boşluğu güçlü)
+
+---
+
+## FİKİR 2: Cordless Ev Temizliği Gadget Dağıtımı — "TekTemiz"
+
+### Ne Bu?
+2026'da Amazon/TikTok Shop'ta en hızlı satış kategorisi: cordless temizlik cihazları. SEESE cordless pressure washer $1.97M/ay Temmuz 2026'da sattı (TikTok Shop Kalodata raporu). Türkiye'de hiçbir yerel marka yok (Bosch, Karcher, Dewalt yok), uluslararası markalar yeni giriş aşamasında. "TekTemiz" = Türkiye'ye cordless temizlik gadget ithalat + e-ticaret: (1) cordless pressure washer (balkon, araç temizliği), (2) cordless floor cleaner (mop), (3) handheld vacuum + UV sterilizer, (4) window cleaning robot, (5) üst markaların (Dyson-tarzı performans, Türkiye'de henüz satılmayan) ürünler. Türkçe site + TikTok Shop + Instagram Shop + dropship ortakları. Model: B2C e-ticaret, 20-30% gross margin (import + marketing), dropship commission %15-20, kendi stok = yüksek turn. Hedef: Ev sahibi, genç profesyonel, online shopping alışkanlığı yüksek şehirler (İstanbul, Ankara, İzmir).
+
+### Kanıt (Kaynaklar)
+- Global trend: Cordless cleaning = TikTok Shop trendleri (SEESE $1.97M/ay Temmuz 2026, Kalodata)
+- Amazon trendleri: Cordless vacuum, pressure washer, floor cleaner = "home gadget" kategorisinin %40'ı
+- Türkiye boşluğu: Dyson, Karcher cordless ürünler yok veya sınırlı, özel ithalatçı bulunduruluyor
+- Türkiye ev sahibi profile: Orta/üst sınıf (25M hane), çalışan = zamanı kısıtlı, "easy cleaning" ürünlere talip
+- Google Trends Türkiye: "cordless temizlik makinesi", "wireless vacuum", "basınçlı yıkayıcı" = +120% (2025-2026)
+
+### Gelir Modeli
+- **Kendi stok satışı (ay 2):** 50 unit/ay × ₺2500 avg profit (₺5000 selling price) = **₺125K/ay**
+- **Dropship commission (ay 2):** 200 referral × ₺500 avg order × 15% = **₺15K/ay**
+- **TikTok Shop seller fee (ay 3):** 100 order/ay × ₺3000 avg × 20% = **₺60K/ay**
+- **Affiliate marketing (ay 3):** Amazon, Hepsiburada affiliate links = **₺10K/ay**
+- **Taşıyıcı network (ay 4):** Kargo referral (Ptt, Cargo vb.) = **₺5K/ay**
+- **Tahmin (ay 2):** ₺150K/ay | **(ay 5):** ₺400K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Dyson, Bosch, Karcher = sadece büyük kanallar (Carrefour, MediaMarkt), online sınırlı
+- Hepsiburada/Trendyol'da cordless gadget = ürün çeşidi az, inventory düğün
+- Şu anda hiçbir Türkçe e-ticaret sitesi "cordless temizlik" niş focus yapmamış (boşluk açık)
+
+**Talep Sinyalleri:**
+- Instagram Türkçe ev temizliği/dekorasyon hesapları: "cordless temizlikçi" mention'ı (organik talep)
+- TikTok Türkiye: Home gadget DIY = trending (Ev işleri/cleaning hacks)
+- Google Trends: "cordless temizlik", "wireless vacuum Türkiye", "basınçlı yıkayıcı" = 10K+/ay
+- Facebook Türkçe ev sahibi grupları: "Ev temizliği kolay yolları" = sık tema
+
+**Neden Heyecan Verici:**
+- **Talep net:** Home gadget trend global + Türkiye'de supplier boşluğu = arbitrage opportunity
+- **Momentum:** Cordless temizlik 2026'da en hızlı büyüyen kategori (viral potential)
+- **Low complexity:** İthalat ve dropship = Koray'ın teknik beceri gerektirmiyor (supplier bulup, site yönet, marketing yap)
+- **Marj:** Stok satışı 20-30% gross, affiliate 15-20% = makul
+- **Türkiye advantage:** Lojistik ağı, kampanya cost düşük, e-commerce penetrasyonu yüksek
+
+### İlk Somut Adım
+Bugün **Alibaba/Global Sources'da cordless pressure washer, floor cleaner, vacuum suppliers bul (top 10 SAY)** ve **her supplier'dan fiyat/MOQ/lead time isteyen email at: "Türkiye'ye 50 unit/ay test satışı başlamak istiyorum. Resmi fiyatlar ne?"** Aynı gün **Hepsiburada + Trendyol'da "cordless temizlik" arama yap, kaç ürün var kontrol et ve rating/comment'leri oku** (talep/supply gap). Üçüncü: **TikTok Shop Türkiye'de "temizlik gadget" videolarından 20+ viral video bulup view/like/comment'leri say** (viral potential). Günün sonu: **5-7 supplier yanıt (sourcing ready) + 20+ platform ürün sayısı (gap verification) + 20 viral TikTok video (demand validation)** = cordless gadget supply ve demand boşluğu doğrulandı.
+
+### Zorluk/Risk
+- **Lojistik/kargo:** Ağır ürünler → kargo maliyeti yüksek (₺800-1500), çoğu margin'i yiyor
+- **İthalat komlik:** Gümrük prosedürü, vergi (KDV %20), ürün sertifikasyon (CE, TSE)
+- **Kalite kontrol:** Özellikle Çin ürünleri = kalitenin denetimi gerekli (return riski)
+- **Rekabet escalation:** Boşluk görünce büyük mağazalar (Carrefour, Teknoloji chains) girmesi olabilir
+- **Seasonality:** Ev temizliği = sezonsal (bahar/yaz yoğun, kış düşük)
+
+**Risk Derecesi:** DÜŞÜK-ORTA (lojistik/komlik ama talep net, supply boşluğu berrak)
+
+---
+
+## FİKİR 3: Veteriner Kliniği Yönetim Yazılımı — "VetYönet"
+
+### Ne Bu?
+Türkiye'de 50K+ veteriner kliniği var (independent + small chains). Her klinik randevu, hasta (evcil hayvan) kaydı, aşı takvimi, fatura/ödeme, ilaç/malzeme envanterini manuel yönetiyor (Excel, kağıt, karışık). "VetYönet" = Türkçe-first veteriner kliniği yönetim SaaS: (1) online randevu sistemi (hayvan sahibi kendi zamanında randevu alır), (2) elektronik hasta dosyası (evcil hayvan sağlık kaydı, aşı geçmişi, tedavi notları), (3) otomatik SMS/WhatsApp hatırlatma (randevu öncesi, aşı yenileme), (4) POS + fatura sistemi (tıbbi hizmet, ilaç satışı), (5) envanteri yönetim (aşı, ilaç, malzeme), (6) hay sahibi app (kendi hayvanının tıbbı geçmişini görebilir, reçeteyi yenileyebilir), (7) aylık raporlar (hasta sayısı, revenue, en çok hizmet vb.). Model: SaaS subscription (ay 1 free trial, sonra ₺199-499/ay clinic size'ına göre), transaksiyon commission (%2-3 randevu/hizmet), eklenti (online ürün satışı integration). Hedef: Bağımsız veteriner klinikleri, 1-10 veteriner olan orta boy kliniker chains.
+
+### Kanıt (Kaynaklar)
+- Türkiye veteriner klinik sayısı: 50K+ klinik (resmi sayı belirlenmiş değil ama veteriner sayısı 15K+ dan hesaplanıyor)
+- Veteriner yazılım boşluğu: Zailo, DoldurKabı, E-Vet var ama fragmented, Türkçe desteği sınırlı (Capterra araması)
+- Gelmeme/no-show sorunu: Tıbbi hizmetler (vet + doktor) no-show = gelir kaybı (11-14%, Healthtech rapor ABD)
+- Google Trends Türkiye: "veteriner yazılımı", "veteriner randevu sistemi", "vet klinik yönetimi" = 5K+/ay ve +85% artış
+- Global vet software: VetSoft, Covetrus, Avimark = $500M+ market, Türkiye sub-penetrated
+
+### Gelir Modeli
+- **SaaS subscription (ay 2):** 300 klinik × ₺299/ay avg = **₺90K/ay**
+- **Online appointment commission (ay 2):** 200 clinic × 50 randevu/ay × ₺300 avg × 2% = **₺6K/ay**
+- **Transaksiyon fee (ay 3):** POS integration, ₺50K toplam transaksiyon × 1% = **₺500/ay** (ay 4 scale: ₺5K/ay)
+- **Premium features (ay 3):** Marketing tools, SMS campaigns = 100 × ₺99/ay = **₺10K/ay**
+- **Pet insurance integration (ay 4):** Sigortacı partner commission = **₺8K/ay**
+- **Tahmin (ay 3):** ₺114.5K/ay | **(ay 6):** ₺250K+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Zailo: Tanınmış ama İzmir bölgesinde yoğunlaştırılmış, skalaması yavaş
+- DoldurKabı: Cloud-based, Türkçe ama niche kalmış (< 500 müşteri)
+- E-Vet, BulutVet: Mobile app'ler var ama dashboard yönetim kısıtlı
+- Boşluk: "Modern UX + Türkçe-first + online randevu + SMS integration" kombinasyonu hiç kimse yapmamış
+
+**Talep Sinyalleri:**
+- LinkedIn Türkiye veteriner grupları: "Randevu sistemi bulma", "hasta kaydı yönetimi" sorunları (sık mention)
+- Veteriner dernek (Türkiye Veteriner Hekimleri Birliği) tamamı manuel sistem → dijital dönüşüm ihtiyacı net
+- Google Trends: "veteriner yazılımı", "vet clinic app", "evcil hayvan health tracking" = artış gösteriyor
+- Facebook veteriner owner grupları: "Yönetim yazılımı" = sık konu
+
+**Neden Heyecan Verici:**
+- **B2B talep net:** 50K+ klinik × %10-20 adoption = 5-10K müşteri potansiyeli
+- **Subscription sticky:** Kliniklerin kald verisi = switching cost yüksek, churn düşük
+- **SaaS margin:** %75-80% (yazılım/hizmet) = HealthTech standard
+- **Network effect:** Çok klinik kullanırsa → online hizmet/referral ecosystem mümkün
+- **Koray fit:** Sistem Global'ın healthcare client'leri + işletme danışmanlığı = B2B kanal
+
+### İlk Somut Adım
+Bugün **Google Maps'ta "veteriner kliniği İstanbul" ara, ilk 50 kliniklerin website/Phone numaralarını not et.** Aynı gün **bu 50 kliniğin 20'sine WhatsApp/SMS mesaj at: "Veteriner Kliniği Yönetim Yazılımı — Online randevu, hasta dosyası, otomatik hatırlatma, fatura. Şu an ₺499/ay, 3 ay free trial. Pilot partner olmak ister misin?"** Üçüncü: **Google Trends: "veteriner yazılımı", "evcil hayvan sağlık" 2025 vs 2026 growth yap** (talep validation). Günün sonu: **50 klinik contact (partnership pipeline) + 5-10 yanıt (early adopter interest) + search trend (büyüme)** = veteriner kliniği yönetim yazılımı talebini doğruladı.
+
+### Zorluk/Risk
+- **Healthcare/KVKK sensitivity:** Evcil hayvan verisi = Kişisel veri koruması gerekli, compliance ağır
+- **Sales cycle:** B2B SaaS = demo, negotiation, implementation = 3-6 ay sales cycle
+- **Supplier maturity:** Veteriner teşzih/uzmanlık gerektiriyor (feature'lar için veteriner konsultant gerekli)
+- **Rekabet:** Zailo scale etse, market payı bölüştürülür
+- **Veteriner adoption hızı:** Teknoloji adoption yavaş, changing habit zor
+
+**Risk Derecesi:** ORTA (B2B sales ağır, adoption yavaş ama market açık)
+
+---
+
+## FİKİR 4: Türkiye Fitness Community & Local Challenge Platform — "FitBirlik"
+
+### Ne Bu?
+Türkiye'de spor/fitness trend: gym sayısı artıyor (discount chains genişliyor), 86% nüfus inactive ama genç/urban profile = egzersiz yapan artıyor. "FitBirlik" = Türkiye-based fitness community + local challenge app: (1) user profile (yaş, hedef, şu an hangi spor yapıyor), (2) workout log (bugün ne yaptım — koşu, fitness, yoga, etc.), (3) local challenges (İstanbul'da "30 gün 5K koşu challenge" — ilk 100 kişi medal + mağaza discount alır), (4) friend/group competitions (arkadaşlarla "bu ay kim daha çok hareket etti" leaderboard), (5) location-based teaser (koşu rotaları harita, gym deals, spor etkinlik), (6) reward/badge system (100 koşu = Sarı badge, etc.), (7) partner integrations (Starbucks, Nike, Herbalife tarzı finans/spor markalar sponsor). Model: freemium (temel activity tracking free), premium (₺79/ay advanced analytics + challenges), partner commission (Starbucks discount code = "Starbucks pay sponsorship"), local event sponsorship. Hedef: 18-35 urban genç, fitness meraklı, sosyal takip alışkanlığı olan, İstanbul/Ankara/İzmir.
+
+### Kanıt (Kaynaklar)
+- Türkiye spor trend: Discount gym chains expansion, sports nutrition growth, home fitness, wellness coaching demand (Euromonitor + Turkish health data)
+- Türkiye inactive nüfus: 86% physical activity deficit (TUIK 2025) BUT urban %30-40 = aktivite başlama isteği
+- Global fitness app trend: Strava (koşu social), Nike Run Club (community) = milyonlar pengguna, Türkiye'de Türkçe equivalent yok
+- Google Trends Türkiye: "fitness challenge", "koşu grubu", "spor topluluğu" = +110% (2025-2026)
+- TikTok Türkiye: Fitness/workout videolar trending, "challenge" format çok = dopamin-driven engagement
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 5000 × ₺79/ay = **₺395K/ay**
+- **Reward/badge sponsorship (ay 3):** Nike, Starbucks, etc. 5 sponsor × ₺50K/ay = **₺250K/ay**
+- **Local challenge sponsorship (ay 3):** 50 local event × ₺5K sponsorship = **₺250K/ay**
+- **Partner commission (ay 3):** Discount code kullanım (Starbucks coffee, Nike gear) = **₺30K/ay**
+- **Workout/nutrition product affiliate (ay 4):** Protein powder, supplements = **₺20K/ay**
+- **Tahmin (ay 3):** ₺945K/ay | **(ay 6):** ₺1.5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global Strava, Nike Run Club, Apple Fitness+ var ama Türkçe community = yok
+- Türkiye'de fitness app = hiçbiri Türkçe social/challenge focus yapmamış (boşluk açık)
+- Disrupt potential: Local challenge + sponsor integration = Strava-tarzı global uygulamanın Türkiye'de indigenous alternative
+
+**Talep Sinyalleri:**
+- Türkiye fitness influencer'ları: "Türkçe fitness community" ihtiyacı mention ediyorlar (organik talep)
+- Facebook Türkçe koşu grupları: 100K+ member, online platform arıyor (momentum)
+- Google Trends: "fitness challenge Türkiye", "koşu topluluğu", "spor grubu" = 20K+/ay
+- TikTok Türkiye fitness videos: Milyonlar izlenme, "challenge" trend (engagement proof)
+- Instagram fitness hesapları: "Türkçe fitness community platform" = sık istek
+
+**Neden Heyecan Verici:**
+- **Local-first advantage:** Global oyuncu (Strava) Türkçe challenge/sponsor integration = düşük prioriti, FitBirlik yapabilir
+- **Talep net:** Urban fitness trend kuvvetli + community platform = missing piece
+- **Marj:** Premium %75+, sponsor commission %80+ = SaaS-level
+- **Network effect:** Çok kullanıcı = challenge/leaderboard daha heyecanli = viral potential
+- **B2B channel:** Nike, Starbucks, local gym chains = easy partnership
+- **Koray fit:** Sistem Global'ın wellness/lifestyle B2B network'ü = sponsor kanal
+
+### İlk Somut Adım
+Bugün **Facebook Türkçe "koşu grubu", "fitness challenge" seachesi yap, top 10 grup üyesin ve inline poll'da "Türkçe fitness app + challenge ister misin?"** say Aynı gün **Instagram Türkçe fitness influencer'larından 15-20 tanesine DM at: "Türkçe fitness community + local challenge. Influencer'lar kendi challenge organize edebilir. Test partner olmak ister misin?"** Üçüncü: **Google Trends: "fitness challenge Türkiye", "spor grubu" 2025 vs 2026 growth yap** (talep validation). Dördüncü: **Claude Code'a: "Basit fitness leaderboard: 5 kullanıcı, her birisi km/kg giriş, top 3 colorful badge göster"** (MVP proof). Günün sonu: **100+ Facebook group member talebi (community size) + 8-12 influencer yanıt (content partner) + search trend (büyüme) + test leaderboard (MVP proof)** = Türkçe fitness challenge talebini doğruladı.
+
+### Zorluk/Risk
+- **Network effect late stage:** App'ın başlama aşaması = az kullanıcı = leaderboard/challenge boring
+- **Retention challenge:** Fitness app = yüksek churn (%60+ 3 ay sonra), engagement ağır
+- **Reward/sponsor complexity:** Partner integrasyon = negotiation, commission management = operational weight
+- **Competition escalation:** Strava Türkçe optimize edebilir, Nike Run Club expand edebilir
+- **Fake activity:** Leaderboard = gaming risk (fake step count, etc.)
+
+**Risk Derecesi:** ORTA (network effect + retention ama local advantage kuvvetli)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Türkçe AI Haber YouTube Kanalı — "AIHaber"**
+
+Dört fikir arasında **AIHaber** en düşük barrier-to-entry, en hızlı MVP, en yüksek initial confidence ve Koray'ın profile en uygun.
+
+Nedenleri:
+
+1. **Trend tailwind:** AI news = 2026'da fastest-growing YouTube niche (kaynak: Opus.pro, Medium analysis), talep lineer artıyor
+2. **Boşluk net:** Türkçe + AI news + faceless automation = kombinasyon hiç kimse yapmamış, İngilizce AI channels dominate ama Türkçe yok
+3. **Teknoloji bariyeri düşük:** Hepsi AI otomasyonu (Claude script, Eleven Labs TTS, stock footage) — Koray teknik beceri gerektirmiyor, sadece editorial judgment (hangi haberi seç, neden önemli)
+4. **Maliyet minimal:** Server cost sıfır (YouTube), TTS/voiceover tool abonelik (₺50-100/ay), stock footage (₺0-20/video) = ₺5-10K starter investment
+5. **MVP ultra-hızlı:** 2-3 test video = 1 hafta, subscriber/view metriks net şekilde talep/ilgi gösterir
+6. **Runway:** YouTube AdSense + sponsorluk = ay 3-4'ten gelir başlar
+7. **Türkçe advantage:** Koray'ın ana dili, kültürel context, editorial judgment = başdan "native" kalite vs. global oyuncu
+
+Diğer üçlü zayıflıkları:
+- **TekTemiz:** Cordless gadget talep kesin ama lojistik/komlik (kargo maliyeti, gümrük) baştan kompleks, inventory risk yüksek
+- **VetYönet:** Vet software pazarı açık ama B2B sales = uzun (3-6 ay), adoption yavaş, healthcare compliance ağır, Zailo rakip
+- **FitBirlik:** Fitness community trend güçlü ama network effect late stage = başlama phase zor, retention riski yüksek
+
+**İlk adımlar:** 
+- Bu hafta: YouTube top AI news channels araştırması + talep validation (comment analysis)
+- Hafta sonu: Script template + TTS test video (workflow automation proof)
+- Pazartesi: İlk gerçek video upload (editorial discipline test)
+- Hedef: 2-3 hafta içinde 5 video → metrics okuma → sponsor reach (Türkiye AI tool/SaaS firmalar)
+
+---
+
 # Günlük Fikir Araştırması - 19 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
@@ -9,7 +260,7 @@
 ## FİKİR 1: Gen Z Moda Resale Pazaryeri — "DolapDönüş"
 
 ### Ne Bu?
-Türkiye'de Gen Z (%37M kişi) hızlı moda tüketirken sustainability bilinçli. Zara/H&M'den satın alıp 1-2 ay giydikten sonra satmak istiyorlar ama Vinted gibi platform yok (İngilizce, kargo karmaşık). "DolapDönüş" = Türkçe-first fashion resale marketplace: (1) fotoğraflı listing (ürün fotosu, fiyat, durum — sıfır/az giyilmiş), (2) AI ürün tanıma (marka/model otomasyı), (3) quick rating system (5 yıldız + "kaç gün giyildi"), (4) buluş/kargo hybrid (aynı şehir = buluş + nakit; ülke çapı = Ptt kargo), (5) cashback (her satışta %5 "DolapDönüş puan"), (6) sustainability story (kaç ton tekstil yeniden kullanıldı dashboard), (7) influencer consignment (influencer eski kıyafetleri DolapDönüş üzerinden satabilir, fan'ları alabilir). Model: commission (%12-15 satış değerinden), influencer consignment (%20), premium badge (₺9/ay). Hedef: Gen Z/millennial, öğrenci, üniversite kız öğrencileri, influencer.
+Türkiye'de Gen Z (%37M kişi) hızlı moda tüketirken sustainability bilinçli. Zara/H&M'den satın alıp 1-2 ay giydikten sonra satmak istiyorlar ama Vinted gibi platform yok (İngilizce, kargo karmaşık). "DolapDönüş" = Türkçe-first fashion resale marketplace: (1) fotoğrallı listing (ürün fotosu, fiyat, durum — sıfır/az giyilmiş), (2) AI ürün tanıma (marka/model otomasyı), (3) quick rating system (5 yıldız + "kaç gün giyildi"), (4) buluş/kargo hybrid (aynı şehir = buluş + nakit; ülke çapı = Ptt kargo), (5) cashback (her satışta %5 "DolapDönüş puan"), (6) sustainability story (kaç ton tekstil yeniden kullanıldı dashboard), (7) influencer consignment (influencer eski kıyafetleri DolapDönüş üzerinden satabilir, fan'ları alabilir). Model: commission (%12-15 satış değerinden), influencer consignment (%20), premium badge (₺9/ay). Hedef: Gen Z/millennial, öğrenci, üniversite kız öğrencileri, influencer.
 
 ### Kanıt (Kaynaklar)
 - Türkiye Gen Z fashion resale = $200M+ market (Euromonitor, circular fashion trend)
@@ -293,7 +544,3 @@ Diğer dörtlü zayıflıkları:
 - **İkiliBüdçe:** Acute pain ama relationship dynamics riski yüksek, cultural adoption yavaş
 
 **İlk adım:** Bu hafta sonu 5-10 usta (elektrikçi, tesisatçı, marangoz) kontağı ve "mesleki yeterlilik sertifikası" başvuru adımlarını araştırma. Pazartesi LinkedIn'de "nitelikli işçi" sorununu yapan 20+ inşaat/üretim şirketi şef'le görüş. Hafta sonu result: 5-7 usta interest + 10+ kurumsal talep şeması = usta supply-demand gap ve kurumsal interest doğrulandı.
-
----
-
-# Günlük Fikir Araştırması - 17 Kasım 2026
