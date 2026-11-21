@@ -2801,6 +2801,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Başvuru şartları arasında işletmenin bilanço veya net satış hasılatının proje toplam bütçesinden büyük olması gibi bir ön koşul da var; bu nedenle 7 milyon TL'lik üst tavan her başvuran için otomatik olarak geçerli değil. İmalat KOBİ'lerine ön başvuru öncesinde kendi bilanço büyüklüklerini planladıkları proje bütçesiyle karşılaştırmalarını öneririm.",
   },
+  {
+    kurum: "KGK",
+    tarih: "5 Kasım 2026",
+    eklendiTarihi: "2026-11-21",
+    baslik:
+      "Bağımsız denetçilik sınavları 23 Kasım 2026'dan itibaren elektronik ortamda yapılacak",
+    ozet:
+      "Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu'nun (KGK) 5 Kasım 2026 tarihli duyurusuna göre bağımsız denetçilik ve sürdürülebilirlik denetçiliği sınavları 23 Kasım 2026'dan itibaren kağıt ortamından elektronik ortama (e-sınav) geçiyor. Sınavların operasyonel ve teknik süreçlerini KGK ile imzalanan protokol çerçevesinde SPL (Sermaye Piyasası Lisanslama Sicil ve Eğitim Kurulu A.Ş.) yürütecek; başvuru, seans seçimi ve ödeme SPL Başvuru Sistemi üzerinden yapılacak ve sınavlar İstanbul (iki merkez), Ankara, İzmir, Gaziantep, Antalya, Samsun ve Erzurum'daki sekiz elektronik sınav merkezinde gerçekleştirilecek. Sınav konularının belirlenmesi, sonuçların kesinleştirilmesi ile yetkilendirme ve tescil işlemleri KGK'da kalmaya devam ediyor.",
+    kaynakUrl:
+      "https://www.muhasebetr.com/guncelmevzuat/mevzuat_oku.php?mevzuat_id=7255",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Bu değişiklik doğrudan bir KOBİ yükümlülüğü değil, bağımsız denetçi adaylarını ilgilendiriyor; ama sınav takviminin sıklaşması orta vadede piyasadaki denetçi arzını etkileyebilir. Bağımsız denetime tabi olan veya tabi olmaya yaklaşan şirketlere, denetçi/denetim şirketi seçimini yıl sonu yoğunluğuna bırakmadan şimdiden planlamalarını öneririm.",
+  },
+  {
+    kurum: "EY",
+    tarih: "3 Kasım 2026 (Ocak-Ağustos 2026 verileri)",
+    eklendiTarihi: "2026-11-21",
+    baslik:
+      "EY-Parthenon Türkiye: 2026'nın ilk sekiz ayında 117 M&A işleminde açıklanan değer 9 milyar doları aştı",
+    ozet:
+      "EY-Parthenon Türkiye'nin derlediği verilere göre 2026 yılının Ocak-Ağustos döneminde Türkiye'de açıklanan değeri bulunan 117 birleşme ve satın alma işlemi gerçekleşti; bu işlemlerin toplam açıklanan değeri 9 milyar doları aştı. Piyasa genelinde işlem sayısının bir önceki yıla göre azaldığı, ancak 100 milyon doların üzerindeki büyük ölçekli anlaşmaların toplam hacmi yukarı çektiği gözlemleniyor.",
+    kaynakUrl:
+      "https://www.ekonomist.com.tr/makale/satin-alma-ve-birlesmede-sayi-degil-hacim-buyudu-80493",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: İşlem sayısının azalıp hacminin büyümesi, alıcıların daha seçici davrandığı ve küçük/orta ölçekli bir şirketin satış sürecine girerken değerleme hazırlığına eskisinden daha fazla özen göstermesi gerektiği anlamına gelebilir. Yıl sonuna kadar şirketini değerlendirmeyi planlayan sahiplere, finansal ve operasyonel verilerini şimdiden düzene koymalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
