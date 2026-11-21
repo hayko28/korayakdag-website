@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yapay-zekayla-cv-elemede-kvkk-itiraz-hakki",
+    title:
+      "İşe Alım Yazılımı Bir Adayı Elediğinde, O Kararı Gerçekte Kim Verdi?",
+    excerpt:
+      "Orta ölçekli bir yazılım şirketinin İK ekibi, 400'ün üzerindeki başvuruyu bir yapay zeka destekli eleme aracına bıraktı; elenen bir aday, kararın bir algoritma tarafından verildiğini hiç öğrenemedi. KVKK'nın 11. maddesinin g bendi tam olarak bu anı düzenliyor ve \"sistem öneri veriyor, kararı biz veriyoruz\" savunması, belgelenmiş bir insan incelemesi yoksa tek başına yetmiyor.",
+    tag: "Hukuk ve Vergi",
+    date: "21 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "performans-gorusmesinde-gelisime-acik-alan-cumlesi",
     title:
       "Performans Görüşmesinde \"Gelişime Açık Alanın Var\" Cümlesini Duyan Herkes Aynı Şeyi Hissediyor",
