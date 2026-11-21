@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import BlogLayout from "@/components/blog/BlogLayout";
 
 export const metadata: Metadata = {
-  title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür? | Koray Akdağ",
+  title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-3: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür? | Koray Akdağ",
   description:
-    "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri, hibeye dönüşme mekanizması ve başvuru sürecine dair rehber.",
+    "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-3 dönemi 9 Kasım 2026'da açıldı, başvurular 4 Ocak 2027'ye kadar sürüyor. KOBİ ve büyük ölçekli şirketler için 55 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri, hibeye dönüşme mekanizması ve başvuru sürecine dair güncel rehber.",
   keywords: [
     "TÜBİTAK 1832",
     "Sanayide Yeşil Dönüşüm Çağrısı",
-    "1832 2026-2 çağrısı",
+    "1832 2026-3 çağrısı",
     "TÜBİTAK yeşil dönüşüm başvuru",
     "Yeşil Dönüşüm Göstergeleri",
     "TÜBİTAK geri ödemeli hibe",
@@ -26,19 +26,22 @@ export const metadata: Metadata = {
 export default function Tubitak1832Page() {
   return (
     <BlogLayout
-      title="TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?"
-      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. Kimler başvurabilir, bütçe üst sınırları, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla rehber."
+      title="TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-3: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?"
+      description="Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-3 dönemi 9 Kasım 2026'da açıldı. Kimler başvurabilir, bütçe üst sınırları, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla güncel rehber."
       category="TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026"
-      date="2026"
+      date="Kasım 2026"
       readTime="13 Dakika"
       coverImage="https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       slug="tubitak-1832-sanayide-yesil-donusum-cagrisi-2026"
-      programDurumu="kapali"
-      sonBasvuruTarihi="28 Eylül 2026"
+      programDurumu="acik"
+      sonBasvuruTarihi="4 Ocak 2027"
       ctaHeading="TÜBİTAK 1832 Başvuru Dosyanızı Birlikte Hazırlayalım"
-      ctaText="Yeşil Dönüşüm Göstergelerinden hangisini hedefleyebileceğinizden proje bütçenizin ölçeğinize göre doğru kalemlere dağıtılmasına kadar, bir sonraki çağrıya hazır olacak şekilde dosyanızı birlikte hazırlayabiliriz (2026-2 çağrısı 28 Eylül 2026'da kapandı)."
+      ctaText="Yeşil Dönüşüm Göstergelerinden hangisini hedefleyebileceğinizden proje bütçenizin ölçeğinize göre doğru kalemlere dağıtılmasına kadar, 4 Ocak 2027'ye kadar süren 2026-3 çağrısına yetişecek şekilde dosyanızı birlikte hazırlayabiliriz."
     >
       {/* GİRİŞ */}
+      <p className="mb-2 text-sm font-semibold text-orange-600">
+        Güncelleme: 21 Kasım 2026. 2026-3 çağrısına göre yenilendi
+      </p>
       <p className="mb-8 text-lg leading-9 text-gray-700">
         Enerji, su veya atık maliyetlerini düşürecek bir Ar-Ge projesi
         planlayan sanayi kuruluşları için TÜBİTAK&apos;ın her yıl birkaç kez
@@ -46,9 +49,10 @@ export default function Tubitak1832Page() {
         programlarından farklı bir mantıkla çalışıyor. Destek önce faizsiz bir
         kredi olarak kullandırılıyor, proje sonunda ölçülebilir bir çevresel
         kazanım elde edildiğinde bu tutarın önemli bir kısmı hibeye
-        dönüşüyor. 2026-2 dönemi başvuruları 28 Eylül 2026&apos;da
-        kapandı; bu yazıda programın işleyişini, şartlarını ve başvuru
-        sürecini uçtan uca ele alıyoruz.
+        dönüşüyor. TÜBİTAK, 9 Kasım 2026&apos;da <strong>2026-3
+        çağrısını</strong> açtı; başvurular 4 Ocak 2027&apos;ye kadar kabul
+        ediliyor. Bu yazıda programın işleyişini, güncel şartlarını ve
+        başvuru sürecini uçtan uca ele alıyoruz.
       </p>
 
       {/* KISA CEVAP KUTUSU */}
@@ -69,9 +73,9 @@ export default function Tubitak1832Page() {
             KOBİ&apos;lerde %90&apos;ı bu kapsamda karşılanıyor.
           </li>
           <li>
-            ✔ Bütçe üst sınırı ölçeğe göre değişiyor: mikro/küçük ölçekte 15
-            milyon TL, orta ölçekte 24 milyon TL, büyük ölçekte{" "}
-            <strong>51,5 milyon TL&apos;ye</strong> kadar.
+            ✔ Bütçe üst sınırı ölçeğe göre değişiyor: mikro/küçük ölçekte 16
+            milyon TL, orta ölçekte 26 milyon TL, büyük ölçekte{" "}
+            <strong>55 milyon TL&apos;ye</strong> kadar.
           </li>
           <li>
             ✔ Proje, elektrik tüketimi, su tüketimi veya geri
@@ -81,10 +85,10 @@ export default function Tubitak1832Page() {
             <strong>hibeye dönüşüyor.</strong>
           </li>
           <li>
-            ✔ 2026-2 döneminde başvurular <strong>3 Ağustos - 28 Eylül
-            2026</strong> arasında kabul ediliyor; kuruluş bazlı ön kayıt en
-            geç <strong>24 Eylül 2026&apos;ya</strong>, nihai başvuru{" "}
-            <strong>28 Eylül 2026 saat 23.59&apos;a</strong> kadar tamamlanmalı.
+            ✔ 2026-3 döneminde başvurular <strong>9 Kasım 2026 - 4 Ocak
+            2027</strong> arasında kabul ediliyor; kuruluş bazlı ön kayıt en
+            geç <strong>30 Aralık 2026&apos;ya</strong>, nihai başvuru{" "}
+            <strong>4 Ocak 2027&apos;ye</strong> kadar tamamlanmalı.
           </li>
           <li>
             ✔ Başvurular PRODİS (eteydeb.tubitak.gov.tr) üzerinden elektronik
@@ -121,7 +125,7 @@ export default function Tubitak1832Page() {
             7. Desteklenen Giderler ve Proje Süresi
           </Link>
           <Link href="#surec" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
-            8. 2026-2 Çağrı Takvimi ve Başvuru Süreci
+            8. 2026-3 Çağrı Takvimi ve Başvuru Süreci
           </Link>
           <Link href="#dikkat" className="rounded-lg border p-4 transition hover:border-orange-500 hover:bg-orange-50">
             9. Dikkat Edilmesi Gerekenler
@@ -154,7 +158,9 @@ export default function Tubitak1832Page() {
           su ve atık verimliliğini artıracak veya yeni bir yeşil teknoloji
           ortaya koyacak Ar-Ge projelerini finanse etmek. TÜBİTAK, programı
           2024&apos;ten bu yana düzenli olarak yılda birkaç dönem halinde
-          açıyor; 2026-2 dönemi bu serinin güncel halkası.
+          açıyor; 2026-3 dönemi bu serinin güncel ve hâlen açık olan halkası.
+          Çağrı, 1801-Sanayi Ar-Ge Projeleri İçin Geri Ödemeli ve Hibe Destek
+          Programı&apos;nın uygulama esasları çerçevesinde yürütülüyor.
         </p>
         <div className="my-10 rounded-2xl border border-blue-200 bg-blue-50 p-8">
           <h3 className="mb-6 text-2xl font-bold text-[#071A2F]">
@@ -247,6 +253,8 @@ export default function Tubitak1832Page() {
               <li>✔ Projenin sanayi/üretim sürecine somut bir yeşil kazanım sağlaması</li>
               <li>✔ Teknoloji Hazırlık Seviyesi (THS) 3-9 aralığında yer alması</li>
               <li>✔ Proje bitişinde en az THS 7 seviyesine ulaşılması</li>
+              <li>✔ Yürütücü kuruluşun en az %75 oranında özel sektöre ait sermaye şirketi olması</li>
+              <li>✔ Kuruluş başına 2026-3 döneminde en fazla 2 proje önerisiyle başvurulabilmesi</li>
               <li>✔ Kuruluş bazlı ön kaydın başvurudan önce tamamlanmış olması</li>
               <li>✔ Başvurunun PRODİS üzerinden e-imzalı yapılması</li>
             </ul>
@@ -317,12 +325,12 @@ export default function Tubitak1832Page() {
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Mikro / Küçük Ölçekli KOBİ</td>
                 <td className="p-5 font-bold text-green-600">%80</td>
-                <td className="p-5">15.000.000 TL</td>
+                <td className="p-5">16.000.000 TL</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Orta Ölçekli KOBİ</td>
                 <td className="p-5 font-bold text-green-600">%80</td>
-                <td className="p-5">24.000.000 TL</td>
+                <td className="p-5">26.000.000 TL</td>
               </tr>
               <tr className="border-b hover:bg-gray-50">
                 <td className="p-5 font-semibold">Deprem Bölgesindeki KOBİ</td>
@@ -332,15 +340,25 @@ export default function Tubitak1832Page() {
               <tr>
                 <td className="p-5 font-semibold">Büyük Ölçekli Şirket</td>
                 <td className="p-5 font-bold text-green-600">%70</td>
-                <td className="p-5 font-bold">51.500.000 TL</td>
+                <td className="p-5 font-bold">55.000.000 TL</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="mt-8 text-sm text-gray-500">
-          Not: Rakamlar TÜBİTAK&apos;ın resmî 1832 çağrı sayfasındaki güncel
-          esasları yansıtır; kesin tutarlar için başvuru öncesinde 2026-2
-          dönemi çağrı duyurusunun birebir kontrol edilmesi önerilir.
+        <p className="mt-8 leading-8 text-gray-700">
+          Bu rakamlar tek bir projenin bütçe üst sınırıdır. Ayrıca Dünya
+          Bankası kredisinden yararlanmak üzere açılan tüm 1832 çağrılarına
+          kümülatif olarak uygulanan, kuruluş bazlı ayrı bir geri ödemeli
+          destek üst limiti de bulunuyor: mikro/küçük ölçekli KOBİ&apos;lerde
+          500.000 USD, orta ölçekli KOBİ&apos;lerde 800.000 USD, büyük
+          ölçekli kuruluşlarda 1.500.000 USD. Bir kuruluşun önceki 1832
+          çağrılarından aldığı destekler bu limitten düşülerek takip edilir;
+          kalan limit PRODİS üzerinden başvuru aşamasında görülebilir.
+        </p>
+        <p className="mt-6 text-sm text-gray-500">
+          Not: Rakamlar TÜBİTAK&apos;ın resmî 1832 2026-3 çağrı duyurusundaki
+          güncel esasları yansıtır; kesin tutarlar için başvuru öncesinde
+          çağrı duyurusunun birebir kontrol edilmesi önerilir.
         </p>
       </section>
 
@@ -380,6 +398,36 @@ export default function Tubitak1832Page() {
           tarafından belirlenen kademeli esasa göre hibeye dönüştürülüyor.
           Hedefe ulaşılamazsa kullanılan tutarın tamamı, geri ödeme takvimine
           göre faizsiz şekilde iade ediliyor.
+        </p>
+        <div className="mt-8 overflow-x-auto rounded-2xl border border-gray-200">
+          <table className="w-full text-left">
+            <thead className="bg-[#071A2F] text-white">
+              <tr>
+                <th className="p-5">Kuruluş Ölçeği</th>
+                <th className="p-5">Hibeye Dönüşen Pay</th>
+                <th className="p-5">TÜBİTAK&apos;a Geri Ödenen Pay</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b hover:bg-gray-50">
+                <td className="p-5 font-semibold">Büyük Ölçekli Şirket</td>
+                <td className="p-5 font-bold text-green-600">%50</td>
+                <td className="p-5">%50</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-semibold">KOBİ</td>
+                <td className="p-5 font-bold text-green-600">%60</td>
+                <td className="p-5">%40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-6 leading-8 text-gray-700">
+          Bu oranlar, YDG hedefinin tutturulduğu doğrulandıktan sonra nihai
+          geri ödemeli destek tutarına uygulanıyor. Yani KOBİ&apos;de
+          kullanılan desteğin %60&apos;ı hibeye dönüşürken kalan %40&apos;ı
+          taksitler halinde TÜBİTAK&apos;a iade ediliyor; büyük ölçekli
+          şirketlerde bu oran yarı yarıya.
         </p>
 
         <div className="mt-10 rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
@@ -447,7 +495,7 @@ export default function Tubitak1832Page() {
         </div>
         <p className="mt-8 text-sm text-gray-500">
           Not: Gider kategorilerinin kesin kapsamı ve üst limitleri için
-          başvuru öncesinde 2026-2 çağrı duyurusu ve başvuru kılavuzunun
+          başvuru öncesinde 2026-3 çağrı duyurusu ve başvuru kılavuzunun
           incelenmesi gerekir.
         </p>
       </section>
@@ -455,19 +503,19 @@ export default function Tubitak1832Page() {
       {/* 8. SÜREÇ */}
       <section id="surec" className="mt-24 scroll-mt-24">
         <h2 className="mb-8 border-l-4 border-orange-500 pl-5 text-4xl font-extrabold text-[#071A2F]">
-          8. 2026-2 Çağrı Takvimi ve Başvuru Süreci
+          8. 2026-3 Çağrı Takvimi ve Başvuru Süreci
         </h2>
-        <div className="rounded-2xl border-l-4 border-red-500 bg-red-50 p-8">
-          <h3 className="mb-3 text-2xl font-bold text-red-700">
-            🔴 Son Başvuru 28 Eylül 2026: Süre Daralıyor
+        <div className="rounded-2xl border-l-4 border-green-500 bg-green-50 p-8">
+          <h3 className="mb-3 text-2xl font-bold text-green-700">
+            🟢 Çağrı Açık: Son Başvuru 4 Ocak 2027
           </h3>
           <p className="leading-8 text-gray-700">
-            2026-2 döneminde başvurular 3 Ağustos 2026&apos;dan bu yana kabul
-            ediliyor. Kuruluş bazlı ön kaydın en geç 24 Eylül 2026&apos;ya
-            kadar tamamlanmış olması, nihai başvurunun ise 28 Eylül 2026
-            saat 23.59&apos;a kadar PRODİS üzerinden gönderilmiş olması
-            gerekiyor. Ön kayıt evrakının çağrı kapanış tarihinden en az bir
-            iş günü önce TÜBİTAK&apos;a ulaştırılması önemli.
+            2026-3 döneminde başvurular 9 Kasım 2026&apos;dan bu yana kabul
+            ediliyor. Kuruluş bazlı ön kaydın en geç 30 Aralık 2026&apos;ya
+            kadar tamamlanmış olması, nihai başvurunun ise 4 Ocak 2027&apos;ye
+            kadar PRODİS üzerinden gönderilmiş olması gerekiyor. Ön kayıt
+            çağrı açılışının beklenmesine gerek olmadan hemen yapılabiliyor;
+            TÜBİTAK, zaman kaybetmeden bu işlemin tamamlanmasını öneriyor.
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-3 lg:grid-cols-5">
@@ -479,7 +527,7 @@ export default function Tubitak1832Page() {
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">💻</div>
             <h3 className="text-lg font-bold">2. Kuruluş Bazlı Ön Kayıt</h3>
-            <p className="mt-2 text-sm text-gray-600">En geç 24 Eylül 2026&apos;ya kadar PRODİS üzerinden tamamlanır</p>
+            <p className="mt-2 text-sm text-gray-600">En geç 30 Aralık 2026&apos;ya kadar PRODİS üzerinden tamamlanır</p>
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">📝</div>
@@ -489,7 +537,7 @@ export default function Tubitak1832Page() {
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">📤</div>
             <h3 className="text-lg font-bold">4. Nihai Başvuru</h3>
-            <p className="mt-2 text-sm text-gray-600">28 Eylül 2026, 23.59&apos;a kadar PRODİS üzerinden e-imzayla gönderilir</p>
+            <p className="mt-2 text-sm text-gray-600">4 Ocak 2027&apos;ye kadar PRODİS üzerinden e-imzayla gönderilir</p>
           </div>
           <div className="rounded-xl border p-6 text-center shadow-sm">
             <div className="mb-4 text-4xl">🔍</div>
@@ -502,25 +550,31 @@ export default function Tubitak1832Page() {
             <thead className="bg-[#071A2F] text-white">
               <tr>
                 <th className="p-4">Aşama</th>
-                <th className="p-4">Tarih / Saat</th>
+                <th className="p-4">Tarih</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b">
-                <td className="p-4 font-semibold">Çağrı Açılışı</td>
-                <td className="p-4">3 Ağustos 2026</td>
+                <td className="p-4 font-semibold">Çağrı Açılışı ve Başvuru Alma</td>
+                <td className="p-4">9 Kasım 2026</td>
               </tr>
               <tr className="border-b">
                 <td className="p-4 font-semibold">Kuruluş Bazlı Ön Kayıt Son Tarihi</td>
-                <td className="p-4">24 Eylül 2026</td>
+                <td className="p-4">30 Aralık 2026</td>
               </tr>
               <tr>
                 <td className="p-4 font-semibold text-red-600">Nihai Başvuru (Çağrı Kapanışı)</td>
-                <td className="p-4 font-semibold text-red-600">28 Eylül 2026, 23.59</td>
+                <td className="p-4 font-semibold text-red-600">4 Ocak 2027</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p className="mt-6 text-sm text-gray-500">
+          Not: Sistem hatası nedeniyle çağrı süresi içinde başvuru
+          yapılamaması durumunda, en geç 11 Ocak 2027 mesai bitimine kadar
+          TÜBİTAK&apos;a dilekçeyle başvurulabiliyor; bu tarihten sonra
+          ulaşan dilekçeler değerlendirmeye alınmıyor.
+        </p>
       </section>
 
       {/* 9. DİKKAT */}
@@ -530,7 +584,7 @@ export default function Tubitak1832Page() {
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
-            ✅ Ön kayıt (24 Eylül) ile nihai başvuru (28 Eylül) tarihlerini birbirine karıştırmayın
+            ✅ Ön kayıt (30 Aralık) ile nihai başvuru (4 Ocak) tarihlerini birbirine karıştırmayın
           </div>
           <div className="rounded-xl border p-6 font-semibold shadow-sm text-gray-800">
             ✅ THS 8&apos;den başlayan, ticarileşmeye çok yakın projeler kapsam dışında kalıyor
@@ -568,12 +622,12 @@ export default function Tubitak1832Page() {
           </li>
           <li>
             <a
-              href="https://tubitak.gov.tr/sites/default/files/2026-09/1832_2026-2_Cagri_Duyurusu_revize_1.pdf"
+              href="https://tubitak.gov.tr/sites/default/files/2026-11/1832_2026_3_Cagri_Duyurusu_0.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange-600 underline"
             >
-              1832 2026-2 Çağrı Duyurusu (Resmî PDF)
+              1832 2026-3 Çağrı Duyurusu (Resmî PDF)
             </a>
           </li>
           <li>
@@ -615,7 +669,7 @@ export default function Tubitak1832Page() {
               Evet. Program hem KOBİ hem de büyük ölçekli sermaye
               şirketlerine açık; ancak destek oranı ve bütçe üst sınırı
               ölçeğe göre farklılaşıyor. Büyük ölçekli şirketlerde oran
-              %70, bütçe üst sınırı 51,5 milyon TL&apos;dir.
+              %70, bütçe üst sınırı 55 milyon TL&apos;dir.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -623,10 +677,10 @@ export default function Tubitak1832Page() {
               Ön kayıt ile nihai başvuru tarihi aynı gün mü?
             </h3>
             <p className="leading-8 text-gray-700">
-              Hayır, farklı tarihler. 2026-2 döneminde kuruluş bazlı ön
-              kayıt en geç 24 Eylül 2026&apos;ya kadar tamamlanmalı; asıl
-              proje önerisi ise 28 Eylül 2026 saat 23.59&apos;a kadar
-              PRODİS üzerinden nihai olarak gönderilmelidir.
+              Hayır, farklı tarihler. 2026-3 döneminde kuruluş bazlı ön
+              kayıt en geç 30 Aralık 2026&apos;ya kadar tamamlanmalı; asıl
+              proje önerisi ise 4 Ocak 2027&apos;ye kadar PRODİS üzerinden
+              nihai olarak gönderilmelidir.
             </p>
           </div>
           <div className="rounded-2xl border p-8">
@@ -663,6 +717,19 @@ export default function Tubitak1832Page() {
               yapılabilir.
             </p>
           </div>
+          <div className="rounded-2xl border p-8">
+            <h3 className="mb-3 text-2xl font-bold text-[#071A2F]">
+              Bir kuruluş kaç proje önerisiyle başvurabilir ve kullanılan destek sınırsız mı?
+            </h3>
+            <p className="leading-8 text-gray-700">
+              2026-3 döneminde bir kuruluş en fazla 2 proje önerisiyle
+              başvurabiliyor. Ayrıca bir kuruluşun tüm 1832 çağrılarından
+              toplamda alabileceği geri ödemeli destek, ölçeğine göre
+              500.000 ile 1.500.000 dolar arasında kümülatif bir üst
+              sınıra tabi; önceki çağrılardan alınan destekler bu limitten
+              düşülerek hesaplanıyor.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -670,7 +737,7 @@ export default function Tubitak1832Page() {
       <section className="mt-24 scroll-mt-24">
         <div className="rounded-2xl border-l-4 border-orange-500 bg-orange-50 p-8">
           <h3 className="mb-4 text-2xl font-bold text-[#071A2F]">
-            🤝 28 Eylül 2026&apos;ya Kadar Başvuru Dosyanızı Birlikte Hazırlayalım
+            🤝 4 Ocak 2027&apos;ye Kadar Başvuru Dosyanızı Birlikte Hazırlayalım
           </h3>
           <p className="leading-8 text-gray-700">
             Hangi Yeşil Dönüşüm Göstergesini hedefleyebileceğinizi, proje
@@ -697,7 +764,7 @@ export default function Tubitak1832Page() {
         <p className="mb-6 text-lg leading-9 text-gray-700">
           TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı, enerji ve su
           maliyetlerini düşürmeyi ya da atığını azaltmayı hedefleyen sanayi
-          kuruluşları için 51,5 milyon TL&apos;ye varan bütçe üst sınırıyla
+          kuruluşları için 55 milyon TL&apos;ye varan bütçe üst sınırıyla
           önemli bir fırsat sunuyor. Ancak buradaki asıl soru &quot;ne
           kadar destek alırım&quot; değil, &quot;Yeşil Dönüşüm
           Göstergelerinden birini gerçekten tutturabilir miyim&quot;
@@ -705,10 +772,11 @@ export default function Tubitak1832Page() {
           olduğunda ortaya çıkıyor.
         </p>
         <p className="text-lg leading-9 text-gray-700">
-          2026-2 döneminde son başvuru tarihi olan 28 Eylül 2026&apos;ya
-          kalan süre kısıtlı olduğundan, fizibilite raporunu ve ölçülebilir
-          YDG hedefini netleştirme adımına vakit kaybetmeden başlanması
-          önerilir.
+          2026-3 döneminde son başvuru tarihi olan 4 Ocak 2027&apos;ye
+          kadar hâlâ süre bulunsa da, kuruluş bazlı ön kaydın çağrı
+          açılışının beklenmeden tamamlanabildiğini unutmadan, fizibilite
+          raporunu ve ölçülebilir YDG hedefini netleştirme adımına vakit
+          kaybetmeden başlanması önerilir.
         </p>
       </section>
 
@@ -743,7 +811,7 @@ export default function Tubitak1832Page() {
       </section>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"TÜBİTAK 1832 desteği tamamen hibe mi, yoksa geri ödemeli mi?","acceptedAnswer":{"@type":"Answer","text":"İkisinin karışımı. Destek önce faizsiz, geri ödemeli olarak kullandırılıyor. Proje tamamlandığında Yeşil Dönüşüm Göstergelerinden en az birinde hedefe ulaşıldığı doğrulanırsa, kullanılan tutarın bir kısmı hibeye dönüşüyor; kalan kısım faizsiz şekilde geri ödeniyor."}},{"@type":"Question","name":"Büyük ölçekli şirketler de 1832'ye başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Program hem KOBİ hem de büyük ölçekli sermaye şirketlerine açık; ancak destek oranı ve bütçe üst sınırı ölçeğe göre farklılaşıyor. Büyük ölçekli şirketlerde oran %70, bütçe üst sınırı 51,5 milyon TL'dir."}},{"@type":"Question","name":"Ön kayıt ile nihai başvuru tarihi aynı gün mü?","acceptedAnswer":{"@type":"Answer","text":"Hayır, farklı tarihler. 2026-2 döneminde kuruluş bazlı ön kayıt en geç 24 Eylül 2026'ya kadar tamamlanmalı; asıl proje önerisi ise 28 Eylül 2026 saat 23.59'a kadar PRODİS üzerinden nihai olarak gönderilmelidir."}},{"@type":"Question","name":"Proje sonunda Yeşil Dönüşüm Göstergesi hedefine ulaşılamazsa ne olur?","acceptedAnswer":{"@type":"Answer","text":"Hedefe ulaşılamazsa hibeye dönüşüm gerçekleşmez ve kullanılan destek tutarının tamamı, TÜBİTAK'ın belirlediği geri ödeme takvimine göre faizsiz şekilde iade edilir. Bu nedenle başvuru aşamasında hedefin gerçekçi ve ölçülebilir belirlenmesi önem taşıyor."}},{"@type":"Question","name":"TÜBİTAK 1832 ile KOSGEB Yeşil Sanayi Destek Programı aynı program mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İkisi de Türkiye Yeşil Sanayi Projesi kapsamında yürütülse de ayrı programlardır. 1832, TÜBİTAK üzerinden Ar-Ge/yenilik projelerini destekler; KOSGEB Yeşil Sanayi Destek Programı ise KOBİ'lerin çatı tipi güneş enerjisi veya döngüsel ekonomi yatırımlarını KBS üzerinden destekler."}},{"@type":"Question","name":"Bir başvuruya kaç kuruluş ortak olabilir?","acceptedAnswer":{"@type":"Answer","text":"Başvuru tek bir kuruluş tarafından yapılabileceği gibi, en fazla 3 kuruluşun bir araya geldiği bir ortaklık şeklinde de yapılabilir."}}]}) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"TÜBİTAK 1832 desteği tamamen hibe mi, yoksa geri ödemeli mi?","acceptedAnswer":{"@type":"Answer","text":"İkisinin karışımı. Destek önce faizsiz, geri ödemeli olarak kullandırılıyor. Proje tamamlandığında Yeşil Dönüşüm Göstergelerinden en az birinde hedefe ulaşıldığı doğrulanırsa, kullanılan tutarın bir kısmı hibeye dönüşüyor; kalan kısım faizsiz şekilde geri ödeniyor."}},{"@type":"Question","name":"Büyük ölçekli şirketler de 1832'ye başvurabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Program hem KOBİ hem de büyük ölçekli sermaye şirketlerine açık; ancak destek oranı ve bütçe üst sınırı ölçeğe göre farklılaşıyor. Büyük ölçekli şirketlerde oran %70, bütçe üst sınırı 55 milyon TL'dir."}},{"@type":"Question","name":"Ön kayıt ile nihai başvuru tarihi aynı gün mü?","acceptedAnswer":{"@type":"Answer","text":"Hayır, farklı tarihler. 2026-3 döneminde kuruluş bazlı ön kayıt en geç 30 Aralık 2026'ya kadar tamamlanmalı; asıl proje önerisi ise 4 Ocak 2027'ye kadar PRODİS üzerinden nihai olarak gönderilmelidir."}},{"@type":"Question","name":"Proje sonunda Yeşil Dönüşüm Göstergesi hedefine ulaşılamazsa ne olur?","acceptedAnswer":{"@type":"Answer","text":"Hedefe ulaşılamazsa hibeye dönüşüm gerçekleşmez ve kullanılan destek tutarının tamamı, TÜBİTAK'ın belirlediği geri ödeme takvimine göre faizsiz şekilde iade edilir. Bu nedenle başvuru aşamasında hedefin gerçekçi ve ölçülebilir belirlenmesi önem taşıyor."}},{"@type":"Question","name":"TÜBİTAK 1832 ile KOSGEB Yeşil Sanayi Destek Programı aynı program mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İkisi de Türkiye Yeşil Sanayi Projesi kapsamında yürütülse de ayrı programlardır. 1832, TÜBİTAK üzerinden Ar-Ge/yenilik projelerini destekler; KOSGEB Yeşil Sanayi Destek Programı ise KOBİ'lerin çatı tipi güneş enerjisi veya döngüsel ekonomi yatırımlarını KBS üzerinden destekler."}},{"@type":"Question","name":"Bir başvuruya kaç kuruluş ortak olabilir?","acceptedAnswer":{"@type":"Answer","text":"Başvuru tek bir kuruluş tarafından yapılabileceği gibi, en fazla 3 kuruluşun bir araya geldiği bir ortaklık şeklinde de yapılabilir."}},{"@type":"Question","name":"Bir kuruluş kaç proje önerisiyle başvurabilir ve kullanılan destek sınırsız mı?","acceptedAnswer":{"@type":"Answer","text":"2026-3 döneminde bir kuruluş en fazla 2 proje önerisiyle başvurabiliyor. Ayrıca bir kuruluşun tüm 1832 çağrılarından toplamda alabileceği geri ödemeli destek, ölçeğine göre 500.000 ile 1.500.000 dolar arasında kümülatif bir üst sınıra tabi; önceki çağrılardan alınan destekler bu limitten düşülerek hesaplanıyor."}}]}) }}
       />
     </BlogLayout>
   );

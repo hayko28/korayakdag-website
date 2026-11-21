@@ -1100,10 +1100,10 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: "tubitak-1832-sanayide-yesil-donusum-cagrisi-2026",
-    title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-2: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?",
-    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-2 dönemi 28 Eylül 2026'da kapandı. KOBİ ve büyük ölçekli şirketler için 51,5 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla rehber.",
+    title: "TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı 2026-3: Kimler Başvurabilir, Destek Nasıl Hibeye Dönüşür?",
+    excerpt: "Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yürütülen TÜBİTAK 1832 Sanayide Yeşil Dönüşüm Çağrısı'nın 2026-3 dönemi 9 Kasım 2026'da açıldı, başvurular 4 Ocak 2027'ye kadar sürüyor. KOBİ ve büyük ölçekli şirketler için 55 milyon TL'ye varan bütçe üst sınırı, Yeşil Dönüşüm Göstergeleri ve geri ödemeli desteğin hibeye dönüşme mekanizmasıyla güncel rehber.",
     category: "TÜBİTAK • YEŞİL DÖNÜŞÜM • 2026",
-    date: "2026",
+    date: "Kasım 2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
