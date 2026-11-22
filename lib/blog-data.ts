@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "pay-defteri-elektronik-ortamda-tutma-zorunlulugu-etds-2026",
+    title: "Yeni Kurduğunuz Şirkette Pay Defteri Elektronik Olmak Zorunda mı? ETDS Rehberi",
+    excerpt: "14 Şubat 2025 tarihli ve 32813 sayılı Resmî Gazete'de yayımlanan Tebliğ'e göre, 1 Ocak 2026'dan itibaren ticaret siciline tescil edilen tüm ticaret şirketleri pay defterini ve genel kurul toplantı ve müzakere defterini Elektronik Ticari Defter Sistemi'nde (ETDS) tutmak zorunda. Hangi defterler kapsamda, yönetim kurulu karar defteriyle farkı, kuruluş sürecindeki adımlar ve dikkat edilmesi gerekenlerle güncel rehber.",
+    category: "TİCARET HUKUKU • ELEKTRONİK TİCARİ DEFTER SİSTEMİ • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1780246032682-b2dd1a6291d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "companies-house-kimlik-dogrulama-zorunlulugu-ingiltere-sirketi-2026",
     title: "Companies House Kimlik Doğrulamasını Yaptırmadıysanız Ne Olur? İngiltere'deki Şirketiniz İçin Geçiş Süresi Sona Erdi",
     excerpt: "İngiltere'de director, LLP üyesi ve PSC'lere yönelik Companies House kimlik doğrulama zorunluluğunda, 18 Kasım 2025'te başlayan 12 aylık geçiş süresi 18 Kasım 2026'da sona erdi. Mevcut yöneticiler için doğrulamanın confirmation statement tarihine bağlı olduğu takvim, GOV.UK One Login ve ACSP ile doğrulama yolları, doğrulama yapılmazsa ortaya çıkan sonuçlar ve Türkiye'den yönetilen İngiltere şirketleri için güncel rehber.",
