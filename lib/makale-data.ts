@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "ige-ihracat-kalkaninda-teminatsiz-kobi-kredisi",
+    title:
+      "Teminatı Olmayan Bir İhracatçı, İGE'nin Yeni Kefalet Paketinden Nasıl Yararlanır?",
+    excerpt:
+      "İhracatı Geliştirme A.Ş.'nin 12 Ekim 2026'da duyurduğu İhracat Kalkanı Destek Paketi, kredibilitesi yeterli ama teminatı yetersiz ihracatçılara öz kaynağından kefalet vererek KOBİ'lere 30 milyon TL'ye, KOBİ dışı firmalara 50 milyon TL'ye kadar ek kredi imkanı açıyor. Başvuru takvimi 31 Aralık 2027'ye kadar açık görünse de, ihracatçı birliği üyeliği şartı ve sınırlı kefalet kaynağı, erken başvuranla geç başvuranı birbirinden ayırıyor.",
+    tag: "Devlet Destekleri",
+    date: "22 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yapay-zekayla-cv-elemede-kvkk-itiraz-hakki",
     title:
       "İşe Alım Yazılımı Bir Adayı Elediğinde, O Kararı Gerçekte Kim Verdi?",
