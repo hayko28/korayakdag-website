@@ -2829,6 +2829,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: İşlem sayısının azalıp hacminin büyümesi, alıcıların daha seçici davrandığı ve küçük/orta ölçekli bir şirketin satış sürecine girerken değerleme hazırlığına eskisinden daha fazla özen göstermesi gerektiği anlamına gelebilir. Yıl sonuna kadar şirketini değerlendirmeyi planlayan sahiplere, finansal ve operasyonel verilerini şimdiden düzene koymalarını öneririm.",
   },
+  {
+    kurum: "SPK",
+    tarih: "13 Kasım 2026",
+    eklendiTarihi: "2026-11-22",
+    baslik:
+      "SPK, kredili işlemlerde özkaynak oranı esnekliğini 31 Aralık 2026'ya kadar uzattı",
+    ozet:
+      "Sermaye Piyasası Kurulu Karar Organı'nın 27 Ekim 2026 tarih ve 76/1918 sayılı kararıyla getirdiği, kredili sermaye piyasası işlemlerinde özkaynak oranının esnetilerek uygulanmasına imkân tanıyan tedbir, 13 Kasım 2026 tarih ve 83/1985 sayılı kararla 31 Aralık 2026 seans sonuna kadar uzatıldı. Düzenleme, marjin ile işlem yapan yatırımcılar için özkaynak/teminat oranı hesaplamasında yıl sonuna kadar geçerli bir esneklik sağlıyor.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6afa78b895131d72027ddcec/FRKS/tr/tekrar-spk-kredili-islemlerde-ozkaynak-oranina-iliskin-tedbirin-suresini-yil-sonuna-kadar-uzatti-16-11-26/",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Bu tedbir doğrudan kredili (marjin) işlem yapan yatırımcıları ilgilendiriyor; halka açık şirket yöneticilerine ve yatırımcı ilişkileri ekiplerine, piyasadaki işlem hacmini etkileyebilecek bu tür düzenlemeleri yıl sonu sermaye piyasası planlamalarında dikkate almalarını öneririm.",
+  },
+  {
+    kurum: "Türk Eximbank",
+    tarih: "18 Kasım 2026",
+    eklendiTarihi: "2026-11-22",
+    baslik:
+      "Türk Eximbank, Japonya'nın NEXI'siyle reasürans anlaşması imzaladı; iş birliği ağı 16 kuruma çıktı",
+    ozet:
+      "Türk Eximbank, Tokyo'da düzenlenen Berne Union Yıllık Toplantısı kapsamında Japonya'nın resmi ihracat kredi kuruluşu NEXI ile 18 Kasım 2026'da bir reasürans anlaşması imzaladı. 2017 tarihli mutabakat zaptına dayanan anlaşma, Türk ve Japon firmalarının üçüncü ülkelerdeki projelerine tek başvuru noktasından ortak destek verilmesini sağlıyor; bu adımla Türk Eximbank'ın reasürans iş birliği ağındaki kuruluş sayısı 16'ya yükseldi.",
+    kaynakUrl:
+      "https://www.bloomberght.com/turk-eximbank-ve-nexi-den-reasurans-anlasmasi-3795003",
+    konu: "Yurt Dışı Şirket Kuruluşu ve Uluslararası İş Geliştirme",
+    expertNote:
+      "Koray'ın notu: Üçüncü ülke projelerinde Türk ve Japon firmalarının aynı sigorta/finansman çatısı altında buluşabilmesi, Afrika ve Orta Asya'daki büyük projelere tedarikçi olmak isteyen ihracatçılar için bir fırsat olabilir. Bu tür ortak finansman yapılarını, proje teklifini hazırlamadan önce Eximbank'ın ilgili birimiyle değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
