@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tubitak-1507-on-kayit-takvimi-kaciran-kobi",
+    title:
+      "TÜBİTAK'ın Uzattığı Sürede Çoğu KOBİ'nin Gözden Kaçırdığı Tek Tarih",
+    excerpt:
+      "TÜBİTAK'ın 9 Kasım'da uzattığı 1507 KOBİ Ar-Ge Başlangıç Destek Programı ve 1707 Siparişe Dayalı Ar-Ge Projeleri Destekleme Programı çağrılarında, uzatılan tarih başvurunun kendisi değil kurum bazlı ön kayıt. 1507'de ön kayıt 23 Kasım'da, başvuru kapanışı 25 Kasım'da; 1707'de ön kayıt 25 Kasım'da, başvuru kapanışı 27 Kasım'da bitiyor. Bu iki aşamayı birbirine karıştıran bir işletme, hazırladığı projeyi sisteme girecek zamanı hiç bulamıyor.",
+    tag: "Devlet Destekleri",
+    date: "23 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "ige-ihracat-kalkaninda-teminatsiz-kobi-kredisi",
     title:
       "Teminatı Olmayan Bir İhracatçı, İGE'nin Yeni Kefalet Paketinden Nasıl Yararlanır?",
