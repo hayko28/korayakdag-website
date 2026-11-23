@@ -5,6 +5,20 @@ import { MAKALELER } from "@/lib/makale-data";
 
 const BASE_URL = "https://korayakdag.com";
 
+const TR_MONTHS = [
+  "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+  "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
+];
+
+// "23 Kasım 2026" -> Date. Yalnızca gün+ay+yıl varsa döner; "Kasım 2026" gibi eksik tarihte undefined.
+function parseTrDate(value: string): Date | undefined {
+  const match = value.trim().match(/^(\d{1,2})\s+(\S+)\s+(\d{4})$/);
+  if (!match) return undefined;
+  const month = TR_MONTHS.indexOf(match[2]);
+  if (month === -1) return undefined;
+  return new Date(Date.UTC(Number(match[3]), month, Number(match[1])));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "weekly", priority: 1 },
@@ -33,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const trBlogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: parseTrDate(post.date),
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -45,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const makaleRoutes: MetadataRoute.Sitemap = MAKALELER.map((makale) => ({
     url: `${BASE_URL}/makaleler/${makale.slug}`,
+    lastModified: parseTrDate(makale.date),
     changeFrequency: "monthly",
     priority: 0.6,
   }));
