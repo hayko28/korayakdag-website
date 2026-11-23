@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -9,6 +10,13 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Koray Akdağ | Strategy and Business Development Consultant",
+  description:
+    "Strategic advisory, business development, government incentives and company formation support for foreign and Turkish investors.",
+  alternates: { canonical: "/en" },
+};
 
 export default function HomeEn() {
   return (

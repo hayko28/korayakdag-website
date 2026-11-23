@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import ContactCtaButton from "@/components/ContactCtaButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/web-sitesi-paketi" },
   title: "Web Sitesi Paketi | Koray Akdağ",
   description:
     "Bu site gibi mobil uyumlu, hızlı, kendi yönetici panelinizden yönetebileceğiniz anahtar teslim kurumsal web sitesi. Başlangıç fiyatı 30.000 ₺ +KDV, 12 taksit imkanı.",

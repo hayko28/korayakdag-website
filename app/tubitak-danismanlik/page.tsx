@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import ContactCtaButton from "@/components/ContactCtaButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/tubitak-danismanlik" },
   title: "TÜBİTAK Danışmanlığı | Koray Akdağ",
   description:
     "TÜBİTAK 1501, 1507, 1707 ve 1711 gibi Ar-Ge destek programları için uygunluk analizinden proje başvurusuna kadar danışmanlık. Şirketinize uygun çağrıyı birlikte belirleyelim.",

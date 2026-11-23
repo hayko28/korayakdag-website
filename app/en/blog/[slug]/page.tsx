@@ -4,6 +4,23 @@ import { initializeDatabase, sql } from "@/lib/database";
 
 export const dynamic = "force-dynamic";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  await initializeDatabase();
+  const rows = await sql`SELECT title, excerpt FROM posts WHERE slug = ${slug} AND status = 'published' AND locale = 'en'`;
+  const post = rows[0];
+  if (!post) return {};
+  return {
+    title: `${post.title} | Koray Akdağ`,
+    description: post.excerpt,
+    alternates: { canonical: `/en/blog/${slug}` },
+  };
+}
+
 export default async function PostPageEn({
   params,
 }: {

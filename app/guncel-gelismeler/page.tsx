@@ -9,6 +9,7 @@ import { getVisibleGelismeler } from "@/lib/gelismeler-data";
 import { MAKALELER } from "@/lib/makale-data";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guncel-gelismeler" },
   title: "Güncel Gelişmeler | Koray Akdağ",
   description:
     "Devlet destekleri, teşvikler, yurt dışı şirket kuruluşu, hukuk/vergi, kurumsal gelişim ve pazarlama alanlarındaki güncel gelişmeler ve kişisel değerlendirmeler.",

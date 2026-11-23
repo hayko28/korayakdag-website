@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import ContactCtaButton from "@/components/ContactCtaButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/yatirim-tesvik-belgesi-danismanligi" },
   title: "Yatırım Teşvik Belgesi Danışmanlığı | Koray Akdağ",
   description:
     "9903 sayılı Hedef Yatırımlar Teşvik Sistemi kapsamında Yatırım Teşvik Belgesi başvurusu, bölge/sektör uygunluk analizi ve E-TUYS süreci için uçtan uca danışmanlık.",

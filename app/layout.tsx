@@ -21,9 +21,6 @@ export const metadata: Metadata = {
   title: "Koray Akdağ | Stratejik Danışmanlık",
   description:
     "Stratejik danışmanlık, iş geliştirme, satış yönetimi, yatırım teşvikleri ve uluslararası büyüme çözümleri.",
-  alternates: {
-    canonical: "/",
-  },
   verification: {
     google: "zzlyEjheKuk_eAkgoCyz_fdYt485aPFKbUuiNvQQb5o",
   },

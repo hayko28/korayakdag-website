@@ -33,6 +33,7 @@ function yaklasanSonTarihler() {
 
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/tesvik-takvimi" },
   title: "Güncel Destek ve Teşvik Programları Takvimi 2026 | Koray Akdağ",
   description:
     "KOSGEB, TÜBİTAK, Ticaret Bakanlığı, TKDK ve Yatırım Teşvik Belgesi kapsamındaki güncel destek ve teşvik programları; son başvuru tarihleri, şartlar, destek oranları ve ödeme şekilleriyle birlikte.",

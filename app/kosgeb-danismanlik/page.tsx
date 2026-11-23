@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import ContactCtaButton from "@/components/ContactCtaButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/kosgeb-danismanlik" },
   title: "KOSGEB Danışmanlığı | Koray Akdağ",
   description:
     "KOSGEB uygunluk analizinden başvuru dosyasına, süreç takibinden raporlamaya kadar KOSGEB destek programları için uçtan uca danışmanlık. Hangi programa uygun olduğunuzu birlikte belirleyelim.",

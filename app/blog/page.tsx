@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import BlogHero from "@/components/blog/BlogHero";
 import BlogList from "@/components/blog/BlogList";
@@ -7,6 +8,13 @@ import { BLOG_POSTS } from "@/lib/blog-data";
 import { initializeDatabase, sql } from "@/lib/database";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Blog | Koray Akdağ",
+  description:
+    "Devlet destekleri, yatırım teşvikleri, yurt dışı şirket kuruluşu ve şirket değerleme üzerine güncel, kaynaklı rehberler ve analizler.",
+  alternates: { canonical: "/blog" },
+};
 
 const BlogPage = async () => {
   await initializeDatabase();

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SahadanKareler from "@/components/SahadanKareler";
@@ -11,6 +12,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

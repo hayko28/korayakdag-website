@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import DestekUygunlukForm from "@/components/DestekUygunlukForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/destek-uygunluk-analizi" },
   title: "Destek ve Teşvik Uygunluk Analizi | Koray Akdağ",
   description:
     "Şirketiniz için uygun olabilecek KOSGEB, TÜBİTAK, Yatırım Teşvik Belgesi, Turquality, ihracat destekleri ve TKDK gibi devlet destek, teşvik ve finansman fırsatlarını ücretsiz keşfedin.",

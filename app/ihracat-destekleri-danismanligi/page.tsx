@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import ContactCtaButton from "@/components/ContactCtaButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ihracat-destekleri-danismanligi" },
   title: "İhracat Destekleri ve Turquality Danışmanlığı | Koray Akdağ",
   description:
     "Ticaret Bakanlığı'nın Turquality, Pazara Giriş, Fuar Katılımı, Yurt Dışı Marka Tescili ve E-İhracat gibi ihracat destek programları için uygunluk analizinden DYS başvurusuna kadar danışmanlık.",

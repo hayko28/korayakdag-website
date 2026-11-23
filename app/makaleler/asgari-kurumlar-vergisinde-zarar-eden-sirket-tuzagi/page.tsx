@@ -10,6 +10,7 @@ const meta = MAKALELER.find(
 export const metadata: Metadata = {
   title: `${meta.title} | Koray Akdağ`,
   description: meta.excerpt,
+  alternates: { canonical: `/makaleler/${meta.slug}` },
 };
 
 export default function MakalePage() {
