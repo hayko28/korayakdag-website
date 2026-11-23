@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   title: "Koray Akdağ | Strategy and Business Development Consultant",
   description:
     "Strategic advisory, business development, government incentives and company formation support for foreign and Turkish investors.",
-  alternates: { canonical: "/en" },
+  alternates: {
+    canonical: "/en",
+    languages: { tr: "/", en: "/en", "x-default": "/" },
+  },
 };
 
 export default function HomeEn() {

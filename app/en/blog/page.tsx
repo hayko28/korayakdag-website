@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: "Blog | Koray Akdağ",
   description:
     "Guides on investing in Turkey, company formation, incentives and valuation for foreign investors.",
-  alternates: { canonical: "/en/blog" },
+  alternates: {
+    canonical: "/en/blog",
+    languages: { tr: "/blog", en: "/en/blog", "x-default": "/blog" },
+  },
 };
 
 const BlogPageEn = async () => {

@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: "Blog | Koray Akdağ",
   description:
     "Devlet destekleri, yatırım teşvikleri, yurt dışı şirket kuruluşu ve şirket değerleme üzerine güncel, kaynaklı rehberler ve analizler.",
-  alternates: { canonical: "/blog" },
+  alternates: {
+    canonical: "/blog",
+    languages: { tr: "/blog", en: "/en/blog", "x-default": "/blog" },
+  },
 };
 
 const BlogPage = async () => {

@@ -14,7 +14,10 @@ import Footer from "@/components/Footer";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: { tr: "/", en: "/en", "x-default": "/" },
+  },
 };
 
 export default function Home() {
