@@ -48,7 +48,7 @@ Konu ararken Bölüm 1'deki aynı öncelik geçerli: önce güncel bir ekonomik 
 
 **Aynı uyarılar burada da geçerli:** kesin hukuki/mali garanti verme, rakip firma ismi geçirme.
 
-Teknik: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.tsx`'i örnek al, yeni `app/makaleler/{yeni-slug}/page.tsx` oluştur; `lib/makale-data.ts`'e kaydını ekle.
+Teknik: `components/MakaleLayout.tsx` ve mevcut bir `app/makaleler/{slug}/page.tsx`'i örnek al, yeni `app/makaleler/{yeni-slug}/page.tsx` oluştur (`metadata` içinde `alternates: { canonical: `/makaleler/${meta.slug}` }` satırı ZORUNLU, mevcut sayfalardaki gibi); `lib/makale-data.ts`'e kaydını ekle.
 
 ---
 
