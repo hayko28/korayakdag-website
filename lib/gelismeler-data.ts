@@ -2857,6 +2857,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Üçüncü ülke projelerinde Türk ve Japon firmalarının aynı sigorta/finansman çatısı altında buluşabilmesi, Afrika ve Orta Asya'daki büyük projelere tedarikçi olmak isteyen ihracatçılar için bir fırsat olabilir. Bu tür ortak finansman yapılarını, proje teklifini hazırlamadan önce Eximbank'ın ilgili birimiyle değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "Hazine ve Maliye Bakanlığı",
+    tarih: "16 Kasım 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-23",
+    baslik:
+      "Merkezi yönetim bütçesi Ekim'de 481,1 milyar TL açık verdi, faiz giderleri yıllık %91,4 arttı",
+    ozet:
+      "Hazine ve Maliye Bakanlığı'nın 16 Kasım 2026'da yayımladığı Ekim 2026 Aylık Bütçe Gerçekleşme Raporu'na göre merkezi yönetim bütçesi ekimde 481,1 milyar TL açık verdi; bütçe giderleri 1 trilyon 779,4 milyar TL'ye, bütçe gelirleri ise 1 trilyon 298,3 milyar TL'ye ulaştı. Faiz dışı açık 179,8 milyar TL olurken faiz harcamaları 301,3 milyar TL'ye çıktı. Ocak-Ekim döneminde toplam bütçe açığı 2 trilyon 321,4 milyar TL'ye ulaştı, yıl için öngörülen 2 trilyon 712,7 milyar TL'lik açığın yüzde 85,6'sı on ayda gerçekleşmiş oldu.",
+    kaynakUrl:
+      "https://www.sabah.com.tr/ekonomi/merkezi-yonetim-butcesinde-ekim-tablosu-7702746",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Yıllık hedefin onda sekizinin yılın ilk on ayında tükenmesi, kalan iki ayda ek bir vergi düzenlemesi veya harcama kısıtlaması ihtimalini gündemde tutuyor. İşletmelere 2027 bütçelerini kurarken bu riski göz ardı etmemelerini öneririm.",
+  },
+  {
+    kurum: "TRAI",
+    tarih: "18 Ekim 2026",
+    eklendiTarihi: "2026-11-23",
+    baslik:
+      "TRAI Girişim Haritası: Türkiye'deki yapay zekâ girişimi sayısı ilk kez 500'ü geçti",
+    ozet:
+      "Türkiye Yapay Zeka İnisiyatifi'nin (TRAI) Ekim 2026 güncellemesine göre haritaya kayıtlı yapay zekâ girişimi sayısı, nisandaki 482'den 504'e yükseldi; 43 yeni girişim eklenirken faaliyetini sonlandıran 21 girişim haritadan çıkarıldı. Yeni eklenen girişimlerin en yoğun olduğu kategori, nisanda 5 girişimden Ekim'de 10 girişime çıkan etken yapay zekâ (agentic AI) oldu; hukuk teknolojileri ve İK teknolojileri kategorilerinde de belirgin artış görüldü. Girişimlerin büyük çoğunluğu İstanbul merkezli.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6ad4de3758b1b941c208c4c7/FRKS/tr/turkiye-de-yapay-zeka-girisimi-sayisi-504-e-yukseldi-18-10-26/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Etken yapay zekâ ve hukuk teknolojileri gibi dar alanlarda hızla yeni girişimlerin ortaya çıkması, bu alanlarda henüz oturmuş bir pazar lideri bulunmadığını gösteriyor. Hukuk, muhasebe veya İK süreçlerini yazılımla dönüştürmeyi değerlendiren hizmet şirketlerine bu haritayı rakip/ortak analizi için takip etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
