@@ -27,7 +27,7 @@ Düzeltme: layout'taki genel canonical'ı kaldırmak ve eksik sayfalara kendi ca
 ### 3. /en sayfalarında dil ve hreflang hatası
 - /en ve /en/blog/* sayfalarında `<html lang="tr">`.
 - /en ana sayfasının title ve description'ı Türkçe.
-- Sitede hiç hreflang yok, TR ve EN eşleşmeleri Google'a bildirilmiyor.
+- DÜZELTME: Blog çevirilerinde (18 çift) hreflang vardı, ilk taramada büyük/küçük harf yüzünden kaçırıldı. Eksik olan ana sayfa ve liste sayfalarıydı, eklendi.
 
 ## Orta
 
@@ -60,3 +60,9 @@ Birçok sayfada 200-570 karakter (blog 370, makale 573, ornek-senaryolar 320). G
 
 ## Bilinmeyenler
 Search Console'daki dizinleme durumu ("Alternatif sayfa, uygun kanonik etiketi var" gibi) bu bulguyu doğrulayabilir. Koray'ın GSC'de Sayfalar raporuna bakması önerilir.
+
+## Uygulananlar (23 Kasım 2026)
+- Canonical düzeltmesi: layout'taki genel canonical kaldırıldı, 128 makale ve 13+ sayfaya kendi canonical'ı eklendi.
+- Sitemap'e 5 eksik sayfa eklendi (lastmod hâlâ yok).
+- Ana sayfa ve blog liste sayfalarına TR-EN hreflang eklendi.
+- Yapılmadı: html lang (tek kök layout, riskli), meta description kısaltma, www domain, lastmod.
