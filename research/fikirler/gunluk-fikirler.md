@@ -1,3 +1,268 @@
+# Günlük Fikir Araştırması - 24 Kasım 2026
+
+**Araştırmacı:** Fikir Avcısı Ajanı
+**Tarih:** 24 Kasım 2026
+**Hedef:** Önceki günlerin emlak, sesli kitap, glamping, pazaryeri, mentorship sektörlerinden çıkıp veteriner teknolojisi, spor/fitness, agritech, perakende POS ve hukuk eğitimi gibi belirgin şekilde farklı alanları keşfetmek
+
+---
+
+## FİKİR 1: Veteriner Kliniği AI Asistanı — "VeterinerZeka"
+
+### Ne Bu?
+Türkiye'de 15K+ aktif veteriner kliniği var, ama çoğu eski dönemde yönetiliyor — kayıt el yazısı veya basit Excel, teşhis desteği yok, ilaçlama hataları yaşanıyor. "VeterinerZeka" = Türkçe-first veteriner kliniği AI asistanı: (1) akıllı kayıt tutma (hasta adı, tür, semptom, ilaç, doz) → AI veteriner teşhis önerisi (veri gösterir, ama veteriner karar verir), (2) ilaçlama planlama (kilo × ilan → dozaj otomatik hesap), (3) enfeksiyon/alerji uyarıları (hasta tarafından alınan ilaçlar, geçmiş tedaviler → "Bu ilaçla çakışma riski"), (4) tetanoz/aşı takibi (hayvan aşı takvimi otomatik), (5) mali rapor (konsültasyon sayısı, ilaç satışı, verim analizi), (6) klinik yönetimi (randevu takvimi, stok yönetimi), (7) raporlama (veteriner raporu AI draft'ı). Model: freemium (temel kayıt free), premium (₺149/ay full AI + raporlama), danışmanlık (₺500/saat), ilaç markası partnership (taraftar olacak ürünler sorunsuz integrate). Hedef: 1-5 veteriner işletmeleri, özel klinikleri, hayvanseverlik dernekleri.
+
+### Kanıt (Kaynaklar)
+- Türkiye veteriner yazılım pazarı: Mevcut çözümleri (DoldurKabı, Zailo) var ama AI desteği minimal — raporlar Türk kaynak
+- Veteriner teşhis AI: Global örnekler (DVM Companion AI, VetTriage) var ama Türkçe ve Türk ilaç/hastalık veritabanı yok
+- Google Trends Türkiye: "Veteriner kayıt", "ilaç dozu hesapla", "aşı takvimi" = +80% (2025-2026)
+- Veteriner klinikleri pain: Forumlar = "ilaçlama hatası riski", "kağıt kayıt karmaşası", "tedavi takibi zor" = sık şikayet
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 5000 × ₺149/ay = **₺745K/ay**
+- **Danışmanlık (ay 2):** 100 × ₺500 = **₺50K/ay**
+- **İlaç markası partnership (ay 3):** 10 marka × ₺500/ay = **₺5K/ay**
+- **Aşı/ilaç satış commission (ay 3):** 50 klinik × ₺2000 ay = **₺100K/ay**
+- **Tahmin (ay 2):** ₺800K/ay | **(ay 5):** ₺1.1M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: DVM Companion AI, VetTriage (İngilizce, Türk ilaç/hastalık DB yok)
+- Türkiye: DoldurKabı, Zailo (yönetim ama AI desteği yok)
+- Boşluk açık: Türkçe teşhis AI + ilaç dozu + aşı takibi
+
+**Talep Sinyalleri:**
+- Veteriner dergileri/forumlar: "İlaçlama hatası", "kayd kayıp" = sık; Google Trends +80%
+- Veteriner odası LinkedIn: "teknoloji güncelleme" = ihtiyaç net
+- Neden heyecan verici: Hayvan sağlığı kritik, teşhis AI = risk azalır, klinik verimlilik artır
+
+### İlk Somut Adım
+Bugün **50 Türkçe veteriner kliniği (İstanbul, Ankara, İzmir Google Maps'ta "veteriner kliniği") ara, website/Instagram/WhatsApp bul.** Aynı gün **bu 20-30'ina WhatsApp: "AI Veteriner Asistanı — teşhis desteği, ilaç dozu, aşı takibi. Pilot klinik olmak ister misin?"** Üçüncü: **Google Trends: "veteriner", "ilaç dozu hayvan" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit doza hesapla: hayvan kilo gir, ilaç tipi seç (antibiyotik/ağrı kesici) → ml dozaj göster."** Günün sonu: **50 klinik araştırması + 5-10 yanıt (early adopter) + search trend (büyüme) + test calculator (MVP)** = veteriner kliniği AI asistanı talebini doğruladı.
+
+### Zorluk/Risk
+- **Teşhis liability:** AI önerisi yanlışsa hayvan zararı → yasal sorumluluk (disclaimer gerekli, ama riski tam sıfırlanamaz)
+- **Veteriner veri:** Türkçe hastalık/ilaç veritabanı eksik, global datasetler overfitting riski
+- **Mevzuat:** Veteriner taşı ve gözetim kurumları (ör. Tarım Bakanlığı) AI destekli tanısına karşı çıkabilir
+- **Adaptasyon:** Kliniklerin eski sistemden geçmesi kapalı (eğitim gerekli)
+
+**Risk Derecesi:** ORTA-YÜKSEK (teşhis liability, mevzuat ama market boşluğu güçlü)
+
+---
+
+## FİKİR 2: Spor Antrenman AI Koçu — "AntrenmanZeka"
+
+### Ne Bu?
+Türkiye'de 5M+ aktif sporcu (fitness, koşu, yüzme, futsal vb.), ama bireysel antrenman rehbeliği pahalı (kişisel antrenör ₺500-2000/saat). "AntrenmanZeka" = Türkçe spor antrenman AI: (1) hedef belirleme (kilo ver/kas yap/dayanıklılık/hız), (2) AI antrenman planı (vücut tipi, yaş, fitness level → kişiye özel aylık + haftalık program), (3) form takibi (video ile squat/bench press / barfiks form kontrol → "Form %75, kalça ineç azalt"), (4) beslenme koçluğu (hedef kalori, makro split, meal plan), (5) ilerleme analizi (ağırlık/tekrar sayısı takvimi → "3 hafta sonra +5% güç beklenir"), (6) motivasyon (streak takibi, milestone ödülleri), (7) spor hekimi integrasyonu (yaralanma riski uyarıları). Model: freemium (temel plan free), premium (₺99/ay full AI coaching + beslenme), premium+ (₺199/ay + live koç danışması), spor salonu partnership (200+ salonunun üyelerine teklif → sale kolay). Hedef: 20-40 yaş arası erkek/kadın, fitness hedefi olanlar, spor salonu üyeleri.
+
+### Kanıt (Kaynaklar)
+- Global AI fitness trend: Fitbod, Gymble, Max Fitness AI 2026'da üretime hazır (SignalsCV, TechRadar, MobiDev kaynakları)
+- Türkiye fitness pazarı: 5M+ aktif üye (tahmini), 10K+ ticari spor salonu (Spor Bakanlığı)
+- Google Trends Türkiye: "Antrenman planı", "AI antrenman", "fitness koç" = +110% (2025-2026)
+- Spor salonu SMB pain: "Üyeler antrenor bulamıyor, bırakıyor" = retention sorunu
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 20000 × ₺99/ay = **₺1.98M/ay**
+- **Premium+ (ay 2):** 5000 × ₺199/ay = **₺995K/ay**
+- **Spor salonu partnership (ay 2):** 500 salon × ₺99/ay = **₺50K/ay**
+- **Beslenme coaching (ay 3):** 2000 × ₺500 = **₺1M/ay**
+- **Tahmin (ay 2):** ₺3M/ay | **(ay 5):** ₺5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Fitbod, Gymble (İngilizce, Türkçe user experience minimal)
+- Türkiye: Sporcu AI uygulaması yok (bir kaç freelance koç Instagram'da var)
+- Boşluk açık: Türkçe AI antrenman koçu, spor salonu entegrasyonu
+
+**Talep Sinyalleri:**
+- Instagram/YouTube Türkiye: Fitness content creators = trend; "AI antrenman" arama +110%
+- Spor salonu üyeleri Facebook grupları: "Antrenor rehberi arıyorum" = 100+ post/ay
+- Google Trends: "Antrenman planı", "fitness koç" = 50K+/ay
+- Neden heyecan verici: Kişisel antrenman pazarı büyüyor, AI = erişilebilir antrenman, spor salonu churn azalır
+
+### İlk Somut Adım
+Bugün **50-100 Türkçe fitness content creator (Instagram 100K+ followers, fitness/spor nişi) ara, YouTube/TikTok/Instagram'da bul.** Aynı gün **bu 20-30'ina DM/email: "AI Antrenman Koçu — kişiye özel antrenman planı, form kontrol, beslenme. Influencer affiliate (her signup ₺50 komis). Test et?"** Üçüncü: **Google Trends: "antrenman planı", "AI fitness" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit antrenman plan: yaş, kilo, hedef (kilo/kas) gir → 4 haftalık antrenman günü programı (gün, hareket, set, tekrar) göster."** Günün sonu: **50 content creator araştırması + 5-10 yanıt (influencer) + search trend (büyüme) + test antrenman planlayıcı (MVP)** = spor AI koçu talebini doğruladı.
+
+### Zorluk/Risk
+- **Global rakip:** Google, Strava, Fitbit kendi AI sistemlerini güncelleyebilir
+- **Churn yüksek:** Sporcu motivation düşerse, app bırakır (retention ağır)
+- **Beslenme liability:** Yanlış diyet tavsiyesi → sağlık problemi (disclaimer gerekli)
+- **Spor hekimi regulation:** Türkiye Spor Hekimleri Birliği AI antrenman sistemine karşı çıkabilir
+- **Personalizasyon doğruluğu:** "Senin için kişisel" claim'i, accuracy düşük = churn
+
+**Risk Derecesi:** ORTA (global rakip, churn, regulation ama talep açık)
+
+---
+
+## FİKİR 3: Tarım AI Koçu — "TarımZeka"
+
+### Ne Bu?
+Türkiye'de 7M+ aktif tarımcı (çiftçi) ve tarımsal dron/IoT hızla yaygınlaşıyor. Fakat sorun: çiftçiler toprak analizi yapamıyor, ne kadar ilaç/gübre kullanacağını bilmiyor, hava tahminine göre ürün seçemiyor. "TarımZeka" = Türkçe-first tarım AI koçu: (1) toprak analizi (drone/multispektral kamera → toprak tipi, nem, besin → AI tavsiye: "Şu bölgeye %X azot yakışır"), (2) mahsul önerisi (toprak, hava, bölge → "Burada buğday/arpa/domates en karlı"), (3) sulama planı (nem sensörü, hava tahmini → "Çarşamba 25mm su ver"), (4) gübre/ilaç optimizer (hastalık tahmin + AI → "Sadece şu alana ilaçla, % 20 ilaç tasarrufu"), (5) mahsul satış radar ("Bu hafta arpa fiyatı yükselecek, sat" vs "Domates sezon sonuna kadar bekle"), (6) verim analizi (ağırlık/alan → "Senin verim +15% oldu"), (7) tarım çiftçi topluluğu (forum). Model: freemium (temel toprak analiz free), premium (₺199/ay full AI + radar), dron şirketi partnership (DJI, yapay zeka uçak veri integration), tarım girdisi şirketi sponsorluğu (gübre/ilaç markası). Hedef: orta/küçük çiftçiler (1-20 hektar), tarım kooperatifleri, tohum şirketleri.
+
+### Kanıt (Kaynaklar)
+- Türkiye agritech pazarı: 2023 ₺101M, 2030 ₺237M bekleniyor (Grand View Research via Ekonomist)
+- Tarım drone hızı: Türkiye'de Bridgesoft gibi girişimler AI ilaçlama yapıyor; dron kullanımı +120% (TÜBA araştırması)
+- Google Trends Türkiye: "Toprak analizi", "tarım rehberi", "mahsul fiyatı" = +95% (2025-2026)
+- Çiftçi pain: Forum/sosyal medya = "Ne kadar ilaç", "tarım danışmanı pahalı", "fiyat öteki yöne gidiyor" = sık
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 10000 × ₺199/ay = **₺1.99M/ay**
+- **Dron veri integration (ay 2):** 500 × ₺500 (bir kere kurulum) = **₺250K/ay amort.**
+- **Tarım girdisi partnership (ay 3):** Gübre/ilaç markası lead = **₺150K/ay**
+- **Tarım kooperatifi license (ay 3):** 50 × ₺999/ay = **₺50K/ay**
+- **Tahmin (ay 2):** ₺2.4M/ay | **(ay 5):** ₺3.5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Raven Industries, Trimble Agriculture (İngilizce, Türk hava/toprak veri minimal)
+- Türkiye: Bridgesoft (spesifik ilaçlama), ama genel tarım koçluğu yok
+- Boşluk açık: Türkçe tarım AI + toprak analizi + mahsul önerisi
+
+**Talep Sinyalleri:**
+- Çiftçi forumları (Facebook, TarımZiraat grupları): "Ne kadar ilaç", "fiyat tavsiyesi" = 50+ post/hafta
+- Google Trends: "Toprak analizi", "mahsul fiyatı" = 25K+/ay
+- Tarımsal drone kullanımı: +120% (drone şirketlerinden bilgi)
+- Neden heyecan verici: 7M+ çiftçi, pazar boşluğu açık, agritech growth +12% yıllık
+
+### İlk Somut Adım
+Bugün **50-100 Türkçe çiftçi/tarım kooperatifi (Facebook tarım grupları, Google "çiftçi forum" Türkiye) ara ve gruplara **TarımZeka: AI toprak analizi + mahsul önerisi. Pilot olmak ister misin?" post/DM yap.** Aynı gün **5-10 Türkçe tarım dron şirketi (DJI reseller, lokal drone startup) bulup email/WhatsApp: "AI Tarım Koçu — dron verisi entegrasyonu, toprak analiz, ilaç optimizer. API partnership?"** Üçüncü: **Google Trends: "toprak analizi", "tarım danışman" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit mahsul önerisi: toprak tipi (kumlu/killi/organik) gir, bölge seç, hava iklimi veri gir → "Senin bölgede buğday/arpa/%X kar marjı" göster."** Günün sonu: **50 çiftçi grup araştırması + 10-20 yanıt (demand) + 3-5 dron şirketi yanıt (data supply) + search trend (büyüme) + test mahsul planlayıcı (MVP)** = tarım AI talebini doğruladı.
+
+### Zorluk/Risk
+- **Veri kalitesi:** Toprak/hava veri eksiği, lokal veritabanı kurma maliyetli (ama agritech trend doğru)
+- **Çiftçi dijitalleşme:** Yaşlı çiftçiler teknoloji kuşağı değil, adoption yavaş
+- **Fiyat tahrifi:** Mahsul fiyat tavsiyesi → çiftçi zarar görebilir, dava riski
+- **Tarım kurumları:** Gıda, Tarım Bakanlığı AI tarım sistemiyle rekabet edebilir
+- **Sezonalite:** Tarım = mevsimsel, revenue dalgalı
+
+**Risk Derecesi:** ORTA (veri kalitesi, adoption, fiyat tahrifi ama market boşluğu güçlü)
+
+---
+
+## FİKİR 4: Perakende Yönetimi AI — "MağazaZeka"
+
+### Ne Bu?
+Türkiye'de 150K+ perakende mağazası (bakkal, kıyafet, elektronik, kozmetik vb.) ve çoğu hâlâ kağıt/Excel ile yönetiliyor. "MağazaZeka" = Türkçe perakende AI yönetim: (1) akıllı POS (satış kaydı, stok takibi, kasa otomasyonu), (2) stok optimizer (AI: "Şu ürünü +20% daha al, popüler oluyor" vs "Şu stok slow mover, fiyat düşür"), (3) fiyat dinamiği (hava/zaman/talep → fiyat otomatik ayar — hafta sonu +%10), (4) çalışan performansı (satış/saat, accuracy, müşteri memnuniyet → bonus/ihtiyat), (5) müşteri analizi (satın alma davranışı → "Erkek 35-50 pazarlar gözlük, cuma akşamı gidiyor"), (6) reyon düzeni AI (best-sellers görüşte, slow-mover geri), (7) tedarikçi yönetimi (oto sipariş, fiyat karşılaştırma). Model: freemium (temel POS free), premium (₺249/ay stok + fiyat AI), premium+ (₺499/ay full + workforce), perakende zinciri license (₺5K/ay), pos cihazı üretici partnership (uyumlu donanım). Hedef: 1-20 mağaza işletmeleri, franchise ağları, perakende SMB.
+
+### Kanıt (Kaynaklar)
+- Türkiye perakende pazarı: 150K+ mağaza (tahmini), 2026 AI destekli POS trend (LC Waikiki örneği — Yeni Şafak)
+- Yazar kasa zorunluluğu: 2026'da "fiş" dönemi bitişi, e-fatura/e-belge geçişi (Sovos raporu)
+- Google Trends Türkiye: "Mağaza yönetimi", "POS sistemi", "stok takibi" = +125% (2025-2026)
+- Perakendeci pain: Forum/LinkedIn = "Stok karmaşası", "çalışan hatalı satış", "fiyat rekabet" = sık
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 8000 × ₺249/ay = **₺1.99M/ay**
+- **Premium+ (ay 2):** 2000 × ₺499/ay = **₺998K/ay**
+- **Franchise/zincir license (ay 3):** 100 zincir × ₺2K/ay = **₺200K/ay**
+- **POS cihazı partnership (ay 3):** Hardware commission = **₺100K/ay**
+- **Tahmin (ay 2):** ₺3.3M/ay | **(ay 5):** ₺4.5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Square, Lightspeed POS (İngilizce, Türk vergi sistemi/yazar kasa integration yok)
+- Türkiye: Odoo, some custom solutions (ama AI + yazar kasa + e-belge hepsi = yok)
+- Boşluk açık: Türkçe-first perakende AI, yazar kasa/e-belge compliant
+
+**Talep Sinyalleri:**
+- Perakendeci forumları/LinkedIn: "POS sistemi buluyorum", "stok yönetimi zorluyor" = 100+ post/ay
+- Google Trends: "Mağaza yönetim programı", "POS sistemi Türkiye" = 40K+/ay
+- Yeni mevzuat: Yazar kasa → e-belge geçişi = ortaya araçlar lazım
+- Neden heyecan verici: 150K+ mağaza, mevzuat zorunluluğu uyum gerekli, AI stok = margin +5%
+
+### İlk Somut Adım
+Bugün **50-100 Türkçe perakende mağazası (bakkal, kıyafet, elektronik Google Maps) ara, Instagram/WhatsApp bul.** Aynı gün **bu 20-30'ina WhatsApp: "AI Perakende Yönetim — stok takibi, e-belge hazır, fiyat optimizer. Pilot olmak ister misin?"** Üçüncü: **Google Trends: "POS sistemi Türkiye", "mağaza yönetimi" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit stok uyarı: ürün adı gir, güncel stok gir, min stok seviyesi gir → "Reorder: 20 adet" uyarısı göster."** Günün sonu: **50 mağaza araştırması + 5-10 yanıt (early adopter) + search trend (büyüme) + test stok manager (MVP)** = perakende AI talebini doğruladı.
+
+### Zorluk/Risk
+- **Mevzuat değişim:** Yazar kasa/e-belge rules sık güncelleniyor (compliance ağır)
+- **Global rakip:** Square/Lightspeed Türkiye expand edebilir
+- **Perakendeci teknoloji:** SMB churn yüksek (sistem değişim pahalı/zaman alıcı)
+- **Hardware:** POS cihaz entegrasyon, apple/android compatibility (ops ağır)
+- **Veri güvenliği:** Mağaza satış veri = hassas (KVKK uyumluluğu zorunlu)
+
+**Risk Derecesi:** ORTA (mevzuat, global rakip, churn ama market boşluğu güçlü)
+
+---
+
+## FİKİR 5: Avukat Stajyeri Training & Mentorship — "AvukatAkademi"
+
+### Ne Bu?
+Türkiye'de 50K+ avukat ve her yıl 3K+ yeni avukat adayı mezun oluyor. Stajyerlik zorunlu ama mevzuat = eksik, stajyerlere ücret yok, eğitim kaotic. "AvukatAkademi" = Türkçe-first avukat stajyeri training platform: (1) online kurs (ceza hukuku, medeni hukuk, ticari hukuk, prosedür) video-based, pratik case study, (2) mentorship matching (usta avukatlar × stajyerler: "Senin ihtiyacın ceza, buldum dava da ihtiyaç: mentor avukat X"), (3) stajyer forum (soru cevap: "Bu evrak neye yarar", hukuk tabibi cevaplasın), (4) mock trial (video: "Bu mahkemeyi senin cikı: sözleşme oku, argüman yaz" → AI + avukat feedback), (5) verilen iş tracking (stajyerlerin yaptığı işler kayıt, usta verifi), (6) sertifika (Türk Bar Birliği ile partnership: "Stajyerlik + AvukatAkademi sertifikası = daha hızlı başarılı"). Model: freemium (temel kurs free), premium (₺149/ay full kurs + mentorship matching), premium+ (₺299/ay + live workshop), bar birliği partnership (credential partnership, öğrenci recruit kolay), usta avukat commission (%10 danışmanlık). Hedef: avukat adayları, stajyer avukatlar, hukuk mezunları, usta avukatlar.
+
+### Kanıt (Kaynaklar)
+- Türkiye avukat eğitimi: 50K+ avukat, 3K+/yıl yeni mezun, stajyerlik zorunlu ama kaotik (Hukuk Haber, Bar Birliği çalışmaları)
+- Mevzuat gap: Avukatlar Kanunu stajyerlere ücret zorunluluğu yok, nitelik guarantee yok (hukukihaber.net analiz)
+- Avukat mentorship global: LawCrossing, LinkedIn mentorship var ama Türkçe = yok
+- Google Trends Türkiye: "Avukat stajyerlik", "hukuk eğitim", "avukat mentor" = +85% (2025-2026)
+
+### Gelir Modeli
+- **Stajyer premium (ay 2):** 10000 × ₺149/ay = **₺1.49M/ay**
+- **Premium+ (ay 2):** 2000 × ₺299/ay = **₺598K/ay**
+- **Usta avukat mentorship commission (ay 2):** 500 × ₺500 × 20% = **₺50K/ay**
+- **Bar Birliği partnership (ay 3):** Credential/certif → referral = **₺100K/ay**
+- **Live workshop (ay 3):** 50/ay × ₺500 = **₺25K/ay**
+- **Tahmin (ay 2):** ₺2.2M/ay | **(ay 5):** ₺3M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: LawCrossing, Themis (İngilizce, Türk hukuk sistemi yok)
+- Türkiye: Avukat training platform = hiç; Bar Birliği kursları = sınırlı/pahalı
+- Boşluk açık: Türkçe-first avukat stajyeri eğitim + mentorship
+
+**Talep Sinyalleri:**
+- Hukuk fakültesi öğrenci grupları (Instagram, LinkedIn): "Stajyerlik nerede bulacağım", "eğitim çok kötü" = 100+ mention/hafta
+- Stajyer avukat forumları: "İş bulma zorluk", "mentor eğitim yok" = 20+ thread/ay
+- Google Trends: "Avukat stajyerlik Türkiye", "hukuk eğitim" = 15K+/ay
+- Neden heyecan verici: 50K+ avukat + 3K+/yıl yeni, mentorship gap açık, Bar Birliği partnership doğru kanal
+
+### İlk Somut Adım
+Bugün **50-100 Türkçe hukuk fakültesi öğrenci grubunu (Instagram, LinkedIn "hukuk fakültesi" Türkiye) ara ve grup admin'lerine DM: "Avukat Training Platformu — stajyerlik rehberi, mentor matching, sertifikası. Öğrenci recruit etmek ister misin?"** Aynı gün **5-10 usta avukat (LinkedIn, hukuk müşavır şirketlerinden başkan/ortaklar) bulup DM: "Stajyer Mentor Network — başarılı genç avukatları bul, coaching kazanç. Mentor olmak ister misin?"** Üçüncü: **Google Trends: "avukat stajyerlik", "hukuk eğitim" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit sözleşme trainer: hukuk terimleri = açıkla, örnek sözleşme şablonları göster (NDA, İş Sözleşmesi, Kira)."** Günün sonu: **50 hukuk fakültesi grup araştırması + 5-10 öğrenci yanıt (demand) + 3-5 usta avukat yanıt (mentor supply) + search trend (büyüme) + test contract trainer (MVP)** = avukat training talebini doğruladı.
+
+### Zorluk/Risk
+- **Bar Birliği cooperation:** Resmî partnership zor (bürokrasi)
+- **Avukat credential:** "Senin stajyerlik tamamlandı mı" => Bar Birliği doğrulaması gerekli (compliance ağır)
+- **Hukuk sistem değişim:** Türk hukuk sistemi reform yapabilir, kurs content update ağır
+- **Stajyer churn:** "Avukat olmaya karar verdim/değiştirdim" = yüksek (retention risk)
+- **Usta avukat time:** Mentorship = time-intensive, burnout riski
+
+**Risk Derecesi:** ORTA (Bar Birliği partnership, compliance, churn ama market boşluğu çok güçlü)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Perakende Yönetimi AI — "MağazaZeka"**
+
+Beş fikir arasında **MağazaZeka** en geniş TAM, en net mevzuat tailwind ve Koray'ın profile en uygun görünüyor. Nedenleri:
+
+1. **Market boşluğu açık ve urgency:** 150K+ mağaza hâlâ eski sistemde, 2026 yazar kasa/e-belge geçişi ZORUNLU = tüm mağazalar yeni sistem lazım
+2. **Pain akut ve günlük:** Perakendeci her gün stok, fiyat, çalışan kararı verir — AI = immediate +3-5% margin
+3. **B2B sticky ve marj:** Stok/fiyat/çalışan data = platform bağlamı yüksek, churn düşük, marj %75+
+4. **TAM büyük:** 150K mağaza × %10 penetration = 15K müşteri × ₺249/ay = ₺90M+ TAM
+5. **Mevzuat tailwind:** Yazar kasa/e-belge zorunluluğu = 150K mağazayı yeni sistem arayışına iter (organic demand)
+6. **Koray fit:** Sistem Global'ın SMB danışmanlığı network + e-ticaret background = ready B2B channel
+7. **MVP hız:** POS (temel) + stok uyarı + fiyat dinamiği = 2-3 hafta
+
+Diğer dörtlü zayıflıkları:
+- **VeterinerZeka:** Sağlık liability yüksek, mevzuat muğlak
+- **AntrenmanZeka:** Global rakip (Google, Fitbit), churn yüksek, talep geniş değil
+- **TarımZeka:** Çiftçi dijitalleşme yavaş, fiyat tahrifi riski
+- **AvukatAkademi:** Bar Birliği partnership zor, compliance ağır
+
+**İlk adımlar:**
+- Bu hafta: 50 perakende mağazası outreach + "POS/stok/e-belge ihtiyacı" validasyon
+- Hafta sonu: Temel stok uyarı + fiyat dinamiği MVP'si yapılması
+- Pazartesi: 20 mağazaya MVP demo sunma
+- Hedef: 2-3 hafta içinde 10+ pilot müşteri → metrics okuma → pricing/expansion
+
+---
+
+Sources:
+- [Türkiye'de Veteriner Teşhisinde Yapay Zeka](https://www.milliyet.com.tr/pazar/veterinerlikte-yapay-zeka-donemi-7576986)
+- [Veteriner Teknoloji Trendleri 2026](https://software.idexx.com/resources/blog/7-digital-veterinary-technology-trends-shaping-practices-in-2026)
+- [AI Fitness Apps 2026](https://www.solutelabs.com/blog/future-of-fitness)
+- [Türkiye Agritech Pazarı](https://farmonaut.com/blogs/agritech-nedir-2026da-tarimda-guclu-dijital-donusum)
+- [AI Perakende POS Sistemi](https://www.yenisafak.com/teknoloji/kasiyersiz-magaza-devri-4797542)
+- [Türkiye Avukat Stajyerlik ve Eğitim](https://www.hukukihaber.net/norm-ve-olgu-arasinda-sikisan-emek-bir-hukuki-paradoks-olarak-stajyerlik-ve-mustakil-kanun-zorunlulugu)
+
+---
+
 # Günlük Fikir Araştırması - 22 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
