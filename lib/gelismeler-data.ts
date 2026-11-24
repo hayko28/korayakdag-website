@@ -2885,6 +2885,33 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Etken yapay zekâ ve hukuk teknolojileri gibi dar alanlarda hızla yeni girişimlerin ortaya çıkması, bu alanlarda henüz oturmuş bir pazar lideri bulunmadığını gösteriyor. Hukuk, muhasebe veya İK süreçlerini yazılımla dönüştürmeyi değerlendiren hizmet şirketlerine bu haritayı rakip/ortak analizi için takip etmelerini öneririm.",
   },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "12 Kasım 2026",
+    eklendiTarihi: "2026-11-24",
+    baslik:
+      "Reklam Kurulu 375. toplantısında 141 dosyayı inceledi, 119'una durdurma kararı verdi",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu'nun 12 Kasım 2026 tarihli 375. toplantısında incelenen 141 dosyanın 119'unda reklamın durdurulmasına karar verildi ve toplam 35 milyon 866 bin 446 TL idari para cezası kesildi. Dosyalardan birinde, mağazasındaki tüm ürünlerde her gün yüksek oranlı indirim yapıldığını öne süren ama bu iddiayı gerçeğe uygun biçimde kanıtlayamayan bir firmaya, tüketicide sürekli ve yüksek indirim algısı yarattığı gerekçesiyle 5 milyon TL ceza verildi ve reklamları durduruldu.",
+    kaynakUrl: "https://www.alomaliye.com/?p=194405",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Kalıcı veya 'her gün' diye sunulan indirim kampanyalarının gerçek fiyat geçmişiyle doğrulanabilir olması gerekiyor. İndirim iletişimi kuran işletmelere, kampanya öncesinde referans fiyat ve indirim oranını belgeleyen bir kayıt tutmalarını öneririm.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "30 Ekim 2026 (kurul kararı), 4 Kasım 2026 (Resmî Gazete yayımı)",
+    eklendiTarihi: "2026-11-24",
+    baslik:
+      "KGK, TFRS 18'e uyumlu yeni Finansal Tablo Örnekleri ve Kullanım Rehberi'ni yayımladı",
+    ozet:
+      "Kamu Gözetimi Kurumu'nun 30 Ekim 2026 tarihli kurul kararıyla kabul edilip 4 Kasım 2026'da Resmî Gazete'de yayımlanan yeni Finansal Tablo Örnekleri ve Kullanım Rehberi, 2019'dan beri uygulanan rehberin yerini alıyor ve TFRS 18 Finansal Tablolarda Sunum ve Açıklama standardının getirdiği yapıya uyarlanıyor. Kâr veya zarar tablosu esas faaliyetler, yatırım faaliyetleri ve finansman faaliyetleri olmak üzere üç bölüme ayrılıyor ve dipnot başlık sayısı 52'den 54'e çıkıyor; rehber, 1 Ocak 2027'de veya sonrasında başlayan hesap dönemlerinde uygulanacak, TFRS 18'i erken uygulayan işletmeler rehberi de erken uygulayabilecek.",
+    kaynakUrl:
+      "https://kgk.gov.tr/Portalv2Uploads/files/Duyurular/v2/TMS/KurulKarari(TabloOrnekleri).pdf",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Kâr veya zarar tablosunun üç bölüme ayrılması, özellikle şirket değerleme çalışmalarında kullanılan esas faaliyet kârı gibi ölçütlerin hesaplanma şeklini değiştirebilir. 2027 hesap dönemine hazırlanan şirketlere, finans ekipleriyle bu yeni formatı şimdiden bir örnek üzerinde denemelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
