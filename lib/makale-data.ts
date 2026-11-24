@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "satin-almada-sayi-dusup-hacim-buyuyunce-kucuk-sirket",
+    title:
+      "Satın Almada İşlem Sayısı Düşerken Hacim Büyüdü: Küçük Şirket İçin Bu Ne Anlama Geliyor?",
+    excerpt:
+      "EY-Parthenon Türkiye'nin verilerine göre 2026'nın ilk sekiz ayında açıklanan değeri bulunan 117 birleşme ve satın alma işleminin toplam değeri 9 milyar doları aştı; işlem sayısı bir önceki yıla göre azalırken 100 milyon doların üzerindeki büyük anlaşmalar hacmi yukarı çekti. Alıcıların daha seçici davrandığı bir piyasada, orta ölçekli bir şirketin satış sürecine sırf 'iyi bir iş' olduğu için değil, finansal ve operasyonel verisini düzenli tutan nadir adaylardan biri olduğu için çağrılması gerekiyor.",
+    tag: "Kurumsal Gelişim ve Değerleme",
+    date: "24 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tubitak-1507-on-kayit-takvimi-kaciran-kobi",
     title:
       "TÜBİTAK'ın Uzattığı Sürede Çoğu KOBİ'nin Gözden Kaçırdığı Tek Tarih",
