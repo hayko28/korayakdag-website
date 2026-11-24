@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "kosgeb-sanayide-temiz-dongusel-ekonomi-teklif-cagrisi-2026",
+    title: "KOSGEB'den İmalatçı KOBİ'lere 7 Milyon TL'ye Kadar Yeşil Dönüşüm Desteği: Sanayide Temiz ve Döngüsel Ekonomi Çağrısına Nasıl Başvurulur?",
+    excerpt: "KOSGEB, Yeşil Sanayi Destek Programı kapsamında 16 Kasım 2026'da 3 milyar TL bütçeli Sanayide Temiz ve Döngüsel Ekonomi Teklif Çağrısı'nı açtı. İmalat sektöründeki KOBİ'ler, enerji/su/hammadde verimliliği ve döngüsel ekonomi yatırımları için proje başına 7 milyon TL'ye kadar, %70 oranında, faizsiz geri ödemeli destek alabiliyor. Şartlar, gider kalemleri ve 9 Aralık 2026'da kapanacak ön başvuru takvimiyle güncel rehber.",
+    category: "KOSGEB • YEŞİL SANAYİ DESTEK PROGRAMI • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1786913507799-0ddbb3e7dbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "ab-skdm-cbam-turk-ihracatciyi-nasil-etkiliyor-2026",
     title: "SKDM (CBAM) Sertifikasını İthalatçı Alıyor, Peki Türk İhracatçı Neden Şimdiden Hazırlanmalı?",
     excerpt: "AB Sınırda Karbon Düzenleme Mekanizması'nda (SKDM/CBAM) mali yükümlülük dönemi 1 Ocak 2026'da başladı. Sertifika alma ve teslim etme yükümlülüğü hukuken AB'deki ithalatçıda; ama demir-çelik, alüminyum, çimento, gübre, elektrik ve hidrojen sektörlerinde AB'ye satış yapan Türk üretici ve ihracatçılar için asıl risk, gömülü emisyon verisini doğru sunamamanın getireceği rekabet dezavantajı. Kapsam, takvim, 50 ton muafiyeti ve yapılması gerekenlerle güncel rehber.",
