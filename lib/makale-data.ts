@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "yurtdisina-acilan-marka-once-tescil-sonra-magaza",
+    title:
+      "Bir Türk Markası Çin'e Açılırken Asıl Yatırım Neden Tabela Değil, Tescildi",
+    excerpt:
+      "TAB Gıda'nın Usta Dönerci markasıyla Çin'de açtığı ilk iki restoran, hedefini kısa sürede 100'e, 2027 sonunda 250'ye çıkarmayı planlıyor; ama kamuya yapılan açıklamada öne çıkan asıl ayrıntı mağaza sayısı değil, markanın kopyalanmasına karşı önceden alınan hukuki tedbirlerdi. Marka koruması ülkeseldir ve çoğu ülkede 'ilk başvuran kazanır' kuralı geçerli; yurt dışına açılan bir KOBİ için tescil, genişleme planının sonunda değil en başında çözülmesi gereken bir adım.",
+    tag: "Strateji",
+    date: "25 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "satin-almada-sayi-dusup-hacim-buyuyunce-kucuk-sirket",
     title:
       "Satın Almada İşlem Sayısı Düşerken Hacim Büyüdü: Küçük Şirket İçin Bu Ne Anlama Geliyor?",
