@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "2027-yeniden-degerleme-orani-sirketler-ne-yapmali",
+    title: "2027 Yeniden Değerleme Oranı %27,83 Oldu: Şirketler Yıl Sonuna Kadar Hangi Kararı Vermeli?",
+    excerpt: "24 Kasım 2026 tarihli ve 33440 sayılı Resmî Gazete'de yayımlanan 599 sıra no'lu VUK Genel Tebliği, 2027'de uygulanacak yeniden değerleme oranını %27,83 olarak açıkladı. Bu oran hem VUK'taki yüzlerce had ve cezayı hem de bilanço esasına göre defter tutan şirketlerin VUK mükerrer 298/Ç kapsamında aktiflerindeki amortismana tabi kıymetleri isteğe bağlı olarak yeniden değerleme kararını doğrudan etkiliyor. Kapsam, %2 vergi, enflasyon düzeltmesiyle ilişkisi ve yıl sonuna kadar yapılması gerekenlerle güncel rehber.",
+    category: "VERGİ DANIŞMANLIĞI • YENİDEN DEĞERLEME ORANI • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1725258080098-727051947997?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "kosgeb-sanayide-temiz-dongusel-ekonomi-teklif-cagrisi-2026",
     title: "KOSGEB'den İmalatçı KOBİ'lere 7 Milyon TL'ye Kadar Yeşil Dönüşüm Desteği: Sanayide Temiz ve Döngüsel Ekonomi Çağrısına Nasıl Başvurulur?",
     excerpt: "KOSGEB, Yeşil Sanayi Destek Programı kapsamında 16 Kasım 2026'da 3 milyar TL bütçeli Sanayide Temiz ve Döngüsel Ekonomi Teklif Çağrısı'nı açtı. İmalat sektöründeki KOBİ'ler, enerji/su/hammadde verimliliği ve döngüsel ekonomi yatırımları için proje başına 7 milyon TL'ye kadar, %70 oranında, faizsiz geri ödemeli destek alabiliyor. Şartlar, gider kalemleri ve 9 Aralık 2026'da kapanacak ön başvuru takvimiyle güncel rehber.",
