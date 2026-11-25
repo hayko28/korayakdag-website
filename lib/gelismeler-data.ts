@@ -2912,6 +2912,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Kâr veya zarar tablosunun üç bölüme ayrılması, özellikle şirket değerleme çalışmalarında kullanılan esas faaliyet kârı gibi ölçütlerin hesaplanma şeklini değiştirebilir. 2027 hesap dönemine hazırlanan şirketlere, finans ekipleriyle bu yeni formatı şimdiden bir örnek üzerinde denemelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "30 Ekim 2026",
+    eklendiTarihi: "2026-11-25",
+    baslik:
+      "TÜİK: Ekonomik güven endeksi Ekim'de %3,9 düşüşle 97,3'e indi, tüketici güveni en sert düşüşü yaşadı",
+    ozet:
+      "Türkiye İstatistik Kurumu'nun 30 Ekim 2026'da yayımladığı verilere göre ekonomik güven endeksi, Eylül'deki üç yılın zirvesi olan 101,3 seviyesinden aylık %3,9 düşüşle 97,3'e indi; 100'ün altındaki değerler genel ekonomiye ilişkin kötümserliği gösteriyor. Alt endekslerde en sert düşüş tüketici güveninde yaşandı ve endeks %7,7 azalışla 91,9'dan 84,8'e geriledi; reel kesim (imalat sanayi) güven endeksi de %1,4 azalışla 101,1'e indi.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/ekonomik-guven-endeksi-ekimde-geriledi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Tek aylık bir gerileme kalıcı bir eğilim değişikliği anlamına gelmez, ama özellikle tüketici güvenindeki sert düşüş, tüketime dayalı satış yapan işletmelerin yıl sonu ve 2027 ilk çeyrek satış tahminlerini biraz daha temkinli kurmasını gerektirebilir. Fiyatlandırma ve stok planlarını bu güncel veriyle yeniden gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "26 Ekim 2026",
+    eklendiTarihi: "2026-11-25",
+    baslik:
+      "SPK, nitelikli yatırımcı ve profesyonel müşteri eşiklerini yükseltti: finansal varlık sınırı 50 milyon TL'ye çıktı",
+    ozet:
+      "Sermaye Piyasası Kurulu Karar Organı'nın 26 Ekim 2026 tarihli kararına göre profesyonel müşteri sayılmak için aranan finansal varlıklar toplamı 10 milyon TL'den 50 milyon TL'ye, işlem hacmi şartı ise 5 milyon TL'den 25 milyon TL'ye yükseltildi; tüzel kişiler için aranan tutarlar da yeniden belirlendi. Yatırım fonlarının yeni portföy ve yatırım sınırlamalarına tam uyum için öngörülen son tarih 31 Aralık 2026'dan 31 Ocak 2027'ye uzatıldı.",
+    kaynakUrl:
+      "https://www.ntv.com.tr/ntvpara/nitelikli-yatirimci-limiti-50-milyon-liraya-yukseldi-1747997",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Eşiklerin beşe katlanması, girişim sermayesi veya özel sermaye fonlarına nitelikli yatırımcı sıfatıyla katılmayı planlayan şirket sahiplerinin mevcut varlık ve işlem hacmi belgelerini yeniden gözden geçirmesini gerektirebilir. Bu tür bir fona katılmayı değerlendiren yatırımcılara, yeni eşikleri karşılayıp karşılamadıklarını aracı kurumlarıyla şimdiden teyit etmelerini öneririm.",
+  },
+  {
+    kurum: "TOBB",
+    tarih: "12 Kasım 2026",
+    eklendiTarihi: "2026-11-25",
+    baslik:
+      "TOBB E-Ticaret Meclisi: Mikro ihracat değerinin yüzde 60'ı doğrudan satış kanallarından geliyor",
+    ozet:
+      "TOBB E-Ticaret Meclisi Üyesi Sinan Akdal'ın açıklamasına göre, e-ticaret siteleri ve sosyal ağlar üzerinden yapılan doğrudan satışlar toplam mikro ihracat değerinin yaklaşık yüzde 60'ını oluşturuyor. Mikro ihracat paket sayısı son 10 yılda 3 milyondan 52 milyona, değeri ise 257 milyon dolardan yaklaşık 2 milyar dolara yükseldi; 2026'da basitleştirilmiş gümrük beyanı kapsamındaki mikro ihracat ağırlık ve değer limitleri yüzde 100 artırılarak 600 kiloya ve 30 bin euroya çıkarıldı.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6af56a3295131d72027dc26a/FRKS/tr/tobb-akdal-mikro-ihracat-degerinin-yuzde-60-i-dogrudan-satis-kanallarindan-geliyor-12-11-26/",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Doğrudan satış kanallarının mikro ihracattaki payının bu kadar yüksek olması, küçük bir üreticinin de kendi markasıyla yurt dışı müşteriye ulaşabildiğini gösteriyor. Yurt dışına satış yapmayı planlayan KOBİ'lere, önce bir pazar yerine bağımlı kalmadan kendi e-ticaret sitesi ve sosyal medya kanalları üzerinden marka bilinirliği kurmayı öncelik olarak değerlendirmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
