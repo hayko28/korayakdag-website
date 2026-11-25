@@ -91,6 +91,15 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   {
+    slug: "ymm-raporu-ne-zaman-gerekir-hizmet-ihracati-tamamlama-vizesi-ithalat-kdv-2026",
+    title: "YMM Raporu Ne Zaman Gerekir? Hizmet İhracatı, Yatırım Tamamlama Vizesi ve İthalat KDV İçin 2026 Rehberi",
+    excerpt: "2026'da üç ayrı başlıkta YMM raporu gündeme geliyor: yurt dışına verilen hizmetlerde kazanç indirimi, yatırım teşvik belgesi tamamlama vizesi ve ithalatta indirilemeyen KDV. Hangi durumda rapor isteniyor, süreç nasıl işliyor ve başvurudan önce nelere hazırlanmalı?",
+    category: "YMM RAPORU • VERGİ • TEŞVİK • 2026",
+    date: "Kasım 2026",
+    readTime: "9 Dakika",
+    image: "https://images.unsplash.com/photo-1758271941610-dbf5ce7d3c23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "e-tebligat-zorunlulugu-2026-30-kasim-son-tarih",
     title: "e-Tebligat Zorunluluğu 2026: Şirketiniz Sisteme Kayıtlı Değilse 30 Kasım'a Kadar Ne Yapmalı?",
     excerpt: "11 Ekim 2026 tarihli ve 33397 sayılı Resmî Gazete'de yayımlanan 596 sıra no'lu VUK Genel Tebliği, Anayasa Mahkemesi'nin iptal kararı sonrası e-Tebligat sisteminin usul ve esaslarını yeniden düzenledi. Kurumlar vergisi mükellefleri, gerçek usulde vergilendirilen gelir vergisi mükellefleri, kolektif ve adi komandit şirketler için sisteme kayıt son tarihi 30 Kasım 2026. Kapsam, muafiyetler, UETS/KEP ile farkı ve başvuru adımlarıyla güncel rehber.",
