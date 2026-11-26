@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "tubitak-sanayi-doktora-programinda-sirketin-payi",
+    title:
+      "TÜBİTAK'ın Sanayi Doktora Programında Bursun Dörtte Biri Neden Şirkette Kalıyor?",
+    excerpt:
+      "TÜBİTAK'ın 4 Kasım 2026'da açtığı 2244 Sanayi Doktora Programı çağrısı 22 Aralık'ta kapanıyor; program bireysel şirket başvurusuna kapalı ve bir üniversite ya da araştırma altyapısıyla ortak kurulan bir projeye dayanıyor. Ar-Ge/Tasarım Merkezi'ne sahip olmak, teknopark bünyesinde yerleşik olmak ya da TÜBİTAK destekli en az bir proje sonuçlandırmış olmak üç uygunluk yolundan biriyken, doktora bursunun en az yüzde 25'i TÜBİTAK değil, projeye dahil olan şirket tarafından karşılanıyor.",
+    tag: "Devlet Destekleri",
+    date: "26 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "yurtdisina-acilan-marka-once-tescil-sonra-magaza",
     title:
       "Bir Türk Markası Çin'e Açılırken Asıl Yatırım Neden Tabela Değil, Tescildi",
