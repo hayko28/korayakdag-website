@@ -2954,6 +2954,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Doğrudan satış kanallarının mikro ihracattaki payının bu kadar yüksek olması, küçük bir üreticinin de kendi markasıyla yurt dışı müşteriye ulaşabildiğini gösteriyor. Yurt dışına satış yapmayı planlayan KOBİ'lere, önce bir pazar yerine bağımlı kalmadan kendi e-ticaret sitesi ve sosyal medya kanalları üzerinden marka bilinirliği kurmayı öncelik olarak değerlendirmelerini öneririm.",
   },
+  {
+    kurum: "İŞKUR",
+    tarih: "9 Kasım 2026 (Ekim 2026 verileri)",
+    eklendiTarihi: "2026-11-26",
+    baslik:
+      "İŞKUR: İşsizlik Sigortası Fonu varlığı Ekim'de 916,9 milyar TL'ye çıktı, ödenek alan kişi sayısı 491 bine yaklaştı",
+    ozet:
+      "Türkiye İş Kurumu'nun (İŞKUR) 9 Kasım 2026'da paylaştığı İşsizlik Sigortası Fonu Bülteni'ne göre fonun menkul kıymet ve nakit varlığı, 2025 sonundaki 628 milyar 479 milyon TL'den ekim ayı sonunda 916 milyar 852 milyon TL'ye yükseldi. Ekim ayında önceki dönemden ödemesi süren işsizlerle birlikte 490.989 kişiye toplam 8 milyar 3 milyon TL işsizlik ödeneği ödendi; bu tutar geçen yılın ekim ayına göre yüzde 33 arttı. Mart 2002'den 31 Ekim 2026'ya kadar fona 24 milyon 117 bin 56 kişi başvurdu, 12 milyon 817 bin 309 kişi ödenek almaya hak kazandı ve toplam 249 milyar 289 milyon TL ödeme yapıldı.",
+    kaynakUrl:
+      "https://www.foreks.com/haber/detay/6af195a495131d72027d996d/FRKS/tr/issizlik-sigortasi-fonu-nun-menkul-kiymet-ve-nakit-fon-varligi-ekimde-916-milyar-852-milyon-tl-ye-yukseldi-09-11-26/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Ödenek alan kişi sayısı ve ödenen tutardaki yıllık artış, işten çıkarma ve kısa çalışma başvurularının da canlı olduğuna işaret ediyor. İşten çıkarma süreciyle karşılaşabilecek işverenlere, çalışanlarının işsizlik ödeneği ve prim gün sayısı hesaplamalarını doğru yapabilmeleri için İK ve mali müşavirleriyle önceden görüşmelerini öneririm.",
+  },
+  {
+    kurum: "KKB",
+    tarih: "11 Kasım 2026 (duyuru), 18 Kasım 2026 (haber yayımı)",
+    eklendiTarihi: "2026-11-26",
+    baslik:
+      "KKB'nin Kloudeks MIA platformu, Ubicloud iş birliğiyle DeepSeek V4.1 Flash modelini şirketlere açtı",
+    ozet:
+      "Kredi Kayıt Bürosu (KKB), 11 Kasım 2026'da düzenlenen TRAI Zirvesi'nde duyurduğu Ubicloud iş birliğiyle, kendi yapay zeka platformu Kloudeks MIA üzerindeki büyük dil modeli hizmetlerini genişletti. 18 Kasım 2026'da yayımlanan haberlere göre platform artık 1 milyon token bağlam kapasitesine sahip DeepSeek V4.1 Flash modelini tek bir API üzerinden sunuyor; şirketler kendi GPU altyapısı kurmadan, token bazlı kullandıkça öde modeliyle bu modele erişebiliyor. Hizmet KKB'nin Anadolu Veri Merkezi'nde barındırılıyor; KKB, işlenen verilerin saklanmadığını ve model eğitiminde kullanılmadığını belirtiyor.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/kloudeks-sirketleri-yapay-zekada-dev-masraflardan-kurtariyor",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Kendi GPU yatırımı yapmadan token bazlı ödemeyle büyük dil modeli kullanmak, özellikle ürün geliştiren KOBİ'ler için başlangıç maliyetini düşürebilir. Böyle bir hizmeti değerlendiren şirketlere, veri saklama süresi ve sözleşme şartlarını kullanmadan önce dikkatle incelemelerini öneririm.",
+  },
+  {
+    kurum: "TBMM",
+    tarih: "12 Kasım 2026 (TBMM'ye sunuldu)",
+    eklendiTarihi: "2026-11-26",
+    baslik:
+      "TBMM'ye sunulan kanun teklifiyle istihdam teşviklerinin süresi 2028'e uzatılması, eski GSS prim borçlarının silinmesi öneriliyor",
+    ozet:
+      "AK Parti Grup Başkanı Abdullah Güler'in 12 Kasım 2026'da TBMM Başkanlığı'na sunduğunu açıkladığı 15 maddelik kanun teklifine göre, İşsizlik Sigortası Kanunu kapsamında kadınlara, gençlere ve mesleki yeterlilik belgesi bulunan işsizlere yönelik istihdam teşviklerinin uygulama süresi 31 Aralık 2028'e kadar uzatılması, Cumhurbaşkanı'na bu süreyi 2029 sonuna kadar uzatma yetkisi verilmesi öneriliyor. Teklif ayrıca 1 Ocak 2017'den önceki ödenmemiş genel sağlık sigortası (GSS) prim borçlarının, gecikme cezası ve zammıyla birlikte tamamen silinmesini içeriyor; bu kapsamda 2 milyon 199 bin 869 kişinin toplam 5 milyar 627 milyon 666 bin TL'lik borcu silinecek. Teklif şu an TBMM'de, henüz kanunlaşmadı.",
+    kaynakUrl:
+      "https://www.ntv.com.tr/turkiye/meclise-sunuldu-22-milyon-kisinin-gss-borcu-silinecek-1750609",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Bu henüz bir kanun teklifi, komisyon ve genel kurul sürecinden geçmeden yürürlüğe girmeyecek ve metin değişebilir. Yine de istihdam teşviklerinden yararlanan veya eski GSS borcu bulunan işletme sahiplerine süreci şimdiden takibe almalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece

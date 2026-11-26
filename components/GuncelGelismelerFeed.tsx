@@ -31,6 +31,8 @@ const KURUM_COLORS: Record<string, string> = {
   OECD: "bg-neutral-600",
   EY: "bg-gray-700",
   TRAI: "bg-blue-800",
+  KKB: "bg-teal-500",
+  TBMM: "bg-red-800",
 };
 
 const FEED_COLLAPSED_COUNT = 5;
