@@ -5,7 +5,7 @@ import BlogList from "@/components/blog/BlogList";
 import BlogComments from "@/components/blog/BlogComments";
 import BackButton from "@/components/BackButton";
 import { BLOG_POSTS } from "@/lib/blog-data";
-import { initializeDatabase, sql } from "@/lib/database";
+import { getPublishedPosts } from "@/lib/published-posts";
 
 export const dynamic = "force-dynamic";
 
@@ -20,14 +20,7 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = async () => {
-  await initializeDatabase();
-
-  const databasePosts = await sql`
-    SELECT slug, title, excerpt
-    FROM posts
-    WHERE status = 'published' AND locale = 'tr'
-    ORDER BY published_at DESC
-  `;
+  const databasePosts = await getPublishedPosts("tr");
 
   const allPosts = [...BLOG_POSTS, ...databasePosts] as {
     slug: string;

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import BlogLayout from "@/components/blog/BlogLayout";
-import { initializeDatabase, sql } from "@/lib/database";
+import { getPublishedPost } from "@/lib/published-posts";
 
 export const dynamic = "force-dynamic";
 
@@ -10,9 +10,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  await initializeDatabase();
-  const rows = await sql`SELECT title, excerpt FROM posts WHERE slug = ${slug} AND status = 'published' AND locale = 'en'`;
-  const post = rows[0];
+  const post = await getPublishedPost(slug, "en");
   if (!post) return {};
   return {
     title: `${post.title} | Koray Akdağ`,
@@ -27,9 +25,7 @@ export default async function PostPageEn({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  await initializeDatabase();
-  const rows = await sql`SELECT title, excerpt, content, published_at FROM posts WHERE slug = ${slug} AND status = 'published' AND locale = 'en'`;
-  const post = rows[0];
+  const post = await getPublishedPost(slug, "en");
   if (!post) notFound();
 
   return (

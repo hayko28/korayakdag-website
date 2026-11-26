@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { initializeDatabase, sql } from "@/lib/database";
+import { getPublishedPosts } from "@/lib/published-posts";
 import { BLOG_POSTS } from "@/lib/blog-data";
 import { EN_STATIC_POSTS } from "@/lib/blog-translations";
 
@@ -30,14 +30,7 @@ export default async function Blog({
 }: {
   lang?: "tr" | "en";
 }) {
-  await initializeDatabase();
-
-  const databasePosts = await sql`
-    SELECT slug, title, excerpt
-    FROM posts
-    WHERE status = 'published' AND locale = ${lang}
-    ORDER BY published_at DESC
-  `;
+  const databasePosts = await getPublishedPosts(lang);
 
   const staticPosts = lang === "en" ? EN_STATIC_POSTS : BLOG_POSTS;
   const allPosts = [...staticPosts, ...databasePosts].slice(0, 9);
@@ -83,7 +76,7 @@ export default async function Blog({
                 <div className="relative mb-6 h-48 overflow-hidden rounded-2xl">
 
                   <Image
-                    src={post.image}
+                    src={post.image as string}
                     alt={post.title}
                     fill
                     className="object-cover"
