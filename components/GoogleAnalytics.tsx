@@ -10,12 +10,12 @@ const CONSENT_KEY = "ga-consent";
 
 const STRINGS = {
   tr: {
-    text: "Siteyi iyileştirmek için anonim ziyaret istatistikleri (Google Analytics) kullanıyoruz.",
+    text: "Siteyi iyileştirmek ve reklam performansını ölçmek için ziyaret istatistikleri (Google Analytics, Google Ads) kullanıyoruz.",
     accept: "Kabul et",
     reject: "Reddet",
   },
   en: {
-    text: "We use anonymous visit statistics (Google Analytics) to improve the site.",
+    text: "We use visit statistics (Google Analytics, Google Ads) to improve the site and measure ad performance.",
     accept: "Accept",
     reject: "Decline",
   },
@@ -26,7 +26,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 window.gtag = gtag;
 gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-try { if (localStorage.getItem('${CONSENT_KEY}') === 'granted') { gtag('consent', 'update', { analytics_storage: 'granted' }); } } catch (e) {}
+try { if (localStorage.getItem('${CONSENT_KEY}') === 'granted') { gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' }); } } catch (e) {}
 gtag('js', new Date());
 gtag('config', '${GA_ID}');
 `;
@@ -68,7 +68,12 @@ export default function GoogleAnalytics() {
       localStorage.setItem(CONSENT_KEY, granted ? "granted" : "denied");
     } catch {}
     if (granted && typeof window.gtag === "function") {
-      window.gtag("consent", "update", { analytics_storage: "granted" });
+      window.gtag("consent", "update", {
+        analytics_storage: "granted",
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "granted",
+      });
     }
     setShowBanner(false);
   };

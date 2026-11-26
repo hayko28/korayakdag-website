@@ -106,10 +106,10 @@ export default function GizlilikPolitikasiPage() {
           <div>
             <h2 className="mb-3 text-xl font-bold text-[#071A2F]">7. Çerezler (Cookies)</h2>
             <p>
-              Bu site, ziyaretçi davranışını kişiselleştirmek veya izlemek amacıyla reklam ya
-              da pazarlama çerezi kullanmamaktadır. Anonim ziyaret istatistiklerinin
-              ölçülmesi için çerez kullanmayan bir analiz altyapısından faydalanılmaktadır.
-              Site yönetim paneline yalnızca site sahibinin erişimini sağlamak amacıyla,
+              Bu site, ziyaret istatistiklerini ölçmek ve reklam performansını değerlendirmek
+              amacıyla Google Analytics ve Google Ads çerezlerini yalnızca ziyaretçinin çerez
+              bildiriminde &quot;Kabul et&quot; seçeneğini seçmesi halinde kullanır. &quot;Reddet&quot;
+              seçildiğinde bu çerezler etkinleştirilmez. Site yönetim paneline yalnızca site sahibinin erişimini sağlamak amacıyla,
               teknik olarak zorunlu bir oturum çerezi kullanılmakta olup bu çerez ziyaretçi
               trafiğini etkilemez.
             </p>
