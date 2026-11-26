@@ -1385,5 +1385,14 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     date: "Ekim 2026",
     readTime: "13 Dakika",
     image: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    slug: "tfrs-18-finansal-tablo-ornekleri-esas-faaliyet-kari-2027",
+    title: "TFRS 18 Finansal Tablo Örnekleri Yayımlandı: Esas Faaliyet Kârı Şirketleri Nasıl Etkiliyor?",
+    excerpt: "KGK'nın 4 Kasım 2026 tarihli ve 33420 sayılı Resmî Gazete'de yayımladığı yeni Finansal Tablo Örnekleri ve Kullanım Rehberi, TFRS 18 standardına uyumlu hale getirildi. 1 Ocak 2027'de veya sonrasında başlayan hesap dönemlerinde zorunlu olacak Esas Faaliyet Kârı kalemi, yeni gelir tablosu yapısı, artan dipnot sayısı, yönetim tarafından tanımlanan performans ölçütleri (MPM) ve hazırlık süreciyle güncel rehber.",
+    category: "BAĞIMSIZ DENETİM • TFRS 18 • 2026",
+    date: "Kasım 2026",
+    readTime: "11 Dakika",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ];
