@@ -285,6 +285,18 @@ export default function BlogLayout({
             >
               {t.contact}
             </Link>
+            <a
+              href={`https://wa.me/905060931828?text=${encodeURIComponent(
+                lang === "en"
+                  ? `Hello, I read your article "${title}" and would like to get information.`
+                  : `Merhaba, "${title}" yazınızı okudum, durumum için bilgi almak istiyorum.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-[#25D366] px-8 py-4 font-semibold text-white transition hover:brightness-110 shadow-lg"
+            >
+              {lang === "en" ? "Message on WhatsApp" : "WhatsApp'tan Yazın"}
+            </a>
             <Link
               href={blogHref}
               className="rounded-xl border border-white/30 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#071A2F]"
