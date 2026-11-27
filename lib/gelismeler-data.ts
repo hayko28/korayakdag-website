@@ -2996,6 +2996,48 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Bu henüz bir kanun teklifi, komisyon ve genel kurul sürecinden geçmeden yürürlüğe girmeyecek ve metin değişebilir. Yine de istihdam teşviklerinden yararlanan veya eski GSS borcu bulunan işletme sahiplerine süreci şimdiden takibe almalarını öneririm.",
   },
+  {
+    kurum: "Rekabet Kurumu",
+    tarih: "8 Ekim 2026 (geçici tedbir kararı), 2 Kasım 2026 (kamuoyu duyurusu)",
+    eklendiTarihi: "2026-11-27",
+    baslik:
+      "Rekabet Kurulu, Google'ın yapay zeka arama özelliklerine soruşturma açtı ve geçici tedbir uyguladı",
+    ozet:
+      "Rekabet Kurulu, 27 Ağustos 2026'da başlattığı önaraştırmanın ardından Google'ın arama sonuçlarındaki Yapay Zeka Önizlemeleri (AI Overviews) ve Yapay Zeka Modu (AI Mode) özelliklerinin 4054 sayılı Kanun'un 6. maddesini ihlal edip etmediğini araştırmak üzere 8 Ekim 2026'da soruşturma açarken aynı toplantıda geçici tedbir kararı da aldı. Tedbire göre Google, haber yayıncıları arasında ayrımcılık yapmayan ve kullanılan içeriğin ekonomik değerini yansıtan bir yapı kurmak zorunda; yayıncılar içeriklerinin bu hizmetlerde kullanılıp kullanılmayacağına, Google'ın diğer hizmetlerindeki görünürlük ve indekslenmesinden bağımsız olarak karar verebilecek.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/11/02/googlein-yapay-zeka-hizmetlerine-sorusturma-ve-tedbir/",
+    konu: "Yazılım ve Yapay Zekâ Çözümleri",
+    expertNote:
+      "Koray'ın notu: Bu henüz bir ihlal tespiti değil, soruşturma süreci başladı ve sonucu zaman alabilir. Yine de kendi web sitesi ve içerikleri üzerinden organik trafik üreten KOBİ'lere, yapay zeka destekli arama özelliklerinin sitelerine gelen trafiği nasıl etkilediğini şimdiden takip etmelerini öneririm.",
+  },
+  {
+    kurum: "KGK",
+    tarih: "30 Ekim 2026 (Kurul kararı), 5 Kasım 2026 (Resmî Gazete)",
+    eklendiTarihi: "2026-11-27",
+    baslik:
+      "KGK, sürdürülebilirlik denetimi ekiplerindeki yetkili denetçi muafiyetinin süresini bir yıl uzattı",
+    ozet:
+      "Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu'nun (KGK) 30 Ekim 2026 tarihli ve 01/47239 sayılı Kurul kararı, 5 Kasım 2026 tarihli ve 33421 sayılı Resmî Gazete'de yayımlandı. Karar, Sürdürülebilirlik Denetimi Yönetmeliği'nin geçici 1. maddesindeki muafiyet süresini 1 Ocak 2027'den 1 Ocak 2028'e uzatırken, 2027'de biten hesap dönemleri için denetim ekibinde sorumlu denetçiyle birlikte en az iki denetçinin sürdürülebilirlik alanında yetkili olması şartını getirdi; önceki düzenlemede bu sayı bir denetçiydi.",
+    kaynakUrl:
+      "https://www.alomaliye.com/2026/11/06/surdurulebilirlik-denetim-ekiplerine-yonelik-muafiyet-aciklamasi/",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Süre bir yıl uzadı diye rahatlamak yerine, 2027 hesap döneminde ekipteki yetkili denetçi sayısının ikiye çıktığını not etmek gerekiyor. Sürdürülebilirlik denetimi kapsamına girecek şirketlere, denetim kuruluşlarıyla bu ekip yapısını şimdiden netleştirmelerini öneririm.",
+  },
+  {
+    kurum: "Ticaret Bakanlığı",
+    tarih: "12 Kasım 2026",
+    eklendiTarihi: "2026-11-27",
+    baslik:
+      "Reklam Kurulu 375. toplantısında indirim ve taksit reklamlarına 35,9 milyon TL idari para cezası uyguladı",
+    ozet:
+      "Ticaret Bakanlığı Reklam Kurulu, 12 Kasım 2026 tarihli 375. toplantısında karara bağladığı 141 dosyanın 119'unda durdurma cezasıyla birlikte toplam 35 milyon 866 bin 446 TL idari para cezası uyguladı; 22 dosyada ise tanıtımların mevzuata uygun olduğuna karar verildi. Kararların bir bölümü tüm ürünlerde sürekli yüksek oranlı indirim olduğu izlenimi veren reklamlara, gerçekte daha kısa taahhüt süresi olan mobil tarife reklamlarına ve taksit kısıtlaması bilgisi verilmeyen kampanyalara ilişkin.",
+    kaynakUrl:
+      "https://www.dha.com.tr/gundem/reklam-kurulundan-mevzuata-aykiri-reklamlara-35-9-milyon-lira-ceza-2983180",
+    konu: "Pazarlama ve Satış Geliştirme",
+    expertNote:
+      "Koray'ın notu: Durdurma cezası alan dosyaların çoğu indirim oranı ve taksit koşullarının eksik veya yanıltıcı anlatılmasından kaynaklanıyor. Kampanya metinlerini yayına almadan önce indirim, taahhüt ve taksit koşullarının küçük yazıyla da olsa eksiksiz yer aldığını kontrol etmelerini öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
