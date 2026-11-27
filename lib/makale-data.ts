@@ -11,6 +11,16 @@ export interface MakaleMeta {
 // birinci ağızdan kısa deneyim/görüş metinleri.
 export const MAKALELER: MakaleMeta[] = [
   {
+    slug: "asgari-ucret-2027-isveren-maliyet-carpani",
+    title:
+      "Asgari Ücrete Zam Gelmeden Önce Asıl Sorulması Gereken Soru: Çarpan Kaç?",
+    excerpt:
+      "Asgari Ücret Tespit Komisyonu aralık ayında toplanacak ve 2027 oranı henüz açıklanmadı; ama 2026'da brüt 33.030 TL, net 28.075,50 TL olan asgari ücretin işverene toplam maliyeti, uygulanan SGK teşvikine göre 39.223 TL ile 40.874 TL arasında değişiyor. Kıdem tazminatı tavanı, yemek kartı limitleri ve tedarik sözleşmelerindeki fiyat maddeleri de asgari ücrete endeksli; bütçe toplantısında sorulması gereken soru zam oranından önce, şirket içindeki bu çarpanın toplam tutarı.",
+    tag: "Strateji",
+    date: "27 Kasım 2026",
+    readTime: "2 Dakika",
+  },
+  {
     slug: "tubitak-sanayi-doktora-programinda-sirketin-payi",
     title:
       "TÜBİTAK'ın Sanayi Doktora Programında Bursun Dörtte Biri Neden Şirkette Kalıyor?",
