@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "gurcistanda-sirket-nasil-kurulur",
+    title: "Gürcistan'da Şirket Nasıl Kurulur? Vergi Avantajları ve Kuruluş Süreci",
+    excerpt: "Gürcistan'da LLC kuruluşu, 2017'den beri uygulanan Estonya modeli sayesinde dağıtılmayan kâra vergi uygulanmaması, yazılım ihracatında Virtual Zone statüsü ve NAPR üzerinden 1 iş gününde tescil süreciyle Türk girişimciler için güncel rehber. Türkiye'de yerleşik ortaklar için Kurumlar Vergisi Kanunu madde 7'deki kontrol edilen yabancı kurum (CFC) riski ve dört şartı ayrıca ele alınıyor.",
+    category: "YURT DIŞI ŞİRKET • GÜRCİSTAN • 2026",
+    date: "Kasım 2026",
+    readTime: "13 Dakika",
+    image: "https://images.unsplash.com/photo-1759506377231-95bf486d44e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "2027-yeniden-degerleme-orani-sirketler-ne-yapmali",
     title: "2027 Yeniden Değerleme Oranı %27,83 Oldu: Şirketler Yıl Sonuna Kadar Hangi Kararı Vermeli?",
     excerpt: "24 Kasım 2026 tarihli ve 33440 sayılı Resmî Gazete'de yayımlanan 599 sıra no'lu VUK Genel Tebliği, 2027'de uygulanacak yeniden değerleme oranını %27,83 olarak açıkladı. Bu oran hem VUK'taki yüzlerce had ve cezayı hem de bilanço esasına göre defter tutan şirketlerin VUK mükerrer 298/Ç kapsamında aktiflerindeki amortismana tabi kıymetleri isteğe bağlı olarak yeniden değerleme kararını doğrudan etkiliyor. Kapsam, %2 vergi, enflasyon düzeltmesiyle ilişkisi ve yıl sonuna kadar yapılması gerekenlerle güncel rehber.",
