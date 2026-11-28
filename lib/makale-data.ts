@@ -1258,4 +1258,13 @@ export const MAKALELER: MakaleMeta[] = [
     date: "9 Kasım 2026",
     readTime: "2 Dakika",
   },
+  {
+    slug: "pazarlikta-fiyati-once-soylemek",
+    title: "Pazarlıkta Fiyatı Önce Söylemek Gerçekten Kaybettirir mi?",
+    excerpt:
+      "Masadaki iki taraf da fiyatı ilk kendisi söylemek istemediğinde ortaya çıkan sessizlik nezaketten değil, çerçeveyi kimin kuracağı kaygısından doğuyor. Pazarlıktaki çapa etkisi, ilk söylenen rakamın görüşmenin referans noktasını belirlediğini gösteriyor; susan taraf genelde kibar değil, hazırlıksız.",
+    tag: "Görüş",
+    date: "28 Kasım 2026",
+    readTime: "2 Dakika",
+  },
 ];
