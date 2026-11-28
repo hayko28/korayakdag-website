@@ -10,6 +10,15 @@ export interface BlogPostMeta {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "estonyada-sirket-nasil-kurulur",
+    title: "Estonya'da Şirket Nasıl Kurulur? e-Residency, Vergi Sistemi ve 2026 Güncel Rehber",
+    excerpt: "e-Residency dijital kimliğiyle tamamen uzaktan OÜ kuruluşu, 150 € e-Residency ve 265 € tescil harcı, dağıtılmayan kâra %0 uygulanan ama 2026'dan itibaren dağıtılan kârda %24'e çıkan kurumlar vergisi sistemi ve Türkiye'de yerleşik ortaklar için kontrol edilen yabancı kurum (CFC) riskiyle güncel rehber.",
+    category: "YURT DIŞI ŞİRKET • ESTONYA • 2026",
+    date: "Kasım 2026",
+    readTime: "12 Dakika",
+    image: "https://images.unsplash.com/photo-1733688025985-0e658cd3965b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
     slug: "gurcistanda-sirket-nasil-kurulur",
     title: "Gürcistan'da Şirket Nasıl Kurulur? Vergi Avantajları ve Kuruluş Süreci",
     excerpt: "Gürcistan'da LLC kuruluşu, 2017'den beri uygulanan Estonya modeli sayesinde dağıtılmayan kâra vergi uygulanmaması, yazılım ihracatında Virtual Zone statüsü ve NAPR üzerinden 1 iş gününde tescil süreciyle Türk girişimciler için güncel rehber. Türkiye'de yerleşik ortaklar için Kurumlar Vergisi Kanunu madde 7'deki kontrol edilen yabancı kurum (CFC) riski ve dört şartı ayrıca ele alınıyor.",
