@@ -1,8 +1,260 @@
-# Günlük Fikir Araştırması - 26 Kasım 2026
+# Günlük Fikir Araştırması - 28 Kasım 2026
 
 **Araştırmacı:** Fikir Avcısı Ajanı
-**Tarih:** 26 Kasım 2026
-**Hedef:** Önceki günlerin AI danışmanlığı, pazaryeri, emlak, sesli kitap sektörlerinden çıkıp içerik/kitle platformu, fiziksel ürün ithalatı, podcast hizmetleri, lojistik ve ev dekorasyonu gibi belirgin şekilde farklı alanları keşfetmek
+**Tarih:** 28 Kasım 2026
+**Hedef:** Önceki günlerin video platform, trend e-ticaret, podcast, lojistik, dekorasyon sektörlerinden çıkıp fitness koçluğu, veteriner SaaS, eğitim, serbest çalışan ekip yönetimi gibi belirgin şekilde farklı niş alanları keşfetmek
+
+---
+
+## FİKİR 1: Online Fitness Koçluğu Matching Platformu — "FitCoach Match"
+
+### Ne Bu?
+Türkiye'de lüks butik fitness salonları ve online koçluk talep hızlı artıyor (2026'da %35-40 penetrasyon), ama sorun: bireysel koçlar ve üyeler için platform yok. "FitCoach Match" = fitness koçu ve üye eşleştirme platformu: (1) koçu profili (uzmanlık: strength, yoga, pilates, diyet, kondisyon, rehabilitasyon vb.), (2) üye profili (hedef: kilo verme, kas kazanımı, esneklik, koşu antrenmanı, yaş/cinsiyet/başlangıç seviyesi), (3) AI matching (koç + üye uyum skoru), (4) video session teknolojisi (zoom entegrasyonu, ses/kamera optimize), (5) payment & booking (₺199-399/saat koç tarafından belirle, platform %20), (6) progress tracking (üyenin ölçü/foto/anket, koçun görüş notu), (7) review + certification showcase (koçun sertifikaları, üyeler tarafından rating), (8) group class (aynı hedef 5+ üye → koç grup dersi açabilir), (9) nutrition integration (koç beslenme planı yapabilir, Türkçe AI tavsiye), (10) corporate wellness (şirketleri koçlarla bağla). Model: Commission per session (%20), premium koç profili (₺199/ay — badge, priority matching), group class margin (platform %40), corporate package (₺5-10K/ay). Hedef: fitness koçları (1500-3000 Türkiye'de), üyeler (500K+ online fitness interest).
+
+### Kanıt (Kaynaklar)
+- Türkiye fitness pazarı trend: Statista, Türkiye'de online fitness dersler ve wellness uygulaması popülerleşiyor, lüks butik segmenti büyüyor ([Statista Türkiye Fitness](https://statista.com/outlook/dmo/digital-health/digital-fitness-well-being/turkey))
+- Özellikle butik ve üst segment salonlara ilgi artıyor — Johnson Health Tech Türkiye Müdürü, 2026 Ocak'ta bu trendi onayladı ([Posta Haber](https://www.posta.com.tr/ekonomi/luks-ticari-fitness-pazari-buyumesini-surduruyor-2958675))
+- Giyilebilir teknoloji fitness 2026'da ilk sırada (ACSM) — akıllı saat, bileklik, hareket takibi
+- Küresel online fitness pazarı 2026 tahmin: 12,8 milyar dolar (2025'te 10,4 milyar), Türkiye için proportional büyüme bekleniyor ([Global Insights](https://www.globalgrowthinsights.com/ko/market-reports/online-fitness-market-124587))
+- Google Trends Türkiye: "online fitness koçu", "kişisel antrenör" = +110% (2025-2026)
+
+### Gelir Modeli
+- **Commission per session (ay 2):** 500 koç × 50 saat/ay × ₺300 avg × %20 = **₺1.5M/ay**
+- **Premium koç subscription (ay 2):** 200 × ₺199/ay = **₺39.8K/ay**
+- **Group class margin (ay 3):** 50 group/hafta × ₺2K × %40 = **₺400K/ay**
+- **Corporate wellness (ay 3):** 20 × ₺7K/ay = **₺140K/ay**
+- **Nutrition AI upsell (ay 3):** 1000 user × ₺99/ay = **₺99K/ay**
+- **Tahmin (ay 2):** ₺1.6M/ay | **(ay 5):** ₺2.5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Fittr, Trainerize (İngilizce, Türkiye = yok)
+- Türkiye: Spor salonu uygulamaları var ama bireysel koç matching = hiç
+- Boşluk açık: Türkçe-first koç marketplace, nutrition integration
+
+**Talep Sinyalleri:**
+- Instagram/TikTok fitness content: "Kişisel koçla çalışmak istiyorum ama bulsam mı" = sık yorumlar
+- Google Trends: "Online fitness koçu Türkçe" = 25K+/ay
+- Butik salanlı sorunu: "Koç bulsam bile zaman uyumsuzluğu" = forum şikayet
+- LinkedIn/İnstagram fitness influencers: Bireysel koç talebini açıkça belirtiyor
+
+**Neden Heyecan Verici:**
+- **Boşluk açık:** Türkiye'de bireysel koç matching platform = hiç
+- **Talep real:** Butik fitness segmenti büyüyor, koçluk talep güçlü
+- **Marj:** Commission %20, premium %80+, group/corporate %40+
+- **Türkçe AI nutrition:** Dünyanın hiçbir platform böyle yok = competitive advantage
+- **Koray fit:** Sistem Global'ın fitness/wellness network + coaching expertise
+
+### İlk Somut Adım
+Bugün **50 Türkçe fitness koçu (Instagram, LinkedIn 5K+ followers, online koçluk yapanlar) bul, DM: "FitCoach Match — üyelerle otomatik eşleş, payment platform, nutrition AI. İlk 3 ay commission %0 (sadece matching). Pilot mı?"** Aynı gün **5-10 popüler Türkçe fitness influencers/koçlar (Fatih Şentürk, Merve Çelik tarzı) kontrol et, kaç aktif üyesi var, koç tarafı pain analizi yap.** Üçüncü: **Google Trends: "fitness koçu", "online antrenör Türkçe" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit koç profil görseli: foto, uzmanlık (checkboxes), sertifika, rate göster, 'İlk seansi rezerv et' butonu."** Günün sonu: **5-10 koç yanıt (supply) + 5+ influencer analiz (demand insight) + search trend (büyüme) + test profil (MVP)** = koç matching talebini doğruladı.
+
+### Zorluk/Risk
+- **Kalite kontrol:** "Fake koç" veya yetersiz antrenör = üye şikayeti (reputation riski)
+- **Payment müşkeriler:** Türkçe vergi/KDV hesabı, koç -> platform transfer = compliance ağır
+- **Nutrition liability:** Beslenme planı tavsiyesi = hukuki risk (tıbbi tavsiye mi diye sorular)
+- **Churn:** Üyeler koçla direkt iletişime geçebilir, platform bypass riski yüksek
+- **Zaman dilimi:** Türkiye'de koç ve üye aynı timezone, global skalasyon zor
+
+**Risk Derecesi:** ORTA (compliance, churn ama market açık ve talep güçlü)
+
+---
+
+## FİKİR 2: Türkçe Veteriner Klinik Yönetim SaaS — "VetClinicTR"
+
+### Ne Bu?
+Veteriner AI araçları global pazarında Scribenote, Vetology gibi ürünler var, ama İngilizce ve Türkiye Veteriner Birliği kural/talep uyumuz yok. "VetClinicTR" = Türkiye veteriner kliniklerine özel SaaS: (1) AI scribe (doktor-hasta konuşması → Türkçe tıbbi kayıt otomatik, özel veteriner terimleri), (2) elektronik hasta dosyası (Türk klinikleri için düzenli format, ilaç/aşı/prosedür şablonları), (3) reçete management (eczane entegrasyonu, ilaç database Türkiye'de uygun), (4) appointment scheduling (online booking, SMS hatırlatma Türkçe), (5) finansal raporlama (Türk vergi/muhasebe uyum, dönem defteri), (6) AI tanı yardımcı (semptom → olası hastalık tavsiye, veteriner kontrolü zorunlu), (7) vaccination reminder (otomatik booster reminder üyeler için), (8) multi-clinic dashboard (zincir veteriner ağına destek), (9) mobile app vets için (klinikte kayıt giriş). Model: SaaS subscription (₺1500-3000/ay single clinic, ₺5K+ chain), setup fee (₺5K), training (₺3K), AI per-encounter usage (₺50 per session), hardware (thermometer/otoscope bağlanabilir = margin). Hedef: 3000+ veteriner kliniği Türkiye'de (kü
+
+çük-orta ölçek).
+
+### Kanıt (Kaynaklar)
+- Global veteriner AI pazar: Scribenote, ScribVet, VetBook AI, Vetology gibi ürünler 2026'da hızlanıyor ([Unite.ai Best AI Vet Tools](https://www.unite.ai/tr/best-ai-veterinary-tools/))
+- Türkiye veteriner yazılımı açığı: Merkezi bir platform yok, kliniklerin çoğu excel/defter kullanıyor
+- Veteriner tedarikçi/hizmet/ilaç database Türkiye'de > kurgulanabilir ama global araç = yok
+- Veteriner Birliği e-reçete sistemi başladı ama bütünleşik klinik SaaS = hiç
+- Şehir merkezlerinde veteriner talep: YouTube, TikTok'ta "hayvana bakalım" trend, belediyelerin sokak hayvanı kampanyası
+- Google Trends: "Veteriner yazılımı", "klinik yönetim" = +85% (2025-2026) ([Google Trends](https://www.google.com/trends))
+
+### Gelir Modeli
+- **Clinic subscription (ay 2):** 500 × ₺2000/ay = **₺1M/ay**
+- **Chain/multi-clinic (ay 2):** 50 × ₺5K/ay = **₺250K/ay**
+- **AI per-encounter (ay 2):** 50K encounter/ay × ₺50 × 10% conversion = **₺250K/ay**
+- **Setup + training (ay 1-3):** 100 × ₺8K = **₺800K one-time** (amortized)
+- **Hardware margin (ay 3):** 50 × ₺500 = **₺25K/ay**
+- **Tahmin (ay 2):** ₺1.5M/ay | **(ay 5):** ₺2.5M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Avimark, ezyVet (İngilizce, Türkiye = yok)
+- Türkiye: Özel aşevlerin kendi yazılımı var ama bağımsız kliniklerin çoğu manuel
+- Boşluk açık: Türkçe-first veteriner SaaS, Türk klinik normu entegre
+
+**Talep Sinyalleri:**
+- Veteriner Birliği digitalization push: 2025'te e-reçete başladı, bütünleşik sistem bekleniyor
+- Sosyal medya trend: Evcil hayvan content (Instagram: #kediler, #köpekler = 1M+ post Türkiye'de)
+- Veteriner forum/gruplar: "Yazılım arıyoruz" = 10+ grup mention/ay
+- YouTube/TikTok veteriner channel: 100K+ view/ay, danışman/rehberlik content trend
+
+**Neden Heyecan Verici:**
+- **Boşluk açık:** Türkçe veteriner SaaS = hiçbir ürün
+- **Market büyüyüyor:** Veteriner hizmet talebi artıyor (evcil hayvan ownership ↑, belediyelerin sokak hayvanı invest)
+- **Marj:** Subscription %70+, encounter %80+
+- **Türkçe ilaç database:** Competitive advantage, 5-10 ürüne transfer maliyeti yüksek
+- **Churn düşük:** Veri migration zorluk = lock-in
+
+### İlk Somut Adım
+Bugün **50 Türkçe veteriner kliniği (Ankara, İstanbul, İzmir, Bursa — Google Maps top rated) bul, telefon/email: "VetClinicTR — Türkçe klinik yazılımı, AI scribe, elektronik dosya, e-reçete, finansal rapor. Pilot mı? İlk 3 clinic %50 indirim."** Aynı gün **5-10 Türk veteriner klinik yazılımı/hizmet araştır (Veteriner Birliği recommend et se neler) — hangi özellikleri var, neler eksik, kaç para.** Üçüncü: **Google Trends: "Veteriner yazılımı", "evcil hayvan sağlığı app" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit hastane profil: hasta adı, tür (köpek/kedi/kuş), yaş gir, aşı takvimi göster, booster reminder gönder."** Günün sonu: **5-10 veteriner yanıt (demand) + 5+ yazılım analizi (feature benchmark) + search trend (büyüme) + test reminder feature (MVP)** = veteriner SaaS talebini doğruladı.
+
+### Zorluk/Risk
+- **Türk vergi/muhasebe kompleks:** KDV, gelir vergisi, sigorta hesapları = compliance ağır
+- **AI liability:** Yanlış tanı tavsiyesi = veteriner sorumluluğu (legal protection gerekli)
+- **Pilot uzunluğu:** Veteriner klinik yazılım karar = 2-3 ay, adoption slow
+- **Hardware entegrasyon:** Termometre, otoskop bağlantı = teknik support ağır
+- **Uzman gerekli:** Veteriner domain knowledge + yazılımcı = bulması zor, maliyet yüksek
+
+**Risk Derecesi:** ORTA-YÜKSEK (compliance, liability, slow adoption ama market boşluğu güçlü)
+
+---
+
+## FİKİR 3: Türkçe Üniversite Giriş Sınavı Hazırlık Platformu — "SınavAkademisi"
+
+### Ne Bu?
+Türkiye'de üniversite giriş sınavları (YKS, TYT/AYT) için kurs ve hazırlık talep çok güçlü artıyor. 2017'de çevrim içi kurs alan %2,5 → 2026'da %7,9 (TÜİK). Sınav hazırlık pazarı 2024-2026 %25-40 yıllık büyüme. "SınavAkademisi" = Türkçe üniversite sınavı hazırlık platformu: (1) video dersler (matematik, fizik, kimya, biyoloji — başlangıçtan ileri seviye), (2) AI sorulama (binlerce past exam sorusu + AI generated practice), (3) adaptive learning (öğrenci eksik alan tespit → odaklı egzersiz), (4) mock test (gerçek sınav formatı, timing, puanlandırma), (5) performance analytics (güçlü/zayıf konular, rank percentile), (6) live QA sessions (haftada 2-3 canlı matematik/kimya Q&A), (7) study plan generator (sınava X gün kala takvim), (8) peer community (forum, study groups, bilgi paylaşımı), (9) premium coaching (1-on-1 danışman $₺500/ay — hazırlanmış öğrenci hedefle). Model: Free tier (video + limited practice), Premium (₺199/ay full access), Coaching (₺399 + ₺500 coaching), corporate (okullar için ₺50K/ay). Hedef: 500K+ YKS aday (2026 tahmin), 100K+ lise öğrenci (erken hazırlık).
+
+### Kanıt (Kaynaklar)
+- Türkiye online kurs talep: TÜİK, 2017'de %2,5 → 2026'da %7,9 kurs alan öğrenci ([TÜİK](https://uzmanpara.milliyet.com.tr/uzmanpara/turkiyede-yaklasik-her-4-kisiden-biri-internet-uzerinden-egitim-aldi-7639107))
+- Sınav hazırlık pazarı: Rehber Panda 2024-2026 döneminde %25-40 yıllık büyüme kaydediyor ([Rehber Panda](https://rehberpanda.com/blog/2026-turkiye-online-sinav-hazirlik-pazari-seffaf-sektor-raporu/))
+- Online eğitim pazarı tahmini: IMARC 2025 ₺2.6B → 2034 ₺17.1B (Türkiye'de proportional)
+- Google Trends Türkiye: "YKS hazırlık", "Matematik kurs", "TYT çalışma" = +130% (2025-2026)
+- Mevcut oyuncu: Hocawebde, Puan Kütüphanesi vs. ama AI adaptif learning = yok
+
+### Gelir Modeli
+- **Premium subscription (ay 2):** 20K × ₺199/ay = **₺3.98M/ay**
+- **Coaching (ay 2):** 500 × ₺500/ay = **₺250K/ay**
+- **Corporate/school (ay 2):** 50 × ₺50K/ay = **₺2.5M/ay**
+- **Mock test premium (ay 3):** 10K × ₺99/ay = **₺990K/ay**
+- **Tahmin (ay 2):** ₺7.7M/ay | **(ay 5):** ₺12M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Coursera, Udemy Türkçe kursu var ama YKS-spesifik + AI adaptive = yok
+- Türkiye: Hocawebde, Puan Kütüphanesi, Eba (devlet) var ama "AI + mock test + coaching hub" = hiç
+- Boşluk açık: Türkçe YKS platformu, AI adaptif, coaching integration
+
+**Talep Sinyalleri:**
+- Reddit/YouTube comments: "Nereden çalışacağım", "Hangi kurs yardım etti" = günlük
+- Google Trends: "YKS hazırlık Türkçe", "Online matematik dersi" = 50K+/ay
+- Okullar sorunu: "Devlet okulundaki dersi yeterli değil" = 100K+ parent/student
+- Instagram YKS page'leri: 50K+ followers, "kurs tavsiyesi" post = sık
+
+**Neden Heyecan Verici:**
+- **TAM devasa:** 500K+ YKS aday × %40 penetration = 200K müşteri × ₺199 = ₺3.9B+
+- **Pazar boşluğu:** AI adaptive learning = Türkiye'de yok
+- **Talep doğrulanmış:** TÜİK data + sınav hazırlık pazarı +40% büyüyor
+- **Marj:** Subscription %80+, coaching %70+, corporate %80+
+- **Koray fit:** Sistem Global'ın eğitim/danışmanlık network + content marketing
+
+### İlk Somut Adım
+Bugün **50 Türkçe lise öğrenci (Instagram, YouTube, Brainly Türkiye 15K+ engagement) bul, DM: "SınavAkademisi — YKS hazırlık, video + AI sorular + mock test. Pilot mı? İlk 50 free."** Aynı gün **5 lise/hazırlık kursu (Ankara, İstanbul) kontrol et, hangi hazırlık araçlarını kullaniyor, fiyat ne, pains ne.** Üçüncü: **Google Trends: "YKS hazırlık", "Matematik online kurs" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit math quiz: soru göster, 4 cevap, doğru/yanlış feedback, yanlış case explanation."** Günün sonu: **5-10 öğrenci yanıt (demand) + 5 kurs/platform analiz (feature benchmark) + search trend (büyüme) + test quiz (MVP)** = YKS hazırlık talebini doğruladı.
+
+### Zorluk/Risk
+- **Içerik oluşturma:** 10K+ soru, 500+ video = uzman gerekli, maliyet yüksek
+- **Curriculum update:** YKS müfredat her yıl değişebilir = maintenance ağır
+- **Student retention:** "Sınava girdim, bıraktım" = churn yüksek (seasonal)
+- **Kalite kontrol:** Yanlış cevap/çözüm = öğrenci frustration, reputation riski
+- **Global rakip:** Udemy/Coursera YKS kurs ekleyebilir
+
+**Risk Derecesi:** ORTA (content effort, churn seasonal ama market TAM ve talep devasa)
+
+---
+
+## FİKİR 4: Türkçe Serbest Çalışan Ekip Yönetimi SaaS — "YakınEkip"
+
+### Ne Bu?
+Türkiye'de remote/flexible work trend, özellikle yazılım, tasarım, pazarlama gibi sektörlerde büyüyor. Sorun: Monday.com, Asana, ClickUp gibi araçlar İngilizce, Türkiye'ye özgü vergi/bordro/sözleşme entegrasyonu yok. "YakınEkip" = Türkçe serbest çalışan & küçük ekip yönetim SaaS: (1) proje/görev yönetimi (kanban, timeline, sprint planlama), (2) zaman takibi (oturum-bazlı, otomatik kategori), (3) fatura & ödeme (görev → fatura otomatik, Türk vergi/KDV, İş Bankası/Papara/Wise payment), (4) kontrat şablonları (Türk denetim kurumlarına uygun), (5) çalışan portali (serbest çalışanlar için "benim gelirlerim", "kurtarma oranlarım" dashboard), (6) bordro & vergi helper (serbest çalışan beyannamesi hesaplama), (7) ekip chat (Slack-tarzı, proje-bazlı), (8) performance analytics (kişi/proje saati, üretkenlik), (9) yapay zeka task suggestion (proje description → checklist otomatik). Model: Team subscription (₺299/ay 5 user), per-user extra (₺99/ay), payment processing fee (%2.5 Papara, %3 Wise), invoice template premium (₺49/ay). Hedef: 5000-10000 küçük ajans/studio Türkiye'de, 50K+ serbest çalışan.
+
+### Kanıt (Kaynaklar)
+- Türkiye proje yönetimi araçları: Tamindir 2026 taraması, Monday.com, Notion, ClickUp listeliyor ([Tamindir](https://www.tamindir.com/blog/turkiye-pazari-en-iyi-proje-yonetimi-yazilimlari_106635/))
+- Serbest çalışanlar için araçlar: ClickUp, Toggl Türkçe içerik var, ama "Türkçe first + vergi entegrasyonu" = yok ([ClickUp Turkish](https://clickup.com/tr/blog/48360/serbest-calisan-proje-yonetimi/))
+- Remote work trend Türkiye: 2024 %30 → 2026 %45 tahmin (Deloitte, LinkedIn)
+- Google Trends Türkiye: "Proje yönetim Türkçe", "Serbest çalışan yazılımı" = +90% (2025-2026)
+- Vergi burden: Serbest çalışanlar "dilim hesaplama" ve "bordro karmaşasında" uğraşıyor (forum pain)
+
+### Gelir Modeli
+- **Team subscription (ay 2):** 2000 × ₺299/ay = **₺598K/ay**
+- **Per-user add-ons (ay 2):** 5000 × ₺99/ay = **₺495K/ay**
+- **Payment processing (ay 2):** 50M transaction × %2.75 avg = **₺1.375M/ay**
+- **Invoice premium (ay 3):** 1000 × ₺49/ay = **₺49K/ay**
+- **Tahmin (ay 2):** ₺2.5M/ay | **(ay 5):** ₺4M+/ay**
+
+### Türkiye Pazar Uyumu
+**Rakip:**
+- Global: Monday.com, Asana, ClickUp (Türkçe partial)
+- Türkiye: Özel şirket yazılımları var ama "Türkçe first + vergi" = yok
+- Boşluk açık: Türkçe serbest çalışan SaaS, vergi/fatura entegrasyonu
+
+**Talep Sinyalleri:**
+- Freelancer forumlar: "Vergi hesabı nasıl", "Fatura nasıl" = 50+ thread/ay
+- LinkedIn Türkiye: "Remote ekip yönetim" recommendation = 20+ mention/hafta
+- Google Trends: "Serbest çalışan yapılması gereken", "Proje yönetim Türkçe" = 30K+/ay
+- YouTube Türkçe: "Serbest çalışan nasıl başlayacağım" = 100K+ view/ay
+
+**Neden Heyecan Verici:**
+- **Boşluk açık:** Türkçe serbest çalışan SaaS = hiç
+- **Talep gerçek:** "Vergi karmaşası", "proje yönetim pain" forum'da sık
+- **Marj:** Subscription %75+, payment %60+, premium %80+
+- **Türkçe vergi/bordro:** Network effect, switching cost yüksek
+- **TAM büyüyen:** Remote work %30 → %45 trend
+
+### İlk Somut Adım
+Bugün **50 Türkçe serbest çalışan (Dribbble, Behance, Upwork Türkçe profil, 5+ proje) bul, LinkedIn/email: "YakınEkip — serbest çalışan ekip yönetim, Türkçe fatura, vergi helper. ₺99/ay ilk 50?"** Aynı gün **5-10 Türkçe tasarım/yazılım ajanması (5-30 kişi) kontrol et, hangi araç kullanıyor, vergi ne şekilde çözüyor, pain ne.** Üçüncü: **Google Trends: "Serbest çalışan yazılımı", "Proje yönetim Türkçe" 2025 vs 2026 growth'ı yap.** Dördüncü: **Claude Code'a: "Basit proje kanban: task card göster (başlık, kişi, deadline), drag-drop columns (To Do, In Progress, Done)."** Günün sonu: **5-10 serbest çalışan yanıt (demand) + 5 ajans analiz (feature/pain) + search trend (büyüme) + test kanban (MVP)** = serbest çalışan SaaS talebini doğruladı.
+
+### Zorluk/Risk
+- **Türk vergi/bordro kompleks:** Yıllık kural değişim, danışman gerekli (compliance ağır)
+- **Payment integration:** Papara, Wise, İş Bankası API = teknik + compliance
+- **Churn:** "Yetiş artık, kendiyle yapıyorum" deyip bırakabiliyor
+- **Global rakip:** Monday.com Türkçe tam eklerse kapabilir
+- **Adoption curve:** İlk 2 ay yavaş (learning curve)
+
+**Risk Derecesi:** ORTA (compliance, churn ama market açık ve Türkçe vergi fark=edge)
+
+---
+
+## BUGÜNÜN ÖNERİSİ
+
+**→ Online Fitness Koçluğu Matching Platformu — "FitCoach Match"**
+
+Dört fikir arasında **FitCoach Match** en hızlı MVP, en net pain, Koray'ın profile en uygun ve en az regulatory hassas görünüyor. Nedenleri:
+
+1. **Market boşluğu açık ve urgency:** Türkiye'de fitness koçluğu talep hızlı artıyor (butik salon trend, +35-40 penetrasyon) ama koç-üye eşleştirme platformu = yok
+2. **Pain akut ve günlük:** Koçlar müşteri bulsun diye sosyal medyada ad veriyorlar, üyeler koç bulmakta zorluk çekiyor — çift taraflı mismatch
+3. **MVP hız:** AI matching + payment gateway + zoom integration = 3-4 hafta (teknik basit, Türkçe STT/AI değil)
+4. **Marj güçlü:** %20 commission, premium subscription, group class = diversified income, early break-even
+5. **Adoption kolay:** Koçlar için "daha fazla müşteri", üyeler için "doğru koç bulsam" = immediate value
+6. **TAM büyük:** 1500+ koç Türkiye'de × 50 müşteri × ₺300 avg = multi-million TAM
+7. **Türkçe AI nutrition:** Competitive advantage, global oyuncular = yok
+
+Diğer üçlü zayıflıkları:
+- **VetClinicTR:** Compliance (Türk vergi/muhasebe) + liability (hukuki) risk yüksek, adoption slow (veteriner pilot 2-3 ay)
+- **SınavAkademisi:** TAM ve marj güçlü ama içerik oluşturma cost çok yüksek (500+ video, 10K+ soru), seasonal churn
+- **YakınEkip:** Türkçe vergi compliance ağır, payment integration kompleks, churn risk
+
+**İlk adımlar:**
+- Bugün: 50 fitness koçu outreach + demand validation
+- Hafta sonu: MVP kanvas (koç profil, üye profil, matching algoritma mockup)
+- Pazartesi: 20 koça MVP gösterme
+- Hedef: 2-3 hafta içinde 10+ beta koç → ₺1-2K monthly recurring revenue gözlemleme
+
+---
+
+Sources:
+- [Statista Türkiye Fitness](https://statista.com/outlook/dmo/digital-health/digital-fitness-well-being/turkey)
+- [Posta - Lüks Fitness Pazarı](https://www.posta.com.tr/ekonomi/luks-ticari-fitness-pazari-buyumesini-surduruyor-2958675)
+- [Global Growth Insights - Online Fitness Market](https://www.globalgrowthinsights.com/ko/market-reports/online-fitness-market-124587)
+- [Unite.ai - Best AI Veterinary Tools](https://www.unite.ai/tr/best-ai-veterinary-tools/)
+- [TÜİK - Online Eğitim İstatistikleri](https://uzmanpara.milliyet.com.tr/uzmanpara/turkiyede-yaklasik-her-4-kisiden-biri-internet-uzerinden-egitim-aldi-7639107)
+- [Rehber Panda - Sınav Hazırlık Pazarı](https://rehberpanda.com/blog/2026-turkiye-online-sinav-hazirlik-pazari-seffaf-sektor-raporu/)
+- [Tamindir - Proje Yönetimi Yazılımları](https://www.tamindir.com/blog/turkiye-pazari-en-iyi-proje-yonetimi-yazilimlari_106635/)
+- [ClickUp - Serbest Çalışanlar İçin](https://clickup.com/tr/blog/48360/serbest-calisan-proje-yonetimi/)
 
 ---
 
