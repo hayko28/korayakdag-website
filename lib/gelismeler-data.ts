@@ -3038,6 +3038,34 @@ export const GELISMELER: GelismeItem[] = [
     expertNote:
       "Koray'ın notu: Durdurma cezası alan dosyaların çoğu indirim oranı ve taksit koşullarının eksik veya yanıltıcı anlatılmasından kaynaklanıyor. Kampanya metinlerini yayına almadan önce indirim, taahhüt ve taksit koşullarının küçük yazıyla da olsa eksiksiz yer aldığını kontrol etmelerini öneririm.",
   },
+  {
+    kurum: "TÜİK",
+    tarih: "30 Ekim 2026",
+    eklendiTarihi: "2026-11-28",
+    baslik:
+      "Ekonomik Güven Endeksi Ekim'de 100 eşiğinin altına indi, en sert düşüş tüketici güveninde yaşandı",
+    ozet:
+      "TÜİK'in açıkladığı verilere göre Ekonomik Güven Endeksi, Eylül'deki 101,3 puandan Ekim'de %3,9 düşüşle 97,3'e geriledi ve 100 eşiğinin altına indi. Beş alt endeksten tüketici güven endeksi %7,7 düşüşle 84,8'e, reel kesim (imalat) güven endeksi %1,4 düşüşle 101,1'e, hizmet sektörü güven endeksi %2,4 düşüşle 109,2'ye indi; perakende ticaret güven endeksi ise %1,1 artışla 112,5'e, inşaat sektörü güven endeksi %0,4 artışla 83,3'e yükseldi.",
+    kaynakUrl:
+      "https://www.capital.com.tr/haberler/tum-haberler/ekonomik-guven-endeksi-ekimde-geriledi",
+    konu: "Hukuk, Vergi ve Mali Danışmanlık",
+    expertNote:
+      "Koray'ın notu: Düşüşün büyük bölümü tüketici güveninden kaynaklanıyor, perakende ve inşaat tarafında ise tam tersi bir toparlanma var. İç talebe dayalı işletmelere yıl sonu satış ve stok planlarını tek bir alt endekse göre değil, bu karışık tabloyu bütün olarak değerlendirerek gözden geçirmelerini öneririm.",
+  },
+  {
+    kurum: "SPK",
+    tarih: "19 Kasım 2026",
+    eklendiTarihi: "2026-11-28",
+    baslik:
+      "SPK, halka arz gelirini izahnamedeki amacına uygun kullanmayan bir şirkete ve yöneticilerine toplam 6,9 milyon TL idari para cezası uyguladı",
+    ozet:
+      "Sermaye Piyasası Kurulu'nun 19 Kasım 2026 tarihli 2026/82 sayılı Haftalık Bülteni'ne göre, halka arz yoluyla topladığı fonu izahnamede belirtilen kullanım yerlerine uygun şekilde kullanmadığı ve bu konudaki raporlama yükümlülüklerini yerine getirmediği tespit edilen bir şirkete ve ilgili üç kişiye idari para cezası uygulandı; toplam ceza tutarı 6,9 milyon TL'yi aştı. Kararda, şirketin ilk genel kurulunda aykırılıktan sorumlu yönetim kurulu üyelerine cezanın rücu edilip edilmeyeceğinin karara bağlanması gerektiği de belirtildi.",
+    kaynakUrl:
+      "https://www.cnbce.com/borsa/spkdan-midasa-kritik-yetki-meka-globale-mekag-milyonluk-ceza-h42227",
+    konu: "Kurumsal Gelişim ve Değerleme",
+    expertNote:
+      "Koray'ın notu: Halka arz veya başka bir yapısal fon toplama sürecine giren şirketlere, izahnamede beyan edilen fon kullanım kalemleriyle gerçekleşen harcamalar arasındaki uyumu yıl sonunda değil, süreç içinde düzenli olarak raporlamalarını öneririm.",
+  },
 ];
 
 // Güncel Gelişmeler sayfasında (hem ana feed hem üstteki sayaçlarda) sadece
